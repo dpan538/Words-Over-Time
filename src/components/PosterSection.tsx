@@ -17,7 +17,7 @@ export function PosterSection({
 }: PosterSectionProps) {
   return (
     <section
-      className={`border-t border-ink/80 py-14 sm:py-18 lg:py-24 ${className}`}
+      className={`pb-0 pt-8 sm:pt-9 lg:pt-10 ${className}`}
     >
       <div className="mb-8 grid gap-3 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
         <p className="font-mono text-[0.72rem] font-black uppercase leading-5 tracking-[0.2em] text-fire">

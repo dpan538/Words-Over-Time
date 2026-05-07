@@ -23,17 +23,15 @@ type ForeverPosterProps = {
 };
 
 type NarrativeBridgeProps = {
-  children: string[];
+  children: string;
 };
 
 function NarrativeBridge({ children }: NarrativeBridgeProps) {
   return (
-    <div className="mx-auto my-8 max-w-[72ch] border-l-2 border-fire/70 pl-5 pr-2 sm:my-12 lg:my-14">
-      <div className="space-y-3 text-[clamp(0.98rem,1.05vw,1.12rem)] font-bold leading-7 text-ink/68">
-        {children.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
-        ))}
-      </div>
+    <div className="mb-10 mt-12 w-full sm:mb-11 sm:mt-14 lg:mb-12 lg:mt-14">
+      <p className="text-[clamp(1.08rem,1.04vw,1.18rem)] font-normal leading-[1.5] text-ink/66">
+        {children}
+      </p>
     </div>
   );
 }
@@ -592,10 +590,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           </PosterSection>
 
           <NarrativeBridge
-            children={[
-              "Frequency shows the visible surface of the word: when a form rises, falls, or persists in print.",
-              "But a line does not explain what the word is doing. To read forever historically, the next layer looks for pressure points around the curve, where form, culture, and usage begin to pull against each other.",
-            ]}
+            children="Frequency gives the surface trace: which form rises, falls, or persists in print; the next layer asks what kinds of historical pressure gather around that curve."
           />
 
           <PosterSection
@@ -615,10 +610,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           </PosterSection>
 
           <NarrativeBridge
-            children={[
-              "The influence field treats the curve as a cultural trace rather than a final answer.",
-              "Some pressure points come from devotional language, some from literary permanence, and some from modern media. The next map turns from historical pressure to the word's immediate relationships: forms, phrases, collocates, and contextual anchors.",
-            ]}
+            children="The influence field treats the curve as a cultural trace, drawing in devotional print, literary permanence, memory, media, and modern open-news context before the next map moves closer to the word's immediate attachments."
           />
 
           <PosterSection
@@ -641,10 +633,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           </PosterSection>
 
           <NarrativeBridge
-            children={[
-              "The constellation shows forever as a network of repeated attachments.",
-              "A phrase, a collocate, or a category is not a meaning by itself, but it can point toward a local use. The next visual compresses those local signals into a more abstract semantic object.",
-            ]}
+            children="The constellation turns forever into a network of repeated attachments, where forms, phrases, collocates, and contextual anchors begin to cluster without pretending to fix the word's meaning."
           />
 
           <PosterSection
@@ -666,10 +655,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           </PosterSection>
 
           <NarrativeBridge
-            children={[
-              "The sphere is not a complete model of meaning. It is a visual summary of available contextual signals: archival evidence on one side, a modern snapshot on another, and a visible gap where comparable context is still missing.",
-              "The final archive returns from abstraction to evidence. Here, the project stops treating forever as a curve or constellation and returns to dated traces.",
-            ]}
+            children="The sphere compresses available context into one abstract semantic object, holding archival signals, modern snapshot signals, and a visible gap where comparable evidence is still missing."
           />
 
           <PosterSection
@@ -699,13 +685,10 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           </PosterSection>
 
           <NarrativeBridge
-            children={[
-              "Together, these panels do not claim to define forever once and for all.",
-              "They show how one word can be traced through form, frequency, context, evidence, and absence. The result is not a complete history, but a visual reading of what the available data allows us to see.",
-            ]}
+            children="Taken together, these panels do not define forever once and for all; they show what the available data allows us to see across form, frequency, context, evidence, and absence."
           />
 
-          <div className="border-t border-ink/80 pb-12 pt-8">
+          <div className="border-t border-ink/80 pb-12 pt-0">
             <div className="mt-8 flex flex-wrap gap-4 font-mono text-[0.68rem] font-black uppercase tracking-[0.16em]">
               <Link href="/" className="border-b border-ink pb-1 transition hover:border-blaze hover:text-blaze">
                 Back home
