@@ -1,0 +1,576 @@
+[
+  {
+    "id": "eternity_religion",
+    "label": "Eternity / Religion",
+    "color": "#1570AC",
+    "method": "Curated heuristic from phrases and collocates such as forever and ever, God, heaven, soul, immortal.",
+    "eraScores": [
+      {
+        "eraId": "all",
+        "score": 25.5,
+        "phraseCount": 3,
+        "collocateCount": 3,
+        "snippetCount": 3,
+        "supportingPhrases": [
+          "forever and ever"
+        ],
+        "supportingCollocates": [
+          "life"
+        ],
+        "inspectorId": "inspect-category-eternity_religion-all"
+      },
+      {
+        "eraId": "1700-1799",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-eternity_religion-1700-1799"
+      },
+      {
+        "eraId": "1800-1849",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-eternity_religion-1800-1849"
+      },
+      {
+        "eraId": "1850-1899",
+        "score": 14.5,
+        "phraseCount": 1,
+        "collocateCount": 5,
+        "snippetCount": 1,
+        "supportingPhrases": [
+          "forever and ever"
+        ],
+        "supportingCollocates": [
+          "god"
+        ],
+        "inspectorId": "inspect-category-eternity_religion-1850-1899"
+      },
+      {
+        "eraId": "1900-1949",
+        "score": 14,
+        "phraseCount": 2,
+        "collocateCount": 0,
+        "snippetCount": 2,
+        "supportingPhrases": [
+          "forever and ever"
+        ],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-eternity_religion-1900-1949"
+      },
+      {
+        "eraId": "1950-1999",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-eternity_religion-1950-1999"
+      },
+      {
+        "eraId": "2000-2019",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-eternity_religion-2000-2019"
+      },
+      {
+        "eraId": "recent",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-eternity_religion-recent"
+      }
+    ]
+  },
+  {
+    "id": "romance_vow",
+    "label": "Romance / Vow",
+    "color": "#A1081F",
+    "method": "Curated heuristic from vow and address patterns such as yours forever plus love collocates.",
+    "eraScores": [
+      {
+        "eraId": "all",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-romance_vow-all"
+      },
+      {
+        "eraId": "1700-1799",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-romance_vow-1700-1799"
+      },
+      {
+        "eraId": "1800-1849",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-romance_vow-1800-1849"
+      },
+      {
+        "eraId": "1850-1899",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-romance_vow-1850-1899"
+      },
+      {
+        "eraId": "1900-1949",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-romance_vow-1900-1949"
+      },
+      {
+        "eraId": "1950-1999",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-romance_vow-1950-1999"
+      },
+      {
+        "eraId": "2000-2019",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-romance_vow-2000-2019"
+      },
+      {
+        "eraId": "recent",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-romance_vow-recent"
+      }
+    ]
+  },
+  {
+    "id": "permanence_duration",
+    "label": "Permanence / Duration",
+    "color": "#F06B04",
+    "method": "Curated heuristic for lasting, remaining, living, and loss patterns.",
+    "eraScores": [
+      {
+        "eraId": "all",
+        "score": 155,
+        "phraseCount": 8,
+        "collocateCount": 66,
+        "snippetCount": 8,
+        "supportingPhrases": [
+          "live forever",
+          "gone forever"
+        ],
+        "supportingCollocates": [
+          "gone",
+          "lost",
+          "live",
+          "remain",
+          "last",
+          "world",
+          "life"
+        ],
+        "inspectorId": "inspect-category-permanence_duration-all"
+      },
+      {
+        "eraId": "1700-1799",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-permanence_duration-1700-1799"
+      },
+      {
+        "eraId": "1800-1849",
+        "score": 31,
+        "phraseCount": 1,
+        "collocateCount": 16,
+        "snippetCount": 1,
+        "supportingPhrases": [
+          "gone forever"
+        ],
+        "supportingCollocates": [
+          "lost",
+          "remain",
+          "gone",
+          "world"
+        ],
+        "inspectorId": "inspect-category-permanence_duration-1800-1849"
+      },
+      {
+        "eraId": "1850-1899",
+        "score": 74.5,
+        "phraseCount": 4,
+        "collocateCount": 31,
+        "snippetCount": 4,
+        "supportingPhrases": [
+          "live forever",
+          "gone forever"
+        ],
+        "supportingCollocates": [
+          "gone",
+          "lost",
+          "last",
+          "remain"
+        ],
+        "inspectorId": "inspect-category-permanence_duration-1850-1899"
+      },
+      {
+        "eraId": "1900-1949",
+        "score": 28.5,
+        "phraseCount": 3,
+        "collocateCount": 5,
+        "snippetCount": 3,
+        "supportingPhrases": [
+          "live forever"
+        ],
+        "supportingCollocates": [
+          "live"
+        ],
+        "inspectorId": "inspect-category-permanence_duration-1900-1949"
+      },
+      {
+        "eraId": "1950-1999",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-permanence_duration-1950-1999"
+      },
+      {
+        "eraId": "2000-2019",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-permanence_duration-2000-2019"
+      },
+      {
+        "eraId": "recent",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-permanence_duration-recent"
+      }
+    ]
+  },
+  {
+    "id": "remembrance",
+    "label": "Memory / Remembrance",
+    "color": "#036C17",
+    "method": "Curated heuristic for remembered, memory, name, and legacy patterns.",
+    "eraScores": [
+      {
+        "eraId": "all",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-remembrance-all"
+      },
+      {
+        "eraId": "1700-1799",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-remembrance-1700-1799"
+      },
+      {
+        "eraId": "1800-1849",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-remembrance-1800-1849"
+      },
+      {
+        "eraId": "1850-1899",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-remembrance-1850-1899"
+      },
+      {
+        "eraId": "1900-1949",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-remembrance-1900-1949"
+      },
+      {
+        "eraId": "1950-1999",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-remembrance-1950-1999"
+      },
+      {
+        "eraId": "2000-2019",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-remembrance-2000-2019"
+      },
+      {
+        "eraId": "recent",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-remembrance-recent"
+      }
+    ]
+  },
+  {
+    "id": "hyperbole_colloquial",
+    "label": "Hyperbole / Colloquial",
+    "color": "#FBB728",
+    "method": "Curated heuristic for exaggerated duration patterns. Gutenberg evidence is expected to be thin.",
+    "eraScores": [
+      {
+        "eraId": "all",
+        "score": 15,
+        "phraseCount": 0,
+        "collocateCount": 10,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [
+          "never",
+          "always",
+          "time"
+        ],
+        "inspectorId": "inspect-category-hyperbole_colloquial-all"
+      },
+      {
+        "eraId": "1700-1799",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-hyperbole_colloquial-1700-1799"
+      },
+      {
+        "eraId": "1800-1849",
+        "score": 4.5,
+        "phraseCount": 0,
+        "collocateCount": 3,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [
+          "always"
+        ],
+        "inspectorId": "inspect-category-hyperbole_colloquial-1800-1849"
+      },
+      {
+        "eraId": "1850-1899",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-hyperbole_colloquial-1850-1899"
+      },
+      {
+        "eraId": "1900-1949",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-hyperbole_colloquial-1900-1949"
+      },
+      {
+        "eraId": "1950-1999",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-hyperbole_colloquial-1950-1999"
+      },
+      {
+        "eraId": "2000-2019",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-hyperbole_colloquial-2000-2019"
+      },
+      {
+        "eraId": "recent",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-hyperbole_colloquial-recent"
+      }
+    ]
+  },
+  {
+    "id": "digital_permanence",
+    "label": "Digital Permanence",
+    "color": "#2C9FC7",
+    "method": "Not supported by the current public-domain text seed. Kept as a future category note only.",
+    "eraScores": [
+      {
+        "eraId": "all",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-digital_permanence-all"
+      },
+      {
+        "eraId": "1700-1799",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-digital_permanence-1700-1799"
+      },
+      {
+        "eraId": "1800-1849",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-digital_permanence-1800-1849"
+      },
+      {
+        "eraId": "1850-1899",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-digital_permanence-1850-1899"
+      },
+      {
+        "eraId": "1900-1949",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-digital_permanence-1900-1949"
+      },
+      {
+        "eraId": "1950-1999",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-digital_permanence-1950-1999"
+      },
+      {
+        "eraId": "2000-2019",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-digital_permanence-2000-2019"
+      },
+      {
+        "eraId": "recent",
+        "score": 0,
+        "phraseCount": 0,
+        "collocateCount": 0,
+        "snippetCount": 0,
+        "supportingPhrases": [],
+        "supportingCollocates": [],
+        "inspectorId": "inspect-category-digital_permanence-recent"
+      }
+    ]
+  }
+]

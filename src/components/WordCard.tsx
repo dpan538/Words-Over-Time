@@ -13,7 +13,7 @@ export function WordCard({ word }: WordCardProps) {
         className="group relative inline-block text-blaze decoration-[0.08em] underline-offset-[0.13em] transition duration-200 hover:-translate-y-1 hover:skew-x-[-3deg] hover:text-wine hover:underline"
       >
         {word.label}
-        <span className="pointer-events-none absolute left-2 top-0 hidden -translate-y-[78%] text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] text-wine group-hover:block">
+        <span className="pointer-events-none absolute left-2 top-0 hidden -translate-y-[62%] text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] text-wine group-hover:block">
           demo word
         </span>
       </Link>
@@ -23,7 +23,7 @@ export function WordCard({ word }: WordCardProps) {
   return (
     <span className="group relative inline-block cursor-not-allowed text-ink/62 transition duration-200 hover:-translate-y-0.5 hover:skew-x-[-2deg] hover:text-nice">
       {word.label}
-      <span className="pointer-events-none absolute left-2 top-0 hidden -translate-y-[78%] whitespace-nowrap text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] text-nice group-hover:block">
+      <span className="pointer-events-none absolute left-2 top-0 hidden -translate-y-[62%] whitespace-nowrap text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] text-nice group-hover:block">
         coming soon
       </span>
     </span>

@@ -1,0 +1,491 @@
+[
+  {
+    "id": "collocate-gone-all",
+    "token": "gone",
+    "eraId": "all",
+    "count": 19,
+    "jointCount": 19,
+    "documentFrequency": 7,
+    "dispersion": 0.304,
+    "scoreType": "simple logDice",
+    "score": 10.839,
+    "scoreValue": 10.839,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 7,
+    "relatedSnippetIds": [
+      "snippet-1800-1849-1-all",
+      "snippet-1850-1899-2-all",
+      "snippet-1850-1899-4-all",
+      "snippet-1850-1899-5-all"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-gone-all"
+  },
+  {
+    "id": "collocate-lost-all",
+    "token": "lost",
+    "eraId": "all",
+    "count": 16,
+    "jointCount": 16,
+    "documentFrequency": 9,
+    "dispersion": 0.391,
+    "scoreType": "simple logDice",
+    "score": 10.603,
+    "scoreValue": 10.603,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 9,
+    "relatedSnippetIds": [
+      "snippet-1800-1849-3-all",
+      "snippet-1800-1849-6-all",
+      "snippet-1850-1899-6-all"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-lost-all"
+  },
+  {
+    "id": "collocate-live-all",
+    "token": "live",
+    "eraId": "all",
+    "count": 10,
+    "jointCount": 10,
+    "documentFrequency": 7,
+    "dispersion": 0.304,
+    "scoreType": "simple logDice",
+    "score": 9.951,
+    "scoreValue": 9.951,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 7,
+    "relatedSnippetIds": [
+      "snippet-1700-1799-5-all",
+      "snippet-1800-1849-1-all",
+      "snippet-1850-1899-1-all",
+      "snippet-1850-1899-2-all"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-live-all"
+  },
+  {
+    "id": "collocate-remain-all",
+    "token": "remain",
+    "eraId": "all",
+    "count": 8,
+    "jointCount": 8,
+    "documentFrequency": 4,
+    "dispersion": 0.174,
+    "scoreType": "simple logDice",
+    "score": 9.638,
+    "scoreValue": 9.638,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 4,
+    "relatedSnippetIds": [],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-remain-all"
+  },
+  {
+    "id": "collocate-last-all",
+    "token": "last",
+    "eraId": "all",
+    "count": 6,
+    "jointCount": 6,
+    "documentFrequency": 5,
+    "dispersion": 0.217,
+    "scoreType": "simple logDice",
+    "score": 9.232,
+    "scoreValue": 9.232,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 5,
+    "relatedSnippetIds": [
+      "snippet-1700-1799-4-all"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-last-all"
+  },
+  {
+    "id": "collocate-world-all",
+    "token": "world",
+    "eraId": "all",
+    "count": 4,
+    "jointCount": 4,
+    "documentFrequency": 3,
+    "dispersion": 0.13,
+    "scoreType": "simple logDice",
+    "score": 8.656,
+    "scoreValue": 8.656,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 3,
+    "relatedSnippetIds": [
+      "snippet-1700-1799-2-all",
+      "snippet-1700-1799-5-all"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-world-all"
+  },
+  {
+    "id": "collocate-never-all",
+    "token": "never",
+    "eraId": "all",
+    "count": 4,
+    "jointCount": 4,
+    "documentFrequency": 4,
+    "dispersion": 0.174,
+    "scoreType": "simple logDice",
+    "score": 8.656,
+    "scoreValue": 8.656,
+    "windowSize": 5,
+    "categoryIds": [
+      "hyperbole_colloquial"
+    ],
+    "sourceTextCount": 4,
+    "relatedSnippetIds": [
+      "snippet-1700-1799-1-all",
+      "snippet-1900-1949-1-all"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-never-all"
+  },
+  {
+    "id": "collocate-life-all",
+    "token": "life",
+    "eraId": "all",
+    "count": 3,
+    "jointCount": 3,
+    "documentFrequency": 3,
+    "dispersion": 0.13,
+    "scoreType": "simple logDice",
+    "score": 8.245,
+    "scoreValue": 8.245,
+    "windowSize": 5,
+    "categoryIds": [
+      "eternity_religion",
+      "permanence_duration"
+    ],
+    "sourceTextCount": 3,
+    "relatedSnippetIds": [
+      "snippet-1700-1799-1-all",
+      "snippet-1700-1799-5-all",
+      "snippet-1850-1899-6-all"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-life-all"
+  },
+  {
+    "id": "collocate-always-all",
+    "token": "always",
+    "eraId": "all",
+    "count": 3,
+    "jointCount": 3,
+    "documentFrequency": 2,
+    "dispersion": 0.087,
+    "scoreType": "simple logDice",
+    "score": 8.245,
+    "scoreValue": 8.245,
+    "windowSize": 5,
+    "categoryIds": [
+      "hyperbole_colloquial"
+    ],
+    "sourceTextCount": 2,
+    "relatedSnippetIds": [
+      "snippet-1900-1949-2-all",
+      "snippet-1900-1949-5-all"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-always-all"
+  },
+  {
+    "id": "collocate-time-all",
+    "token": "time",
+    "eraId": "all",
+    "count": 3,
+    "jointCount": 3,
+    "documentFrequency": 2,
+    "dispersion": 0.087,
+    "scoreType": "simple logDice",
+    "score": 8.245,
+    "scoreValue": 8.245,
+    "windowSize": 5,
+    "categoryIds": [
+      "hyperbole_colloquial"
+    ],
+    "sourceTextCount": 2,
+    "relatedSnippetIds": [
+      "snippet-1700-1799-5-all",
+      "snippet-1850-1899-2-all"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-time-all"
+  },
+  {
+    "id": "collocate-lost-1800-1849",
+    "token": "lost",
+    "eraId": "1800-1849",
+    "count": 7,
+    "jointCount": 7,
+    "documentFrequency": 3,
+    "dispersion": 0.5,
+    "scoreType": "simple logDice",
+    "score": 10.785,
+    "scoreValue": 10.785,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 3,
+    "relatedSnippetIds": [
+      "snippet-1800-1849-3",
+      "snippet-1800-1849-6"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-lost-1800-1849"
+  },
+  {
+    "id": "collocate-remain-1800-1849",
+    "token": "remain",
+    "eraId": "1800-1849",
+    "count": 4,
+    "jointCount": 4,
+    "documentFrequency": 2,
+    "dispersion": 0.333,
+    "scoreType": "simple logDice",
+    "score": 10.011,
+    "scoreValue": 10.011,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 2,
+    "relatedSnippetIds": [],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-remain-1800-1849"
+  },
+  {
+    "id": "collocate-gone-1800-1849",
+    "token": "gone",
+    "eraId": "1800-1849",
+    "count": 3,
+    "jointCount": 3,
+    "documentFrequency": 2,
+    "dispersion": 0.333,
+    "scoreType": "simple logDice",
+    "score": 9.608,
+    "scoreValue": 9.608,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 2,
+    "relatedSnippetIds": [
+      "snippet-1800-1849-1"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-gone-1800-1849"
+  },
+  {
+    "id": "collocate-always-1800-1849",
+    "token": "always",
+    "eraId": "1800-1849",
+    "count": 3,
+    "jointCount": 3,
+    "documentFrequency": 2,
+    "dispersion": 0.333,
+    "scoreType": "simple logDice",
+    "score": 9.608,
+    "scoreValue": 9.608,
+    "windowSize": 5,
+    "categoryIds": [
+      "hyperbole_colloquial"
+    ],
+    "sourceTextCount": 2,
+    "relatedSnippetIds": [],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-always-1800-1849"
+  },
+  {
+    "id": "collocate-world-1800-1849",
+    "token": "world",
+    "eraId": "1800-1849",
+    "count": 2,
+    "jointCount": 2,
+    "documentFrequency": 1,
+    "dispersion": 0.167,
+    "scoreType": "simple logDice",
+    "score": 9.034,
+    "scoreValue": 9.034,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 1,
+    "relatedSnippetIds": [],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-world-1800-1849"
+  },
+  {
+    "id": "collocate-gone-1850-1899",
+    "token": "gone",
+    "eraId": "1850-1899",
+    "count": 15,
+    "jointCount": 15,
+    "documentFrequency": 4,
+    "dispersion": 0.364,
+    "scoreType": "simple logDice",
+    "score": 11.523,
+    "scoreValue": 11.523,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 4,
+    "relatedSnippetIds": [
+      "snippet-1850-1899-2",
+      "snippet-1850-1899-4",
+      "snippet-1850-1899-5"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-gone-1850-1899"
+  },
+  {
+    "id": "collocate-lost-1850-1899",
+    "token": "lost",
+    "eraId": "1850-1899",
+    "count": 8,
+    "jointCount": 8,
+    "documentFrequency": 5,
+    "dispersion": 0.455,
+    "scoreType": "simple logDice",
+    "score": 10.678,
+    "scoreValue": 10.678,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 5,
+    "relatedSnippetIds": [
+      "snippet-1850-1899-6"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-lost-1850-1899"
+  },
+  {
+    "id": "collocate-god-1850-1899",
+    "token": "god",
+    "eraId": "1850-1899",
+    "count": 5,
+    "jointCount": 5,
+    "documentFrequency": 1,
+    "dispersion": 0.091,
+    "scoreType": "simple logDice",
+    "score": 10.027,
+    "scoreValue": 10.027,
+    "windowSize": 5,
+    "categoryIds": [
+      "eternity_religion"
+    ],
+    "sourceTextCount": 1,
+    "relatedSnippetIds": [],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-god-1850-1899"
+  },
+  {
+    "id": "collocate-last-1850-1899",
+    "token": "last",
+    "eraId": "1850-1899",
+    "count": 4,
+    "jointCount": 4,
+    "documentFrequency": 3,
+    "dispersion": 0.273,
+    "scoreType": "simple logDice",
+    "score": 9.715,
+    "scoreValue": 9.715,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 3,
+    "relatedSnippetIds": [],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-last-1850-1899"
+  },
+  {
+    "id": "collocate-remain-1850-1899",
+    "token": "remain",
+    "eraId": "1850-1899",
+    "count": 4,
+    "jointCount": 4,
+    "documentFrequency": 2,
+    "dispersion": 0.182,
+    "scoreType": "simple logDice",
+    "score": 9.715,
+    "scoreValue": 9.715,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 2,
+    "relatedSnippetIds": [],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-remain-1850-1899"
+  },
+  {
+    "id": "collocate-live-1900-1949",
+    "token": "live",
+    "eraId": "1900-1949",
+    "count": 5,
+    "jointCount": 5,
+    "documentFrequency": 3,
+    "dispersion": 0.75,
+    "scoreType": "simple logDice",
+    "score": 11.83,
+    "scoreValue": 11.83,
+    "windowSize": 5,
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "sourceTextCount": 3,
+    "relatedSnippetIds": [
+      "snippet-1900-1949-3",
+      "snippet-1900-1949-4",
+      "snippet-1900-1949-5"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it matches a curated contextual category and passes the count/document-frequency filter.",
+    "inspectorId": "inspect-collocate-live-1900-1949"
+  }
+]

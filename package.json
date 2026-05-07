@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "data:forever:ngram": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_ngram_forever.ts",
+    "data:forever:gutenberg": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_gutenberg_forever.ts",
+    "data:forever:build": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/build_forever_dataset.ts",
+    "data:forever": "npm run data:forever:ngram && npm run data:forever:gutenberg && npm run data:forever:build"
   },
   "dependencies": {
     "next": "16.2.5",

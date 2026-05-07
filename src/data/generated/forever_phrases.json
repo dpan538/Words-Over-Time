@@ -1,0 +1,238 @@
+[
+  {
+    "id": "phrase-forever-and-ever-all",
+    "phrase": "forever and ever",
+    "eraId": "all",
+    "count": 3,
+    "jointCount": 3,
+    "documentFrequency": 2,
+    "dispersion": 0.087,
+    "scoreType": "simple logDice",
+    "scoreValue": 8.245,
+    "sourceTextCount": 2,
+    "sampleTitles": [
+      "The Adventures of Tom Sawyer",
+      "Anne of Green Gables"
+    ],
+    "categoryIds": [
+      "eternity_religion"
+    ],
+    "relatedSnippetIds": [
+      "snippet-1850-1899-3-all",
+      "snippet-1900-1949-1-all",
+      "snippet-1900-1949-2-all"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it has repeated phrase evidence across more than one source text.",
+    "inspectorId": "inspect-phrase-forever-and-ever-all"
+  },
+  {
+    "id": "phrase-live-forever-all",
+    "phrase": "live forever",
+    "eraId": "all",
+    "count": 4,
+    "jointCount": 4,
+    "documentFrequency": 3,
+    "dispersion": 0.13,
+    "scoreType": "simple logDice",
+    "scoreValue": 8.656,
+    "sourceTextCount": 3,
+    "sampleTitles": [
+      "War and Peace",
+      "The Great Gatsby",
+      "The Maltese Falcon"
+    ],
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "relatedSnippetIds": [
+      "snippet-1850-1899-1-all",
+      "snippet-1900-1949-3-all",
+      "snippet-1900-1949-4-all",
+      "snippet-1900-1949-5-all"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it has repeated phrase evidence across more than one source text.",
+    "inspectorId": "inspect-phrase-live-forever-all"
+  },
+  {
+    "id": "phrase-gone-forever-all",
+    "phrase": "gone forever",
+    "eraId": "all",
+    "count": 4,
+    "jointCount": 4,
+    "documentFrequency": 3,
+    "dispersion": 0.13,
+    "scoreType": "simple logDice",
+    "scoreValue": 8.656,
+    "sourceTextCount": 3,
+    "sampleTitles": [
+      "The Count of Monte Cristo",
+      "War and Peace",
+      "The Adventures of Tom Sawyer"
+    ],
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "relatedSnippetIds": [
+      "snippet-1800-1849-1-all",
+      "snippet-1850-1899-2-all",
+      "snippet-1850-1899-4-all",
+      "snippet-1850-1899-5-all"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it has repeated phrase evidence across more than one source text.",
+    "inspectorId": "inspect-phrase-gone-forever-all"
+  },
+  {
+    "id": "phrase-gone-forever-1800-1849",
+    "phrase": "gone forever",
+    "eraId": "1800-1849",
+    "count": 1,
+    "jointCount": 1,
+    "documentFrequency": 1,
+    "dispersion": 0.167,
+    "scoreType": "simple logDice",
+    "scoreValue": 8.046,
+    "sourceTextCount": 1,
+    "sampleTitles": [
+      "The Count of Monte Cristo"
+    ],
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "relatedSnippetIds": [
+      "snippet-1800-1849-1"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed as a targeted phrase because it was requested for the forever evidence layer and appears in the seed corpus.",
+    "inspectorId": "inspect-phrase-gone-forever-1800-1849"
+  },
+  {
+    "id": "phrase-forever-and-ever-1850-1899",
+    "phrase": "forever and ever",
+    "eraId": "1850-1899",
+    "count": 1,
+    "jointCount": 1,
+    "documentFrequency": 1,
+    "dispersion": 0.091,
+    "scoreType": "simple logDice",
+    "scoreValue": 7.743,
+    "sourceTextCount": 1,
+    "sampleTitles": [
+      "The Adventures of Tom Sawyer"
+    ],
+    "categoryIds": [
+      "eternity_religion"
+    ],
+    "relatedSnippetIds": [
+      "snippet-1850-1899-3"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed as a targeted phrase because it was requested for the forever evidence layer and appears in the seed corpus.",
+    "inspectorId": "inspect-phrase-forever-and-ever-1850-1899"
+  },
+  {
+    "id": "phrase-live-forever-1850-1899",
+    "phrase": "live forever",
+    "eraId": "1850-1899",
+    "count": 1,
+    "jointCount": 1,
+    "documentFrequency": 1,
+    "dispersion": 0.091,
+    "scoreType": "simple logDice",
+    "scoreValue": 7.743,
+    "sourceTextCount": 1,
+    "sampleTitles": [
+      "War and Peace"
+    ],
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "relatedSnippetIds": [
+      "snippet-1850-1899-1"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed as a targeted phrase because it was requested for the forever evidence layer and appears in the seed corpus.",
+    "inspectorId": "inspect-phrase-live-forever-1850-1899"
+  },
+  {
+    "id": "phrase-gone-forever-1850-1899",
+    "phrase": "gone forever",
+    "eraId": "1850-1899",
+    "count": 3,
+    "jointCount": 3,
+    "documentFrequency": 2,
+    "dispersion": 0.182,
+    "scoreType": "simple logDice",
+    "scoreValue": 9.309,
+    "sourceTextCount": 2,
+    "sampleTitles": [
+      "War and Peace",
+      "The Adventures of Tom Sawyer"
+    ],
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "relatedSnippetIds": [
+      "snippet-1850-1899-2",
+      "snippet-1850-1899-4",
+      "snippet-1850-1899-5"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it has repeated phrase evidence across more than one source text.",
+    "inspectorId": "inspect-phrase-gone-forever-1850-1899"
+  },
+  {
+    "id": "phrase-forever-and-ever-1900-1949",
+    "phrase": "forever and ever",
+    "eraId": "1900-1949",
+    "count": 2,
+    "jointCount": 2,
+    "documentFrequency": 1,
+    "dispersion": 0.25,
+    "scoreType": "simple logDice",
+    "scoreValue": 10.608,
+    "sourceTextCount": 1,
+    "sampleTitles": [
+      "Anne of Green Gables"
+    ],
+    "categoryIds": [
+      "eternity_religion"
+    ],
+    "relatedSnippetIds": [
+      "snippet-1900-1949-1",
+      "snippet-1900-1949-2"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed as a targeted phrase because it was requested for the forever evidence layer and appears in the seed corpus.",
+    "inspectorId": "inspect-phrase-forever-and-ever-1900-1949"
+  },
+  {
+    "id": "phrase-live-forever-1900-1949",
+    "phrase": "live forever",
+    "eraId": "1900-1949",
+    "count": 3,
+    "jointCount": 3,
+    "documentFrequency": 2,
+    "dispersion": 0.5,
+    "scoreType": "simple logDice",
+    "scoreValue": 11.159,
+    "sourceTextCount": 2,
+    "sampleTitles": [
+      "The Great Gatsby",
+      "The Maltese Falcon"
+    ],
+    "categoryIds": [
+      "permanence_duration"
+    ],
+    "relatedSnippetIds": [
+      "snippet-1900-1949-3",
+      "snippet-1900-1949-4",
+      "snippet-1900-1949-5"
+    ],
+    "displayEligible": true,
+    "displayReason": "Displayed because it has repeated phrase evidence across more than one source text.",
+    "inspectorId": "inspect-phrase-live-forever-1900-1949"
+  }
+]
