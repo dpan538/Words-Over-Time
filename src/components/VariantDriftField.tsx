@@ -6,6 +6,8 @@ import type {
   GeneratedFrequencySeries,
   GeneratedPrehistory,
 } from "@/types/foreverRealData";
+import { getSelectionMatch } from "@/lib/visualSelection";
+import type { SelectedItem, SelectedLayer } from "@/types/visualSelection";
 
 type PointerPosition = { x: number; y: number };
 
@@ -13,6 +15,8 @@ type VariantDriftFieldProps = {
   frequency: GeneratedFrequencySeries[];
   prehistory?: GeneratedPrehistory | null;
   selectedEra: ForeverEraId;
+  selectedItem?: SelectedItem | null;
+  selectedLayer?: SelectedLayer;
   activeInspectorId?: string;
   onHover: (inspectorId: string | null, position?: PointerPosition) => void;
   onInspect: (inspectorId: string, position?: PointerPosition) => void;
@@ -46,6 +50,15 @@ const pressureAnchors: PressureAnchor[] = [
   { id: "pressure-modern-snapshot", label: "Modern open-news context", period: "2024-2026", year: 2025, x: 1668, y: 610, color: "#2C9FC7", radius: 48 },
 ];
 
+const pressureCategoryIds: Record<string, string[]> = {
+  "pressure-attestation": [],
+  "pressure-devotional-print": ["eternity_religion"],
+  "pressure-literary-vow": ["romance_vow", "permanence_duration"],
+  "pressure-memory-loss": ["remembrance"],
+  "pressure-media-culture": ["hyperbole_colloquial", "permanence_duration"],
+  "pressure-modern-snapshot": ["digital_permanence", "hyperbole_colloquial"],
+};
+
 function xScale(year: number) {
   return left + ((year - 1500) / (2022 - 1500)) * (width - left - right);
 }
@@ -77,6 +90,8 @@ export function VariantDriftField({
   frequency,
   prehistory,
   selectedEra,
+  selectedItem,
+  selectedLayer,
   activeInspectorId,
   onHover,
   onInspect,
@@ -150,7 +165,7 @@ export function VariantDriftField({
             historical influence field
           </text>
           <text x={width - 76} y="52" textAnchor="end" className="fill-ink/58 font-mono text-[15px] font-black uppercase tracking-[0.14em]">
-            pressure anchors + Ngram curve / {selectedEra}
+            pressure anchors + Ngram curve / {selectedLayer ?? selectedEra}
           </text>
 
           {[1500, 1600, 1700, 1800, 1900, 2000, 2022].map((year) => (
@@ -167,14 +182,27 @@ export function VariantDriftField({
           ))}
 
           <path d={pathFrom(curveData)} fill="none" stroke="#050510" strokeWidth="16" strokeOpacity="0.07" strokeLinecap="round" strokeLinejoin="round" />
+          {(() => {
+            const match = getSelectionMatch(selectedItem, {
+              inspectorId: forever.inspectorId,
+              label: forever.label,
+              query: forever.query,
+              form: forever.query,
+              layer: "frequency",
+              kind: "form",
+            });
+            const active = activeId === forever.inspectorId || match === "active";
+            const related = match === "related";
+            const opacity = Boolean(selectedItem) && match === "unrelated" ? 0.34 : related ? 0.58 : focused && !active ? 0.24 : 0.88;
+            return (
           <path
             d={pathFrom(curveData)}
             fill="none"
             stroke="#F06B04"
-            strokeWidth="7"
+            strokeWidth={active ? 9 : related ? 7.5 : 7}
             strokeLinecap="round"
             strokeLinejoin="round"
-            opacity={focused && activeId !== forever.inspectorId ? 0.24 : 0.88}
+            opacity={opacity}
             className="cursor-crosshair transition duration-200"
             onMouseEnter={(event) => {
               setHoveredId(forever.inspectorId);
@@ -186,37 +214,63 @@ export function VariantDriftField({
               onInspect(forever.inspectorId, { x: event.clientX, y: event.clientY });
             }}
           />
+            );
+          })()}
           {forEver ? (
-            <path
-              d={pathFrom(spacedCurveData)}
-              fill="none"
-              stroke="#2C9FC7"
-              strokeWidth="4"
-              strokeDasharray="8 12"
-              strokeLinecap="round"
-              opacity={focused && activeId !== forEver.inspectorId ? 0.14 : 0.42}
-              className="cursor-crosshair transition duration-200"
-              onMouseEnter={(event) => {
-                setHoveredId(forEver.inspectorId);
-                onHover(forEver.inspectorId, { x: event.clientX, y: event.clientY });
-              }}
-              onMouseMove={(event) => onHover(forEver.inspectorId, { x: event.clientX, y: event.clientY })}
-              onClick={(event) => {
-                event.stopPropagation();
-                onInspect(forEver.inspectorId, { x: event.clientX, y: event.clientY });
-              }}
-            />
+            (() => {
+              const match = getSelectionMatch(selectedItem, {
+                inspectorId: forEver.inspectorId,
+                label: forEver.label,
+                query: forEver.query,
+                form: forEver.query,
+                layer: "frequency",
+                kind: "form",
+              });
+              const active = activeId === forEver.inspectorId || match === "active";
+              const related = match === "related";
+              const opacity = Boolean(selectedItem) && match === "unrelated" ? 0.14 : related ? 0.34 : focused && !active ? 0.14 : 0.42;
+              return (
+                <path
+                  d={pathFrom(spacedCurveData)}
+                  fill="none"
+                  stroke="#2C9FC7"
+                  strokeWidth={active ? 6.5 : 4}
+                  strokeDasharray="8 12"
+                  strokeLinecap="round"
+                  opacity={opacity}
+                  className="cursor-crosshair transition duration-200"
+                  onMouseEnter={(event) => {
+                    setHoveredId(forEver.inspectorId);
+                    onHover(forEver.inspectorId, { x: event.clientX, y: event.clientY });
+                  }}
+                  onMouseMove={(event) => onHover(forEver.inspectorId, { x: event.clientX, y: event.clientY })}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    onInspect(forEver.inspectorId, { x: event.clientX, y: event.clientY });
+                  }}
+                />
+              );
+            })()
           ) : null}
 
           {pressureAnchors.map((anchor, index) => {
             const curveY = yAtYear(Math.max(1500, Math.min(2022, anchor.year)));
             const anchorX = xScale(Math.max(1500, Math.min(2022, anchor.year)));
-            const active = activeId === anchor.id;
-            const dimmed = focused && !active;
+            const match = getSelectionMatch(selectedItem, {
+              inspectorId: anchor.id,
+              id: anchor.id,
+              label: anchor.label,
+              kind: "pressure",
+              layer: "influence",
+              categoryIds: pressureCategoryIds[anchor.id],
+            });
+            const active = activeId === anchor.id || match === "active";
+            const related = match === "related";
+            const dimmed = (focused || Boolean(selectedItem)) && !active && !related;
             return (
               <g
                 key={anchor.id}
-                opacity={dimmed ? 0.16 : 1}
+                opacity={dimmed ? 0.16 : related ? 0.7 : 1}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
                   setHoveredId(anchor.id);
@@ -270,13 +324,23 @@ export function VariantDriftField({
           })}
 
           {(prehistory?.records ?? []).slice(0, 5).map((record, index) => {
-            const active = activeId === record.id;
+            const match = getSelectionMatch(selectedItem, {
+              id: record.id,
+              inspectorId: record.id,
+              label: record.form,
+              form: record.normalizedForm || record.form,
+              query: record.normalizedForm || record.form,
+              kind: "prehistory",
+              layer: "prehistory",
+            });
+            const active = activeId === record.id || match === "active";
+            const related = match === "related";
             const xx = xScale(Math.max(1500, Math.min(2022, record.yearApproximation)));
             const yy = 710 + (index % 2) * 26;
             return (
               <g
                 key={record.id}
-                opacity={focused && !active ? 0.18 : 1}
+                opacity={(focused || Boolean(selectedItem)) && !active && !related ? 0.18 : related ? 0.62 : 1}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
                   setHoveredId(record.id);

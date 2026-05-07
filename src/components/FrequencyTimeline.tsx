@@ -6,6 +6,8 @@ import type {
   ForeverEraId,
   GeneratedFrequencySeries,
 } from "@/types/foreverRealData";
+import { getSelectionMatch } from "@/lib/visualSelection";
+import type { SelectedItem, SelectedLayer } from "@/types/visualSelection";
 
 type PointerPosition = { x: number; y: number };
 
@@ -13,6 +15,8 @@ type FrequencyTimelineProps = {
   series: GeneratedFrequencySeries[];
   eras: ForeverEra[];
   selectedEra: ForeverEraId;
+  selectedItem?: SelectedItem | null;
+  selectedLayer?: SelectedLayer;
   activeInspectorId?: string;
   onHover: (inspectorId: string | null, position?: PointerPosition) => void;
   onInspect: (inspectorId: string, position?: PointerPosition) => void;
@@ -37,6 +41,8 @@ export function FrequencyTimeline({
   series,
   eras,
   selectedEra,
+  selectedItem,
+  selectedLayer,
   activeInspectorId,
   onHover,
   onInspect,
@@ -141,13 +147,25 @@ export function FrequencyTimeline({
             </text>
           ) : null}
           <g transform={`translate(${padX} ${height - 64})`}>
-            {visibleSeries.map((item, index) => {
-              const active = activeInspectorId === item.inspectorId || localActiveId === item.inspectorId;
+          {visibleSeries.map((item, index) => {
+              const match = getSelectionMatch(selectedItem, {
+                inspectorId: item.inspectorId,
+                label: item.label,
+                query: item.query,
+                form: item.query.includes(" ") ? undefined : item.query,
+                phrase: item.query.includes(" ") ? item.query : undefined,
+                layer: "frequency",
+                kind: item.query.includes(" ") ? "phrase" : "form",
+              });
+              const selectionActive = match === "active";
+              const selectionRelated = match === "related" || (selectedLayer === "frequency" && match !== "unrelated");
+              const active = activeInspectorId === item.inspectorId || localActiveId === item.inspectorId || selectionActive;
+              const dimmed = Boolean(selectedItem) && match === "unrelated";
               return (
                 <g
                   key={item.id}
                   transform={`translate(${index * 218} 0)`}
-                  opacity={localActiveId && !active ? 0.34 : 1}
+                  opacity={dimmed ? 0.2 : selectionRelated ? 0.68 : localActiveId && !active ? 0.34 : 1}
                   className="cursor-crosshair"
                   onMouseEnter={(event) => {
                     setLocalActiveId(item.inspectorId);
@@ -161,7 +179,7 @@ export function FrequencyTimeline({
                     onInspect(item.inspectorId, { x: event.clientX, y: event.clientY });
                   }}
                 >
-                  <line x1="0" x2="34" y1="0" y2="0" stroke={item.color} strokeWidth={active ? 7 : 4} strokeLinecap="round" />
+                  <line x1="0" x2="34" y1="0" y2="0" stroke={item.color} strokeWidth={active ? 7 : selectionRelated ? 5 : 4} strokeLinecap="round" />
                   <text
                     x="44"
                     y="5"
@@ -181,8 +199,29 @@ export function FrequencyTimeline({
                 y: y(point.frequencyPerMillion),
               })),
             );
-            const active = activeInspectorId === item.inspectorId || localActiveId === item.inspectorId;
-            const focusActive = Boolean(activeInspectorId || localActiveId);
+            const match = getSelectionMatch(selectedItem, {
+              inspectorId: item.inspectorId,
+              label: item.label,
+              query: item.query,
+              form: item.query.includes(" ") ? undefined : item.query,
+              phrase: item.query.includes(" ") ? item.query : undefined,
+              layer: "frequency",
+              kind: item.query.includes(" ") ? "phrase" : "form",
+            });
+            const selectionActive = match === "active";
+            const selectionRelated = match === "related";
+            const active = activeInspectorId === item.inspectorId || localActiveId === item.inspectorId || selectionActive;
+            const focusActive = Boolean(activeInspectorId || localActiveId || selectedItem);
+            const fadedBySelection = Boolean(selectedItem) && match === "unrelated";
+            const lineOpacity = fadedBySelection
+              ? 0.1
+              : active
+                ? 0.98
+                : selectionRelated
+                  ? 0.44
+                  : focusActive
+                    ? 0.12
+                    : 0.74;
 
             return (
               <g key={item.id}>
@@ -201,8 +240,8 @@ export function FrequencyTimeline({
                   stroke={item.color}
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={active ? 9 : index === 0 ? 5.2 : 4.2}
-                  opacity={focusActive && !active ? 0.12 : active ? 0.98 : 0.74}
+                  strokeWidth={active ? 9 : selectionRelated ? 6.4 : index === 0 ? 5.2 : 4.2}
+                  opacity={lineOpacity}
                   className="cursor-crosshair transition duration-200 hover:opacity-100"
                   onMouseEnter={(event) => {
                     setLocalActiveId(item.inspectorId);

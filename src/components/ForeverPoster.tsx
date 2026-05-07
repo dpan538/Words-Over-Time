@@ -16,10 +16,27 @@ import type {
   ForeverGeneratedDataset,
 } from "@/types/foreverRealData";
 import type { InspectorEntry } from "@/types/inspector";
+import type { SelectedItem, SelectedLayer } from "@/types/visualSelection";
 
 type ForeverPosterProps = {
   dataset: ForeverGeneratedDataset;
 };
+
+type NarrativeBridgeProps = {
+  children: string[];
+};
+
+function NarrativeBridge({ children }: NarrativeBridgeProps) {
+  return (
+    <div className="mx-auto my-8 max-w-[72ch] border-l-2 border-fire/70 pl-5 pr-2 sm:my-12 lg:my-14">
+      <div className="space-y-3 text-[clamp(0.98rem,1.05vw,1.12rem)] font-bold leading-7 text-ink/68">
+        {children.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 const culturalPressureAnchors = [
   {
@@ -72,8 +89,29 @@ const culturalPressureAnchors = [
   },
 ];
 
+const pressureCategoryIds: Record<string, string[]> = {
+  "pressure-attestation": [],
+  "pressure-devotional-print": ["eternity_religion"],
+  "pressure-literary-vow": ["romance_vow", "permanence_duration"],
+  "pressure-memory-loss": ["remembrance"],
+  "pressure-media-culture": ["hyperbole_colloquial", "permanence_duration"],
+  "pressure-modern-snapshot": ["digital_permanence", "hyperbole_colloquial"],
+};
+
+function unique(values: string[]) {
+  return Array.from(new Set(values.filter(Boolean)));
+}
+
+function layerForEra(eraId: ForeverEraId): SelectedLayer {
+  if (eraId === "recent" || eraId === "2000-2019") return "modern";
+  if (eraId === "all") return null;
+  return "archival";
+}
+
 export function ForeverPoster({ dataset }: ForeverPosterProps) {
   const [selectedEra, setSelectedEra] = useState<ForeverEraId>("all");
+  const [selectedItem, setSelectedItem] = useState<SelectedItem | null>(null);
+  const [selectedLayer, setSelectedLayer] = useState<SelectedLayer>(null);
   const [hoveredInspectorId, setHoveredInspectorId] = useState<string | null>(null);
   const [pinnedInspectorId, setPinnedInspectorId] = useState<string | null>(null);
   const [menuPosition, setMenuPosition] = useState<{ x: number; y: number } | undefined>();
@@ -226,6 +264,225 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
     () => new Map([...dataset.inspectors, ...generatedInspectors].map((entry) => [entry.id, entry])),
     [dataset.inspectors, generatedInspectors],
   );
+  const selectionById = useMemo(() => {
+    const map = new Map<string, SelectedItem>();
+    const put = (item: SelectedItem) => map.set(item.id, item);
+
+    dataset.frequency.forEach((series) => {
+      const phraseLike = series.query.includes(" ");
+      put({
+        id: series.inspectorId,
+        label: series.label,
+        kind: phraseLike ? "phrase" : "form",
+        layer: "frequency",
+        eraId: "all",
+        categoryIds: [],
+        phrase: phraseLike ? series.query : undefined,
+        form: phraseLike ? undefined : series.query,
+        query: series.query,
+        relatedSnippetIds: [],
+        relatedInspectorIds: [series.inspectorId],
+        sourceIds: ["google-ngram"],
+      });
+    });
+
+    dataset.phrases.forEach((phrase) => {
+      const matchingFrequency = dataset.frequency.find(
+        (series) => series.query.toLowerCase() === phrase.phrase.toLowerCase(),
+      );
+      put({
+        id: phrase.inspectorId,
+        label: phrase.phrase,
+        kind: "phrase",
+        layer: "archival",
+        eraId: phrase.eraId,
+        categoryIds: phrase.categoryIds,
+        phrase: phrase.phrase,
+        query: phrase.phrase,
+        relatedSnippetIds: phrase.relatedSnippetIds,
+        relatedInspectorIds: unique([phrase.inspectorId, matchingFrequency?.inspectorId ?? ""]),
+        sourceIds: ["project-gutenberg"],
+      });
+    });
+
+    dataset.collocates.forEach((collocate) => {
+      put({
+        id: collocate.inspectorId,
+        label: collocate.token,
+        kind: "collocate",
+        layer: "archival",
+        eraId: collocate.eraId,
+        categoryIds: collocate.categoryIds,
+        relatedSnippetIds: collocate.relatedSnippetIds,
+        relatedInspectorIds: [collocate.inspectorId],
+        sourceIds: ["project-gutenberg"],
+      });
+    });
+
+    dataset.snippets.forEach((snippet) => {
+      const matchingFrequency = dataset.frequency.find(
+        (series) => series.query.toLowerCase() === snippet.phrase.toLowerCase(),
+      );
+      put({
+        id: snippet.inspectorId,
+        label: snippet.phrase || snippet.title,
+        kind: "snippet",
+        layer: "archival",
+        eraId: snippet.eraId,
+        categoryIds: snippet.categoryIds,
+        phrase: snippet.phrase,
+        query: snippet.phrase,
+        relatedSnippetIds: [snippet.id],
+        relatedInspectorIds: unique([snippet.inspectorId, matchingFrequency?.inspectorId ?? ""]),
+        sourceIds: ["project-gutenberg"],
+      });
+    });
+
+    dataset.categories.forEach((category) => {
+      const relatedSnippetIds = unique([
+        ...dataset.phrases
+          .filter((phrase) => phrase.categoryIds.includes(category.id))
+          .flatMap((phrase) => phrase.relatedSnippetIds),
+        ...dataset.collocates
+          .filter((collocate) => collocate.categoryIds.includes(category.id))
+          .flatMap((collocate) => collocate.relatedSnippetIds),
+        ...dataset.snippets
+          .filter((snippet) => snippet.categoryIds.includes(category.id))
+          .map((snippet) => snippet.id),
+      ]);
+      const categoryInspectorIds = [
+        `inspect-category-${category.id}-all`,
+        ...category.eraScores.map((score) => score.inspectorId),
+        ...dataset.ledger
+          .filter((cell) => cell.categoryId === category.id)
+          .map((cell) => cell.inspectorId),
+      ];
+      unique(categoryInspectorIds).forEach((id) => {
+        put({
+          id,
+          label: category.label,
+          kind: "category",
+          layer: "context",
+          eraId: id.endsWith("-recent") ? "recent" : "all",
+          categoryIds: [category.id],
+          relatedSnippetIds,
+          relatedInspectorIds: unique(categoryInspectorIds),
+          sourceIds: ["project-gutenberg", "wikinews"],
+        });
+      });
+    });
+
+    dataset.prehistory?.records.forEach((record) => {
+      put({
+        id: record.id,
+        label: record.form,
+        kind: "prehistory",
+        layer: "prehistory",
+        categoryIds: [],
+        form: record.normalizedForm || record.form,
+        query: record.normalizedForm || record.form,
+        relatedSnippetIds: [],
+        relatedInspectorIds: [record.id],
+        sourceIds: [record.sourceName],
+      });
+    });
+
+    dataset.modernContext?.phrases.forEach((phrase) => {
+      const matchingFrequency = dataset.frequency.find(
+        (series) => series.query.toLowerCase() === phrase.phrase.toLowerCase(),
+      );
+      put({
+        id: phrase.id,
+        label: phrase.phrase,
+        kind: "phrase",
+        layer: "modern",
+        eraId: "recent",
+        categoryIds: phrase.categoryIds,
+        phrase: phrase.phrase,
+        query: phrase.phrase,
+        relatedSnippetIds: phrase.relatedSnippetIds,
+        relatedInspectorIds: unique([phrase.id, matchingFrequency?.inspectorId ?? ""]),
+        sourceIds: ["wikinews"],
+      });
+    });
+
+    dataset.modernContext?.collocates.forEach((collocate) => {
+      put({
+        id: collocate.id,
+        label: collocate.token,
+        kind: "collocate",
+        layer: "modern",
+        eraId: "recent",
+        categoryIds: collocate.categoryIds,
+        relatedSnippetIds: collocate.relatedSnippetIds,
+        relatedInspectorIds: [collocate.id],
+        sourceIds: ["wikinews"],
+      });
+    });
+
+    dataset.modernContext?.snippets.forEach((snippet) => {
+      const matchingFrequency = dataset.frequency.find(
+        (series) => series.query.toLowerCase() === snippet.query.toLowerCase(),
+      );
+      put({
+        id: snippet.id,
+        label: snippet.query,
+        kind: "snippet",
+        layer: "modern",
+        eraId: "recent",
+        categoryIds: snippet.categoryIds,
+        phrase: snippet.query,
+        query: snippet.query,
+        relatedSnippetIds: [snippet.id],
+        relatedInspectorIds: unique([snippet.id, matchingFrequency?.inspectorId ?? ""]),
+        sourceIds: ["wikinews"],
+      });
+    });
+
+    culturalPressureAnchors.forEach((anchor) => {
+      put({
+        id: anchor.id,
+        label: anchor.title,
+        kind: "pressure",
+        layer: "influence",
+        categoryIds: pressureCategoryIds[anchor.id] ?? [],
+        query: anchor.value,
+        relatedSnippetIds: [],
+        relatedInspectorIds: [anchor.id],
+        sourceIds: [anchor.source],
+      });
+    });
+
+    dataset.atlas.nodes.forEach((node) => {
+      const categoryIds =
+        node.column === "contextual_category"
+          ? [node.id.replace(/^category-/, "").replaceAll("-", "_")]
+          : [];
+      put({
+        id: node.inspectorId,
+        label: node.label,
+        kind:
+          node.column === "form"
+            ? "form"
+            : node.column === "phrase"
+              ? "phrase"
+              : node.column === "collocate"
+                ? "collocate"
+                : "category",
+        layer: node.sourceCorpus.toLowerCase().includes("wikinews") ? "modern" : "archival",
+        eraId: node.eraId === "all" ? "all" : node.eraId,
+        categoryIds,
+        phrase: node.column === "phrase" ? node.label : undefined,
+        form: node.column === "form" ? node.label : undefined,
+        query: node.label,
+        relatedSnippetIds: node.relatedSnippetIds,
+        relatedInspectorIds: [node.inspectorId],
+        sourceIds: [node.sourceCorpus],
+      });
+    });
+
+    return map;
+  }, [dataset]);
   const activeInspectorId = pinnedInspectorId ?? hoveredInspectorId ?? undefined;
   const activeEntry = activeInspectorId ? inspectorById.get(activeInspectorId) : undefined;
 
@@ -238,6 +495,9 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
   const handleInspect = (inspectorId: string, position?: { x: number; y: number }) => {
     setPinnedInspectorId(inspectorId);
     setHoveredInspectorId(null);
+    const nextSelection = selectionById.get(inspectorId) ?? null;
+    setSelectedItem(nextSelection);
+    setSelectedLayer(nextSelection?.layer ?? null);
     if (position) setMenuPosition(position);
   };
 
@@ -246,6 +506,25 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
     setPinnedInspectorId(null);
     setHoveredInspectorId(null);
     setMenuPosition(undefined);
+    if (eraId === "all") {
+      setSelectedItem(null);
+      setSelectedLayer(null);
+      return;
+    }
+    const era = dataset.eras.find((item) => item.id === eraId);
+    const layer = layerForEra(eraId);
+    setSelectedItem({
+      id: `era-${eraId}`,
+      label: era?.label ?? eraId,
+      kind: "era",
+      layer,
+      eraId,
+      categoryIds: [],
+      relatedSnippetIds: [],
+      relatedInspectorIds: [],
+      sourceIds: layer === "modern" ? ["wikinews"] : ["project-gutenberg"],
+    });
+    setSelectedLayer(layer);
   };
 
   return (
@@ -304,11 +583,20 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
               series={dataset.frequency}
               eras={dataset.eras}
               selectedEra={selectedEra}
+              selectedItem={selectedItem}
+              selectedLayer={selectedLayer}
               activeInspectorId={activeInspectorId}
               onHover={handleHover}
               onInspect={handleInspect}
             />
           </PosterSection>
+
+          <NarrativeBridge
+            children={[
+              "Frequency shows the visible surface of the word: when a form rises, falls, or persists in print.",
+              "But a line does not explain what the word is doing. To read forever historically, the next layer looks for pressure points around the curve, where form, culture, and usage begin to pull against each other.",
+            ]}
+          />
 
           <PosterSection
             eyebrow="02 / historical influence field"
@@ -318,11 +606,20 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
               frequency={dataset.frequency}
               prehistory={dataset.prehistory}
               selectedEra={selectedEra}
+              selectedItem={selectedItem}
+              selectedLayer={selectedLayer}
               activeInspectorId={activeInspectorId}
               onHover={handleHover}
               onInspect={handleInspect}
             />
           </PosterSection>
+
+          <NarrativeBridge
+            children={[
+              "The influence field treats the curve as a cultural trace rather than a final answer.",
+              "Some pressure points come from devotional language, some from literary permanence, and some from modern media. The next map turns from historical pressure to the word's immediate relationships: forms, phrases, collocates, and contextual anchors.",
+            ]}
+          />
 
           <PosterSection
             eyebrow="03 / relational constellation"
@@ -335,11 +632,20 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
               snippets={dataset.snippets}
               modernContext={dataset.modernContext}
               selectedEra={selectedEra}
+              selectedItem={selectedItem}
+              selectedLayer={selectedLayer}
               activeInspectorId={activeInspectorId}
               onHover={handleHover}
               onInspect={handleInspect}
             />
           </PosterSection>
+
+          <NarrativeBridge
+            children={[
+              "The constellation shows forever as a network of repeated attachments.",
+              "A phrase, a collocate, or a category is not a meaning by itself, but it can point toward a local use. The next visual compresses those local signals into a more abstract semantic object.",
+            ]}
+          />
 
           <PosterSection
             eyebrow="04 / context signal field"
@@ -351,11 +657,20 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
               eras={dataset.eras}
               modernContext={dataset.modernContext}
               selectedEra={selectedEra}
+              selectedItem={selectedItem}
+              selectedLayer={selectedLayer}
               activeInspectorId={activeInspectorId}
               onHover={handleHover}
               onInspect={handleInspect}
             />
           </PosterSection>
+
+          <NarrativeBridge
+            children={[
+              "The sphere is not a complete model of meaning. It is a visual summary of available contextual signals: archival evidence on one side, a modern snapshot on another, and a visible gap where comparable context is still missing.",
+              "The final archive returns from abstraction to evidence. Here, the project stops treating forever as a curve or constellation and returns to dated traces.",
+            ]}
+          />
 
           <PosterSection
             eyebrow="05 / evidence archive"
@@ -371,12 +686,24 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
               frequency={dataset.frequency}
               modernContext={dataset.modernContext}
               selectedEra={selectedEra}
+              selectedItem={selectedItem}
+              selectedLayer={selectedLayer}
               activeInspectorId={activeInspectorId}
-              highlightedSnippetIds={activeEntry?.relatedSnippetIds}
+              highlightedSnippetIds={unique([
+                ...(activeEntry?.relatedSnippetIds ?? []),
+                ...(selectedItem?.relatedSnippetIds ?? []),
+              ])}
               onHover={handleHover}
               onInspect={handleInspect}
             />
           </PosterSection>
+
+          <NarrativeBridge
+            children={[
+              "Together, these panels do not claim to define forever once and for all.",
+              "They show how one word can be traced through form, frequency, context, evidence, and absence. The result is not a complete history, but a visual reading of what the available data allows us to see.",
+            ]}
+          />
 
           <div className="border-t border-ink/80 pb-12 pt-8">
             <div className="mt-8 flex flex-wrap gap-4 font-mono text-[0.68rem] font-black uppercase tracking-[0.16em]">
@@ -399,6 +726,8 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           setPinnedInspectorId(null);
           setHoveredInspectorId(null);
           setMenuPosition(undefined);
+          setSelectedItem(null);
+          setSelectedLayer(null);
         }}
       />
     </main>

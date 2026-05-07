@@ -12,6 +12,8 @@ import type {
   GeneratedPrehistory,
   GeneratedSnippet,
 } from "@/types/foreverRealData";
+import { getSelectionMatch } from "@/lib/visualSelection";
+import type { SelectedItem, SelectedLayer } from "@/types/visualSelection";
 
 type PointerPosition = { x: number; y: number };
 
@@ -25,6 +27,8 @@ type EvidenceArchiveProps = {
   frequency: GeneratedFrequencySeries[];
   modernContext?: GeneratedModernContext | null;
   selectedEra: ForeverEraId;
+  selectedItem?: SelectedItem | null;
+  selectedLayer?: SelectedLayer;
   activeInspectorId?: string;
   highlightedSnippetIds?: string[];
   onHover: (inspectorId: string | null, position?: PointerPosition) => void;
@@ -115,6 +119,8 @@ export function EvidenceArchive({
   frequency,
   modernContext,
   selectedEra,
+  selectedItem,
+  selectedLayer,
   activeInspectorId,
   highlightedSnippetIds = [],
   onHover,
@@ -123,7 +129,10 @@ export function EvidenceArchive({
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const activeId = activeInspectorId ?? hoveredId;
   const selectedEraRecord = eras.find((era) => era.id === selectedEra);
-  const highlightSet = useMemo(() => new Set(highlightedSnippetIds), [highlightedSnippetIds]);
+  const highlightSet = useMemo(
+    () => new Set([...highlightedSnippetIds, ...(selectedItem?.relatedSnippetIds ?? [])]),
+    [highlightedSnippetIds, selectedItem],
+  );
   const focused = Boolean(activeId || highlightedSnippetIds.length);
 
   const visibleArchiveSnippets = useMemo(
@@ -179,7 +188,7 @@ export function EvidenceArchive({
             evidence atlas / layered archive map
           </text>
           <text x={width - 76} y="54" textAnchor="end" className="fill-ink/58 font-mono text-[15px] font-black uppercase tracking-[0.13em]">
-            {selectedEraRecord?.label ?? selectedEra}
+            {selectedLayer ?? selectedEraRecord?.label ?? selectedEra}
           </text>
 
           {[1375, 1500, 1700, 1726, 1819, 1930, 2024, 2026].map((year) => (
@@ -216,14 +225,24 @@ export function EvidenceArchive({
           ))}
 
           {(prehistory?.records ?? []).map((record, index) => {
-            const active = activeId === record.id;
+            const match = getSelectionMatch(selectedItem, {
+              id: record.id,
+              inspectorId: record.id,
+              label: record.form,
+              form: record.normalizedForm || record.form,
+              query: record.normalizedForm || record.form,
+              kind: "prehistory",
+              layer: "prehistory",
+            });
+            const active = activeId === record.id || match === "active";
+            const related = match === "related";
             const xx = x(record.yearApproximation);
             const yy = rows.attestation + (index % 3) * 34;
             const lines = wrapWords(`${record.form} ${record.dateLabel}`, 18);
             return (
               <g
                 key={record.id}
-                opacity={focused && !active ? 0.18 : 1}
+                opacity={(focused || Boolean(selectedItem)) && !active && !related ? 0.18 : related ? 0.66 : 1}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
                   setHoveredId(record.id);
@@ -249,13 +268,23 @@ export function EvidenceArchive({
           })}
 
           {frequency.map((series, index) => {
-            const active = activeId === series.inspectorId;
+            const match = getSelectionMatch(selectedItem, {
+              inspectorId: series.inspectorId,
+              label: series.label,
+              query: series.query,
+              form: series.query.includes(" ") ? undefined : series.query,
+              phrase: series.query.includes(" ") ? series.query : undefined,
+              kind: series.query.includes(" ") ? "phrase" : "form",
+              layer: "frequency",
+            });
+            const active = activeId === series.inspectorId || match === "active";
+            const related = match === "related";
             const yy = rows.ngram - 18 + index * 40;
             const lines = wrapWords(series.query, 18);
             return (
               <g
                 key={series.id}
-                opacity={focused && !active ? 0.16 : 1}
+                opacity={(focused || Boolean(selectedItem)) && !active && !related ? 0.14 : related ? 0.62 : 1}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
                   setHoveredId(series.inspectorId);
@@ -283,6 +312,13 @@ export function EvidenceArchive({
 
           {visibleLedger.slice(0, 18).map((cell, index) => {
             const color = colors[cell.categoryId] ?? "#050510";
+            const match = getSelectionMatch(selectedItem, {
+              inspectorId: cell.inspectorId,
+              kind: "category",
+              layer: "archival",
+              eraId: cell.eraId,
+              categoryIds: [cell.categoryId],
+            });
             const yy = rows.archive - 88 + (index % 6) * 22;
             const xx = x(1726) + Math.floor(index / 6) * 210 + (index % 2) * 26;
             return (
@@ -295,7 +331,7 @@ export function EvidenceArchive({
                 stroke={color}
                 strokeWidth={cell.evidenceStrength === "strong" ? 5 : cell.evidenceStrength === "moderate" ? 3.6 : 2.5}
                 strokeLinecap="round"
-                opacity="0.52"
+                opacity={Boolean(selectedItem) && match === "unrelated" ? 0.12 : match === "active" ? 0.9 : match === "related" ? 0.66 : 0.52}
               />
             );
           })}
@@ -305,14 +341,24 @@ export function EvidenceArchive({
             const label = "phrase" in item ? item.phrase : item.token;
             const support = item.count;
             const color = categoryColor(item.categoryIds);
-            const active = activeId === id;
+            const match = getSelectionMatch(selectedItem, {
+              inspectorId: id,
+              label,
+              phrase: "phrase" in item ? item.phrase : undefined,
+              kind: "phrase" in item ? "phrase" : "collocate",
+              layer: "archival",
+              eraId: item.eraId,
+              categoryIds: item.categoryIds,
+            });
+            const active = activeId === id || match === "active";
+            const related = match === "related";
             const xx = x(1726) + 18 + Math.floor(index / 5) * 286 + (index % 2) * 28;
             const yy = rows.archive + 50 + (index % 5) * 42;
             const lines = wrapWords(label, 18);
             return (
               <g
                 key={`${id}-${index}`}
-                opacity={focused && !active ? 0.16 : 1}
+                opacity={(focused || Boolean(selectedItem)) && !active && !related ? 0.14 : related ? 0.68 : 1}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
                   setHoveredId(id);
@@ -347,13 +393,25 @@ export function EvidenceArchive({
           {visibleArchiveSnippets.map((snippet, index) => {
             const category = firstCategory(snippet.categoryIds);
             const lane = categoryLane[category] ?? 2;
-            const active = activeId === snippet.inspectorId || highlightSet.has(snippet.id);
+            const match = getSelectionMatch(selectedItem, {
+              id: snippet.id,
+              inspectorId: snippet.inspectorId,
+              label: snippet.phrase,
+              phrase: snippet.phrase,
+              kind: "snippet",
+              layer: "archival",
+              eraId: snippet.eraId,
+              categoryIds: snippet.categoryIds,
+              snippetId: snippet.id,
+            });
+            const active = activeId === snippet.inspectorId || highlightSet.has(snippet.id) || match === "active";
+            const related = match === "related";
             const xx = x(snippet.year) + ((index % 3) - 1) * 10;
             const yy = rows.archive + 292 + lane * 34 + (index % 2) * 10;
             return (
               <g
                 key={snippet.id}
-                opacity={focused && !active ? 0.12 : 1}
+                opacity={(focused || Boolean(selectedItem)) && !active && !related ? 0.12 : related ? 0.66 : 1}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
                   setHoveredId(snippet.inspectorId);
@@ -388,14 +446,26 @@ export function EvidenceArchive({
           })}
 
           {(modernContext?.snippets ?? []).map((snippet, index) => {
-            const active = activeId === snippet.id;
+            const match = getSelectionMatch(selectedItem, {
+              id: snippet.id,
+              inspectorId: snippet.id,
+              label: snippet.query,
+              phrase: snippet.query,
+              kind: "snippet",
+              layer: "modern",
+              eraId: snippet.eraId,
+              categoryIds: snippet.categoryIds,
+              snippetId: snippet.id,
+            });
+            const active = activeId === snippet.id || highlightSet.has(snippet.id) || match === "active";
+            const related = match === "related";
             const xx = x(snippet.year) + Math.floor(index / 5) * 48;
             const yy = rows.modern - 18 + (index % 5) * 44;
             const lines = index < 5 ? wrapWords(snippet.query, 16) : [];
             return (
               <g
                 key={snippet.id}
-                opacity={focused && !active ? 0.12 : 1}
+                opacity={(focused || Boolean(selectedItem)) && !active && !related ? 0.12 : related ? 0.66 : 1}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
                   setHoveredId(snippet.id);

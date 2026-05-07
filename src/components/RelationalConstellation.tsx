@@ -9,6 +9,8 @@ import type {
   GeneratedPhrase,
   GeneratedSnippet,
 } from "@/types/foreverRealData";
+import { getSelectionMatch } from "@/lib/visualSelection";
+import type { SelectedItem, SelectedLayer } from "@/types/visualSelection";
 
 type PointerPosition = { x: number; y: number };
 
@@ -19,6 +21,8 @@ type RelationalConstellationProps = {
   snippets: GeneratedSnippet[];
   modernContext?: GeneratedModernContext | null;
   selectedEra: ForeverEraId;
+  selectedItem?: SelectedItem | null;
+  selectedLayer?: SelectedLayer;
   activeInspectorId?: string;
   onHover: (inspectorId: string | null, position?: PointerPosition) => void;
   onInspect: (inspectorId: string, position?: PointerPosition) => void;
@@ -169,6 +173,8 @@ export function RelationalConstellation({
   snippets,
   modernContext,
   selectedEra,
+  selectedItem,
+  selectedLayer,
   activeInspectorId,
   onHover,
   onInspect,
@@ -518,7 +524,7 @@ export function RelationalConstellation({
             radial relational constellation
           </text>
           <text x={width - 76} y="54" textAnchor="end" className="fill-ink/58 font-mono text-[15px] font-black uppercase tracking-[0.13em]">
-            archive and modern snapshot kept apart
+            archive and modern snapshot kept apart / {selectedLayer ?? "all layers"}
           </text>
 
           {[
@@ -559,8 +565,16 @@ export function RelationalConstellation({
             const source = nodesById.get(edge.source);
             const target = nodesById.get(edge.target);
             if (!source || !target) return null;
-            const active = connectedIds.has(edge.id) || activeId === edge.inspectorId;
-            const dimmed = focused && !active;
+            const match = getSelectionMatch(selectedItem, {
+              inspectorId: edge.inspectorId,
+              label: `${source.label} ${target.label}`,
+              kind: edge.relation,
+              layer: source.layer === "shared" ? target.layer : source.layer,
+              categoryIds: [...source.categoryIds, ...target.categoryIds],
+            });
+            const active = connectedIds.has(edge.id) || activeId === edge.inspectorId || match === "active";
+            const related = match === "related";
+            const dimmed = (focused || Boolean(selectedItem)) && !active && !related;
             const bend = edge.relation === "category" ? 0.1 : edge.relation === "collocate" ? -0.18 : 0.2;
             return (
               <path
@@ -570,7 +584,7 @@ export function RelationalConstellation({
                 stroke={edge.color}
                 strokeWidth={active ? edge.weight + 2 : edge.weight}
                 strokeLinecap="round"
-                strokeOpacity={dimmed ? 0.045 : active ? 0.9 : edge.relation === "snippet" ? 0.035 : edge.relation === "collocate" ? 0.16 : 0.38}
+                strokeOpacity={dimmed ? 0.035 : active ? 0.9 : related ? 0.42 : edge.relation === "snippet" ? 0.035 : edge.relation === "collocate" ? 0.16 : 0.38}
                 strokeDasharray={edge.relation === "collocate" || edge.relation === "snippet" ? "3 9" : undefined}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
@@ -587,8 +601,19 @@ export function RelationalConstellation({
           })}
 
           {nodes.map((node) => {
-            const active = connectedIds.has(node.id) || activeId === node.inspectorId;
-            const dimmed = focused && !active;
+            const match = getSelectionMatch(selectedItem, {
+              id: node.id,
+              inspectorId: node.inspectorId,
+              label: node.label,
+              phrase: node.kind === "phrase" ? node.label : undefined,
+              form: node.kind === "center" ? "forever" : undefined,
+              kind: node.kind,
+              layer: node.layer,
+              categoryIds: node.categoryIds,
+            });
+            const active = connectedIds.has(node.id) || activeId === node.inspectorId || match === "active";
+            const related = match === "related";
+            const dimmed = (focused || Boolean(selectedItem)) && !active && !related;
             const lines = wrapWords(node.label, node.kind === "phrase" ? 17 : 16);
             const anchor = labelAnchor(node.x);
             const computedLabelX = anchor === "start" ? node.x + node.radius + 14 : anchor === "end" ? node.x - node.radius - 14 : node.x;
@@ -600,7 +625,7 @@ export function RelationalConstellation({
             return (
               <g
                 key={node.id}
-                opacity={dimmed ? 0.15 : 1}
+                opacity={dimmed ? (node.kind === "center" ? 0.42 : 0.12) : related ? 0.7 : 1}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
                   setHoveredId(node.inspectorId);

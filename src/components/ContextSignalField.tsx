@@ -8,6 +8,8 @@ import type {
   GeneratedLedgerCell,
   GeneratedModernContext,
 } from "@/types/foreverRealData";
+import { getSelectionMatch } from "@/lib/visualSelection";
+import type { SelectedItem, SelectedLayer } from "@/types/visualSelection";
 
 type PointerPosition = { x: number; y: number };
 
@@ -17,6 +19,8 @@ type ContextSignalFieldProps = {
   eras: ForeverEra[];
   modernContext?: GeneratedModernContext | null;
   selectedEra: ForeverEraId;
+  selectedItem?: SelectedItem | null;
+  selectedLayer?: SelectedLayer;
   activeInspectorId?: string;
   onHover: (inspectorId: string | null, position?: PointerPosition) => void;
   onInspect: (inspectorId: string, position?: PointerPosition) => void;
@@ -45,6 +49,8 @@ type OrbitMark = {
   color: string;
   radius: number;
   opacity: number;
+  categoryIds: string[];
+  layer: "archival" | "modern";
 };
 
 const width = 1900;
@@ -154,6 +160,8 @@ export function ContextSignalField({
   eras,
   modernContext,
   selectedEra,
+  selectedItem,
+  selectedLayer,
   activeInspectorId,
   onHover,
   onInspect,
@@ -217,6 +225,8 @@ export function ContextSignalField({
           color,
           radius: index % 5 === 0 ? 4.8 : 2.8,
           opacity: cell.evidenceStrength === "strong" ? 0.72 : cell.evidenceStrength === "moderate" ? 0.5 : 0.34,
+          categoryIds: [cell.categoryId],
+          layer: "archival",
         });
       });
     });
@@ -231,6 +241,8 @@ export function ContextSignalField({
         color: "#2C9FC7",
         radius: 5 + Math.min(11, phrase.count * 2),
         opacity: 0.78,
+        categoryIds: phrase.categoryIds,
+        layer: "modern",
       });
     });
     (modernContext?.collocates ?? []).slice(0, 18).forEach((collocate, index) => {
@@ -244,6 +256,8 @@ export function ContextSignalField({
         color: categories.find((category) => category.id === collocate.categoryIds[0])?.color ?? "#2C9FC7",
         radius: 3.4 + Math.min(7, collocate.count * 0.55),
         opacity: 0.54,
+        categoryIds: collocate.categoryIds,
+        layer: "modern",
       });
     });
     return marks;
@@ -255,6 +269,7 @@ export function ContextSignalField({
     angle: -42 + index * 6.2,
     color: "#2C9FC7",
     value: phrase.count,
+    categoryIds: phrase.categoryIds,
   }));
 
   return (
@@ -311,7 +326,7 @@ export function ContextSignalField({
             semantic globe / context sphere
           </text>
           <text x={width - 76} y="54" textAnchor="end" className="fill-ink/58 font-mono text-[15px] font-black uppercase tracking-[0.13em]">
-            {selectedEraRecord?.label ?? selectedEra} / drag to turn
+            {selectedLayer ?? selectedEraRecord?.label ?? selectedEra} / drag to turn
           </text>
 
           <rect x="790" y="150" width="320" height="720" fill="url(#globe-gap)" opacity="0.22" />
@@ -352,6 +367,14 @@ export function ContextSignalField({
 
           {nodes.map((node, index) => {
             const support = selectedEra === "recent" ? node.modernSupport : node.archivalSupport;
+            const match = getSelectionMatch(selectedItem, {
+              inspectorId: node.inspectorId,
+              label: node.label,
+              kind: "category",
+              layer: selectedEra === "recent" ? "modern" : "archival",
+              categoryIds: [node.categoryId],
+            });
+            const opacity = Boolean(selectedItem) && match === "unrelated" ? 0.08 : match === "active" ? 0.8 : match === "related" ? 0.5 : 0.15 + Math.min(0.38, support / 90);
             return (
               <ellipse
                 key={`${node.id}-category-orbit`}
@@ -361,7 +384,7 @@ export function ContextSignalField({
                 ry={122 + index * 31}
                 fill="none"
                 stroke={node.color}
-                strokeOpacity={0.15 + Math.min(0.38, support / 90)}
+                strokeOpacity={opacity}
                 strokeWidth={1.8 + Math.min(3.4, Math.sqrt(Math.max(1, support)) * 0.22)}
                 strokeDasharray={node.confidence === "unavailable" ? "3 12" : undefined}
                 transform={`rotate(${-52 + index * 27 + rotation * 0.035} ${cx} ${cy})`}
@@ -374,7 +397,15 @@ export function ContextSignalField({
 
           {orbitMarks.map((mark) => {
             const point = orbitPoint(mark.angle + rotation * 0.42, mark.rx, mark.ry, mark.rotate + rotation * 0.04);
-            const active = activeId === mark.inspectorId;
+            const match = getSelectionMatch(selectedItem, {
+              id: mark.id,
+              inspectorId: mark.inspectorId,
+              kind: "context",
+              layer: mark.layer,
+              categoryIds: mark.categoryIds,
+            });
+            const active = activeId === mark.inspectorId || match === "active";
+            const related = match === "related";
             return (
               <circle
                 key={mark.id}
@@ -384,7 +415,7 @@ export function ContextSignalField({
                 fill={mark.color}
                 stroke={active ? "#050510" : "none"}
                 strokeWidth={active ? 2 : 0}
-                opacity={focused && !active ? 0.12 : mark.opacity}
+                opacity={(focused || Boolean(selectedItem)) && !active && !related ? 0.1 : related ? Math.max(0.34, mark.opacity * 0.74) : mark.opacity}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
                   setHoveredId(mark.inspectorId);
@@ -401,11 +432,21 @@ export function ContextSignalField({
 
           {modernLayerPoints.map((point, index) => {
             const p = orbitPoint(point.angle + rotation * 0.6, 566, 318, 28 + rotation * 0.04);
-            const active = activeId === point.id;
+            const match = getSelectionMatch(selectedItem, {
+              id: point.id,
+              inspectorId: point.id,
+              label: point.label,
+              phrase: point.label,
+              kind: "phrase",
+              layer: "modern",
+              categoryIds: point.categoryIds,
+            });
+            const active = activeId === point.id || match === "active";
+            const related = match === "related";
             return (
               <g
                 key={point.id}
-                opacity={focused && !active ? 0.16 : 1}
+                opacity={(focused || Boolean(selectedItem)) && !active && !related ? 0.14 : related ? 0.68 : 1}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
                   setHoveredId(point.id);
@@ -426,8 +467,16 @@ export function ContextSignalField({
             .map((node) => ({ node, p: project(node.lon, node.lat, rotation) }))
             .sort((a, b) => a.p.z - b.p.z)
             .map(({ node, p }, index) => {
-              const active = activeId === node.inspectorId;
-              const dimmed = focused && !active;
+              const match = getSelectionMatch(selectedItem, {
+                inspectorId: node.inspectorId,
+                label: node.label,
+                kind: "category",
+                layer: selectedEra === "recent" ? "modern" : "archival",
+                categoryIds: [node.categoryId],
+              });
+              const active = activeId === node.inspectorId || match === "active";
+              const related = match === "related";
+              const dimmed = (focused || Boolean(selectedItem)) && !active && !related;
               const support = selectedEra === "recent" ? node.modernSupport : node.archivalSupport;
               const radius = (20 + Math.sqrt(Math.max(1, support)) * 6) * p.scale;
               const labelSide = p.x > cx ? "start" : "end";
