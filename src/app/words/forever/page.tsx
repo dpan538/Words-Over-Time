@@ -1,8 +1,6 @@
 import Link from "next/link";
-import { MetricCard } from "@/components/MetricCard";
 import { Nav } from "@/components/Nav";
 import { TimelinePlaceholder } from "@/components/TimelinePlaceholder";
-import { foreverMetrics } from "@/data/words";
 
 const metadataItems = [
   ["Status", "demo word"],
@@ -41,7 +39,7 @@ export default function ForeverPage() {
             {metadataItems.map(([label, value]) => (
               <article
                 key={label}
-                className="border border-wheat/18 bg-wheat/[0.04] p-4"
+                className="border border-wheat/18 bg-wheat/[0.04] p-4 transition duration-200 hover:-translate-y-0.5 hover:border-curious hover:bg-wheat/[0.08]"
               >
                 <p className="text-[0.7rem] font-bold uppercase tracking-[0.18em] text-curious">
                   {label}
@@ -56,7 +54,7 @@ export default function ForeverPage() {
           {evidenceItems.map(([label, value]) => (
             <article
               key={label}
-              className="border border-wheat/20 bg-wheat p-5 text-ink"
+              className="border border-wheat/20 bg-wheat p-5 text-ink transition duration-200 hover:-translate-y-0.5 hover:border-blaze hover:shadow-[6px_6px_0_#F06B04]"
             >
               <p className="text-xs font-bold uppercase tracking-[0.16em] text-fire">
                 {label}
@@ -69,26 +67,6 @@ export default function ForeverPage() {
         </section>
 
         <TimelinePlaceholder />
-
-        <section>
-          <div className="mb-6 max-w-3xl">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-sun">
-              analysis modules
-            </p>
-            <h2 className="mt-3 text-4xl font-black leading-none sm:text-6xl">
-              what this page will measure
-            </h2>
-          </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            {foreverMetrics.map((metric) => (
-              <MetricCard
-                key={metric.title}
-                title={metric.title}
-                body={metric.body}
-              />
-            ))}
-          </div>
-        </section>
 
         <section className="border-l-8 border-blaze bg-wheat p-5 text-ink sm:p-7">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-wine">

@@ -7,7 +7,7 @@ const timelineLabels = [
 
 export function TimelinePlaceholder() {
   return (
-    <section className="border border-wheat/25 bg-ink p-5 text-wheat sm:p-7">
+    <section className="border border-wheat/25 bg-ink p-5 text-wheat transition duration-200 hover:border-blaze sm:p-7">
       <div className="mb-5 flex flex-col justify-between gap-2 sm:flex-row sm:items-end">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-sun">

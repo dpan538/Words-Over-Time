@@ -7,7 +7,7 @@ type WordListProps = {
 
 export function WordList({ words }: WordListProps) {
   return (
-    <div className="max-w-[1500px] text-[clamp(4rem,12vw,12rem)] font-black leading-[0.86] tracking-normal">
+    <div className="max-w-[1580px] text-[clamp(3.9rem,10.8vw,11rem)] font-black leading-[1.06] tracking-normal">
       {words.map((word, index) => (
         <span key={word.slug}>
           <WordCard word={word} />

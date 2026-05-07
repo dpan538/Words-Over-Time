@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { MetricCard } from "@/components/MetricCard";
 import { Nav } from "@/components/Nav";
+import { foreverMetrics } from "@/data/words";
 
 const hybridModel = [
   "long-run book/corpus frequency data",
@@ -26,23 +28,23 @@ const cautions = [
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-wheat text-ink">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-5 py-5 sm:px-8 sm:py-7">
+      <div className="flex w-full max-w-[1440px] flex-col gap-16 px-5 py-5 sm:px-8 sm:py-7 lg:px-12">
         <Nav />
 
-        <section className="max-w-5xl py-10">
-          <p className="text-xs font-black uppercase tracking-[0.22em] text-fire">
+        <section className="max-w-6xl py-12 lg:py-16">
+          <p className="text-base font-black uppercase tracking-[0.24em] text-fire sm:text-xl">
             about / methodology
           </p>
           <h1 className="mt-5 text-[clamp(4rem,14vw,11rem)] font-black leading-[0.82] tracking-normal">
             curated, not infinite.
           </h1>
-          <p className="mt-8 max-w-3xl text-2xl font-bold leading-tight text-ink/80 sm:text-4xl">
+          <p className="mt-8 max-w-4xl text-2xl font-bold leading-tight text-ink/80 sm:text-4xl">
             Words Over Time is a curated historical word-frequency
             visualization project. It is not a general search engine.
           </p>
         </section>
 
-        <section className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+        <section className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
           <div>
             <h2 className="text-4xl font-black leading-none sm:text-6xl">
               hybrid model
@@ -56,7 +58,7 @@ export default function AboutPage() {
             {hybridModel.map((item, index) => (
               <li
                 key={item}
-                className="flex gap-4 border border-ink/18 bg-ink p-4 text-wheat"
+                className="flex gap-4 border border-ink/18 bg-ink p-4 text-wheat transition duration-200 hover:-translate-x-1 hover:border-blaze hover:bg-nice"
               >
                 <span className="text-xl font-black text-sun">
                   {String(index + 1).padStart(2, "0")}
@@ -69,7 +71,10 @@ export default function AboutPage() {
 
         <section className="grid gap-4 md:grid-cols-3">
           {distinctions.map((item) => (
-            <article key={item} className="border border-ink/18 bg-white/20 p-5">
+            <article
+              key={item}
+              className="border border-ink/18 bg-white/20 p-5 transition duration-200 hover:-translate-y-1 hover:border-nice hover:bg-white/40"
+            >
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-nice">
                 distinguishes
               </p>
@@ -78,7 +83,7 @@ export default function AboutPage() {
           ))}
         </section>
 
-        <section className="grid gap-6 border-y border-ink/20 py-10 lg:grid-cols-2">
+        <section className="grid gap-6 border-y border-ink/20 py-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <h2 className="text-4xl font-black leading-none">
               normalized where possible
@@ -103,6 +108,26 @@ export default function AboutPage() {
                 </span>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="mb-7 max-w-4xl">
+            <p className="text-sm font-black uppercase tracking-[0.22em] text-fire sm:text-base">
+              analysis modules
+            </p>
+            <h2 className="mt-4 text-4xl font-black leading-none sm:text-6xl">
+              what the archive will measure
+            </h2>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {foreverMetrics.map((metric) => (
+              <MetricCard
+                key={metric.title}
+                title={metric.title}
+                body={metric.body}
+              />
+            ))}
           </div>
         </section>
 
