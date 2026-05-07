@@ -85,11 +85,15 @@ const colorFallbacks: Record<string, string> = {
   digital_permanence: "#2C9FC7",
 };
 
+function n(value: number) {
+  return Number(value.toFixed(3));
+}
+
 function ellipsePoint(rx: number, ry: number, angle: number) {
   const radians = (angle * Math.PI) / 180;
   return {
-    x: cx + Math.cos(radians) * rx,
-    y: cy + Math.sin(radians) * ry,
+    x: n(cx + Math.cos(radians) * rx),
+    y: n(cy + Math.sin(radians) * ry),
   };
 }
 

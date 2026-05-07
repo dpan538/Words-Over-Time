@@ -41,6 +41,10 @@ const top = 94;
 const plotTop = 148;
 const plotBottom = 690;
 
+function n(value: number) {
+  return Number(value.toFixed(3));
+}
+
 const pressureAnchors: PressureAnchor[] = [
   { id: "pressure-attestation", label: "Spaced form prehistory", period: "late 14c.-1611", year: 1375, x: 210, y: 214, color: "#1570AC", radius: 34 },
   { id: "pressure-devotional-print", label: "Devotional print formulae", period: "1600s-1700s", year: 1650, x: 482, y: 150, color: "#2C9FC7", radius: 44 },
@@ -283,7 +287,7 @@ export function VariantDriftField({
                 }}
               >
                 <path
-                  d={`M ${anchor.x} ${anchor.y} C ${(anchor.x + anchorX) / 2} ${anchor.y + (index % 2 ? 140 : -120)}, ${(anchor.x + anchorX) / 2} ${curveY + (index % 2 ? -90 : 90)}, ${anchorX} ${curveY}`}
+                  d={`M ${anchor.x} ${anchor.y} C ${n((anchor.x + anchorX) / 2)} ${n(anchor.y + (index % 2 ? 140 : -120))}, ${n((anchor.x + anchorX) / 2)} ${n(curveY + (index % 2 ? -90 : 90))}, ${n(anchorX)} ${n(curveY)}`}
                   fill="none"
                   stroke={anchor.color}
                   strokeWidth={active ? 4 : 2}
@@ -297,10 +301,10 @@ export function VariantDriftField({
                   return (
                     <line
                       key={`${anchor.id}-ray-${rayIndex}`}
-                      x1={anchor.x + Math.cos(angle) * r1}
-                      y1={anchor.y + Math.sin(angle) * r1}
-                      x2={anchor.x + Math.cos(angle) * r2}
-                      y2={anchor.y + Math.sin(angle) * r2}
+                      x1={n(anchor.x + Math.cos(angle) * r1)}
+                      y1={n(anchor.y + Math.sin(angle) * r1)}
+                      x2={n(anchor.x + Math.cos(angle) * r2)}
+                      y2={n(anchor.y + Math.sin(angle) * r2)}
                       stroke={anchor.color}
                       strokeWidth={active ? 3 : 1.7}
                       strokeOpacity="0.55"

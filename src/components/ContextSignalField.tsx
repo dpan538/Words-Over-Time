@@ -77,6 +77,10 @@ const categoryIds = [
   "hyperbole_colloquial",
 ];
 
+function n(value: number) {
+  return Number(value.toFixed(3));
+}
+
 function deg(value: number) {
   return (value * Math.PI) / 180;
 }
@@ -137,9 +141,9 @@ function supportFromLedger(
 function project(lon: number, lat: number, rotation: number) {
   const lonRad = deg(lon + rotation);
   const latRad = deg(lat);
-  const x = cx + Math.cos(latRad) * Math.sin(lonRad) * globeRx;
-  const y = cy - Math.sin(latRad) * globeRy * 0.82;
-  const z = Math.cos(latRad) * Math.cos(lonRad);
+  const x = n(cx + Math.cos(latRad) * Math.sin(lonRad) * globeRx);
+  const y = n(cy - Math.sin(latRad) * globeRy * 0.82);
+  const z = n(Math.cos(latRad) * Math.cos(lonRad));
   return { x, y, z, scale: 0.7 + (z + 1) * 0.25 };
 }
 
@@ -149,8 +153,8 @@ function orbitPoint(angle: number, rx: number, ry: number, rotate = 0) {
   const rawX = Math.cos(a) * rx;
   const rawY = Math.sin(a) * ry;
   return {
-    x: cx + rawX * Math.cos(r) - rawY * Math.sin(r),
-    y: cy + rawX * Math.sin(r) + rawY * Math.cos(r),
+    x: n(cx + rawX * Math.cos(r) - rawY * Math.sin(r)),
+    y: n(cy + rawX * Math.sin(r) + rawY * Math.cos(r)),
   };
 }
 
@@ -341,9 +345,9 @@ export function ContextSignalField({
             <ellipse
               key={`lat-${lat}`}
               cx={cx}
-              cy={cy - Math.sin(deg(lat)) * globeRy * 0.82}
-              rx={globeRx * Math.cos(deg(lat))}
-              ry={globeRx * Math.cos(deg(lat)) * 0.18}
+              cy={n(cy - Math.sin(deg(lat)) * globeRy * 0.82)}
+              rx={n(globeRx * Math.cos(deg(lat)))}
+              ry={n(globeRx * Math.cos(deg(lat)) * 0.18)}
               fill="none"
               stroke="#050510"
               strokeOpacity={lat === 0 ? 0.3 : 0.13}
@@ -504,10 +508,10 @@ export function ContextSignalField({
                     return (
                       <line
                         key={`${node.id}-ray-${rayIndex}`}
-                        x1={p.x + Math.cos(angle) * radius * 0.62}
-                        y1={p.y + Math.sin(angle) * radius * 0.62}
-                        x2={p.x + Math.cos(angle) * radius * 1.2}
-                        y2={p.y + Math.sin(angle) * radius * 1.2}
+                        x1={n(p.x + Math.cos(angle) * radius * 0.62)}
+                        y1={n(p.y + Math.sin(angle) * radius * 0.62)}
+                        x2={n(p.x + Math.cos(angle) * radius * 1.2)}
+                        y2={n(p.y + Math.sin(angle) * radius * 1.2)}
                         stroke={node.color}
                         strokeWidth={active ? 3 : 1.4}
                         strokeOpacity={p.z < -0.35 ? 0.14 : 0.48}

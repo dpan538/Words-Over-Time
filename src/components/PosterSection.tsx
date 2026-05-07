@@ -1,4 +1,7 @@
+"use client";
+
 import type { ReactNode } from "react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 type PosterSectionProps = {
   eyebrow: string;
@@ -15,9 +18,12 @@ export function PosterSection({
   children,
   className = "",
 }: PosterSectionProps) {
+  const revealRef = useScrollReveal();
+
   return (
     <section
-      className={`pb-0 pt-8 sm:pt-9 lg:pt-10 ${className}`}
+      ref={revealRef}
+      className={`scroll-reveal pb-0 pt-8 sm:pt-9 lg:pt-10 ${className}`}
     >
       <div className="mb-8 grid gap-3 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
         <p className="font-mono text-[0.72rem] font-black uppercase leading-5 tracking-[0.2em] text-fire">
