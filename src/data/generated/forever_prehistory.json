@@ -1,0 +1,136 @@
+{
+  "generatedAt": "2026-05-07T10:26:54.672Z",
+  "layer": "attestation / prehistory",
+  "coverage": {
+    "earliestApproximateYear": 1375,
+    "latestApproximateYear": 1819,
+    "comparableCorpusAvailable": false,
+    "note": "This layer stores lexical-source and source-audit records only. It is not a comparable pre-1700 corpus yet."
+  },
+  "records": [
+    {
+      "id": "attestation-for-ever-late-14c-etymonline",
+      "form": "for ever",
+      "normalizedForm": "forever",
+      "evidenceType": "earliest-attested-usage",
+      "dateLabel": "late 14c.",
+      "yearApproximation": 1375,
+      "sourceName": "Online Etymology Dictionary",
+      "sourceUrl": "https://www.etymonline.com/word/forever",
+      "sourceCategory": "lexical-source",
+      "quote": "",
+      "verificationStatus": "secondary-lexical-source",
+      "confidence": "medium",
+      "caveat": "This is a lexical-source date for the spaced form, not a corpus hit in the project data."
+    },
+    {
+      "id": "attestation-for-ever-late-14c-wiktionary",
+      "form": "for ever",
+      "normalizedForm": "forever",
+      "evidenceType": "earliest-attested-usage",
+      "dateLabel": "late 14c.",
+      "yearApproximation": 1375,
+      "sourceName": "Wiktionary",
+      "sourceUrl": "https://en.wiktionary.org/wiki/forever",
+      "sourceCategory": "lexical-source",
+      "quote": "",
+      "verificationStatus": "secondary-lexical-source",
+      "confidence": "medium",
+      "caveat": "Wiktionary gives the Middle English spaced form before the one-word spelling. This is not yet tied to a project-owned quotation."
+    },
+    {
+      "id": "attestation-forever-one-word-late-17c",
+      "form": "forever",
+      "normalizedForm": "forever",
+      "evidenceType": "earliest-attested-usage",
+      "dateLabel": "late 17c. as one word",
+      "yearApproximation": 1680,
+      "sourceName": "Wiktionary / Online Etymology Dictionary",
+      "sourceUrl": "https://en.wiktionary.org/wiki/forever",
+      "sourceCategory": "lexical-source",
+      "quote": "",
+      "verificationStatus": "secondary-lexical-source",
+      "confidence": "medium",
+      "caveat": "Use this as a spelling-history note only until a dated early-print occurrence is verified."
+    },
+    {
+      "id": "attestation-for-ever-and-ever-kjv",
+      "form": "for ever and ever",
+      "normalizedForm": "forever and ever",
+      "evidenceType": "earliest-attested-usage",
+      "dateLabel": "KJV-associated, 1611",
+      "yearApproximation": 1611,
+      "sourceName": "Wiktionary",
+      "sourceUrl": "https://en.wiktionary.org/wiki/for_ever_and_ever",
+      "sourceCategory": "lexical-source",
+      "quote": "",
+      "verificationStatus": "secondary-lexical-source",
+      "confidence": "medium",
+      "caveat": "This supports the spaced biblical/liturgical formula. It does not verify the one-word phrase spelling 'forever and ever' before 1700."
+    },
+    {
+      "id": "attestation-forevermore-1819-etymonline",
+      "form": "forevermore",
+      "normalizedForm": "forevermore",
+      "evidenceType": "earliest-attested-usage",
+      "dateLabel": "1819",
+      "yearApproximation": 1819,
+      "sourceName": "Online Etymology Dictionary",
+      "sourceUrl": "https://www.etymonline.com/word/forever",
+      "sourceCategory": "lexical-source",
+      "quote": "",
+      "verificationStatus": "secondary-lexical-source",
+      "confidence": "low",
+      "caveat": "Public lexical sources conflict: Merriam-Webster gives 14th century for forevermore, while Etymonline gives 1819 for the emphatic form. Needs OED or early-print verification."
+    },
+    {
+      "id": "attestation-forevermore-14c-mw-conflict",
+      "form": "forevermore",
+      "normalizedForm": "forevermore",
+      "evidenceType": "conflicting-attestation",
+      "dateLabel": "14th century",
+      "yearApproximation": 1375,
+      "sourceName": "Merriam-Webster",
+      "sourceUrl": "https://www.merriam-webster.com/dictionary/forevermore",
+      "sourceCategory": "lexical-source",
+      "quote": "",
+      "verificationStatus": "conflicting-secondary-source",
+      "confidence": "low",
+      "caveat": "This conflicts with Etymonline's 1819 date. Do not present a first-use claim until checked against OED or source quotations."
+    }
+  ],
+  "investigatedSources": [
+    {
+      "id": "eebo-tcp",
+      "name": "EEBO-TCP",
+      "coverage": "1473-1700",
+      "status": "feasible-next-layer-not-ingested",
+      "sourceUrl": "https://textcreationpartnership.org/tcp-texts/eebo-tcp-early-english-books-online/",
+      "note": "Public TCP texts are available, including bulk downloads, but ingesting/searching the corpus responsibly is larger than this data-foundation pass."
+    },
+    {
+      "id": "earlyprint",
+      "name": "EarlyPrint / EarlyPrint Lab",
+      "coverage": "1473-early 1700s",
+      "status": "feasible-next-layer-not-ingested",
+      "sourceUrl": "https://earlyprint.org/",
+      "note": "Search and lab tools are suitable for early-print context; needs a dedicated ingestion/search workflow before it can drive visuals."
+    },
+    {
+      "id": "google-ngram-pre1700",
+      "name": "Google Books Ngram pre-1700",
+      "coverage": "1500-1699",
+      "status": "frequency-audit-only",
+      "sourceUrl": "https://books.google.com/ngrams/",
+      "note": "Useful for testing visible frequency signal, but not enough for context or first-use claims."
+    },
+    {
+      "id": "oed",
+      "name": "Oxford English Dictionary",
+      "coverage": "historical attestation",
+      "status": "recommended-but-not-integrated",
+      "sourceUrl": "https://www.oed.com/",
+      "note": "Best source for earliest attested usage and sense history, but subscription access and quotation reuse need a separate workflow."
+    }
+  ]
+}

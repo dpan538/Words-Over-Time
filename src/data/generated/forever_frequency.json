@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-07T06:53:36.952Z",
+  "generatedAt": "2026-05-07T10:25:04.273Z",
   "source": {
     "label": "Google Books Ngram Viewer",
-    "url": "https://books.google.com/ngrams/json?content=forever%2Cfor+ever%2Cforevermore%2Cforever+and+ever&year_start=1700&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
+    "url": "https://books.google.com/ngrams/json?content=forever%2Cfor+ever%2Cforevermore%2Cforever+and+ever&year_start=1500&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
     "corpus": "en",
-    "startYear": 1700,
+    "startYear": 1500,
     "endYear": 2022,
     "smoothing": 0,
-    "note": "Values are yearly Ngram fractions. The app converts them to frequency per million for display."
+    "note": "Values are yearly Ngram fractions. The app converts them to frequency per million for display. Pre-1700 values are generated for audit, not automatically trusted for public visuals."
   },
   "series": [
     {
@@ -16,13 +16,1051 @@
       "query": "forever",
       "color": "#F06B04",
       "source": "Google Books Ngram Viewer",
-      "sourceUrl": "https://books.google.com/ngrams/json?content=forever%2Cfor+ever%2Cforevermore%2Cforever+and+ever&year_start=1700&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
+      "sourceUrl": "https://books.google.com/ngrams/json?content=forever%2Cfor+ever%2Cforevermore%2Cforever+and+ever&year_start=1500&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
       "corpus": "en",
       "smoothing": 0,
-      "startYear": 1700,
+      "startYear": 1500,
       "endYear": 2022,
       "inspectorId": "frequency-forever",
+      "firstNonZeroYear": 1501,
+      "recommendedVisualStartYear": 1700,
+      "pre1700Status": "pre-1700-too-unstable",
+      "coverageNote": "Pre-1700 one-word values are visually tempting but likely mix OCR, spelling normalization, and metadata noise. Use as audit data, not the default public line.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 61,
+          "averageFrequencyPerMillion": 2.0186,
+          "maxFrequencyPerMillion": 72.917122
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "averageFrequencyPerMillion": 3.369699,
+          "maxFrequencyPerMillion": 20.110878
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "averageFrequencyPerMillion": 1.988609,
+          "maxFrequencyPerMillion": 3.740712
+        },
+        {
+          "startYear": 1800,
+          "endYear": 2022,
+          "pointCount": 223,
+          "nonZeroYearCount": 223,
+          "averageFrequencyPerMillion": 9.139655,
+          "maxFrequencyPerMillion": 26.306448
+        }
+      ],
       "points": [
+        {
+          "year": 1500,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1501,
+          "value": 0.0000014282062466008938,
+          "frequencyPerMillion": 1.4282062466008938
+        },
+        {
+          "year": 1502,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1503,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1504,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1505,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1506,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1507,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1508,
+          "value": 0.000002367788511037361,
+          "frequencyPerMillion": 2.367788511037361
+        },
+        {
+          "year": 1509,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1510,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1511,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1512,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1513,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1514,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1515,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1516,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1517,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1518,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1519,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1520,
+          "value": 0.00007291712245205417,
+          "frequencyPerMillion": 72.91712245205417
+        },
+        {
+          "year": 1521,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1522,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1523,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1524,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1525,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1526,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1527,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1528,
+          "value": 0.0000052387836149137,
+          "frequencyPerMillion": 5.2387836149137
+        },
+        {
+          "year": 1529,
+          "value": 0.000017112446585088037,
+          "frequencyPerMillion": 17.112446585088037
+        },
+        {
+          "year": 1530,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1531,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1532,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1533,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1534,
+          "value": 0.000001874438794402522,
+          "frequencyPerMillion": 1.874438794402522
+        },
+        {
+          "year": 1535,
+          "value": 5.2455936838669e-7,
+          "frequencyPerMillion": 0.52455936838669
+        },
+        {
+          "year": 1536,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1537,
+          "value": 0.000006783892331441166,
+          "frequencyPerMillion": 6.783892331441166
+        },
+        {
+          "year": 1538,
+          "value": 0.0000012637535746762296,
+          "frequencyPerMillion": 1.2637535746762296
+        },
+        {
+          "year": 1539,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1540,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1541,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1542,
+          "value": 0.0000013080864391668001,
+          "frequencyPerMillion": 1.3080864391668001
+        },
+        {
+          "year": 1543,
+          "value": 0.0000023236414108396275,
+          "frequencyPerMillion": 2.3236414108396275
+        },
+        {
+          "year": 1544,
+          "value": 0.000004429384716786444,
+          "frequencyPerMillion": 4.429384716786444
+        },
+        {
+          "year": 1545,
+          "value": 0.0000016370657931474852,
+          "frequencyPerMillion": 1.6370657931474852
+        },
+        {
+          "year": 1546,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1547,
+          "value": 0.0000010814312645379687,
+          "frequencyPerMillion": 1.0814312645379687
+        },
+        {
+          "year": 1548,
+          "value": 0.0000010590241572572268,
+          "frequencyPerMillion": 1.0590241572572268
+        },
+        {
+          "year": 1549,
+          "value": 0.0000017984932583203772,
+          "frequencyPerMillion": 1.7984932583203772
+        },
+        {
+          "year": 1550,
+          "value": 0.0000013641450777868158,
+          "frequencyPerMillion": 1.3641450777868158
+        },
+        {
+          "year": 1551,
+          "value": 0.000001636655838410661,
+          "frequencyPerMillion": 1.636655838410661
+        },
+        {
+          "year": 1552,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1553,
+          "value": 0.000001881684738691547,
+          "frequencyPerMillion": 1.881684738691547
+        },
+        {
+          "year": 1554,
+          "value": 0.0000012603093182406155,
+          "frequencyPerMillion": 1.2603093182406155
+        },
+        {
+          "year": 1555,
+          "value": 0.000001466349431211711,
+          "frequencyPerMillion": 1.466349431211711
+        },
+        {
+          "year": 1556,
+          "value": 0.000002717860297707375,
+          "frequencyPerMillion": 2.717860297707375
+        },
+        {
+          "year": 1557,
+          "value": 6.049458534107544e-7,
+          "frequencyPerMillion": 0.6049458534107544
+        },
+        {
+          "year": 1558,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1559,
+          "value": 0.000008216121386794839,
+          "frequencyPerMillion": 8.216121386794839
+        },
+        {
+          "year": 1560,
+          "value": 2.423728915346146e-7,
+          "frequencyPerMillion": 0.2423728915346146
+        },
+        {
+          "year": 1561,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1562,
+          "value": 0.0000013965758398626349,
+          "frequencyPerMillion": 1.396575839862635
+        },
+        {
+          "year": 1563,
+          "value": 0.000001137769004344591,
+          "frequencyPerMillion": 1.137769004344591
+        },
+        {
+          "year": 1564,
+          "value": 0.000006421876150852768,
+          "frequencyPerMillion": 6.421876150852768
+        },
+        {
+          "year": 1565,
+          "value": 0.0000019426584003667813,
+          "frequencyPerMillion": 1.9426584003667813
+        },
+        {
+          "year": 1566,
+          "value": 1.8819582692231052e-7,
+          "frequencyPerMillion": 0.18819582692231052
+        },
+        {
+          "year": 1567,
+          "value": 5.045100692768756e-7,
+          "frequencyPerMillion": 0.5045100692768756
+        },
+        {
+          "year": 1568,
+          "value": 0.00000662405182083603,
+          "frequencyPerMillion": 6.62405182083603
+        },
+        {
+          "year": 1569,
+          "value": 9.108977678806696e-7,
+          "frequencyPerMillion": 0.9108977678806696
+        },
+        {
+          "year": 1570,
+          "value": 0.0000015475787904506433,
+          "frequencyPerMillion": 1.5475787904506433
+        },
+        {
+          "year": 1571,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1572,
+          "value": 0.0000013496156725523178,
+          "frequencyPerMillion": 1.3496156725523178
+        },
+        {
+          "year": 1573,
+          "value": 8.586351896155975e-7,
+          "frequencyPerMillion": 0.8586351896155975
+        },
+        {
+          "year": 1574,
+          "value": 0.00000130836087919306,
+          "frequencyPerMillion": 1.30836087919306
+        },
+        {
+          "year": 1575,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1576,
+          "value": 0.000001953459786818712,
+          "frequencyPerMillion": 1.953459786818712
+        },
+        {
+          "year": 1577,
+          "value": 8.740873909118818e-7,
+          "frequencyPerMillion": 0.8740873909118818
+        },
+        {
+          "year": 1578,
+          "value": 3.975765423547273e-7,
+          "frequencyPerMillion": 0.3975765423547273
+        },
+        {
+          "year": 1579,
+          "value": 9.7383610864199e-7,
+          "frequencyPerMillion": 0.97383610864199
+        },
+        {
+          "year": 1580,
+          "value": 5.336072490536026e-7,
+          "frequencyPerMillion": 0.5336072490536026
+        },
+        {
+          "year": 1581,
+          "value": 0.0000025870042463793652,
+          "frequencyPerMillion": 2.587004246379365
+        },
+        {
+          "year": 1582,
+          "value": 2.9672750656573044e-7,
+          "frequencyPerMillion": 0.29672750656573044
+        },
+        {
+          "year": 1583,
+          "value": 0.0000031707036214356776,
+          "frequencyPerMillion": 3.1707036214356776
+        },
+        {
+          "year": 1584,
+          "value": 4.400885416089295e-7,
+          "frequencyPerMillion": 0.4400885416089295
+        },
+        {
+          "year": 1585,
+          "value": 0.0000012142299965489656,
+          "frequencyPerMillion": 1.2142299965489656
+        },
+        {
+          "year": 1586,
+          "value": 8.842969236866338e-7,
+          "frequencyPerMillion": 0.8842969236866338
+        },
+        {
+          "year": 1587,
+          "value": 6.393955800376716e-7,
+          "frequencyPerMillion": 0.6393955800376716
+        },
+        {
+          "year": 1588,
+          "value": 9.900187478706357e-7,
+          "frequencyPerMillion": 0.9900187478706357
+        },
+        {
+          "year": 1589,
+          "value": 0.0000014639609844380175,
+          "frequencyPerMillion": 1.4639609844380175
+        },
+        {
+          "year": 1590,
+          "value": 7.462324447260471e-7,
+          "frequencyPerMillion": 0.7462324447260471
+        },
+        {
+          "year": 1591,
+          "value": 0.0000017584108036317048,
+          "frequencyPerMillion": 1.7584108036317048
+        },
+        {
+          "year": 1592,
+          "value": 0.000001704180931483279,
+          "frequencyPerMillion": 1.704180931483279
+        },
+        {
+          "year": 1593,
+          "value": 0.0000017525799194118008,
+          "frequencyPerMillion": 1.7525799194118008
+        },
+        {
+          "year": 1594,
+          "value": 0.000004175883987045381,
+          "frequencyPerMillion": 4.175883987045381
+        },
+        {
+          "year": 1595,
+          "value": 0.000001207577724926523,
+          "frequencyPerMillion": 1.207577724926523
+        },
+        {
+          "year": 1596,
+          "value": 0.0000010114725910170819,
+          "frequencyPerMillion": 1.0114725910170819
+        },
+        {
+          "year": 1597,
+          "value": 0.0000017234604001714615,
+          "frequencyPerMillion": 1.7234604001714615
+        },
+        {
+          "year": 1598,
+          "value": 0.0000017262104847759474,
+          "frequencyPerMillion": 1.7262104847759474
+        },
+        {
+          "year": 1599,
+          "value": 0.0000029057021038170205,
+          "frequencyPerMillion": 2.9057021038170205
+        },
+        {
+          "year": 1600,
+          "value": 9.079712413040397e-7,
+          "frequencyPerMillion": 0.9079712413040397
+        },
+        {
+          "year": 1601,
+          "value": 0.0000014857591850159224,
+          "frequencyPerMillion": 1.4857591850159224
+        },
+        {
+          "year": 1602,
+          "value": 6.260386271605967e-7,
+          "frequencyPerMillion": 0.6260386271605967
+        },
+        {
+          "year": 1603,
+          "value": 0.0000014756049040443031,
+          "frequencyPerMillion": 1.4756049040443031
+        },
+        {
+          "year": 1604,
+          "value": 5.609861091215862e-7,
+          "frequencyPerMillion": 0.5609861091215862
+        },
+        {
+          "year": 1605,
+          "value": 0.000004672517206927296,
+          "frequencyPerMillion": 4.672517206927296
+        },
+        {
+          "year": 1606,
+          "value": 0.0000011311403795843944,
+          "frequencyPerMillion": 1.1311403795843944
+        },
+        {
+          "year": 1607,
+          "value": 2.495314106454316e-7,
+          "frequencyPerMillion": 0.2495314106454316
+        },
+        {
+          "year": 1608,
+          "value": 0.0000027334363039699383,
+          "frequencyPerMillion": 2.7334363039699383
+        },
+        {
+          "year": 1609,
+          "value": 5.65318714507157e-7,
+          "frequencyPerMillion": 0.565318714507157
+        },
+        {
+          "year": 1610,
+          "value": 0.0000017671065961621935,
+          "frequencyPerMillion": 1.7671065961621935
+        },
+        {
+          "year": 1611,
+          "value": 5.233647470959113e-7,
+          "frequencyPerMillion": 0.5233647470959113
+        },
+        {
+          "year": 1612,
+          "value": 5.536314233722806e-7,
+          "frequencyPerMillion": 0.5536314233722806
+        },
+        {
+          "year": 1613,
+          "value": 0.0000024078051410469925,
+          "frequencyPerMillion": 2.4078051410469925
+        },
+        {
+          "year": 1614,
+          "value": 7.768927616780275e-7,
+          "frequencyPerMillion": 0.7768927616780275
+        },
+        {
+          "year": 1615,
+          "value": 0.0000014235038179322146,
+          "frequencyPerMillion": 1.4235038179322146
+        },
+        {
+          "year": 1616,
+          "value": 0.000001534274247205758,
+          "frequencyPerMillion": 1.534274247205758
+        },
+        {
+          "year": 1617,
+          "value": 9.93314642983023e-7,
+          "frequencyPerMillion": 0.9933146429830231
+        },
+        {
+          "year": 1618,
+          "value": 9.730146075526136e-7,
+          "frequencyPerMillion": 0.9730146075526136
+        },
+        {
+          "year": 1619,
+          "value": 9.746723890202702e-7,
+          "frequencyPerMillion": 0.9746723890202702
+        },
+        {
+          "year": 1620,
+          "value": 3.3315973269054666e-7,
+          "frequencyPerMillion": 0.33315973269054666
+        },
+        {
+          "year": 1621,
+          "value": 0.000001958059328899253,
+          "frequencyPerMillion": 1.9580593288992532
+        },
+        {
+          "year": 1622,
+          "value": 8.066711529863824e-7,
+          "frequencyPerMillion": 0.8066711529863824
+        },
+        {
+          "year": 1623,
+          "value": 4.2389669374642835e-7,
+          "frequencyPerMillion": 0.42389669374642835
+        },
+        {
+          "year": 1624,
+          "value": 0.0000011847339465020923,
+          "frequencyPerMillion": 1.1847339465020923
+        },
+        {
+          "year": 1625,
+          "value": 5.594695267063798e-7,
+          "frequencyPerMillion": 0.5594695267063798
+        },
+        {
+          "year": 1626,
+          "value": 4.077572270944074e-7,
+          "frequencyPerMillion": 0.4077572270944074
+        },
+        {
+          "year": 1627,
+          "value": 0.000001546322323520144,
+          "frequencyPerMillion": 1.546322323520144
+        },
+        {
+          "year": 1628,
+          "value": 0.0000013797788369629416,
+          "frequencyPerMillion": 1.3797788369629416
+        },
+        {
+          "year": 1629,
+          "value": 0.0000010246508281852584,
+          "frequencyPerMillion": 1.0246508281852584
+        },
+        {
+          "year": 1630,
+          "value": 0.0000033046571843442507,
+          "frequencyPerMillion": 3.3046571843442507
+        },
+        {
+          "year": 1631,
+          "value": 0.000002793816520352266,
+          "frequencyPerMillion": 2.793816520352266
+        },
+        {
+          "year": 1632,
+          "value": 0.0000019165447611158015,
+          "frequencyPerMillion": 1.9165447611158015
+        },
+        {
+          "year": 1633,
+          "value": 0.000003869527517963434,
+          "frequencyPerMillion": 3.8695275179634336
+        },
+        {
+          "year": 1634,
+          "value": 0.000004576454102789285,
+          "frequencyPerMillion": 4.576454102789285
+        },
+        {
+          "year": 1635,
+          "value": 0.000005086099918116815,
+          "frequencyPerMillion": 5.086099918116815
+        },
+        {
+          "year": 1636,
+          "value": 0.000002871525339287473,
+          "frequencyPerMillion": 2.871525339287473
+        },
+        {
+          "year": 1637,
+          "value": 0.00000512880342284916,
+          "frequencyPerMillion": 5.12880342284916
+        },
+        {
+          "year": 1638,
+          "value": 0.000006771874723199289,
+          "frequencyPerMillion": 6.771874723199289
+        },
+        {
+          "year": 1639,
+          "value": 0.00000584464532948914,
+          "frequencyPerMillion": 5.84464532948914
+        },
+        {
+          "year": 1640,
+          "value": 0.00000406245590056642,
+          "frequencyPerMillion": 4.06245590056642
+        },
+        {
+          "year": 1641,
+          "value": 0.00000543666419616784,
+          "frequencyPerMillion": 5.43666419616784
+        },
+        {
+          "year": 1642,
+          "value": 0.00000328577630170912,
+          "frequencyPerMillion": 3.28577630170912
+        },
+        {
+          "year": 1643,
+          "value": 0.0000049226905503019225,
+          "frequencyPerMillion": 4.9226905503019225
+        },
+        {
+          "year": 1644,
+          "value": 0.00000431914077125839,
+          "frequencyPerMillion": 4.31914077125839
+        },
+        {
+          "year": 1645,
+          "value": 0.000007412495506287087,
+          "frequencyPerMillion": 7.412495506287087
+        },
+        {
+          "year": 1646,
+          "value": 0.000004096152679267107,
+          "frequencyPerMillion": 4.096152679267107
+        },
+        {
+          "year": 1647,
+          "value": 0.000004136018560529919,
+          "frequencyPerMillion": 4.136018560529919
+        },
+        {
+          "year": 1648,
+          "value": 0.000005598240477411309,
+          "frequencyPerMillion": 5.598240477411309
+        },
+        {
+          "year": 1649,
+          "value": 0.000005088455509394407,
+          "frequencyPerMillion": 5.088455509394407
+        },
+        {
+          "year": 1650,
+          "value": 0.0000020037093690916663,
+          "frequencyPerMillion": 2.0037093690916663
+        },
+        {
+          "year": 1651,
+          "value": 0.000002414260961813852,
+          "frequencyPerMillion": 2.414260961813852
+        },
+        {
+          "year": 1652,
+          "value": 0.000003284957529103849,
+          "frequencyPerMillion": 3.284957529103849
+        },
+        {
+          "year": 1653,
+          "value": 0.0000029644538699358236,
+          "frequencyPerMillion": 2.9644538699358236
+        },
+        {
+          "year": 1654,
+          "value": 0.0000048673973651602864,
+          "frequencyPerMillion": 4.867397365160286
+        },
+        {
+          "year": 1655,
+          "value": 0.000003106953045062255,
+          "frequencyPerMillion": 3.106953045062255
+        },
+        {
+          "year": 1656,
+          "value": 0.0000028017573185934452,
+          "frequencyPerMillion": 2.8017573185934452
+        },
+        {
+          "year": 1657,
+          "value": 0.0000034243566915392876,
+          "frequencyPerMillion": 3.4243566915392876
+        },
+        {
+          "year": 1658,
+          "value": 0.00000222906010094448,
+          "frequencyPerMillion": 2.22906010094448
+        },
+        {
+          "year": 1659,
+          "value": 0.0000021772077616333263,
+          "frequencyPerMillion": 2.1772077616333263
+        },
+        {
+          "year": 1660,
+          "value": 0.000002891266376536805,
+          "frequencyPerMillion": 2.891266376536805
+        },
+        {
+          "year": 1661,
+          "value": 0.0000028963665954506723,
+          "frequencyPerMillion": 2.8963665954506723
+        },
+        {
+          "year": 1662,
+          "value": 0.0000040044469642452896,
+          "frequencyPerMillion": 4.00444696424529
+        },
+        {
+          "year": 1663,
+          "value": 0.000003001254526679986,
+          "frequencyPerMillion": 3.001254526679986
+        },
+        {
+          "year": 1664,
+          "value": 0.000003956004547944758,
+          "frequencyPerMillion": 3.956004547944758
+        },
+        {
+          "year": 1665,
+          "value": 0.0000016710621366655687,
+          "frequencyPerMillion": 1.6710621366655687
+        },
+        {
+          "year": 1666,
+          "value": 0.0000019790229544014437,
+          "frequencyPerMillion": 1.9790229544014437
+        },
+        {
+          "year": 1667,
+          "value": 0.0000019448154944257112,
+          "frequencyPerMillion": 1.9448154944257112
+        },
+        {
+          "year": 1668,
+          "value": 0.0000026706022708822275,
+          "frequencyPerMillion": 2.6706022708822275
+        },
+        {
+          "year": 1669,
+          "value": 0.0000018613220618135529,
+          "frequencyPerMillion": 1.8613220618135529
+        },
+        {
+          "year": 1670,
+          "value": 0.0000023782247353665298,
+          "frequencyPerMillion": 2.37822473536653
+        },
+        {
+          "year": 1671,
+          "value": 0.000008402107596339192,
+          "frequencyPerMillion": 8.402107596339192
+        },
+        {
+          "year": 1672,
+          "value": 0.0000054930796977714635,
+          "frequencyPerMillion": 5.4930796977714635
+        },
+        {
+          "year": 1673,
+          "value": 0.000004242008799337782,
+          "frequencyPerMillion": 4.242008799337782
+        },
+        {
+          "year": 1674,
+          "value": 0.000004763872311741579,
+          "frequencyPerMillion": 4.763872311741579
+        },
+        {
+          "year": 1675,
+          "value": 0.000008031707693589851,
+          "frequencyPerMillion": 8.031707693589851
+        },
+        {
+          "year": 1676,
+          "value": 0.000020110877812840044,
+          "frequencyPerMillion": 20.110877812840044
+        },
+        {
+          "year": 1677,
+          "value": 0.000004299719876144081,
+          "frequencyPerMillion": 4.299719876144081
+        },
+        {
+          "year": 1678,
+          "value": 0.0000031914607916405657,
+          "frequencyPerMillion": 3.1914607916405657
+        },
+        {
+          "year": 1679,
+          "value": 0.000008432612048636656,
+          "frequencyPerMillion": 8.432612048636656
+        },
+        {
+          "year": 1680,
+          "value": 0.0000071064018811739516,
+          "frequencyPerMillion": 7.1064018811739516
+        },
+        {
+          "year": 1681,
+          "value": 0.0000035628318073577248,
+          "frequencyPerMillion": 3.5628318073577248
+        },
+        {
+          "year": 1682,
+          "value": 0.000005635967681882903,
+          "frequencyPerMillion": 5.635967681882903
+        },
+        {
+          "year": 1683,
+          "value": 0.000009502307875663973,
+          "frequencyPerMillion": 9.502307875663973
+        },
+        {
+          "year": 1684,
+          "value": 0.000008893938684195746,
+          "frequencyPerMillion": 8.893938684195746
+        },
+        {
+          "year": 1685,
+          "value": 0.0000032152340736502083,
+          "frequencyPerMillion": 3.2152340736502083
+        },
+        {
+          "year": 1686,
+          "value": 0.000004885391263087513,
+          "frequencyPerMillion": 4.885391263087513
+        },
+        {
+          "year": 1687,
+          "value": 0.0000025127337721642107,
+          "frequencyPerMillion": 2.5127337721642107
+        },
+        {
+          "year": 1688,
+          "value": 0.000004222708412271459,
+          "frequencyPerMillion": 4.222708412271459
+        },
+        {
+          "year": 1689,
+          "value": 0.000007622312750754645,
+          "frequencyPerMillion": 7.622312750754645
+        },
+        {
+          "year": 1690,
+          "value": 0.000003086549213549006,
+          "frequencyPerMillion": 3.086549213549006
+        },
+        {
+          "year": 1691,
+          "value": 0.000002736956730586826,
+          "frequencyPerMillion": 2.736956730586826
+        },
+        {
+          "year": 1692,
+          "value": 0.000004605524281942053,
+          "frequencyPerMillion": 4.605524281942053
+        },
+        {
+          "year": 1693,
+          "value": 0.00000253708003583597,
+          "frequencyPerMillion": 2.53708003583597
+        },
+        {
+          "year": 1694,
+          "value": 0.0000013225725297161262,
+          "frequencyPerMillion": 1.3225725297161262
+        },
+        {
+          "year": 1695,
+          "value": 0.000001816126427911513,
+          "frequencyPerMillion": 1.816126427911513
+        },
+        {
+          "year": 1696,
+          "value": 0.0000010561692533883615,
+          "frequencyPerMillion": 1.0561692533883615
+        },
+        {
+          "year": 1697,
+          "value": 0.0000019472645362839103,
+          "frequencyPerMillion": 1.9472645362839103
+        },
+        {
+          "year": 1698,
+          "value": 0.000006915819085406838,
+          "frequencyPerMillion": 6.915819085406838
+        },
+        {
+          "year": 1699,
+          "value": 0.000001807614921744971,
+          "frequencyPerMillion": 1.807614921744971
+        },
         {
           "year": 1700,
           "value": 0.0000037407121453725267,
@@ -1646,13 +2684,1051 @@
       "query": "for ever",
       "color": "#2C9FC7",
       "source": "Google Books Ngram Viewer",
-      "sourceUrl": "https://books.google.com/ngrams/json?content=forever%2Cfor+ever%2Cforevermore%2Cforever+and+ever&year_start=1700&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
+      "sourceUrl": "https://books.google.com/ngrams/json?content=forever%2Cfor+ever%2Cforevermore%2Cforever+and+ever&year_start=1500&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
       "corpus": "en",
       "smoothing": 0,
-      "startYear": 1700,
+      "startYear": 1500,
       "endYear": 2022,
       "inspectorId": "frequency-for-ever",
+      "firstNonZeroYear": 1517,
+      "recommendedVisualStartYear": 1600,
+      "pre1700Status": "usable-with-caution",
+      "coverageNote": "The spaced form has substantial pre-1700 signal, but 1500s values should still be treated as early-print/noisy.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 62,
+          "averageFrequencyPerMillion": 6.613293,
+          "maxFrequencyPerMillion": 43.51915
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "averageFrequencyPerMillion": 78.224741,
+          "maxFrequencyPerMillion": 177.0331
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "averageFrequencyPerMillion": 83.274199,
+          "maxFrequencyPerMillion": 143.247002
+        },
+        {
+          "startYear": 1800,
+          "endYear": 2022,
+          "pointCount": 223,
+          "nonZeroYearCount": 223,
+          "averageFrequencyPerMillion": 18.850283,
+          "maxFrequencyPerMillion": 69.705646
+        }
+      ],
       "points": [
+        {
+          "year": 1500,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1501,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1502,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1503,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1504,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1505,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1506,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1507,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1508,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1509,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1510,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1511,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1512,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1513,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1514,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1515,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1516,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1517,
+          "value": 0.000005005836555938004,
+          "frequencyPerMillion": 5.005836555938004
+        },
+        {
+          "year": 1518,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1519,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1520,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1521,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1522,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1523,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1524,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1525,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1526,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1527,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1528,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1529,
+          "value": 0.000017722953998600133,
+          "frequencyPerMillion": 17.722953998600133
+        },
+        {
+          "year": 1530,
+          "value": 0.000009934202353178989,
+          "frequencyPerMillion": 9.93420235317899
+        },
+        {
+          "year": 1531,
+          "value": 0.000006671603841823526,
+          "frequencyPerMillion": 6.671603841823526
+        },
+        {
+          "year": 1532,
+          "value": 0.000021717944036936387,
+          "frequencyPerMillion": 21.717944036936387
+        },
+        {
+          "year": 1533,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1534,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1535,
+          "value": 0.000004407942014950095,
+          "frequencyPerMillion": 4.407942014950095
+        },
+        {
+          "year": 1536,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1537,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1538,
+          "value": 0.0000102859139587963,
+          "frequencyPerMillion": 10.2859139587963
+        },
+        {
+          "year": 1539,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1540,
+          "value": 0.000010703372026910074,
+          "frequencyPerMillion": 10.703372026910074
+        },
+        {
+          "year": 1541,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1542,
+          "value": 0.000006089689122745767,
+          "frequencyPerMillion": 6.089689122745767
+        },
+        {
+          "year": 1543,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1544,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1545,
+          "value": 0.000008488949788443279,
+          "frequencyPerMillion": 8.488949788443279
+        },
+        {
+          "year": 1546,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1547,
+          "value": 0.00001863280158431735,
+          "frequencyPerMillion": 18.63280158431735
+        },
+        {
+          "year": 1548,
+          "value": 0.00001589840030646883,
+          "frequencyPerMillion": 15.89840030646883
+        },
+        {
+          "year": 1549,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1550,
+          "value": 0.000011364370948285796,
+          "frequencyPerMillion": 11.364370948285796
+        },
+        {
+          "year": 1551,
+          "value": 0.0000017464290067437105,
+          "frequencyPerMillion": 1.7464290067437105
+        },
+        {
+          "year": 1552,
+          "value": 0.0000024738208139751805,
+          "frequencyPerMillion": 2.4738208139751805
+        },
+        {
+          "year": 1553,
+          "value": 0.000013390403182711452,
+          "frequencyPerMillion": 13.390403182711452
+        },
+        {
+          "year": 1554,
+          "value": 0.000004022855137009174,
+          "frequencyPerMillion": 4.022855137009174
+        },
+        {
+          "year": 1555,
+          "value": 0.000012386042726575397,
+          "frequencyPerMillion": 12.386042726575397
+        },
+        {
+          "year": 1556,
+          "value": 0.000007087543963280041,
+          "frequencyPerMillion": 7.087543963280041
+        },
+        {
+          "year": 1557,
+          "value": 0.000004165895006735809,
+          "frequencyPerMillion": 4.165895006735809
+        },
+        {
+          "year": 1558,
+          "value": 0.00000208179358196503,
+          "frequencyPerMillion": 2.08179358196503
+        },
+        {
+          "year": 1559,
+          "value": 0.000010903717338806018,
+          "frequencyPerMillion": 10.903717338806018
+        },
+        {
+          "year": 1560,
+          "value": 0.00000312578731609392,
+          "frequencyPerMillion": 3.12578731609392
+        },
+        {
+          "year": 1561,
+          "value": 0.000007669399565202184,
+          "frequencyPerMillion": 7.669399565202184
+        },
+        {
+          "year": 1562,
+          "value": 0.000010155657946597785,
+          "frequencyPerMillion": 10.155657946597785
+        },
+        {
+          "year": 1563,
+          "value": 0.000007203950644907309,
+          "frequencyPerMillion": 7.203950644907309
+        },
+        {
+          "year": 1564,
+          "value": 0.000008049455573200248,
+          "frequencyPerMillion": 8.049455573200248
+        },
+        {
+          "year": 1565,
+          "value": 0.000004952736617269693,
+          "frequencyPerMillion": 4.952736617269693
+        },
+        {
+          "year": 1566,
+          "value": 0.000005937723926763283,
+          "frequencyPerMillion": 5.937723926763283
+        },
+        {
+          "year": 1567,
+          "value": 0.000007988071047293488,
+          "frequencyPerMillion": 7.988071047293488
+        },
+        {
+          "year": 1568,
+          "value": 0.00001614370194147341,
+          "frequencyPerMillion": 16.14370194147341
+        },
+        {
+          "year": 1569,
+          "value": 0.000004240289854351431,
+          "frequencyPerMillion": 4.240289854351431
+        },
+        {
+          "year": 1570,
+          "value": 0.000005405127467383863,
+          "frequencyPerMillion": 5.405127467383863
+        },
+        {
+          "year": 1571,
+          "value": 0.000004821205948246643,
+          "frequencyPerMillion": 4.821205948246643
+        },
+        {
+          "year": 1572,
+          "value": 0.000018642484064912423,
+          "frequencyPerMillion": 18.642484064912423
+        },
+        {
+          "year": 1573,
+          "value": 0.000005401809175964445,
+          "frequencyPerMillion": 5.401809175964445
+        },
+        {
+          "year": 1574,
+          "value": 0.000007551471753686201,
+          "frequencyPerMillion": 7.551471753686201
+        },
+        {
+          "year": 1575,
+          "value": 0.000005393802894104738,
+          "frequencyPerMillion": 5.393802894104738
+        },
+        {
+          "year": 1576,
+          "value": 0.0000046353088691830635,
+          "frequencyPerMillion": 4.6353088691830635
+        },
+        {
+          "year": 1577,
+          "value": 0.00000795848245616071,
+          "frequencyPerMillion": 7.958482456160709
+        },
+        {
+          "year": 1578,
+          "value": 0.000014151977666188031,
+          "frequencyPerMillion": 14.151977666188031
+        },
+        {
+          "year": 1579,
+          "value": 0.000013718215996050276,
+          "frequencyPerMillion": 13.718215996050276
+        },
+        {
+          "year": 1580,
+          "value": 0.0000059414192037365865,
+          "frequencyPerMillion": 5.9414192037365865
+        },
+        {
+          "year": 1581,
+          "value": 0.00001176840942207491,
+          "frequencyPerMillion": 11.76840942207491
+        },
+        {
+          "year": 1582,
+          "value": 0.0000018791397451423109,
+          "frequencyPerMillion": 1.8791397451423109
+        },
+        {
+          "year": 1583,
+          "value": 0.000022745289243175648,
+          "frequencyPerMillion": 22.745289243175648
+        },
+        {
+          "year": 1584,
+          "value": 0.000003059165919694351,
+          "frequencyPerMillion": 3.059165919694351
+        },
+        {
+          "year": 1585,
+          "value": 0.000013975261026644148,
+          "frequencyPerMillion": 13.975261026644148
+        },
+        {
+          "year": 1586,
+          "value": 0.000011404640645196196,
+          "frequencyPerMillion": 11.404640645196196
+        },
+        {
+          "year": 1587,
+          "value": 0.000003683387603814481,
+          "frequencyPerMillion": 3.683387603814481
+        },
+        {
+          "year": 1588,
+          "value": 0.000010389966519142035,
+          "frequencyPerMillion": 10.389966519142035
+        },
+        {
+          "year": 1589,
+          "value": 0.00003074428241234273,
+          "frequencyPerMillion": 30.744282412342727
+        },
+        {
+          "year": 1590,
+          "value": 0.000011617365998972673,
+          "frequencyPerMillion": 11.617365998972673
+        },
+        {
+          "year": 1591,
+          "value": 0.000005543013685382903,
+          "frequencyPerMillion": 5.543013685382903
+        },
+        {
+          "year": 1592,
+          "value": 0.000014357590771396644,
+          "frequencyPerMillion": 14.357590771396644
+        },
+        {
+          "year": 1593,
+          "value": 0.000018044891476165503,
+          "frequencyPerMillion": 18.044891476165503
+        },
+        {
+          "year": 1594,
+          "value": 0.000019666853404487483,
+          "frequencyPerMillion": 19.666853404487483
+        },
+        {
+          "year": 1595,
+          "value": 0.000023662298190174624,
+          "frequencyPerMillion": 23.662298190174624
+        },
+        {
+          "year": 1596,
+          "value": 0.000010878322427743115,
+          "frequencyPerMillion": 10.878322427743115
+        },
+        {
+          "year": 1597,
+          "value": 0.000017855589248938486,
+          "frequencyPerMillion": 17.855589248938486
+        },
+        {
+          "year": 1598,
+          "value": 0.000012264124052308034,
+          "frequencyPerMillion": 12.264124052308034
+        },
+        {
+          "year": 1599,
+          "value": 0.00004351915049483068,
+          "frequencyPerMillion": 43.51915049483068
+        },
+        {
+          "year": 1600,
+          "value": 0.000011280470062047243,
+          "frequencyPerMillion": 11.280470062047243
+        },
+        {
+          "year": 1601,
+          "value": 0.000013320294783625286,
+          "frequencyPerMillion": 13.320294783625286
+        },
+        {
+          "year": 1602,
+          "value": 0.000010136533092008904,
+          "frequencyPerMillion": 10.136533092008904
+        },
+        {
+          "year": 1603,
+          "value": 0.00001066483400791185,
+          "frequencyPerMillion": 10.66483400791185
+        },
+        {
+          "year": 1604,
+          "value": 0.000015521171008003876,
+          "frequencyPerMillion": 15.521171008003876
+        },
+        {
+          "year": 1605,
+          "value": 0.000013306284927239176,
+          "frequencyPerMillion": 13.306284927239176
+        },
+        {
+          "year": 1606,
+          "value": 0.00001060688191500958,
+          "frequencyPerMillion": 10.60688191500958
+        },
+        {
+          "year": 1607,
+          "value": 0.000013014931028010324,
+          "frequencyPerMillion": 13.014931028010324
+        },
+        {
+          "year": 1608,
+          "value": 0.00001518328190286411,
+          "frequencyPerMillion": 15.18328190286411
+        },
+        {
+          "year": 1609,
+          "value": 0.000011036876458092593,
+          "frequencyPerMillion": 11.036876458092593
+        },
+        {
+          "year": 1610,
+          "value": 0.000026534242351772264,
+          "frequencyPerMillion": 26.534242351772264
+        },
+        {
+          "year": 1611,
+          "value": 0.00001807549415389076,
+          "frequencyPerMillion": 18.07549415389076
+        },
+        {
+          "year": 1612,
+          "value": 0.000004820936737814918,
+          "frequencyPerMillion": 4.820936737814918
+        },
+        {
+          "year": 1613,
+          "value": 0.000010604509043332655,
+          "frequencyPerMillion": 10.604509043332655
+        },
+        {
+          "year": 1614,
+          "value": 0.000011870502021338325,
+          "frequencyPerMillion": 11.870502021338325
+        },
+        {
+          "year": 1615,
+          "value": 0.000010500197276996914,
+          "frequencyPerMillion": 10.500197276996914
+        },
+        {
+          "year": 1616,
+          "value": 0.000010320591172785498,
+          "frequencyPerMillion": 10.320591172785498
+        },
+        {
+          "year": 1617,
+          "value": 0.000022979078494245186,
+          "frequencyPerMillion": 22.979078494245186
+        },
+        {
+          "year": 1618,
+          "value": 0.00001646691089263186,
+          "frequencyPerMillion": 16.46691089263186
+        },
+        {
+          "year": 1619,
+          "value": 0.00001525676816527266,
+          "frequencyPerMillion": 15.25676816527266
+        },
+        {
+          "year": 1620,
+          "value": 0.00000830658245831728,
+          "frequencyPerMillion": 8.30658245831728
+        },
+        {
+          "year": 1621,
+          "value": 0.000023656984922126867,
+          "frequencyPerMillion": 23.656984922126867
+        },
+        {
+          "year": 1622,
+          "value": 0.00001852618152042851,
+          "frequencyPerMillion": 18.52618152042851
+        },
+        {
+          "year": 1623,
+          "value": 0.000010316685802536085,
+          "frequencyPerMillion": 10.316685802536085
+        },
+        {
+          "year": 1624,
+          "value": 0.000016689542462700047,
+          "frequencyPerMillion": 16.689542462700047
+        },
+        {
+          "year": 1625,
+          "value": 0.00000799525423644809,
+          "frequencyPerMillion": 7.9952542364480905
+        },
+        {
+          "year": 1626,
+          "value": 0.000009802870408748277,
+          "frequencyPerMillion": 9.802870408748277
+        },
+        {
+          "year": 1627,
+          "value": 0.000010948723684123252,
+          "frequencyPerMillion": 10.948723684123252
+        },
+        {
+          "year": 1628,
+          "value": 0.00001660357156652026,
+          "frequencyPerMillion": 16.60357156652026
+        },
+        {
+          "year": 1629,
+          "value": 0.000014677816579933278,
+          "frequencyPerMillion": 14.677816579933278
+        },
+        {
+          "year": 1630,
+          "value": 0.000045671436964767054,
+          "frequencyPerMillion": 45.671436964767054
+        },
+        {
+          "year": 1631,
+          "value": 0.00003710114833666012,
+          "frequencyPerMillion": 37.10114833666012
+        },
+        {
+          "year": 1632,
+          "value": 0.000047468940465478227,
+          "frequencyPerMillion": 47.46894046547823
+        },
+        {
+          "year": 1633,
+          "value": 0.00009428482735529542,
+          "frequencyPerMillion": 94.28482735529542
+        },
+        {
+          "year": 1634,
+          "value": 0.00007671607454540208,
+          "frequencyPerMillion": 76.71607454540208
+        },
+        {
+          "year": 1635,
+          "value": 0.0001198774843942374,
+          "frequencyPerMillion": 119.8774843942374
+        },
+        {
+          "year": 1636,
+          "value": 0.00007084743992891163,
+          "frequencyPerMillion": 70.84743992891163
+        },
+        {
+          "year": 1637,
+          "value": 0.0001668202312430367,
+          "frequencyPerMillion": 166.8202312430367
+        },
+        {
+          "year": 1638,
+          "value": 0.0001698249689070508,
+          "frequencyPerMillion": 169.8249689070508
+        },
+        {
+          "year": 1639,
+          "value": 0.00014443803229369223,
+          "frequencyPerMillion": 144.43803229369223
+        },
+        {
+          "year": 1640,
+          "value": 0.0001067187258740887,
+          "frequencyPerMillion": 106.7187258740887
+        },
+        {
+          "year": 1641,
+          "value": 0.00013504060916602612,
+          "frequencyPerMillion": 135.04060916602612
+        },
+        {
+          "year": 1642,
+          "value": 0.0001370953832520172,
+          "frequencyPerMillion": 137.0953832520172
+        },
+        {
+          "year": 1643,
+          "value": 0.00012054199760314077,
+          "frequencyPerMillion": 120.54199760314077
+        },
+        {
+          "year": 1644,
+          "value": 0.0001226701569976285,
+          "frequencyPerMillion": 122.67015699762851
+        },
+        {
+          "year": 1645,
+          "value": 0.0001770331000443548,
+          "frequencyPerMillion": 177.0331000443548
+        },
+        {
+          "year": 1646,
+          "value": 0.00011607877240749076,
+          "frequencyPerMillion": 116.07877240749076
+        },
+        {
+          "year": 1647,
+          "value": 0.00011423714749980718,
+          "frequencyPerMillion": 114.23714749980718
+        },
+        {
+          "year": 1648,
+          "value": 0.00009181475616060197,
+          "frequencyPerMillion": 91.81475616060197
+        },
+        {
+          "year": 1649,
+          "value": 0.0000791118509368971,
+          "frequencyPerMillion": 79.1118509368971
+        },
+        {
+          "year": 1650,
+          "value": 0.00008775117748882622,
+          "frequencyPerMillion": 87.75117748882622
+        },
+        {
+          "year": 1651,
+          "value": 0.00008737448661122471,
+          "frequencyPerMillion": 87.37448661122471
+        },
+        {
+          "year": 1652,
+          "value": 0.00009231892909156159,
+          "frequencyPerMillion": 92.31892909156159
+        },
+        {
+          "year": 1653,
+          "value": 0.00012447999324649572,
+          "frequencyPerMillion": 124.47999324649572
+        },
+        {
+          "year": 1654,
+          "value": 0.00013344174658413976,
+          "frequencyPerMillion": 133.44174658413976
+        },
+        {
+          "year": 1655,
+          "value": 0.00013244981528259814,
+          "frequencyPerMillion": 132.44981528259814
+        },
+        {
+          "year": 1656,
+          "value": 0.00009056581620825455,
+          "frequencyPerMillion": 90.56581620825455
+        },
+        {
+          "year": 1657,
+          "value": 0.00009957432484952733,
+          "frequencyPerMillion": 99.57432484952733
+        },
+        {
+          "year": 1658,
+          "value": 0.00011384510435163975,
+          "frequencyPerMillion": 113.84510435163975
+        },
+        {
+          "year": 1659,
+          "value": 0.00011090588668594137,
+          "frequencyPerMillion": 110.90588668594137
+        },
+        {
+          "year": 1660,
+          "value": 0.00011469519813545048,
+          "frequencyPerMillion": 114.69519813545048
+        },
+        {
+          "year": 1661,
+          "value": 0.00010498316987650469,
+          "frequencyPerMillion": 104.98316987650469
+        },
+        {
+          "year": 1662,
+          "value": 0.00014223548350855708,
+          "frequencyPerMillion": 142.23548350855708
+        },
+        {
+          "year": 1663,
+          "value": 0.00009742379916133359,
+          "frequencyPerMillion": 97.42379916133359
+        },
+        {
+          "year": 1664,
+          "value": 0.00013506646791938692,
+          "frequencyPerMillion": 135.06646791938692
+        },
+        {
+          "year": 1665,
+          "value": 0.00006841505091870204,
+          "frequencyPerMillion": 68.41505091870204
+        },
+        {
+          "year": 1666,
+          "value": 0.00011056376388296485,
+          "frequencyPerMillion": 110.56376388296485
+        },
+        {
+          "year": 1667,
+          "value": 0.00007922560325823724,
+          "frequencyPerMillion": 79.22560325823724
+        },
+        {
+          "year": 1668,
+          "value": 0.0001163400593213737,
+          "frequencyPerMillion": 116.3400593213737
+        },
+        {
+          "year": 1669,
+          "value": 0.00008517838432453573,
+          "frequencyPerMillion": 85.17838432453573
+        },
+        {
+          "year": 1670,
+          "value": 0.00007154011109378189,
+          "frequencyPerMillion": 71.54011109378189
+        },
+        {
+          "year": 1671,
+          "value": 0.00013804603077005595,
+          "frequencyPerMillion": 138.04603077005595
+        },
+        {
+          "year": 1672,
+          "value": 0.00010117416240973398,
+          "frequencyPerMillion": 101.17416240973398
+        },
+        {
+          "year": 1673,
+          "value": 0.00010558887152001262,
+          "frequencyPerMillion": 105.58887152001262
+        },
+        {
+          "year": 1674,
+          "value": 0.00011712772538885474,
+          "frequencyPerMillion": 117.12772538885474
+        },
+        {
+          "year": 1675,
+          "value": 0.00012276969209779054,
+          "frequencyPerMillion": 122.76969209779054
+        },
+        {
+          "year": 1676,
+          "value": 0.00009894652612274513,
+          "frequencyPerMillion": 98.94652612274513
+        },
+        {
+          "year": 1677,
+          "value": 0.00010806787759065628,
+          "frequencyPerMillion": 108.06787759065628
+        },
+        {
+          "year": 1678,
+          "value": 0.00008579858695156872,
+          "frequencyPerMillion": 85.79858695156872
+        },
+        {
+          "year": 1679,
+          "value": 0.00008438675286015496,
+          "frequencyPerMillion": 84.38675286015496
+        },
+        {
+          "year": 1680,
+          "value": 0.00012441730359569192,
+          "frequencyPerMillion": 124.41730359569192
+        },
+        {
+          "year": 1681,
+          "value": 0.00009475603292230517,
+          "frequencyPerMillion": 94.75603292230517
+        },
+        {
+          "year": 1682,
+          "value": 0.00011191922385478392,
+          "frequencyPerMillion": 111.91922385478392
+        },
+        {
+          "year": 1683,
+          "value": 0.0001421639317413792,
+          "frequencyPerMillion": 142.1639317413792
+        },
+        {
+          "year": 1684,
+          "value": 0.0001221604470629245,
+          "frequencyPerMillion": 122.1604470629245
+        },
+        {
+          "year": 1685,
+          "value": 0.00008311720739584416,
+          "frequencyPerMillion": 83.11720739584416
+        },
+        {
+          "year": 1686,
+          "value": 0.00010694113007048145,
+          "frequencyPerMillion": 106.94113007048145
+        },
+        {
+          "year": 1687,
+          "value": 0.00008104369771899655,
+          "frequencyPerMillion": 81.04369771899655
+        },
+        {
+          "year": 1688,
+          "value": 0.00009200220665661618,
+          "frequencyPerMillion": 92.00220665661618
+        },
+        {
+          "year": 1689,
+          "value": 0.0001302152668358758,
+          "frequencyPerMillion": 130.2152668358758
+        },
+        {
+          "year": 1690,
+          "value": 0.0000928781955735758,
+          "frequencyPerMillion": 92.8781955735758
+        },
+        {
+          "year": 1691,
+          "value": 0.00010374569683335721,
+          "frequencyPerMillion": 103.74569683335721
+        },
+        {
+          "year": 1692,
+          "value": 0.00009466188203077763,
+          "frequencyPerMillion": 94.66188203077763
+        },
+        {
+          "year": 1693,
+          "value": 0.0001102123424061574,
+          "frequencyPerMillion": 110.2123424061574
+        },
+        {
+          "year": 1694,
+          "value": 0.00009897419658955187,
+          "frequencyPerMillion": 98.97419658955187
+        },
+        {
+          "year": 1695,
+          "value": 0.00009383586439071223,
+          "frequencyPerMillion": 93.83586439071223
+        },
+        {
+          "year": 1696,
+          "value": 0.00009978297748602927,
+          "frequencyPerMillion": 99.78297748602927
+        },
+        {
+          "year": 1697,
+          "value": 0.00011081270349677652,
+          "frequencyPerMillion": 110.81270349677652
+        },
+        {
+          "year": 1698,
+          "value": 0.00010110592120327055,
+          "frequencyPerMillion": 101.10592120327055
+        },
+        {
+          "year": 1699,
+          "value": 0.00008502923446940258,
+          "frequencyPerMillion": 85.02923446940258
+        },
         {
           "year": 1700,
           "value": 0.00011176035332027823,
@@ -3276,13 +5352,1051 @@
       "query": "forevermore",
       "color": "#FBB728",
       "source": "Google Books Ngram Viewer",
-      "sourceUrl": "https://books.google.com/ngrams/json?content=forever%2Cfor+ever%2Cforevermore%2Cforever+and+ever&year_start=1700&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
+      "sourceUrl": "https://books.google.com/ngrams/json?content=forever%2Cfor+ever%2Cforevermore%2Cforever+and+ever&year_start=1500&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
       "corpus": "en",
       "smoothing": 0,
-      "startYear": 1700,
+      "startYear": 1500,
       "endYear": 2022,
       "inspectorId": "frequency-forevermore",
+      "firstNonZeroYear": 1545,
+      "recommendedVisualStartYear": 1700,
+      "pre1700Status": "pre-1700-too-sparse",
+      "coverageNote": "Pre-1700 signal is sparse and conflicts with some lexical-source dating. Use for audit only until verified against early-print text.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 22,
+          "averageFrequencyPerMillion": 0.136823,
+          "maxFrequencyPerMillion": 1.902422
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 91,
+          "averageFrequencyPerMillion": 0.173732,
+          "maxFrequencyPerMillion": 0.67051
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 94,
+          "averageFrequencyPerMillion": 0.051608,
+          "maxFrequencyPerMillion": 0.200274
+        },
+        {
+          "startYear": 1800,
+          "endYear": 2022,
+          "pointCount": 223,
+          "nonZeroYearCount": 223,
+          "averageFrequencyPerMillion": 0.09946,
+          "maxFrequencyPerMillion": 0.296688
+        }
+      ],
       "points": [
+        {
+          "year": 1500,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1501,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1502,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1503,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1504,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1505,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1506,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1507,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1508,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1509,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1510,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1511,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1512,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1513,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1514,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1515,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1516,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1517,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1518,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1519,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1520,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1521,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1522,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1523,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1524,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1525,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1526,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1527,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1528,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1529,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1530,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1531,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1532,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1533,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1534,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1535,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1536,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1537,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1538,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1539,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1540,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1541,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1542,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1543,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1544,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1545,
+          "value": 0.0000016370657931474852,
+          "frequencyPerMillion": 1.6370657931474852
+        },
+        {
+          "year": 1546,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1547,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1548,
+          "value": 5.295120786286134e-7,
+          "frequencyPerMillion": 0.5295120786286134
+        },
+        {
+          "year": 1549,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1550,
+          "value": 2.2735751770142087e-7,
+          "frequencyPerMillion": 0.22735751770142087
+        },
+        {
+          "year": 1551,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1552,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1553,
+          "value": 0.000001881684738691547,
+          "frequencyPerMillion": 1.881684738691547
+        },
+        {
+          "year": 1554,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1555,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1556,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1557,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1558,
+          "value": 9.637587936595082e-7,
+          "frequencyPerMillion": 0.9637587936595082
+        },
+        {
+          "year": 1559,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1560,
+          "value": 2.423728915346146e-7,
+          "frequencyPerMillion": 0.2423728915346146
+        },
+        {
+          "year": 1561,
+          "value": 7.316257892853173e-7,
+          "frequencyPerMillion": 0.7316257892853173
+        },
+        {
+          "year": 1562,
+          "value": 0.0000013965758398626349,
+          "frequencyPerMillion": 1.396575839862635
+        },
+        {
+          "year": 1563,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1564,
+          "value": 8.562501534470357e-7,
+          "frequencyPerMillion": 0.8562501534470357
+        },
+        {
+          "year": 1565,
+          "value": 5.550452328861866e-7,
+          "frequencyPerMillion": 0.5550452328861866
+        },
+        {
+          "year": 1566,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1567,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1568,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1569,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1570,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1571,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1572,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1573,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1574,
+          "value": 6.5418043959653e-7,
+          "frequencyPerMillion": 0.65418043959653
+        },
+        {
+          "year": 1575,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1576,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1577,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1578,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1579,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1580,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1581,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1582,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1583,
+          "value": 0.0000019024222410735092,
+          "frequencyPerMillion": 1.9024222410735092
+        },
+        {
+          "year": 1584,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1585,
+          "value": 2.428459993097931e-7,
+          "frequencyPerMillion": 0.24284599930979311
+        },
+        {
+          "year": 1586,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1587,
+          "value": 1.598488950094179e-7,
+          "frequencyPerMillion": 0.1598488950094179
+        },
+        {
+          "year": 1588,
+          "value": 1.6500312938205752e-7,
+          "frequencyPerMillion": 0.16500312938205752
+        },
+        {
+          "year": 1589,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1590,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1591,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1592,
+          "value": 1.310908430696145e-7,
+          "frequencyPerMillion": 0.1310908430696145
+        },
+        {
+          "year": 1593,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1594,
+          "value": 3.340707337429194e-7,
+          "frequencyPerMillion": 0.3340707337429194
+        },
+        {
+          "year": 1595,
+          "value": 3.450222152423521e-7,
+          "frequencyPerMillion": 0.3450222152423521
+        },
+        {
+          "year": 1596,
+          "value": 1.2643407387713523e-7,
+          "frequencyPerMillion": 0.12643407387713523
+        },
+        {
+          "year": 1597,
+          "value": 2.154325500214327e-7,
+          "frequencyPerMillion": 0.2154325500214327
+        },
+        {
+          "year": 1598,
+          "value": 3.1385644660986145e-7,
+          "frequencyPerMillion": 0.31385644660986145
+        },
+        {
+          "year": 1599,
+          "value": 7.087078301992733e-8,
+          "frequencyPerMillion": 0.07087078301992733
+        },
+        {
+          "year": 1600,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1601,
+          "value": 2.9715184268752637e-7,
+          "frequencyPerMillion": 0.29715184268752637
+        },
+        {
+          "year": 1602,
+          "value": 1.2520771974777745e-7,
+          "frequencyPerMillion": 0.12520771974777745
+        },
+        {
+          "year": 1603,
+          "value": 1.5532683050878404e-7,
+          "frequencyPerMillion": 0.15532683050878404
+        },
+        {
+          "year": 1604,
+          "value": 1.4024652728039655e-7,
+          "frequencyPerMillion": 0.14024652728039655
+        },
+        {
+          "year": 1605,
+          "value": 4.792325398739194e-7,
+          "frequencyPerMillion": 0.47923253987391945
+        },
+        {
+          "year": 1606,
+          "value": 1.740215935797096e-7,
+          "frequencyPerMillion": 0.1740215935797096
+        },
+        {
+          "year": 1607,
+          "value": 4.990628212908632e-7,
+          "frequencyPerMillion": 0.4990628212908632
+        },
+        {
+          "year": 1608,
+          "value": 4.000150966021465e-7,
+          "frequencyPerMillion": 0.4000150966021465
+        },
+        {
+          "year": 1609,
+          "value": 3.3919124575731985e-7,
+          "frequencyPerMillion": 0.33919124575731985
+        },
+        {
+          "year": 1610,
+          "value": 8.414793484234906e-8,
+          "frequencyPerMillion": 0.08414793484234906
+        },
+        {
+          "year": 1611,
+          "value": 4.361372774042138e-8,
+          "frequencyPerMillion": 0.04361372774042138
+        },
+        {
+          "year": 1612,
+          "value": 1.5099038819244015e-7,
+          "frequencyPerMillion": 0.15099038819244015
+        },
+        {
+          "year": 1613,
+          "value": 2.1402712491180864e-7,
+          "frequencyPerMillion": 0.21402712491180864
+        },
+        {
+          "year": 1614,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1615,
+          "value": 1.525182682371451e-7,
+          "frequencyPerMillion": 0.1525182682371451
+        },
+        {
+          "year": 1616,
+          "value": 2.0012274148939468e-7,
+          "frequencyPerMillion": 0.20012274148939468
+        },
+        {
+          "year": 1617,
+          "value": 5.8430273952581047e-8,
+          "frequencyPerMillion": 0.05843027395258105
+        },
+        {
+          "year": 1618,
+          "value": 2.780041654659726e-7,
+          "frequencyPerMillion": 0.2780041654659726
+        },
+        {
+          "year": 1619,
+          "value": 1.624454029069966e-7,
+          "frequencyPerMillion": 0.1624454029069966
+        },
+        {
+          "year": 1620,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1621,
+          "value": 8.513300997492479e-8,
+          "frequencyPerMillion": 0.08513300997492479
+        },
+        {
+          "year": 1622,
+          "value": 1.6133422775510553e-7,
+          "frequencyPerMillion": 0.16133422775510553
+        },
+        {
+          "year": 1623,
+          "value": 1.2716900243958662e-7,
+          "frequencyPerMillion": 0.12716900243958662
+        },
+        {
+          "year": 1624,
+          "value": 2.1540617467508127e-7,
+          "frequencyPerMillion": 0.21540617467508127
+        },
+        {
+          "year": 1625,
+          "value": 1.5984844026206702e-7,
+          "frequencyPerMillion": 0.15984844026206702
+        },
+        {
+          "year": 1626,
+          "value": 3.262057930442097e-7,
+          "frequencyPerMillion": 0.3262057930442097
+        },
+        {
+          "year": 1627,
+          "value": 2.2090318907430628e-7,
+          "frequencyPerMillion": 0.22090318907430628
+        },
+        {
+          "year": 1628,
+          "value": 5.3068415439838645e-8,
+          "frequencyPerMillion": 0.053068415439838645
+        },
+        {
+          "year": 1629,
+          "value": 2.7945023362008214e-7,
+          "frequencyPerMillion": 0.27945023362008214
+        },
+        {
+          "year": 1630,
+          "value": 6.705101327497687e-7,
+          "frequencyPerMillion": 0.6705101327497687
+        },
+        {
+          "year": 1631,
+          "value": 2.149089652903058e-7,
+          "frequencyPerMillion": 0.2149089652903058
+        },
+        {
+          "year": 1632,
+          "value": 1.4742651899268822e-7,
+          "frequencyPerMillion": 0.14742651899268822
+        },
+        {
+          "year": 1633,
+          "value": 8.412016683223555e-8,
+          "frequencyPerMillion": 0.08412016683223555
+        },
+        {
+          "year": 1634,
+          "value": 1.9897626657439105e-7,
+          "frequencyPerMillion": 0.19897626657439105
+        },
+        {
+          "year": 1635,
+          "value": 4.79125333185948e-7,
+          "frequencyPerMillion": 0.47912533318594797
+        },
+        {
+          "year": 1636,
+          "value": 4.1021792185347294e-7,
+          "frequencyPerMillion": 0.41021792185347294
+        },
+        {
+          "year": 1637,
+          "value": 3.4192021303169895e-7,
+          "frequencyPerMillion": 0.34192021303169895
+        },
+        {
+          "year": 1638,
+          "value": 3.5229408013037755e-7,
+          "frequencyPerMillion": 0.35229408013037755
+        },
+        {
+          "year": 1639,
+          "value": 2.4609033744127373e-7,
+          "frequencyPerMillion": 0.24609033744127373
+        },
+        {
+          "year": 1640,
+          "value": 1.331952717009699e-7,
+          "frequencyPerMillion": 0.1331952717009699
+        },
+        {
+          "year": 1641,
+          "value": 4.182049337941862e-7,
+          "frequencyPerMillion": 0.4182049337941862
+        },
+        {
+          "year": 1642,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1643,
+          "value": 1.8576190541352844e-7,
+          "frequencyPerMillion": 0.18576190541352844
+        },
+        {
+          "year": 1644,
+          "value": 7.446794114684963e-8,
+          "frequencyPerMillion": 0.07446794114684963
+        },
+        {
+          "year": 1645,
+          "value": 5.871283406122529e-7,
+          "frequencyPerMillion": 0.5871283406122529
+        },
+        {
+          "year": 1646,
+          "value": 2.0480763396335533e-7,
+          "frequencyPerMillion": 0.20480763396335533
+        },
+        {
+          "year": 1647,
+          "value": 2.0012993218188058e-7,
+          "frequencyPerMillion": 0.20012993218188058
+        },
+        {
+          "year": 1648,
+          "value": 5.488471188641597e-8,
+          "frequencyPerMillion": 0.05488471188641597
+        },
+        {
+          "year": 1649,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1650,
+          "value": 1.571536785149874e-7,
+          "frequencyPerMillion": 0.1571536785149874
+        },
+        {
+          "year": 1651,
+          "value": 7.100767618339887e-8,
+          "frequencyPerMillion": 0.07100767618339887
+        },
+        {
+          "year": 1652,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1653,
+          "value": 1.9763025704833126e-7,
+          "frequencyPerMillion": 0.19763025704833126
+        },
+        {
+          "year": 1654,
+          "value": 1.5958680421590543e-7,
+          "frequencyPerMillion": 0.15958680421590543
+        },
+        {
+          "year": 1655,
+          "value": 8.75198011840439e-8,
+          "frequencyPerMillion": 0.0875198011840439
+        },
+        {
+          "year": 1656,
+          "value": 2.0302590542087273e-7,
+          "frequencyPerMillion": 0.20302590542087273
+        },
+        {
+          "year": 1657,
+          "value": 7.285865422090865e-8,
+          "frequencyPerMillion": 0.07285865422090865
+        },
+        {
+          "year": 1658,
+          "value": 5.865947727556886e-8,
+          "frequencyPerMillion": 0.05865947727556886
+        },
+        {
+          "year": 1659,
+          "value": 1.8143398961001367e-7,
+          "frequencyPerMillion": 0.18143398961001367
+        },
+        {
+          "year": 1660,
+          "value": 3.14268078227542e-8,
+          "frequencyPerMillion": 0.0314268078227542
+        },
+        {
+          "year": 1661,
+          "value": 4.0227313036211854e-8,
+          "frequencyPerMillion": 0.040227313036211854
+        },
+        {
+          "year": 1662,
+          "value": 2.0611125250979967e-7,
+          "frequencyPerMillion": 0.20611125250979967
+        },
+        {
+          "year": 1663,
+          "value": 2.885821572817804e-7,
+          "frequencyPerMillion": 0.2885821572817804
+        },
+        {
+          "year": 1664,
+          "value": 1.3641394502883486e-7,
+          "frequencyPerMillion": 0.13641394502883486
+        },
+        {
+          "year": 1665,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1666,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1667,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1668,
+          "value": 1.313410962211492e-7,
+          "frequencyPerMillion": 0.1313410962211492
+        },
+        {
+          "year": 1669,
+          "value": 7.023857051535742e-8,
+          "frequencyPerMillion": 0.07023857051535742
+        },
+        {
+          "year": 1670,
+          "value": 3.01041112038547e-8,
+          "frequencyPerMillion": 0.0301041112038547
+        },
+        {
+          "year": 1671,
+          "value": 2.7006774416804546e-7,
+          "frequencyPerMillion": 0.27006774416804546
+        },
+        {
+          "year": 1672,
+          "value": 5.874951725104438e-8,
+          "frequencyPerMillion": 0.05874951725104438
+        },
+        {
+          "year": 1673,
+          "value": 2.7907953281669506e-8,
+          "frequencyPerMillion": 0.027907953281669506
+        },
+        {
+          "year": 1674,
+          "value": 3.4520812874916373e-8,
+          "frequencyPerMillion": 0.03452081287491637
+        },
+        {
+          "year": 1675,
+          "value": 1.8516905697651964e-7,
+          "frequencyPerMillion": 0.18516905697651964
+        },
+        {
+          "year": 1676,
+          "value": 3.661644427666033e-7,
+          "frequencyPerMillion": 0.3661644427666033
+        },
+        {
+          "year": 1677,
+          "value": 3.071228604767384e-7,
+          "frequencyPerMillion": 0.3071228604767384
+        },
+        {
+          "year": 1678,
+          "value": 2.6595506241733347e-8,
+          "frequencyPerMillion": 0.026595506241733347
+        },
+        {
+          "year": 1679,
+          "value": 7.88094638437542e-8,
+          "frequencyPerMillion": 0.0788094638437542
+        },
+        {
+          "year": 1680,
+          "value": 1.845818644596875e-7,
+          "frequencyPerMillion": 0.1845818644596875
+        },
+        {
+          "year": 1681,
+          "value": 1.6194690033444203e-7,
+          "frequencyPerMillion": 0.16194690033444203
+        },
+        {
+          "year": 1682,
+          "value": 2.762729138794384e-7,
+          "frequencyPerMillion": 0.2762729138794384
+        },
+        {
+          "year": 1683,
+          "value": 1.7121276130183105e-7,
+          "frequencyPerMillion": 0.17121276130183105
+        },
+        {
+          "year": 1684,
+          "value": 5.135607352713123e-7,
+          "frequencyPerMillion": 0.5135607352713123
+        },
+        {
+          "year": 1685,
+          "value": 2.0460581140469003e-7,
+          "frequencyPerMillion": 0.20460581140469003
+        },
+        {
+          "year": 1686,
+          "value": 2.780303987037769e-7,
+          "frequencyPerMillion": 0.2780303987037769
+        },
+        {
+          "year": 1687,
+          "value": 7.078123331893948e-8,
+          "frequencyPerMillion": 0.07078123331893948
+        },
+        {
+          "year": 1688,
+          "value": 7.677651581161626e-8,
+          "frequencyPerMillion": 0.07677651581161626
+        },
+        {
+          "year": 1689,
+          "value": 3.647039648058126e-7,
+          "frequencyPerMillion": 0.3647039648058126
+        },
+        {
+          "year": 1690,
+          "value": 4.978305057079524e-8,
+          "frequencyPerMillion": 0.04978305057079524
+        },
+        {
+          "year": 1691,
+          "value": 7.498511678249997e-8,
+          "frequencyPerMillion": 0.07498511678249997
+        },
+        {
+          "year": 1692,
+          "value": 6.140699326806498e-8,
+          "frequencyPerMillion": 0.06140699326806498
+        },
+        {
+          "year": 1693,
+          "value": 1.951599983840424e-7,
+          "frequencyPerMillion": 0.1951599983840424
+        },
+        {
+          "year": 1694,
+          "value": 6.451573142385314e-8,
+          "frequencyPerMillion": 0.06451573142385314
+        },
+        {
+          "year": 1695,
+          "value": 6.726394019551662e-8,
+          "frequencyPerMillion": 0.06726394019551662
+        },
+        {
+          "year": 1696,
+          "value": 8.801410444903013e-8,
+          "frequencyPerMillion": 0.08801410444903013
+        },
+        {
+          "year": 1697,
+          "value": 1.3201793080952484e-7,
+          "frequencyPerMillion": 0.13201793080952484
+        },
+        {
+          "year": 1698,
+          "value": 2.2516620390433673e-7,
+          "frequencyPerMillion": 0.22516620390433673
+        },
+        {
+          "year": 1699,
+          "value": 4.756881466505547e-8,
+          "frequencyPerMillion": 0.04756881466505547
+        },
         {
           "year": 1700,
           "value": 5.195433416815831e-8,
@@ -4906,13 +8020,1051 @@
       "query": "forever and ever",
       "color": "#A1081F",
       "source": "Google Books Ngram Viewer",
-      "sourceUrl": "https://books.google.com/ngrams/json?content=forever%2Cfor+ever%2Cforevermore%2Cforever+and+ever&year_start=1700&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
+      "sourceUrl": "https://books.google.com/ngrams/json?content=forever%2Cfor+ever%2Cforevermore%2Cforever+and+ever&year_start=1500&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
       "corpus": "en",
       "smoothing": 0,
-      "startYear": 1700,
+      "startYear": 1500,
       "endYear": 2022,
       "inspectorId": "frequency-forever-and-ever",
+      "firstNonZeroYear": 1550,
+      "recommendedVisualStartYear": 1700,
+      "pre1700Status": "pre-1700-too-sparse",
+      "coverageNote": "Pre-1700 phrase signal is sparse. Use the full series for audit, but public context needs separate attestation or early-print evidence.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 4,
+          "averageFrequencyPerMillion": 0.02413,
+          "maxFrequencyPerMillion": 1.43262
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 70,
+          "averageFrequencyPerMillion": 0.147962,
+          "maxFrequencyPerMillion": 2.537023
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 95,
+          "averageFrequencyPerMillion": 0.065788,
+          "maxFrequencyPerMillion": 0.415541
+        },
+        {
+          "startYear": 1800,
+          "endYear": 2022,
+          "pointCount": 223,
+          "nonZeroYearCount": 223,
+          "averageFrequencyPerMillion": 0.168817,
+          "maxFrequencyPerMillion": 0.631812
+        }
+      ],
       "points": [
+        {
+          "year": 1500,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1501,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1502,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1503,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1504,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1505,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1506,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1507,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1508,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1509,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1510,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1511,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1512,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1513,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1514,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1515,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1516,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1517,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1518,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1519,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1520,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1521,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1522,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1523,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1524,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1525,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1526,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1527,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1528,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1529,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1530,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1531,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1532,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1533,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1534,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1535,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1536,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1537,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1538,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1539,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1540,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1541,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1542,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1543,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1544,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1545,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1546,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1547,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1548,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1549,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1550,
+          "value": 2.4696876721463923e-7,
+          "frequencyPerMillion": 0.24696876721463923
+        },
+        {
+          "year": 1551,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1552,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1553,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1554,
+          "value": 0.000001432619569641247,
+          "frequencyPerMillion": 1.432619569641247
+        },
+        {
+          "year": 1555,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1556,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1557,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1558,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1559,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1560,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1561,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1562,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1563,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1564,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1565,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1566,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1567,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1568,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1569,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1570,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1571,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1572,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1573,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1574,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1575,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1576,
+          "value": 5.44784882094973e-7,
+          "frequencyPerMillion": 0.544784882094973
+        },
+        {
+          "year": 1577,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1578,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1579,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1580,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1581,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1582,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1583,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1584,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1585,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1586,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1587,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1588,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1589,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1590,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1591,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1592,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1593,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1594,
+          "value": 1.8863397599488962e-7,
+          "frequencyPerMillion": 0.18863397599488962
+        },
+        {
+          "year": 1595,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1596,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1597,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1598,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1599,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1600,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1601,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1602,
+          "value": 1.3877628646241646e-7,
+          "frequencyPerMillion": 0.13877628646241646
+        },
+        {
+          "year": 1603,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1604,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1605,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1606,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1607,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1608,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1609,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1610,
+          "value": 4.743823112107748e-8,
+          "frequencyPerMillion": 0.04743823112107748
+        },
+        {
+          "year": 1611,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1612,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1613,
+          "value": 1.8303623505744326e-7,
+          "frequencyPerMillion": 0.18303623505744326
+        },
+        {
+          "year": 1614,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1615,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1616,
+          "value": 7.517580513649591e-8,
+          "frequencyPerMillion": 0.07517580513649591
+        },
+        {
+          "year": 1617,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1618,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1619,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1620,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1621,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1622,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1623,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1624,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1625,
+          "value": 8.789415062437911e-8,
+          "frequencyPerMillion": 0.08789415062437911
+        },
+        {
+          "year": 1626,
+          "value": 9.265887968012976e-8,
+          "frequencyPerMillion": 0.09265887968012976
+        },
+        {
+          "year": 1627,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1628,
+          "value": 5.991280005446242e-8,
+          "frequencyPerMillion": 0.05991280005446242
+        },
+        {
+          "year": 1629,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1630,
+          "value": 1.6226277921305154e-7,
+          "frequencyPerMillion": 0.16226277921305154
+        },
+        {
+          "year": 1631,
+          "value": 9.651490273654417e-8,
+          "frequencyPerMillion": 0.09651490273654417
+        },
+        {
+          "year": 1632,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1633,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1634,
+          "value": 5.584287166016111e-8,
+          "frequencyPerMillion": 0.05584287166016111
+        },
+        {
+          "year": 1635,
+          "value": 1.6722863449558645e-7,
+          "frequencyPerMillion": 0.16722863449558645
+        },
+        {
+          "year": 1636,
+          "value": 1.574809402882238e-7,
+          "frequencyPerMillion": 0.1574809402882238
+        },
+        {
+          "year": 1637,
+          "value": 2.203153144364478e-7,
+          "frequencyPerMillion": 0.2203153144364478
+        },
+        {
+          "year": 1638,
+          "value": 3.0881207635502506e-7,
+          "frequencyPerMillion": 0.30881207635502506
+        },
+        {
+          "year": 1639,
+          "value": 2.084968855342595e-7,
+          "frequencyPerMillion": 0.2084968855342595
+        },
+        {
+          "year": 1640,
+          "value": 7.512440447499102e-8,
+          "frequencyPerMillion": 0.07512440447499102
+        },
+        {
+          "year": 1641,
+          "value": 1.1749010297990026e-7,
+          "frequencyPerMillion": 0.11749010297990026
+        },
+        {
+          "year": 1642,
+          "value": 6.736259194894956e-8,
+          "frequencyPerMillion": 0.06736259194894956
+        },
+        {
+          "year": 1643,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1644,
+          "value": 4.114481839678774e-7,
+          "frequencyPerMillion": 0.4114481839678774
+        },
+        {
+          "year": 1645,
+          "value": 3.3124189258160186e-7,
+          "frequencyPerMillion": 0.33124189258160186
+        },
+        {
+          "year": 1646,
+          "value": 3.4463130305084633e-7,
+          "frequencyPerMillion": 0.3446313030508463
+        },
+        {
+          "year": 1647,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1648,
+          "value": 4.2928900256811175e-7,
+          "frequencyPerMillion": 0.42928900256811175
+        },
+        {
+          "year": 1649,
+          "value": 1.6668553826093557e-7,
+          "frequencyPerMillion": 0.16668553826093557
+        },
+        {
+          "year": 1650,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1651,
+          "value": 3.995152297875393e-8,
+          "frequencyPerMillion": 0.03995152297875393
+        },
+        {
+          "year": 1652,
+          "value": 1.7645277239353163e-7,
+          "frequencyPerMillion": 0.17645277239353163
+        },
+        {
+          "year": 1653,
+          "value": 5.4775526336925395e-8,
+          "frequencyPerMillion": 0.054775526336925395
+        },
+        {
+          "year": 1654,
+          "value": 6.678055228803714e-7,
+          "frequencyPerMillion": 0.6678055228803714
+        },
+        {
+          "year": 1655,
+          "value": 1.9627570679858763e-7,
+          "frequencyPerMillion": 0.19627570679858763
+        },
+        {
+          "year": 1656,
+          "value": 9.196369887831679e-8,
+          "frequencyPerMillion": 0.09196369887831679
+        },
+        {
+          "year": 1657,
+          "value": 2.708793189754033e-8,
+          "frequencyPerMillion": 0.02708793189754033
+        },
+        {
+          "year": 1658,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1659,
+          "value": 3.366542600247158e-8,
+          "frequencyPerMillion": 0.03366542600247158
+        },
+        {
+          "year": 1660,
+          "value": 7.118614320233974e-8,
+          "frequencyPerMillion": 0.07118614320233974
+        },
+        {
+          "year": 1661,
+          "value": 9.096336839320429e-8,
+          "frequencyPerMillion": 0.09096336839320429
+        },
+        {
+          "year": 1662,
+          "value": 2.0168738501524786e-7,
+          "frequencyPerMillion": 0.20168738501524786
+        },
+        {
+          "year": 1663,
+          "value": 6.40092636672307e-8,
+          "frequencyPerMillion": 0.0640092636672307
+        },
+        {
+          "year": 1664,
+          "value": 1.0187415711016001e-7,
+          "frequencyPerMillion": 0.10187415711016001
+        },
+        {
+          "year": 1665,
+          "value": 2.3272681914932036e-7,
+          "frequencyPerMillion": 0.23272681914932036
+        },
+        {
+          "year": 1666,
+          "value": 8.892740055443937e-8,
+          "frequencyPerMillion": 0.08892740055443937
+        },
+        {
+          "year": 1667,
+          "value": 7.255787437543404e-8,
+          "frequencyPerMillion": 0.07255787437543404
+        },
+        {
+          "year": 1668,
+          "value": 1.487316723114418e-7,
+          "frequencyPerMillion": 0.1487316723114418
+        },
+        {
+          "year": 1669,
+          "value": 0,
+          "frequencyPerMillion": 0
+        },
+        {
+          "year": 1670,
+          "value": 1.345006381825442e-7,
+          "frequencyPerMillion": 0.1345006381825442
+        },
+        {
+          "year": 1671,
+          "value": 2.374477787725482e-7,
+          "frequencyPerMillion": 0.2374477787725482
+        },
+        {
+          "year": 1672,
+          "value": 2.3640835422611417e-7,
+          "frequencyPerMillion": 0.23640835422611417
+        },
+        {
+          "year": 1673,
+          "value": 1.295358060815488e-7,
+          "frequencyPerMillion": 0.1295358060815488
+        },
+        {
+          "year": 1674,
+          "value": 1.5305610645555134e-7,
+          "frequencyPerMillion": 0.15305610645555134
+        },
+        {
+          "year": 1675,
+          "value": 5.796135269520164e-7,
+          "frequencyPerMillion": 0.5796135269520164
+        },
+        {
+          "year": 1676,
+          "value": 0.0000025370227376697585,
+          "frequencyPerMillion": 2.5370227376697585
+        },
+        {
+          "year": 1677,
+          "value": 2.41740764295173e-7,
+          "frequencyPerMillion": 0.241740764295173
+        },
+        {
+          "year": 1678,
+          "value": 2.9729811501510994e-8,
+          "frequencyPerMillion": 0.029729811501510994
+        },
+        {
+          "year": 1679,
+          "value": 1.517915535487191e-7,
+          "frequencyPerMillion": 0.1517915535487191
+        },
+        {
+          "year": 1680,
+          "value": 1.7176625988213345e-7,
+          "frequencyPerMillion": 0.17176625988213345
+        },
+        {
+          "year": 1681,
+          "value": 5.975721961704039e-8,
+          "frequencyPerMillion": 0.05975721961704039
+        },
+        {
+          "year": 1682,
+          "value": 2.763466682154103e-7,
+          "frequencyPerMillion": 0.2763466682154103
+        },
+        {
+          "year": 1683,
+          "value": 6.332481916615507e-7,
+          "frequencyPerMillion": 0.6332481916615507
+        },
+        {
+          "year": 1684,
+          "value": 5.49227252122364e-7,
+          "frequencyPerMillion": 0.549227252122364
+        },
+        {
+          "year": 1685,
+          "value": 6.648357242511338e-8,
+          "frequencyPerMillion": 0.06648357242511338
+        },
+        {
+          "year": 1686,
+          "value": 8.861793077130642e-8,
+          "frequencyPerMillion": 0.08861793077130642
+        },
+        {
+          "year": 1687,
+          "value": 1.9670579831654322e-7,
+          "frequencyPerMillion": 0.19670579831654322
+        },
+        {
+          "year": 1688,
+          "value": 1.2817388039820798e-7,
+          "frequencyPerMillion": 0.12817388039820798
+        },
+        {
+          "year": 1689,
+          "value": 4.862463924837357e-7,
+          "frequencyPerMillion": 0.4862463924837357
+        },
+        {
+          "year": 1690,
+          "value": 5.6074323850907604e-8,
+          "frequencyPerMillion": 0.056074323850907604
+        },
+        {
+          "year": 1691,
+          "value": 4.3031960217376763e-8,
+          "frequencyPerMillion": 0.04303196021737676
+        },
+        {
+          "year": 1692,
+          "value": 3.4511583635321585e-7,
+          "frequencyPerMillion": 0.34511583635321585
+        },
+        {
+          "year": 1693,
+          "value": 2.4928550601543975e-7,
+          "frequencyPerMillion": 0.24928550601543975
+        },
+        {
+          "year": 1694,
+          "value": 3.612485954818112e-8,
+          "frequencyPerMillion": 0.03612485954818112
+        },
+        {
+          "year": 1695,
+          "value": 3.756559152634509e-8,
+          "frequencyPerMillion": 0.03756559152634509
+        },
+        {
+          "year": 1696,
+          "value": 3.342977450415674e-8,
+          "frequencyPerMillion": 0.03342977450415674
+        },
+        {
+          "year": 1697,
+          "value": 3.6882305209928745e-8,
+          "frequencyPerMillion": 0.036882305209928745
+        },
+        {
+          "year": 1698,
+          "value": 3.982252110290574e-7,
+          "frequencyPerMillion": 0.3982252110290574
+        },
+        {
+          "year": 1699,
+          "value": 1.0725855048576705e-7,
+          "frequencyPerMillion": 0.10725855048576705
+        },
         {
           "year": 1700,
           "value": 2.3370152746338135e-7,

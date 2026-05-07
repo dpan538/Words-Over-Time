@@ -35,6 +35,18 @@ export type GeneratedFrequencySeries = {
   smoothing: number;
   startYear: number;
   endYear: number;
+  firstNonZeroYear?: number | null;
+  recommendedVisualStartYear?: number;
+  pre1700Status?: string;
+  coverageNote?: string;
+  rangeStats?: Array<{
+    startYear: number;
+    endYear: number;
+    pointCount: number;
+    nonZeroYearCount: number;
+    averageFrequencyPerMillion: number;
+    maxFrequencyPerMillion: number;
+  }>;
   points: GeneratedFrequencyPoint[];
   inspectorId: string;
 };
@@ -127,6 +139,65 @@ export type GeneratedFlowLink = {
   inspectorId: string;
 };
 
+export type GeneratedAtlasNode = {
+  id: string;
+  label: string;
+  column: "form" | "phrase" | "contextual_category" | "collocate";
+  eraId: ForeverEraId | "all";
+  color: string;
+  value: number;
+  evidenceCount: number;
+  documentFrequency?: number;
+  scoreType?: string;
+  scoreValue?: number;
+  sourceCorpus: string;
+  relatedSnippetIds: string[];
+  caveat: string;
+  inspectorId: string;
+};
+
+export type GeneratedAtlasEdge = {
+  id: string;
+  sourceId: string;
+  targetId: string;
+  relationType:
+    | "form_relation"
+    | "phrase_evidence"
+    | "category_assignment"
+    | "collocate_support"
+    | "editorial_grouping";
+  value: number;
+  eraId: ForeverEraId | "all";
+  evidenceCount: number;
+  scoreType?: string;
+  scoreValue?: number;
+  dataLayer: "raw" | "computed" | "curated" | "interpretive";
+  relatedSnippetIds: string[];
+  caveat: string;
+  inspectorId: string;
+};
+
+export type GeneratedLedgerCell = {
+  id: string;
+  categoryId: string;
+  eraId: ForeverEraId;
+  evidenceStrength: "strong" | "moderate" | "weak" | "none";
+  phraseSupport: number;
+  collocateSupport: number;
+  snippetSupport: number;
+  coverageStatus:
+    | "supported"
+    | "weak"
+    | "no-current-context-layer"
+    | "future-layer";
+  confidence: "high" | "medium" | "low" | "unavailable";
+  scoreType: string;
+  scoreValue: number;
+  sourceCorpus: string;
+  relatedSnippetIds: string[];
+  inspectorId: string;
+};
+
 export type GeneratedNetworkNode = {
   id: string;
   label: string;
@@ -152,22 +223,134 @@ export type GeneratedNetworkEdge = {
   inspectorId: string;
 };
 
+export type GeneratedPrehistory = {
+  generatedAt: string;
+  layer: string;
+  coverage: {
+    earliestApproximateYear: number;
+    latestApproximateYear: number;
+    comparableCorpusAvailable: boolean;
+    note: string;
+  };
+  records: Array<{
+    id: string;
+    form: string;
+    normalizedForm: string;
+    evidenceType: string;
+    dateLabel: string;
+    yearApproximation: number;
+    sourceName: string;
+    sourceUrl: string;
+    sourceCategory: string;
+    quote: string;
+    verificationStatus: string;
+    confidence: string;
+    caveat: string;
+  }>;
+  investigatedSources: Array<{
+    id: string;
+    name: string;
+    coverage: string;
+    status: string;
+    sourceUrl: string;
+    note: string;
+  }>;
+};
+
+export type GeneratedModernContext = {
+  generatedAt: string;
+  layer: string;
+  source: {
+    label: string;
+    url: string;
+    apiUrl: string;
+    licenseNote: string;
+    caveat: string;
+  };
+  coverage: {
+    startYear: number | null;
+    endYear: number | null;
+    sourceType: string;
+    comparableToHistoricalCorpus: boolean;
+  };
+  queries: string[];
+  snippets: Array<{
+    id: string;
+    source: string;
+    sourceUrl: string;
+    sourceCorpus: string;
+    title: string;
+    author: string;
+    year: number;
+    eraId: ForeverEraId;
+    dateBasis?: string;
+    query: string;
+    quote: string;
+    rightsStatus: string;
+    evidenceType: string;
+    categoryIds: string[];
+    caveat: string;
+  }>;
+  phrases: Array<{
+    id: string;
+    phrase: string;
+    count: number;
+    documentFrequency: number;
+    sourceCorpus: string;
+    relatedSnippetIds: string[];
+    categoryIds: string[];
+    displayEligible: boolean;
+    caveat: string;
+  }>;
+  collocates: Array<{
+    id: string;
+    token: string;
+    count: number;
+    documentFrequency: number;
+    sourceCorpus: string;
+    categoryIds: string[];
+    relatedSnippetIds: string[];
+    caveat: string;
+  }>;
+};
+
 export type ForeverGeneratedDataset = {
   generatedAt: string;
   coverage: {
     ngramStartYear: number;
     ngramEndYear: number;
+    ngramPublicVisualDefaultStartYear?: number;
+    ngramPre1700Available?: boolean;
     gutenbergStartYear: number;
     gutenbergEndYear: number;
+    prehistoryEarliestApproximateYear?: number | null;
+    prehistoryComparableCorpusAvailable?: boolean;
+    modernContextStartYear?: number | null;
+    modernContextEndYear?: number | null;
+    modernContextComparableToHistoricalCorpus?: boolean;
     recentImplemented: boolean;
   };
+  sourceLayers?: Array<{
+    id: string;
+    source: string;
+    coverage: string;
+    role: string;
+    comparable: boolean;
+  }>;
   eras: ForeverEra[];
   frequency: GeneratedFrequencySeries[];
+  prehistory?: GeneratedPrehistory | null;
+  modernContext?: GeneratedModernContext | null;
   phrases: GeneratedPhrase[];
   collocates: GeneratedCollocate[];
   snippets: GeneratedSnippet[];
   categories: GeneratedCategory[];
   flows: GeneratedFlowLink[];
+  atlas: {
+    nodes: GeneratedAtlasNode[];
+    edges: GeneratedAtlasEdge[];
+  };
+  ledger: GeneratedLedgerCell[];
   network: {
     nodes: GeneratedNetworkNode[];
     edges: GeneratedNetworkEdge[];

@@ -17,18 +17,18 @@ export function PosterSection({
 }: PosterSectionProps) {
   return (
     <section
-      className={`border-t border-ink/80 py-10 sm:py-14 ${className}`}
+      className={`border-t border-ink/80 py-14 sm:py-18 lg:py-24 ${className}`}
     >
-      <div className="mb-7 grid gap-4 lg:grid-cols-[18rem_minmax(0,1fr)] lg:gap-10">
-        <p className="font-mono text-[0.68rem] font-black uppercase leading-5 tracking-[0.2em] text-fire">
+      <div className="mb-8 grid gap-3 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
+        <p className="font-mono text-[0.72rem] font-black uppercase leading-5 tracking-[0.2em] text-fire">
           {eyebrow}
         </p>
         <div className="max-w-5xl">
-          <h2 className="text-[clamp(2.2rem,5vw,6.4rem)] font-black leading-[0.88] tracking-normal">
+          <h2 className="text-[clamp(1.22rem,2vw,1.95rem)] font-black leading-[1.02] tracking-normal">
             {title}
           </h2>
           {intro ? (
-            <p className="mt-4 max-w-3xl text-sm font-bold leading-6 text-ink/68 sm:text-base">
+            <p className="mt-2 max-w-3xl text-[0.92rem] font-bold leading-6 text-ink/62">
               {intro}
             </p>
           ) : null}

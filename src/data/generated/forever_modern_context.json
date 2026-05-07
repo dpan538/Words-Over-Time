@@ -1,0 +1,834 @@
+{
+  "generatedAt": "2026-05-07T10:36:55.290Z",
+  "layer": "modern context",
+  "source": {
+    "label": "Wikinews",
+    "url": "https://en.wikinews.org/",
+    "apiUrl": "https://en.wikinews.org/w/api.php",
+    "licenseNote": "Wikinews text is open licensed. Articles before 2024-12-16 are generally CC BY 2.5; newer text is CC BY 4.0 unless otherwise specified.",
+    "caveat": "This is an open-news context snapshot, not a balanced corpus and not comparable with Ngram or Gutenberg."
+  },
+  "coverage": {
+    "startYear": 2024,
+    "endYear": 2026,
+    "sourceType": "open news search snippets",
+    "comparableToHistoricalCorpus": false
+  },
+  "queries": [
+    "forever",
+    "\"for ever\"",
+    "\"forever and ever\"",
+    "\"remembered forever\"",
+    "\"live forever\"",
+    "\"takes forever\"",
+    "\"gone forever\"",
+    "\"online forever\"",
+    "\"internet forever\"",
+    "\"digital forever\""
+  ],
+  "snippets": [
+    {
+      "id": "modern-wikinews-scientists-conclude-that-the-universe-may-expand-forever-1",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Scientists_conclude_that_the_universe_may_expand_forever",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Scientists conclude that the universe may expand forever",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "forever",
+      "quote": "the universe \"will continue to accelerate and the universe will expand forever\". Have an opinion on this story? Share it! Howard Falcon-Lang. Fate of",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-hotel-development-proposal-could-displace-buffalo-ny-business-owners-2",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Hotel_development_proposal_could_displace_Buffalo%2C_NY_business_owners",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Hotel development proposal could displace Buffalo, NY business owners",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "forever",
+      "quote": "create several gardens around bus shelters in the city, and served on Forever Elmwood Board for six years as head of Beautification. Patty Morris co-owns",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-harlan-ellison-sues-cbs-paramount-wga-over-star-trek-royalties-3",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Harlan_Ellison_sues_CBS-Paramount%2C_WGA_over_Star_Trek_royalties",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Harlan Ellison sues CBS-Paramount, WGA over Star Trek royalties",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "forever",
+      "quote": "Contrary to this article, Ellison was credited for The City on the Edge of Forever under his own name rather than a pseudonym. (See collaboration discussion",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-city-planning-board-postpones-decision-on-buffalo-n-y-hotel-proposal-4",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/City_Planning_Board_postpones_decision_on_Buffalo%2C_N.Y._hotel_proposal",
+      "sourceCorpus": "Wikinews API search",
+      "title": "City Planning Board postpones decision on Buffalo, N.Y. hotel proposal",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "forever",
+      "quote": "proposal, stating: \"I am here today to lend Forever Elmwood's support the hotel project. Particularly, Forever Elmwood is encouraged by the fact that this",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-ny-sen-monserrate-found-guilty-of-misdemeanor-assault-5",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/NY_Sen._Monserrate_found_guilty_of_misdemeanor_assault",
+      "sourceCorpus": "Wikinews API search",
+      "title": "NY Sen. Monserrate found guilty of misdemeanor assault",
+      "author": "Wikinews contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "forever",
+      "quote": "person who I love\". Monserrate stated that: \"I have to live with that forever. There are no winners here today.\" Monserrate's attorney, Joseph Tacopina",
+      "rightsStatus": "CC BY 4.0",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "hyperbole_colloquial",
+        "romance_vow"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Public_disclosure_made_of_final_report_on_deaths_of_nine_in_Finnish_school_shooting",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Public disclosure made of final report on deaths of nine in Finnish school shooting",
+      "author": "Wikinews contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "forever",
+      "quote": "revolution,\" read one diary entry. \"In any case, I want this to be remembered forever. Maybe I'll even have a follower; after all, I am a super-person, almost",
+      "rightsStatus": "CC BY 4.0",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "remembrance"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-supreme-court-of-india-begins-hearing-against-triple-talaq-7",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Supreme_Court_of_India_begins_hearing_against_triple_talaq",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Supreme Court of India begins hearing against triple talaq",
+      "author": "Wikinews contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"for ever\"",
+      "quote": "than he is?\" She added, \"I want the supreme court to free Muslim women for ever from the fear of triple talaq.\" Countries like Turkey, Egypt, Cyprus, Pakistan",
+      "rightsStatus": "CC BY 4.0",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-full-text-of-ahmadinejad-s-letter-to-bush-made-available-online-8",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Full_text_of_Ahmadinejad's_letter_to_Bush_made_available_online",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Full text of Ahmadinejad's letter to Bush made available online",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"for ever\"",
+      "quote": "Ahmadinejad's 2006 letter to Bush Mahmoud Ahmadinejad. Those in power do not rule for ever: history will judge our presidencies — The Guardian, May 11, 2006 Mahmoud",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-australian-rules-football-interview-with-andy-thissling-statistician-for-the-traralgon-football-club-senior-side-9",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Australian_rules_football%3A_Interview_with_Andy_Thissling%2C_statistician_for_the_Traralgon_Football_Club_senior_side",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Australian rules football: Interview with Andy Thissling, statistician for the Traralgon Football Club senior side",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"for ever\"",
+      "quote": "Club, for the seniors. And I love it so much. I want to have this job for ever. ((PG)) Sounds good. How Long have you been doing this? ((Andy)) What do",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "romance_vow"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-greek-singer-demis-roussos-dies-aged-68-10",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Greek_singer_Demis_Roussos_dies_aged_68",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Greek singer Demis Roussos dies aged 68",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"forever and ever\"",
+      "quote": "reached international fame in the 1960s and 70s. His hits included Forever and Ever, Quand je t'aime, and Goodbye. Roussos, whose musical career started",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "eternity_religion"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Public_disclosure_made_of_final_report_on_deaths_of_nine_in_Finnish_school_shooting",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Public disclosure made of final report on deaths of nine in Finnish school shooting",
+      "author": "Wikinews contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"remembered forever\"",
+      "quote": "revolution,\" read one diary entry. \"In any case, I want this to be remembered forever. Maybe I'll even have a follower; after all, I am a super-person,",
+      "rightsStatus": "CC BY 4.0",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "remembrance"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-pioneering-oceanographer-walter-munk-dies-of-pneumonia-in-california-12",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Pioneering_oceanographer_Walter_Munk_dies_of_pneumonia_in_California",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Pioneering oceanographer Walter Munk dies of pneumonia in California",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"live forever\"",
+      "quote": "year during a visit to Paris. His wife Mary said \"We thought he would live forever. His legacy will be his passion for the ocean, which was endless.\" Have",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "remembrance",
+        "permanence_duration"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-two-men-arrested-in-tennessee-for-plot-to-kill-obama-and-school-children-13",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Two_men_arrested_in_Tennessee_for_plot_to_kill_Obama_and_school_children",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Two men arrested in Tennessee for plot to kill Obama and school children",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"live forever\"",
+      "quote": "page he wrote, \"Better to die quick fighting on your feet then [sic] to live forever begging on your knees.\" Some have questioned the pair's ability to carry",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "permanence_duration"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-2010-brit-awards-highlights-14",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/2010_BRIT_Awards_highlights",
+      "sourceCorpus": "Wikinews API search",
+      "title": "2010 BRIT Awards highlights",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"live forever\"",
+      "quote": "Bonehead, Quiggs, Alan White... the best fucking fans in the world. Live forever.\" He then threw his microphone and the trophy into the crowd and walked",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "permanence_duration"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-saturn-s-rings-are-much-older-than-previously-thought-15",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Saturn's_rings_are_much_older_than_previously_thought",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Saturn's rings are much older than previously thought",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"live forever\"",
+      "quote": "Falls Times-News, December 13, 2007 Jonathan Amos. Saturn's rings 'may live forever' — BBC News Online, December 13, 2007 Saturn's Rings May be Old Timers",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "digital_permanence",
+        "permanence_duration"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-wikinews-interviews-tom-millican-independent-candidate-for-us-president-16",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Wikinews_interviews_Tom_Millican%2C_independent_candidate_for_US_President",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Wikinews interviews Tom Millican, independent candidate for US President",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"live forever\"",
+      "quote": "believe that when God created us he originally meant for each of us to live forever but as man has often done throughout time man thought he should be as",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "permanence_duration",
+        "eternity_religion"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    },
+    {
+      "id": "modern-wikinews-uup-leader-loses-seat-in-2005-uk-general-election-17",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/UUP_leader_loses_seat_in_2005_UK_General_Election",
+      "sourceCorpus": "Wikinews API search",
+      "title": "UUP leader loses seat in 2005 UK General Election",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"gone forever\"",
+      "quote": "Bann \"sends out a very, very clear signal that push-over unionism has gone forever\". Have an opinion on this story? Share it! UK voting age to be lowered",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "permanence_duration"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to the Google Books or Gutenberg historical corpora."
+    }
+  ],
+  "phrases": [
+    {
+      "id": "modern-phrase-for-ever",
+      "phrase": "for ever",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews",
+      "relatedSnippetIds": [
+        "modern-wikinews-supreme-court-of-india-begins-hearing-against-triple-talaq-7",
+        "modern-wikinews-full-text-of-ahmadinejad-s-letter-to-bush-made-available-online-8",
+        "modern-wikinews-australian-rules-football-interview-with-andy-thissling-statistician-for-the-traralgon-football-club-senior-side-9"
+      ],
+      "categoryIds": [],
+      "displayEligible": true,
+      "caveat": "Modern phrase evidence is from open news snippets, not a balanced corpus."
+    },
+    {
+      "id": "modern-phrase-forever-and-ever",
+      "phrase": "forever and ever",
+      "count": 1,
+      "documentFrequency": 1,
+      "sourceCorpus": "Wikinews",
+      "relatedSnippetIds": [
+        "modern-wikinews-greek-singer-demis-roussos-dies-aged-68-10"
+      ],
+      "categoryIds": [
+        "eternity_religion"
+      ],
+      "displayEligible": true,
+      "caveat": "Modern phrase evidence is from open news snippets, not a balanced corpus."
+    },
+    {
+      "id": "modern-phrase-remembered-forever",
+      "phrase": "remembered forever",
+      "count": 2,
+      "documentFrequency": 1,
+      "sourceCorpus": "Wikinews",
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "categoryIds": [
+        "remembrance"
+      ],
+      "displayEligible": true,
+      "caveat": "Modern phrase evidence is from open news snippets, not a balanced corpus."
+    },
+    {
+      "id": "modern-phrase-live-forever",
+      "phrase": "live forever",
+      "count": 5,
+      "documentFrequency": 5,
+      "sourceCorpus": "Wikinews",
+      "relatedSnippetIds": [
+        "modern-wikinews-pioneering-oceanographer-walter-munk-dies-of-pneumonia-in-california-12",
+        "modern-wikinews-two-men-arrested-in-tennessee-for-plot-to-kill-obama-and-school-children-13",
+        "modern-wikinews-2010-brit-awards-highlights-14",
+        "modern-wikinews-saturn-s-rings-are-much-older-than-previously-thought-15",
+        "modern-wikinews-wikinews-interviews-tom-millican-independent-candidate-for-us-president-16"
+      ],
+      "categoryIds": [
+        "permanence_duration"
+      ],
+      "displayEligible": true,
+      "caveat": "Modern phrase evidence is from open news snippets, not a balanced corpus."
+    },
+    {
+      "id": "modern-phrase-gone-forever",
+      "phrase": "gone forever",
+      "count": 1,
+      "documentFrequency": 1,
+      "sourceCorpus": "Wikinews",
+      "relatedSnippetIds": [
+        "modern-wikinews-uup-leader-loses-seat-in-2005-uk-general-election-17"
+      ],
+      "categoryIds": [
+        "permanence_duration"
+      ],
+      "displayEligible": true,
+      "caveat": "Modern phrase evidence is from open news snippets, not a balanced corpus."
+    }
+  ],
+  "collocates": [
+    {
+      "id": "modern-collocate-live",
+      "token": "live",
+      "count": 6,
+      "documentFrequency": 6,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-ny-sen-monserrate-found-guilty-of-misdemeanor-assault-5",
+        "modern-wikinews-pioneering-oceanographer-walter-munk-dies-of-pneumonia-in-california-12",
+        "modern-wikinews-two-men-arrested-in-tennessee-for-plot-to-kill-obama-and-school-children-13",
+        "modern-wikinews-2010-brit-awards-highlights-14",
+        "modern-wikinews-saturn-s-rings-are-much-older-than-previously-thought-15",
+        "modern-wikinews-wikinews-interviews-tom-millican-independent-candidate-for-us-president-16"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-want",
+      "token": "want",
+      "count": 4,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-supreme-court-of-india-begins-hearing-against-triple-talaq-7",
+        "modern-wikinews-australian-rules-football-interview-with-andy-thissling-statistician-for-the-traralgon-football-club-senior-side-9",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-ever",
+      "token": "ever",
+      "count": 4,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-supreme-court-of-india-begins-hearing-against-triple-talaq-7",
+        "modern-wikinews-full-text-of-ahmadinejad-s-letter-to-bush-made-available-online-8",
+        "modern-wikinews-australian-rules-football-interview-with-andy-thissling-statistician-for-the-traralgon-football-club-senior-side-9",
+        "modern-wikinews-greek-singer-demis-roussos-dies-aged-68-10"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-will",
+      "token": "will",
+      "count": 4,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-scientists-conclude-that-the-universe-may-expand-forever-1",
+        "modern-wikinews-full-text-of-ahmadinejad-s-letter-to-bush-made-available-online-8",
+        "modern-wikinews-pioneering-oceanographer-walter-munk-dies-of-pneumonia-in-california-12"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-person",
+      "token": "person",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-ny-sen-monserrate-found-guilty-of-misdemeanor-assault-5",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-may",
+      "token": "may",
+      "count": 3,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-full-text-of-ahmadinejad-s-letter-to-bush-made-available-online-8",
+        "modern-wikinews-saturn-s-rings-are-much-older-than-previously-thought-15"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-opinion",
+      "token": "opinion",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-scientists-conclude-that-the-universe-may-expand-forever-1",
+        "modern-wikinews-uup-leader-loses-seat-in-2005-uk-general-election-17"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-story",
+      "token": "story",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-scientists-conclude-that-the-universe-may-expand-forever-1",
+        "modern-wikinews-uup-leader-loses-seat-in-2005-uk-general-election-17"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-share",
+      "token": "share",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-scientists-conclude-that-the-universe-may-expand-forever-1",
+        "modern-wikinews-uup-leader-loses-seat-in-2005-uk-general-election-17"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-city",
+      "token": "city",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-hotel-development-proposal-could-displace-buffalo-ny-business-owners-2",
+        "modern-wikinews-harlan-ellison-sues-cbs-paramount-wga-over-star-trek-royalties-3"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-elmwood",
+      "token": "elmwood",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-hotel-development-proposal-could-displace-buffalo-ny-business-owners-2",
+        "modern-wikinews-city-planning-board-postpones-decision-on-buffalo-n-y-hotel-proposal-4"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-than",
+      "token": "than",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-harlan-ellison-sues-cbs-paramount-wga-over-star-trek-royalties-3",
+        "modern-wikinews-supreme-court-of-india-begins-hearing-against-triple-talaq-7"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-here",
+      "token": "here",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-city-planning-board-postpones-decision-on-buffalo-n-y-hotel-proposal-4",
+        "modern-wikinews-ny-sen-monserrate-found-guilty-of-misdemeanor-assault-5"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-today",
+      "token": "today",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-city-planning-board-postpones-decision-on-buffalo-n-y-hotel-proposal-4",
+        "modern-wikinews-ny-sen-monserrate-found-guilty-of-misdemeanor-assault-5"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-love",
+      "token": "love",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [
+        "romance_vow"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-ny-sen-monserrate-found-guilty-of-misdemeanor-assault-5",
+        "modern-wikinews-australian-rules-football-interview-with-andy-thissling-statistician-for-the-traralgon-football-club-senior-side-9"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-revolution",
+      "token": "revolution",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-read",
+      "token": "read",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-one",
+      "token": "one",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-diary",
+      "token": "diary",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-entry",
+      "token": "entry",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-any",
+      "token": "any",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-case",
+      "token": "case",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-remembered",
+      "token": "remembered",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [
+        "remembrance"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-maybe",
+      "token": "maybe",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-i-ll",
+      "token": "i'll",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-even",
+      "token": "even",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-follower",
+      "token": "follower",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-all",
+      "token": "all",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-super",
+      "token": "super",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-6",
+        "modern-wikinews-public-disclosure-made-of-final-report-on-deaths-of-nine-in-finnish-school-shooting-11"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-thought",
+      "token": "thought",
+      "count": 2,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews",
+      "categoryIds": [],
+      "relatedSnippetIds": [
+        "modern-wikinews-pioneering-oceanographer-walter-munk-dies-of-pneumonia-in-california-12",
+        "modern-wikinews-wikinews-interviews-tom-millican-independent-candidate-for-us-president-16"
+      ],
+      "caveat": "Computed from API search snippets only; use as exploratory modern context."
+    }
+  ]
+}
