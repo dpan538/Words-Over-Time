@@ -1,0 +1,327 @@
+{
+  "generatedAt": "2026-05-07T13:49:50.357Z",
+  "layer": "semantic category candidates",
+  "categories": [
+    {
+      "id": "emotional_state",
+      "label": "Emotional state",
+      "color": "#F06B04",
+      "senseBranch": "emotional low state",
+      "supportingTerms": [
+        "depression",
+        "sadness",
+        "despair",
+        "gloom",
+        "low spirits"
+      ],
+      "caveat": "Everyday feeling/state evidence should not be collapsed into clinical diagnosis.",
+      "method": "Provisional curated category; support is counted from phrase, collocate, snippet, and lexical-source evidence.",
+      "supportCount": 2276,
+      "archival": {
+        "snippetCount": 47,
+        "phraseCount": 1,
+        "collocateCount": 78,
+        "relatedSnippetIds": [
+          "archival-10800-24",
+          "archival-10800-25",
+          "archival-10800-26",
+          "archival-10800-27",
+          "archival-10800-28",
+          "archival-10800-29",
+          "archival-10800-30",
+          "archival-10800-31",
+          "archival-10800-32",
+          "archival-10800-33",
+          "archival-10800-34",
+          "archival-10800-36",
+          "archival-10800-43",
+          "archival-10800-56",
+          "archival-10800-57",
+          "archival-10800-59"
+        ]
+      },
+      "modern": {
+        "snippetCount": 5,
+        "phraseCount": 0,
+        "collocateCount": 24,
+        "relatedSnippetIds": [
+          "modern-wikipedia-depression-mood",
+          "modern-wikipedia-major-depressive-disorder",
+          "modern-wikipedia-mood-disorder",
+          "modern-wikipedia-melancholia",
+          "modern-wikipedia-melancholy"
+        ]
+      },
+      "evidenceStrength": "strong"
+    },
+    {
+      "id": "clinical_psychiatric_condition",
+      "label": "Clinical / psychiatric condition",
+      "color": "#A1081F",
+      "senseBranch": "clinical psychiatric condition",
+      "supportingTerms": [
+        "mental depression",
+        "clinical depression",
+        "major depression",
+        "depressive disorder",
+        "melancholia"
+      ],
+      "caveat": "Modern diagnostic language is historically late and should be separated from older melancholy and dejection language.",
+      "method": "Provisional curated category; support is counted from phrase, collocate, snippet, and lexical-source evidence.",
+      "supportCount": 2520,
+      "archival": {
+        "snippetCount": 182,
+        "phraseCount": 1,
+        "collocateCount": 80,
+        "relatedSnippetIds": [
+          "archival-10800-2",
+          "archival-10800-3",
+          "archival-10800-4",
+          "archival-10800-5",
+          "archival-10800-6",
+          "archival-10800-7",
+          "archival-10800-8",
+          "archival-10800-9",
+          "archival-10800-10",
+          "archival-10800-11",
+          "archival-10800-12",
+          "archival-10800-13",
+          "archival-10800-14",
+          "archival-10800-15",
+          "archival-10800-16",
+          "archival-10800-17"
+        ]
+      },
+      "modern": {
+        "snippetCount": 17,
+        "phraseCount": 3,
+        "collocateCount": 37,
+        "relatedSnippetIds": [
+          "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-4",
+          "modern-wikinews-cbs-news-correspondent-mike-wallace-dies-at-93-9",
+          "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-10",
+          "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-11",
+          "modern-wikinews-study-cognitive-therapy-as-good-as-medication-but-lasts-longer-12",
+          "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-14",
+          "modern-wikinews-tom-cruise-debates-psychiatry-on-nbc-s-today-show-15",
+          "modern-wikinews-new-south-wales-set-to-adopt-harsher-anti-cannabis-laws-16",
+          "modern-wikinews-getting-the-exclusive-lowdown-on-the-lowdown-17",
+          "modern-wikinews-us-study-examines-suicide-trends-in-depressed-youth-18",
+          "modern-wikinews-canadian-loses-health-benefits-after-company-finds-joyful-facebook-pictures-19",
+          "modern-wikinews-fascinating-and-provocative-research-examines-genetic-elements-of-bipolar-schizophrenia-20",
+          "modern-wikinews-cbs-news-correspondent-mike-wallace-dies-at-93-21",
+          "modern-wikipedia-depression-mood",
+          "modern-wikipedia-major-depressive-disorder",
+          "modern-wikipedia-mood-disorder"
+        ]
+      },
+      "evidenceStrength": "strong"
+    },
+    {
+      "id": "economic_downturn",
+      "label": "Economic downturn",
+      "color": "#FBB728",
+      "senseBranch": "economic downturn",
+      "supportingTerms": [
+        "economic depression",
+        "great depression",
+        "financial depression",
+        "business depression"
+      ],
+      "caveat": "Economic depression is a distinct branch and should not be visually blended with mood/clinical evidence.",
+      "method": "Provisional curated category; support is counted from phrase, collocate, snippet, and lexical-source evidence.",
+      "supportCount": 962,
+      "archival": {
+        "snippetCount": 6,
+        "phraseCount": 0,
+        "collocateCount": 19,
+        "relatedSnippetIds": [
+          "archival-10800-40",
+          "archival-10800-41",
+          "archival-10800-42",
+          "archival-10800-126",
+          "archival-3300-4",
+          "archival-2600-62"
+        ]
+      },
+      "modern": {
+        "snippetCount": 12,
+        "phraseCount": 2,
+        "collocateCount": 23,
+        "relatedSnippetIds": [
+          "modern-wikinews-on-the-campaign-trail-in-the-usa-june-2020-22",
+          "modern-wikinews-wikinews-interviews-neil-manson-sdp-candidate-for-2021-airdrie-and-shotts-by-election-in-scotland-23",
+          "modern-wikinews-americans-spent-more-than-they-earned-in-2005-24",
+          "modern-wikinews-american-prize-winning-author-studs-terkel-dead-at-96-25",
+          "modern-wikinews-congressional-computers-continue-to-be-used-to-vandalize-wikipedia-26",
+          "modern-wikinews-australian-treasurer-hands-down-budget-announces-two-years-of-deficits-27",
+          "modern-wikinews-obama-renominates-bernanke-as-us-central-banker-28",
+          "modern-wikinews-delay-declares-victory-in-war-on-u-s-budget-fat-29",
+          "modern-wikinews-robert-boyle-wins-honorary-oscar-for-his-art-direction-career-30",
+          "modern-wikinews-us-president-obama-proposes-financial-reform-31",
+          "modern-wikipedia-economic-depression",
+          "modern-wikipedia-great-depression"
+        ]
+      },
+      "evidenceStrength": "strong"
+    },
+    {
+      "id": "geographical_topographical",
+      "label": "Geographical / topographical depression",
+      "color": "#5FCA00",
+      "senseBranch": "geographical hollow / low area",
+      "supportingTerms": [
+        "topographical depression",
+        "geological depression",
+        "depression of the surface",
+        "depression of the land"
+      ],
+      "caveat": "This branch may be sparse in public-domain snippets but is semantically important for branching visuals.",
+      "method": "Provisional curated category; support is counted from phrase, collocate, snippet, and lexical-source evidence.",
+      "supportCount": 2204,
+      "archival": {
+        "snippetCount": 76,
+        "phraseCount": 1,
+        "collocateCount": 80,
+        "relatedSnippetIds": [
+          "archival-10800-5",
+          "archival-10800-9",
+          "archival-10800-19",
+          "archival-10800-21",
+          "archival-10800-38",
+          "archival-10800-39",
+          "archival-10800-47",
+          "archival-10800-53",
+          "archival-10800-54",
+          "archival-10800-55",
+          "archival-10800-64",
+          "archival-10800-71",
+          "archival-10800-80",
+          "archival-10800-87",
+          "archival-10800-92",
+          "archival-10800-99"
+        ]
+      },
+      "modern": {
+        "snippetCount": 1,
+        "phraseCount": 0,
+        "collocateCount": 1,
+        "relatedSnippetIds": [
+          "modern-wikipedia-depression-geology"
+        ]
+      },
+      "evidenceStrength": "strong"
+    },
+    {
+      "id": "physical_lowering_pressure",
+      "label": "Physical lowering / pressure",
+      "color": "#2C9FC7",
+      "senseBranch": "physical lowering / pressing down",
+      "supportingTerms": [
+        "depression of",
+        "pressure",
+        "lowering",
+        "pressed",
+        "tropical depression"
+      ],
+      "caveat": "This includes literal lowering and pressure-adjacent uses; meteorology may need its own branch later.",
+      "method": "Provisional curated category; support is counted from phrase, collocate, snippet, and lexical-source evidence.",
+      "supportCount": 1852,
+      "archival": {
+        "snippetCount": 95,
+        "phraseCount": 6,
+        "collocateCount": 50,
+        "relatedSnippetIds": [
+          "archival-10800-9",
+          "archival-10800-13",
+          "archival-10800-18",
+          "archival-10800-22",
+          "archival-10800-51",
+          "archival-10800-65",
+          "archival-10800-66",
+          "archival-10800-89",
+          "archival-10800-124",
+          "archival-10800-371",
+          "archival-3300-2",
+          "archival-3300-3",
+          "archival-3300-4",
+          "archival-3300-5",
+          "archival-37144-11",
+          "archival-37144-12"
+        ]
+      },
+      "modern": {
+        "snippetCount": 15,
+        "phraseCount": 1,
+        "collocateCount": 39,
+        "relatedSnippetIds": [
+          "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-1",
+          "modern-wikinews-tropical-depression-dissipates-impacts-mexico-3",
+          "modern-wikinews-first-tropical-depression-of-2006-forms-6",
+          "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+          "modern-wikinews-tropical-depression-six-shows-signs-of-organization-8",
+          "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-32",
+          "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+          "modern-wikinews-adrian-dissipates-producing-heavy-rains-and-mudslides-34",
+          "modern-wikinews-tropical-storm-stan-forms-over-yucatan-peninsula-35",
+          "modern-wikinews-first-tropical-depression-of-2006-forms-36",
+          "modern-wikinews-tropical-storm-irene-to-intensify-may-hit-u-s-coast-37",
+          "modern-wikipedia-mood-disorder",
+          "modern-wikipedia-melancholia",
+          "modern-wikipedia-depression-geology",
+          "modern-wikipedia-tropical-cyclone"
+        ]
+      },
+      "evidenceStrength": "strong"
+    },
+    {
+      "id": "literary_melancholy_sadness_cluster",
+      "label": "Literary melancholy / sadness cluster",
+      "color": "#1570AC",
+      "senseBranch": "literary melancholy / sadness cluster",
+      "supportingTerms": [
+        "melancholy",
+        "melancholia",
+        "despair",
+        "gloom"
+      ],
+      "caveat": "This is a historical neighbor cluster, not an exact synonym set.",
+      "method": "Provisional curated category; support is counted from phrase, collocate, snippet, and lexical-source evidence.",
+      "supportCount": 2423,
+      "archival": {
+        "snippetCount": 180,
+        "phraseCount": 0,
+        "collocateCount": 80,
+        "relatedSnippetIds": [
+          "archival-10800-2",
+          "archival-10800-3",
+          "archival-10800-4",
+          "archival-10800-5",
+          "archival-10800-6",
+          "archival-10800-7",
+          "archival-10800-8",
+          "archival-10800-9",
+          "archival-10800-10",
+          "archival-10800-11",
+          "archival-10800-12",
+          "archival-10800-13",
+          "archival-10800-14",
+          "archival-10800-15",
+          "archival-10800-16",
+          "archival-10800-17"
+        ]
+      },
+      "modern": {
+        "snippetCount": 3,
+        "phraseCount": 0,
+        "collocateCount": 18,
+        "relatedSnippetIds": [
+          "modern-wikipedia-depression-mood",
+          "modern-wikipedia-melancholia",
+          "modern-wikipedia-melancholy"
+        ]
+      },
+      "evidenceStrength": "strong"
+    }
+  ]
+}

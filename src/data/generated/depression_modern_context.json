@@ -1,0 +1,2169 @@
+{
+  "generatedAt": "2026-05-07T13:47:14.850Z",
+  "layer": "modern context",
+  "source": {
+    "label": "Wikinews + Wikipedia",
+    "urls": [
+      "https://en.wikinews.org/",
+      "https://en.wikipedia.org/"
+    ],
+    "licenseNote": "Wikinews and Wikipedia text is open licensed. Wikinews older articles are generally CC BY 2.5; newer Wikinews and Wikipedia content is CC BY/CC BY-SA according to project terms.",
+    "caveat": "This is a separated modern open-context snapshot, not a continuous 1930-2026 corpus and not comparable with Gutenberg."
+  },
+  "coverage": {
+    "startYear": 2012,
+    "endYear": 2026,
+    "sourceType": "open news search snippets plus current reference extracts",
+    "comparableToHistoricalCorpus": false
+  },
+  "queries": [
+    "depression",
+    "\"clinical depression\"",
+    "\"major depression\"",
+    "\"depressive disorder\"",
+    "\"mental health\" depression",
+    "\"economic depression\"",
+    "\"Great Depression\"",
+    "\"tropical depression\"",
+    "\"geological depression\""
+  ],
+  "referencePages": [
+    "Depression_(mood)",
+    "Major_depressive_disorder",
+    "Depressive_disorder",
+    "Melancholia",
+    "Melancholy",
+    "Economic_depression",
+    "Great_Depression",
+    "Depression_(geology)",
+    "Tropical_cyclone"
+  ],
+  "snippets": [
+    {
+      "id": "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-1",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Tropical_Depression_Three_of_2019_approaches_Florida_before_dissipating",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Tropical Depression Three of 2019 approaches Florida before dissipating",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "depression",
+      "quote": "On Tuesday, however, they reported the depression dissipated off the coast of Florida. A \"tropical depression\" is a form of tropical cyclone. On the scale",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-2",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Talk-therapy_can_make_a_difference_in_early_treatment_of_severe_depression",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Talk-therapy can make a difference in early treatment of severe depression",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "depression",
+      "quote": "April 5, 2005 An individual in the initial stages of moderate to severe depression may experience relief from cognitive therapy equivalent to careful drug",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-tropical-depression-dissipates-impacts-mexico-3",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Tropical_depression_dissipates%2C_impacts_Mexico",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Tropical depression dissipates, impacts Mexico",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "depression",
+      "quote": "Tropical cyclones Wikitionary's definition of a Tropical cyclone Tropical Depression One-E, the first tropical system of the 2009 Eastern Pacific hurricane",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-4",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Study_suggests_successful_depression_treatment_lowers_youths'_risk_of_drug_abuse",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Study suggests successful depression treatment lowers youths' risk of drug abuse",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "depression",
+      "quote": "major depression disorder treatments to take possible alcohol and drug use into account. Said Curry, \"When the teenagers got over the depression, about",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-study-claims-recreational-ecstasy-use-and-depression-unrelated-5",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Study_claims_recreational_ecstasy_use_and_depression_unrelated",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Study claims recreational ecstasy use and depression unrelated",
+      "author": "Wikinews contributors",
+      "year": 2014,
+      "eraId": "2000-2019",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "depression",
+      "quote": "at Lafayette finds no significant link between Ecstasy (MDMA) use and depression. A common street drug, Ecstasy is found mostly in tablet form, and often",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-first-tropical-depression-of-2006-forms-6",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/First_Tropical_Depression_of_2006_Forms",
+      "sourceCorpus": "Wikinews API search",
+      "title": "First Tropical Depression of 2006 Forms",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "depression",
+      "quote": "a hurricane Near the western tip of Cuba, a poorly organized Tropical Depression has formed, the first of the 2006 tropical storm season in the Atlantic",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/NHC_upgrades_Tropical_Depression_Four-E_to_Tropical_Storm_Carlos",
+      "sourceCorpus": "Wikinews API search",
+      "title": "NHC upgrades Tropical Depression Four-E to Tropical Storm Carlos",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "depression",
+      "quote": "The United States National Hurricane Center (NHC) has upgraded Tropical Depression Four-E to tropical storm status. The storm, now officially Tropical Storm",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-tropical-depression-six-shows-signs-of-organization-8",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Tropical_Depression_Six_Shows_Signs_of_Organization",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Tropical Depression Six Shows Signs of Organization",
+      "author": "Wikinews contributors",
+      "year": 2012,
+      "eraId": "2000-2019",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "depression",
+      "quote": "Monday, September 4, 2006 An advisory has been issued for Tropical Depression \"Six\" by the National Hurricane Center. The storm is currently located",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-cbs-news-correspondent-mike-wallace-dies-at-93-9",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/CBS_News_correspondent_Mike_Wallace_dies_at_93",
+      "sourceCorpus": "Wikinews API search",
+      "title": "CBS News correspondent Mike Wallace dies at 93",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"clinical depression\"",
+      "quote": "million, and later dropped the lawsuit. The trial pushed Wallace into clinical depression and he admitted in a 2006 60 Minutes tribute to himself, that he",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-10",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Talk-therapy_can_make_a_difference_in_early_treatment_of_severe_depression",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Talk-therapy can make a difference in early treatment of severe depression",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"major depression\"",
+      "quote": "effective as medications for the initial treatment of moderate to severe major depression, but this degree of effectiveness may depend on a high level of therapist",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-11",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Study_suggests_successful_depression_treatment_lowers_youths'_risk_of_drug_abuse",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Study suggests successful depression treatment lowers youths' risk of drug abuse",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"major depression\"",
+      "quote": "about half of a pool of 439 adolescents who had received treatment for major depression and volunteered for Duke University research. At the five-year study's",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-study-cognitive-therapy-as-good-as-medication-but-lasts-longer-12",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Study%3A_cognitive_therapy_as_good_as_medication%2C_but_lasts_longer",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Study: cognitive therapy as good as medication, but lasts longer",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"major depression\"",
+      "quote": "April 6, 2005 A landmark study comparing effectiveness in reducing major depression of two forms of initial treatment — cognitive therapy which involves",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-fascinating-and-provocative-research-examines-genetic-elements-of-bipolar-schizophrenia-13",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/'Fascinating'_and_'provocative'_research_examines_genetic_elements_of_bipolar%2C_schizophrenia",
+      "sourceCorpus": "Wikinews API search",
+      "title": "'Fascinating' and 'provocative' research examines genetic elements of bipolar, schizophrenia",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"major depression\"",
+      "quote": "Prior to this, few children and youth were seen as suffering from major depression, and so few were prescribed anti-depressants.\" One possible alternative",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-14",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Talk-therapy_can_make_a_difference_in_early_treatment_of_severe_depression",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Talk-therapy can make a difference in early treatment of severe depression",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"depressive disorder\"",
+      "quote": "professionals, has now shown potential in treating the early stages of major depressive disorder. An eight week study by researchers at the University of Pennsylvania",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-tom-cruise-debates-psychiatry-on-nbc-s-today-show-15",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Tom_Cruise_debates_psychiatry_on_NBC's_Today_show",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Tom Cruise debates psychiatry on NBC's Today show",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"mental health\" depression",
+      "quote": "Scientology has historically been at odds with the established medical and mental health community. The rift dates back to the 1950s and Scientology's founding",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-new-south-wales-set-to-adopt-harsher-anti-cannabis-laws-16",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/New_South_Wales_set_to_adopt_harsher_anti-cannabis_laws",
+      "sourceCorpus": "Wikinews API search",
+      "title": "New South Wales set to adopt harsher anti-cannabis laws",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"mental health\" depression",
+      "quote": "voiced by some health professionals about the link between the drug and mental health issues. The proposed legislation will also increase jail sentences for",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-getting-the-exclusive-lowdown-on-the-lowdown-17",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Getting_the_exclusive_lowdown_on_The_Lowdown",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Getting the exclusive lowdown on The Lowdown",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"mental health\" depression",
+      "quote": "youth-targeted website aimed at helping young New Zealanders get through depression and other mental illnesses, and curbing New Zealand's high suicide rates",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-us-study-examines-suicide-trends-in-depressed-youth-18",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/US_study_examines_suicide_trends_in_depressed_youth",
+      "sourceCorpus": "Wikinews API search",
+      "title": "US study examines suicide trends in depressed youth",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"mental health\" depression",
+      "quote": "own mental health, and this study shows that we can rely on self-report measures to help identify youth who may be at risk for current mental health concerns",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-canadian-loses-health-benefits-after-company-finds-joyful-facebook-pictures-19",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Canadian_loses_health_benefits_after_company_finds_joyful_Facebook_pictures",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Canadian loses health benefits after company finds joyful Facebook pictures",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"mental health\" depression",
+      "quote": "to have lost her long-term health care benefits she was receiving for depression, after her insurance company discovered pictures of her on Facebook smiling",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-fascinating-and-provocative-research-examines-genetic-elements-of-bipolar-schizophrenia-20",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/'Fascinating'_and_'provocative'_research_examines_genetic_elements_of_bipolar%2C_schizophrenia",
+      "sourceCorpus": "Wikinews API search",
+      "title": "'Fascinating' and 'provocative' research examines genetic elements of bipolar, schizophrenia",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"mental health\" depression",
+      "quote": "other health specialities and mental health should be no different.” “There is a need for greater education for mental health professionals and GPs [general",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-cbs-news-correspondent-mike-wallace-dies-at-93-21",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/CBS_News_correspondent_Mike_Wallace_dies_at_93",
+      "sourceCorpus": "Wikinews API search",
+      "title": "CBS News correspondent Mike Wallace dies at 93",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"mental health\" depression",
+      "quote": "Alliance for Research on Schizophrenia and Depression. He appeared in a 1998 documentary about depression called \"Dead Blue.\" Wallace attended the University",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-on-the-campaign-trail-in-the-usa-june-2020-22",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/On_the_campaign_trail_in_the_USA%2C_June_2020",
+      "sourceCorpus": "Wikinews API search",
+      "title": "On the campaign trail in the USA, June 2020",
+      "author": "Wikinews contributors",
+      "year": 2025,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"economic depression\"",
+      "quote": "the country and the world — a deadly global pandemic and a looming economic depression on the immediate horizon — these are unprecedented times and anything",
+      "rightsStatus": "CC BY 4.0",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-wikinews-interviews-neil-manson-sdp-candidate-for-2021-airdrie-and-shotts-by-election-in-scotland-23",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Wikinews_interviews_Neil_Manson%2C_SDP_candidate_for_2021_Airdrie_and_Shotts_by-election_in_Scotland",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Wikinews interviews Neil Manson, SDP candidate for 2021 Airdrie and Shotts by-election in Scotland",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"economic depression\"",
+      "quote": "served to undermine peoples liberties, and risked causing a prolonged economic depression and negative impact on society. ((WN)) What do you think needs to",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-americans-spent-more-than-they-earned-in-2005-24",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Americans_spent_more_than_they_earned_in_2005",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Americans spent more than they earned in 2005",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"Great Depression\"",
+      "quote": "earning, pushing the national savings rate to lows not seen since the Great Depression. The Commerce Department released a report saying that personal savings",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-american-prize-winning-author-studs-terkel-dead-at-96-25",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/American_prize-winning_author_Studs_Terkel_dead_at_96",
+      "sourceCorpus": "Wikinews API search",
+      "title": "American prize-winning author Studs Terkel dead at 96",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"Great Depression\"",
+      "quote": "1970, he published a book about the Great Depression, entitled Hard Times: An Oral History of the Great Depression, which told the stories of people from",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-congressional-computers-continue-to-be-used-to-vandalize-wikipedia-26",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Congressional_computers_continue_to_be_used_to_vandalize_Wikipedia",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Congressional computers continue to be used to vandalize Wikipedia",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"Great Depression\"",
+      "quote": "into a Great Depression. ... He tried to borrow and spend, he tried to use the Keynesian approach, and our country ended up in a Great Depression. That's",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-australian-treasurer-hands-down-budget-announces-two-years-of-deficits-27",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Australian_Treasurer_hands_down_budget%2C_announces_two_years_of_deficits",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Australian Treasurer hands down budget, announces two years of deficits",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"Great Depression\"",
+      "quote": "year, we've faced the second largest revenue write down since the Great Depression,\" he said. There is to be a A$60 billion write down over four years",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-obama-renominates-bernanke-as-us-central-banker-28",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Obama_renominates_Bernanke_as_US_central_banker",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Obama renominates Bernanke as US central banker",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"Great Depression\"",
+      "quote": "nation and the world has ever faced. As an expert on the causes of the Great Depression, I'm sure Ben never imagined that he would be part of a team responsible",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-delay-declares-victory-in-war-on-u-s-budget-fat-29",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/DeLay_declares_'victory'_in_war_on_U.S._budget_fat",
+      "sourceCorpus": "Wikinews API search",
+      "title": "DeLay declares 'victory' in war on U.S. budget fat",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"Great Depression\"",
+      "quote": "spending increase under any preceding president and Congress since the Great Depression.\" Specifically, aside from military and security spending, federal",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-robert-boyle-wins-honorary-oscar-for-his-art-direction-career-30",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Robert_Boyle_wins_Honorary_Oscar_for_his_art_direction_career",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Robert Boyle wins Honorary Oscar for his art direction career",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"Great Depression\"",
+      "quote": "night at the Academy Awards. Hired as an extra in films during the Great Depression, the young architect became a draftsman at Paramount Studios, moving",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-us-president-obama-proposes-financial-reform-31",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/US_President_Obama_proposes_financial_reform",
+      "sourceCorpus": "Wikinews API search",
+      "title": "US President Obama proposes financial reform",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"Great Depression\"",
+      "quote": "hundreds of thousands each month. We were on the precipice of a second Great Depression.\" The President said his administration is seeking to protect consumers",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-32",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Tropical_Depression_Three_of_2019_approaches_Florida_before_dissipating",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Tropical Depression Three of 2019 approaches Florida before dissipating",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"tropical depression\"",
+      "quote": "Florida. A \"tropical depression\" is a form of tropical cyclone. On the scale used by the NHC for classifying tropical cyclones, a \"tropical depression\" is the",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/NHC_upgrades_Tropical_Depression_Four-E_to_Tropical_Storm_Carlos",
+      "sourceCorpus": "Wikinews API search",
+      "title": "NHC upgrades Tropical Depression Four-E to Tropical Storm Carlos",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"tropical depression\"",
+      "quote": "cyclone The United States National Hurricane Center (NHC) has upgraded Tropical Depression Four-E to tropical storm status. The storm, now officially Tropical",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-adrian-dissipates-producing-heavy-rains-and-mudslides-34",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Adrian_dissipates%2C_producing_heavy_rains_and_mudslides",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Adrian dissipates, producing heavy rains and mudslides",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"tropical depression\"",
+      "quote": "providing heavy rainfall to the region. At 8 a.m. PDT, the center of now Tropical Depression Adrian was dissipating at 15.0° N, 87.5°W and was inland over western",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-tropical-storm-stan-forms-over-yucatan-peninsula-35",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Tropical_Storm_Stan_forms_over_Yucatan_Peninsula",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Tropical Storm Stan forms over Yucatan Peninsula",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"tropical depression\"",
+      "quote": "National Hurricane Center Tropical Prediction Center has upgraded Tropical Depression Twenty to Tropical Storm status. The storm, now officially Tropical",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-first-tropical-depression-of-2006-forms-36",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/First_Tropical_Depression_of_2006_Forms",
+      "sourceCorpus": "Wikinews API search",
+      "title": "First Tropical Depression of 2006 Forms",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"tropical depression\"",
+      "quote": "of a hurricane Near the western tip of Cuba, a poorly organized Tropical Depression has formed, the first of the 2006 tropical storm season in the Atlantic",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikinews-tropical-storm-irene-to-intensify-may-hit-u-s-coast-37",
+      "source": "Wikinews",
+      "sourceUrl": "https://en.wikinews.org/wiki/Tropical_Storm_Irene_to_intensify%2C_may_hit_U.S._coast",
+      "sourceCorpus": "Wikinews API search",
+      "title": "Tropical Storm Irene to intensify, may hit U.S. coast",
+      "author": "Wikinews contributors",
+      "year": 2024,
+      "eraId": "recent",
+      "dateBasis": "Wikinews search result revision timestamp",
+      "query": "\"tropical depression\"",
+      "quote": "to U.S. East Coast — Bloomberg, August 11, 2005 Associated Press. Tropical Depression Irene Gains Strength — Guardian Unlimited, August 11, 2005 Associated",
+      "rightsStatus": "CC BY 2.5",
+      "evidenceType": "modern_open_news_context",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikinews is an open modern news/context snapshot. It is not comparable to Google Books Ngram or Project Gutenberg."
+    },
+    {
+      "id": "modern-wikipedia-depression-mood",
+      "source": "Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Depression_(mood)",
+      "sourceCorpus": "Wikipedia current article extract",
+      "title": "Depression (mood)",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "current article revision metadata",
+      "query": "Depression (mood)",
+      "quote": "Depression is a mental state of low mood and aversion to activity. It affects about 3.5% of the global population, or about 280 million people worldwide, as of 2020. Depression affects a person's thoughts, behavior, feelings, and sense of well-being. The pleasure or joy that a person gets from certain experiences is reduced, and the afflicted person often experiences a loss of motivation or interest in those activities. People with depression may experience sadness, feelings of dejection or lack of hope, difficulty in thinking and concentration, hypersomnia or insomnia, overeating or anorexia, or suicidal thoughts. Depression can have multiple, sometimes overlapping, origins. Depression can ",
+      "rightsStatus": "CC BY-SA 4.0",
+      "evidenceType": "modern_open_reference_context",
+      "categoryIds": [
+        "emotional_state",
+        "clinical_psychiatric_condition",
+        "literary_melancholy_sadness_cluster"
+      ],
+      "caveat": "Wikipedia provides current open reference text and sense/category anchors. It is not dated usage evidence in the same way as corpus snippets."
+    },
+    {
+      "id": "modern-wikipedia-major-depressive-disorder",
+      "source": "Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Major_depressive_disorder",
+      "sourceCorpus": "Wikipedia current article extract",
+      "title": "Major depressive disorder",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "current article revision metadata",
+      "query": "Major depressive disorder",
+      "quote": "Major depressive disorder (MDD), also known as clinical depression, is a mental disorder characterized by at least two weeks of pervasive low mood, low self-esteem, and loss of interest or pleasure in normally enjoyable activities. Introduced by a group of US clinicians in the mid-1970s, the term was adopted by the American Psychiatric Association for this symptom cluster under mood disorders in the 1980 version of the Diagnostic and Statistical Manual of Mental Disorders (DSM-III), and has become widely used since. The disorder causes the second-most years lived with disability, after lower back pain. The diagnosis of major depressive disorder is based on the person's reported experiences, ",
+      "rightsStatus": "CC BY-SA 4.0",
+      "evidenceType": "modern_open_reference_context",
+      "categoryIds": [
+        "emotional_state",
+        "clinical_psychiatric_condition"
+      ],
+      "caveat": "Wikipedia provides current open reference text and sense/category anchors. It is not dated usage evidence in the same way as corpus snippets."
+    },
+    {
+      "id": "modern-wikipedia-mood-disorder",
+      "source": "Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mood_disorder",
+      "sourceCorpus": "Wikipedia current article extract",
+      "title": "Mood disorder",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "current article revision metadata",
+      "query": "Depressive disorder",
+      "quote": "A mood disorder, also known as an affective disorder, is any of a group of conditions of mental and behavioral disorder where the main underlying characteristic is a disturbance in the person's mood. The classification is in the Diagnostic and Statistical Manual of Mental Disorders (DSM) and International Classification of Diseases (ICD). Mood disorders fall into seven groups, including: 1. abnormally elevated mood, such as mania or hypomania; 2. depressed mood, of which the best-known and most researched is major depressive disorder (MDD) (alternatively known as clinical depression, unipolar depression, or major depression); and 3. moods which cycle between mania and depression, known as bi",
+      "rightsStatus": "CC BY-SA 4.0",
+      "evidenceType": "modern_open_reference_context",
+      "categoryIds": [
+        "emotional_state",
+        "clinical_psychiatric_condition",
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikipedia provides current open reference text and sense/category anchors. It is not dated usage evidence in the same way as corpus snippets."
+    },
+    {
+      "id": "modern-wikipedia-melancholia",
+      "source": "Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Melancholia",
+      "sourceCorpus": "Wikipedia current article extract",
+      "title": "Melancholia",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "current article revision metadata",
+      "query": "Melancholia",
+      "quote": "Melancholia or melancholy (Ancient Greek: μελαγχολία, romanized: melancholía; from μέλαινα χολή, mélaina cholḗ, 'black bile') is a concept found throughout ancient, medieval, and premodern medicine in Europe that describes a condition characterized by markedly depressed mood, bodily complaints, and sometimes hallucinations and delusions. Besides a pathological condition, melancholy could also refer to a mood or temperament and at times it was even used as a description of the human condition in general. Melancholy (or more precisely the 'black bile', from which melancholy derives its name) was regarded as one of the four temperaments matching the four humours. Until the 18th century, doctors",
+      "rightsStatus": "CC BY-SA 4.0",
+      "evidenceType": "modern_open_reference_context",
+      "categoryIds": [
+        "emotional_state",
+        "physical_lowering_pressure",
+        "literary_melancholy_sadness_cluster"
+      ],
+      "caveat": "Wikipedia provides current open reference text and sense/category anchors. It is not dated usage evidence in the same way as corpus snippets."
+    },
+    {
+      "id": "modern-wikipedia-melancholy",
+      "source": "Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Melancholy",
+      "sourceCorpus": "Wikipedia current article extract",
+      "title": "Melancholy",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "current article revision metadata",
+      "query": "Melancholy",
+      "quote": "Melancholy may refer to: Melancholia, one of the four temperaments in pre-modern medicine and proto-psychology, representing a state of low mood Depression (mood), a state of low mood, also known as melancholy Major depressive disorder, a mood disorder historically called melancholy",
+      "rightsStatus": "CC BY-SA 4.0",
+      "evidenceType": "modern_open_reference_context",
+      "categoryIds": [
+        "emotional_state",
+        "clinical_psychiatric_condition",
+        "literary_melancholy_sadness_cluster"
+      ],
+      "caveat": "Wikipedia provides current open reference text and sense/category anchors. It is not dated usage evidence in the same way as corpus snippets."
+    },
+    {
+      "id": "modern-wikipedia-economic-depression",
+      "source": "Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Economic_depression",
+      "sourceCorpus": "Wikipedia current article extract",
+      "title": "Economic depression",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "current article revision metadata",
+      "query": "Economic depression",
+      "quote": "An economic depression is a period of carried long-term economic downturn that is the result of lowered economic activity in one or more major national economies. It is often understood in economics that an economic crisis and the following recession that may be termed an economic depression are part of economic cycles where the slowdown of the economy follows economic growth and vice versa. It is a result of more severe economic problems or a downturn than a recession itself, which is a slowdown in economic activity over the course of the normal business cycle of a growing economy. Economic depressions may also be characterized by their length or duration, showing increases in unemployment,",
+      "rightsStatus": "CC BY-SA 4.0",
+      "evidenceType": "modern_open_reference_context",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "caveat": "Wikipedia provides current open reference text and sense/category anchors. It is not dated usage evidence in the same way as corpus snippets."
+    },
+    {
+      "id": "modern-wikipedia-great-depression",
+      "source": "Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Great_Depression",
+      "sourceCorpus": "Wikipedia current article extract",
+      "title": "Great Depression",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "current article revision metadata",
+      "query": "Great Depression",
+      "quote": "The Great Depression was a severe global economic downturn from 1929 to 1939. The period was characterized by high rates of unemployment and poverty, drastic reductions in industrial production and international trade, and widespread bank and business failures around the world. The economic contagion began in 1929 in the United States, the largest economy in the world, with the devastating Wall Street crash of 1929 often considered the beginning of the Depression. Among the countries with the most unemployed were the U.S., the United Kingdom, and Germany. The Depression was preceded by a period of industrial growth and social development known as the \"Roaring Twenties\". Much of the profit ge",
+      "rightsStatus": "CC BY-SA 4.0",
+      "evidenceType": "modern_open_reference_context",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "caveat": "Wikipedia provides current open reference text and sense/category anchors. It is not dated usage evidence in the same way as corpus snippets."
+    },
+    {
+      "id": "modern-wikipedia-depression-geology",
+      "source": "Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Depression_(geology)",
+      "sourceCorpus": "Wikipedia current article extract",
+      "title": "Depression (geology)",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "current article revision metadata",
+      "query": "Depression (geology)",
+      "quote": "In geology, a depression is a landform sunken or depressed below the surrounding area. Depressions form by various mechanisms.",
+      "rightsStatus": "CC BY-SA 4.0",
+      "evidenceType": "modern_open_reference_context",
+      "categoryIds": [
+        "geographical_topographical",
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikipedia provides current open reference text and sense/category anchors. It is not dated usage evidence in the same way as corpus snippets."
+    },
+    {
+      "id": "modern-wikipedia-tropical-cyclone",
+      "source": "Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tropical_cyclone",
+      "sourceCorpus": "Wikipedia current article extract",
+      "title": "Tropical cyclone",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "eraId": "recent",
+      "dateBasis": "current article revision metadata",
+      "query": "Tropical cyclone",
+      "quote": "A tropical cyclone is a rapidly rotating storm system with a low-pressure area, a closed low-level atmospheric circulation, strong winds, and a spiral arrangement of thunderstorms that produce heavy rain and squalls. Depending on its location and strength, a tropical cyclone is called a hurricane (), typhoon (), tropical storm, cyclonic storm, tropical depression, or simply cyclone. A hurricane is a strong tropical cyclone that occurs in the Atlantic Ocean or northeastern Pacific Ocean. A typhoon is the same thing which occurs in the northwestern Pacific Ocean. In the Indian Ocean and South Pacific, comparable storms are referred to as \"tropical cyclones\". In modern times, on average around ",
+      "rightsStatus": "CC BY-SA 4.0",
+      "evidenceType": "modern_open_reference_context",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "caveat": "Wikipedia provides current open reference text and sense/category anchors. It is not dated usage evidence in the same way as corpus snippets."
+    }
+  ],
+  "phrases": [
+    {
+      "id": "modern-phrase-clinical-depression",
+      "phrase": "clinical depression",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "relatedSnippetIds": [
+        "modern-wikinews-cbs-news-correspondent-mike-wallace-dies-at-93-9",
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-mood-disorder"
+      ],
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "displayEligible": true,
+      "caveat": "Modern phrase evidence comes from open search/reference snippets, not a balanced corpus."
+    },
+    {
+      "id": "modern-phrase-major-depression",
+      "phrase": "major depression",
+      "count": 6,
+      "documentFrequency": 5,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "relatedSnippetIds": [
+        "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-4",
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-10",
+        "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-11",
+        "modern-wikinews-study-cognitive-therapy-as-good-as-medication-but-lasts-longer-12",
+        "modern-wikinews-fascinating-and-provocative-research-examines-genetic-elements-of-bipolar-schizophrenia-13",
+        "modern-wikipedia-mood-disorder"
+      ],
+      "categoryIds": [],
+      "displayEligible": true,
+      "caveat": "Modern phrase evidence comes from open search/reference snippets, not a balanced corpus."
+    },
+    {
+      "id": "modern-phrase-depressive-disorder",
+      "phrase": "depressive disorder",
+      "count": 4,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "relatedSnippetIds": [
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-14",
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-mood-disorder",
+        "modern-wikipedia-melancholy"
+      ],
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "displayEligible": true,
+      "caveat": "Modern phrase evidence comes from open search/reference snippets, not a balanced corpus."
+    },
+    {
+      "id": "modern-phrase-mental-health",
+      "phrase": "mental health",
+      "count": 4,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "relatedSnippetIds": [
+        "modern-wikinews-tom-cruise-debates-psychiatry-on-nbc-s-today-show-15",
+        "modern-wikinews-new-south-wales-set-to-adopt-harsher-anti-cannabis-laws-16",
+        "modern-wikinews-us-study-examines-suicide-trends-in-depressed-youth-18",
+        "modern-wikinews-fascinating-and-provocative-research-examines-genetic-elements-of-bipolar-schizophrenia-20"
+      ],
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "displayEligible": true,
+      "caveat": "Modern phrase evidence comes from open search/reference snippets, not a balanced corpus."
+    },
+    {
+      "id": "modern-phrase-economic-depression",
+      "phrase": "economic depression",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "relatedSnippetIds": [
+        "modern-wikinews-on-the-campaign-trail-in-the-usa-june-2020-22",
+        "modern-wikinews-wikinews-interviews-neil-manson-sdp-candidate-for-2021-airdrie-and-shotts-by-election-in-scotland-23",
+        "modern-wikipedia-economic-depression"
+      ],
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "displayEligible": true,
+      "caveat": "Modern phrase evidence comes from open search/reference snippets, not a balanced corpus."
+    },
+    {
+      "id": "modern-phrase-great-depression",
+      "phrase": "great depression",
+      "count": 9,
+      "documentFrequency": 9,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "relatedSnippetIds": [
+        "modern-wikinews-americans-spent-more-than-they-earned-in-2005-24",
+        "modern-wikinews-american-prize-winning-author-studs-terkel-dead-at-96-25",
+        "modern-wikinews-congressional-computers-continue-to-be-used-to-vandalize-wikipedia-26",
+        "modern-wikinews-australian-treasurer-hands-down-budget-announces-two-years-of-deficits-27",
+        "modern-wikinews-obama-renominates-bernanke-as-us-central-banker-28",
+        "modern-wikinews-delay-declares-victory-in-war-on-u-s-budget-fat-29",
+        "modern-wikinews-robert-boyle-wins-honorary-oscar-for-his-art-direction-career-30",
+        "modern-wikinews-us-president-obama-proposes-financial-reform-31",
+        "modern-wikipedia-great-depression"
+      ],
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "displayEligible": true,
+      "caveat": "Modern phrase evidence comes from open search/reference snippets, not a balanced corpus."
+    },
+    {
+      "id": "modern-phrase-tropical-depression",
+      "phrase": "tropical depression",
+      "count": 12,
+      "documentFrequency": 9,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "relatedSnippetIds": [
+        "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-1",
+        "modern-wikinews-tropical-depression-dissipates-impacts-mexico-3",
+        "modern-wikinews-first-tropical-depression-of-2006-forms-6",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-tropical-depression-six-shows-signs-of-organization-8",
+        "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-32",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikinews-adrian-dissipates-producing-heavy-rains-and-mudslides-34",
+        "modern-wikinews-tropical-storm-stan-forms-over-yucatan-peninsula-35",
+        "modern-wikinews-first-tropical-depression-of-2006-forms-36",
+        "modern-wikinews-tropical-storm-irene-to-intensify-may-hit-u-s-coast-37",
+        "modern-wikipedia-tropical-cyclone"
+      ],
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "displayEligible": true,
+      "caveat": "Modern phrase evidence comes from open search/reference snippets, not a balanced corpus."
+    }
+  ],
+  "collocates": [
+    {
+      "id": "modern-collocate-tropical",
+      "token": "tropical",
+      "count": 33,
+      "documentFrequency": 12,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-1",
+        "modern-wikinews-tropical-depression-dissipates-impacts-mexico-3",
+        "modern-wikinews-first-tropical-depression-of-2006-forms-6",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-tropical-depression-six-shows-signs-of-organization-8",
+        "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-32",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikinews-adrian-dissipates-producing-heavy-rains-and-mudslides-34",
+        "modern-wikinews-tropical-storm-stan-forms-over-yucatan-peninsula-35",
+        "modern-wikinews-first-tropical-depression-of-2006-forms-36",
+        "modern-wikinews-tropical-storm-irene-to-intensify-may-hit-u-s-coast-37",
+        "modern-wikipedia-tropical-cyclone"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-mood",
+      "token": "mood",
+      "count": 14,
+      "documentFrequency": 5,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "emotional_state",
+        "clinical_psychiatric_condition",
+        "literary_melancholy_sadness_cluster",
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikipedia-depression-mood",
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-mood-disorder",
+        "modern-wikipedia-melancholia",
+        "modern-wikipedia-melancholy"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-economic",
+      "token": "economic",
+      "count": 14,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-on-the-campaign-trail-in-the-usa-june-2020-22",
+        "modern-wikinews-wikinews-interviews-neil-manson-sdp-candidate-for-2021-airdrie-and-shotts-by-election-in-scotland-23",
+        "modern-wikipedia-economic-depression",
+        "modern-wikipedia-great-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-storm",
+      "token": "storm",
+      "count": 13,
+      "documentFrequency": 7,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-first-tropical-depression-of-2006-forms-6",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-tropical-depression-six-shows-signs-of-organization-8",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikinews-tropical-storm-stan-forms-over-yucatan-peninsula-35",
+        "modern-wikinews-first-tropical-depression-of-2006-forms-36",
+        "modern-wikipedia-tropical-cyclone"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-major",
+      "token": "major",
+      "count": 12,
+      "documentFrequency": 10,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "emotional_state",
+        "physical_lowering_pressure",
+        "literary_melancholy_sadness_cluster",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-4",
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-10",
+        "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-11",
+        "modern-wikinews-study-cognitive-therapy-as-good-as-medication-but-lasts-longer-12",
+        "modern-wikinews-fascinating-and-provocative-research-examines-genetic-elements-of-bipolar-schizophrenia-13",
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-14",
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-mood-disorder",
+        "modern-wikipedia-melancholy",
+        "modern-wikipedia-economic-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-mental",
+      "token": "mental",
+      "count": 12,
+      "documentFrequency": 8,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "emotional_state",
+        "literary_melancholy_sadness_cluster",
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-tom-cruise-debates-psychiatry-on-nbc-s-today-show-15",
+        "modern-wikinews-new-south-wales-set-to-adopt-harsher-anti-cannabis-laws-16",
+        "modern-wikinews-getting-the-exclusive-lowdown-on-the-lowdown-17",
+        "modern-wikinews-us-study-examines-suicide-trends-in-depressed-youth-18",
+        "modern-wikinews-fascinating-and-provocative-research-examines-genetic-elements-of-bipolar-schizophrenia-20",
+        "modern-wikipedia-depression-mood",
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-mood-disorder"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-disorder",
+      "token": "disorder",
+      "count": 12,
+      "documentFrequency": 5,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "emotional_state",
+        "physical_lowering_pressure",
+        "literary_melancholy_sadness_cluster"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-4",
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-14",
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-mood-disorder",
+        "modern-wikipedia-melancholy"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-great",
+      "token": "great",
+      "count": 11,
+      "documentFrequency": 9,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-americans-spent-more-than-they-earned-in-2005-24",
+        "modern-wikinews-american-prize-winning-author-studs-terkel-dead-at-96-25",
+        "modern-wikinews-congressional-computers-continue-to-be-used-to-vandalize-wikipedia-26",
+        "modern-wikinews-australian-treasurer-hands-down-budget-announces-two-years-of-deficits-27",
+        "modern-wikinews-obama-renominates-bernanke-as-us-central-banker-28",
+        "modern-wikinews-delay-declares-victory-in-war-on-u-s-budget-fat-29",
+        "modern-wikinews-robert-boyle-wins-honorary-oscar-for-his-art-direction-career-30",
+        "modern-wikinews-us-president-obama-proposes-financial-reform-31",
+        "modern-wikipedia-great-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-hurricane",
+      "token": "hurricane",
+      "count": 9,
+      "documentFrequency": 8,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-tropical-depression-dissipates-impacts-mexico-3",
+        "modern-wikinews-first-tropical-depression-of-2006-forms-6",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-tropical-depression-six-shows-signs-of-organization-8",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikinews-tropical-storm-stan-forms-over-yucatan-peninsula-35",
+        "modern-wikinews-first-tropical-depression-of-2006-forms-36",
+        "modern-wikipedia-tropical-cyclone"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-health",
+      "token": "health",
+      "count": 9,
+      "documentFrequency": 5,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-tom-cruise-debates-psychiatry-on-nbc-s-today-show-15",
+        "modern-wikinews-new-south-wales-set-to-adopt-harsher-anti-cannabis-laws-16",
+        "modern-wikinews-us-study-examines-suicide-trends-in-depressed-youth-18",
+        "modern-wikinews-canadian-loses-health-benefits-after-company-finds-joyful-facebook-pictures-19",
+        "modern-wikinews-fascinating-and-provocative-research-examines-genetic-elements-of-bipolar-schizophrenia-20"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-cyclone",
+      "token": "cyclone",
+      "count": 8,
+      "documentFrequency": 5,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-1",
+        "modern-wikinews-tropical-depression-dissipates-impacts-mexico-3",
+        "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-32",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikipedia-tropical-cyclone"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-may",
+      "token": "may",
+      "count": 7,
+      "documentFrequency": 6,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "emotional_state",
+        "literary_melancholy_sadness_cluster",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-2",
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-10",
+        "modern-wikinews-us-study-examines-suicide-trends-in-depressed-youth-18",
+        "modern-wikipedia-depression-mood",
+        "modern-wikipedia-melancholy",
+        "modern-wikipedia-economic-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-low",
+      "token": "low",
+      "count": 7,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "emotional_state",
+        "clinical_psychiatric_condition",
+        "literary_melancholy_sadness_cluster",
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikipedia-depression-mood",
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-melancholy",
+        "modern-wikipedia-tropical-cyclone"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-known",
+      "token": "known",
+      "count": 7,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "emotional_state",
+        "clinical_psychiatric_condition",
+        "physical_lowering_pressure",
+        "literary_melancholy_sadness_cluster",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-mood-disorder",
+        "modern-wikipedia-melancholy",
+        "modern-wikipedia-great-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-melancholy",
+      "token": "melancholy",
+      "count": 7,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "emotional_state",
+        "physical_lowering_pressure",
+        "literary_melancholy_sadness_cluster",
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikipedia-melancholia",
+        "modern-wikipedia-melancholy"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-national",
+      "token": "national",
+      "count": 6,
+      "documentFrequency": 6,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-tropical-depression-six-shows-signs-of-organization-8",
+        "modern-wikinews-americans-spent-more-than-they-earned-in-2005-24",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikinews-tropical-storm-stan-forms-over-yucatan-peninsula-35",
+        "modern-wikipedia-economic-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-center",
+      "token": "center",
+      "count": 6,
+      "documentFrequency": 5,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-tropical-depression-six-shows-signs-of-organization-8",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikinews-adrian-dissipates-producing-heavy-rains-and-mudslides-34",
+        "modern-wikinews-tropical-storm-stan-forms-over-yucatan-peninsula-35"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-four",
+      "token": "four",
+      "count": 6,
+      "documentFrequency": 5,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure",
+        "economic_downturn",
+        "emotional_state",
+        "literary_melancholy_sadness_cluster",
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-australian-treasurer-hands-down-budget-announces-two-years-of-deficits-27",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikipedia-melancholia",
+        "modern-wikipedia-melancholy"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-one",
+      "token": "one",
+      "count": 5,
+      "documentFrequency": 5,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure",
+        "emotional_state",
+        "literary_melancholy_sadness_cluster",
+        "clinical_psychiatric_condition",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-tropical-depression-dissipates-impacts-mexico-3",
+        "modern-wikinews-fascinating-and-provocative-research-examines-genetic-elements-of-bipolar-schizophrenia-13",
+        "modern-wikipedia-melancholia",
+        "modern-wikipedia-melancholy",
+        "modern-wikipedia-economic-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-now",
+      "token": "now",
+      "count": 5,
+      "documentFrequency": 5,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure",
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-14",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikinews-adrian-dissipates-producing-heavy-rains-and-mudslides-34",
+        "modern-wikinews-tropical-storm-stan-forms-over-yucatan-peninsula-35"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-depressive",
+      "token": "depressive",
+      "count": 5,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "emotional_state",
+        "physical_lowering_pressure",
+        "literary_melancholy_sadness_cluster"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-14",
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-mood-disorder",
+        "modern-wikipedia-melancholy"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-form",
+      "token": "form",
+      "count": 4,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure",
+        "geographical_topographical"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-1",
+        "modern-wikinews-study-claims-recreational-ecstasy-use-and-depression-unrelated-5",
+        "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-32",
+        "modern-wikipedia-depression-geology"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-severe",
+      "token": "severe",
+      "count": 4,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-2",
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-10",
+        "modern-wikipedia-economic-depression",
+        "modern-wikipedia-great-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-drug",
+      "token": "drug",
+      "count": 4,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-2",
+        "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-4",
+        "modern-wikinews-study-claims-recreational-ecstasy-use-and-depression-unrelated-5",
+        "modern-wikinews-new-south-wales-set-to-adopt-harsher-anti-cannabis-laws-16"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-over",
+      "token": "over",
+      "count": 4,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "economic_downturn",
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-4",
+        "modern-wikinews-australian-treasurer-hands-down-budget-announces-two-years-of-deficits-27",
+        "modern-wikinews-adrian-dissipates-producing-heavy-rains-and-mudslides-34",
+        "modern-wikipedia-economic-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-often",
+      "token": "often",
+      "count": 4,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "emotional_state",
+        "clinical_psychiatric_condition",
+        "literary_melancholy_sadness_cluster",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-study-claims-recreational-ecstasy-use-and-depression-unrelated-5",
+        "modern-wikipedia-depression-mood",
+        "modern-wikipedia-economic-depression",
+        "modern-wikipedia-great-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-times",
+      "token": "times",
+      "count": 4,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "economic_downturn",
+        "emotional_state",
+        "physical_lowering_pressure",
+        "literary_melancholy_sadness_cluster"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-on-the-campaign-trail-in-the-usa-june-2020-22",
+        "modern-wikinews-american-prize-winning-author-studs-terkel-dead-at-96-25",
+        "modern-wikipedia-melancholia",
+        "modern-wikipedia-tropical-cyclone"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-since",
+      "token": "since",
+      "count": 4,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "economic_downturn",
+        "emotional_state",
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-americans-spent-more-than-they-earned-in-2005-24",
+        "modern-wikinews-australian-treasurer-hands-down-budget-announces-two-years-of-deficits-27",
+        "modern-wikinews-delay-declares-victory-in-war-on-u-s-budget-fat-29",
+        "modern-wikipedia-major-depressive-disorder"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-characterized",
+      "token": "characterized",
+      "count": 4,
+      "documentFrequency": 4,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "emotional_state",
+        "clinical_psychiatric_condition",
+        "physical_lowering_pressure",
+        "literary_melancholy_sadness_cluster",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-melancholia",
+        "modern-wikipedia-economic-depression",
+        "modern-wikipedia-great-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-united",
+      "token": "united",
+      "count": 4,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikipedia-great-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-world",
+      "token": "world",
+      "count": 4,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-on-the-campaign-trail-in-the-usa-june-2020-22",
+        "modern-wikinews-obama-renominates-bernanke-as-us-central-banker-28",
+        "modern-wikipedia-great-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-pacific",
+      "token": "pacific",
+      "count": 4,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-tropical-depression-dissipates-impacts-mexico-3",
+        "modern-wikipedia-tropical-cyclone"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-disorders",
+      "token": "disorders",
+      "count": 4,
+      "documentFrequency": 2,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "emotional_state",
+        "clinical_psychiatric_condition",
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-mood-disorder"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-ocean",
+      "token": "ocean",
+      "count": 4,
+      "documentFrequency": 1,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikipedia-tropical-cyclone"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-initial",
+      "token": "initial",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-2",
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-10",
+        "modern-wikinews-study-cognitive-therapy-as-good-as-medication-but-lasts-longer-12"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-cyclones",
+      "token": "cyclones",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-tropical-depression-dissipates-impacts-mexico-3",
+        "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-32",
+        "modern-wikipedia-tropical-cyclone"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-first",
+      "token": "first",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-tropical-depression-dissipates-impacts-mexico-3",
+        "modern-wikinews-first-tropical-depression-of-2006-forms-6",
+        "modern-wikinews-first-tropical-depression-of-2006-forms-36"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-use",
+      "token": "use",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-4",
+        "modern-wikinews-study-claims-recreational-ecstasy-use-and-depression-unrelated-5",
+        "modern-wikinews-congressional-computers-continue-to-be-used-to-vandalize-wikipedia-26"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-said",
+      "token": "said",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-4",
+        "modern-wikinews-australian-treasurer-hands-down-budget-announces-two-years-of-deficits-27",
+        "modern-wikinews-us-president-obama-proposes-financial-reform-31"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-between",
+      "token": "between",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "emotional_state",
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-study-claims-recreational-ecstasy-use-and-depression-unrelated-5",
+        "modern-wikinews-new-south-wales-set-to-adopt-harsher-anti-cannabis-laws-16",
+        "modern-wikipedia-mood-disorder"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-western",
+      "token": "western",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-first-tropical-depression-of-2006-forms-6",
+        "modern-wikinews-adrian-dissipates-producing-heavy-rains-and-mudslides-34",
+        "modern-wikinews-first-tropical-depression-of-2006-forms-36"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-atlantic",
+      "token": "atlantic",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-first-tropical-depression-of-2006-forms-6",
+        "modern-wikinews-first-tropical-depression-of-2006-forms-36",
+        "modern-wikipedia-tropical-cyclone"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-states",
+      "token": "states",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikipedia-great-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-nhc",
+      "token": "nhc",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-32",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-upgraded",
+      "token": "upgraded",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikinews-tropical-storm-stan-forms-over-yucatan-peninsula-35"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-status",
+      "token": "status",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikinews-tropical-storm-stan-forms-over-yucatan-peninsula-35"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-officially",
+      "token": "officially",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-7",
+        "modern-wikinews-nhc-upgrades-tropical-depression-four-e-to-tropical-storm-carlos-33",
+        "modern-wikinews-tropical-storm-stan-forms-over-yucatan-peninsula-35"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-clinical",
+      "token": "clinical",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "emotional_state",
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-cbs-news-correspondent-mike-wallace-dies-at-93-9",
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-mood-disorder"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-treatment",
+      "token": "treatment",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-10",
+        "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-11",
+        "modern-wikinews-study-cognitive-therapy-as-good-as-medication-but-lasts-longer-12"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-high",
+      "token": "high",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-10",
+        "modern-wikinews-getting-the-exclusive-lowdown-on-the-lowdown-17",
+        "modern-wikipedia-great-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-university",
+      "token": "university",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-study-suggests-successful-depression-treatment-lowers-youths-risk-of-drug-abuse-11",
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-14",
+        "modern-wikinews-cbs-news-correspondent-mike-wallace-dies-at-93-21"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-study",
+      "token": "study",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-study-cognitive-therapy-as-good-as-medication-but-lasts-longer-12",
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-14",
+        "modern-wikinews-us-study-examines-suicide-trends-in-depressed-youth-18"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-youth",
+      "token": "youth",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-fascinating-and-provocative-research-examines-genetic-elements-of-bipolar-schizophrenia-13",
+        "modern-wikinews-getting-the-exclusive-lowdown-on-the-lowdown-17",
+        "modern-wikinews-us-study-examines-suicide-trends-in-depressed-youth-18"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-professionals",
+      "token": "professionals",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-talk-therapy-can-make-a-difference-in-early-treatment-of-severe-depression-14",
+        "modern-wikinews-new-south-wales-set-to-adopt-harsher-anti-cannabis-laws-16",
+        "modern-wikinews-fascinating-and-provocative-research-examines-genetic-elements-of-bipolar-schizophrenia-20"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-term",
+      "token": "term",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "emotional_state",
+        "economic_downturn"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-canadian-loses-health-benefits-after-company-finds-joyful-facebook-pictures-19",
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-economic-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-called",
+      "token": "called",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "clinical_psychiatric_condition",
+        "emotional_state",
+        "literary_melancholy_sadness_cluster",
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-cbs-news-correspondent-mike-wallace-dies-at-93-21",
+        "modern-wikipedia-melancholy",
+        "modern-wikipedia-tropical-cyclone"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-global",
+      "token": "global",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "economic_downturn",
+        "emotional_state",
+        "clinical_psychiatric_condition",
+        "literary_melancholy_sadness_cluster"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-on-the-campaign-trail-in-the-usa-june-2020-22",
+        "modern-wikipedia-depression-mood",
+        "modern-wikipedia-great-depression"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-second",
+      "token": "second",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "economic_downturn",
+        "emotional_state",
+        "clinical_psychiatric_condition"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-australian-treasurer-hands-down-budget-announces-two-years-of-deficits-27",
+        "modern-wikinews-us-president-obama-proposes-financial-reform-31",
+        "modern-wikipedia-major-depressive-disorder"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-used",
+      "token": "used",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "physical_lowering_pressure",
+        "emotional_state",
+        "clinical_psychiatric_condition",
+        "literary_melancholy_sadness_cluster"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikinews-tropical-depression-three-of-2019-approaches-florida-before-dissipating-32",
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-melancholia"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    },
+    {
+      "id": "modern-collocate-person-s",
+      "token": "person's",
+      "count": 3,
+      "documentFrequency": 3,
+      "sourceCorpus": "Wikinews + Wikipedia",
+      "categoryIds": [
+        "emotional_state",
+        "clinical_psychiatric_condition",
+        "literary_melancholy_sadness_cluster",
+        "physical_lowering_pressure"
+      ],
+      "relatedSnippetIds": [
+        "modern-wikipedia-depression-mood",
+        "modern-wikipedia-major-depressive-disorder",
+        "modern-wikipedia-mood-disorder"
+      ],
+      "caveat": "Computed from open snippets/extracts only; use as exploratory modern context."
+    }
+  ]
+}

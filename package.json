@@ -11,7 +11,13 @@
     "data:forever:prehistory": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/build_prehistory_forever.ts",
     "data:forever:modern": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_modern_context_forever.ts",
     "data:forever:build": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/build_forever_dataset.ts",
-    "data:forever": "npm run data:forever:ngram && npm run data:forever:gutenberg && npm run data:forever:prehistory && npm run data:forever:modern && npm run data:forever:build"
+    "data:forever": "npm run data:forever:ngram && npm run data:forever:gutenberg && npm run data:forever:prehistory && npm run data:forever:modern && npm run data:forever:build",
+    "data:depression:ngram": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_ngram_depression.ts",
+    "data:depression:prehistory": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/build_prehistory_depression.ts",
+    "data:depression:gutenberg": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_gutenberg_depression.ts",
+    "data:depression:modern": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_modern_context_depression.ts",
+    "data:depression:build": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/build_depression_dataset.ts",
+    "data:depression": "npm run data:depression:ngram && npm run data:depression:prehistory && npm run data:depression:gutenberg && npm run data:depression:modern && npm run data:depression:build"
   },
   "dependencies": {
     "next": "16.2.5",

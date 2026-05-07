@@ -1,0 +1,1348 @@
+{
+  "generatedAt": "2026-05-07T13:49:11.289Z",
+  "source": {
+    "label": "Google Books Ngram Viewer",
+    "urls": [
+      "https://books.google.com/ngrams/json?content=depression%2Cmelancholy%2Cmelancholia%2Csadness%2Cdespair%2Cgloom%2Canxiety%2Clow+spirits&year_start=1500&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
+      "https://books.google.com/ngrams/json?content=mental+depression%2Cclinical+depression%2Cmajor+depression%2Cdepressive+disorder%2Cdepression+disorder%2Ceconomic+depression%2Cgreat+depression%2Cfinancial+depression&year_start=1500&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
+      "https://books.google.com/ngrams/json?content=business+depression%2Ctopographical+depression%2Cgeological+depression&year_start=1500&year_end=2022&corpus=en&smoothing=0&case_insensitive=false"
+    ],
+    "corpus": "en",
+    "startYear": 1500,
+    "endYear": 2022,
+    "smoothing": 0,
+    "caveat": "Frequency series are book ngram fractions, not sense classification, first-use evidence, or contextual snippets."
+  },
+  "terms": [
+    {
+      "id": "depression",
+      "label": "depression",
+      "query": "depression",
+      "group": "core",
+      "comparisonRole": "target word",
+      "color": "#F06B04",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1501,
+      "firstYearAbove000001PerMillion": 1501,
+      "recommendedVisualStartYear": 1600,
+      "earlyFrequencyStatus": "usable-with-caution",
+      "coverageNote": "The 1600s contain enough signal for a cautious early trace; default public views should still emphasize 1700 onward.",
+      "semanticStatus": "frequency-series",
+      "semanticCaveat": "Frequency shows printed form visibility only; category assignment requires context evidence.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 4,
+          "firstNonZeroYear": 1501,
+          "averageFrequencyPerMillion": 0.23013366,
+          "maxFrequencyPerMillion": 9.81993526
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 37,
+          "firstNonZeroYear": 1601,
+          "averageFrequencyPerMillion": 0.04728803,
+          "maxFrequencyPerMillion": 1.4440767
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 65,
+          "firstNonZeroYear": 1701,
+          "averageFrequencyPerMillion": 0.07038711,
+          "maxFrequencyPerMillion": 0.90260903
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1800,
+          "averageFrequencyPerMillion": 7.73121431,
+          "maxFrequencyPerMillion": 17.62508691
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 15.48553424,
+          "maxFrequencyPerMillion": 43.33051766
+        }
+      ]
+    },
+    {
+      "id": "melancholy",
+      "label": "melancholy",
+      "query": "melancholy",
+      "group": "mood-historical",
+      "comparisonRole": "historical mood neighbor",
+      "color": "#1570AC",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1538,
+      "firstYearAbove000001PerMillion": 1538,
+      "recommendedVisualStartYear": 1500,
+      "earlyFrequencyStatus": "visible-but-early-print-noisy",
+      "coverageNote": "The 1500s contain visible signal, but this should be styled as early-print/noisy frequency evidence.",
+      "semanticStatus": "frequency-series",
+      "semanticCaveat": "Frequency shows printed form visibility only; category assignment requires context evidence.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 38,
+          "firstNonZeroYear": 1538,
+          "averageFrequencyPerMillion": 1.35076354,
+          "maxFrequencyPerMillion": 13.65487969
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1600,
+          "averageFrequencyPerMillion": 10.20415708,
+          "maxFrequencyPerMillion": 102.83072334
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1700,
+          "averageFrequencyPerMillion": 18.09334946,
+          "maxFrequencyPerMillion": 34.72483149
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1800,
+          "averageFrequencyPerMillion": 16.64081775,
+          "maxFrequencyPerMillion": 28.45747622
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 1.99322612,
+          "maxFrequencyPerMillion": 4.92102117
+        }
+      ]
+    },
+    {
+      "id": "melancholia",
+      "label": "melancholia",
+      "query": "melancholia",
+      "group": "mood-historical",
+      "comparisonRole": "medical-historical neighbor",
+      "color": "#1570AC",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1550,
+      "firstYearAbove000001PerMillion": 1550,
+      "recommendedVisualStartYear": 1600,
+      "earlyFrequencyStatus": "usable-with-caution",
+      "coverageNote": "The 1600s contain enough signal for a cautious early trace; default public views should still emphasize 1700 onward.",
+      "semanticStatus": "frequency-series",
+      "semanticCaveat": "Frequency shows printed form visibility only; category assignment requires context evidence.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 4,
+          "firstNonZeroYear": 1550,
+          "averageFrequencyPerMillion": 0.01113472,
+          "maxFrequencyPerMillion": 0.45471504
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 39,
+          "firstNonZeroYear": 1600,
+          "averageFrequencyPerMillion": 0.11772364,
+          "maxFrequencyPerMillion": 1.87890168
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 60,
+          "firstNonZeroYear": 1707,
+          "averageFrequencyPerMillion": 0.02670254,
+          "maxFrequencyPerMillion": 0.29179998
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1800,
+          "averageFrequencyPerMillion": 0.29081408,
+          "maxFrequencyPerMillion": 0.97211387
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 0.27602738,
+          "maxFrequencyPerMillion": 0.83810733
+        }
+      ]
+    },
+    {
+      "id": "sadness",
+      "label": "sadness",
+      "query": "sadness",
+      "group": "mood-related",
+      "comparisonRole": "broad mood neighbor",
+      "color": "#2C9FC7",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1549,
+      "firstYearAbove000001PerMillion": 1549,
+      "recommendedVisualStartYear": 1600,
+      "earlyFrequencyStatus": "usable-with-caution",
+      "coverageNote": "The 1600s contain enough signal for a cautious early trace; default public views should still emphasize 1700 onward.",
+      "semanticStatus": "frequency-series",
+      "semanticCaveat": "Frequency shows printed form visibility only; category assignment requires context evidence.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 9,
+          "firstNonZeroYear": 1549,
+          "averageFrequencyPerMillion": 0.0543248,
+          "maxFrequencyPerMillion": 1.79849326
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 63,
+          "firstNonZeroYear": 1600,
+          "averageFrequencyPerMillion": 0.19337723,
+          "maxFrequencyPerMillion": 1.76248557
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 99,
+          "firstNonZeroYear": 1700,
+          "averageFrequencyPerMillion": 0.12539967,
+          "maxFrequencyPerMillion": 0.58550785
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1800,
+          "averageFrequencyPerMillion": 3.12750966,
+          "maxFrequencyPerMillion": 5.23217886
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 2.13130242,
+          "maxFrequencyPerMillion": 9.68628774
+        }
+      ]
+    },
+    {
+      "id": "despair",
+      "label": "despair",
+      "query": "despair",
+      "group": "mood-related",
+      "comparisonRole": "intense mood neighbor",
+      "color": "#2C9FC7",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1515,
+      "firstYearAbove000001PerMillion": 1515,
+      "recommendedVisualStartYear": 1500,
+      "earlyFrequencyStatus": "visible-but-early-print-noisy",
+      "coverageNote": "The 1500s contain visible signal, but this should be styled as early-print/noisy frequency evidence.",
+      "semanticStatus": "frequency-series",
+      "semanticCaveat": "Frequency shows printed form visibility only; category assignment requires context evidence.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 31,
+          "firstNonZeroYear": 1515,
+          "averageFrequencyPerMillion": 0.74964555,
+          "maxFrequencyPerMillion": 16.26889207
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 89,
+          "firstNonZeroYear": 1600,
+          "averageFrequencyPerMillion": 1.37736499,
+          "maxFrequencyPerMillion": 4.73274758
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1700,
+          "averageFrequencyPerMillion": 1.62639772,
+          "maxFrequencyPerMillion": 4.69532779
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1800,
+          "averageFrequencyPerMillion": 14.90569211,
+          "maxFrequencyPerMillion": 24.21920362
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 4.37349964,
+          "maxFrequencyPerMillion": 10.38919345
+        }
+      ]
+    },
+    {
+      "id": "gloom",
+      "label": "gloom",
+      "query": "gloom",
+      "group": "mood-related",
+      "comparisonRole": "literary mood neighbor",
+      "color": "#2C9FC7",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1581,
+      "firstYearAbove000001PerMillion": 1581,
+      "recommendedVisualStartYear": 1600,
+      "earlyFrequencyStatus": "usable-with-caution",
+      "coverageNote": "The 1600s contain enough signal for a cautious early trace; default public views should still emphasize 1700 onward.",
+      "semanticStatus": "frequency-series",
+      "semanticCaveat": "Frequency shows printed form visibility only; category assignment requires context evidence.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 3,
+          "firstNonZeroYear": 1581,
+          "averageFrequencyPerMillion": 0.00524139,
+          "maxFrequencyPerMillion": 0.21558368
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 38,
+          "firstNonZeroYear": 1610,
+          "averageFrequencyPerMillion": 0.07059647,
+          "maxFrequencyPerMillion": 0.91175991
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 99,
+          "firstNonZeroYear": 1700,
+          "averageFrequencyPerMillion": 4.12415214,
+          "maxFrequencyPerMillion": 18.53544927
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1800,
+          "averageFrequencyPerMillion": 8.29071432,
+          "maxFrequencyPerMillion": 13.00150507
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 1.75540725,
+          "maxFrequencyPerMillion": 4.10394478
+        }
+      ]
+    },
+    {
+      "id": "anxiety",
+      "label": "anxiety",
+      "query": "anxiety",
+      "group": "mood-related",
+      "comparisonRole": "adjacent mental-health neighbor",
+      "color": "#2C9FC7",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1513,
+      "firstYearAbove000001PerMillion": 1513,
+      "recommendedVisualStartYear": 1600,
+      "earlyFrequencyStatus": "usable-with-caution",
+      "coverageNote": "The 1600s contain enough signal for a cautious early trace; default public views should still emphasize 1700 onward.",
+      "semanticStatus": "frequency-series",
+      "semanticCaveat": "Frequency shows printed form visibility only; category assignment requires context evidence.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 20,
+          "firstNonZeroYear": 1513,
+          "averageFrequencyPerMillion": 0.69243772,
+          "maxFrequencyPerMillion": 40.67223199
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1600,
+          "averageFrequencyPerMillion": 1.03450477,
+          "maxFrequencyPerMillion": 4.22868561
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1700,
+          "averageFrequencyPerMillion": 5.32681627,
+          "maxFrequencyPerMillion": 16.53773143
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1800,
+          "averageFrequencyPerMillion": 16.59682752,
+          "maxFrequencyPerMillion": 24.51330874
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 10.42911291,
+          "maxFrequencyPerMillion": 32.33646567
+        }
+      ]
+    },
+    {
+      "id": "low-spirits",
+      "label": "low spirits",
+      "query": "low spirits",
+      "group": "mood-phrase",
+      "comparisonRole": "historical phrase neighbor",
+      "color": "#036C17",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1662,
+      "firstYearAbove000001PerMillion": 1662,
+      "recommendedVisualStartYear": 1700,
+      "earlyFrequencyStatus": "pre-1700-too-sparse-or-noisy",
+      "coverageNote": "Pre-1700 signal is too sparse or unstable for a confident visual baseline.",
+      "semanticStatus": "frequency-series",
+      "semanticCaveat": "Frequency shows printed form visibility only; category assignment requires context evidence.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 4,
+          "firstNonZeroYear": 1662,
+          "averageFrequencyPerMillion": 0.00153627,
+          "maxFrequencyPerMillion": 0.05274174
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 38,
+          "firstNonZeroYear": 1709,
+          "averageFrequencyPerMillion": 0.00745422,
+          "maxFrequencyPerMillion": 0.1813826
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1800,
+          "averageFrequencyPerMillion": 0.23080713,
+          "maxFrequencyPerMillion": 0.58420528
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 0.0449289,
+          "maxFrequencyPerMillion": 0.13535838
+        }
+      ]
+    },
+    {
+      "id": "mental-depression",
+      "label": "mental depression",
+      "query": "mental depression",
+      "group": "clinical-psychiatric",
+      "comparisonRole": "clinical phrase candidate",
+      "color": "#A1081F",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1773,
+      "firstYearAbove000001PerMillion": 1773,
+      "recommendedVisualStartYear": 1800,
+      "earlyFrequencyStatus": "late-emerging-or-very-sparse",
+      "coverageNote": "The series is too sparse before 1800 for a strong public visual trace.",
+      "semanticStatus": "clinical-bridge-phrase",
+      "semanticCaveat": "Mental depression can bridge older affective language and later clinical usage; inspect snippets before assigning it to psychiatry.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 3,
+          "firstNonZeroYear": 1773,
+          "averageFrequencyPerMillion": 0.00014717,
+          "maxFrequencyPerMillion": 0.00647795
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 99,
+          "firstNonZeroYear": 1800,
+          "averageFrequencyPerMillion": 0.12186535,
+          "maxFrequencyPerMillion": 0.29727963
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 0.09514972,
+          "maxFrequencyPerMillion": 0.29706035
+        }
+      ]
+    },
+    {
+      "id": "clinical-depression",
+      "label": "clinical depression",
+      "query": "clinical depression",
+      "group": "clinical-psychiatric",
+      "comparisonRole": "modern clinical phrase",
+      "color": "#A1081F",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1771,
+      "firstYearAbove000001PerMillion": 1771,
+      "recommendedVisualStartYear": 1900,
+      "earlyFrequencyStatus": "late-emerging-or-very-sparse",
+      "coverageNote": "The series is too sparse before 1800 for a strong public visual trace.",
+      "semanticStatus": "modern-clinical-sense-only",
+      "semanticCaveat": "Earlier Ngram hits may be literal or non-diagnostic phrase uses. Do not use pre-1900 values as clinical evidence without quotation review.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 1,
+          "firstNonZeroYear": 1771,
+          "averageFrequencyPerMillion": 0.00013821,
+          "maxFrequencyPerMillion": 0.0138215
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 3,
+          "firstNonZeroYear": 1810,
+          "averageFrequencyPerMillion": 0.00001921,
+          "maxFrequencyPerMillion": 0.0012503
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 95,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 0.04488257,
+          "maxFrequencyPerMillion": 0.20233355
+        }
+      ]
+    },
+    {
+      "id": "major-depression",
+      "label": "major depression",
+      "query": "major depression",
+      "group": "clinical-psychiatric",
+      "comparisonRole": "modern clinical phrase",
+      "color": "#A1081F",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1771,
+      "firstYearAbove000001PerMillion": 1771,
+      "recommendedVisualStartYear": 1900,
+      "earlyFrequencyStatus": "late-emerging-or-very-sparse",
+      "coverageNote": "The series is too sparse before 1800 for a strong public visual trace.",
+      "semanticStatus": "modern-clinical-sense-only",
+      "semanticCaveat": "Earlier Ngram hits may be literal or non-diagnostic phrase uses. Do not use pre-1900 values as clinical evidence without quotation review.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 1,
+          "firstNonZeroYear": 1771,
+          "averageFrequencyPerMillion": 0.00020732,
+          "maxFrequencyPerMillion": 0.02073224
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 11,
+          "firstNonZeroYear": 1802,
+          "averageFrequencyPerMillion": 0.00013143,
+          "maxFrequencyPerMillion": 0.00365882
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 120,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 0.21884363,
+          "maxFrequencyPerMillion": 0.93359677
+        }
+      ]
+    },
+    {
+      "id": "depressive-disorder",
+      "label": "depressive disorder",
+      "query": "depressive disorder",
+      "group": "clinical-psychiatric",
+      "comparisonRole": "diagnostic phrase",
+      "color": "#A1081F",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1809,
+      "firstYearAbove000001PerMillion": 1809,
+      "recommendedVisualStartYear": 1900,
+      "earlyFrequencyStatus": "late-emerging-or-very-sparse",
+      "coverageNote": "The series is too sparse before 1800 for a strong public visual trace.",
+      "semanticStatus": "modern-clinical-sense-only",
+      "semanticCaveat": "Earlier Ngram hits may be literal or non-diagnostic phrase uses. Do not use pre-1900 values as clinical evidence without quotation review.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 2,
+          "firstNonZeroYear": 1809,
+          "averageFrequencyPerMillion": 0.00002835,
+          "maxFrequencyPerMillion": 0.00191459
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 111,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 0.1403442,
+          "maxFrequencyPerMillion": 0.81688813
+        }
+      ]
+    },
+    {
+      "id": "depression-disorder",
+      "label": "depression disorder",
+      "query": "depression disorder",
+      "group": "clinical-psychiatric",
+      "comparisonRole": "diagnostic phrase variant",
+      "color": "#A1081F",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1936,
+      "firstYearAbove000001PerMillion": 1936,
+      "recommendedVisualStartYear": 1900,
+      "earlyFrequencyStatus": "late-emerging-or-very-sparse",
+      "coverageNote": "The series is too sparse before 1800 for a strong public visual trace.",
+      "semanticStatus": "modern-clinical-sense-only",
+      "semanticCaveat": "Earlier Ngram hits may be literal or non-diagnostic phrase uses. Do not use pre-1900 values as clinical evidence without quotation review.",
+      "usabilityStatus": "sparse-but-usable",
+      "visualUse": "secondary",
+      "usabilityNote": "Usable as a secondary trace or marker layer, but not strong enough to anchor a main visual alone.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 53,
+          "firstNonZeroYear": 1936,
+          "averageFrequencyPerMillion": 0.00134237,
+          "maxFrequencyPerMillion": 0.01604277
+        }
+      ]
+    },
+    {
+      "id": "economic-depression",
+      "label": "economic depression",
+      "query": "economic depression",
+      "group": "economic",
+      "comparisonRole": "economic phrase",
+      "color": "#FBB728",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1601,
+      "firstYearAbove000001PerMillion": 1601,
+      "recommendedVisualStartYear": 1800,
+      "earlyFrequencyStatus": "late-emerging-or-very-sparse",
+      "coverageNote": "The series is too sparse before 1800 for a strong public visual trace.",
+      "semanticStatus": "economic-sense-needs-context",
+      "semanticCaveat": "Economic readings should be tied to trade, market, or business context; early phrase hits may be noisy.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 1,
+          "firstNonZeroYear": 1601,
+          "averageFrequencyPerMillion": 0.00156709,
+          "maxFrequencyPerMillion": 0.15670935
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 1,
+          "firstNonZeroYear": 1794,
+          "averageFrequencyPerMillion": 0.00006147,
+          "maxFrequencyPerMillion": 0.00614694
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 54,
+          "firstNonZeroYear": 1804,
+          "averageFrequencyPerMillion": 0.00248435,
+          "maxFrequencyPerMillion": 0.07370762
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 0.3222055,
+          "maxFrequencyPerMillion": 2.32925299
+        }
+      ]
+    },
+    {
+      "id": "great-depression",
+      "label": "great depression",
+      "query": "great depression",
+      "group": "economic",
+      "comparisonRole": "named economic event phrase",
+      "color": "#FBB728",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1601,
+      "firstYearAbove000001PerMillion": 1601,
+      "recommendedVisualStartYear": 1900,
+      "earlyFrequencyStatus": "late-emerging-or-very-sparse",
+      "coverageNote": "The series is too sparse before 1800 for a strong public visual trace.",
+      "semanticStatus": "named-event-modern-only",
+      "semanticCaveat": "Pre-1930 values do not necessarily refer to the Great Depression as a named event.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 2,
+          "firstNonZeroYear": 1601,
+          "averageFrequencyPerMillion": 0.0034176,
+          "maxFrequencyPerMillion": 0.1850504
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 9,
+          "firstNonZeroYear": 1740,
+          "averageFrequencyPerMillion": 0.00136616,
+          "maxFrequencyPerMillion": 0.06960094
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 100,
+          "firstNonZeroYear": 1800,
+          "averageFrequencyPerMillion": 0.27639498,
+          "maxFrequencyPerMillion": 0.59500115
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 0.15612626,
+          "maxFrequencyPerMillion": 0.32323095
+        }
+      ]
+    },
+    {
+      "id": "financial-depression",
+      "label": "financial depression",
+      "query": "financial depression",
+      "group": "economic",
+      "comparisonRole": "economic phrase",
+      "color": "#FBB728",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1798,
+      "firstYearAbove000001PerMillion": 1798,
+      "recommendedVisualStartYear": 1800,
+      "earlyFrequencyStatus": "late-emerging-or-very-sparse",
+      "coverageNote": "The series is too sparse before 1800 for a strong public visual trace.",
+      "semanticStatus": "economic-sense-needs-context",
+      "semanticCaveat": "Economic readings should be tied to trade, market, or business context; early phrase hits may be noisy.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 1,
+          "firstNonZeroYear": 1798,
+          "averageFrequencyPerMillion": 0.00003403,
+          "maxFrequencyPerMillion": 0.00340282
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 79,
+          "firstNonZeroYear": 1800,
+          "averageFrequencyPerMillion": 0.06250967,
+          "maxFrequencyPerMillion": 0.71554848
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 0.08536227,
+          "maxFrequencyPerMillion": 0.63807602
+        }
+      ]
+    },
+    {
+      "id": "business-depression",
+      "label": "business depression",
+      "query": "business depression",
+      "group": "economic",
+      "comparisonRole": "economic phrase",
+      "color": "#FBB728",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1775,
+      "firstYearAbove000001PerMillion": 1775,
+      "recommendedVisualStartYear": 1800,
+      "earlyFrequencyStatus": "late-emerging-or-very-sparse",
+      "coverageNote": "The series is too sparse before 1800 for a strong public visual trace.",
+      "semanticStatus": "economic-sense-needs-context",
+      "semanticCaveat": "Economic readings should be tied to trade, market, or business context; early phrase hits may be noisy.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 1,
+          "firstNonZeroYear": 1775,
+          "averageFrequencyPerMillion": 0.00005638,
+          "maxFrequencyPerMillion": 0.00563835
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 71,
+          "firstNonZeroYear": 1800,
+          "averageFrequencyPerMillion": 0.06055629,
+          "maxFrequencyPerMillion": 0.87283678
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 123,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 0.23931639,
+          "maxFrequencyPerMillion": 3.0063652
+        }
+      ]
+    },
+    {
+      "id": "topographical-depression",
+      "label": "topographical depression",
+      "query": "topographical depression",
+      "group": "geographical",
+      "comparisonRole": "geographical phrase",
+      "color": "#5FCA00",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1870,
+      "firstYearAbove000001PerMillion": 1870,
+      "recommendedVisualStartYear": 1800,
+      "earlyFrequencyStatus": "late-emerging-or-very-sparse",
+      "coverageNote": "The series is too sparse before 1800 for a strong public visual trace.",
+      "semanticStatus": "small-branch-candidate",
+      "semanticCaveat": "The geographical/topographical branch is semantically important but relatively sparse in the current audit.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 15,
+          "firstNonZeroYear": 1870,
+          "averageFrequencyPerMillion": 0.00009037,
+          "maxFrequencyPerMillion": 0.00235449
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 112,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 0.00059176,
+          "maxFrequencyPerMillion": 0.00256676
+        }
+      ]
+    },
+    {
+      "id": "geological-depression",
+      "label": "geological depression",
+      "query": "geological depression",
+      "group": "geographical",
+      "comparisonRole": "geological phrase",
+      "color": "#5FCA00",
+      "source": "Google Books Ngram Viewer",
+      "corpus": "en",
+      "smoothing": 0,
+      "startYear": 1500,
+      "endYear": 2022,
+      "firstNonZeroYear": 1847,
+      "firstYearAbove000001PerMillion": 1847,
+      "recommendedVisualStartYear": 1800,
+      "earlyFrequencyStatus": "late-emerging-or-very-sparse",
+      "coverageNote": "The series is too sparse before 1800 for a strong public visual trace.",
+      "semanticStatus": "small-branch-candidate",
+      "semanticCaveat": "The geographical/topographical branch is semantically important but relatively sparse in the current audit.",
+      "usabilityStatus": "usable",
+      "visualUse": "primary-or-secondary",
+      "usabilityNote": "Enough signal for comparison, with strongest reliability in the modern book period.",
+      "rangeStats": [
+        {
+          "startYear": 1500,
+          "endYear": 1599,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1600,
+          "endYear": 1699,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1700,
+          "endYear": 1799,
+          "pointCount": 100,
+          "nonZeroYearCount": 0,
+          "firstNonZeroYear": null,
+          "averageFrequencyPerMillion": 0,
+          "maxFrequencyPerMillion": 0
+        },
+        {
+          "startYear": 1800,
+          "endYear": 1899,
+          "pointCount": 100,
+          "nonZeroYearCount": 30,
+          "firstNonZeroYear": 1847,
+          "averageFrequencyPerMillion": 0.00027974,
+          "maxFrequencyPerMillion": 0.0042402
+        },
+        {
+          "startYear": 1900,
+          "endYear": 2022,
+          "pointCount": 123,
+          "nonZeroYearCount": 104,
+          "firstNonZeroYear": 1900,
+          "averageFrequencyPerMillion": 0.0003457,
+          "maxFrequencyPerMillion": 0.00310618
+        }
+      ]
+    }
+  ]
+}
