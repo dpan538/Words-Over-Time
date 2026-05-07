@@ -27,8 +27,8 @@ export function PosterMarks() {
             <span key={`${tile}-${index}`} className={`h-5 ${tile}`} />
           ))}
         </div>
-        <p className="[writing-mode:vertical-rl] text-[0.62rem] font-black uppercase leading-none tracking-[0.18em] text-ink/60">
-          palette / demo
+        <p className="[writing-mode:vertical-rl] text-[0.72rem] font-black uppercase leading-none tracking-[0.16em] text-ink/60">
+          palette / system
         </p>
         <div className="h-10 border-b-[3px] border-ink" />
       </div>

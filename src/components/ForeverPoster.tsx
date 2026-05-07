@@ -534,8 +534,8 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(5,5,16,0.09)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.07)_1px,transparent_1px)] bg-[size:72px_72px]" />
           <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-end">
             <div>
-              <p className="font-mono text-[0.68rem] font-black uppercase tracking-[0.22em] text-fire">
-                Words Over Time / real-data demo
+              <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.18em] text-fire">
+                Words Over Time / word page
               </p>
               <h1 className="mt-5 text-[clamp(5.6rem,18vw,19rem)] font-black leading-[0.72] tracking-normal text-blaze">
                 forever
@@ -558,10 +558,10 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
                     index < 2 ? "border-b" : ""
                   }`}
                 >
-                  <dt className="border-r border-ink px-3 py-3 font-mono text-[0.58rem] font-black uppercase leading-4 tracking-[0.16em] text-fire">
+                  <dt className="border-r border-ink px-3 py-3 font-mono text-[0.74rem] font-black uppercase leading-5 tracking-[0.14em] text-fire">
                     {label}
                   </dt>
-                  <dd className="px-3 py-3 font-mono text-[0.62rem] font-black uppercase leading-4 tracking-[0.12em]">
+                  <dd className="px-3 py-3 font-mono text-[0.8rem] font-black uppercase leading-5 tracking-[0.1em]">
                     {value}
                   </dd>
                 </div>
@@ -689,7 +689,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           />
 
           <div className="border-t border-ink/80 pb-12 pt-0">
-            <div className="mt-8 flex flex-wrap gap-4 font-mono text-[0.68rem] font-black uppercase tracking-[0.16em]">
+            <div className="mt-8 flex flex-wrap gap-4 font-mono text-[0.8rem] font-black uppercase tracking-[0.13em]">
               <Link href="/" className="border-b border-ink pb-1 transition hover:border-blaze hover:text-blaze">
                 Back home
               </Link>

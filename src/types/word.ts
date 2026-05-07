@@ -1,4 +1,4 @@
-export type WordStatus = "demo" | "coming-soon";
+export type WordStatus = "complete" | "coming-soon";
 
 export type RightsStatus =
   | "public_domain"

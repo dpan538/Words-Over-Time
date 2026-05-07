@@ -14,7 +14,7 @@ export function WordCard({ word }: WordCardProps) {
       >
         {word.label}
         <span className="pointer-events-none absolute left-2 top-0 hidden -translate-y-[62%] text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] text-wine group-hover:block">
-          demo word
+          word page
         </span>
       </Link>
     );

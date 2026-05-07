@@ -87,7 +87,7 @@ export function FrequencyTimeline({
             <>
               <rect x={padX} y={padTop} width={Math.max(0, x(1700) - padX)} height={height - padTop - padBottom + 10} fill="url(#freq-early-noise)" />
               <line x1={x(1700)} x2={x(1700)} y1={padTop - 10} y2={height - padBottom + 16} stroke="#050510" strokeOpacity="0.28" strokeWidth="2" />
-              <text x={x(1600)} y={padTop + 28} textAnchor="middle" className="fill-ink/50 font-mono text-[14px] font-black uppercase tracking-[0.12em]">
+              <text x={x(1600)} y={padTop + 28} textAnchor="middle" className="fill-ink/50 font-mono text-[16px] font-black uppercase tracking-[0.1em]">
                 noisy early trace
               </text>
             </>
@@ -103,7 +103,7 @@ export function FrequencyTimeline({
             x={width - padX}
             y="34"
             textAnchor="end"
-            className="fill-ink/60 font-mono text-[15px] font-black uppercase tracking-[0.14em]"
+            className="fill-ink/60 font-mono text-[17px] font-black uppercase tracking-[0.12em]"
           >
             coverage {minYear}-{maxYear}
           </text>
@@ -142,7 +142,7 @@ export function FrequencyTimeline({
             </g>
           ))}
           {minYear < 1700 && maxYear > 1700 ? (
-            <text x={x(1700) + 10} y={height - 92} className="fill-ink/56 font-mono text-[14px] font-black uppercase tracking-[0.12em]">
+            <text x={x(1700) + 10} y={height - 92} className="fill-ink/56 font-mono text-[16px] font-black uppercase tracking-[0.1em]">
               public emphasis begins 1700
             </text>
           ) : null}
@@ -183,7 +183,7 @@ export function FrequencyTimeline({
                   <text
                     x="44"
                     y="5"
-                    className="fill-ink font-mono text-[16px] font-black uppercase tracking-[0.1em]"
+                    className="fill-ink font-mono text-[17px] font-black uppercase tracking-[0.08em]"
                   >
                     {item.label}
                   </text>
@@ -263,7 +263,7 @@ export function FrequencyTimeline({
           })}
         </svg>
       </div>
-      <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[0.74rem] font-black uppercase leading-5 tracking-[0.12em] text-ink/54">
+      <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[0.84rem] font-black uppercase leading-5 tracking-[0.1em] text-ink/58">
         <p>ngram {minYear}-{maxYear}</p>
         <p>1700+ emphasized</p>
         <p>frequency per million</p>

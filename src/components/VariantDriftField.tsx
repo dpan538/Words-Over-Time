@@ -168,14 +168,14 @@ export function VariantDriftField({
           <text x="76" y="52" className="fill-fire font-mono text-[18px] font-black uppercase tracking-[0.2em]">
             historical influence field
           </text>
-          <text x={width - 76} y="52" textAnchor="end" className="fill-ink/58 font-mono text-[15px] font-black uppercase tracking-[0.14em]">
+          <text x={width - 76} y="52" textAnchor="end" className="fill-ink/58 font-mono text-[17px] font-black uppercase tracking-[0.12em]">
             pressure anchors + Ngram curve / {selectedLayer ?? selectedEra}
           </text>
 
           {[1500, 1600, 1700, 1800, 1900, 2000, 2022].map((year) => (
             <g key={year}>
               <line x1={xScale(year)} x2={xScale(year)} y1="96" y2="748" stroke="#050510" strokeOpacity={year === 1700 ? 0.26 : 0.1} />
-              <text x={xScale(year)} y="800" textAnchor="middle" className="fill-ink/64 font-mono text-[15px] font-black uppercase tracking-[0.1em]">
+              <text x={xScale(year)} y="800" textAnchor="middle" className="fill-ink/64 font-mono text-[17px] font-black uppercase tracking-[0.08em]">
                 {year}
               </text>
             </g>
@@ -320,7 +320,7 @@ export function VariantDriftField({
                     </tspan>
                   ))}
                 </text>
-                <text x={anchor.x} y={anchor.y + anchor.radius + 46 + wrapWords(anchor.label).length * 18} textAnchor="middle" className="fill-ink/55 font-mono text-[13px] font-black uppercase tracking-[0.08em]">
+                <text x={anchor.x} y={anchor.y + anchor.radius + 46 + wrapWords(anchor.label).length * 18} textAnchor="middle" className="fill-ink/55 font-mono text-[15px] font-black uppercase tracking-[0.07em]">
                   {anchor.period}
                 </text>
               </g>

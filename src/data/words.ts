@@ -4,7 +4,7 @@ export const words: Word[] = [
   {
     label: "forever",
     slug: "forever",
-    status: "demo",
+    status: "complete",
     href: "/words/forever",
   },
   {

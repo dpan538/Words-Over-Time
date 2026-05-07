@@ -13,7 +13,7 @@ export function Nav({ tone = "dark" }: NavProps) {
     "relative inline-block pb-3 transition duration-200 after:absolute after:bottom-0 after:h-[2px] after:w-full after:transition";
 
   return (
-    <nav className="flex items-center justify-between gap-4 text-xs font-bold uppercase tracking-[0.18em]">
+    <nav className="flex items-center justify-between gap-4 text-[0.82rem] font-bold uppercase tracking-[0.16em]">
       <Link
         href="/"
         className={`${linkBase} after:left-0 ${linkTone}`}

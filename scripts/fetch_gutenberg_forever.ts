@@ -185,7 +185,7 @@ async function fetchText(id: number) {
   for (const url of textUrls(id)) {
     try {
       const response = await fetch(url, {
-        headers: { "User-Agent": "WordsOverTimePrototype/0.1 contact: local-demo" },
+        headers: { "User-Agent": "WordsOverTime/1.0 contact: local" },
       });
       if (response.ok) return { text: await response.text(), url };
       lastError = `${response.status} ${response.statusText}`;

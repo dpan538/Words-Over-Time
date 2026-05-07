@@ -4,7 +4,7 @@ import path from "node:path";
 const OUT_DIR = path.join(process.cwd(), "src", "data", "generated");
 const OUT_FILE = path.join(OUT_DIR, "forever_modern_context.json");
 const API = "https://en.wikinews.org/w/api.php";
-const USER_AGENT = "WordsOverTimePrototype/0.1 contact: local-demo";
+const USER_AGENT = "WordsOverTime/1.0 contact: local";
 
 const queries = [
   "forever",

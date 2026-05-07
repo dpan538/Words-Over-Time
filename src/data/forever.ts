@@ -130,14 +130,14 @@ export const foreverWord: Word = {
   label: "forever",
   displayLemma: "forever",
   slug: "forever",
-  status: "demo",
+  status: "complete",
   href: "/words/forever",
   subtitle: "A word traced through permanence, repetition, devotion, memory, and time.",
   forms: foreverForms,
   sourceIds: foreverSources.map((source) => source.id),
   editorialAnnotations: [
-    "This demo separates raw, derived, curated, and visual mapping data.",
-    "All values on the page are placeholder structure until corpus import begins.",
+    "This word page separates raw, derived, curated, and visual mapping data.",
+    "The page structure is reusable for future completed word histories.",
   ],
   confidenceLabel: "pending",
 };

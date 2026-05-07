@@ -187,14 +187,14 @@ export function EvidenceArchive({
           <text x="76" y="54" className="fill-fire font-mono text-[18px] font-black uppercase tracking-[0.2em]">
             evidence atlas / layered archive map
           </text>
-          <text x={width - 76} y="54" textAnchor="end" className="fill-ink/58 font-mono text-[15px] font-black uppercase tracking-[0.13em]">
+          <text x={width - 76} y="54" textAnchor="end" className="fill-ink/58 font-mono text-[17px] font-black uppercase tracking-[0.11em]">
             {selectedLayer ?? selectedEraRecord?.label ?? selectedEra}
           </text>
 
           {[1375, 1500, 1700, 1726, 1819, 1930, 2024, 2026].map((year) => (
             <g key={year}>
               <line x1={x(year)} x2={x(year)} y1="92" y2="1218" stroke="#050510" strokeOpacity={year === 1930 || year === 2024 ? 0.24 : 0.08} strokeDasharray={year === 1930 || year === 2024 ? "4 10" : undefined} />
-              <text x={x(year)} y="1260" textAnchor="middle" className="fill-ink/62 font-mono text-[14px] font-black uppercase tracking-[0.1em]">
+              <text x={x(year)} y="1260" textAnchor="middle" className="fill-ink/62 font-mono text-[16px] font-black uppercase tracking-[0.08em]">
                 {year}
               </text>
             </g>
@@ -205,7 +205,7 @@ export function EvidenceArchive({
           <text x={(archiveEnd + modernStart) / 2} y={rows.gap - 18} textAnchor="middle" className="fill-ink/66 font-mono text-[18px] font-black uppercase tracking-[0.16em]">
             1930-2023 context gap
           </text>
-          <text x={(archiveEnd + modernStart) / 2} y={rows.gap + 12} textAnchor="middle" className="fill-ink/48 font-mono text-[14px] font-black uppercase tracking-[0.12em]">
+          <text x={(archiveEnd + modernStart) / 2} y={rows.gap + 14} textAnchor="middle" className="fill-ink/48 font-mono text-[16px] font-black uppercase tracking-[0.1em]">
             no comparable corpus layer
           </text>
 
@@ -256,7 +256,7 @@ export function EvidenceArchive({
               >
                 <circle cx={xx} cy={yy} r={active ? 10 : 7} fill="#F5ECD2" stroke="#050510" strokeWidth="2.5" />
                 <line x1={xx} x2={xx + 70} y1={yy} y2={yy} stroke="#1570AC" strokeWidth={active ? 5 : 3} strokeLinecap="round" />
-                <text x={xx + 82} y={yy - 8} className="fill-ink font-mono text-[14px] font-black uppercase tracking-[0.08em]">
+                <text x={xx + 82} y={yy - 8} className="fill-ink font-mono text-[16px] font-black uppercase tracking-[0.07em]">
                   {lines.map((line, lineIndex) => (
                     <tspan key={line} x={xx + 82} dy={lineIndex === 0 ? 0 : 17}>
                       {line}
@@ -299,7 +299,7 @@ export function EvidenceArchive({
                 <line x1={x(series.startYear)} x2={x(series.endYear)} y1={yy} y2={yy} stroke="#050510" strokeWidth="13" strokeOpacity="0.08" strokeLinecap="round" />
                 <line x1={x(series.startYear)} x2={x(1700)} y1={yy} y2={yy} stroke={series.color} strokeWidth="4" strokeDasharray="4 9" strokeOpacity="0.35" />
                 <line x1={x(series.recommendedVisualStartYear ?? 1700)} x2={x(series.endYear)} y1={yy} y2={yy} stroke={series.color} strokeWidth={active ? 9 : 6} strokeLinecap="round" />
-                <text x={x(series.endYear) + 18} y={yy - 8} className="fill-ink font-mono text-[14px] font-black uppercase tracking-[0.08em]">
+                <text x={x(series.endYear) + 18} y={yy - 8} className="fill-ink font-mono text-[16px] font-black uppercase tracking-[0.07em]">
                   {lines.map((line, lineIndex) => (
                     <tspan key={line} x={x(series.endYear) + 18} dy={lineIndex === 0 ? 0 : 16}>
                       {line}
@@ -379,7 +379,7 @@ export function EvidenceArchive({
                   strokeWidth={active ? 7 : 4}
                   strokeLinecap="round"
                 />
-                <text x={xx} y={yy - 12} className="fill-ink/74 font-mono text-[13px] font-black uppercase tracking-[0.08em]">
+                <text x={xx} y={yy - 12} className="fill-ink/74 font-mono text-[15px] font-black uppercase tracking-[0.07em]">
                   {lines.map((line, lineIndex) => (
                     <tspan key={line} x={xx} dy={lineIndex === 0 ? 0 : 15}>
                       {line}
@@ -481,7 +481,7 @@ export function EvidenceArchive({
                 <line x1={xx + 10} x2={xx + 110} y1={yy + 10} y2={yy + 10} stroke="#050510" strokeWidth="2.5" strokeLinecap="round" opacity="0.54" />
                 <circle cx={xx - 13} cy={yy} r={active ? 8 : 5} fill="#F5ECD2" stroke="#2C9FC7" strokeWidth="3" />
                 {lines.length ? (
-                  <text x={xx} y={yy - 16} className="fill-ink/74 font-mono text-[13px] font-black uppercase tracking-[0.08em]">
+                  <text x={xx} y={yy - 16} className="fill-ink/74 font-mono text-[15px] font-black uppercase tracking-[0.07em]">
                     {lines.map((line, lineIndex) => (
                       <tspan key={line} x={xx} dy={lineIndex === 0 ? 0 : 15}>
                         {line}
@@ -493,7 +493,7 @@ export function EvidenceArchive({
             );
           })}
 
-          <g transform="translate(76 1292)" className="font-mono text-[14px] font-black uppercase tracking-[0.12em]">
+          <g transform="translate(76 1292)" className="font-mono text-[16px] font-black uppercase tracking-[0.1em]">
             <line x1="0" x2="64" y1="-4" y2="-4" stroke="#F06B04" strokeWidth="5" strokeLinecap="round" />
             <text x="82" y="0" className="fill-ink/58">frequency coverage</text>
             <rect x="352" y="-15" width="58" height="22" fill="#050510" opacity="0.7" />

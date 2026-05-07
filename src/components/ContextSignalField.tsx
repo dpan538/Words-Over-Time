@@ -329,12 +329,12 @@ export function ContextSignalField({
           <text x="76" y="54" className="fill-fire font-mono text-[18px] font-black uppercase tracking-[0.2em]">
             semantic globe / context sphere
           </text>
-          <text x={width - 76} y="54" textAnchor="end" className="fill-ink/58 font-mono text-[15px] font-black uppercase tracking-[0.13em]">
+          <text x={width - 76} y="54" textAnchor="end" className="fill-ink/58 font-mono text-[17px] font-black uppercase tracking-[0.11em]">
             {selectedLayer ?? selectedEraRecord?.label ?? selectedEra} / drag to turn
           </text>
 
           <rect x="790" y="150" width="320" height="720" fill="url(#globe-gap)" opacity="0.22" />
-          <text x="950" y="986" textAnchor="middle" className="fill-ink/52 font-mono text-[14px] font-black uppercase tracking-[0.13em]">
+          <text x="950" y="986" textAnchor="middle" className="fill-ink/52 font-mono text-[16px] font-black uppercase tracking-[0.11em]">
             1930-2023 contextual gap crosses the object
           </text>
 
@@ -521,21 +521,21 @@ export function ContextSignalField({
                   })}
                   <circle cx={p.x} cy={p.y} r={radius * 1.18} fill={node.color} opacity={p.z < -0.35 ? 0.04 : 0.1} filter="url(#globe-soft)" />
                   <circle cx={p.x} cy={p.y} r={active ? radius * 0.72 : radius * 0.56} fill="#050510" stroke={node.color} strokeWidth={active ? 5 : 3} />
-                  <text x={labelX} y={labelY} textAnchor={labelSide} className="fill-ink font-mono text-[15px] font-black uppercase tracking-[0.08em]">
+                  <text x={labelX} y={labelY} textAnchor={labelSide} className="fill-ink font-mono text-[17px] font-black uppercase tracking-[0.07em]">
                     {lines.map((line, lineIndex) => (
                       <tspan key={line} x={labelX} dy={lineIndex === 0 ? 0 : 18}>
                         {line}
                       </tspan>
                     ))}
                   </text>
-                  <text x={labelX} y={labelY + lines.length * 18 + 18} textAnchor={labelSide} className="fill-ink/54 font-mono text-[13px] font-black uppercase tracking-[0.1em]">
+                  <text x={labelX} y={labelY + lines.length * 18 + 20} textAnchor={labelSide} className="fill-ink/54 font-mono text-[15px] font-black uppercase tracking-[0.08em]">
                     {selectedEra === "recent" ? "modern snapshot" : node.confidence}
                   </text>
                 </g>
               );
             })}
 
-          <g transform="translate(118 1082)" className="font-mono text-[14px] font-black uppercase tracking-[0.12em]">
+          <g transform="translate(118 1082)" className="font-mono text-[16px] font-black uppercase tracking-[0.1em]">
             <circle cx="0" cy="-5" r="8" fill="#050510" />
             <text x="22" y="0" className="fill-ink/58">node size = support density</text>
             <line x1="336" x2="408" y1="-5" y2="-5" stroke="#F06B04" strokeWidth="4" strokeLinecap="round" />

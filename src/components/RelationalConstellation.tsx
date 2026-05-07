@@ -527,7 +527,7 @@ export function RelationalConstellation({
           <text x="76" y="54" className="fill-fire font-mono text-[18px] font-black uppercase tracking-[0.2em]">
             radial relational constellation
           </text>
-          <text x={width - 76} y="54" textAnchor="end" className="fill-ink/58 font-mono text-[15px] font-black uppercase tracking-[0.13em]">
+          <text x={width - 76} y="54" textAnchor="end" className="fill-ink/58 font-mono text-[17px] font-black uppercase tracking-[0.11em]">
             archive and modern snapshot kept apart / {selectedLayer ?? "all layers"}
           </text>
 
@@ -654,7 +654,7 @@ export function RelationalConstellation({
                     <circle cx={node.x} cy={node.y} r={node.radius + 22} fill={node.color} opacity="0.1" />
                     <circle cx={node.x} cy={node.y} r={active ? node.radius + 8 : node.radius} fill="#F5ECD2" stroke={node.color} strokeWidth={active ? 7 : 4} />
                     <circle cx={node.x} cy={node.y} r="8" fill="#050510" />
-                    <text x={labelX} y={labelY} textAnchor={textAnchor} className="fill-ink font-mono text-[14px] font-black uppercase tracking-[0.08em]">
+                    <text x={labelX} y={labelY} textAnchor={textAnchor} className="fill-ink font-mono text-[16px] font-black uppercase tracking-[0.07em]">
                       {lines.map((line, index) => (
                         <tspan key={line} x={labelX} dy={index === 0 ? 0 : 18}>
                           {line}
@@ -668,15 +668,15 @@ export function RelationalConstellation({
                     <rect
                       x={node.x - Math.max(72, Math.max(...lines.map((line) => line.length)) * 5 + 22)}
                       y={node.y - 18}
-                      width={Math.max(144, Math.max(...lines.map((line) => line.length)) * 10 + 44)}
-                      height={Math.max(42, lines.length * 18 + 18)}
+                      width={Math.max(154, Math.max(...lines.map((line) => line.length)) * 11 + 52)}
+                      height={Math.max(46, lines.length * 19 + 20)}
                       fill="#050510"
                       stroke={node.color}
                       strokeWidth={active ? 4.5 : 2.6}
                     />
-                    <text x={node.x} y={node.y - 1} textAnchor="middle" className="fill-wheat font-mono text-[12.5px] font-black uppercase tracking-[0.06em]">
+                    <text x={node.x} y={node.y - 1} textAnchor="middle" className="fill-wheat font-mono text-[14px] font-black uppercase tracking-[0.05em]">
                       {lines.map((line, index) => (
-                        <tspan key={line} x={node.x} dy={index === 0 ? 0 : 17}>
+                        <tspan key={line} x={node.x} dy={index === 0 ? 0 : 18}>
                           {line}
                         </tspan>
                       ))}
@@ -686,7 +686,7 @@ export function RelationalConstellation({
                   <>
                     <line x1={node.x - 20} x2={node.x + 20} y1={node.y} y2={node.y} stroke={node.color} strokeWidth={active ? 5 : 2.4} strokeLinecap="round" />
                     <circle cx={node.x} cy={node.y} r={active ? 6 : 3.8} fill="#050510" />
-                    <text x={labelX} y={labelY} textAnchor={textAnchor} className="fill-ink/64 font-mono text-[11.5px] font-black uppercase tracking-[0.08em]">
+                    <text x={labelX} y={labelY} textAnchor={textAnchor} className="fill-ink/64 font-mono text-[13.5px] font-black uppercase tracking-[0.07em]">
                       {node.label}
                     </text>
                   </>
@@ -694,7 +694,7 @@ export function RelationalConstellation({
                   <>
                     <circle cx={node.x} cy={node.y} r={node.radius + 9} fill="none" stroke={node.color} strokeWidth="1.8" strokeOpacity="0.36" />
                     <circle cx={node.x} cy={node.y} r={active ? node.radius + 4 : node.radius} fill={node.color} stroke="#050510" strokeWidth={active ? 3.5 : 1.8} />
-                    <text x={labelX} y={labelY} textAnchor={textAnchor} className="fill-ink/74 font-mono text-[13px] font-black uppercase tracking-[0.08em]">
+                    <text x={labelX} y={labelY} textAnchor={textAnchor} className="fill-ink/74 font-mono text-[15px] font-black uppercase tracking-[0.07em]">
                       {node.label}
                     </text>
                   </>

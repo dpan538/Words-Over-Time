@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T10:37:06.251Z",
+  "generatedAt": "2026-05-07T13:28:11.986Z",
   "coverage": {
     "ngramStartYear": 1500,
     "ngramEndYear": 2022,
@@ -71,14 +71,14 @@
       "label": "1850-1899",
       "startYear": 1850,
       "endYear": 1899,
-      "note": "Strongest Gutenberg seed coverage in this prototype."
+      "note": "Strongest Gutenberg context coverage in the current corpus layer."
     },
     {
       "id": "1900-1949",
       "label": "1900-1949",
       "startYear": 1900,
       "endYear": 1949,
-      "note": "Limited public-domain seed texts in this prototype."
+      "note": "Limited public-domain context texts in the current corpus layer."
     },
     {
       "id": "1950-1999",

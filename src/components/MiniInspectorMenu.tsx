@@ -44,7 +44,7 @@ export function MiniInspectorMenu({
     const point = position ?? fallback;
     if (typeof window === "undefined") return point;
     return {
-      x: Math.max(12, Math.min(point.x + 14, window.innerWidth - 312)),
+      x: Math.max(12, Math.min(point.x + 14, window.innerWidth - 344)),
       y: Math.max(12, Math.min(point.y + 14, window.innerHeight - 238)),
     };
   }, [position]);
@@ -54,18 +54,18 @@ export function MiniInspectorMenu({
   return (
     <div
       ref={ref}
-      className="fixed z-50 w-[18rem] border border-ink bg-wheat/96 px-3 py-3 font-mono text-ink shadow-[5px_5px_0_#050510] backdrop-blur"
+      className="fixed z-50 w-[20rem] border border-ink bg-wheat/96 px-3.5 py-3.5 font-mono text-ink shadow-[5px_5px_0_#050510] backdrop-blur"
       style={{ left: coords.x, top: coords.y }}
     >
       <div className="flex items-start justify-between gap-3">
-        <p className="text-[0.58rem] font-black uppercase leading-4 tracking-[0.18em] text-fire">
+        <p className="text-[0.72rem] font-black uppercase leading-5 tracking-[0.14em] text-fire">
           {pinned ? "pinned mark" : "hover mark"}
         </p>
         {pinned ? (
           <button
             type="button"
             onClick={onClose}
-            className="border border-ink/35 px-1.5 py-0.5 text-[0.56rem] font-black uppercase tracking-[0.12em] transition hover:border-fire hover:text-fire"
+            className="border border-ink/35 px-2 py-1 text-[0.68rem] font-black uppercase tracking-[0.1em] transition hover:border-fire hover:text-fire"
           >
             close
           </button>
@@ -73,24 +73,24 @@ export function MiniInspectorMenu({
       </div>
 
       <h3 className="mt-2 text-lg font-black leading-5">{entry.title}</h3>
-      <dl className="mt-3 grid gap-1.5 text-[0.62rem] font-black uppercase leading-4 tracking-[0.1em]">
-        <div className="grid grid-cols-[4.3rem_1fr] gap-2">
+      <dl className="mt-3 grid gap-2 text-[0.76rem] font-black uppercase leading-5 tracking-[0.08em]">
+        <div className="grid grid-cols-[4.8rem_1fr] gap-2">
           <dt className="text-ink/45">type</dt>
           <dd>{shortType(entry)}</dd>
         </div>
-        <div className="grid grid-cols-[4.3rem_1fr] gap-2">
+        <div className="grid grid-cols-[4.8rem_1fr] gap-2">
           <dt className="text-ink/45">era</dt>
           <dd>{entry.period}</dd>
         </div>
-        <div className="grid grid-cols-[4.3rem_1fr] gap-2">
+        <div className="grid grid-cols-[4.8rem_1fr] gap-2">
           <dt className="text-ink/45">value</dt>
           <dd>{valueLabel(entry)}</dd>
         </div>
-        <div className="grid grid-cols-[4.3rem_1fr] gap-2">
+        <div className="grid grid-cols-[4.8rem_1fr] gap-2">
           <dt className="text-ink/45">source</dt>
           <dd>{entry.sourceCorpus}</dd>
         </div>
-        <div className="grid grid-cols-[4.3rem_1fr] gap-2">
+        <div className="grid grid-cols-[4.8rem_1fr] gap-2">
           <dt className="text-ink/45">caveat</dt>
           <dd>{entry.caveats[0] ?? "context-limited evidence"}</dd>
         </div>

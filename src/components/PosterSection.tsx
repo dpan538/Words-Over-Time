@@ -26,7 +26,7 @@ export function PosterSection({
       className={`scroll-reveal pb-0 pt-8 sm:pt-9 lg:pt-10 ${className}`}
     >
       <div className="mb-8 grid gap-3 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
-        <p className="font-mono text-[0.72rem] font-black uppercase leading-5 tracking-[0.2em] text-fire">
+        <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-fire">
           {eyebrow}
         </p>
         <div className="max-w-5xl">
@@ -34,7 +34,7 @@ export function PosterSection({
             {title}
           </h2>
           {intro ? (
-            <p className="mt-2 max-w-3xl text-[0.92rem] font-bold leading-6 text-ink/62">
+            <p className="mt-2 max-w-3xl text-[1rem] font-bold leading-6 text-ink/62">
               {intro}
             </p>
           ) : null}
