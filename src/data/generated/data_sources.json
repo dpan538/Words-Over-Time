@@ -1,0 +1,376 @@
+{
+  "generatedAt": "2026-05-08T12:55:16.070Z",
+  "word": "data",
+  "sources": [
+    {
+      "source_id": "src_google_ngram",
+      "title": "Google Books Ngram Viewer",
+      "author_or_org": "Google Books / Google Research",
+      "year": "2022 corpus endpoint",
+      "source_type": "ngram",
+      "url": "https://books.google.com/ngrams/",
+      "reliability": "medium",
+      "used_for": [
+        "long-run printed-book visibility",
+        "corpus comparison"
+      ],
+      "limitations": "Book corpus only; OCR, dating, language detection, genre mix, and corpus updates can affect results. Not semantic proof."
+    },
+    {
+      "source_id": "src_coha",
+      "title": "Corpus of Historical American English",
+      "author_or_org": "English-Corpora.org",
+      "year": "1810s-2010s",
+      "source_type": "corpus",
+      "url": "https://www.english-corpora.org/coha/",
+      "reliability": "high",
+      "used_for": [
+        "future historical collocation validation",
+        "grammar validation"
+      ],
+      "limitations": "Bulk extraction may require interface access or subscription; not fetched in this pass."
+    },
+    {
+      "source_id": "src_coca",
+      "title": "Corpus of Contemporary American English",
+      "author_or_org": "English-Corpora.org",
+      "year": "1990-2019",
+      "source_type": "corpus",
+      "url": "https://www.english-corpora.org/coca/",
+      "reliability": "high",
+      "used_for": [
+        "future contemporary collocations",
+        "grammar by genre"
+      ],
+      "limitations": "Bulk extraction may require interface access or subscription; not fetched in this pass."
+    },
+    {
+      "source_id": "src_now",
+      "title": "NOW Corpus",
+      "author_or_org": "English-Corpora.org",
+      "year": "2010-present",
+      "source_type": "corpus",
+      "url": "https://www.english-corpora.org/now/",
+      "reliability": "high",
+      "used_for": [
+        "recent news/web terms",
+        "data breach and AI-era validation"
+      ],
+      "limitations": "News/web register; not fetched in this pass."
+    },
+    {
+      "source_id": "src_mw_data",
+      "title": "Merriam-Webster Dictionary: data",
+      "author_or_org": "Merriam-Webster",
+      "year": "current",
+      "source_type": "dictionary",
+      "url": "https://www.merriam-webster.com/dictionary/data",
+      "reliability": "high",
+      "used_for": [
+        "data definition",
+        "first known use",
+        "singular/plural usage"
+      ],
+      "limitations": "Dictionary attestation is not frequency or cultural prominence."
+    },
+    {
+      "source_id": "src_mw_datum",
+      "title": "Merriam-Webster Dictionary: datum",
+      "author_or_org": "Merriam-Webster",
+      "year": "current",
+      "source_type": "dictionary",
+      "url": "https://www.merriam-webster.com/dictionary/datum",
+      "reliability": "high",
+      "used_for": [
+        "datum definition",
+        "lexical root"
+      ],
+      "limitations": "Dictionary attestation is not frequency or cultural prominence."
+    },
+    {
+      "source_id": "src_etymonline_data",
+      "title": "Online Etymology Dictionary: data",
+      "author_or_org": "Douglas Harper",
+      "year": "current",
+      "source_type": "dictionary",
+      "url": "https://www.etymonline.com/word/data",
+      "reliability": "medium",
+      "used_for": [
+        "etymology",
+        "dated semantic notes"
+      ],
+      "limitations": "Secondary lexical source; confirm exact claims with OED or primary quotations before final public copy."
+    },
+    {
+      "source_id": "src_mw_data_processing",
+      "title": "Merriam-Webster Dictionary: data processing",
+      "author_or_org": "Merriam-Webster",
+      "year": "current",
+      "source_type": "dictionary",
+      "url": "https://www.merriam-webster.com/dictionary/data%20processing",
+      "reliability": "high",
+      "used_for": [
+        "data processing attestation",
+        "computing branch"
+      ],
+      "limitations": "Attestation does not measure public visibility."
+    },
+    {
+      "source_id": "src_mw_database",
+      "title": "Merriam-Webster Dictionary: database",
+      "author_or_org": "Merriam-Webster",
+      "year": "current",
+      "source_type": "dictionary",
+      "url": "https://www.merriam-webster.com/dictionary/database",
+      "reliability": "high",
+      "used_for": [
+        "database attestation",
+        "structured access branch"
+      ],
+      "limitations": "Modern spelling should be compared with spaced variant 'data base'."
+    },
+    {
+      "source_id": "src_mw_dataset",
+      "title": "Merriam-Webster Dictionary: dataset",
+      "author_or_org": "Merriam-Webster",
+      "year": "current",
+      "source_type": "dictionary",
+      "url": "https://www.merriam-webster.com/dictionary/dataset",
+      "reliability": "high",
+      "used_for": [
+        "dataset attestation",
+        "AI bridge term"
+      ],
+      "limitations": "Spaced variant 'data set' requires separate frequency treatment."
+    },
+    {
+      "source_id": "src_mw_data_bank",
+      "title": "Merriam-Webster Dictionary: data bank",
+      "author_or_org": "Merriam-Webster",
+      "year": "current",
+      "source_type": "dictionary",
+      "url": "https://www.merriam-webster.com/dictionary/data%20bank",
+      "reliability": "high",
+      "used_for": [
+        "legacy database vocabulary"
+      ],
+      "limitations": "Term may be historically visible but less central to current page UI."
+    },
+    {
+      "source_id": "src_mw_metadata",
+      "title": "Merriam-Webster Dictionary: metadata",
+      "author_or_org": "Merriam-Webster",
+      "year": "current",
+      "source_type": "dictionary",
+      "url": "https://www.merriam-webster.com/dictionary/metadata",
+      "reliability": "high",
+      "used_for": [
+        "metadata attestation",
+        "data-about-data branch"
+      ],
+      "limitations": "Does not itself separate library, web, and surveillance uses."
+    },
+    {
+      "source_id": "src_mw_data_mining",
+      "title": "Merriam-Webster Dictionary: data mining",
+      "author_or_org": "Merriam-Webster",
+      "year": "current",
+      "source_type": "dictionary",
+      "url": "https://www.merriam-webster.com/dictionary/data%20mining",
+      "reliability": "high",
+      "used_for": [
+        "data mining attestation",
+        "commercial analytics branch"
+      ],
+      "limitations": "Needs policy and business context for social interpretation."
+    },
+    {
+      "source_id": "src_cambridge_data",
+      "title": "Cambridge Dictionary: data",
+      "author_or_org": "Cambridge University Press",
+      "year": "current",
+      "source_type": "dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/data",
+      "reliability": "high",
+      "used_for": [
+        "mass noun and singular/plural grammar note"
+      ],
+      "limitations": "Modern usage guide, not historical corpus evidence."
+    },
+    {
+      "source_id": "src_nist_big_data",
+      "title": "NIST Big Data Interoperability Framework",
+      "author_or_org": "National Institute of Standards and Technology",
+      "year": "2015",
+      "source_type": "technical",
+      "url": "https://www.nist.gov/programs-projects/nist-big-data-public-working-group",
+      "reliability": "high",
+      "used_for": [
+        "big data technical context"
+      ],
+      "limitations": "Technical framework; not lexical first-use evidence."
+    },
+    {
+      "source_id": "src_oecd_open_data",
+      "title": "OECD Open Government Data",
+      "author_or_org": "OECD",
+      "year": "current",
+      "source_type": "policy",
+      "url": "https://www.oecd.org/en/topics/open-government-data.html",
+      "reliability": "high",
+      "used_for": [
+        "open data policy context"
+      ],
+      "limitations": "Policy source, not general language corpus."
+    },
+    {
+      "source_id": "src_oecd_data_driven_innovation",
+      "title": "Data-Driven Innovation",
+      "author_or_org": "OECD",
+      "year": "2015",
+      "source_type": "policy",
+      "url": "https://www.oecd.org/sti/data-driven-innovation-9789264229358-en.htm",
+      "reliability": "high",
+      "used_for": [
+        "data as innovation and decision infrastructure"
+      ],
+      "limitations": "Policy/economic frame, not neutral lexical evidence."
+    },
+    {
+      "source_id": "src_ico_personal_data",
+      "title": "What is personal data?",
+      "author_or_org": "UK Information Commissioner's Office",
+      "year": "current",
+      "source_type": "legal",
+      "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/",
+      "reliability": "high",
+      "used_for": [
+        "personal data definition",
+        "UK/EU governance branch"
+      ],
+      "limitations": "Jurisdiction-specific legal meaning."
+    },
+    {
+      "source_id": "src_ico_data_protection",
+      "title": "Guide to data protection",
+      "author_or_org": "UK Information Commissioner's Office",
+      "year": "current",
+      "source_type": "legal",
+      "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/",
+      "reliability": "high",
+      "used_for": [
+        "data protection principles"
+      ],
+      "limitations": "Jurisdiction-specific legal meaning."
+    },
+    {
+      "source_id": "src_gdpr_article_4",
+      "title": "GDPR Article 4 definitions",
+      "author_or_org": "European Union / GDPR.eu",
+      "year": "2016",
+      "source_type": "legal",
+      "url": "https://gdpr.eu/article-4-definitions/",
+      "reliability": "high",
+      "used_for": [
+        "personal data",
+        "processing",
+        "personal data breach definitions"
+      ],
+      "limitations": "GDPR.eu is an explanatory publication; final legal copy should reference official EU text."
+    },
+    {
+      "source_id": "src_ftc_data_brokers",
+      "title": "FTC data brokers report",
+      "author_or_org": "Federal Trade Commission",
+      "year": "2014",
+      "source_type": "policy",
+      "url": "https://www.ftc.gov/news-events/press-releases/2014/05/ftc-recommends-congress-require-data-broker-industry-be-more",
+      "reliability": "high",
+      "used_for": [
+        "data broker and commercial personal-data market"
+      ],
+      "limitations": "US regulatory frame, not broad corpus evidence."
+    },
+    {
+      "source_id": "src_ftc_social_media_data",
+      "title": "FTC report on social media and video streaming surveillance",
+      "author_or_org": "Federal Trade Commission",
+      "year": "2024",
+      "source_type": "policy",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance",
+      "reliability": "high",
+      "used_for": [
+        "platform data",
+        "user data",
+        "commercial monetization"
+      ],
+      "limitations": "Recent regulatory source; not historical frequency evidence."
+    },
+    {
+      "source_id": "src_stanford_training_data",
+      "title": "What is training data?",
+      "author_or_org": "Stanford HAI",
+      "year": "current",
+      "source_type": "academic",
+      "url": "https://hai.stanford.edu/ai-definitions/what-is-training-data",
+      "reliability": "high",
+      "used_for": [
+        "training data definition"
+      ],
+      "limitations": "Current AI explainer, not historical usage source."
+    },
+    {
+      "source_id": "src_nist_synthetic_data",
+      "title": "Synthetic data definitions and context",
+      "author_or_org": "National Institute of Standards and Technology",
+      "year": "current",
+      "source_type": "technical",
+      "url": "https://www.nist.gov/",
+      "reliability": "medium",
+      "used_for": [
+        "synthetic data technical context"
+      ],
+      "limitations": "Use a more specific NIST page or academic source before final public copy."
+    },
+    {
+      "source_id": "src_cleveland_data_science",
+      "title": "Data Science: An Action Plan for Expanding the Technical Areas of the Field of Statistics",
+      "author_or_org": "William S. Cleveland",
+      "year": "2001",
+      "source_type": "academic",
+      "url": "https://doi.org/10.1111/j.1751-5823.2001.tb00477.x",
+      "reliability": "high",
+      "used_for": [
+        "modern data science disciplinary sense"
+      ],
+      "limitations": "Academic disciplinary framing, not public language frequency."
+    },
+    {
+      "source_id": "src_van_dijck_datafication",
+      "title": "Datafication, dataism and dataveillance",
+      "author_or_org": "Jose van Dijck",
+      "year": "2014",
+      "source_type": "academic",
+      "url": "https://ojs.library.queensu.ca/index.php/surveillance-and-society/article/view/datafication",
+      "reliability": "high",
+      "used_for": [
+        "datafication critical concept"
+      ],
+      "limitations": "Academic concept; should be an annotation rather than primary frequency anchor."
+    },
+    {
+      "source_id": "src_1890_census",
+      "title": "1890 Census and punch-card tabulation context",
+      "author_or_org": "United States Census Bureau / history sources",
+      "year": "1890",
+      "source_type": "historical",
+      "url": "https://www.census.gov/history/www/innovations/technology/the_hollerith_tabulator.html",
+      "reliability": "high",
+      "used_for": [
+        "administrative recordkeeping",
+        "punch-card bridge"
+      ],
+      "limitations": "Context source; not direct lexical frequency evidence."
+    }
+  ]
+}

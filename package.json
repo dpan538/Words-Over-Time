@@ -22,7 +22,9 @@
     "data:depression:economic": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_economic_context_depression.ts",
     "data:depression:evidence": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/build_depression_evidence.ts",
     "data:depression:build": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/build_depression_dataset.ts",
-    "data:depression": "npm run data:depression:ngram && npm run data:depression:branches && npm run data:depression:controls && npm run data:depression:prehistory && npm run data:depression:gutenberg && npm run data:depression:modern && npm run data:depression:clinical && npm run data:depression:economic && npm run data:depression:evidence && npm run data:depression:build"
+    "data:depression": "npm run data:depression:ngram && npm run data:depression:branches && npm run data:depression:controls && npm run data:depression:prehistory && npm run data:depression:gutenberg && npm run data:depression:modern && npm run data:depression:clinical && npm run data:depression:economic && npm run data:depression:evidence && npm run data:depression:build",
+    "data:data:ngram": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_data_ngram.ts",
+    "data:data:validate": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/validate_data_dataset.ts"
   },
   "dependencies": {
     "next": "16.2.5",

@@ -1,0 +1,824 @@
+{
+  "generatedAt": "2026-05-08T12:55:16.070Z",
+  "word": "data",
+  "relation_policy": "Edges are curated/interpretive unless data_layer is raw. They are not computed corpus collocations.",
+  "relations": [
+    {
+      "relation_id": "datum-to-data-lexical_root",
+      "from": "datum",
+      "to": "data",
+      "relation_type": "lexical_root",
+      "branch": "core",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 1,
+      "confidence_level": "high",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_datum",
+        "src_etymonline_data",
+        "src_google_ngram",
+        "src_mw_data"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Source-backed lexical or legal relation.",
+      "data_layer": "raw"
+    },
+    {
+      "relation_id": "data-to-statistical-data-semantic_neighbor",
+      "from": "data",
+      "to": "statistical-data",
+      "relation_type": "semantic_neighbor",
+      "branch": "evidence_measurement",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.82,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_data",
+        "src_etymonline_data",
+        "src_google_ngram",
+        "src_coha"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "data-to-empirical-data-semantic_neighbor",
+      "from": "data",
+      "to": "empirical-data",
+      "relation_type": "semantic_neighbor",
+      "branch": "evidence_measurement",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.78,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_data",
+        "src_etymonline_data",
+        "src_google_ngram",
+        "src_coha"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "data-to-observational-data-semantic_neighbor",
+      "from": "data",
+      "to": "observational-data",
+      "relation_type": "semantic_neighbor",
+      "branch": "evidence_measurement",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.7,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_data",
+        "src_etymonline_data",
+        "src_google_ngram",
+        "src_coha"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "census-data-to-data-tabulation-technical_enables",
+      "from": "census-data",
+      "to": "data-tabulation",
+      "relation_type": "technical_enables",
+      "branch": "administrative_recordkeeping",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.72,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_1890_census",
+        "src_google_ngram"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "data-collection-to-data-entry-technical_enables",
+      "from": "data-collection",
+      "to": "data-entry",
+      "relation_type": "technical_enables",
+      "branch": "administrative_recordkeeping",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.76,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_google_ngram",
+        "src_coha",
+        "src_etymonline_data"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "data-entry-to-data-processing-technical_enables",
+      "from": "data-entry",
+      "to": "data-processing",
+      "relation_type": "technical_enables",
+      "branch": "computational_processing",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.84,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_etymonline_data",
+        "src_google_ngram",
+        "src_mw_data_processing"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "data-collection-to-data-processing-technical_enables",
+      "from": "data-collection",
+      "to": "data-processing",
+      "relation_type": "technical_enables",
+      "branch": "computational_processing",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.85,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_google_ngram",
+        "src_coha",
+        "src_mw_data_processing"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "data-processing-to-data-storage-processes",
+      "from": "data-processing",
+      "to": "data-storage",
+      "relation_type": "processes",
+      "branch": "computational_processing",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.8,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_data_processing",
+        "src_google_ngram"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "data-storage-to-data-retrieval-retrieves",
+      "from": "data-storage",
+      "to": "data-retrieval",
+      "relation_type": "retrieves",
+      "branch": "computational_processing",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.78,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_google_ngram",
+        "src_mw_database"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "data-processing-to-database-technical_enables",
+      "from": "data-processing",
+      "to": "database",
+      "relation_type": "technical_enables",
+      "branch": "database_structured_access",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.9,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_data_processing",
+        "src_google_ngram",
+        "src_mw_database"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "data-base-to-database-semantic_neighbor",
+      "from": "data-base",
+      "to": "database",
+      "relation_type": "semantic_neighbor",
+      "branch": "database_structured_access",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.9,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_database",
+        "src_google_ngram"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "data-bank-to-database-semantic_neighbor",
+      "from": "data-bank",
+      "to": "database",
+      "relation_type": "semantic_neighbor",
+      "branch": "database_structured_access",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.68,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_data_bank",
+        "src_google_ngram",
+        "src_mw_database"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "database-to-dataset-stores",
+      "from": "database",
+      "to": "dataset",
+      "relation_type": "stores",
+      "branch": "database_structured_access",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.64,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_database",
+        "src_google_ngram",
+        "src_mw_dataset"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "database-to-metadata-describes",
+      "from": "database",
+      "to": "metadata",
+      "relation_type": "describes",
+      "branch": "networked_trace_interoperability",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.72,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_database",
+        "src_google_ngram",
+        "src_mw_metadata"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "metadata-to-open-data-institutionalizes",
+      "from": "metadata",
+      "to": "open-data",
+      "relation_type": "institutionalizes",
+      "branch": "networked_trace_interoperability",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.58,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_metadata",
+        "src_google_ngram",
+        "src_oecd_open_data"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "open-data-to-machine-readable-data-institutionalizes",
+      "from": "open-data",
+      "to": "machine-readable-data",
+      "relation_type": "institutionalizes",
+      "branch": "networked_trace_interoperability",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.7,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_oecd_open_data",
+        "src_google_ngram"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "user-data-to-clickstream-data-semantic_neighbor",
+      "from": "user-data",
+      "to": "clickstream-data",
+      "relation_type": "semantic_neighbor",
+      "branch": "networked_trace_interoperability",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.66,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_ftc_social_media_data",
+        "src_now",
+        "src_google_ngram"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "user-data-to-search-data-semantic_neighbor",
+      "from": "user-data",
+      "to": "search-data",
+      "relation_type": "semantic_neighbor",
+      "branch": "networked_trace_interoperability",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.58,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_ftc_social_media_data",
+        "src_now",
+        "src_google_ngram"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "log-data-to-clickstream-data-semantic_neighbor",
+      "from": "log-data",
+      "to": "clickstream-data",
+      "relation_type": "semantic_neighbor",
+      "branch": "networked_trace_interoperability",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.52,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_google_ngram",
+        "src_now"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "personal-data-to-data-protection-governs",
+      "from": "personal-data",
+      "to": "data-protection",
+      "relation_type": "governs",
+      "branch": "personal_data_governance",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.92,
+      "confidence_level": "high",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_ico_personal_data",
+        "src_gdpr_article_4",
+        "src_google_ngram",
+        "src_ico_data_protection"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Source-backed lexical or legal relation.",
+      "data_layer": "raw"
+    },
+    {
+      "relation_id": "personal-data-to-data-privacy-governs",
+      "from": "personal-data",
+      "to": "data-privacy",
+      "relation_type": "governs",
+      "branch": "personal_data_governance",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.78,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_ico_personal_data",
+        "src_gdpr_article_4",
+        "src_google_ngram",
+        "src_now"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "data-protection-to-personal-data-breach-governs",
+      "from": "data-protection",
+      "to": "personal-data-breach",
+      "relation_type": "governs",
+      "branch": "personal_data_governance",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.84,
+      "confidence_level": "high",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_ico_data_protection",
+        "src_gdpr_article_4",
+        "src_google_ngram"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Source-backed lexical or legal relation.",
+      "data_layer": "raw"
+    },
+    {
+      "relation_id": "data-breach-to-personal-data-breach-semantic_neighbor",
+      "from": "data-breach",
+      "to": "personal-data-breach",
+      "relation_type": "semantic_neighbor",
+      "branch": "personal_data_governance",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.72,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_gdpr_article_4",
+        "src_now",
+        "src_google_ngram"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "personal-data-to-data-rights-governs",
+      "from": "personal-data",
+      "to": "data-rights",
+      "relation_type": "governs",
+      "branch": "personal_data_governance",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.68,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_ico_personal_data",
+        "src_gdpr_article_4",
+        "src_google_ngram",
+        "src_now"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "data-governance-to-data-rights-governs",
+      "from": "data-governance",
+      "to": "data-rights",
+      "relation_type": "governs",
+      "branch": "personal_data_governance",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.6,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_oecd_data_driven_innovation",
+        "src_google_ngram",
+        "src_gdpr_article_4",
+        "src_now"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "user-data-to-data-mining-extracts",
+      "from": "user-data",
+      "to": "data-mining",
+      "relation_type": "extracts",
+      "branch": "commercial_analytics_decision",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.72,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_ftc_social_media_data",
+        "src_now",
+        "src_google_ngram",
+        "src_mw_data_mining"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "data-mining-to-big-data-semantic_neighbor",
+      "from": "data-mining",
+      "to": "big-data",
+      "relation_type": "semantic_neighbor",
+      "branch": "commercial_analytics_decision",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.7,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_data_mining",
+        "src_google_ngram",
+        "src_nist_big_data"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "big-data-to-data-science-semantic_neighbor",
+      "from": "big-data",
+      "to": "data-science",
+      "relation_type": "semantic_neighbor",
+      "branch": "commercial_analytics_decision",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.74,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_nist_big_data",
+        "src_google_ngram",
+        "src_cleveland_data_science"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "big-data-to-data-driven-commercializes",
+      "from": "big-data",
+      "to": "data-driven",
+      "relation_type": "commercializes",
+      "branch": "commercial_analytics_decision",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.74,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_nist_big_data",
+        "src_google_ngram",
+        "src_oecd_data_driven_innovation"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "personal-data-to-data-broker-commercializes",
+      "from": "personal-data",
+      "to": "data-broker",
+      "relation_type": "commercializes",
+      "branch": "commercial_analytics_decision",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.84,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_ico_personal_data",
+        "src_gdpr_article_4",
+        "src_google_ngram",
+        "src_ftc_data_brokers"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "data-broker-to-data-monetization-commercializes",
+      "from": "data-broker",
+      "to": "data-monetization",
+      "relation_type": "commercializes",
+      "branch": "commercial_analytics_decision",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.8,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_ftc_data_brokers",
+        "src_google_ngram",
+        "src_ftc_social_media_data",
+        "src_oecd_data_driven_innovation"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "dataset-to-training-data-trains_with",
+      "from": "dataset",
+      "to": "training-data",
+      "relation_type": "trains_with",
+      "branch": "ai_training_synthetic_generation",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.88,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_dataset",
+        "src_google_ngram",
+        "src_stanford_training_data"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "labeled-data-to-training-data-trains_with",
+      "from": "labeled-data",
+      "to": "training-data",
+      "relation_type": "trains_with",
+      "branch": "ai_training_synthetic_generation",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.8,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_stanford_training_data",
+        "src_google_ngram"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "labelled-data-to-training-data-trains_with",
+      "from": "labelled-data",
+      "to": "training-data",
+      "relation_type": "trains_with",
+      "branch": "ai_training_synthetic_generation",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.76,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_stanford_training_data",
+        "src_google_ngram"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated"
+    },
+    {
+      "relation_id": "training-data-to-synthetic-data-generates",
+      "from": "training-data",
+      "to": "synthetic-data",
+      "relation_type": "generates",
+      "branch": "ai_training_synthetic_generation",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.72,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_stanford_training_data",
+        "src_google_ngram",
+        "src_nist_synthetic_data"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    },
+    {
+      "relation_id": "datafication-to-training-data-semantic_neighbor",
+      "from": "datafication",
+      "to": "training-data",
+      "relation_type": "semantic_neighbor",
+      "branch": "ai_training_synthetic_generation",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.48,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_van_dijck_datafication",
+        "src_google_ngram",
+        "src_stanford_training_data"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive"
+    }
+  ]
+}

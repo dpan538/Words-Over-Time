@@ -1,0 +1,857 @@
+{
+  "generatedAt": "2026-05-08T12:55:16.070Z",
+  "word": "data",
+  "terms": [
+    {
+      "term": "data",
+      "variants": [],
+      "branch": "core",
+      "domain": "lexical root",
+      "visual_role": "major_node",
+      "data_layer": "raw",
+      "confidence_level": "high",
+      "first_attestation": "1630",
+      "first_strong_visibility": "persistent from scientific/statistical print; accelerates in 20th century",
+      "notes": "Core lemma and semantic root for all branch terms.",
+      "caveat": "Frequency mixes senses and cannot identify meaning without context.",
+      "source_ids": [
+        "src_mw_data",
+        "src_etymonline_data",
+        "src_google_ngram"
+      ],
+      "slug": "data"
+    },
+    {
+      "term": "datum",
+      "variants": [],
+      "branch": "core",
+      "domain": "lexical root",
+      "visual_role": "minor_node",
+      "data_layer": "raw",
+      "confidence_level": "high",
+      "first_attestation": "1646",
+      "first_strong_visibility": "specialized/formal use; declines relative to data after mid-20th century",
+      "notes": "Singular form that preserves the 'something given' root.",
+      "caveat": "Technical and formal distribution differs from the mass noun data.",
+      "source_ids": [
+        "src_mw_datum",
+        "src_etymonline_data",
+        "src_google_ngram"
+      ],
+      "slug": "datum"
+    },
+    {
+      "term": "statistical data",
+      "variants": [],
+      "branch": "evidence_measurement",
+      "domain": "statistics",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "early 20th century in books",
+      "notes": "Data as numerical evidence for statistical inference.",
+      "caveat": "Exact attestation requires dictionary or corpus snippet review.",
+      "source_ids": [
+        "src_google_ngram",
+        "src_coha"
+      ],
+      "slug": "statistical-data"
+    },
+    {
+      "term": "empirical data",
+      "variants": [],
+      "branch": "evidence_measurement",
+      "domain": "science",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "mid-late 20th century in books",
+      "notes": "Data as observed evidence from experience or experiment.",
+      "caveat": "Requires snippet review to distinguish philosophical and scientific uses.",
+      "source_ids": [
+        "src_google_ngram",
+        "src_coha"
+      ],
+      "slug": "empirical-data"
+    },
+    {
+      "term": "observational data",
+      "variants": [],
+      "branch": "evidence_measurement",
+      "domain": "science",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "late 20th century",
+      "notes": "Data as observations rather than experimental interventions.",
+      "caveat": "May be field-specific; use as support term unless corpus signal is strong.",
+      "source_ids": [
+        "src_google_ngram",
+        "src_coha"
+      ],
+      "slug": "observational-data"
+    },
+    {
+      "term": "census data",
+      "variants": [],
+      "branch": "administrative_recordkeeping",
+      "domain": "administration",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "20th century",
+      "notes": "Administrative population records and tabulations.",
+      "caveat": "The 1890 punch-card context is historical evidence, not necessarily phrase-frequency evidence.",
+      "source_ids": [
+        "src_1890_census",
+        "src_google_ngram"
+      ],
+      "slug": "census-data"
+    },
+    {
+      "term": "data collection",
+      "variants": [],
+      "branch": "administrative_recordkeeping",
+      "domain": "administration",
+      "visual_role": "major_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "1960s-present",
+      "notes": "Procedural intake step shared by science, administration, and platforms.",
+      "caveat": "Broad phrase; needs context when assigned to a specific branch.",
+      "source_ids": [
+        "src_google_ngram",
+        "src_coha"
+      ],
+      "slug": "data-collection"
+    },
+    {
+      "term": "data entry",
+      "variants": [],
+      "branch": "administrative_recordkeeping",
+      "domain": "administration",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": "1969",
+      "first_strong_visibility": "1970s-1990s",
+      "notes": "Encoding records into machine systems.",
+      "caveat": "First attestation from secondary lexical notes should be verified before final copy.",
+      "source_ids": [
+        "src_etymonline_data",
+        "src_google_ngram"
+      ],
+      "slug": "data-entry"
+    },
+    {
+      "term": "data tabulation",
+      "variants": [],
+      "branch": "administrative_recordkeeping",
+      "domain": "administration",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "low",
+      "first_attestation": null,
+      "first_strong_visibility": "20th century if supported",
+      "notes": "Bridge between counting records and machine processing.",
+      "caveat": "Potentially sparse and phrase-specific; likely hover-only unless Ngram is strong.",
+      "source_ids": [
+        "src_1890_census",
+        "src_google_ngram"
+      ],
+      "slug": "data-tabulation"
+    },
+    {
+      "term": "data processing",
+      "variants": [],
+      "branch": "computational_processing",
+      "domain": "computing",
+      "visual_role": "major_node",
+      "data_layer": "raw",
+      "confidence_level": "high",
+      "first_attestation": "1954",
+      "first_strong_visibility": "1960s-1980s",
+      "notes": "Postwar pivot to machine-processable information.",
+      "caveat": "Frequency shows printed visibility, not the full history of computing practice.",
+      "source_ids": [
+        "src_mw_data_processing",
+        "src_google_ngram"
+      ],
+      "slug": "data-processing"
+    },
+    {
+      "term": "computer data",
+      "variants": [],
+      "branch": "computational_processing",
+      "domain": "computing",
+      "visual_role": "hidden_search_term",
+      "data_layer": "curated",
+      "confidence_level": "low",
+      "first_attestation": null,
+      "first_strong_visibility": "1960s-1980s",
+      "notes": "Direct modifier tying data to computers.",
+      "caveat": "Broad/noisy and less conceptually useful than data processing or database.",
+      "source_ids": [
+        "src_google_ngram"
+      ],
+      "slug": "computer-data"
+    },
+    {
+      "term": "digital data",
+      "variants": [],
+      "branch": "computational_processing",
+      "domain": "computing",
+      "visual_role": "hidden_search_term",
+      "data_layer": "curated",
+      "confidence_level": "low",
+      "first_attestation": null,
+      "first_strong_visibility": "1970s-1990s",
+      "notes": "Data as digitally encoded information.",
+      "caveat": "Broad phrase; keep as back-end support unless needed.",
+      "source_ids": [
+        "src_google_ngram"
+      ],
+      "slug": "digital-data"
+    },
+    {
+      "term": "machine-readable data",
+      "variants": [
+        "machine readable data"
+      ],
+      "branch": "computational_processing",
+      "domain": "computing",
+      "visual_role": "annotation",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2000s policy/standards context",
+      "notes": "Bridge from computing to open-data and interoperability policy.",
+      "caveat": "Hyphenation and standards language make Ngram noisy.",
+      "source_ids": [
+        "src_oecd_open_data",
+        "src_google_ngram"
+      ],
+      "slug": "machine-readable-data"
+    },
+    {
+      "term": "data storage",
+      "variants": [],
+      "branch": "computational_processing",
+      "domain": "computing",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "1970s-present",
+      "notes": "Infrastructure stage after collection and before retrieval/analysis.",
+      "caveat": "Broad technical term; better as pipeline node than standalone story.",
+      "source_ids": [
+        "src_google_ngram"
+      ],
+      "slug": "data-storage"
+    },
+    {
+      "term": "data retrieval",
+      "variants": [],
+      "branch": "computational_processing",
+      "domain": "information retrieval",
+      "visual_role": "major_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "1960s-1990s",
+      "notes": "Retrieval makes stored data queryable and useful.",
+      "caveat": "Needs snippet review to separate generic retrieval from database/information-retrieval technical use.",
+      "source_ids": [
+        "src_google_ngram",
+        "src_mw_database"
+      ],
+      "slug": "data-retrieval"
+    },
+    {
+      "term": "database",
+      "variants": [
+        "data base"
+      ],
+      "branch": "database_structured_access",
+      "domain": "database",
+      "visual_role": "major_node",
+      "data_layer": "raw",
+      "confidence_level": "high",
+      "first_attestation": "c.1962",
+      "first_strong_visibility": "1970s-1990s",
+      "notes": "Structured data collection for access and query.",
+      "caveat": "Merge or compare with 'data base' for historical spelling/segmentation.",
+      "source_ids": [
+        "src_mw_database",
+        "src_google_ngram"
+      ],
+      "slug": "database"
+    },
+    {
+      "term": "data base",
+      "variants": [
+        "database"
+      ],
+      "branch": "database_structured_access",
+      "domain": "database",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "1960s-1980s",
+      "notes": "Spaced precursor/variant of database.",
+      "caveat": "Likely noisy before technical sense; use as variant support.",
+      "source_ids": [
+        "src_mw_database",
+        "src_google_ngram"
+      ],
+      "slug": "data-base"
+    },
+    {
+      "term": "data bank",
+      "variants": [
+        "databank"
+      ],
+      "branch": "database_structured_access",
+      "domain": "database",
+      "visual_role": "minor_node",
+      "data_layer": "raw",
+      "confidence_level": "high",
+      "first_attestation": "1966",
+      "first_strong_visibility": "1970s-1980s",
+      "notes": "Legacy term for stored collections of data.",
+      "caveat": "Historically useful but probably not a primary modern node.",
+      "source_ids": [
+        "src_mw_data_bank",
+        "src_google_ngram"
+      ],
+      "slug": "data-bank"
+    },
+    {
+      "term": "dataset",
+      "variants": [
+        "data set"
+      ],
+      "branch": "database_structured_access",
+      "domain": "scientific data / AI",
+      "visual_role": "major_node",
+      "data_layer": "raw",
+      "confidence_level": "high",
+      "first_attestation": "1958",
+      "first_strong_visibility": "1990s-2010s",
+      "notes": "Packaged unit of data; key bridge to AI training material.",
+      "caveat": "Compare one-word and spaced forms separately.",
+      "source_ids": [
+        "src_mw_dataset",
+        "src_google_ngram"
+      ],
+      "slug": "dataset"
+    },
+    {
+      "term": "data set",
+      "variants": [
+        "dataset"
+      ],
+      "branch": "database_structured_access",
+      "domain": "scientific data / AI",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "1970s-2000s",
+      "notes": "Spaced form of dataset.",
+      "caveat": "Older hits can be generic; treat as variant support.",
+      "source_ids": [
+        "src_mw_dataset",
+        "src_google_ngram"
+      ],
+      "slug": "data-set"
+    },
+    {
+      "term": "data management",
+      "variants": [],
+      "branch": "database_structured_access",
+      "domain": "database / governance",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "1980s-2010s",
+      "notes": "Organizational discipline around data quality, storage, and access.",
+      "caveat": "Overlaps database, governance, and enterprise management.",
+      "source_ids": [
+        "src_google_ngram"
+      ],
+      "slug": "data-management"
+    },
+    {
+      "term": "data warehouse",
+      "variants": [],
+      "branch": "database_structured_access",
+      "domain": "database / analytics",
+      "visual_role": "annotation",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "1990s-2000s",
+      "notes": "Enterprise data infrastructure for analytics.",
+      "caveat": "Specialized term; likely annotation rather than backbone.",
+      "source_ids": [
+        "src_google_ngram"
+      ],
+      "slug": "data-warehouse"
+    },
+    {
+      "term": "metadata",
+      "variants": [],
+      "branch": "networked_trace_interoperability",
+      "domain": "information systems",
+      "visual_role": "major_node",
+      "data_layer": "raw",
+      "confidence_level": "high",
+      "first_attestation": "1983",
+      "first_strong_visibility": "late 1990s-2010s",
+      "notes": "Data about data; bridge between indexing, web resources, and platform trace.",
+      "caveat": "Do not treat every metadata use as surveillance.",
+      "source_ids": [
+        "src_mw_metadata",
+        "src_google_ngram"
+      ],
+      "slug": "metadata"
+    },
+    {
+      "term": "open data",
+      "variants": [],
+      "branch": "networked_trace_interoperability",
+      "domain": "open government",
+      "visual_role": "major_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2005-2015",
+      "notes": "Machine-readable, reusable public data policy branch.",
+      "caveat": "Policy salience matters more than book frequency.",
+      "source_ids": [
+        "src_oecd_open_data",
+        "src_google_ngram"
+      ],
+      "slug": "open-data"
+    },
+    {
+      "term": "user data",
+      "variants": [],
+      "branch": "networked_trace_interoperability",
+      "domain": "platforms",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "low",
+      "first_attestation": null,
+      "first_strong_visibility": "2010s-2026",
+      "notes": "Data produced by or about users in networked systems.",
+      "caveat": "Recent/platform-heavy; validate with NOW, FTC, and snippets.",
+      "source_ids": [
+        "src_ftc_social_media_data",
+        "src_now",
+        "src_google_ngram"
+      ],
+      "slug": "user-data"
+    },
+    {
+      "term": "search data",
+      "variants": [],
+      "branch": "networked_trace_interoperability",
+      "domain": "search platforms",
+      "visual_role": "annotation",
+      "data_layer": "curated",
+      "confidence_level": "low",
+      "first_attestation": null,
+      "first_strong_visibility": "2010s-2026",
+      "notes": "Queries, clicks, and search logs as data traces.",
+      "caveat": "Likely sparse/noisy in books; needs web and policy validation.",
+      "source_ids": [
+        "src_now",
+        "src_google_ngram"
+      ],
+      "slug": "search-data"
+    },
+    {
+      "term": "clickstream data",
+      "variants": [],
+      "branch": "networked_trace_interoperability",
+      "domain": "web analytics",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2000s-2010s",
+      "notes": "Web-navigation traces for analytics.",
+      "caveat": "Specialized and recent; likely not a primary public-book signal.",
+      "source_ids": [
+        "src_google_ngram",
+        "src_now"
+      ],
+      "slug": "clickstream-data"
+    },
+    {
+      "term": "log data",
+      "variants": [],
+      "branch": "networked_trace_interoperability",
+      "domain": "systems / platforms",
+      "visual_role": "hidden_search_term",
+      "data_layer": "curated",
+      "confidence_level": "low",
+      "first_attestation": null,
+      "first_strong_visibility": "2000s-present",
+      "notes": "System event records; useful search expansion.",
+      "caveat": "Very broad and noisy; hide from main view.",
+      "source_ids": [
+        "src_google_ngram"
+      ],
+      "slug": "log-data"
+    },
+    {
+      "term": "personal data",
+      "variants": [],
+      "branch": "personal_data_governance",
+      "domain": "privacy / legal",
+      "visual_role": "major_node",
+      "data_layer": "raw",
+      "confidence_level": "high",
+      "first_attestation": null,
+      "first_strong_visibility": "1980s-2000s",
+      "notes": "Legally defined data relating to an identified or identifiable person.",
+      "caveat": "Jurisdiction-specific meanings; avoid treating UK/EU legal language as universal.",
+      "source_ids": [
+        "src_ico_personal_data",
+        "src_gdpr_article_4",
+        "src_google_ngram"
+      ],
+      "slug": "personal-data"
+    },
+    {
+      "term": "data protection",
+      "variants": [],
+      "branch": "personal_data_governance",
+      "domain": "privacy / legal",
+      "visual_role": "major_node",
+      "data_layer": "raw",
+      "confidence_level": "high",
+      "first_attestation": null,
+      "first_strong_visibility": "1980s-2010s",
+      "notes": "Legal/governance frame for lawful processing and rights.",
+      "caveat": "Especially strong in UK/EU discourse; US often says privacy or personal information.",
+      "source_ids": [
+        "src_ico_data_protection",
+        "src_gdpr_article_4",
+        "src_google_ngram"
+      ],
+      "slug": "data-protection"
+    },
+    {
+      "term": "data privacy",
+      "variants": [],
+      "branch": "personal_data_governance",
+      "domain": "privacy / legal",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2010s-2026",
+      "notes": "Privacy branch phrased around data rather than broader privacy.",
+      "caveat": "Recent and news/policy heavy; books understate salience.",
+      "source_ids": [
+        "src_now",
+        "src_google_ngram",
+        "src_ftc_social_media_data"
+      ],
+      "slug": "data-privacy"
+    },
+    {
+      "term": "data breach",
+      "variants": [],
+      "branch": "personal_data_governance",
+      "domain": "privacy / security",
+      "visual_role": "major_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2010s-2026",
+      "notes": "Incident frame around exposed or compromised data.",
+      "caveat": "News-heavy; use NOW/legal sources before final chart prominence.",
+      "source_ids": [
+        "src_gdpr_article_4",
+        "src_now",
+        "src_google_ngram"
+      ],
+      "slug": "data-breach"
+    },
+    {
+      "term": "personal data breach",
+      "variants": [],
+      "branch": "personal_data_governance",
+      "domain": "privacy / legal",
+      "visual_role": "annotation",
+      "data_layer": "raw",
+      "confidence_level": "high",
+      "first_attestation": null,
+      "first_strong_visibility": "2010s legal context",
+      "notes": "GDPR legal phrase for breach affecting personal data.",
+      "caveat": "Legal phrase; likely sparse in books but high policy relevance.",
+      "source_ids": [
+        "src_gdpr_article_4",
+        "src_google_ngram"
+      ],
+      "slug": "personal-data-breach"
+    },
+    {
+      "term": "data rights",
+      "variants": [],
+      "branch": "personal_data_governance",
+      "domain": "rights / governance",
+      "visual_role": "annotation",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2010s-2026",
+      "notes": "Rights discourse around data access, portability, and control.",
+      "caveat": "Conceptually important but needs policy source review before main display.",
+      "source_ids": [
+        "src_gdpr_article_4",
+        "src_now",
+        "src_google_ngram"
+      ],
+      "slug": "data-rights"
+    },
+    {
+      "term": "data governance",
+      "variants": [],
+      "branch": "personal_data_governance",
+      "domain": "governance",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2015-2026",
+      "notes": "Management and policy controls around data quality, access, and accountability.",
+      "caveat": "Enterprise and public-policy uses may diverge.",
+      "source_ids": [
+        "src_oecd_data_driven_innovation",
+        "src_google_ngram"
+      ],
+      "slug": "data-governance"
+    },
+    {
+      "term": "data mining",
+      "variants": [],
+      "branch": "commercial_analytics_decision",
+      "domain": "analytics",
+      "visual_role": "major_node",
+      "data_layer": "raw",
+      "confidence_level": "high",
+      "first_attestation": "1968",
+      "first_strong_visibility": "1990s-2000s",
+      "notes": "Extracting patterns or value from large data collections.",
+      "caveat": "Technical term with commercial and surveillance implications; context matters.",
+      "source_ids": [
+        "src_mw_data_mining",
+        "src_google_ngram"
+      ],
+      "slug": "data-mining"
+    },
+    {
+      "term": "big data",
+      "variants": [],
+      "branch": "commercial_analytics_decision",
+      "domain": "analytics",
+      "visual_role": "major_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": "1980 early use; modern sense mid-1990s",
+      "first_strong_visibility": "2007-2015",
+      "notes": "Scale-oriented term for large, complex, networked datasets and analytics.",
+      "caveat": "Early phrase hits can be literal; modern technical sense needs manual review.",
+      "source_ids": [
+        "src_nist_big_data",
+        "src_google_ngram"
+      ],
+      "slug": "big-data"
+    },
+    {
+      "term": "data-driven",
+      "variants": [
+        "data driven"
+      ],
+      "branch": "commercial_analytics_decision",
+      "domain": "decision infrastructure",
+      "visual_role": "major_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2005-2015",
+      "notes": "Data as basis for institutional or product decisions.",
+      "caveat": "Hyphenated query is noisy in Ngram; verify with snippets.",
+      "source_ids": [
+        "src_oecd_data_driven_innovation",
+        "src_google_ngram"
+      ],
+      "slug": "data-driven"
+    },
+    {
+      "term": "data science",
+      "variants": [],
+      "branch": "commercial_analytics_decision",
+      "domain": "analytics / AI",
+      "visual_role": "major_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": "1974 phrase; 2001 modern disciplinary framing",
+      "first_strong_visibility": "2010-2015",
+      "notes": "Disciplinary/professional branch connecting statistics, computing, and AI.",
+      "caveat": "First phrase-use and modern disciplinary centrality are separate; validate snippets before exact timeline copy.",
+      "source_ids": [
+        "src_cleveland_data_science",
+        "src_google_ngram"
+      ],
+      "slug": "data-science"
+    },
+    {
+      "term": "data broker",
+      "variants": [],
+      "branch": "commercial_analytics_decision",
+      "domain": "commercial privacy",
+      "visual_role": "major_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2014-2026",
+      "notes": "Commercial intermediary collecting or selling personal information.",
+      "caveat": "Regulatory/policy source is stronger than book corpus.",
+      "source_ids": [
+        "src_ftc_data_brokers",
+        "src_google_ngram"
+      ],
+      "slug": "data-broker"
+    },
+    {
+      "term": "data monetization",
+      "variants": [
+        "data monetisation"
+      ],
+      "branch": "commercial_analytics_decision",
+      "domain": "commercial analytics",
+      "visual_role": "annotation",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2010s-2026",
+      "notes": "Explicit asset/revenue framing of data.",
+      "caveat": "Recent business phrase; validate outside books.",
+      "source_ids": [
+        "src_ftc_social_media_data",
+        "src_oecd_data_driven_innovation",
+        "src_google_ngram"
+      ],
+      "slug": "data-monetization"
+    },
+    {
+      "term": "training data",
+      "variants": [],
+      "branch": "ai_training_synthetic_generation",
+      "domain": "AI / machine learning",
+      "visual_role": "major_node",
+      "data_layer": "curated",
+      "confidence_level": "high",
+      "first_attestation": null,
+      "first_strong_visibility": "2015-2026",
+      "notes": "Examples used to teach machine-learning models.",
+      "caveat": "Earlier phrase hits can refer to training as education rather than ML.",
+      "source_ids": [
+        "src_stanford_training_data",
+        "src_google_ngram"
+      ],
+      "slug": "training-data"
+    },
+    {
+      "term": "labelled data",
+      "variants": [
+        "labeled data"
+      ],
+      "branch": "ai_training_synthetic_generation",
+      "domain": "AI / machine learning",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2015-2026",
+      "notes": "Training examples with labels; British spelling.",
+      "caveat": "Spelling variant and specialized ML use require manual review.",
+      "source_ids": [
+        "src_stanford_training_data",
+        "src_google_ngram"
+      ],
+      "slug": "labelled-data"
+    },
+    {
+      "term": "labeled data",
+      "variants": [
+        "labelled data"
+      ],
+      "branch": "ai_training_synthetic_generation",
+      "domain": "AI / machine learning",
+      "visual_role": "minor_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2015-2026",
+      "notes": "Training examples with labels; American spelling.",
+      "caveat": "Spelling variant and specialized ML use require manual review.",
+      "source_ids": [
+        "src_stanford_training_data",
+        "src_google_ngram"
+      ],
+      "slug": "labeled-data"
+    },
+    {
+      "term": "synthetic data",
+      "variants": [],
+      "branch": "ai_training_synthetic_generation",
+      "domain": "AI / privacy",
+      "visual_role": "major_node",
+      "data_layer": "curated",
+      "confidence_level": "medium",
+      "first_attestation": null,
+      "first_strong_visibility": "2020s",
+      "notes": "Data generated by models or algorithms rather than directly observed.",
+      "caveat": "Modern AI/privacy sense should be validated with technical sources, not Ngram alone.",
+      "source_ids": [
+        "src_nist_synthetic_data",
+        "src_google_ngram"
+      ],
+      "slug": "synthetic-data"
+    },
+    {
+      "term": "datafication",
+      "variants": [],
+      "branch": "ai_training_synthetic_generation",
+      "domain": "critical digital studies",
+      "visual_role": "annotation",
+      "data_layer": "interpretive",
+      "confidence_level": "high",
+      "first_attestation": null,
+      "first_strong_visibility": "2010s-2026",
+      "notes": "Critical concept for turning life/processes into data.",
+      "caveat": "Academic concept; use as interpretive halo unless corpus signal supports more.",
+      "source_ids": [
+        "src_van_dijck_datafication",
+        "src_google_ngram"
+      ],
+      "slug": "datafication"
+    }
+  ]
+}

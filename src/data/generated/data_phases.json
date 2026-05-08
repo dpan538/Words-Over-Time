@@ -1,0 +1,281 @@
+{
+  "generatedAt": "2026-05-08T12:55:16.070Z",
+  "word": "data",
+  "layer": "interpretive semantic phase model",
+  "phases": [
+    {
+      "phase_id": "evidence_measurement",
+      "label": "Evidence and measurement",
+      "branch": "evidence_measurement",
+      "date_range": {
+        "start": 1630,
+        "end": null
+      },
+      "core_meaning": "Facts, observations, measurements, and givens used for reasoning.",
+      "representative_terms": [
+        "data",
+        "datum",
+        "statistical data",
+        "empirical data",
+        "observational data"
+      ],
+      "evidence_strength": "strong",
+      "visual_role": "phase_band",
+      "caveat": "This layer persists through later phases; it is not replaced.",
+      "source_ids": [
+        "src_mw_data",
+        "src_mw_datum",
+        "src_etymonline_data"
+      ],
+      "data_layer": "interpretive",
+      "supporting_term_slugs": [
+        "data",
+        "datum",
+        "statistical-data",
+        "empirical-data",
+        "observational-data"
+      ]
+    },
+    {
+      "phase_id": "administrative_recordkeeping",
+      "label": "Administrative counting and recordkeeping",
+      "branch": "administrative_recordkeeping",
+      "date_range": {
+        "start": 1890,
+        "end": null
+      },
+      "core_meaning": "Records, tabulations, forms, and administrative observations encoded for counting and retrieval.",
+      "representative_terms": [
+        "census data",
+        "data collection",
+        "data entry",
+        "data tabulation"
+      ],
+      "evidence_strength": "strong",
+      "visual_role": "phase_band",
+      "caveat": "Administrative data overlaps statistics but should remain distinct from scientific evidence.",
+      "source_ids": [
+        "src_1890_census",
+        "src_google_ngram"
+      ],
+      "data_layer": "interpretive",
+      "supporting_term_slugs": [
+        "census-data",
+        "data-collection",
+        "data-entry",
+        "data-tabulation"
+      ]
+    },
+    {
+      "phase_id": "computational_processing",
+      "label": "Computational processing",
+      "branch": "computational_processing",
+      "date_range": {
+        "start": 1946,
+        "end": null
+      },
+      "core_meaning": "Machine-readable information processed, stored, retrieved, and transformed by computers.",
+      "representative_terms": [
+        "data processing",
+        "computer data",
+        "digital data",
+        "machine-readable data",
+        "data storage",
+        "data retrieval"
+      ],
+      "evidence_strength": "strong",
+      "visual_role": "phase_band",
+      "caveat": "Computing is a major pivot, not the origin of data as a word.",
+      "source_ids": [
+        "src_mw_data",
+        "src_mw_data_processing",
+        "src_etymonline_data"
+      ],
+      "data_layer": "interpretive",
+      "supporting_term_slugs": [
+        "data-processing",
+        "computer-data",
+        "digital-data",
+        "machine-readable-data",
+        "data-storage",
+        "data-retrieval"
+      ]
+    },
+    {
+      "phase_id": "database_structured_access",
+      "label": "Database and structured access",
+      "branch": "database_structured_access",
+      "date_range": {
+        "start": 1958,
+        "end": null
+      },
+      "core_meaning": "Organized, queryable, managed collections of data and packaged datasets.",
+      "representative_terms": [
+        "database",
+        "data base",
+        "data bank",
+        "dataset",
+        "data set",
+        "data management",
+        "data warehouse"
+      ],
+      "evidence_strength": "strong",
+      "visual_role": "phase_band",
+      "caveat": "Database terms describe a major branch, not the whole history of computing data.",
+      "source_ids": [
+        "src_mw_database",
+        "src_mw_dataset",
+        "src_mw_data_bank"
+      ],
+      "data_layer": "interpretive",
+      "supporting_term_slugs": [
+        "database",
+        "data-base",
+        "data-bank",
+        "dataset",
+        "data-set",
+        "data-management",
+        "data-warehouse"
+      ]
+    },
+    {
+      "phase_id": "networked_trace_interoperability",
+      "label": "Networked trace and interoperability",
+      "branch": "networked_trace_interoperability",
+      "date_range": {
+        "start": 1983,
+        "end": null
+      },
+      "core_meaning": "Data as descriptive metadata, machine-readable public resources, logs, clicks, and platform traces.",
+      "representative_terms": [
+        "metadata",
+        "open data",
+        "user data",
+        "search data",
+        "clickstream data",
+        "log data"
+      ],
+      "evidence_strength": "medium",
+      "visual_role": "phase_band",
+      "caveat": "Recent platform terms require news, policy, and technical sources beyond books.",
+      "source_ids": [
+        "src_mw_metadata",
+        "src_oecd_open_data",
+        "src_ftc_social_media_data"
+      ],
+      "data_layer": "interpretive",
+      "supporting_term_slugs": [
+        "metadata",
+        "open-data",
+        "user-data",
+        "search-data",
+        "clickstream-data",
+        "log-data"
+      ]
+    },
+    {
+      "phase_id": "personal_data_governance",
+      "label": "Personal data and governance",
+      "branch": "personal_data_governance",
+      "date_range": {
+        "start": 1970,
+        "end": null
+      },
+      "core_meaning": "Data as protected personal information, regulated processing, rights, breaches, and governance.",
+      "representative_terms": [
+        "personal data",
+        "data protection",
+        "data privacy",
+        "data breach",
+        "personal data breach",
+        "data rights",
+        "data governance"
+      ],
+      "evidence_strength": "strong",
+      "visual_role": "phase_band",
+      "caveat": "Legal vocabulary is jurisdiction-specific; show UK/EU and US differences carefully.",
+      "source_ids": [
+        "src_ico_personal_data",
+        "src_ico_data_protection",
+        "src_gdpr_article_4"
+      ],
+      "data_layer": "interpretive",
+      "supporting_term_slugs": [
+        "personal-data",
+        "data-protection",
+        "data-privacy",
+        "data-breach",
+        "personal-data-breach",
+        "data-rights",
+        "data-governance"
+      ]
+    },
+    {
+      "phase_id": "commercial_analytics_decision",
+      "label": "Commercial analytics and decision infrastructure",
+      "branch": "commercial_analytics_decision",
+      "date_range": {
+        "start": 1990,
+        "end": null
+      },
+      "core_meaning": "Data as extractable value, analytic resource, decision input, and market asset.",
+      "representative_terms": [
+        "data mining",
+        "big data",
+        "data-driven",
+        "data broker",
+        "data monetization"
+      ],
+      "evidence_strength": "strong",
+      "visual_role": "phase_band",
+      "caveat": "Do not reduce all modern data to commercial extraction; this is one branch.",
+      "source_ids": [
+        "src_mw_data_mining",
+        "src_nist_big_data",
+        "src_oecd_data_driven_innovation",
+        "src_ftc_data_brokers"
+      ],
+      "data_layer": "interpretive",
+      "supporting_term_slugs": [
+        "data-mining",
+        "big-data",
+        "data-driven",
+        "data-broker",
+        "data-monetization"
+      ]
+    },
+    {
+      "phase_id": "ai_training_synthetic_generation",
+      "label": "AI training and synthetic generation",
+      "branch": "ai_training_synthetic_generation",
+      "date_range": {
+        "start": 2000,
+        "end": null
+      },
+      "core_meaning": "Data as model training examples, labeled substrate, and synthetic substitute or augmentation.",
+      "representative_terms": [
+        "training data",
+        "labelled data",
+        "labeled data",
+        "synthetic data",
+        "datafication"
+      ],
+      "evidence_strength": "strong_current",
+      "visual_role": "phase_band",
+      "caveat": "Latest layer only; do not present AI as the final or only destination of the word.",
+      "source_ids": [
+        "src_stanford_training_data",
+        "src_nist_synthetic_data",
+        "src_van_dijck_datafication"
+      ],
+      "data_layer": "interpretive",
+      "supporting_term_slugs": [
+        "training-data",
+        "labelled-data",
+        "labeled-data",
+        "synthetic-data",
+        "datafication"
+      ]
+    }
+  ]
+}

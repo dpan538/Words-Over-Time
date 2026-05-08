@@ -1,0 +1,830 @@
+{
+  "generatedAt": "2026-05-08T12:55:55.181Z",
+  "word": "data",
+  "status": "initial-data-layer",
+  "note": "Coverage combines Ngram availability, source type, curated confidence, and visual role. It is not a final editorial approval.",
+  "term_coverage": [
+    {
+      "term": "data",
+      "term_slug": "data",
+      "branch": "core",
+      "coverage_status": "strong",
+      "best_source_type": "dictionary",
+      "needs_manual_review": false,
+      "reason": "English Ngram quality: ok; term confidence: high; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Frequency mixes senses and cannot identify meaning without context.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_mw_data",
+        "src_etymonline_data",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "datum",
+      "term_slug": "datum",
+      "branch": "core",
+      "coverage_status": "strong",
+      "best_source_type": "dictionary",
+      "needs_manual_review": false,
+      "reason": "English Ngram quality: ok; term confidence: high; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Technical and formal distribution differs from the mass noun data.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_mw_datum",
+        "src_etymonline_data",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "statistical data",
+      "term_slug": "statistical-data",
+      "branch": "evidence_measurement",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Exact attestation requires dictionary or corpus snippet review.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_google_ngram",
+        "src_coha"
+      ]
+    },
+    {
+      "term": "empirical data",
+      "term_slug": "empirical-data",
+      "branch": "evidence_measurement",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Requires snippet review to distinguish philosophical and scientific uses.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_google_ngram",
+        "src_coha"
+      ]
+    },
+    {
+      "term": "observational data",
+      "term_slug": "observational-data",
+      "branch": "evidence_measurement",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "May be field-specific; use as support term unless corpus signal is strong.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_google_ngram",
+        "src_coha"
+      ]
+    },
+    {
+      "term": "census data",
+      "term_slug": "census-data",
+      "branch": "administrative_recordkeeping",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "The 1890 punch-card context is historical evidence, not necessarily phrase-frequency evidence.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_1890_census",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data collection",
+      "term_slug": "data-collection",
+      "branch": "administrative_recordkeeping",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Broad phrase; needs context when assigned to a specific branch.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_google_ngram",
+        "src_coha"
+      ]
+    },
+    {
+      "term": "data entry",
+      "term_slug": "data-entry",
+      "branch": "administrative_recordkeeping",
+      "coverage_status": "usable",
+      "best_source_type": "dictionary",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "First attestation from secondary lexical notes should be verified before final copy.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_etymonline_data",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data tabulation",
+      "term_slug": "data-tabulation",
+      "branch": "administrative_recordkeeping",
+      "coverage_status": "weak",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: low; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Potentially sparse and phrase-specific; likely hover-only unless Ngram is strong.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_1890_census",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data processing",
+      "term_slug": "data-processing",
+      "branch": "computational_processing",
+      "coverage_status": "strong",
+      "best_source_type": "dictionary",
+      "needs_manual_review": false,
+      "reason": "English Ngram quality: ok; term confidence: high; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Frequency shows printed visibility, not the full history of computing practice.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_mw_data_processing",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "computer data",
+      "term_slug": "computer-data",
+      "branch": "computational_processing",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: low; visual role: hidden_search_term.",
+      "recommended_visual_status": "hide",
+      "caveat": "Broad/noisy and less conceptually useful than data processing or database.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "digital data",
+      "term_slug": "digital-data",
+      "branch": "computational_processing",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: low; visual role: hidden_search_term.",
+      "recommended_visual_status": "hide",
+      "caveat": "Broad phrase; keep as back-end support unless needed.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "machine-readable data",
+      "term_slug": "machine-readable-data",
+      "branch": "computational_processing",
+      "coverage_status": "usable",
+      "best_source_type": "policy",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: medium; visual role: annotation.",
+      "recommended_visual_status": "annotation_only",
+      "caveat": "Hyphenation and standards language make Ngram noisy.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_oecd_open_data",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data storage",
+      "term_slug": "data-storage",
+      "branch": "computational_processing",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Broad technical term; better as pipeline node than standalone story.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data retrieval",
+      "term_slug": "data-retrieval",
+      "branch": "computational_processing",
+      "coverage_status": "usable",
+      "best_source_type": "dictionary",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Needs snippet review to separate generic retrieval from database/information-retrieval technical use.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_google_ngram",
+        "src_mw_database"
+      ]
+    },
+    {
+      "term": "database",
+      "term_slug": "database",
+      "branch": "database_structured_access",
+      "coverage_status": "strong",
+      "best_source_type": "dictionary",
+      "needs_manual_review": false,
+      "reason": "English Ngram quality: ok; term confidence: high; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Merge or compare with 'data base' for historical spelling/segmentation.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_mw_database",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data base",
+      "term_slug": "data-base",
+      "branch": "database_structured_access",
+      "coverage_status": "usable",
+      "best_source_type": "dictionary",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Likely noisy before technical sense; use as variant support.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_mw_database",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data bank",
+      "term_slug": "data-bank",
+      "branch": "database_structured_access",
+      "coverage_status": "strong",
+      "best_source_type": "dictionary",
+      "needs_manual_review": false,
+      "reason": "English Ngram quality: ok; term confidence: high; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Historically useful but probably not a primary modern node.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_mw_data_bank",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "dataset",
+      "term_slug": "dataset",
+      "branch": "database_structured_access",
+      "coverage_status": "strong",
+      "best_source_type": "dictionary",
+      "needs_manual_review": false,
+      "reason": "English Ngram quality: ok; term confidence: high; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Compare one-word and spaced forms separately.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_mw_dataset",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data set",
+      "term_slug": "data-set",
+      "branch": "database_structured_access",
+      "coverage_status": "usable",
+      "best_source_type": "dictionary",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Older hits can be generic; treat as variant support.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_mw_dataset",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data management",
+      "term_slug": "data-management",
+      "branch": "database_structured_access",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Overlaps database, governance, and enterprise management.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data warehouse",
+      "term_slug": "data-warehouse",
+      "branch": "database_structured_access",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: annotation.",
+      "recommended_visual_status": "annotation_only",
+      "caveat": "Specialized term; likely annotation rather than backbone.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "metadata",
+      "term_slug": "metadata",
+      "branch": "networked_trace_interoperability",
+      "coverage_status": "strong",
+      "best_source_type": "dictionary",
+      "needs_manual_review": false,
+      "reason": "English Ngram quality: ok; term confidence: high; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Do not treat every metadata use as surveillance.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_mw_metadata",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "open data",
+      "term_slug": "open-data",
+      "branch": "networked_trace_interoperability",
+      "coverage_status": "usable",
+      "best_source_type": "policy",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Policy salience matters more than book frequency.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_oecd_open_data",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "user data",
+      "term_slug": "user-data",
+      "branch": "networked_trace_interoperability",
+      "coverage_status": "usable",
+      "best_source_type": "policy",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: low; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Recent/platform-heavy; validate with NOW, FTC, and snippets.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_ftc_social_media_data",
+        "src_now",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "search data",
+      "term_slug": "search-data",
+      "branch": "networked_trace_interoperability",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: low; visual role: annotation.",
+      "recommended_visual_status": "annotation_only",
+      "caveat": "Likely sparse/noisy in books; needs web and policy validation.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_now",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "clickstream data",
+      "term_slug": "clickstream-data",
+      "branch": "networked_trace_interoperability",
+      "coverage_status": "weak",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Specialized and recent; likely not a primary public-book signal.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_google_ngram",
+        "src_now"
+      ]
+    },
+    {
+      "term": "log data",
+      "term_slug": "log-data",
+      "branch": "networked_trace_interoperability",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: low; visual role: hidden_search_term.",
+      "recommended_visual_status": "hide",
+      "caveat": "Very broad and noisy; hide from main view.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "personal data",
+      "term_slug": "personal-data",
+      "branch": "personal_data_governance",
+      "coverage_status": "strong",
+      "best_source_type": "legal",
+      "needs_manual_review": false,
+      "reason": "English Ngram quality: ok; term confidence: high; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Jurisdiction-specific meanings; avoid treating UK/EU legal language as universal.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_ico_personal_data",
+        "src_gdpr_article_4",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data protection",
+      "term_slug": "data-protection",
+      "branch": "personal_data_governance",
+      "coverage_status": "strong",
+      "best_source_type": "legal",
+      "needs_manual_review": false,
+      "reason": "English Ngram quality: ok; term confidence: high; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Especially strong in UK/EU discourse; US often says privacy or personal information.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_ico_data_protection",
+        "src_gdpr_article_4",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data privacy",
+      "term_slug": "data-privacy",
+      "branch": "personal_data_governance",
+      "coverage_status": "usable",
+      "best_source_type": "policy",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Recent and news/policy heavy; books understate salience.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_now",
+        "src_google_ngram",
+        "src_ftc_social_media_data"
+      ]
+    },
+    {
+      "term": "data breach",
+      "term_slug": "data-breach",
+      "branch": "personal_data_governance",
+      "coverage_status": "usable",
+      "best_source_type": "legal",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "News-heavy; use NOW/legal sources before final chart prominence.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_gdpr_article_4",
+        "src_now",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "personal data breach",
+      "term_slug": "personal-data-breach",
+      "branch": "personal_data_governance",
+      "coverage_status": "strong",
+      "best_source_type": "legal",
+      "needs_manual_review": false,
+      "reason": "English Ngram quality: ok; term confidence: high; visual role: annotation.",
+      "recommended_visual_status": "annotation_only",
+      "caveat": "Legal phrase; likely sparse in books but high policy relevance.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_gdpr_article_4",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data rights",
+      "term_slug": "data-rights",
+      "branch": "personal_data_governance",
+      "coverage_status": "weak",
+      "best_source_type": "legal",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: annotation.",
+      "recommended_visual_status": "annotation_only",
+      "caveat": "Conceptually important but needs policy source review before main display.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_gdpr_article_4",
+        "src_now",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data governance",
+      "term_slug": "data-governance",
+      "branch": "personal_data_governance",
+      "coverage_status": "usable",
+      "best_source_type": "policy",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Enterprise and public-policy uses may diverge.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_oecd_data_driven_innovation",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data mining",
+      "term_slug": "data-mining",
+      "branch": "commercial_analytics_decision",
+      "coverage_status": "strong",
+      "best_source_type": "dictionary",
+      "needs_manual_review": false,
+      "reason": "English Ngram quality: ok; term confidence: high; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Technical term with commercial and surveillance implications; context matters.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_mw_data_mining",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "big data",
+      "term_slug": "big-data",
+      "branch": "commercial_analytics_decision",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: medium; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Early phrase hits can be literal; modern technical sense needs manual review.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_nist_big_data",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data-driven",
+      "term_slug": "data-driven",
+      "branch": "commercial_analytics_decision",
+      "coverage_status": "usable",
+      "best_source_type": "policy",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: medium; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Hyphenated query is noisy in Ngram; verify with snippets.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_oecd_data_driven_innovation",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data science",
+      "term_slug": "data-science",
+      "branch": "commercial_analytics_decision",
+      "coverage_status": "usable",
+      "best_source_type": "academic",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "First phrase-use and modern disciplinary centrality are separate; validate snippets before exact timeline copy.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_cleveland_data_science",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data broker",
+      "term_slug": "data-broker",
+      "branch": "commercial_analytics_decision",
+      "coverage_status": "weak",
+      "best_source_type": "policy",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Regulatory/policy source is stronger than book corpus.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_ftc_data_brokers",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "data monetization",
+      "term_slug": "data-monetization",
+      "branch": "commercial_analytics_decision",
+      "coverage_status": "weak",
+      "best_source_type": "policy",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: ok; term confidence: medium; visual role: annotation.",
+      "recommended_visual_status": "annotation_only",
+      "caveat": "Recent business phrase; validate outside books.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_ftc_social_media_data",
+        "src_oecd_data_driven_innovation",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "training data",
+      "term_slug": "training-data",
+      "branch": "ai_training_synthetic_generation",
+      "coverage_status": "strong",
+      "best_source_type": "academic",
+      "needs_manual_review": false,
+      "reason": "English Ngram quality: ok; term confidence: high; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Earlier phrase hits can refer to training as education rather than ML.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_stanford_training_data",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "labelled data",
+      "term_slug": "labelled-data",
+      "branch": "ai_training_synthetic_generation",
+      "coverage_status": "weak",
+      "best_source_type": "academic",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Spelling variant and specialized ML use require manual review.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_stanford_training_data",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "labeled data",
+      "term_slug": "labeled-data",
+      "branch": "ai_training_synthetic_generation",
+      "coverage_status": "usable",
+      "best_source_type": "academic",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: medium; visual role: minor_node.",
+      "recommended_visual_status": "hover_only",
+      "caveat": "Spelling variant and specialized ML use require manual review.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_stanford_training_data",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "synthetic data",
+      "term_slug": "synthetic-data",
+      "branch": "ai_training_synthetic_generation",
+      "coverage_status": "usable",
+      "best_source_type": "ngram",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: medium; visual role: major_node.",
+      "recommended_visual_status": "show",
+      "caveat": "Modern AI/privacy sense should be validated with technical sources, not Ngram alone.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_nist_synthetic_data",
+        "src_google_ngram"
+      ]
+    },
+    {
+      "term": "datafication",
+      "term_slug": "datafication",
+      "branch": "ai_training_synthetic_generation",
+      "coverage_status": "strong",
+      "best_source_type": "academic",
+      "needs_manual_review": true,
+      "reason": "English Ngram quality: requires_manual_review; term confidence: high; visual role: annotation.",
+      "recommended_visual_status": "annotation_only",
+      "caveat": "Academic concept; use as interpretive halo unless corpus signal supports more.",
+      "data_layer": "computed",
+      "source_ids": [
+        "src_van_dijck_datafication",
+        "src_google_ngram"
+      ]
+    }
+  ],
+  "branch_coverage": [
+    {
+      "branch": "core",
+      "term_count": 2,
+      "strong_count": 2,
+      "usable_count": 0,
+      "weak_count": 0,
+      "missing_count": 0,
+      "needs_manual_review_count": 0
+    },
+    {
+      "branch": "evidence_measurement",
+      "term_count": 3,
+      "strong_count": 0,
+      "usable_count": 3,
+      "weak_count": 0,
+      "missing_count": 0,
+      "needs_manual_review_count": 3
+    },
+    {
+      "branch": "administrative_recordkeeping",
+      "term_count": 4,
+      "strong_count": 0,
+      "usable_count": 3,
+      "weak_count": 1,
+      "missing_count": 0,
+      "needs_manual_review_count": 4
+    },
+    {
+      "branch": "computational_processing",
+      "term_count": 6,
+      "strong_count": 1,
+      "usable_count": 5,
+      "weak_count": 0,
+      "missing_count": 0,
+      "needs_manual_review_count": 5
+    },
+    {
+      "branch": "database_structured_access",
+      "term_count": 7,
+      "strong_count": 3,
+      "usable_count": 4,
+      "weak_count": 0,
+      "missing_count": 0,
+      "needs_manual_review_count": 4
+    },
+    {
+      "branch": "networked_trace_interoperability",
+      "term_count": 6,
+      "strong_count": 1,
+      "usable_count": 4,
+      "weak_count": 1,
+      "missing_count": 0,
+      "needs_manual_review_count": 5
+    },
+    {
+      "branch": "personal_data_governance",
+      "term_count": 7,
+      "strong_count": 3,
+      "usable_count": 3,
+      "weak_count": 1,
+      "missing_count": 0,
+      "needs_manual_review_count": 4
+    },
+    {
+      "branch": "commercial_analytics_decision",
+      "term_count": 6,
+      "strong_count": 1,
+      "usable_count": 3,
+      "weak_count": 2,
+      "missing_count": 0,
+      "needs_manual_review_count": 5
+    },
+    {
+      "branch": "ai_training_synthetic_generation",
+      "term_count": 5,
+      "strong_count": 2,
+      "usable_count": 2,
+      "weak_count": 1,
+      "missing_count": 0,
+      "needs_manual_review_count": 4
+    }
+  ]
+}
