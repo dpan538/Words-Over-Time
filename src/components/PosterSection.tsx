@@ -34,7 +34,7 @@ export function PosterSection({
             {title}
           </h2>
           {intro ? (
-            <p className="mt-2 max-w-3xl text-[1rem] font-bold leading-6 text-ink/62">
+            <p className="mt-2 max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/68">
               {intro}
             </p>
           ) : null}

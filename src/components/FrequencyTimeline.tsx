@@ -61,7 +61,39 @@ export function FrequencyTimeline({
     padTop + (height - padTop - padBottom) - (Math.sqrt(value) / maxValue) * (height - padTop - padBottom);
 
   return (
-    <div className="group relative overflow-hidden bg-wheat py-2 transition duration-300 hover:bg-[#f8f0da] sm:py-4">
+    <>
+      <div className="rounded border border-ink/20 bg-wheat/60 px-4 py-5 text-center sm:hidden">
+        <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.14em] text-fire">
+          frequency field
+        </p>
+        <p className="mt-2 text-sm font-bold leading-5 text-ink/60">
+          This visualization requires a wider screen.
+          <br />
+          Rotate your device or view on desktop for the full chart.
+        </p>
+        <div className="mt-4 grid grid-cols-2 gap-2 text-left">
+          {visibleSeries.slice(0, 4).map((item) => {
+            const firstPoint = item.points[0];
+            const lastPoint = item.points[item.points.length - 1];
+
+            return (
+              <div key={item.id} className="border border-ink/14 px-3 py-2">
+                <p
+                  className="font-mono text-[0.65rem] font-black uppercase leading-4 tracking-[0.12em]"
+                  style={{ color: item.color }}
+                >
+                  {item.label}
+                </p>
+                <p className="mt-1 font-mono text-[0.7rem] font-black text-ink/50">
+                  {firstPoint?.year ?? item.startYear}-{lastPoint?.year ?? item.endYear}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="group relative hidden overflow-hidden bg-wheat py-2 transition duration-300 hover:bg-[#f8f0da] sm:block sm:py-4">
       <div className="relative overflow-x-auto">
         <svg
           viewBox={`0 0 ${width} ${height}`}
@@ -271,5 +303,6 @@ export function FrequencyTimeline({
         <p>frequency, not first attestation</p>
       </div>
     </div>
+    </>
   );
 }

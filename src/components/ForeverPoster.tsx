@@ -7,6 +7,7 @@ import { EvidenceArchive } from "@/components/EvidenceArchive";
 import { FrequencyTimeline } from "@/components/FrequencyTimeline";
 import { MiniInspectorMenu } from "@/components/MiniInspectorMenu";
 import { Nav } from "@/components/Nav";
+import { PanelProgress } from "@/components/PanelProgress";
 import { PosterSection } from "@/components/PosterSection";
 import { RelationalConstellation } from "@/components/RelationalConstellation";
 import { ContextSignalField } from "@/components/ContextSignalField";
@@ -24,17 +25,36 @@ type ForeverPosterProps = {
 
 type NarrativeBridgeProps = {
   children: string;
+  from: string;
+  to: string;
 };
 
-function NarrativeBridge({ children }: NarrativeBridgeProps) {
+function NarrativeBridge({ children, from, to }: NarrativeBridgeProps) {
   return (
-    <div className="mb-10 mt-12 w-full sm:mb-11 sm:mt-14 lg:mb-12 lg:mt-14">
-      <p className="text-[clamp(1.08rem,1.04vw,1.18rem)] font-normal leading-[1.5] text-ink/66">
+    <div className="mb-10 mt-14 flex gap-5 sm:mb-12 sm:mt-16 lg:gap-8">
+      <div className="flex flex-col items-center gap-1.5 pt-1">
+        <span className="font-mono text-[0.62rem] font-black uppercase tracking-[0.16em] text-fire/70">
+          {from}
+        </span>
+        <div className="w-px flex-1 bg-ink/14" />
+        <span className="font-mono text-[0.62rem] font-black uppercase tracking-[0.16em] text-ink/38">
+          {to}
+        </span>
+      </div>
+      <p className="flex-1 text-[clamp(1.05rem,1.1vw,1.2rem)] font-normal leading-[1.6] text-ink/58 lg:max-w-4xl">
         {children}
       </p>
     </div>
   );
 }
+
+const foreverPanels = [
+  { num: "01", label: "Frequency", color: "#F06B04" },
+  { num: "02", label: "Influence", color: "#2C9FC7" },
+  { num: "03", label: "Constellation", color: "#A1081F" },
+  { num: "04", label: "Signal", color: "#1570AC" },
+  { num: "05", label: "Archive", color: "#050510" },
+];
 
 const culturalPressureAnchors = [
   {
@@ -544,6 +564,10 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
                 A word traced through permanence, repetition, devotion, memory,
                 and time.
               </p>
+              <p className="mt-4 max-w-2xl font-mono text-[clamp(0.78rem,1.08vw,1rem)] font-black uppercase leading-6 tracking-[0.12em] text-ink/58">
+                Five layers of evidence. One word. Frequency / influence /
+                company / meaning / proof.
+              </p>
             </div>
 
             <dl className="grid border-y border-ink bg-wheat/74">
@@ -570,12 +594,14 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           </div>
         </section>
 
+        <PanelProgress panels={foreverPanels} />
         <EraSwitcher eras={dataset.eras} selectedEra={selectedEra} onChange={handleEraChange} />
 
         <div className="mt-10 min-w-0">
           <PosterSection
             eyebrow="01 / frequency field"
             title="Frequency field"
+            intro="Four written forms of forever, tracked across three centuries of English print. The curve does not explain itself - but it is the starting point."
           >
             <FrequencyTimeline
               series={dataset.frequency}
@@ -590,12 +616,15 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           </PosterSection>
 
           <NarrativeBridge
-            children="Frequency gives the surface trace: which form rises, falls, or persists in print; the next layer asks what kinds of historical pressure gather around that curve."
+            from="01"
+            to="02"
+            children="Three hundred years of print compressed into a line. What it cannot tell you is why the line moves - what was being written, read, and repeated when forever rose or fell. The next layer asks that question."
           />
 
           <PosterSection
             eyebrow="02 / historical influence field"
             title="Historical influence field"
+            intro="Six cultural forces mapped against the same curve: devotional print, romantic literature, memory and loss, media culture. None caused the frequency alone."
           >
             <VariantDriftField
               frequency={dataset.frequency}
@@ -610,12 +639,15 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           </PosterSection>
 
           <NarrativeBridge
-            children="The influence field treats the curve as a cultural trace, drawing in devotional print, literary permanence, memory, media, and modern open-news context before the next map moves closer to the word's immediate attachments."
+            from="02"
+            to="03"
+            children="Cultural pressure explains the broad shape of the curve. But pressure is not the same as usage. The constellation moves from the historical forces into the actual texts - the phrases forever was anchored to, the words it consistently attracted, the contexts it kept returning to."
           />
 
           <PosterSection
             eyebrow="03 / relational constellation"
             title="Relational constellation"
+            intro="Phrases, collocates, and context anchors pulled from 200 years of Gutenberg texts and a 2024-2026 news snapshot. What forever tends to sit next to."
           >
             <RelationalConstellation
               phrases={dataset.phrases}
@@ -633,12 +665,15 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           </PosterSection>
 
           <NarrativeBridge
-            children="The constellation turns forever into a network of repeated attachments, where forms, phrases, collocates, and contextual anchors begin to cluster without pretending to fix the word's meaning."
+            from="03"
+            to="04"
+            children="Forty-eight text snippets and twenty-one collocate patterns give the word its companions. The signal field takes that material one step further - abstracting the attachments into six semantic categories and asking which ones have archival evidence, which have a modern equivalent, and where the record simply goes silent."
           />
 
           <PosterSection
             eyebrow="04 / context signal field"
             title="Context signal field"
+            intro="Six semantic categories compressed into one field. Archival signal and modern snapshot held together - with the gap between them kept visible."
           >
             <ContextSignalField
               ledger={dataset.ledger}
@@ -655,12 +690,15 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           </PosterSection>
 
           <NarrativeBridge
-            children="The sphere compresses available context into one abstract semantic object, holding archival signals, modern snapshot signals, and a visible gap where comparable evidence is still missing."
+            from="04"
+            to="05"
+            children="The signal field shows the distribution. The archive shows the sources it was built from - and the gaps it was built around. Every mark in the panels above is traceable here: the snippet it came from, the corpus that produced it, the confidence level it was assigned."
           />
 
           <PosterSection
             eyebrow="05 / evidence archive"
             title="Evidence archive"
+            intro="The actual source material: prehistory attestations from the 14th century, Ngram marks, Gutenberg snippets, and Wikinews captures. Every claim traceable."
           >
             <EvidenceArchive
               snippets={dataset.snippets}
@@ -685,7 +723,9 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           </PosterSection>
 
           <NarrativeBridge
-            children="Taken together, these panels do not define forever once and for all; they show what the available data allows us to see across form, frequency, context, evidence, and absence."
+            from="05"
+            to="end"
+            children="Permanence is what forever promises. What the data shows is something more unstable: a word that meant eternity in devotional contexts, loyalty in literary vows, loss in elegies, and excess in everyday speech - across the same three centuries, sometimes in the same decade. Not a stable definition. A record of use."
           />
 
           <div className="border-t border-ink/80 pb-12 pt-0">

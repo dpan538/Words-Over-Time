@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "word": "depression",
+    "version": "1.0.0",
+    "generated_at": "2026-05-08",
+    "strength_semantics": "strength_score represents curation confidence and semantic transmission prominence, not causal effect size.",
+    "notes": "Curated relation layer for Chart 02 semantic transmission machine."
+  },
+  "relation_taxonomy": [
+    "one_to_one",
+    "one_to_many",
+    "many_to_one",
+    "many_to_many",
+    "feedback_loop"
+  ],
+  "node_keys": [
+    "depression",
+    "clinical_psychiatry",
+    "diagnosis",
+    "clinical_vocabulary_mesh_indexing",
+    "symptoms",
+    "psychology_behavior",
+    "treatment_medication",
+    "therapy_counseling",
+    "public_health_records",
+    "phq9_screening",
+    "prevalence",
+    "functional_difficulty",
+    "media_public_discourse",
+    "mental_health_awareness",
+    "stigma",
+    "self_description",
+    "disclosure_secrecy",
+    "help_seeking",
+    "policy_social_response"
+  ],
+  "evidence_registry": [
+    {
+      "id": "WHO_2025",
+      "label": "WHO depression fact sheet",
+      "source_kind": "official_fact_sheet",
+      "authority_tier": "official",
+      "citation_note": "Supports symptoms, treatment, stigma, social functioning, and health-system response."
+    },
+    {
+      "id": "NIMH_DEP",
+      "label": "NIMH depression publication",
+      "source_kind": "official_fact_sheet",
+      "authority_tier": "official",
+      "citation_note": "Supports symptoms, diagnosis, daily functioning, treatment, and help-seeking."
+    },
+    {
+      "id": "CDC_527",
+      "label": "CDC/NCHS Data Brief 527",
+      "source_kind": "official_statistics",
+      "authority_tier": "official",
+      "citation_note": "Supports PHQ-based prevalence, functional difficulty, and treatment uptake."
+    },
+    {
+      "id": "CDC_DPQ",
+      "label": "NHANES depression screener / DPQ documentation",
+      "source_kind": "survey_codebook",
+      "authority_tier": "official",
+      "citation_note": "Supports PHQ-9 screening and functional-difficulty measurement."
+    },
+    {
+      "id": "MESH_DEP",
+      "label": "NLM MeSH Depression",
+      "source_kind": "controlled_vocabulary",
+      "authority_tier": "official",
+      "citation_note": "Supports depression as an affective/emotional vocabulary entry."
+    },
+    {
+      "id": "MESH_DD",
+      "label": "NLM MeSH Depressive Disorder",
+      "source_kind": "controlled_vocabulary",
+      "authority_tier": "official",
+      "citation_note": "Supports depressive disorder as a mood-disorder classification."
+    },
+    {
+      "id": "MESH_MDD",
+      "label": "NLM MeSH Major Depressive Disorder",
+      "source_kind": "controlled_vocabulary",
+      "authority_tier": "official",
+      "citation_note": "Supports major depressive disorder, entry terms, qualifiers, and indexing."
+    },
+    {
+      "id": "CLEMENT_2015",
+      "label": "Clement et al. systematic review on stigma and help-seeking",
+      "source_kind": "systematic_review",
+      "authority_tier": "systematic_review",
+      "citation_note": "Supports stigma as a drag force on help-seeking."
+    },
+    {
+      "id": "GULLIVER_2010",
+      "label": "Gulliver et al. review on perceived barriers and facilitators to help-seeking",
+      "source_kind": "systematic_review",
+      "authority_tier": "systematic_review",
+      "citation_note": "Supports stigma, embarrassment, poor symptom recognition, and self-reliance as barriers."
+    },
+    {
+      "id": "MCLAREN_2023",
+      "label": "Help-seeking process model for untreated depressive symptoms",
+      "source_kind": "model_study",
+      "authority_tier": "peer_reviewed",
+      "citation_note": "Supports symptoms to self-identification to intention to help-seeking behavior."
+    },
+    {
+      "id": "WHO_MEDIA_2025",
+      "label": "WHO mental health and media guidance",
+      "source_kind": "official_fact_sheet",
+      "authority_tier": "official",
+      "citation_note": "Supports media as a coupling layer for stigma, awareness, and help-seeking."
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_mesh_emotion_disorder_split",
+      "type": "one_to_many",
+      "source_nodes": ["depression"],
+      "target_nodes": ["clinical_vocabulary_mesh_indexing", "diagnosis", "self_description"],
+      "short_explanation": "Controlled vocabulary separates depression as affective description from depressive disorder and major depressive disorder as clinical classifications.",
+      "suggested_visual_treatment": "split clutch with two unequal lanes",
+      "suggested_motion_behaviour": "initial pulse divides into a softer affective channel and a firmer diagnostic channel",
+      "strength_score": 0.96,
+      "evidence_refs": ["MESH_DEP", "MESH_DD", "MESH_MDD"],
+      "directionality_hint": "branching"
+    },
+    {
+      "id": "rel_mesh_entry_term_bundle",
+      "type": "one_to_many",
+      "source_nodes": ["clinical_vocabulary_mesh_indexing"],
+      "target_nodes": ["depression", "diagnosis", "media_public_discourse"],
+      "short_explanation": "Indexing bundles entry terms, synonyms, and public labels around clinical names, mediating movement between literature retrieval, diagnosis, and everyday wording.",
+      "suggested_visual_treatment": "synonym ring with orbiting micro-cogs",
+      "suggested_motion_behaviour": "small alias gears periodically engage the main indexing gear",
+      "strength_score": 0.86,
+      "evidence_refs": ["MESH_DD", "MESH_MDD"],
+      "directionality_hint": "branching"
+    },
+    {
+      "id": "rel_mesh_qualifier_fanout",
+      "type": "one_to_many",
+      "source_nodes": ["clinical_vocabulary_mesh_indexing"],
+      "target_nodes": ["diagnosis", "treatment_medication", "therapy_counseling", "psychology_behavior", "public_health_records"],
+      "short_explanation": "Medical indexing fans outward across diagnosis, drug therapy, therapy, psychology, and epidemiology.",
+      "suggested_visual_treatment": "fan-out manifold with fine toothed belts",
+      "suggested_motion_behaviour": "steady indexing rotation distributes low-amplitude motion into five subchannels",
+      "strength_score": 0.93,
+      "evidence_refs": ["MESH_MDD"],
+      "directionality_hint": "branching"
+    },
+    {
+      "id": "rel_symptom_threshold_gate",
+      "type": "many_to_one",
+      "source_nodes": ["symptoms", "functional_difficulty"],
+      "target_nodes": ["diagnosis"],
+      "short_explanation": "Symptom clusters and impairment act as the gate through which distress becomes clinically named.",
+      "suggested_visual_treatment": "weighted collector gate",
+      "suggested_motion_behaviour": "target rotates only after multiple symptom inputs accumulate beyond threshold",
+      "strength_score": 0.9,
+      "evidence_refs": ["NIMH_DEP", "WHO_2025", "MESH_MDD"],
+      "directionality_hint": "collector"
+    },
+    {
+      "id": "rel_behavioral_expression_field",
+      "type": "many_to_many",
+      "source_nodes": ["symptoms", "psychology_behavior"],
+      "target_nodes": ["self_description", "help_seeking"],
+      "short_explanation": "Behavioral expressions shape how people recognize, describe, and respond to depressive experience.",
+      "suggested_visual_treatment": "porous coupling field",
+      "suggested_motion_behaviour": "continuous low-level exchange rather than hard gear teeth",
+      "strength_score": 0.84,
+      "evidence_refs": ["NIMH_DEP", "WHO_2025", "MCLAREN_2023"],
+      "directionality_hint": "bidirectional"
+    },
+    {
+      "id": "rel_clinical_psychiatry_care_modes",
+      "type": "one_to_many",
+      "source_nodes": ["clinical_psychiatry", "diagnosis"],
+      "target_nodes": ["treatment_medication", "therapy_counseling"],
+      "short_explanation": "Diagnosis opens multiple care pathways, including medication and counseling or therapy.",
+      "suggested_visual_treatment": "duplex drive shaft",
+      "suggested_motion_behaviour": "one clinical rotation branches into two parallel care tracks",
+      "strength_score": 0.88,
+      "evidence_refs": ["WHO_2025", "NIMH_DEP"],
+      "directionality_hint": "branching"
+    },
+    {
+      "id": "rel_screening_operationalizes_symptoms",
+      "type": "many_to_one",
+      "source_nodes": ["symptoms"],
+      "target_nodes": ["phq9_screening"],
+      "short_explanation": "PHQ-style screening translates depressive symptoms into repeated, scored questionnaire items.",
+      "suggested_visual_treatment": "measuring comb with nine teeth",
+      "suggested_motion_behaviour": "each symptom adds a small indexed tick that accumulates into a score wheel",
+      "strength_score": 0.95,
+      "evidence_refs": ["CDC_DPQ", "CDC_527"],
+      "directionality_hint": "collector"
+    },
+    {
+      "id": "rel_screening_functional_difficulty_link",
+      "type": "one_to_one",
+      "source_nodes": ["phq9_screening"],
+      "target_nodes": ["functional_difficulty"],
+      "short_explanation": "Functional difficulty is built into the screening regime rather than sitting outside it.",
+      "suggested_visual_treatment": "sidecar gauge attached to the screening gear",
+      "suggested_motion_behaviour": "every score pulse also nudges an impairment needle",
+      "strength_score": 0.94,
+      "evidence_refs": ["CDC_DPQ"],
+      "directionality_hint": "forward"
+    },
+    {
+      "id": "rel_measurement_regime_translation",
+      "type": "many_to_many",
+      "source_nodes": ["phq9_screening", "public_health_records", "diagnosis"],
+      "target_nodes": ["prevalence", "depression"],
+      "short_explanation": "Survey screening, public-health records, and diagnosis organize depression through different measurement regimes.",
+      "suggested_visual_treatment": "translator clutch between survey and clinical clusters",
+      "suggested_motion_behaviour": "intermittent ratchet converts one metric regime into another without full synchronization",
+      "strength_score": 0.9,
+      "evidence_refs": ["CDC_527", "CDC_DPQ", "NIMH_DEP"],
+      "directionality_hint": "bidirectional"
+    },
+    {
+      "id": "rel_records_to_prevalence",
+      "type": "one_to_many",
+      "source_nodes": ["public_health_records"],
+      "target_nodes": ["prevalence", "functional_difficulty", "mental_health_awareness"],
+      "short_explanation": "Population records turn screening and survey data into prevalence patterns that become visible to institutions and publics.",
+      "suggested_visual_treatment": "histogram belt feeding a larger reporting gear",
+      "suggested_motion_behaviour": "many small record pulses aggregate into periodic public-facing surges",
+      "strength_score": 0.88,
+      "evidence_refs": ["CDC_527"],
+      "directionality_hint": "branching"
+    },
+    {
+      "id": "rel_functional_difficulty_to_care_intensity",
+      "type": "many_to_one",
+      "source_nodes": ["functional_difficulty", "diagnosis"],
+      "target_nodes": ["treatment_medication", "therapy_counseling", "help_seeking"],
+      "short_explanation": "Functional difficulty mediates whether symptoms become more visible, clinically legible, and connected to care.",
+      "suggested_visual_treatment": "heavy torque amplifier",
+      "suggested_motion_behaviour": "impedance drops as impairment rises, increasing downstream motion",
+      "strength_score": 0.88,
+      "evidence_refs": ["CDC_527", "NIMH_DEP", "WHO_2025"],
+      "directionality_hint": "collector"
+    },
+    {
+      "id": "rel_awareness_literacy_bridge",
+      "type": "one_to_many",
+      "source_nodes": ["mental_health_awareness"],
+      "target_nodes": ["self_description", "help_seeking", "disclosure_secrecy"],
+      "short_explanation": "Awareness and literacy help symptoms become recognized, named, and connected to possible care.",
+      "suggested_visual_treatment": "bridge gear crossing from discourse to care",
+      "suggested_motion_behaviour": "awareness pulses first increase self-recognition, then travel outward toward disclosure and help-seeking",
+      "strength_score": 0.89,
+      "evidence_refs": ["GULLIVER_2010", "MCLAREN_2023"],
+      "directionality_hint": "branching"
+    },
+    {
+      "id": "rel_stigma_helpseeking_drag",
+      "type": "one_to_many",
+      "source_nodes": ["stigma"],
+      "target_nodes": ["help_seeking", "disclosure_secrecy", "self_description"],
+      "short_explanation": "Stigma acts as a drag force on acknowledgment, disclosure, and help-seeking.",
+      "suggested_visual_treatment": "friction brake overlay",
+      "suggested_motion_behaviour": "adds resistance, lag, and partial motion loss to outgoing care pathways",
+      "strength_score": 0.94,
+      "evidence_refs": ["CLEMENT_2015", "GULLIVER_2010", "MCLAREN_2023"],
+      "directionality_hint": "forward"
+    },
+    {
+      "id": "rel_self_description_recognition_gate",
+      "type": "many_to_one",
+      "source_nodes": ["symptoms", "psychology_behavior", "mental_health_awareness"],
+      "target_nodes": ["self_description"],
+      "short_explanation": "Symptoms do not automatically become named illness; they pass through a recognition layer.",
+      "suggested_visual_treatment": "label gate with sliding teeth",
+      "suggested_motion_behaviour": "several soft inputs must align before the self-description gear locks into place",
+      "strength_score": 0.86,
+      "evidence_refs": ["MCLAREN_2023", "NIMH_DEP", "WHO_2025"],
+      "directionality_hint": "collector"
+    },
+    {
+      "id": "rel_disclosure_support_access",
+      "type": "one_to_many",
+      "source_nodes": ["disclosure_secrecy"],
+      "target_nodes": ["help_seeking", "therapy_counseling", "policy_social_response"],
+      "short_explanation": "Disclosure conditions whether social support, formal care, and anti-stigma systems can operate.",
+      "suggested_visual_treatment": "hinged valve",
+      "suggested_motion_behaviour": "opening increases flow to support nodes; secrecy keeps the valve partly closed",
+      "strength_score": 0.88,
+      "evidence_refs": ["GULLIVER_2010", "MCLAREN_2023"],
+      "directionality_hint": "branching"
+    },
+    {
+      "id": "rel_informal_support_gatekeeping",
+      "type": "many_to_many",
+      "source_nodes": ["policy_social_response", "mental_health_awareness"],
+      "target_nodes": ["help_seeking", "disclosure_secrecy", "therapy_counseling"],
+      "short_explanation": "Family, friends, schools, public training, and social support can facilitate or inhibit movement toward formal help.",
+      "suggested_visual_treatment": "social lattice with reversible teeth",
+      "suggested_motion_behaviour": "relation can amplify or dampen depending on local state; never a simple one-way push",
+      "strength_score": 0.87,
+      "evidence_refs": ["WHO_2025", "GULLIVER_2010"],
+      "directionality_hint": "bidirectional"
+    },
+    {
+      "id": "rel_treatment_reentry_feedback",
+      "type": "feedback_loop",
+      "source_nodes": ["treatment_medication", "therapy_counseling"],
+      "target_nodes": ["help_seeking", "mental_health_awareness", "stigma"],
+      "short_explanation": "Treatment should not be a terminal sink; visible care and prior experience can re-enter awareness, stigma, and future help-seeking.",
+      "suggested_visual_treatment": "delayed return arc",
+      "suggested_motion_behaviour": "downstream care nodes send slower, damped pulses back toward recognition and access layers",
+      "strength_score": 0.8,
+      "evidence_refs": ["GULLIVER_2010", "MCLAREN_2023", "WHO_2025"],
+      "directionality_hint": "delayed_feedback"
+    },
+    {
+      "id": "rel_media_awareness_stigma_coupling",
+      "type": "many_to_many",
+      "source_nodes": ["media_public_discourse"],
+      "target_nodes": ["mental_health_awareness", "stigma"],
+      "short_explanation": "Media discourse can support awareness and help-seeking language, but can also reinforce stigma or stereotypes.",
+      "suggested_visual_treatment": "wide coupling belt with positive and negative teeth",
+      "suggested_motion_behaviour": "bidirectional oscillation whose tone changes amplitude sent to awareness versus stigma",
+      "strength_score": 0.85,
+      "evidence_refs": ["WHO_MEDIA_2025"],
+      "directionality_hint": "bidirectional"
+    },
+    {
+      "id": "rel_media_self_description_coupling",
+      "type": "one_to_many",
+      "source_nodes": ["media_public_discourse"],
+      "target_nodes": ["self_description", "disclosure_secrecy", "depression"],
+      "short_explanation": "Public discourse shapes the socially available phrases people can use to describe themselves.",
+      "suggested_visual_treatment": "discourse ribbon feeding a label wheel",
+      "suggested_motion_behaviour": "repeated public phrases leave small accumulated turns on self-description and disclosure nodes",
+      "strength_score": 0.79,
+      "evidence_refs": ["WHO_MEDIA_2025", "MCLAREN_2023"],
+      "directionality_hint": "branching"
+    },
+    {
+      "id": "rel_public_programme_disclosure_helpseeking",
+      "type": "one_to_many",
+      "source_nodes": ["policy_social_response"],
+      "target_nodes": ["mental_health_awareness", "disclosure_secrecy", "help_seeking"],
+      "short_explanation": "Public programmes and anti-stigma outreach can act as relation-makers for awareness, disclosure comfort, and help-seeking.",
+      "suggested_visual_treatment": "branching civic gearbox",
+      "suggested_motion_behaviour": "policy pulses split into outreach, disclosure comfort, and support behavior channels",
+      "strength_score": 0.83,
+      "evidence_refs": ["WHO_2025", "NIMH_DEP"],
+      "directionality_hint": "branching"
+    },
+    {
+      "id": "rel_prevalence_policy_media_feedback",
+      "type": "feedback_loop",
+      "source_nodes": ["public_health_records", "prevalence"],
+      "target_nodes": ["policy_social_response", "media_public_discourse", "mental_health_awareness"],
+      "short_explanation": "Prevalence reports recirculate into policy, public discourse, and awareness as a soft institutional feedback loop.",
+      "suggested_visual_treatment": "delayed reporting loop with public relay gear",
+      "suggested_motion_behaviour": "periodic batch release after measurement cycles; strong delay and damping",
+      "strength_score": 0.72,
+      "evidence_refs": ["CDC_527", "NIMH_DEP", "WHO_2025", "WHO_MEDIA_2025"],
+      "directionality_hint": "delayed_feedback"
+    }
+  ]
+}

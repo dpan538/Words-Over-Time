@@ -12,7 +12,7 @@ export function WordList({ words }: WordListProps) {
         <span key={word.slug}>
           <WordCard word={word} />
           {index < words.length - 1 ? (
-            <span className="mx-[0.08em] text-fire">/</span>
+            <span className="mx-[0.08em] text-ink">/</span>
           ) : null}
         </span>
       ))}

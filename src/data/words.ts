@@ -10,7 +10,8 @@ export const words: Word[] = [
   {
     label: "depression",
     slug: "depression",
-    status: "coming-soon",
+    status: "complete",
+    href: "/words/depression",
   },
   {
     label: "privacy",

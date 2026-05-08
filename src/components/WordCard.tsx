@@ -7,13 +7,15 @@ type WordCardProps = {
 
 export function WordCard({ word }: WordCardProps) {
   if (word.href) {
+    const hoverTone = word.slug === "depression" ? "hover:text-nice" : "hover:text-blaze";
+    const labelTone = word.slug === "depression" ? "text-nice" : "text-blaze";
     return (
       <Link
         href={word.href}
-        className="group relative inline-block text-blaze decoration-[0.08em] underline-offset-[0.13em] transition duration-200 hover:-translate-y-1 hover:skew-x-[-3deg] hover:text-wine hover:underline"
+        className={`group relative inline-block text-ink decoration-[0.08em] underline-offset-[0.13em] transition duration-200 hover:-translate-y-1 hover:skew-x-[-3deg] hover:underline ${hoverTone}`}
       >
         {word.label}
-        <span className="pointer-events-none absolute left-2 top-0 hidden -translate-y-[62%] text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] text-wine group-hover:block">
+        <span className={`pointer-events-none absolute left-2 top-0 hidden -translate-y-[62%] text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] group-hover:block ${labelTone}`}>
           word page
         </span>
       </Link>
@@ -21,9 +23,9 @@ export function WordCard({ word }: WordCardProps) {
   }
 
   return (
-    <span className="group relative inline-block cursor-not-allowed text-ink/62 transition duration-200 hover:-translate-y-0.5 hover:skew-x-[-2deg] hover:text-nice">
+    <span className="group relative inline-block cursor-not-allowed text-ink transition duration-200 hover:-translate-y-0.5 hover:skew-x-[-2deg] hover:text-sail">
       {word.label}
-      <span className="pointer-events-none absolute left-2 top-0 hidden -translate-y-[62%] whitespace-nowrap text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] text-nice group-hover:block">
+      <span className="pointer-events-none absolute left-2 top-0 hidden -translate-y-[62%] whitespace-nowrap text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] text-sail group-hover:block">
         coming soon
       </span>
     </span>

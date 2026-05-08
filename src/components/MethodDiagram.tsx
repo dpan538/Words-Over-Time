@@ -51,121 +51,50 @@ const layers = [
 
 export function MethodDiagram() {
   const [active, setActive] = useState(0);
-  const activeLayer = layers[active];
 
   return (
-    <>
-      <div
-        className="grid border border-ink/60"
-        onMouseLeave={() => setActive(0)}
-      >
-        {layers.map((layer, index) => {
-          const isActive = active === index;
+    <div
+      className="grid border border-ink/60"
+      onMouseLeave={() => setActive(0)}
+    >
+      {layers.map((layer, index) => {
+        const isActive = active === index;
 
-          return (
-            <button
-              key={layer.number}
-              type="button"
-              onMouseEnter={() => setActive(index)}
-              onFocus={() => setActive(index)}
-              className={`grid grid-cols-[3.5rem_1fr] items-center border-ink/35 text-left transition duration-200 ${
-                index < layers.length - 1 ? "border-b" : ""
-              } ${isActive ? "bg-white/30" : "hover:bg-white/15"}`}
-            >
-              <span className="flex items-center gap-2 border-r border-ink/35 p-3 text-sm font-black uppercase tracking-[0.12em] text-fire">
-                <span
-                  className={`h-3 w-3 border border-ink ${layer.colorClass}`}
-                />
-                {layer.number}
-              </span>
-              <span className="p-3">
-                <span className="block text-sm font-black uppercase tracking-[0.12em]">
-                  {layer.label}
-                </span>
-                <span
-                  className={`mt-1 block text-[0.72rem] font-bold leading-4 transition duration-200 ${
-                    isActive ? "text-ink/74" : "text-ink/50"
-                  }`}
-                >
-                  {layer.description}
-                </span>
-              </span>
-            </button>
-          );
-        })}
-        <p className="border-t border-ink/35 p-3 text-sm font-bold leading-5 text-ink/66">
-          Not a general search engine. Each word is selected, structured, and
-          annotated before it becomes a public entry.
-        </p>
-      </div>
-
-      <div className="relative min-h-[250px] border border-ink/60 bg-wheat p-4">
-        <div className="absolute inset-4 grid grid-cols-6 grid-rows-4 border-l border-t border-ink/18">
-          {Array.from({ length: 24 }).map((_, index) => (
-            <span key={index} className="border-b border-r border-ink/18" />
-          ))}
-        </div>
-
-        <svg
-          viewBox="0 0 420 260"
-          className="absolute inset-4 h-[calc(100%-2rem)] w-[calc(100%-2rem)]"
-          aria-hidden="true"
-        >
-          <path
-            d="M58 198 L158 132 L265 78 L344 54"
-            fill="none"
-            stroke="#050510"
-            strokeOpacity="0.5"
-            strokeWidth="2"
-          />
-          <path
-            d="M58 198 L265 78 M158 132 L344 54"
-            fill="none"
-            stroke="#A1081F"
-            strokeDasharray="6 8"
-            strokeOpacity="0.45"
-            strokeWidth="1.5"
-          />
-          <path
-            d={activeLayer.line}
-            fill="none"
-            stroke={activeLayer.stroke}
-            strokeWidth="3.2"
-            strokeLinecap="square"
-          />
-        </svg>
-
-        {layers.map((layer, index) => {
-          const isActive = active === index;
-
-          return (
-            <div
-              key={layer.shortLabel}
-              className={`absolute ${layer.top} ${layer.left} -translate-x-1/2 -translate-y-1/2 transition duration-200 ${
-                isActive ? "z-20 opacity-100" : "opacity-55"
-              }`}
-            >
+        return (
+          <button
+            key={layer.number}
+            type="button"
+            onMouseEnter={() => setActive(index)}
+            onFocus={() => setActive(index)}
+            className={`grid grid-cols-[3.5rem_1fr] items-center border-ink/35 text-left transition duration-200 ${
+              index < layers.length - 1 ? "border-b" : ""
+            } ${isActive ? "bg-white/30" : "hover:bg-white/15"}`}
+          >
+            <span className="flex items-center gap-2 border-r border-ink/35 p-3 text-sm font-black uppercase tracking-[0.12em] text-fire">
               <span
-                className={`block border-2 border-ink transition-all duration-200 ${layer.colorClass} ${
-                  isActive ? "h-7 w-7" : "h-5 w-5"
-                }`}
+                className={`h-3 w-3 border border-ink ${layer.colorClass}`}
               />
-              <p className="mt-1.5 text-[0.62rem] font-black uppercase tracking-[0.14em] text-ink">
-                {layer.number} / {layer.shortLabel}
-              </p>
-            </div>
-          );
-        })}
-
-        <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between border-t-2 border-ink pt-2">
-          <p className="text-[0.66rem] font-black uppercase tracking-[0.16em] text-fire">
-            evidence layers
-          </p>
-          <p className="max-w-[12rem] text-right text-[0.72rem] font-bold leading-4 text-ink/70">
-            {activeLayer.label}: signal, source, uncertainty.
-          </p>
-        </div>
-      </div>
-    </>
+              {layer.number}
+            </span>
+            <span className="p-3">
+              <span className="block text-sm font-black uppercase tracking-[0.12em]">
+                {layer.label}
+              </span>
+              <span
+                className={`mt-1 block text-[0.72rem] font-bold leading-4 transition duration-200 ${
+                  isActive ? "text-ink/74" : "text-ink/50"
+                }`}
+              >
+                {layer.description}
+              </span>
+            </span>
+          </button>
+        );
+      })}
+      <p className="border-t border-ink/35 p-3 text-sm font-bold leading-5 text-ink/66">
+        Not a general search engine. Each word is selected, structured, and
+        annotated before it becomes a public entry.
+      </p>
+    </div>
   );
 }

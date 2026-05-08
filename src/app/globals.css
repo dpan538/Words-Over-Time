@@ -52,6 +52,193 @@ a {
   transform: translateY(0);
 }
 
+.depression-machine-scroll {
+  touch-action: pan-x pan-y;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+}
+
+.depression-machine {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.depression-atmosphere-scroll {
+  touch-action: pan-x pan-y;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+}
+
+.depression-atmosphere {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.depression-translation-scroll {
+  touch-action: pan-x pan-y;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+}
+
+.depression-translation-map {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.depression-atmosphere-sector,
+.depression-atmosphere-marker,
+.depression-translation-path,
+.depression-translation-anchor,
+.depression-translation-satellite {
+  transition:
+    opacity 180ms ease,
+    transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .depression-atmosphere-sector,
+.scroll-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .depression-atmosphere-marker,
+.scroll-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .depression-translation-path,
+.scroll-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .depression-translation-anchor,
+.scroll-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .depression-translation-satellite {
+  opacity: 0.72;
+}
+
+.scroll-reveal.is-visible .depression-atmosphere-sector,
+.scroll-reveal.is-visible .depression-atmosphere-marker,
+.scroll-reveal.is-visible .depression-translation-anchor,
+.scroll-reveal.is-visible .depression-translation-satellite {
+  animation: depression-atmosphere-settle 560ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.scroll-reveal.is-visible .depression-translation-path {
+  animation: depression-translation-path-reveal 780ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.depression-machine-gear {
+  touch-action: none;
+  transform-box: fill-box;
+  transition: opacity 180ms ease;
+}
+
+.scroll-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .depression-machine-gear {
+  opacity: 0.72;
+}
+
+.scroll-reveal.is-visible .depression-machine-gear {
+  animation: depression-machine-settle 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.depression-machine-gear-intro {
+  animation: depression-machine-intro-wobble 1400ms ease-in-out 2 both;
+}
+
+.depression-machine-intro-ring {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: depression-machine-intro-ring 1500ms ease-out 2 both;
+}
+
+.depression-machine-feedback-pulse {
+  animation: depression-machine-feedback-pulse 880ms ease-out both;
+}
+
+@keyframes depression-machine-settle {
+  from {
+    opacity: 0.72;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes depression-machine-intro-wobble {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  22% {
+    transform: rotate(1.8deg);
+  }
+
+  48% {
+    transform: rotate(-1.35deg);
+  }
+
+  72% {
+    transform: rotate(0.72deg);
+  }
+}
+
+@keyframes depression-machine-intro-ring {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.18);
+  }
+}
+
+@keyframes depression-machine-feedback-pulse {
+  0% {
+    opacity: 0.35;
+    stroke-dashoffset: 34;
+  }
+
+  34% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.58;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes depression-atmosphere-settle {
+  from {
+    opacity: 0.72;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes depression-translation-path-reveal {
+  from {
+    opacity: 0.72;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes depression-translation-flow {
+  from {
+    stroke-dashoffset: 22;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.depression-translation-flow {
+  animation: depression-translation-flow 960ms linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -61,6 +248,20 @@ a {
   .scroll-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) {
     opacity: 1 !important;
     transform: none !important;
+    transition: none !important;
+  }
+
+  .depression-machine-gear,
+  .depression-atmosphere-sector,
+  .depression-atmosphere-marker,
+  .depression-translation-path,
+  .depression-translation-anchor,
+  .depression-translation-satellite,
+  .depression-translation-flow,
+  .depression-machine-gear-intro,
+  .depression-machine-intro-ring,
+  .depression-machine-feedback-pulse {
+    animation: none !important;
     transition: none !important;
   }
 }
