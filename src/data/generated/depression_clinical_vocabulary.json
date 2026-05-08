@@ -1,0 +1,590 @@
+{
+  "generatedAt": "2026-05-08T00:33:54.272Z",
+  "layer": "clinical vocabulary and medicalization evidence",
+  "sources": [
+    "PubMed E-utilities",
+    "PubMed Central Open Access Subset",
+    "MeSH Browser / NCBI",
+    "WHO ICD-11 Browser",
+    "APA DSM public history",
+    "NIMH",
+    "WHO"
+  ],
+  "meshDescriptors": [
+    {
+      "id": "mesh-depression",
+      "heading": "Depression",
+      "uniqueId": "D003863",
+      "branchId": "clinical",
+      "yearIntroduced": null,
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/mesh/68003863",
+      "scopeNote": "Depressive states usually of moderate intensity in contrast with major depressive disorder.",
+      "caveat": "MeSH distinguishes Depression from Depressive Disorder and Major Depressive Disorder; keep this broad state separate from diagnosis."
+    },
+    {
+      "id": "mesh-depressive-disorder",
+      "heading": "Depressive Disorder",
+      "uniqueId": "D003866",
+      "branchId": "clinical",
+      "yearIntroduced": 1981,
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/mesh/D003866",
+      "scopeNote": "An affective disorder with prominent, relatively persistent dysphoric mood or loss of interest/pleasure.",
+      "caveat": "MeSH explicitly warns not to confuse this diagnostic category with the broader Depression heading."
+    },
+    {
+      "id": "mesh-major-depressive-disorder",
+      "heading": "Major Depressive Disorder",
+      "uniqueId": "D003865",
+      "branchId": "clinical",
+      "yearIntroduced": 1981,
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/mesh/68003865",
+      "scopeNote": "A disorder involving five or more specified symptoms over a two-week period, including depressed mood or loss of interest/pleasure.",
+      "caveat": "Use as a modern diagnostic node, not as a label for older melancholy or low-spirits evidence."
+    }
+  ],
+  "pubmed": [
+    {
+      "id": "pubmed-depression-mesh",
+      "label": "Depression [MeSH]",
+      "query": "\"Depression\"[MeSH Terms]",
+      "branchId": "clinical",
+      "totalCount": 181262,
+      "countsByPeriod": [
+        {
+          "periodId": "pre-1950",
+          "startYear": 1800,
+          "endYear": 1949,
+          "count": 137
+        },
+        {
+          "periodId": "1950-1979",
+          "startYear": 1950,
+          "endYear": 1979,
+          "count": 15548
+        },
+        {
+          "periodId": "1980-1999",
+          "startYear": 1980,
+          "endYear": 1999,
+          "count": 14603
+        },
+        {
+          "periodId": "2000-2026",
+          "startYear": 2000,
+          "endYear": 2026,
+          "count": 150974
+        }
+      ],
+      "samples": [
+        {
+          "uid": "42096646",
+          "title": "Effectiveness of a Telehealth Intervention on Functional Status, Anxiety, Depression, and Rehospitalization Among Older Adults Undergoing Coronary Artery Bypass Grafting: Randomized Controlled Trial.",
+          "pubdate": "2026 May 7",
+          "source": "JMIR Cardio",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42096646/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42096416",
+          "title": "The mediating role of insomnia symptoms in the association between perceived neighborhood danger and depressive symptoms in later life.",
+          "pubdate": "2026",
+          "source": "PLoS One",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42096416/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42096203",
+          "title": "Cognitive Behavioral Therapy for Individuals With Low Literacy and Perinatal Depression: A Randomized Clinical Trial.",
+          "pubdate": "2026 May 1",
+          "source": "JAMA Netw Open",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42096203/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42095952",
+          "title": "Incisional hernia and the risk of incident depression: a population-based propensity score-matched cohort study.",
+          "pubdate": "2026 May 7",
+          "source": "Hernia",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42095952/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42094900",
+          "title": "Digital and offline social participation configurations and depressive symptoms and life satisfaction among older adults in China.",
+          "pubdate": "2026",
+          "source": "Front Public Health",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42094900/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        }
+      ],
+      "caveat": "PubMed counts are biomedical bibliography counts, not general-language frequency or condition prevalence."
+    },
+    {
+      "id": "pubmed-depressive-disorder-mesh",
+      "label": "Depressive Disorder [MeSH]",
+      "query": "\"Depressive Disorder\"[MeSH Terms]",
+      "branchId": "clinical",
+      "totalCount": 132590,
+      "countsByPeriod": [
+        {
+          "periodId": "pre-1950",
+          "startYear": 1800,
+          "endYear": 1949,
+          "count": 133
+        },
+        {
+          "periodId": "1950-1979",
+          "startYear": 1950,
+          "endYear": 1979,
+          "count": 3595
+        },
+        {
+          "periodId": "1980-1999",
+          "startYear": 1980,
+          "endYear": 1999,
+          "count": 32972
+        },
+        {
+          "periodId": "2000-2026",
+          "startYear": 2000,
+          "endYear": 2026,
+          "count": 95890
+        }
+      ],
+      "samples": [
+        {
+          "uid": "42096203",
+          "title": "Cognitive Behavioral Therapy for Individuals With Low Literacy and Perinatal Depression: A Randomized Clinical Trial.",
+          "pubdate": "2026 May 1",
+          "source": "JAMA Netw Open",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42096203/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42096054",
+          "title": "Women's perceived partner support during the perinatal and early childhood period: changes over time for women with and without Major Depressive Disorder.",
+          "pubdate": "2026 May 7",
+          "source": "Arch Womens Ment Health",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42096054/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42095723",
+          "title": "Commentary on the Risks of Prescription GLP-1 Agonists in Patients on Psychiatric Medications.",
+          "pubdate": "2026 May 1",
+          "source": "J Psychiatr Pract",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42095723/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42095721",
+          "title": "A Case of GLP-1 Receptor Agonist-Induced Dysphoria and Aggression in a Patient With Underlying Major Depressive Disorder.",
+          "pubdate": "2026 May 1",
+          "source": "J Psychiatr Pract",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42095721/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42095692",
+          "title": "Cognitive Behavioral Therapy Following Esketamine for Major Depression and Suicidal Ideation for Relapse Prevention: The CBT-ENDURE Randomized Trial.",
+          "pubdate": "2026 May 4",
+          "source": "J Clin Psychiatry",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42095692/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        }
+      ],
+      "caveat": "PubMed counts are biomedical bibliography counts, not general-language frequency or condition prevalence."
+    },
+    {
+      "id": "pubmed-major-depressive-disorder-mesh",
+      "label": "Major Depressive Disorder [MeSH]",
+      "query": "\"Major Depressive Disorder\"[MeSH Terms]",
+      "branchId": "clinical",
+      "totalCount": 45072,
+      "countsByPeriod": [
+        {
+          "periodId": "pre-1950",
+          "startYear": 1800,
+          "endYear": 1949,
+          "count": 14
+        },
+        {
+          "periodId": "1950-1979",
+          "startYear": 1950,
+          "endYear": 1979,
+          "count": 841
+        },
+        {
+          "periodId": "1980-1999",
+          "startYear": 1980,
+          "endYear": 1999,
+          "count": 656
+        },
+        {
+          "periodId": "2000-2026",
+          "startYear": 2000,
+          "endYear": 2026,
+          "count": 43561
+        }
+      ],
+      "samples": [
+        {
+          "uid": "42096054",
+          "title": "Women's perceived partner support during the perinatal and early childhood period: changes over time for women with and without Major Depressive Disorder.",
+          "pubdate": "2026 May 7",
+          "source": "Arch Womens Ment Health",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42096054/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42095723",
+          "title": "Commentary on the Risks of Prescription GLP-1 Agonists in Patients on Psychiatric Medications.",
+          "pubdate": "2026 May 1",
+          "source": "J Psychiatr Pract",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42095723/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42095721",
+          "title": "A Case of GLP-1 Receptor Agonist-Induced Dysphoria and Aggression in a Patient With Underlying Major Depressive Disorder.",
+          "pubdate": "2026 May 1",
+          "source": "J Psychiatr Pract",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42095721/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42095692",
+          "title": "Cognitive Behavioral Therapy Following Esketamine for Major Depression and Suicidal Ideation for Relapse Prevention: The CBT-ENDURE Randomized Trial.",
+          "pubdate": "2026 May 4",
+          "source": "J Clin Psychiatry",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42095692/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42090328",
+          "title": "Comparing Usual Care With Coordinated Clinician and Patient Use of Mobile Technology in Primary Care for Patients With Major Depressive Disorder: Practice-Based Pilot Study.",
+          "pubdate": "2026 May 6",
+          "source": "JMIR Form Res",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42090328/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        }
+      ],
+      "caveat": "PubMed counts are biomedical bibliography counts, not general-language frequency or condition prevalence."
+    },
+    {
+      "id": "pubmed-clinical-depression-text",
+      "label": "clinical depression",
+      "query": "\"clinical depression\"",
+      "branchId": "modern_public_discourse",
+      "totalCount": 3182,
+      "countsByPeriod": [
+        {
+          "periodId": "pre-1950",
+          "startYear": 1800,
+          "endYear": 1949,
+          "count": 0
+        },
+        {
+          "periodId": "1950-1979",
+          "startYear": 1950,
+          "endYear": 1979,
+          "count": 32
+        },
+        {
+          "periodId": "1980-1999",
+          "startYear": 1980,
+          "endYear": 1999,
+          "count": 400
+        },
+        {
+          "periodId": "2000-2026",
+          "startYear": 2000,
+          "endYear": 2026,
+          "count": 2750
+        }
+      ],
+      "samples": [
+        {
+          "uid": "42090348",
+          "title": "Depressive symptoms in obese individuals accompanied by greater basal inflammation but lower monocyte inflammatory responses to LPS: a quest to uncover immunologic links between depression and obesity.",
+          "pubdate": "2026 May 6",
+          "source": "Neuroimmunomodulation",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42090348/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42089400",
+          "title": "PTSD and CPTSD amongst parents subject to child protection court proceedings: observed rates and associated demographic and clinical covariates.",
+          "pubdate": "2026 Dec",
+          "source": "Eur J Psychotraumatol",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42089400/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42071224",
+          "title": "Structured Online Support to Inform and Assist Antidepressant Deprescribing in Primary Care: Protocol for a Pragmatic, Randomized Controlled Trial (The WiserAD Trial).",
+          "pubdate": "2026 Apr 27",
+          "source": "JMIR Res Protoc",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42071224/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42067863",
+          "title": "Stress and resilience among first-year medical students: a cross-sectional application of the medical student stress scale.",
+          "pubdate": "2026 May 2",
+          "source": "BMC Med Educ",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42067863/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42056591",
+          "title": "Functional Breakdown of Temporoparietal Junction Interaction in High-depression Individuals: Evidence from Multi-Metric Connectomics.",
+          "pubdate": "2026 Apr 30",
+          "source": "Brain Struct Funct",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42056591/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        }
+      ],
+      "caveat": "PubMed counts are biomedical bibliography counts, not general-language frequency or condition prevalence."
+    },
+    {
+      "id": "pubmed-major-depression-text",
+      "label": "major depression",
+      "query": "\"major depression\"",
+      "branchId": "clinical",
+      "totalCount": 29144,
+      "countsByPeriod": [
+        {
+          "periodId": "pre-1950",
+          "startYear": 1800,
+          "endYear": 1949,
+          "count": 0
+        },
+        {
+          "periodId": "1950-1979",
+          "startYear": 1950,
+          "endYear": 1979,
+          "count": 1
+        },
+        {
+          "periodId": "1980-1999",
+          "startYear": 1980,
+          "endYear": 1999,
+          "count": 5671
+        },
+        {
+          "periodId": "2000-2026",
+          "startYear": 2000,
+          "endYear": 2026,
+          "count": 23473
+        }
+      ],
+      "samples": [
+        {
+          "uid": "42095717",
+          "title": "Developments in Clinical Psychopharmacology From 1975 Through 2000: A Personal Perspective.",
+          "pubdate": "2026 May 1",
+          "source": "J Psychiatr Pract",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42095717/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42095692",
+          "title": "Cognitive Behavioral Therapy Following Esketamine for Major Depression and Suicidal Ideation for Relapse Prevention: The CBT-ENDURE Randomized Trial.",
+          "pubdate": "2026 May 4",
+          "source": "J Clin Psychiatry",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42095692/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42095392",
+          "title": "The Mediating Role of Neurotic Personality Traits in the Relationship Between Height and Intelligence: Evidence From Mendelian Randomization and Mediation Analyses.",
+          "pubdate": "2026 May 7",
+          "source": "Twin Res Hum Genet",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42095392/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42090982",
+          "title": "Reduced gut microbiome alpha diversity associates with depressive symptom severity and somatic symptom burden in major depression.",
+          "pubdate": "2026 Apr 22",
+          "source": "J Psychiatr Res",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42090982/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42090064",
+          "title": "Poor mood after oral contraceptive use is associated with increased vulnerability to peripartum depression, premenstrual dysphoric disorder, and higher genetic risk for depression.",
+          "pubdate": "2026 May 6",
+          "source": "Arch Womens Ment Health",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42090064/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        }
+      ],
+      "caveat": "PubMed counts are biomedical bibliography counts, not general-language frequency or condition prevalence."
+    },
+    {
+      "id": "pubmed-melancholia-history",
+      "label": "melancholia history",
+      "query": "melancholia history",
+      "branchId": "melancholy_melancholia",
+      "totalCount": 14803,
+      "countsByPeriod": [
+        {
+          "periodId": "pre-1950",
+          "startYear": 1800,
+          "endYear": 1949,
+          "count": 1
+        },
+        {
+          "periodId": "1950-1979",
+          "startYear": 1950,
+          "endYear": 1979,
+          "count": 154
+        },
+        {
+          "periodId": "1980-1999",
+          "startYear": 1980,
+          "endYear": 1999,
+          "count": 2694
+        },
+        {
+          "periodId": "2000-2026",
+          "startYear": 2000,
+          "endYear": 2026,
+          "count": 11954
+        }
+      ],
+      "samples": [
+        {
+          "uid": "42095857",
+          "title": "Transactional relations between attentional biases for affective stimuli and depressive symptoms in offspring of mothers with and without major depressive disorder.",
+          "pubdate": "2026 May 7",
+          "source": "J Psychopathol Clin Sci",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42095857/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42094042",
+          "title": "Impulsivity is associated with suicide attempt in mood disorders with complex moderation by diagnosis and subjective social status.",
+          "pubdate": "2026 Apr 28",
+          "source": "Res Sq",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42094042/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42092437",
+          "title": "Structural Brain Network Alterations in Relation to Treatment and Illness Severity in Bipolar Disorder.",
+          "pubdate": "2026 May 4",
+          "source": "Biol Psychiatry",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42092437/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42092398",
+          "title": "The mediating role of suicidal ideation in the relationship between childhood sexual abuse and suicide attempts among Chinese patients with major depressive disorder.",
+          "pubdate": "2026 May 4",
+          "source": "J Affect Disord",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42092398/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        },
+        {
+          "uid": "42091425",
+          "title": "Cognition and future depression: associations with risk in those with and without a history of depression.",
+          "pubdate": "2026 May 6",
+          "source": "BMJ Ment Health",
+          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42091425/",
+          "evidenceType": "pubmed_metadata",
+          "rightsState": "metadata only; article rights vary"
+        }
+      ],
+      "caveat": "PubMed counts are biomedical bibliography counts, not general-language frequency or condition prevalence."
+    }
+  ],
+  "institutionalDefinitions": [
+    {
+      "id": "nimh-depression",
+      "source": "National Institute of Mental Health",
+      "sourceUrl": "https://www.nimh.nih.gov/health/publications/depression",
+      "branchId": "modern_public_discourse",
+      "year": 2026,
+      "summary": "NIMH frames depression as different from ordinary sadness or low mood and includes major depression, major depressive disorder, and clinical depression as public-facing labels.",
+      "rightsState": "public US government health information",
+      "confidence": "high"
+    },
+    {
+      "id": "who-depressive-disorder",
+      "source": "World Health Organization",
+      "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/depression",
+      "branchId": "modern_public_discourse",
+      "year": 2025,
+      "summary": "WHO frames depressive disorder as involving depressed mood or loss of pleasure/interest for long periods, distinct from regular mood changes.",
+      "rightsState": "WHO web content; use as cited reference, not bulk corpus",
+      "confidence": "high"
+    },
+    {
+      "id": "pmc-open-access-subset",
+      "source": "PubMed Central Open Access Subset",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/tools/openftlist",
+      "branchId": "clinical",
+      "year": 2026,
+      "summary": "PMC OA can provide reusable full-text medical articles where licenses allow reuse; not all PMC articles are reusable.",
+      "rightsState": "license varies by article",
+      "confidence": "high"
+    },
+    {
+      "id": "icd-11-browser-depressive-disorders",
+      "source": "WHO ICD-11 Browser",
+      "sourceUrl": "https://icd.who.int/browse/2025-01/mms/en",
+      "branchId": "clinical",
+      "year": 2025,
+      "summary": "ICD-11 is a current diagnostic classification reference. It is useful for modern clinical branch labels, not for historical frequency or older affective evidence.",
+      "rightsState": "reference metadata only; ICD content should be cited, not bulk-copied",
+      "confidence": "medium"
+    },
+    {
+      "id": "apa-dsm-history",
+      "source": "American Psychiatric Association DSM history",
+      "sourceUrl": "https://www.psychiatry.org/psychiatrists/practice/dsm/history-of-the-dsm",
+      "branchId": "clinical",
+      "year": 2026,
+      "summary": "DSM public history is a classification-history reference for medicalization and diagnostic vocabulary shifts. It is not a reusable corpus source.",
+      "rightsState": "reference metadata only; APA DSM material is copyright-restricted",
+      "confidence": "medium"
+    }
+  ],
+  "caveats": [
+    "Clinical labels are branch-specific and should not be projected backward onto ordinary sadness, low spirits, or melancholy.",
+    "PubMed and MeSH are medical/institutional layers, not general public usage corpora.",
+    "PMC OA is feasible for future full-text extraction, but article-level license checks remain necessary."
+  ]
+}

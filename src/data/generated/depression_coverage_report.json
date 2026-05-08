@@ -1,0 +1,412 @@
+{
+  "generatedAt": "2026-05-08T00:33:54.685Z",
+  "word": "depression",
+  "status": "data-foundation-expanded",
+  "uiBuilt": false,
+  "layerCoverage": {
+    "prehistoryAttestation": {
+      "source": "Lexical-source and source-audit records",
+      "coverage": {
+        "earliestApproximateYear": 1300,
+        "latestApproximateYear": 1930,
+        "comparableCorpusAvailable": false,
+        "note": "This layer stores lexical-source and source-audit records. It separates sense-history labels from corpus hits and scanned/digitized occurrences."
+      },
+      "recordCount": 10,
+      "visualUse": "Sense prehistory and branch anchors only; not comparable frequency.",
+      "limitation": "Requires OED/historical-dictionary verification before public first-attestation claims."
+    },
+    "longSpanFrequency": {
+      "source": "Google Books Ngram Viewer",
+      "coverage": {
+        "startYear": 1500,
+        "endYear": 2022
+      },
+      "seriesCount": 19,
+      "usableSeries": 19,
+      "visualUse": "Long-span frequency comparison and public surface trace.",
+      "limitation": "Frequency-only; no sense classification and sparse early-modern years."
+    },
+    "archivalContext": {
+      "source": "Project Gutenberg seed",
+      "coverage": {
+        "startYear": 1621,
+        "endYear": 1930,
+        "sourceCount": 22,
+        "comparableToNgram": false
+      },
+      "snippetCount": 266,
+      "phraseCount": 6,
+      "collocateCount": 80,
+      "visualUse": "Display-safe snippets and archival phrase/collocate evidence.",
+      "limitation": "Public-domain seed corpus, not balanced historical language."
+    },
+    "modernContext": {
+      "source": "Wikinews + Wikipedia open snapshot",
+      "coverage": {
+        "startYear": 2012,
+        "endYear": 2026,
+        "sourceType": "open news search snippets plus current reference extracts",
+        "comparableToHistoricalCorpus": false
+      },
+      "snippetCount": 46,
+      "phraseCount": 7,
+      "collocateCount": 60,
+      "visualUse": "Modern public-discourse anchors only.",
+      "limitation": "Open snapshot, not a comparable 1930-2026 corpus."
+    },
+    "corpusControls": {
+      "source": "HathiTrust / Bookworm / COHA / EarlyPrint investigation",
+      "controlCount": 5,
+      "integratedCount": 1,
+      "statuses": [
+        {
+          "id": "google_ngram",
+          "name": "Google Books Ngram Viewer",
+          "status": "integrated",
+          "coverage": "1500-2022 in current generated frequency file",
+          "limitation": "Frequency only; no snippet context, no sense labels, and early years can be sparse or OCR-sensitive."
+        },
+        {
+          "id": "htrc_extracted_features_2_5",
+          "name": "HathiTrust Research Center Extracted Features 2.5",
+          "status": "investigated_feasible_not_ingested",
+          "coverage": "18.7 million HathiTrust volumes in the April 2025 snapshot",
+          "limitation": "Operationally heavy. Best next step is targeted subset extraction or Bookworm-style aggregate access, not full download inside this prototype."
+        },
+        {
+          "id": "hathitrust_bookworm",
+          "name": "HathiTrust + Bookworm",
+          "status": "investigated_feasible_not_ingested",
+          "coverage": "documentation describes trends across 13.7 million HathiTrust works",
+          "limitation": "Best suited to single-token trend checks. Phrases and sense branches still require separate context/evidence review."
+        },
+        {
+          "id": "coha",
+          "name": "Corpus of Historical American English",
+          "status": "investigated_restricted_not_ingested",
+          "coverage": "1820s-2010s; 475+ million words",
+          "limitation": "Not integrated because local bulk data is not available in this workspace. Strongly recommended before public clinical/economic claims."
+        },
+        {
+          "id": "earlyprint_eebo_tcp",
+          "name": "EarlyPrint / EEBO-TCP",
+          "status": "investigated_feasible_not_ingested",
+          "coverage": "1473-1700 early English print; EarlyPrint Lab describes 60,000+ documents and about 1.65B words",
+          "limitation": "Not a quick API fetch. Needs a separate parser/search workflow and manual review for spelling/typography/OCR issues."
+        }
+      ],
+      "visualUse": "Future validation/control layer.",
+      "limitation": "Investigated in this pass; not yet ingested as comparable corpus data."
+    },
+    "clinicalVocabulary": {
+      "source": "PubMed / PMC OA / MeSH / NIMH / WHO",
+      "meshDescriptorCount": 3,
+      "pubmedQueryCount": 6,
+      "pubmedTotals": [
+        {
+          "id": "pubmed-depression-mesh",
+          "totalCount": 181262
+        },
+        {
+          "id": "pubmed-depressive-disorder-mesh",
+          "totalCount": 132590
+        },
+        {
+          "id": "pubmed-major-depressive-disorder-mesh",
+          "totalCount": 45072
+        },
+        {
+          "id": "pubmed-clinical-depression-text",
+          "totalCount": 3182
+        },
+        {
+          "id": "pubmed-major-depression-text",
+          "totalCount": 29144
+        },
+        {
+          "id": "pubmed-melancholia-history",
+          "totalCount": 14803
+        }
+      ],
+      "institutionalDefinitionCount": 5,
+      "visualUse": "Clinical vocabulary, medicalization, and modern public-health anchors.",
+      "limitation": "Bibliographic/institutional layer; not a general historical usage corpus or prevalence measure."
+    },
+    "economicContext": {
+      "source": "Chronicling America / NBER / FRED / FRASER investigation",
+      "chroniclingQueryCount": 6,
+      "chroniclingSampleCount": 100,
+      "nberMarkerCount": 6,
+      "fredSeries": [
+        {
+          "id": "UNRATE",
+          "status": "integrated_public_csv",
+          "observationCount": 939
+        },
+        {
+          "id": "INDPRO",
+          "status": "integrated_public_csv",
+          "observationCount": 1287
+        },
+        {
+          "id": "GDPC1",
+          "status": "integrated_public_csv",
+          "observationCount": 317
+        }
+      ],
+      "fraserStatus": "investigated_api_key_required_not_ingested",
+      "visualUse": "Economic branch context and event scaffolding.",
+      "limitation": "Chronicling America counts are loc.gov q search-result counts, not phrase-frequency measurements; FRASER not ingested."
+    },
+    "normalizedEvidence": {
+      "source": "Unified evidence schema",
+      "evidenceCount": 738,
+      "coverage": {
+        "earliestYear": 1300,
+        "latestYear": 2026
+      },
+      "byLayer": {
+        "attestation": 10,
+        "archival_context": 586,
+        "economic_context": 54,
+        "clinical_vocabulary": 8,
+        "modern_snapshot": 56,
+        "clinical_bibliography": 24
+      },
+      "byBranch": {
+        "melancholy_melancholia": 189,
+        "astronomical": 2,
+        "emotional": 53,
+        "clinical": 205,
+        "geographic": 77,
+        "physical": 111,
+        "economic": 66,
+        "meteorological": 9,
+        "modern_public_discourse": 26
+      },
+      "visualUse": "Single evidence spine for future depression visuals.",
+      "limitation": "Branch tags are editorial and confidence-aware; human review still required before public claims."
+    }
+  },
+  "semanticBranchIds": [
+    "physical",
+    "geographic",
+    "meteorological",
+    "astronomical",
+    "emotional",
+    "melancholy_melancholia",
+    "clinical",
+    "economic",
+    "modern_public_discourse"
+  ],
+  "relatedTermPolicy": {
+    "rule": "Related mood terms, clinical labels, economic labels, and technical terms stay separate.",
+    "visibleCandidates": [
+      {
+        "term": "depression",
+        "branchIds": [
+          "emotional",
+          "clinical",
+          "economic",
+          "physical",
+          "geographic",
+          "meteorological",
+          "astronomical"
+        ],
+        "displayRole": "core shared form",
+        "synonymStatus": "target word"
+      },
+      {
+        "term": "melancholy",
+        "branchIds": [
+          "melancholy_melancholia",
+          "emotional"
+        ],
+        "displayRole": "historical neighbor",
+        "synonymStatus": "not exact synonym"
+      },
+      {
+        "term": "melancholia",
+        "branchIds": [
+          "melancholy_melancholia",
+          "clinical"
+        ],
+        "displayRole": "historical medical neighbor",
+        "synonymStatus": "not exact synonym"
+      },
+      {
+        "term": "low spirits",
+        "branchIds": [
+          "emotional"
+        ],
+        "displayRole": "historical affective paraphrase",
+        "synonymStatus": "close historical paraphrase"
+      },
+      {
+        "term": "dejection",
+        "branchIds": [
+          "emotional"
+        ],
+        "displayRole": "historical affective neighbor",
+        "synonymStatus": "related mood term"
+      },
+      {
+        "term": "sadness",
+        "branchIds": [
+          "emotional"
+        ],
+        "displayRole": "research baseline",
+        "synonymStatus": "broad mood term"
+      },
+      {
+        "term": "despair",
+        "branchIds": [
+          "emotional"
+        ],
+        "displayRole": "research baseline",
+        "synonymStatus": "stronger mood term"
+      },
+      {
+        "term": "gloom",
+        "branchIds": [
+          "emotional",
+          "melancholy_melancholia"
+        ],
+        "displayRole": "research baseline",
+        "synonymStatus": "tonal mood term"
+      },
+      {
+        "term": "anxiety",
+        "branchIds": [
+          "modern_public_discourse"
+        ],
+        "displayRole": "modern discourse neighbor",
+        "synonymStatus": "adjacent condition, not synonym"
+      },
+      {
+        "term": "clinical depression",
+        "branchIds": [
+          "clinical",
+          "modern_public_discourse"
+        ],
+        "displayRole": "public bridge clinical label",
+        "synonymStatus": "clinical label"
+      },
+      {
+        "term": "major depression",
+        "branchIds": [
+          "clinical"
+        ],
+        "displayRole": "clinical label",
+        "synonymStatus": "clinical label"
+      },
+      {
+        "term": "major depressive disorder",
+        "branchIds": [
+          "clinical"
+        ],
+        "displayRole": "diagnostic label",
+        "synonymStatus": "diagnostic label"
+      },
+      {
+        "term": "depressive disorder",
+        "branchIds": [
+          "clinical"
+        ],
+        "displayRole": "diagnostic family label",
+        "synonymStatus": "diagnostic label"
+      },
+      {
+        "term": "economic depression",
+        "branchIds": [
+          "economic"
+        ],
+        "displayRole": "economic branch phrase",
+        "synonymStatus": "separate sense branch"
+      },
+      {
+        "term": "Great Depression",
+        "branchIds": [
+          "economic"
+        ],
+        "displayRole": "named historical event",
+        "synonymStatus": "proper-name economic event"
+      },
+      {
+        "term": "business depression",
+        "branchIds": [
+          "economic"
+        ],
+        "displayRole": "economic branch phrase",
+        "synonymStatus": "separate sense branch"
+      },
+      {
+        "term": "financial depression",
+        "branchIds": [
+          "economic"
+        ],
+        "displayRole": "economic branch phrase",
+        "synonymStatus": "separate sense branch"
+      },
+      {
+        "term": "topographical depression",
+        "branchIds": [
+          "geographic"
+        ],
+        "displayRole": "technical branch phrase",
+        "synonymStatus": "separate sense branch"
+      },
+      {
+        "term": "geological depression",
+        "branchIds": [
+          "geographic"
+        ],
+        "displayRole": "technical branch phrase",
+        "synonymStatus": "separate sense branch"
+      },
+      {
+        "term": "tropical depression",
+        "branchIds": [
+          "meteorological"
+        ],
+        "displayRole": "weather branch phrase",
+        "synonymStatus": "separate sense branch"
+      }
+    ]
+  },
+  "visualReadiness": [
+    {
+      "visual": "Frequency field",
+      "readiness": "ready for data prototype",
+      "reason": "Long-span Ngram series exist for the target and related terms, with sparse-term audit metadata."
+    },
+    {
+      "visual": "Historical influence field",
+      "readiness": "partially ready",
+      "reason": "Lexical dates, NBER/FRED economic context, and clinical vocabulary anchors exist; HathiTrust/COHA controls would improve confidence."
+    },
+    {
+      "visual": "Relational constellation",
+      "readiness": "partially ready",
+      "reason": "Archival and modern snippets/phrases/collocates exist, but branch-sensitive human review is still needed."
+    },
+    {
+      "visual": "Semantic branching atlas",
+      "readiness": "strongest next visual candidate",
+      "reason": "Frozen branch IDs and normalized evidence now support a branch-first design model."
+    },
+    {
+      "visual": "Medicalization / economic divergence timeline",
+      "readiness": "partially ready",
+      "reason": "PubMed/MeSH and NBER/FRED/Chronicling America are available as separate layers, but they should not be merged into one continuous corpus."
+    }
+  ],
+  "nextDataPriorities": [
+    "Human-review 300-500 branch-sensitive snippets before final semantic atlas design.",
+    "Ingest HathiTrust/Bookworm or COHA as a real corpus-control layer.",
+    "Add EarlyPrint/EEBO-TCP before making pre-1700 contextual claims.",
+    "Use OED or another historical dictionary before publishing first-attestation claims.",
+    "Add FRASER documents with API-key handling if the economic branch becomes a hero visual."
+  ]
+}

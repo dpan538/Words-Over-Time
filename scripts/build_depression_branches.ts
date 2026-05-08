@@ -1,0 +1,143 @@
+import { mkdir, writeFile } from "node:fs/promises";
+import path from "node:path";
+
+const OUT_DIR = path.join(process.cwd(), "src", "data", "generated");
+const OUT_FILE = path.join(OUT_DIR, "depression_branches.json");
+
+const branches = [
+  {
+    id: "physical",
+    label: "Physical lowering / pressing down",
+    tier: 2,
+    color: "#2C9FC7",
+    periodOfImportance: "early modern onward",
+    role: "root substrate",
+    supportingTerms: ["depression", "depress", "pressed down", "lowering", "pressure"],
+    visualUse: "secondary branch",
+    caveat: "Literal downward or pressure uses should not be read as emotional or clinical evidence.",
+  },
+  {
+    id: "geographic",
+    label: "Geographic hollow / low area",
+    tier: 2,
+    color: "#5FCA00",
+    periodOfImportance: "18th century onward, especially geology and mapping",
+    role: "technical landform branch",
+    supportingTerms: ["geological depression", "topographical depression", "basin", "hollow", "low area"],
+    visualUse: "secondary branch",
+    caveat: "Geographic uses share loweredness, but they are not mood uses.",
+  },
+  {
+    id: "meteorological",
+    label: "Meteorological / barometric low",
+    tier: 2,
+    color: "#036C17",
+    periodOfImportance: "late 19th century onward",
+    role: "weather / pressure branch",
+    supportingTerms: ["tropical depression", "low pressure", "cyclone", "storm", "barometric depression"],
+    visualUse: "secondary branch, stronger in modern open news",
+    caveat: "Weather usage can dominate newspaper snippets and must be separated from mental-health discourse.",
+  },
+  {
+    id: "astronomical",
+    label: "Astronomical / angular depression",
+    tier: 3,
+    color: "#AE4202",
+    periodOfImportance: "early technical usage",
+    role: "attestation / technical evidence branch",
+    supportingTerms: ["depression angle", "horizon", "angular depression", "astronomical depression"],
+    visualUse: "minor evidence marker",
+    caveat: "Important for first-attestation history, but too technical to anchor the public page.",
+  },
+  {
+    id: "emotional",
+    label: "Emotional low state",
+    tier: 1,
+    color: "#F06B04",
+    periodOfImportance: "15th century onward",
+    role: "core affective branch",
+    supportingTerms: ["depression", "low spirits", "dejection", "sadness", "despair", "gloom"],
+    visualUse: "core branch",
+    caveat: "Ordinary affective evidence should not be collapsed into clinical diagnosis.",
+  },
+  {
+    id: "melancholy_melancholia",
+    label: "Melancholy / melancholia tradition",
+    tier: 1,
+    color: "#1570AC",
+    periodOfImportance: "classical inheritance through 19th century; persists as historical/clinical language",
+    role: "historical predecessor-neighbor",
+    supportingTerms: ["melancholy", "melancholia", "black bile", "spleen", "vapours"],
+    visualUse: "core comparison branch",
+    caveat: "Melancholy and melancholia are historical neighbors, not exact synonyms for modern depression.",
+  },
+  {
+    id: "clinical",
+    label: "Clinical / psychiatric depression",
+    tier: 1,
+    color: "#A1081F",
+    periodOfImportance: "early 20th century onward; stronger after diagnostic classification shifts",
+    role: "medicalized branch",
+    supportingTerms: ["clinical depression", "major depression", "major depressive disorder", "depressive disorder"],
+    visualUse: "core branch",
+    caveat: "Clinical labels should be reserved for diagnostic or institutional discourse.",
+  },
+  {
+    id: "economic",
+    label: "Economic depression / Great Depression",
+    tier: 1,
+    color: "#FBB728",
+    periodOfImportance: "19th century onward; major public pressure around 1929-1933",
+    role: "non-clinical public branch",
+    supportingTerms: ["economic depression", "business depression", "financial depression", "Great Depression"],
+    visualUse: "core branch",
+    caveat: "Economic depression is a separate sense branch and should not be blended with mood evidence.",
+  },
+  {
+    id: "modern_public_discourse",
+    label: "Modern public mental-health discourse",
+    tier: 1,
+    color: "#050510",
+    periodOfImportance: "late 20th century to present",
+    role: "public-health and awareness branch",
+    supportingTerms: ["mental health", "stigma", "treatment", "depression and anxiety", "help-seeking"],
+    visualUse: "modern overlay",
+    caveat: "Public discourse measures attention and framing, not condition prevalence.",
+  },
+];
+
+const termRoles = [
+  { term: "depression", branchIds: ["emotional", "clinical", "economic", "physical", "geographic", "meteorological", "astronomical"], displayRole: "core shared form", synonymStatus: "target word" },
+  { term: "melancholy", branchIds: ["melancholy_melancholia", "emotional"], displayRole: "historical neighbor", synonymStatus: "not exact synonym" },
+  { term: "melancholia", branchIds: ["melancholy_melancholia", "clinical"], displayRole: "historical medical neighbor", synonymStatus: "not exact synonym" },
+  { term: "low spirits", branchIds: ["emotional"], displayRole: "historical affective paraphrase", synonymStatus: "close historical paraphrase" },
+  { term: "dejection", branchIds: ["emotional"], displayRole: "historical affective neighbor", synonymStatus: "related mood term" },
+  { term: "sadness", branchIds: ["emotional"], displayRole: "research baseline", synonymStatus: "broad mood term" },
+  { term: "despair", branchIds: ["emotional"], displayRole: "research baseline", synonymStatus: "stronger mood term" },
+  { term: "gloom", branchIds: ["emotional", "melancholy_melancholia"], displayRole: "research baseline", synonymStatus: "tonal mood term" },
+  { term: "anxiety", branchIds: ["modern_public_discourse"], displayRole: "modern discourse neighbor", synonymStatus: "adjacent condition, not synonym" },
+  { term: "clinical depression", branchIds: ["clinical", "modern_public_discourse"], displayRole: "public bridge clinical label", synonymStatus: "clinical label" },
+  { term: "major depression", branchIds: ["clinical"], displayRole: "clinical label", synonymStatus: "clinical label" },
+  { term: "major depressive disorder", branchIds: ["clinical"], displayRole: "diagnostic label", synonymStatus: "diagnostic label" },
+  { term: "depressive disorder", branchIds: ["clinical"], displayRole: "diagnostic family label", synonymStatus: "diagnostic label" },
+  { term: "economic depression", branchIds: ["economic"], displayRole: "economic branch phrase", synonymStatus: "separate sense branch" },
+  { term: "Great Depression", branchIds: ["economic"], displayRole: "named historical event", synonymStatus: "proper-name economic event" },
+  { term: "business depression", branchIds: ["economic"], displayRole: "economic branch phrase", synonymStatus: "separate sense branch" },
+  { term: "financial depression", branchIds: ["economic"], displayRole: "economic branch phrase", synonymStatus: "separate sense branch" },
+  { term: "topographical depression", branchIds: ["geographic"], displayRole: "technical branch phrase", synonymStatus: "separate sense branch" },
+  { term: "geological depression", branchIds: ["geographic"], displayRole: "technical branch phrase", synonymStatus: "separate sense branch" },
+  { term: "tropical depression", branchIds: ["meteorological"], displayRole: "weather branch phrase", synonymStatus: "separate sense branch" },
+];
+
+const generated = {
+  generatedAt: new Date().toISOString(),
+  layer: "frozen semantic branch inventory",
+  branchPolicy:
+    "These IDs are frozen for the next visual phase. They are editorial branch tags, not automatic sense classifications.",
+  branches,
+  termRoles,
+};
+
+await mkdir(OUT_DIR, { recursive: true });
+await writeFile(OUT_FILE, `${JSON.stringify(generated, null, 2)}\n`);
+console.log(`Wrote ${OUT_FILE}`);

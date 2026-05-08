@@ -4,6 +4,7 @@ import path from "node:path";
 const OUT_DIR = path.join(process.cwd(), "src", "data", "generated");
 const CATEGORIES_FILE = path.join(OUT_DIR, "depression_categories.json");
 const DATASET_FILE = path.join(OUT_DIR, "depression_dataset.json");
+const COVERAGE_FILE = path.join(OUT_DIR, "depression_coverage_report.json");
 
 const categoryDefs = [
   {
@@ -269,6 +270,60 @@ const termsAudit = await readJson<TermsAuditFile>(path.join(OUT_DIR, "depression
 const prehistory = await readJson<PrehistoryFile>(path.join(OUT_DIR, "depression_prehistory.json"));
 const archival = await readJson<ContextFile>(path.join(OUT_DIR, "depression_archival_context.json"));
 const modern = await readJson<ContextFile>(path.join(OUT_DIR, "depression_modern_context.json"));
+const branches = await readJson<{
+  branches: Array<{
+    id: string;
+    label: string;
+    tier: number;
+    color: string;
+    periodOfImportance: string;
+    role: string;
+    supportingTerms: string[];
+    visualUse: string;
+    caveat: string;
+  }>;
+  termRoles: Array<{
+    term: string;
+    branchIds: string[];
+    displayRole: string;
+    synonymStatus: string;
+  }>;
+}>(path.join(OUT_DIR, "depression_branches.json"));
+const corpusControls = await readJson<{
+  controls: Array<{
+    id: string;
+    name: string;
+    status: string;
+    sourceRole: string;
+    coverage: string;
+    limitation: string;
+  }>;
+  recommendation: string;
+}>(path.join(OUT_DIR, "depression_corpus_controls.json"));
+const clinicalVocabulary = await readJson<{
+  meshDescriptors: unknown[];
+  pubmed: Array<{ id: string; totalCount: number }>;
+  institutionalDefinitions: unknown[];
+}>(path.join(OUT_DIR, "depression_clinical_vocabulary.json"));
+const economicContext = await readJson<{
+  chroniclingAmerica: Array<{ id: string; countsByPeriod: Array<{ count: number | null }>; samples: unknown[] }>;
+  nber: { records: unknown[] };
+  fred: Array<{ id: string; status: string; observationCount?: number }>;
+  fraser: { status: string };
+}>(path.join(OUT_DIR, "depression_economic_context.json"));
+const normalizedEvidence = await readJson<{
+  evidence: Array<{
+    id: string;
+    term: string;
+    year: number | null;
+    source: string;
+    sourceLayer: string;
+    branchTag: string;
+    confidence: string;
+    rightsState: string;
+    displayPriority: number;
+  }>;
+}>(path.join(OUT_DIR, "depression_evidence_normalized.json"));
 
 const categories = categoryDefs.map((category) => ({
   ...category,
@@ -362,19 +417,57 @@ const dataset = {
       phraseCount: modern.phrases.length,
       collocateCount: modern.collocates.length,
     },
+    corpusControls: {
+      source: "HathiTrust / Bookworm / COHA / EarlyPrint investigation",
+      coverage: "varies by source",
+      comparableCorpus: true,
+      controlCount: corpusControls.controls.length,
+      integratedCount: corpusControls.controls.filter((control) => control.status === "integrated").length,
+      recommendation: corpusControls.recommendation,
+    },
+    clinicalVocabulary: {
+      source: "PubMed / PMC OA / MeSH / NIMH / WHO",
+      coverage: "clinical bibliography and institutional vocabulary, strongest 20th century-present",
+      comparableCorpus: false,
+      meshDescriptorCount: clinicalVocabulary.meshDescriptors.length,
+      pubmedQueryCount: clinicalVocabulary.pubmed.length,
+      institutionalDefinitionCount: clinicalVocabulary.institutionalDefinitions.length,
+    },
+    economicContext: {
+      source: "Chronicling America / NBER / FRED / FRASER investigation",
+      coverage: "newspaper OCR, business-cycle markers, and economic indicators; varies by source",
+      comparableCorpus: false,
+      chroniclingQueryCount: economicContext.chroniclingAmerica.length,
+      chroniclingSampleCount: economicContext.chroniclingAmerica.reduce((sum, query) => sum + query.samples.length, 0),
+      nberMarkerCount: economicContext.nber.records.length,
+      fredSeriesCount: economicContext.fred.length,
+      fraserStatus: economicContext.fraser.status,
+    },
+    normalizedEvidence: {
+      source: "Unified evidence schema",
+      coverage: {
+        earliestYear: Math.min(...normalizedEvidence.evidence.map((item) => item.year ?? 9999)),
+        latestYear: Math.max(...normalizedEvidence.evidence.map((item) => item.year ?? 0)),
+      },
+      comparableCorpus: false,
+      evidenceCount: normalizedEvidence.evidence.length,
+    },
   },
-  semanticBranches: categoryDefs.map((category) => ({
-    id: category.id,
-    label: category.label,
-    senseBranch: category.senseBranch,
-    supportingTerms: category.supportingTerms,
-    caveat: category.caveat,
-  })),
+  semanticBranches: branches.branches,
+  relatedTermRoles: branches.termRoles,
   earliestEvidence,
   termFrequencyAudit: termsAudit.terms,
   synonymAudit,
   phraseBranchAudit,
   categories,
+  corpusControls: corpusControls.controls,
+  clinicalVocabulary: {
+    meshDescriptors: clinicalVocabulary.meshDescriptors,
+    pubmed: clinicalVocabulary.pubmed,
+    institutionalDefinitions: clinicalVocabulary.institutionalDefinitions,
+  },
+  economicContext,
+  normalizedEvidence: normalizedEvidence.evidence,
   topArchivalPhrases: archival.phrases.slice(0, 30),
   topArchivalCollocates: archival.collocates.filter((collocate) => collocate.displayEligible).slice(0, 40),
   topModernPhrases: modern.phrases.slice(0, 30),
@@ -389,6 +482,12 @@ const dataset = {
       status: "promising",
       dataNeeded: "Ngram frequency series plus sense/phrase groups.",
       note: "Depression is better suited to semantic branching than a single relationship constellation.",
+    },
+    {
+      id: "semantic-branching-atlas",
+      status: "hero-candidate",
+      dataNeeded: "Frozen branch IDs, normalized evidence, lexical sense records, and branch-separated snippets.",
+      note: "This should become the core visual identity of the depression page.",
     },
     {
       id: "sense-branch-atlas",
@@ -408,6 +507,12 @@ const dataset = {
       dataNeeded: "A legally usable modern mental-health corpus beyond Wikinews/Wikipedia.",
       note: "Current modern layer is useful for anchors but too small for strong contemporary context visuals.",
     },
+    {
+      id: "economic-clinical-divergence",
+      status: "promising-with-added-context",
+      dataNeeded: "Chronicling America branch counts, NBER/FRED markers, PubMed/MeSH medicalization counts.",
+      note: "Can separate economic public pressure from clinical medicalization instead of merging both into one word curve.",
+    },
   ],
   caveats: [
     "Google Ngram is frequency-only and does not identify senses.",
@@ -415,6 +520,154 @@ const dataset = {
     "Wikinews/Wikipedia modern context is open and useful, but not comparable to Gutenberg or Ngram.",
     "Pre-1700 corpus context requires EarlyPrint/EEBO-TCP or another early-print workflow.",
     "OED or another historical dictionary should be used before publishing first-attestation claims.",
+    "Related mood terms, clinical labels, economic labels, and technical branches are explicitly separated; they are not synonyms.",
+  ],
+};
+
+const evidenceByLayer = normalizedEvidence.evidence.reduce<Record<string, number>>((acc, item) => {
+  acc[item.sourceLayer] = (acc[item.sourceLayer] ?? 0) + 1;
+  return acc;
+}, {});
+
+const evidenceByBranch = normalizedEvidence.evidence.reduce<Record<string, number>>((acc, item) => {
+  acc[item.branchTag] = (acc[item.branchTag] ?? 0) + 1;
+  return acc;
+}, {});
+
+const coverageReport = {
+  generatedAt: new Date().toISOString(),
+  word: "depression",
+  status: "data-foundation-expanded",
+  uiBuilt: false,
+  layerCoverage: {
+    prehistoryAttestation: {
+      source: "Lexical-source and source-audit records",
+      coverage: prehistory.coverage,
+      recordCount: prehistory.records.length,
+      visualUse: "Sense prehistory and branch anchors only; not comparable frequency.",
+      limitation: "Requires OED/historical-dictionary verification before public first-attestation claims.",
+    },
+    longSpanFrequency: {
+      source: "Google Books Ngram Viewer",
+      coverage: { startYear: 1500, endYear: 2022 },
+      seriesCount: frequency.series.length,
+      usableSeries: frequency.series.filter((series) => series.usabilityStatus !== "too-sparse").length,
+      visualUse: "Long-span frequency comparison and public surface trace.",
+      limitation: "Frequency-only; no sense classification and sparse early-modern years.",
+    },
+    archivalContext: {
+      source: "Project Gutenberg seed",
+      coverage: archival.coverage,
+      snippetCount: archival.snippets.length,
+      phraseCount: archival.phrases.length,
+      collocateCount: archival.collocates.length,
+      visualUse: "Display-safe snippets and archival phrase/collocate evidence.",
+      limitation: "Public-domain seed corpus, not balanced historical language.",
+    },
+    modernContext: {
+      source: "Wikinews + Wikipedia open snapshot",
+      coverage: modern.coverage,
+      snippetCount: modern.snippets.length,
+      phraseCount: modern.phrases.length,
+      collocateCount: modern.collocates.length,
+      visualUse: "Modern public-discourse anchors only.",
+      limitation: "Open snapshot, not a comparable 1930-2026 corpus.",
+    },
+    corpusControls: {
+      source: "HathiTrust / Bookworm / COHA / EarlyPrint investigation",
+      controlCount: corpusControls.controls.length,
+      integratedCount: corpusControls.controls.filter((control) => control.status === "integrated").length,
+      statuses: corpusControls.controls.map((control) => ({
+        id: control.id,
+        name: control.name,
+        status: control.status,
+        coverage: control.coverage,
+        limitation: control.limitation,
+      })),
+      visualUse: "Future validation/control layer.",
+      limitation: "Investigated in this pass; not yet ingested as comparable corpus data.",
+    },
+    clinicalVocabulary: {
+      source: "PubMed / PMC OA / MeSH / NIMH / WHO",
+      meshDescriptorCount: clinicalVocabulary.meshDescriptors.length,
+      pubmedQueryCount: clinicalVocabulary.pubmed.length,
+      pubmedTotals: clinicalVocabulary.pubmed.map((query) => ({
+        id: query.id,
+        totalCount: query.totalCount,
+      })),
+      institutionalDefinitionCount: clinicalVocabulary.institutionalDefinitions.length,
+      visualUse: "Clinical vocabulary, medicalization, and modern public-health anchors.",
+      limitation: "Bibliographic/institutional layer; not a general historical usage corpus or prevalence measure.",
+    },
+    economicContext: {
+      source: "Chronicling America / NBER / FRED / FRASER investigation",
+      chroniclingQueryCount: economicContext.chroniclingAmerica.length,
+      chroniclingSampleCount: economicContext.chroniclingAmerica.reduce((sum, query) => sum + query.samples.length, 0),
+      nberMarkerCount: economicContext.nber.records.length,
+      fredSeries: economicContext.fred.map((series) => ({
+        id: series.id,
+        status: series.status,
+        observationCount: series.observationCount ?? 0,
+      })),
+      fraserStatus: economicContext.fraser.status,
+      visualUse: "Economic branch context and event scaffolding.",
+      limitation: "Chronicling America counts are loc.gov q search-result counts, not phrase-frequency measurements; FRASER not ingested.",
+    },
+    normalizedEvidence: {
+      source: "Unified evidence schema",
+      evidenceCount: normalizedEvidence.evidence.length,
+      coverage: dataset.layers.normalizedEvidence.coverage,
+      byLayer: evidenceByLayer,
+      byBranch: evidenceByBranch,
+      visualUse: "Single evidence spine for future depression visuals.",
+      limitation: "Branch tags are editorial and confidence-aware; human review still required before public claims.",
+    },
+  },
+  semanticBranchIds: branches.branches.map((branch) => branch.id),
+  relatedTermPolicy: {
+    rule: "Related mood terms, clinical labels, economic labels, and technical terms stay separate.",
+    visibleCandidates: branches.termRoles
+      .filter((role) => role.displayRole !== "research-only mood comparator")
+      .map((role) => ({
+        term: role.term,
+        branchIds: role.branchIds,
+        displayRole: role.displayRole,
+        synonymStatus: role.synonymStatus,
+      })),
+  },
+  visualReadiness: [
+    {
+      visual: "Frequency field",
+      readiness: "ready for data prototype",
+      reason: "Long-span Ngram series exist for the target and related terms, with sparse-term audit metadata.",
+    },
+    {
+      visual: "Historical influence field",
+      readiness: "partially ready",
+      reason: "Lexical dates, NBER/FRED economic context, and clinical vocabulary anchors exist; HathiTrust/COHA controls would improve confidence.",
+    },
+    {
+      visual: "Relational constellation",
+      readiness: "partially ready",
+      reason: "Archival and modern snippets/phrases/collocates exist, but branch-sensitive human review is still needed.",
+    },
+    {
+      visual: "Semantic branching atlas",
+      readiness: "strongest next visual candidate",
+      reason: "Frozen branch IDs and normalized evidence now support a branch-first design model.",
+    },
+    {
+      visual: "Medicalization / economic divergence timeline",
+      readiness: "partially ready",
+      reason: "PubMed/MeSH and NBER/FRED/Chronicling America are available as separate layers, but they should not be merged into one continuous corpus.",
+    },
+  ],
+  nextDataPriorities: [
+    "Human-review 300-500 branch-sensitive snippets before final semantic atlas design.",
+    "Ingest HathiTrust/Bookworm or COHA as a real corpus-control layer.",
+    "Add EarlyPrint/EEBO-TCP before making pre-1700 contextual claims.",
+    "Use OED or another historical dictionary before publishing first-attestation claims.",
+    "Add FRASER documents with API-key handling if the economic branch becomes a hero visual.",
   ],
 };
 
@@ -427,5 +680,7 @@ const categoriesFile = {
 await mkdir(OUT_DIR, { recursive: true });
 await writeFile(CATEGORIES_FILE, `${JSON.stringify(categoriesFile, null, 2)}\n`);
 await writeFile(DATASET_FILE, `${JSON.stringify(dataset, null, 2)}\n`);
+await writeFile(COVERAGE_FILE, `${JSON.stringify(coverageReport, null, 2)}\n`);
 console.log(`Wrote ${CATEGORIES_FILE}`);
 console.log(`Wrote ${DATASET_FILE}`);
+console.log(`Wrote ${COVERAGE_FILE}`);
