@@ -265,51 +265,40 @@ a {
   transform-origin: center;
 }
 
-.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-socialized-relation,
-.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-socialized-term,
-.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .socialized-ring-seg,
-.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-cross-surface,
-.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-cross-arms,
-.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-cross-flows,
-.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-cross-center,
-.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-cross-nodes {
-  opacity: 0;
-}
-
 .data-chart-reveal.is-visible .data-socialized-relation {
-  animation: data-socialized-line-in 640ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: data-socialized-line-in 640ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .data-chart-reveal.is-visible .data-socialized-term,
 .data-chart-reveal.is-visible .socialized-ring-seg,
 .data-chart-reveal.is-visible .data-socialized-active-relation {
-  animation: data-socialized-mark-in 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: data-socialized-mark-in 620ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .data-chart-reveal.is-visible .data-cross-surface {
-  animation: data-cross-layer-in 620ms ease-out both;
+  animation: data-cross-layer-in 620ms ease-out forwards;
 }
 
 .data-chart-reveal.is-visible .data-cross-arms,
 .data-chart-reveal.is-visible .data-cross-center {
-  animation: data-cross-layer-in 700ms ease-out 120ms both;
+  animation: data-cross-layer-in 700ms ease-out 120ms forwards;
 }
 
 .data-chart-reveal.is-visible .data-cross-flows {
-  animation: data-cross-layer-in 760ms ease-out 210ms both;
+  animation: data-cross-layer-in 760ms ease-out 210ms forwards;
 }
 
 .data-chart-reveal.is-visible .data-cross-flow {
-  animation: data-cross-flow-in 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: data-cross-flow-in 720ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .data-chart-reveal.is-visible .data-cross-nodes {
-  animation: data-cross-layer-in 760ms cubic-bezier(0.22, 1, 0.36, 1) 300ms both;
+  animation: data-cross-layer-in 760ms cubic-bezier(0.22, 1, 0.36, 1) 300ms forwards;
 }
 
 @keyframes data-socialized-mark-in {
   from {
-    opacity: 0;
+    opacity: 0.58;
     transform: translateY(5px) scale(0.96);
   }
 
@@ -321,7 +310,7 @@ a {
 
 @keyframes data-socialized-line-in {
   from {
-    opacity: 0;
+    opacity: 0.5;
     transform: translateY(4px);
   }
 
@@ -333,7 +322,7 @@ a {
 
 @keyframes data-cross-layer-in {
   from {
-    opacity: 0;
+    opacity: 0.56;
     transform: translateY(6px);
   }
 
@@ -345,7 +334,7 @@ a {
 
 @keyframes data-cross-flow-in {
   from {
-    opacity: 0;
+    opacity: 0.45;
   }
 
   to {

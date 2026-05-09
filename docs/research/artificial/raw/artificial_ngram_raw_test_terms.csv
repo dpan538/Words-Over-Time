@@ -1,0 +1,661 @@
+year,term,value,source,corpus,smoothing,case_sensitive,query_group
+1800,artificial agent,2.2740977989599287e-9,Google Books Ngram Viewer,en,0,false,test_term
+1801,artificial agent,7.647673605504224e-9,Google Books Ngram Viewer,en,0,false,test_term
+1802,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1803,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1804,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1805,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1806,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1807,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1808,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1809,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1810,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1811,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1812,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1813,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1814,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1815,artificial agent,1.810143812619458e-9,Google Books Ngram Viewer,en,0,false,test_term
+1816,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1817,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1818,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1819,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1820,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1821,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1822,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1823,artificial agent,2.4186124214509164e-9,Google Books Ngram Viewer,en,0,false,test_term
+1824,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1825,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1826,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1827,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1828,artificial agent,1.0623416590860302e-9,Google Books Ngram Viewer,en,0,false,test_term
+1829,artificial agent,1.100133539821968e-9,Google Books Ngram Viewer,en,0,false,test_term
+1830,artificial agent,9.062995909303595e-10,Google Books Ngram Viewer,en,0,false,test_term
+1831,artificial agent,9.842752168864877e-10,Google Books Ngram Viewer,en,0,false,test_term
+1832,artificial agent,6.142301667289018e-10,Google Books Ngram Viewer,en,0,false,test_term
+1833,artificial agent,1.4668461112421483e-8,Google Books Ngram Viewer,en,0,false,test_term
+1834,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1835,artificial agent,7.317640382531465e-10,Google Books Ngram Viewer,en,0,false,test_term
+1836,artificial agent,5.853781015474624e-9,Google Books Ngram Viewer,en,0,false,test_term
+1837,artificial agent,3.0817983720510256e-9,Google Books Ngram Viewer,en,0,false,test_term
+1838,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1839,artificial agent,1.4333568776336847e-9,Google Books Ngram Viewer,en,0,false,test_term
+1840,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1841,artificial agent,3.9834775478198026e-9,Google Books Ngram Viewer,en,0,false,test_term
+1842,artificial agent,1.2951105743397306e-9,Google Books Ngram Viewer,en,0,false,test_term
+1843,artificial agent,6.464187518595566e-10,Google Books Ngram Viewer,en,0,false,test_term
+1844,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1845,artificial agent,1.0069269862356123e-9,Google Books Ngram Viewer,en,0,false,test_term
+1846,artificial agent,5.07201747268482e-9,Google Books Ngram Viewer,en,0,false,test_term
+1847,artificial agent,1.0088675450603546e-9,Google Books Ngram Viewer,en,0,false,test_term
+1848,artificial agent,5.46433509551747e-10,Google Books Ngram Viewer,en,0,false,test_term
+1849,artificial agent,5.276116210595205e-10,Google Books Ngram Viewer,en,0,false,test_term
+1850,artificial agent,4.75330275140351e-10,Google Books Ngram Viewer,en,0,false,test_term
+1851,artificial agent,1.3503600460040843e-9,Google Books Ngram Viewer,en,0,false,test_term
+1852,artificial agent,4.235331807489473e-10,Google Books Ngram Viewer,en,0,false,test_term
+1853,artificial agent,3.9757347414237643e-10,Google Books Ngram Viewer,en,0,false,test_term
+1854,artificial agent,4.002266296154744e-10,Google Books Ngram Viewer,en,0,false,test_term
+1855,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1856,artificial agent,4.123839880687541e-10,Google Books Ngram Viewer,en,0,false,test_term
+1857,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1858,artificial agent,8.480134372490511e-10,Google Books Ngram Viewer,en,0,false,test_term
+1859,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1860,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1861,artificial agent,4.507539619336143e-10,Google Books Ngram Viewer,en,0,false,test_term
+1862,artificial agent,4.784961871173721e-10,Google Books Ngram Viewer,en,0,false,test_term
+1863,artificial agent,9.42266598080721e-10,Google Books Ngram Viewer,en,0,false,test_term
+1864,artificial agent,4.219875837652154e-10,Google Books Ngram Viewer,en,0,false,test_term
+1865,artificial agent,8.507209936503557e-10,Google Books Ngram Viewer,en,0,false,test_term
+1866,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1867,artificial agent,3.5893943373110915e-10,Google Books Ngram Viewer,en,0,false,test_term
+1868,artificial agent,6.340462599396801e-10,Google Books Ngram Viewer,en,0,false,test_term
+1869,artificial agent,7.065600327038624e-10,Google Books Ngram Viewer,en,0,false,test_term
+1870,artificial agent,6.134793784084991e-10,Google Books Ngram Viewer,en,0,false,test_term
+1871,artificial agent,6.965757970434083e-10,Google Books Ngram Viewer,en,0,false,test_term
+1872,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1873,artificial agent,2.8932072293486044e-9,Google Books Ngram Viewer,en,0,false,test_term
+1874,artificial agent,1.8294352699399496e-9,Google Books Ngram Viewer,en,0,false,test_term
+1875,artificial agent,2.7783744194209703e-9,Google Books Ngram Viewer,en,0,false,test_term
+1876,artificial agent,2.282484423687947e-9,Google Books Ngram Viewer,en,0,false,test_term
+1877,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1878,artificial agent,2.184788794323822e-9,Google Books Ngram Viewer,en,0,false,test_term
+1879,artificial agent,2.728111625494023e-10,Google Books Ngram Viewer,en,0,false,test_term
+1880,artificial agent,5.004597847246828e-10,Google Books Ngram Viewer,en,0,false,test_term
+1881,artificial agent,1.0378859993664946e-9,Google Books Ngram Viewer,en,0,false,test_term
+1882,artificial agent,4.775116413391345e-10,Google Books Ngram Viewer,en,0,false,test_term
+1883,artificial agent,2.3802804172134984e-10,Google Books Ngram Viewer,en,0,false,test_term
+1884,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1885,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1886,artificial agent,1.807319738311719e-9,Google Books Ngram Viewer,en,0,false,test_term
+1887,artificial agent,8.56179571684379e-10,Google Books Ngram Viewer,en,0,false,test_term
+1888,artificial agent,3.97002680729841e-10,Google Books Ngram Viewer,en,0,false,test_term
+1889,artificial agent,1.9004678386558282e-10,Google Books Ngram Viewer,en,0,false,test_term
+1890,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1891,artificial agent,9.440160875229253e-10,Google Books Ngram Viewer,en,0,false,test_term
+1892,artificial agent,7.353647135666108e-10,Google Books Ngram Viewer,en,0,false,test_term
+1893,artificial agent,1.7341679203752847e-9,Google Books Ngram Viewer,en,0,false,test_term
+1894,artificial agent,2.786946451394101e-9,Google Books Ngram Viewer,en,0,false,test_term
+1895,artificial agent,3.19708565177379e-10,Google Books Ngram Viewer,en,0,false,test_term
+1896,artificial agent,9.565915837228545e-10,Google Books Ngram Viewer,en,0,false,test_term
+1897,artificial agent,1.5425363764087763e-10,Google Books Ngram Viewer,en,0,false,test_term
+1898,artificial agent,9.013245150235605e-10,Google Books Ngram Viewer,en,0,false,test_term
+1899,artificial agent,1.4127657377294156e-10,Google Books Ngram Viewer,en,0,false,test_term
+1900,artificial agent,6.797579166217815e-10,Google Books Ngram Viewer,en,0,false,test_term
+1901,artificial agent,2.599112869372533e-10,Google Books Ngram Viewer,en,0,false,test_term
+1902,artificial agent,1.3009998633961573e-10,Google Books Ngram Viewer,en,0,false,test_term
+1903,artificial agent,1.1409916345073157e-9,Google Books Ngram Viewer,en,0,false,test_term
+1904,artificial agent,3.755595834320502e-10,Google Books Ngram Viewer,en,0,false,test_term
+1905,artificial agent,1.574266494941412e-9,Google Books Ngram Viewer,en,0,false,test_term
+1906,artificial agent,4.6000536713108886e-10,Google Books Ngram Viewer,en,0,false,test_term
+1907,artificial agent,4.728132330100721e-10,Google Books Ngram Viewer,en,0,false,test_term
+1908,artificial agent,3.3724947834379293e-10,Google Books Ngram Viewer,en,0,false,test_term
+1909,artificial agent,8.898335401852364e-10,Google Books Ngram Viewer,en,0,false,test_term
+1910,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1911,artificial agent,6.678679831395584e-10,Google Books Ngram Viewer,en,0,false,test_term
+1912,artificial agent,3.010204863151955e-10,Google Books Ngram Viewer,en,0,false,test_term
+1913,artificial agent,4.88522888808518e-10,Google Books Ngram Viewer,en,0,false,test_term
+1914,artificial agent,2.8421190401139995e-10,Google Books Ngram Viewer,en,0,false,test_term
+1915,artificial agent,1.9927959282739494e-10,Google Books Ngram Viewer,en,0,false,test_term
+1916,artificial agent,4.949775034290838e-10,Google Books Ngram Viewer,en,0,false,test_term
+1917,artificial agent,1.089639711793211e-9,Google Books Ngram Viewer,en,0,false,test_term
+1918,artificial agent,4.3016740169932177e-10,Google Books Ngram Viewer,en,0,false,test_term
+1919,artificial agent,2.0058804617306691e-10,Google Books Ngram Viewer,en,0,false,test_term
+1920,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1921,artificial agent,1.1465964844248333e-9,Google Books Ngram Viewer,en,0,false,test_term
+1922,artificial agent,4.731793290524422e-10,Google Books Ngram Viewer,en,0,false,test_term
+1923,artificial agent,7.444753702401385e-10,Google Books Ngram Viewer,en,0,false,test_term
+1924,artificial agent,2.649564734280574e-10,Google Books Ngram Viewer,en,0,false,test_term
+1925,artificial agent,2.642658314400137e-10,Google Books Ngram Viewer,en,0,false,test_term
+1926,artificial agent,6.152012788085415e-10,Google Books Ngram Viewer,en,0,false,test_term
+1927,artificial agent,7.515007505176641e-10,Google Books Ngram Viewer,en,0,false,test_term
+1928,artificial agent,8.282256547254008e-10,Google Books Ngram Viewer,en,0,false,test_term
+1929,artificial agent,8.025576869741258e-10,Google Books Ngram Viewer,en,0,false,test_term
+1930,artificial agent,3.4781905133840496e-10,Google Books Ngram Viewer,en,0,false,test_term
+1931,artificial agent,1.5609372683300649e-9,Google Books Ngram Viewer,en,0,false,test_term
+1932,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1933,artificial agent,2.735673909626257e-10,Google Books Ngram Viewer,en,0,false,test_term
+1934,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1935,artificial agent,3.6947345183335756e-10,Google Books Ngram Viewer,en,0,false,test_term
+1936,artificial agent,4.0960923541888405e-10,Google Books Ngram Viewer,en,0,false,test_term
+1937,artificial agent,4.582304535816206e-10,Google Books Ngram Viewer,en,0,false,test_term
+1938,artificial agent,2.292512429891147e-10,Google Books Ngram Viewer,en,0,false,test_term
+1939,artificial agent,3.3062147464235636e-10,Google Books Ngram Viewer,en,0,false,test_term
+1940,artificial agent,1.1264385257891973e-10,Google Books Ngram Viewer,en,0,false,test_term
+1941,artificial agent,2.2639619345898865e-10,Google Books Ngram Viewer,en,0,false,test_term
+1942,artificial agent,4.854807111875914e-10,Google Books Ngram Viewer,en,0,false,test_term
+1943,artificial agent,3.850132990201871e-10,Google Books Ngram Viewer,en,0,false,test_term
+1944,artificial agent,2.639934382209219e-10,Google Books Ngram Viewer,en,0,false,test_term
+1945,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1946,artificial agent,5.260763491499176e-10,Google Books Ngram Viewer,en,0,false,test_term
+1947,artificial agent,1.379738344409187e-9,Google Books Ngram Viewer,en,0,false,test_term
+1948,artificial agent,7.532881540761593e-10,Google Books Ngram Viewer,en,0,false,test_term
+1949,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1950,artificial agent,1.192162035756894e-9,Google Books Ngram Viewer,en,0,false,test_term
+1951,artificial agent,2.631109219386474e-10,Google Books Ngram Viewer,en,0,false,test_term
+1952,artificial agent,2.623475048313395e-10,Google Books Ngram Viewer,en,0,false,test_term
+1953,artificial agent,2.480786132075252e-10,Google Books Ngram Viewer,en,0,false,test_term
+1954,artificial agent,1.0322238619409063e-9,Google Books Ngram Viewer,en,0,false,test_term
+1955,artificial agent,1.6181349316024551e-10,Google Books Ngram Viewer,en,0,false,test_term
+1956,artificial agent,5.47038414566714e-10,Google Books Ngram Viewer,en,0,false,test_term
+1957,artificial agent,7.486737618744854e-11,Google Books Ngram Viewer,en,0,false,test_term
+1958,artificial agent,0,Google Books Ngram Viewer,en,0,false,test_term
+1959,artificial agent,3.510849944099448e-10,Google Books Ngram Viewer,en,0,false,test_term
+1960,artificial agent,3.967554063066814e-10,Google Books Ngram Viewer,en,0,false,test_term
+1961,artificial agent,8.83957310127137e-10,Google Books Ngram Viewer,en,0,false,test_term
+1962,artificial agent,6.21949158841062e-11,Google Books Ngram Viewer,en,0,false,test_term
+1963,artificial agent,5.427960303450163e-10,Google Books Ngram Viewer,en,0,false,test_term
+1964,artificial agent,8.123162767437186e-10,Google Books Ngram Viewer,en,0,false,test_term
+1965,artificial agent,4.208726700483112e-10,Google Books Ngram Viewer,en,0,false,test_term
+1966,artificial agent,4.094549699296124e-10,Google Books Ngram Viewer,en,0,false,test_term
+1967,artificial agent,7.854308037291702e-10,Google Books Ngram Viewer,en,0,false,test_term
+1968,artificial agent,5.889031207129136e-10,Google Books Ngram Viewer,en,0,false,test_term
+1969,artificial agent,3.6401823222398377e-10,Google Books Ngram Viewer,en,0,false,test_term
+1970,artificial agent,3.5893715777390867e-10,Google Books Ngram Viewer,en,0,false,test_term
+1971,artificial agent,5.328643082336271e-10,Google Books Ngram Viewer,en,0,false,test_term
+1972,artificial agent,4.211569634704482e-10,Google Books Ngram Viewer,en,0,false,test_term
+1973,artificial agent,3.506895607241489e-10,Google Books Ngram Viewer,en,0,false,test_term
+1974,artificial agent,1.7767991244976855e-10,Google Books Ngram Viewer,en,0,false,test_term
+1975,artificial agent,3.456179231697831e-10,Google Books Ngram Viewer,en,0,false,test_term
+1976,artificial agent,4.936691611057142e-10,Google Books Ngram Viewer,en,0,false,test_term
+1977,artificial agent,2.178127816998554e-10,Google Books Ngram Viewer,en,0,false,test_term
+1978,artificial agent,2.6351593129803064e-10,Google Books Ngram Viewer,en,0,false,test_term
+1979,artificial agent,2.0006905854241808e-10,Google Books Ngram Viewer,en,0,false,test_term
+1980,artificial agent,2.6893304250208416e-10,Google Books Ngram Viewer,en,0,false,test_term
+1981,artificial agent,5.329968133516161e-10,Google Books Ngram Viewer,en,0,false,test_term
+1982,artificial agent,1.6253530465970556e-10,Google Books Ngram Viewer,en,0,false,test_term
+1983,artificial agent,4.677194187507894e-10,Google Books Ngram Viewer,en,0,false,test_term
+1984,artificial agent,1.52085566362814e-10,Google Books Ngram Viewer,en,0,false,test_term
+1985,artificial agent,3.037803897321112e-10,Google Books Ngram Viewer,en,0,false,test_term
+1986,artificial agent,2.0316012760979163e-10,Google Books Ngram Viewer,en,0,false,test_term
+1987,artificial agent,4.076221894744325e-10,Google Books Ngram Viewer,en,0,false,test_term
+1988,artificial agent,2.4921115171494534e-10,Google Books Ngram Viewer,en,0,false,test_term
+1989,artificial agent,3.295693440374947e-10,Google Books Ngram Viewer,en,0,false,test_term
+1990,artificial agent,8.267459217226047e-10,Google Books Ngram Viewer,en,0,false,test_term
+1991,artificial agent,1.0652668747113125e-9,Google Books Ngram Viewer,en,0,false,test_term
+1992,artificial agent,1.5862029606461547e-9,Google Books Ngram Viewer,en,0,false,test_term
+1993,artificial agent,3.937340273263423e-9,Google Books Ngram Viewer,en,0,false,test_term
+1994,artificial agent,3.830144007510583e-9,Google Books Ngram Viewer,en,0,false,test_term
+1995,artificial agent,3.560804401336881e-9,Google Books Ngram Viewer,en,0,false,test_term
+1996,artificial agent,4.193057762114094e-9,Google Books Ngram Viewer,en,0,false,test_term
+1997,artificial agent,4.116793170250155e-9,Google Books Ngram Viewer,en,0,false,test_term
+1998,artificial agent,4.33934742305464e-9,Google Books Ngram Viewer,en,0,false,test_term
+1999,artificial agent,1.1770934449373271e-8,Google Books Ngram Viewer,en,0,false,test_term
+2000,artificial agent,3.807638204733621e-9,Google Books Ngram Viewer,en,0,false,test_term
+2001,artificial agent,6.067854472352474e-9,Google Books Ngram Viewer,en,0,false,test_term
+2002,artificial agent,3.742887708102494e-9,Google Books Ngram Viewer,en,0,false,test_term
+2003,artificial agent,1.0140274619985234e-8,Google Books Ngram Viewer,en,0,false,test_term
+2004,artificial agent,6.049552192521901e-9,Google Books Ngram Viewer,en,0,false,test_term
+2005,artificial agent,5.947107695192244e-9,Google Books Ngram Viewer,en,0,false,test_term
+2006,artificial agent,9.095620256971415e-9,Google Books Ngram Viewer,en,0,false,test_term
+2007,artificial agent,7.967148829557402e-9,Google Books Ngram Viewer,en,0,false,test_term
+2008,artificial agent,1.1961154899875481e-8,Google Books Ngram Viewer,en,0,false,test_term
+2009,artificial agent,9.288264872509e-9,Google Books Ngram Viewer,en,0,false,test_term
+2010,artificial agent,8.865411127434442e-9,Google Books Ngram Viewer,en,0,false,test_term
+2011,artificial agent,2.1339497953409836e-8,Google Books Ngram Viewer,en,0,false,test_term
+2012,artificial agent,1.4191547048625353e-8,Google Books Ngram Viewer,en,0,false,test_term
+2013,artificial agent,9.810012413513647e-9,Google Books Ngram Viewer,en,0,false,test_term
+2014,artificial agent,1.4447998492039815e-8,Google Books Ngram Viewer,en,0,false,test_term
+2015,artificial agent,1.0774181213868417e-8,Google Books Ngram Viewer,en,0,false,test_term
+2016,artificial agent,1.6861158691483524e-8,Google Books Ngram Viewer,en,0,false,test_term
+2017,artificial agent,1.2162462981191169e-8,Google Books Ngram Viewer,en,0,false,test_term
+2018,artificial agent,1.492781692702394e-8,Google Books Ngram Viewer,en,0,false,test_term
+2019,artificial agent,1.7285576872638764e-8,Google Books Ngram Viewer,en,0,false,test_term
+1800,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1801,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1802,artificial image,2.665402121238003e-9,Google Books Ngram Viewer,en,0,false,test_term
+1803,artificial image,3.870275655515343e-9,Google Books Ngram Viewer,en,0,false,test_term
+1804,artificial image,9.735074080197137e-9,Google Books Ngram Viewer,en,0,false,test_term
+1805,artificial image,4.12467571209163e-8,Google Books Ngram Viewer,en,0,false,test_term
+1806,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1807,artificial image,7.488047515380458e-9,Google Books Ngram Viewer,en,0,false,test_term
+1808,artificial image,2.0929877830866417e-9,Google Books Ngram Viewer,en,0,false,test_term
+1809,artificial image,1.3402119414251956e-8,Google Books Ngram Viewer,en,0,false,test_term
+1810,artificial image,1.250296866039946e-9,Google Books Ngram Viewer,en,0,false,test_term
+1811,artificial image,2.13405240145903e-8,Google Books Ngram Viewer,en,0,false,test_term
+1812,artificial image,4.250363616620234e-9,Google Books Ngram Viewer,en,0,false,test_term
+1813,artificial image,1.6535506297543634e-9,Google Books Ngram Viewer,en,0,false,test_term
+1814,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1815,artificial image,3.620287625238916e-9,Google Books Ngram Viewer,en,0,false,test_term
+1816,artificial image,4.094857786185457e-9,Google Books Ngram Viewer,en,0,false,test_term
+1817,artificial image,4.975226453041159e-9,Google Books Ngram Viewer,en,0,false,test_term
+1818,artificial image,1.521785586433566e-9,Google Books Ngram Viewer,en,0,false,test_term
+1819,artificial image,2.4441961787857736e-9,Google Books Ngram Viewer,en,0,false,test_term
+1820,artificial image,4.52461179634156e-9,Google Books Ngram Viewer,en,0,false,test_term
+1821,artificial image,4.273492493211961e-8,Google Books Ngram Viewer,en,0,false,test_term
+1822,artificial image,1.6865872254356873e-8,Google Books Ngram Viewer,en,0,false,test_term
+1823,artificial image,9.674449685803665e-9,Google Books Ngram Viewer,en,0,false,test_term
+1824,artificial image,2.0037784764781463e-8,Google Books Ngram Viewer,en,0,false,test_term
+1825,artificial image,4.375811268886309e-9,Google Books Ngram Viewer,en,0,false,test_term
+1826,artificial image,3.81852842679109e-8,Google Books Ngram Viewer,en,0,false,test_term
+1827,artificial image,1.2530260384835401e-8,Google Books Ngram Viewer,en,0,false,test_term
+1828,artificial image,2.018449229979069e-8,Google Books Ngram Viewer,en,0,false,test_term
+1829,artificial image,1.3201602477863617e-8,Google Books Ngram Viewer,en,0,false,test_term
+1830,artificial image,3.625198363721438e-9,Google Books Ngram Viewer,en,0,false,test_term
+1831,artificial image,1.8701229009820963e-8,Google Books Ngram Viewer,en,0,false,test_term
+1832,artificial image,3.6853808893511086e-9,Google Books Ngram Viewer,en,0,false,test_term
+1833,artificial image,1.303863239598968e-8,Google Books Ngram Viewer,en,0,false,test_term
+1834,artificial image,8.079873436983576e-10,Google Books Ngram Viewer,en,0,false,test_term
+1835,artificial image,1.536704452576032e-8,Google Books Ngram Viewer,en,0,false,test_term
+1836,artificial image,4.3903356505836655e-9,Google Books Ngram Viewer,en,0,false,test_term
+1837,artificial image,2.6195285940389113e-8,Google Books Ngram Viewer,en,0,false,test_term
+1838,artificial image,3.802433479194178e-9,Google Books Ngram Viewer,en,0,false,test_term
+1839,artificial image,7.883462771474115e-9,Google Books Ngram Viewer,en,0,false,test_term
+1840,artificial image,1.4411215554233081e-9,Google Books Ngram Viewer,en,0,false,test_term
+1841,artificial image,6.639129246366338e-10,Google Books Ngram Viewer,en,0,false,test_term
+1842,artificial image,1.9426658059984447e-9,Google Books Ngram Viewer,en,0,false,test_term
+1843,artificial image,1.939256311089821e-9,Google Books Ngram Viewer,en,0,false,test_term
+1844,artificial image,3.9990153410940366e-9,Google Books Ngram Viewer,en,0,false,test_term
+1845,artificial image,2.5173174655890307e-9,Google Books Ngram Viewer,en,0,false,test_term
+1846,artificial image,9.129631273196992e-9,Google Books Ngram Viewer,en,0,false,test_term
+1847,artificial image,1.5133012620793806e-9,Google Books Ngram Viewer,en,0,false,test_term
+1848,artificial image,1.6393004731440897e-9,Google Books Ngram Viewer,en,0,false,test_term
+1849,artificial image,2.638058216319905e-9,Google Books Ngram Viewer,en,0,false,test_term
+1850,artificial image,2.8519817618644083e-9,Google Books Ngram Viewer,en,0,false,test_term
+1851,artificial image,4.951320242696511e-9,Google Books Ngram Viewer,en,0,false,test_term
+1852,artificial image,7.623596864902993e-9,Google Books Ngram Viewer,en,0,false,test_term
+1853,artificial image,7.951469482847529e-10,Google Books Ngram Viewer,en,0,false,test_term
+1854,artificial image,7.604305629627106e-9,Google Books Ngram Viewer,en,0,false,test_term
+1855,artificial image,2.4596065184567806e-9,Google Books Ngram Viewer,en,0,false,test_term
+1856,artificial image,5.773375999496011e-9,Google Books Ngram Viewer,en,0,false,test_term
+1857,artificial image,1.6954962989146338e-9,Google Books Ngram Viewer,en,0,false,test_term
+1858,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1859,artificial image,2.428272249943575e-9,Google Books Ngram Viewer,en,0,false,test_term
+1860,artificial image,2.6891158189101816e-9,Google Books Ngram Viewer,en,0,false,test_term
+1861,artificial image,9.015079238672286e-10,Google Books Ngram Viewer,en,0,false,test_term
+1862,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1863,artificial image,1.884533196161442e-9,Google Books Ngram Viewer,en,0,false,test_term
+1864,artificial image,4.219875837652154e-10,Google Books Ngram Viewer,en,0,false,test_term
+1865,artificial image,2.552162925439916e-9,Google Books Ngram Viewer,en,0,false,test_term
+1866,artificial image,1.8720156536033983e-9,Google Books Ngram Viewer,en,0,false,test_term
+1867,artificial image,7.178788674622183e-10,Google Books Ngram Viewer,en,0,false,test_term
+1868,artificial image,2.2191619653000316e-9,Google Books Ngram Viewer,en,0,false,test_term
+1869,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1870,artificial image,6.134793784084991e-10,Google Books Ngram Viewer,en,0,false,test_term
+1871,artificial image,1.7414394370973696e-9,Google Books Ngram Viewer,en,0,false,test_term
+1872,artificial image,1.2697788376314634e-9,Google Books Ngram Viewer,en,0,false,test_term
+1873,artificial image,6.42934927519434e-10,Google Books Ngram Viewer,en,0,false,test_term
+1874,artificial image,3.0490587832332494e-10,Google Books Ngram Viewer,en,0,false,test_term
+1875,artificial image,9.261248434810909e-10,Google Books Ngram Viewer,en,0,false,test_term
+1876,artificial image,2.282484423687947e-9,Google Books Ngram Viewer,en,0,false,test_term
+1877,artificial image,5.919882362093176e-10,Google Books Ngram Viewer,en,0,false,test_term
+1878,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1879,artificial image,2.728111625494023e-10,Google Books Ngram Viewer,en,0,false,test_term
+1880,artificial image,1.2511494063005557e-9,Google Books Ngram Viewer,en,0,false,test_term
+1881,artificial image,2.5947149984162365e-10,Google Books Ngram Viewer,en,0,false,test_term
+1882,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1883,artificial image,7.140841251640495e-10,Google Books Ngram Viewer,en,0,false,test_term
+1884,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1885,artificial image,6.706072364082161e-10,Google Books Ngram Viewer,en,0,false,test_term
+1886,artificial image,2.9368945053676043e-9,Google Books Ngram Viewer,en,0,false,test_term
+1887,artificial image,4.280897858421895e-10,Google Books Ngram Viewer,en,0,false,test_term
+1888,artificial image,2.183514702380762e-9,Google Books Ngram Viewer,en,0,false,test_term
+1889,artificial image,9.502338915723385e-10,Google Books Ngram Viewer,en,0,false,test_term
+1890,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1891,artificial image,9.440160875229253e-10,Google Books Ngram Viewer,en,0,false,test_term
+1892,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1893,artificial image,3.4683358962617206e-10,Google Books Ngram Viewer,en,0,false,test_term
+1894,artificial image,5.225524457586062e-10,Google Books Ngram Viewer,en,0,false,test_term
+1895,artificial image,1.598542825886895e-10,Google Books Ngram Viewer,en,0,false,test_term
+1896,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1897,artificial image,7.712681604488125e-10,Google Books Ngram Viewer,en,0,false,test_term
+1898,artificial image,1.5022075250392675e-10,Google Books Ngram Viewer,en,0,false,test_term
+1899,artificial image,5.651062950917662e-10,Google Books Ngram Viewer,en,0,false,test_term
+1900,artificial image,9.516610832704941e-10,Google Books Ngram Viewer,en,0,false,test_term
+1901,artificial image,1.2995564346862665e-10,Google Books Ngram Viewer,en,0,false,test_term
+1902,artificial image,1.3009998633961573e-10,Google Books Ngram Viewer,en,0,false,test_term
+1903,artificial image,2.535537058090398e-10,Google Books Ngram Viewer,en,0,false,test_term
+1904,artificial image,1.0014922224854672e-9,Google Books Ngram Viewer,en,0,false,test_term
+1905,artificial image,7.26584570287514e-10,Google Books Ngram Viewer,en,0,false,test_term
+1906,artificial image,1.1500134178277222e-10,Google Books Ngram Viewer,en,0,false,test_term
+1907,artificial image,2.3640661650503603e-10,Google Books Ngram Viewer,en,0,false,test_term
+1908,artificial image,2.2483298556252862e-10,Google Books Ngram Viewer,en,0,false,test_term
+1909,artificial image,5.561459626157728e-10,Google Books Ngram Viewer,en,0,false,test_term
+1910,artificial image,3.1061775374041645e-10,Google Books Ngram Viewer,en,0,false,test_term
+1911,artificial image,9.540971485089145e-11,Google Books Ngram Viewer,en,0,false,test_term
+1912,artificial image,1.0034016673099444e-10,Google Books Ngram Viewer,en,0,false,test_term
+1913,artificial image,9.770457359836726e-11,Google Books Ngram Viewer,en,0,false,test_term
+1914,artificial image,3.7894920534853327e-10,Google Books Ngram Viewer,en,0,false,test_term
+1915,artificial image,3.9855918565478987e-10,Google Books Ngram Viewer,en,0,false,test_term
+1916,artificial image,9.899549929803797e-11,Google Books Ngram Viewer,en,0,false,test_term
+1917,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1918,artificial image,3.226255373967035e-10,Google Books Ngram Viewer,en,0,false,test_term
+1919,artificial image,2.0058804617306691e-10,Google Books Ngram Viewer,en,0,false,test_term
+1920,artificial image,9.582634685756375e-11,Google Books Ngram Viewer,en,0,false,test_term
+1921,artificial image,5.732982422124167e-10,Google Books Ngram Viewer,en,0,false,test_term
+1922,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1923,artificial image,3.7223768512006927e-10,Google Books Ngram Viewer,en,0,false,test_term
+1924,artificial image,2.649564734280574e-10,Google Books Ngram Viewer,en,0,false,test_term
+1925,artificial image,3.9639874716002055e-10,Google Books Ngram Viewer,en,0,false,test_term
+1926,artificial image,3.691207894895854e-10,Google Books Ngram Viewer,en,0,false,test_term
+1927,artificial image,6.262506624388209e-10,Google Books Ngram Viewer,en,0,false,test_term
+1928,artificial image,5.915897771657797e-10,Google Books Ngram Viewer,en,0,false,test_term
+1929,artificial image,6.879065650444716e-10,Google Books Ngram Viewer,en,0,false,test_term
+1930,artificial image,3.4781905133840496e-10,Google Books Ngram Viewer,en,0,false,test_term
+1931,artificial image,1.5609372683300649e-9,Google Books Ngram Viewer,en,0,false,test_term
+1932,artificial image,3.6566299987939033e-10,Google Books Ngram Viewer,en,0,false,test_term
+1933,artificial image,1.3678369548131286e-10,Google Books Ngram Viewer,en,0,false,test_term
+1934,artificial image,2.609344129655966e-10,Google Books Ngram Viewer,en,0,false,test_term
+1935,artificial image,2.463156345555717e-10,Google Books Ngram Viewer,en,0,false,test_term
+1936,artificial image,1.0240230885472101e-10,Google Books Ngram Viewer,en,0,false,test_term
+1937,artificial image,2.291152267908103e-10,Google Books Ngram Viewer,en,0,false,test_term
+1938,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1939,artificial image,6.61242928468031e-10,Google Books Ngram Viewer,en,0,false,test_term
+1940,artificial image,3.379315577367592e-10,Google Books Ngram Viewer,en,0,false,test_term
+1941,artificial image,6.791885942547538e-10,Google Books Ngram Viewer,en,0,false,test_term
+1942,artificial image,3.6411051951290574e-10,Google Books Ngram Viewer,en,0,false,test_term
+1943,artificial image,0,Google Books Ngram Viewer,en,0,false,test_term
+1944,artificial image,1.3199671911046096e-10,Google Books Ngram Viewer,en,0,false,test_term
+1945,artificial image,1.2675722971255965e-10,Google Books Ngram Viewer,en,0,false,test_term
+1946,artificial image,1.0521527399331987e-10,Google Books Ngram Viewer,en,0,false,test_term
+1947,artificial image,6.898692173074039e-10,Google Books Ngram Viewer,en,0,false,test_term
+1948,artificial image,2.8248306471745366e-10,Google Books Ngram Viewer,en,0,false,test_term
+1949,artificial image,2.6276103515243676e-10,Google Books Ngram Viewer,en,0,false,test_term
+1950,artificial image,1.1921620218791062e-9,Google Books Ngram Viewer,en,0,false,test_term
+1951,artificial image,8.770363602028652e-11,Google Books Ngram Viewer,en,0,false,test_term
+1952,artificial image,5.24695009662679e-10,Google Books Ngram Viewer,en,0,false,test_term
+1953,artificial image,5.788500512249328e-10,Google Books Ngram Viewer,en,0,false,test_term
+1954,artificial image,5.161119309704532e-10,Google Books Ngram Viewer,en,0,false,test_term
+1955,artificial image,2.4272023280147437e-10,Google Books Ngram Viewer,en,0,false,test_term
+1956,artificial image,3.125933678571613e-10,Google Books Ngram Viewer,en,0,false,test_term
+1957,artificial image,2.2460212856234563e-10,Google Books Ngram Viewer,en,0,false,test_term
+1958,artificial image,7.622214526215032e-10,Google Books Ngram Viewer,en,0,false,test_term
+1959,artificial image,1.2639059798758012e-9,Google Books Ngram Viewer,en,0,false,test_term
+1960,artificial image,9.257626540359887e-10,Google Books Ngram Viewer,en,0,false,test_term
+1961,artificial image,1.7679145716820166e-9,Google Books Ngram Viewer,en,0,false,test_term
+1962,artificial image,2.549991551248354e-9,Google Books Ngram Viewer,en,0,false,test_term
+1963,artificial image,1.6283882020573515e-9,Google Books Ngram Viewer,en,0,false,test_term
+1964,artificial image,1.5507856110374973e-9,Google Books Ngram Viewer,en,0,false,test_term
+1965,artificial image,2.3849451302737634e-9,Google Books Ngram Viewer,en,0,false,test_term
+1966,artificial image,1.637819851962874e-9,Google Books Ngram Viewer,en,0,false,test_term
+1967,artificial image,2.5979635109862897e-9,Google Books Ngram Viewer,en,0,false,test_term
+1968,artificial image,1.0600255673232084e-9,Google Books Ngram Viewer,en,0,false,test_term
+1969,artificial image,2.2447790848367788e-9,Google Books Ngram Viewer,en,0,false,test_term
+1970,artificial image,2.0938002442960624e-9,Google Books Ngram Viewer,en,0,false,test_term
+1971,artificial image,2.605114346465598e-9,Google Books Ngram Viewer,en,0,false,test_term
+1972,artificial image,1.504132041141304e-9,Google Books Ngram Viewer,en,0,false,test_term
+1973,artificial image,1.1689651469026785e-9,Google Books Ngram Viewer,en,0,false,test_term
+1974,artificial image,7.699462872823304e-10,Google Books Ngram Viewer,en,0,false,test_term
+1975,artificial image,1.4400746151110866e-9,Google Books Ngram Viewer,en,0,false,test_term
+1976,artificial image,4.059057645555697e-9,Google Books Ngram Viewer,en,0,false,test_term
+1977,artificial image,1.2524234982436155e-9,Google Books Ngram Viewer,en,0,false,test_term
+1978,artificial image,2.1608306394194088e-9,Google Books Ngram Viewer,en,0,false,test_term
+1979,artificial image,1.400483447960843e-9,Google Books Ngram Viewer,en,0,false,test_term
+1980,artificial image,2.3666109245923383e-9,Google Books Ngram Viewer,en,0,false,test_term
+1981,artificial image,3.5177789813045646e-9,Google Books Ngram Viewer,en,0,false,test_term
+1982,artificial image,1.246103980417912e-9,Google Books Ngram Viewer,en,0,false,test_term
+1983,artificial image,3.066160686460151e-9,Google Books Ngram Viewer,en,0,false,test_term
+1984,artificial image,3.0417111746006142e-9,Google Books Ngram Viewer,en,0,false,test_term
+1985,artificial image,3.1390639254613717e-9,Google Books Ngram Viewer,en,0,false,test_term
+1986,artificial image,1.8792311803905726e-9,Google Books Ngram Viewer,en,0,false,test_term
+1987,artificial image,2.2928747546446804e-9,Google Books Ngram Viewer,en,0,false,test_term
+1988,artificial image,3.837851869636921e-9,Google Books Ngram Viewer,en,0,false,test_term
+1989,artificial image,2.777798765313255e-9,Google Books Ngram Viewer,en,0,false,test_term
+1990,artificial image,3.812217347354263e-9,Google Books Ngram Viewer,en,0,false,test_term
+1991,artificial image,3.5663281217068743e-9,Google Books Ngram Viewer,en,0,false,test_term
+1992,artificial image,4.577328335808595e-9,Google Books Ngram Viewer,en,0,false,test_term
+1993,artificial image,4.208881132505837e-9,Google Books Ngram Viewer,en,0,false,test_term
+1994,artificial image,7.797079065730017e-9,Google Books Ngram Viewer,en,0,false,test_term
+1995,artificial image,5.408816644569825e-9,Google Books Ngram Viewer,en,0,false,test_term
+1996,artificial image,5.2989193588537375e-9,Google Books Ngram Viewer,en,0,false,test_term
+1997,artificial image,5.005646199623959e-9,Google Books Ngram Viewer,en,0,false,test_term
+1998,artificial image,5.754352022657727e-9,Google Books Ngram Viewer,en,0,false,test_term
+1999,artificial image,4.29732493339996e-9,Google Books Ngram Viewer,en,0,false,test_term
+2000,artificial image,5.106714717761918e-9,Google Books Ngram Viewer,en,0,false,test_term
+2001,artificial image,5.700105814437917e-9,Google Books Ngram Viewer,en,0,false,test_term
+2002,artificial image,5.005548392444936e-9,Google Books Ngram Viewer,en,0,false,test_term
+2003,artificial image,8.617057734028322e-9,Google Books Ngram Viewer,en,0,false,test_term
+2004,artificial image,6.4054082871134455e-9,Google Books Ngram Viewer,en,0,false,test_term
+2005,artificial image,7.619731956509668e-9,Google Books Ngram Viewer,en,0,false,test_term
+2006,artificial image,6.982496358887147e-9,Google Books Ngram Viewer,en,0,false,test_term
+2007,artificial image,7.33697885779705e-9,Google Books Ngram Viewer,en,0,false,test_term
+2008,artificial image,7.291062219250133e-9,Google Books Ngram Viewer,en,0,false,test_term
+2009,artificial image,6.175440561695389e-9,Google Books Ngram Viewer,en,0,false,test_term
+2010,artificial image,5.926875934481046e-9,Google Books Ngram Viewer,en,0,false,test_term
+2011,artificial image,7.568929569906624e-9,Google Books Ngram Viewer,en,0,false,test_term
+2012,artificial image,6.164005195152811e-9,Google Books Ngram Viewer,en,0,false,test_term
+2013,artificial image,5.133554987352129e-9,Google Books Ngram Viewer,en,0,false,test_term
+2014,artificial image,5.3722135316680575e-9,Google Books Ngram Viewer,en,0,false,test_term
+2015,artificial image,6.698729848597651e-9,Google Books Ngram Viewer,en,0,false,test_term
+2016,artificial image,5.440533579204043e-9,Google Books Ngram Viewer,en,0,false,test_term
+2017,artificial image,6.1681064006391395e-9,Google Books Ngram Viewer,en,0,false,test_term
+2018,artificial image,9.28841879799247e-9,Google Books Ngram Viewer,en,0,false,test_term
+2019,artificial image,7.469667169524019e-9,Google Books Ngram Viewer,en,0,false,test_term
+1800,natural,0.00014086257078815834,Google Books Ngram Viewer,en,0,false,test_term
+1801,natural,0.00014747671798431838,Google Books Ngram Viewer,en,0,false,test_term
+1802,natural,0.00015249096600200573,Google Books Ngram Viewer,en,0,false,test_term
+1803,natural,0.0001191418716643966,Google Books Ngram Viewer,en,0,false,test_term
+1804,natural,0.00010965451122046943,Google Books Ngram Viewer,en,0,false,test_term
+1805,natural,0.00014629614963723725,Google Books Ngram Viewer,en,0,false,test_term
+1806,natural,0.0001434601942946756,Google Books Ngram Viewer,en,0,false,test_term
+1807,natural,0.00016263213774436736,Google Books Ngram Viewer,en,0,false,test_term
+1808,natural,0.00012553169278817222,Google Books Ngram Viewer,en,0,false,test_term
+1809,natural,0.00014667599805306963,Google Books Ngram Viewer,en,0,false,test_term
+1810,natural,0.00015043186249386054,Google Books Ngram Viewer,en,0,false,test_term
+1811,natural,0.00013345351374027814,Google Books Ngram Viewer,en,0,false,test_term
+1812,natural,0.00012455767478058988,Google Books Ngram Viewer,en,0,false,test_term
+1813,natural,0.00013486319448929862,Google Books Ngram Viewer,en,0,false,test_term
+1814,natural,0.00012198287697628984,Google Books Ngram Viewer,en,0,false,test_term
+1815,natural,0.00013785068381366727,Google Books Ngram Viewer,en,0,false,test_term
+1816,natural,0.0001360876182161519,Google Books Ngram Viewer,en,0,false,test_term
+1817,natural,0.00015208874742711487,Google Books Ngram Viewer,en,0,false,test_term
+1818,natural,0.0001389001673715029,Google Books Ngram Viewer,en,0,false,test_term
+1819,natural,0.00016718960409889405,Google Books Ngram Viewer,en,0,false,test_term
+1820,natural,0.0001270642464987759,Google Books Ngram Viewer,en,0,false,test_term
+1821,natural,0.0001278266769304537,Google Books Ngram Viewer,en,0,false,test_term
+1822,natural,0.0001389355010132931,Google Books Ngram Viewer,en,0,false,test_term
+1823,natural,0.00013880688959488907,Google Books Ngram Viewer,en,0,false,test_term
+1824,natural,0.0001387648442232603,Google Books Ngram Viewer,en,0,false,test_term
+1825,natural,0.00013543212526201387,Google Books Ngram Viewer,en,0,false,test_term
+1826,natural,0.00013151594384908094,Google Books Ngram Viewer,en,0,false,test_term
+1827,natural,0.00013839390055636613,Google Books Ngram Viewer,en,0,false,test_term
+1828,natural,0.00013708392729250285,Google Books Ngram Viewer,en,0,false,test_term
+1829,natural,0.0001514485068128124,Google Books Ngram Viewer,en,0,false,test_term
+1830,natural,0.00014584607356482593,Google Books Ngram Viewer,en,0,false,test_term
+1831,natural,0.0001298357854011556,Google Books Ngram Viewer,en,0,false,test_term
+1832,natural,0.00012736252438116935,Google Books Ngram Viewer,en,0,false,test_term
+1833,natural,0.00014062144782656105,Google Books Ngram Viewer,en,0,false,test_term
+1834,natural,0.0001401846666340134,Google Books Ngram Viewer,en,0,false,test_term
+1835,natural,0.0001562973479849461,Google Books Ngram Viewer,en,0,false,test_term
+1836,natural,0.00013770504187959887,Google Books Ngram Viewer,en,0,false,test_term
+1837,natural,0.00014234823174774647,Google Books Ngram Viewer,en,0,false,test_term
+1838,natural,0.0001393158572682296,Google Books Ngram Viewer,en,0,false,test_term
+1839,natural,0.00014111048471932008,Google Books Ngram Viewer,en,0,false,test_term
+1840,natural,0.00013319235335984558,Google Books Ngram Viewer,en,0,false,test_term
+1841,natural,0.00013876546108804177,Google Books Ngram Viewer,en,0,false,test_term
+1842,natural,0.00013898358474762063,Google Books Ngram Viewer,en,0,false,test_term
+1843,natural,0.00013288925629240111,Google Books Ngram Viewer,en,0,false,test_term
+1844,natural,0.00013695187703888223,Google Books Ngram Viewer,en,0,false,test_term
+1845,natural,0.00013802088233205723,Google Books Ngram Viewer,en,0,false,test_term
+1846,natural,0.0001353569919047004,Google Books Ngram Viewer,en,0,false,test_term
+1847,natural,0.00012967187194590224,Google Books Ngram Viewer,en,0,false,test_term
+1848,natural,0.00013707521520700539,Google Books Ngram Viewer,en,0,false,test_term
+1849,natural,0.0001314536684731138,Google Books Ngram Viewer,en,0,false,test_term
+1850,natural,0.00013661993443747633,Google Books Ngram Viewer,en,0,false,test_term
+1851,natural,0.0001336371051365859,Google Books Ngram Viewer,en,0,false,test_term
+1852,natural,0.0001349798293546478,Google Books Ngram Viewer,en,0,false,test_term
+1853,natural,0.00013335638269759698,Google Books Ngram Viewer,en,0,false,test_term
+1854,natural,0.0001365394518870744,Google Books Ngram Viewer,en,0,false,test_term
+1855,natural,0.00013077590936735883,Google Books Ngram Viewer,en,0,false,test_term
+1856,natural,0.00013319550544110825,Google Books Ngram Viewer,en,0,false,test_term
+1857,natural,0.00012998354312560023,Google Books Ngram Viewer,en,0,false,test_term
+1858,natural,0.00013100836235935276,Google Books Ngram Viewer,en,0,false,test_term
+1859,natural,0.00013140873011252552,Google Books Ngram Viewer,en,0,false,test_term
+1860,natural,0.00012594395457199425,Google Books Ngram Viewer,en,0,false,test_term
+1861,natural,0.00012509353996392747,Google Books Ngram Viewer,en,0,false,test_term
+1862,natural,0.00012197148748782638,Google Books Ngram Viewer,en,0,false,test_term
+1863,natural,0.00012645012043321913,Google Books Ngram Viewer,en,0,false,test_term
+1864,natural,0.00011563734506125911,Google Books Ngram Viewer,en,0,false,test_term
+1865,natural,0.00012011590274596529,Google Books Ngram Viewer,en,0,false,test_term
+1866,natural,0.00011525114837240835,Google Books Ngram Viewer,en,0,false,test_term
+1867,natural,0.00011451365344328224,Google Books Ngram Viewer,en,0,false,test_term
+1868,natural,0.0001157139902261406,Google Books Ngram Viewer,en,0,false,test_term
+1869,natural,0.0001189575298197465,Google Books Ngram Viewer,en,0,false,test_term
+1870,natural,0.00011945212281716522,Google Books Ngram Viewer,en,0,false,test_term
+1871,natural,0.00012625911585928407,Google Books Ngram Viewer,en,0,false,test_term
+1872,natural,0.00011403279340926886,Google Books Ngram Viewer,en,0,false,test_term
+1873,natural,0.00012063809322171437,Google Books Ngram Viewer,en,0,false,test_term
+1874,natural,0.00011793099518125905,Google Books Ngram Viewer,en,0,false,test_term
+1875,natural,0.00011517852385622973,Google Books Ngram Viewer,en,0,false,test_term
+1876,natural,0.00011447310402737387,Google Books Ngram Viewer,en,0,false,test_term
+1877,natural,0.00011208520572836278,Google Books Ngram Viewer,en,0,false,test_term
+1878,natural,0.00011387197156464968,Google Books Ngram Viewer,en,0,false,test_term
+1879,natural,0.00011198638012077655,Google Books Ngram Viewer,en,0,false,test_term
+1880,natural,0.00010979576436545568,Google Books Ngram Viewer,en,0,false,test_term
+1881,natural,0.00010899821777576868,Google Books Ngram Viewer,en,0,false,test_term
+1882,natural,0.00010918343400589947,Google Books Ngram Viewer,en,0,false,test_term
+1883,natural,0.00011289617517144801,Google Books Ngram Viewer,en,0,false,test_term
+1884,natural,0.00011080783807580763,Google Books Ngram Viewer,en,0,false,test_term
+1885,natural,0.00011091331076545918,Google Books Ngram Viewer,en,0,false,test_term
+1886,natural,0.00010980476183469756,Google Books Ngram Viewer,en,0,false,test_term
+1887,natural,0.00010648483601585768,Google Books Ngram Viewer,en,0,false,test_term
+1888,natural,0.00010968169167302477,Google Books Ngram Viewer,en,0,false,test_term
+1889,natural,0.00010841660585750312,Google Books Ngram Viewer,en,0,false,test_term
+1890,natural,0.00011410140830303561,Google Books Ngram Viewer,en,0,false,test_term
+1891,natural,0.00010663283823102165,Google Books Ngram Viewer,en,0,false,test_term
+1892,natural,0.00010472566190766752,Google Books Ngram Viewer,en,0,false,test_term
+1893,natural,0.00010352322620971188,Google Books Ngram Viewer,en,0,false,test_term
+1894,natural,0.00010105393805159846,Google Books Ngram Viewer,en,0,false,test_term
+1895,natural,0.00010498814986903415,Google Books Ngram Viewer,en,0,false,test_term
+1896,natural,0.00009981630456548651,Google Books Ngram Viewer,en,0,false,test_term
+1897,natural,0.00009879091446904353,Google Books Ngram Viewer,en,0,false,test_term
+1898,natural,0.00009583968635018536,Google Books Ngram Viewer,en,0,false,test_term
+1899,natural,0.0000938662778869892,Google Books Ngram Viewer,en,0,false,test_term
+1900,natural,0.00009155783836067855,Google Books Ngram Viewer,en,0,false,test_term
+1901,natural,0.00009044050671867809,Google Books Ngram Viewer,en,0,false,test_term
+1902,natural,0.00008992028172925826,Google Books Ngram Viewer,en,0,false,test_term
+1903,natural,0.00008983376696369838,Google Books Ngram Viewer,en,0,false,test_term
+1904,natural,0.00009023493774538288,Google Books Ngram Viewer,en,0,false,test_term
+1905,natural,0.00008873379928911462,Google Books Ngram Viewer,en,0,false,test_term
+1906,natural,0.00008712431312321578,Google Books Ngram Viewer,en,0,false,test_term
+1907,natural,0.00008750458059023081,Google Books Ngram Viewer,en,0,false,test_term
+1908,natural,0.0000869376503216876,Google Books Ngram Viewer,en,0,false,test_term
+1909,natural,0.00008983314231639922,Google Books Ngram Viewer,en,0,false,test_term
+1910,natural,0.00009470145938501179,Google Books Ngram Viewer,en,0,false,test_term
+1911,natural,0.0000926888579811519,Google Books Ngram Viewer,en,0,false,test_term
+1912,natural,0.00008840656574876649,Google Books Ngram Viewer,en,0,false,test_term
+1913,natural,0.00008701462290672951,Google Books Ngram Viewer,en,0,false,test_term
+1914,natural,0.00008413312020777441,Google Books Ngram Viewer,en,0,false,test_term
+1915,natural,0.00008276214465632176,Google Books Ngram Viewer,en,0,false,test_term
+1916,natural,0.00008249973960948453,Google Books Ngram Viewer,en,0,false,test_term
+1917,natural,0.00008216395673385501,Google Books Ngram Viewer,en,0,false,test_term
+1918,natural,0.00008067880251243914,Google Books Ngram Viewer,en,0,false,test_term
+1919,natural,0.00008269113987871557,Google Books Ngram Viewer,en,0,false,test_term
+1920,natural,0.00008609296401473898,Google Books Ngram Viewer,en,0,false,test_term
+1921,natural,0.00008480581400505116,Google Books Ngram Viewer,en,0,false,test_term
+1922,natural,0.00008878571485569642,Google Books Ngram Viewer,en,0,false,test_term
+1923,natural,0.00009179300083064085,Google Books Ngram Viewer,en,0,false,test_term
+1924,natural,0.00009041543026944154,Google Books Ngram Viewer,en,0,false,test_term
+1925,natural,0.00009201526435857754,Google Books Ngram Viewer,en,0,false,test_term
+1926,natural,0.00009304256740955835,Google Books Ngram Viewer,en,0,false,test_term
+1927,natural,0.00009418589694128177,Google Books Ngram Viewer,en,0,false,test_term
+1928,natural,0.00009794005444629938,Google Books Ngram Viewer,en,0,false,test_term
+1929,natural,0.00009907293223585661,Google Books Ngram Viewer,en,0,false,test_term
+1930,natural,0.00010340657762368533,Google Books Ngram Viewer,en,0,false,test_term
+1931,natural,0.00010229765090274956,Google Books Ngram Viewer,en,0,false,test_term
+1932,natural,0.00009952337721857996,Google Books Ngram Viewer,en,0,false,test_term
+1933,natural,0.00010287621115365186,Google Books Ngram Viewer,en,0,false,test_term
+1934,natural,0.0000995199838662586,Google Books Ngram Viewer,en,0,false,test_term
+1935,natural,0.00009779199070738404,Google Books Ngram Viewer,en,0,false,test_term
+1936,natural,0.00009793988961585842,Google Books Ngram Viewer,en,0,false,test_term
+1937,natural,0.00009866551078764607,Google Books Ngram Viewer,en,0,false,test_term
+1938,natural,0.00009895426007112962,Google Books Ngram Viewer,en,0,false,test_term
+1939,natural,0.00009775194192251924,Google Books Ngram Viewer,en,0,false,test_term
+1940,natural,0.00009853263375925181,Google Books Ngram Viewer,en,0,false,test_term
+1941,natural,0.00009403355204309904,Google Books Ngram Viewer,en,0,false,test_term
+1942,natural,0.00010200645320335155,Google Books Ngram Viewer,en,0,false,test_term
+1943,natural,0.00009579458038098954,Google Books Ngram Viewer,en,0,false,test_term
+1944,natural,0.00010294652931286397,Google Books Ngram Viewer,en,0,false,test_term
+1945,natural,0.00010135309726932995,Google Books Ngram Viewer,en,0,false,test_term
+1946,natural,0.00010387295208921787,Google Books Ngram Viewer,en,0,false,test_term
+1947,natural,0.00010629139996319592,Google Books Ngram Viewer,en,0,false,test_term
+1948,natural,0.0001089396191187933,Google Books Ngram Viewer,en,0,false,test_term
+1949,natural,0.00010994811010464622,Google Books Ngram Viewer,en,0,false,test_term
+1950,natural,0.00011312694688014879,Google Books Ngram Viewer,en,0,false,test_term
+1951,natural,0.0001099759908593928,Google Books Ngram Viewer,en,0,false,test_term
+1952,natural,0.00010763579942954515,Google Books Ngram Viewer,en,0,false,test_term
+1953,natural,0.0001121658797971492,Google Books Ngram Viewer,en,0,false,test_term
+1954,natural,0.00011000132905536475,Google Books Ngram Viewer,en,0,false,test_term
+1955,natural,0.00011278510595326419,Google Books Ngram Viewer,en,0,false,test_term
+1956,natural,0.00011108295935080559,Google Books Ngram Viewer,en,0,false,test_term
+1957,natural,0.00011218829639057792,Google Books Ngram Viewer,en,0,false,test_term
+1958,natural,0.00011344305758376194,Google Books Ngram Viewer,en,0,false,test_term
+1959,natural,0.0001110731225667308,Google Books Ngram Viewer,en,0,false,test_term
+1960,natural,0.00011057266106254127,Google Books Ngram Viewer,en,0,false,test_term
+1961,natural,0.00010999155082377227,Google Books Ngram Viewer,en,0,false,test_term
+1962,natural,0.00011057102088803117,Google Books Ngram Viewer,en,0,false,test_term
+1963,natural,0.00011525953509489151,Google Books Ngram Viewer,en,0,false,test_term
+1964,natural,0.00011621101297888681,Google Books Ngram Viewer,en,0,false,test_term
+1965,natural,0.00011479971205349826,Google Books Ngram Viewer,en,0,false,test_term
+1966,natural,0.00011162674752563523,Google Books Ngram Viewer,en,0,false,test_term
+1967,natural,0.0001177626699588423,Google Books Ngram Viewer,en,0,false,test_term
+1968,natural,0.000113158863359622,Google Books Ngram Viewer,en,0,false,test_term
+1969,natural,0.00011599530217427587,Google Books Ngram Viewer,en,0,false,test_term
+1970,natural,0.00012289645625986403,Google Books Ngram Viewer,en,0,false,test_term
+1971,natural,0.0001241498276351137,Google Books Ngram Viewer,en,0,false,test_term
+1972,natural,0.00012963344042917282,Google Books Ngram Viewer,en,0,false,test_term
+1973,natural,0.00013714279557869996,Google Books Ngram Viewer,en,0,false,test_term
+1974,natural,0.00014458542255365095,Google Books Ngram Viewer,en,0,false,test_term
+1975,natural,0.00014202657200505092,Google Books Ngram Viewer,en,0,false,test_term
+1976,natural,0.00014582161811300953,Google Books Ngram Viewer,en,0,false,test_term
+1977,natural,0.00014754987940154146,Google Books Ngram Viewer,en,0,false,test_term
+1978,natural,0.00014161603347644103,Google Books Ngram Viewer,en,0,false,test_term
+1979,natural,0.00014111971313283261,Google Books Ngram Viewer,en,0,false,test_term
+1980,natural,0.00014211347164704013,Google Books Ngram Viewer,en,0,false,test_term
+1981,natural,0.00014097318633339573,Google Books Ngram Viewer,en,0,false,test_term
+1982,natural,0.0001386610088760648,Google Books Ngram Viewer,en,0,false,test_term
+1983,natural,0.00014223494522688784,Google Books Ngram Viewer,en,0,false,test_term
+1984,natural,0.00013367292269744063,Google Books Ngram Viewer,en,0,false,test_term
+1985,natural,0.0001338900691398512,Google Books Ngram Viewer,en,0,false,test_term
+1986,natural,0.0001330023192350968,Google Books Ngram Viewer,en,0,false,test_term
+1987,natural,0.00013405211324191146,Google Books Ngram Viewer,en,0,false,test_term
+1988,natural,0.00013038610800765807,Google Books Ngram Viewer,en,0,false,test_term
+1989,natural,0.00013046130426858094,Google Books Ngram Viewer,en,0,false,test_term
+1990,natural,0.00013686106740835174,Google Books Ngram Viewer,en,0,false,test_term
+1991,natural,0.000135701709247954,Google Books Ngram Viewer,en,0,false,test_term
+1992,natural,0.0001359875105912331,Google Books Ngram Viewer,en,0,false,test_term
+1993,natural,0.00013701763920967794,Google Books Ngram Viewer,en,0,false,test_term
+1994,natural,0.00013669902098696618,Google Books Ngram Viewer,en,0,false,test_term
+1995,natural,0.0001382881539558553,Google Books Ngram Viewer,en,0,false,test_term
+1996,natural,0.00013867508459428773,Google Books Ngram Viewer,en,0,false,test_term
+1997,natural,0.00013541615819665648,Google Books Ngram Viewer,en,0,false,test_term
+1998,natural,0.00013618875925598684,Google Books Ngram Viewer,en,0,false,test_term
+1999,natural,0.00013433539697617,Google Books Ngram Viewer,en,0,false,test_term
+2000,natural,0.00013340212683872477,Google Books Ngram Viewer,en,0,false,test_term
+2001,natural,0.00013292454173227664,Google Books Ngram Viewer,en,0,false,test_term
+2002,natural,0.00013125588687976086,Google Books Ngram Viewer,en,0,false,test_term
+2003,natural,0.00013271257865450636,Google Books Ngram Viewer,en,0,false,test_term
+2004,natural,0.00013133950853277954,Google Books Ngram Viewer,en,0,false,test_term
+2005,natural,0.00013519565556029123,Google Books Ngram Viewer,en,0,false,test_term
+2006,natural,0.00013511374139473648,Google Books Ngram Viewer,en,0,false,test_term
+2007,natural,0.00013349988252989858,Google Books Ngram Viewer,en,0,false,test_term
+2008,natural,0.00013580713556476595,Google Books Ngram Viewer,en,0,false,test_term
+2009,natural,0.0001351779768006857,Google Books Ngram Viewer,en,0,false,test_term
+2010,natural,0.0001303657085700849,Google Books Ngram Viewer,en,0,false,test_term
+2011,natural,0.00012579068662314785,Google Books Ngram Viewer,en,0,false,test_term
+2012,natural,0.00013158743703858833,Google Books Ngram Viewer,en,0,false,test_term
+2013,natural,0.00013336551920530015,Google Books Ngram Viewer,en,0,false,test_term
+2014,natural,0.00012045410120624378,Google Books Ngram Viewer,en,0,false,test_term
+2015,natural,0.000122745870087336,Google Books Ngram Viewer,en,0,false,test_term
+2016,natural,0.00013218165460605197,Google Books Ngram Viewer,en,0,false,test_term
+2017,natural,0.00012649415798569874,Google Books Ngram Viewer,en,0,false,test_term
+2018,natural,0.00012847379864965036,Google Books Ngram Viewer,en,0,false,test_term
+2019,natural,0.0001279747677110643,Google Books Ngram Viewer,en,0,false,test_term

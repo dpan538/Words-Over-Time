@@ -1,0 +1,35 @@
+{
+  "artificial_color_colour": {
+    "label": "artificial color / colour",
+    "terms": [
+      "artificial color",
+      "artificial colour"
+    ],
+    "merge_status": "not_merged"
+  },
+  "artificial_flavor_flavour": {
+    "label": "artificial flavor / flavour",
+    "terms": [
+      "artificial flavor",
+      "artificial flavour"
+    ],
+    "merge_status": "not_merged"
+  },
+  "artificial_fiber_fibre": {
+    "label": "artificial fiber / fibre",
+    "terms": [
+      "artificial fiber",
+      "artificial fibre"
+    ],
+    "merge_status": "not_merged"
+  },
+  "artificial_silk_rayon": {
+    "label": "artificial silk / rayon",
+    "terms": [
+      "artificial silk",
+      "rayon"
+    ],
+    "merge_status": "not_collected_as_same_term",
+    "note": "Potential successor relationship only. Rayon was not collected as a frequency term in this round; do not merge in this round."
+  }
+}
