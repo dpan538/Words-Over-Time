@@ -14,13 +14,14 @@ export const words: Word[] = [
     href: "/words/depression",
   },
   {
-    label: "privacy",
-    slug: "privacy",
-    status: "coming-soon",
-  },
-  {
     label: "data",
     slug: "data",
+    status: "complete",
+    href: "/words/data",
+  },
+  {
+    label: "privacy",
+    slug: "privacy",
     status: "coming-soon",
   },
   {

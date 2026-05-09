@@ -7,8 +7,9 @@ type WordCardProps = {
 
 export function WordCard({ word }: WordCardProps) {
   if (word.href) {
-    const hoverTone = word.slug === "depression" ? "hover:text-nice" : "hover:text-blaze";
-    const labelTone = word.slug === "depression" ? "text-nice" : "text-blaze";
+    const isBlueWord = word.slug === "depression" || word.slug === "data";
+    const hoverTone = isBlueWord ? "hover:text-nice" : "hover:text-blaze";
+    const labelTone = isBlueWord ? "text-nice" : "text-blaze";
     return (
       <Link
         href={word.href}

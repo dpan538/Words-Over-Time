@@ -3,6 +3,7 @@ import { ConstraintGrid } from "@/components/ConstraintGrid";
 import { GridRuler } from "@/components/GridRuler";
 import { MethodDiagram } from "@/components/MethodDiagram";
 import { Nav } from "@/components/Nav";
+import Link from "next/link";
 
 const evidenceFlow = [
   {
@@ -56,10 +57,10 @@ const evidenceFlow = [
 ];
 
 const wordIndex = [
-  { word: "forever", status: "complete", color: "#F06B04" },
-  { word: "depression", status: "complete", color: "#1570AC" },
+  { word: "forever", status: "complete", color: "#F06B04", href: "/words/forever" },
+  { word: "depression", status: "complete", color: "#1570AC", href: "/words/depression" },
+  { word: "data", status: "complete", color: "#1570AC", href: "/words/data" },
   { word: "privacy", status: "planned", color: "#050510" },
-  { word: "data", status: "planned", color: "#050510" },
   { word: "artificial", status: "planned", color: "#050510" },
   { word: "intelligence", status: "planned", color: "#050510" },
 ];
@@ -250,9 +251,48 @@ const licenses = [
   },
   {
     category: "Lexical and etymological references",
-    items: ["Online Etymology Dictionary", "Wiktionary"],
-    statement: "Used as secondary reference only; not reproduced in full.",
-    note: "Etymonline © Douglas Harper. Wiktionary content under CC BY-SA.",
+    items: [
+      "Online Etymology Dictionary",
+      "Wiktionary",
+      "Merriam-Webster",
+      "Cambridge Dictionary",
+      "Oxford English Dictionary candidate checks",
+    ],
+    statement: "Used for attestation, spelling, grammar, and sense-history checks only.",
+    note: "Dictionary entries are cited as references, not reproduced. Etymonline © Douglas Harper; Wiktionary content under CC BY-SA; other dictionary rights remain with their publishers.",
+  },
+  {
+    category: "Legal, policy, and technical references",
+    items: [
+      "EU AI Act / EUR-Lex",
+      "ICO and GDPR reference pages",
+      "FTC, NIST, OECD, Census, and Stanford HAI pages",
+      "Academic references for data science and datafication",
+    ],
+    statement: "Used as context anchors, source audits, and citation targets.",
+    note: "Source texts, reports, and articles are not reproduced in full. Rights and reuse terms remain source-specific.",
+  },
+  {
+    category: "Contemporary metadata and attention signals",
+    items: [
+      "Wikimedia Pageviews API",
+      "arXiv API metadata attempts",
+      "Stanford AI Index public web pages",
+      "Google Trends candidate checks",
+    ],
+    statement: "Used for aggregate counts, availability audits, and source pointers only.",
+    note: "No article text, abstracts, report pages, or trend exports are redistributed by this archive; API and publisher terms apply.",
+  },
+  {
+    category: "Restricted or candidate corpora",
+    items: [
+      "COHA, COCA, and NOW Corpus",
+      "Oxford English Dictionary",
+      "HathiTrust / Bookworm",
+      "EarlyPrint / EEBO-TCP",
+    ],
+    statement: "Listed as candidate or manual-review controls unless an authorized export is available.",
+    note: "These sources are not bundled, republished, or treated as integrated public data in this prototype.",
   },
   {
     category: "Privacy and data",
@@ -373,17 +413,27 @@ export default function AboutPage() {
                 word index
               </p>
               <div className="mt-4 flex flex-col gap-2">
-                {wordIndex.map(({ word, status, color }) => (
+                {wordIndex.map(({ word, status, color, href }) => (
                   <div
                     key={word}
                     className="flex items-center justify-between gap-4"
                   >
-                    <span
-                      className="font-mono text-sm font-black uppercase"
-                      style={{ color }}
-                    >
-                      {word}
-                    </span>
+                    {href ? (
+                      <Link
+                        href={href}
+                        className="font-mono text-sm font-black uppercase transition hover:text-nice"
+                        style={{ color }}
+                      >
+                        {word}
+                      </Link>
+                    ) : (
+                      <span
+                        className="font-mono text-sm font-black uppercase"
+                        style={{ color }}
+                      >
+                        {word}
+                      </span>
+                    )}
                     <span
                       className={`font-mono text-[0.65rem] font-black uppercase tracking-[0.14em] ${
                         status === "complete" ? "text-sail" : "text-ink/30"
@@ -817,8 +867,9 @@ export default function AboutPage() {
               <p className="mt-2 text-sm font-bold leading-6 text-ink/64">
                 If you use data or code from this project in research, please
                 cite both the original data sources (Google Books Ngram, Project
-                Gutenberg, Wikinews) and this archive. The pipeline scripts are
-                designed to be inspectable and reproducible.
+                Gutenberg, Wikinews, lexical references, policy/legal sources,
+                and metadata APIs where applicable) and this archive. The
+                pipeline scripts are designed to be inspectable and reproducible.
               </p>
             </div>
           </div>

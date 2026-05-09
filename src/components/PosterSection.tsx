@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 type PosterSectionProps = {
+  id?: string;
   eyebrow: string;
   title: string;
   intro?: string;
@@ -12,6 +13,7 @@ type PosterSectionProps = {
 };
 
 export function PosterSection({
+  id,
   eyebrow,
   title,
   intro,
@@ -22,6 +24,7 @@ export function PosterSection({
 
   return (
     <section
+      id={id}
       ref={revealRef}
       className={`scroll-reveal pb-0 pt-8 sm:pt-9 lg:pt-10 ${className}`}
     >

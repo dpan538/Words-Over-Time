@@ -1,0 +1,2017 @@
+{
+  "word": "data",
+  "title": "A Historical Index of Data",
+  "subtitle": "From given facts to databases, personal information, and training material.",
+  "coverage": {
+    "startYear": 1630,
+    "endYear": 2026,
+    "frequencySourceEndYear": 2022
+  },
+  "notes": [
+    "The two panels use different time scales so the contemporary period can be read rather than compressed.",
+    "The 1630-1800 span is a pre-corpus dictionary-attestation zone; Ngram frequency begins at 1800.",
+    "Phase and branch bands are visual structure, not hard historical boundaries.",
+    "Relationship arcs are curated semantic-functional links, not strict etymological descent or causal proof.",
+    "Google Books Ngram values are printed-book visibility signals, not full social usage."
+  ],
+  "panels": [
+    {
+      "id": "panel_a",
+      "label": "Long Formation",
+      "tag": "Panel A",
+      "startYear": 1630,
+      "endYear": 2005,
+      "summary": "Data develops from lexical attestation and given facts into statistical, administrative, machine-processable, and early database-era systems.",
+      "density": "spacious",
+      "lanes": [
+        {
+          "id": "evidence",
+          "label": "evidence",
+          "y": 220
+        },
+        {
+          "id": "lexical_transition",
+          "label": "transition",
+          "y": 345
+        },
+        {
+          "id": "computing_systems",
+          "label": "systems",
+          "y": 505
+        },
+        {
+          "id": "analysis_governance",
+          "label": "analysis",
+          "y": 655
+        }
+      ],
+      "phases": [
+        {
+          "id": "p1",
+          "label": "Given / Observed",
+          "startYear": 1800,
+          "endYear": 1900,
+          "summary": "Data as given facts, observations, measurements, and evidence."
+        },
+        {
+          "id": "p2",
+          "label": "Statistical / Administrative",
+          "startYear": 1900,
+          "endYear": 1950,
+          "summary": "Data becomes institutional: statistics, records, surveys, and organized administrative material."
+        },
+        {
+          "id": "p3",
+          "label": "Processing / Computing",
+          "startYear": 1950,
+          "endYear": 1980,
+          "summary": "Data becomes machine-processable information: input, output, storage, and processing."
+        },
+        {
+          "id": "p4",
+          "label": "Database / Network",
+          "startYear": 1980,
+          "endYear": 2005,
+          "summary": "Structured storage, classification systems, personal information, and early networked data practices emerge."
+        }
+      ],
+      "functions": [
+        {
+          "id": "evidence",
+          "label": "evidence",
+          "meaning": "facts, measurements, observations, empirical support"
+        },
+        {
+          "id": "records",
+          "label": "records",
+          "meaning": "collected and organized institutional material"
+        },
+        {
+          "id": "processing",
+          "label": "processing",
+          "meaning": "machine-readable input and output"
+        },
+        {
+          "id": "storage",
+          "label": "storage",
+          "meaning": "structured, retrievable, managed content"
+        },
+        {
+          "id": "analysis",
+          "label": "analysis",
+          "meaning": "material for interpretation, modelling, and insight"
+        },
+        {
+          "id": "governance",
+          "label": "governance",
+          "meaning": "protected, regulated, risky, or rights-bearing object"
+        }
+      ],
+      "terms": [
+        {
+          "id": "data",
+          "term": "data",
+          "branch": "1630 / dictionary attestation",
+          "functionGroup": "all",
+          "visualRole": "central spine / master label",
+          "importance": "essential",
+          "displayYear": 1630,
+          "laneId": "evidence",
+          "labelDx": 28,
+          "labelDy": -34,
+          "frequency": {
+            "status": "pre-corpus",
+            "firstNonZeroYear": null,
+            "firstStrongVisibilityYear": 1630,
+            "maxYear": null,
+            "maxFrequencyPerMillion": null,
+            "quality": "dictionary-attestation anchor before Google Books Ngram coverage; frequency trace begins in 1800"
+          }
+        },
+        {
+          "id": "datum",
+          "term": "datum",
+          "branch": "1646 / lexical origin",
+          "functionGroup": "evidence",
+          "visualRole": "minor contrast stem",
+          "importance": "high",
+          "displayYear": 1646,
+          "visualYear": 1670,
+          "laneId": "lexical_transition",
+          "labelDx": 18,
+          "labelDy": -20,
+          "frequency": {
+            "status": "pre-corpus",
+            "firstNonZeroYear": null,
+            "firstStrongVisibilityYear": 1646,
+            "maxYear": null,
+            "maxFrequencyPerMillion": null,
+            "quality": "dictionary-attestation anchor before Google Books Ngram coverage; frequency trace begins in 1800"
+          }
+        },
+        {
+          "id": "statistical_data",
+          "term": "statistical data",
+          "branch": "evidence / science",
+          "functionGroup": "evidence",
+          "visualRole": "early stem",
+          "importance": "high",
+          "displayYear": 1905,
+          "laneId": "evidence",
+          "labelDx": 10,
+          "labelDy": 18,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1800,
+            "firstStrongVisibilityYear": 1832,
+            "maxYear": 1932,
+            "maxFrequencyPerMillion": 3.774,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "data_collection",
+          "term": "data collection",
+          "branch": "administration / procedure",
+          "functionGroup": "records",
+          "visualRole": "mid-strength stem",
+          "importance": "high",
+          "displayYear": 1958,
+          "laneId": "lexical_transition",
+          "labelDx": -10,
+          "labelDy": 8,
+          "labelAnchor": "end",
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1800,
+            "firstStrongVisibilityYear": 1933,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 8.079,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "data_processing",
+          "term": "data processing",
+          "branch": "computing",
+          "functionGroup": "processing",
+          "visualRole": "major stem",
+          "importance": "very high",
+          "displayYear": 1964,
+          "laneId": "computing_systems",
+          "labelDx": 10,
+          "labelDy": -20,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1800,
+            "firstStrongVisibilityYear": 1954,
+            "maxYear": 1978,
+            "maxFrequencyPerMillion": 15.478,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "data_analysis",
+          "term": "data analysis",
+          "branch": "analysis / science",
+          "functionGroup": "analysis",
+          "visualRole": "major stem",
+          "importance": "high",
+          "displayYear": 1968,
+          "laneId": "analysis_governance",
+          "labelDx": 10,
+          "labelDy": -8,
+          "frequency": {
+            "status": "provisional",
+            "firstNonZeroYear": null,
+            "firstStrongVisibilityYear": 1965,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 7.06,
+            "quality": "not in generated data_frequency.json; carried from foundation scan summary"
+          }
+        },
+        {
+          "id": "database",
+          "term": "database",
+          "branch": "systems / storage",
+          "functionGroup": "storage",
+          "visualRole": "database-era anchor",
+          "importance": "very high",
+          "displayYear": 1984,
+          "laneId": "computing_systems",
+          "labelDx": 10,
+          "labelDy": -42,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1802,
+            "firstStrongVisibilityYear": 1962,
+            "maxYear": 1993,
+            "maxFrequencyPerMillion": 47.922,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "metadata",
+          "term": "metadata",
+          "branch": "systems / classification",
+          "functionGroup": "storage",
+          "visualRole": "classification layer",
+          "importance": "medium-high",
+          "displayYear": 1993,
+          "laneId": "computing_systems",
+          "labelDx": 10,
+          "labelDy": 18,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1809,
+            "firstStrongVisibilityYear": 1983,
+            "maxYear": 2010,
+            "maxFrequencyPerMillion": 4.59,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "personal_data",
+          "term": "personal data",
+          "branch": "privacy / governance",
+          "functionGroup": "governance",
+          "visualRole": "early governance stem",
+          "importance": "very high",
+          "displayYear": 1996,
+          "laneId": "analysis_governance",
+          "labelDx": -10,
+          "labelDy": 22,
+          "labelAnchor": "end",
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1802,
+            "firstStrongVisibilityYear": 1984,
+            "maxYear": 2008,
+            "maxFrequencyPerMillion": 9.222,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "data_mining",
+          "term": "data mining",
+          "branch": "commercial analytics",
+          "functionGroup": "analysis",
+          "visualRole": "terminal analytics stem",
+          "importance": "high",
+          "displayYear": 2005,
+          "laneId": "analysis_governance",
+          "labelDx": -12,
+          "labelDy": -18,
+          "labelAnchor": "end",
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1843,
+            "firstStrongVisibilityYear": 1995,
+            "maxYear": 2008,
+            "maxFrequencyPerMillion": 3.647,
+            "quality": "ok"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "source": "data",
+          "target": "statistical_data",
+          "type": "evidence_branch",
+          "strength": "primary"
+        },
+        {
+          "source": "data",
+          "target": "data_collection",
+          "type": "institutional_branch",
+          "strength": "secondary"
+        },
+        {
+          "source": "data_collection",
+          "target": "data_processing",
+          "type": "operational_shift",
+          "strength": "primary"
+        },
+        {
+          "source": "data",
+          "target": "data_analysis",
+          "type": "analytical_branch",
+          "strength": "secondary"
+        },
+        {
+          "source": "data_processing",
+          "target": "database",
+          "type": "systems_shift",
+          "strength": "primary"
+        },
+        {
+          "source": "database",
+          "target": "metadata",
+          "type": "classification_layer",
+          "strength": "primary"
+        },
+        {
+          "source": "data",
+          "target": "personal_data",
+          "type": "social_legal_branch",
+          "strength": "secondary"
+        },
+        {
+          "source": "data_analysis",
+          "target": "data_mining",
+          "type": "commercial_analytics",
+          "strength": "secondary"
+        }
+      ],
+      "frequencySeries": [
+        {
+          "termId": "data",
+          "source": "Google Books Ngram, English corpus, case-insensitive aggregate, smoothing 0",
+          "unit": "frequency per million printed-book tokens",
+          "status": "fetched",
+          "points": [
+            {
+              "year": 1800,
+              "value": 4.1521
+            },
+            {
+              "year": 1820,
+              "value": 3.4381
+            },
+            {
+              "year": 1840,
+              "value": 7.0783
+            },
+            {
+              "year": 1860,
+              "value": 8.7384
+            },
+            {
+              "year": 1880,
+              "value": 13.1477
+            },
+            {
+              "year": 1900,
+              "value": 27.7292
+            },
+            {
+              "year": 1920,
+              "value": 55.3565
+            },
+            {
+              "year": 1940,
+              "value": 125.1795
+            },
+            {
+              "year": 1960,
+              "value": 227.3408
+            },
+            {
+              "year": 1980,
+              "value": 487.1487
+            },
+            {
+              "year": 2000,
+              "value": 400.7101
+            },
+            {
+              "year": 2005,
+              "value": 379.272
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "panel_b",
+      "label": "Contemporary Expansion",
+      "tag": "Panel B",
+      "startYear": 2005,
+      "endYear": 2026,
+      "summary": "The recent scale expands data into platform traces, governance objects, commercial analytics, decision logic, and AI training material.",
+      "density": "dense",
+      "hinge": "Around 2005, data moves from database-era infrastructure into web-scale, platform, governance, and AI contexts.",
+      "lanes": [
+        {
+          "id": "scale_decision",
+          "label": "decision",
+          "y": 220
+        },
+        {
+          "id": "platform_trace",
+          "label": "platform",
+          "y": 335
+        },
+        {
+          "id": "analysis",
+          "label": "analysis",
+          "y": 450
+        },
+        {
+          "id": "governance_legal",
+          "label": "governance",
+          "y": 565
+        },
+        {
+          "id": "governance_ethics",
+          "label": "ethics / risk",
+          "y": 680
+        },
+        {
+          "id": "ai_training",
+          "label": "AI / training",
+          "y": 790
+        }
+      ],
+      "phases": [
+        {
+          "id": "p1_b",
+          "label": "Platform / Analytics",
+          "startYear": 2005,
+          "endYear": 2012,
+          "summary": "Data expands through platforms, user traces, and large-scale analytics."
+        },
+        {
+          "id": "p2_b",
+          "label": "Governance / AI",
+          "startYear": 2012,
+          "endYear": 2026,
+          "summary": "Data becomes a governed object, decision resource, and training material."
+        }
+      ],
+      "branchGroups": [
+        {
+          "id": "scale_analytics",
+          "label": "Scale / Analytics",
+          "startYear": 2005,
+          "endYear": 2018
+        },
+        {
+          "id": "platform_trace",
+          "label": "Platform / User Trace",
+          "startYear": 2005,
+          "endYear": 2026
+        },
+        {
+          "id": "privacy_governance",
+          "label": "Privacy / Governance",
+          "startYear": 2005,
+          "endYear": 2026
+        },
+        {
+          "id": "ai_training",
+          "label": "AI / Training",
+          "startYear": 2015,
+          "endYear": 2026
+        }
+      ],
+      "functions": [
+        {
+          "id": "platform",
+          "label": "platform",
+          "meaning": "user traces, logs, interfaces, platform exhaust"
+        },
+        {
+          "id": "analysis",
+          "label": "analysis",
+          "meaning": "mining, science, modelling, large-scale interpretation"
+        },
+        {
+          "id": "governance",
+          "label": "governance",
+          "meaning": "privacy, protection, breach, regulation"
+        },
+        {
+          "id": "decision",
+          "label": "decision",
+          "meaning": "data as organizational or automated action logic"
+        },
+        {
+          "id": "training",
+          "label": "training",
+          "meaning": "model input, learning material, synthetic examples"
+        }
+      ],
+      "terms": [
+        {
+          "id": "data",
+          "term": "data",
+          "branch": "headword / hinge",
+          "functionGroup": "all",
+          "visualRole": "panel spine",
+          "importance": "essential",
+          "displayYear": 2005,
+          "laneId": "scale_decision",
+          "labelDx": 10,
+          "labelDy": 0,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1800,
+            "firstStrongVisibilityYear": 1800,
+            "maxYear": 1983,
+            "maxFrequencyPerMillion": 511.944,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "big_data",
+          "term": "big data",
+          "branch": "scale / analytics",
+          "functionGroup": "analysis",
+          "visualRole": "recent major stem",
+          "importance": "high",
+          "displayYear": 2012,
+          "laneId": "scale_decision",
+          "labelDx": -16,
+          "labelDy": -18,
+          "labelAnchor": "end",
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1825,
+            "firstStrongVisibilityYear": 2012,
+            "maxYear": 2021,
+            "maxFrequencyPerMillion": 10.576,
+            "quality": "requires_manual_review"
+          }
+        },
+        {
+          "id": "open_data",
+          "term": "open data",
+          "branch": "public infrastructure",
+          "functionGroup": "platform",
+          "visualRole": "institutional openness stem",
+          "importance": "medium-high",
+          "displayYear": 2011,
+          "laneId": "platform_trace",
+          "labelDx": -14,
+          "labelDy": 54,
+          "labelAnchor": "end",
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1857,
+            "firstStrongVisibilityYear": 2011,
+            "maxYear": 2019,
+            "maxFrequencyPerMillion": 1.128,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "personal_data",
+          "term": "personal data",
+          "branch": "privacy / governance",
+          "functionGroup": "governance",
+          "visualRole": "governance anchor",
+          "importance": "very high",
+          "displayYear": 2008,
+          "laneId": "governance_legal",
+          "labelDx": 10,
+          "labelDy": -28,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1802,
+            "firstStrongVisibilityYear": 1984,
+            "maxYear": 2008,
+            "maxFrequencyPerMillion": 9.222,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "user_data",
+          "term": "user data",
+          "branch": "platform / trace",
+          "functionGroup": "platform",
+          "visualRole": "platform trace stem",
+          "importance": "high",
+          "displayYear": 2010,
+          "laneId": "platform_trace",
+          "labelDx": 10,
+          "labelDy": -22,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1869,
+            "firstStrongVisibilityYear": 1980,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 0.505,
+            "quality": "requires_manual_review"
+          }
+        },
+        {
+          "id": "data_protection",
+          "term": "data protection",
+          "branch": "governance / legal",
+          "functionGroup": "governance",
+          "visualRole": "legal governance stem",
+          "importance": "high",
+          "displayYear": 2016,
+          "laneId": "governance_legal",
+          "labelDx": -18,
+          "labelDy": -18,
+          "labelAnchor": "end",
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1843,
+            "firstStrongVisibilityYear": 1973,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 3.356,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "data_portability",
+          "term": "data portability",
+          "branch": "rights / mobility",
+          "functionGroup": "governance",
+          "visualRole": "rights bridge stem",
+          "importance": "medium-high",
+          "displayYear": 2018,
+          "laneId": "governance_legal",
+          "labelDx": 12,
+          "labelDy": -54,
+          "branchLabelDy": 6,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1980,
+            "firstStrongVisibilityYear": 2018,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 0.091,
+            "quality": "requires_manual_review; anchored by GDPR Article 20 right to data portability and ICO/MW usage evidence"
+          }
+        },
+        {
+          "id": "data_privacy",
+          "term": "data privacy",
+          "branch": "privacy / governance",
+          "functionGroup": "governance",
+          "visualRole": "privacy stem",
+          "importance": "high",
+          "displayYear": 2020,
+          "laneId": "governance_legal",
+          "labelDx": 10,
+          "labelDy": 24,
+          "branchLabelDy": -8,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1843,
+            "firstStrongVisibilityYear": 2000,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 0.893,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "data_breach",
+          "term": "data breach",
+          "branch": "risk / security",
+          "functionGroup": "governance",
+          "visualRole": "risk stem",
+          "importance": "high",
+          "displayYear": 2014,
+          "laneId": "governance_ethics",
+          "labelDx": 10,
+          "labelDy": 54,
+          "branchLabelDy": 10,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1900,
+            "firstStrongVisibilityYear": 2014,
+            "maxYear": 2021,
+            "maxFrequencyPerMillion": 0.373,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "data_science",
+          "term": "data science",
+          "branch": "analysis / profession",
+          "functionGroup": "analysis",
+          "visualRole": "professional analytics stem",
+          "importance": "high",
+          "displayYear": 2013,
+          "laneId": "analysis",
+          "labelDx": -10,
+          "labelDy": 28,
+          "labelAnchor": "end",
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1800,
+            "firstStrongVisibilityYear": 2013,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 2.372,
+            "quality": "ok"
+          }
+        },
+        {
+          "id": "data_driven",
+          "term": "data-driven",
+          "branch": "decision logic",
+          "functionGroup": "decision",
+          "visualRole": "decision stem",
+          "importance": "high",
+          "displayYear": 2018,
+          "laneId": "scale_decision",
+          "labelDx": 10,
+          "labelDy": 18,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1843,
+            "firstStrongVisibilityYear": 1985,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 2.814,
+            "quality": "requires_manual_review"
+          }
+        },
+        {
+          "id": "data_economy",
+          "term": "data economy",
+          "branch": "economic / commodity",
+          "functionGroup": "decision",
+          "visualRole": "economic framing stem",
+          "importance": "medium-high",
+          "displayYear": 2017,
+          "laneId": "scale_decision",
+          "labelDx": -12,
+          "labelDy": 42,
+          "branchLabelDy": 12,
+          "labelAnchor": "end",
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1980,
+            "firstStrongVisibilityYear": 2017,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 0.0631,
+            "quality": "requires_manual_review; weak printed-book signal, included as contemporary discourse marker"
+          }
+        },
+        {
+          "id": "data_pipeline",
+          "term": "data pipeline",
+          "branch": "infrastructure / ops",
+          "functionGroup": "platform",
+          "visualRole": "operations infrastructure stem",
+          "importance": "medium-high",
+          "displayYear": 2016,
+          "laneId": "platform_trace",
+          "labelDx": -12,
+          "labelDy": -10,
+          "branchLabelDy": 8,
+          "labelAnchor": "end",
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1980,
+            "firstStrongVisibilityYear": 2017,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 0.0914,
+            "quality": "requires_manual_review; printed-book signal lags operational usage"
+          }
+        },
+        {
+          "id": "data_lake",
+          "term": "data lake",
+          "branch": "architecture / storage",
+          "functionGroup": "platform",
+          "visualRole": "platform storage stem",
+          "importance": "medium-high",
+          "displayYear": 2016,
+          "laneId": "platform_trace",
+          "labelDx": 10,
+          "labelDy": 42,
+          "branchLabelDy": 6,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1980,
+            "firstStrongVisibilityYear": 2015,
+            "maxYear": 2021,
+            "maxFrequencyPerMillion": 0.4494,
+            "quality": "requires_manual_review; stronger recent printed-book signal than other 2015+ additions"
+          }
+        },
+        {
+          "id": "data_ethics",
+          "term": "data ethics",
+          "branch": "ethics / accountability",
+          "functionGroup": "governance",
+          "visualRole": "accountability stem",
+          "importance": "medium-high",
+          "displayYear": 2018,
+          "laneId": "governance_ethics",
+          "labelDx": -18,
+          "labelDy": 28,
+          "branchLabelDy": 8,
+          "labelAnchor": "end",
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1980,
+            "firstStrongVisibilityYear": 2019,
+            "maxYear": 2021,
+            "maxFrequencyPerMillion": 0.0866,
+            "quality": "requires_manual_review; weak Ngram signal but semantically important for accountability discourse"
+          }
+        },
+        {
+          "id": "data_sovereignty",
+          "term": "data sovereignty",
+          "branch": "geopolitical / jurisdiction",
+          "functionGroup": "governance",
+          "visualRole": "jurisdiction stem",
+          "importance": "medium-high",
+          "displayYear": 2019,
+          "laneId": "governance_ethics",
+          "labelDx": -28,
+          "labelDy": 72,
+          "branchLabelDy": 8,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1980,
+            "firstStrongVisibilityYear": 2019,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 0.0895,
+            "quality": "requires_manual_review; printed-book signal strengthens after 2018"
+          },
+          "labelAnchor": "end"
+        },
+        {
+          "id": "inference_data",
+          "term": "inference data",
+          "branch": "AI / output",
+          "functionGroup": "training",
+          "visualRole": "input-output boundary stem",
+          "importance": "supporting",
+          "displayYear": 2022,
+          "laneId": "governance_ethics",
+          "labelDx": 58,
+          "labelDy": -108,
+          "branchLabelDy": 10,
+          "frequency": {
+            "status": "provisional",
+            "firstNonZeroYear": 1980,
+            "firstStrongVisibilityYear": 2022,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 0.0116,
+            "quality": "requires_manual_review; Ngram signal remains below threshold, display year is curated for AI-era semantics"
+          }
+        },
+        {
+          "id": "data_poisoning",
+          "term": "data poisoning",
+          "branch": "integrity / attack",
+          "functionGroup": "governance",
+          "visualRole": "AI integrity threat stem",
+          "importance": "medium-high",
+          "displayYear": 2023,
+          "laneId": "governance_ethics",
+          "labelDx": -32,
+          "labelDy": -46,
+          "branchLabelDy": 56,
+          "labelAnchor": "end",
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1980,
+            "firstStrongVisibilityYear": 2023,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 0.064,
+            "quality": "requires_manual_review; anchored by NIST AI security/risk vocabulary and ML security literature"
+          }
+        },
+        {
+          "id": "data_annotation",
+          "term": "data annotation",
+          "branch": "labelling / labor",
+          "functionGroup": "training",
+          "visualRole": "labor layer stem",
+          "importance": "medium-high",
+          "displayYear": 2020,
+          "laneId": "ai_training",
+          "labelDx": -44,
+          "labelDy": 20,
+          "branchLabelDy": 30,
+          "labelAnchor": "end",
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1980,
+            "firstStrongVisibilityYear": 2020,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 0.118,
+            "quality": "requires_manual_review; supported by AI data-labelling/annotation discourse and Wikimedia/arXiv follow-up evidence"
+          }
+        },
+        {
+          "id": "training_data",
+          "term": "training data",
+          "branch": "AI / ML",
+          "functionGroup": "training",
+          "visualRole": "late anchor stem",
+          "importance": "very high",
+          "displayYear": 2021,
+          "laneId": "ai_training",
+          "labelDx": -52,
+          "labelDy": 18,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1817,
+            "firstStrongVisibilityYear": 2015,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 2.754,
+            "quality": "ok; earlier hits can refer to training outside ML"
+          },
+          "branchLabelDy": 12,
+          "labelAnchor": "end"
+        },
+        {
+          "id": "data_provenance",
+          "term": "data provenance",
+          "branch": "origin / accountability",
+          "functionGroup": "training",
+          "visualRole": "origin accountability stem",
+          "importance": "high",
+          "displayYear": 2022,
+          "laneId": "ai_training",
+          "labelDx": 72,
+          "labelDy": -112,
+          "branchLabelDy": 10,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1980,
+            "firstStrongVisibilityYear": 2022,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 0.236,
+            "quality": "requires_manual_review; anchored by AI Act Article 10 data governance/provenance requirements and technical literature"
+          }
+        },
+        {
+          "id": "synthetic_data",
+          "term": "synthetic data",
+          "branch": "AI / generation",
+          "functionGroup": "training",
+          "visualRole": "generated training stem",
+          "importance": "medium-high",
+          "displayYear": 2024,
+          "laneId": "ai_training",
+          "labelDx": 36,
+          "labelDy": 16,
+          "frequency": {
+            "status": "fetched",
+            "firstNonZeroYear": 1839,
+            "firstStrongVisibilityYear": 1992,
+            "maxYear": 2022,
+            "maxFrequencyPerMillion": 0.357,
+            "quality": "requires_manual_review"
+          },
+          "branchLabelDy": 26
+        }
+      ],
+      "relations": [
+        {
+          "source": "data",
+          "target": "personal_data",
+          "type": "social_legal_branch",
+          "strength": "secondary"
+        },
+        {
+          "source": "big_data",
+          "target": "data_science",
+          "type": "scale_to_profession",
+          "strength": "primary"
+        },
+        {
+          "source": "data_science",
+          "target": "data_driven",
+          "type": "analysis_to_decision",
+          "strength": "primary"
+        },
+        {
+          "source": "open_data",
+          "target": "data_science",
+          "type": "public_resource",
+          "strength": "secondary"
+        },
+        {
+          "source": "data_pipeline",
+          "target": "data_lake",
+          "type": "infrastructure_storage",
+          "strength": "secondary"
+        },
+        {
+          "source": "data_economy",
+          "target": "data_driven",
+          "type": "commodity_to_decision",
+          "strength": "secondary"
+        },
+        {
+          "source": "personal_data",
+          "target": "data_protection",
+          "type": "governance_shift",
+          "strength": "primary"
+        },
+        {
+          "source": "personal_data",
+          "target": "data_privacy",
+          "type": "privacy_branch",
+          "strength": "primary"
+        },
+        {
+          "source": "personal_data",
+          "target": "data_ethics",
+          "type": "accountability_branch",
+          "strength": "secondary"
+        },
+        {
+          "source": "data_protection",
+          "target": "data_sovereignty",
+          "type": "jurisdiction_shift",
+          "strength": "secondary"
+        },
+        {
+          "source": "user_data",
+          "target": "data_breach",
+          "type": "risk_branch",
+          "strength": "secondary"
+        },
+        {
+          "source": "data",
+          "target": "training_data",
+          "type": "ai_branch",
+          "strength": "primary"
+        },
+        {
+          "source": "training_data",
+          "target": "inference_data",
+          "type": "input_output_blur",
+          "strength": "secondary"
+        },
+        {
+          "source": "training_data",
+          "target": "synthetic_data",
+          "type": "generated_training_layer",
+          "strength": "primary"
+        },
+        {
+          "source": "data_protection",
+          "target": "data_portability",
+          "type": "rights_branch",
+          "strength": "primary"
+        },
+        {
+          "source": "data_annotation",
+          "target": "training_data",
+          "type": "labor_layer",
+          "strength": "secondary"
+        },
+        {
+          "source": "data_provenance",
+          "target": "synthetic_data",
+          "type": "origin_accountability",
+          "strength": "primary"
+        },
+        {
+          "source": "training_data",
+          "target": "data_poisoning",
+          "type": "integrity_threat",
+          "strength": "secondary"
+        },
+        {
+          "source": "data_poisoning",
+          "target": "data_provenance",
+          "type": "verification_demand",
+          "strength": "secondary"
+        }
+      ],
+      "frequencySeries": [
+        {
+          "termId": "data",
+          "source": "Google Books Ngram, English corpus, case-insensitive aggregate, smoothing 0",
+          "unit": "frequency per million printed-book tokens",
+          "status": "fetched",
+          "points": [
+            {
+              "year": 2005,
+              "value": 379.272
+            },
+            {
+              "year": 2010,
+              "value": 350.5381
+            },
+            {
+              "year": 2015,
+              "value": 349.792
+            },
+            {
+              "year": 2020,
+              "value": 337.0683
+            },
+            {
+              "year": 2022,
+              "value": 396.648
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "caveat": "Frequency and visibility are based on printed-language and curated lexical evidence. The index shows historical relations, not strict causality.",
+  "contemporaryEvidence": {
+    "generatedAt": "2026-05-09T06:39:21.252Z",
+    "purpose": "Supplement Chart 1 with contemporary evidence sources for 2020-2026 terms; this layer supports provenance and confidence rather than changing the visual index by itself.",
+    "terms": [
+      "data breach",
+      "data privacy",
+      "data protection",
+      "data governance",
+      "data science",
+      "data-driven",
+      "big data",
+      "training data",
+      "AI training data",
+      "synthetic data",
+      "inference data",
+      "data ethics",
+      "data sovereignty",
+      "data economy",
+      "data pipeline",
+      "data lake",
+      "data portability",
+      "data annotation",
+      "data provenance",
+      "data poisoning"
+    ],
+    "sourceAudits": [
+      {
+        "id": "eu_ai_act_2024",
+        "name": "EU AI Act, Regulation (EU) 2024/1689, EUR-Lex",
+        "priority": "high",
+        "credibility": "high",
+        "accessStatus": "manual_review_required",
+        "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689",
+        "method": "Official EUR-Lex text was verified as an authority source; local Node fetch returns 202/empty, so this layer records clause-level anchors instead of automated phrase counts.",
+        "fetchedAt": "2026-05-09T06:39:21.252Z",
+        "statistics": {
+          "verifiedAnchors": {
+            "data protection": "present: recitals and provisions refer to EU data protection law and personal data safeguards",
+            "data governance": "present: Article 10 requires data governance and management practices for high-risk AI training/validation/testing data sets",
+            "training data": "present: Article 10 covers training, validation and testing data sets for high-risk AI systems",
+            "synthetic data": "present: Article 10 refers to synthetic or anonymised data for bias detection/correction safeguards",
+            "data privacy": "related: privacy-preserving measures and personal data protection appear, but not as a stable exact phrase"
+          }
+        },
+        "caveat": "Legal-text mentions indicate normative salience, not general usage frequency."
+      },
+      {
+        "id": "stanford_ai_index_2025_web",
+        "name": "Stanford HAI AI Index 2025 web report pages",
+        "priority": "high",
+        "credibility": "high",
+        "accessStatus": "fetched",
+        "sourceUrl": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+        "method": "Fetched public Stanford HAI report web pages and counted case-insensitive exact phrase mentions across accessible HTML.",
+        "fetchedAt": "2026-05-09T06:39:21.252Z",
+        "statistics": {
+          "pages": [
+            {
+              "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+              "ok": true,
+              "characters": 13011
+            },
+            {
+              "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/research-and-development",
+              "ok": true,
+              "characters": 4933
+            },
+            {
+              "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/technical-performance",
+              "ok": true,
+              "characters": 5953
+            },
+            {
+              "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/responsible-ai",
+              "ok": true,
+              "characters": 5348
+            },
+            {
+              "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/economy",
+              "ok": true,
+              "characters": 5412
+            },
+            {
+              "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/policy-and-governance",
+              "ok": true,
+              "characters": 3358
+            },
+            {
+              "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/public-opinion",
+              "ok": true,
+              "characters": 5393
+            }
+          ],
+          "pagesFetched": 7,
+          "termMentions": {
+            "data breach": 0,
+            "data privacy": 1,
+            "data protection": 0,
+            "data governance": 0,
+            "data science": 0,
+            "data-driven": 1,
+            "big data": 0,
+            "training data": 0,
+            "AI training data": 0,
+            "synthetic data": 0,
+            "inference data": 0,
+            "data ethics": 0,
+            "data sovereignty": 0,
+            "data economy": 0,
+            "data pipeline": 0,
+            "data lake": 0
+          }
+        },
+        "caveat": "This is a web-page count, not full-PDF extraction. It records AI Index thematic salience rather than corpus frequency."
+      },
+      {
+        "id": "arxiv_cs_ai_2015_2026",
+        "name": "arXiv API, CS/AI/ML subset",
+        "priority": "medium",
+        "credibility": "medium-high",
+        "accessStatus": "manual_review_required",
+        "sourceUrl": "https://export.arxiv.org/api/query",
+        "method": "Attempted arXiv API totalResults queries for exact phrases in cs.AI, cs.LG, cs.CL, and stat.ML; the API returned 503/429 during this run, so term counts are deferred.",
+        "fetchedAt": "2026-05-09T06:39:21.252Z",
+        "statistics": {
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL",
+            "stat.ML"
+          ],
+          "yearBands": [
+            "2015_2017",
+            "2018_2020",
+            "2021_2023",
+            "2024_2026"
+          ],
+          "attemptedTerms": [
+            "training data",
+            "AI training data",
+            "synthetic data",
+            "inference data",
+            "data science",
+            "data-driven",
+            "data privacy",
+            "data ethics"
+          ],
+          "fetchOutcome": "rate_limited_or_unavailable_during_run",
+          "totalResultsByTermAndBand": {}
+        },
+        "caveat": "arXiv counts are academic metadata visibility, not broad social usage; phrase search can miss variants and synonyms."
+      },
+      {
+        "id": "wikimedia_pageviews_2016_2025",
+        "name": "Wikimedia Pageviews API, English Wikipedia",
+        "priority": "low",
+        "credibility": "medium",
+        "accessStatus": "fetched",
+        "sourceUrl": "https://wikimedia.org/api/rest_v1/",
+        "method": "Fetched monthly en.wikipedia all-access user pageviews for matching concept pages from 2016 through 2025.",
+        "fetchedAt": "2026-05-09T06:39:21.252Z",
+        "statistics": {
+          "totalViewsByTerm": {
+            "data breach": {
+              "title": "Data_breach",
+              "totalViews2016To2025": 1318311,
+              "latestYearViews": 101982
+            },
+            "data privacy": {
+              "title": "Information_privacy",
+              "totalViews2016To2025": 804910,
+              "latestYearViews": 44468
+            },
+            "data protection": {
+              "title": "Data_protection",
+              "totalViews2016To2025": 77709,
+              "latestYearViews": 3870
+            },
+            "data governance": {
+              "title": "Data_governance",
+              "totalViews2016To2025": 976429,
+              "latestYearViews": 32825
+            },
+            "data science": {
+              "title": "Data_science",
+              "totalViews2016To2025": 6358786,
+              "latestYearViews": 267726
+            },
+            "big data": {
+              "title": "Big_data",
+              "totalViews2016To2025": 7999662,
+              "latestYearViews": 182305
+            },
+            "training data": {
+              "title": "Training,_validation,_and_test_data_sets",
+              "totalViews2016To2025": 467615,
+              "latestYearViews": 93066
+            },
+            "synthetic data": {
+              "title": "Synthetic_data",
+              "totalViews2016To2025": 285846,
+              "latestYearViews": 40538
+            },
+            "data ethics": {
+              "title": "Data_ethics",
+              "totalViews2016To2025": 1507,
+              "latestYearViews": 703
+            },
+            "data sovereignty": {
+              "title": "Data_sovereignty",
+              "totalViews2016To2025": 140720,
+              "latestYearViews": 14530
+            },
+            "data pipeline": {
+              "title": "Data_pipeline",
+              "totalViews2016To2025": 2634,
+              "latestYearViews": 393
+            },
+            "data lake": {
+              "title": "Data_lake",
+              "totalViews2016To2025": 1551332,
+              "latestYearViews": 83906
+            }
+          }
+        },
+        "caveat": "Pageviews approximate public attention to concept pages, not phrase frequency or semantic emergence."
+      },
+      {
+        "id": "now_corpus",
+        "name": "NOW Corpus, English-Corpora.org",
+        "priority": "high",
+        "credibility": "high",
+        "accessStatus": "manual_review_required",
+        "sourceUrl": "https://www.english-corpora.org/now/",
+        "method": "Not fetched: no stable public API in this project environment; recommended manual export for 2010-present term counts.",
+        "caveat": "Best fit for contemporary news/web visibility, but should be imported from an authorized corpus export."
+      },
+      {
+        "id": "google_trends",
+        "name": "Google Trends",
+        "priority": "high",
+        "credibility": "medium",
+        "accessStatus": "not_fetched",
+        "sourceUrl": "https://trends.google.com/trends/",
+        "method": "Not fetched: Google does not provide a stable official public API; unofficial endpoints would be fragile.",
+        "caveat": "Search interest is useful after the Ngram cutoff but is not comparable to corpus frequency."
+      },
+      {
+        "id": "coca",
+        "name": "COCA, English-Corpora.org",
+        "priority": "medium",
+        "credibility": "high",
+        "accessStatus": "manual_review_required",
+        "sourceUrl": "https://www.english-corpora.org/coca/",
+        "method": "Not fetched: no stable public API in this project environment; recommended manual export by register/genre.",
+        "caveat": "Strong for genre/register comparison through 2019, weaker for 2020-2026 gaps."
+      },
+      {
+        "id": "oed",
+        "name": "Oxford English Dictionary",
+        "priority": "medium",
+        "credibility": "highest",
+        "accessStatus": "unavailable_without_subscription",
+        "sourceUrl": "https://www.oed.com/",
+        "method": "Not fetched: subscription source; use for manual attestation-year verification.",
+        "caveat": "Best source for earliest attestation, but quotation/citation reuse requires a separate editorial workflow."
+      }
+    ],
+    "termSummaries": [
+      {
+        "term": "data breach",
+        "termId": "data_breach",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": 1318311,
+            "unit": "pageviews",
+            "note": "2025 views: 101982"
+          }
+        ]
+      },
+      {
+        "term": "data privacy",
+        "termId": "data_privacy",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": "related: privacy-preserving measures and personal data protection appear, but not as a stable exact phrase",
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 1,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": 804910,
+            "unit": "pageviews",
+            "note": "2025 views: 44468"
+          }
+        ]
+      },
+      {
+        "term": "data protection",
+        "termId": "data_protection",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": "present: recitals and provisions refer to EU data protection law and personal data safeguards",
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": 77709,
+            "unit": "pageviews",
+            "note": "2025 views: 3870"
+          }
+        ]
+      },
+      {
+        "term": "data governance",
+        "termId": "data_governance",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": "present: Article 10 requires data governance and management practices for high-risk AI training/validation/testing data sets",
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": 976429,
+            "unit": "pageviews",
+            "note": "2025 views: 32825"
+          }
+        ]
+      },
+      {
+        "term": "data science",
+        "termId": "data_science",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": 6358786,
+            "unit": "pageviews",
+            "note": "2025 views: 267726"
+          }
+        ]
+      },
+      {
+        "term": "data-driven",
+        "termId": "data_driven",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 1,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": null,
+            "unit": "pageviews",
+            "note": "no matching page or fetch failed"
+          }
+        ]
+      },
+      {
+        "term": "big data",
+        "termId": "big_data",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": 7999662,
+            "unit": "pageviews",
+            "note": "2025 views: 182305"
+          }
+        ]
+      },
+      {
+        "term": "training data",
+        "termId": "training_data",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": "present: Article 10 covers training, validation and testing data sets for high-risk AI systems",
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": 467615,
+            "unit": "pageviews",
+            "note": "2025 views: 93066"
+          }
+        ]
+      },
+      {
+        "term": "AI training data",
+        "termId": "ai_training_data",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": null,
+            "unit": "pageviews",
+            "note": "no matching page or fetch failed"
+          }
+        ]
+      },
+      {
+        "term": "synthetic data",
+        "termId": "synthetic_data",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": "present: Article 10 refers to synthetic or anonymised data for bias detection/correction safeguards",
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": 285846,
+            "unit": "pageviews",
+            "note": "2025 views: 40538"
+          }
+        ]
+      },
+      {
+        "term": "inference data",
+        "termId": "inference_data",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": null,
+            "unit": "pageviews",
+            "note": "no matching page or fetch failed"
+          }
+        ]
+      },
+      {
+        "term": "data ethics",
+        "termId": "data_ethics",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": 1507,
+            "unit": "pageviews",
+            "note": "2025 views: 703"
+          }
+        ]
+      },
+      {
+        "term": "data sovereignty",
+        "termId": "data_sovereignty",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": 140720,
+            "unit": "pageviews",
+            "note": "2025 views: 14530"
+          }
+        ]
+      },
+      {
+        "term": "data economy",
+        "termId": "data_economy",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": null,
+            "unit": "pageviews",
+            "note": "no matching page or fetch failed"
+          }
+        ]
+      },
+      {
+        "term": "data pipeline",
+        "termId": "data_pipeline",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": 2634,
+            "unit": "pageviews",
+            "note": "2025 views: 393"
+          }
+        ]
+      },
+      {
+        "term": "data lake",
+        "termId": "data_lake",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "stanford_ai_index_2025_web",
+            "metric": "exact_phrase_mentions",
+            "value": 0,
+            "unit": "mentions"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "total_results_2015_2026",
+            "value": null,
+            "unit": "arXiv API totalResults",
+            "note": "not queried for this term"
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "total_pageviews_2016_2025",
+            "value": 1551332,
+            "unit": "pageviews",
+            "note": "2025 views: 83906"
+          }
+        ]
+      },
+      {
+        "term": "data portability",
+        "termId": "data_portability",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "legal_anchor",
+            "value": "GDPR Article 20 right to data portability; referenced as data-rights infrastructure",
+            "unit": "curated legal anchor"
+          },
+          {
+            "sourceId": "now_corpus",
+            "metric": "recommended_followup",
+            "value": null,
+            "unit": "manual export",
+            "note": "Validate 2018 news/legal salience."
+          }
+        ]
+      },
+      {
+        "term": "data annotation",
+        "termId": "data_annotation",
+        "evidence": [
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "recommended_followup",
+            "value": null,
+            "unit": "API/manual retry",
+            "note": "Expected strong ML metadata signal; API was rate-limited in this run."
+          },
+          {
+            "sourceId": "wikimedia_pageviews_2016_2025",
+            "metric": "recommended_followup",
+            "value": null,
+            "unit": "pageviews",
+            "note": "Needs matching page or adjacent concept mapping."
+          }
+        ]
+      },
+      {
+        "term": "data provenance",
+        "termId": "data_provenance",
+        "evidence": [
+          {
+            "sourceId": "eu_ai_act_2024",
+            "metric": "legal_anchor",
+            "value": "Article 10 data governance practices imply source/history documentation for training, validation, and testing data",
+            "unit": "curated legal anchor"
+          },
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "recommended_followup",
+            "value": null,
+            "unit": "API/manual retry",
+            "note": "Validate AI/ML literature density after arXiv rate limit clears."
+          }
+        ]
+      },
+      {
+        "term": "data poisoning",
+        "termId": "data_poisoning",
+        "evidence": [
+          {
+            "sourceId": "arxiv_cs_ai_2015_2026",
+            "metric": "recommended_followup",
+            "value": null,
+            "unit": "API/manual retry",
+            "note": "Validate 2022-2026 ML security growth."
+          },
+          {
+            "sourceId": "now_corpus",
+            "metric": "recommended_followup",
+            "value": null,
+            "unit": "manual export",
+            "note": "Validate media/policy uptake after large-model security discourse."
+          }
+        ]
+      }
+    ],
+    "caveats": [
+      "Counts are not directly comparable across sources because legal text, report pages, academic metadata, and pageviews measure different kinds of visibility.",
+      "NOW, COCA, and OED remain manual-review sources unless authorized exports are provided.",
+      "Google Trends is recorded as a candidate post-Ngram proxy but was not fetched because there is no stable official API."
+    ]
+  }
+}

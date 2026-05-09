@@ -10,8 +10,8 @@ function isReducedMotion() {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
-export function useScrollReveal() {
-  const ref = useRef<HTMLElement | null>(null);
+export function useScrollReveal<T extends HTMLElement = HTMLElement>() {
+  const ref = useRef<T | null>(null);
 
   useEffect(() => {
     const element = ref.current as RevealElement | null;

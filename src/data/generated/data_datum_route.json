@@ -1,0 +1,811 @@
+{
+  "word": "data",
+  "chartId": "data-datum-route",
+  "generatedAt": "2026-05-09T12:32:12.604Z",
+  "sourceInputs": [
+    "data_grammar_usage.json",
+    "data_terms.json",
+    "data_coverage_report.json",
+    "data_phases.json",
+    "data_historical_index.json",
+    "data_frequency.json",
+    "data_relations.json"
+  ],
+  "metadata": {
+    "title": "From Datum to Data",
+    "subtitle": "A grammatical route from counted facts to mass resource",
+    "thesis": "Plural usage persists while singular and mass usage expands through infrastructural contexts.",
+    "caveat": "This chart reads a usage shift, not a rule change. Printed-book frequencies indicate visibility and remain genre-sensitive."
+  },
+  "tracks": [
+    {
+      "id": "plural_evidentiary",
+      "label": "Plural / Evidentiary Route",
+      "description": "Data as countable facts, observations, and formal plural usage.",
+      "color": "#1570AC",
+      "y": 0.29
+    },
+    {
+      "id": "singular_infrastructural",
+      "label": "Singular / Infrastructural Route",
+      "description": "Data as processed, stored, reusable, and mass-like material.",
+      "color": "#A1081F",
+      "y": 0.68
+    }
+  ],
+  "nodes": [
+    {
+      "id": "datum",
+      "label": "datum",
+      "level": "major",
+      "track": "entry",
+      "role": "lexical_singular_root",
+      "x": 0.07,
+      "y": 0.51,
+      "note": "one given item",
+      "sourceTermSlug": "datum",
+      "firstAttestation": "1646",
+      "firstStrongVisibility": "specialized/formal use; declines relative to data after mid-20th century",
+      "evidenceSummary": "strong; dictionary; English Ngram quality: ok; term confidence: high; visual role: minor_node."
+    },
+    {
+      "id": "data",
+      "label": "data",
+      "level": "major",
+      "track": "fork",
+      "role": "central_fork_shared_base",
+      "x": 0.22,
+      "y": 0.51,
+      "note": "plural form, later mass base",
+      "sourceTermSlug": "data",
+      "firstAttestation": "1630",
+      "firstStrongVisibility": "persistent from scientific/statistical print; accelerates in 20th century",
+      "evidenceSummary": "strong; dictionary; English Ngram quality: ok; term confidence: high; visual role: major_node."
+    },
+    {
+      "id": "these_data",
+      "label": "these data",
+      "level": "major",
+      "track": "plural_evidentiary",
+      "role": "explicit_plural_demonstrative",
+      "x": 0.36,
+      "y": 0.31,
+      "note": "explicit plural framing"
+    },
+    {
+      "id": "data_are",
+      "label": "data are",
+      "level": "major",
+      "track": "plural_evidentiary",
+      "role": "formal_plural_construction",
+      "x": 0.52,
+      "y": 0.31,
+      "note": "formal plural construction"
+    },
+    {
+      "id": "statistical_data",
+      "label": "statistical data",
+      "level": "secondary",
+      "track": "plural_evidentiary",
+      "role": "measured_fact_support",
+      "x": 0.67,
+      "y": 0.09,
+      "note": "counted or measured facts",
+      "sourceTermSlug": "statistical-data",
+      "firstAttestation": null,
+      "firstStrongVisibility": "early 20th century in books",
+      "evidenceSummary": "usable; ngram; English Ngram quality: ok; term confidence: medium; visual role: minor_node."
+    },
+    {
+      "id": "empirical_data",
+      "label": "empirical data",
+      "level": "secondary",
+      "track": "plural_evidentiary",
+      "role": "observed_evidence_support",
+      "x": 0.83,
+      "y": 0.24,
+      "note": "observed evidence",
+      "sourceTermSlug": "empirical-data",
+      "firstAttestation": null,
+      "firstStrongVisibility": "mid-late 20th century in books",
+      "evidenceSummary": "usable; ngram; English Ngram quality: ok; term confidence: medium; visual role: minor_node."
+    },
+    {
+      "id": "data_processing",
+      "label": "data processing",
+      "level": "major",
+      "track": "singular_infrastructural",
+      "role": "aggregation_machine_handling",
+      "x": 0.38,
+      "y": 0.67,
+      "note": "aggregation and machine handling",
+      "sourceTermSlug": "data-processing",
+      "firstAttestation": "1954",
+      "firstStrongVisibility": "1960s-1980s",
+      "evidenceSummary": "strong; dictionary; English Ngram quality: ok; term confidence: high; visual role: major_node."
+    },
+    {
+      "id": "database",
+      "label": "database",
+      "level": "major",
+      "track": "singular_infrastructural",
+      "role": "stored_structured_material",
+      "x": 0.54,
+      "y": 0.73,
+      "note": "stored and structured material",
+      "sourceTermSlug": "database",
+      "firstAttestation": "c.1962",
+      "firstStrongVisibility": "1970s-1990s",
+      "evidenceSummary": "strong; dictionary; English Ngram quality: ok; term confidence: high; visual role: major_node."
+    },
+    {
+      "id": "this_data",
+      "label": "this data",
+      "level": "major",
+      "track": "singular_infrastructural",
+      "role": "singular_mass_demonstrative",
+      "x": 0.68,
+      "y": 0.66,
+      "note": "singular or mass demonstrative"
+    },
+    {
+      "id": "data_is",
+      "label": "data is",
+      "level": "major",
+      "track": "singular_infrastructural",
+      "role": "singular_mass_construction",
+      "x": 0.82,
+      "y": 0.56,
+      "note": "singular or mass construction"
+    },
+    {
+      "id": "data_as_resource",
+      "label": "data as resource",
+      "level": "secondary",
+      "track": "singular_infrastructural",
+      "role": "resource_logic",
+      "x": 0.9,
+      "y": 0.76,
+      "note": "material for systems and reuse"
+    },
+    {
+      "id": "training_data",
+      "label": "training data",
+      "level": "secondary",
+      "track": "extension",
+      "role": "model_input_extension",
+      "x": 0.96,
+      "y": 0.88,
+      "note": "later model-input extension",
+      "sourceTermSlug": "training-data",
+      "firstAttestation": null,
+      "firstStrongVisibility": "2015-2026",
+      "evidenceSummary": "strong; academic; English Ngram quality: ok; term confidence: high; visual role: major_node."
+    }
+  ],
+  "edges": [
+    {
+      "id": "datum-data",
+      "source": "datum",
+      "target": "data",
+      "role": "lexical_derivation",
+      "style": "solid",
+      "emphasis": "primary",
+      "curvature": 0
+    },
+    {
+      "id": "data-these-data",
+      "source": "data",
+      "target": "these_data",
+      "role": "plural_branch",
+      "style": "solid",
+      "emphasis": "primary",
+      "curvature": -0.22
+    },
+    {
+      "id": "these-data-data-are",
+      "source": "these_data",
+      "target": "data_are",
+      "role": "grammatical_continuation",
+      "style": "solid",
+      "emphasis": "primary",
+      "curvature": -0.08
+    },
+    {
+      "id": "data-are-statistical-data",
+      "source": "data_are",
+      "target": "statistical_data",
+      "role": "formal_scientific_support",
+      "style": "arc",
+      "emphasis": "secondary",
+      "curvature": -0.22
+    },
+    {
+      "id": "data-are-empirical-data",
+      "source": "data_are",
+      "target": "empirical_data",
+      "role": "formal_scientific_support",
+      "style": "arc",
+      "emphasis": "secondary",
+      "curvature": -0.16
+    },
+    {
+      "id": "data-data-processing",
+      "source": "data",
+      "target": "data_processing",
+      "role": "infrastructural_branch",
+      "style": "solid",
+      "emphasis": "primary",
+      "curvature": 0.24
+    },
+    {
+      "id": "data-processing-database",
+      "source": "data_processing",
+      "target": "database",
+      "role": "infrastructural_mediation",
+      "style": "solid",
+      "emphasis": "primary",
+      "curvature": 0.05
+    },
+    {
+      "id": "database-this-data",
+      "source": "database",
+      "target": "this_data",
+      "role": "mass_framing_bridge",
+      "style": "arc",
+      "emphasis": "primary",
+      "curvature": -0.12
+    },
+    {
+      "id": "this-data-data-is",
+      "source": "this_data",
+      "target": "data_is",
+      "role": "singular_expansion",
+      "style": "solid",
+      "emphasis": "primary",
+      "curvature": -0.04
+    },
+    {
+      "id": "data-is-resource",
+      "source": "data_is",
+      "target": "data_as_resource",
+      "role": "resource_logic",
+      "style": "solid",
+      "emphasis": "primary",
+      "curvature": 0.14
+    },
+    {
+      "id": "resource-training",
+      "source": "data_as_resource",
+      "target": "training_data",
+      "role": "later_extension",
+      "style": "dashed",
+      "emphasis": "secondary",
+      "curvature": 0.12
+    },
+    {
+      "id": "statistical-data-processing",
+      "source": "statistical_data",
+      "target": "data_processing",
+      "role": "evidence_to_infrastructure_translation",
+      "style": "dashed",
+      "emphasis": "quiet",
+      "curvature": 0.45,
+      "label": "measured facts become processable material"
+    },
+    {
+      "id": "database-data-is",
+      "source": "database",
+      "target": "data_is",
+      "role": "stored_mass_support",
+      "style": "dashed",
+      "emphasis": "quiet",
+      "curvature": -0.28,
+      "label": "structured stores support mass framing"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "fork-note",
+      "anchorNode": "data",
+      "title": "central fork",
+      "text": "Data is the shared base: historical plural form and later mass-noun platform.",
+      "x": 0.235,
+      "y": 0.405
+    },
+    {
+      "id": "infrastructure-note",
+      "anchorNode": "data_processing",
+      "title": "infrastructural mediation",
+      "text": "Processing and databases make data easier to treat as aggregated material.",
+      "x": 0.39,
+      "y": 0.835
+    },
+    {
+      "id": "crossing-note",
+      "anchorNode": "data_is",
+      "title": "printed-book signal",
+      "text": "Data is overtakes data are around 2020 in this signal; plural usage remains active.",
+      "x": 0.815,
+      "y": 0.42
+    },
+    {
+      "id": "right-note",
+      "anchorNode": "training_data",
+      "title": "persistence / expansion",
+      "text": "The route ends as coexistence: plural persistence, singular expansion.",
+      "x": 0.765,
+      "y": 0.895
+    }
+  ],
+  "evidence": [
+    {
+      "anchorNode": "data_are",
+      "label": "plural visibility",
+      "summary": "Plural construction remains visible in formal and scientific registers.",
+      "metrics": {
+        "average1900_1949": 4.849,
+        "average1950_1999": 15.865,
+        "average2000_2022": 11.284,
+        "value2022": 8.975
+      }
+    },
+    {
+      "anchorNode": "data_is",
+      "label": "singular expansion",
+      "summary": "Singular construction rises and overtakes data are around 2020 in the English printed-book signal.",
+      "metrics": {
+        "crossingYear": 2019,
+        "describedAs": "around 2020",
+        "average1900_1949": 1.029,
+        "average1950_1999": 5.847,
+        "average2000_2022": 8.739,
+        "value2022": 11.082
+      }
+    },
+    {
+      "anchorNode": "these_data",
+      "label": "plural demonstrative",
+      "summary": "Explicit plural demonstrative framing remains a visible printed construction.",
+      "metrics": {
+        "average1950_1999": 7.835,
+        "average2000_2022": 5.509,
+        "value2022": 3.801
+      }
+    },
+    {
+      "anchorNode": "this_data",
+      "label": "mass demonstrative",
+      "summary": "Singular or mass demonstrative framing grows alongside the infrastructural route.",
+      "metrics": {
+        "average1950_1999": 2.016,
+        "average2000_2022": 2.511,
+        "value2022": 2.855
+      }
+    }
+  ],
+  "sparkline": {
+    "unit": "frequency per million",
+    "corpus": "English",
+    "source": "Google Books Ngram English, smoothing 0",
+    "startYear": 1950,
+    "endYear": 2022,
+    "series": [
+      {
+        "id": "data_are",
+        "label": "data are",
+        "color": "#1570AC",
+        "points": [
+          {
+            "year": 1950,
+            "value": 10.237,
+            "normalized": 0.4513
+          },
+          {
+            "year": 1954,
+            "value": 10.615,
+            "normalized": 0.4679
+          },
+          {
+            "year": 1958,
+            "value": 12.404,
+            "normalized": 0.5468
+          },
+          {
+            "year": 1962,
+            "value": 14.114,
+            "normalized": 0.6222
+          },
+          {
+            "year": 1966,
+            "value": 15.115,
+            "normalized": 0.6663
+          },
+          {
+            "year": 1970,
+            "value": 15.656,
+            "normalized": 0.6902
+          },
+          {
+            "year": 1974,
+            "value": 17.883,
+            "normalized": 0.7884
+          },
+          {
+            "year": 1978,
+            "value": 18.754,
+            "normalized": 0.8268
+          },
+          {
+            "year": 1982,
+            "value": 19.209,
+            "normalized": 0.8468
+          },
+          {
+            "year": 1986,
+            "value": 18.687,
+            "normalized": 0.8238
+          },
+          {
+            "year": 1990,
+            "value": 18.377,
+            "normalized": 0.8101
+          },
+          {
+            "year": 1994,
+            "value": 18.122,
+            "normalized": 0.7989
+          },
+          {
+            "year": 1998,
+            "value": 14.607,
+            "normalized": 0.644
+          },
+          {
+            "year": 2002,
+            "value": 13.281,
+            "normalized": 0.5855
+          },
+          {
+            "year": 2006,
+            "value": 13.023,
+            "normalized": 0.5741
+          },
+          {
+            "year": 2010,
+            "value": 10.355,
+            "normalized": 0.4565
+          },
+          {
+            "year": 2014,
+            "value": 8.938,
+            "normalized": 0.394
+          },
+          {
+            "year": 2018,
+            "value": 10.241,
+            "normalized": 0.4515
+          },
+          {
+            "year": 2022,
+            "value": 8.975,
+            "normalized": 0.3957
+          }
+        ]
+      },
+      {
+        "id": "data_is",
+        "label": "data is",
+        "color": "#A1081F",
+        "points": [
+          {
+            "year": 1950,
+            "value": 2.159,
+            "normalized": 0.0952
+          },
+          {
+            "year": 1954,
+            "value": 2.661,
+            "normalized": 0.1173
+          },
+          {
+            "year": 1958,
+            "value": 3.233,
+            "normalized": 0.1425
+          },
+          {
+            "year": 1962,
+            "value": 4.056,
+            "normalized": 0.1788
+          },
+          {
+            "year": 1966,
+            "value": 4.537,
+            "normalized": 0.2
+          },
+          {
+            "year": 1970,
+            "value": 5.376,
+            "normalized": 0.237
+          },
+          {
+            "year": 1974,
+            "value": 6.767,
+            "normalized": 0.2983
+          },
+          {
+            "year": 1978,
+            "value": 7.306,
+            "normalized": 0.3221
+          },
+          {
+            "year": 1982,
+            "value": 7.541,
+            "normalized": 0.3324
+          },
+          {
+            "year": 1986,
+            "value": 8.34,
+            "normalized": 0.3677
+          },
+          {
+            "year": 1990,
+            "value": 7.891,
+            "normalized": 0.3479
+          },
+          {
+            "year": 1994,
+            "value": 7.911,
+            "normalized": 0.3488
+          },
+          {
+            "year": 1998,
+            "value": 8.016,
+            "normalized": 0.3534
+          },
+          {
+            "year": 2002,
+            "value": 8.256,
+            "normalized": 0.364
+          },
+          {
+            "year": 2006,
+            "value": 8.597,
+            "normalized": 0.379
+          },
+          {
+            "year": 2010,
+            "value": 8.16,
+            "normalized": 0.3597
+          },
+          {
+            "year": 2014,
+            "value": 7.905,
+            "normalized": 0.3485
+          },
+          {
+            "year": 2018,
+            "value": 9.876,
+            "normalized": 0.4354
+          },
+          {
+            "year": 2022,
+            "value": 11.082,
+            "normalized": 0.4886
+          }
+        ]
+      },
+      {
+        "id": "these_data",
+        "label": "these data",
+        "color": "#2C9FC7",
+        "points": [
+          {
+            "year": 1950,
+            "value": 5.268,
+            "normalized": 0.2323
+          },
+          {
+            "year": 1954,
+            "value": 5.855,
+            "normalized": 0.2581
+          },
+          {
+            "year": 1958,
+            "value": 6.559,
+            "normalized": 0.2892
+          },
+          {
+            "year": 1962,
+            "value": 7.433,
+            "normalized": 0.3277
+          },
+          {
+            "year": 1966,
+            "value": 7.629,
+            "normalized": 0.3363
+          },
+          {
+            "year": 1970,
+            "value": 7.725,
+            "normalized": 0.3406
+          },
+          {
+            "year": 1974,
+            "value": 8.859,
+            "normalized": 0.3905
+          },
+          {
+            "year": 1978,
+            "value": 9.41,
+            "normalized": 0.4148
+          },
+          {
+            "year": 1982,
+            "value": 9.253,
+            "normalized": 0.4079
+          },
+          {
+            "year": 1986,
+            "value": 9.223,
+            "normalized": 0.4066
+          },
+          {
+            "year": 1990,
+            "value": 9.238,
+            "normalized": 0.4073
+          },
+          {
+            "year": 1994,
+            "value": 8.115,
+            "normalized": 0.3577
+          },
+          {
+            "year": 1998,
+            "value": 7.099,
+            "normalized": 0.313
+          },
+          {
+            "year": 2002,
+            "value": 6.341,
+            "normalized": 0.2795
+          },
+          {
+            "year": 2006,
+            "value": 6.261,
+            "normalized": 0.276
+          },
+          {
+            "year": 2010,
+            "value": 4.836,
+            "normalized": 0.2132
+          },
+          {
+            "year": 2014,
+            "value": 4.518,
+            "normalized": 0.1992
+          },
+          {
+            "year": 2018,
+            "value": 4.591,
+            "normalized": 0.2024
+          },
+          {
+            "year": 2022,
+            "value": 3.801,
+            "normalized": 0.1675
+          }
+        ]
+      },
+      {
+        "id": "this_data",
+        "label": "this data",
+        "color": "#AE4202",
+        "points": [
+          {
+            "year": 1950,
+            "value": 0.725,
+            "normalized": 0.032
+          },
+          {
+            "year": 1954,
+            "value": 0.912,
+            "normalized": 0.0402
+          },
+          {
+            "year": 1958,
+            "value": 1.07,
+            "normalized": 0.0472
+          },
+          {
+            "year": 1962,
+            "value": 1.29,
+            "normalized": 0.0569
+          },
+          {
+            "year": 1966,
+            "value": 1.437,
+            "normalized": 0.0634
+          },
+          {
+            "year": 1970,
+            "value": 1.852,
+            "normalized": 0.0816
+          },
+          {
+            "year": 1974,
+            "value": 2.506,
+            "normalized": 0.1105
+          },
+          {
+            "year": 1978,
+            "value": 2.759,
+            "normalized": 0.1216
+          },
+          {
+            "year": 1982,
+            "value": 2.685,
+            "normalized": 0.1184
+          },
+          {
+            "year": 1986,
+            "value": 2.906,
+            "normalized": 0.1281
+          },
+          {
+            "year": 1990,
+            "value": 2.672,
+            "normalized": 0.1178
+          },
+          {
+            "year": 1994,
+            "value": 2.654,
+            "normalized": 0.117
+          },
+          {
+            "year": 1998,
+            "value": 2.484,
+            "normalized": 0.1095
+          },
+          {
+            "year": 2002,
+            "value": 2.488,
+            "normalized": 0.1097
+          },
+          {
+            "year": 2006,
+            "value": 2.566,
+            "normalized": 0.1131
+          },
+          {
+            "year": 2010,
+            "value": 2.397,
+            "normalized": 0.1057
+          },
+          {
+            "year": 2014,
+            "value": 2.213,
+            "normalized": 0.0975
+          },
+          {
+            "year": 2018,
+            "value": 2.654,
+            "normalized": 0.117
+          },
+          {
+            "year": 2022,
+            "value": 2.855,
+            "normalized": 0.1259
+          }
+        ]
+      }
+    ],
+    "crossingYear": 2019,
+    "crossingLabel": "around 2020",
+    "crossingMarker": {
+      "year": 2020,
+      "normalized": 0.409,
+      "ratio": 1.12
+    }
+  }
+}

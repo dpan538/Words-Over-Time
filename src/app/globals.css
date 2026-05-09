@@ -235,8 +235,122 @@ a {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .depression-translation-flow {
   animation: depression-translation-flow 960ms linear infinite;
+}
+
+.data-socialized-relation,
+.data-socialized-term,
+.socialized-ring-seg,
+.data-socialized-active-relation,
+.data-cross-surface,
+.data-cross-arms,
+.data-cross-flows,
+.data-cross-flow,
+.data-cross-center,
+.data-cross-nodes {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-socialized-relation,
+.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-socialized-term,
+.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .socialized-ring-seg,
+.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-cross-surface,
+.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-cross-arms,
+.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-cross-flows,
+.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-cross-center,
+.data-chart-reveal[data-scroll-reveal-ready="true"]:not(.is-visible) .data-cross-nodes {
+  opacity: 0;
+}
+
+.data-chart-reveal.is-visible .data-socialized-relation {
+  animation: data-socialized-line-in 640ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.data-chart-reveal.is-visible .data-socialized-term,
+.data-chart-reveal.is-visible .socialized-ring-seg,
+.data-chart-reveal.is-visible .data-socialized-active-relation {
+  animation: data-socialized-mark-in 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.data-chart-reveal.is-visible .data-cross-surface {
+  animation: data-cross-layer-in 620ms ease-out both;
+}
+
+.data-chart-reveal.is-visible .data-cross-arms,
+.data-chart-reveal.is-visible .data-cross-center {
+  animation: data-cross-layer-in 700ms ease-out 120ms both;
+}
+
+.data-chart-reveal.is-visible .data-cross-flows {
+  animation: data-cross-layer-in 760ms ease-out 210ms both;
+}
+
+.data-chart-reveal.is-visible .data-cross-flow {
+  animation: data-cross-flow-in 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.data-chart-reveal.is-visible .data-cross-nodes {
+  animation: data-cross-layer-in 760ms cubic-bezier(0.22, 1, 0.36, 1) 300ms both;
+}
+
+@keyframes data-socialized-mark-in {
+  from {
+    opacity: 0;
+    transform: translateY(5px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes data-socialized-line-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes data-cross-layer-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes data-cross-flow-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -260,8 +374,20 @@ a {
   .depression-translation-flow,
   .depression-machine-gear-intro,
   .depression-machine-intro-ring,
-  .depression-machine-feedback-pulse {
+  .depression-machine-feedback-pulse,
+  .data-socialized-relation,
+  .data-socialized-term,
+  .socialized-ring-seg,
+  .data-socialized-active-relation,
+  .data-cross-surface,
+  .data-cross-arms,
+  .data-cross-flows,
+  .data-cross-flow,
+  .data-cross-center,
+  .data-cross-nodes {
+    opacity: 1 !important;
     animation: none !important;
     transition: none !important;
+    transform: none !important;
   }
 }

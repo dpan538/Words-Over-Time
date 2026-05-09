@@ -1,0 +1,1553 @@
+{
+  "word": "data",
+  "chartId": "data-socialized-generation",
+  "title": "The Generation That Socialized Data",
+  "thesis": "Data became social before it became generative.",
+  "generatedAt": "2026-05-09T09:02:21.160Z",
+  "sourceInputs": [
+    "data_terms.json",
+    "data_coverage_report.json",
+    "data_frequency.json",
+    "data_relations.json",
+    "data_contemporary_evidence.json",
+    "data_sources.json",
+    "data_dataset.json",
+    "data_historical_index.json"
+  ],
+  "panels": [
+    {
+      "id": "outline",
+      "label": "OUTLINE / 1990s-2020s",
+      "dateRange": "1990s-2020s",
+      "scaleMeaning": "The larger generation in which data became networked, personal, public, commercial, and governable.",
+      "density": "spacious",
+      "circleGeometry": {
+        "trace_circulation": {
+          "cx": 0.5,
+          "cy": 0.31,
+          "r": 0.405
+        },
+        "identity_rights_control": {
+          "cx": 0.5,
+          "cy": 0.66,
+          "r": 0.405
+        }
+      }
+    },
+    {
+      "id": "inner",
+      "label": "INNER / 2003-2013",
+      "dateRange": "2003-2013",
+      "centerOfGravity": "2005-2012",
+      "scaleMeaning": "The compressed decade where platform traces, open data, privacy language, data mining, and big-data discourse began to overlap.",
+      "density": "compressed",
+      "circleGeometry": {
+        "trace_circulation": {
+          "cx": 0.5,
+          "cy": 0.31,
+          "r": 0.38
+        },
+        "identity_rights_control": {
+          "cx": 0.5,
+          "cy": 0.61,
+          "r": 0.38
+        }
+      }
+    }
+  ],
+  "circles": [
+    {
+      "id": "trace_circulation",
+      "label": "Trace & Circulation",
+      "meaning": "Data as web traces, metadata, user activity, platforms, search, public/open data, data mining, analytics, reusable circulation, and movement across systems."
+    },
+    {
+      "id": "identity_rights_control",
+      "label": "Identity, Rights & Control",
+      "meaning": "Data as personal information, privacy, protection, breach, brokers, rights, permissions, regulation, institutional accountability, and public/private distinction."
+    },
+    {
+      "id": "overlap",
+      "label": "Socialized Data Zone",
+      "meaning": "Data becomes social when circulating traces become attached to identifiable persons, public/private distinctions, market value, institutional control, and enforceable rights."
+    }
+  ],
+  "terms": [
+    {
+      "slug": "metadata",
+      "label": "metadata",
+      "panels": [
+        "outline",
+        "inner"
+      ],
+      "circle": "trace_circulation",
+      "visualRole": "minor_label",
+      "labelPriority": 3,
+      "branch": "networked_trace_interoperability",
+      "confidenceLevel": "high",
+      "coverageStatus": "strong",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": "1983",
+      "firstStrongVisibility": "late 1990s-2010s",
+      "position": {
+        "outline": {
+          "x": 0.32,
+          "y": 0.27
+        },
+        "inner": {
+          "x": 0.31,
+          "y": 0.27
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 2.4179,
+        "average2003_2013": 3.7288,
+        "average2005_2012": 3.9258,
+        "average2014_2022": 3.1369,
+        "peak1990_2022": {
+          "year": 2010,
+          "frequencyPerMillion": 4.5904
+        },
+        "growth1990sTo2010s": 6.84
+      },
+      "sourceIds": [
+        "src_mw_metadata",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_mw_metadata",
+          "title": "Merriam-Webster Dictionary: metadata",
+          "sourceType": "dictionary",
+          "year": "current"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Data about data; bridge between indexing, web resources, and platform trace.",
+      "caveat": "Do not treat every metadata use as surveillance.",
+      "selectionRationale": "Bridge term for web resources, indexing, and trace description."
+    },
+    {
+      "slug": "open-data",
+      "label": "open data",
+      "panels": [
+        "outline",
+        "inner"
+      ],
+      "circle": "trace_circulation",
+      "visualRole": "major_label",
+      "labelPriority": 1,
+      "branch": "networked_trace_interoperability",
+      "confidenceLevel": "medium",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": null,
+      "firstStrongVisibility": "2005-2015",
+      "position": {
+        "outline": {
+          "x": 0.57,
+          "y": 0.2
+        },
+        "inner": {
+          "x": 0.56,
+          "y": 0.22
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 0.2668,
+        "average2003_2013": 0.0844,
+        "average2005_2012": 0.0766,
+        "average2014_2022": 0.8032,
+        "peak1990_2022": {
+          "year": 2019,
+          "frequencyPerMillion": 1.1282
+        },
+        "growth1990sTo2010s": 10.02
+      },
+      "sourceIds": [
+        "src_oecd_open_data",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_oecd_open_data",
+          "title": "OECD Open Government Data",
+          "sourceType": "policy",
+          "year": "current"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Machine-readable, reusable public data policy branch.",
+      "caveat": "Policy salience matters more than book frequency.",
+      "selectionRationale": "Public/reusable circulation branch; policy salience outweighs modest book frequency."
+    },
+    {
+      "slug": "user-data",
+      "label": "user data",
+      "panels": [
+        "outline",
+        "inner"
+      ],
+      "circle": "overlap",
+      "visualRole": "hover_only",
+      "labelPriority": 6,
+      "branch": "networked_trace_interoperability",
+      "confidenceLevel": "low",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "hover_only",
+      "firstAttestation": null,
+      "firstStrongVisibility": "2010s-2026",
+      "position": {
+        "outline": {
+          "x": 0.43,
+          "y": 0.45
+        },
+        "inner": {
+          "x": 0.42,
+          "y": 0.44
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "requires_manual_review",
+        "average1990_2022": 0.3254,
+        "average2003_2013": 0.3279,
+        "average2005_2012": 0.3261,
+        "average2014_2022": 0.4093,
+        "peak1990_2022": {
+          "year": 2022,
+          "frequencyPerMillion": 0.5048
+        },
+        "growth1990sTo2010s": 1.52
+      },
+      "sourceIds": [
+        "src_ftc_social_media_data",
+        "src_now",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_ftc_social_media_data",
+          "title": "FTC report on social media and video streaming surveillance",
+          "sourceType": "policy",
+          "year": "2024"
+        },
+        {
+          "sourceId": "src_now",
+          "title": "NOW Corpus",
+          "sourceType": "corpus",
+          "year": "2010-present"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Data produced by or about users in networked systems.",
+      "caveat": "Recent/platform-heavy; validate with NOW, FTC, and snippets.",
+      "selectionRationale": "Conceptually central to platform traces but downgraded because confidence is low and Ngram quality requires review."
+    },
+    {
+      "slug": "clickstream-data",
+      "label": "clickstream data",
+      "panels": [
+        "outline"
+      ],
+      "circle": "trace_circulation",
+      "visualRole": "dot_only",
+      "labelPriority": 7,
+      "branch": "networked_trace_interoperability",
+      "confidenceLevel": "medium",
+      "coverageStatus": "weak",
+      "recommendedVisualStatus": "hover_only",
+      "firstAttestation": null,
+      "firstStrongVisibility": "2000s-2010s",
+      "position": {
+        "outline": {
+          "x": 0.23,
+          "y": 0.39
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 0.0119,
+        "average2003_2013": 0.0142,
+        "average2005_2012": 0.0151,
+        "average2014_2022": 0.0175,
+        "peak1990_2022": {
+          "year": 2002,
+          "frequencyPerMillion": 0.0384
+        },
+        "growth1990sTo2010s": 19.5
+      },
+      "sourceIds": [
+        "src_google_ngram",
+        "src_now"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        },
+        {
+          "sourceId": "src_now",
+          "title": "NOW Corpus",
+          "sourceType": "corpus",
+          "year": "2010-present"
+        }
+      ],
+      "notes": "Web-navigation traces for analytics.",
+      "caveat": "Specialized and recent; likely not a primary public-book signal.",
+      "selectionRationale": "Support dot for web activity traces."
+    },
+    {
+      "slug": "search-data",
+      "label": "search data",
+      "panels": [
+        "outline"
+      ],
+      "circle": "trace_circulation",
+      "visualRole": "hover_only",
+      "labelPriority": 7,
+      "branch": "networked_trace_interoperability",
+      "confidenceLevel": "low",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "annotation_only",
+      "firstAttestation": null,
+      "firstStrongVisibility": "2010s-2026",
+      "position": {
+        "outline": {
+          "x": 0.72,
+          "y": 0.37
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "requires_manual_review",
+        "average1990_2022": 0.0384,
+        "average2003_2013": 0.0369,
+        "average2005_2012": 0.0378,
+        "average2014_2022": 0.0427,
+        "peak1990_2022": {
+          "year": 2022,
+          "frequencyPerMillion": 0.0574
+        },
+        "growth1990sTo2010s": 1.11
+      },
+      "sourceIds": [
+        "src_now",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_now",
+          "title": "NOW Corpus",
+          "sourceType": "corpus",
+          "year": "2010-present"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Queries, clicks, and search logs as data traces.",
+      "caveat": "Likely sparse/noisy in books; needs web and policy validation.",
+      "selectionRationale": "Support dot for search/platform traces; coverage is noisy."
+    },
+    {
+      "slug": "personal-data",
+      "label": "personal data",
+      "panels": [
+        "outline",
+        "inner"
+      ],
+      "circle": "overlap",
+      "visualRole": "major_label",
+      "labelPriority": 1,
+      "branch": "personal_data_governance",
+      "confidenceLevel": "high",
+      "coverageStatus": "strong",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": null,
+      "firstStrongVisibility": "1980s-2000s",
+      "position": {
+        "outline": {
+          "x": 0.54,
+          "y": 0.49
+        },
+        "inner": {
+          "x": 0.52,
+          "y": 0.49
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 1.6373,
+        "average2003_2013": 1.9965,
+        "average2005_2012": 2.167,
+        "average2014_2022": 2.3921,
+        "peak1990_2022": {
+          "year": 2008,
+          "frequencyPerMillion": 9.2217
+        },
+        "growth1990sTo2010s": 2.2
+      },
+      "sourceIds": [
+        "src_ico_personal_data",
+        "src_gdpr_article_4",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_ico_personal_data",
+          "title": "What is personal data?",
+          "sourceType": "legal",
+          "year": "current"
+        },
+        {
+          "sourceId": "src_gdpr_article_4",
+          "title": "GDPR Article 4 definitions",
+          "sourceType": "legal",
+          "year": "2016"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Legally defined data relating to an identified or identifiable person.",
+      "caveat": "Jurisdiction-specific meanings; avoid treating UK/EU legal language as universal.",
+      "selectionRationale": "Strong legal and Ngram support; anchors the person-attached side of socialized data."
+    },
+    {
+      "slug": "data-protection",
+      "label": "data protection",
+      "panels": [
+        "outline",
+        "inner"
+      ],
+      "circle": "identity_rights_control",
+      "visualRole": "major_label",
+      "labelPriority": 1,
+      "branch": "personal_data_governance",
+      "confidenceLevel": "high",
+      "coverageStatus": "strong",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": null,
+      "firstStrongVisibility": "1980s-2010s",
+      "position": {
+        "outline": {
+          "x": 0.36,
+          "y": 0.67
+        },
+        "inner": {
+          "x": 0.38,
+          "y": 0.65
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 1.2764,
+        "average2003_2013": 1.1016,
+        "average2005_2012": 1.1249,
+        "average2014_2022": 2.3624,
+        "peak1990_2022": {
+          "year": 2022,
+          "frequencyPerMillion": 3.356
+        },
+        "growth1990sTo2010s": 2.86
+      },
+      "sourceIds": [
+        "src_ico_data_protection",
+        "src_gdpr_article_4",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_ico_data_protection",
+          "title": "Guide to data protection",
+          "sourceType": "legal",
+          "year": "current"
+        },
+        {
+          "sourceId": "src_gdpr_article_4",
+          "title": "GDPR Article 4 definitions",
+          "sourceType": "legal",
+          "year": "2016"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Legal/governance frame for lawful processing and rights.",
+      "caveat": "Especially strong in UK/EU discourse; US often says privacy or personal information.",
+      "selectionRationale": "Strong governance term; EU/UK wording caveat retained."
+    },
+    {
+      "slug": "data-privacy",
+      "label": "data privacy",
+      "panels": [
+        "outline",
+        "inner"
+      ],
+      "circle": "identity_rights_control",
+      "visualRole": "minor_label",
+      "labelPriority": 4,
+      "branch": "personal_data_governance",
+      "confidenceLevel": "medium",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "hover_only",
+      "firstAttestation": null,
+      "firstStrongVisibility": "2010s-2026",
+      "position": {
+        "outline": {
+          "x": 0.6,
+          "y": 0.66
+        },
+        "inner": {
+          "x": 0.59,
+          "y": 0.63
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 0.1993,
+        "average2003_2013": 0.1369,
+        "average2005_2012": 0.1421,
+        "average2014_2022": 0.4734,
+        "peak1990_2022": {
+          "year": 2022,
+          "frequencyPerMillion": 0.8929
+        },
+        "growth1990sTo2010s": 5.56
+      },
+      "sourceIds": [
+        "src_now",
+        "src_google_ngram",
+        "src_ftc_social_media_data"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_now",
+          "title": "NOW Corpus",
+          "sourceType": "corpus",
+          "year": "2010-present"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        },
+        {
+          "sourceId": "src_ftc_social_media_data",
+          "title": "FTC report on social media and video streaming surveillance",
+          "sourceType": "policy",
+          "year": "2024"
+        }
+      ],
+      "notes": "Privacy branch phrased around data rather than broader privacy.",
+      "caveat": "Recent and news/policy heavy; books understate salience.",
+      "selectionRationale": "Important privacy branch but downgraded because internal coverage recommends hover-only."
+    },
+    {
+      "slug": "data-breach",
+      "label": "data breach",
+      "panels": [
+        "outline",
+        "inner"
+      ],
+      "circle": "overlap",
+      "visualRole": "major_label",
+      "labelPriority": 2,
+      "branch": "personal_data_governance",
+      "confidenceLevel": "medium",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": null,
+      "firstStrongVisibility": "2010s-2026",
+      "position": {
+        "outline": {
+          "x": 0.67,
+          "y": 0.55
+        },
+        "inner": {
+          "x": 0.66,
+          "y": 0.54
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 0.0887,
+        "average2003_2013": 0.052,
+        "average2005_2012": 0.0633,
+        "average2014_2022": 0.2608,
+        "peak1990_2022": {
+          "year": 2021,
+          "frequencyPerMillion": 0.3731
+        },
+        "growth1990sTo2010s": 318.4
+      },
+      "sourceIds": [
+        "src_gdpr_article_4",
+        "src_now",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_gdpr_article_4",
+          "title": "GDPR Article 4 definitions",
+          "sourceType": "legal",
+          "year": "2016"
+        },
+        {
+          "sourceId": "src_now",
+          "title": "NOW Corpus",
+          "sourceType": "corpus",
+          "year": "2010-present"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Incident frame around exposed or compromised data.",
+      "caveat": "News-heavy; use NOW/legal sources before final chart prominence.",
+      "selectionRationale": "Exposure event that turns private data into public/legal matter."
+    },
+    {
+      "slug": "data-governance",
+      "label": "data governance",
+      "panels": [
+        "outline"
+      ],
+      "circle": "identity_rights_control",
+      "visualRole": "hover_only",
+      "labelPriority": 6,
+      "branch": "personal_data_governance",
+      "confidenceLevel": "medium",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "hover_only",
+      "firstAttestation": null,
+      "firstStrongVisibility": "2015-2026",
+      "position": {
+        "outline": {
+          "x": 0.49,
+          "y": 0.76
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 0.0926,
+        "average2003_2013": 0.0462,
+        "average2005_2012": 0.0446,
+        "average2014_2022": 0.2829,
+        "peak1990_2022": {
+          "year": 2022,
+          "frequencyPerMillion": 0.6052
+        },
+        "growth1990sTo2010s": 1438
+      },
+      "sourceIds": [
+        "src_oecd_data_driven_innovation",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_oecd_data_driven_innovation",
+          "title": "Data-Driven Innovation",
+          "sourceType": "policy",
+          "year": "2015"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Management and policy controls around data quality, access, and accountability.",
+      "caveat": "Enterprise and public-policy uses may diverge.",
+      "selectionRationale": "Later consolidation term; internal coverage recommends hover-only."
+    },
+    {
+      "slug": "data-broker",
+      "label": "data broker",
+      "panels": [
+        "outline"
+      ],
+      "circle": "identity_rights_control",
+      "visualRole": "hover_only",
+      "labelPriority": 6,
+      "branch": "commercial_analytics_decision",
+      "confidenceLevel": "medium",
+      "coverageStatus": "weak",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": null,
+      "firstStrongVisibility": "2014-2026",
+      "position": {
+        "outline": {
+          "x": 0.7,
+          "y": 0.74
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 0.0093,
+        "average2003_2013": 0.0107,
+        "average2005_2012": 0.0134,
+        "average2014_2022": 0.0172,
+        "peak1990_2022": {
+          "year": 2006,
+          "frequencyPerMillion": 0.0262
+        },
+        "growth1990sTo2010s": 7.06
+      },
+      "sourceIds": [
+        "src_ftc_data_brokers",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_ftc_data_brokers",
+          "title": "FTC data brokers report",
+          "sourceType": "policy",
+          "year": "2014"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Commercial intermediary collecting or selling personal information.",
+      "caveat": "Regulatory/policy source is stronger than book corpus.",
+      "selectionRationale": "Commercial-control term; policy relevance is stronger than book visibility."
+    },
+    {
+      "slug": "data-mining",
+      "label": "data mining",
+      "panels": [
+        "outline",
+        "inner"
+      ],
+      "circle": "overlap",
+      "visualRole": "major_label",
+      "labelPriority": 1,
+      "branch": "commercial_analytics_decision",
+      "confidenceLevel": "high",
+      "coverageStatus": "strong",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": "1968",
+      "firstStrongVisibility": "1990s-2000s",
+      "position": {
+        "outline": {
+          "x": 0.29,
+          "y": 0.51
+        },
+        "inner": {
+          "x": 0.32,
+          "y": 0.51
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 1.9168,
+        "average2003_2013": 2.7146,
+        "average2005_2012": 2.8814,
+        "average2014_2022": 2.9207,
+        "peak1990_2022": {
+          "year": 2008,
+          "frequencyPerMillion": 3.6472
+        },
+        "growth1990sTo2010s": 9.23
+      },
+      "sourceIds": [
+        "src_mw_data_mining",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_mw_data_mining",
+          "title": "Merriam-Webster Dictionary: data mining",
+          "sourceType": "dictionary",
+          "year": "current"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Extracting patterns or value from large data collections.",
+      "caveat": "Technical term with commercial and surveillance implications; context matters.",
+      "selectionRationale": "Extraction vocabulary that links traces, markets, and analysis."
+    },
+    {
+      "slug": "big-data",
+      "label": "big data",
+      "panels": [
+        "outline",
+        "inner"
+      ],
+      "circle": "overlap",
+      "visualRole": "major_label",
+      "labelPriority": 1,
+      "branch": "commercial_analytics_decision",
+      "confidenceLevel": "medium",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": "1980 early use; modern sense mid-1990s",
+      "firstStrongVisibility": "2007-2015",
+      "position": {
+        "outline": {
+          "x": 0.46,
+          "y": 0.57
+        },
+        "inner": {
+          "x": 0.48,
+          "y": 0.56
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "requires_manual_review",
+        "average1990_2022": 1.9487,
+        "average2003_2013": 0.147,
+        "average2005_2012": 0.0557,
+        "average2014_2022": 6.9549,
+        "peak1990_2022": {
+          "year": 2021,
+          "frequencyPerMillion": 10.5763
+        },
+        "growth1990sTo2010s": 517.29
+      },
+      "sourceIds": [
+        "src_nist_big_data",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_nist_big_data",
+          "title": "NIST Big Data Interoperability Framework",
+          "sourceType": "technical",
+          "year": "2015"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Scale-oriented term for large, complex, networked datasets and analytics.",
+      "caveat": "Early phrase hits can be literal; modern technical sense needs manual review.",
+      "selectionRationale": "Scale discourse intensifies after the inner core and links analytics to social exhaust."
+    },
+    {
+      "slug": "data-science",
+      "label": "data science",
+      "panels": [
+        "outline",
+        "inner"
+      ],
+      "circle": "overlap",
+      "visualRole": "major_label",
+      "labelPriority": 2,
+      "branch": "commercial_analytics_decision",
+      "confidenceLevel": "medium",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": "1974 phrase; 2001 modern disciplinary framing",
+      "firstStrongVisibility": "2010-2015",
+      "position": {
+        "outline": {
+          "x": 0.41,
+          "y": 0.38
+        },
+        "inner": {
+          "x": 0.47,
+          "y": 0.39
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 0.3095,
+        "average2003_2013": 0.0213,
+        "average2005_2012": 0.0132,
+        "average2014_2022": 1.0999,
+        "peak1990_2022": {
+          "year": 2022,
+          "frequencyPerMillion": 2.3724
+        },
+        "growth1990sTo2010s": 66.41
+      },
+      "sourceIds": [
+        "src_cleveland_data_science",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_cleveland_data_science",
+          "title": "Data Science: An Action Plan for Expanding the Technical Areas of the Field of Statistics",
+          "sourceType": "academic",
+          "year": "2001"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Disciplinary/professional branch connecting statistics, computing, and AI.",
+      "caveat": "First phrase-use and modern disciplinary centrality are separate; validate snippets before exact timeline copy.",
+      "selectionRationale": "Professional/method term; modern visibility consolidates around 2010-2015."
+    },
+    {
+      "slug": "data-driven",
+      "label": "data-driven",
+      "panels": [
+        "outline",
+        "inner"
+      ],
+      "circle": "overlap",
+      "visualRole": "dot_only",
+      "labelPriority": 6,
+      "branch": "commercial_analytics_decision",
+      "confidenceLevel": "medium",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": null,
+      "firstStrongVisibility": "2005-2015",
+      "position": {
+        "outline": {
+          "x": 0.57,
+          "y": 0.39
+        },
+        "inner": {
+          "x": 0.58,
+          "y": 0.47
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "requires_manual_review",
+        "average1990_2022": 0.6601,
+        "average2003_2013": 0.4895,
+        "average2005_2012": 0.5099,
+        "average2014_2022": 1.5272,
+        "peak1990_2022": {
+          "year": 2022,
+          "frequencyPerMillion": 2.814
+        },
+        "growth1990sTo2010s": 4.76
+      },
+      "sourceIds": [
+        "src_oecd_data_driven_innovation",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_oecd_data_driven_innovation",
+          "title": "Data-Driven Innovation",
+          "sourceType": "policy",
+          "year": "2015"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Data as basis for institutional or product decisions.",
+      "caveat": "Hyphenated query is noisy in Ngram; verify with snippets.",
+      "selectionRationale": "Useful organizational connective tissue, but noisy enough to keep visually secondary."
+    },
+    {
+      "slug": "dataset",
+      "label": "dataset",
+      "panels": [
+        "outline"
+      ],
+      "circle": "trace_circulation",
+      "visualRole": "dot_only",
+      "labelPriority": 7,
+      "branch": "database_structured_access",
+      "confidenceLevel": "high",
+      "coverageStatus": "strong",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": "1958",
+      "firstStrongVisibility": "1990s-2010s",
+      "position": {
+        "outline": {
+          "x": 0.68,
+          "y": 0.28
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 5.2692,
+        "average2003_2013": 4.3804,
+        "average2005_2012": 4.5752,
+        "average2014_2022": 12.1223,
+        "peak1990_2022": {
+          "year": 2022,
+          "frequencyPerMillion": 22.1477
+        },
+        "growth1990sTo2010s": 7.4
+      },
+      "sourceIds": [
+        "src_mw_dataset",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_mw_dataset",
+          "title": "Merriam-Webster Dictionary: dataset",
+          "sourceType": "dictionary",
+          "year": "current"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Packaged unit of data; key bridge to AI training material.",
+      "caveat": "Compare one-word and spaced forms separately.",
+      "selectionRationale": "Packaged data unit; included as bridge to later training data."
+    },
+    {
+      "slug": "training-data",
+      "label": "training data",
+      "panels": [
+        "outline",
+        "inner"
+      ],
+      "circle": "ai_tail",
+      "visualRole": "edge_tail",
+      "labelPriority": 5,
+      "branch": "ai_training_synthetic_generation",
+      "confidenceLevel": "high",
+      "coverageStatus": "strong",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": null,
+      "firstStrongVisibility": "2015-2026",
+      "position": {
+        "outline": {
+          "x": 0.86,
+          "y": 0.33
+        },
+        "inner": {
+          "x": 0.86,
+          "y": 0.33
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "ok",
+        "average1990_2022": 0.9421,
+        "average2003_2013": 0.9195,
+        "average2005_2012": 0.9484,
+        "average2014_2022": 1.6381,
+        "peak1990_2022": {
+          "year": 2022,
+          "frequencyPerMillion": 2.754
+        },
+        "growth1990sTo2010s": 2.46
+      },
+      "sourceIds": [
+        "src_stanford_training_data",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_stanford_training_data",
+          "title": "What is training data?",
+          "sourceType": "academic",
+          "year": "current"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Examples used to teach machine-learning models.",
+      "caveat": "Earlier phrase hits can refer to training as education rather than ML.",
+      "selectionRationale": "Later AI amplification term; deliberately placed on the outer rim, away from the overlap origin."
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "synthetic data",
+      "panels": [
+        "outline"
+      ],
+      "circle": "ai_tail",
+      "visualRole": "edge_tail",
+      "labelPriority": 6,
+      "branch": "ai_training_synthetic_generation",
+      "confidenceLevel": "medium",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "show",
+      "firstAttestation": null,
+      "firstStrongVisibility": "2020s",
+      "position": {
+        "outline": {
+          "x": 0.86,
+          "y": 0.45
+        }
+      },
+      "ngramSummary": {
+        "corpus": "English",
+        "quality": "requires_manual_review",
+        "average1990_2022": 0.1486,
+        "average2003_2013": 0.1576,
+        "average2005_2012": 0.1575,
+        "average2014_2022": 0.2014,
+        "peak1990_2022": {
+          "year": 2022,
+          "frequencyPerMillion": 0.3572
+        },
+        "growth1990sTo2010s": 1.46
+      },
+      "sourceIds": [
+        "src_nist_synthetic_data",
+        "src_google_ngram"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_nist_synthetic_data",
+          "title": "Synthetic data definitions and context",
+          "sourceType": "technical",
+          "year": "current"
+        },
+        {
+          "sourceId": "src_google_ngram",
+          "title": "Google Books Ngram Viewer",
+          "sourceType": "ngram",
+          "year": "2022 corpus endpoint"
+        }
+      ],
+      "notes": "Data generated by models or algorithms rather than directly observed.",
+      "caveat": "Modern AI/privacy sense should be validated with technical sources, not Ngram alone.",
+      "selectionRationale": "Later AI/privacy response layer; not part of the socialization core."
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "metadata-to-open-data-institutionalizes",
+      "from": "metadata",
+      "to": "open-data",
+      "relation_type": "institutionalizes",
+      "branch": "networked_trace_interoperability",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.58,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_metadata",
+        "src_google_ngram",
+        "src_oecd_open_data"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive",
+      "panels": [
+        "outline",
+        "inner"
+      ]
+    },
+    {
+      "relation_id": "personal-data-to-data-protection-governs",
+      "from": "personal-data",
+      "to": "data-protection",
+      "relation_type": "governs",
+      "branch": "personal_data_governance",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.92,
+      "confidence_level": "high",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_ico_personal_data",
+        "src_gdpr_article_4",
+        "src_google_ngram",
+        "src_ico_data_protection"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Source-backed lexical or legal relation.",
+      "data_layer": "raw",
+      "panels": [
+        "outline",
+        "inner"
+      ]
+    },
+    {
+      "relation_id": "personal-data-to-data-privacy-governs",
+      "from": "personal-data",
+      "to": "data-privacy",
+      "relation_type": "governs",
+      "branch": "personal_data_governance",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.78,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_ico_personal_data",
+        "src_gdpr_article_4",
+        "src_google_ngram",
+        "src_now"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated",
+      "panels": [
+        "outline",
+        "inner"
+      ]
+    },
+    {
+      "relation_id": "user-data-to-data-mining-extracts",
+      "from": "user-data",
+      "to": "data-mining",
+      "relation_type": "extracts",
+      "branch": "commercial_analytics_decision",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.72,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_ftc_social_media_data",
+        "src_now",
+        "src_google_ngram",
+        "src_mw_data_mining"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive",
+      "panels": [
+        "outline",
+        "inner"
+      ]
+    },
+    {
+      "relation_id": "data-mining-to-big-data-semantic_neighbor",
+      "from": "data-mining",
+      "to": "big-data",
+      "relation_type": "semantic_neighbor",
+      "branch": "commercial_analytics_decision",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.7,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_data_mining",
+        "src_google_ngram",
+        "src_nist_big_data"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated",
+      "panels": [
+        "outline",
+        "inner"
+      ]
+    },
+    {
+      "relation_id": "big-data-to-data-science-semantic_neighbor",
+      "from": "big-data",
+      "to": "data-science",
+      "relation_type": "semantic_neighbor",
+      "branch": "commercial_analytics_decision",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.74,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_nist_big_data",
+        "src_google_ngram",
+        "src_cleveland_data_science"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "curated",
+      "panels": [
+        "outline",
+        "inner"
+      ]
+    },
+    {
+      "relation_id": "big-data-to-data-driven-commercializes",
+      "from": "big-data",
+      "to": "data-driven",
+      "relation_type": "commercializes",
+      "branch": "commercial_analytics_decision",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.74,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_nist_big_data",
+        "src_google_ngram",
+        "src_oecd_data_driven_innovation"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive",
+      "panels": [
+        "outline",
+        "inner"
+      ]
+    },
+    {
+      "relation_id": "dataset-to-training-data-trains_with",
+      "from": "dataset",
+      "to": "training-data",
+      "relation_type": "trains_with",
+      "branch": "ai_training_synthetic_generation",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.88,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_mw_dataset",
+        "src_google_ngram",
+        "src_stanford_training_data"
+      ],
+      "visual_role": "solid_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive",
+      "panels": [
+        "outline"
+      ]
+    },
+    {
+      "relation_id": "training-data-to-synthetic-data-generates",
+      "from": "training-data",
+      "to": "synthetic-data",
+      "relation_type": "generates",
+      "branch": "ai_training_synthetic_generation",
+      "date_range": {
+        "start": null,
+        "end": null
+      },
+      "weight": 0.72,
+      "confidence_level": "medium",
+      "evidence_ids": [],
+      "source_ids": [
+        "src_stanford_training_data",
+        "src_google_ngram",
+        "src_nist_synthetic_data"
+      ],
+      "visual_role": "support_edge",
+      "caveat": "Curated semantic/infrastructure edge; not computed from corpus co-occurrence.",
+      "data_layer": "interpretive",
+      "panels": [
+        "outline"
+      ]
+    },
+    {
+      "relation_id": "chart2-user-data-personal-data",
+      "from": "user-data",
+      "to": "personal-data",
+      "relation_type": "attaches_to_person",
+      "branch": "chart2_curated_socialization",
+      "date_range": "2003-2013",
+      "weight": 0.82,
+      "confidence_level": "medium",
+      "chart2_note": "Curated Chart 2 relation: platform traces become socially charged when attached to identifiable persons.",
+      "panels": [
+        "outline",
+        "inner"
+      ]
+    },
+    {
+      "relation_id": "chart2-user-data-data-breach",
+      "from": "user-data",
+      "to": "data-breach",
+      "relation_type": "exposure_path",
+      "branch": "chart2_curated_socialization",
+      "date_range": "2003-2013",
+      "weight": 0.68,
+      "confidence_level": "medium",
+      "chart2_note": "Curated Chart 2 relation: user traces become public risk through breach/exposure regimes.",
+      "panels": [
+        "outline",
+        "inner"
+      ]
+    },
+    {
+      "relation_id": "chart2-data-science-training-data",
+      "from": "data-science",
+      "to": "training-data",
+      "relation_type": "later_ai_amplification",
+      "branch": "ai_training_synthetic_generation",
+      "date_range": "2015-2026",
+      "weight": 0.62,
+      "confidence_level": "medium",
+      "chart2_note": "Curated Chart 2 relation: AI training material amplifies an already socialized data field.",
+      "panels": [
+        "outline",
+        "inner"
+      ]
+    }
+  ],
+  "aiTailTerms": [
+    "training-data",
+    "synthetic-data"
+  ],
+  "downgradedTerms": [
+    {
+      "slug": "user-data",
+      "label": "user data",
+      "visualRole": "hover_only",
+      "reason": "Conceptually central to platform traces but downgraded because confidence is low and Ngram quality requires review.",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "hover_only"
+    },
+    {
+      "slug": "clickstream-data",
+      "label": "clickstream data",
+      "visualRole": "dot_only",
+      "reason": "Support dot for web activity traces.",
+      "coverageStatus": "weak",
+      "recommendedVisualStatus": "hover_only"
+    },
+    {
+      "slug": "search-data",
+      "label": "search data",
+      "visualRole": "hover_only",
+      "reason": "Support dot for search/platform traces; coverage is noisy.",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "annotation_only"
+    },
+    {
+      "slug": "data-governance",
+      "label": "data governance",
+      "visualRole": "hover_only",
+      "reason": "Later consolidation term; internal coverage recommends hover-only.",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "hover_only"
+    },
+    {
+      "slug": "data-broker",
+      "label": "data broker",
+      "visualRole": "hover_only",
+      "reason": "Commercial-control term; policy relevance is stronger than book visibility.",
+      "coverageStatus": "weak",
+      "recommendedVisualStatus": "show"
+    },
+    {
+      "slug": "data-driven",
+      "label": "data-driven",
+      "visualRole": "dot_only",
+      "reason": "Useful organizational connective tissue, but noisy enough to keep visually secondary.",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "show"
+    },
+    {
+      "slug": "dataset",
+      "label": "dataset",
+      "visualRole": "dot_only",
+      "reason": "Packaged data unit; included as bridge to later training data.",
+      "coverageStatus": "strong",
+      "recommendedVisualStatus": "show"
+    },
+    {
+      "slug": "training-data",
+      "label": "training data",
+      "visualRole": "edge_tail",
+      "reason": "Later AI amplification term; deliberately placed on the outer rim, away from the overlap origin.",
+      "coverageStatus": "strong",
+      "recommendedVisualStatus": "show"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "synthetic data",
+      "visualRole": "edge_tail",
+      "reason": "Later AI/privacy response layer; not part of the socialization core.",
+      "coverageStatus": "usable",
+      "recommendedVisualStatus": "show"
+    }
+  ],
+  "omittedCandidateTerms": [
+    {
+      "label": "public data",
+      "reason": "Not present in data_terms.json or data_frequency.json; represented conceptually by open data and source notes rather than added as an unsupported term."
+    }
+  ],
+  "notes": [
+    "Panel A and Panel B are nested scales of the same socialization process, not outside versus inside.",
+    "Coordinates are curated in normalized 0-1 panel space so the figure remains an analytical plate rather than a force-directed network.",
+    "Ngram summaries use English Google Books Ngram frequency per million from 1990-2022, 2003-2013, 2005-2012, and 2014-2022.",
+    "AI terms are placed on the rim as later amplification of already-socialized data."
+  ],
+  "caveat": "Frequencies indicate printed-book visibility; relation paths are curated semantic links. The chart identifies a plausible generation of socialization, not a single causal origin."
+}

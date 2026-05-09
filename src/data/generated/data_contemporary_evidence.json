@@ -1,0 +1,866 @@
+{
+  "generatedAt": "2026-05-09T06:39:21.252Z",
+  "purpose": "Supplement Chart 1 with contemporary evidence sources for 2020-2026 terms; this layer supports provenance and confidence rather than changing the visual index by itself.",
+  "terms": [
+    "data breach",
+    "data privacy",
+    "data protection",
+    "data governance",
+    "data science",
+    "data-driven",
+    "big data",
+    "training data",
+    "AI training data",
+    "synthetic data",
+    "inference data",
+    "data ethics",
+    "data sovereignty",
+    "data economy",
+    "data pipeline",
+    "data lake",
+    "data portability",
+    "data annotation",
+    "data provenance",
+    "data poisoning"
+  ],
+  "sourceAudits": [
+    {
+      "id": "eu_ai_act_2024",
+      "name": "EU AI Act, Regulation (EU) 2024/1689, EUR-Lex",
+      "priority": "high",
+      "credibility": "high",
+      "accessStatus": "manual_review_required",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689",
+      "method": "Official EUR-Lex text was verified as an authority source; local Node fetch returns 202/empty, so this layer records clause-level anchors instead of automated phrase counts.",
+      "fetchedAt": "2026-05-09T06:39:21.252Z",
+      "statistics": {
+        "verifiedAnchors": {
+          "data protection": "present: recitals and provisions refer to EU data protection law and personal data safeguards",
+          "data governance": "present: Article 10 requires data governance and management practices for high-risk AI training/validation/testing data sets",
+          "training data": "present: Article 10 covers training, validation and testing data sets for high-risk AI systems",
+          "synthetic data": "present: Article 10 refers to synthetic or anonymised data for bias detection/correction safeguards",
+          "data privacy": "related: privacy-preserving measures and personal data protection appear, but not as a stable exact phrase"
+        }
+      },
+      "caveat": "Legal-text mentions indicate normative salience, not general usage frequency."
+    },
+    {
+      "id": "stanford_ai_index_2025_web",
+      "name": "Stanford HAI AI Index 2025 web report pages",
+      "priority": "high",
+      "credibility": "high",
+      "accessStatus": "fetched",
+      "sourceUrl": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+      "method": "Fetched public Stanford HAI report web pages and counted case-insensitive exact phrase mentions across accessible HTML.",
+      "fetchedAt": "2026-05-09T06:39:21.252Z",
+      "statistics": {
+        "pages": [
+          {
+            "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+            "ok": true,
+            "characters": 13011
+          },
+          {
+            "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/research-and-development",
+            "ok": true,
+            "characters": 4933
+          },
+          {
+            "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/technical-performance",
+            "ok": true,
+            "characters": 5953
+          },
+          {
+            "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/responsible-ai",
+            "ok": true,
+            "characters": 5348
+          },
+          {
+            "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/economy",
+            "ok": true,
+            "characters": 5412
+          },
+          {
+            "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/policy-and-governance",
+            "ok": true,
+            "characters": 3358
+          },
+          {
+            "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/public-opinion",
+            "ok": true,
+            "characters": 5393
+          }
+        ],
+        "pagesFetched": 7,
+        "termMentions": {
+          "data breach": 0,
+          "data privacy": 1,
+          "data protection": 0,
+          "data governance": 0,
+          "data science": 0,
+          "data-driven": 1,
+          "big data": 0,
+          "training data": 0,
+          "AI training data": 0,
+          "synthetic data": 0,
+          "inference data": 0,
+          "data ethics": 0,
+          "data sovereignty": 0,
+          "data economy": 0,
+          "data pipeline": 0,
+          "data lake": 0
+        }
+      },
+      "caveat": "This is a web-page count, not full-PDF extraction. It records AI Index thematic salience rather than corpus frequency."
+    },
+    {
+      "id": "arxiv_cs_ai_2015_2026",
+      "name": "arXiv API, CS/AI/ML subset",
+      "priority": "medium",
+      "credibility": "medium-high",
+      "accessStatus": "manual_review_required",
+      "sourceUrl": "https://export.arxiv.org/api/query",
+      "method": "Attempted arXiv API totalResults queries for exact phrases in cs.AI, cs.LG, cs.CL, and stat.ML; the API returned 503/429 during this run, so term counts are deferred.",
+      "fetchedAt": "2026-05-09T06:39:21.252Z",
+      "statistics": {
+        "categories": [
+          "cs.AI",
+          "cs.LG",
+          "cs.CL",
+          "stat.ML"
+        ],
+        "yearBands": [
+          "2015_2017",
+          "2018_2020",
+          "2021_2023",
+          "2024_2026"
+        ],
+        "attemptedTerms": [
+          "training data",
+          "AI training data",
+          "synthetic data",
+          "inference data",
+          "data science",
+          "data-driven",
+          "data privacy",
+          "data ethics"
+        ],
+        "fetchOutcome": "rate_limited_or_unavailable_during_run",
+        "totalResultsByTermAndBand": {}
+      },
+      "caveat": "arXiv counts are academic metadata visibility, not broad social usage; phrase search can miss variants and synonyms."
+    },
+    {
+      "id": "wikimedia_pageviews_2016_2025",
+      "name": "Wikimedia Pageviews API, English Wikipedia",
+      "priority": "low",
+      "credibility": "medium",
+      "accessStatus": "fetched",
+      "sourceUrl": "https://wikimedia.org/api/rest_v1/",
+      "method": "Fetched monthly en.wikipedia all-access user pageviews for matching concept pages from 2016 through 2025.",
+      "fetchedAt": "2026-05-09T06:39:21.252Z",
+      "statistics": {
+        "totalViewsByTerm": {
+          "data breach": {
+            "title": "Data_breach",
+            "totalViews2016To2025": 1318311,
+            "latestYearViews": 101982
+          },
+          "data privacy": {
+            "title": "Information_privacy",
+            "totalViews2016To2025": 804910,
+            "latestYearViews": 44468
+          },
+          "data protection": {
+            "title": "Data_protection",
+            "totalViews2016To2025": 77709,
+            "latestYearViews": 3870
+          },
+          "data governance": {
+            "title": "Data_governance",
+            "totalViews2016To2025": 976429,
+            "latestYearViews": 32825
+          },
+          "data science": {
+            "title": "Data_science",
+            "totalViews2016To2025": 6358786,
+            "latestYearViews": 267726
+          },
+          "big data": {
+            "title": "Big_data",
+            "totalViews2016To2025": 7999662,
+            "latestYearViews": 182305
+          },
+          "training data": {
+            "title": "Training,_validation,_and_test_data_sets",
+            "totalViews2016To2025": 467615,
+            "latestYearViews": 93066
+          },
+          "synthetic data": {
+            "title": "Synthetic_data",
+            "totalViews2016To2025": 285846,
+            "latestYearViews": 40538
+          },
+          "data ethics": {
+            "title": "Data_ethics",
+            "totalViews2016To2025": 1507,
+            "latestYearViews": 703
+          },
+          "data sovereignty": {
+            "title": "Data_sovereignty",
+            "totalViews2016To2025": 140720,
+            "latestYearViews": 14530
+          },
+          "data pipeline": {
+            "title": "Data_pipeline",
+            "totalViews2016To2025": 2634,
+            "latestYearViews": 393
+          },
+          "data lake": {
+            "title": "Data_lake",
+            "totalViews2016To2025": 1551332,
+            "latestYearViews": 83906
+          }
+        }
+      },
+      "caveat": "Pageviews approximate public attention to concept pages, not phrase frequency or semantic emergence."
+    },
+    {
+      "id": "now_corpus",
+      "name": "NOW Corpus, English-Corpora.org",
+      "priority": "high",
+      "credibility": "high",
+      "accessStatus": "manual_review_required",
+      "sourceUrl": "https://www.english-corpora.org/now/",
+      "method": "Not fetched: no stable public API in this project environment; recommended manual export for 2010-present term counts.",
+      "caveat": "Best fit for contemporary news/web visibility, but should be imported from an authorized corpus export."
+    },
+    {
+      "id": "google_trends",
+      "name": "Google Trends",
+      "priority": "high",
+      "credibility": "medium",
+      "accessStatus": "not_fetched",
+      "sourceUrl": "https://trends.google.com/trends/",
+      "method": "Not fetched: Google does not provide a stable official public API; unofficial endpoints would be fragile.",
+      "caveat": "Search interest is useful after the Ngram cutoff but is not comparable to corpus frequency."
+    },
+    {
+      "id": "coca",
+      "name": "COCA, English-Corpora.org",
+      "priority": "medium",
+      "credibility": "high",
+      "accessStatus": "manual_review_required",
+      "sourceUrl": "https://www.english-corpora.org/coca/",
+      "method": "Not fetched: no stable public API in this project environment; recommended manual export by register/genre.",
+      "caveat": "Strong for genre/register comparison through 2019, weaker for 2020-2026 gaps."
+    },
+    {
+      "id": "oed",
+      "name": "Oxford English Dictionary",
+      "priority": "medium",
+      "credibility": "highest",
+      "accessStatus": "unavailable_without_subscription",
+      "sourceUrl": "https://www.oed.com/",
+      "method": "Not fetched: subscription source; use for manual attestation-year verification.",
+      "caveat": "Best source for earliest attestation, but quotation/citation reuse requires a separate editorial workflow."
+    }
+  ],
+  "termSummaries": [
+    {
+      "term": "data breach",
+      "termId": "data_breach",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": 1318311,
+          "unit": "pageviews",
+          "note": "2025 views: 101982"
+        }
+      ]
+    },
+    {
+      "term": "data privacy",
+      "termId": "data_privacy",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": "related: privacy-preserving measures and personal data protection appear, but not as a stable exact phrase",
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 1,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": 804910,
+          "unit": "pageviews",
+          "note": "2025 views: 44468"
+        }
+      ]
+    },
+    {
+      "term": "data protection",
+      "termId": "data_protection",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": "present: recitals and provisions refer to EU data protection law and personal data safeguards",
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": 77709,
+          "unit": "pageviews",
+          "note": "2025 views: 3870"
+        }
+      ]
+    },
+    {
+      "term": "data governance",
+      "termId": "data_governance",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": "present: Article 10 requires data governance and management practices for high-risk AI training/validation/testing data sets",
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": 976429,
+          "unit": "pageviews",
+          "note": "2025 views: 32825"
+        }
+      ]
+    },
+    {
+      "term": "data science",
+      "termId": "data_science",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": 6358786,
+          "unit": "pageviews",
+          "note": "2025 views: 267726"
+        }
+      ]
+    },
+    {
+      "term": "data-driven",
+      "termId": "data_driven",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 1,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": null,
+          "unit": "pageviews",
+          "note": "no matching page or fetch failed"
+        }
+      ]
+    },
+    {
+      "term": "big data",
+      "termId": "big_data",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": 7999662,
+          "unit": "pageviews",
+          "note": "2025 views: 182305"
+        }
+      ]
+    },
+    {
+      "term": "training data",
+      "termId": "training_data",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": "present: Article 10 covers training, validation and testing data sets for high-risk AI systems",
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": 467615,
+          "unit": "pageviews",
+          "note": "2025 views: 93066"
+        }
+      ]
+    },
+    {
+      "term": "AI training data",
+      "termId": "ai_training_data",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": null,
+          "unit": "pageviews",
+          "note": "no matching page or fetch failed"
+        }
+      ]
+    },
+    {
+      "term": "synthetic data",
+      "termId": "synthetic_data",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": "present: Article 10 refers to synthetic or anonymised data for bias detection/correction safeguards",
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": 285846,
+          "unit": "pageviews",
+          "note": "2025 views: 40538"
+        }
+      ]
+    },
+    {
+      "term": "inference data",
+      "termId": "inference_data",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": null,
+          "unit": "pageviews",
+          "note": "no matching page or fetch failed"
+        }
+      ]
+    },
+    {
+      "term": "data ethics",
+      "termId": "data_ethics",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": 1507,
+          "unit": "pageviews",
+          "note": "2025 views: 703"
+        }
+      ]
+    },
+    {
+      "term": "data sovereignty",
+      "termId": "data_sovereignty",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": 140720,
+          "unit": "pageviews",
+          "note": "2025 views: 14530"
+        }
+      ]
+    },
+    {
+      "term": "data economy",
+      "termId": "data_economy",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": null,
+          "unit": "pageviews",
+          "note": "no matching page or fetch failed"
+        }
+      ]
+    },
+    {
+      "term": "data pipeline",
+      "termId": "data_pipeline",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": 2634,
+          "unit": "pageviews",
+          "note": "2025 views: 393"
+        }
+      ]
+    },
+    {
+      "term": "data lake",
+      "termId": "data_lake",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "stanford_ai_index_2025_web",
+          "metric": "exact_phrase_mentions",
+          "value": 0,
+          "unit": "mentions"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "total_results_2015_2026",
+          "value": null,
+          "unit": "arXiv API totalResults",
+          "note": "not queried for this term"
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "total_pageviews_2016_2025",
+          "value": 1551332,
+          "unit": "pageviews",
+          "note": "2025 views: 83906"
+        }
+      ]
+    },
+    {
+      "term": "data portability",
+      "termId": "data_portability",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "legal_anchor",
+          "value": "GDPR Article 20 right to data portability; referenced as data-rights infrastructure",
+          "unit": "curated legal anchor"
+        },
+        {
+          "sourceId": "now_corpus",
+          "metric": "recommended_followup",
+          "value": null,
+          "unit": "manual export",
+          "note": "Validate 2018 news/legal salience."
+        }
+      ]
+    },
+    {
+      "term": "data annotation",
+      "termId": "data_annotation",
+      "evidence": [
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "recommended_followup",
+          "value": null,
+          "unit": "API/manual retry",
+          "note": "Expected strong ML metadata signal; API was rate-limited in this run."
+        },
+        {
+          "sourceId": "wikimedia_pageviews_2016_2025",
+          "metric": "recommended_followup",
+          "value": null,
+          "unit": "pageviews",
+          "note": "Needs matching page or adjacent concept mapping."
+        }
+      ]
+    },
+    {
+      "term": "data provenance",
+      "termId": "data_provenance",
+      "evidence": [
+        {
+          "sourceId": "eu_ai_act_2024",
+          "metric": "legal_anchor",
+          "value": "Article 10 data governance practices imply source/history documentation for training, validation, and testing data",
+          "unit": "curated legal anchor"
+        },
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "recommended_followup",
+          "value": null,
+          "unit": "API/manual retry",
+          "note": "Validate AI/ML literature density after arXiv rate limit clears."
+        }
+      ]
+    },
+    {
+      "term": "data poisoning",
+      "termId": "data_poisoning",
+      "evidence": [
+        {
+          "sourceId": "arxiv_cs_ai_2015_2026",
+          "metric": "recommended_followup",
+          "value": null,
+          "unit": "API/manual retry",
+          "note": "Validate 2022-2026 ML security growth."
+        },
+        {
+          "sourceId": "now_corpus",
+          "metric": "recommended_followup",
+          "value": null,
+          "unit": "manual export",
+          "note": "Validate media/policy uptake after large-model security discourse."
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "Counts are not directly comparable across sources because legal text, report pages, academic metadata, and pageviews measure different kinds of visibility.",
+    "NOW, COCA, and OED remain manual-review sources unless authorized exports are provided.",
+    "Google Trends is recorded as a candidate post-Ngram proxy but was not fetched because there is no stable official API."
+  ]
+}
