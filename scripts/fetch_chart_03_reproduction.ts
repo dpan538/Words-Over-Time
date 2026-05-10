@@ -28,7 +28,11 @@ type QueryGroup =
   | "c_scene_manufacturing"
   | "d_industrial_material"
   | "e_authenticity_specific"
-  | "f_media_infrastructure";
+  | "f_media_infrastructure"
+  | "g_pre_cinema_apparatus"
+  | "h_color_television_media"
+  | "i_digital_entry"
+  | "j_authenticity_context";
 
 type Status = "collected" | "missing" | "too_sparse" | "error";
 
@@ -171,6 +175,40 @@ const termGroups: Record<QueryGroup, TermDefinition[]> = {
     ["transmission", "technical signal-transfer vocabulary for reproduction and broadcast systems"],
     ["stereophonic", "audio-reproduction quality term for spatial sound"],
   ].map(([term, narrative_role]) => ({ term, narrative_role, query_group: "f_media_infrastructure" })),
+
+  g_pre_cinema_apparatus: [
+    ["magic lantern", "pre-cinema projection apparatus bridging diorama/stereoscope to cinema"],
+    ["automaton", "mechanical human/performing figure as early artificial perception spectacle"],
+    ["waxworks", "public artificial-body display and lifelike exhibition culture"],
+    ["theatrical illusion", "direct theater vocabulary for manufactured visual experience"],
+    ["stage effect", "practical theater vocabulary for engineered experience and spectacle"],
+    ["lifelike", "realism-quality counter-pressure for artificial representation"],
+  ].map(([term, narrative_role]) => ({ term, narrative_role, query_group: "g_pre_cinema_apparatus" })),
+
+  h_color_television_media: [
+    ["colour photography", "British spelling for color-photography transition and commercialization"],
+    ["color photography", "American spelling for color-photography transition and commercialization"],
+    ["colour film", "British spelling for color film and cinema color transition"],
+    ["color film", "American spelling for color film and cinema color transition"],
+    ["television", "broadcast visual medium filling the 1930s-1960s media gap"],
+    ["televised", "broadcast action term, more specific than television as a medium noun"],
+    ["special effect", "film/visual-manufacturing vocabulary from early cinema to CGI"],
+    ["trick photography", "early photographic/cinematic visual manipulation vocabulary"],
+  ].map(([term, narrative_role]) => ({ term, narrative_role, query_group: "h_color_television_media" })),
+
+  i_digital_entry: [
+    ["digital image", "digital visual artifact and digital-era image reproduction"],
+    ["digital recording", "digital audio/recording transition vocabulary"],
+    ["computer graphics", "technical vocabulary for visual simulation and image generation"],
+    ["digital reproduction", "bridge from mechanical reproduction to digital copying"],
+    ["high fidelity", "audio-realism quality term around reproduced sound"],
+  ].map(([term, narrative_role]) => ({ term, narrative_role, query_group: "i_digital_entry" })),
+
+  j_authenticity_context: [
+    ["authentic experience", "modern phrase for authenticity anxiety around mediated experience"],
+    ["art forgery", "specific art/copy falsification phrase"],
+    ["true to life", "realism-quality phrase and counter-pressure to artificial representation"],
+  ].map(([term, narrative_role]) => ({ term, narrative_role, query_group: "j_authenticity_context" })),
 };
 
 const rawFiles: Record<QueryGroup, string> = {
@@ -185,6 +223,10 @@ const rawFiles: Record<QueryGroup, string> = {
   d_industrial_material: "chart_03_ngram_raw_d_industrial_material.csv",
   e_authenticity_specific: "chart_03_ngram_raw_e_authenticity_specific.csv",
   f_media_infrastructure: "chart_03_ngram_raw_f_media_infrastructure.csv",
+  g_pre_cinema_apparatus: "chart_03_ngram_raw_g_pre_cinema_apparatus.csv",
+  h_color_television_media: "chart_03_ngram_raw_h_color_television_media.csv",
+  i_digital_entry: "chart_03_ngram_raw_i_digital_entry.csv",
+  j_authenticity_context: "chart_03_ngram_raw_j_authenticity_context.csv",
 };
 
 function sleep(ms: number) {

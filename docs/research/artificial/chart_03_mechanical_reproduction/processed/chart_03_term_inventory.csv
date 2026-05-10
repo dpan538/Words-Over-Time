@@ -67,3 +67,25 @@ broadcast,f_media_infrastructure,broader broadcast term covering radio and telev
 mass media,f_media_infrastructure,media-as-system vocabulary
 transmission,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
 stereophonic,f_media_infrastructure,audio-reproduction quality term for spatial sound
+magic lantern,g_pre_cinema_apparatus,pre-cinema projection apparatus bridging diorama/stereoscope to cinema
+automaton,g_pre_cinema_apparatus,mechanical human/performing figure as early artificial perception spectacle
+waxworks,g_pre_cinema_apparatus,public artificial-body display and lifelike exhibition culture
+theatrical illusion,g_pre_cinema_apparatus,direct theater vocabulary for manufactured visual experience
+stage effect,g_pre_cinema_apparatus,practical theater vocabulary for engineered experience and spectacle
+lifelike,g_pre_cinema_apparatus,realism-quality counter-pressure for artificial representation
+colour photography,h_color_television_media,British spelling for color-photography transition and commercialization
+color photography,h_color_television_media,American spelling for color-photography transition and commercialization
+colour film,h_color_television_media,British spelling for color film and cinema color transition
+color film,h_color_television_media,American spelling for color film and cinema color transition
+television,h_color_television_media,broadcast visual medium filling the 1930s-1960s media gap
+televised,h_color_television_media,"broadcast action term, more specific than television as a medium noun"
+special effect,h_color_television_media,film/visual-manufacturing vocabulary from early cinema to CGI
+trick photography,h_color_television_media,early photographic/cinematic visual manipulation vocabulary
+digital image,i_digital_entry,digital visual artifact and digital-era image reproduction
+digital recording,i_digital_entry,digital audio/recording transition vocabulary
+computer graphics,i_digital_entry,technical vocabulary for visual simulation and image generation
+digital reproduction,i_digital_entry,bridge from mechanical reproduction to digital copying
+high fidelity,i_digital_entry,audio-realism quality term around reproduced sound
+authentic experience,j_authenticity_context,modern phrase for authenticity anxiety around mediated experience
+art forgery,j_authenticity_context,specific art/copy falsification phrase
+true to life,j_authenticity_context,realism-quality phrase and counter-pressure to artificial representation

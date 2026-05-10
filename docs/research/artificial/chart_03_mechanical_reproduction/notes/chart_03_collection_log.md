@@ -1,6 +1,6 @@
 # Chart 3 Mechanical Reproduction Collection Log
 
-Generated: 2026-05-10T11:47:32.345Z
+Generated: 2026-05-10T12:03:18.725Z
 
 ## Script
 
@@ -127,10 +127,44 @@ This pass treats `authentic`, `authenticity`, `genuine`, `original`, and `origin
 - transmission: technical signal-transfer vocabulary for reproduction and broadcast systems
 - stereophonic: audio-reproduction quality term for spatial sound
 
+### g_pre_cinema_apparatus
+
+- magic lantern: pre-cinema projection apparatus bridging diorama/stereoscope to cinema
+- automaton: mechanical human/performing figure as early artificial perception spectacle
+- waxworks: public artificial-body display and lifelike exhibition culture
+- theatrical illusion: direct theater vocabulary for manufactured visual experience
+- stage effect: practical theater vocabulary for engineered experience and spectacle
+- lifelike: realism-quality counter-pressure for artificial representation
+
+### h_color_television_media
+
+- colour photography: British spelling for color-photography transition and commercialization
+- color photography: American spelling for color-photography transition and commercialization
+- colour film: British spelling for color film and cinema color transition
+- color film: American spelling for color film and cinema color transition
+- television: broadcast visual medium filling the 1930s-1960s media gap
+- televised: broadcast action term, more specific than television as a medium noun
+- special effect: film/visual-manufacturing vocabulary from early cinema to CGI
+- trick photography: early photographic/cinematic visual manipulation vocabulary
+
+### i_digital_entry
+
+- digital image: digital visual artifact and digital-era image reproduction
+- digital recording: digital audio/recording transition vocabulary
+- computer graphics: technical vocabulary for visual simulation and image generation
+- digital reproduction: bridge from mechanical reproduction to digital copying
+- high fidelity: audio-realism quality term around reproduced sound
+
+### j_authenticity_context
+
+- authentic experience: modern phrase for authenticity anxiety around mediated experience
+- art forgery: specific art/copy falsification phrase
+- true to life: realism-quality phrase and counter-pressure to artificial representation
+
 ## Status
 
-- Terms attempted: 68
-- Successfully collected: 68
+- Terms attempted: 90
+- Successfully collected: 90
 - Missing: 0
 - Too sparse: 0
 - Errored: 0
@@ -138,6 +172,7 @@ This pass treats `authentic`, `authenticity`, `genuine`, `original`, and `origin
 ## Strongest Visible Frequency Signals
 
 - original: peak 129.4605035582208 per million
+- television: peak 53.74837692979917 per million
 - recorded: peak 48.24558575236559 per million
 - transmission: peak 39.10000569547212 per million
 - simulation: peak 36.13882060950202 per million
@@ -152,7 +187,6 @@ This pass treats `authentic`, `authenticity`, `genuine`, `original`, and `origin
 - sound recording: peak 16.26489118933261 per million
 - reproduced: peak 16.120166399957725 per million
 - motion picture: peak 16.06664519343548 per million
-- facsimile: peak 15.746205576760985 per million
 
 ## Missing Terms
 
@@ -180,6 +214,10 @@ This pass treats `authentic`, `authenticity`, `genuine`, `original`, and `origin
 - https://books.google.com/ngrams/json?content=mass+production%2Cmass+produced%2Chandmade%2Cersatz%2Cphotomechanical%2Chalftone&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
 - https://books.google.com/ngrams/json?content=forgery%2Ccounterfeit%2Cimitation%2Cfaithful+copy%2Cvirtual%2Cvirtual+reality&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
 - https://books.google.com/ngrams/json?content=broadcast%2Cmass+media%2Ctransmission%2Cstereophonic&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
+- https://books.google.com/ngrams/json?content=magic+lantern%2Cautomaton%2Cwaxworks%2Ctheatrical+illusion%2Cstage+effect%2Clifelike&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
+- https://books.google.com/ngrams/json?content=colour+photography%2Ccolor+photography%2Ccolour+film%2Ccolor+film%2Ctelevision%2Ctelevised%2Cspecial+effect%2Ctrick+photography&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
+- https://books.google.com/ngrams/json?content=digital+image%2Cdigital+recording%2Ccomputer+graphics%2Cdigital+reproduction%2Chigh+fidelity&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
+- https://books.google.com/ngrams/json?content=authentic+experience%2Cart+forgery%2Ctrue+to+life&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
 
 ## Assumptions
 
