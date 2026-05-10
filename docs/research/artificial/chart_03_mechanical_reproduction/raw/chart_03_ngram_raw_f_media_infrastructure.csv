@@ -1,0 +1,881 @@
+year,term,value,source,corpus,smoothing,case_sensitive,query_group,narrative_role
+1800,broadcast,2.691192459991498e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1801,broadcast,4.0675971924031273e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1802,broadcast,4.0870866513387227e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1803,broadcast,3.294782224827486e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1804,broadcast,4.5853033192599923e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1805,broadcast,0.000001137982753363076,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1806,broadcast,3.1093569807794097e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1807,broadcast,7.536194546187147e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1808,broadcast,0.0000012907635884573665,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1809,broadcast,1.9123102745766118e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1810,broadcast,1.6883885001206522e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1811,broadcast,3.569037430040112e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1812,broadcast,1.6590208318234545e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1813,broadcast,9.042744757437049e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1814,broadcast,2.3070797983137936e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1815,broadcast,2.662527993635422e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1816,broadcast,1.0836028740968118e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1817,broadcast,2.1597957555741232e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1818,broadcast,7.69585339899237e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1819,broadcast,3.0058473754479564e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1820,broadcast,3.506219098392549e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1821,broadcast,4.929247481300081e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1822,broadcast,3.25394457600936e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1823,broadcast,2.0684029244932844e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1824,broadcast,1.6362918131562765e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1825,broadcast,1.3404424858975972e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1826,broadcast,9.19731129034318e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1827,broadcast,3.2168667729592926e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1828,broadcast,1.9269768380958396e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1829,broadcast,1.4309017359881437e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1830,broadcast,1.7742934232956031e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1831,broadcast,1.5287224019999712e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1832,broadcast,0.000002287028581626771,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1833,broadcast,1.1688016332556117e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1834,broadcast,3.3201971127994057e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1835,broadcast,4.7619530008091715e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1836,broadcast,3.1541300404835937e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1837,broadcast,3.014467444550917e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1838,broadcast,5.551373933876391e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1839,broadcast,4.952288277237926e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1840,broadcast,4.469769914194899e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1841,broadcast,3.9443704835662174e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1842,broadcast,8.012834120663115e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1843,broadcast,8.003100129272411e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1844,broadcast,9.937209588528617e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1845,broadcast,7.598087292670641e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1846,broadcast,9.760128341085306e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1847,broadcast,0.0000011013608691712307,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1848,broadcast,0.0000010594793256046842,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1849,broadcast,0.0000010977175630699776,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1850,broadcast,0.0000011795420649107768,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1851,broadcast,0.0000011290866943625133,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1852,broadcast,0.0000012320262268161741,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1853,broadcast,0.0000011364389207457748,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1854,broadcast,9.64232943267973e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1855,broadcast,0.0000015810612321587314,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1856,broadcast,0.0000012765005248382977,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1857,broadcast,0.0000016799512891907398,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1858,broadcast,0.0000016774320243939655,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1859,broadcast,0.0000013118171082737717,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1860,broadcast,0.0000013016729649706349,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1861,broadcast,0.0000012198152745668267,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1862,broadcast,0.0000013087607619866048,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1863,broadcast,0.000001172136517624267,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1864,broadcast,0.0000010304056421439611,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1865,broadcast,0.000001221083033797754,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1866,broadcast,0.0000011379184812199128,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1867,broadcast,0.0000011106076662770192,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1868,broadcast,0.0000012706522429795086,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1869,broadcast,0.0000014252566309380654,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1870,broadcast,0.00000147982805032143,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1871,broadcast,0.0000013063670643020941,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1872,broadcast,0.0000011579971861408467,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1873,broadcast,0.0000013013064616984593,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1874,broadcast,0.000001456906216112941,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1875,broadcast,0.0000012420420159031664,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1876,broadcast,0.0000010741902447541918,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1877,broadcast,0.000001197220585780201,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1878,broadcast,0.0000012194968146417295,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1879,broadcast,0.0000011314058809830385,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1880,broadcast,0.0000013982616229313294,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1881,broadcast,0.0000012696810873791264,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1882,broadcast,0.000001239374981309993,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1883,broadcast,0.00000152551370824483,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1884,broadcast,0.000001318886209134007,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1885,broadcast,0.000001448633064171645,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1886,broadcast,0.0000013929785183108834,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1887,broadcast,0.0000012854650179860982,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1888,broadcast,0.000002056401815053732,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1889,broadcast,0.0000018028643342660189,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1890,broadcast,0.0000013631897601840137,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1891,broadcast,0.000001393416219741539,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1892,broadcast,0.0000015897531362440986,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1893,broadcast,0.0000014272463957354375,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1894,broadcast,0.0000014264797485452618,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1895,broadcast,0.0000013240657370516828,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1896,broadcast,0.0000014368537319953134,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1897,broadcast,0.000001309135930327443,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1898,broadcast,0.0000012975732488484937,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1899,broadcast,0.0000013956841122819696,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1900,broadcast,0.0000016069153954134663,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1901,broadcast,0.0000012820860435525105,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1902,broadcast,0.000001388237368615819,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1903,broadcast,0.0000012255002843630791,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1904,broadcast,0.0000013829816767341185,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1905,broadcast,0.0000013939791125849865,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1906,broadcast,0.0000013073117273165735,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1907,broadcast,0.0000013170409713936237,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1908,broadcast,0.0000013933515008446307,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1909,broadcast,0.0000015488950575459626,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1910,broadcast,0.0000016446413777515545,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1911,broadcast,0.000001421169226745178,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1912,broadcast,0.0000014506725527496656,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1913,broadcast,0.000001575354376726068,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1914,broadcast,0.0000015452755821598885,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1915,broadcast,0.0000015368598562659486,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1916,broadcast,0.0000016125198278871267,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1917,broadcast,0.000001534243663670054,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1918,broadcast,0.0000015661384740184303,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1919,broadcast,0.0000014745411727190572,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1920,broadcast,0.0000015330807592306428,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1921,broadcast,0.000001974908819590837,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1922,broadcast,0.000002762264381644952,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1923,broadcast,0.000004803228854773078,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1924,broadcast,0.000004930896658317252,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1925,broadcast,0.000006850159372198683,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1926,broadcast,0.000006967642322705525,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1927,broadcast,0.000006983313056936613,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1928,broadcast,0.0000068270913210488615,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1929,broadcast,0.000007800839989760555,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1930,broadcast,0.000008630225845865369,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1931,broadcast,0.000010214766042605794,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1932,broadcast,0.00000925301259258049,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1933,broadcast,0.000009841538750360312,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1934,broadcast,0.000011156195881767417,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1935,broadcast,0.000013088933542348968,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1936,broadcast,0.000012885924310410135,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1937,broadcast,0.00001410740679830269,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1938,broadcast,0.00001585956773490771,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1939,broadcast,0.00001892156258320732,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1940,broadcast,0.0000176436217392828,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1941,broadcast,0.000018294809478902607,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1942,broadcast,0.000019976500062801605,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1943,broadcast,0.000020099059099720762,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1944,broadcast,0.00001856268477240519,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1945,broadcast,0.000019231736975766633,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1946,broadcast,0.000020263744772819337,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1947,broadcast,0.000018614694226926076,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1948,broadcast,0.000021434971586131724,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1949,broadcast,0.000014057728854224849,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1950,broadcast,0.000012647899268358742,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1951,broadcast,0.00001259224406587045,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1952,broadcast,0.000011887655544634557,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1953,broadcast,0.00001264621732843807,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1954,broadcast,0.000012209978339887406,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1955,broadcast,0.000010996282312311645,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1956,broadcast,0.0000120197791488863,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1957,broadcast,0.000011856358118025878,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1958,broadcast,0.000010887548753890641,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1959,broadcast,0.000011461049218550179,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1960,broadcast,0.000011503689026561015,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1961,broadcast,0.000010687968938327685,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1962,broadcast,0.000011016068677552338,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1963,broadcast,0.00001018937920448798,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1964,broadcast,0.000009507598150548802,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1965,broadcast,0.000010712260523348949,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1966,broadcast,0.000011055048754114727,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1967,broadcast,0.000010988655365983674,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1968,broadcast,0.000011111066818211834,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1969,broadcast,0.000010714318705140613,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1970,broadcast,0.00001072172921112724,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1971,broadcast,0.000011474365066987957,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1972,broadcast,0.000011931440951684635,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1973,broadcast,0.000011672563483215714,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1974,broadcast,0.00001244024623994408,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1975,broadcast,0.000011299221455374209,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1976,broadcast,0.000011299179107027157,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1977,broadcast,0.000012435435905899794,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1978,broadcast,0.000011226131845256532,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1979,broadcast,0.000011198735738092436,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1980,broadcast,0.000011635163048140384,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1981,broadcast,0.000015499872233704082,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1982,broadcast,0.000015254626774444113,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1983,broadcast,0.000013089049673453701,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1984,broadcast,0.000011579947174079896,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1985,broadcast,0.000013537139677922971,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1986,broadcast,0.000012926723382808425,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1987,broadcast,0.000013842423351638489,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1988,broadcast,0.000012172947543298562,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1989,broadcast,0.000014578355862882031,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1990,broadcast,0.000012511375560724652,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1991,broadcast,0.000013798092807285056,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1992,broadcast,0.000013508373108428451,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1993,broadcast,0.00001384432497668342,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1994,broadcast,0.000014331155508584548,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1995,broadcast,0.00001435386392589777,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1996,broadcast,0.000014037596963459298,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1997,broadcast,0.000014213181567697408,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1998,broadcast,0.000015067890775391501,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1999,broadcast,0.000014569925040546633,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2000,broadcast,0.000014229923341824158,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2001,broadcast,0.00001455379252424116,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2002,broadcast,0.000014238339289984747,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2003,broadcast,0.000013446910047162919,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2004,broadcast,0.000014604714917487716,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2005,broadcast,0.000012860766497715947,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2006,broadcast,0.00001241112211321227,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2007,broadcast,0.00001195078214380127,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2008,broadcast,0.000011389696812594274,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2009,broadcast,0.000011147273675515823,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2010,broadcast,0.000010525160321406268,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2011,broadcast,0.000009353535688039205,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2012,broadcast,0.000008689140573170384,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2013,broadcast,0.000009724393478127702,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2014,broadcast,0.000010215403137392443,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2015,broadcast,0.000008856055649285322,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2016,broadcast,0.000008899021922019468,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2017,broadcast,0.000008209672128833834,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2018,broadcast,0.000007969684432618251,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+2019,broadcast,0.0000075444773049992975,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,broader broadcast term covering radio and television eras
+1800,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1801,mass media,2.549224609182943e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1802,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1803,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1804,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1805,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1806,mass media,4.223635663436198e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1807,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1808,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1809,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1810,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1811,mass media,5.335131003647575e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1812,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1813,mass media,1.6535506297543634e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1814,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1815,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1816,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1817,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1818,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1819,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1820,mass media,1.5082038951064192e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1821,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1822,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1823,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1824,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1825,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1826,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1827,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1828,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1829,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1830,mass media,9.062995909303595e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1831,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1832,mass media,8.414953089896926e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1833,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1834,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1835,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1836,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1837,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1838,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1839,mass media,7.166784388168423e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1840,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1841,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1842,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1843,mass media,9.049862581544943e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1844,mass media,2.2851516234823066e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1845,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1846,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1847,mass media,2.017735090120709e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1848,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1849,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1850,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1851,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1852,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1853,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1854,mass media,1.6009065184618976e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1855,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1856,mass media,4.123839880687541e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1857,mass media,5.0864888967439015e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1858,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1859,mass media,1.2141361249717875e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1860,mass media,7.683187974727446e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1861,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1862,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1863,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1864,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1865,mass media,4.2536049682517785e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1866,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1867,mass media,7.178788674622183e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1868,mass media,4.755347005058752e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1869,mass media,3.179520036145078e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1870,mass media,9.202190676127486e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1871,mass media,6.965757970434083e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1872,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1873,mass media,2.250272246318019e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1874,mass media,9.147176349699748e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1875,mass media,6.174165623207273e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1876,mass media,2.853105529609934e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1877,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1878,mass media,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1879,mass media,1.3640557572358603e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1880,mass media,1.251149461811707e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1881,mass media,5.189429996832473e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1882,mass media,1.4325349795285547e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1883,mass media,1.6661962920494489e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1884,mass media,9.357997640679905e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1885,mass media,3.3530361820410803e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1886,mass media,1.0618003296047895e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1887,mass media,1.0702244646054737e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1888,mass media,3.3745227862036486e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1889,mass media,1.7104210270346698e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1890,mass media,1.144400790797917e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1891,mass media,5.664096969226762e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1892,mass media,5.515235490527459e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1893,mass media,3.29491900430412e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1894,mass media,5.22552459636394e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1895,mass media,6.39417130354758e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1896,mass media,1.7537511581844356e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1897,mass media,1.5425363764087763e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1898,mass media,1.3519867725353407e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1899,mass media,1.6953188852752987e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1900,mass media,3.929000658153825e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1901,mass media,7.537427432202648e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1902,mass media,1.9514997395830846e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1903,mass media,1.267768529045199e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1904,mass media,7.511191668641004e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1905,mass media,9.929988581403038e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1906,mass media,1.1500134178277222e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1907,mass media,5.910165468137052e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1908,mass media,2.8104122640204565e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1909,mass media,1.0010627882195422e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1910,mass media,4.1415700036129266e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1911,mass media,3.816388663424597e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1912,mass media,2.207483723593029e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1913,mass media,4.885228749307302e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1914,mass media,1.5157968491497087e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1915,mass media,3.9855918565478987e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1916,mass media,4.6527885433356175e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1917,mass media,1.882104916361982e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1918,mass media,1.5055859337032018e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1919,mass media,1.0029402308653346e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1920,mass media,2.1081796308664025e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1921,mass media,1.6243450751129984e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1922,mass media,1.89271737172092e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1923,mass media,1.1167130747891107e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1924,mass media,3.4444340574202315e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1925,mass media,5.285316628800274e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1926,mass media,6.0289724879147855e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1927,mass media,3.882753965567254e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1928,mass media,1.8930872147659983e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1929,mass media,3.0955795982112733e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1930,mass media,1.3101183894692614e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1931,mass media,2.1295644581087458e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1932,mass media,9.994788774392305e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1933,mass media,1.436228846962706e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1934,mass media,9.785040513965448e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1935,mass media,2.746419391908006e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1936,mass media,9.410771917295335e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1937,mass media,2.0734928829480026e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1938,mass media,6.820224385251095e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1939,mass media,1.6641280450868656e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1940,mass media,2.0388537344540048e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1941,mass media,1.8338091781200383e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1942,mass media,3.0828025854301444e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1943,mass media,5.6211942434103435e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1944,mass media,8.038600096682558e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1945,mass media,1.1534907984334097e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1946,mass media,2.897628685744058e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1947,mass media,3.04429426639663e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1948,mass media,2.8982760915535755e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1949,mass media,3.002482705516396e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1950,mass media,4.162348703345975e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1951,mass media,4.16241451112187e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1952,mass media,6.203643838978423e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1953,mass media,5.896828206980453e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1954,mass media,7.001058001665506e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1955,mass media,8.350385355543333e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1956,mass media,0.0000010278070039920761,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1957,mass media,0.0000010095116705771678,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1958,mass media,0.0000010831167141581166,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1959,mass media,0.0000012918523245031288,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1960,mass media,0.000001562356730919201,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1961,mass media,0.000001524068591787775,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1962,mass media,0.00000143520990958379,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1963,mass media,0.0000014110284978219312,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1964,mass media,0.0000016575682827146831,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1965,mass media,0.0000017139338528426862,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1966,mass media,0.0000018638389829850333,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1967,mass media,0.0000025077597375910976,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1968,mass media,0.0000027351604765246673,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1969,mass media,0.0000029543112209651223,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1970,mass media,0.000003304914037105533,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1971,mass media,0.000003570368623639908,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1972,mass media,0.000003953580984004945,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1973,mass media,0.0000038347318872256064,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1974,mass media,0.00000374940163011539,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1975,mass media,0.000004192172557267171,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1976,mass media,0.0000038065733183947903,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1977,mass media,0.000004120310004289418,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1978,mass media,0.0000043475388594588216,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1979,mass media,0.000003856331120440093,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1980,mass media,0.000004362040401217904,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1981,mass media,0.000004194791364046241,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1982,mass media,0.000004117344500658565,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1983,mass media,0.0000037156151966519224,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1984,mass media,0.000003913009563778075,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1985,mass media,0.0000035729130155176536,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1986,mass media,0.0000038667976112530256,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1987,mass media,0.0000040612417897684105,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1988,mass media,0.000004306568007390182,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1989,mass media,0.00000415530443616946,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1990,mass media,0.000004561524776042214,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1991,mass media,0.000004251016828993315,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1992,mass media,0.000003970764539236449,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1993,mass media,0.000003889187149552775,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1994,mass media,0.00000390825160836647,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1995,mass media,0.000003999910036495136,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1996,mass media,0.000003738318417406683,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1997,mass media,0.000003685044573153995,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1998,mass media,0.0000037615067084717513,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1999,mass media,0.000003691962889938033,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2000,mass media,0.0000036680097735275474,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2001,mass media,0.000003756967119770277,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2002,mass media,0.0000036752000372938798,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2003,mass media,0.0000036329166302473404,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2004,mass media,0.0000036819977334567877,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2005,mass media,0.0000036438115493253598,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2006,mass media,0.000003777117008496589,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2007,mass media,0.0000034854700169395514,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2008,mass media,0.000003226986169984486,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2009,mass media,0.000003211429983010494,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2010,mass media,0.0000028638266267935752,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2011,mass media,0.000002516742260844085,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2012,mass media,0.0000021956400903209994,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2013,mass media,0.0000029690934129980584,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2014,mass media,0.0000025677959315656418,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2015,mass media,0.000002705303104449941,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2016,mass media,0.000003012437040650351,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2017,mass media,0.000002751453315425617,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2018,mass media,0.0000024919028148093214,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+2019,mass media,0.000002626641447150968,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,media-as-system vocabulary
+1800,transmission,9.504608335930698e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1801,transmission,8.111267559840485e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1802,transmission,0.0000014894046138635986,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1803,transmission,6.607767986110957e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1804,transmission,0.0000022067913647561,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1805,transmission,8.498551684610334e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1806,transmission,8.733926684101334e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1807,transmission,0.0000015494979415109356,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1808,transmission,0.0000013756302235101714,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1809,transmission,0.000001887053215909873,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1810,transmission,0.0000010744289817843367,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1811,transmission,0.0000013656176438558987,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1812,transmission,0.00000141953316301624,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1813,transmission,0.000002067358561674837,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1814,transmission,0.000001604389062492828,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1815,transmission,0.0000019405733517885437,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1816,transmission,0.0000015712241960841311,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1817,transmission,0.0000017575729511776217,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1818,transmission,0.0000023258577819262882,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1819,transmission,0.0000019532249417864023,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1820,transmission,0.0000022911084549548377,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1821,transmission,0.0000027968459495042453,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1822,transmission,0.00000192062099979573,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1823,transmission,0.000002361616047608095,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1824,transmission,0.000002638911325902882,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1825,transmission,0.0000025468408288986666,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1826,transmission,0.0000029723018943883517,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1827,transmission,0.0000029166258208590534,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1828,transmission,0.000003245907528537373,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1829,transmission,0.0000032101969509312767,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1830,transmission,0.0000037644025141503334,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1831,transmission,0.000003164918755516055,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1832,transmission,0.000009277612605274044,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1833,transmission,0.000003884727732383908,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1834,transmission,0.000004318541130032827,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1835,transmission,0.000004191482066318031,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1836,transmission,0.000003896765484512343,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1837,transmission,0.0000038360006016091575,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1838,transmission,0.000004298554351578332,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1839,transmission,0.000004016555546826339,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1840,transmission,0.0000039480702547223245,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1841,transmission,0.000004045797288299013,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1842,transmission,0.0000043807968985731804,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1843,transmission,0.000004519039240591383,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1844,transmission,0.000004181819068804771,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1845,transmission,0.000005213696866235296,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1846,transmission,0.000004126458254205545,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1847,transmission,0.0000050481800144552835,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1848,transmission,0.000004843554346933843,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1849,transmission,0.000004483173906777438,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1850,transmission,0.000004825887018000685,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1851,transmission,0.000004995764008697279,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1852,transmission,0.000004833210926591391,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1853,transmission,0.000004755542832413084,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1854,transmission,0.000005240429047148609,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1855,transmission,0.000006284959098934451,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1856,transmission,0.000005616757178472653,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1857,transmission,0.000005630182045024412,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1858,transmission,0.000006298027315665422,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1859,transmission,0.000006024066820486951,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1860,transmission,0.000005423697302830988,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1861,transmission,0.000005923068698621137,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1862,transmission,0.000006110985424356841,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1863,transmission,0.000006047589693025657,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1864,transmission,0.000006083606365336891,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1865,transmission,0.000005642943790462596,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1866,transmission,0.00000620777962012653,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1867,transmission,0.0000063539734469486575,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1868,transmission,0.000006976750796638953,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1869,transmission,0.000007629372873907414,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1870,transmission,0.000007168024268366935,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1871,transmission,0.00000751793831454961,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1872,transmission,0.000009206196125433053,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1873,transmission,0.0000071816167877269965,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1874,transmission,0.000007253960660591474,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1875,transmission,0.000006835965052687243,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1876,transmission,0.000006740994564324865,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1877,transmission,0.000006715766716069993,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1878,transmission,0.000006737884291396767,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1879,transmission,0.000006969571586523671,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1880,transmission,0.000006421904385656152,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1881,transmission,0.000007726220889625601,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1882,transmission,0.00000758529415634257,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1883,transmission,0.000008170630223958142,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1884,transmission,0.00000802007949118888,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1885,transmission,0.0000074699349717488595,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1886,transmission,0.000007962900525626537,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1887,transmission,0.000007511762543307987,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1888,transmission,0.000007957260826252366,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1889,transmission,0.00000793249756725345,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1890,transmission,0.000008178959245652706,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1891,transmission,0.000009131085221270041,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1892,transmission,0.00000985833741290465,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1893,transmission,0.00001044979751441133,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1894,transmission,0.00000985667429631576,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1895,transmission,0.000010044437829037633,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1896,transmission,0.000010026336999341412,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1897,transmission,0.000011223988077443958,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1898,transmission,0.000011363440836742456,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1899,transmission,0.000009778652721614822,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1900,transmission,0.000010830732581235125,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1901,transmission,0.000011497486793549117,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1902,transmission,0.000012380026122527088,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1903,transmission,0.000013452756926657372,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1904,transmission,0.000014268776027982766,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1905,transmission,0.000015182588399567654,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1906,transmission,0.00001585040240570379,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1907,transmission,0.0000165807063012835,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1908,transmission,0.00001721330937384108,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1909,transmission,0.000017306237964476168,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1910,transmission,0.000018040997748346166,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1911,transmission,0.000019457505057079993,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1912,transmission,0.00001941262235619079,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1913,transmission,0.000021356138263393942,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1914,transmission,0.000020282080498375266,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1915,transmission,0.00002030318893114086,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1916,transmission,0.000019911390831621467,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1917,transmission,0.00002085282694973961,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1918,transmission,0.000021432970920040595,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1919,transmission,0.000022069189240664366,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1920,transmission,0.000023143412479775805,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1921,transmission,0.00002400221853982032,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1922,transmission,0.000024465471911788716,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1923,transmission,0.000025280061457563785,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1924,transmission,0.000024389701151927845,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1925,transmission,0.000027572856083679653,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1926,transmission,0.000024477614829265804,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1927,transmission,0.000026817578728362268,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1928,transmission,0.000026405288935493765,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1929,transmission,0.0000262243352552316,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1930,transmission,0.000026860578207471564,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1931,transmission,0.00002530441659895355,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1932,transmission,0.00002548381954427248,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1933,transmission,0.000023216219037697217,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1934,transmission,0.000025008684558791572,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1935,transmission,0.000025224627206645034,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1936,transmission,0.000023261727716522573,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1937,transmission,0.00002534300233127118,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1938,transmission,0.00002445169353476606,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1939,transmission,0.000026830631697061236,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1940,transmission,0.000024551647903603424,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1941,transmission,0.000023992896408545072,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1942,transmission,0.00002324728281544175,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1943,transmission,0.000025272181885929723,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1944,transmission,0.00002916896278779002,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1945,transmission,0.000028882403768470954,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1946,transmission,0.00002864564761698163,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1947,transmission,0.000030358948767433835,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1948,transmission,0.0000302957356011907,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1949,transmission,0.000030359031531340674,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1950,transmission,0.000032223190493951837,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1951,transmission,0.00002951108757374976,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1952,transmission,0.00003018993864212227,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1953,transmission,0.00003220426181241298,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1954,transmission,0.00003229698923641611,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1955,transmission,0.000032058508684700004,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1956,transmission,0.00003108233049452236,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1957,transmission,0.00003195809093120561,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1958,transmission,0.00003321335557648908,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1959,transmission,0.0000354906629470228,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1960,transmission,0.00003370343043961055,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1961,transmission,0.00003450186211763351,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1962,transmission,0.0000382785639320149,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1963,transmission,0.00003470243610006335,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1964,transmission,0.00003598459620461625,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1965,transmission,0.00003787253901532672,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1966,transmission,0.00003706855936276565,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1967,transmission,0.000034751856601265146,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1968,transmission,0.000032375460708986004,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1969,transmission,0.0000326318410589152,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1970,transmission,0.00003274549868388307,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1971,transmission,0.00003319314762401451,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1972,transmission,0.000032639049732420544,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1973,transmission,0.0000329520890936727,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1974,transmission,0.00003478201612227769,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1975,transmission,0.000034742744458839125,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1976,transmission,0.000037891574346825274,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1977,transmission,0.0000365819488060623,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1978,transmission,0.00003638104248170418,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1979,transmission,0.000035022706595194686,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1980,transmission,0.000035971211136714976,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1981,transmission,0.00003656409001331212,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1982,transmission,0.0000365294269277644,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1983,transmission,0.00003755932390689387,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1984,transmission,0.00003597963134851015,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1985,transmission,0.00003760815366085635,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1986,transmission,0.00003749658486458529,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1987,transmission,0.000038171641291891156,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1988,transmission,0.00003806391709698306,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1989,transmission,0.0000382521937723479,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1990,transmission,0.00003800855700412248,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1991,transmission,0.000037551971631050174,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1992,transmission,0.000038228662181248596,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1993,transmission,0.00003535028116407116,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1994,transmission,0.000037991128377604794,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1995,transmission,0.000038566151757429834,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1996,transmission,0.000037048934078895424,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1997,transmission,0.00003798589755419149,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1998,transmission,0.000036174664223384556,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1999,transmission,0.000036116184043047395,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2000,transmission,0.000037407516229256976,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2001,transmission,0.000038245573873690875,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2002,transmission,0.00003910000569547212,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2003,transmission,0.00003619049551684822,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2004,transmission,0.00003540627438108901,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2005,transmission,0.00003485757151996949,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2006,transmission,0.000032183861020371185,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2007,transmission,0.000030866357769498975,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2008,transmission,0.000028827559096146482,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2009,transmission,0.000028406952768556676,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2010,transmission,0.000028111738943539105,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2011,transmission,0.000027294506403978402,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2012,transmission,0.00003340419601675221,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2013,transmission,0.00003115668783938014,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2014,transmission,0.000024478368174461057,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2015,transmission,0.00002467049749505304,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2016,transmission,0.000026085418210343436,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2017,transmission,0.00002715182309985867,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2018,transmission,0.00002905263173368089,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+2019,transmission,0.000026575979111417847,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+1800,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1801,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1802,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1803,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1804,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1805,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1806,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1807,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1808,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1809,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1810,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1811,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1812,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1813,stereophonic,1.2472751720338238e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1814,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1815,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1816,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1817,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1818,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1819,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1820,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1821,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1822,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1823,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1824,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1825,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1826,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1827,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1828,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1829,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1830,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1831,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1832,stereophonic,5.781164436058361e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1833,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1834,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1835,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1836,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1837,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1838,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1839,stereophonic,3.378095581041407e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1840,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1841,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1842,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1843,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1844,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1845,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1846,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1847,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1848,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1849,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1850,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1851,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1852,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1853,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1854,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1855,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1856,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1857,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1858,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1859,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1860,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1861,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1862,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1863,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1864,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1865,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1866,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1867,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1868,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1869,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1870,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1871,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1872,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1873,stereophonic,5.995422491800184e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1874,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1875,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1876,stereophonic,2.651012465104685e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1877,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1878,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1879,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1880,stereophonic,3.4904184265105442e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1881,stereophonic,2.408347965499047e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1882,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1883,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1884,stereophonic,2.0181885329595417e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1885,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1886,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1887,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1888,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1889,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1890,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1891,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1892,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1893,stereophonic,3.206934995336752e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1894,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1895,stereophonic,1.4769277467685527e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1896,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1897,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1898,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1899,stereophonic,1.3034032186887146e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1900,stereophonic,4.135398024018855e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1901,stereophonic,1.1967572766113932e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1902,stereophonic,4.789502822122316e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1903,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1904,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1905,stereophonic,2.22983145836686e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1906,stereophonic,7.398482174125753e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1907,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1908,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1909,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1910,stereophonic,2.860411629779236e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1911,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1912,stereophonic,3.688228611409272e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1913,stereophonic,3.4985944974419425e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1914,stereophonic,3.4785877650600483e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1915,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1916,stereophonic,6.358158444186301e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1917,stereophonic,3.6408251413710957e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1918,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1919,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1920,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1921,stereophonic,0,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1922,stereophonic,2.523649123009619e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1923,stereophonic,3.759286465454537e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1924,stereophonic,7.304310489786303e-10,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1925,stereophonic,1.457428969176e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1926,stereophonic,3.510147186802648e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1927,stereophonic,1.2427052276109407e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1928,stereophonic,2.5022008076636126e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1929,stereophonic,5.16507209918915e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1930,stereophonic,3.2993414944559873e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1931,stereophonic,3.476218563003286e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1932,stereophonic,9.9711601336816e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1933,stereophonic,3.2678187794621394e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1934,stereophonic,7.432428894560417e-9,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1935,stereophonic,1.2679674532556362e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1936,stereophonic,3.469127979327524e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1937,stereophonic,2.5764167466135746e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1938,stereophonic,1.9582832022635444e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1939,stereophonic,2.2173825442450834e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1940,stereophonic,6.969553645319593e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1941,stereophonic,9.843463200098768e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1942,stereophonic,5.2964991503756664e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1943,stereophonic,2.904590479246849e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1944,stereophonic,2.5619614874017316e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1945,stereophonic,2.308214158697197e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1946,stereophonic,5.9452302858531425e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1947,stereophonic,4.187966240465357e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1948,stereophonic,6.378760319947219e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1949,stereophonic,7.629780229834182e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1950,stereophonic,6.401368146669029e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1951,stereophonic,1.22707227490082e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1952,stereophonic,1.7136082508528716e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1953,stereophonic,8.781240907751453e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1954,stereophonic,0.0000011265325099429901,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1955,stereophonic,5.69076732404028e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1956,stereophonic,6.125394378386773e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1957,stereophonic,7.219493696197787e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1958,stereophonic,0.000002566412234727977,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1959,stereophonic,0.0000018788700515415258,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1960,stereophonic,0.0000011582732213355484,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1961,stereophonic,8.72971313015114e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1962,stereophonic,7.980724632261627e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1963,stereophonic,0.0000017105189442645496,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1964,stereophonic,4.19721345679136e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1965,stereophonic,4.227092986752723e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1966,stereophonic,4.4425494394317866e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1967,stereophonic,3.273348632149009e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1968,stereophonic,0.000001383871527593783,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1969,stereophonic,2.7074908892643634e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1970,stereophonic,3.4696964590352763e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1971,stereophonic,3.425386987387924e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1972,stereophonic,0.0000010858746524178287,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1973,stereophonic,0.000003641950906185798,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1974,stereophonic,0.0000015558597237230742,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1975,stereophonic,0.0000017029958545577983,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1976,stereophonic,0.0000013587796026115484,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1977,stereophonic,0.0000013359949004865257,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1978,stereophonic,9.044166127125663e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1979,stereophonic,1.7749492009500045e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1980,stereophonic,2.07857080880558e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1981,stereophonic,0.0000010385188575767756,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1982,stereophonic,2.1866938748615894e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1983,stereophonic,3.313834735507726e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1984,stereophonic,1.782046625820044e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1985,stereophonic,1.5896500649148493e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1986,stereophonic,1.4725079733324264e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1987,stereophonic,1.2712033115036547e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1988,stereophonic,1.511828449096697e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1989,stereophonic,1.1821319390037388e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1990,stereophonic,1.254842860731742e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1991,stereophonic,1.2675849703214226e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1992,stereophonic,1.170644763348605e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1993,stereophonic,1.0792262772341132e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1994,stereophonic,1.0859767263227127e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1995,stereophonic,1.1070490524289767e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1996,stereophonic,7.684350711301136e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1997,stereophonic,1.0653815252226195e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1998,stereophonic,9.734100325786699e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+1999,stereophonic,9.871333839228669e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2000,stereophonic,8.458869382721446e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2001,stereophonic,8.41770573245526e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2002,stereophonic,9.255564847876485e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2003,stereophonic,7.055274764411479e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2004,stereophonic,1.0198015809592675e-7,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2005,stereophonic,8.547309882089849e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2006,stereophonic,6.276761577161949e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2007,stereophonic,6.469326985225621e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2008,stereophonic,5.6479230181594176e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2009,stereophonic,5.649511147787223e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2010,stereophonic,5.004990988322078e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2011,stereophonic,4.7907013467352044e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2012,stereophonic,5.7866069047562974e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2013,stereophonic,9.866143657610849e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2014,stereophonic,6.381144412870299e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2015,stereophonic,5.341647402179461e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2016,stereophonic,4.603932712843317e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2017,stereophonic,5.3427497759273024e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2018,stereophonic,3.5883257365476595e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound
+2019,stereophonic,4.015435467463746e-8,Google Books Ngram Viewer,en,0,false,f_media_infrastructure,audio-reproduction quality term for spatial sound

@@ -42,3 +42,51 @@ The strongest visual structure should probably not be a single term race. It sho
 - Context/snippet round for `mechanical reproduction`, `aura`, `authenticity`, `artificial lighting`, `artificial daylight`, `artificial atmosphere`, and `artificial environment`.
 - Add media-specific comparators if the visual needs more structure: `photographic image`, `recorded music`, `sound film`, `talking picture`, `electric light`, `stage lighting`, `studio lighting`.
 - Consider separate `en-US` and `en-GB` corpus checks for `gramophone`, `cinematograph`, `artificial colour`, and `radio broadcasting`, because national spelling and media vocabulary may matter here.
+
+## Supplemental Fetch Reading
+
+The second fetch round expands the dataset from 35 to 68 terms. All 33 supplemental terms were collected.
+
+### Artificial Light And Perception
+
+- `electric light` is the dominant lighting anchor, peaking in 1897 at 21.856 per million.
+- `stage lighting` crosses 0.1 per million in 1921 and peaks in 1929.
+- `artificial sunlight` crosses 0.1 per million in 1925 and peaks in 1928.
+- `studio lighting` is visible but smaller, peaking in 1950 below 0.1 per million.
+- `limelight` has a strong nineteenth-century stage-lighting role, but the Ngram peak is late; use with context checks.
+
+### Sound Reproduction
+
+- `phonographic` is a good transition-era adjective, crossing 1 per million in 1877 and peaking in 1890.
+- `talking picture` and `sound film` both cross 0.1 per million in 1928, matching the sound-cinema transition.
+- `recorded music` crosses 0.1 per million in 1933 and peaks in 1952.
+- `synthetic sound` is collected but tiny; it is a texture term, not a structural anchor.
+- `wireless` is useful but broad. Early values likely include non-broadcast senses, so use it as a British/technical background term only after snippet checks.
+
+### Scene Manufacturing
+
+- `panorama`, `diorama`, and `stereoscope` give Chart 3 a strong pre-cinema artificial-experience layer.
+- `panorama` peaks in 1808; `diorama` crosses 0.1 per million in 1822 and peaks in 1851; `stereoscope` crosses 1 per million in 1852 and peaks in 1858.
+- `moving image` is late and peaks in 1999; it is better for the conceptual tail than for early cinema.
+- `projected image` and `artificial scenery` are visible but weak and need contextual validation.
+
+### Industrial Material Background
+
+- `mass production` is the strongest industrial background term, crossing 1 per million in 1926 and peaking in 1945.
+- `mass produced` peaks later, in 1957, and is useful for consumer-object framing.
+- `halftone` and `photomechanical` provide print/image-reproduction technology anchors.
+- `ersatz` peaks in 1942, making it useful for wartime artificial-substitute pressure.
+- `handmade` rises late and should be treated as a reverse authenticity/craft counter-term rather than a simple decline story.
+
+### Authenticity And Late Tail
+
+- `virtual reality` behaves cleanly as a late-tail artificial-experience term, crossing 0.1 per million in 1990 and 1 per million in 1993.
+- `virtual` is too broad to use alone for digital experience because it has strong older senses.
+- `imitation`, `forgery`, and `counterfeit` are strong but old/broad; they can frame authenticity anxiety but need sense controls.
+- `faithful copy` is weak and old-skewed; use only as a small annotation if needed.
+
+### Media Infrastructure
+
+- `mass media` crosses 1 per million in 1956 and peaks in 1990.
+- `stereophonic` crosses 1 per million in 1954 and peaks in 1973.
+- `broadcast` and `transmission` are strong but broad. They work better as infrastructure background than as precise reproduction-specific labels.

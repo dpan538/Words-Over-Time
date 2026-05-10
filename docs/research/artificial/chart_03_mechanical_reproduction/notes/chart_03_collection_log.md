@@ -1,6 +1,6 @@
 # Chart 3 Mechanical Reproduction Collection Log
 
-Generated: 2026-05-10T11:34:28.989Z
+Generated: 2026-05-10T11:47:32.345Z
 
 ## Script
 
@@ -76,10 +76,61 @@ This pass treats `authentic`, `authenticity`, `genuine`, `original`, and `origin
 - artificial image: image/manufactured-perception phrase from existing test set, now Chart 3 relevant
 - artificial voice: voice/sound manufacturing phrase from existing secondary set, now Chart 3 relevant
 
+### a_perception_lighting
+
+- electric light: dominant artificial-light form after electrification; separates technical light from perception-making
+- stage lighting: theater perception manufacturing and constructed performance experience
+- studio lighting: film/photo production lighting; later and more professional than stage lighting
+- limelight: nineteenth-century stage-lighting technology and spectacle vocabulary
+- artificial sunlight: studio/photographic artificial-sun phrase, more specific than artificial light
+
+### b_sound_reproduction
+
+- talking picture: sound-film transition marker after the late-1920s shift
+- sound film: alternate sound-cinema vocabulary for the same transition
+- recorded music: when recorded music becomes everyday language
+- wireless: British radio/broadcasting vocabulary running alongside radio
+- phonographic: adjectival phonograph vocabulary that may catch technical/legal contexts
+- synthetic sound: synthetic/audio-manufacturing phrase paired against artificial sound
+
+### c_scene_manufacturing
+
+- diorama: early artificial-scene apparatus and immersive display technology
+- panorama: early manufactured landscape/viewing experience
+- artificial scenery: direct theater/exhibition phrase for manufactured scenes
+- moving image: general moving-image concept, paired with moving picture
+- projected image: projection mechanism behind cinema and manufactured visual experience
+- stereoscope: nineteenth-century stereoscopic viewing and perceptual reproduction device
+
+### d_industrial_material
+
+- mass production: industrial batch-production background pressure for reproducibility
+- mass produced: consumer/descriptive form of industrial reproducibility
+- handmade: reverse term for reproduced/artificial/mass-produced goods
+- ersatz: wartime artificial substitute vocabulary, especially WWI/WWII contexts
+- photomechanical: print-image reproduction technology vocabulary
+- halftone: material print technology for visual reproduction
+
+### e_authenticity_specific
+
+- forgery: specific extreme of inauthenticity, especially art/document falsification
+- counterfeit: specific anxiety around imitation goods and false copies
+- imitation: specific reproduction/semblance term already useful in Chart 2, now tracked over time
+- faithful copy: copy phrase that can pressure the original/reproduction boundary
+- virtual: semantic bridge from simulation toward digitally mediated artificial experience
+- virtual reality: late-tail artificial/reproducible experience phrase
+
+### f_media_infrastructure
+
+- broadcast: broader broadcast term covering radio and television eras
+- mass media: media-as-system vocabulary
+- transmission: technical signal-transfer vocabulary for reproduction and broadcast systems
+- stereophonic: audio-reproduction quality term for spatial sound
+
 ## Status
 
-- Terms attempted: 35
-- Successfully collected: 35
+- Terms attempted: 68
+- Successfully collected: 68
 - Missing: 0
 - Too sparse: 0
 - Errored: 0
@@ -88,20 +139,20 @@ This pass treats `authentic`, `authenticity`, `genuine`, `original`, and `origin
 
 - original: peak 129.4605035582208 per million
 - recorded: peak 48.24558575236559 per million
+- transmission: peak 39.10000569547212 per million
 - simulation: peak 36.13882060950202 per million
+- virtual: peak 25.46934581243096 per million
 - fake: peak 24.23141073037982 per million
 - reproduction: peak 22.62134112054198 per million
 - genuine: peak 22.48363314549806 per million
+- electric light: peak 21.85558114842223 per million
+- broadcast: peak 21.434971586131724 per million
+- wireless: peak 20.062725105476908 per million
+- imitation: peak 18.691522257086035 per million
 - sound recording: peak 16.26489118933261 per million
 - reproduced: peak 16.120166399957725 per million
 - motion picture: peak 16.06664519343548 per million
 - facsimile: peak 15.746205576760985 per million
-- photograph: peak 15.401675163822375 per million
-- photography: peak 14.289268080364126 per million
-- authentic: peak 11.929448930914077 per million
-- aura: peak 11.528617012229736 per million
-- simulated: peak 10.78187738889902 per million
-- authenticity: peak 6.509749820082789 per million
 
 ## Missing Terms
 
@@ -123,6 +174,12 @@ This pass treats `authentic`, `authenticity`, `genuine`, `original`, and `origin
 - https://books.google.com/ngrams/json?content=phonograph%2Cgramophone%2Crecorded+sound%2Csound+recording%2Cmoving+picture%2Cmotion+picture%2Ccinematograph%2Cradio+broadcasting&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
 - https://books.google.com/ngrams/json?content=photographic+reproduction%2Cfacsimile&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
 - https://books.google.com/ngrams/json?content=genuine%2Coriginal%2Coriginality%2Cfake%2Csimulated%2Cartificial+image%2Cartificial+voice&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
+- https://books.google.com/ngrams/json?content=electric+light%2Cstage+lighting%2Cstudio+lighting%2Climelight%2Cartificial+sunlight&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
+- https://books.google.com/ngrams/json?content=talking+picture%2Csound+film%2Crecorded+music%2Cwireless%2Cphonographic%2Csynthetic+sound&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
+- https://books.google.com/ngrams/json?content=diorama%2Cpanorama%2Cartificial+scenery%2Cmoving+image%2Cprojected+image%2Cstereoscope&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
+- https://books.google.com/ngrams/json?content=mass+production%2Cmass+produced%2Chandmade%2Cersatz%2Cphotomechanical%2Chalftone&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
+- https://books.google.com/ngrams/json?content=forgery%2Ccounterfeit%2Cimitation%2Cfaithful+copy%2Cvirtual%2Cvirtual+reality&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
+- https://books.google.com/ngrams/json?content=broadcast%2Cmass+media%2Ctransmission%2Cstereophonic&year_start=1800&year_end=2019&corpus=en&smoothing=0&case_insensitive=true
 
 ## Assumptions
 

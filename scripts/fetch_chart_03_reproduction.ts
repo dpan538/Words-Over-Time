@@ -22,7 +22,13 @@ type QueryGroup =
   | "b_supporting_evidence"
   | "c_optional_density"
   | "media_technology_anchor"
-  | "authenticity_counterterm";
+  | "authenticity_counterterm"
+  | "a_perception_lighting"
+  | "b_sound_reproduction"
+  | "c_scene_manufacturing"
+  | "d_industrial_material"
+  | "e_authenticity_specific"
+  | "f_media_infrastructure";
 
 type Status = "collected" | "missing" | "too_sparse" | "error";
 
@@ -114,6 +120,57 @@ const termGroups: Record<QueryGroup, TermDefinition[]> = {
     ["artificial image", "image/manufactured-perception phrase from existing test set, now Chart 3 relevant"],
     ["artificial voice", "voice/sound manufacturing phrase from existing secondary set, now Chart 3 relevant"],
   ].map(([term, narrative_role]) => ({ term, narrative_role, query_group: "authenticity_counterterm" })),
+
+  a_perception_lighting: [
+    ["electric light", "dominant artificial-light form after electrification; separates technical light from perception-making"],
+    ["stage lighting", "theater perception manufacturing and constructed performance experience"],
+    ["studio lighting", "film/photo production lighting; later and more professional than stage lighting"],
+    ["limelight", "nineteenth-century stage-lighting technology and spectacle vocabulary"],
+    ["artificial sunlight", "studio/photographic artificial-sun phrase, more specific than artificial light"],
+  ].map(([term, narrative_role]) => ({ term, narrative_role, query_group: "a_perception_lighting" })),
+
+  b_sound_reproduction: [
+    ["talking picture", "sound-film transition marker after the late-1920s shift"],
+    ["sound film", "alternate sound-cinema vocabulary for the same transition"],
+    ["recorded music", "when recorded music becomes everyday language"],
+    ["wireless", "British radio/broadcasting vocabulary running alongside radio"],
+    ["phonographic", "adjectival phonograph vocabulary that may catch technical/legal contexts"],
+    ["synthetic sound", "synthetic/audio-manufacturing phrase paired against artificial sound"],
+  ].map(([term, narrative_role]) => ({ term, narrative_role, query_group: "b_sound_reproduction" })),
+
+  c_scene_manufacturing: [
+    ["diorama", "early artificial-scene apparatus and immersive display technology"],
+    ["panorama", "early manufactured landscape/viewing experience"],
+    ["artificial scenery", "direct theater/exhibition phrase for manufactured scenes"],
+    ["moving image", "general moving-image concept, paired with moving picture"],
+    ["projected image", "projection mechanism behind cinema and manufactured visual experience"],
+    ["stereoscope", "nineteenth-century stereoscopic viewing and perceptual reproduction device"],
+  ].map(([term, narrative_role]) => ({ term, narrative_role, query_group: "c_scene_manufacturing" })),
+
+  d_industrial_material: [
+    ["mass production", "industrial batch-production background pressure for reproducibility"],
+    ["mass produced", "consumer/descriptive form of industrial reproducibility"],
+    ["handmade", "reverse term for reproduced/artificial/mass-produced goods"],
+    ["ersatz", "wartime artificial substitute vocabulary, especially WWI/WWII contexts"],
+    ["photomechanical", "print-image reproduction technology vocabulary"],
+    ["halftone", "material print technology for visual reproduction"],
+  ].map(([term, narrative_role]) => ({ term, narrative_role, query_group: "d_industrial_material" })),
+
+  e_authenticity_specific: [
+    ["forgery", "specific extreme of inauthenticity, especially art/document falsification"],
+    ["counterfeit", "specific anxiety around imitation goods and false copies"],
+    ["imitation", "specific reproduction/semblance term already useful in Chart 2, now tracked over time"],
+    ["faithful copy", "copy phrase that can pressure the original/reproduction boundary"],
+    ["virtual", "semantic bridge from simulation toward digitally mediated artificial experience"],
+    ["virtual reality", "late-tail artificial/reproducible experience phrase"],
+  ].map(([term, narrative_role]) => ({ term, narrative_role, query_group: "e_authenticity_specific" })),
+
+  f_media_infrastructure: [
+    ["broadcast", "broader broadcast term covering radio and television eras"],
+    ["mass media", "media-as-system vocabulary"],
+    ["transmission", "technical signal-transfer vocabulary for reproduction and broadcast systems"],
+    ["stereophonic", "audio-reproduction quality term for spatial sound"],
+  ].map(([term, narrative_role]) => ({ term, narrative_role, query_group: "f_media_infrastructure" })),
 };
 
 const rawFiles: Record<QueryGroup, string> = {
@@ -122,6 +179,12 @@ const rawFiles: Record<QueryGroup, string> = {
   c_optional_density: "chart_03_ngram_raw_c_optional_density.csv",
   media_technology_anchor: "chart_03_ngram_raw_media_technology_anchor.csv",
   authenticity_counterterm: "chart_03_ngram_raw_authenticity_counterterm.csv",
+  a_perception_lighting: "chart_03_ngram_raw_a_perception_lighting.csv",
+  b_sound_reproduction: "chart_03_ngram_raw_b_sound_reproduction.csv",
+  c_scene_manufacturing: "chart_03_ngram_raw_c_scene_manufacturing.csv",
+  d_industrial_material: "chart_03_ngram_raw_d_industrial_material.csv",
+  e_authenticity_specific: "chart_03_ngram_raw_e_authenticity_specific.csv",
+  f_media_infrastructure: "chart_03_ngram_raw_f_media_infrastructure.csv",
 };
 
 function sleep(ms: number) {

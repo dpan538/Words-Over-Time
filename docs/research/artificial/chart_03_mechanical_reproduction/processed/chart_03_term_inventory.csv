@@ -34,3 +34,36 @@ fake,authenticity_counterterm,negative authenticity-pressure comparator from the
 simulated,authenticity_counterterm,existing artificial core term; pairs with simulation for late-tail pressure
 artificial image,authenticity_counterterm,"image/manufactured-perception phrase from existing test set, now Chart 3 relevant"
 artificial voice,authenticity_counterterm,"voice/sound manufacturing phrase from existing secondary set, now Chart 3 relevant"
+electric light,a_perception_lighting,dominant artificial-light form after electrification; separates technical light from perception-making
+stage lighting,a_perception_lighting,theater perception manufacturing and constructed performance experience
+studio lighting,a_perception_lighting,film/photo production lighting; later and more professional than stage lighting
+limelight,a_perception_lighting,nineteenth-century stage-lighting technology and spectacle vocabulary
+artificial sunlight,a_perception_lighting,"studio/photographic artificial-sun phrase, more specific than artificial light"
+talking picture,b_sound_reproduction,sound-film transition marker after the late-1920s shift
+sound film,b_sound_reproduction,alternate sound-cinema vocabulary for the same transition
+recorded music,b_sound_reproduction,when recorded music becomes everyday language
+wireless,b_sound_reproduction,British radio/broadcasting vocabulary running alongside radio
+phonographic,b_sound_reproduction,adjectival phonograph vocabulary that may catch technical/legal contexts
+synthetic sound,b_sound_reproduction,synthetic/audio-manufacturing phrase paired against artificial sound
+diorama,c_scene_manufacturing,early artificial-scene apparatus and immersive display technology
+panorama,c_scene_manufacturing,early manufactured landscape/viewing experience
+artificial scenery,c_scene_manufacturing,direct theater/exhibition phrase for manufactured scenes
+moving image,c_scene_manufacturing,"general moving-image concept, paired with moving picture"
+projected image,c_scene_manufacturing,projection mechanism behind cinema and manufactured visual experience
+stereoscope,c_scene_manufacturing,nineteenth-century stereoscopic viewing and perceptual reproduction device
+mass production,d_industrial_material,industrial batch-production background pressure for reproducibility
+mass produced,d_industrial_material,consumer/descriptive form of industrial reproducibility
+handmade,d_industrial_material,reverse term for reproduced/artificial/mass-produced goods
+ersatz,d_industrial_material,"wartime artificial substitute vocabulary, especially WWI/WWII contexts"
+photomechanical,d_industrial_material,print-image reproduction technology vocabulary
+halftone,d_industrial_material,material print technology for visual reproduction
+forgery,e_authenticity_specific,"specific extreme of inauthenticity, especially art/document falsification"
+counterfeit,e_authenticity_specific,specific anxiety around imitation goods and false copies
+imitation,e_authenticity_specific,"specific reproduction/semblance term already useful in Chart 2, now tracked over time"
+faithful copy,e_authenticity_specific,copy phrase that can pressure the original/reproduction boundary
+virtual,e_authenticity_specific,semantic bridge from simulation toward digitally mediated artificial experience
+virtual reality,e_authenticity_specific,late-tail artificial/reproducible experience phrase
+broadcast,f_media_infrastructure,broader broadcast term covering radio and television eras
+mass media,f_media_infrastructure,media-as-system vocabulary
+transmission,f_media_infrastructure,technical signal-transfer vocabulary for reproduction and broadcast systems
+stereophonic,f_media_infrastructure,audio-reproduction quality term for spatial sound
