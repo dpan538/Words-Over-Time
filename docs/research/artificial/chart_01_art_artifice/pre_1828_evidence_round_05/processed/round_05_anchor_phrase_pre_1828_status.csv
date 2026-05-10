@@ -1,0 +1,10 @@
+phrase,pre_1828_status,strongest_source,year_or_period,primary_sense,confidence,public_facing_risk,chart_01_status,notes
+artificial day,claimed_pre_1828_but_needs_verification,Etymonline artificial,late 14c. claimed,technical_rule_reckoning,medium,high,notes_only,No primary/OED snippet captured; do not core-anchor yet.
+artificial memory,confirmed_pre_1828,Wilson 1553 / Fulwood 1562,1553/1562,technical_rule_reckoning,high,medium,supporting_anchor,Now stronger than previous rounds for English learned-technique evidence.
+artificial arguments,confirmed_pre_1828,Sherry 1550 artificiall/vnartificial proofs; Johnson/Webster tradition,1550 for artificiall proofs,technical_rule_reckoning,medium,medium,supporting_anchor,Exact phrase not as strong as concept; artificial/inartificial rhetorical proof distinction is strong.
+artificial lines,not_confirmed_pre_1828,Webster 1828 / Webster 1913 only,1828 checkpoint,technical_rule_reckoning,low,medium,needs_review,No pre-1828 source captured.
+artificial numbers,confirmed_pre_1828,Napier/logarithm history,1614/1619 context,technical_rule_reckoning,medium,low,supporting_anchor,Good mathematical/reckoning anchor; primary Latin text optional later.
+made by art,claimed_pre_1828_but_needs_verification,Johnson secondary; Etymonline family,1755/1773 reported,art_skill_making,medium,low,supporting_anchor,Strong as paraphrase; exact direct quote still needs Johnson/OED.
+made by skill,not_confirmed_pre_1828,No strong pre-1828 source captured,N/A,art_skill_making,low,medium,background_only,Too generic.
+human skill,claimed_pre_1828_but_needs_verification,Etymonline early 15c. claim; Johnson secondary,early 15c. claimed; 1755/1773 reported,art_skill_making,medium,low,supporting_anchor,"Safe as older layer with care, not exact earliest claim."
+contrived by art,claimed_pre_1828_but_needs_verification,Etymonline/MW etymology; Johnson secondary,pre-1828 claimed/reported,contrivance_construction,medium,medium,background_only,Do not let contrivance dominate.

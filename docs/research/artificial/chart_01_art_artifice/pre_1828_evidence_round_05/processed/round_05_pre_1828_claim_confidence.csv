@@ -1,0 +1,12 @@
+claim,status,strongest_supporting_sources,evidence_strength,risk,can_use_in_chart_01,notes
+Artificial is attested before 1828.,safe,Etymonline; Merriam-Webster,high,avoid exact date without OED,yes,Safe: word predates 1828.
+Artificial belongs to the art / skill / making word family before 1828.,safe,Etymonline; Merriam-Webster; artifice/artificer etymology,high,low,yes,Strongly supported by independent etymology sources.
+Artificial has a pre-1828 sense of made by art / human skill.,mostly_safe,Etymonline early 15c.; Johnson secondary,medium,direct quotation still pending,yes_with_care,"Use older layer wording, not exact earliest date."
+Artificial has a pre-1828 sense of not natural.,mostly_safe,Etymonline late 14c.; Johnson secondary,medium,direct OED/Johnson still pending,yes_with_care,Safe as distinction if dates are not overclaimed.
+Artificial has a pre-1828 sense of fake / not genuine.,partially_supported,Etymonline 1640s; Johnson secondary,medium,direct source pending,yes_with_care,"Likely, but verify before final copy."
+Artificial has a pre-1828 affected / insincere sense.,partially_supported,Etymonline 1590s,low,no primary snippet captured,notes_only,Keep secondary until OED/primary check.
+Artificial day is a pre-1828 technical/reckoning anchor.,partially_supported,Etymonline,medium,no primary snippet captured,notes_only,Do not make core without OED/primary.
+Artificial memory is a pre-1828 learned-technique anchor in English.,mostly_safe,Wilson 1553; Fulwood 1562,high,needs exact quote handling,yes_with_care,Now materially stronger than previous rounds.
+Artificial arguments / lines / numbers are pre-1828 rule-based technical anchors.,partially_supported,Sherry 1550 for artificial proofs; Napier for artificial numbers,medium,artificial lines not pre-1828 confirmed,yes_with_care,Arguments/proofs and numbers are strong; lines remain unconfirmed pre-1828.
+"Webster 1828 should be treated as a checkpoint, not an origin.",safe,All pre-1828 evidence in this round,high,low,yes,This is now the cleanest round-05 conclusion.
+OED is needed for precise earliest-date claims.,safe,OED not accessed; Etymonline/MW are secondary for dates,high,low,yes,Keep as guardrail.
