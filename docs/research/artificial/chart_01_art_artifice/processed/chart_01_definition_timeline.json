@@ -1,0 +1,178 @@
+{
+  "items": [
+    {
+      "id": "etymonline_artificial_family",
+      "term": "artificial",
+      "year": 1400,
+      "source": "Etymonline",
+      "source_url": "https://www.etymonline.com/word/artificial",
+      "sense": "art_skill_making",
+      "definition_summary": "Connects artificial to Latin artificialis/artificium and to art, skill, theory/system, and the maker root.",
+      "secondary_senses": [
+        "technical_rule_reckoning",
+        "contrivance_construction",
+        "not_natural",
+        "imitation_substitute",
+        "fake_not_genuine",
+        "affected_insincere"
+      ],
+      "reliability": "medium",
+      "notes": "Use as semantic-family evidence, not as final earliest-quotation proof."
+    },
+    {
+      "id": "etymonline_artifice_skill_before_trick",
+      "term": "artifice",
+      "year": 1530,
+      "source": "Etymonline",
+      "source_url": "https://www.etymonline.com/word/artifice",
+      "sense": "art_skill_making",
+      "definition_summary": "Gives artifice first as workmanship and making by craft or skill, with trick/device later.",
+      "secondary_senses": [
+        "contrivance_construction",
+        "fake_not_genuine"
+      ],
+      "reliability": "medium",
+      "notes": "Directly supports the skill-before-deception distinction."
+    },
+    {
+      "id": "etymonline_artificer_maker",
+      "term": "artificer",
+      "year": 1400,
+      "source": "Etymonline",
+      "source_url": "https://www.etymonline.com/word/artificer",
+      "sense": "art_skill_making",
+      "definition_summary": "Gives artificer as one who makes by art or skill, strengthening the maker/craftsperson branch.",
+      "secondary_senses": [
+        "contrivance_construction"
+      ],
+      "reliability": "medium",
+      "notes": "Probably background or annotation evidence."
+    },
+    {
+      "id": "webster_1828_artificial_primary",
+      "term": "artificial",
+      "year": 1828,
+      "source": "Webster 1828",
+      "source_url": "https://webstersdictionary1828.com/Dictionary/artificial",
+      "sense": "art_skill_making",
+      "definition_summary": "Places made or contrived by art/human skill before fictitious/not-genuine senses, and gives technical examples.",
+      "secondary_senses": [
+        "technical_rule_reckoning",
+        "not_natural",
+        "fake_not_genuine",
+        "contrivance_construction"
+      ],
+      "reliability": "high",
+      "notes": "Best public historical dictionary anchor collected in this pass."
+    },
+    {
+      "id": "webster_1828_artificial_fake_secondary",
+      "term": "artificial",
+      "year": 1828,
+      "source": "Webster 1828",
+      "source_url": "https://webstersdictionary1828.com/Dictionary/artificial",
+      "sense": "fake_not_genuine",
+      "definition_summary": "Also records feigned, fictitious, and not genuine/natural as a separate sense.",
+      "secondary_senses": [
+        "art_skill_making",
+        "technical_rule_reckoning",
+        "not_natural",
+        "contrivance_construction"
+      ],
+      "reliability": "high",
+      "notes": "Useful for coexistence rather than a simple replacement story."
+    },
+    {
+      "id": "webster_1828_art_technical_skill",
+      "term": "art",
+      "year": 1828,
+      "source": "Webster 1828",
+      "source_url": "https://webstersdictionary1828.com/Dictionary/art",
+      "sense": "art_skill_making",
+      "definition_summary": "Frames art as human skill, rule-governed action, mechanic/liberal arts, and learned dexterity.",
+      "secondary_senses": [
+        "technical_rule_reckoning"
+      ],
+      "reliability": "high",
+      "notes": "Key support for explaining art in artificial as skill/technique."
+    },
+    {
+      "id": "webster_1828_artifice_mixed",
+      "term": "artifice",
+      "year": 1828,
+      "source": "Webster 1828",
+      "source_url": "https://webstersdictionary1828.com/Dictionary/artifice",
+      "sense": "contrivance_construction",
+      "definition_summary": "Defines artifice as an ingenious device in good or bad sense, and as art/trade/skill by practice.",
+      "secondary_senses": [
+        "art_skill_making",
+        "fake_not_genuine"
+      ],
+      "reliability": "high",
+      "notes": "Good for showing contrivance is not automatically deception."
+    },
+    {
+      "id": "webster_1828_artificer_agent",
+      "term": "artificer",
+      "year": 1828,
+      "source": "Webster 1828",
+      "source_url": "https://webstersdictionary1828.com/Dictionary/artificer",
+      "sense": "art_skill_making",
+      "definition_summary": "Defines artificer as skilled artist/mechanic/manufacturer and maker/contriver.",
+      "secondary_senses": [
+        "contrivance_construction",
+        "fake_not_genuine"
+      ],
+      "reliability": "high",
+      "notes": "Strong maker noun; may be too specialized for main visual text."
+    },
+    {
+      "id": "mw_artificial_modern_split",
+      "term": "artificial",
+      "year": 2026,
+      "source": "Merriam-Webster",
+      "source_url": "https://www.merriam-webster.com/dictionary/artificial",
+      "sense": "not_natural",
+      "definition_summary": "Modern entry keeps human-made/natural-model and not-genuine/sincere branches, with etymology from skill/craft/making.",
+      "secondary_senses": [
+        "art_skill_making",
+        "imitation_substitute",
+        "fake_not_genuine",
+        "affected_insincere"
+      ],
+      "reliability": "high",
+      "notes": "Good for modern sense split and etymology, not early chronology."
+    },
+    {
+      "id": "cambridge_artificial_modern_split",
+      "term": "artificial",
+      "year": 2026,
+      "source": "Cambridge Dictionary",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/artificial",
+      "sense": "not_natural",
+      "definition_summary": "Modern entry separates made by people/often copy of nature from not sincere.",
+      "secondary_senses": [
+        "imitation_substitute",
+        "affected_insincere"
+      ],
+      "reliability": "high",
+      "notes": "Useful contrast source; not an early-history source."
+    },
+    {
+      "id": "oxford_learners_synonym_split",
+      "term": "artificial",
+      "year": 2026,
+      "source": "Oxford Learner's Dictionary",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/artificial",
+      "sense": "imitation_substitute",
+      "definition_summary": "Modern learner entry separates artificial, synthetic, false, man-made, fake, and imitation in the synonym field.",
+      "secondary_senses": [
+        "not_natural",
+        "fake_not_genuine",
+        "affected_insincere"
+      ],
+      "reliability": "high",
+      "notes": "Useful for later precision: not natural does not automatically mean fake."
+    }
+  ]
+}

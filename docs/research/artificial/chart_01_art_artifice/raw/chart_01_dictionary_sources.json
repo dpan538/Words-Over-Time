@@ -1,0 +1,575 @@
+[
+  {
+    "id": "etymonline_art",
+    "source_name": "Etymonline",
+    "url": "https://www.etymonline.com/word/art",
+    "entry_term": "art",
+    "source_type": "secondary_etymology",
+    "definition_summary": "Traces art to skill from learning/practice, scholarship/learning, human workmanship opposed to nature, and systems of rules.",
+    "earliest_date": "early 13c. for skill from learning or practice",
+    "sense_categories": [
+      "art_skill_making",
+      "technical_rule_reckoning"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": true,
+      "imitation_substitute": false,
+      "contrived": false,
+      "fake_not_genuine": false,
+      "insincere_affected": false
+    },
+    "reliability_note": "Useful secondary etymology for art as skill/rule/workmanship, rather than only fine art.",
+    "access_limitation": null
+  },
+  {
+    "id": "etymonline_artificial",
+    "source_name": "Etymonline",
+    "url": "https://www.etymonline.com/word/artificial",
+    "entry_term": "artificial",
+    "source_type": "secondary_etymology",
+    "definition_summary": "Traces artificial to Latin artificialis and artificium, with art, skill, theory/system, and maker roots; separates early human-skill sense from later imitation and negative senses.",
+    "earliest_date": "late 14c. for early English layer; early 15c. for made by human skill/labor",
+    "sense_categories": [
+      "art_skill_making",
+      "technical_rule_reckoning",
+      "contrivance_construction",
+      "not_natural",
+      "imitation_substitute",
+      "fake_not_genuine",
+      "affected_insincere"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": true,
+      "imitation_substitute": true,
+      "contrived": true,
+      "fake_not_genuine": true,
+      "insincere_affected": true
+    },
+    "reliability_note": "Useful secondary etymology and semantic chronology; verify exact earliest quotations with OED or primary texts before final copy.",
+    "access_limitation": null
+  },
+  {
+    "id": "etymonline_artifice",
+    "source_name": "Etymonline",
+    "url": "https://www.etymonline.com/word/artifice",
+    "entry_term": "artifice",
+    "source_type": "secondary_etymology",
+    "definition_summary": "Frames artifice first as workmanship and making by craft or skill, with trick/device sense developing later.",
+    "earliest_date": "1530s for workmanship/making by craft or skill; 1650s for crafty device/trick",
+    "sense_categories": [
+      "art_skill_making",
+      "contrivance_construction",
+      "fake_not_genuine"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": true,
+      "fake_not_genuine": true,
+      "insincere_affected": false
+    },
+    "reliability_note": "Strong for relation between art, artifice, and artificer; still secondary rather than primary quotation evidence.",
+    "access_limitation": null
+  },
+  {
+    "id": "etymonline_artificer",
+    "source_name": "Etymonline",
+    "url": "https://www.etymonline.com/word/artificer",
+    "entry_term": "artificer",
+    "source_type": "secondary_etymology",
+    "definition_summary": "Gives artificer as an agent noun for one who makes by art or skill, with a later devious-artifice branch.",
+    "earliest_date": "late 14c.",
+    "sense_categories": [
+      "art_skill_making",
+      "contrivance_construction"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": true,
+      "fake_not_genuine": false,
+      "insincere_affected": false
+    },
+    "reliability_note": "Strong word-family support for the maker/craftsperson layer.",
+    "access_limitation": null
+  },
+  {
+    "id": "etymonline_artificiality",
+    "source_name": "Etymonline",
+    "url": "https://www.etymonline.com/word/artificiality",
+    "entry_term": "artificiality",
+    "source_type": "secondary_etymology",
+    "definition_summary": "Records artificiality as appearance of art and insincerity, with artificialness as an earlier related form.",
+    "earliest_date": "1763 for artificiality; 1590s for artificialness",
+    "sense_categories": [
+      "art_skill_making",
+      "affected_insincere"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": false,
+      "fake_not_genuine": false,
+      "insincere_affected": true
+    },
+    "reliability_note": "Useful for the abstract-noun bridge from appearance of art to insincerity.",
+    "access_limitation": null
+  },
+  {
+    "id": "etymonline_artisan",
+    "source_name": "Etymonline",
+    "url": "https://www.etymonline.com/word/artisan",
+    "entry_term": "artisan",
+    "source_type": "secondary_etymology",
+    "definition_summary": "Frames artisan as one skilled in a mechanical art or craftsman, from the same art/skill family.",
+    "earliest_date": "1530s",
+    "sense_categories": [
+      "art_skill_making"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": false,
+      "fake_not_genuine": false,
+      "insincere_affected": false
+    },
+    "reliability_note": "Background word-family evidence only; less direct than artificer.",
+    "access_limitation": null
+  },
+  {
+    "id": "etymonline_artifact",
+    "source_name": "Etymonline",
+    "url": "https://www.etymonline.com/word/artifact",
+    "entry_term": "artifact",
+    "source_type": "secondary_etymology",
+    "definition_summary": "Gives artefact/artifact as an artificial production or thing made/modified by human art, from arte plus factum.",
+    "earliest_date": "1821 for artefact; 1884 for artifact spelling",
+    "sense_categories": [
+      "art_skill_making",
+      "not_natural"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": true,
+      "imitation_substitute": false,
+      "contrived": false,
+      "fake_not_genuine": false,
+      "insincere_affected": false
+    },
+    "reliability_note": "Useful background evidence for thing-made-by-skill; not central to artificial's earliest layer.",
+    "access_limitation": null
+  },
+  {
+    "id": "webster_1828_artificial",
+    "source_name": "Webster 1828",
+    "url": "https://webstersdictionary1828.com/Dictionary/artificial",
+    "entry_term": "artificial",
+    "source_type": "historical_dictionary",
+    "definition_summary": "Defines artificial first as made or contrived by art, human skill, and labor, opposed to natural; also gives fictitious/not genuine and technical examples.",
+    "earliest_date": "1828 dictionary snapshot",
+    "sense_categories": [
+      "art_skill_making",
+      "technical_rule_reckoning",
+      "not_natural",
+      "fake_not_genuine",
+      "contrivance_construction"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": true,
+      "imitation_substitute": false,
+      "contrived": true,
+      "fake_not_genuine": true,
+      "insincere_affected": false
+    },
+    "reliability_note": "High-value historical dictionary evidence; public-domain definition reproduced online.",
+    "access_limitation": null
+  },
+  {
+    "id": "webster_1828_art",
+    "source_name": "Webster 1828",
+    "url": "https://webstersdictionary1828.com/Dictionary/art",
+    "entry_term": "art",
+    "source_type": "historical_dictionary",
+    "definition_summary": "Defines art around human skill, rule-governed practice, mechanic and liberal arts, and skill acquired by experience or study.",
+    "earliest_date": "1828 dictionary snapshot",
+    "sense_categories": [
+      "art_skill_making",
+      "technical_rule_reckoning"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": true,
+      "imitation_substitute": false,
+      "contrived": false,
+      "fake_not_genuine": false,
+      "insincere_affected": false
+    },
+    "reliability_note": "Useful historical support for art as skill/rules rather than only fine art.",
+    "access_limitation": null
+  },
+  {
+    "id": "webster_1828_artifice",
+    "source_name": "Webster 1828",
+    "url": "https://webstersdictionary1828.com/Dictionary/artifice",
+    "entry_term": "artifice",
+    "source_type": "historical_dictionary",
+    "definition_summary": "Defines artifice as an artful or ingenious device that may be good or bad, and separately as art/trade/skill by practice.",
+    "earliest_date": "1828 dictionary snapshot",
+    "sense_categories": [
+      "art_skill_making",
+      "contrivance_construction",
+      "fake_not_genuine"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": true,
+      "fake_not_genuine": true,
+      "insincere_affected": false
+    },
+    "reliability_note": "Good evidence that artifice was already mixed in 1828: skill/ingenuity plus possible trickery.",
+    "access_limitation": null
+  },
+  {
+    "id": "webster_1828_artificer",
+    "source_name": "Webster 1828",
+    "url": "https://webstersdictionary1828.com/Dictionary/artificer",
+    "entry_term": "artificer",
+    "source_type": "historical_dictionary",
+    "definition_summary": "Defines artificer as artist, mechanic, manufacturer, or maker whose work requires skill or specialized knowledge; also notes contriving/deceptive uses.",
+    "earliest_date": "1828 dictionary snapshot",
+    "sense_categories": [
+      "art_skill_making",
+      "contrivance_construction",
+      "fake_not_genuine"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": true,
+      "fake_not_genuine": true,
+      "insincere_affected": false
+    },
+    "reliability_note": "Strong agent-noun evidence for the skilled maker behind artificial.",
+    "access_limitation": null
+  },
+  {
+    "id": "webster_1828_artificially",
+    "source_name": "Webster 1828",
+    "url": "https://webstersdictionary1828.com/Dictionary/artificially",
+    "entry_term": "artificially",
+    "source_type": "historical_dictionary",
+    "definition_summary": "Defines artificially as by art or human skill and contrivance, with art/ingenuity as a positive technical mode.",
+    "earliest_date": "1828 dictionary snapshot",
+    "sense_categories": [
+      "art_skill_making",
+      "contrivance_construction"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": true,
+      "fake_not_genuine": false,
+      "insincere_affected": false
+    },
+    "reliability_note": "Direct support for the adverbial skill/contrivance sense.",
+    "access_limitation": null
+  },
+  {
+    "id": "webster_1828_artful",
+    "source_name": "Webster 1828",
+    "url": "https://webstersdictionary1828.com/Home?word=artful",
+    "entry_term": "artful",
+    "source_type": "historical_dictionary",
+    "definition_summary": "Separates artful as performed with art or skill from cunning/stratagem, noting the latter as the most usual sense.",
+    "earliest_date": "1828 dictionary snapshot",
+    "sense_categories": [
+      "art_skill_making",
+      "not_natural",
+      "contrivance_construction",
+      "fake_not_genuine"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": true,
+      "imitation_substitute": false,
+      "contrived": true,
+      "fake_not_genuine": true,
+      "insincere_affected": false
+    },
+    "reliability_note": "Useful background for how art-family words can carry both skill and cunning.",
+    "access_limitation": null
+  },
+  {
+    "id": "webster_1828_artless",
+    "source_name": "Webster 1828",
+    "url": "https://webstersdictionary1828.com/Dictionary/artless",
+    "entry_term": "artless",
+    "source_type": "historical_dictionary",
+    "definition_summary": "Defines artless both as lacking art/skill and as free from guile, craft, or stratagem.",
+    "earliest_date": "1828 dictionary snapshot",
+    "sense_categories": [
+      "art_skill_making",
+      "affected_insincere",
+      "fake_not_genuine"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": false,
+      "fake_not_genuine": true,
+      "insincere_affected": true
+    },
+    "reliability_note": "Background evidence for art-family polarity: art can mean skill, but artlessness can mean sincerity.",
+    "access_limitation": null
+  },
+  {
+    "id": "webster_1828_craft",
+    "source_name": "Webster 1828",
+    "url": "https://webstersdictionary1828.com/Dictionary/craft",
+    "entry_term": "craft",
+    "source_type": "historical_dictionary",
+    "definition_summary": "Defines craft as art, ability, dexterity, and skill, while also recording cunning/deceitful uses.",
+    "earliest_date": "1828 dictionary snapshot",
+    "sense_categories": [
+      "art_skill_making",
+      "contrivance_construction",
+      "fake_not_genuine"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": true,
+      "fake_not_genuine": true,
+      "insincere_affected": false
+    },
+    "reliability_note": "Background support for the skill/craft-to-cunning semantic field.",
+    "access_limitation": null
+  },
+  {
+    "id": "merriam_webster_artificial",
+    "source_name": "Merriam-Webster",
+    "url": "https://www.merriam-webster.com/dictionary/artificial",
+    "entry_term": "artificial",
+    "source_type": "dictionary",
+    "definition_summary": "Modern entry keeps made-by-humans and not-genuine/sincere senses, and etymology links artificial to skill, artistry, craft, and making.",
+    "earliest_date": "15th century first known use",
+    "sense_categories": [
+      "art_skill_making",
+      "not_natural",
+      "imitation_substitute",
+      "fake_not_genuine",
+      "affected_insincere"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": true,
+      "imitation_substitute": true,
+      "contrived": true,
+      "fake_not_genuine": true,
+      "insincere_affected": true
+    },
+    "reliability_note": "High-quality modern dictionary and etymology; not a substitute for OED sense ordering.",
+    "access_limitation": null
+  },
+  {
+    "id": "merriam_webster_artifice",
+    "source_name": "Merriam-Webster",
+    "url": "https://www.merriam-webster.com/dictionary/artifice",
+    "entry_term": "artifice",
+    "source_type": "dictionary",
+    "definition_summary": "Defines artifice as clever/artful skill and device, but also trick and false or insincere behavior; etymology ties it to art, craft, craftiness, and making.",
+    "earliest_date": "1540 first known use",
+    "sense_categories": [
+      "art_skill_making",
+      "contrivance_construction",
+      "fake_not_genuine",
+      "affected_insincere"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": true,
+      "fake_not_genuine": true,
+      "insincere_affected": true
+    },
+    "reliability_note": "Strong modern sense split showing artifice as both skill and deceptive device.",
+    "access_limitation": null
+  },
+  {
+    "id": "merriam_webster_artificer",
+    "source_name": "Merriam-Webster",
+    "url": "https://www.merriam-webster.com/dictionary/artificer",
+    "entry_term": "artificer",
+    "source_type": "dictionary",
+    "definition_summary": "Defines artificer as skilled/artistic worker or craftsman, and as one who makes or contrives.",
+    "earliest_date": null,
+    "sense_categories": [
+      "art_skill_making",
+      "contrivance_construction"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": true,
+      "fake_not_genuine": false,
+      "insincere_affected": false
+    },
+    "reliability_note": "Good modern confirmation of maker/craftsperson sense.",
+    "access_limitation": null
+  },
+  {
+    "id": "merriam_webster_art",
+    "source_name": "Merriam-Webster",
+    "url": "https://www.merriam-webster.com/dictionary/art",
+    "entry_term": "art",
+    "source_type": "dictionary",
+    "definition_summary": "Begins with art as acquired skill, then branch of learning, skilled occupation, and creative production.",
+    "earliest_date": null,
+    "sense_categories": [
+      "art_skill_making",
+      "technical_rule_reckoning"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": false,
+      "fake_not_genuine": false,
+      "insincere_affected": false
+    },
+    "reliability_note": "Useful for modern readers who equate art only with fine art.",
+    "access_limitation": null
+  },
+  {
+    "id": "cambridge_artificial",
+    "source_name": "Cambridge Dictionary",
+    "url": "https://dictionary.cambridge.org/dictionary/english/artificial",
+    "entry_term": "artificial",
+    "source_type": "dictionary",
+    "definition_summary": "Modern learner/general entry distinguishes made by people, often copying nature, from not sincere.",
+    "earliest_date": null,
+    "sense_categories": [
+      "not_natural",
+      "imitation_substitute",
+      "affected_insincere"
+    ],
+    "supports": {
+      "made_by_art_skill": false,
+      "not_natural": true,
+      "imitation_substitute": true,
+      "contrived": false,
+      "fake_not_genuine": false,
+      "insincere_affected": true
+    },
+    "reliability_note": "Good modern sense contrast; weak for early history.",
+    "access_limitation": null
+  },
+  {
+    "id": "oxford_learners_artificial",
+    "source_name": "Oxford Learner's Dictionary",
+    "url": "https://www.oxfordlearnersdictionaries.com/definition/english/artificial",
+    "entry_term": "artificial",
+    "source_type": "dictionary",
+    "definition_summary": "Modern learner entry distinguishes copy/not real, created by people, and not what it appears to be/fake senses; thesaurus separates artificial from synthetic, man-made, fake, false, and imitation.",
+    "earliest_date": null,
+    "sense_categories": [
+      "not_natural",
+      "imitation_substitute",
+      "fake_not_genuine",
+      "affected_insincere"
+    ],
+    "supports": {
+      "made_by_art_skill": false,
+      "not_natural": true,
+      "imitation_substitute": true,
+      "contrived": false,
+      "fake_not_genuine": true,
+      "insincere_affected": true
+    },
+    "reliability_note": "Useful for distinguishing modern near-synonyms; not historical attestation evidence.",
+    "access_limitation": null
+  },
+  {
+    "id": "johnson_dictionary_online",
+    "source_name": "Johnson's Dictionary Online",
+    "url": "https://johnsonsdictionaryonline.com/",
+    "entry_term": "artificial",
+    "source_type": "historical_dictionary",
+    "definition_summary": "Site checked as a historical dictionary source, but the entry text was not reliably accessible through the non-JavaScript workflow.",
+    "earliest_date": "1755/1773 dictionary source if manually accessed",
+    "sense_categories": [
+      "unclear_or_mixed"
+    ],
+    "supports": {
+      "made_by_art_skill": false,
+      "not_natural": false,
+      "imitation_substitute": false,
+      "contrived": false,
+      "fake_not_genuine": false,
+      "insincere_affected": false
+    },
+    "reliability_note": "Potentially high if manually accessed; current extraction is an access note only.",
+    "access_limitation": "Requires JavaScript/search interaction; entry not captured in this pass."
+  },
+  {
+    "id": "rhetorica_ad_herennium_memory",
+    "source_name": "Rhetorica ad Herennium passages on memory",
+    "url": "https://www.laits.utexas.edu/memoria/Ad_Herennium_Passages.html",
+    "entry_term": "artificial memory",
+    "source_type": "book_snippet",
+    "definition_summary": "Primary classical/rhetorical passage distinguishes natural memory from artificial memory as memory strengthened by training and discipline.",
+    "earliest_date": "ancient source; online translation excerpt",
+    "sense_categories": [
+      "technical_rule_reckoning",
+      "art_skill_making"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": true,
+      "imitation_substitute": false,
+      "contrived": false,
+      "fake_not_genuine": false,
+      "insincere_affected": false
+    },
+    "reliability_note": "Strong conceptual support for artificial as trained/systematic rather than fake; not an English first-use source.",
+    "access_limitation": null
+  },
+  {
+    "id": "cambridge_memory_middle_ages",
+    "source_name": "Cambridge University Press: Memory in the Middle Ages chapter summary",
+    "url": "https://www.cambridge.org/core/books/memory-in-the-middle-ages/james-i-of-aragon-vicent-ferrer-and-francesc-eiximenis-natural-memory-and-artificial-memory/6A9911639FE5CF09F0D9DAA1484E4C26",
+    "entry_term": "artificial memory",
+    "source_type": "book_snippet",
+    "definition_summary": "Chapter summary says classical and medieval rhetoric distinguished natural memory from artificial memory, the latter cultivated by rules of the art of memory.",
+    "earliest_date": "2021 summary of classical/medieval tradition",
+    "sense_categories": [
+      "technical_rule_reckoning",
+      "art_skill_making"
+    ],
+    "supports": {
+      "made_by_art_skill": true,
+      "not_natural": true,
+      "imitation_substitute": false,
+      "contrived": false,
+      "fake_not_genuine": false,
+      "insincere_affected": false
+    },
+    "reliability_note": "Good scholarly support for artificial as rule-trained faculty; secondary/summary rather than corpus data.",
+    "access_limitation": "Full chapter may be paywalled."
+  }
+]

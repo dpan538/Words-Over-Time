@@ -1,0 +1,17 @@
+phrase,status,primary_sense,first_visible_year,peak_year,peak_value,source_support,chart_01_relevance,needs_snippet_review,notes
+artificial day,collected,technical_rule_reckoning,1800,1810,1.587876994335602e-7,Etymonline; Ngram,medium,false,"Relevance is evidence-review only, not final visual selection."
+artificial memory,collected,technical_rule_reckoning,1800,1813,1.8519766875613186e-7,Rhetorica ad Herennium; Cambridge summary; Ngram,high,false,"Relevance is evidence-review only, not final visual selection."
+artificial arguments,source_only,technical_rule_reckoning,,,,Webster 1828; Johnson attributed via Webster 1913 derivative source,medium,false,"Relevance is evidence-review only, not final visual selection."
+artificial method,collected,technical_rule_reckoning,1800,1801,8.667363715630927e-8,Ngram only in this pass,medium,true,"Relevance is evidence-review only, not final visual selection."
+artificial system,collected,technical_rule_reckoning,1800,1829,3.2673966732232884e-7,Ngram only in this pass,medium,true,"Relevance is evidence-review only, not final visual selection."
+artificial work,collected,art_skill_making,1800,1834,4.5247290358929604e-8,Ngram only in this pass,low,true,"Relevance is evidence-review only, not final visual selection."
+made by art,collected,art_skill_making,1800,1810,2.0593667304780183e-7,Ngram visibility and dictionary wording,medium,false,"Relevance is evidence-review only, not final visual selection."
+made by skill,collected,art_skill_making,1810,1852,1.219447920419725e-8,Ngram only in this pass,low,true,"Relevance is evidence-review only, not final visual selection."
+human skill,collected,art_skill_making,1800,1822,4.371072118702912e-7,Ngram visibility and dictionary wording,medium,false,"Relevance is evidence-review only, not final visual selection."
+artificial reason,skipped,unclear_or_mixed,,,,Not collected in Ngram extension,low,true,"Relevance is evidence-review only, not final visual selection."
+artificial logic,skipped,unclear_or_mixed,,,,Not collected in Ngram extension,low,true,"Relevance is evidence-review only, not final visual selection."
+artificial language,source_only,technical_rule_reckoning,,,,First-round Ngram only; not Chart 1 focus yet,low,true,"Relevance is evidence-review only, not final visual selection."
+artificial body,skipped,unclear_or_mixed,,,,Not collected in this pass,exclude,true,Not enough Chart 1 relevance in this pass.
+artificial motion,skipped,unclear_or_mixed,,,,Not collected in this pass,low,true,"Relevance is evidence-review only, not final visual selection."
+artificial fire,skipped,unclear_or_mixed,,,,Not collected in this pass,low,true,"Relevance is evidence-review only, not final visual selection."
+artificial light,source_only,not_natural,,,,First-round Ngram; outside Chart 1 unless used as Webster example,low,true,"Relevance is evidence-review only, not final visual selection."
