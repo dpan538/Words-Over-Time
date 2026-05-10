@@ -1,0 +1,9 @@
+item,issue,why_it_matters,blocking_level,next_action,notes
+OED artificial,Not accessed,Needed for precise earliest-date claims and obsolete technical senses.,blocks_final_copy,Check OED before final copy.,Does not block content-structure planning if Webster fallback is accepted.
+OED artifice/artificer,Not accessed,Needed if either becomes a visible node with historical dates.,blocks_final_copy,Check OED if visible.,Can plan structure with caveat.
+Johnson direct artificial/artifice,Direct stable extraction not captured,Would strengthen 1755 bridge evidence.,blocks_final_copy,Use Johnson site or scan manually.,Not strictly blocking if Webster/Century/MW are enough.
+MED artificial/artifice/artificer,"Search-only, no stable entry found",Could confirm Middle English forms if available.,optional,Deeper MED search if OED unavailable.,Probably optional.
+Artificial day,Obscure and not primary-verified,May be tempting as early technical anchor.,blocks_final_copy,Verify OED/primary snippet before visible use.,Currently notes/supporting only.
+Artificial memory,"Concept strong, English chronology unresolved",Good learned-technique example but risky as early English anchor.,blocks_final_copy,Find dated English snippet or keep notes-only.,Can support concept in notes.
+Artifice visibility,Bridge term can be misread as only deception,Could distort Chart 1 if central.,minor_risk,Keep bridge framing.,Safe with care.
+Ngram years,First-visible years can be mistaken for attestations,Could create false chronology.,minor_risk,Do not use Ngram years as dates.,Use only visibility evidence.

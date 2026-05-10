@@ -1,0 +1,12 @@
+phrase,source_count,strongest_source,earliest_reliable_year_or_period,primary_sense,secondary_sense,chart_01_status,confidence,public_facing_risk,notes
+artificial day,3,Etymonline; Johnson secondary transcription,late medieval claimed; 1755 secondary transcription; secure primary not yet captured,technical_rule_reckoning,not_natural,supporting_anchor,medium,high,Semantically useful but too obscure for core without explanation/OED.
+artificial memory,2,Rhetorica ad Herennium memory tradition,classical/medieval concept; English date unresolved,technical_rule_reckoning,art_skill_making,supporting_anchor,medium,medium,"Useful as learned-technique support, not English earliest-use proof."
+artificial arguments,2,Webster 1828,1828 secure; Johnson direct check pending,technical_rule_reckoning,art_skill_making,supporting_anchor,high,medium,Strong but specialized.
+artificial lines,2,Webster 1828 / Webster 1913,1828 secure,technical_rule_reckoning,contrivance_construction,supporting_anchor,high,medium,Strong technical calculation example.
+artificial numbers,2,Webster 1828 / Webster 1913,1828 secure,technical_rule_reckoning,,supporting_anchor,high,low,Compact example: logarithms.
+artificial method,1,Ngram only from previous pass,not verified,unclear_or_unusable,,background_only,low,high,Do not use without snippet evidence.
+made by art,3,Webster 1828; Century via Wordnik,1828 secure,art_skill_making,not_natural,supporting_anchor,high,low,"Use as definitional support, not as phrase-history claim."
+made by skill,1,Ngram only,not verified,art_skill_making,,background_only,low,medium,Too generic.
+human skill,3,Webster 1828; Century via Wordnik; Merriam-Webster etymology,1828 secure,art_skill_making,,supporting_anchor,high,low,Good paraphrase support.
+contrived by art,3,Webster 1828; Merriam-Webster etymology; Century via Wordnik,1828 secure,contrivance_construction,art_skill_making,background_only,medium,medium,"Confirmed, but keep secondary so contrivance does not dominate."
+by art and human skill,3,Webster 1828; Century via Wordnik; Etymonline artificially,1828 secure; early 15c. claimed by Etymonline for artificially,art_skill_making,contrivance_construction,supporting_anchor,high,low,Strong source-backed paraphrase; check exact wording if quoted.

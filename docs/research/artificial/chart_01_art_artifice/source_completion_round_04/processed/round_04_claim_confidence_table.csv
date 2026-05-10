@@ -1,0 +1,13 @@
+claim,status,strongest_supporting_sources,evidence_strength,risk,can_use_in_chart_01,notes
+"Artificial originally relates to art, skill, and making.",mostly_safe,Webster 1828; Etymonline; Merriam-Webster; Century via Wordnik,high,avoid precise earliest-date wording without OED,yes_with_care,Use 'early/older layer' rather than exact origin date.
+Artificial does not simply mean fake.,safe,Webster 1828; Century via Wordnik; Merriam-Webster,high,low,yes,Strongly supported.
+Not natural and fake are distinct senses.,safe,Webster 1828; Century via Wordnik; Cambridge; Oxford Learner's,high,low,yes,Core Chart 1 distinction.
+Contrivance bridges skillful construction and suspicion.,safe,Webster 1828 artifice; Merriam-Webster artifice; Etymonline artifice,high,medium,yes_with_care,Use bridge label.
+Artifice should be shown as both making and possible deception.,mostly_safe,Etymonline; Webster 1828; Merriam-Webster; Johnson secondary,high,high,yes_with_care,Potential overread risk; not pure deception.
+Artificer helps reveal the maker/craftsperson layer.,mostly_safe,Webster 1828; Merriam-Webster; Etymonline,high,medium,yes_with_care,"Probably supporting, not necessarily central."
+Artificial day supports a technical/reckoning sense.,partially_supported,Etymonline; Johnson secondary,medium,high,notes_only,Needs OED/primary check before visible anchor.
+Artificial memory supports a learned-technique sense.,partially_supported,Rhetorica ad Herennium; Cambridge scholarly summary from prior pass,medium,medium,notes_only,"Good concept, unresolved English chronology."
+Artificial arguments/lines/numbers support rule-based technical senses.,safe,Webster 1828; Webster 1913 via Wordnik,high,medium,yes_with_care,Specialized but secure.
+Webster 1828 is sufficient as fallback authority if OED is unavailable.,mostly_safe,Webster 1828; corroborated by Century/MW/Etymonline,high,medium,yes_with_care,"Sufficient for sense boundaries, not earliest dates."
+OED is required for precise earliest-date claims.,safe,OED not accessed; Etymonline dates are secondary,high,low,yes,Treat as editorial guardrail.
+Johnson is useful but not strictly required if Webster/Etymonline/MW are strong.,mostly_safe,Webster 1828; Etymonline; MW; Century,medium,medium,yes_with_care,"Johnson still desirable, especially for 1755 bridge."

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "century_artificial_wordnik",
+    "source_name": "Century Dictionary via Wordnik",
+    "term": "artificial",
+    "year": "late 19th / early 20th c.",
+    "url": "https://www.wordnik.com/words/artificial",
+    "short_extract_or_summary": "Century separates technical/rules of art, skillful contrivance, human skill opposed to nature, imitation/substitute, feigned/not genuine, affected, and artful/crafty.",
+    "sense": "mixed_bridge_sense",
+    "chart_01_value": "high",
+    "reliability": "medium",
+    "limitation": "Online reproduction rather than original scan."
+  },
+  {
+    "id": "webster_1913_artificial_wordnik",
+    "source_name": "Webster 1913 / GNU Collaborative International Dictionary via Wordnik",
+    "term": "artificial",
+    "year": 1913,
+    "url": "https://www.wordnik.com/words/artificial",
+    "short_extract_or_summary": "Gives made/contrived by art or human skill opposed to natural, not genuine, obsolete artful/cunning, and technical rhetoric/science senses.",
+    "sense": "mixed_bridge_sense",
+    "chart_01_value": "medium",
+    "reliability": "medium",
+    "limitation": "Later source; useful confirmation only."
+  },
+  {
+    "id": "webster_1913_artificially_longdo",
+    "source_name": "Webster 1913 via Longdo",
+    "term": "artificially",
+    "year": 1913,
+    "url": "https://dict.longdo.com/search/*cia*?nocache=1",
+    "short_extract_or_summary": "Defines artificially as by art or skill and contrivance, not by nature; also skillfully and craftily as obsolete senses.",
+    "sense": "mixed_bridge_sense",
+    "chart_01_value": "medium",
+    "reliability": "low",
+    "limitation": "Search result/aggregator; use only as support."
+  },
+  {
+    "id": "chambers_artificial_finedictionary",
+    "source_name": "Chambers 20th Century via FineDictionary",
+    "term": "artificial",
+    "year": "20th c.",
+    "url": "https://www.finedictionary.com/artificial",
+    "short_extract_or_summary": "Gives artificial as made by art, not natural, cultivated, feigned, and affected in manners.",
+    "sense": "mixed_bridge_sense",
+    "chart_01_value": "medium",
+    "reliability": "medium",
+    "limitation": "Secondary aggregation."
+  },
+  {
+    "id": "johnson_artifice_definitions",
+    "source_name": "Johnson via Definitions.net",
+    "term": "artifice",
+    "year": 1755,
+    "url": "https://www.definitions.net/definition/artifice",
+    "short_extract_or_summary": "Secondary transcription: artifice includes trick/fraud/stratagem and art/trade.",
+    "sense": "mixed_bridge_sense",
+    "chart_01_value": "medium",
+    "reliability": "low",
+    "limitation": "Requires direct Johnson verification."
+  },
+  {
+    "id": "johnson_factitious_definitions",
+    "source_name": "Johnson via Definitions.net",
+    "term": "factitious",
+    "year": 1755,
+    "url": "https://www.definitions.net/definition/FACTITIOUS",
+    "short_extract_or_summary": "Secondary Johnson transcription defines factitious as made by art, opposed to what is made by nature.",
+    "sense": "not_natural",
+    "chart_01_value": "low",
+    "reliability": "low",
+    "limitation": "Comparator only; not a central artificial source."
+  },
+  {
+    "id": "wordnik_artifact_century",
+    "source_name": "Century Dictionary via Wordnik",
+    "term": "artifact",
+    "year": "late 19th / early 20th c.",
+    "url": "https://www.wordnik.com/words/artifact",
+    "short_extract_or_summary": "Artifact is described as anything made by art or an artificial product.",
+    "sense": "art_skill_making",
+    "chart_01_value": "low",
+    "reliability": "medium",
+    "limitation": "Background family evidence only."
+  }
+]

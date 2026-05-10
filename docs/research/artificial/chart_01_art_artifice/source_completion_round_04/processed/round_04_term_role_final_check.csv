@@ -1,0 +1,16 @@
+term,recommended_role,source_support,sense_support,ngram_support,chart_01_value,risk,final_recommendation,notes
+art,core_node,Webster 1828; Merriam-Webster; Etymonline,art_skill_making;technical_rule_reckoning,not needed,high,low,keep_visible,"Core root, but define as skill/craft/rule."
+artificial,core_node,Webster 1828; Etymonline; Merriam-Webster; Century,mixed_bridge_sense,strong previous Ngram,high,medium,keep_visible,Main node; label sense boundaries carefully.
+artificially,supporting_node,Etymonline; Webster 1913; Webster 1828 prior note,art_skill_making;contrivance_construction,strong previous Ngram,medium,low,keep_supporting,Useful adverbial support.
+artifice,supporting_node,Etymonline; Webster 1828; Merriam-Webster; Johnson secondary; Century,mixed_bridge_sense,strong previous Ngram,high,high,keep_supporting,"Use as bridge, not pure deception."
+artificer,supporting_node,Webster 1828; Merriam-Webster; Etymonline; Wiktionary backup,art_skill_making,visible previous Ngram,medium,medium,keep_supporting,Shows maker/craftsperson layer; probably not headline.
+artificiality,background_note,Etymonline; modern dictionaries,affected_insincere;art_skill_making,visible previous Ngram,low,medium,notes_only,Later abstract/affective layer.
+contrivance,comparison_only,Webster/Century/MW context,contrivance_construction;mixed_bridge_sense,strong previous Ngram,medium,high,notes_only,Useful boundary word but can hijack chart.
+contrived,comparison_only,Webster/Century/MW context,contrivance_construction,strong previous Ngram,medium,high,notes_only,Use only as bridge explanation.
+artful,background_note,Webster 1828; Merriam-Webster artificial archaic sense,mixed_bridge_sense,visible previous Ngram,low,medium,notes_only,Background for skill/cunning split.
+artless,background_note,Webster 1828,affected_insincere;art_skill_making,visible previous Ngram,low,medium,notes_only,"Useful inverse contrast, not chart node."
+artisan,background_note,Etymonline; Wiktionary backup,art_skill_making,visible previous Ngram,low,medium,notes_only,Less direct than artificer.
+artifact,background_note,Etymonline; Century via Wordnik,art_skill_making;not_natural,visible previous Ngram,low,medium,notes_only,Background family evidence only.
+artefact,background_note,Etymonline; Century/Webster variants,art_skill_making;not_natural,visible previous Ngram,low,medium,notes_only,Variant/background only.
+technical,comparison_only,Ngram only; modern paraphrase,technical_rule_reckoning,strong previous Ngram,low,medium,notes_only,Do not make a node.
+mechanical,exclude_for_chart_01,Ngram only; too broad,unclear_or_unusable,strong previous Ngram,none,high,exclude,Not needed for Chart 1.
