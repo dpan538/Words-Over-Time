@@ -1,0 +1,36 @@
+term,query_group,narrative_role
+photograph,a_narrative_spine,photographic image baseline; helps define the reproduction-era window
+photography,a_narrative_spine,photographic technology baseline; helps define the reproduction-era window
+authentic,a_narrative_spine,counter-term for authenticity pressure; compare against artificial/media terms
+authenticity,a_narrative_spine,counter-term for authenticity pressure; likely strong but not an artificial modifier
+artificial sound,a_narrative_spine,"sound reproduction line: phonograph, radio, recording"
+artificial lighting,a_narrative_spine,"staged/cinematic perception manufacturing, distinct from artificial light"
+mechanical reproduction,b_supporting_evidence,direct Benjamin-line academic/theoretical bridge
+artificial atmosphere,b_supporting_evidence,theater/exhibition/environmental perception manufacturing
+recorded,b_supporting_evidence,broad emergence of recording as a media action; sense-noisy but useful
+artificial daylight,b_supporting_evidence,studio lighting / artificial sun / film-production specificity
+simulation,b_supporting_evidence,late-tail bridge paired with simulated
+reproduced,c_optional_density,general reproduction vocabulary
+reproduction,c_optional_density,general reproduction vocabulary and Benjamin-line context
+artificial color,c_optional_density,"color reproduction via print, dye, film, and manufactured perception"
+artificial colour,c_optional_density,British spelling variant for artificial color
+aura,c_optional_density,Benjamin aura concept; broad and sense-noisy in ordinary language
+artificial scene,c_optional_density,constructed scene/environment candidate
+artificial environment,c_optional_density,later constructed-environment candidate
+phonograph,media_technology_anchor,sound reproduction technology anchor
+gramophone,media_technology_anchor,"sound reproduction technology anchor, especially British usage"
+recorded sound,media_technology_anchor,specific sound-reproduction phrase
+sound recording,media_technology_anchor,specific recording practice phrase
+moving picture,media_technology_anchor,early motion-picture vocabulary
+motion picture,media_technology_anchor,film/cinema reproduction technology anchor
+cinematograph,media_technology_anchor,early cinema technology anchor
+radio broadcasting,media_technology_anchor,broadcast-mediated sound reproduction anchor
+photographic reproduction,media_technology_anchor,direct image-copying bridge between photography and reproduction
+facsimile,media_technology_anchor,copy/reproduction term that may precede mass media discourse
+genuine,authenticity_counterterm,counter-pressure around original/real/genuine status; broad but useful comparator
+original,authenticity_counterterm,counter-pressure around original status; very broad and sense-noisy
+originality,authenticity_counterterm,authorship/originality pressure around reproducibility
+fake,authenticity_counterterm,negative authenticity-pressure comparator from the existing artificial dataset
+simulated,authenticity_counterterm,existing artificial core term; pairs with simulation for late-tail pressure
+artificial image,authenticity_counterterm,"image/manufactured-perception phrase from existing test set, now Chart 3 relevant"
+artificial voice,authenticity_counterterm,"voice/sound manufacturing phrase from existing secondary set, now Chart 3 relevant"
