@@ -1,0 +1,7 @@
+phrase,status,strongest_source,year_or_period,primary_sense,confidence,public_facing_risk,final_chart_01_recommendation,notes
+artificial day,partially_confirmed,Perkins 1606 quoted by Reformed Books Online; Etymonline; Webster 1828 day checkpoint,1606 source quoted; 1828 checkpoint,technical_rule_reckoning,medium,high,notes_only,"Historically real, but too obscure and still indirectly sourced for visible anchor use."
+artificiall day,unclear,No stable exact-form source captured,,technical_rule_reckoning,low,high,exclude,Do not use this spelling unless OED/MED supplies it.
+artificall day,unclear,No stable exact-form source captured,,technical_rule_reckoning,low,high,exclude,Do not use this spelling unless OED/MED supplies it.
+artificial lines,confirmed_pre_1828,Gunter 1636 title metadata; Webster 1828 checkpoint,1636 title metadata; 1828 checkpoint,technical_rule_reckoning,medium,medium,small_annotation,"Confirmed enough as a technical/reckoning support item, but visually obscure."
+artificiall lines,confirmed_pre_1828,Gunter 1636 title metadata,1636,technical_rule_reckoning,medium,medium,small_annotation,Best pre-1828 spelling found for the lines anchor.
+artificall lines,not_confirmed,No stable source captured,,technical_rule_reckoning,low,high,exclude,Not needed because artificiall lines is confirmed.

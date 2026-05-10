@@ -1,0 +1,194 @@
+{
+  "edges": [
+    {
+      "id": "edge_substitute_field_to_artificial",
+      "source": "substitute_field",
+      "target": "artificial",
+      "edge_type": "containment",
+      "meaning": "artificial is the selected word located inside the broader substitute field",
+      "panel_visibility": "both",
+      "priority": "high",
+      "notes": "Spatial containment, not a definition of artificial as the whole field."
+    },
+    {
+      "id": "edge_substitute_field_to_artificial_flowers",
+      "source": "substitute_field",
+      "target": "artificial_flowers",
+      "edge_type": "evidence_association",
+      "meaning": "artificial flowers supports the substitute-field reading",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence."
+    },
+    {
+      "id": "edge_substitute_field_to_artificial_teeth",
+      "source": "substitute_field",
+      "target": "artificial_teeth",
+      "edge_type": "evidence_association",
+      "meaning": "artificial teeth supports the replacement reading",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence."
+    },
+    {
+      "id": "edge_substitute_field_to_artificial_light",
+      "source": "substitute_field",
+      "target": "artificial_light",
+      "edge_type": "evidence_association",
+      "meaning": "artificial light supports the substitute / environmental replacement reading",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence."
+    },
+    {
+      "id": "edge_substitute_field_to_artificial_limb",
+      "source": "substitute_field",
+      "target": "artificial_limb",
+      "edge_type": "evidence_association",
+      "meaning": "artificial limb supports the replacement reading as optional secondary evidence",
+      "panel_visibility": "hover_or_selected",
+      "priority": "medium",
+      "notes": "Optional / secondary lower-panel evidence."
+    },
+    {
+      "id": "edge_not_natural_to_artificial",
+      "source": "not_natural",
+      "target": "artificial",
+      "edge_type": "pressure_relation",
+      "meaning": "opposition to naturalness exerts semantic pressure on artificial",
+      "panel_visibility": "both",
+      "priority": "high",
+      "notes": "Do not draw as equivalence."
+    },
+    {
+      "id": "edge_not_real_to_artificial",
+      "source": "not_real",
+      "target": "artificial",
+      "edge_type": "pressure_relation",
+      "meaning": "realness, genuineness, imitation, and falseness judgments exert semantic pressure on artificial",
+      "panel_visibility": "both",
+      "priority": "high",
+      "notes": "Distinct from not-natural pressure."
+    },
+    {
+      "id": "edge_not_natural_to_suspicion",
+      "source": "not_natural",
+      "target": "suspicion",
+      "edge_type": "tension_line",
+      "meaning": "not-natural pressure contributes to the suspicion tension",
+      "panel_visibility": "both",
+      "priority": "high",
+      "notes": "Part of the diagonal suspicion line."
+    },
+    {
+      "id": "edge_not_real_to_suspicion",
+      "source": "not_real",
+      "target": "suspicion",
+      "edge_type": "tension_line",
+      "meaning": "not-real pressure contributes to the suspicion tension",
+      "panel_visibility": "both",
+      "priority": "high",
+      "notes": "Part of the diagonal suspicion line."
+    },
+    {
+      "id": "edge_artificial_to_suspicion",
+      "source": "artificial",
+      "target": "suspicion",
+      "edge_type": "tension_line",
+      "meaning": "artificial becomes suspicious when pulled between not-natural and not-real pressure",
+      "panel_visibility": "both",
+      "priority": "high",
+      "notes": "Suspicion is a tension effect, not a third pressure field."
+    },
+    {
+      "id": "edge_not_natural_to_natural_light_artificial_light",
+      "source": "not_natural",
+      "target": "natural_light_artificial_light",
+      "edge_type": "evidence_association",
+      "meaning": "natural light / artificial light supports the not-natural pressure field",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence."
+    },
+    {
+      "id": "edge_not_natural_to_natural_flavor_artificial_flavor",
+      "source": "not_natural",
+      "target": "natural_flavor_artificial_flavor",
+      "edge_type": "evidence_association",
+      "meaning": "natural flavor / artificial flavor supports the not-natural pressure field",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence."
+    },
+    {
+      "id": "edge_not_natural_to_natural_ingredients_artificial_ingredients",
+      "source": "not_natural",
+      "target": "natural_ingredients_artificial_ingredients",
+      "edge_type": "evidence_association",
+      "meaning": "natural ingredients / artificial ingredients supports the not-natural pressure field",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence; do not let it become the whole chart."
+    },
+    {
+      "id": "edge_not_real_to_fake",
+      "source": "not_real",
+      "target": "fake",
+      "edge_type": "evidence_association",
+      "meaning": "fake supports the not-real pressure field",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Pressure evidence, not origin definition."
+    },
+    {
+      "id": "edge_not_real_to_not_genuine",
+      "source": "not_real",
+      "target": "not_genuine",
+      "edge_type": "evidence_association",
+      "meaning": "not genuine supports the not-real / authenticity pressure field",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence."
+    },
+    {
+      "id": "edge_not_real_to_imitation",
+      "source": "not_real",
+      "target": "imitation",
+      "edge_type": "evidence_association",
+      "meaning": "imitation supports the not-real pressure field and links substitute to authenticity questions",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence."
+    },
+    {
+      "id": "edge_not_natural_to_not_natural_not_real_boundary",
+      "source": "not_natural",
+      "target": "not_natural_not_real_boundary",
+      "edge_type": "boundary_warning",
+      "meaning": "not natural is distinct from not real",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Boundary / distinction, not equivalence."
+    },
+    {
+      "id": "edge_not_real_to_not_natural_not_real_boundary",
+      "source": "not_real",
+      "target": "not_natural_not_real_boundary",
+      "edge_type": "boundary_warning",
+      "meaning": "not real is distinct from not natural",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Boundary / distinction, not equivalence."
+    },
+    {
+      "id": "edge_artificial_selected_to_default_evidence",
+      "source": "artificial",
+      "target": "artificial_flowers",
+      "edge_type": "selection_relation",
+      "meaning": "selecting artificial reveals the lower-panel evidence configuration",
+      "panel_visibility": "hover_or_selected",
+      "priority": "medium",
+      "notes": "Interaction edge, not necessarily a visible line."
+    }
+  ]
+}

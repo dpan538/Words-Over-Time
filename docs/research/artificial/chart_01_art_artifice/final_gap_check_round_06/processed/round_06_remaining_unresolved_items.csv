@@ -1,0 +1,8 @@
+item,issue,blocking_level,next_action,notes
+OED artificial,not accessible,blocks_final_copy,Check only before exact earliest-date language.,Does not block content-structure planning.
+MED artificial / artificial day,not stabilized,optional,Check only if artificial day becomes important.,Do not run another broad scrape.
+Johnson direct artificial entry,direct extraction unstable,minor_risk,Manual capture from Johnson site or scan if needed.,Indirect transcription is enough for planning.
+Artificial day direct pre-1828 scan,indirect Perkins source only,minor_risk,Manual scan if used visibly.,Recommendation is notes-only.
+Artificial lines direct full text,title metadata plus Webster checkpoint only,minor_risk,Manual Gunter scan if used as public citation.,Small annotation only.
+Affected/insincere primary snippet,not found cleanly,minor_risk,OED check before final copy if this branch matters.,Keep notes-only.
+Broad evidence gathering,complete enough,closed,Stop broad evidence gathering.,Move to content-structure planning.

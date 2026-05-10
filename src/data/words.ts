@@ -27,7 +27,8 @@ export const words: Word[] = [
   {
     label: "artificial",
     slug: "artificial",
-    status: "coming-soon",
+    status: "complete",
+    href: "/words/artificial",
   },
   {
     label: "intelligence",

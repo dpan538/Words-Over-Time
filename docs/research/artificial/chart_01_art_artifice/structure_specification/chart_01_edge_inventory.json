@@ -1,0 +1,274 @@
+{
+  "edges": [
+    {
+      "id": "edge_art_to_artifice",
+      "source": "art",
+      "target": "artifice",
+      "edge_type": "word_family",
+      "semantic_meaning": "art supplies the skill / making field behind artifice",
+      "visibility": "always",
+      "weight": 5,
+      "notes": "Word-family relation, not a strict timeline."
+    },
+    {
+      "id": "edge_artifice_to_artificial",
+      "source": "artifice",
+      "target": "artificial",
+      "edge_type": "word_family",
+      "semantic_meaning": "artificial inherits the artifice field of skillful making and contrivance",
+      "visibility": "always",
+      "weight": 5,
+      "notes": "Core word-family path."
+    },
+    {
+      "id": "edge_artifice_to_artificer",
+      "source": "artifice",
+      "target": "artificer",
+      "edge_type": "word_family",
+      "semantic_meaning": "artificer names the maker / skilled producer within the same family",
+      "visibility": "always",
+      "weight": 4,
+      "notes": "Agent relation."
+    },
+    {
+      "id": "edge_artificial_to_artificially",
+      "source": "artificial",
+      "target": "artificially",
+      "edge_type": "word_family",
+      "semantic_meaning": "derived adverb preserves action by art, skill, or contrivance",
+      "visibility": "hover",
+      "weight": 3,
+      "notes": "Secondary word-family relation."
+    },
+    {
+      "id": "edge_art_to_artificer",
+      "source": "art",
+      "target": "artificer",
+      "edge_type": "word_family",
+      "semantic_meaning": "skill leads to the maker figure",
+      "visibility": "state_based",
+      "weight": 3,
+      "notes": "Useful in word-family active state."
+    },
+    {
+      "id": "edge_art_to_made_by_art_skill",
+      "source": "art",
+      "target": "made_by_art_skill",
+      "edge_type": "semantic_projection",
+      "semantic_meaning": "projects the root skill field into the core sense",
+      "visibility": "state_based",
+      "weight": 4,
+      "notes": "Dotted projection line between planes."
+    },
+    {
+      "id": "edge_artifice_to_contrivance",
+      "source": "artifice",
+      "target": "contrivance_construction",
+      "edge_type": "semantic_projection",
+      "semantic_meaning": "projects artifice into the bridge sense of contrivance / construction",
+      "visibility": "state_based",
+      "weight": 4,
+      "notes": "Bridge projection, not deception-only."
+    },
+    {
+      "id": "edge_artificer_to_made_by_art_skill",
+      "source": "artificer",
+      "target": "made_by_art_skill",
+      "edge_type": "semantic_projection",
+      "semantic_meaning": "projects the maker role into made-by-art / skill",
+      "visibility": "state_based",
+      "weight": 3,
+      "notes": "Dotted projection line."
+    },
+    {
+      "id": "edge_artificial_to_not_natural",
+      "source": "artificial",
+      "target": "not_natural",
+      "edge_type": "semantic_projection",
+      "semantic_meaning": "projects the central word toward opposition to natural",
+      "visibility": "state_based",
+      "weight": 3,
+      "notes": "Must not imply fake."
+    },
+    {
+      "id": "edge_artificially_to_affected_insincere",
+      "source": "artificially",
+      "target": "affected_insincere",
+      "edge_type": "semantic_projection",
+      "semantic_meaning": "later adverbial usage can drift toward mannered or forced behavior",
+      "visibility": "hover",
+      "weight": 1,
+      "notes": "Low-weight projection; not central."
+    },
+    {
+      "id": "edge_made_by_art_to_arguments",
+      "source": "made_by_art_skill",
+      "target": "artificial_arguments",
+      "edge_type": "technical_support",
+      "semantic_meaning": "rule-based rhetorical invention supports the made-by-skill layer",
+      "visibility": "state_based",
+      "weight": 4,
+      "notes": "Strong technical anchor."
+    },
+    {
+      "id": "edge_made_by_art_to_numbers",
+      "source": "made_by_art_skill",
+      "target": "artificial_numbers",
+      "edge_type": "technical_support",
+      "semantic_meaning": "mathematical reckoning supports artificial as constructed by rule",
+      "visibility": "state_based",
+      "weight": 4,
+      "notes": "Strong technical anchor."
+    },
+    {
+      "id": "edge_made_by_art_to_memory",
+      "source": "made_by_art_skill",
+      "target": "artificial_memory",
+      "edge_type": "technical_support",
+      "semantic_meaning": "learned memory technique supports artificial as trained construction",
+      "visibility": "state_based",
+      "weight": 3,
+      "notes": "Medium-confidence anchor."
+    },
+    {
+      "id": "edge_contrivance_to_day",
+      "source": "contrivance_construction",
+      "target": "artificial_day",
+      "edge_type": "technical_support",
+      "semantic_meaning": "technical daylight division supports artificial as rule/reckoning",
+      "visibility": "low_opacity",
+      "weight": 2,
+      "notes": "Weak / obscure anchor; keep faint."
+    },
+    {
+      "id": "edge_contrivance_to_lines",
+      "source": "contrivance_construction",
+      "target": "artificial_lines",
+      "edge_type": "technical_support",
+      "semantic_meaning": "technical geometry / scale construction supports artificial as rule-based",
+      "visibility": "hidden_by_default",
+      "weight": 1,
+      "notes": "Notes-only unless explicitly activated."
+    },
+    {
+      "id": "edge_made_by_art_to_contrivance",
+      "source": "made_by_art_skill",
+      "target": "contrivance_construction",
+      "edge_type": "sense_branch",
+      "semantic_meaning": "skillful making can become contrivance / construction",
+      "visibility": "always",
+      "weight": 5,
+      "notes": "Core sense-boundary path."
+    },
+    {
+      "id": "edge_contrivance_to_not_natural",
+      "source": "contrivance_construction",
+      "target": "not_natural",
+      "edge_type": "sense_branch",
+      "semantic_meaning": "constructed / contrived can be opposed to natural",
+      "visibility": "always",
+      "weight": 5,
+      "notes": "Core path; still not fake."
+    },
+    {
+      "id": "edge_not_natural_to_imitation",
+      "source": "not_natural",
+      "target": "imitation_substitute",
+      "edge_type": "sense_branch",
+      "semantic_meaning": "not-natural can branch into imitation or substitute uses",
+      "visibility": "state_based",
+      "weight": 3,
+      "notes": "Later branch."
+    },
+    {
+      "id": "edge_not_natural_to_fake_drift",
+      "source": "not_natural",
+      "target": "fake_not_genuine",
+      "edge_type": "semantic_drift",
+      "semantic_meaning": "not-natural can drift toward fake / not genuine, but is not equivalent to it",
+      "visibility": "state_based",
+      "weight": 3,
+      "notes": "Must never be drawn or labeled as equality."
+    },
+    {
+      "id": "edge_contrivance_to_affected",
+      "source": "contrivance_construction",
+      "target": "affected_insincere",
+      "edge_type": "sense_branch",
+      "semantic_meaning": "contrivance can branch into mannered or insincere behavior",
+      "visibility": "low_opacity",
+      "weight": 2,
+      "notes": "Lower-weight affective branch."
+    },
+    {
+      "id": "edge_not_natural_fake_warning",
+      "source": "not_natural",
+      "target": "fake_not_genuine",
+      "edge_type": "contrast",
+      "semantic_meaning": "contrast edge: not natural is not the same as fake",
+      "visibility": "state_based",
+      "weight": 5,
+      "notes": "Use in sense-boundary state as explicit warning; not an equivalence edge."
+    },
+    {
+      "id": "edge_chamber_to_wireframe",
+      "source": "semantic_chamber",
+      "target": "outer_wireframe",
+      "edge_type": "shell",
+      "semantic_meaning": "the chamber is bounded by the outer wireframe",
+      "visibility": "always",
+      "weight": 2,
+      "notes": "Structural shell edge."
+    },
+    {
+      "id": "edge_chamber_to_word_plane",
+      "source": "semantic_chamber",
+      "target": "front_plane_word_family",
+      "edge_type": "shell",
+      "semantic_meaning": "front layer carries word-family relations",
+      "visibility": "always",
+      "weight": 2,
+      "notes": "Structural shell edge."
+    },
+    {
+      "id": "edge_chamber_to_technical_plane",
+      "source": "semantic_chamber",
+      "target": "middle_plane_technical_construction",
+      "edge_type": "shell",
+      "semantic_meaning": "middle layer carries technical construction anchors",
+      "visibility": "always",
+      "weight": 2,
+      "notes": "Structural shell edge."
+    },
+    {
+      "id": "edge_chamber_to_sense_plane",
+      "source": "semantic_chamber",
+      "target": "back_plane_sense_boundary",
+      "edge_type": "shell",
+      "semantic_meaning": "back layer carries sense-boundary nodes",
+      "visibility": "always",
+      "weight": 2,
+      "notes": "Structural shell edge."
+    },
+    {
+      "id": "edge_guide_not_natural_fake",
+      "source": "guide_not_natural_not_fake",
+      "target": "edge_not_natural_fake_warning",
+      "edge_type": "guide",
+      "semantic_meaning": "guide label explains the contrast edge",
+      "visibility": "state_based",
+      "weight": 3,
+      "notes": "Use only when sense-boundary plane is active."
+    },
+    {
+      "id": "edge_guide_contrivance",
+      "source": "guide_contrivance_not_deception_only",
+      "target": "contrivance_construction",
+      "edge_type": "guide",
+      "semantic_meaning": "guide label prevents contrivance from collapsing into deception",
+      "visibility": "hover",
+      "weight": 2,
+      "notes": "Bridge warning."
+    }
+  ]
+}

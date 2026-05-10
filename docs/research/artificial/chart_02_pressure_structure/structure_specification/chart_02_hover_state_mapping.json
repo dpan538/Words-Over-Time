@@ -1,0 +1,199 @@
+{
+  "states": [
+    {
+      "state_id": "default_abstract_state",
+      "description": "Upper-panel logic: show the abstract semantic structure with substitute field, artificial, not natural, not real, suspicion, title, subtitle, and legend.",
+      "emphasized_nodes": [
+        "title_artificial_under_pressure",
+        "subtitle_from_substitute_to_suspicion",
+        "legend_pressure_field",
+        "legend_selected_word",
+        "substitute_field",
+        "artificial",
+        "not_natural",
+        "not_real",
+        "suspicion"
+      ],
+      "secondary_nodes": [],
+      "emphasized_edges": [
+        "edge_substitute_field_to_artificial",
+        "edge_not_natural_to_artificial",
+        "edge_not_real_to_artificial",
+        "edge_not_natural_to_suspicion",
+        "edge_not_real_to_suspicion",
+        "edge_artificial_to_suspicion"
+      ],
+      "hidden_or_muted_elements": [
+        "lower-panel evidence labels",
+        "not_natural_not_real_boundary",
+        "artificial_limb"
+      ],
+      "notes": "Corresponds to the upper abstract panel in the reference-layout translation."
+    },
+    {
+      "state_id": "artificial_selected_state",
+      "description": "Lower-panel full concrete reading: when artificial is selected, the same field geometry reveals sparse evidence labels.",
+      "emphasized_nodes": [
+        "when_artificial_is_selected",
+        "substitute_field",
+        "artificial",
+        "not_natural",
+        "not_real",
+        "suspicion",
+        "artificial_flowers",
+        "artificial_teeth",
+        "artificial_light",
+        "natural_light_artificial_light",
+        "natural_flavor_artificial_flavor",
+        "natural_ingredients_artificial_ingredients",
+        "fake",
+        "not_genuine",
+        "imitation",
+        "not_natural_not_real_boundary"
+      ],
+      "secondary_nodes": [
+        "artificial_limb"
+      ],
+      "emphasized_edges": [
+        "edge_substitute_field_to_artificial",
+        "edge_not_natural_to_artificial",
+        "edge_not_real_to_artificial",
+        "edge_not_natural_to_suspicion",
+        "edge_not_real_to_suspicion",
+        "edge_artificial_to_suspicion",
+        "edge_substitute_field_to_artificial_flowers",
+        "edge_substitute_field_to_artificial_teeth",
+        "edge_substitute_field_to_artificial_light",
+        "edge_not_natural_to_natural_light_artificial_light",
+        "edge_not_natural_to_natural_flavor_artificial_flavor",
+        "edge_not_natural_to_natural_ingredients_artificial_ingredients",
+        "edge_not_real_to_fake",
+        "edge_not_real_to_not_genuine",
+        "edge_not_real_to_imitation",
+        "edge_not_natural_to_not_natural_not_real_boundary",
+        "edge_not_real_to_not_natural_not_real_boundary"
+      ],
+      "hidden_or_muted_elements": [
+        "dense corpus data",
+        "packaging phrases beyond the locked label set",
+        "Chart 4 additive expansion"
+      ],
+      "notes": "Corresponds to the lower selected / activated panel."
+    },
+    {
+      "state_id": "substitute_field_hover_state",
+      "description": "Emphasize the large right-hand substitute field and its sparse evidence labels.",
+      "emphasized_nodes": [
+        "substitute_field",
+        "artificial",
+        "artificial_flowers",
+        "artificial_teeth",
+        "artificial_light",
+        "artificial_limb"
+      ],
+      "secondary_nodes": [
+        "not_natural",
+        "not_real",
+        "suspicion"
+      ],
+      "emphasized_edges": [
+        "edge_substitute_field_to_artificial",
+        "edge_substitute_field_to_artificial_flowers",
+        "edge_substitute_field_to_artificial_teeth",
+        "edge_substitute_field_to_artificial_light",
+        "edge_substitute_field_to_artificial_limb"
+      ],
+      "hidden_or_muted_elements": [
+        "not-natural pair labels not needed for this hover",
+        "not-real evidence labels not needed for this hover"
+      ],
+      "notes": "Use this to establish substitute field before pressure and suspicion dominate."
+    },
+    {
+      "state_id": "not_natural_hover_state",
+      "description": "Emphasize the upper-left pressure field and the natural/artificial evidence pairs.",
+      "emphasized_nodes": [
+        "not_natural",
+        "artificial",
+        "suspicion",
+        "natural_light_artificial_light",
+        "natural_flavor_artificial_flavor",
+        "natural_ingredients_artificial_ingredients"
+      ],
+      "secondary_nodes": [
+        "substitute_field",
+        "not_real",
+        "not_natural_not_real_boundary"
+      ],
+      "emphasized_edges": [
+        "edge_not_natural_to_artificial",
+        "edge_not_natural_to_suspicion",
+        "edge_not_natural_to_natural_light_artificial_light",
+        "edge_not_natural_to_natural_flavor_artificial_flavor",
+        "edge_not_natural_to_natural_ingredients_artificial_ingredients",
+        "edge_not_natural_to_not_natural_not_real_boundary"
+      ],
+      "hidden_or_muted_elements": [
+        "optional packaging phrases",
+        "body replacement detail"
+      ],
+      "notes": "Use this to show naturalness pressure without implying not natural equals not real."
+    },
+    {
+      "state_id": "not_real_hover_state",
+      "description": "Emphasize the lower-left pressure field and the fake / not genuine / imitation evidence labels.",
+      "emphasized_nodes": [
+        "not_real",
+        "artificial",
+        "suspicion",
+        "fake",
+        "not_genuine",
+        "imitation"
+      ],
+      "secondary_nodes": [
+        "substitute_field",
+        "not_natural",
+        "not_natural_not_real_boundary"
+      ],
+      "emphasized_edges": [
+        "edge_not_real_to_artificial",
+        "edge_not_real_to_suspicion",
+        "edge_not_real_to_fake",
+        "edge_not_real_to_not_genuine",
+        "edge_not_real_to_imitation",
+        "edge_not_real_to_not_natural_not_real_boundary"
+      ],
+      "hidden_or_muted_elements": [
+        "naturalness pair labels not needed for this hover",
+        "consumer ingredients expansion"
+      ],
+      "notes": "Use this to show authenticity / reality pressure without collapsing it into not natural."
+    },
+    {
+      "state_id": "suspicion_hover_state",
+      "description": "Emphasize suspicion as the diagonal tension relation and make the boundary warning readable.",
+      "emphasized_nodes": [
+        "suspicion",
+        "artificial",
+        "not_natural",
+        "not_real",
+        "not_natural_not_real_boundary"
+      ],
+      "secondary_nodes": [
+        "substitute_field"
+      ],
+      "emphasized_edges": [
+        "edge_not_natural_to_suspicion",
+        "edge_not_real_to_suspicion",
+        "edge_artificial_to_suspicion",
+        "edge_not_natural_to_not_natural_not_real_boundary",
+        "edge_not_real_to_not_natural_not_real_boundary"
+      ],
+      "hidden_or_muted_elements": [
+        "most evidence labels unless needed for context",
+        "optional artificial_limb label"
+      ],
+      "notes": "This state protects the interpretation that suspicion is a tension effect and that not natural is not the same as not real."
+    }
+  ]
+}

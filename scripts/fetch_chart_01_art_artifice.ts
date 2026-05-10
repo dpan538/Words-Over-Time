@@ -1201,7 +1201,7 @@ async function collectNgram() {
   return { points, statuses, urls, errors };
 }
 
-function sourceCountFor(term: string) {
+function sourceCountFor(term: string): number {
   const normalized = term.toLowerCase();
   const exactDictionaryCount = dictionarySources.filter((source) => source.entry_term.toLowerCase() === normalized).length;
   const evidenceCount = evidenceSeed.filter((item) => item.term.toLowerCase() === normalized).length;

@@ -8,8 +8,10 @@ type WordCardProps = {
 export function WordCard({ word }: WordCardProps) {
   if (word.href) {
     const isBlueWord = word.slug === "depression" || word.slug === "data";
-    const hoverTone = isBlueWord ? "hover:text-nice" : "hover:text-blaze";
-    const labelTone = isBlueWord ? "text-nice" : "text-blaze";
+    const isArtificialWord = word.slug === "artificial";
+    const hoverTone = isArtificialWord ? "hover:text-wine" : isBlueWord ? "hover:text-nice" : "hover:text-blaze";
+    const labelTone = isArtificialWord ? "text-wine" : isBlueWord ? "text-nice" : "text-blaze";
+    const hoverLabel = isArtificialWord ? "semantic chamber" : "word page";
     return (
       <Link
         href={word.href}
@@ -17,7 +19,7 @@ export function WordCard({ word }: WordCardProps) {
       >
         {word.label}
         <span className={`pointer-events-none absolute left-2 top-0 hidden -translate-y-[62%] text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] group-hover:block ${labelTone}`}>
-          word page
+          {hoverLabel}
         </span>
       </Link>
     );

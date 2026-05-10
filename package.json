@@ -31,17 +31,20 @@
     "data:artificial:chart01": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_chart_01_art_artifice.ts",
     "data:artificial:chart01:audit03": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/audit_chart_01_art_artifice_round_03.ts",
     "data:artificial:chart01:round04": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/source_completion_chart_01_round_04.ts",
-    "data:artificial:chart01:round05": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/pre_1828_evidence_chart_01_round_05.ts"
+    "data:artificial:chart01:round05": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/pre_1828_evidence_chart_01_round_05.ts",
+    "data:artificial:chart01:round06": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/final_gap_check_chart_01_round_06.ts"
   },
   "dependencies": {
     "next": "16.2.5",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "three": "^0.184.0"
   },
   "devDependencies": {
     "@types/node": "22.10.7",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
+    "@types/three": "^0.184.1",
     "autoprefixer": "10.4.20",
     "postcss": "8.5.1",
     "tailwindcss": "3.4.17",

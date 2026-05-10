@@ -1,0 +1,312 @@
+{
+  "nodes": [
+    {
+      "id": "art",
+      "label": "art",
+      "plane": "word_family",
+      "node_type": "core_word",
+      "semantic_role": "root / skill / learned practice",
+      "confidence": "high",
+      "visibility": "always",
+      "weight": 5,
+      "notes": "Root semantic field: art as learned skill, practice, and making."
+    },
+    {
+      "id": "artifice",
+      "label": "artifice",
+      "plane": "word_family",
+      "node_type": "core_word",
+      "semantic_role": "bridge between skilled making and contrivance",
+      "confidence": "high",
+      "visibility": "always",
+      "weight": 5,
+      "notes": "Must not be reduced to deception; it carries skillful making and contrivance."
+    },
+    {
+      "id": "artificer",
+      "label": "artificer",
+      "plane": "word_family",
+      "node_type": "agent_word",
+      "semantic_role": "maker / craftsperson role",
+      "confidence": "high",
+      "visibility": "always",
+      "weight": 4,
+      "notes": "Shows the maker figure behind the word family."
+    },
+    {
+      "id": "artificial",
+      "label": "artificial",
+      "plane": "word_family",
+      "node_type": "core_word",
+      "semantic_role": "central word",
+      "confidence": "high",
+      "visibility": "always",
+      "weight": 5,
+      "notes": "Central node of the apparatus; should anchor the resting view."
+    },
+    {
+      "id": "artificially",
+      "label": "artificially",
+      "plane": "word_family",
+      "node_type": "derived_word",
+      "semantic_role": "by art / by skill / by contrivance",
+      "confidence": "high",
+      "visibility": "hover",
+      "weight": 3,
+      "notes": "Derived adverb; useful for preserving the action-by-skill sense."
+    },
+    {
+      "id": "artificial_arguments",
+      "label": "artificial arguments",
+      "plane": "technical_construction",
+      "node_type": "technical_anchor",
+      "semantic_role": "rule-based rhetorical construction",
+      "confidence": "high",
+      "visibility": "always",
+      "weight": 4,
+      "notes": "Strong anchor for artificial as rhetorical / rule-based invention."
+    },
+    {
+      "id": "artificial_numbers",
+      "label": "artificial numbers",
+      "plane": "technical_construction",
+      "node_type": "technical_anchor",
+      "semantic_role": "mathematical / reckoning construction",
+      "confidence": "high",
+      "visibility": "always",
+      "weight": 4,
+      "notes": "Strong anchor for artificial as mathematical construction."
+    },
+    {
+      "id": "artificial_memory",
+      "label": "artificial memory",
+      "plane": "technical_construction",
+      "node_type": "technical_anchor",
+      "semantic_role": "trained memory technique",
+      "confidence": "medium",
+      "visibility": "hover",
+      "weight": 3,
+      "notes": "Promising learned-technique anchor; should carry a confidence qualifier."
+    },
+    {
+      "id": "artificial_day",
+      "label": "artificial day",
+      "plane": "technical_construction",
+      "node_type": "weak_anchor",
+      "semantic_role": "technical division of daylight time",
+      "confidence": "medium",
+      "visibility": "small_annotation",
+      "weight": 2,
+      "notes": "Historically plausible but public-facing obscure; keep low visibility unless further verified."
+    },
+    {
+      "id": "artificial_lines",
+      "label": "artificial lines",
+      "plane": "technical_construction",
+      "node_type": "weak_anchor",
+      "semantic_role": "technical / mathematical line construction",
+      "confidence": "low",
+      "visibility": "notes_only",
+      "weight": 1,
+      "notes": "Confirmed enough for notes, but should not compete with stronger anchors."
+    },
+    {
+      "id": "made_by_art_skill",
+      "label": "made by art / skill",
+      "plane": "sense_boundary",
+      "node_type": "sense_node",
+      "semantic_role": "origin sense / constructed through skill",
+      "confidence": "high",
+      "visibility": "always",
+      "weight": 5,
+      "notes": "Core Chart 1 sense."
+    },
+    {
+      "id": "contrivance_construction",
+      "label": "contrivance / construction",
+      "plane": "sense_boundary",
+      "node_type": "bridge_sense",
+      "semantic_role": "devised or constructed; neutral or suspicious bridge",
+      "confidence": "high",
+      "visibility": "always",
+      "weight": 5,
+      "notes": "Bridge node from skillful making toward later suspicion; not deception only."
+    },
+    {
+      "id": "not_natural",
+      "label": "not natural",
+      "plane": "sense_boundary",
+      "node_type": "sense_node",
+      "semantic_role": "opposed to natural, not necessarily fake",
+      "confidence": "high",
+      "visibility": "always",
+      "weight": 4,
+      "notes": "Must remain visually distinct from fake / not genuine."
+    },
+    {
+      "id": "imitation_substitute",
+      "label": "imitation / substitute",
+      "plane": "sense_boundary",
+      "node_type": "sense_node",
+      "semantic_role": "made to imitate or replace something natural",
+      "confidence": "medium",
+      "visibility": "hover",
+      "weight": 3,
+      "notes": "Later branch; useful for connecting Chart 1 to later charts."
+    },
+    {
+      "id": "fake_not_genuine",
+      "label": "fake / not genuine",
+      "plane": "sense_boundary",
+      "node_type": "sense_node",
+      "semantic_role": "false, fictitious, sham, not real",
+      "confidence": "medium",
+      "visibility": "always",
+      "weight": 3,
+      "notes": "Suspicious branch; should never appear as the root meaning."
+    },
+    {
+      "id": "affected_insincere",
+      "label": "affected / insincere",
+      "plane": "sense_boundary",
+      "node_type": "sense_node",
+      "semantic_role": "forced, mannered, emotionally artificial",
+      "confidence": "medium",
+      "visibility": "hover",
+      "weight": 2,
+      "notes": "Lower-weight affective branch; evidence is weaker than the core path."
+    },
+    {
+      "id": "semantic_chamber",
+      "label": "semantic chamber",
+      "plane": "shell",
+      "node_type": "shell_node",
+      "semantic_role": "apparatus container",
+      "confidence": "structural",
+      "visibility": "always",
+      "weight": 5,
+      "notes": "Overall shell for the Chart 1 apparatus."
+    },
+    {
+      "id": "outer_wireframe",
+      "label": "outer wireframe",
+      "plane": "shell",
+      "node_type": "shell_node",
+      "semantic_role": "spatial boundary",
+      "confidence": "structural",
+      "visibility": "always",
+      "weight": 4,
+      "notes": "Thin-line chamber boundary."
+    },
+    {
+      "id": "front_plane_word_family",
+      "label": "word family plane",
+      "plane": "shell",
+      "node_type": "shell_node",
+      "semantic_role": "front semantic plane",
+      "confidence": "structural",
+      "visibility": "always",
+      "weight": 4,
+      "notes": "Front layer for word-family relations."
+    },
+    {
+      "id": "middle_plane_technical_construction",
+      "label": "technical construction plane",
+      "plane": "shell",
+      "node_type": "shell_node",
+      "semantic_role": "middle semantic plane",
+      "confidence": "structural",
+      "visibility": "always",
+      "weight": 4,
+      "notes": "Middle layer for rule-based construction anchors."
+    },
+    {
+      "id": "back_plane_sense_boundary",
+      "label": "sense boundary plane",
+      "plane": "shell",
+      "node_type": "shell_node",
+      "semantic_role": "back semantic plane",
+      "confidence": "structural",
+      "visibility": "always",
+      "weight": 4,
+      "notes": "Back layer for the sense split."
+    },
+    {
+      "id": "axis_skill_making",
+      "label": "skill / making",
+      "plane": "shell",
+      "node_type": "annotation",
+      "semantic_role": "left side of construction-to-suspicion axis",
+      "confidence": "structural",
+      "visibility": "small_annotation",
+      "weight": 3,
+      "notes": "Axis label."
+    },
+    {
+      "id": "axis_contrivance",
+      "label": "contrivance",
+      "plane": "shell",
+      "node_type": "annotation",
+      "semantic_role": "middle of construction-to-suspicion axis",
+      "confidence": "structural",
+      "visibility": "small_annotation",
+      "weight": 3,
+      "notes": "Axis label."
+    },
+    {
+      "id": "axis_not_natural",
+      "label": "not natural",
+      "plane": "shell",
+      "node_type": "annotation",
+      "semantic_role": "later contrast point on semantic axis",
+      "confidence": "structural",
+      "visibility": "small_annotation",
+      "weight": 3,
+      "notes": "Axis label."
+    },
+    {
+      "id": "axis_fake_affected",
+      "label": "fake / affected",
+      "plane": "shell",
+      "node_type": "annotation",
+      "semantic_role": "suspicion end of semantic axis",
+      "confidence": "structural",
+      "visibility": "small_annotation",
+      "weight": 3,
+      "notes": "Axis label."
+    },
+    {
+      "id": "guide_modern_assumption",
+      "label": "modern shortcut: artificial = fake",
+      "plane": "guide",
+      "node_type": "guide_node",
+      "semantic_role": "opening misconception",
+      "confidence": "structural",
+      "visibility": "hidden_by_default",
+      "weight": 2,
+      "notes": "Use only as a working guide label, not final copy."
+    },
+    {
+      "id": "guide_not_natural_not_fake",
+      "label": "not natural is not the same as fake",
+      "plane": "guide",
+      "node_type": "guide_node",
+      "semantic_role": "sense-boundary warning",
+      "confidence": "structural",
+      "visibility": "hover",
+      "weight": 4,
+      "notes": "Important guide for state_sense_boundary_active."
+    },
+    {
+      "id": "guide_contrivance_not_deception_only",
+      "label": "contrivance is not deception only",
+      "plane": "guide",
+      "node_type": "guide_node",
+      "semantic_role": "bridge-sense warning",
+      "confidence": "structural",
+      "visibility": "hover",
+      "weight": 3,
+      "notes": "Prevents artifice/contrivance from being overread as fraud."
+    }
+  ]
+}

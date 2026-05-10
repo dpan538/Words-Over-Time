@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "id": "substitute_field",
+      "label": "substitute field",
+      "node_group": "main_field",
+      "semantic_role": "large right-hand semantic field where artificial operates as substitute, replacement, imitation, or extension",
+      "panel_visibility": "both",
+      "priority": "high",
+      "notes": "The large circle. Do not label this circle artificial; artificial is the selected point inside it."
+    },
+    {
+      "id": "artificial",
+      "label": "artificial",
+      "node_group": "selected_node",
+      "semantic_role": "selected word inside the substitute field",
+      "panel_visibility": "both",
+      "priority": "high",
+      "notes": "Primary subject of Chart 2. Render as a filled point."
+    },
+    {
+      "id": "not_natural",
+      "label": "not natural",
+      "node_group": "pressure_field",
+      "semantic_role": "pressure field created by opposition to naturalness",
+      "panel_visibility": "both",
+      "priority": "high",
+      "notes": "Must remain visually and semantically distinct from not real."
+    },
+    {
+      "id": "not_real",
+      "label": "not real",
+      "node_group": "pressure_field",
+      "semantic_role": "pressure field created by realness, genuineness, imitation, and falseness judgments",
+      "panel_visibility": "both",
+      "priority": "high",
+      "notes": "Use the short upper/lower panel label not real; evidence can include not genuine."
+    },
+    {
+      "id": "suspicion",
+      "label": "suspicion",
+      "node_group": "guide_label",
+      "semantic_role": "diagonal tension-line label created by pressure between not natural and not real",
+      "panel_visibility": "both",
+      "priority": "high",
+      "notes": "Render as a small line label, not a third pressure circle."
+    },
+    {
+      "id": "artificial_flowers",
+      "label": "artificial flowers",
+      "node_group": "evidence_node",
+      "semantic_role": "substitute-field evidence for artificial as imitation or replacement of a natural object",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence. May optionally bridge toward not-real pressure."
+    },
+    {
+      "id": "artificial_teeth",
+      "label": "artificial teeth",
+      "node_group": "evidence_node",
+      "semantic_role": "substitute-field evidence for artificial as body replacement",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence; keep as one sparse label."
+    },
+    {
+      "id": "artificial_light",
+      "label": "artificial light",
+      "node_group": "evidence_node",
+      "semantic_role": "substitute-field evidence for artificial as environmental or perceptual replacement",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence and bridge to natural-light contrast."
+    },
+    {
+      "id": "artificial_limb",
+      "label": "artificial limb",
+      "node_group": "evidence_node",
+      "semantic_role": "optional substitute-field evidence for artificial as bodily replacement",
+      "panel_visibility": "hover_or_selected",
+      "priority": "medium",
+      "notes": "Optional / secondary label. Do not let the chart become a body-replacement chart."
+    },
+    {
+      "id": "natural_light_artificial_light",
+      "label": "natural light ↔ artificial light",
+      "node_group": "evidence_node",
+      "semantic_role": "not-natural evidence pair linking environmental perception to artificial/natural contrast",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence."
+    },
+    {
+      "id": "natural_flavor_artificial_flavor",
+      "label": "natural flavor ↔ artificial flavor",
+      "node_group": "evidence_node",
+      "semantic_role": "not-natural evidence pair linking taste and food language to artificial/natural contrast",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence; keep from dominating Chart 2."
+    },
+    {
+      "id": "natural_ingredients_artificial_ingredients",
+      "label": "natural ingredients ↔ artificial ingredients",
+      "node_group": "evidence_node",
+      "semantic_role": "not-natural evidence pair linking consumer discourse to artificial/natural contrast",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence; points toward Chart 4 without becoming Chart 4."
+    },
+    {
+      "id": "fake",
+      "label": "fake",
+      "node_group": "evidence_node",
+      "semantic_role": "not-real pressure evidence",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Use as pressure evidence only, not as the origin definition of artificial."
+    },
+    {
+      "id": "not_genuine",
+      "label": "not genuine",
+      "node_group": "evidence_node",
+      "semantic_role": "not-real pressure evidence around authenticity and genuineness",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Chosen instead of genuine because it fits the pressure-field label directly."
+    },
+    {
+      "id": "imitation",
+      "label": "imitation",
+      "node_group": "evidence_node",
+      "semantic_role": "not-real pressure evidence linking substitute use to authenticity questions",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Default lower-panel evidence and bridge term."
+    },
+    {
+      "id": "not_natural_not_real_boundary",
+      "label": "not natural ≠ not real",
+      "node_group": "guide_label",
+      "semantic_role": "boundary warning that the two pressure fields are distinct, not equivalent",
+      "panel_visibility": "hover_or_selected",
+      "priority": "high",
+      "notes": "Can appear near the suspicion line, possibly more visible on suspicion hover."
+    },
+    {
+      "id": "legend_pressure_field",
+      "label": "pressure field",
+      "node_group": "legend",
+      "semantic_role": "legend item for hollow circle",
+      "panel_visibility": "both",
+      "priority": "medium",
+      "notes": "Use with hollow circle glyph."
+    },
+    {
+      "id": "legend_selected_word",
+      "label": "selected word",
+      "node_group": "legend",
+      "semantic_role": "legend item for filled point",
+      "panel_visibility": "both",
+      "priority": "medium",
+      "notes": "Use with filled circle glyph."
+    },
+    {
+      "id": "title_artificial_under_pressure",
+      "label": "Artificial Under Pressure",
+      "node_group": "guide_label",
+      "semantic_role": "working title",
+      "panel_visibility": "upper_only",
+      "priority": "high",
+      "notes": "Locked working title for Chart 2 planning."
+    },
+    {
+      "id": "subtitle_from_substitute_to_suspicion",
+      "label": "From substitute to suspicion",
+      "node_group": "guide_label",
+      "semantic_role": "working subtitle",
+      "panel_visibility": "upper_only",
+      "priority": "high",
+      "notes": "Locked working subtitle for Chart 2 planning."
+    },
+    {
+      "id": "when_artificial_is_selected",
+      "label": "when artificial is selected",
+      "node_group": "guide_label",
+      "semantic_role": "lower panel selected-state label",
+      "panel_visibility": "lower_only",
+      "priority": "high",
+      "notes": "Use as the lower panel section label."
+    }
+  ]
+}

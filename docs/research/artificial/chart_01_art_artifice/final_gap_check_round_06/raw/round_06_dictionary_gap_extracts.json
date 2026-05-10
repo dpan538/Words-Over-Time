@@ -1,0 +1,41 @@
+[
+  {
+    "id": "johnson_artificial_indirect",
+    "source_name": "Johnson via Definitions.net",
+    "term": "artificial",
+    "source_url": "https://www.definitions.net/definition/artificial",
+    "year_or_period": "1755/1773 via indirect transcription",
+    "definition_summary": "Separates made-by-art/not-natural, fictitious/not-genuine, and artful/contrived-with-skill senses.",
+    "sense": "not_natural_distinct; fake_not_genuine; art_skill_making",
+    "reliability": "medium_low",
+    "access_status": "indirect_only",
+    "chart_01_value": "high_if_verified",
+    "notes": "Direct Johnson entry was not stabilized; use as indirect support only."
+  },
+  {
+    "id": "etymonline_negative_senses",
+    "source_name": "Etymonline",
+    "term": "artificial",
+    "source_url": "https://www.etymonline.com/word/artificial",
+    "year_or_period": "1590s/1640s claimed",
+    "definition_summary": "Claims affected/insincere from the 1590s and fictitious/not-genuine from the 1640s.",
+    "sense": "affected_insincere; fake_not_genuine",
+    "reliability": "medium",
+    "access_status": "accessed",
+    "chart_01_value": "supporting",
+    "notes": "Good chronology pointer; OED needed for exact quotations."
+  },
+  {
+    "id": "webster_1828_checkpoint_negative",
+    "source_name": "Webster 1828",
+    "term": "artificial",
+    "source_url": "https://webstersdictionary1828.com/Dictionary/artificial",
+    "year_or_period": "1828 checkpoint",
+    "definition_summary": "Lists made/contrived by art in opposition to natural separately from feigned/fictitious/not-genuine.",
+    "sense": "not_natural_distinct; fake_not_genuine",
+    "reliability": "high_as_checkpoint",
+    "access_status": "accessed",
+    "chart_01_value": "supporting",
+    "notes": "Use as checkpoint, not as origin."
+  }
+]

@@ -1,0 +1,143 @@
+{
+  "states": [
+    {
+      "id": "state_resting_view",
+      "purpose": "Introduce the chamber as a semantic space.",
+      "visible": [
+        "semantic_chamber",
+        "outer_wireframe",
+        "front_plane_word_family",
+        "middle_plane_technical_construction",
+        "back_plane_sense_boundary",
+        "artificial"
+      ],
+      "muted": [
+        "art",
+        "artifice",
+        "artificer",
+        "artificially",
+        "artificial_arguments",
+        "artificial_numbers",
+        "artificial_memory",
+        "made_by_art_skill",
+        "contrivance_construction",
+        "not_natural",
+        "fake_not_genuine"
+      ],
+      "hidden": [
+        "artificial_day",
+        "artificial_lines",
+        "guide_modern_assumption",
+        "guide_not_natural_not_fake",
+        "guide_contrivance_not_deception_only"
+      ],
+      "edge_rules": "Show shell edges and maybe one faint central projection; keep semantic edges mostly inactive.",
+      "notes": "No heavy explanation. Static screenshot must still read as a chamber, not a decorative cube."
+    },
+    {
+      "id": "state_word_family_active",
+      "purpose": "Reveal the internal word family.",
+      "visible": [
+        "front_plane_word_family",
+        "art",
+        "artifice",
+        "artificer",
+        "artificial",
+        "artificially"
+      ],
+      "visible_edge_types": [
+        "word_family"
+      ],
+      "muted": [
+        "middle_plane_technical_construction",
+        "back_plane_sense_boundary",
+        "technical_construction nodes",
+        "sense_boundary nodes"
+      ],
+      "guide_labels": [
+        "guide_contrivance_not_deception_only"
+      ],
+      "notes": "This state answers where the word comes from semantically."
+    },
+    {
+      "id": "state_technical_active",
+      "purpose": "Reveal artificial as rule-based construction.",
+      "visible": [
+        "middle_plane_technical_construction",
+        "artificial",
+        "made_by_art_skill",
+        "contrivance_construction",
+        "artificial_arguments",
+        "artificial_numbers",
+        "artificial_memory",
+        "artificial_day"
+      ],
+      "small_annotations": [
+        "artificial_day"
+      ],
+      "hidden_or_notes_only": [
+        "artificial_lines"
+      ],
+      "visible_edge_types": [
+        "technical_support",
+        "semantic_projection"
+      ],
+      "muted": [
+        "word_family nodes except artificial",
+        "sense_boundary nodes except made_by_art_skill and contrivance_construction"
+      ],
+      "notes": "This state answers how artificial was used as rule-based or learned construction."
+    },
+    {
+      "id": "state_sense_boundary_active",
+      "purpose": "Separate modern collapsed meanings.",
+      "visible": [
+        "back_plane_sense_boundary",
+        "made_by_art_skill",
+        "contrivance_construction",
+        "not_natural",
+        "imitation_substitute",
+        "fake_not_genuine",
+        "affected_insincere",
+        "guide_not_natural_not_fake",
+        "guide_contrivance_not_deception_only"
+      ],
+      "visible_edge_types": [
+        "sense_branch",
+        "contrast",
+        "semantic_drift"
+      ],
+      "muted": [
+        "technical_construction weak anchors",
+        "word_family nodes except artificial"
+      ],
+      "rules": [
+        "not_natural to fake_not_genuine must be shown as contrast or drift, never equivalence.",
+        "affected_insincere should remain lower weight than made_by_art_skill, contrivance_construction, and not_natural."
+      ],
+      "notes": "This state answers where the modern misunderstanding begins."
+    },
+    {
+      "id": "state_full_overlay",
+      "purpose": "Show all layers together after the reader understands them.",
+      "visible": [
+        "all three planes",
+        "strongest nodes",
+        "strongest edges",
+        "guide_not_natural_not_fake"
+      ],
+      "low_opacity": [
+        "artificial_day",
+        "artificial_lines",
+        "affected_insincere",
+        "secondary projection edges"
+      ],
+      "hidden_by_default": [
+        "guide_modern_assumption",
+        "notes-only labels"
+      ],
+      "edge_rules": "Show only the core path and selected projection edges at strength. Avoid every edge at full opacity.",
+      "notes": "Preserve static readability; this is a composed overlay, not a data dump."
+    }
+  ]
+}

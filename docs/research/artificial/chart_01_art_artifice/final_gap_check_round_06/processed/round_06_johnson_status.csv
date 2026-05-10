@@ -1,0 +1,5 @@
+term,entry_status,source_url_or_reference,definition_summary,sense_support,confidence,usable_for_chart_01,notes
+artificial,indirect_only,https://www.definitions.net/definition/artificial,Johnson-attributed senses: made by art/not natural; fictitious/not genuine; artful/contrived with skill.,not_natural_distinct; fake_not_genuine; art_skill_making,medium,yes_with_care,"Direct Johnson entry not stabilized; indirect transcription is strong enough for notes/support, not exact proof-text."
+artifice,indirect_only,Definitions.net / prior round source,"Prior rounds found secondary Johnson evidence, but no direct stable entry.",contrivance/deception bridge,low,notes_only,Do not rely on Johnson direct for artifice unless manually captured.
+artificer,not_found,Johnson search attempted,,,low,no,Not needed for this final gap check.
+artificially,not_found,Johnson search attempted,,,low,no,Etymonline round 05 remains enough for artificially as background.

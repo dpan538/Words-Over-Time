@@ -1,0 +1,12 @@
+claim,status,strongest_sources,evidence_strength,risk,can_use_in_chart_01,notes
+Artificial predates Webster 1828.,safe,Etymonline; Merriam-Webster; round 05 evidence,high,low,yes,Do not attach exact earliest date unless OED is checked.
+"Webster 1828 is a checkpoint, not the origin.",safe,Round 05 and round 06 evidence,high,low,yes,This is now firmly established.
+Artificial has pre-1828 art / skill / making evidence.,safe,Etymonline; MW; Sherry/Wilson/Gunter technical uses,high,low,yes,Safe without exact earliest-date language.
+Artificial has pre-1828 technical/rule evidence.,safe,Sherry 1550; Wilson 1553; Gunter 1636; Napier context,high,low,yes,Strongest Chart 1 evidence set.
+Artificial has pre-1828 not-natural evidence distinct from fake.,mostly_safe,Johnson indirect; Etymonline; Perkins artificial day; Webster checkpoint,medium,direct Johnson/OED not captured,yes_with_care,Use the distinction; avoid exact chronology.
+Artificial has pre-1828 fake/not-genuine evidence.,mostly_safe,Shakespeare artificial tears; Johnson indirect; Etymonline,medium_high,Johnson direct missing,yes_with_care,"Safe as coexisting/later branch, not original sense."
+Artificial has pre-1828 affected/insincere evidence.,partially_supported,Etymonline; Shakespeare overlap,medium_low,no clean primary snippet,notes_only,Keep out of main claim unless OED confirms.
+Artificial day can be used as a visible Chart 1 anchor.,too_risky,Perkins indirect; Etymonline; Webster 1828,medium,public-facing obscurity and indirect source,notes_only,Use only as note/sidebar if necessary.
+Artificial lines can be used as a visible Chart 1 anchor.,partially_supported,Gunter 1636; Webster 1828,medium,technical obscurity,yes_with_care,Better as small annotation than core anchor.
+Johnson direct entries are necessary for Chart 1.,unsupported,Johnson remains indirect; other sources suffice,medium,low,no,Useful but not necessary for content-structure planning.
+"OED is necessary only for exact earliest-date claims, not for the basic Chart 1 claim.",safe,Round 05/06 source coverage,high,low,yes,Content planning can proceed without OED if wording stays conservative.
