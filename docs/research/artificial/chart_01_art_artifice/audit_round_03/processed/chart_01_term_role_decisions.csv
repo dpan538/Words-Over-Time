@@ -1,0 +1,16 @@
+term,recommended_role,reason,primary_sense,secondary_sense,source_support,ngram_support,chart_01_risk,decision_confidence,notes
+art,core_node,"Explains that art means skill/rule/craft, not only fine art.",art_skill_making,technical_rule_reckoning,Webster 1828; Merriam-Webster; Etymonline,not collected in audit Ngram,low,high,Core semantic root.
+artificial,core_node,"Main word; strongest dictionary evidence separates art/skill, not-natural, fake, and technical uses.",mixed_bridge_sense,not_natural;fake_not_genuine,Webster 1828; Etymonline; Merriam-Webster,strong,medium,high,Use with sense boundary labels.
+artificially,supporting_node,Direct adverbial evidence for by art/human skill/contrivance.,art_skill_making,contrivance_construction,Etymonline; Webster access note,strong,low,medium,Good supporting term.
+artifice,supporting_node,Shows skill/making and deception branches together.,mixed_bridge_sense,art_skill_making;fake_not_genuine,Etymonline; Webster 1828; Merriam-Webster; Century via FineDictionary,strong,high,high,Needs careful framing so deception does not swallow skill.
+artificer,supporting_node,Agent noun for skilled maker/craftsman.,art_skill_making,contrivance_construction,Webster 1828; Etymonline; Merriam-Webster,visible,low,high,"Likely supporting annotation, not headline."
+artificiality,background_note,Mostly useful for later affect/insincerity layer.,affected_insincere,art_skill_making,Etymonline; modern dictionaries,visible,medium,medium,Do not make it central.
+artful,background_note,Shows art-family bridge into cunning.,mixed_bridge_sense,contrivance_construction,Webster 1828 background,visible,high,medium,Could distract.
+artless,background_note,Shows inverse relation between art/skill and sincerity/guile.,affected_insincere,art_skill_making,Webster 1828,visible,medium,medium,Use only in notes.
+artisan,background_note,Craft-worker family term but less direct than artificer.,art_skill_making,,Etymonline; Cambridge/MW possible,visible,medium,medium,Background only.
+artifact,background_note,"Thing-made-by-art relation, but later and not needed for core Chart 1.",art_skill_making,not_natural,Etymonline,visible,medium,medium,Notes only.
+artefact,background_note,Variant of artifact; useful only for source context.,art_skill_making,not_natural,Etymonline,visible,medium,medium,Notes only.
+contrivance,comparison_only,"Bridge concept for devised construction, but can pull toward suspicion.",contrivance_construction,fake_not_genuine,Merriam-Webster artifice synonym note; Webster artifice,strong,high,medium,Use sparingly.
+contrived,comparison_only,"Useful bridge verb/adjective, but risks moralizing.",contrivance_construction,fake_not_genuine,Webster/MW artificial/artifice context,strong,high,medium,Use as boundary note only.
+technical,comparison_only,"Good modern paraphrase for rule-based uses, not etymological core.",technical_rule_reckoning,,Ngram only in this audit,strong,medium,medium,Comparison only.
+mechanical,comparison_only,"Adjacent craft/skill/machine term, but too broad for Chart 1.",technical_rule_reckoning,art_skill_making,Ngram only in this audit,strong,high,medium,Avoid unless needed for context.

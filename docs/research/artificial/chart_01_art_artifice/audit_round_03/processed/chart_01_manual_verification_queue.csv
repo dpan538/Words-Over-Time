@@ -1,0 +1,12 @@
+priority,item,why_check,source_to_check,current_status,expected_value,blocking_for_chart_01,notes
+1,OED artificial,"Verify earliest quotations, artificial day, obsolete technical senses, and order of not-natural/fake/insincere branches.",Oxford English Dictionary,not accessed,Full sense tree and earliest quotations,true,Blocking for final public dates.
+1,OED artifice,Confirm skill/workmanship vs trick chronology.,Oxford English Dictionary,not accessed,Earliest quotations and sense ordering,true,Needed if artifice is visible.
+1,OED artificer,Confirm maker/craftsperson dating and devious-artifice branch.,Oxford English Dictionary,not accessed,Earliest quotations and sense history,true,Needed if artificer is visible.
+1,Johnson artificial,Directly verify secondary transcription and examples.,Johnson's Dictionary Online or scan,secondary transcription only,Made by art/not natural; fictitious; artful; examples,true,Potentially a strong 1755 bridge.
+2,Johnson artifice,Directly verify trick/fraud and art/trade senses.,Johnson's Dictionary Online or scan,secondary transcription only,Exact Johnson entry order,false,Important but not blocking if Webster is used.
+2,Johnson artificer,Check whether entry gives skilled maker or mostly inventor/mechanic.,Johnson's Dictionary Online or scan,not verified,Direct entry text,false,Useful if artificer appears.
+1,artificial day snippet,Need primary or OED quotation before treating as early anchor.,OED / Google Books / EEBO / Johnson,secondary evidence only,Dated quotation with context,true,Semantically strong but obscure.
+2,artificial memory snippet,Need English historical example if used as lexical anchor.,Google Books / IA / rhetoric texts,conceptual classical source collected,English quotation or clear scholarly bridge,false,Use as learned-technique support until verified.
+2,artificial arguments / lines / numbers,Verify whether Webster examples trace to Johnson or technical dictionaries.,Johnson / Webster / public-domain rhetoric/math texts,Webster verified,Additional dated examples,false,Webster may be enough for support.
+1,Webster 1828 as fallback,Decide whether Webster is sufficient if OED is unavailable.,Internal editorial review,likely sufficient for public-domain fallback,Fallback evidence policy,true,"Can support sense boundaries, not earliest dates."
+3,Century Dictionary artificial,Try direct scan or source beyond FineDictionary.,Century Dictionary scan / Wordnik / FineDictionary,not directly verified,Historical dictionary support,false,Optional support.

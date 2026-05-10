@@ -1,0 +1,21 @@
+# Audit Round 03 Source URLs
+
+- Webster 1828 artificial: https://webstersdictionary1828.com/Dictionary/artificial
+- Webster 1828 art: https://webstersdictionary1828.com/Dictionary/art
+- Webster 1828 artifice: https://webstersdictionary1828.com/Dictionary/artifice
+- Webster 1828 artificer: https://webstersdictionary1828.com/Dictionary/artificer
+- Webster 1828 artless: https://webstersdictionary1828.com/Dictionary/artless
+- Etymonline artificial: https://www.etymonline.com/word/artificial
+- Etymonline artificially: https://www.etymonline.com/word/artificially
+- Etymonline artifice: https://www.etymonline.com/word/artifice
+- Etymonline artificer: https://www.etymonline.com/word/artificer
+- Merriam-Webster artificial: https://www.merriam-webster.com/dictionary/artificial
+- Merriam-Webster artifice: https://www.merriam-webster.com/dictionary/artifice
+- Merriam-Webster artificer: https://www.merriam-webster.com/dictionary/artificer
+- Merriam-Webster art: https://www.merriam-webster.com/dictionary/art
+- Cambridge artificial: https://dictionary.cambridge.org/dictionary/english/artificial
+- Oxford Learner's artificial: https://www.oxfordlearnersdictionaries.com/definition/english/artificial
+- Johnson secondary transcription artificial: https://www.definitions.net/definition/artificial
+- Johnson secondary transcription artifice: https://www.definitions.net/definition/artifice
+- Century secondary transcription artifice: https://www.finedictionary.com/artifice
+- Rhetorica ad Herennium memory passage: https://www.laits.utexas.edu/memoria/Ad_Herennium_Passages.html

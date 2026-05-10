@@ -1,0 +1,14 @@
+id,term_or_phrase,source_name,source_type,sense,source_reliability,sense_clarity,historical_value,chart_01_relevance,risk_of_misreading,total_score,recommended_use,notes
+webster_1828_artificial,artificial,Webster 1828,historical_dictionary,mixed_bridge_sense,5,5,5,5,2,18,use_as_core_evidence,Best public-domain evidence for sense boundaries.
+webster_1828_art,art,Webster 1828,historical_dictionary,art_skill_making,5,5,5,5,1,19,use_as_core_evidence,Clarifies art as skill/rule/human disposition.
+etymonline_artificial,artificial,Etymonline,secondary_etymology,mixed_bridge_sense,3,5,4,5,2,15,use_as_supporting_evidence,Strong chronology guide; needs OED for final dates.
+etymonline_artifice,artifice,Etymonline,secondary_etymology,mixed_bridge_sense,3,5,4,5,3,14,use_as_supporting_evidence,Clean skill-before-trick chronology but secondary.
+webster_1828_artifice,artifice,Webster 1828,historical_dictionary,mixed_bridge_sense,5,4,5,4,4,14,use_as_supporting_evidence,Important but high risk of modern deception reading.
+webster_1828_artificer,artificer,Webster 1828,historical_dictionary,art_skill_making,5,5,5,4,2,17,use_as_supporting_evidence,Strong maker/craftsperson evidence.
+mw_artificial,artificial,Merriam-Webster,dictionary,mixed_bridge_sense,5,4,3,4,2,14,use_as_supporting_evidence,Good etymology and modern sense split.
+johnson_artificial_secondary,artificial,Johnson via Definitions.net,historical_dictionary_secondary_transcription,mixed_bridge_sense,2,4,4,4,4,10,manual_review_before_use,Potentially excellent once manually verified.
+webster_artificial_lines,artificial lines,Webster 1828,historical_dictionary,technical_rule_reckoning,5,5,4,4,2,16,use_as_supporting_evidence,Strong technical-rule example.
+webster_artificial_numbers,artificial numbers,Webster 1828,historical_dictionary,technical_rule_reckoning,5,5,4,4,1,17,use_as_supporting_evidence,Strong and compact.
+rhetorica_artificial_memory,artificial memory,Rhetorica ad Herennium,book_snippet,technical_rule_reckoning,4,4,4,4,3,13,manual_review_before_use,Great concept; not English lexical chronology.
+cambridge_artificial,artificial,Cambridge Dictionary,dictionary,not_natural,5,5,1,2,2,11,background_only,Modern boundary evidence only.
+oxford_learners_artificial,artificial,Oxford Learner's Dictionary,dictionary,mixed_bridge_sense,5,4,1,2,2,10,background_only,"Good for synonym boundaries, not early chronology."
