@@ -1,0 +1,113 @@
+{"alternate_locations":{"servers":[{"server":"dn720005.ca.archive.org","dir":"/0/items/SDN_1910121701"}],"workable":[{"server":"dn720005.ca.archive.org","dir":"/0/items/SDN_1910121701"}]},"created":1778540516,"d1":"ia601602.us.archive.org","d2":"ia801602.us.archive.org","dir":"/25/items/SDN_1910121701","files":[{"name":"1910121701.xml","source":"original","mtime":"1675123792","size":"39582","md5":"46eb19339a3be57a5898d45fe0de2739","crc32":"7526d0a1","sha1":"9b0b117646bacf4dc5f691ecc034776c08125661","format":"Metadata"},{"name":"SDN.xml","source":"original","mtime":"1675123809","size":"2510","md5":"242cfe5f3e803de42a8c100eeab53fb1","crc32":"d4e3558d","sha1":"4c72429e6bb7c4722e4fcc535023dbe9078a92c6","format":"Metadata"},{"name":"SDN_1910121701.pdf","source":"derivative","pdf_module_version":"0.0.20","format":"Text PDF","original":"SDN_1910121701_page_numbers.json","mtime":"1675124950","size":"27640367","md5":"2cf6f09d5ec2f4700d29f3375f5d7819","crc32":"cb943632","sha1":"f592e1d97822b655affa6eb58117e1175ddec56c"},{"name":"SDN_1910121701_archive.torrent","source":"metadata","btih":"ca803820d337d81cd6656d9b136103f6e4b4b7b3","mtime":"1715697472","size":"9995","md5":"fde44828bde252622e7a274f4a42654f","crc32":"ba09ce77","sha1":"92f9aac628929df0b35f9ba81884597ce4bd82a5","format":"Archive BitTorrent"},{"name":"SDN_1910121701_chocr.html.gz","source":"derivative","ocr":"tesseract 5.3.0-1-gd3a4","ocr_parameters":"-l eng","ocr_module_version":"0.0.18","ocr_detected_script":"Latin","ocr_detected_script_conf":"0.9733","ocr_detected_lang":"en","ocr_detected_lang_conf":"1.0000","format":"chOCR","original":"SDN_1910121701_jp2.zip","mtime":"1675124666","size":"2559972","md5":"f9ab54dbe2503d347cf83b3c6fd8aef8","crc32":"022ff537","sha1":"8b409fc46fbcc3b8d4fce5e471befd8089950fbb"},{"name":"SDN_1910121701_djvu.txt","source":"derivative","format":"DjVuTXT","original":"SDN_1910121701_djvu.xml","mtime":"1675124733","size":"178336","md5":"51544dedbb6eae63a706be0c25766a1b","crc32":"ed4de32c","sha1":"825d47899fcca5a696c82be61d873e372fad9e07"},{"name":"SDN_1910121701_djvu.xml","source":"derivative","format":"Djvu XML","original":"SDN_1910121701_hocr.html","mtime":"1675124705","size":"2507531","md5":"1ebd916e30d252ca75f6ed95eefbb961","crc32":"fd12040e","sha1":"325e85eb4c43f12d340092fb7a32cd0c58da207f"},{"name":"SDN_1910121701_files.xml","source":"original","format":"Metadata","md5":"eabf99cbf3b533ce1930dc237fbc8cab","summation":"md5"},{"name":"SDN_1910121701_hocr.html","source":"derivative","hocr_char_to_word_module_version":"1.1.0","hocr_char_to_word_hocr_version":"1.1.15","ocr_parameters":"-l eng","ocr_module_version":"0.0.18","ocr_detected_script":"Latin","ocr_detected_script_conf":"0.9733","ocr_detected_lang":"en","ocr_detected_lang_conf":"1.0000","format":"hOCR","original":"SDN_1910121701_chocr.html.gz","mtime":"1675124689","size":"4941212","md5":"47ecc8fe936fd427cdf4890cde323466","crc32":"8ca8c665","sha1":"7681357d9e26c98c221179826bee859185af10e7"},{"name":"SDN_1910121701_hocr_pageindex.json.gz","source":"derivative","hocr_pageindex_module_version":"1.0.0","hocr_pageindex_hocr_version":"1.1.15","format":"OCR Page Index","original":"SDN_1910121701_hocr.html","mtime":"1675124713","size":"202","md5":"af5f583fbf17441df015e72bf53b6f21","crc32":"e40d2b3e","sha1":"a59715bc85b578f97a44f2f634e0b6a9ce0188ca"},{"name":"SDN_1910121701_hocr_searchtext.txt.gz","source":"derivative","hocr_fts_text_module_version":"1.1.0","hocr_fts_text_hocr_version":"1.1.15","word_conf_0_10":"1069","word_conf_11_20":"450","word_conf_21_30":"533","word_conf_31_40":"604","word_conf_41_50":"688","word_conf_51_60":"827","word_conf_61_70":"969","word_conf_71_80":"1398","word_conf_81_90":"3272","word_conf_91_100":"20026","format":"OCR Search Text","original":"SDN_1910121701_hocr.html","mtime":"1675124725","size":"72479","md5":"a90fc2b3a91f90d677c62757861ba993","crc32":"a6d8154c","sha1":"3d4db6246c8f4c7bb93cad9b7c0a4fe463f94b7c"},{"name":"SDN_1910121701_images.zip","source":"original","mtime":"1675123826","size":"57270950","md5":"562d43116b8970edee4ebd5e2d95ac40","crc32":"b5b466a0","sha1":"78b306bd7fc9b02fbf6fb5dd784052ad4c8a8bdb","format":"Generic Raw Book Zip","filecount":"14"},{"name":"SDN_1910121701_jp2.zip","source":"derivative","format":"Single Page Processed JP2 ZIP","original":"SDN_1910121701_images.zip","mtime":"1675123892","size":"57319211","md5":"2f388903bd18be94b175d9f7f54e6935","crc32":"e6d42539","sha1":"d0ee31e2d6676789fc2090cd40441663daa0995b","filecount":"14"},{"name":"SDN_1910121701_meta.sqlite","source":"original","mtime":"1675123830","size":"40960","md5":"469b1fa40ce4e462900cb25a599b50dc","crc32":"eff8a5c5","sha1":"b39d3063582ce2cf1f53e3e853cc5730ba3c90e6","format":"Metadata"},{"name":"SDN_1910121701_meta.xml","source":"original","mtime":"1715697469","size":"3266","md5":"6bf85d9163d11be965d4201b9f3ac3d2","crc32":"9ad622ed","sha1":"00ff6504b8c2ad8c5d00f025e6cfe2dddb436781","format":"Metadata"},{"name":"SDN_1910121701_page_numbers.json","source":"derivative","format":"Page Numbers JSON","original":"SDN_1910121701_djvu.xml","mtime":"1675124759","size":"2421","md5":"16824e6c4d05f1b9c21a6e2368d70d28","crc32":"a768e3c9","sha1":"89aa4318e98621fac522ed13df8bc3d7d3bd3a10"},{"name":"SDN_1910121701_scandata.xml","source":"derivative","format":"Scandata","original":"SDN_1910121701_djvu.xml","mtime":"1675124757","size":"4384","md5":"ef2e7307fc1dd4254d5de0a0905b060b","crc32":"61ce117b","sha1":"fd4f401ec6b9d552899c7aacad3fbea51b06a3cd"},{"name":"__ia_thumb.jpg","source":"original","mtime":"1675124986","size":"19968","md5":"3994247de531925af8b904f5d652db74","crc32":"b62af13c","sha1":"dd35e61bbc994c884e79710788c9a834bce616c2","format":"Item Tile","rotation":"0"},{"name":"articles_1910121701.xml","source":"original","mtime":"1675123806","size":"166665","md5":"7ba1b38e8c3354ef56deef22ca8d0fa7","crc32":"07ce4c09","sha1":"7be57b8a74ce61247a3959dcec21b98563d481d1","format":"Metadata"}],"files_count":19,"item_last_updated":1715697472,"item_size":152780011,"metadata":{"identifier":"SDN_1910121701","adaptive_ocr":"true","collection":["peel_newspapers","peel","university_of_alberta_libraries","toronto"],"collective_title":"Saturday news","coverage":"Canada;Alberta;Edmonton","date":"1910-12-17","description":"Page 1: \n \n - The End of the Session \n \n - The Hub of the City \n \n - The Heroism of the Common Man \n \n - Jasper's Note Book \n \n - Winnipeg's Business Section \n \nPage 2: \n \n - The Mirror \n \n - The Real Hold-up of a Stage Coach \n \nPage 3: \n \n - Home and Society \n \n - Fred Terry's Steel Flurry \n \n - Boys Will be Boys \n \n - Hear the Divine Melba Sing Tosti's Good-Bye \n \n - Local News \n \nPage 4: \n \nPage 5: \n \n - Reminiscences of Goldwin Smith \n \n - Kocian, the Great Violinist \n \n - Local News \n \nPage 6: \n \n - Thunder and Lightning \n \n - Local News \n \n - Local News \n \n - The Investor \n \n - Local News \n \nPage 8: \n \n - Thunder and Lighting \n \n - Local News \n \n - Local News \n \n - The Investor \n \n - Local News \n \nPage 7: \n \n - Music and Drama \n \n - Hear Harry Lauder Sing His Inimitable Scottish Songs at Harmony Hall \n \n - Scene from the Travelling Salesman \n \n - Pa's Failing Faculties \n \n - Local News \n \nPage 9: \n \n - Music and Drama \n \n - Hear Harry Lauder Sing His Inimitable Scottish Songs at Harmony Hall \n \n - Scene from the Travelling Salesman \n \n - Pa's Failing Faculties \n \n - Local News \n \nPage 10: \n \n - Local News \n \n - Dramatic Incidents \n \n - The Staff's Acknowlegement \n \n - Local News \n \nPage 11: \n \n - On Liking One's Job \n \n - The Westerner, Who Has Yet to Succeed \n \n - Thrilling Rescue at of the Crew of the Airship \"America\" \n \n - Agincourt \n \n - Local News \n \n - Local News \n \n - Woman Changing to Masculinity? \n \n - A Tradition of the Stoy Family \n \nPage 12: \n \n - In the Athletic World \n \nPage 13: \n \n - The Lounger \n \n - Local News \n \n - Local News \n \n - The Grasshopper and the Ant \n \nPage 14: \n \n - His Politics England \n \n - Gretna Green \n \n - Local News \n \n \n","extent":"v. : ill.","genre":"Newspaper","issuance":"continuing","language":"English","mediatype":"texts","notes":"[public]: Weekly. Imprint varies.  ","publisher":"A.B. Watt","scanner":"Internet Archive Python library 2.1.0","title":"Saturday news (1910-12-17)","uploader":"digitization.IAscript@ualberta.ca","publicdate":"2023-01-31 00:10:10","addeddate":"2023-01-31 00:10:10","identifier-access":"http://archive.org/details/SDN_1910121701","identifier-ark":"ark:/13960/s240c9dgw5k","imagecount":"14","ocr":"tesseract 5.3.0-1-gd3a4","ocr_parameters":"-l eng","ocr_module_version":"0.0.18","ocr_detected_script":"Latin","ocr_detected_script_conf":"0.9733","ocr_detected_lang":"en","ocr_detected_lang_conf":"1.0000","pdf_module_version":"0.0.20","subject":"Saturday news [Edmonton, Alta.]"},"page_numbers":{
+    "identifier": "/var/tmp/autoclean/derive/sdn_1910121701/sdn_1910121701",
+    "confidence": 0,
+    "pages": [
+        {
+            "leafNum": 1,
+            "ocr_value": [],
+            "confidence": 0,
+            "pageNumber": ""
+        },
+        {
+            "leafNum": 2,
+            "ocr_value": [],
+            "confidence": 0,
+            "pageNumber": ""
+        },
+        {
+            "leafNum": 3,
+            "ocr_value": [
+                "20"
+            ],
+            "confidence": 0,
+            "pageNumber": ""
+        },
+        {
+            "leafNum": 4,
+            "ocr_value": [
+                "1647"
+            ],
+            "confidence": 0,
+            "pageNumber": ""
+        },
+        {
+            "leafNum": 5,
+            "ocr_value": [
+                "4",
+                "4064"
+            ],
+            "confidence": 0,
+            "pageNumber": ""
+        },
+        {
+            "leafNum": 6,
+            "ocr_value": [],
+            "confidence": 0,
+            "pageNumber": ""
+        },
+        {
+            "leafNum": 7,
+            "ocr_value": [
+                "200",
+                "4064"
+            ],
+            "confidence": 0,
+            "pageNumber": ""
+        },
+        {
+            "leafNum": 8,
+            "ocr_value": [
+                "9",
+                "1",
+                "803",
+                "i"
+            ],
+            "confidence": 0,
+            "pageNumber": "1"
+        },
+        {
+            "leafNum": 9,
+            "ocr_value": [
+                "1712",
+                "80"
+            ],
+            "confidence": 0,
+            "pageNumber": "2"
+        },
+        {
+            "leafNum": 10,
+            "ocr_value": [
+                "12"
+            ],
+            "confidence": 0,
+            "pageNumber": "3"
+        },
+        {
+            "leafNum": 11,
+            "ocr_value": [
+                "4",
+                "1847",
+                "1263"
+            ],
+            "confidence": 0,
+            "pageNumber": "4"
+        },
+        {
+            "leafNum": 12,
+            "ocr_value": [
+                "38"
+            ],
+            "confidence": 0,
+            "pageNumber": "5"
+        },
+        {
+            "leafNum": 13,
+            "ocr_value": [
+                "2",
+                "1332"
+            ],
+            "confidence": 0,
+            "pageNumber": "6"
+        }
+    ]
+},"server":"ia601602.us.archive.org","uniq":2000039146,"workable_servers":["ia601602.us.archive.org","ia801602.us.archive.org"]}

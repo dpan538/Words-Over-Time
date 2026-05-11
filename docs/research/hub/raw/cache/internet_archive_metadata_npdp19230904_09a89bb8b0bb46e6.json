@@ -1,0 +1,92 @@
+{"alternate_locations":{"servers":[{"server":"dn721807.ca.archive.org","dir":"/0/items/NPDP19230904"}],"workable":[{"server":"dn721807.ca.archive.org","dir":"/0/items/NPDP19230904"}]},"created":1778540534,"d1":"ia600500.us.archive.org","d2":"ia800500.us.archive.org","dir":"/23/items/NPDP19230904","files":[{"name":"NPDP19230904.pdf","source":"original","mtime":"1702213460","size":"4663647","md5":"a8b16b573fd304921c1e6622f70564ed","crc32":"d683f513","sha1":"b7cd6b5fe641ba5d5fa3505f97628a6372fb4c96","format":"Image Container PDF","viruscheck":"1702214001"},{"name":"NPDP19230904_archive.torrent","source":"metadata","btih":"75072c087e7c35d6d501ed44c38d45161276fdea","mtime":"1702216750","size":"6147","md5":"9cd55e329e39c02c4b6b1b04b0a2d58d","crc32":"a936b880","sha1":"3ca676ac8a16cc9001682ce7871f3c420d732238","format":"Archive BitTorrent"},{"name":"NPDP19230904_chocr.html.gz","source":"derivative","ocr":"tesseract 5.3.0-6-g76ae","ocr_parameters":"lang-eng;two-pass-disabled;pass-dpi-disabled;autonomous-mode-disabled;binarisation-method-otsu","ocr_module_version":"0.0.21","ocr_detected_script":"Latin","ocr_detected_script_conf":"0.5034","ocr_detected_lang":"en","ocr_detected_lang_conf":"1.0000","format":"chOCR","original":"NPDP19230904_jp2.zip","mtime":"1702214613","size":"2412383","md5":"e786256448c90e36f77056afe9caf3db","crc32":"79f7dfe2","sha1":"b0fa2622c7c4f9dac9b86f6a910d3861e281f282"},{"name":"NPDP19230904_djvu.txt","source":"derivative","format":"DjVuTXT","original":"NPDP19230904_djvu.xml","mtime":"1702215111","size":"165530","md5":"08078a2bb1cdd035635c208b9041b171","crc32":"5e881ac5","sha1":"695f96dfccc9400637f43cc7e3a308998a1234fe"},{"name":"NPDP19230904_djvu.xml","source":"derivative","format":"Djvu XML","original":"NPDP19230904_hocr.html","mtime":"1702214768","size":"2293382","md5":"5a08a21713122a803038252ff83af2c9","crc32":"50948ac9","sha1":"33d9699d4764ca0b72f6e69a866a54eb9a8f87b7"},{"name":"NPDP19230904_files.xml","source":"original","format":"Metadata","md5":"c7b5e956ec98b950c80139bfd6332bee","summation":"md5"},{"name":"NPDP19230904_hocr.html","source":"derivative","hocr_char_to_word_module_version":"1.2.0","hocr_char_to_word_hocr_version":"1.1.45","ocr_parameters":"lang-eng;two-pass-disabled;pass-dpi-disabled;autonomous-mode-disabled;binarisation-method-otsu","ocr_module_version":"0.0.21","ocr_detected_script":"Latin","ocr_detected_script_conf":"0.5034","ocr_detected_lang":"en","ocr_detected_lang_conf":"1.0000","format":"hOCR","original":"NPDP19230904_chocr.html.gz","mtime":"1702214747","size":"4476929","md5":"834f84ecc2e80ac31aee5f73fb749c46","crc32":"f6a607f5","sha1":"402912b017e1be8e1a4eb95e5524d65f99b065c1"},{"name":"NPDP19230904_hocr_pageindex.json.gz","source":"derivative","hocr_pageindex_module_version":"1.0.0","hocr_pageindex_hocr_version":"1.1.15","format":"OCR Page Index","original":"NPDP19230904_hocr.html","mtime":"1702214910","size":"182","md5":"ed6444c77c0c4844be5078c6ece36b37","crc32":"451e6ce8","sha1":"7f1db9339c4ebbd767afacaa7518da5fd79e5882"},{"name":"NPDP19230904_hocr_searchtext.txt.gz","source":"derivative","hocr_fts_text_module_version":"1.1.0","hocr_fts_text_hocr_version":"1.1.15","word_conf_0_10":"3132","word_conf_11_20":"1296","word_conf_21_30":"1608","word_conf_31_40":"1799","word_conf_41_50":"1827","word_conf_51_60":"2005","word_conf_61_70":"2218","word_conf_71_80":"2671","word_conf_81_90":"3727","word_conf_91_100":"6933","format":"OCR Search Text","original":"NPDP19230904_hocr.html","mtime":"1702215088","size":"81632","md5":"adbe097cb7e311de016bea9ac12304e0","crc32":"2b4593dc","sha1":"45297d239c04d6dfdfcf60356086be61a7a4cd3f"},{"name":"NPDP19230904_jp2.zip","source":"derivative","format":"Single Page Processed JP2 ZIP","original":"NPDP19230904.pdf","mtime":"1702214161","size":"38724004","md5":"71b018c8fd8e2408a8c900f2cd80988d","crc32":"dbcc95f6","sha1":"38d4a78c444c14439196b0381fe89e8d77256ebb","filecount":"12"},{"name":"NPDP19230904_meta.sqlite","source":"original","mtime":"1702213630","size":"28672","md5":"eb40e33da4bebe1d26d2c68562aa7eaa","crc32":"80d9513a","sha1":"858595101fd7e41b9039e9cda63011badd51ea6e","format":"Metadata"},{"name":"NPDP19230904_meta.xml","source":"original","mtime":"1702216748","size":"3755","md5":"4a2b66742cdc97ecf2b4039fe73d2b6d","crc32":"c3bb5cfe","sha1":"593e68bcb5bf0a7b81939599ab74a2d487a95746","format":"Metadata"},{"name":"NPDP19230904_page_numbers.json","source":"derivative","hocr_pagenumber_module_version":"1.0.3","hocr_pagenumber_hocr_version":"1.1.54","hocr_pagenumber_confidence":"26","format":"Page Numbers JSON","original":"NPDP19230904_hocr.html","mtime":"1702215757","size":"2158","md5":"3693068e26879ae393ab64c42e42acb0","crc32":"eb7db441","sha1":"a5de53d57efde78f8bb94e5e60381f7767976e6f"},{"name":"NPDP19230904_scandata.xml","source":"derivative","format":"Scandata","original":"NPDP19230904_djvu.xml","mtime":"1702215757","size":"4193","md5":"c760420dfea9ef1f1a02a0e21454e934","crc32":"9a5c43e0","sha1":"810e3cce9d1ad998a6ae347d7a6716d5ba119c53"},{"name":"NPDP19230904_text.pdf","source":"derivative","pdf_module_version":"0.0.23","format":"Additional Text PDF","original":"NPDP19230904_page_numbers.json","mtime":"1702216316","size":"13457557","md5":"1aaf89b7b0f233a650250e810694f9e7","crc32":"210d8ff5","sha1":"efc85675882f925a1d487198ca0a7f8ac064e61e"},{"name":"__ia_thumb.jpg","source":"original","mtime":"1702216749","size":"22184","md5":"7416c93242a51e746df4d83ea4fa1a3c","crc32":"683f03ce","sha1":"3e5df50fc7f3a6be1a7e8b71595a9f23483ebf27","format":"Item Tile","rotation":"0"}],"files_count":16,"item_last_updated":1702216750,"item_size":66342355,"metadata":{"identifier":"NPDP19230904","date":"19230904","description":"THE FRENCH CASE.\nCONCESSIONS AT AN END.\nEND OF CONCESSIONS.\nRUHR RESISTANCE.\nTHE ENTENTE.\nBRITAINS ACHIEVEMENT IN DEBT REDUCTION.\nPRIME MINISTER'S REVIEW.\nA BALANCED BUDGET.\n\"FINANCIAL HUB OF THE UNIVERSE.\"\nTHE CHINA ASSOCIATION.\nA DIFFICULT YEAR.\nSINGAPORE TRAMWAYS.\nTWO MISSIONARIES MURDERED.\nSHOT DEAD BY BANDITS IN SZECHUAN.\nCONDITIONS ON THE WEST RIVER.\nHOLE IN ONE.\nMR. F. B. MARSHALL'S ACHIEVE MENT AT VICTORIA, B.C.\nTHE GOVERNMENT AND HOUSING.\nTHE 40 - YEAR FREE LEASEHOLDS.\nTHE INDENTURE FORM REVIEWED.\nPROPOSED NEW LEGISLATION.\nFRAUDULENT TRANSFERS OF BUSINESS.\nINCORPORATION OF TRUSTEES OF WAR MEMORIAL NURSING HOME.\nSERIOUS ACCIDENT.\nEUROPEAN WARDER FALLS FROM SECOND STORY OF MESS.\nCHILDREN'S AQUATIC SPORTS.\nTHE ARMS CASE.\nYOUNG ASSISTANT COMPRADORE FINED.\nMAGISTRATE'S REMARKS.\nCORRESPONDENCE.\nPREVENTION OF CRUELTY TO ANIMALS.\nTHE TRAGEDY IN JAPAN.\nGALLANTRY AT SEA.\nTHE TRAGEDY IN JAPAN.\nENORMOUS CASUALTY ESTIMATES.\nTHE FOREIGN RESIDENTS: STRANGE LACK OF NEWS.\nFORMER FOREIGN SETTLEMENT OF YOKOHAMA SUFFERED BADLY.\nTHE FATE OF ODAWARA.\nRELIEF WORK.\nNO NEWS OF FOREIGN RESIDENTS.\nYOKOHAMA CASUALTIES ESTIMATED AT 100,000.\nCABINET MEASURES.\nWHAT AN AIRMAN SAW OF TOKYO.\nTHE CASUALTIES.\nMORE SHOCKS AT YOKOHAMA.\n1,000 TONS OF RICE WANTED FOR TOKYO.\nLIGHTHOUSES IN TOKYO BAY RENDERED USELESS.\nLUMBER FOR TOKYO.\nPOSSIBLE TRANSFER OF THE NATIONAL CAPITAL.\nCASUALTIES IN YOKOHAMA EXCEED 100,000.\nAIRMAN'S REPORT OF THE DEVASTATION AT TOKYO.\nFORTY FOREIGNERS PERISH AT HAKONE.\n1,000 TONS OF RICE WANTED TO TOKYO ALONE.\nJAPANESE PRINCE DIES FROM INJURY.\nMARINE UNDERWRITERS NOT SERIOUSLY AFFECTED.\nGREAT BRITAIN'S SYMPATHY.\nAMERICAN HELP.\nAMERICA'S SYMPATHY.\nNEWS CABLED BACK FROM LONDON.\nHONGKONG'S SYMPATHY.\nEUROPEAN OFFICES WRECKED.\nTWO MORE EARTHQUAKES RECORDED AT HONGKONG.\nGRAECO-ITALIAN CRISIS.\nALLEGATIONS OF GREEK CONNIVANCE DENIED.\nATHENS IN MOURNING.\nITALIANS REPORTED TO OCCUPY ISLANDS.\nA GREEK NEWSPAPER SUSPENDED.\nTHE L.O.N AND THE SITUATION.\nCOL. PERONE RECALLED.\nITALY REFUSES TO ACCEPT LEAGUE'S DECISION.\nGREEK STEAMER SEIZED BY ITALIAN SUBMARINE.\nANOTHER ITALIAN DENIAL.\nLORD CURZON'S GUARDED STATEMENT.\nBAVARIAN MONARCHISTS.\nSAID TO HAVE HOISTED KAISER'S STANDARD IN NUMERBURG.\nU.S. IMMIGRANTS.\nANOTHER BATOH REFUSED ADMISSION.\nJAPAN'S CABINET.\nFORECAST OF PERSONNEL.\n\"THE OLD MERRY - GO - ROUND OF THE DEVIL.\"\nMR. LLOYD GEORGE SUGGESTS A \"COMMITTEE OF MERCY.\"\nCATERING ROMANCE.\n1,500,000 FIRM'S START WITH OFFICE TEAS.","language":"English","mediatype":"texts","scanner":"Internet Archive Python library 3.0.2","subject":["\u5b56\u524c\u897f\u5831","\u5b56\u524c\u897f\u62a5","Hong Kong Daily Press"],"title":"Hong Kong Daily Press 1923-09-04","uploader":"zhengszh3@gmail.com","publicdate":"2023-12-10 13:06:34","addeddate":"2023-12-10 13:06:34","curation":"[curator]validator@archive.org[/curator][date]20231210131321[/date][comment]checked for malware[/comment]","ppi":"100","ocr":"tesseract 5.3.0-6-g76ae","ocr_parameters":"-l eng","ocr_module_version":"0.0.21","ocr_detected_script":"Latin","ocr_detected_script_conf":"0.5034","ocr_detected_lang":"en","ocr_detected_lang_conf":"1.0000","page_number_confidence":"26","page_number_module_version":"1.0.3","pdf_module_version":"0.0.23","collection":["china-mail","newspapers"]},"page_numbers":{
+    "identifier": "NPDP19230904",
+    "format-version": "2",
+    "archive-hocr-tools-version": "1.1.54",
+    "confidence": 26,
+    "pages": [
+        {
+            "leafNum": 0,
+            "confidence": null,
+            "pageNumber": "",
+            "pageProb": null,
+            "wordConf": null
+        },
+        {
+            "leafNum": 1,
+            "confidence": null,
+            "pageNumber": "",
+            "pageProb": null,
+            "wordConf": null
+        },
+        {
+            "leafNum": 2,
+            "confidence": null,
+            "pageNumber": "",
+            "pageProb": null,
+            "wordConf": null
+        },
+        {
+            "leafNum": 3,
+            "confidence": null,
+            "pageNumber": "",
+            "pageProb": null,
+            "wordConf": null
+        },
+        {
+            "leafNum": 4,
+            "confidence": null,
+            "pageNumber": "",
+            "pageProb": null,
+            "wordConf": null
+        },
+        {
+            "leafNum": 5,
+            "confidence": null,
+            "pageNumber": "",
+            "pageProb": null,
+            "wordConf": null
+        },
+        {
+            "leafNum": 6,
+            "confidence": null,
+            "pageNumber": "",
+            "pageProb": null,
+            "wordConf": null
+        },
+        {
+            "leafNum": 7,
+            "confidence": null,
+            "pageNumber": "",
+            "pageProb": null,
+            "wordConf": null
+        },
+        {
+            "leafNum": 8,
+            "confidence": 60,
+            "pageNumber": "2",
+            "pageProb": 50,
+            "wordConf": 0
+        },
+        {
+            "leafNum": 9,
+            "confidence": null,
+            "pageNumber": "3",
+            "pageProb": null,
+            "wordConf": null
+        },
+        {
+            "leafNum": 10,
+            "confidence": 76,
+            "pageNumber": "4",
+            "pageProb": 66,
+            "wordConf": 48
+        },
+        {
+            "leafNum": 11,
+            "confidence": null,
+            "pageNumber": "",
+            "pageProb": null,
+            "wordConf": null
+        }
+    ]
+},"server":"ia600500.us.archive.org","uniq":2104601715,"workable_servers":["ia600500.us.archive.org","ia800500.us.archive.org"]}

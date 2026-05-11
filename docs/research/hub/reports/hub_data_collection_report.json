@@ -1,0 +1,699 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-11T23:30:05.780214Z",
+    "generated_by_script": "scripts/process_hub_data.py"
+  },
+  "counts": {
+    "terms_attempted": 61,
+    "terms_collected": 59,
+    "phrase_candidates": 59,
+    "snippets": 18,
+    "semantic_categories": 6,
+    "timeline_events": 12,
+    "missing_or_failed_sources": 4,
+    "sparse_or_missing_terms": 2
+  },
+  "source_status": [
+    {
+      "id": "etymonline_hub",
+      "source_name": "Online Etymology Dictionary",
+      "url": "https://www.etymonline.com/word/hub",
+      "access_status": "collected",
+      "http_status": null,
+      "error": null,
+      "known_live_issue": null
+    },
+    {
+      "id": "wiktionary_hub",
+      "source_name": "Wiktionary",
+      "url": "https://en.wiktionary.org/wiki/hub",
+      "access_status": "collected",
+      "http_status": null,
+      "error": null,
+      "known_live_issue": null
+    },
+    {
+      "id": "merriam_webster_hub",
+      "source_name": "Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/hub",
+      "access_status": "collected",
+      "http_status": null,
+      "error": null,
+      "known_live_issue": null
+    },
+    {
+      "id": "cambridge_hub",
+      "source_name": "Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/hub",
+      "access_status": "collected",
+      "http_status": null,
+      "error": null,
+      "known_live_issue": null
+    },
+    {
+      "id": "collins_hub",
+      "source_name": "Collins Dictionary",
+      "url": "https://www.collinsdictionary.com/dictionary/english/hub",
+      "access_status": "failed",
+      "http_status": null,
+      "error": "Cache-only mode: no cached response for this URL.",
+      "known_live_issue": "Live attempt returned HTTP 403 Forbidden; source preserved for manual review."
+    },
+    {
+      "id": "websters_1913_hub",
+      "source_name": "Webster's Revised Unabridged Dictionary 1913",
+      "url": "https://www.websters1913.com/words/Hub",
+      "access_status": "collected",
+      "http_status": null,
+      "error": null,
+      "known_live_issue": null
+    },
+    {
+      "id": "wikipedia_airline_hub",
+      "source_name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Airline_hub",
+      "access_status": "collected",
+      "http_status": null,
+      "error": null,
+      "known_live_issue": null
+    },
+    {
+      "id": "wikipedia_ethernet_hub",
+      "source_name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ethernet_hub",
+      "access_status": "collected",
+      "http_status": null,
+      "error": null,
+      "known_live_issue": null
+    }
+  ],
+  "corpus_source_status": [
+    {
+      "id": "legacy_chronicling_america",
+      "label": "Legacy Chronicling America API",
+      "status": "failed_or_unavailable",
+      "queries_attempted": 22,
+      "snippets_collected": 0,
+      "queries_with_errors": 22,
+      "access_failures": 44,
+      "sample_error": "Cache-only mode: no cached response for this URL.",
+      "known_live_issue": "Live attempts returned HTTP 404 from the legacy chroniclingamerica.loc.gov search endpoint; loc.gov search was used instead."
+    },
+    {
+      "id": "loc_chronicling_america",
+      "label": "loc.gov Chronicling America search",
+      "status": "partial",
+      "queries_attempted": 15,
+      "snippets_collected": 7,
+      "queries_with_errors": 4,
+      "access_failures": 4,
+      "sample_error": "Cache-only mode: no cached response for this URL.",
+      "known_live_issue": null
+    },
+    {
+      "id": "internet_archive",
+      "label": "Internet Archive",
+      "status": "partial",
+      "queries_attempted": 24,
+      "snippets_collected": 2,
+      "queries_with_errors": 0,
+      "access_failures": 0,
+      "sample_error": null,
+      "known_live_issue": null
+    },
+    {
+      "id": "google_books",
+      "label": "Google Books API",
+      "status": "failed_or_unavailable",
+      "queries_attempted": 47,
+      "snippets_collected": 0,
+      "queries_with_errors": 47,
+      "access_failures": 94,
+      "sample_error": "Cache-only mode: no cached response for this URL.",
+      "known_live_issue": "Live attempts returned HTTP 429 rate limiting; no Google Books snippets were collected in this pass."
+    }
+  ],
+  "promising_phrases": [
+    {
+      "phrase": "wheel hub",
+      "category": "mechanical_core",
+      "peak_frequency_per_million": 0.24601964,
+      "peak_year": 1872,
+      "first_signal_year": 1832,
+      "data_quality_status": "ok",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "hub-and-spoke",
+      "category": "network_system",
+      "peak_frequency_per_million": 0.15271277,
+      "peak_year": 2016,
+      "first_signal_year": 1832,
+      "data_quality_status": "requires_manual_review",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "rear hub",
+      "category": "mechanical_core",
+      "peak_frequency_per_million": 0.07820091,
+      "peak_year": 1906,
+      "first_signal_year": 1832,
+      "data_quality_status": "ok",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "transportation hub",
+      "category": "transport_logistics",
+      "peak_frequency_per_million": 0.07190989,
+      "peak_year": 2008,
+      "first_signal_year": 1832,
+      "data_quality_status": "ok",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "transport hub",
+      "category": "transport_logistics",
+      "peak_frequency_per_million": 0.06270535,
+      "peak_year": 2010,
+      "first_signal_year": 1843,
+      "data_quality_status": "ok",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "hubcap",
+      "category": "mechanical_core",
+      "peak_frequency_per_million": 0.05755242,
+      "peak_year": 2014,
+      "first_signal_year": 1883,
+      "data_quality_status": "ok",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "financial hub",
+      "category": "institutional_cluster",
+      "peak_frequency_per_million": 0.04079248,
+      "peak_year": 2006,
+      "first_signal_year": 1836,
+      "data_quality_status": "requires_manual_review",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "hub of activity",
+      "category": "central_place",
+      "peak_frequency_per_million": 0.03413241,
+      "peak_year": 2011,
+      "first_signal_year": 1878,
+      "data_quality_status": "ok",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "network hub",
+      "category": "network_system",
+      "peak_frequency_per_million": 0.02438265,
+      "peak_year": 1999,
+      "first_signal_year": 1900,
+      "data_quality_status": "requires_manual_review",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "hub of the city",
+      "category": "central_place",
+      "peak_frequency_per_million": 0.02214391,
+      "peak_year": 1954,
+      "first_signal_year": 1884,
+      "data_quality_status": "ok",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "railway hub",
+      "category": "transport_logistics",
+      "peak_frequency_per_million": 0.01016971,
+      "peak_year": 2022,
+      "first_signal_year": 1868,
+      "data_quality_status": "ok",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "airline hub",
+      "category": "transport_logistics",
+      "peak_frequency_per_million": 0.00809336,
+      "peak_year": 2016,
+      "first_signal_year": 1900,
+      "data_quality_status": "sparse",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "hub of commerce",
+      "category": "central_place",
+      "peak_frequency_per_million": 0.00705695,
+      "peak_year": 1942,
+      "first_signal_year": 1832,
+      "data_quality_status": "sparse",
+      "reliability_level": "high"
+    },
+    {
+      "phrase": "education hub",
+      "category": "institutional_cluster",
+      "peak_frequency_per_million": 0.2307503,
+      "peak_year": 2022,
+      "first_signal_year": 1901,
+      "data_quality_status": "requires_manual_review",
+      "reliability_level": "medium"
+    },
+    {
+      "phrase": "hub of the wheel",
+      "category": "mechanical_core",
+      "peak_frequency_per_million": 0.19623241,
+      "peak_year": 1872,
+      "first_signal_year": 1810,
+      "data_quality_status": "ok",
+      "reliability_level": "medium"
+    },
+    {
+      "phrase": "hub cap",
+      "category": "mechanical_core",
+      "peak_frequency_per_million": 0.15969186,
+      "peak_year": 1934,
+      "first_signal_year": 1832,
+      "data_quality_status": "ok",
+      "reliability_level": "medium"
+    },
+    {
+      "phrase": "wheel hubs",
+      "category": "mechanical_core",
+      "peak_frequency_per_million": 0.14987665,
+      "peak_year": 1840,
+      "first_signal_year": 1818,
+      "data_quality_status": "ok",
+      "reliability_level": "medium"
+    },
+    {
+      "phrase": "central hub",
+      "category": "network_system",
+      "peak_frequency_per_million": 0.11670743,
+      "peak_year": 2022,
+      "first_signal_year": 1832,
+      "data_quality_status": "requires_manual_review",
+      "reliability_level": "medium"
+    },
+    {
+      "phrase": "innovation hub",
+      "category": "institutional_cluster",
+      "peak_frequency_per_million": 0.09266494,
+      "peak_year": 2021,
+      "first_signal_year": 1843,
+      "data_quality_status": "requires_manual_review",
+      "reliability_level": "low"
+    },
+    {
+      "phrase": "front hub",
+      "category": "mechanical_core",
+      "peak_frequency_per_million": 0.06141496,
+      "peak_year": 2000,
+      "first_signal_year": 1834,
+      "data_quality_status": "ok",
+      "reliability_level": "low"
+    }
+  ],
+  "sparse_or_uncertain_terms": [
+    {
+      "term": "server hub",
+      "status": "too_sparse",
+      "notes": "Ngram signal is sparse; keep as a candidate but avoid interpretation without snippets.",
+      "error": null
+    },
+    {
+      "term": "platform hub",
+      "status": "too_sparse",
+      "notes": "Ngram signal is sparse; keep as a candidate but avoid interpretation without snippets.",
+      "error": null
+    }
+  ],
+  "semantic_category_support": [
+    {
+      "id": "mechanical_core",
+      "label": "Mechanical Core",
+      "phrase_count": 8,
+      "snippet_count": 4,
+      "visible_frequency_phrase_count": 7,
+      "support_level": "strong",
+      "strongest_terms": [
+        {
+          "term": "wheel hub",
+          "peak_frequency_per_million": 0.24601964,
+          "peak_year": 1872,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "hub of the wheel",
+          "peak_frequency_per_million": 0.19623241,
+          "peak_year": 1872,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "hub cap",
+          "peak_frequency_per_million": 0.15969186,
+          "peak_year": 1934,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "wheel hubs",
+          "peak_frequency_per_million": 0.14987665,
+          "peak_year": 1840,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "rear hub",
+          "peak_frequency_per_million": 0.07820091,
+          "peak_year": 1906,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "front hub",
+          "peak_frequency_per_million": 0.06141496,
+          "peak_year": 2000,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "hubcap",
+          "peak_frequency_per_million": 0.05755242,
+          "peak_year": 2014,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "axle hub",
+          "peak_frequency_per_million": 0.04607077,
+          "peak_year": 1949,
+          "data_quality_status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "central_place",
+      "label": "Central Place",
+      "phrase_count": 7,
+      "snippet_count": 6,
+      "visible_frequency_phrase_count": 0,
+      "support_level": "moderate",
+      "strongest_terms": [
+        {
+          "term": "hub of activity",
+          "peak_frequency_per_million": 0.03413241,
+          "peak_year": 2011,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "hub of the city",
+          "peak_frequency_per_million": 0.02214391,
+          "peak_year": 1954,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "hub of life",
+          "peak_frequency_per_million": 0.00778675,
+          "peak_year": 1909,
+          "data_quality_status": "sparse"
+        },
+        {
+          "term": "hub of commerce",
+          "peak_frequency_per_million": 0.00705695,
+          "peak_year": 1942,
+          "data_quality_status": "sparse"
+        },
+        {
+          "term": "hub of trade",
+          "peak_frequency_per_million": 0.00609327,
+          "peak_year": 2019,
+          "data_quality_status": "sparse"
+        },
+        {
+          "term": "hub of the community",
+          "peak_frequency_per_million": 0.00485074,
+          "peak_year": 2010,
+          "data_quality_status": "sparse"
+        },
+        {
+          "term": "hub of industry",
+          "peak_frequency_per_million": 0.00335411,
+          "peak_year": 1956,
+          "data_quality_status": "sparse"
+        }
+      ]
+    },
+    {
+      "id": "transport_logistics",
+      "label": "Transport & Logistics",
+      "phrase_count": 11,
+      "snippet_count": 4,
+      "visible_frequency_phrase_count": 2,
+      "support_level": "strong",
+      "strongest_terms": [
+        {
+          "term": "transportation hub",
+          "peak_frequency_per_million": 0.07190989,
+          "peak_year": 2008,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "transport hub",
+          "peak_frequency_per_million": 0.06270535,
+          "peak_year": 2010,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "regional hub",
+          "peak_frequency_per_million": 0.04504371,
+          "peak_year": 2003,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "transit hub",
+          "peak_frequency_per_million": 0.0345423,
+          "peak_year": 2009,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "global hub",
+          "peak_frequency_per_million": 0.02823682,
+          "peak_year": 2016,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "logistics hub",
+          "peak_frequency_per_million": 0.02470736,
+          "peak_year": 2019,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "railroad hub",
+          "peak_frequency_per_million": 0.01572582,
+          "peak_year": 2008,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "railway hub",
+          "peak_frequency_per_million": 0.01016971,
+          "peak_year": 2022,
+          "data_quality_status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "network_system",
+      "label": "Network System",
+      "phrase_count": 14,
+      "snippet_count": 2,
+      "visible_frequency_phrase_count": 4,
+      "support_level": "strong",
+      "strongest_terms": [
+        {
+          "term": "hub-and-spoke",
+          "peak_frequency_per_million": 0.15271277,
+          "peak_year": 2016,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "central hub",
+          "peak_frequency_per_million": 0.11670743,
+          "peak_year": 2022,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "ethernet hub",
+          "peak_frequency_per_million": 0.06002097,
+          "peak_year": 1997,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "hub and spoke",
+          "peak_frequency_per_million": 0.0596957,
+          "peak_year": 2016,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "network hub",
+          "peak_frequency_per_million": 0.02438265,
+          "peak_year": 1999,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "communications hub",
+          "peak_frequency_per_million": 0.014613,
+          "peak_year": 2016,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "hub system",
+          "peak_frequency_per_million": 0.01312393,
+          "peak_year": 1980,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "hub node",
+          "peak_frequency_per_million": 0.01144716,
+          "peak_year": 2009,
+          "data_quality_status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "institutional_cluster",
+      "label": "Institutional Cluster",
+      "phrase_count": 10,
+      "snippet_count": 2,
+      "visible_frequency_phrase_count": 2,
+      "support_level": "strong",
+      "strongest_terms": [
+        {
+          "term": "education hub",
+          "peak_frequency_per_million": 0.2307503,
+          "peak_year": 2022,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "innovation hub",
+          "peak_frequency_per_million": 0.09266494,
+          "peak_year": 2021,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "financial hub",
+          "peak_frequency_per_million": 0.04079248,
+          "peak_year": 2006,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "cultural hub",
+          "peak_frequency_per_million": 0.03337853,
+          "peak_year": 2021,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "business hub",
+          "peak_frequency_per_million": 0.03220517,
+          "peak_year": 2003,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "knowledge hub",
+          "peak_frequency_per_million": 0.0313085,
+          "peak_year": 2022,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "research hub",
+          "peak_frequency_per_million": 0.02708962,
+          "peak_year": 2022,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "creative hub",
+          "peak_frequency_per_million": 0.02020641,
+          "peak_year": 2019,
+          "data_quality_status": "requires_manual_review"
+        }
+      ]
+    },
+    {
+      "id": "digital_platform",
+      "label": "Digital Platform",
+      "phrase_count": 9,
+      "snippet_count": 0,
+      "visible_frequency_phrase_count": 1,
+      "support_level": "moderate",
+      "strongest_terms": [
+        {
+          "term": "data hub",
+          "peak_frequency_per_million": 0.05921896,
+          "peak_year": 2010,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "community hub",
+          "peak_frequency_per_million": 0.02908804,
+          "peak_year": 2022,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "digital hub",
+          "peak_frequency_per_million": 0.01943596,
+          "peak_year": 2002,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "datahub",
+          "peak_frequency_per_million": 0.01740419,
+          "peak_year": 1993,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "media hub",
+          "peak_frequency_per_million": 0.0171888,
+          "peak_year": 2011,
+          "data_quality_status": "ok"
+        },
+        {
+          "term": "learning hub",
+          "peak_frequency_per_million": 0.01563867,
+          "peak_year": 2018,
+          "data_quality_status": "requires_manual_review"
+        },
+        {
+          "term": "resource hub",
+          "peak_frequency_per_million": 0.00821571,
+          "peak_year": 2022,
+          "data_quality_status": "sparse"
+        },
+        {
+          "term": "content hub",
+          "peak_frequency_per_million": 0.00764498,
+          "peak_year": 2017,
+          "data_quality_status": "sparse"
+        }
+      ]
+    }
+  ],
+  "outputs": {
+    "frequency_series": "docs/research/hub/processed/hub_frequency_series.json",
+    "phrase_series": "docs/research/hub/processed/hub_phrase_series.json",
+    "semantic_categories": "docs/research/hub/processed/hub_semantic_categories.json",
+    "timeline_events": "docs/research/hub/processed/hub_timeline_events.json",
+    "snippet_samples": "docs/research/hub/processed/hub_snippet_samples.json",
+    "chart_data_preview": "docs/research/hub/processed/hub_chart_data_preview.json",
+    "generated_chart_data_preview": "src/data/generated/hub_chart_data_preview.json",
+    "report_md": "docs/research/hub/reports/hub_data_collection_report.md",
+    "report_json": "docs/research/hub/reports/hub_data_collection_report.json"
+  },
+  "rerun_commands": [
+    "python3 scripts/scrape_hub_data.py",
+    "python3 scripts/process_hub_data.py"
+  ],
+  "next_research_questions": [
+    "Which early central-place snippets are strong enough to separate Boston-style civic hub from generic 'center' language?",
+    "When does transport hub become stronger than railroad/railway hub in printed-book visibility?",
+    "Which hub-and-spoke evidence belongs to transport systems versus computing/network architecture?",
+    "Which modern phrases are meaningful for the future page: data hub, content hub, innovation hub, or digital hub?",
+    "Can COHA/COCA/NOW or another contemporary corpus validate recent platform and institutional uses better than books?"
+  ]
+}

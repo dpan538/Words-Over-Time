@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-11T23:30:05.779919Z",
+    "generated_by_script": "scripts/process_hub_data.py",
+    "note": "Timeline is a scaffold for planning, not a final historical essay."
+  },
+  "events": [
+    {
+      "id": "mechanical_wheel_center_1640s",
+      "year": null,
+      "approximate_year": 1640,
+      "label": "Wheel-center sense",
+      "description": "Lexical references place the foundational sense at the central solid part of a wheel.",
+      "semantic_category": "mechanical_core",
+      "evidence_source": {
+        "source": "Online Etymology Dictionary",
+        "url": "https://www.etymonline.com/word/hub",
+        "snippet_id": "hub_reference_0001"
+      },
+      "confidence": "medium",
+      "notes": "Secondary lexical dating; primary quotation check still needed."
+    },
+    {
+      "id": "rail_transport_hub_signal",
+      "year": 1832,
+      "approximate_year": 1832,
+      "label": "Rail transport hub",
+      "description": "Rail and railroad phrases begin to make hub visible as a routing and connection metaphor.",
+      "semantic_category": "transport_logistics",
+      "evidence_source": {
+        "source": "Google Books Ngram Viewer",
+        "term": "railroad hub",
+        "returned_ngram": null,
+        "frequency_signal": {
+          "status": "collected",
+          "first_nonzero_year": 1832,
+          "first_above_0_1_per_million": null,
+          "peak_year": 2008,
+          "peak_frequency_per_million": 0.01572582,
+          "nonzero_year_count": 121
+        }
+      },
+      "confidence": "medium",
+      "notes": "Year comes from Ngram first visible signal; verify with snippets before final copy."
+    },
+    {
+      "id": "business_financial_hub_signal",
+      "year": 1843,
+      "approximate_year": 1843,
+      "label": "Business hub",
+      "description": "Economic and institutional language uses hub for clustered access, exchange, and coordination.",
+      "semantic_category": "institutional_cluster",
+      "evidence_source": {
+        "source": "Google Books Ngram Viewer",
+        "term": "business hub",
+        "returned_ngram": null,
+        "frequency_signal": {
+          "status": "collected",
+          "first_nonzero_year": 1843,
+          "first_above_0_1_per_million": null,
+          "peak_year": 2003,
+          "peak_frequency_per_million": 0.03220517,
+          "nonzero_year_count": 122
+        }
+      },
+      "confidence": "medium",
+      "notes": "Year comes from Ngram first visible signal; verify with snippets before final copy. Early hits are especially noisy for this phrase."
+    },
+    {
+      "id": "innovation_hub_signal",
+      "year": 1843,
+      "approximate_year": 1843,
+      "label": "Innovation hub",
+      "description": "Knowledge-economy language extends hub to organized concentrations of research, entrepreneurship, and exchange.",
+      "semantic_category": "institutional_cluster",
+      "evidence_source": {
+        "source": "Google Books Ngram Viewer",
+        "term": "innovation hub",
+        "returned_ngram": null,
+        "frequency_signal": {
+          "status": "collected",
+          "first_nonzero_year": 1843,
+          "first_above_0_1_per_million": null,
+          "peak_year": 2021,
+          "peak_frequency_per_million": 0.09266494,
+          "nonzero_year_count": 37
+        }
+      },
+      "confidence": "medium",
+      "notes": "Year comes from Ngram first visible signal; verify with snippets before final copy. Early hits are especially noisy for this phrase."
+    },
+    {
+      "id": "boston_hub_metaphor_1858",
+      "year": 1858,
+      "approximate_year": 1858,
+      "label": "Hub as proud civic center",
+      "description": "The Boston 'Hub' usage shows the wheel-center image expanding into civic centrality and cultural focus.",
+      "semantic_category": "central_place",
+      "evidence_source": {
+        "source": "Online Etymology Dictionary",
+        "url": "https://www.etymonline.com/word/hub",
+        "snippet_id": "hub_reference_0002"
+      },
+      "confidence": "medium",
+      "notes": "Good scaffold event, but verify wording in Holmes before final use."
+    },
+    {
+      "id": "hubcap_compound_1896",
+      "year": 1896,
+      "approximate_year": 1896,
+      "label": "Hubcap compound",
+      "description": "The wheel sense remains productive in mechanical compounds such as hubcap.",
+      "semantic_category": "mechanical_core",
+      "evidence_source": {
+        "source": "Online Etymology Dictionary",
+        "url": "https://www.etymonline.com/word/hubcap",
+        "snippet_id": "hub_reference_0003"
+      },
+      "confidence": "medium",
+      "notes": "Compound date from secondary lexical source."
+    },
+    {
+      "id": "airport_hub_signal",
+      "year": 1900,
+      "approximate_year": 1900,
+      "label": "Airport hub",
+      "description": "Air travel extends hub to route concentration and passenger/traffic interchange.",
+      "semantic_category": "transport_logistics",
+      "evidence_source": {
+        "source": "Google Books Ngram Viewer",
+        "term": "airport hub",
+        "returned_ngram": null,
+        "frequency_signal": {
+          "status": "collected",
+          "first_nonzero_year": 1900,
+          "first_above_0_1_per_million": null,
+          "peak_year": 2016,
+          "peak_frequency_per_million": 0.00512579,
+          "nonzero_year_count": 70
+        }
+      },
+      "confidence": "medium",
+      "notes": "Year comes from Ngram first visible signal; verify with snippets before final copy."
+    },
+    {
+      "id": "airline_hub_signal",
+      "year": 1900,
+      "approximate_year": 1900,
+      "label": "Airline hub",
+      "description": "Airline route planning reinforces hub as an operational center in a wider route system.",
+      "semantic_category": "transport_logistics",
+      "evidence_source": {
+        "source": "Google Books Ngram Viewer",
+        "term": "airline hub",
+        "returned_ngram": null,
+        "frequency_signal": {
+          "status": "collected",
+          "first_nonzero_year": 1900,
+          "first_above_0_1_per_million": null,
+          "peak_year": 2016,
+          "peak_frequency_per_million": 0.00809336,
+          "nonzero_year_count": 76
+        }
+      },
+      "confidence": "medium",
+      "notes": "Year comes from Ngram first visible signal; verify with snippets before final copy."
+    },
+    {
+      "id": "network_hub_signal",
+      "year": 1900,
+      "approximate_year": 1900,
+      "label": "Network hub",
+      "description": "Communication and computing make hub a central node or connection device.",
+      "semantic_category": "network_system",
+      "evidence_source": {
+        "source": "Google Books Ngram Viewer",
+        "term": "network hub",
+        "returned_ngram": null,
+        "frequency_signal": {
+          "status": "collected",
+          "first_nonzero_year": 1900,
+          "first_above_0_1_per_million": null,
+          "peak_year": 1999,
+          "peak_frequency_per_million": 0.02438265,
+          "nonzero_year_count": 64
+        }
+      },
+      "confidence": "medium",
+      "notes": "Year comes from Ngram first visible signal; verify with snippets before final copy. Early hits are especially noisy for this phrase."
+    },
+    {
+      "id": "digital_hub_signal",
+      "year": 1950,
+      "approximate_year": 1950,
+      "label": "Digital hub",
+      "description": "Web and platform language uses hub for access points and digital aggregation.",
+      "semantic_category": "digital_platform",
+      "evidence_source": {
+        "source": "Google Books Ngram Viewer",
+        "term": "digital hub",
+        "returned_ngram": null,
+        "frequency_signal": {
+          "status": "collected",
+          "first_nonzero_year": 1950,
+          "first_above_0_1_per_million": null,
+          "peak_year": 2002,
+          "peak_frequency_per_million": 0.01943596,
+          "nonzero_year_count": 48
+        }
+      },
+      "confidence": "low",
+      "notes": "Year comes from Ngram first visible signal; verify with snippets before final copy."
+    },
+    {
+      "id": "content_data_hub_signal",
+      "year": 1974,
+      "approximate_year": 1974,
+      "label": "Content and data hub",
+      "description": "Modern platform language makes hub a container for content, data, resources, and services.",
+      "semantic_category": "digital_platform",
+      "evidence_source": {
+        "source": "Google Books Ngram Viewer",
+        "term": "content hub",
+        "returned_ngram": null,
+        "frequency_signal": {
+          "status": "collected",
+          "first_nonzero_year": 1974,
+          "first_above_0_1_per_million": null,
+          "peak_year": 2017,
+          "peak_frequency_per_million": 0.00764498,
+          "nonzero_year_count": 28
+        }
+      },
+      "confidence": "low",
+      "notes": "Year comes from Ngram first visible signal; verify with snippets before final copy."
+    },
+    {
+      "id": "hub_and_spoke_signal",
+      "year": 2001,
+      "approximate_year": 2001,
+      "label": "Hub-and-spoke system",
+      "description": "The hyphenated form marks a system architecture built around a central node and radiating connections.",
+      "semantic_category": "network_system",
+      "evidence_source": {
+        "source": "Google Books Ngram Viewer",
+        "term": "hub-and-spoke",
+        "returned_ngram": null,
+        "frequency_signal": {
+          "status": "collected",
+          "first_nonzero_year": 1832,
+          "first_above_0_1_per_million": 2001,
+          "peak_year": 2016,
+          "peak_frequency_per_million": 0.15271277,
+          "nonzero_year_count": 97
+        }
+      },
+      "confidence": "medium",
+      "notes": "Year comes from Ngram first visible signal; verify with snippets before final copy. Early hits are especially noisy for this phrase."
+    }
+  ]
+}

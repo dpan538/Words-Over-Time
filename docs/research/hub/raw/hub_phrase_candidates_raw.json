@@ -1,0 +1,1488 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-11T23:27:41.359977Z",
+    "note": "Phrase candidates are raw research candidates, not final chart copy."
+  },
+  "phrase_candidates": [
+    {
+      "phrase": "wheel hub",
+      "phrase_slug": "wheel_hub",
+      "category": "mechanical_core",
+      "category_label": "Mechanical Core",
+      "query_group": "mechanical",
+      "earliest_found_year": 1832,
+      "sample_years": [
+        1832,
+        1872
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1832,
+        "first_above_0_1_per_million": 1872,
+        "peak_year": 1872,
+        "peak_frequency_per_million": 0.24601964,
+        "nonzero_year_count": 181
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "m flVnf fßtonih Ato Apfitmt in tht Sanity ffwMTimwJ Hv Chlr Ym 18m Lilli stETMLUL MI PM I iitw 4HorrsiviuEsoivourjJ nditsthubsnv I TBBTTTI jiilP WHiT W r Susvits J itUBOEOMraesiDE fl lL out in me iJ Li i IP comeon _ j Q v MOUAE ManMf JIS Hitt B ACrwr 23 J HHN",
+      "evidence_snippet_id": "hub_loc_chronicling_0001",
+      "reliability_level": "high",
+      "notes": ""
+    },
+    {
+      "phrase": "wheel hubs",
+      "phrase_slug": "wheel_hubs",
+      "category": "mechanical_core",
+      "category_label": "Mechanical Core",
+      "query_group": "mechanical",
+      "earliest_found_year": 1818,
+      "sample_years": [
+        1818,
+        1840
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1818,
+        "first_above_0_1_per_million": 1840,
+        "peak_year": 1840,
+        "peak_frequency_per_million": 0.14987665,
+        "nonzero_year_count": 192
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "medium",
+      "notes": ""
+    },
+    {
+      "phrase": "hub of the wheel",
+      "phrase_slug": "hub_of_the_wheel",
+      "category": "mechanical_core",
+      "category_label": "Mechanical Core",
+      "query_group": "mechanical",
+      "earliest_found_year": 1810,
+      "sample_years": [
+        1810,
+        1872
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1810,
+        "first_above_0_1_per_million": 1872,
+        "peak_year": 1872,
+        "peak_frequency_per_million": 0.19623241,
+        "nonzero_year_count": 196
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "medium",
+      "notes": ""
+    },
+    {
+      "phrase": "hub cap",
+      "phrase_slug": "hub_cap",
+      "category": "mechanical_core",
+      "category_label": "Mechanical Core",
+      "query_group": "mechanical",
+      "earliest_found_year": 1832,
+      "sample_years": [
+        1832,
+        1917,
+        1934
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1832,
+        "first_above_0_1_per_million": 1917,
+        "peak_year": 1934,
+        "peak_frequency_per_million": 0.15969186,
+        "nonzero_year_count": 151
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "medium",
+      "notes": ""
+    },
+    {
+      "phrase": "hubcap",
+      "phrase_slug": "hubcap",
+      "category": "mechanical_core",
+      "category_label": "Mechanical Core",
+      "query_group": "mechanical",
+      "earliest_found_year": 1883,
+      "sample_years": [
+        1883,
+        2014
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1883,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2014,
+        "peak_frequency_per_million": 0.05755242,
+        "nonzero_year_count": 119
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "Reference note dates hubcap as a compound from hub plus cap.",
+      "evidence_snippet_id": "hub_reference_0003",
+      "reliability_level": "high",
+      "notes": ""
+    },
+    {
+      "phrase": "front hub",
+      "phrase_slug": "front_hub",
+      "category": "mechanical_core",
+      "category_label": "Mechanical Core",
+      "query_group": "mechanical",
+      "earliest_found_year": 1834,
+      "sample_years": [
+        1834,
+        2000
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1834,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2000,
+        "peak_frequency_per_million": 0.06141496,
+        "nonzero_year_count": 148
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "rear hub",
+      "phrase_slug": "rear_hub",
+      "category": "mechanical_core",
+      "category_label": "Mechanical Core",
+      "query_group": "mechanical",
+      "earliest_found_year": 1832,
+      "sample_years": [
+        1832,
+        1906
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1832,
+        "first_above_0_1_per_million": null,
+        "peak_year": 1906,
+        "peak_frequency_per_million": 0.07820091,
+        "nonzero_year_count": 144
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "dual Weight 1500 pounds system Radiator Round tube type Drive Single chain enclosed Brake Internal expansion brake in each rear hub drums 12 inches in diameter Bearings Standard ball bearings on TBfflE Mf IK Equipment Two gas lamps tail lamp generator and two",
+      "evidence_snippet_id": "hub_loc_chronicling_0002",
+      "reliability_level": "high",
+      "notes": ""
+    },
+    {
+      "phrase": "axle hub",
+      "phrase_slug": "axle_hub",
+      "category": "mechanical_core",
+      "category_label": "Mechanical Core",
+      "query_group": "mechanical",
+      "earliest_found_year": 1823,
+      "sample_years": [
+        1823,
+        1949
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1823,
+        "first_above_0_1_per_million": null,
+        "peak_year": 1949,
+        "peak_frequency_per_million": 0.04607077,
+        "nonzero_year_count": 144
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "hub of activity",
+      "phrase_slug": "hub_of_activity",
+      "category": "central_place",
+      "category_label": "Central Place",
+      "query_group": "metaphor",
+      "earliest_found_year": 1878,
+      "sample_years": [
+        1878,
+        2011
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1878,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2011,
+        "peak_frequency_per_million": 0.03413241,
+        "nonzero_year_count": 117
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "desk where she can make out meal plans do the household ac counting and keep rcorrs of social obligations in orderly form Hub of Activity Probably the handiest piac for the planning desk is right in The kitchen since this is the hub of activity during work hours",
+      "evidence_snippet_id": "hub_loc_chronicling_0003",
+      "reliability_level": "high",
+      "notes": ""
+    },
+    {
+      "phrase": "hub of life",
+      "phrase_slug": "hub_of_life",
+      "category": "central_place",
+      "category_label": "Central Place",
+      "query_group": "metaphor",
+      "earliest_found_year": 1893,
+      "sample_years": [
+        1893,
+        1909
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1893,
+        "first_above_0_1_per_million": null,
+        "peak_year": 1909,
+        "peak_frequency_per_million": 0.00778675,
+        "nonzero_year_count": 116
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "hub of commerce",
+      "phrase_slug": "hub_of_commerce",
+      "category": "central_place",
+      "category_label": "Central Place",
+      "query_group": "metaphor",
+      "earliest_found_year": 1832,
+      "sample_years": [
+        1832,
+        1942
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1832,
+        "first_above_0_1_per_million": null,
+        "peak_year": 1942,
+        "peak_frequency_per_million": 0.00705695,
+        "nonzero_year_count": 123
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "appli cable to banking for banking today is unique in the fact that it has nothing to sell but service yet it is the hub of commerce and through it the very life blood of the commun ity flows It is the barometer of business activity and its records forecast",
+      "evidence_snippet_id": "hub_loc_chronicling_0004",
+      "reliability_level": "high",
+      "notes": ""
+    },
+    {
+      "phrase": "hub of trade",
+      "phrase_slug": "hub_of_trade",
+      "category": "central_place",
+      "category_label": "Central Place",
+      "query_group": "metaphor",
+      "earliest_found_year": 1883,
+      "sample_years": [
+        1883,
+        2019
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1883,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.00609327,
+        "nonzero_year_count": 113
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "hub of industry",
+      "phrase_slug": "hub_of_industry",
+      "category": "central_place",
+      "category_label": "Central Place",
+      "query_group": "metaphor",
+      "earliest_found_year": 1906,
+      "sample_years": [
+        1906,
+        1956
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1906,
+        "first_above_0_1_per_million": null,
+        "peak_year": 1956,
+        "peak_frequency_per_million": 0.00335411,
+        "nonzero_year_count": 115
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "hub of the city",
+      "phrase_slug": "hub_of_the_city",
+      "category": "central_place",
+      "category_label": "Central Place",
+      "query_group": "metaphor",
+      "earliest_found_year": 1884,
+      "sample_years": [
+        1884,
+        1954
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1884,
+        "first_above_0_1_per_million": null,
+        "peak_year": 1954,
+        "peak_frequency_per_million": 0.02214391,
+        "nonzero_year_count": 132
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "owners complain from time to time regarding the restrictions that are placed pon ‘them but it is evident that 9 THE HUB OF THE CITY The council of 1916 certainly cannot say that its efforts have not been ap- One of the aldermen received the",
+      "evidence_snippet_id": "hub_internet_archive_0001",
+      "reliability_level": "high",
+      "notes": ""
+    },
+    {
+      "phrase": "hub of the community",
+      "phrase_slug": "hub_of_the_community",
+      "category": "central_place",
+      "category_label": "Central Place",
+      "query_group": "metaphor",
+      "earliest_found_year": 1899,
+      "sample_years": [
+        1899,
+        2010
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1899,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2010,
+        "peak_frequency_per_million": 0.00485074,
+        "nonzero_year_count": 110
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "railway hub",
+      "phrase_slug": "railway_hub",
+      "category": "transport_logistics",
+      "category_label": "Transport & Logistics",
+      "query_group": "transport",
+      "earliest_found_year": 1868,
+      "sample_years": [
+        1868,
+        2022
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1868,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.01016971,
+        "nonzero_year_count": 118
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "United Press Stitt Correspondent MOSCOW Dec 3The Rus sians have smashed into the northeastern suburbs of Znam enka strategic railway hub con trolling one of the main German escape routes from the Dnieper Bend front reports said today Stepping up his attack south",
+      "evidence_snippet_id": "hub_loc_chronicling_0005",
+      "reliability_level": "high",
+      "notes": ""
+    },
+    {
+      "phrase": "railroad hub",
+      "phrase_slug": "railroad_hub",
+      "category": "transport_logistics",
+      "category_label": "Transport & Logistics",
+      "query_group": "transport",
+      "earliest_found_year": 1832,
+      "sample_years": [
+        1832,
+        2008
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1832,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2008,
+        "peak_frequency_per_million": 0.01572582,
+        "nonzero_year_count": 121
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "transport hub",
+      "phrase_slug": "transport_hub",
+      "category": "transport_logistics",
+      "category_label": "Transport & Logistics",
+      "query_group": "transport",
+      "earliest_found_year": 1843,
+      "sample_years": [
+        1843,
+        2010
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1843,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2010,
+        "peak_frequency_per_million": 0.06270535,
+        "nonzero_year_count": 92
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "Modern dictionary sense includes a transport interchange and activity center.",
+      "evidence_snippet_id": "hub_reference_0009",
+      "reliability_level": "high",
+      "notes": ""
+    },
+    {
+      "phrase": "transportation hub",
+      "phrase_slug": "transportation_hub",
+      "category": "transport_logistics",
+      "category_label": "Transport & Logistics",
+      "query_group": "transport",
+      "earliest_found_year": 1832,
+      "sample_years": [
+        1832,
+        2008
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1832,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2008,
+        "peak_frequency_per_million": 0.07190989,
+        "nonzero_year_count": 112
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "a day or causing any inconvenience to the 110000000 Poncngers a year utilizing the rapid transit facilities here in New Yorks transportation hub private industry will erect the biggest building in the world Appropri ately named the Palace of Prog ress the enormous",
+      "evidence_snippet_id": "hub_loc_chronicling_0006",
+      "reliability_level": "high",
+      "notes": ""
+    },
+    {
+      "phrase": "transit hub",
+      "phrase_slug": "transit_hub",
+      "category": "transport_logistics",
+      "category_label": "Transport & Logistics",
+      "query_group": "transport",
+      "earliest_found_year": 1889,
+      "sample_years": [
+        1889,
+        2009
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1889,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2009,
+        "peak_frequency_per_million": 0.0345423,
+        "nonzero_year_count": 107
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "shipping hub",
+      "phrase_slug": "shipping_hub",
+      "category": "transport_logistics",
+      "category_label": "Transport & Logistics",
+      "query_group": "transport",
+      "earliest_found_year": 1890,
+      "sample_years": [
+        1890,
+        2009
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1890,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2009,
+        "peak_frequency_per_million": 0.00778206,
+        "nonzero_year_count": 89
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "logistics hub",
+      "phrase_slug": "logistics_hub",
+      "category": "transport_logistics",
+      "category_label": "Transport & Logistics",
+      "query_group": "transport",
+      "earliest_found_year": 1843,
+      "sample_years": [
+        1843,
+        2019
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1843,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.02470736,
+        "nonzero_year_count": 62
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "airport hub",
+      "phrase_slug": "airport_hub",
+      "category": "transport_logistics",
+      "category_label": "Transport & Logistics",
+      "query_group": "transport",
+      "earliest_found_year": 1900,
+      "sample_years": [
+        1900,
+        2016
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1900,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.00512579,
+        "nonzero_year_count": 70
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "airline hub",
+      "phrase_slug": "airline_hub",
+      "category": "transport_logistics",
+      "category_label": "Transport & Logistics",
+      "query_group": "transport",
+      "earliest_found_year": 1900,
+      "sample_years": [
+        1900,
+        2016
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1900,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.00809336,
+        "nonzero_year_count": 76
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "Modern dictionary sense covers a city through which airline traffic is routed.",
+      "evidence_snippet_id": "hub_reference_0006",
+      "reliability_level": "high",
+      "notes": ""
+    },
+    {
+      "phrase": "regional hub",
+      "phrase_slug": "regional_hub",
+      "category": "transport_logistics",
+      "category_label": "Transport & Logistics",
+      "query_group": "transport",
+      "earliest_found_year": 1843,
+      "sample_years": [
+        1843,
+        2003
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1843,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2003,
+        "peak_frequency_per_million": 0.04504371,
+        "nonzero_year_count": 83
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "global hub",
+      "phrase_slug": "global_hub",
+      "category": "transport_logistics",
+      "category_label": "Transport & Logistics",
+      "query_group": "transport",
+      "earliest_found_year": 1843,
+      "sample_years": [
+        1843,
+        2016
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1843,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.02823682,
+        "nonzero_year_count": 59
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "communication hub",
+      "phrase_slug": "communication_hub",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "network",
+      "earliest_found_year": 1900,
+      "sample_years": [
+        1900,
+        2020
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1900,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2020,
+        "peak_frequency_per_million": 0.01123648,
+        "nonzero_year_count": 83
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "communications hub",
+      "phrase_slug": "communications_hub",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "network",
+      "earliest_found_year": 1888,
+      "sample_years": [
+        1888,
+        2016
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1888,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.014613,
+        "nonzero_year_count": 92
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "network hub",
+      "phrase_slug": "network_hub",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "network",
+      "earliest_found_year": 1900,
+      "sample_years": [
+        1900,
+        1999
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1900,
+        "first_above_0_1_per_million": null,
+        "peak_year": 1999,
+        "peak_frequency_per_million": 0.02438265,
+        "nonzero_year_count": 64
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "Modern dictionary sense covers a computer-network connection device.",
+      "evidence_snippet_id": "hub_reference_0007",
+      "reliability_level": "high",
+      "notes": ""
+    },
+    {
+      "phrase": "hub node",
+      "phrase_slug": "hub_node",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "network",
+      "earliest_found_year": 1954,
+      "sample_years": [
+        1954,
+        2009
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1954,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2009,
+        "peak_frequency_per_million": 0.01144716,
+        "nonzero_year_count": 47
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "central hub",
+      "phrase_slug": "central_hub",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "network",
+      "earliest_found_year": 1832,
+      "sample_years": [
+        1832,
+        2018,
+        2022
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1832,
+        "first_above_0_1_per_million": 2018,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.11670743,
+        "nonzero_year_count": 175
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "medium",
+      "notes": ""
+    },
+    {
+      "phrase": "server hub",
+      "phrase_slug": "server_hub",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "network",
+      "earliest_found_year": 1900,
+      "sample_years": [
+        1900,
+        2019
+      ],
+      "approximate_frequency_signal": {
+        "status": "too_sparse",
+        "first_nonzero_year": 1900,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.00095765,
+        "nonzero_year_count": 35
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Sparse or unavailable Ngram signal; retain as candidate for manual review."
+    },
+    {
+      "phrase": "internet hub",
+      "phrase_slug": "internet_hub",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "network",
+      "earliest_found_year": 1900,
+      "sample_years": [
+        1900,
+        2000
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1900,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2000,
+        "peak_frequency_per_million": 0.00689854,
+        "nonzero_year_count": 41
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "telecom hub",
+      "phrase_slug": "telecom_hub",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "network",
+      "earliest_found_year": 1979,
+      "sample_years": [
+        1979,
+        1995
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1979,
+        "first_above_0_1_per_million": null,
+        "peak_year": 1995,
+        "peak_frequency_per_million": 0.00126206,
+        "nonzero_year_count": 34
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "ethernet hub",
+      "phrase_slug": "ethernet_hub",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "network",
+      "earliest_found_year": 1950,
+      "sample_years": [
+        1950,
+        1997
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1950,
+        "first_above_0_1_per_million": null,
+        "peak_year": 1997,
+        "peak_frequency_per_million": 0.06002097,
+        "nonzero_year_count": 42
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "hub and spoke",
+      "phrase_slug": "hub_and_spoke",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "system_architecture",
+      "earliest_found_year": 1856,
+      "sample_years": [
+        1856,
+        2016
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1856,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.0596957,
+        "nonzero_year_count": 167
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "hub-and-spoke",
+      "phrase_slug": "hub_and_spoke",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "system_architecture",
+      "earliest_found_year": 1832,
+      "sample_years": [
+        1832,
+        2001,
+        2016
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1832,
+        "first_above_0_1_per_million": 2001,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.15271277,
+        "nonzero_year_count": 97
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "Derived-term inventory includes hub-and-spoke, hubbed, hubbing, hubcap, and datahub.",
+      "evidence_snippet_id": "hub_reference_0005",
+      "reliability_level": "high",
+      "notes": ""
+    },
+    {
+      "phrase": "hub model",
+      "phrase_slug": "hub_model",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "system_architecture",
+      "earliest_found_year": 1885,
+      "sample_years": [
+        1885,
+        2016
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1885,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.01119581,
+        "nonzero_year_count": 97
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "hub system",
+      "phrase_slug": "hub_system",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "system_architecture",
+      "earliest_found_year": 1895,
+      "sample_years": [
+        1895,
+        1980
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1895,
+        "first_above_0_1_per_million": null,
+        "peak_year": 1980,
+        "peak_frequency_per_million": 0.01312393,
+        "nonzero_year_count": 103
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "hub network",
+      "phrase_slug": "hub_network",
+      "category": "network_system",
+      "category_label": "Network System",
+      "query_group": "system_architecture",
+      "earliest_found_year": 1936,
+      "sample_years": [
+        1936,
+        2016
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1936,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.00935232,
+        "nonzero_year_count": 62
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "business hub",
+      "phrase_slug": "business_hub",
+      "category": "institutional_cluster",
+      "category_label": "Institutional Cluster",
+      "query_group": "institutional",
+      "earliest_found_year": 1843,
+      "sample_years": [
+        1843,
+        2003
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1843,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2003,
+        "peak_frequency_per_million": 0.03220517,
+        "nonzero_year_count": 122
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "financial hub",
+      "phrase_slug": "financial_hub",
+      "category": "institutional_cluster",
+      "category_label": "Institutional Cluster",
+      "query_group": "institutional",
+      "earliest_found_year": 1836,
+      "sample_years": [
+        1836,
+        2006
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1836,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2006,
+        "peak_frequency_per_million": 0.04079248,
+        "nonzero_year_count": 135
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": "MONEY TO LOAN s o 0 tj If your Bank wants its money call on us we can loan you money on improved farms g 3 2 PI Caldwell is the Financial Hub kj Pi Co 2 kj 05 a CUPP CUPP O 5 Co o g Financial Agents BOTH PHONES CALDWELL IDAHO 05 5 Caldwell Banks Stood Firm in 1893 and",
+      "evidence_snippet_id": "hub_loc_chronicling_0007",
+      "reliability_level": "high",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "education hub",
+      "phrase_slug": "education_hub",
+      "category": "institutional_cluster",
+      "category_label": "Institutional Cluster",
+      "query_group": "institutional",
+      "earliest_found_year": 1901,
+      "sample_years": [
+        1901,
+        2021,
+        2022
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1901,
+        "first_above_0_1_per_million": 2021,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.2307503,
+        "nonzero_year_count": 45
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "medium",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "research hub",
+      "phrase_slug": "research_hub",
+      "category": "institutional_cluster",
+      "category_label": "Institutional Cluster",
+      "query_group": "institutional",
+      "earliest_found_year": 1900,
+      "sample_years": [
+        1900,
+        2022
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1900,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.02708962,
+        "nonzero_year_count": 64
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "knowledge hub",
+      "phrase_slug": "knowledge_hub",
+      "category": "institutional_cluster",
+      "category_label": "Institutional Cluster",
+      "query_group": "institutional",
+      "earliest_found_year": 1901,
+      "sample_years": [
+        1901,
+        2022
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1901,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.0313085,
+        "nonzero_year_count": 43
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "innovation hub",
+      "phrase_slug": "innovation_hub",
+      "category": "institutional_cluster",
+      "category_label": "Institutional Cluster",
+      "query_group": "institutional",
+      "earliest_found_year": 1843,
+      "sample_years": [
+        1843,
+        2021
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1843,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2021,
+        "peak_frequency_per_million": 0.09266494,
+        "nonzero_year_count": 37
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "creative hub",
+      "phrase_slug": "creative_hub",
+      "category": "institutional_cluster",
+      "category_label": "Institutional Cluster",
+      "query_group": "institutional",
+      "earliest_found_year": 1941,
+      "sample_years": [
+        1941,
+        2019
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1941,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.02020641,
+        "nonzero_year_count": 57
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "cultural hub",
+      "phrase_slug": "cultural_hub",
+      "category": "institutional_cluster",
+      "category_label": "Institutional Cluster",
+      "query_group": "institutional",
+      "earliest_found_year": 1891,
+      "sample_years": [
+        1891,
+        2021
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1891,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2021,
+        "peak_frequency_per_million": 0.03337853,
+        "nonzero_year_count": 107
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "startup hub",
+      "phrase_slug": "startup_hub",
+      "category": "institutional_cluster",
+      "category_label": "Institutional Cluster",
+      "query_group": "institutional",
+      "earliest_found_year": 1994,
+      "sample_years": [
+        1994,
+        2022
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1994,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.00399683,
+        "nonzero_year_count": 13
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "technology hub",
+      "phrase_slug": "technology_hub",
+      "category": "institutional_cluster",
+      "category_label": "Institutional Cluster",
+      "query_group": "institutional",
+      "earliest_found_year": 1843,
+      "sample_years": [
+        1843,
+        2022
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1843,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.01239017,
+        "nonzero_year_count": 55
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "digital hub",
+      "phrase_slug": "digital_hub",
+      "category": "digital_platform",
+      "category_label": "Digital Platform",
+      "query_group": "digital",
+      "earliest_found_year": 1950,
+      "sample_years": [
+        1950,
+        2002
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1950,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2002,
+        "peak_frequency_per_million": 0.01943596,
+        "nonzero_year_count": 48
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "content hub",
+      "phrase_slug": "content_hub",
+      "category": "digital_platform",
+      "category_label": "Digital Platform",
+      "query_group": "digital",
+      "earliest_found_year": 1974,
+      "sample_years": [
+        1974,
+        2017
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1974,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2017,
+        "peak_frequency_per_million": 0.00764498,
+        "nonzero_year_count": 28
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "data hub",
+      "phrase_slug": "data_hub",
+      "category": "digital_platform",
+      "category_label": "Digital Platform",
+      "query_group": "digital",
+      "earliest_found_year": 1901,
+      "sample_years": [
+        1901,
+        2010
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1901,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2010,
+        "peak_frequency_per_million": 0.05921896,
+        "nonzero_year_count": 57
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "datahub",
+      "phrase_slug": "datahub",
+      "category": "digital_platform",
+      "category_label": "Digital Platform",
+      "query_group": "digital",
+      "earliest_found_year": 1901,
+      "sample_years": [
+        1901,
+        1993
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1901,
+        "first_above_0_1_per_million": null,
+        "peak_year": 1993,
+        "peak_frequency_per_million": 0.01740419,
+        "nonzero_year_count": 39
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "media hub",
+      "phrase_slug": "media_hub",
+      "category": "digital_platform",
+      "category_label": "Digital Platform",
+      "query_group": "digital",
+      "earliest_found_year": 1953,
+      "sample_years": [
+        1953,
+        2011
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1953,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2011,
+        "peak_frequency_per_million": 0.0171888,
+        "nonzero_year_count": 52
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "resource hub",
+      "phrase_slug": "resource_hub",
+      "category": "digital_platform",
+      "category_label": "Digital Platform",
+      "query_group": "digital",
+      "earliest_found_year": 1964,
+      "sample_years": [
+        1964,
+        2022
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1964,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.00821571,
+        "nonzero_year_count": 43
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": ""
+    },
+    {
+      "phrase": "learning hub",
+      "phrase_slug": "learning_hub",
+      "category": "digital_platform",
+      "category_label": "Digital Platform",
+      "query_group": "digital",
+      "earliest_found_year": 1900,
+      "sample_years": [
+        1900,
+        2018
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1900,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2018,
+        "peak_frequency_per_million": 0.01563867,
+        "nonzero_year_count": 44
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "community hub",
+      "phrase_slug": "community_hub",
+      "category": "digital_platform",
+      "category_label": "Digital Platform",
+      "query_group": "digital",
+      "earliest_found_year": 1802,
+      "sample_years": [
+        1802,
+        2022
+      ],
+      "approximate_frequency_signal": {
+        "status": "collected",
+        "first_nonzero_year": 1802,
+        "first_above_0_1_per_million": null,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.02908804,
+        "nonzero_year_count": 72
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    },
+    {
+      "phrase": "platform hub",
+      "phrase_slug": "platform_hub",
+      "category": "digital_platform",
+      "category_label": "Digital Platform",
+      "query_group": "digital",
+      "earliest_found_year": 1934,
+      "sample_years": [
+        1934,
+        1945
+      ],
+      "approximate_frequency_signal": {
+        "status": "too_sparse",
+        "first_nonzero_year": 1934,
+        "first_above_0_1_per_million": null,
+        "peak_year": 1945,
+        "peak_frequency_per_million": 0.00038027,
+        "nonzero_year_count": 23
+      },
+      "source": "Google Books Ngram Viewer; supplemental snippets where available",
+      "evidence_snippet": null,
+      "evidence_snippet_id": null,
+      "reliability_level": "low",
+      "notes": "Sparse or unavailable Ngram signal; retain as candidate for manual review. Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category."
+    }
+  ]
+}

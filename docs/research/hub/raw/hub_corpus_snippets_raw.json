@@ -1,0 +1,3568 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-11T23:27:41.357682Z",
+    "generated_by_script": "scripts/scrape_hub_data.py",
+    "note": "Reference snippets are paraphrased. Google Books, Internet Archive, and Chronicling America snippets are short OCR/text windows for manual review."
+  },
+  "reference_snippets": [
+    {
+      "snippet_id": "hub_reference_0001",
+      "decade": "1640s",
+      "source_author": null,
+      "term_or_phrase": "hub",
+      "year": 1640,
+      "source_title": "Online Etymology Dictionary: hub",
+      "source_url": "https://www.etymonline.com/word/hub",
+      "source_type": "reference",
+      "text_snippet": "Reference note dates the wheel-center sense to the 1640s.",
+      "semantic_category": "mechanical_core",
+      "confidence": "medium",
+      "notes": "Paraphrased lexical note; verify against primary quotations before final copy."
+    },
+    {
+      "snippet_id": "hub_reference_0002",
+      "decade": "1850s",
+      "source_author": null,
+      "term_or_phrase": "the Hub",
+      "year": 1858,
+      "source_title": "Online Etymology Dictionary: hub",
+      "source_url": "https://www.etymonline.com/word/hub",
+      "source_type": "reference",
+      "text_snippet": "Holmes called Boston \"the hub of the solar system.\"",
+      "semantic_category": "central_place",
+      "confidence": "medium",
+      "notes": "Short quotation surfaced through a secondary etymology source; verify before final copy."
+    },
+    {
+      "snippet_id": "hub_reference_0003",
+      "decade": "1890s",
+      "source_author": null,
+      "term_or_phrase": "hubcap",
+      "year": 1896,
+      "source_title": "Online Etymology Dictionary: hubcap",
+      "source_url": "https://www.etymonline.com/word/hubcap",
+      "source_type": "reference",
+      "text_snippet": "Reference note dates hubcap as a compound from hub plus cap.",
+      "semantic_category": "mechanical_core",
+      "confidence": "medium",
+      "notes": "Paraphrased compound note."
+    },
+    {
+      "snippet_id": "hub_reference_0004",
+      "decade": null,
+      "source_author": null,
+      "term_or_phrase": "hub",
+      "year": null,
+      "source_title": "Wiktionary: hub",
+      "source_url": "https://en.wiktionary.org/wiki/hub",
+      "source_type": "dictionary",
+      "text_snippet": "Sense inventory includes wheel center, distribution point, activity center, and network device.",
+      "semantic_category": "central_place",
+      "confidence": "medium",
+      "notes": "Paraphrased modern sense inventory."
+    },
+    {
+      "snippet_id": "hub_reference_0005",
+      "decade": null,
+      "source_author": null,
+      "term_or_phrase": "hub-and-spoke",
+      "year": null,
+      "source_title": "Wiktionary: hub",
+      "source_url": "https://en.wiktionary.org/wiki/hub",
+      "source_type": "dictionary",
+      "text_snippet": "Derived-term inventory includes hub-and-spoke, hubbed, hubbing, hubcap, and datahub.",
+      "semantic_category": "network_system",
+      "confidence": "medium",
+      "notes": "Paraphrased derived-term inventory."
+    },
+    {
+      "snippet_id": "hub_reference_0006",
+      "decade": null,
+      "source_author": null,
+      "term_or_phrase": "airline hub",
+      "year": null,
+      "source_title": "Merriam-Webster: hub",
+      "source_url": "https://www.merriam-webster.com/dictionary/hub",
+      "source_type": "dictionary",
+      "text_snippet": "Modern dictionary sense covers a city through which airline traffic is routed.",
+      "semantic_category": "transport_logistics",
+      "confidence": "high",
+      "notes": "Paraphrased modern dictionary sense."
+    },
+    {
+      "snippet_id": "hub_reference_0007",
+      "decade": null,
+      "source_author": null,
+      "term_or_phrase": "network hub",
+      "year": null,
+      "source_title": "Merriam-Webster: hub",
+      "source_url": "https://www.merriam-webster.com/dictionary/hub",
+      "source_type": "dictionary",
+      "text_snippet": "Modern dictionary sense covers a computer-network connection device.",
+      "semantic_category": "network_system",
+      "confidence": "high",
+      "notes": "Paraphrased modern dictionary sense."
+    },
+    {
+      "snippet_id": "hub_reference_0008",
+      "decade": null,
+      "source_author": null,
+      "term_or_phrase": "hub",
+      "year": null,
+      "source_title": "Cambridge Dictionary: hub",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/hub",
+      "source_type": "dictionary",
+      "text_snippet": "Modern learner entry emphasizes the central or main part where activity is concentrated.",
+      "semantic_category": "central_place",
+      "confidence": "high",
+      "notes": "Paraphrased modern dictionary sense."
+    },
+    {
+      "snippet_id": "hub_reference_0009",
+      "decade": null,
+      "source_author": null,
+      "term_or_phrase": "transport hub",
+      "year": null,
+      "source_title": "Collins Dictionary: hub",
+      "source_url": "https://www.collinsdictionary.com/dictionary/english/hub",
+      "source_type": "dictionary",
+      "text_snippet": "Modern dictionary sense includes a transport interchange and activity center.",
+      "semantic_category": "transport_logistics",
+      "confidence": "high",
+      "notes": "Paraphrased modern dictionary sense."
+    }
+  ],
+  "chronicling_america": {
+    "collection_queries": [
+      {
+        "term": "wheel hub",
+        "category": "mechanical_core",
+        "date1": 1850,
+        "date2": 1925,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1925&sort=date&phrasetext=wheel+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1925&sort=date&andtext=wheel+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of the wheel",
+        "category": "mechanical_core",
+        "date1": 1850,
+        "date2": 1925,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1925&sort=date&phrasetext=hub+of+the+wheel",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1925&sort=date&andtext=hub+of+the+wheel"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub cap",
+        "category": "mechanical_core",
+        "date1": 1890,
+        "date2": 1930,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1890&date2=1930&sort=date&phrasetext=hub+cap",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1890&date2=1930&sort=date&andtext=hub+cap"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of activity",
+        "category": "central_place",
+        "date1": 1850,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+of+activity",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+of+activity"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of commerce",
+        "category": "central_place",
+        "date1": 1850,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+of+commerce",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+of+commerce"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of trade",
+        "category": "central_place",
+        "date1": 1850,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+of+trade",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+of+trade"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of industry",
+        "category": "central_place",
+        "date1": 1850,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+of+industry",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+of+industry"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of the city",
+        "category": "central_place",
+        "date1": 1850,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+of+the+city",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+of+the+city"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of the community",
+        "category": "central_place",
+        "date1": 1850,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+of+the+community",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+of+the+community"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "railroad hub",
+        "category": "transport_logistics",
+        "date1": 1850,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=railroad+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=railroad+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "railway hub",
+        "category": "transport_logistics",
+        "date1": 1850,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=railway+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=railway+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "transportation hub",
+        "category": "transport_logistics",
+        "date1": 1900,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=transportation+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=transportation+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "shipping hub",
+        "category": "transport_logistics",
+        "date1": 1850,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=shipping+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=shipping+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "airport hub",
+        "category": "transport_logistics",
+        "date1": 1920,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1920&date2=1963&sort=date&phrasetext=airport+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1920&date2=1963&sort=date&andtext=airport+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "airline hub",
+        "category": "transport_logistics",
+        "date1": 1930,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1930&date2=1963&sort=date&phrasetext=airline+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1930&date2=1963&sort=date&andtext=airline+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "regional hub",
+        "category": "transport_logistics",
+        "date1": 1900,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=regional+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=regional+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "business hub",
+        "category": "institutional_cluster",
+        "date1": 1900,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=business+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=business+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "financial hub",
+        "category": "institutional_cluster",
+        "date1": 1900,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=financial+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=financial+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "education hub",
+        "category": "institutional_cluster",
+        "date1": 1900,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=education+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=education+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "cultural hub",
+        "category": "institutional_cluster",
+        "date1": 1900,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=cultural+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=cultural+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "communication hub",
+        "category": "network_system",
+        "date1": 1900,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=communication+hub",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=communication+hub"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub and spoke",
+        "category": "network_system",
+        "date1": 1850,
+        "date2": 1963,
+        "max_items": 2,
+        "search_urls": [
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+and+spoke",
+          "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+and+spoke"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      }
+    ],
+    "access_log": [
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1925&sort=date&phrasetext=wheel+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_wheel_hub_629f81cbffc72650.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1925&sort=date&andtext=wheel+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_wheel_hub_2d3cc38969392aa1.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1925&sort=date&phrasetext=hub+of+the+wheel",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_hub_of_the_wheel_39a32ae3284f934e.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1925&sort=date&andtext=hub+of+the+wheel",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_hub_of_the_wheel_1a94cd1205c7980d.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1890&date2=1930&sort=date&phrasetext=hub+cap",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_hub_cap_f723bd40fed66a6a.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1890&date2=1930&sort=date&andtext=hub+cap",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_hub_cap_bdb02b15789c29f0.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+of+activity",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_hub_of_activity_bb0fe47070167755.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+of+activity",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_hub_of_activity_5bc3e26f48397b41.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+of+commerce",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_hub_of_commerce_69f74c8310576c40.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+of+commerce",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_hub_of_commerce_32165d595ff33222.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+of+trade",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_hub_of_trade_5e52bacce767f42b.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+of+trade",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_hub_of_trade_ceb2423f76c98ba6.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+of+industry",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_hub_of_industry_042cb11fb5b37801.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+of+industry",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_hub_of_industry_7dab83a651e9ff41.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+of+the+city",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_hub_of_the_city_4924b734a515b1e4.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+of+the+city",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_hub_of_the_city_2678fcfcf3a6605f.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+of+the+community",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_hub_of_the_community_bab1ccda9d1c4b89.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+of+the+community",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_hub_of_the_community_ca3607809696767b.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=railroad+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_railroad_hub_5051a352ed070899.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=railroad+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_railroad_hub_934ccb480902037d.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=railway+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_railway_hub_efbcc103f412b387.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=railway+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_railway_hub_23405a67aede23ba.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=transportation+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_transportation_hub_3ac01d6be5500e59.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=transportation+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_transportation_hub_31600eab53678711.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=shipping+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_shipping_hub_cc2a354e13ebbfa4.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=shipping+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_shipping_hub_b3046aef120d757d.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1920&date2=1963&sort=date&phrasetext=airport+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_airport_hub_2a3a998bc10111a0.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1920&date2=1963&sort=date&andtext=airport+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_airport_hub_27bd5efa89b97fd9.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1930&date2=1963&sort=date&phrasetext=airline+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_airline_hub_b058ec1798472b7f.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1930&date2=1963&sort=date&andtext=airline+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_airline_hub_b6f27bd3a440d8c9.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=regional+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_regional_hub_1ada006759057dff.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=regional+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_regional_hub_1d15f732d3bb3404.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=business+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_business_hub_6b95c71f10c369dc.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=business+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_business_hub_9cde458c02f5b0e7.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=financial+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_financial_hub_d52a122287a47564.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=financial+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_financial_hub_dd19009e7235596c.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=education+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_education_hub_171e3f18d65a58f9.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=education+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_education_hub_c821a8f211148e5c.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=cultural+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_cultural_hub_d7a1f6049abc4807.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=cultural+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_cultural_hub_1726d5f657897891.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&phrasetext=communication+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_communication_hub_077a8f09213b13f6.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1900&date2=1963&sort=date&andtext=communication+hub",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_communication_hub_9774c524c3e717fb.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&phrasetext=hub+and+spoke",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_phrase_hub_and_spoke_3f6f38d961dde689.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://chroniclingamerica.loc.gov/search/pages/results/?format=json&rows=8&date1=1850&date2=1963&sort=date&andtext=hub+and+spoke",
+        "cache_path": "docs/research/hub/raw/cache/chronicling_search_and_hub_and_spoke_875f1d496fd7030d.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      }
+    ]
+  },
+  "loc_chronicling_america": {
+    "collection_queries": [
+      {
+        "term": "wheel hub",
+        "category": "mechanical_core",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22wheel+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 2,
+        "snippets_collected": 1,
+        "errors": []
+      },
+      {
+        "term": "hub cap",
+        "category": "mechanical_core",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22hub+cap%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 2,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "front hub",
+        "category": "mechanical_core",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22front+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 2,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "rear hub",
+        "category": "mechanical_core",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22rear+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 2,
+        "snippets_collected": 1,
+        "errors": []
+      },
+      {
+        "term": "hub of activity",
+        "category": "central_place",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22hub+of+activity%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 2,
+        "snippets_collected": 1,
+        "errors": []
+      },
+      {
+        "term": "hub of commerce",
+        "category": "central_place",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22hub+of+commerce%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 2,
+        "snippets_collected": 1,
+        "errors": []
+      },
+      {
+        "term": "railroad hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22railroad+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "railway hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22railway+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 2,
+        "snippets_collected": 1,
+        "errors": []
+      },
+      {
+        "term": "transportation hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22transportation+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 2,
+        "snippets_collected": 1,
+        "errors": []
+      },
+      {
+        "term": "shipping hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22shipping+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "airport hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22airport+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "business hub",
+        "category": "institutional_cluster",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22business+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 2,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "financial hub",
+        "category": "institutional_cluster",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22financial+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 2,
+        "snippets_collected": 1,
+        "errors": []
+      },
+      {
+        "term": "communication hub",
+        "category": "network_system",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22communication+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub and spoke",
+        "category": "network_system",
+        "max_items": 1,
+        "search_url": "https://www.loc.gov/search/?fo=json&c=2&q=%22hub+and+spoke%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "items_seen": 2,
+        "snippets_collected": 0,
+        "errors": []
+      }
+    ],
+    "access_log": [
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22wheel+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_wheel_hub_151a79ebd708c781.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 9805
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22hub+cap%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_hub_cap_932b4d993c21e981.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 9568
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22front+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_front_hub_2e31d224d41930d6.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 9648
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22rear+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_rear_hub_9d2308973725c128.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 9782
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22hub+of+activity%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_hub_of_activity_6535058aa63b044a.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 9628
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22hub+of+commerce%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_hub_of_commerce_4468e96e6705b20a.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 9197
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22railroad+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_railroad_hub_b4c9258107e19ab7.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22railway+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_railway_hub_449bf5d5a44df699.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 9454
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22transportation+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_transportation_hub_d121b57ba839b81d.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 9265
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22shipping+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_shipping_hub_51bfd1985d59d4b4.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22airport+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_airport_hub_a5ba36ca5cd8e2e3.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22business+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_business_hub_28da46a82b211291.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 9303
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22financial+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_financial_hub_697eeda59e5e10ad.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 8868
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22communication+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_communication_hub_e75aa871de89233c.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.loc.gov/search/?fo=json&c=2&q=%22hub+and+spoke%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+        "cache_path": "docs/research/hub/raw/cache/loc_chronicling_search_hub_and_spoke_c25da73e8f28d767.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 9786
+      }
+    ]
+  },
+  "internet_archive": {
+    "collection_queries": [
+      {
+        "term": "wheel hub",
+        "category": "mechanical_core",
+        "date1": 1800,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22wheel+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1800+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "hub of the wheel",
+        "category": "mechanical_core",
+        "date1": 1800,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22hub+of+the+wheel%22+AND+mediatype%3Atexts+AND+date%3A%5B1800+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "hub cap",
+        "category": "mechanical_core",
+        "date1": 1890,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22hub+cap%22+AND+mediatype%3Atexts+AND+date%3A%5B1890+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "front hub",
+        "category": "mechanical_core",
+        "date1": 1880,
+        "date2": 1928,
+        "max_items": 1,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22front+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1880+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "rear hub",
+        "category": "mechanical_core",
+        "date1": 1880,
+        "date2": 1928,
+        "max_items": 1,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22rear+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1880+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "hub of activity",
+        "category": "central_place",
+        "date1": 1850,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22hub+of+activity%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "hub of commerce",
+        "category": "central_place",
+        "date1": 1850,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22hub+of+commerce%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "hub of trade",
+        "category": "central_place",
+        "date1": 1850,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22hub+of+trade%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "hub of industry",
+        "category": "central_place",
+        "date1": 1850,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22hub+of+industry%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "hub of the city",
+        "category": "central_place",
+        "date1": 1850,
+        "date2": 1928,
+        "max_items": 1,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22hub+of+the+city%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "items_seen": 1,
+        "snippets_collected": 1,
+        "errors": []
+      },
+      {
+        "term": "hub of the community",
+        "category": "central_place",
+        "date1": 1850,
+        "date2": 1928,
+        "max_items": 1,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22hub+of+the+community%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "railroad hub",
+        "category": "transport_logistics",
+        "date1": 1860,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22railroad+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1860+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "railway hub",
+        "category": "transport_logistics",
+        "date1": 1860,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22railway+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1860+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "transportation hub",
+        "category": "transport_logistics",
+        "date1": 1900,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22transportation+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1900+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "shipping hub",
+        "category": "transport_logistics",
+        "date1": 1850,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22shipping+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "airport hub",
+        "category": "transport_logistics",
+        "date1": 1910,
+        "date2": 1928,
+        "max_items": 1,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22airport+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1910+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "regional hub",
+        "category": "transport_logistics",
+        "date1": 1900,
+        "date2": 1928,
+        "max_items": 1,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22regional+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1900+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "business hub",
+        "category": "institutional_cluster",
+        "date1": 1880,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22business+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1880+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "financial hub",
+        "category": "institutional_cluster",
+        "date1": 1880,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22financial+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1880+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 1,
+        "snippets_collected": 1,
+        "errors": []
+      },
+      {
+        "term": "education hub",
+        "category": "institutional_cluster",
+        "date1": 1880,
+        "date2": 1928,
+        "max_items": 1,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22education+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1880+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "research hub",
+        "category": "institutional_cluster",
+        "date1": 1900,
+        "date2": 1928,
+        "max_items": 1,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22research+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1900+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "cultural hub",
+        "category": "institutional_cluster",
+        "date1": 1880,
+        "date2": 1928,
+        "max_items": 1,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22cultural+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1880+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "communication hub",
+        "category": "network_system",
+        "date1": 1900,
+        "date2": 1928,
+        "max_items": 1,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22communication+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1900+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      },
+      {
+        "term": "hub and spoke",
+        "category": "network_system",
+        "date1": 1850,
+        "date2": 1928,
+        "max_items": 2,
+        "search_url": "https://archive.org/advancedsearch.php?q=%22hub+and+spoke%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": []
+      }
+    ],
+    "access_log": [
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22wheel+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1800+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_wheel_hub_e9ec38f07b1365b6.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 437
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22hub+of+the+wheel%22+AND+mediatype%3Atexts+AND+date%3A%5B1800+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_hub_of_the_wheel_df98624fabbfc4bc.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 465
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22hub+cap%22+AND+mediatype%3Atexts+AND+date%3A%5B1890+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_hub_cap_4fca120b1e752c47.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 429
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22front+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1880+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_front_hub_33d3ff89b892b8b2.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 437
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22rear+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1880+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_rear_hub_b9369f3e1c47e444.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 433
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22hub+of+activity%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_hub_of_activity_8d3855b7b4d28440.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 461
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22hub+of+commerce%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_hub_of_commerce_242b2890dad48f5c.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 461
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22hub+of+trade%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_hub_of_trade_19e3f7b747fe8da1.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 449
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22hub+of+industry%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_hub_of_industry_07557b94794cf4d1.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 461
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22hub+of+the+city%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_hub_of_the_city_b82c067200e01df2.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 559
+      },
+      {
+        "url": "https://archive.org/metadata/SDN_1910121701",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_metadata_sdn_1910121701_f11eb6a03348fbf8.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 11444
+      },
+      {
+        "url": "https://archive.org/download/SDN_1910121701/SDN_1910121701_djvu.txt",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_text_sdn_1910121701_8a512d0e7bd7ba39.txt",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 178336
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22hub+of+the+community%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_hub_of_the_community_83aabc85329d1c10.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 481
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22railroad+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1860+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_railroad_hub_08c062b85d296be4.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 449
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22railway+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1860+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_railway_hub_0711d1da599e5141.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 446
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22transportation+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1900+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_transportation_hub_704b8b1c149b9cdf.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 473
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22shipping+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_shipping_hub_5f89863baf059061.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 450
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22airport+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1910+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_airport_hub_c3c56691ee52f8f1.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 445
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22regional+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1900+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_regional_hub_3007499a69e323d4.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 449
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22business+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1880+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_business_hub_0373ada2209d6576.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 449
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22financial+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1880+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_financial_hub_1717869b7e18b859.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 555
+      },
+      {
+        "url": "https://archive.org/metadata/NPDP19230904",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_metadata_npdp19230904_09a89bb8b0bb46e6.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 11331
+      },
+      {
+        "url": "https://archive.org/download/NPDP19230904/NPDP19230904_djvu.txt",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_text_npdp19230904_f050458e8de294f4.txt",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 165530
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22education+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1880+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_education_hub_aca6f8f54a38f49a.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 453
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22research+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1900+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_research_hub_b3d389e3d9812471.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 449
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22cultural+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1880+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_cultural_hub_36dcb2be4f6307a3.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 449
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22communication+hub%22+AND+mediatype%3Atexts+AND+date%3A%5B1900+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_communication_hub_4957678615862278.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 469
+      },
+      {
+        "url": "https://archive.org/advancedsearch.php?q=%22hub+and+spoke%22+AND+mediatype%3Atexts+AND+date%3A%5B1850+TO+1928%5D&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=8&page=1&output=json",
+        "cache_path": "docs/research/hub/raw/cache/internet_archive_search_hub_and_spoke_780b4701aea702b1.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 453
+      }
+    ]
+  },
+  "google_books": {
+    "collection_queries": [
+      {
+        "term": "wheel hub",
+        "category": "mechanical_core",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22wheel+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22wheel+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of the wheel",
+        "category": "mechanical_core",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+wheel%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+wheel%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub cap",
+        "category": "mechanical_core",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+cap%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+cap%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "front hub",
+        "category": "mechanical_core",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22front+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22front+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "rear hub",
+        "category": "mechanical_core",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22rear+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22rear+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "axle hub",
+        "category": "mechanical_core",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22axle+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22axle+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of activity",
+        "category": "central_place",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+activity%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+activity%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of commerce",
+        "category": "central_place",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+commerce%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+commerce%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of trade",
+        "category": "central_place",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+trade%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+trade%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of industry",
+        "category": "central_place",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+industry%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+industry%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of the city",
+        "category": "central_place",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+city%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+city%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub of the community",
+        "category": "central_place",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+community%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+community%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "railway hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22railway+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22railway+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "railroad hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22railroad+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22railroad+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "transport hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22transport+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22transport+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "transit hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22transit+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22transit+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "shipping hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22shipping+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22shipping+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "logistics hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22logistics+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22logistics+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "airport hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22airport+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22airport+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "airline hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22airline+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22airline+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "regional hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22regional+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22regional+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "global hub",
+        "category": "transport_logistics",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22global+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22global+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "communication hub",
+        "category": "network_system",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22communication+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22communication+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "network hub",
+        "category": "network_system",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22network+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22network+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub node",
+        "category": "network_system",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+node%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+node%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "central hub",
+        "category": "network_system",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22central+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22central+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "internet hub",
+        "category": "network_system",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22internet+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22internet+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "ethernet hub",
+        "category": "network_system",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22ethernet+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22ethernet+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub and spoke",
+        "category": "network_system",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+and+spoke%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub+and+spoke%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "hub-and-spoke",
+        "category": "network_system",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub-and-spoke%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22hub-and-spoke%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "business hub",
+        "category": "institutional_cluster",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22business+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22business+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "financial hub",
+        "category": "institutional_cluster",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22financial+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22financial+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "education hub",
+        "category": "institutional_cluster",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22education+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22education+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "research hub",
+        "category": "institutional_cluster",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22research+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22research+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "knowledge hub",
+        "category": "institutional_cluster",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22knowledge+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22knowledge+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "innovation hub",
+        "category": "institutional_cluster",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22innovation+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22innovation+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "creative hub",
+        "category": "institutional_cluster",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22creative+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22creative+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "cultural hub",
+        "category": "institutional_cluster",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22cultural+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22cultural+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "startup hub",
+        "category": "institutional_cluster",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22startup+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22startup+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "digital hub",
+        "category": "digital_platform",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22digital+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22digital+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "content hub",
+        "category": "digital_platform",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22content+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22content+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "data hub",
+        "category": "digital_platform",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22data+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22data+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "media hub",
+        "category": "digital_platform",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22media+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22media+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "resource hub",
+        "category": "digital_platform",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22resource+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22resource+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "learning hub",
+        "category": "digital_platform",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22learning+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22learning+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "community hub",
+        "category": "digital_platform",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22community+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22community+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      },
+      {
+        "term": "platform hub",
+        "category": "digital_platform",
+        "max_items": 1,
+        "search_urls": [
+          "https://www.googleapis.com/books/v1/volumes?q=%22platform+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+          "https://www.googleapis.com/books/v1/volumes?q=%22platform+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29"
+        ],
+        "items_seen": 0,
+        "snippets_collected": 0,
+        "errors": [
+          "Cache-only mode: no cached response for this URL.",
+          "Cache-only mode: no cached response for this URL."
+        ]
+      }
+    ],
+    "access_log": [
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22wheel+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_wheel_hub_950c742a1768aaf7.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22wheel+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_wheel_hub_171a4b037c81ac41.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+wheel%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_hub_of_the_wheel_8232055e8c6eaf53.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+wheel%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_hub_of_the_wheel_b5a665c2afc4c9e1.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+cap%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_hub_cap_942bb6e6c34c7285.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+cap%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_hub_cap_ffa9f131e9b96b36.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22front+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_front_hub_9b1fd8917e364a2d.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22front+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_front_hub_8193d85d2797e26c.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22rear+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_rear_hub_68db7d06a7baec32.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22rear+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_rear_hub_c8059ee73fb4c0dd.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22axle+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_axle_hub_51e2aa50d8612a0f.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22axle+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_axle_hub_b6bf25381707e2d9.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+activity%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_hub_of_activity_f881592df2273f7e.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+activity%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_hub_of_activity_8b043fd861563a79.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+commerce%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_hub_of_commerce_d59a75d6ca0e1780.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+commerce%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_hub_of_commerce_9c3b7a2e83f4df29.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+trade%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_hub_of_trade_dd2a268d2d532fba.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+trade%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_hub_of_trade_1fdb0ec55df0f110.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+industry%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_hub_of_industry_a3149573f2f6d7e5.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+industry%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_hub_of_industry_272bbe5c79eef3ff.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+city%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_hub_of_the_city_b1b1c7cd3fcaf510.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+city%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_hub_of_the_city_567e3376972d4ec2.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+community%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_hub_of_the_community_95f8aad907f247e3.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+community%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_hub_of_the_community_db81f84dc4f10e4c.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22railway+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_railway_hub_0407103804efb85b.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22railway+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_railway_hub_822d03affcb90293.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22railroad+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_railroad_hub_f21ac4f373ab5239.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22railroad+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_railroad_hub_82ebc66e9076430c.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22transport+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_transport_hub_85461d85df42b68a.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22transport+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_transport_hub_61b051759a5e1041.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22transit+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_transit_hub_b5fac06f2a999d6e.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22transit+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_transit_hub_90c5214dc1fa0c87.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22shipping+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_shipping_hub_6efedd3775df7180.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22shipping+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_shipping_hub_50c9033badc3c260.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22logistics+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_logistics_hub_0e5ce0a85733be9d.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22logistics+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_logistics_hub_fd90c14a14e9a469.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22airport+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_airport_hub_9ed70f43b75dfcd9.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22airport+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_airport_hub_d1137c28625ac258.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22airline+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_airline_hub_9bd04305ed9b9c9e.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22airline+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_airline_hub_30a7aa4315be6936.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22regional+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_regional_hub_5a7402f55c37879f.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22regional+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_regional_hub_5ddb62c3152c50dc.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22global+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_global_hub_e854b22ab070f51f.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22global+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_global_hub_0e4c54e4ca8891ca.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22communication+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_communication_hub_daa3a555a54eb13e.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22communication+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_communication_hub_82d4c5c00d98c97e.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22network+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_network_hub_1479fb327586f7ed.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22network+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_network_hub_524cb102c76a1495.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+node%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_hub_node_0264cc5e1a40a612.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+node%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_hub_node_4f2ed533d2ca9393.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22central+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_central_hub_907b152fdc0e1cb9.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22central+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_central_hub_cfcc103d3607902d.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22internet+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_internet_hub_a62798cd99fcce8a.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22internet+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_internet_hub_7238a7a90b9ca68c.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22ethernet+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_ethernet_hub_fbbb5e0fa9a61f89.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22ethernet+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_ethernet_hub_44d87f959627423c.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+and+spoke%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_hub_and_spoke_c5a9bdec85639aa1.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+and+spoke%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_hub_and_spoke_3bfbda5766143fe2.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub-and-spoke%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_hub_and_spoke_b172d43fad49ab96.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub-and-spoke%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_hub_and_spoke_90731eda7b9be7af.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22business+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_business_hub_544a04f0d558e09e.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22business+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_business_hub_785ca4a236c3cb2e.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22financial+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_financial_hub_db7ce6c1176702cb.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22financial+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_financial_hub_3bc923715ea727e9.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22education+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_education_hub_621d81e9530d3208.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22education+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_education_hub_baa0d461e6692fe7.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22research+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_research_hub_e21ed6d17b3a1973.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22research+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_research_hub_c86355635ab03950.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22knowledge+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_knowledge_hub_dc1f57b7392e6271.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22knowledge+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_knowledge_hub_fd2c19fa0f27fa69.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22innovation+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_innovation_hub_1c8953b0d9949330.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22innovation+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_innovation_hub_f2959953cc0ecde8.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22creative+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_creative_hub_7dd0c1a96dfb41a6.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22creative+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_creative_hub_774d4837a9656957.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22cultural+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_cultural_hub_a4289063d831b88d.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22cultural+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_cultural_hub_949e182c0c6fe7f4.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22startup+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_startup_hub_423a0b7bd2df2074.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22startup+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_startup_hub_bf0bb9996bc255e2.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22digital+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_digital_hub_e77d7073deaf8c9b.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22digital+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_digital_hub_f1e65984f42622e4.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22content+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_content_hub_57081e9fae250da4.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22content+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_content_hub_c9962efb7e59a919.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22data+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_data_hub_25c19e002801d157.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22data+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_data_hub_5411894822529d01.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22media+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_media_hub_9e0d2a09958bad51.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22media+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_media_hub_0711458ab6584748.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22resource+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_resource_hub_e9efe8a0300b331c.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22resource+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_resource_hub_ce4b637f6e1c357a.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22learning+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_learning_hub_b503d700f6dd45c6.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22learning+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_learning_hub_42525d0c965711e9.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22community+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_community_hub_3cc43a6267ce3d73.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22community+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_community_hub_2756412bec5dd256.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22platform+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29&filter=free-ebooks",
+        "cache_path": "docs/research/hub/raw/cache/google_books_free_platform_hub_32d2e39c9c9690d9.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      },
+      {
+        "url": "https://www.googleapis.com/books/v1/volumes?q=%22platform+hub%22&maxResults=8&printType=books&orderBy=relevance&fields=items%28id%2CvolumeInfo%28title%2Cauthors%2CpublishedDate%2CinfoLink%29%2CsearchInfo%28textSnippet%29%29",
+        "cache_path": "docs/research/hub/raw/cache/google_books_all_platform_hub_745d13e0ed5be04f.json",
+        "from_cache": false,
+        "ok": false,
+        "status_code": null,
+        "content_type": null,
+        "error": "Cache-only mode: no cached response for this URL."
+      }
+    ]
+  },
+  "snippets": [
+    {
+      "snippet_id": "hub_reference_0001",
+      "decade": "1640s",
+      "source_author": null,
+      "term_or_phrase": "hub",
+      "year": 1640,
+      "source_title": "Online Etymology Dictionary: hub",
+      "source_url": "https://www.etymonline.com/word/hub",
+      "source_type": "reference",
+      "text_snippet": "Reference note dates the wheel-center sense to the 1640s.",
+      "semantic_category": "mechanical_core",
+      "confidence": "medium",
+      "notes": "Paraphrased lexical note; verify against primary quotations before final copy."
+    },
+    {
+      "snippet_id": "hub_reference_0002",
+      "decade": "1850s",
+      "source_author": null,
+      "term_or_phrase": "the Hub",
+      "year": 1858,
+      "source_title": "Online Etymology Dictionary: hub",
+      "source_url": "https://www.etymonline.com/word/hub",
+      "source_type": "reference",
+      "text_snippet": "Holmes called Boston \"the hub of the solar system.\"",
+      "semantic_category": "central_place",
+      "confidence": "medium",
+      "notes": "Short quotation surfaced through a secondary etymology source; verify before final copy."
+    },
+    {
+      "snippet_id": "hub_reference_0003",
+      "decade": "1890s",
+      "source_author": null,
+      "term_or_phrase": "hubcap",
+      "year": 1896,
+      "source_title": "Online Etymology Dictionary: hubcap",
+      "source_url": "https://www.etymonline.com/word/hubcap",
+      "source_type": "reference",
+      "text_snippet": "Reference note dates hubcap as a compound from hub plus cap.",
+      "semantic_category": "mechanical_core",
+      "confidence": "medium",
+      "notes": "Paraphrased compound note."
+    },
+    {
+      "snippet_id": "hub_reference_0004",
+      "decade": null,
+      "source_author": null,
+      "term_or_phrase": "hub",
+      "year": null,
+      "source_title": "Wiktionary: hub",
+      "source_url": "https://en.wiktionary.org/wiki/hub",
+      "source_type": "dictionary",
+      "text_snippet": "Sense inventory includes wheel center, distribution point, activity center, and network device.",
+      "semantic_category": "central_place",
+      "confidence": "medium",
+      "notes": "Paraphrased modern sense inventory."
+    },
+    {
+      "snippet_id": "hub_reference_0005",
+      "decade": null,
+      "source_author": null,
+      "term_or_phrase": "hub-and-spoke",
+      "year": null,
+      "source_title": "Wiktionary: hub",
+      "source_url": "https://en.wiktionary.org/wiki/hub",
+      "source_type": "dictionary",
+      "text_snippet": "Derived-term inventory includes hub-and-spoke, hubbed, hubbing, hubcap, and datahub.",
+      "semantic_category": "network_system",
+      "confidence": "medium",
+      "notes": "Paraphrased derived-term inventory."
+    },
+    {
+      "snippet_id": "hub_reference_0006",
+      "decade": null,
+      "source_author": null,
+      "term_or_phrase": "airline hub",
+      "year": null,
+      "source_title": "Merriam-Webster: hub",
+      "source_url": "https://www.merriam-webster.com/dictionary/hub",
+      "source_type": "dictionary",
+      "text_snippet": "Modern dictionary sense covers a city through which airline traffic is routed.",
+      "semantic_category": "transport_logistics",
+      "confidence": "high",
+      "notes": "Paraphrased modern dictionary sense."
+    },
+    {
+      "snippet_id": "hub_reference_0007",
+      "decade": null,
+      "source_author": null,
+      "term_or_phrase": "network hub",
+      "year": null,
+      "source_title": "Merriam-Webster: hub",
+      "source_url": "https://www.merriam-webster.com/dictionary/hub",
+      "source_type": "dictionary",
+      "text_snippet": "Modern dictionary sense covers a computer-network connection device.",
+      "semantic_category": "network_system",
+      "confidence": "high",
+      "notes": "Paraphrased modern dictionary sense."
+    },
+    {
+      "snippet_id": "hub_reference_0008",
+      "decade": null,
+      "source_author": null,
+      "term_or_phrase": "hub",
+      "year": null,
+      "source_title": "Cambridge Dictionary: hub",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/hub",
+      "source_type": "dictionary",
+      "text_snippet": "Modern learner entry emphasizes the central or main part where activity is concentrated.",
+      "semantic_category": "central_place",
+      "confidence": "high",
+      "notes": "Paraphrased modern dictionary sense."
+    },
+    {
+      "snippet_id": "hub_reference_0009",
+      "decade": null,
+      "source_author": null,
+      "term_or_phrase": "transport hub",
+      "year": null,
+      "source_title": "Collins Dictionary: hub",
+      "source_url": "https://www.collinsdictionary.com/dictionary/english/hub",
+      "source_type": "dictionary",
+      "text_snippet": "Modern dictionary sense includes a transport interchange and activity center.",
+      "semantic_category": "transport_logistics",
+      "confidence": "high",
+      "notes": "Paraphrased modern dictionary sense."
+    },
+    {
+      "snippet_id": "hub_loc_chronicling_0001",
+      "term_or_phrase": "wheel hub",
+      "year": 1938,
+      "decade": "1930s",
+      "source_title": "Image 15 of The Washington times (Washington [D.C.]), February 23, 1938",
+      "source_author": null,
+      "source_url": "http://www.loc.gov/resource/sn84026749/1938-02-23/ed-1/?sp=15",
+      "source_type": "article",
+      "text_snippet": "m flVnf fßtonih Ato Apfitmt in tht Sanity ffwMTimwJ Hv Chlr Ym 18m Lilli stETMLUL MI PM I iitw 4HorrsiviuEsoivourjJ nditsthubsnv I TBBTTTI jiilP WHiT W r Susvits J itUBOEOMraesiDE fl lL out in me iJ Li i IP comeon _ j Q v MOUAE ManMf JIS Hitt B ACrwr 23 J HHN",
+      "semantic_category": "mechanical_core",
+      "confidence": "low",
+      "notes": "loc.gov Chronicling America OCR description; verify page image before final copy."
+    },
+    {
+      "snippet_id": "hub_loc_chronicling_0002",
+      "term_or_phrase": "rear hub",
+      "year": 1910,
+      "decade": "1910s",
+      "source_title": "Image 11 of The Lake County times (Hammond, Ind.), March 24, 1910, (EVENING EDITION)",
+      "source_author": null,
+      "source_url": "http://www.loc.gov/resource/sn86058242/1910-03-24/ed-1/?sp=11",
+      "source_type": "article",
+      "text_snippet": "dual Weight 1500 pounds system Radiator Round tube type Drive Single chain enclosed Brake Internal expansion brake in each rear hub drums 12 inches in diameter Bearings Standard ball bearings on TBfflE Mf IK Equipment Two gas lamps tail lamp generator and two",
+      "semantic_category": "mechanical_core",
+      "confidence": "medium",
+      "notes": "loc.gov Chronicling America OCR description; verify page image before final copy."
+    },
+    {
+      "snippet_id": "hub_loc_chronicling_0003",
+      "term_or_phrase": "hub of activity",
+      "year": 1961,
+      "decade": "1960s",
+      "source_title": "Image 36 of Evening star (Washington, D.C.), November 4, 1961",
+      "source_author": null,
+      "source_url": "http://www.loc.gov/resource/sn83045462/1961-11-04/ed-1/?sp=36",
+      "source_type": "article",
+      "text_snippet": "desk where she can make out meal plans do the household ac counting and keep rcorrs of social obligations in orderly form Hub of Activity Probably the handiest piac for the planning desk is right in The kitchen since this is the hub of activity during work hours",
+      "semantic_category": "central_place",
+      "confidence": "medium",
+      "notes": "loc.gov Chronicling America OCR description; verify page image before final copy."
+    },
+    {
+      "snippet_id": "hub_loc_chronicling_0004",
+      "term_or_phrase": "hub of commerce",
+      "year": 1938,
+      "decade": "1930s",
+      "source_title": "Image 5 of Las Vegas age (Las Vegas, Nev.), April 1, 1938",
+      "source_author": null,
+      "source_url": "http://www.loc.gov/resource/sn86076141/1938-04-01/ed-1/?sp=5",
+      "source_type": "article",
+      "text_snippet": "appli cable to banking for banking today is unique in the fact that it has nothing to sell but service yet it is the hub of commerce and through it the very life blood of the commun ity flows It is the barometer of business activity and its records forecast",
+      "semantic_category": "central_place",
+      "confidence": "medium",
+      "notes": "loc.gov Chronicling America OCR description; verify page image before final copy."
+    },
+    {
+      "snippet_id": "hub_loc_chronicling_0005",
+      "term_or_phrase": "railway hub",
+      "year": 1943,
+      "decade": "1940s",
+      "source_title": "Image 8 of The Washington daily news (Washington, D.C.), December 3, 1943",
+      "source_author": null,
+      "source_url": "http://www.loc.gov/resource/sn82016181/1943-12-03/ed-1/?sp=8",
+      "source_type": "article",
+      "text_snippet": "United Press Stitt Correspondent MOSCOW Dec 3The Rus sians have smashed into the northeastern suburbs of Znam enka strategic railway hub con trolling one of the main German escape routes from the Dnieper Bend front reports said today Stepping up his attack south",
+      "semantic_category": "transport_logistics",
+      "confidence": "medium",
+      "notes": "loc.gov Chronicling America OCR description; verify page image before final copy."
+    },
+    {
+      "snippet_id": "hub_loc_chronicling_0006",
+      "term_or_phrase": "transportation hub",
+      "year": 1955,
+      "decade": "1950s",
+      "source_title": "Image 3 of The Harlem news (Harlem, Mont.), July 1, 1955",
+      "source_author": null,
+      "source_url": "http://www.loc.gov/resource/sn86075250/1955-07-01/ed-1/?sp=3",
+      "source_type": "article",
+      "text_snippet": "a day or causing any inconvenience to the 110000000 Poncngers a year utilizing the rapid transit facilities here in New Yorks transportation hub private industry will erect the biggest building in the world Appropri ately named the Palace of Prog ress the enormous",
+      "semantic_category": "transport_logistics",
+      "confidence": "medium",
+      "notes": "loc.gov Chronicling America OCR description; verify page image before final copy."
+    },
+    {
+      "snippet_id": "hub_loc_chronicling_0007",
+      "term_or_phrase": "financial hub",
+      "year": 1908,
+      "decade": "1900s",
+      "source_title": "Image 28 of The Gem state rural (Caldwell, Idaho), May 1, 1908",
+      "source_author": null,
+      "source_url": "http://www.loc.gov/resource/2019269501/1908-05-01/ed-1/?sp=28",
+      "source_type": "article",
+      "text_snippet": "MONEY TO LOAN s o 0 tj If your Bank wants its money call on us we can loan you money on improved farms g 3 2 PI Caldwell is the Financial Hub kj Pi Co 2 kj 05 a CUPP CUPP O 5 Co o g Financial Agents BOTH PHONES CALDWELL IDAHO 05 5 Caldwell Banks Stood Firm in 1893 and",
+      "semantic_category": "institutional_cluster",
+      "confidence": "medium",
+      "notes": "loc.gov Chronicling America OCR description; verify page image before final copy."
+    },
+    {
+      "snippet_id": "hub_internet_archive_0001",
+      "term_or_phrase": "hub of the city",
+      "year": 1910,
+      "decade": "1910s",
+      "source_title": "Saturday news (1910-12-17)",
+      "source_author": null,
+      "source_url": "https://archive.org/details/SDN_1910121701",
+      "source_type": "book",
+      "text_snippet": "owners complain from time to time regarding the restrictions that are placed pon ‘them but it is evident that 9 THE HUB OF THE CITY The council of 1916 certainly cannot say that its efforts have not been ap- One of the aldermen received the",
+      "semantic_category": "central_place",
+      "confidence": "high",
+      "notes": "Public-domain-era Internet Archive text; verify against scan before final copy."
+    },
+    {
+      "snippet_id": "hub_internet_archive_0002",
+      "term_or_phrase": "financial hub",
+      "year": 1923,
+      "decade": "1920s",
+      "source_title": "Hong Kong Daily Press 1923-09-04",
+      "source_author": null,
+      "source_url": "https://archive.org/details/NPDP19230904",
+      "source_type": "book",
+      "text_snippet": "to’ keep our pluce in the front, of the nations of the world, industrially, commer: Hy, financially, (Cheers.) - “FINANCIAL HUB OF. THE UNIVERSE.” Alderman Lord! Bearsted gave the'toast “ Our Merchants and Bankers.” He snid that in spite of the",
+      "semantic_category": "institutional_cluster",
+      "confidence": "high",
+      "notes": "Public-domain-era Internet Archive text; verify against scan before final copy."
+    }
+  ]
+}

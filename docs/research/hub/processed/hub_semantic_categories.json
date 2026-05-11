@@ -1,0 +1,439 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-11T23:30:05.779892Z",
+    "generated_by_script": "scripts/process_hub_data.py"
+  },
+  "categories": [
+    {
+      "id": "mechanical_core",
+      "label": "Mechanical Core",
+      "summary": "Hub as the central part of a wheel or rotating structure.",
+      "approximate_period": "early / foundational",
+      "keywords": [
+        "wheel hub",
+        "axle",
+        "spoke",
+        "hubcap",
+        "hub cap"
+      ],
+      "evidence_support": {
+        "phrase_count": 8,
+        "snippet_count": 4,
+        "visible_frequency_phrase_count": 7,
+        "support_level": "strong",
+        "strongest_terms": [
+          {
+            "term": "wheel hub",
+            "peak_frequency_per_million": 0.24601964,
+            "peak_year": 1872,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "hub of the wheel",
+            "peak_frequency_per_million": 0.19623241,
+            "peak_year": 1872,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "hub cap",
+            "peak_frequency_per_million": 0.15969186,
+            "peak_year": 1934,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "wheel hubs",
+            "peak_frequency_per_million": 0.14987665,
+            "peak_year": 1840,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "rear hub",
+            "peak_frequency_per_million": 0.07820091,
+            "peak_year": 1906,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "front hub",
+            "peak_frequency_per_million": 0.06141496,
+            "peak_year": 2000,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "hubcap",
+            "peak_frequency_per_million": 0.05755242,
+            "peak_year": 2014,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "axle hub",
+            "peak_frequency_per_million": 0.04607077,
+            "peak_year": 1949,
+            "data_quality_status": "ok"
+          }
+        ]
+      },
+      "notes": [
+        "Category is a processed scaffold for later visualization, not final interpretive copy.",
+        "Phrase assignment follows the data-pass taxonomy and can be refined during chart planning."
+      ]
+    },
+    {
+      "id": "central_place",
+      "label": "Central Place",
+      "summary": "Hub as a center of activity, trade, life, or urban concentration.",
+      "approximate_period": "generalized metaphor",
+      "keywords": [
+        "hub of activity",
+        "hub of commerce",
+        "hub of trade",
+        "city hub"
+      ],
+      "evidence_support": {
+        "phrase_count": 7,
+        "snippet_count": 6,
+        "visible_frequency_phrase_count": 0,
+        "support_level": "moderate",
+        "strongest_terms": [
+          {
+            "term": "hub of activity",
+            "peak_frequency_per_million": 0.03413241,
+            "peak_year": 2011,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "hub of the city",
+            "peak_frequency_per_million": 0.02214391,
+            "peak_year": 1954,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "hub of life",
+            "peak_frequency_per_million": 0.00778675,
+            "peak_year": 1909,
+            "data_quality_status": "sparse"
+          },
+          {
+            "term": "hub of commerce",
+            "peak_frequency_per_million": 0.00705695,
+            "peak_year": 1942,
+            "data_quality_status": "sparse"
+          },
+          {
+            "term": "hub of trade",
+            "peak_frequency_per_million": 0.00609327,
+            "peak_year": 2019,
+            "data_quality_status": "sparse"
+          },
+          {
+            "term": "hub of the community",
+            "peak_frequency_per_million": 0.00485074,
+            "peak_year": 2010,
+            "data_quality_status": "sparse"
+          },
+          {
+            "term": "hub of industry",
+            "peak_frequency_per_million": 0.00335411,
+            "peak_year": 1956,
+            "data_quality_status": "sparse"
+          }
+        ]
+      },
+      "notes": [
+        "Category is a processed scaffold for later visualization, not final interpretive copy.",
+        "Phrase assignment follows the data-pass taxonomy and can be refined during chart planning."
+      ]
+    },
+    {
+      "id": "transport_logistics",
+      "label": "Transport & Logistics",
+      "summary": "Hub as a node for movement, routing, distribution, and connection.",
+      "approximate_period": "rail / air / logistics expansion",
+      "keywords": [
+        "transport hub",
+        "airport hub",
+        "logistics hub",
+        "regional hub",
+        "shipping hub"
+      ],
+      "evidence_support": {
+        "phrase_count": 11,
+        "snippet_count": 4,
+        "visible_frequency_phrase_count": 2,
+        "support_level": "strong",
+        "strongest_terms": [
+          {
+            "term": "transportation hub",
+            "peak_frequency_per_million": 0.07190989,
+            "peak_year": 2008,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "transport hub",
+            "peak_frequency_per_million": 0.06270535,
+            "peak_year": 2010,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "regional hub",
+            "peak_frequency_per_million": 0.04504371,
+            "peak_year": 2003,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "transit hub",
+            "peak_frequency_per_million": 0.0345423,
+            "peak_year": 2009,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "global hub",
+            "peak_frequency_per_million": 0.02823682,
+            "peak_year": 2016,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "logistics hub",
+            "peak_frequency_per_million": 0.02470736,
+            "peak_year": 2019,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "railroad hub",
+            "peak_frequency_per_million": 0.01572582,
+            "peak_year": 2008,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "railway hub",
+            "peak_frequency_per_million": 0.01016971,
+            "peak_year": 2022,
+            "data_quality_status": "ok"
+          }
+        ]
+      },
+      "notes": [
+        "Category is a processed scaffold for later visualization, not final interpretive copy.",
+        "Phrase assignment follows the data-pass taxonomy and can be refined during chart planning."
+      ]
+    },
+    {
+      "id": "network_system",
+      "label": "Network System",
+      "summary": "Hub as a central node in communication, computing, and network architecture.",
+      "approximate_period": "technical/network age",
+      "keywords": [
+        "network hub",
+        "communication hub",
+        "hub node",
+        "hub-and-spoke"
+      ],
+      "evidence_support": {
+        "phrase_count": 14,
+        "snippet_count": 2,
+        "visible_frequency_phrase_count": 4,
+        "support_level": "strong",
+        "strongest_terms": [
+          {
+            "term": "hub-and-spoke",
+            "peak_frequency_per_million": 0.15271277,
+            "peak_year": 2016,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "central hub",
+            "peak_frequency_per_million": 0.11670743,
+            "peak_year": 2022,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "ethernet hub",
+            "peak_frequency_per_million": 0.06002097,
+            "peak_year": 1997,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "hub and spoke",
+            "peak_frequency_per_million": 0.0596957,
+            "peak_year": 2016,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "network hub",
+            "peak_frequency_per_million": 0.02438265,
+            "peak_year": 1999,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "communications hub",
+            "peak_frequency_per_million": 0.014613,
+            "peak_year": 2016,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "hub system",
+            "peak_frequency_per_million": 0.01312393,
+            "peak_year": 1980,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "hub node",
+            "peak_frequency_per_million": 0.01144716,
+            "peak_year": 2009,
+            "data_quality_status": "ok"
+          }
+        ]
+      },
+      "notes": [
+        "Category is a processed scaffold for later visualization, not final interpretive copy.",
+        "Phrase assignment follows the data-pass taxonomy and can be refined during chart planning."
+      ]
+    },
+    {
+      "id": "institutional_cluster",
+      "label": "Institutional Cluster",
+      "summary": "Hub as a concentration of business, education, research, finance, culture, or innovation.",
+      "approximate_period": "late industrial / knowledge economy",
+      "keywords": [
+        "business hub",
+        "financial hub",
+        "education hub",
+        "innovation hub",
+        "knowledge hub"
+      ],
+      "evidence_support": {
+        "phrase_count": 10,
+        "snippet_count": 2,
+        "visible_frequency_phrase_count": 2,
+        "support_level": "strong",
+        "strongest_terms": [
+          {
+            "term": "education hub",
+            "peak_frequency_per_million": 0.2307503,
+            "peak_year": 2022,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "innovation hub",
+            "peak_frequency_per_million": 0.09266494,
+            "peak_year": 2021,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "financial hub",
+            "peak_frequency_per_million": 0.04079248,
+            "peak_year": 2006,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "cultural hub",
+            "peak_frequency_per_million": 0.03337853,
+            "peak_year": 2021,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "business hub",
+            "peak_frequency_per_million": 0.03220517,
+            "peak_year": 2003,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "knowledge hub",
+            "peak_frequency_per_million": 0.0313085,
+            "peak_year": 2022,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "research hub",
+            "peak_frequency_per_million": 0.02708962,
+            "peak_year": 2022,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "creative hub",
+            "peak_frequency_per_million": 0.02020641,
+            "peak_year": 2019,
+            "data_quality_status": "requires_manual_review"
+          }
+        ]
+      },
+      "notes": [
+        "Category is a processed scaffold for later visualization, not final interpretive copy.",
+        "Phrase assignment follows the data-pass taxonomy and can be refined during chart planning."
+      ]
+    },
+    {
+      "id": "digital_platform",
+      "label": "Digital Platform",
+      "summary": "Hub as a digital access point, content center, resource center, or data platform.",
+      "approximate_period": "web / platform era",
+      "keywords": [
+        "digital hub",
+        "content hub",
+        "data hub",
+        "resource hub",
+        "learning hub"
+      ],
+      "evidence_support": {
+        "phrase_count": 9,
+        "snippet_count": 0,
+        "visible_frequency_phrase_count": 1,
+        "support_level": "moderate",
+        "strongest_terms": [
+          {
+            "term": "data hub",
+            "peak_frequency_per_million": 0.05921896,
+            "peak_year": 2010,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "community hub",
+            "peak_frequency_per_million": 0.02908804,
+            "peak_year": 2022,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "digital hub",
+            "peak_frequency_per_million": 0.01943596,
+            "peak_year": 2002,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "datahub",
+            "peak_frequency_per_million": 0.01740419,
+            "peak_year": 1993,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "media hub",
+            "peak_frequency_per_million": 0.0171888,
+            "peak_year": 2011,
+            "data_quality_status": "ok"
+          },
+          {
+            "term": "learning hub",
+            "peak_frequency_per_million": 0.01563867,
+            "peak_year": 2018,
+            "data_quality_status": "requires_manual_review"
+          },
+          {
+            "term": "resource hub",
+            "peak_frequency_per_million": 0.00821571,
+            "peak_year": 2022,
+            "data_quality_status": "sparse"
+          },
+          {
+            "term": "content hub",
+            "peak_frequency_per_million": 0.00764498,
+            "peak_year": 2017,
+            "data_quality_status": "sparse"
+          }
+        ]
+      },
+      "notes": [
+        "Category is a processed scaffold for later visualization, not final interpretive copy.",
+        "Phrase assignment follows the data-pass taxonomy and can be refined during chart planning."
+      ]
+    }
+  ]
+}

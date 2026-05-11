@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-11T23:27:41.360047Z",
+    "generated_by_script": "scripts/scrape_hub_data.py"
+  },
+  "research_scope": [
+    "physical central part of a wheel",
+    "central point or focus",
+    "transport and logistics hub",
+    "communication and network hub",
+    "business, innovation, knowledge, and cultural hub",
+    "digital, content, data, and platform hub",
+    "hub-and-spoke systems"
+  ],
+  "source_status_summary": {
+    "dictionary_sources_attempted": 8,
+    "dictionary_sources_failed": 1,
+    "ngram_terms_attempted": 61,
+    "ngram_request_errors": 0,
+    "ngram_sparse_or_missing_terms": 2,
+    "corpus_snippets_collected": 18
+  },
+  "failed_or_unavailable_sources": [
+    {
+      "id": "collins_hub",
+      "source_name": "Collins Dictionary",
+      "url": "https://www.collinsdictionary.com/dictionary/english/hub",
+      "error": "Cache-only mode: no cached response for this URL."
+    }
+  ],
+  "sparse_or_missing_terms": [
+    {
+      "term": "server hub",
+      "status": "too_sparse",
+      "notes": "Ngram signal is sparse; keep as a candidate but avoid interpretation without snippets.",
+      "error": null
+    },
+    {
+      "term": "platform hub",
+      "status": "too_sparse",
+      "notes": "Ngram signal is sparse; keep as a candidate but avoid interpretation without snippets.",
+      "error": null
+    }
+  ],
+  "curation_notes": [
+    "Ngram values show printed-book visibility, not meaning by themselves.",
+    "Early first-nonzero years for modern phrases should be treated as search leads, not first-use claims.",
+    "Chronicling America snippets are OCR-derived and require manual reading against page images before final use.",
+    "Dictionary notes are paraphrased to avoid overquoting and should support sense inventory rather than polished copy."
+  ]
+}

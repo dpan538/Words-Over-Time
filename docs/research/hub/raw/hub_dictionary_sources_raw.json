@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-11T23:27:11.506846Z",
+    "note": "Reference sources are stored as access/status records plus paraphrased notes. Raw HTML/text is cached separately."
+  },
+  "sources": [
+    {
+      "id": "etymonline_hub",
+      "source_name": "Online Etymology Dictionary",
+      "url": "https://www.etymonline.com/word/hub",
+      "entry_term": "hub",
+      "source_type": "secondary_etymology",
+      "reliability_level": "medium",
+      "used_for": [
+        "etymology",
+        "dated sense notes",
+        "compound notes"
+      ],
+      "paraphrased_notes": [
+        "Records the wheel-center sense as foundational and later generalizes hub to a center of activity.",
+        "Useful for the Boston 'Hub' cultural nickname and hubcap compound notes; verify exact dates before final copy."
+      ],
+      "sense_categories": [
+        "mechanical_core",
+        "central_place",
+        "mechanical_core"
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "content_type": null,
+      "cache_path": "docs/research/hub/raw/cache/reference_etymonline_hub_e5ceca8da6f0367d.html",
+      "from_cache": true,
+      "error": null,
+      "fetched_at": "2026-05-11T23:27:08.645646Z",
+      "text_length": 233886,
+      "contains_hub": true,
+      "access_notes": null
+    },
+    {
+      "id": "wiktionary_hub",
+      "source_name": "Wiktionary",
+      "url": "https://en.wiktionary.org/wiki/hub",
+      "entry_term": "hub",
+      "source_type": "dictionary",
+      "reliability_level": "medium",
+      "used_for": [
+        "sense inventory",
+        "derived terms",
+        "quotations orientation"
+      ],
+      "paraphrased_notes": [
+        "Separates wheel-center, distribution-point, activity-center, and network-device senses.",
+        "Useful for derivative forms and compounds such as hub-and-spoke, hubbed, hubbing, hubcap, and datahub."
+      ],
+      "sense_categories": [
+        "mechanical_core",
+        "central_place",
+        "transport_logistics",
+        "network_system"
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "content_type": null,
+      "cache_path": "docs/research/hub/raw/cache/reference_wiktionary_hub_1d1aaa692d79d944.html",
+      "from_cache": true,
+      "error": null,
+      "fetched_at": "2026-05-11T23:27:09.002516Z",
+      "text_length": 190205,
+      "contains_hub": true,
+      "access_notes": null
+    },
+    {
+      "id": "merriam_webster_hub",
+      "source_name": "Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/hub",
+      "entry_term": "hub",
+      "source_type": "dictionary",
+      "reliability_level": "high",
+      "used_for": [
+        "modern sense inventory",
+        "first-known-use check"
+      ],
+      "paraphrased_notes": [
+        "Modern entry covers circular-object center, focal point, airline routing center, and network device senses.",
+        "Good modern source, but dictionary attestation is not a frequency signal."
+      ],
+      "sense_categories": [
+        "mechanical_core",
+        "central_place",
+        "transport_logistics",
+        "network_system"
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "content_type": null,
+      "cache_path": "docs/research/hub/raw/cache/reference_merriam_webster_hub_ddef5796281982c1.html",
+      "from_cache": true,
+      "error": null,
+      "fetched_at": "2026-05-11T23:27:09.360552Z",
+      "text_length": 731747,
+      "contains_hub": true,
+      "access_notes": null
+    },
+    {
+      "id": "cambridge_hub",
+      "source_name": "Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/hub",
+      "entry_term": "hub",
+      "source_type": "dictionary",
+      "reliability_level": "high",
+      "used_for": [
+        "modern learner definitions",
+        "transport and IT sense contrast"
+      ],
+      "paraphrased_notes": [
+        "Modern entry emphasizes a central or main part where activity is concentrated, plus wheel and computer-network uses."
+      ],
+      "sense_categories": [
+        "mechanical_core",
+        "central_place",
+        "transport_logistics",
+        "network_system"
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "content_type": null,
+      "cache_path": "docs/research/hub/raw/cache/reference_cambridge_hub_3921209fd998d687.html",
+      "from_cache": true,
+      "error": null,
+      "fetched_at": "2026-05-11T23:27:09.723308Z",
+      "text_length": 336020,
+      "contains_hub": true,
+      "access_notes": null
+    },
+    {
+      "id": "collins_hub",
+      "source_name": "Collins Dictionary",
+      "url": "https://www.collinsdictionary.com/dictionary/english/hub",
+      "entry_term": "hub",
+      "source_type": "dictionary",
+      "reliability_level": "high",
+      "used_for": [
+        "modern dictionary sense comparison"
+      ],
+      "paraphrased_notes": [
+        "Modern entry includes wheel center, activity center, network connector, transport interchange, and skills cluster senses."
+      ],
+      "sense_categories": [
+        "mechanical_core",
+        "central_place",
+        "transport_logistics",
+        "network_system",
+        "institutional_cluster"
+      ],
+      "access_status": "failed",
+      "http_status": null,
+      "content_type": null,
+      "cache_path": "docs/research/hub/raw/cache/reference_collins_hub_eeb0d425b07e2bd2.html",
+      "from_cache": false,
+      "error": "Cache-only mode: no cached response for this URL.",
+      "fetched_at": "2026-05-11T23:27:10.082288Z",
+      "text_length": 0,
+      "contains_hub": false,
+      "access_notes": "Source unavailable during automated pass; preserve URL for manual review."
+    },
+    {
+      "id": "websters_1913_hub",
+      "source_name": "Webster's Revised Unabridged Dictionary 1913",
+      "url": "https://www.websters1913.com/words/Hub",
+      "entry_term": "hub",
+      "source_type": "public_domain_dictionary",
+      "reliability_level": "medium",
+      "used_for": [
+        "public-domain historical dictionary check"
+      ],
+      "paraphrased_notes": [
+        "Useful as a public-domain historical check for wheel-center and center/focus senses if accessible."
+      ],
+      "sense_categories": [
+        "mechanical_core",
+        "central_place"
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "content_type": null,
+      "cache_path": "docs/research/hub/raw/cache/reference_websters_1913_hub_4332648c8ff073ff.html",
+      "from_cache": true,
+      "error": null,
+      "fetched_at": "2026-05-11T23:27:10.434387Z",
+      "text_length": 2377,
+      "contains_hub": true,
+      "access_notes": null
+    },
+    {
+      "id": "wikipedia_airline_hub",
+      "source_name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Airline_hub",
+      "entry_term": "airline hub",
+      "source_type": "reference",
+      "reliability_level": "low",
+      "used_for": [
+        "orientation only",
+        "transport terminology"
+      ],
+      "paraphrased_notes": [
+        "Orientation source for airline hub terminology and hub-and-spoke airline operations; not final evidence by itself."
+      ],
+      "sense_categories": [
+        "transport_logistics",
+        "network_system"
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "content_type": null,
+      "cache_path": "docs/research/hub/raw/cache/reference_wikipedia_airline_hub_a8f72517209d3ff0.html",
+      "from_cache": true,
+      "error": null,
+      "fetched_at": "2026-05-11T23:27:10.790980Z",
+      "text_length": 202298,
+      "contains_hub": true,
+      "access_notes": null
+    },
+    {
+      "id": "wikipedia_ethernet_hub",
+      "source_name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ethernet_hub",
+      "entry_term": "ethernet hub",
+      "source_type": "reference",
+      "reliability_level": "low",
+      "used_for": [
+        "orientation only",
+        "network-device terminology"
+      ],
+      "paraphrased_notes": [
+        "Orientation source for the hardware network-hub sense; replace with technical documentation for final claims."
+      ],
+      "sense_categories": [
+        "network_system"
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "content_type": null,
+      "cache_path": "docs/research/hub/raw/cache/reference_wikipedia_ethernet_hub_4bd6bde09fae49a0.html",
+      "from_cache": true,
+      "error": null,
+      "fetched_at": "2026-05-11T23:27:11.150689Z",
+      "text_length": 117925,
+      "contains_hub": true,
+      "access_notes": null
+    }
+  ]
+}
