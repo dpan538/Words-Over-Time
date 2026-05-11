@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { ArtificialChart01SemanticChamber } from "@/components/artificial/chart01/ArtificialChart01SemanticChamber";
 import { ArtificialChart02PressureDiagram } from "@/components/artificial/chart02/ArtificialChart02PressureDiagram";
+import { ArtificialChart03InteractiveSuite } from "@/components/artificial/chart03/ArtificialChart03InteractiveSuite";
 import { Nav } from "@/components/Nav";
 import { PosterSection } from "@/components/PosterSection";
 
 const artificialPanels = [
   { num: "01", label: "Semantic Chamber", color: "#050510" },
   { num: "02", label: "Under Pressure", color: "#1570AC" },
-  { num: "03", label: "Life Support", color: "#A1081F" },
+  { num: "03", label: "Mechanical Reproduction", color: "#A1081F" },
   { num: "04", label: "Simulation", color: "#036C17" },
 ];
 
@@ -110,6 +111,15 @@ export function ArtificialPoster() {
             intro="A single hover-state diagram: the resting view fixes the abstract pressure structure, and activation reveals the selected artificial reading in place."
           >
             <ArtificialChart02PressureDiagram />
+          </PosterSection>
+
+          <PosterSection
+            id="chart-3-mechanical-reproduction"
+            eyebrow="03 / mechanical reproduction — part i"
+            title="In the Age of Mechanical Reproduction"
+            intro="A wide-view overview: three structural panels show the apparatus layers, the senses being manufactured, and the two-wave authenticity response — anchored by a burst-period timeline below."
+          >
+            <ArtificialChart03InteractiveSuite />
           </PosterSection>
 
           <div className="mt-12 border-t border-ink/80 pb-12 pt-8">

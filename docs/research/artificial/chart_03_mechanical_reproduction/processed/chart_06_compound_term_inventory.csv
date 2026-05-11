@@ -1,0 +1,31 @@
+term,query_group,semantic_domain,narrative_role
+artificial light,chart06_sense,SENSE,early sensory substitute / illumination anchor
+artificial colour,chart06_sense,SENSE,British spelling; color and perception manufacturing
+artificial color,chart06_sense,SENSE,American spelling; color and perception manufacturing
+artificial flower,chart06_sense,SENSE,decorative substitute and artificial natural object
+artificial flavour,chart06_sense,SENSE,British spelling; food-sensory substitute and suspicion
+artificial flavor,chart06_sense,SENSE,American spelling; food-sensory substitute and suspicion
+artificial sweetener,chart06_sense,SENSE,taste substitute and consumer-regulatory signal
+artificial silk,chart06_material,MATERIAL,industrial textile substitute
+artificial stone,chart06_material,MATERIAL,engineered building/material substitute
+artificial rubber,chart06_material,MATERIAL,synthetic/wartime material substitute
+artificial fibre,chart06_material,MATERIAL,British spelling; synthetic textile material
+artificial fiber,chart06_material,MATERIAL,American spelling; synthetic textile material
+artificial resin,chart06_material,MATERIAL,synthetic material and industrial polymer vocabulary
+artificial respiration,chart06_biological,BIOLOGICAL,life-support intervention and artificial bodily process
+artificial limb,chart06_biological,BIOLOGICAL,prosthetic body part
+artificial insemination,chart06_biological,BIOLOGICAL,reproductive technology and postwar biological intervention
+artificial kidney,chart06_biological,BIOLOGICAL,organ replacement / medical machine
+artificial heart,chart06_biological,BIOLOGICAL,organ replacement frontier
+artificial organ,chart06_biological,BIOLOGICAL,general organ-replacement phrase
+artificial language,chart06_cognitive,COGNITIVE,constructed symbolic/cognitive system
+artificial memory,chart06_cognitive,COGNITIVE,memory metaphor / cognitive prosthesis phrase
+artificial intelligence,chart06_cognitive,COGNITIVE,machine cognition anchor
+artificial reasoning,chart06_cognitive,COGNITIVE,machine/cognitive-process phrase
+artificial neural network,chart06_cognitive,COGNITIVE,late cognitive/AI technical phrase
+artificial manner,chart06_social,SOCIAL,social conduct and performed style
+artificial behaviour,chart06_social,SOCIAL,British spelling; social/moral artificiality
+artificial behavior,chart06_social,SOCIAL,American spelling; social/moral artificiality
+artificial smile,chart06_social,SOCIAL,performed emotion and authenticity pressure
+artificial dignity,chart06_social,SOCIAL,moral/social performance phrase
+artificial excitement,chart06_social,SOCIAL,performed affect and social artificiality

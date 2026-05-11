@@ -33,7 +33,9 @@
     "data:artificial:chart01:round04": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/source_completion_chart_01_round_04.ts",
     "data:artificial:chart01:round05": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/pre_1828_evidence_chart_01_round_05.ts",
     "data:artificial:chart01:round06": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/final_gap_check_chart_01_round_06.ts",
-    "data:artificial:chart03": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_chart_03_reproduction.ts"
+    "data:artificial:chart03": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_chart_03_reproduction.ts",
+    "data:artificial:chart06": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_chart_06_compound_expansion.ts",
+    "data:artificial:chart06:supplement": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_chart_06_compound_supplement.ts"
   },
   "dependencies": {
     "next": "16.2.5",

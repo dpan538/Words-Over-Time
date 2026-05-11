@@ -1,0 +1,92 @@
+term,stratum,visual_role,peak_year,peak_per_million,position_note
+imitation,I,anchor,1810,18.69,left wave — old inauthenticity
+forgery,I,anchor,1830,9.99,left wave — old inauthenticity
+genuine,I,anchor,1805,22.48,left wave — old authenticity affirmation
+authentic,I,anchor,1805,11.93,left wave — old authenticity (broad but era-correct)
+counterfeit,I,texture,1811,6.08,left wave — too broad for primary anchor
+originality,I,texture,1852,4.59,left wave — authorship pressure
+faithful copy,I,texture,1802,0.19,left wave — very weak
+lifelike,I,anchor,1871,0.48,bridge — quality pressure mid-left
+true to life,I,anchor,1943,0.32,bridge — quality pressure mid
+authenticity,I,anchor,2016,6.51,right wave — new theoretical authenticity
+simulation,I+V,anchor,1995,36.14,right wave + Stratum V (double-coded)
+simulated,I,texture,1995,10.78,right wave — pairs with simulation
+authentic experience,I,texture,2018,0.08,right wave — contemporary but too weak
+panorama,II,anchor,1808,4.20,spectacle apparatus
+automaton,II,anchor,1821,2.18,spectacle apparatus — use 19c window only
+diorama,II,anchor,1851,1.41,spectacle apparatus
+stereoscope,II,anchor,1858,1.71,spectacle apparatus
+magic lantern,II,anchor,1869,0.67,spectacle apparatus
+lifelike,II,texture,1871,0.48,also in Stratum I — quality bridge
+stage effect,II,texture,1818,0.25,theatrical but old/broad
+waxworks,II,texture,1952,0.09,spectacle apparatus — too weak for anchor
+theatrical illusion,II,texture,1817,0.03,too weak for anchor
+limelight,III,texture,2019,0.77,stage lighting — late peak is misleading; use 19c avg
+artificial scenery,II,texture,1818,0.04,very weak
+electric light,III,anchor,1897,21.86,dominant artificial-light anchor
+photograph,III,anchor,1832,15.40,use first-above-1/M year (1832) as position; long arc
+photography,III,anchor,1851,14.29,photographic technology; use 1851 first-above-1/M as position
+phonograph,III,anchor,1947,4.45,sound reproduction; use 1878 first-above-1/M as position
+phonographic,III,texture,1890,2.08,adjectival phonograph; use 1877 crossing as position
+moving picture,III,anchor,1916,4.36,early cinema
+cinematograph,III,texture,1914,1.42,early cinema; overlaps with moving picture
+artificial lighting,III,anchor,1925,0.39,artificial-perception phrase within reproduction layer
+stage lighting,III,texture,1929,0.38,theater/film production; weaker signal
+artificial sunlight,III,texture,1928,0.22,studio/technical lighting; narrow
+radio broadcasting,III,anchor,1942,1.27,broadcast sound; use 1929 first-above-1/M as position
+photographic reproduction,III,texture,1960,0.24,image-copying bridge; solid but secondary
+electric light,III,anchor,1897,21.86,dominant light anchor
+wireless,III,texture,1925,20.06,British radio vocab; broad
+facsimile,III,texture,1995,15.75,copy/reproduction term; late peak is fax machine era
+halftone,III,texture,1950,0.83,print reproduction technology
+photomechanical,III,texture,1956,0.12,print reproduction technology
+recorded sound,III,texture,1981,0.24,specific phrase; weaker than sound recording
+sound recording,IV,texture,1983,16.26,could be Stratum III or IV; peak is late
+talking picture,III,texture,1930,0.71,sound-cinema transition
+sound film,III,texture,1946,0.77,sound-cinema transition; pairs with talking picture
+colour photography,III,texture,1924,0.44,British spelling; color-photo transition
+color photography,III,texture,1940,0.58,American spelling; color-photo transition
+artificial colour,III,texture,1854,0.03,very weak
+artificial color,III,texture,1908,0.15,color reproduction phrase; weak
+artificial daylight,III,texture,1914,0.09,studio lighting; weak
+artificial image,III,texture,1821,0.04,very weak — no structural role
+artificial voice,III,texture,1944,0.02,very weak — no structural role
+artificial atmosphere,III,texture,1965,0.06,environment-making; context-check needed
+artificial environment,III,texture,1963,0.06,environment-making; context-check needed
+artificial scene,III,texture,1818,0.02,very weak
+artificial sound,III,texture,1967,0.01,very weak
+projected image,III,texture,1962,0.09,projection mechanism; weak in ngram
+television,IV,anchor,1953,53.75,dominant mass-experience anchor — highest peak in dataset
+color film,IV,anchor,1954,1.21,color cinema transition anchor
+colour film,IV,texture,1966,0.30,British spelling; secondary to color film
+mass production,IV,anchor,1945,3.87,industrial reproducibility background
+mass produced,IV,texture,1957,0.21,consumer form of mass production
+mass media,IV,anchor,1990,4.56,media-as-system vocabulary; use 1956 crossing as position
+high fidelity,IV,anchor,1956,2.86,sound-quality realism term
+recorded music,IV,texture,1952,0.43,recorded music as everyday language
+broadcast,IV,texture,1948,21.43,infrastructure background — too broad for primary anchor
+transmission,IV,texture,2002,39.10,technical background — too broad
+stereophonic,IV,texture,1973,3.64,audio spatial quality; solid but secondary
+reproduction,IV,texture,1979,22.62,general reproduction vocabulary — sense-noisy
+reproduced,IV,texture,2017,16.12,general reproduction vocabulary — sense-noisy
+ersatz,IV,texture,1942,0.50,wartime artificial-substitute anxiety; interesting but secondary
+television,IV,anchor,1953,53.75,(listed once)
+televised,IV,texture,2009,1.05,broadcast action; late peak unreliable
+trick photography,IV,texture,1897,0.06,early visual manipulation; weak
+special effect,IV,texture,2010,0.14,CGI-era vocabulary; too late for Stratum III
+colour photography,IV,texture,1924,0.44,(already listed under III)
+mechanical reproduction,IV,texture,2016,0.16,theory-loaded term; not a pure historical signal
+recorded,IV,texture,1928,48.25,too broad to use alone
+aura,IV,texture,2019,11.53,Benjamin concept — ordinary-language sense dominates; do not use as theory signal
+handmade,IV,texture,2006,1.22,reverse term for mass production; late peak
+computer graphics,V,anchor,1986,2.57,digital visual bridge; use 1978 first-above-1/M as position
+digital image,V,anchor,1999,1.21,digital visual artifact
+virtual reality,V,anchor,2019,2.54,late-tail artificial experience phrase
+digital recording,V,texture,1985,0.42,digital audio transition; use 1960 crossing as position
+simulation,V,anchor,1995,36.14,(also Stratum I — double-coded)
+simulated,V,texture,1995,10.78,(also Stratum I texture)
+virtual,V,texture,2010,25.47,too broad for digital-experience alone
+digital reproduction,V,texture,2018,0.03,concept label — too weak for structural use
+high fidelity,V,texture,1956,2.86,(already in Stratum IV — do not repeat)
+art forgery,V,texture,2012,0.01,very weak
+moving image,V,texture,1999,0.44,conceptual tail term; late peak

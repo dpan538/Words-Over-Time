@@ -449,6 +449,43 @@ export function ArtificialChart02PressureDiagram() {
           <EvidenceGroup items={substituteEvidence} selected={hovered} />
           <EvidenceGroup items={suspicionEvidence} selected={hovered} />
 
+          {/* ── Quality-pressure strip (top of chart, hover only) ── */}
+          <g opacity={hovered ? 1 : 0} className="transition-opacity duration-500">
+            <text
+              x="370"
+              y="177"
+              textAnchor="middle"
+              className="select-none font-mono text-[5.5px] font-black uppercase tracking-[0.13em]"
+              fill={muted}
+            >
+              quality pressure
+            </text>
+            <text
+              x="370"
+              y="187"
+              textAnchor="middle"
+              className="select-none font-mono text-[5.8px] font-black uppercase tracking-[0.09em]"
+              fill={ink}
+              opacity="0.58"
+            >
+              lifelike · true to life · high fidelity
+            </text>
+          </g>
+
+          {/* ── N / S polarity note (bottom, hover only) ── */}
+          <g opacity={hovered ? 1 : 0} className="transition-opacity duration-500">
+            <text
+              x="370"
+              y="490"
+              textAnchor="middle"
+              className="select-none font-mono text-[5.5px] font-black uppercase tracking-[0.09em]"
+              fill={ink}
+              opacity="0.40"
+            >
+              N · natural / original ——→ artificial ——→ S · copy
+            </text>
+          </g>
+
           <text
             x="407"
             y="478"

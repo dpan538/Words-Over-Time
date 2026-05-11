@@ -1,0 +1,26 @@
+term,query_group,semantic_domain,narrative_role
+artificial politeness,chart06_social_supplement,SOCIAL,performed civility / social artificiality
+artificial courtesy,chart06_social_supplement,SOCIAL,performed civility / etiquette artificiality
+artificial affectation,chart06_social_supplement,SOCIAL,explicit performance and inauthentic style
+artificial sentiment,chart06_social_supplement,SOCIAL,performed feeling and sincerity pressure
+artificial emotion,chart06_social_supplement,SOCIAL,performed or simulated emotion
+artificial sympathy,chart06_social_supplement,SOCIAL,performed moral feeling
+artificial cheerfulness,chart06_social_supplement,SOCIAL,performed affect
+artificial gaiety,chart06_social_supplement,SOCIAL,"performed affect, nineteenth-century register"
+artificial expression,chart06_social_supplement,SOCIAL,performed expression and appearance
+artificial gesture,chart06_social_supplement,SOCIAL,performed bodily expression
+artificial voice,chart06_social_supplement,SOCIAL,performed voice / mediated voice bridge
+artificial personality,chart06_social_supplement,SOCIAL,modern social/AI persona bridge
+artificial mind,chart06_cognitive_artificial,COGNITIVE,strict artificial-prefix cognitive candidate
+artificial brain,chart06_cognitive_artificial,COGNITIVE,strict artificial-prefix machine/body cognition candidate
+artificial thought,chart06_cognitive_artificial,COGNITIVE,strict artificial-prefix cognition metaphor
+artificial reason,chart06_cognitive_artificial,COGNITIVE,strict artificial-prefix reasoning metaphor
+artificial logic,chart06_cognitive_artificial,COGNITIVE,strict artificial-prefix logic/formal reasoning candidate
+artificial consciousness,chart06_cognitive_artificial,COGNITIVE,strict artificial-prefix consciousness candidate
+machine intelligence,chart06_cognitive_infrastructure,COGNITIVE,non-artificial cognitive infrastructure comparator
+machine learning,chart06_cognitive_infrastructure,COGNITIVE,modern cognitive/AI infrastructure
+neural network,chart06_cognitive_infrastructure,COGNITIVE,modern cognitive/AI infrastructure
+expert system,chart06_cognitive_infrastructure,COGNITIVE,symbolic AI infrastructure
+symbolic reasoning,chart06_cognitive_infrastructure,COGNITIVE,symbolic AI/cognitive process infrastructure
+natural language processing,chart06_cognitive_infrastructure,COGNITIVE,language AI infrastructure
+computer vision,chart06_cognitive_infrastructure,COGNITIVE,perceptual AI infrastructure

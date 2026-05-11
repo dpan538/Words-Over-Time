@@ -130,6 +130,8 @@ const layerColors = {
   senseBoundary: 0x555568,
 } as const;
 
+const phaseColor = 0xa1081f;
+
 const stateDescriptions: Record<ChamberState, string> = {
   resting: "\"artificial\" in its semantic space, before analysis.",
   word_family: "Left wall: the word family. \"artificial\" derives from \"artifice\" and \"art\".",
@@ -395,6 +397,124 @@ function highlightWall(container: THREE.Object3D, face: WallFace | "all", opacit
   }
 }
 
+function makePhaseContour(
+  container: THREE.Object3D,
+  width: number,
+  height: number,
+  position: Vec3,
+  rotation: Vec3,
+  opacity = 0.16,
+) {
+  const geometry = new THREE.PlaneGeometry(width, height);
+  const edges = new THREE.EdgesGeometry(geometry);
+  const material = new THREE.LineBasicMaterial({
+    color: phaseColor,
+    transparent: true,
+    opacity,
+  });
+  const contour = new THREE.LineSegments(edges, material);
+  contour.position.set(...position);
+  contour.rotation.set(...rotation);
+  container.add(contour);
+}
+
+function addPhaseSheets(container: THREE.Object3D, face: WallFace | "all", opacity = 0.12) {
+  const halfW = chamber.width / 2;
+  const halfH = chamber.height / 2;
+  const halfD = chamber.depth / 2;
+  const offsets = [-0.34, 0, 0.34];
+
+  if (face === "left" || face === "all") {
+    offsets.forEach((offset, index) => {
+      makePhaseContour(
+        container,
+        chamber.depth * (0.72 + index * 0.08),
+        chamber.height * (0.74 + index * 0.05),
+        [-halfW + 0.03, offset * 1.2, offset * 2.8],
+        [0, Math.PI / 2, 0],
+        opacity * (0.9 - index * 0.16),
+      );
+    });
+  }
+
+  if (face === "right" || face === "all") {
+    offsets.forEach((offset, index) => {
+      makePhaseContour(
+        container,
+        chamber.depth * (0.72 + index * 0.08),
+        chamber.height * (0.74 + index * 0.05),
+        [halfW - 0.03, offset * 1.2, offset * 2.8],
+        [0, -Math.PI / 2, 0],
+        opacity * (0.9 - index * 0.16),
+      );
+    });
+  }
+
+  if (face === "back" || face === "all") {
+    offsets.forEach((offset, index) => {
+      makePhaseContour(
+        container,
+        chamber.width * (0.72 + index * 0.08),
+        chamber.height * (0.74 + index * 0.05),
+        [offset * 2.6, offset * 1.1, -halfD + 0.03],
+        [0, 0, 0],
+        opacity * (0.9 - index * 0.16),
+      );
+    });
+  }
+
+  if (face === "floor" || face === "all") {
+    offsets.forEach((offset, index) => {
+      makePhaseContour(
+        container,
+        chamber.width * (0.78 + index * 0.06),
+        chamber.depth * (0.70 + index * 0.06),
+        [offset * 2.5, -halfH + 0.03, offset * 2.1],
+        [Math.PI / 2, 0, 0],
+        opacity * (0.55 - index * 0.08),
+      );
+    });
+  }
+}
+
+function addCentralPhaseRings(container: THREE.Object3D, opacity = 0.18) {
+  const ringSpecs = [
+    { radius: 0.82, tube: 0.006, rotation: [Math.PI / 2, 0, 0] as Vec3, spin: 0.0018 },
+    { radius: 1.08, tube: 0.005, rotation: [Math.PI / 2.8, Math.PI / 8, 0] as Vec3, spin: -0.0012 },
+    { radius: 1.34, tube: 0.004, rotation: [Math.PI / 2.25, -Math.PI / 10, 0] as Vec3, spin: 0.0009 },
+  ];
+
+  ringSpecs.forEach((spec, index) => {
+    const geometry = new THREE.TorusGeometry(spec.radius, spec.tube, 6, 96);
+    const material = new THREE.MeshBasicMaterial({
+      color: phaseColor,
+      transparent: true,
+      opacity: opacity * (1 - index * 0.18),
+      depthWrite: false,
+    });
+    const ring = new THREE.Mesh(geometry, material);
+    ring.rotation.set(...spec.rotation);
+    ring.userData.phaseSpin = spec.spin;
+    container.add(ring);
+  });
+}
+
+function addPhaseSweep(scene: THREE.Scene) {
+  const halfH = chamber.height / 2;
+  const geometry = new THREE.PlaneGeometry(chamber.width * 1.08, 0.03);
+  const material = new THREE.MeshBasicMaterial({
+    color: phaseColor,
+    transparent: true,
+    opacity: 0.18,
+    depthWrite: false,
+    side: THREE.DoubleSide,
+  });
+  const sweep = new THREE.Mesh(geometry, material);
+  sweep.position.set(0, -halfH + 0.35, -chamber.depth / 2 + 0.06);
+  sweep.userData.phaseSweep = true;
+  scene.add(sweep);
+}
+
 function addLighting(scene: THREE.Scene) {
   const ambientLight = new THREE.AmbientLight(0xe8dfc8, 0.9);
   scene.add(ambientLight);
@@ -572,6 +692,8 @@ function addChamberSpeakers(scene: THREE.Scene) {
 }
 
 function buildResting(group: THREE.Object3D) {
+  addPhaseSheets(group, "all", 0.075);
+  addCentralPhaseRings(group, 0.16);
   makeSphereNode(group, "artificial", visualScale.sphereMain, 1);
   makeFloorText(group, "a word and its semantic space", 0, -3, 0.25);
   makeFloorText(group, "1400s - present", 0, -5, 0.18);
@@ -580,6 +702,8 @@ function buildResting(group: THREE.Object3D) {
 
 function buildWordFamily(group: THREE.Object3D) {
   highlightWall(group, "left", 0.08);
+  addPhaseSheets(group, "left", 0.16);
+  addCentralPhaseRings(group, 0.10);
   makeSphereNode(group, "art", visualScale.sphereA, 1);
   makeSphereNode(group, "artifice", visualScale.sphereA, 1);
   makeSphereNode(group, "artificial", visualScale.sphereMain, 1);
@@ -594,6 +718,8 @@ function buildWordFamily(group: THREE.Object3D) {
 
 function buildTechnical(group: THREE.Object3D) {
   highlightWall(group, "right", 0.08);
+  addPhaseSheets(group, "right", 0.16);
+  addCentralPhaseRings(group, 0.10);
   makeSphereNode(group, "made_by_art_skill", visualScale.sphereB, 0.5);
   makeSphereNode(group, "artificial", visualScale.sphereMain, 1);
   makeSphereNode(group, "artificial_arguments", visualScale.sphereA, 1);
@@ -610,6 +736,8 @@ function buildTechnical(group: THREE.Object3D) {
 
 function buildSenseBoundary(group: THREE.Object3D) {
   highlightWall(group, "back", 0.08);
+  addPhaseSheets(group, "back", 0.16);
+  addCentralPhaseRings(group, 0.10);
   makeSphereNode(group, "made_by_art_skill", visualScale.sphereA, 1);
   makeSphereNode(group, "contrivance_construction", visualScale.sphereA, 1);
   makeSphereNode(group, "not_natural", visualScale.sphereB, 0.85);
@@ -627,6 +755,8 @@ function buildSenseBoundary(group: THREE.Object3D) {
 }
 
 function buildFullOverlay(group: THREE.Object3D) {
+  addPhaseSheets(group, "all", 0.11);
+  addCentralPhaseRings(group, 0.18);
   makeSphereNode(group, "made_by_art_skill", visualScale.sphereB, 0.38, null, layerColors.senseBoundary);
   makeSphereNode(group, "contrivance_construction", visualScale.sphereB, 0.35, null, layerColors.senseBoundary);
   makeSphereNode(group, "not_natural", visualScale.sphereB, 0.35, null, layerColors.senseBoundary);
@@ -783,6 +913,7 @@ export function ArtificialChart01SemanticChamber() {
     }
 
     addLeitnerChamber(scene);
+    addPhaseSweep(scene);
     addLighting(scene);
 
     let lastMeasureTime = 0;
@@ -793,6 +924,17 @@ export function ArtificialChart01SemanticChamber() {
       camera.position.y += (targetY - camera.position.y) * 0.16;
       camera.position.z += (cameraPosition.z - camera.position.z) * 0.16;
       camera.lookAt(0, 0, 0);
+      const time = performance.now() * 0.001;
+      const halfH = chamber.height / 2;
+      scene.traverse((object) => {
+        const spin = object.userData.phaseSpin as number | undefined;
+        if (spin) object.rotation.z += spin;
+        if (object.userData.phaseSweep) {
+          object.position.y = -halfH + 0.55 + ((time * 0.22) % 1) * (chamber.height - 1.1);
+          const material = (object as THREE.Mesh).material as THREE.MeshBasicMaterial | undefined;
+          if (material) material.opacity = 0.08 + Math.sin(time * 1.7) * 0.035 + 0.07;
+        }
+      });
       renderer.render(scene, camera);
 
       const now = performance.now();
@@ -1078,6 +1220,37 @@ export function ArtificialChart01SemanticChamber() {
               </p>
             </div>
           )}
+
+          {/* ── Quality-pressure polarity strip ─────────────────── */}
+          <div className="mt-auto border-t border-ink/20 px-3 py-3">
+            <p className="mb-1.5 font-mono text-[0.62rem] font-black uppercase tracking-[0.09em] text-ink/45">
+              quality pressure
+            </p>
+            {/* N – S axis with "artificial" dot */}
+            <div className="flex items-center gap-1">
+              <span className="font-mono text-[0.58rem] font-black leading-none text-ink/40">N</span>
+              <div className="relative flex-1">
+                <div className="h-px w-full bg-ink/22" />
+                <span
+                  className="absolute top-1/2 -translate-y-1/2 rounded-full bg-ink"
+                  style={{ left: "62%", width: 7, height: 7, marginLeft: -3.5 }}
+                />
+              </div>
+              <span className="font-mono text-[0.58rem] font-black leading-none text-ink/40">S</span>
+            </div>
+            <div className="mt-0.5 flex justify-between font-mono text-[0.54rem] uppercase tracking-[0.05em] text-ink/35">
+              <span>natural</span>
+              <span>copy</span>
+            </div>
+            {/* Field-pressure words */}
+            <div className="mt-2 space-y-0.5 border-t border-ink/12 pt-1.5">
+              {["lifelike", "true to life", "high fidelity"].map((w) => (
+                <p key={w} className="font-mono text-[0.60rem] leading-[1.45] tracking-[0.06em] text-ink/48">
+                  — {w}
+                </p>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
