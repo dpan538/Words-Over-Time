@@ -1,0 +1,16 @@
+term_or_phrase,status,strongest_source,source_type,example_year_or_period,modern_relevance,notes
+no artificial ingredients,confirmed_recent_usage,Swanson 50% Less Sodium Beef Broth,web_snippet,current page accessed 2026-05-12,high,Current product-page absence claim.
+no artificial colors,confirmed_recent_usage,FDA no artificial colors letter; Gatorade; Swanson,regulatory_source; web_snippet,2026,high,Strong regulatory and product/brand evidence.
+no artificial flavors,confirmed_recent_usage,Gatorade; Swanson,web_snippet,2026/current,high,Strong product/brand evidence.
+nothing artificial,not_checked,,,,medium,First-round Ngram collected it; needs modern web/product review.
+free from artificial,not_checked,,,,medium,First-round Ngram collected it; needs modern web/product review.
+clean label,confirmed_recent_usage,IFT; Freedonia/Packaged Facts; FoodNavigator-USA,secondary_literature; news_snippet,2021-2024,high,Clean-label context found; still needs product-level examples if used visually.
+all natural,partial_or_snippet_only,Consumer Reports Natural label guide,secondary_literature,current page accessed 2026-05-12,medium,Consumer expectation context; not a direct product sample in this pass.
+artificial ingredients,partial_or_snippet_only,Consumer Reports Natural label guide,secondary_literature,current page accessed 2026-05-12,medium,Appears as expectation boundary in natural-label context.
+artificial flavor,confirmed_recent_usage,21 CFR 101.22; FDA ingredient page; Gatorade/Swanson absence claims,regulatory_source; web_snippet,current CFR; 2026/current product pages,high,Regulatory and product evidence.
+artificial color,confirmed_recent_usage,21 CFR 101.22; FDA no artificial colors letter,regulatory_source,2026/current CFR,high,Strong regulatory/background evidence.
+artificial sweetener,confirmed_recent_usage,"Gatorade no artificial flavors, sweeteners or colors",web_snippet,2026,medium,Only absence-claim form captured here.
+synthetic ingredients,partial_or_snippet_only,IFT clean-label article; Consumer Reports natural guide,secondary_literature,2021/current,medium,Context found for synthetic/artificial opposition; needs product examples.
+natural ingredients,confirmed_recent_usage,Swanson product pages; clean-label secondary sources,web_snippet; secondary_literature,current/2024,medium,Useful opposition phrase.
+real ingredients,not_checked,,,,medium,Needs brand/product-page review.
+fake ingredients,not_found,,,,low,No strong source found in this pass.

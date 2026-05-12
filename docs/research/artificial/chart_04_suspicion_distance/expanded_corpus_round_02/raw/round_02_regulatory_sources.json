@@ -1,0 +1,83 @@
+[
+  {
+    "id": "reg_ecfr_101_22",
+    "source_name": "21 CFR 101.22",
+    "source_type": "regulatory_source",
+    "source_url": "https://ecfr.io/Title-21/Section-101.22",
+    "year_or_period": "current CFR",
+    "terms": [
+      "artificial flavor",
+      "artificial color",
+      "natural flavor",
+      "chemical preservative",
+      "artificially flavored"
+    ],
+    "summary": "Defines artificial flavor/flavoring, natural flavor/flavoring, artificial color/coloring, and labeling conditions for flavors, colors, and preservatives.",
+    "chart4_role": "Background definition for labeling categories, not suspicion proof.",
+    "limitations": "Regulation explains labeling categories; it does not measure sentiment or consumer interpretation."
+  },
+  {
+    "id": "reg_fda_2026_no_artificial_colors_letter",
+    "source_name": "FDA letter to food industry on no artificial colors labeling claims",
+    "source_type": "regulatory_source",
+    "source_url": "https://www.fda.gov/food/food-chemical-safety/letter-food-industry-no-artificial-colors-labeling-claims",
+    "year_or_period": "2026-02-05",
+    "terms": [
+      "no artificial colors",
+      "no artificial color",
+      "made without artificial food colors"
+    ],
+    "summary": "FDA states enforcement discretion for certain voluntary absence claims when foods contain no FD&C Act certified colors.",
+    "chart4_role": "Recent official evidence that no artificial colors is an active labeling phrase.",
+    "limitations": "Regulatory policy source; not consumer sentiment proof."
+  },
+  {
+    "id": "reg_fda_color_additives_foods",
+    "source_name": "FDA Color Additives in Foods",
+    "source_type": "regulatory_source",
+    "source_url": "https://www.fda.gov/food/color-additives-information-consumers/color-additives-foods",
+    "year_or_period": "current page accessed 2026-05-12",
+    "terms": [
+      "artificial colors",
+      "synthetic",
+      "color additives",
+      "artificial coloring"
+    ],
+    "summary": "Consumer-facing FDA page explains certified and exempt color additives and gives historical background on artificial coloring.",
+    "chart4_role": "Background for artificial color as a labeling/regulatory category.",
+    "limitations": "Contains health/safety/regulatory framing; do not turn into Chart 4 health claims."
+  },
+  {
+    "id": "reg_fda_types_food_ingredients",
+    "source_name": "FDA Types of Food Ingredients",
+    "source_type": "regulatory_source",
+    "source_url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients",
+    "year_or_period": "current page accessed 2026-05-12",
+    "terms": [
+      "artificial flavor",
+      "artificial colors",
+      "flavors",
+      "preservatives",
+      "ingredients"
+    ],
+    "summary": "FDA consumer page lists examples of ingredient categories and notes label declarations such as natural flavoring, artificial flavor, and artificial colors.",
+    "chart4_role": "Background for packaging and ingredient-label terminology.",
+    "limitations": "Not evidence of pejoration."
+  },
+  {
+    "id": "reg_fda_pledges_remove_dyes",
+    "source_name": "FDA tracking food industry pledges to remove petroleum based food dyes",
+    "source_type": "regulatory_source",
+    "source_url": "https://www.fda.gov/food/color-additives-information-consumers/tracking-food-industry-pledges-remove-petroleum-based-food-dyes",
+    "year_or_period": "2025-2026",
+    "terms": [
+      "remove artificial dyes",
+      "artificial colors",
+      "synthetic dyes",
+      "no artificial flavors or dyes"
+    ],
+    "summary": "FDA tracks industry pledges to remove petroleum-based certified colors and includes brand-level reformulation language.",
+    "chart4_role": "Recent source showing artificial/color absence and removal language in regulatory-industry interface.",
+    "limitations": "Policy and pledge tracking source; not a balanced usage corpus."
+  }
+]

@@ -1,0 +1,8 @@
+sense,pre_1800_status,strongest_source,source_count,confidence,notes
+neutral_descriptive,confirmed,Etymonline artificial/artificially; Johnson indirect,3,medium,Early art/human-skill and made-by-art senses are visible in etymological and indirect dictionary evidence.
+not_natural,confirmed,Etymonline artificial; Johnson indirect,2,medium,"Confirmed as a pre-1800 sense family, but exact earliest quotations need OED/manual verification."
+fake_not_genuine,confirmed,Shakespeare artificial tears; Etymonline; Johnson indirect,3,medium_high,Good evidence for a pre-1800 fake/feigned branch; keep separate from not-natural.
+affected_insincere,partially_confirmed,Wollstonecraft artificial manners; Etymonline artificiality/artificial,3,medium,"Strong conduct-literature lead plus etymology, but more snippets are needed for breadth."
+imitation_substitute,partially_confirmed,Etymonline artificial,1,medium_low,Chronology pointer only; needs primary snippets for artificial flowers/teeth/light/tears or similar.
+consumer_suspicion,not_found,,0,low,No clear pre-1800 consumer/packaging suspicion evidence found in this pass.
+absence_claim,not_found,,0,low,No pre-1800 no-artificial style absence claim found; likely modern packaging/advertising category.

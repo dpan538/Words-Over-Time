@@ -1,0 +1,7 @@
+gap_area,current_status,why_it_matters,next_source_type,priority,notes
+pre-1800 exact chronology,partial,Prevents overclaiming when negative or suspicious senses appear.,OED; direct Johnson; primary quotation snippets,1,Etymonline and existing Chart 1 evidence give strong leads but not final dates.
+pre-1800 artificial smile,gap,Artificial smile is a clear modern affected/insincere phrase.,Google Books snippets; ECCO/EEBO if accessible; Internet Archive,2,No pre-1800 artificial smile sample captured.
+historical advertising before 1950,weak,Consumer suspicion likely developed in ads/labels outside books.,Chronicling America; magazine advertising; trade papers,1,Only two historical newspaper leads captured.
+2019-2026 balanced corpus,weak,"Modern web/product snippets are source-width evidence, not representative frequency.",NOW Corpus; GDELT/news corpus; COCA if accessible,2,Modern examples are useful but biased toward brand/regulatory sources.
+packaging image evidence,weak,Product pages may not match physical packaging.,packaging scans; retailer images; brand PDFs,2,No package-image archive created in this pass.
+semantic distance measurement,background_only,Chart 4B may need semantic distance rather than just dictionary lists.,semantic_dictionary; contextual corpus; embeddings/collocation corpus,2,Dictionary boundary sources collected; no semantic-distance computation done.

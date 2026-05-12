@@ -1,0 +1,8 @@
+period,source_types_available,strongest_evidence_types,weakest_evidence_types,coverage_quality,notes
+pre_1800,etymology_source; historical_dictionary_indirect; book_snippet,definition; snippet,newspaper_advertising; packaging_claim; balanced corpus,medium,"Good leads for not-natural, fake/not-genuine, and affected/insincere; exact chronology still needs OED/direct scans."
+1800_1850,historical_dictionary; existing Ngram,definition; corpus_result,advertising_snippet,medium,Webster 1828 checkpoint plus Ngram baseline; non-book source width remains limited.
+1850_1900,existing Ngram,corpus_result,newspaper_advertising; packaging_claim,weak,Needs historical newspaper and magazine ad review.
+1900_1950,existing Ngram; newspaper_snippet,corpus_result; context_signal,packaging_claim,medium,"1904 food-coloring item and 1950 ad lead add non-book width, but sample is thin."
+1950_2000,existing Ngram; advertising_snippet,corpus_result; advertising_claim,packaging archive,medium,1950 ad lead shows absence claim; needs mid/late-century packaging and magazine ads.
+2000_2019,existing Ngram; dictionary/background sources,corpus_result,modern web snippets,medium,Existing Ngram covers this period but non-book context remains thin.
+2019_2026,regulatory_source; web_snippet; news_snippet; secondary_literature; modern_dictionary,packaging_claim; regulatory_definition; context_signal,balanced corpus_result,medium,Good source-width sample; lacks representative news/web corpus counts.
