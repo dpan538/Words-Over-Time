@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-12T01:14:20.927480Z",
+    "generated_by_script": "scripts/process_hub_evidence_strengthening.py"
+  },
+  "relationship_supported": true,
+  "nave_historical_relevance": "Supported",
+  "summary": "Nave is historically relevant as an older/formal wheel-center term. Hub appears in early dictionary evidence as a synonym or near-synonym for the nave, and Webster 1828 defines it through the wheel structure that receives spokes.",
+  "nave_as_older_or_formal": {
+    "status": "supported",
+    "confidence": "medium",
+    "notes": "Merriam-Webster gives nave a before-12th-century first-use claim, while 1828 dictionaries define hub through nave."
+  },
+  "hub_as_later_common_or_provincial": {
+    "status": "partially_supported",
+    "confidence": "medium",
+    "notes": "Johnson/Todd/Chalmers 1828 says hub/hob is also an English provincial word; this supports caution, not a full dialect-origin claim."
+  },
+  "source_ids": [
+    "nave_relation_001",
+    "nave_relation_002",
+    "nave_relation_003"
+  ],
+  "sources": [
+    {
+      "id": "nave_relation_001",
+      "source_title": "Merriam-Webster: nave",
+      "source_url": "https://www.merriam-webster.com/dictionary/nave",
+      "source_type": "dictionary",
+      "evidence_text_short": "",
+      "relationship_claim": "Nave is an older wheel-center term; public dictionary gives first known use before the 12th century.",
+      "confidence": "medium",
+      "limitations": "Public dictionary first-use claim only; no quotation visible in this third pass."
+    },
+    {
+      "id": "nave_relation_002",
+      "source_title": "An American Dictionary of the English Language",
+      "source_url": "https://archive.org/details/americandictiona01websrich",
+      "source_type": "historical_dictionary",
+      "evidence_text_short": "a heap ; or W. hoh, HUB, S \"■ that which swells.] The nave of a wheel ; a solid piece of timber in which the spokes are inserted. Washington. HOB, n. A clown ; a fairy. HOB'BISM, n. The principles of the scep- tical Thomas Hobbes. Skelton. HOB'BIST, n. A follower of",
+      "relationship_claim": "Webster 1828 defines hub/hob through nave and describes the hub as the timber receiving spokes.",
+      "confidence": "high",
+      "limitations": "Historical dictionary evidence, not a first-use quotation or non-dictionary corpus example."
+    },
+    {
+      "id": "nave_relation_003",
+      "source_title": "Johnson's English Dictionary, as Improved by Todd and Abridged by Chalmers",
+      "source_url": "https://archive.org/details/bub_gb_EXEUPL_Jv2MC",
+      "source_type": "historical_dictionary",
+      "evidence_text_short": "A sort of basket to carry turf or slate in. | Grose. HUB, or HOB, n.s. The nave of a wheel, Webst. Dict. Icis also an English provincial word. Pick. Vocab. H ee haf’-fé-nés, n.s. Arrogance ; petu ance. HU'LET*. n, s. See HowLrr. HU‘RLY-BURLY*.",
+      "relationship_claim": "Johnson/Todd/Chalmers 1828 lists hub or hob as the nave of a wheel and notes English provincial usage.",
+      "confidence": "medium",
+      "limitations": "Dictionary evidence and OCR are readable but imperfect; not a direct non-dictionary use."
+    }
+  ],
+  "chart_planning_note": "Nave can be used as a careful contextual comparison for early wheel terminology, but should not be overbuilt into a full origin story without OED or primary early-modern quotations."
+}

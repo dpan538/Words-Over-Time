@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-12T01:14:20.927469Z",
+    "generated_by_script": "scripts/process_hub_evidence_strengthening.py"
+  },
+  "previous_earliest_claimed_year": "1640s",
+  "previous_earliest_supported_year": 1828,
+  "previous_earliest_direct_corpus_snippet_year": 1908,
+  "new_earliest_claimed_year": "1640s",
+  "new_earliest_supported_year": 1828,
+  "new_earliest_direct_text_year": 1858,
+  "new_earliest_mechanical_direct_text_year": 1878,
+  "new_earliest_metaphorical_direct_text_year": 1858,
+  "confidence_change_summary": {
+    "previous_high": 0,
+    "previous_medium": 21,
+    "previous_low": 1,
+    "new_high": 4,
+    "new_medium": 2,
+    "new_low": 0
+  },
+  "upgraded_senses": [
+    {
+      "sense_id": "mechanical_core",
+      "previous_status": "Earliest direct corpus snippet was 1938 in the second-pass semantic group; 1828 was historical dictionary evidence.",
+      "new_status": "Readable direct-text mechanical evidence now appears in 1878.",
+      "evidence_ids": [
+        "hub_strengthened_attestation_003",
+        "hub_strengthened_attestation_004",
+        "hub_strengthened_attestation_005"
+      ]
+    },
+    {
+      "sense_id": "central_place",
+      "previous_status": "1858 was present as a secondary dictionary/etymology claim; earliest direct corpus snippet was 1910.",
+      "new_status": "Public-domain direct text verifies the Holmes metaphor in 1858.",
+      "evidence_ids": [
+        "hub_strengthened_attestation_006"
+      ]
+    }
+  ],
+  "unchanged_senses": [
+    {
+      "sense_id": "transport_logistics",
+      "status": "No stronger pre-1908 transport/logistics attestation was found in this pass; second-pass 1908 OCR candidate remains separate and needs image verification."
+    },
+    {
+      "sense_id": "network_system",
+      "status": "No early network/computing attestation was targeted or improved in this pass."
+    },
+    {
+      "sense_id": "institutional_cluster",
+      "status": "No stronger pre-1908 institutional/economic attestation was found in this pass."
+    },
+    {
+      "sense_id": "digital_platform",
+      "status": "Digital/platform senses remain later and outside this pre-1908 evidence-strengthening focus."
+    }
+  ],
+  "claim_1640s_resolved": false,
+  "claim_1640s_resolution_notes": "The public entry gives a decade date for hub in the wheel-center sense and uncertain origin notes, but no visible 1640s quotation.",
+  "evidence_1828_clarified": true,
+  "evidence_1828_classification": "historical_dictionary",
+  "notes": "The 1640s/1649 dates remain reference claims. The earliest supported year remains 1828, now clarified as historical dictionary evidence. The earliest direct text found in this pass is the 1858 Holmes metaphor; the earliest mechanical direct text found is 1878."
+}

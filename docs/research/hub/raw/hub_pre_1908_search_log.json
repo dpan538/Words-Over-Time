@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-12T01:14:17.240759Z",
+    "generated_by_script": "scripts/scrape_hub_evidence_strengthening.py",
+    "cache_only": true
+  },
+  "searches": [
+    {
+      "source": "Internet Archive full-text search",
+      "query": "\"hub of a wheel\"",
+      "sense_id": "mechanical_core",
+      "status": "ok",
+      "result_count": 3,
+      "earliest_plausible_date": "1980-05-29T00:00:00Z",
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+of+a+wheel%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&sort%5B%5D=date+asc&output=json",
+      "notes": "Search lead only; direct evidence is taken only from targeted source fetches.",
+      "sample_results": [
+        {
+          "creator": "CIA Reading Room",
+          "date": "1980-05-29T00:00:00Z",
+          "identifier": "cia-readingroom-document-cia-rdp96-00788r000300600001-3",
+          "title": "CIA Reading Room cia-rdp96-00788r000300600001-3: UNCONFIRMED SOURCE INFORMATION, PERTAINING TO AN UNIDENTIFIED SUBJECT, IDENTIFIED BY PHOTOGRAPH"
+        },
+        {
+          "creator": "CIA Reading Room",
+          "date": "1981-10-27T00:00:00Z",
+          "identifier": "cia-readingroom-document-cia-rdp89g00720r000100050035-7",
+          "title": "CIA Reading Room cia-rdp89g00720r000100050035-7: DCI'S MEMO TO YOU ON TECHNOLOGY TRANSFER"
+        },
+        {
+          "creator": "Downey, Lynn, 1954- author",
+          "date": "2016-01-01T00:00:00Z",
+          "identifier": "levistraussmanwh0000down",
+          "title": "Levi Strauss : the man who gave blue jeans to the world"
+        }
+      ]
+    },
+    {
+      "source": "Internet Archive full-text search",
+      "query": "\"hub of the wheel\"",
+      "sense_id": "mechanical_core",
+      "status": "ok",
+      "result_count": 8,
+      "earliest_plausible_date": "1953-03-06T00:00:00Z",
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+of+the+wheel%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&sort%5B%5D=date+asc&output=json",
+      "notes": "Search lead only; direct evidence is taken only from targeted source fetches.",
+      "sample_results": [
+        {
+          "creator": "CIA Reading Room",
+          "date": "1953-03-06T00:00:00Z",
+          "identifier": "cia-readingroom-document-cia-rdp70-00058r000100010060-3",
+          "title": "CIA Reading Room cia-rdp70-00058r000100010060-3: IN THE NATION"
+        },
+        {
+          "date": "1958-07-18T00:00:00Z",
+          "identifier": "NPCM19580718",
+          "title": "China Mail 1958-07-18"
+        },
+        {
+          "creator": "CIA Reading Room",
+          "date": "1961-01-01T00:00:00Z",
+          "identifier": "cia-readingroom-document-cia-rdp67-00318r000100410001-2",
+          "title": "CIA Reading Room cia-rdp67-00318r000100410001-2: OFF THE RECORD"
+        }
+      ]
+    },
+    {
+      "source": "Internet Archive full-text search",
+      "query": "\"wheel hub\"",
+      "sense_id": "mechanical_core",
+      "status": "ok",
+      "result_count": 22,
+      "earliest_plausible_date": "1930-01-01T00:00:00Z",
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22wheel+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&sort%5B%5D=date+asc&output=json",
+      "notes": "Search lead only; direct evidence is taken only from targeted source fetches.",
+      "sample_results": [
+        {
+          "creator": "NASA Technical Reports Server (NTRS)",
+          "date": "1930-01-01T00:00:00Z",
+          "identifier": "NASA_NTRS_Archive_19930094853",
+          "title": "NASA Technical Reports Server (NTRS) 19930094853: Improving the Performance of Multi-engined Airplanes by Means of Idling Propellers : the \"free-wheel\" Propeller"
+        },
+        {
+          "creator": [
+            "United States. War Department",
+            "United States. War Office"
+          ],
+          "date": "1944-09-15T00:00:00Z",
+          "identifier": "TM5-9722",
+          "title": "TM 5-9722 Maintenance Manual And Parts Catalog For Shower-Unit, Field, Trailer-Mounted, With Heater, 8 Shower Heads, Cleaver-Brooks Model EC-3, 1944"
+        },
+        {
+          "creator": "CIA Reading Room",
+          "date": "1951-12-06T00:00:00Z",
+          "identifier": "cia-readingroom-document-cia-rdp80-00809a000700030342-7",
+          "title": "CIA Reading Room cia-rdp80-00809a000700030342-7: THE ZIS-151 TRUCK"
+        }
+      ]
+    },
+    {
+      "source": "Internet Archive full-text search",
+      "query": "\"axle hub\"",
+      "sense_id": "mechanical_core",
+      "status": "ok",
+      "result_count": 2,
+      "earliest_plausible_date": "1981-01-01T00:00:00Z",
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22axle+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&sort%5B%5D=date+asc&output=json",
+      "notes": "Search lead only; direct evidence is taken only from targeted source fetches.",
+      "sample_results": [
+        {
+          "creator": "NASA Technical Reports Server (NTRS)",
+          "date": "1981-01-01T00:00:00Z",
+          "identifier": "NASA_NTRS_Archive_19810020499",
+          "title": "NASA Technical Reports Server (NTRS) 19810020499: Catalog of components for electric and hybrid vehicle propulsion systems"
+        },
+        {
+          "identifier": "2006-2012-Toyota-Rav4-Service-Manual",
+          "title": "2006-2012 Toyota Rav4 Service Manual"
+        }
+      ]
+    },
+    {
+      "source": "Internet Archive full-text search",
+      "query": "\"hub of activity\"",
+      "sense_id": "central_place",
+      "status": "ok",
+      "result_count": 11,
+      "earliest_plausible_date": "1940-11-05T00:00:00Z",
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+of+activity%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&sort%5B%5D=date+asc&output=json",
+      "notes": "Search lead only; direct evidence is taken only from targeted source fetches.",
+      "sample_results": [
+        {
+          "creator": "University of Alberta",
+          "date": "1940-11-05T00:00:00Z",
+          "identifier": "GAT_1940110501",
+          "title": "The Gateway (1940-11-05)"
+        },
+        {
+          "creator": "CIA Reading Room",
+          "date": "1989-09-29T00:00:00Z",
+          "identifier": "cia-readingroom-document-cia-rdp91-00280r000300370011-9",
+          "title": "CIA Reading Room cia-rdp91-00280r000300370011-9: NEWEST EMPLOYEES"
+        },
+        {
+          "creator": "Kuper, Simon",
+          "date": "2003-01-01T00:00:00Z",
+          "identifier": "ajaxdutchwarfoot0000kupe",
+          "title": "Ajax, the Dutch, the war : football in Europe during the Second World War"
+        }
+      ]
+    },
+    {
+      "source": "Internet Archive full-text search",
+      "query": "\"hub of commerce\"",
+      "sense_id": "central_place",
+      "status": "ok",
+      "result_count": 4,
+      "earliest_plausible_date": "2012-01-01T00:00:00Z",
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+of+commerce%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&sort%5B%5D=date+asc&output=json",
+      "notes": "Search lead only; direct evidence is taken only from targeted source fetches.",
+      "sample_results": [
+        {
+          "creator": "Bailyn, Bernard",
+          "date": "2012-01-01T00:00:00Z",
+          "identifier": "barbarousyearspe0000bail",
+          "title": "The barbarous years : the peopling of British North America : the conflict of civilizations, 1600-1675"
+        },
+        {
+          "creator": "Defense Technical Information Center",
+          "date": "2014-11-01T00:00:00Z",
+          "identifier": "DTIC_ADA612255",
+          "title": "DTIC ADA612255: Central Asia's Shrinking Connectivity Gap: Implications for U.S. Strategy"
+        },
+        {
+          "creator": "Reisman, Jessica, 1963- author",
+          "date": "2017-01-01T00:00:00Z",
+          "identifier": "substratephantom0000reis",
+          "title": "Substrate phantoms"
+        }
+      ]
+    },
+    {
+      "source": "Internet Archive full-text search",
+      "query": "\"commercial hub\"",
+      "sense_id": "central_place",
+      "status": "ok",
+      "result_count": 16,
+      "earliest_plausible_date": "1986-06-06T00:00:00Z",
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22commercial+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&sort%5B%5D=date+asc&output=json",
+      "notes": "Search lead only; direct evidence is taken only from targeted source fetches.",
+      "sample_results": [
+        {
+          "creator": "CIA Reading Room",
+          "date": "1986-06-06T00:00:00Z",
+          "identifier": "cia-readingroom-document-cia-rdp87t00289r000301550001-5",
+          "title": "CIA Reading Room cia-rdp87t00289r000301550001-5: LATIN AMERICA REVIEW"
+        },
+        {
+          "creator": "CIA Reading Room",
+          "date": "1986-12-01T00:00:00Z",
+          "identifier": "cia-readingroom-document-cia-rdp88t00096r000400490003-3",
+          "title": "CIA Reading Room cia-rdp88t00096r000400490003-3: LEBANON: WAR ECONOMY BREEDS RADICALISM AND PARTITION"
+        },
+        {
+          "date": "1990-01-13T00:00:00Z",
+          "identifier": "jobs-left-abrams-but-not-the-spirit",
+          "title": "Jobs Left Abrams, But Not The Spirit"
+        }
+      ]
+    },
+    {
+      "source": "Internet Archive full-text search",
+      "query": "\"railway hub\"",
+      "sense_id": "transport_logistics",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22railway+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&sort%5B%5D=date+asc&output=json",
+      "notes": "Search lead only; direct evidence is taken only from targeted source fetches.",
+      "sample_results": []
+    },
+    {
+      "source": "Internet Archive full-text search",
+      "query": "\"railroad hub\"",
+      "sense_id": "transport_logistics",
+      "status": "ok",
+      "result_count": 2,
+      "earliest_plausible_date": "2008-10-07T00:00:00Z",
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22railroad+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&sort%5B%5D=date+asc&output=json",
+      "notes": "Search lead only; direct evidence is taken only from targeted source fetches.",
+      "sample_results": [
+        {
+          "creator": "Pioneer Valley Transit Authority",
+          "date": "2008-10-07T00:00:00Z",
+          "identifier": "union-station-full-development-plan_202107",
+          "title": "Redevelopment Plan for the Union Station Intermodal Transportation Facility"
+        },
+        {
+          "creator": "Cordery, Simon, 1960- author",
+          "date": "2016-01-01T00:00:00Z",
+          "identifier": "ironroadinprairi0000cord",
+          "title": "The iron road in the Prairie State : the story of Illinois railroading"
+        }
+      ]
+    },
+    {
+      "source": "Internet Archive full-text search",
+      "query": "\"hub and spoke\"",
+      "sense_id": "transport_logistics",
+      "status": "ok",
+      "result_count": 114,
+      "earliest_plausible_date": "1971-01-01T00:00:00Z",
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+and+spoke%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=5&sort%5B%5D=date+asc&output=json",
+      "notes": "Search lead only; direct evidence is taken only from targeted source fetches.",
+      "sample_results": [
+        {
+          "creator": "Garbers, Hermann",
+          "date": "1971-01-01T00:00:00Z",
+          "identifier": "springer_10.1007-978-3-7908-2670-8",
+          "title": "Zur Spektral- und Kreuzspektralanalyse stationärer stochastischer Prozesse"
+        },
+        {
+          "creator": "NASA Technical Reports Server (NTRS)",
+          "date": "1978-04-01T00:00:00Z",
+          "identifier": "NASA_NTRS_Archive_19780017126",
+          "title": "NASA Technical Reports Server (NTRS) 19780017126: Preliminary analysis of hub and spoke air freight distribution system"
+        },
+        {
+          "creator": "Defense Technical Information Center",
+          "date": "1985-03-01T00:00:00Z",
+          "identifier": "DTIC_ADA156076",
+          "title": "DTIC ADA156076: Wartime CONUS (Continental United States) Casualty Distribution System Using Dedicated Craf Airlift."
+        }
+      ]
+    },
+    {
+      "source": "Gutendex",
+      "query": "Autocrat of the Breakfast-Table Holmes",
+      "sense_id": "central_place",
+      "status": "found",
+      "result_count": 1,
+      "earliest_plausible_date": null,
+      "usable_evidence": true,
+      "url": "https://gutendex.com/books/?search=Autocrat+of+the+Breakfast-Table+Holmes",
+      "notes": "Matched expected Project Gutenberg work.",
+      "sample_results": [
+        {
+          "id": 751,
+          "title": "The Autocrat of the Breakfast-Table",
+          "authors": [
+            {
+              "name": "Holmes, Oliver Wendell",
+              "birth_year": 1809,
+              "death_year": 1894
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "\"hub of the wheel\"",
+      "sense_id": "mechanical_core",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub+of+the+wheel%22&dates=1850-1907&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "Cache-only mode: no cached response for this URL."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "\"wheel hub\"",
+      "sense_id": "mechanical_core",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22wheel+hub%22&dates=1850-1907&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "Cache-only mode: no cached response for this URL."
+    }
+  ]
+}

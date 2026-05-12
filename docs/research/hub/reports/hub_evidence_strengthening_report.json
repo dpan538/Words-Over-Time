@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-12T01:14:20.927632Z",
+    "generated_by_script": "scripts/process_hub_evidence_strengthening.py"
+  },
+  "summary": {
+    "new_strengthened_attestations": 6,
+    "confidence_counts": {
+      "high": 4,
+      "medium": 2,
+      "low": 0
+    },
+    "previous_direct_text_year": 1908,
+    "new_earliest_direct_text_year": 1858,
+    "new_earliest_mechanical_direct_text_year": 1878,
+    "claim_1640s_resolved": false,
+    "evidence_1828_clarified": true,
+    "nave_relation_supported": true,
+    "failed_source_fetches": 0,
+    "failed_searches": 2
+  },
+  "claim_1640s_investigation": [
+    {
+      "claim": "1640s",
+      "claim_source": "Online Etymology Dictionary",
+      "source_url": "https://www.etymonline.com/word/hub",
+      "source_status": {
+        "url": "https://www.etymonline.com/word/hub",
+        "cache_path": "docs/research/hub/raw/evidence_strengthening_cache/web_text_etymonline_hub_claim_check_e5ceca8da6f0367d.html",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 233914
+      },
+      "visible_quotation": false,
+      "visible_author_or_title": false,
+      "visible_dated_source": false,
+      "classification": "dictionary_claim",
+      "notes": "The public entry gives a decade date for hub in the wheel-center sense and uncertain origin notes, but no visible 1640s quotation."
+    },
+    {
+      "claim": "1649",
+      "claim_source": "Merriam-Webster",
+      "source_url": "https://www.merriam-webster.com/dictionary/hub",
+      "source_status": {
+        "url": "https://www.merriam-webster.com/dictionary/hub",
+        "cache_path": "docs/research/hub/raw/evidence_strengthening_cache/web_text_merriam_webster_hub_claim_check_ddef5796281982c1.html",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 731777
+      },
+      "visible_quotation": false,
+      "visible_author_or_title": false,
+      "visible_dated_source": false,
+      "classification": "dictionary_claim",
+      "notes": "The public page lists first-known use but does not expose a dated quotation or bibliographic source for the claim."
+    }
+  ],
+  "evidence_1828_investigation": {
+    "claim": "1828 supported evidence",
+    "claim_source": "Noah Webster, An American Dictionary of the English Language",
+    "source_url": "https://archive.org/details/americandictiona01websrich",
+    "source_status": {
+      "id": "webster_1828_volume_1_hub_entry",
+      "source": "Internet Archive",
+      "identifier": "americandictiona01websrich",
+      "url": "https://archive.org/metadata/americandictiona01websrich",
+      "metadata_status": {
+        "url": "https://archive.org/metadata/americandictiona01websrich",
+        "cache_path": "docs/research/hub/raw/evidence_strengthening_cache/ia_metadata_webster_1828_volume_1_hub_entry_87ce8c7444f945a3.json",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 184755
+      },
+      "text_status": {
+        "url": "https://archive.org/download/americandictiona01websrich/americandictiona01websrich_djvu.txt",
+        "cache_path": "docs/research/hub/raw/evidence_strengthening_cache/ia_text_webster_1828_volume_1_hub_entry_e3c698798b561668.txt",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 9661847
+      },
+      "xml_status": {
+        "url": "https://archive.org/download/americandictiona01websrich/americandictiona01websrich_djvu.xml",
+        "cache_path": "docs/research/hub/raw/evidence_strengthening_cache/ia_xml_webster_1828_volume_1_hub_entry_3a2f2ee4fa90abbd.xml",
+        "from_cache": true,
+        "ok": true,
+        "status_code": null,
+        "content_type": null,
+        "error": null,
+        "bytes": 114670263
+      },
+      "usable": true,
+      "notes": "Matched phrase: The nave of a wheel ; a solid piece of timber in which the spokes are inserted"
+    },
+    "visible_quotation": false,
+    "visible_author_or_title": true,
+    "visible_dated_source": true,
+    "classification": "historical_dictionary",
+    "notes": "The 1828 evidence is a dated historical dictionary entry, not direct corpus prose."
+  },
+  "pre_1908_direct_evidence": [
+    {
+      "id": "hub_strengthened_attestation_006",
+      "raw_id": "gutenberg_autocrat_1858_hub_metaphor",
+      "term": "hub",
+      "sense_id": "central_place",
+      "sense_label": "Central place or focus",
+      "evidence_year": 1858,
+      "year_type": "direct_text",
+      "source_title": "The Autocrat of the Breakfast-Table",
+      "source_author": "Oliver Wendell Holmes",
+      "source_publication_year": 1858,
+      "source_page": "",
+      "source_url": "https://www.gutenberg.org/files/751/751.txt",
+      "source_type": "book",
+      "evidence_text_short": "To which the answer was, _Go ahead_!--Well,--he said,--this was what I heard:-- \"Boston State-House is the hub of the solar system. You couldn't pry that out of a Boston man if you had the tire of all creation straightened out for a crowbar.\" Sir,--said I,--I",
+      "context_summary": "Holmes uses hub metaphorically for Boston's central self-conception.",
+      "is_direct_attestation": true,
+      "is_dictionary_claim": false,
+      "sense_is_clear": true,
+      "confidence": "high",
+      "why_this_is_stronger": "Verifies the previously dictionary-mediated 1858 metaphor claim in a public-domain text.",
+      "limitations": "Project Gutenberg text confirms the passage; first-edition page verification would further strengthen publication details.",
+      "copyright_notes": "Short excerpt only; Project Gutenberg text is public domain in the United States where applicable."
+    },
+    {
+      "id": "hub_strengthened_attestation_003",
+      "raw_id": "london_bicycle_club_gazette_1878_wheel_hub",
+      "term": "wheel hub",
+      "sense_id": "mechanical_core",
+      "sense_label": "Mechanical wheel center",
+      "evidence_year": 1878,
+      "year_type": "direct_text",
+      "source_title": "London Bicycle Club Gazette",
+      "source_author": "London Bicycle Club",
+      "source_publication_year": 1878,
+      "source_page": "IA OCR leaf 36: londonbicyclecl02unkngoog_0035.djvu",
+      "source_url": "https://archive.org/details/londonbicyclecl02unkngoog",
+      "source_type": "periodical",
+      "evidence_text_short": "hear that he is already nearly overwhelmed with Easter handicaps. The Fboitt Wheel Hub. QUILLS. \" Aristotle and Pliny deliver it that the porpentine casteth off his quills when he would attack, or defend himself, but Dioscorides affirmeth",
+      "context_summary": "Cycling periodical context uses wheel hub mechanically in relation to bicycle equipment.",
+      "is_direct_attestation": true,
+      "is_dictionary_claim": false,
+      "sense_is_clear": true,
+      "confidence": "medium",
+      "why_this_is_stronger": "Moves readable mechanical direct-text evidence before the previous 1908 corpus snippet.",
+      "limitations": "OCR heading appears partly garbled around 'Front'; image verification is recommended before publication.",
+      "copyright_notes": "Public-domain or public OCR text; short evidence excerpt only."
+    },
+    {
+      "id": "hub_strengthened_attestation_004",
+      "raw_id": "chandler_1881_bicycle_tour_spokes_hub",
+      "term": "hub",
+      "sense_id": "mechanical_core",
+      "sense_label": "Mechanical wheel center",
+      "evidence_year": 1881,
+      "year_type": "direct_text",
+      "source_title": "A Bicycle Tour in England and Wales",
+      "source_author": "Alfred D. Chandler",
+      "source_publication_year": 1881,
+      "source_page": "IA OCR leaf 151: abicycletourine02changoog_0150.djvu",
+      "source_url": "https://archive.org/details/abicycletourine02changoog",
+      "source_type": "book",
+      "evidence_text_short": "is tension^ not inward thrust, there is no extra rigidity secured by spokes screwed direct into the hub as against those simply nutted. This is entirely a mat- ter of taste. It will be seen that there is no inward strain on",
+      "context_summary": "A cycling book discusses spokes attached to the bicycle hub.",
+      "is_direct_attestation": true,
+      "is_dictionary_claim": false,
+      "sense_is_clear": true,
+      "confidence": "high",
+      "why_this_is_stronger": "Readable dated book text gives clear mechanical hub usage before 1908.",
+      "limitations": "Google-scanned IA OCR; page image should be checked before final quotation.",
+      "copyright_notes": "Public-domain or public OCR text; short evidence excerpt only."
+    },
+    {
+      "id": "hub_strengthened_attestation_005",
+      "raw_id": "wright_ditson_1884_hubs_catalogue",
+      "term": "hubs",
+      "sense_id": "mechanical_core",
+      "sense_label": "Mechanical wheel center",
+      "evidence_year": 1884,
+      "year_type": "direct_text",
+      "source_title": "Wright & Ditson's Annual Illustrated Catalogue",
+      "source_author": "Wright & Ditson",
+      "source_publication_year": 1884,
+      "source_page": "IA OCR leaf 48: wright00wrig_0048.djvu",
+      "source_url": "https://archive.org/details/wright00wrig",
+      "source_type": "catalogue",
+      "evidence_text_short": ": Hollow Steel Backbone, round and tapered ; Steel Spokes, headed and screwed directly into the hubs ; Malleble Iron Forks, with long steering centres; Steel Handle Bar and Rims; Malleable Iron Hubs and Cranks ; Steel Bearings, parallel in front",
+      "context_summary": "Sporting-goods catalogue describes bicycle construction using hubs.",
+      "is_direct_attestation": true,
+      "is_dictionary_claim": false,
+      "sense_is_clear": true,
+      "confidence": "high",
+      "why_this_is_stronger": "Adds a second readable, dated mechanical use before 1908.",
+      "limitations": "Catalogue OCR is readable; verify page image for final quotation.",
+      "copyright_notes": "Public-domain or public OCR text; short evidence excerpt only."
+    }
+  ],
+  "mechanical_vs_metaphorical": {
+    "mechanical": "Direct mechanical evidence is now supported by readable cycling texts before 1908; earliest candidate is 1878, with a stronger book example in 1881.",
+    "metaphorical": "The 1858 Holmes passage is verified in public-domain text and supports the central-place metaphor earlier than the second-pass 1910 snippet."
+  },
+  "nave_relationship": {
+    "metadata": {
+      "word": "hub",
+      "generated_at": "2026-05-12T01:14:20.927480Z",
+      "generated_by_script": "scripts/process_hub_evidence_strengthening.py"
+    },
+    "relationship_supported": true,
+    "nave_historical_relevance": "Supported",
+    "summary": "Nave is historically relevant as an older/formal wheel-center term. Hub appears in early dictionary evidence as a synonym or near-synonym for the nave, and Webster 1828 defines it through the wheel structure that receives spokes.",
+    "nave_as_older_or_formal": {
+      "status": "supported",
+      "confidence": "medium",
+      "notes": "Merriam-Webster gives nave a before-12th-century first-use claim, while 1828 dictionaries define hub through nave."
+    },
+    "hub_as_later_common_or_provincial": {
+      "status": "partially_supported",
+      "confidence": "medium",
+      "notes": "Johnson/Todd/Chalmers 1828 says hub/hob is also an English provincial word; this supports caution, not a full dialect-origin claim."
+    },
+    "source_ids": [
+      "nave_relation_001",
+      "nave_relation_002",
+      "nave_relation_003"
+    ],
+    "sources": [
+      {
+        "id": "nave_relation_001",
+        "source_title": "Merriam-Webster: nave",
+        "source_url": "https://www.merriam-webster.com/dictionary/nave",
+        "source_type": "dictionary",
+        "evidence_text_short": "",
+        "relationship_claim": "Nave is an older wheel-center term; public dictionary gives first known use before the 12th century.",
+        "confidence": "medium",
+        "limitations": "Public dictionary first-use claim only; no quotation visible in this third pass."
+      },
+      {
+        "id": "nave_relation_002",
+        "source_title": "An American Dictionary of the English Language",
+        "source_url": "https://archive.org/details/americandictiona01websrich",
+        "source_type": "historical_dictionary",
+        "evidence_text_short": "a heap ; or W. hoh, HUB, S \"■ that which swells.] The nave of a wheel ; a solid piece of timber in which the spokes are inserted. Washington. HOB, n. A clown ; a fairy. HOB'BISM, n. The principles of the scep- tical Thomas Hobbes. Skelton. HOB'BIST, n. A follower of",
+        "relationship_claim": "Webster 1828 defines hub/hob through nave and describes the hub as the timber receiving spokes.",
+        "confidence": "high",
+        "limitations": "Historical dictionary evidence, not a first-use quotation or non-dictionary corpus example."
+      },
+      {
+        "id": "nave_relation_003",
+        "source_title": "Johnson's English Dictionary, as Improved by Todd and Abridged by Chalmers",
+        "source_url": "https://archive.org/details/bub_gb_EXEUPL_Jv2MC",
+        "source_type": "historical_dictionary",
+        "evidence_text_short": "A sort of basket to carry turf or slate in. | Grose. HUB, or HOB, n.s. The nave of a wheel, Webst. Dict. Icis also an English provincial word. Pick. Vocab. H ee haf’-fé-nés, n.s. Arrogance ; petu ance. HU'LET*. n, s. See HowLrr. HU‘RLY-BURLY*.",
+        "relationship_claim": "Johnson/Todd/Chalmers 1828 lists hub or hob as the nave of a wheel and notes English provincial usage.",
+        "confidence": "medium",
+        "limitations": "Dictionary evidence and OCR are readable but imperfect; not a direct non-dictionary use."
+      }
+    ],
+    "chart_planning_note": "Nave can be used as a careful contextual comparison for early wheel terminology, but should not be overbuilt into a full origin story without OED or primary early-modern quotations."
+  },
+  "remaining_limitations": [
+    "The 1640s/1649 first-use dates still lack visible public quotations.",
+    "OED or paywalled historical dictionary quotation evidence was not accessible in the local environment.",
+    "LOC newspaper search can produce useful leads, but OCR/page access remained unreliable and was not promoted into strengthened evidence.",
+    "Google Books API was not retried because earlier passes encountered rate limiting.",
+    "Internet Archive OCR is useful but should be checked against page images before final chart copy."
+  ],
+  "chart_implications": [
+    "Chart 1 can safely begin with the physical wheel/mechanical hub, but 1640s should be displayed as a claim rather than confirmed text date.",
+    "The early metaphor layer is now better supported by Holmes 1858 direct text.",
+    "Nave vs hub is worth a small contextual note, not a standalone origin argument.",
+    "Mechanical direct-text evidence before 1908 is now available for later chart planning."
+  ],
+  "outputs": {
+    "strengthened_attestations": "docs/research/hub/processed/hub_strengthened_attestations.json",
+    "evidence_quality_upgrade": "docs/research/hub/processed/hub_evidence_quality_upgrade.json",
+    "nave_relation_summary": "docs/research/hub/processed/hub_nave_relation_summary.json",
+    "report_md": "docs/research/hub/reports/hub_evidence_strengthening_report.md",
+    "report_json": "docs/research/hub/reports/hub_evidence_strengthening_report.json",
+    "generated_preview": "src/data/generated/hub_chart_data_preview.json"
+  }
+}
