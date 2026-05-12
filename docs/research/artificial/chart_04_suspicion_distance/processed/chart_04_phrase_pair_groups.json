@@ -1,0 +1,68 @@
+{
+  "light_pair": {
+    "label": "natural light / artificial light",
+    "left": "natural light",
+    "right": "artificial light",
+    "pair_type": "natural_opposition"
+  },
+  "flavor_pair": {
+    "label": "natural flavor / artificial flavor",
+    "left": "natural flavor",
+    "right": "artificial flavor",
+    "pair_type": "natural_opposition"
+  },
+  "flavour_pair": {
+    "label": "natural flavour / artificial flavour",
+    "left": "natural flavour",
+    "right": "artificial flavour",
+    "pair_type": "natural_opposition"
+  },
+  "color_pair": {
+    "label": "natural color / artificial color",
+    "left": "natural color",
+    "right": "artificial color",
+    "pair_type": "natural_opposition"
+  },
+  "colour_pair": {
+    "label": "natural colour / artificial colour",
+    "left": "natural colour",
+    "right": "artificial colour",
+    "pair_type": "natural_opposition"
+  },
+  "ingredients_pair": {
+    "label": "natural ingredients / artificial ingredients",
+    "left": "natural ingredients",
+    "right": "artificial ingredients",
+    "pair_type": "consumer_opposition"
+  },
+  "sweetener_pair": {
+    "label": "natural sweetener / artificial sweetener",
+    "left": "natural sweetener",
+    "right": "artificial sweetener",
+    "pair_type": "consumer_opposition"
+  },
+  "selection_pair": {
+    "label": "natural selection / artificial selection",
+    "left": "natural selection",
+    "right": "artificial selection",
+    "pair_type": "technical_natural_opposition"
+  },
+  "language_pair": {
+    "label": "natural language / artificial language",
+    "left": "natural language",
+    "right": "artificial language",
+    "pair_type": "semantic_natural_opposition"
+  },
+  "intelligence_pair": {
+    "label": "natural intelligence / artificial intelligence",
+    "left": "natural intelligence",
+    "right": "artificial intelligence",
+    "pair_type": "cognitive_natural_opposition"
+  },
+  "life_pair": {
+    "label": "natural life / artificial life",
+    "left": "natural life",
+    "right": "artificial life",
+    "pair_type": "semantic_natural_opposition"
+  }
+}

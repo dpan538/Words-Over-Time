@@ -1,0 +1,8 @@
+group,total_terms,collected,missing,too_sparse,errored,strongest_terms,weakest_terms,notes
+core_baseline,21,18,3,0,0,real; natural; constructed; manufactured; synthetic,man-made; human-made; machine-made,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+suspicion_negative,22,22,0,0,0,artificial life; artificial manner; artificial society; artificial tears; artificial manners,,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+semantic_distance,29,29,0,0,0,false; simulation; synthetic; fake; genuine,,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+natural_opposition_pair,22,22,0,0,0,artificial intelligence; natural selection; natural language; natural life; artificial light,,Paired artificial/natural phrases collected for later side-by-side review.
+consumer_packaging,15,15,0,0,0,artificially colored; artificial sweeteners; artificial color; artificial colors; artificial sweetener,,"Consumer, ingredient, packaging, and processed-product phrases."
+absence_claim,14,14,0,0,0,all natural; without artificial; free from artificial; no artificial colors; nothing artificial,,Absence claims where artificial may become marketable by omission.
+optional,17,17,0,0,0,artificial coloring; artificial substance; artificial products; artificial colouring; artificial product,,"Optional material, chemical, dye, product, substitute, and copy phrases."

@@ -1,0 +1,46 @@
+{
+  "color_colour": {
+    "label": "color / colour",
+    "terms": [
+      "artificial color",
+      "artificial colour",
+      "artificial colors",
+      "artificial colours",
+      "natural color",
+      "natural colour"
+    ],
+    "merge_status": "not_merged"
+  },
+  "flavor_flavour": {
+    "label": "flavor / flavour",
+    "terms": [
+      "artificial flavor",
+      "artificial flavour",
+      "natural flavor",
+      "natural flavour",
+      "no artificial flavors",
+      "no artificial flavours"
+    ],
+    "merge_status": "not_merged"
+  },
+  "behavior_behaviour": {
+    "label": "behavior / behaviour",
+    "terms": [
+      "artificial behavior",
+      "artificial behaviour"
+    ],
+    "merge_status": "not_merged"
+  },
+  "hyphenated_made_terms": {
+    "label": "hyphenated / spaced made terms",
+    "terms": [
+      "man-made",
+      "man made",
+      "human-made",
+      "human made",
+      "machine-made",
+      "machine made"
+    ],
+    "merge_status": "not_merged"
+  }
+}

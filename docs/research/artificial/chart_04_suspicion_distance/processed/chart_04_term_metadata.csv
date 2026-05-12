@@ -1,0 +1,141 @@
+term,query_group,status,first_nonzero_year,last_nonzero_year,peak_year,peak_value,recent_year,recent_value,nonzero_year_count,notes
+artificial,core_baseline,collected,1800,2019,1929,0.00002587142388152386,2019,0.000020799102985968876,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+artificially,core_baseline,collected,1800,2019,1934,0.000003026916651549527,2019,0.0000020489062548811887,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+artificiality,core_baseline,collected,1800,2019,2016,3.5323567049161397e-7,2019,3.090491434987186e-7,214,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+artifice,core_baseline,collected,1800,2019,1806,0.000006890097710154919,2019,8.364966128660001e-7,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+natural,core_baseline,collected,1800,2019,1819,0.00016718960409889405,2019,0.0001279747677110643,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+real,core_baseline,collected,1800,2019,2011,0.0001813913809292078,2019,0.00017544301376362648,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+realistic,core_baseline,collected,1800,2019,1974,0.00001321442498378178,2019,0.000010473047435510807,217,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+fake,core_baseline,collected,1800,2019,1800,0.00002423141073037982,2019,0.000012299913208835278,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+genuine,core_baseline,collected,1800,2019,1805,0.00002248363314549806,2019,0.000014913049277254231,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+synthetic,core_baseline,collected,1800,2019,1944,0.00003344865218971038,2019,0.000012008355844181362,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+imitation,core_baseline,collected,1800,2019,1810,0.000018691522257086035,2019,0.000004737359692086329,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+simulated,core_baseline,collected,1800,2019,1995,0.00001078187738889902,2019,0.0000073421319909117155,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+constructed,core_baseline,collected,1800,2019,1872,0.00006230368228443695,2019,0.000021840372247491913,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+processed,core_baseline,collected,1800,2019,1971,0.000022267300892053754,2019,0.00001082436426358413,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+manufactured,core_baseline,collected,1800,2019,1921,0.00003371724849721147,2019,0.000007182098972435824,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+man-made,core_baseline,missing,,,,0,,,0,No row returned by Google Ngram for this query.
+man made,core_baseline,collected,1800,2019,1848,7.497067763817533e-7,2019,5.50935841545086e-7,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+human-made,core_baseline,missing,,,,0,,,0,No row returned by Google Ngram for this query.
+human made,core_baseline,collected,1802,2019,2019,3.902422432422448e-8,2019,3.902422432422448e-8,201,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+machine-made,core_baseline,missing,,,,0,,,0,No row returned by Google Ngram for this query.
+machine made,core_baseline,collected,1800,2019,1906,4.286099937189647e-7,2019,5.659709568367477e-8,220,Broad baseline terms for the artificial/natural/real/fake/synthetic field.
+artificial smile,suspicion_negative,collected,1806,2019,1833,1.7113205075247606e-8,2019,1.2210032984683039e-8,200,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial manner,suspicion_negative,collected,1800,2019,1801,9.177208681876436e-8,2019,7.852727357260392e-9,220,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial manners,suspicion_negative,collected,1800,2019,1822,6.605800262349248e-8,2019,1.005532115905261e-9,220,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial style,suspicion_negative,collected,1800,2019,1820,5.2787136439746973e-8,2019,4.500953283692599e-9,220,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial expression,suspicion_negative,collected,1800,2019,1864,7.595776452262726e-9,2019,1.7237693494820405e-9,197,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial behaviour,suspicion_negative,collected,1800,2019,1804,1.1682088629783038e-8,2019,4.3094233737051013e-10,146,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial behavior,suspicion_negative,collected,1804,2019,1986,6.145593922646242e-9,2019,1.149179543191714e-9,113,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial sentiment,suspicion_negative,collected,1805,2019,1824,1.4471734033350003e-8,2019,9.576496262653222e-10,198,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial passion,suspicion_negative,collected,1800,2019,1814,3.1832463776027e-8,2019,5.26707295833706e-10,199,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial emotion,suspicion_negative,collected,1821,2019,2017,5.169046760067353e-9,2019,2.6335364999852118e-9,162,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial feeling,suspicion_negative,collected,1803,2019,1840,2.1616823886461134e-8,2019,1.7237693494820405e-9,194,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial tears,suspicion_negative,collected,1800,2019,2011,6.787620565607e-8,2019,5.741109632140251e-8,218,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial politeness,suspicion_negative,collected,1805,2019,1831,1.9685504781818963e-8,2019,8.618846747410203e-10,201,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial society,suspicion_negative,collected,1800,2019,1831,6.988354195325286e-8,2019,6.607782494782999e-9,220,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial life,suspicion_negative,collected,1800,2019,1998,2.887080971930578e-7,2019,1.7161081533600964e-7,220,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial world,suspicion_negative,collected,1800,2019,2018,4.895376118363437e-8,2019,4.333364768405179e-8,212,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial taste,suspicion_negative,collected,1800,2019,1828,2.2309174951828936e-8,2019,2.2504767077657917e-9,219,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial charm,suspicion_negative,collected,1805,2019,1874,5.793211688143174e-9,2019,4.3094233737051013e-10,164,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial elegance,suspicion_negative,collected,1800,2019,1815,3.2582587294882615e-8,2019,1.4364745504202858e-10,217,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial refinement,suspicion_negative,collected,1800,2019,1820,3.318048413802899e-8,2019,2.8729491008405716e-10,219,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial simplicity,suspicion_negative,collected,1803,2019,1865,6.38040731359979e-9,2019,9.097671505031713e-10,181,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial constraint,suspicion_negative,collected,1806,2019,1840,9.367290054740351e-9,2019,3.6869512443082897e-9,195,"Social, emotional, aesthetic, and behavioral phrases that may need context review for affected or insincere senses."
+artificial intelligence,semantic_distance,collected,1802,2019,2019,0.0000060785856142303585,2019,0.0000060785856142303585,137,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+artificial life,semantic_distance,collected,1800,2019,1998,2.887080971930578e-7,2019,1.7161081533600964e-7,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+artificial language,semantic_distance,collected,1800,2019,1827,7.859890516215273e-8,2019,5.602250346958826e-8,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+artificial image,semantic_distance,collected,1802,2019,1821,4.273492493211961e-8,2019,7.469667169524019e-9,203,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+artificial voice,semantic_distance,collected,1801,2019,1944,1.7027577181583098e-8,2019,8.906141775455456e-9,203,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+artificial sound,semantic_distance,collected,1800,2019,1967,9.48558762092766e-9,2019,3.974246085003408e-9,186,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+artificial scene,semantic_distance,collected,1801,2019,1818,1.9783213289770174e-8,2019,8.140021989788693e-10,190,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+artificial scenery,semantic_distance,collected,1801,2019,1818,3.5001069154105835e-8,2019,9.097671505031713e-10,214,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+artificial effect,semantic_distance,collected,1801,2019,1842,1.6188881346579365e-8,2019,1.4843569706712856e-9,210,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+artificial effects,semantic_distance,collected,1800,2019,1817,2.155931433378555e-8,2019,2.011064238749416e-9,209,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+realistic,semantic_distance,collected,1800,2019,1974,0.00001321442498378178,2019,0.000010473047435510807,217,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+realism,semantic_distance,collected,1800,2019,2016,0.000008316054113777227,2019,0.000007349731152572758,216,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+unrealistic,semantic_distance,collected,1802,2019,1975,0.0000029409476178798855,2019,0.000002624961639163814,183,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+unreal,semantic_distance,collected,1800,2019,2015,0.000001822139274059581,2019,0.000001728435960218766,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+not real,semantic_distance,collected,1800,2019,2019,0.000001256005422473061,2019,0.000001256005422473061,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+not genuine,semantic_distance,collected,1800,2019,1877,4.362953389680513e-7,2019,1.2425504548885247e-7,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+genuine,semantic_distance,collected,1800,2019,1805,0.00002248363314549806,2019,0.000014913049277254231,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+authentic,semantic_distance,collected,1800,2019,1805,0.000011929448930914077,2019,0.000010406363486481496,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+authenticity,semantic_distance,collected,1800,2019,2016,0.0000065097498200827886,2019,0.000006117581264675209,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+inauthentic,semantic_distance,collected,1807,2019,2016,4.3357219797757196e-7,2019,4.207439174841454e-7,196,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+fake,semantic_distance,collected,1800,2019,1800,0.00002423141073037982,2019,0.000012299913208835278,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+falseness,semantic_distance,collected,1800,2019,1845,3.101646082193099e-7,2019,1.2761261714011596e-7,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+false,semantic_distance,collected,1800,2019,1816,0.00007697192557998278,2019,0.00004056839918575861,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+counterfeit,semantic_distance,collected,1800,2019,1811,0.0000060824440950568714,2019,0.0000013857524194804682,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+sham,semantic_distance,collected,1800,2019,1869,0.000003430697573386654,2019,0.0000018086097120784128,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+imitation,semantic_distance,collected,1800,2019,1810,0.000018691522257086035,2019,0.000004737359692086329,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+synthetic,semantic_distance,collected,1800,2019,1944,0.00003344865218971038,2019,0.000012008355844181362,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+simulated,semantic_distance,collected,1800,2019,1995,0.00001078187738889902,2019,0.0000073421319909117155,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+simulation,semantic_distance,collected,1800,2019,1995,0.00003613882060950202,2019,0.00002574325855292381,220,"Comparators for artificial against fake, real, realistic, genuine, synthetic, imitation, simulated, and related terms."
+artificial light,natural_opposition_pair,collected,1800,2019,1915,0.0000011942825789978961,2019,2.9730234510361164e-7,220,Paired artificial/natural phrases collected for later side-by-side review.
+natural light,natural_opposition_pair,collected,1800,2019,2019,6.302292616389149e-7,2019,6.302292616389149e-7,220,Paired artificial/natural phrases collected for later side-by-side review.
+artificial flavor,natural_opposition_pair,collected,1809,2019,1911,8.262481010490319e-8,2019,7.278137426069975e-9,161,Paired artificial/natural phrases collected for later side-by-side review.
+natural flavor,natural_opposition_pair,collected,1801,2019,1946,1.7434170306029895e-7,2019,2.45158318090688e-8,200,Paired artificial/natural phrases collected for later side-by-side review.
+artificial flavour,natural_opposition_pair,collected,1815,2019,1824,6.679261588260488e-9,2019,1.5801219221955876e-9,181,Paired artificial/natural phrases collected for later side-by-side review.
+natural flavour,natural_opposition_pair,collected,1800,2019,1900,8.86404318833911e-8,2019,6.895077321600329e-9,220,Paired artificial/natural phrases collected for later side-by-side review.
+artificial color,natural_opposition_pair,collected,1800,2019,1908,1.526615980296242e-7,2019,5.793780455398689e-9,191,Paired artificial/natural phrases collected for later side-by-side review.
+natural color,natural_opposition_pair,collected,1800,2019,1940,8.087828808345243e-7,2019,9.509461363493843e-8,220,Paired artificial/natural phrases collected for later side-by-side review.
+artificial colour,natural_opposition_pair,collected,1800,2019,1854,2.9216543850907328e-8,2019,2.2983591072001097e-9,218,Paired artificial/natural phrases collected for later side-by-side review.
+natural colour,natural_opposition_pair,collected,1800,2019,1819,8.982420997005747e-7,2019,5.00850783347051e-8,220,Paired artificial/natural phrases collected for later side-by-side review.
+artificial ingredients,natural_opposition_pair,collected,1812,2019,2016,2.927097131344425e-8,2019,2.398912374301787e-8,158,Paired artificial/natural phrases collected for later side-by-side review.
+natural ingredients,natural_opposition_pair,collected,1800,2019,2008,1.1508441393609514e-7,2019,9.58128507644318e-8,204,Paired artificial/natural phrases collected for later side-by-side review.
+artificial sweetener,natural_opposition_pair,collected,1832,2019,1977,9.088238042687102e-8,2019,5.1425788197279054e-8,129,Paired artificial/natural phrases collected for later side-by-side review.
+natural sweetener,natural_opposition_pair,collected,1842,2019,2010,2.8588461375989027e-8,2019,2.0014877186169677e-8,107,Paired artificial/natural phrases collected for later side-by-side review.
+artificial selection,natural_opposition_pair,collected,1804,2019,1996,1.6560275106769495e-7,2019,1.1989773696097217e-7,190,Paired artificial/natural phrases collected for later side-by-side review.
+natural selection,natural_opposition_pair,collected,1800,2019,1871,0.0000031938000379927445,2019,0.000002275519179507912,204,Paired artificial/natural phrases collected for later side-by-side review.
+artificial language,natural_opposition_pair,collected,1800,2019,1827,7.859890516215273e-8,2019,5.602250346958826e-8,220,Paired artificial/natural phrases collected for later side-by-side review.
+natural language,natural_opposition_pair,collected,1800,2019,2019,0.000002512154464479055,2019,0.000002512154464479055,220,Paired artificial/natural phrases collected for later side-by-side review.
+artificial intelligence,natural_opposition_pair,collected,1802,2019,2019,0.0000060785856142303585,2019,0.0000060785856142303585,137,Paired artificial/natural phrases collected for later side-by-side review.
+natural intelligence,natural_opposition_pair,collected,1800,2019,2011,6.416498900263523e-8,2019,4.50095330520317e-8,216,Paired artificial/natural phrases collected for later side-by-side review.
+artificial life,natural_opposition_pair,collected,1800,2019,1998,2.887080971930578e-7,2019,1.7161081533600964e-7,220,Paired artificial/natural phrases collected for later side-by-side review.
+natural life,natural_opposition_pair,collected,1800,2019,1802,0.000002065686715013726,2019,2.4827067146571125e-7,220,Paired artificial/natural phrases collected for later side-by-side review.
+artificial ingredients,consumer_packaging,collected,1812,2019,2016,2.927097131344425e-8,2019,2.398912374301787e-8,158,"Consumer, ingredient, packaging, and processed-product phrases."
+artificial flavor,consumer_packaging,collected,1809,2019,1911,8.262481010490319e-8,2019,7.278137426069975e-9,161,"Consumer, ingredient, packaging, and processed-product phrases."
+artificial flavour,consumer_packaging,collected,1815,2019,1824,6.679261588260488e-9,2019,1.5801219221955876e-9,181,"Consumer, ingredient, packaging, and processed-product phrases."
+artificial color,consumer_packaging,collected,1800,2019,1908,1.526615980296242e-7,2019,5.793780455398689e-9,191,"Consumer, ingredient, packaging, and processed-product phrases."
+artificial colour,consumer_packaging,collected,1800,2019,1854,2.9216543850907328e-8,2019,2.2983591072001097e-9,218,"Consumer, ingredient, packaging, and processed-product phrases."
+artificial colors,consumer_packaging,collected,1805,2019,1916,1.0840006947621106e-7,2019,2.044581995375161e-8,187,"Consumer, ingredient, packaging, and processed-product phrases."
+artificial colours,consumer_packaging,collected,1800,2019,1901,5.458136920211132e-8,2019,8.523081962419354e-9,219,"Consumer, ingredient, packaging, and processed-product phrases."
+artificial sweetener,consumer_packaging,collected,1832,2019,1977,9.088238042687102e-8,2019,5.1425788197279054e-8,129,"Consumer, ingredient, packaging, and processed-product phrases."
+artificial sweeteners,consumer_packaging,collected,1832,2019,2015,1.9009402910108442e-7,2019,1.637580904212399e-7,132,"Consumer, ingredient, packaging, and processed-product phrases."
+artificial preservatives,consumer_packaging,collected,1838,2019,1909,3.8596530027579234e-8,2019,8.187904576573146e-9,149,"Consumer, ingredient, packaging, and processed-product phrases."
+artificial additives,consumer_packaging,collected,1900,2019,2016,1.5827006927260356e-8,2019,1.1300266056224473e-8,80,"Consumer, ingredient, packaging, and processed-product phrases."
+artificially flavored,consumer_packaging,collected,1805,2019,1940,6.060239199356943e-8,2019,5.314955434099211e-9,159,"Consumer, ingredient, packaging, and processed-product phrases."
+artificially flavoured,consumer_packaging,collected,1821,2019,1865,6.38040731359979e-9,2019,1.1491796403362287e-9,173,"Consumer, ingredient, packaging, and processed-product phrases."
+artificially colored,consumer_packaging,collected,1805,2019,1912,3.066395488637852e-7,2019,9.815909349231156e-9,188,"Consumer, ingredient, packaging, and processed-product phrases."
+artificially coloured,consumer_packaging,collected,1800,2019,1876,5.8203352026886535e-8,2019,2.3941241419911385e-9,214,"Consumer, ingredient, packaging, and processed-product phrases."
+no artificial ingredients,absence_claim,collected,1845,2019,2009,9.93325532938627e-9,2019,3.4818678912307277e-9,82,Absence claims where artificial may become marketable by omission.
+no artificial flavors,absence_claim,collected,1889,2019,1985,1.3388415931459008e-8,2019,1.7409339664320456e-9,108,Absence claims where artificial may become marketable by omission.
+no artificial flavours,absence_claim,collected,1864,2019,2007,1.7018390585654686e-9,2019,6.14447291658049e-10,46,Absence claims where artificial may become marketable by omission.
+no artificial colors,absence_claim,collected,1879,2019,1997,7.471559090865831e-8,2019,1.8945457667951526e-9,94,Absence claims where artificial may become marketable by omission.
+no artificial colours,absence_claim,collected,1840,2019,2007,6.223868587174053e-9,2019,1.1264866817128905e-9,57,Absence claims where artificial may become marketable by omission.
+no artificial preservatives,absence_claim,collected,1877,2019,1909,9.855103288991529e-9,2019,1.4337103552974906e-9,109,Absence claims where artificial may become marketable by omission.
+nothing artificial,absence_claim,collected,1800,2019,1977,5.510663508845326e-8,2019,7.756962017158031e-9,215,Absence claims where artificial may become marketable by omission.
+free from artificial,absence_claim,collected,1811,2019,1907,1.4495257971702813e-7,2019,2.4065851915444636e-9,198,Absence claims where artificial may become marketable by omission.
+without artificial,absence_claim,collected,1800,2019,1858,3.5913368123807743e-7,2019,3.351773765480903e-8,220,Absence claims where artificial may become marketable by omission.
+contains no artificial,absence_claim,collected,1833,2019,1955,2.3898571344105335e-8,2019,1.4849142471184962e-9,137,Absence claims where artificial may become marketable by omission.
+all natural,absence_claim,collected,1800,2019,1810,6.801615204388156e-7,2019,4.528725340013917e-7,220,Absence claims where artificial may become marketable by omission.
+clean label,absence_claim,collected,1878,2019,2019,8.666729334194656e-9,2019,8.666729334194656e-9,118,Absence claims where artificial may become marketable by omission.
+real ingredients,absence_claim,collected,1800,2019,1818,3.04357108404929e-8,2019,6.0810753654827465e-9,187,Absence claims where artificial may become marketable by omission.
+simple ingredients,absence_claim,collected,1800,2019,2019,4.103528733478967e-8,2019,4.103528733478967e-8,217,Absence claims where artificial may become marketable by omission.
+artificial chemicals,optional,collected,1829,2019,2008,1.334312055289999e-8,2019,1.019896914838947e-8,125,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial chemical,optional,collected,1800,2019,1848,1.0928670413079544e-8,2019,7.278137342803248e-9,200,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial dyes,optional,collected,1803,2019,1915,5.20119748381731e-8,2019,6.176840330884836e-9,193,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial dye,optional,collected,1804,2019,1918,2.3874290988601388e-8,2019,1.1491795640083957e-9,183,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial colouring,optional,collected,1800,2019,1878,1.0186577542592445e-7,2019,1.7237693772376161e-9,218,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial coloring,optional,collected,1805,2019,1907,3.8581560579675767e-7,2019,6.655664894217317e-9,191,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial substance,optional,collected,1800,2019,1806,3.0621357938187543e-7,2019,3.3038913826999305e-9,219,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial substances,optional,collected,1800,2019,1857,3.857254141093058e-8,2019,6.703547564268497e-9,214,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial material,optional,collected,1817,2019,1944,3.20752043536654e-8,2019,1.1922738553382661e-8,194,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial materials,optional,collected,1800,2019,1939,6.347932091088637e-8,2019,2.9208314773765398e-8,203,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial product,optional,collected,1800,2019,1805,9.538312895074341e-8,2019,9.04978925825306e-9,215,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial products,optional,collected,1800,2019,1880,1.4563380157373018e-7,2019,7.900609694244665e-9,219,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial substitute,optional,collected,1806,2019,1867,5.096939925675059e-8,2019,4.117893290245256e-9,207,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial substitutes,optional,collected,1801,2019,1891,3.75718407497061e-8,2019,4.309423512482979e-9,211,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial imitation,optional,collected,1800,2019,1818,4.8697138765874115e-8,2019,1.4843569706712856e-9,219,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial copy,optional,collected,1816,2019,1878,4.642676021404668e-9,2019,8.140021989788693e-10,129,"Optional material, chemical, dye, product, substitute, and copy phrases."
+artificial copies,optional,collected,1802,2019,1811,3.556754002431717e-9,2019,2.3941240656633056e-10,129,"Optional material, chemical, dye, product, substitute, and copy phrases."
