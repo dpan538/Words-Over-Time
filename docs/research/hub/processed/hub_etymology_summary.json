@@ -1,0 +1,90 @@
+{
+  "word": "hub",
+  "generated_at": "2026-05-12T00:10:31.251083Z",
+  "generated_by_script": "scripts/process_hub_etymology.py",
+  "etymology_status": "uncertain",
+  "earliest_claimed_year": "1640s",
+  "earliest_supported_attestation_year": 1828,
+  "earliest_direct_corpus_year": 1908,
+  "earliest_sense": "Mechanical wheel center",
+  "origin_notes": "Public etymology sources agree that the earliest sense is the solid center of a wheel, but they frame the ultimate origin as uncertain or only probably connected with hob/hubbe.",
+  "possible_origin_theories": [
+    {
+      "theory": "Unknown origin; possibly from earlier hubbe with a lump/protuberance sense related to hob.",
+      "source": "Online Etymology Dictionary; Wiktionary",
+      "confidence": "medium",
+      "notes": "Both sources frame the ultimate origin as uncertain rather than settled."
+    },
+    {
+      "theory": "Probably an alteration of hob.",
+      "source": "Merriam-Webster",
+      "confidence": "medium",
+      "notes": "Concise dictionary etymology; public entry does not provide a detailed derivation."
+    }
+  ],
+  "related_terms": [
+    {
+      "term": "nave",
+      "relationship": "Older/alternate term for the central part of a wheel.",
+      "notes": "Nave has Old English/Germanic roots and remains a synonym in historical dictionary entries for hub."
+    },
+    {
+      "term": "hob",
+      "relationship": "Possible source or related form in hub etymology.",
+      "notes": "Mentioned in dictionary/etymology sources, but origin is still treated as uncertain."
+    },
+    {
+      "term": "hubcap",
+      "relationship": "Mechanical compound formed from hub plus cap.",
+      "notes": "Etymonline dates hubcap/hub cap to 1896; Merriam-Webster lists 1903."
+    }
+  ],
+  "semantic_shift_summary": [
+    {
+      "from_sense": "mechanical_core",
+      "to_sense": "central_place",
+      "approximate_period": "1850s",
+      "evidence_status": "partial",
+      "notes": "Etymonline dates the center-of-interest/activity sense to Holmes in 1858; primary text should be independently checked."
+    },
+    {
+      "from_sense": "central_place",
+      "to_sense": "transport_logistics",
+      "approximate_period": "early 20th century in current evidence",
+      "evidence_status": "partial",
+      "notes": "Current direct snippets include transit hub in 1908, railway hub in 1943, and transportation hub in 1955; earlier Ngram signals remain unverified."
+    },
+    {
+      "from_sense": "transport_logistics",
+      "to_sense": "network_system",
+      "approximate_period": "late 20th century",
+      "evidence_status": "uncertain",
+      "notes": "Hub-and-spoke has a Merriam-Webster 1980 dictionary claim; network/computing direct attestations still need better corpus evidence."
+    },
+    {
+      "from_sense": "network_system",
+      "to_sense": "digital_platform",
+      "approximate_period": "web/platform era",
+      "evidence_status": "uncertain",
+      "notes": "First-pass Ngram signals exist for digital/content/data hub, but this pass did not find strong direct early snippets."
+    }
+  ],
+  "source_limitations": [
+    {
+      "source": "Collins Dictionary",
+      "url": "https://www.collinsdictionary.com/dictionary/english/hub",
+      "status": "failed",
+      "error": "Live attempts returned HTTP 403 Forbidden; source preserved for manual review."
+    },
+    {
+      "source": "Google Books API",
+      "status": "skipped",
+      "error": "First pass hit HTTP 429; second pass did not retry aggressively."
+    },
+    {
+      "source": "OCR/search result snippets",
+      "status": "limited",
+      "error": "LOC and Internet Archive evidence needs page/image verification before final chart copy."
+    }
+  ]
+}

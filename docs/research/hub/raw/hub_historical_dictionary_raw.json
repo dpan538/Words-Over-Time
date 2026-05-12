@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-12T00:09:39.172191Z",
+    "generated_by_script": "scripts/scrape_hub_etymology.py"
+  },
+  "historical_dictionary_entries": [
+    {
+      "id": "webster_1828_hub",
+      "source_title": "American Dictionary of the English Language",
+      "source_author": "Noah Webster",
+      "source_year": 1828,
+      "entry_term": "hub",
+      "source_url": "https://webstersdictionary1828.com/Dictionary/hub",
+      "access_status": "collected",
+      "sense_summary": "Hub as the nave of a wheel, a timber piece receiving spokes.",
+      "evidence_text_short": "The nave of a wheel.",
+      "supports_sense_ids": [
+        "mechanical_core"
+      ],
+      "confidence": "medium",
+      "notes": "Dated dictionary entry; not a first-use quotation."
+    },
+    {
+      "id": "webster_1913_hub",
+      "source_title": "Webster's Revised Unabridged Dictionary",
+      "source_author": "C. & G. Merriam",
+      "source_year": 1913,
+      "entry_term": "hub",
+      "source_url": "https://www.websters1913.com/words/Hub",
+      "access_status": "collected",
+      "sense_summary": "Hub as central wheel part, nave, plus other technical/regional senses.",
+      "evidence_text_short": "The central part ... of a wheel; the nave.",
+      "supports_sense_ids": [
+        "mechanical_core"
+      ],
+      "confidence": "medium",
+      "notes": "Public-domain dictionary confirms sense structure; not an earliest-use quotation."
+    }
+  ]
+}

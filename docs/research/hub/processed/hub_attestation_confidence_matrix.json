@@ -1,0 +1,1016 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-12T00:10:31.251197Z",
+    "generated_by_script": "scripts/process_hub_etymology.py"
+  },
+  "confidence_counts": {
+    "high": 0,
+    "medium": 21,
+    "low": 1
+  },
+  "rules": {
+    "high": "Dated historical dictionary with cited quotation, or readable dated primary-source text in the target sense.",
+    "medium": "Reliable dictionary/reference first-use year without visible quotation, or readable dated snippet with caution.",
+    "low": "Poor OCR, ambiguous sense, metadata-only evidence, secondary uncited source, or search lead only."
+  },
+  "attestation_confidence": [
+    {
+      "attestation_id": "hub_attestation_009",
+      "term": "nave",
+      "sense_id": "mechanical_core",
+      "year_basis": "dictionary_claim",
+      "claimed_year": 1100,
+      "evidence_year": null,
+      "confidence": "medium",
+      "is_dictionary_claim": true,
+      "is_direct_attestation": false,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Related-term evidence only; not an attestation of hub itself."
+    },
+    {
+      "attestation_id": "hub_attestation_001",
+      "term": "hub",
+      "sense_id": "mechanical_core",
+      "year_basis": "dictionary_claim",
+      "claimed_year": 1640,
+      "evidence_year": null,
+      "confidence": "medium",
+      "is_dictionary_claim": true,
+      "is_direct_attestation": false,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Approximate decade claim from a secondary etymology source; no primary quotation visible in the entry."
+    },
+    {
+      "attestation_id": "hub_attestation_002",
+      "term": "hub",
+      "sense_id": "mechanical_core",
+      "year_basis": "dictionary_claim",
+      "claimed_year": 1649,
+      "evidence_year": null,
+      "confidence": "medium",
+      "is_dictionary_claim": true,
+      "is_direct_attestation": false,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "First-known-use claim from dictionary scholarship; no quotation is visible in the public entry."
+    },
+    {
+      "attestation_id": "hub_attestation_003",
+      "term": "hub",
+      "sense_id": "mechanical_core",
+      "year_basis": "exact",
+      "claimed_year": null,
+      "evidence_year": 1828,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Direct dated dictionary entry supports sense availability by 1828; it is not a first-use quotation."
+    },
+    {
+      "attestation_id": "hub_attestation_005",
+      "term": "hub",
+      "sense_id": "central_place",
+      "year_basis": "dictionary_claim",
+      "claimed_year": 1858,
+      "evidence_year": 1858,
+      "confidence": "medium",
+      "is_dictionary_claim": true,
+      "is_direct_attestation": false,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Secondary source quotes a dated primary example; primary text was not independently verified in this pass."
+    },
+    {
+      "attestation_id": "hub_attestation_006",
+      "term": "hubcap",
+      "sense_id": "mechanical_core",
+      "year_basis": "dictionary_claim",
+      "claimed_year": 1896,
+      "evidence_year": null,
+      "confidence": "medium",
+      "is_dictionary_claim": true,
+      "is_direct_attestation": false,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Secondary etymology claim; no visible dated quotation in the entry."
+    },
+    {
+      "attestation_id": "hub_attestation_007",
+      "term": "hubcap",
+      "sense_id": "mechanical_core",
+      "year_basis": "dictionary_claim",
+      "claimed_year": 1903,
+      "evidence_year": null,
+      "confidence": "medium",
+      "is_dictionary_claim": true,
+      "is_direct_attestation": false,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Dictionary first-known-use claim; no quotation visible in the public entry."
+    },
+    {
+      "attestation_id": "hub_attestation_111",
+      "term": "transit hub",
+      "sense_id": "transport_logistics",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1908,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Readable OCR search-result description; page image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_112",
+      "term": "financial hub",
+      "sense_id": "institutional_cluster",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1908,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Imported from first-pass snippets; OCR/readability and source image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_106",
+      "term": "hub of the city",
+      "sense_id": "central_place",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1910,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Imported from first-pass snippets; OCR/readability and source image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_004",
+      "term": "hub",
+      "sense_id": "mechanical_core",
+      "year_basis": "exact",
+      "claimed_year": null,
+      "evidence_year": 1913,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Direct dated dictionary entry, but later than 1828 and not a usage quotation."
+    },
+    {
+      "attestation_id": "hub_attestation_107",
+      "term": "social hub",
+      "sense_id": "central_place",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1920,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Readable OCR search-result description; page image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_100",
+      "term": "wheel hub",
+      "sense_id": "mechanical_core",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1938,
+      "confidence": "low",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "OCR, metadata, or sense ambiguity keeps this as a lead only.",
+      "reliability_notes": "Imported from first-pass snippets; OCR/readability and source image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_104",
+      "term": "hub of commerce",
+      "sense_id": "central_place",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1938,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Imported from first-pass snippets; OCR/readability and source image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_105",
+      "term": "hub of commerce",
+      "sense_id": "central_place",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1938,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Readable OCR search-result description; page image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_108",
+      "term": "railway hub",
+      "sense_id": "transport_logistics",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1943,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Imported from first-pass snippets; OCR/readability and source image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_109",
+      "term": "railway hub",
+      "sense_id": "transport_logistics",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1943,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Readable OCR search-result description; page image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_110",
+      "term": "railroad hub",
+      "sense_id": "transport_logistics",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1943,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Readable OCR search-result description; page image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_101",
+      "term": "axle hub",
+      "sense_id": "mechanical_core",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1949,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Readable OCR search-result description; page image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_102",
+      "term": "hub of activity",
+      "sense_id": "central_place",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1961,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Imported from first-pass snippets; OCR/readability and source image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_103",
+      "term": "hub of activity",
+      "sense_id": "central_place",
+      "year_basis": "corpus_evidence",
+      "claimed_year": null,
+      "evidence_year": 1961,
+      "confidence": "medium",
+      "is_dictionary_claim": false,
+      "is_direct_attestation": true,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Readable OCR search-result description; page image should be checked before final use."
+    },
+    {
+      "attestation_id": "hub_attestation_008",
+      "term": "hub-and-spoke",
+      "sense_id": "transport_logistics",
+      "year_basis": "dictionary_claim",
+      "claimed_year": 1980,
+      "evidence_year": null,
+      "confidence": "medium",
+      "is_dictionary_claim": true,
+      "is_direct_attestation": false,
+      "quality_reason": "Reliable dictionary/reference claim or dated source that needs quotation/image verification.",
+      "reliability_notes": "Dictionary claim for a specific transport-system adjective; no quotation visible in the public entry."
+    }
+  ],
+  "failed_or_blocked_reference_sources": [
+    {
+      "source": "Collins Dictionary",
+      "url": "https://www.collinsdictionary.com/dictionary/english/hub",
+      "error": "Live attempts returned HTTP 403 Forbidden; source preserved for manual review."
+    }
+  ],
+  "failed_or_blocked_searches": [
+    {
+      "source": "Google Books API",
+      "query": "hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub of a wheel",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of a wheel",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub of the wheel",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of the wheel",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "wheel hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "wheel hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "axle hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub cap",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of activity",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of commerce",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of trade",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of industry",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of the city",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "social hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "commercial hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "railway hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "railroad hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "transport hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "transit hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "Google Books API",
+      "query": "airport hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "airline hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "airline hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "airline hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "airline hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "shipping hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "shipping hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "shipping hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "shipping hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "logistics hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "logistics hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "logistics hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "logistics hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub and spoke",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub and spoke",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub and spoke",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub and spoke",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub-and-spoke",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub-and-spoke",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub-and-spoke",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub-and-spoke",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "communication hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "communication hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "communication hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "communication hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "network hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "network hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "network hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "network hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub node",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub node",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub node",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub node",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "Ethernet hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "Ethernet hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "Ethernet hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "Ethernet hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "internet hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "internet hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "internet hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "internet hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "server hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "server hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "server hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "server hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "business hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "business hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "business hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "business hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "financial hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "financial hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "financial hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "financial hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "knowledge hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "knowledge hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "knowledge hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "knowledge hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "education hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "education hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "education hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "education hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "innovation hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "innovation hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "innovation hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "innovation hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "research hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "research hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "research hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "research hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "startup hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "startup hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "startup hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "startup hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "digital hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "digital hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "digital hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "digital hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "content hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "content hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "content hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "content hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "data hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "data hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "data hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "data hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "resource hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "resource hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "resource hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "resource hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "learning hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "learning hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "learning hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "learning hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "platform hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "platform hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "platform hub",
+      "status": "failed",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "platform hub",
+      "status": "skipped",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    }
+  ]
+}

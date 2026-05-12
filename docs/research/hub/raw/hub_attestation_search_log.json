@@ -1,0 +1,2535 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-12T00:10:24.004978Z",
+    "generated_by_script": "scripts/scrape_hub_etymology.py",
+    "cache_only": false,
+    "notes": [
+      "Ngram first years are recorded as search leads only.",
+      "Google Books API was not retried because the first pass encountered HTTP 429 rate limiting.",
+      "LOC and OCR snippets are candidates requiring manual image verification."
+    ]
+  },
+  "searches": [
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "hub",
+      "status": "not_found",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub",
+      "status": "ok",
+      "result_count": 362289,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub",
+      "status": "ok",
+      "result_count": 9475,
+      "earliest_plausible_date": 1380,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub",
+      "status": "ok",
+      "result_count": 137,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=hub",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "hub of a wheel",
+      "status": "not_found",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "hub of a wheel",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub of a wheel",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub+of+a+wheel%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub of a wheel",
+      "status": "ok",
+      "result_count": 3,
+      "earliest_plausible_date": 1980,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+of+a+wheel%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub of a wheel",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=hub+of+a+wheel",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of a wheel",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+a+wheel%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "hub of the wheel",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1810,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "hub of the wheel",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub of the wheel",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub+of+the+wheel%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub of the wheel",
+      "status": "ok",
+      "result_count": 8,
+      "earliest_plausible_date": 1953,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+of+the+wheel%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub of the wheel",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=hub+of+the+wheel",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of the wheel",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+wheel%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "wheel hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1832,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "wheel hub",
+      "status": "found",
+      "result_count": 1,
+      "earliest_plausible_date": 1938,
+      "usable_evidence": true,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "wheel hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22wheel+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "wheel hub",
+      "status": "ok",
+      "result_count": 22,
+      "earliest_plausible_date": 1930,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22wheel+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "wheel hub",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=wheel+hub",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "wheel hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22wheel+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "axle hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1823,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "axle hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "axle hub",
+      "status": "ok",
+      "result_count": 416,
+      "earliest_plausible_date": 1949,
+      "usable_evidence": true,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22axle+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "axle hub",
+      "status": "ok",
+      "result_count": 2,
+      "earliest_plausible_date": 1981,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22axle+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "axle hub",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=axle+hub",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "axle hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22axle+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "hub cap",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1832,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "hub cap",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub cap",
+      "status": "ok",
+      "result_count": 2436,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub+cap%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub cap",
+      "status": "ok",
+      "result_count": 13,
+      "earliest_plausible_date": 1947,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+cap%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub cap",
+      "status": "ok",
+      "result_count": 1,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=hub+cap",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub cap",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+cap%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "hub of activity",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1878,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "hub of activity",
+      "status": "found",
+      "result_count": 1,
+      "earliest_plausible_date": 1961,
+      "usable_evidence": true,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub of activity",
+      "status": "ok",
+      "result_count": 46,
+      "earliest_plausible_date": 1961,
+      "usable_evidence": true,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub+of+activity%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub of activity",
+      "status": "ok",
+      "result_count": 11,
+      "earliest_plausible_date": 1940,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+of+activity%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub of activity",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=hub+of+activity",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of activity",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+activity%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "hub of commerce",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1832,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "hub of commerce",
+      "status": "found",
+      "result_count": 1,
+      "earliest_plausible_date": 1938,
+      "usable_evidence": true,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub of commerce",
+      "status": "ok",
+      "result_count": 18,
+      "earliest_plausible_date": 1938,
+      "usable_evidence": true,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub+of+commerce%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub of commerce",
+      "status": "ok",
+      "result_count": 4,
+      "earliest_plausible_date": 2012,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+of+commerce%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub of commerce",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=hub+of+commerce",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of commerce",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+commerce%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "hub of trade",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1883,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "hub of trade",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub of trade",
+      "status": "ok",
+      "result_count": 49,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub+of+trade%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub of trade",
+      "status": "ok",
+      "result_count": 3,
+      "earliest_plausible_date": 2014,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+of+trade%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub of trade",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=hub+of+trade",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of trade",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+trade%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "hub of industry",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1906,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "hub of industry",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub of industry",
+      "status": "ok",
+      "result_count": 18,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub+of+industry%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub of industry",
+      "status": "ok",
+      "result_count": 3,
+      "earliest_plausible_date": 1947,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+of+industry%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub of industry",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=hub+of+industry",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of industry",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+industry%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "hub of the city",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1884,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "hub of the city",
+      "status": "found",
+      "result_count": 1,
+      "earliest_plausible_date": 1910,
+      "usable_evidence": true,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub of the city",
+      "status": "ok",
+      "result_count": 671,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub+of+the+city%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub of the city",
+      "status": "ok",
+      "result_count": 7,
+      "earliest_plausible_date": 1910,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+of+the+city%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub of the city",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=hub+of+the+city",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub of the city",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+of+the+city%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "social hub",
+      "status": "not_found",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "social hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "social hub",
+      "status": "ok",
+      "result_count": 104,
+      "earliest_plausible_date": 1920,
+      "usable_evidence": true,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22social+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "social hub",
+      "status": "ok",
+      "result_count": 17,
+      "earliest_plausible_date": 1891,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22social+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "social hub",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=social+hub",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "social hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22social+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "commercial hub",
+      "status": "not_found",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "commercial hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "commercial hub",
+      "status": "ok",
+      "result_count": 194,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22commercial+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "commercial hub",
+      "status": "ok",
+      "result_count": 16,
+      "earliest_plausible_date": 1986,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22commercial+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "commercial hub",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=commercial+hub",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "commercial hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22commercial+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "railway hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1868,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "railway hub",
+      "status": "found",
+      "result_count": 1,
+      "earliest_plausible_date": 1943,
+      "usable_evidence": true,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "railway hub",
+      "status": "ok",
+      "result_count": 64,
+      "earliest_plausible_date": 1943,
+      "usable_evidence": true,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22railway+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "railway hub",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22railway+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "railway hub",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=railway+hub",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "railway hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22railway+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "railroad hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1832,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "railroad hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "railroad hub",
+      "status": "ok",
+      "result_count": 61,
+      "earliest_plausible_date": 1943,
+      "usable_evidence": true,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22railroad+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "railroad hub",
+      "status": "ok",
+      "result_count": 2,
+      "earliest_plausible_date": 2008,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22railroad+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "railroad hub",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=railroad+hub",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "railroad hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22railroad+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "transport hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1843,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "transport hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "transport hub",
+      "status": "ok",
+      "result_count": 24,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22transport+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "transport hub",
+      "status": "ok",
+      "result_count": 14,
+      "earliest_plausible_date": 1966,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22transport+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "transport hub",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=transport+hub",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "transport hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22transport+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "transit hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1889,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "transit hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "transit hub",
+      "status": "ok",
+      "result_count": 7,
+      "earliest_plausible_date": 1908,
+      "usable_evidence": true,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22transit+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "transit hub",
+      "status": "ok",
+      "result_count": 12,
+      "earliest_plausible_date": 1985,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22transit+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "transit hub",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=transit+hub",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "transit hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22transit+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "airport hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1900,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "airport hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "airport hub",
+      "status": "ok",
+      "result_count": 2,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22airport+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": ""
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "airport hub",
+      "status": "ok",
+      "result_count": 5,
+      "earliest_plausible_date": 1993,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22airport+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "Metadata/search lead only unless matching text is separately inspected."
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "airport hub",
+      "status": "ok",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=airport+hub",
+      "notes": "Search-result metadata only; no snippet text available from this endpoint in this pass."
+    },
+    {
+      "source": "Google Books API",
+      "query": "airport hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22airport+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "airline hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1900,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "airline hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "airline hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22airline+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "airline hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22airline+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "airline hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=airline+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "airline hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22airline+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "shipping hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1890,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "shipping hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "shipping hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22shipping+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "shipping hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22shipping+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "shipping hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=shipping+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "shipping hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22shipping+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "logistics hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1843,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "logistics hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "logistics hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22logistics+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "logistics hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22logistics+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "logistics hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=logistics+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "logistics hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22logistics+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "hub and spoke",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1856,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "hub and spoke",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub and spoke",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub+and+spoke%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub and spoke",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+and+spoke%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub and spoke",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=hub+and+spoke",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub and spoke",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+and+spoke%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "hub-and-spoke",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1832,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "hub-and-spoke",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub-and-spoke",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub-and-spoke%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub-and-spoke",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub-and-spoke%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub-and-spoke",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=hub-and-spoke",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub-and-spoke",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub-and-spoke%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "communication hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1900,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "communication hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "communication hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22communication+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "communication hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22communication+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "communication hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=communication+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "communication hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22communication+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "network hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1900,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "network hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "network hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22network+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "network hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22network+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "network hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=network+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "network hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22network+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "hub node",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1954,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "hub node",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "hub node",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22hub+node%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "hub node",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22hub+node%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "hub node",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=hub+node",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "hub node",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22hub+node%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "Ethernet hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1950,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "Ethernet hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "Ethernet hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22Ethernet+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "Ethernet hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22Ethernet+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "Ethernet hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=Ethernet+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "Ethernet hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22Ethernet+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "internet hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1900,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "internet hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "internet hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22internet+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "internet hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22internet+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "internet hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=internet+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "internet hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22internet+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "server hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1900,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "server hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "server hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22server+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "server hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22server+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "server hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=server+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "server hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22server+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "business hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1843,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "business hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "business hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22business+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "business hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22business+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "business hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=business+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "business hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22business+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "financial hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1836,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "financial hub",
+      "status": "found",
+      "result_count": 2,
+      "earliest_plausible_date": 1908,
+      "usable_evidence": true,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "financial hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22financial+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "financial hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22financial+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "financial hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=financial+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "financial hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22financial+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "knowledge hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1901,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "knowledge hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "knowledge hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22knowledge+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "knowledge hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22knowledge+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "knowledge hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=knowledge+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "knowledge hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22knowledge+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "education hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1901,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "education hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "education hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22education+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "education hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22education+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "education hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=education+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "education hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22education+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "innovation hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1843,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "innovation hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "innovation hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22innovation+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "innovation hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22innovation+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "innovation hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=innovation+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "innovation hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22innovation+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "research hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1900,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "research hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "research hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22research+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "research hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22research+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "research hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=research+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "research hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22research+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "startup hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1994,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "startup hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "startup hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22startup+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "startup hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22startup+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "startup hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=startup+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "startup hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22startup+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "digital hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1950,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "digital hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "digital hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22digital+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "digital hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22digital+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "digital hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=digital+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "digital hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22digital+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "content hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1974,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "content hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "content hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22content+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "content hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22content+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "content hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=content+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "content hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22content+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "data hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1901,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "data hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "data hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22data+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "data hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22data+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "data hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=data+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "data hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22data+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "resource hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1964,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "resource hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "resource hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22resource+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "resource hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22resource+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "resource hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=resource+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "resource hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22resource+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "learning hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1900,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "learning hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "learning hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22learning+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "learning hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22learning+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "learning hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=learning+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "learning hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22learning+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    },
+    {
+      "source": "First-pass Google Books Ngram",
+      "query": "platform hub",
+      "status": "found",
+      "result_count": null,
+      "earliest_plausible_date": 1934,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Metadata/search lead only; Ngram year is not a textual attestation."
+    },
+    {
+      "source": "First-pass snippet samples",
+      "query": "platform hub",
+      "status": "not_found",
+      "result_count": 0,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": null,
+      "notes": "Uses first-pass curated snippet samples only."
+    },
+    {
+      "source": "loc.gov Chronicling America search",
+      "query": "platform hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.loc.gov/search/?fo=json&c=3&q=%22platform+hub%22&fa=partof%3Achronicling+america&at=results%2Cpagination",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "query": "platform hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://archive.org/advancedsearch.php?q=%22platform+hub%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&rows=3&page=1&sort%5B%5D=date+asc&output=json",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Project Gutenberg / Gutendex",
+      "query": "platform hub",
+      "status": "failed",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://gutendex.com/books/?search=platform+hub",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "source": "Google Books API",
+      "query": "platform hub",
+      "status": "skipped",
+      "result_count": null,
+      "earliest_plausible_date": null,
+      "usable_evidence": false,
+      "url": "https://www.googleapis.com/books/v1/volumes?q=%22platform+hub%22",
+      "notes": "Skipped in this second pass because the first pass hit HTTP 429 rate limiting; no aggressive retry."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-12T00:10:31.251134Z",
+    "generated_by_script": "scripts/process_hub_etymology.py"
+  },
+  "semantic_shift_attestations": [
+    {
+      "sense_id": "mechanical_core",
+      "sense_label": "Mechanical wheel center",
+      "earliest_claimed_year": "1640s",
+      "earliest_supported_year": 1828,
+      "earliest_direct_corpus_year": 1938,
+      "attestation_ids": [
+        "hub_attestation_001",
+        "hub_attestation_002",
+        "hub_attestation_003",
+        "hub_attestation_006",
+        "hub_attestation_007",
+        "hub_attestation_004",
+        "hub_attestation_100",
+        "hub_attestation_101"
+      ],
+      "confidence": "medium",
+      "evidence_quality": "direct_needs_review",
+      "notes": "Earliest supported dated source is 1828; earliest direct corpus snippet is 1938."
+    },
+    {
+      "sense_id": "central_place",
+      "sense_label": "Central place or focus",
+      "earliest_claimed_year": 1858,
+      "earliest_supported_year": 1910,
+      "earliest_direct_corpus_year": 1910,
+      "attestation_ids": [
+        "hub_attestation_005",
+        "hub_attestation_106",
+        "hub_attestation_107",
+        "hub_attestation_104",
+        "hub_attestation_105",
+        "hub_attestation_102",
+        "hub_attestation_103"
+      ],
+      "confidence": "medium",
+      "evidence_quality": "direct_needs_review",
+      "notes": "Earliest supported dated evidence in this layer is 1910."
+    },
+    {
+      "sense_id": "transport_logistics",
+      "sense_label": "Transport and logistics node",
+      "earliest_claimed_year": 1980,
+      "earliest_supported_year": 1908,
+      "earliest_direct_corpus_year": 1908,
+      "attestation_ids": [
+        "hub_attestation_111",
+        "hub_attestation_108",
+        "hub_attestation_109",
+        "hub_attestation_110",
+        "hub_attestation_008"
+      ],
+      "confidence": "medium",
+      "evidence_quality": "direct_needs_review",
+      "notes": "Earliest supported dated evidence in this layer is 1908."
+    },
+    {
+      "sense_id": "network_system",
+      "sense_label": "Communication, computing, or network node",
+      "earliest_claimed_year": null,
+      "earliest_supported_year": null,
+      "earliest_direct_corpus_year": null,
+      "attestation_ids": [],
+      "confidence": "low",
+      "evidence_quality": "not_found",
+      "notes": "No usable earliest attestation found in this pass."
+    },
+    {
+      "sense_id": "institutional_cluster",
+      "sense_label": "Institutional, economic, cultural, or knowledge cluster",
+      "earliest_claimed_year": null,
+      "earliest_supported_year": 1908,
+      "earliest_direct_corpus_year": 1908,
+      "attestation_ids": [
+        "hub_attestation_112"
+      ],
+      "confidence": "medium",
+      "evidence_quality": "direct_needs_review",
+      "notes": "Earliest supported dated evidence in this layer is 1908."
+    },
+    {
+      "sense_id": "digital_platform",
+      "sense_label": "Digital, content, data, or resource platform",
+      "earliest_claimed_year": null,
+      "earliest_supported_year": null,
+      "earliest_direct_corpus_year": null,
+      "attestation_ids": [],
+      "confidence": "low",
+      "evidence_quality": "not_found",
+      "notes": "No usable earliest attestation found in this pass. Digital/platform senses need contemporary corpus validation beyond Ngram."
+    }
+  ]
+}

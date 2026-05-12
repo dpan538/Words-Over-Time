@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-12T00:10:31.251336Z",
+    "generated_by_script": "scripts/process_hub_etymology.py"
+  },
+  "summary": {
+    "attestation_candidates": 22,
+    "etymology_sources_collected": 10,
+    "etymology_sources_attempted": 11,
+    "earliest_claimed_year": "1640s",
+    "earliest_supported_year": 1828,
+    "earliest_direct_corpus_year": 1908,
+    "earliest_sense": "Mechanical wheel center",
+    "confidence_counts": {
+      "high": 0,
+      "medium": 21,
+      "low": 1
+    },
+    "semantic_shift_groups": 6,
+    "failed_or_blocked_sources": 1,
+    "failed_or_blocked_searches": 117
+  },
+  "etymology": {
+    "word": "hub",
+    "generated_at": "2026-05-12T00:10:31.251083Z",
+    "generated_by_script": "scripts/process_hub_etymology.py",
+    "etymology_status": "uncertain",
+    "earliest_claimed_year": "1640s",
+    "earliest_supported_attestation_year": 1828,
+    "earliest_direct_corpus_year": 1908,
+    "earliest_sense": "Mechanical wheel center",
+    "origin_notes": "Public etymology sources agree that the earliest sense is the solid center of a wheel, but they frame the ultimate origin as uncertain or only probably connected with hob/hubbe.",
+    "possible_origin_theories": [
+      {
+        "theory": "Unknown origin; possibly from earlier hubbe with a lump/protuberance sense related to hob.",
+        "source": "Online Etymology Dictionary; Wiktionary",
+        "confidence": "medium",
+        "notes": "Both sources frame the ultimate origin as uncertain rather than settled."
+      },
+      {
+        "theory": "Probably an alteration of hob.",
+        "source": "Merriam-Webster",
+        "confidence": "medium",
+        "notes": "Concise dictionary etymology; public entry does not provide a detailed derivation."
+      }
+    ],
+    "related_terms": [
+      {
+        "term": "nave",
+        "relationship": "Older/alternate term for the central part of a wheel.",
+        "notes": "Nave has Old English/Germanic roots and remains a synonym in historical dictionary entries for hub."
+      },
+      {
+        "term": "hob",
+        "relationship": "Possible source or related form in hub etymology.",
+        "notes": "Mentioned in dictionary/etymology sources, but origin is still treated as uncertain."
+      },
+      {
+        "term": "hubcap",
+        "relationship": "Mechanical compound formed from hub plus cap.",
+        "notes": "Etymonline dates hubcap/hub cap to 1896; Merriam-Webster lists 1903."
+      }
+    ],
+    "semantic_shift_summary": [
+      {
+        "from_sense": "mechanical_core",
+        "to_sense": "central_place",
+        "approximate_period": "1850s",
+        "evidence_status": "partial",
+        "notes": "Etymonline dates the center-of-interest/activity sense to Holmes in 1858; primary text should be independently checked."
+      },
+      {
+        "from_sense": "central_place",
+        "to_sense": "transport_logistics",
+        "approximate_period": "early 20th century in current evidence",
+        "evidence_status": "partial",
+        "notes": "Current direct snippets include transit hub in 1908, railway hub in 1943, and transportation hub in 1955; earlier Ngram signals remain unverified."
+      },
+      {
+        "from_sense": "transport_logistics",
+        "to_sense": "network_system",
+        "approximate_period": "late 20th century",
+        "evidence_status": "uncertain",
+        "notes": "Hub-and-spoke has a Merriam-Webster 1980 dictionary claim; network/computing direct attestations still need better corpus evidence."
+      },
+      {
+        "from_sense": "network_system",
+        "to_sense": "digital_platform",
+        "approximate_period": "web/platform era",
+        "evidence_status": "uncertain",
+        "notes": "First-pass Ngram signals exist for digital/content/data hub, but this pass did not find strong direct early snippets."
+      }
+    ],
+    "source_limitations": [
+      {
+        "source": "Collins Dictionary",
+        "url": "https://www.collinsdictionary.com/dictionary/english/hub",
+        "status": "failed",
+        "error": "Live attempts returned HTTP 403 Forbidden; source preserved for manual review."
+      },
+      {
+        "source": "Google Books API",
+        "status": "skipped",
+        "error": "First pass hit HTTP 429; second pass did not retry aggressively."
+      },
+      {
+        "source": "OCR/search result snippets",
+        "status": "limited",
+        "error": "LOC and Internet Archive evidence needs page/image verification before final chart copy."
+      }
+    ]
+  },
+  "sense_by_sense": [
+    {
+      "sense_id": "mechanical_core",
+      "sense_label": "Mechanical wheel center",
+      "earliest_claimed_year": "1640s",
+      "earliest_supported_year": 1828,
+      "earliest_direct_corpus_year": 1938,
+      "attestation_ids": [
+        "hub_attestation_001",
+        "hub_attestation_002",
+        "hub_attestation_003",
+        "hub_attestation_006",
+        "hub_attestation_007",
+        "hub_attestation_004",
+        "hub_attestation_100",
+        "hub_attestation_101"
+      ],
+      "confidence": "medium",
+      "evidence_quality": "direct_needs_review",
+      "notes": "Earliest supported dated source is 1828; earliest direct corpus snippet is 1938."
+    },
+    {
+      "sense_id": "central_place",
+      "sense_label": "Central place or focus",
+      "earliest_claimed_year": 1858,
+      "earliest_supported_year": 1910,
+      "earliest_direct_corpus_year": 1910,
+      "attestation_ids": [
+        "hub_attestation_005",
+        "hub_attestation_106",
+        "hub_attestation_107",
+        "hub_attestation_104",
+        "hub_attestation_105",
+        "hub_attestation_102",
+        "hub_attestation_103"
+      ],
+      "confidence": "medium",
+      "evidence_quality": "direct_needs_review",
+      "notes": "Earliest supported dated evidence in this layer is 1910."
+    },
+    {
+      "sense_id": "transport_logistics",
+      "sense_label": "Transport and logistics node",
+      "earliest_claimed_year": 1980,
+      "earliest_supported_year": 1908,
+      "earliest_direct_corpus_year": 1908,
+      "attestation_ids": [
+        "hub_attestation_111",
+        "hub_attestation_108",
+        "hub_attestation_109",
+        "hub_attestation_110",
+        "hub_attestation_008"
+      ],
+      "confidence": "medium",
+      "evidence_quality": "direct_needs_review",
+      "notes": "Earliest supported dated evidence in this layer is 1908."
+    },
+    {
+      "sense_id": "network_system",
+      "sense_label": "Communication, computing, or network node",
+      "earliest_claimed_year": null,
+      "earliest_supported_year": null,
+      "earliest_direct_corpus_year": null,
+      "attestation_ids": [],
+      "confidence": "low",
+      "evidence_quality": "not_found",
+      "notes": "No usable earliest attestation found in this pass."
+    },
+    {
+      "sense_id": "institutional_cluster",
+      "sense_label": "Institutional, economic, cultural, or knowledge cluster",
+      "earliest_claimed_year": null,
+      "earliest_supported_year": 1908,
+      "earliest_direct_corpus_year": 1908,
+      "attestation_ids": [
+        "hub_attestation_112"
+      ],
+      "confidence": "medium",
+      "evidence_quality": "direct_needs_review",
+      "notes": "Earliest supported dated evidence in this layer is 1908."
+    },
+    {
+      "sense_id": "digital_platform",
+      "sense_label": "Digital, content, data, or resource platform",
+      "earliest_claimed_year": null,
+      "earliest_supported_year": null,
+      "earliest_direct_corpus_year": null,
+      "attestation_ids": [],
+      "confidence": "low",
+      "evidence_quality": "not_found",
+      "notes": "No usable earliest attestation found in this pass. Digital/platform senses need contemporary corpus validation beyond Ngram."
+    }
+  ],
+  "historical_dictionary_entries": [
+    {
+      "id": "webster_1828_hub",
+      "source_title": "American Dictionary of the English Language",
+      "source_author": "Noah Webster",
+      "source_year": 1828,
+      "entry_term": "hub",
+      "source_url": "https://webstersdictionary1828.com/Dictionary/hub",
+      "access_status": "collected",
+      "sense_summary": "Hub as the nave of a wheel, a timber piece receiving spokes.",
+      "evidence_text_short": "The nave of a wheel.",
+      "supports_sense_ids": [
+        "mechanical_core"
+      ],
+      "confidence": "medium",
+      "notes": "Dated dictionary entry; not a first-use quotation."
+    },
+    {
+      "id": "webster_1913_hub",
+      "source_title": "Webster's Revised Unabridged Dictionary",
+      "source_author": "C. & G. Merriam",
+      "source_year": 1913,
+      "entry_term": "hub",
+      "source_url": "https://www.websters1913.com/words/Hub",
+      "access_status": "collected",
+      "sense_summary": "Hub as central wheel part, nave, plus other technical/regional senses.",
+      "evidence_text_short": "The central part ... of a wheel; the nave.",
+      "supports_sense_ids": [
+        "mechanical_core"
+      ],
+      "confidence": "medium",
+      "notes": "Public-domain dictionary confirms sense structure; not an earliest-use quotation."
+    }
+  ],
+  "source_limitations": [
+    {
+      "source": "Collins Dictionary",
+      "url": "https://www.collinsdictionary.com/dictionary/english/hub",
+      "status": "failed",
+      "error": "Live attempts returned HTTP 403 Forbidden; source preserved for manual review."
+    },
+    {
+      "source": "Google Books API",
+      "status": "skipped",
+      "error": "First pass hit HTTP 429; second pass did not retry aggressively."
+    },
+    {
+      "source": "OCR/search result snippets",
+      "status": "limited",
+      "error": "LOC and Internet Archive evidence needs page/image verification before final chart copy."
+    }
+  ],
+  "search_summary": {
+    "search_entries": 252,
+    "usable_search_evidence_entries": 13
+  },
+  "recommended_next_chart_implications": [
+    "A first chart can anchor hub in the physical wheel center before any platform or tech use.",
+    "A transfer-model chart can show wheel to city to transport to network to platform.",
+    "Compound growth can compare wheel hub, transport hub, network hub, innovation hub, and data hub.",
+    "A centrality chart can separate movement/access from control/concentration."
+  ],
+  "outputs": {
+    "etymology_summary": "docs/research/hub/processed/hub_etymology_summary.json",
+    "earliest_attestations": "docs/research/hub/processed/hub_earliest_attestations.json",
+    "semantic_shift_attestations": "docs/research/hub/processed/hub_semantic_shift_attestations.json",
+    "attestation_confidence_matrix": "docs/research/hub/processed/hub_attestation_confidence_matrix.json",
+    "report_md": "docs/research/hub/reports/hub_etymology_attestation_report.md",
+    "report_json": "docs/research/hub/reports/hub_etymology_attestation_report.json",
+    "generated_preview": "src/data/generated/hub_chart_data_preview.json"
+  }
+}

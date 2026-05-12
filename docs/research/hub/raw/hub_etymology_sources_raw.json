@@ -1,0 +1,362 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-12T00:10:24.007918Z",
+    "generated_by_script": "scripts/scrape_hub_etymology.py"
+  },
+  "etymology_source_status": [
+    {
+      "id": "etymonline_hub",
+      "source_name": "Online Etymology Dictionary",
+      "url": "https://www.etymonline.com/word/hub",
+      "source_type": "secondary_etymology",
+      "entry_term": "hub",
+      "expected_claims": [
+        "Wheel-center sense dated to the 1640s.",
+        "Origin described as uncertain, with a possible hubbe/hob family link.",
+        "Center-of-activity sense dated to Oliver Wendell Holmes in 1858."
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "cache_path": "docs/research/hub/raw/etymology_cache/source_etymonline_hub_e5ceca8da6f0367d.html",
+      "from_cache": true,
+      "error": null,
+      "known_live_issue": null,
+      "fetched_at": "2026-05-12T00:09:35.166133Z",
+      "text_length": 233886,
+      "page_signals": {
+        "contains_entry_term": true,
+        "contains_first_known_use": false,
+        "contains_1649": false,
+        "contains_1640s": true,
+        "contains_1858": true,
+        "contains_nave": true,
+        "contains_uncertain_origin": true,
+        "meta_description": "\"solid center of a wheel,\" 1640s, of uncertain origin, perhaps, if all the senses are in… See origin and meaning of hub.",
+        "html_title": "Hub - Etymology, Origin & Meaning"
+      },
+      "copyright_notes": "Only source status, paraphrase-ready signals, and very short excerpts are stored."
+    },
+    {
+      "id": "etymonline_hubcap",
+      "source_name": "Online Etymology Dictionary",
+      "url": "https://www.etymonline.com/word/hubcap",
+      "source_type": "secondary_etymology",
+      "entry_term": "hubcap",
+      "expected_claims": [
+        "Hubcap / hub cap dated to 1896 as hub plus cap."
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "cache_path": "docs/research/hub/raw/etymology_cache/source_etymonline_hubcap_3047d0e57de42ccb.html",
+      "from_cache": true,
+      "error": null,
+      "known_live_issue": null,
+      "fetched_at": "2026-05-12T00:09:35.523067Z",
+      "text_length": 238563,
+      "page_signals": {
+        "contains_entry_term": true,
+        "contains_first_known_use": false,
+        "contains_1649": false,
+        "contains_1640s": true,
+        "contains_1858": true,
+        "contains_nave": false,
+        "contains_uncertain_origin": true,
+        "meta_description": "also hub cap, 1896, from hub + cap (n.).",
+        "html_title": "Hubcap - Etymology, Origin & Meaning"
+      },
+      "copyright_notes": "Only source status, paraphrase-ready signals, and very short excerpts are stored."
+    },
+    {
+      "id": "merriam_webster_hub",
+      "source_name": "Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/hub",
+      "source_type": "dictionary",
+      "entry_term": "hub",
+      "expected_claims": [
+        "First known use listed as 1649 for the central circular-object sense.",
+        "Etymology summarized as probably an alteration of hob."
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "cache_path": "docs/research/hub/raw/etymology_cache/source_merriam_webster_hub_ddef5796281982c1.html",
+      "from_cache": true,
+      "error": null,
+      "known_live_issue": null,
+      "fetched_at": "2026-05-12T00:09:35.881040Z",
+      "text_length": 731747,
+      "page_signals": {
+        "contains_entry_term": true,
+        "contains_first_known_use": true,
+        "contains_1649": true,
+        "contains_1640s": false,
+        "contains_1858": true,
+        "contains_nave": false,
+        "contains_uncertain_origin": false,
+        "meta_description": "The meaning of HUB is the central part of a circular object (such as a wheel or propeller). How to use hub in a sentence.",
+        "html_title": "HUB Definition & Meaning - Merriam-Webster"
+      },
+      "copyright_notes": "Only source status, paraphrase-ready signals, and very short excerpts are stored."
+    },
+    {
+      "id": "merriam_webster_hubcap",
+      "source_name": "Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/hubcap",
+      "source_type": "dictionary",
+      "entry_term": "hubcap",
+      "expected_claims": [
+        "First known use listed as 1903."
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "cache_path": "docs/research/hub/raw/etymology_cache/source_merriam_webster_hubcap_8727d6a50f2fa861.html",
+      "from_cache": true,
+      "error": null,
+      "known_live_issue": null,
+      "fetched_at": "2026-05-12T00:09:36.250200Z",
+      "text_length": 704962,
+      "page_signals": {
+        "contains_entry_term": true,
+        "contains_first_known_use": true,
+        "contains_1649": true,
+        "contains_1640s": false,
+        "contains_1858": true,
+        "contains_nave": false,
+        "contains_uncertain_origin": false,
+        "meta_description": "The meaning of HUBCAP is a removable usually metal cap over the end of an axle; especially : one used on the wheel of a motor vehicle.",
+        "html_title": "HUBCAP Definition & Meaning - Merriam-Webster"
+      },
+      "copyright_notes": "Only source status, paraphrase-ready signals, and very short excerpts are stored."
+    },
+    {
+      "id": "merriam_webster_hub_and_spoke",
+      "source_name": "Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/hub-and-spoke",
+      "source_type": "dictionary",
+      "entry_term": "hub-and-spoke",
+      "expected_claims": [
+        "First known use listed as 1980 for air-traffic routing systems."
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "cache_path": "docs/research/hub/raw/etymology_cache/source_merriam_webster_hub_and_spoke_89122943ad0ced55.html",
+      "from_cache": true,
+      "error": null,
+      "known_live_issue": null,
+      "fetched_at": "2026-05-12T00:09:36.614002Z",
+      "text_length": 695215,
+      "page_signals": {
+        "contains_entry_term": true,
+        "contains_first_known_use": true,
+        "contains_1649": true,
+        "contains_1640s": false,
+        "contains_1858": true,
+        "contains_nave": false,
+        "contains_uncertain_origin": false,
+        "meta_description": "The meaning of HUB-AND-SPOKE is being or relating to a system of routing air traffic in which a major airport serves as a central point for coordinating flights to and from other airports.",
+        "html_title": "HUB-AND-SPOKE Definition & Meaning - Merriam-Webster"
+      },
+      "copyright_notes": "Only source status, paraphrase-ready signals, and very short excerpts are stored."
+    },
+    {
+      "id": "merriam_webster_nave",
+      "source_name": "Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/nave",
+      "source_type": "dictionary",
+      "entry_term": "nave",
+      "expected_claims": [
+        "Nave is an older wheel-center term, with first known use before the 12th century."
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "cache_path": "docs/research/hub/raw/etymology_cache/source_merriam_webster_nave_a0675ff9af540011.html",
+      "from_cache": true,
+      "error": null,
+      "known_live_issue": null,
+      "fetched_at": "2026-05-12T00:09:36.977158Z",
+      "text_length": 716111,
+      "page_signals": {
+        "contains_entry_term": true,
+        "contains_first_known_use": true,
+        "contains_1649": true,
+        "contains_1640s": false,
+        "contains_1858": true,
+        "contains_nave": true,
+        "contains_uncertain_origin": false,
+        "meta_description": "The meaning of NAVE is the hub of a wheel.",
+        "html_title": "NAVE Definition & Meaning - Merriam-Webster"
+      },
+      "copyright_notes": "Only source status, paraphrase-ready signals, and very short excerpts are stored."
+    },
+    {
+      "id": "wiktionary_hub",
+      "source_name": "Wiktionary",
+      "url": "https://en.wiktionary.org/wiki/hub",
+      "source_type": "dictionary",
+      "entry_term": "hub",
+      "expected_claims": [
+        "Etymology gives earlier hubbe, shared with hob, and describes ultimate origin as unknown.",
+        "Sense inventory includes wheel center, traffic distribution point, activity center, and networking device."
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "cache_path": "docs/research/hub/raw/etymology_cache/source_wiktionary_hub_1d1aaa692d79d944.html",
+      "from_cache": true,
+      "error": null,
+      "known_live_issue": null,
+      "fetched_at": "2026-05-12T00:09:37.340474Z",
+      "text_length": 190205,
+      "page_signals": {
+        "contains_entry_term": true,
+        "contains_first_known_use": false,
+        "contains_1649": false,
+        "contains_1640s": false,
+        "contains_1858": false,
+        "contains_nave": true,
+        "contains_uncertain_origin": true,
+        "html_title": "hub - Wiktionary, the free dictionary"
+      },
+      "copyright_notes": "Only source status, paraphrase-ready signals, and very short excerpts are stored."
+    },
+    {
+      "id": "webster_1828_hub",
+      "source_name": "Webster 1828",
+      "url": "https://webstersdictionary1828.com/Dictionary/hub",
+      "source_type": "historical_dictionary",
+      "entry_term": "hub",
+      "expected_claims": [
+        "Historical dictionary entry defines hub as the nave of a wheel."
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "cache_path": "docs/research/hub/raw/etymology_cache/source_webster_1828_hub_fb65db3d47c6e3d5.html",
+      "from_cache": true,
+      "error": null,
+      "known_live_issue": null,
+      "fetched_at": "2026-05-12T00:09:37.699518Z",
+      "text_length": 15076,
+      "page_signals": {
+        "contains_entry_term": true,
+        "contains_first_known_use": false,
+        "contains_1649": false,
+        "contains_1640s": false,
+        "contains_1858": false,
+        "contains_nave": true,
+        "contains_uncertain_origin": false,
+        "meta_description": "Websters Dictionary 1828 – Online Edition is an excellent reference for classical literature and Bible studies",
+        "html_title": "Websters 1828 - Webster's Dictionary 1828 - Hub"
+      },
+      "copyright_notes": "Only source status, paraphrase-ready signals, and very short excerpts are stored."
+    },
+    {
+      "id": "webster_1913_hub",
+      "source_name": "Webster's Revised Unabridged Dictionary 1913",
+      "url": "https://www.websters1913.com/words/Hub",
+      "source_type": "historical_dictionary",
+      "entry_term": "hub",
+      "expected_claims": [
+        "Historical dictionary entry defines hub as the central part of a wheel; the nave."
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "cache_path": "docs/research/hub/raw/etymology_cache/source_webster_1913_hub_4332648c8ff073ff.html",
+      "from_cache": true,
+      "error": null,
+      "known_live_issue": null,
+      "fetched_at": "2026-05-12T00:09:38.056320Z",
+      "text_length": 2377,
+      "page_signals": {
+        "contains_entry_term": true,
+        "contains_first_known_use": false,
+        "contains_1649": false,
+        "contains_1640s": false,
+        "contains_1858": false,
+        "contains_nave": true,
+        "contains_uncertain_origin": false,
+        "html_title": "Webster's 1913"
+      },
+      "copyright_notes": "Only source status, paraphrase-ready signals, and very short excerpts are stored."
+    },
+    {
+      "id": "cambridge_hub",
+      "source_name": "Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/hub",
+      "source_type": "dictionary",
+      "entry_term": "hub",
+      "expected_claims": [
+        "Modern entry separates central place, wheel, IT, and transport/business senses."
+      ],
+      "access_status": "collected",
+      "http_status": null,
+      "cache_path": "docs/research/hub/raw/etymology_cache/source_cambridge_hub_3921209fd998d687.html",
+      "from_cache": true,
+      "error": null,
+      "known_live_issue": null,
+      "fetched_at": "2026-05-12T00:09:38.413446Z",
+      "text_length": 336020,
+      "page_signals": {
+        "contains_entry_term": true,
+        "contains_first_known_use": false,
+        "contains_1649": false,
+        "contains_1640s": false,
+        "contains_1858": false,
+        "contains_nave": false,
+        "contains_uncertain_origin": false,
+        "meta_description": "HUB definition: 1. the central or main part of something where there is most activity: 2. the central part of a…. Learn more.",
+        "html_title": "HUB | English meaning - Cambridge Dictionary"
+      },
+      "copyright_notes": "Only source status, paraphrase-ready signals, and very short excerpts are stored."
+    },
+    {
+      "id": "collins_hub",
+      "source_name": "Collins Dictionary",
+      "url": "https://www.collinsdictionary.com/dictionary/english/hub",
+      "source_type": "dictionary",
+      "entry_term": "hub",
+      "expected_claims": [
+        "Modern dictionary sense comparison; may block automated access."
+      ],
+      "access_status": "failed",
+      "http_status": null,
+      "cache_path": "docs/research/hub/raw/etymology_cache/source_collins_hub_eeb0d425b07e2bd2.html",
+      "from_cache": false,
+      "error": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "known_live_issue": "Live attempts returned HTTP 403 Forbidden; source preserved for manual review.",
+      "fetched_at": "2026-05-12T00:09:38.817099Z",
+      "text_length": 0,
+      "page_signals": {},
+      "copyright_notes": "Only source status, paraphrase-ready signals, and very short excerpts are stored."
+    }
+  ],
+  "possible_origin_theories": [
+    {
+      "theory": "Unknown origin; possibly from earlier hubbe with a lump/protuberance sense related to hob.",
+      "source": "Online Etymology Dictionary; Wiktionary",
+      "confidence": "medium",
+      "notes": "Both sources frame the ultimate origin as uncertain rather than settled."
+    },
+    {
+      "theory": "Probably an alteration of hob.",
+      "source": "Merriam-Webster",
+      "confidence": "medium",
+      "notes": "Concise dictionary etymology; public entry does not provide a detailed derivation."
+    }
+  ],
+  "related_terms": [
+    {
+      "term": "nave",
+      "relationship": "Older/alternate term for the central part of a wheel.",
+      "notes": "Nave has Old English/Germanic roots and remains a synonym in historical dictionary entries for hub."
+    },
+    {
+      "term": "hob",
+      "relationship": "Possible source or related form in hub etymology.",
+      "notes": "Mentioned in dictionary/etymology sources, but origin is still treated as uncertain."
+    },
+    {
+      "term": "hubcap",
+      "relationship": "Mechanical compound formed from hub plus cap.",
+      "notes": "Etymonline dates hubcap/hub cap to 1896; Merriam-Webster lists 1903."
+    }
+  ]
+}
