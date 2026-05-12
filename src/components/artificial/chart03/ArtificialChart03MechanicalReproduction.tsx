@@ -15,11 +15,11 @@ import {
 const BG = "transparent";
 const INK = "#111018";
 const RED = "#A1081F";
-const DIM = "rgba(17,16,24,0.84)";
-const FAINT = "rgba(17,16,24,0.36)";
-const RULE = "rgba(17,16,24,0.52)";
+const DIM = "rgba(17,16,24,0.88)";
+const FAINT = "rgba(17,16,24,0.40)";
+const RULE = "rgba(17,16,24,0.58)";
 const LABEL = "rgba(17,16,24,0.88)";
-const MUTED = "rgba(17,16,24,0.84)";
+const MUTED = "rgba(17,16,24,0.88)";
 
 const WIDTH = 960;
 const HEIGHT = 820;
@@ -878,7 +878,7 @@ function BurstTimeline({ activeHover, onHover }: Chart03HoverProps) {
 
 export function ArtificialChart03MechanicalReproduction({ activeHover, onHover }: Chart03HoverProps) {
   return (
-    <div className="w-full overflow-x-auto rounded-sm border border-ink/50">
+    <div className="w-full overflow-x-auto rounded-sm border border-ink/60">
       <svg
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         xmlns="http://www.w3.org/2000/svg"
@@ -911,9 +911,9 @@ export function ArtificialChart03MechanicalReproduction({ activeHover, onHover }
           .chart03-slow-spin { animation: chart03SlowSpin 9s linear infinite; }
         `}</style>
         {/* ── Panel borders ────────────────────────────────────────────── */}
-        <rect x={0} y={0} width={WIDTH} height={PANEL_TOP_HEIGHT} fill="none" stroke={RULE} strokeWidth={0.62} />
-        <line x1={PANEL_DIV1} y1={0} x2={PANEL_DIV1} y2={PANEL_TOP_HEIGHT} stroke={RULE} strokeWidth={0.62} />
-        <line x1={PANEL_DIV2} y1={0} x2={PANEL_DIV2} y2={PANEL_TOP_HEIGHT} stroke={RULE} strokeWidth={0.62} />
+        <rect x={0} y={0} width={WIDTH} height={PANEL_TOP_HEIGHT} fill="none" stroke={RULE} strokeWidth={0.7} />
+        <line x1={PANEL_DIV1} y1={0} x2={PANEL_DIV1} y2={PANEL_TOP_HEIGHT} stroke={RULE} strokeWidth={0.7} />
+        <line x1={PANEL_DIV2} y1={0} x2={PANEL_DIV2} y2={PANEL_TOP_HEIGHT} stroke={RULE} strokeWidth={0.7} />
 
         {/* ── Panel A ──────────────────────────────────────────────────── */}
         <PanelLabel num="1" title="The Apparatus" note="devices that wrap experience, layer by layer" x={0} />
@@ -931,7 +931,7 @@ export function ArtificialChart03MechanicalReproduction({ activeHover, onHover }
         <BurstTimeline activeHover={activeHover} onHover={onHover} />
 
         {/* ── Outer border ─────────────────────────────────────────────── */}
-        <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="none" stroke={RULE} strokeWidth={0.62} />
+        <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="none" stroke={RULE} strokeWidth={0.7} />
       </svg>
     </div>
   );

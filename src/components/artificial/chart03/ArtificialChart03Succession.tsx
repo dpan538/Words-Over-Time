@@ -8,27 +8,30 @@ import {
 } from "@/components/artificial/chart03/chart03Shared";
 
 const INK = "#111018";
-const RULE = "rgba(17,16,24,0.60)";
-const MUTED = "rgba(17,16,24,0.90)";
-const DIM = "rgba(17,16,24,0.84)";
+const RULE = "rgba(17,16,24,0.68)";
+const MUTED = "rgba(17,16,24,0.94)";
+const DIM = "rgba(17,16,24,0.89)";
 const RED = "#A1081F";
 const RED_DIM = "rgba(126,4,22,0.95)";
 
 const VW = 1100;
-const VH = 690;
-const TL_LEFT = 116;
-const TL_RIGHT = 1038;
-const AXIS_Y = 610;
+const VH = 720;
+const TL_LEFT = 82;
+const TL_RIGHT = 1064;
+const AXIS_Y = 638;
 const HEADER_LEFT = 34;
-const HEADER_Y = 14;      // section header baseline
-const SUCCESSION_FOOTER_Y = 648;
+const HEADER_Y = 28;      // section header baseline
+const PLOT_TOP = 72;
+const PLOT_BOTTOM = 660;
+const SUCCESSION_FOOTER_Y = 684;
+const SUCCESSION_FOOTER_SECOND_Y = 702;
 
 function yearToX(year: number): number {
   return TL_LEFT + ((year - 1800) / 219) * (TL_RIGHT - TL_LEFT);
 }
 
 // Four sensory track centres — compact enough for one viewport, with label lanes.
-const TRACK_Y = { SIGHT: 118, SOUND: 254, LIGHT: 390, SCENE: 526 } as const;
+const TRACK_Y = { SIGHT: 150, SOUND: 292, LIGHT: 434, SCENE: 576 } as const;
 type TrackKey = keyof typeof TRACK_Y;
 
 // Per-track normalisation ceiling and max arc radius
@@ -283,7 +286,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
   ], []);
 
   return (
-    <div className="w-full overflow-x-auto border border-ink/50">
+    <div className="w-full overflow-x-auto border border-ink/60">
       <svg
         viewBox={`0 0 ${VW} ${VH}`}
         style={{ display: "block", width: "100%", minWidth: 1160 }}
@@ -327,17 +330,17 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
         </text>
 
         {/* ── Track row dividers ──────────────────────────────── */}
-        {[50, 186, 322, 458, 632].map((y) => (
-          <line key={y} x1={0} y1={y} x2={VW} y2={y} stroke={RULE} strokeWidth={0.7} />
+        {[PLOT_TOP, 214, 356, 498, PLOT_BOTTOM].map((y) => (
+          <line key={y} x1={0} y1={y} x2={VW} y2={y} stroke={RULE} strokeWidth={0.8} />
         ))}
 
         {/* ── Decade gridlines ────────────────────────────────── */}
         {[1825, 1850, 1875, 1900, 1925, 1950, 1975, 2000].map((yr) => (
           <line
             key={yr}
-            x1={yearToX(yr)} y1={50}
+            x1={yearToX(yr)} y1={PLOT_TOP}
             x2={yearToX(yr)} y2={AXIS_Y}
-            stroke={RULE} strokeWidth={0.5}
+            stroke={RULE} strokeWidth={0.58}
             strokeDasharray="1 6"
           />
         ))}
@@ -391,8 +394,8 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
               key={`bar-${t.id}`}
               x1={x1} y1={y} x2={x2} y2={y}
               stroke={INK}
-              strokeWidth={isHov ? 1.55 : 0.72}
-                opacity={dimmed ? 0.16 : isHov ? 0.78 : 0.46}
+              strokeWidth={isHov ? 1.6 : 0.8}
+                opacity={dimmed ? 0.18 : isHov ? 0.82 : 0.54}
               style={{ transition: "opacity 0.18s, stroke-width 0.15s" }}
               pointerEvents="none"
             />
@@ -418,9 +421,9 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                 d={`M ${(x1 + r1 * 0.55).toFixed(1)} ${ay} Q ${mx.toFixed(1)} ${my.toFixed(1)} ${(x2 - r2 * 0.55).toFixed(1)} ${by}`}
                 fill="none"
                 stroke={INK}
-                strokeWidth={0.62}
+                strokeWidth={0.7}
                 strokeDasharray="2 3"
-                opacity={dimA ? 0.14 : 0.44}
+                opacity={dimA ? 0.16 : 0.52}
                 style={{ transition: "opacity 0.18s" }}
                 pointerEvents="none"
               />
@@ -473,7 +476,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                 fill="rgba(245,236,210,0.72)"
                 stroke={INK}
                 strokeWidth={isHov ? 2 : 1}
-                opacity={dimmed ? 0.30 : 0.94}
+                opacity={dimmed ? 0.34 : 0.96}
                 style={{ transition: "opacity 0.18s, stroke-width 0.15s" }}
               />
 
@@ -486,7 +489,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                   fontSize={r >= 22 ? 11.2 : 9.4}
                   fontFamily="monospace"
                   letterSpacing="0.05em"
-                  opacity={dimmed ? 0.24 : isHov ? 1 : 0.92}
+                  opacity={dimmed ? 0.28 : isHov ? 1 : 0.96}
                   style={{ transition: "opacity 0.18s" }}
                   className="select-none"
                 >
@@ -531,7 +534,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                   fontSize={9}
                   fontFamily="monospace"
                   letterSpacing="0.04em"
-                  opacity={dimmed ? 0.24 : 0.90}
+                  opacity={dimmed ? 0.28 : 0.94}
                   className="select-none"
                 >
                   {t.label}
@@ -624,13 +627,13 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
         })}
 
         {/* ── Time axis ───────────────────────────────────────── */}
-        <line x1={TL_LEFT} y1={AXIS_Y} x2={TL_RIGHT} y2={AXIS_Y} stroke={RULE} strokeWidth={0.8} />
+        <line x1={TL_LEFT} y1={AXIS_Y} x2={TL_RIGHT} y2={AXIS_Y} stroke={RULE} strokeWidth={0.9} />
         {[1800, 1825, 1850, 1875, 1900, 1925, 1950, 1975, 2000, 2019].map((yr) => (
           <g key={yr}>
             <line
               x1={yearToX(yr)} y1={AXIS_Y - 3}
               x2={yearToX(yr)} y2={AXIS_Y + 3}
-              stroke={RULE} strokeWidth={0.95}
+              stroke={RULE} strokeWidth={1.05}
             />
             <text
               x={yearToX(yr)} y={AXIS_Y + 11}
@@ -658,7 +661,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
           </text>
         </g>
         <text
-          x={TL_LEFT} y={VH - 10}
+          x={TL_LEFT} y={SUCCESSION_FOOTER_SECOND_Y}
           fill={DIM} fontSize={9.4} fontFamily="monospace" letterSpacing="0.04em"
           className="select-none"
         >

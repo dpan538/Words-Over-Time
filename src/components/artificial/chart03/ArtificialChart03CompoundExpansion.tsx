@@ -7,8 +7,8 @@ import type { Chart03HoverProps } from "./chart03Shared";
 const INK = "#111018";
 const RED = "#A1081F";
 const WHEAT = "#F5ECD2";
-const RULE = "#615B4F";
-const FAINT = "#9F9682";
+const RULE = "#554F45";
+const FAINT = "#918872";
 
 const YEAR_MIN = 1800;
 const YEAR_MAX = 2020;
@@ -508,8 +508,8 @@ export function ArtificialChart03CompoundExpansion({ activeHover, onHover }: Cha
   }, []);
 
   return (
-    <div className="w-full overflow-hidden border border-ink/45">
-      <div className="grid border-b border-ink/40 px-6 py-5 sm:grid-cols-[4.5rem_minmax(0,1fr)] sm:gap-6">
+    <div className="w-full overflow-hidden border border-ink/55">
+      <div className="grid border-b border-ink/50 px-6 py-5 sm:grid-cols-[4.5rem_minmax(0,1fr)] sm:gap-6">
         <p className="font-mono text-[0.78rem] font-bold leading-5 tracking-[0.13em] text-ink/70">{"{06}"}</p>
         <div>
           <h4 className="font-mono text-[1rem] font-black uppercase leading-none tracking-[0.16em] text-ink">Compound Expansion</h4>
@@ -526,7 +526,7 @@ export function ArtificialChart03CompoundExpansion({ activeHover, onHover }: Cha
           vertical time: 1800-2020 · circle/diamond size approximates peak ngram frequency
         </div>
 
-        <div className="absolute right-5 top-5 grid h-[22rem] w-[18rem] grid-rows-[17rem_5rem] border border-ink/35 bg-wheat/70">
+        <div className="absolute right-5 top-5 grid h-[22rem] w-[18rem] grid-rows-[17rem_5rem] border border-ink/45 bg-wheat/70">
           <div className="pointer-events-none absolute inset-0 opacity-45 [background-image:linear-gradient(135deg,rgba(17,16,24,0.10)_1px,transparent_1px),linear-gradient(45deg,rgba(17,16,24,0.06)_1px,transparent_1px)] [background-size:42px_42px]" />
           <div className="relative z-10 grid grid-rows-[3.6rem_minmax(0,1fr)]">
             <div className="pointer-events-none px-5 pt-4 font-mono text-[0.78rem] font-black uppercase tracking-[0.14em] text-ink/78">
@@ -536,7 +536,7 @@ export function ArtificialChart03CompoundExpansion({ activeHover, onHover }: Cha
               <div ref={miniMountRef} className="h-[15.18rem] w-[15.18rem]" aria-label="Synchronized orbital overview for Chart 06" />
             </div>
           </div>
-          <div className="pointer-events-none relative z-10 mx-5 border-t border-ink/35 pt-3 font-mono text-[0.84rem] font-bold uppercase leading-snug tracking-[0.08em] text-fire">
+          <div className="pointer-events-none relative z-10 mx-5 border-t border-ink/45 pt-3 font-mono text-[0.84rem] font-bold uppercase leading-snug tracking-[0.08em] text-fire">
             {frontLabel}
           </div>
         </div>

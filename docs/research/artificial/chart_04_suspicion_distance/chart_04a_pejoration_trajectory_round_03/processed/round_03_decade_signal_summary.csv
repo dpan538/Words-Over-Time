@@ -1,0 +1,485 @@
+term,decade,avg_value,max_value,query_group,domain,notes
+artificial,1800,0.000014884547097437916,0.000018157299194854204,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1810,0.000015140303114691278,0.000023677094759477768,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1820,0.000015988023307045296,0.000017317022951601757,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1830,0.000016341021223809092,0.000018217910579210184,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1840,0.00001823625190553457,0.000019570482805875145,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1850,0.000020634441293204685,0.000022811321287008468,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1860,0.00002112781715451484,0.00002361280451168568,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1870,0.000020957886010017357,0.000021831883657341677,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1880,0.000020691983323735397,0.000022291778286637198,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1890,0.000019929647654833015,0.000021136748046046705,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1900,0.000020093199755662206,0.000021648852396083385,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1910,0.000021210516031126835,0.000022428306450085478,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1920,0.00002420504534437415,0.00002587142388152386,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1930,0.000022302851914576817,0.00002410051848181216,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1940,0.000018544886132687566,0.00001959208458644779,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1950,0.00001804753650933924,0.00001910945132976849,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1960,0.0000190708918404614,0.000020391911000644525,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1970,0.000017853716185156285,0.000018748400634649443,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1980,0.000018646917245074627,0.000020864931341457726,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,1990,0.000018143519419472344,0.00002058411366316626,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,2000,0.000015832400134596637,0.00001656090660026588,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial,2010,0.00001736506646541243,0.000020799102985968876,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1800,7.694104720012973e-9,2.1534338756623583e-8,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1810,7.847373839631188e-9,2.6606180369981303e-8,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1820,7.621885023123553e-9,2.037348956207552e-8,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1830,2.808965600120672e-8,5.029612948348472e-8,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1840,3.5980241380739744e-8,5.4429092455343664e-8,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1850,5.4627654635930334e-8,7.115742417518334e-8,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1860,6.77429280948605e-8,1.0575760253650479e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1870,1.0818515215338387e-7,1.3882099603179654e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1880,1.5037704933218432e-7,1.903087349930388e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1890,1.9535181499941156e-7,2.3651145653058592e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1900,2.0127815257980907e-7,2.1146191464538333e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1910,2.009128117895498e-7,2.836575008144382e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1920,2.2195669482083513e-7,2.624684381363762e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1930,2.400117974768468e-7,2.7236013543097126e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1940,1.9128905173748656e-7,2.16015661247404e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1950,1.999408297377603e-7,2.233053637556992e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1960,2.3836683467337583e-7,2.6603930836088807e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1970,2.314271294379111e-7,2.5621024268840387e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1980,2.116377528255109e-7,2.2161562623912445e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,1990,2.1847066580260588e-7,2.3690228090345045e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,2000,2.5978722883734927e-7,2.950039668103699e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificiality,2010,2.959309449740433e-7,3.5323567049161397e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1800,0.000006122379293183045,0.000006890097710154919,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1810,0.000005736330945871337,0.0000068046295762513864,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1820,0.000005064779843877431,0.000005989276507634145,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1830,0.0000037495122071629083,0.000004888690497750758,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1840,0.0000028652586577138097,0.0000034012366709745834,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1850,0.0000023021620885632645,0.0000027267244542272806,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1860,0.000001482896611770812,0.000001737160728154663,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1870,0.0000011945872046892347,0.0000013387778290407937,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1880,9.937098704115855e-7,0.0000011434610907024023,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1890,8.4124655304052e-7,9.047195161926425e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1900,6.17385338230747e-7,7.620410487074736e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1910,4.6296341126295105e-7,6.381578538938726e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1920,4.450834229507983e-7,5.024039841927674e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1930,4.269440883497566e-7,5.593968865902355e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1940,3.838461946070737e-7,5.579695128155038e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1950,3.5152908187952023e-7,3.8546092820390676e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1960,4.2567863476755675e-7,4.946827676377552e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1970,4.4448656039072777e-7,4.7074785713974165e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1980,5.204273273204385e-7,5.808392858352995e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,1990,5.971380598327608e-7,6.685585334231803e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,2000,7.21672716402777e-7,8.196483766986784e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artifice,2010,7.888811542785396e-7,9.386109582898428e-7,core_baseline,early_lexical_negative,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1800,0.000014764921423493504,0.00002423141073037982,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1810,0.0000027949761328582847,0.000007444258060651521,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1820,2.5136323912322566e-7,5.72067359705386e-7,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1830,1.1548048244325315e-7,2.67089802719056e-7,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1840,1.3621269328023545e-7,1.9925780847529495e-7,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1850,1.7896205488643347e-7,3.005308086834191e-7,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1860,3.0526504097849737e-7,6.656224247336695e-7,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1870,2.151361757629644e-7,3.9049414413128147e-7,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1880,1.8376304371514608e-7,2.7378580114145734e-7,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1890,3.435703522569611e-7,5.076154074856731e-7,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1900,8.015314135079165e-7,0.000001045247810083083,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1910,9.39718283987645e-7,0.0000011123697305492897,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1920,0.0000011667447896712702,0.0000013309671160754988,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1930,0.0000010764907841576131,0.0000012443838990350287,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1940,9.048871707051376e-7,0.000001002083720891278,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1950,7.558928448503366e-7,8.270103073471091e-7,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1960,7.960863014133679e-7,0.0000010307978648427252,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1970,9.636271471435976e-7,0.0000010146549094258717,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1980,0.0000010873451412152236,0.0000013501783691083347,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,1990,0.0000017217112976197767,0.0000022424495327300065,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,2000,0.000003561570052568186,0.000005359856345421576,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+fake,2010,0.000007712908181645162,0.000012299913208835278,core_baseline,semantic_distance_support,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1800,1.0907199110565813e-7,2.381367441017801e-7,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1810,1.4359530471352854e-7,3.3858968739863826e-7,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1820,1.4522620132018104e-7,2.156721539137152e-7,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1830,1.827164026524386e-7,4.775241766452609e-7,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1840,2.520663306082582e-7,4.294981437169554e-7,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1850,3.0069448735403627e-7,6.674489050340071e-7,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1860,5.162175132245039e-7,0.0000017921549329003028,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1870,4.593354593573906e-7,6.748914458398758e-7,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1880,6.040115803074286e-7,8.347962037191792e-7,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1890,9.387160166074437e-7,0.0000010093589004611658,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1900,0.0000012747790383418888,0.0000015374841808579731,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1910,0.000002910758961665455,0.000004004748006991576,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1920,0.000005702255577960669,0.000007530253434757939,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1930,0.000009134984900092957,0.000011424266263562743,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1940,0.000024094450386862726,0.00003344865218971038,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1950,0.000021542003772093143,0.000024874669642960257,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1960,0.000017730625884958273,0.000019656454986860528,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1970,0.000017336817822788052,0.00001939759143271963,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1980,0.000017541791329925283,0.00002082635198262517,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,1990,0.000014072451240231335,0.00001601999204025803,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,2000,0.00001174747652518994,0.000012783195144278059,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+synthetic,2010,0.000011590527482482558,0.000015044674006758907,core_baseline,industrial_synthetic,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1800,0.000015091959846813552,0.00001724891308185761,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1810,0.000014350462903678362,0.000018691522257086035,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1820,0.000014223808824453954,0.00001605398924198198,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1830,0.000011719769582896334,0.000013561402724349136,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1840,0.000011873300784515096,0.00001293535234481169,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1850,0.000011080454945044948,0.000013685412085351345,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1860,0.000009219622930345394,0.000010164515288124676,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1870,0.00000873964250587278,0.000009935982731690274,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1880,0.000008188090524186009,0.00000895571523074068,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1890,0.000007869074374866614,0.000008291853248465486,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1900,0.000007189437641841323,0.000007861968470024294,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1910,0.00000598987692086439,0.000007698702972902538,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1920,0.00000565608792015837,0.000006008243559563198,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1930,0.000004999897774382589,0.000005610370649833385,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1940,0.000004078577576649423,0.000004477576339922962,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1950,0.0000037812712633922272,0.000004286962663968552,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1960,0.000004021308461688022,0.000004580051182756506,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1970,0.000003747623584615667,0.00000416100321842805,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1980,0.000003451326000458721,0.000003564619326823504,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,1990,0.0000035636758674684186,0.000003858492199526609,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,2000,0.000004235398304786031,0.000004862896400226191,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+imitation,2010,0.000004845398337671725,0.000005426980791867209,core_baseline,imitation_substitute,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1800,5.476675595250668e-8,2.776627106015894e-7,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1810,2.9667401824085004e-8,8.514022908912011e-8,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1820,3.186793343656902e-8,1.5034836964300524e-7,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1830,2.5330473327755956e-7,0.0000019731113480858653,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1840,2.9209028362675582e-8,7.47042798732167e-8,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1850,2.8756066886015396e-8,1.7707828181556806e-7,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1860,5.895948417267149e-8,2.8860416589893134e-7,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1870,1.9884485985555144e-8,3.2134144400952636e-8,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1880,6.477005265737023e-8,1.9006206519733837e-7,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1890,5.217200504115116e-7,0.000004700236303806227,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1900,1.0555496446768009e-7,3.204306953108471e-7,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1910,3.005054466598267e-7,5.175590445105627e-7,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1920,0.000001063073958817995,0.000001736623694625905,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1930,0.000004360119380208971,0.00000847293242145497,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1940,0.000013803180682714355,0.000016705056196997248,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1950,0.000013633471994012325,0.000014603947192881606,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1960,0.000013675537257995529,0.00001440385639739361,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1970,0.000015991443743246236,0.000022267300892053754,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1980,0.000014943398329592129,0.000015445936696778517,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,1990,0.000013872729604713641,0.00001527042377347243,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,2000,0.000012336258572887004,0.00001361792976695142,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+processed,2010,0.000010965399309981195,0.000012150632933582983,core_baseline,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1800,5.255914459212363e-8,9.177208681876436e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1810,4.666221431470774e-8,7.577008176440359e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1820,4.908550668147882e-8,6.409322850231547e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1830,4.047704512677441e-8,5.518424117667564e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1840,4.2943736400236077e-8,7.312485372779065e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1850,3.2341971831217896e-8,5.0028327591711275e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1860,2.9340095744623263e-8,3.8764842003047306e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1870,2.632802753588237e-8,3.7591252777247064e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1880,2.1699947509723482e-8,2.9320279537614624e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1890,2.0550909343719502e-8,2.461755954641376e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1900,1.4280321526671801e-8,1.825586615211705e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1910,1.1734405630514644e-8,2.2230462803918272e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1920,1.2244788474835566e-8,1.490464285325288e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1930,1.0895439826741348e-8,1.3209898064303616e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1940,1.1556414737656785e-8,1.7360520132569945e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1950,9.498738020446984e-9,1.3067841919678358e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1960,9.122573077502416e-9,1.0835817215726351e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1970,8.655377628508098e-9,1.2096626984814396e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1980,7.0687153880255595e-9,8.014205014894582e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,1990,6.5748127962839135e-9,7.43829714142108e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,2000,7.007026481958833e-9,8.635575352022862e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manner,2010,8.100898343452178e-9,9.712026738384338e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1800,3.85866021801462e-8,6.373061722797502e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1810,2.5106979073541423e-8,4.521762964060372e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1820,2.855117940958607e-8,6.605800262349248e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1830,2.7110100009331006e-8,4.5369368706360547e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1840,2.5074829729243576e-8,4.398916697567756e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1850,1.567477070640866e-8,4.0001247730847567e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1860,6.183808545778824e-9,1.0549690010464019e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1870,6.734644741879237e-9,1.3015233002455773e-8,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1880,6.076272884847356e-9,8.33098168229185e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1890,3.5664046771355374e-9,9.116412513776595e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1900,2.2762332615999805e-9,4.882274584616653e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1910,1.188761249854009e-9,2.2074837374708167e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1920,1.3933945913757739e-9,2.583845359893644e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1930,1.2633849924559294e-9,2.1504484859491413e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1940,1.4395699944602658e-9,2.3759409994994485e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1950,1.200941791845711e-9,2.0437063152911605e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1960,1.4593549993446863e-9,1.9414305996168224e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1970,1.3517811620067377e-9,1.960315021420911e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1980,8.065433973469816e-10,1.0190554823596987e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,1990,8.515380203050205e-10,1.0376700540493111e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,2000,1.0559392263354005e-9,1.395376370005863e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial manners,2010,1.3511919388919936e-9,1.7534261195772949e-9,suspicion_negative,affected_manners,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1800,1.6908826427908254e-8,3.182420016401011e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1810,8.230905446104942e-9,1.9562147457463652e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1820,1.665643010184681e-8,3.339630794130244e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1830,1.012328416649666e-8,1.69677338845986e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1840,9.07764468038863e-9,2.1708940423081913e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1850,8.337795209811815e-9,1.4835592310191714e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1860,6.716111711213557e-9,1.3081614902432648e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1870,4.311481793806138e-9,6.281267950214442e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1880,4.9875177390856784e-9,8.56255949477358e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1890,3.2976174818566408e-9,5.818987069972081e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1900,2.0969605774023847e-9,4.158580590996053e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1910,9.039384657461014e-10,2.671471967252703e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1920,8.149324992601237e-10,1.488950740480277e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1930,1.1102775199223202e-9,2.5202674946989134e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1940,1.2080873690312189e-9,2.802784358768573e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1950,3.6277426652964184e-9,5.6173599105591165e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1960,5.180326173581662e-9,6.877094005375284e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1970,9.432364719841323e-9,1.3854782127120657e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1980,2.378399333313741e-8,3.0414542218082374e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,1990,3.930603501567376e-8,5.502444400118378e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,2000,6.017549891434993e-8,6.711414823890038e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial tears,2010,5.175294315040713e-8,6.787620565607e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1800,1.1998982252237056e-9,4.185975566173283e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1810,1.0992990073788177e-9,3.750890709142141e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1820,5.890195775570817e-10,3.2818583406424295e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1830,6.113347766900646e-9,1.7113205075247606e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1840,5.196665964213309e-9,1.3114403785152717e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1850,4.083330762405523e-9,1.440012820097536e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1860,4.473324444198568e-9,7.2311285848059015e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1870,3.4408535354302215e-9,7.717707362075998e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1880,3.7030338462251677e-9,8.810683738147418e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1890,2.63062505667655e-9,6.069587943358101e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1900,1.7978275757002392e-9,3.534741166433264e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1910,1.234673882577475e-9,2.735728088509859e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1920,2.152309130920571e-9,3.6414011805874225e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1930,2.1741274613962247e-9,3.2828086915515087e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1940,3.004144000229303e-9,4.313826185153857e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1950,2.2754890527387773e-9,3.4406328897063077e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1960,2.0512066378763903e-9,2.4466584314097872e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1970,1.6994223139832343e-9,2.246516306314561e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1980,2.585451586156751e-9,3.0132054629206095e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,1990,3.173581220039523e-9,3.726178920970824e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,2000,6.170664867966025e-9,9.589505189921965e-9,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial smile,2010,1.30830500211232e-8,1.5733444769239213e-8,suspicion_negative,false_emotion,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1800,8.114606453446527e-9,2.0929877830866417e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1810,1.405439238322259e-8,3.150976723986787e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1820,2.0789435228873998e-8,5.2787136439746973e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1830,1.9559613384512175e-8,2.6517101403555898e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1840,3.0868869277389524e-8,4.448216683883288e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1850,2.781289973052825e-8,3.4223779643571817e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1860,2.5964616173768106e-8,5.061789920546289e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1870,2.6549483100879457e-8,3.745847720892925e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1880,1.9981985058259434e-8,2.3471253385309865e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1890,1.8807701070155947e-8,2.624364861536499e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1900,1.2725307795002916e-8,2.1076198175595806e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1910,8.654555160025889e-9,1.7912290317667612e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1920,8.546704076406453e-9,1.0891853641226135e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1930,7.8643880185858e-9,9.113678145489246e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1940,6.185543506564972e-9,8.933875722538787e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1950,7.407336596182424e-9,1.1240385358601834e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1960,8.969418997806233e-9,1.318734410560296e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1970,5.953418190374205e-9,9.691303551329078e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1980,5.098331375130716e-9,7.195456862285621e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,1990,4.649154443023274e-9,5.665010467670317e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,2000,4.623231694006469e-9,5.480210306385569e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial style,2010,4.656070677969138e-9,5.620386267501942e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1800,9.25778187443882e-9,1.865781484866602e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1810,7.100339627363894e-9,1.983502961877548e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1820,1.28407790622731e-8,2.2309174951828936e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1830,1.3043800811685103e-8,2.0783674503643823e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1840,1.405117195929506e-8,2.1302472674733508e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1850,1.0785692466930286e-8,2.027624640410508e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1860,9.310564330622383e-9,1.2440900754029371e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1870,6.78948550159042e-9,9.508930698398643e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1880,5.107712033880496e-9,1.0266500538591572e-8,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1890,4.321718968802735e-9,6.967366239507555e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1900,1.9505995763058338e-9,2.718676034296763e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1910,1.4279875712452928e-9,3.727413044884997e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1920,1.5464458588687614e-9,2.407672949900075e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1930,1.0750194665010148e-9,1.7390952011808736e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1940,1.0087062636554567e-9,1.8023016412627157e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1950,8.234217363511931e-10,1.5327797850406277e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1960,1.1595012380793968e-9,2.510795849008929e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1970,1.1726612625384547e-9,2.783652017224192e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1980,6.591956522306042e-10,1.3205407739524944e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,1990,8.930007767971038e-10,1.1519389053749052e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,2000,1.5270914553722204e-9,2.3130641013668907e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial taste,2010,2.2778953483876264e-9,3.2143653433402974e-9,suspicion_negative,aesthetic_style,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1800,1.9145884877502795e-10,1.9145884877502795e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1810,0,0,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1820,0,0,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1830,1.5205297576592613e-10,9.062995909303595e-10,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1840,3.7544969910818793e-10,1.5216051751920645e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1850,1.8985706645713306e-9,1.639737678971187e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1860,3.1072860950942527e-10,1.4133998416099303e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1870,1.195390361696802e-9,7.361752540901989e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1880,1.5573753231468146e-9,3.3425815448850926e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1890,1.505210908692156e-9,3.54783363798461e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1900,1.551941518629363e-8,4.136926842757127e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1910,2.2188807281831035e-8,8.262481010490319e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1920,1.8396182401014815e-8,3.206403291489135e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1930,1.69650637052432e-8,2.881892924300189e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1940,4.2264852855022904e-8,6.758631154735184e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1950,2.7650102268905742e-8,3.519443420030299e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1960,2.0275222839538644e-8,3.260007019889599e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1970,2.2806373535522174e-8,3.321645020148978e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1980,2.1738138125670937e-8,2.694709255735006e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,1990,1.3190258399409238e-8,1.5006367815040278e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,2000,1.2162030149642789e-8,1.8545001562175756e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial flavor,2010,1.0636967040511535e-8,1.6912602096574858e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1800,2.4961766875719605e-9,1.804545668449009e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1810,1.810143812619458e-10,1.810143812619458e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1820,0,0,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1830,2.3165506846112295e-9,6.756531778506769e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1840,1.9576918419694778e-9,4.917901641476874e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1850,3.534672055049981e-9,1.3937770049210485e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1860,1.5857342716696366e-9,4.784961760151418e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1870,4.71671207091795e-9,9.965490987973169e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1880,1.0677558295868472e-8,1.3567597934027731e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1890,1.514193078977488e-8,3.5786843710639005e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1900,6.278500341294624e-8,1.526615980296242e-7,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1910,8.406710940989104e-8,1.1302160007886641e-7,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1920,5.934735791413015e-8,8.89275932336453e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1930,5.984152726123959e-8,7.257824297113302e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1940,5.49218430900833e-8,1.2334501575672618e-7,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1950,2.789461063384957e-8,4.308814122166993e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1960,2.5824602764568106e-8,3.8286899428641163e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1970,2.6866236246814167e-8,3.517676244735313e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1980,2.6567359892593067e-8,6.425562304457344e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,1990,1.3445811923584739e-8,2.1019525064946976e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,2000,1.0552224438686863e-8,1.2766786960938248e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial color,2010,1.0328520690106035e-8,2.0358413399534925e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1800,0,0,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1810,1.4167877981918764e-10,1.4167877981918764e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1820,2.6870008218438103e-9,1.9606650525361147e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1830,5.380870415905292e-10,3.802433479194178e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1840,7.476372576586954e-10,3.020780958706837e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1850,1.233067670192156e-9,3.578161322792539e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1860,5.465565444673359e-10,2.1196799870892846e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1870,1.7434970689400587e-10,8.192957978714333e-10,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1880,4.666824843235773e-10,2.387558151184521e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1890,4.0774952719813127e-10,1.3519867447797651e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1900,9.023486416404048e-10,2.718676173074641e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1910,7.051131331592408e-10,1.4655686109144028e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1920,6.935308882738412e-10,1.5995234026178196e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1930,1.234886785883571e-9,4.387956109574986e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1940,4.5600952874869094e-10,1.1319809534171554e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1950,1.0563088903570162e-9,2.0644476683706614e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1960,1.0577167738889948e-9,2.777287955169072e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1970,3.789498501799437e-9,6.5343836452846915e-9,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1980,1.2162265730988886e-8,1.4674398973735236e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,1990,1.1005528551336074e-8,1.3667548592888323e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,2000,1.573612846347827e-8,2.7161898008554175e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+artificial ingredients,2010,2.2972604659526884e-8,2.927097131344425e-8,consumer_packaging,processed_consumer,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1800,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1810,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1820,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1830,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1840,5.383647416756787e-11,5.383647416756787e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1850,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1860,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1870,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1880,2.4507512685900677e-11,2.450751268590068e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1890,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1900,3.816382487809022e-11,2.522163033980007e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1910,9.879801907142216e-11,6.601748592238721e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1920,1.2929831372243684e-10,6.321087542282555e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1930,4.2519644749550167e-10,2.353480077488257e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1940,7.653324779477444e-11,4.970461264797166e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1950,3.001408031833019e-10,9.61486258665989e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1960,2.6988726808951923e-10,1.7473084992780663e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1970,1.0183501718968869e-9,2.615914207471093e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1980,5.619887228497378e-9,8.144691948652749e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,1990,4.549246854224087e-9,5.8983715967020345e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,2000,4.719896080918051e-9,9.93325532938627e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial ingredients,2010,4.060475404174535e-9,5.2404740269462735e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1800,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1810,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1820,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1830,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1840,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1850,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1860,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1870,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1880,2.067777893355327e-11,2.067777893355327e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1890,6.204441516111103e-10,2.7830269200279645e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1900,1.3862759551397374e-10,5.557076465656507e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1910,5.807365401067077e-10,1.3524635786299477e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1920,1.52336858405544e-10,7.264810281126799e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1930,4.061558381285302e-10,1.344845790285376e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1940,3.6719011095587283e-10,8.433451714751072e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1950,1.5550518782381229e-9,5.961214508132251e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1960,3.236284469576578e-10,7.522797107473167e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1970,1.591325421781975e-9,4.496588018598757e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1980,6.199344292079356e-9,1.3388415931459008e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,1990,5.196826494135998e-9,7.790578737676412e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,2000,3.096105113606362e-9,5.290538146462964e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial flavors,2010,2.0919781865136323e-9,3.1241713382978986e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1800,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1810,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1820,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1830,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1840,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1850,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1860,0,0,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1870,2.9552779667874065e-11,2.9552779667874063e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1880,4.393497649024525e-11,2.3257197556691978e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1890,8.808691415174152e-11,3.792827996118575e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1900,1.3100367318719108e-10,3.6500380495851914e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1910,1.7430493923220603e-10,4.3509177510836494e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1920,7.611496877224511e-10,1.556077933173583e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1930,7.188801831592428e-10,6.15130790748708e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1940,3.631495035238963e-11,1.2426153161992914e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1950,2.0403922301737154e-10,1.1570771007995972e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1960,1.459434552375516e-10,6.949296069147515e-10,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1970,8.656352943475776e-10,2.1467143201947536e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1980,4.018268020405946e-9,1.144403993791343e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,1990,1.2285648724047471e-8,7.471559090865831e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,2000,4.269223622191398e-9,6.318922857184717e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+no artificial colors,2010,2.4367173407507938e-9,3.2624715221030165e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1800,2.995221293211614e-9,7.658353951001118e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1810,9.930546873704316e-9,3.258611869227934e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1820,9.231159447953274e-9,1.6436510374973068e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1830,1.0972727176872254e-8,1.6732679242181803e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1840,1.0910326553315031e-8,1.5300736677659188e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1850,1.0365297262171503e-8,1.5608838666025804e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1860,8.397938092152834e-9,1.3639698259737543e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1870,8.059002662430537e-9,1.3110952767902972e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1880,7.905101567784456e-9,1.091757395599302e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1890,8.424695495390377e-9,1.0578424317064794e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1900,8.437000700856067e-9,1.1011689893258847e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1910,9.118327722046348e-9,1.6037271288737998e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1920,9.3396900588405e-9,1.4764831246516508e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1930,8.687170957588642e-9,1.5767796471277684e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1940,1.0232239152502266e-8,1.5971411304605e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1950,6.079199515313105e-9,8.987775690361133e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1960,6.0450143696266775e-9,7.733472723314705e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1970,1.3078305265840084e-8,5.510663508845326e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1980,9.734548479800598e-9,1.356885714898226e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,1990,6.951475689867537e-9,8.22152887436367e-9,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,2000,8.501506419678061e-9,1.174839901751934e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+nothing artificial,2010,9.161806594978894e-9,1.0305737763172118e-8,absence_claim,absence_claim,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1800,5.27816808970627e-7,6.0068747753661e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1810,5.46178578719747e-7,6.801615204388156e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1820,5.125769015346116e-7,6.141988726504621e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1830,5.210398521526827e-7,6.439523395629365e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1840,5.058930904522363e-7,5.914526439720902e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1850,5.176450087296392e-7,5.383144836001996e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1860,4.91247983155918e-7,5.312303883453495e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1870,4.3396631964620626e-7,4.862098943458903e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1880,4.2601493097371713e-7,4.7312294508550234e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1890,4.085482412652386e-7,4.4864389658894055e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1900,3.3472074230656014e-7,3.5823242960919544e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1910,3.1419907325080933e-7,3.5690996462445224e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1920,3.170427196094727e-7,3.4324038582222993e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1930,3.406172967415633e-7,4.0130430215695734e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1940,3.640080725210437e-7,4.016024154757103e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1950,3.6155629049988703e-7,4.067827079068387e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1960,3.540402174970203e-7,3.7175497974439864e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1970,3.880484663563999e-7,4.427589205407978e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1980,4.317576138897217e-7,4.6229085696319894e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,1990,4.788873323342824e-7,5.287860558589319e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,2000,5.163174857263087e-7,5.872879275115039e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+all natural,2010,4.951824786110503e-7,5.365150226380178e-7,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1800,0,0,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1810,0,0,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1820,0,0,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1830,0,0,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1840,0,0,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1850,0,0,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1860,0,0,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1870,1.6385915957428666e-10,1.6385915957428665e-9,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1880,7.506896770870242e-11,7.506896770870242e-10,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1890,2.7564470289620504e-10,1.0405007966340918e-9,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1900,9.919242788258842e-11,3.63292285143757e-10,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1910,3.674887900928514e-10,1.1956775569643696e-9,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1920,4.01664482230224e-10,7.927974943200411e-10,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1930,2.0335289979689363e-10,6.094383331323172e-10,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1940,3.587272708049927e-10,7.923866840453542e-10,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1950,5.476614522992307e-10,1.3230858769697207e-9,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1960,8.324859683550568e-10,2.2918055231357926e-9,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1970,2.458498220975214e-10,5.001726463560452e-10,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1980,5.388953294022114e-10,1.096529096689114e-9,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,1990,1.0439630691166935e-9,1.713690189752981e-9,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,2000,2.079521809264517e-9,5.5729588444020095e-9,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.
+clean label,2010,3.941636885981814e-9,8.666729334194656e-9,absence_claim,modern_authenticity,Existing Ngram frequency signal only; not sense proof and not earliest attestation.

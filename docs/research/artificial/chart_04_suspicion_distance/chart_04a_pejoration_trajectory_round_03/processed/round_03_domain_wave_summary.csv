@@ -1,0 +1,10 @@
+domain,first_visible_period,strongest_period,burst_or_wave_pattern,evidence_strength,notes
+early_lexical_negative,pre_1800,pre_1800,early_presence,moderate,"Negative potential is early, but exact sense ordering still needs OED/direct evidence."
+affected_manners,pre_1800,pre_1800 plus Ngram visibility after 1800,multiple_waves,moderate,Appears early in conduct/social critique and remains visible as phrase evidence.
+false_emotion,pre_1800,pre_1800 for direct snippet; 20th/21st c. for Ngram visibility,multiple_waves,moderate,Artificial tears is early; artificial smile requires more snippet review.
+aesthetic_style,pre_1800,unclear,unclear,weak,Aesthetic evidence exists but is mixed.
+processed_consumer,1900_1950,1950_2000 and 2019_2026,gradual_rise,moderate,Food/color/sweetener contexts need more 1850-1950 and 1950-2000 samples.
+industrial_synthetic,1850_1900 as Ngram/background; stronger by 1950_2000,1950_2000,single_burst,moderate,Artificial sweetener/cyclamate materials mark a plausible scrutiny burst.
+absence_claim,1950_2000,2019_2026,late_acceleration,strong,No-artificial claims are the strongest modern pejoration/avoidance evidence.
+modern_authenticity,2000_2019,2019_2026,late_acceleration,moderate,Clean-label and natural/real contexts reactivate older not-genuine/not-natural tensions.
+semantic_distance_support,pre_1800 for fake/not-genuine; current dictionaries for comparator map,2019_2026,unclear,moderate,"Useful bridge to Chart 4B, not a trajectory result by itself."

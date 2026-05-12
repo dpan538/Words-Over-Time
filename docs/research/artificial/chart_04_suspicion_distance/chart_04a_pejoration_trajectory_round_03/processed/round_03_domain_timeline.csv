@@ -1,0 +1,13 @@
+period,domain,strongest_terms,strongest_sources,evidence_count,average_negative_charge,coverage_quality,notes
+pre_1800,early_lexical_negative,artificial; artificiality,Etymonline; Johnson indirect,3,2,medium,Early negative potential is visible but exact chronology remains blocked by OED/direct Johnson.
+pre_1800,affected_manners,artificial manners,Wollstonecraft,1,3,medium,Strong single source; needs breadth.
+pre_1800,false_emotion,artificial tears,Shakespeare,1,3,medium,Strong single source; artificial smile not yet found pre-1800.
+1800_1850,early_lexical_negative,artificial,Webster 1828; existing Ngram,2,1.5,medium,"Good checkpoint, weak advertising/context width."
+1850_1900,processed_consumer,artificial color; artificial flavor,existing Ngram,1,1,weak,Needs magazine/newspaper evidence.
+1900_1950,processed_consumer,artificially colored,Chronicling America 1904,1,2,medium,Representative food trust/coloring lead.
+1950_2000,absence_claim,no artificial flavoring,Chronicling America 1950 ad,1,4,medium,"Strong absence-claim lead, but needs broader ad samples."
+1950_2000,industrial_synthetic,artificial sweetener,JAMA; FDA milestones; New Yorker,3,3,medium,Consumer/regulatory scrutiny around artificial sweetener category.
+2000_2019,absence_claim,no artificial ingredients; clean label,existing Ngram baseline,1,2,weak,Ngram visibility only; needs non-book examples.
+2019_2026,absence_claim,no artificial colors; no artificial ingredients; no artificial flavors,FDA; Gatorade; Swanson,4,4,strong,"Strongest modern Chart 4A evidence, with regulatory and product source width."
+2019_2026,modern_authenticity,clean label; natural; artificial ingredients,Consumer Reports; IFT; Freedonia,3,2.7,medium,Good context evidence but not balanced corpus.
+2019_2026,semantic_distance_support,artificial; fake; synthetic; imitation; natural,Cambridge; Oxford; WordReference,1,1,medium,Supports Chart 4B boundaries.

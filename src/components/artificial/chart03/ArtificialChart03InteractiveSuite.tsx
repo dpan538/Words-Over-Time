@@ -17,7 +17,7 @@ export function ArtificialChart03InteractiveSuite() {
         <ArtificialChart03Succession activeHover={activeHover} onHover={setActiveHover} />
       </div>
 
-      <div className="mx-auto mt-12 grid w-full gap-8 border-t border-ink/85 pt-8 sm:pt-9 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-x-10 lg:gap-y-8 lg:pt-10">
+      <div className="mx-auto mt-12 grid w-full gap-8 border-t border-ink/90 pt-8 sm:pt-9 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-x-10 lg:gap-y-8 lg:pt-10">
         <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-fire">
           03 / mechanical reproduction — part ii
         </p>
