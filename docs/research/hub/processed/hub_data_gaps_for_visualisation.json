@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-12T01:39:09.283562Z",
+    "generated_by_script": "scripts/process_hub_chart_readiness.py"
+  },
+  "gap_summary": {
+    "total_gaps": 7,
+    "high": 0,
+    "medium": 4,
+    "low": 3,
+    "blocking_gaps": 0,
+    "new_scraping_recommended": false,
+    "notes": "No blocking gap requires new scraping before chart planning. Later targeted checks may improve precision but are not required."
+  },
+  "gaps": [
+    {
+      "gap_id": "gap_001",
+      "gap_description": "1640s/1649 first-use claims lack a visible primary quotation.",
+      "affected_chart": "chart_01",
+      "severity": "medium",
+      "can_proceed_without_fixing": true,
+      "recommended_action": "Label 1640s/1649 as dictionary claims only; do not use as confirmed text dates.",
+      "requires_new_scraping": false
+    },
+    {
+      "gap_id": "gap_002",
+      "gap_description": "Transport hub earliest evidence relies heavily on Ngram/OCR signals rather than high-confidence direct early attestations.",
+      "affected_chart": "chart_02",
+      "severity": "medium",
+      "can_proceed_without_fixing": true,
+      "recommended_action": "Use transport phrases as frequency/category evidence; avoid precise earliest-date claims unless doing a later targeted scrape.",
+      "requires_new_scraping": false
+    },
+    {
+      "gap_id": "gap_003",
+      "gap_description": "Hub-and-spoke has strong modern signal but noisy early Ngram years.",
+      "affected_chart": "chart_02",
+      "severity": "medium",
+      "can_proceed_without_fixing": true,
+      "recommended_action": "Anchor hub-and-spoke to modern system architecture rather than early first_nonzero_year.",
+      "requires_new_scraping": false
+    },
+    {
+      "gap_id": "gap_004",
+      "gap_description": "Digital/platform hub phrases have sparse or low-confidence snippet evidence.",
+      "affected_chart": "chart_02, chart_03, chart_04",
+      "severity": "medium",
+      "can_proceed_without_fixing": true,
+      "recommended_action": "Show digital/platform terms as later Ngram-supported extensions; avoid origin or dominance claims.",
+      "requires_new_scraping": false
+    },
+    {
+      "gap_id": "gap_005",
+      "gap_description": "Server hub and platform hub are sparse and should not carry major chart weight.",
+      "affected_chart": "chart_03",
+      "severity": "low",
+      "can_proceed_without_fixing": true,
+      "recommended_action": "Exclude from primary compound comparison or place in a low-signal appendix group.",
+      "requires_new_scraping": false
+    },
+    {
+      "gap_id": "gap_006",
+      "gap_description": "Snippet sample count remains below the original broad target and uneven across categories.",
+      "affected_chart": "chart_02, chart_04",
+      "severity": "low",
+      "can_proceed_without_fixing": true,
+      "recommended_action": "Use snippets selectively for examples; do not make snippet-density charts.",
+      "requires_new_scraping": false
+    },
+    {
+      "gap_id": "gap_007",
+      "gap_description": "Nave relation is supported for context but not enough for a standalone origin argument.",
+      "affected_chart": "chart_01",
+      "severity": "low",
+      "can_proceed_without_fixing": true,
+      "recommended_action": "Use nave as a small contextual note beside wheel terminology.",
+      "requires_new_scraping": false
+    }
+  ]
+}

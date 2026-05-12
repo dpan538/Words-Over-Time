@@ -1,0 +1,256 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-12T01:39:09.283567Z",
+    "generated_by_script": "scripts/process_hub_chart_readiness.py",
+    "scope": "Chart-readiness audit and consolidation; no new scraping."
+  },
+  "summary_verdict": "mostly ready",
+  "final_recommendation": "proceed to chart planning",
+  "new_scraping_recommended": false,
+  "optional_research_note": "A later small targeted scrape could improve transport/hub-and-spoke earliest attestations, but it is not required before planning.",
+  "evidence_state": {
+    "earliest_claimed_year": "1640s",
+    "claim_1640s_resolved_to_primary_quotation": false,
+    "evidence_1828_classification": "historical_dictionary",
+    "new_earliest_direct_text_year": 1858,
+    "new_earliest_mechanical_direct_text_year": 1878,
+    "strengthened_attestations": {
+      "previous_high": 0,
+      "previous_medium": 21,
+      "previous_low": 1,
+      "new_high": 4,
+      "new_medium": 2,
+      "new_low": 0
+    },
+    "nave_relation_supported": true,
+    "snippet_samples": 18
+  },
+  "chart_readiness": [
+    {
+      "chart_id": "chart_01",
+      "working_title": "From Wheel Center to World Center",
+      "readiness": "strong",
+      "evidence_classification": {
+        "mechanical_wheel_center": "strong",
+        "hub_nave_relation": "usable but needs careful wording",
+        "early_dictionary_evidence": "usable but needs careful wording",
+        "direct_text_evidence": "strong",
+        "metaphorical_expansion": "strong"
+      },
+      "why": "Third-pass evidence gives high-confidence direct metaphor evidence in 1858 and direct mechanical text from 1878, while 1828 is clarified as historical dictionary support.",
+      "main_risk": "1640s/1649 remain dictionary claims, not confirmed primary-text dates."
+    },
+    {
+      "chart_id": "chart_02",
+      "working_title": "The Transfer Model",
+      "readiness": "usable but needs careful wording",
+      "evidence_classification": {
+        "wheel_spoke_structure": "strong",
+        "city_commerce_center": "usable but needs careful wording",
+        "railway_transport_airport_hub": "usable but needs careful wording",
+        "hub_and_spoke_system": "usable but needs careful wording",
+        "communication_network_hub": "usable but needs careful wording",
+        "digital_platform_hub": "weak"
+      },
+      "why": "Frequency, phrase, and category data support the transfer-model arc, but many earliest dates are Ngram signals or OCR candidates.",
+      "main_risk": "Treating frequency first appearances as confirmed semantic first uses."
+    },
+    {
+      "chart_id": "chart_03",
+      "working_title": "Compound Explosion",
+      "readiness": "usable but needs careful wording",
+      "evidence_classification": {
+        "phrase_growth": "strong",
+        "compound_formation": "usable but needs careful wording",
+        "late_digital_compounds": "weak"
+      },
+      "why": "The phrase series covers enough compounds for comparison, but several modern terms need confidence coding.",
+      "main_risk": "Over-interpreting sparse or noisy compounds such as platform hub, server hub, and early data hub."
+    },
+    {
+      "chart_id": "chart_04",
+      "working_title": "The Politics of Centrality",
+      "readiness": "weak",
+      "evidence_classification": {
+        "connection": "strong",
+        "access": "usable but needs careful wording",
+        "concentration": "usable but needs careful wording",
+        "coordination": "usable but needs careful wording",
+        "dependence": "interpretive",
+        "control": "interpretive",
+        "gatekeeping": "interpretive",
+        "circulation": "strong",
+        "platform_centrality": "weak"
+      },
+      "why": "The dataset supports centrality and circulation, but political implications require interpretation beyond direct lexical evidence.",
+      "main_risk": "Letting an interpretive theme sound more directly evidenced than it is."
+    }
+  ],
+  "phrase_readiness": [
+    {
+      "phrase": "wheel hub",
+      "semantic_category": "mechanical_core",
+      "frequency_signal_strength": "strong",
+      "earliest_evidence_quality": "high",
+      "earliest_found_year": 1832,
+      "peak_year": 1872,
+      "peak_frequency_per_million": 0.24601964,
+      "data_quality_status": "collected",
+      "visual_usefulness": "high",
+      "should_appear_in_chart": true,
+      "notes": ""
+    },
+    {
+      "phrase": "transport hub",
+      "semantic_category": "transport_logistics",
+      "frequency_signal_strength": "strong",
+      "earliest_evidence_quality": "medium",
+      "earliest_found_year": 1843,
+      "peak_year": 2010,
+      "peak_frequency_per_million": 0.06270535,
+      "data_quality_status": "collected",
+      "visual_usefulness": "high",
+      "should_appear_in_chart": true,
+      "notes": ""
+    },
+    {
+      "phrase": "airport hub",
+      "semantic_category": "transport_logistics",
+      "frequency_signal_strength": "medium",
+      "earliest_evidence_quality": "low",
+      "earliest_found_year": 1900,
+      "peak_year": 2016,
+      "peak_frequency_per_million": 0.00512579,
+      "data_quality_status": "collected",
+      "visual_usefulness": "medium",
+      "should_appear_in_chart": true,
+      "notes": ""
+    },
+    {
+      "phrase": "network hub",
+      "semantic_category": "network_system",
+      "frequency_signal_strength": "medium",
+      "earliest_evidence_quality": "low",
+      "earliest_found_year": 1900,
+      "peak_year": 1999,
+      "peak_frequency_per_million": 0.02438265,
+      "data_quality_status": "collected",
+      "visual_usefulness": "high",
+      "should_appear_in_chart": true,
+      "notes": "Requires manual snippet review before using early year as a semantic claim."
+    },
+    {
+      "phrase": "innovation hub",
+      "semantic_category": "institutional_cluster",
+      "frequency_signal_strength": "medium",
+      "earliest_evidence_quality": "low",
+      "earliest_found_year": 1843,
+      "peak_year": 2021,
+      "peak_frequency_per_million": 0.09266494,
+      "data_quality_status": "collected",
+      "visual_usefulness": "high",
+      "should_appear_in_chart": true,
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category. Requires manual snippet review before using early year as a semantic claim."
+    },
+    {
+      "phrase": "business hub",
+      "semantic_category": "institutional_cluster",
+      "frequency_signal_strength": "medium",
+      "earliest_evidence_quality": "low",
+      "earliest_found_year": 1843,
+      "peak_year": 2003,
+      "peak_frequency_per_million": 0.03220517,
+      "data_quality_status": "collected",
+      "visual_usefulness": "medium",
+      "should_appear_in_chart": true,
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category. Requires manual snippet review before using early year as a semantic claim."
+    },
+    {
+      "phrase": "digital hub",
+      "semantic_category": "digital_platform",
+      "frequency_signal_strength": "medium",
+      "earliest_evidence_quality": "low",
+      "earliest_found_year": 1950,
+      "peak_year": 2002,
+      "peak_frequency_per_million": 0.01943596,
+      "data_quality_status": "collected",
+      "visual_usefulness": "high",
+      "should_appear_in_chart": true,
+      "notes": ""
+    },
+    {
+      "phrase": "content hub",
+      "semantic_category": "digital_platform",
+      "frequency_signal_strength": "weak",
+      "earliest_evidence_quality": "low",
+      "earliest_found_year": 1974,
+      "peak_year": 2017,
+      "peak_frequency_per_million": 0.00764498,
+      "data_quality_status": "collected",
+      "visual_usefulness": "low",
+      "should_appear_in_chart": true,
+      "notes": ""
+    },
+    {
+      "phrase": "data hub",
+      "semantic_category": "digital_platform",
+      "frequency_signal_strength": "medium",
+      "earliest_evidence_quality": "low",
+      "earliest_found_year": 1901,
+      "peak_year": 2010,
+      "peak_frequency_per_million": 0.05921896,
+      "data_quality_status": "collected",
+      "visual_usefulness": "high",
+      "should_appear_in_chart": true,
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category. Requires manual snippet review before using early year as a semantic claim."
+    },
+    {
+      "phrase": "learning hub",
+      "semantic_category": "digital_platform",
+      "frequency_signal_strength": "medium",
+      "earliest_evidence_quality": "low",
+      "earliest_found_year": 1900,
+      "peak_year": 2018,
+      "peak_frequency_per_million": 0.01563867,
+      "data_quality_status": "collected",
+      "visual_usefulness": "medium",
+      "should_appear_in_chart": true,
+      "notes": "Early Ngram hits may be literal, generic, OCR noise, or unrelated to the modern category. Requires manual snippet review before using early year as a semantic claim."
+    },
+    {
+      "phrase": "resource hub",
+      "semantic_category": "digital_platform",
+      "frequency_signal_strength": "medium",
+      "earliest_evidence_quality": "low",
+      "earliest_found_year": 1964,
+      "peak_year": 2022,
+      "peak_frequency_per_million": 0.00821571,
+      "data_quality_status": "collected",
+      "visual_usefulness": "medium",
+      "should_appear_in_chart": true,
+      "notes": ""
+    }
+  ],
+  "gap_summary": {
+    "total_gaps": 7,
+    "high": 0,
+    "medium": 4,
+    "low": 3,
+    "blocking_gaps": 0,
+    "new_scraping_recommended": false,
+    "notes": "No blocking gap requires new scraping before chart planning. Later targeted checks may improve precision but are not required."
+  },
+  "data_strengths": [
+    "Strong evidence path for mechanical wheel center to metaphorical center.",
+    "Clear distinction between dictionary claims, historical dictionary evidence, and direct text evidence.",
+    "Good broad phrase/frequency coverage across mechanical, transport, institutional, network, and digital categories.",
+    "Nave relation is supported enough for contextual use."
+  ],
+  "data_weaknesses": [
+    "1640s/1649 first-use dates lack visible primary quotations.",
+    "Transport and hub-and-spoke earliest claims need caution because many are Ngram or OCR leads.",
+    "Digital/platform phrase evidence is comparatively sparse and low-confidence.",
+    "Political/control/gatekeeping themes are interpretive, not directly proved by the lexical dataset."
+  ]
+}
