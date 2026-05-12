@@ -1,0 +1,10 @@
+source_name,entry_or_term,access_status,supports_not_natural,supports_fake_not_genuine,supports_affected_insincere,supports_contrived_feigned,distinguishes_not_natural_from_fake,confidence,notes
+OED,artificial; artificiality; artifice,not_accessible,,,,,,low,Not accessible in this pass; still the strongest source needed for final dated sense chronology.
+Etymonline,artificial,accessed,true,true,true,true,true,medium,"Useful chronology pointer, but secondary."
+Etymonline,artificiality,accessed,false,false,true,true,false,medium,Strengthens pre-1800 affected/insincere lexical authority.
+Etymonline,artifice,accessed,false,true,false,true,false,medium,Useful art-family support for skill-to-trick branch.
+Johnson via Definitions.net,artificial,indirect_only,true,true,false,true,true,medium_low,Direct Johnson still not stabilized; useful but must remain indirect.
+Webster 1828,artificial,accessed,true,true,false,true,true,medium,"Checkpoint only, not origin."
+Webster 1913,artificial,accessed,true,true,true,true,true,medium,Later comparison source; useful for continuity of sense inventory.
+Merriam-Webster,artificial,accessed,true,true,true,true,true,medium,Modern authority for live sense boundaries; not historical chronology proof.
+Bailey / Ash / Sheridan / Walker,artificial,partially_accessed,,,,,,low,No stable entry extraction completed; keep as optional manual scan work.

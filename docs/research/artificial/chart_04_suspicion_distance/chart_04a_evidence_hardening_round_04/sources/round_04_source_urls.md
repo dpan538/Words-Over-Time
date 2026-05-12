@@ -1,0 +1,44 @@
+# Round 04 Source URLs
+
+Generated: 2026-05-12T13:02:19.936Z
+
+- chart4: docs/research/artificial/chart_04_suspicion_distance/
+- round2: docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/
+- round3: docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/
+- oed: https://www.oed.com/
+- etymonlineArtificial: https://www.etymonline.com/word/artificial
+- etymonlineArtificiality: https://www.etymonline.com/word/artificiality
+- etymonlineArtifice: https://www.etymonline.com/word/artifice
+- johnsonIndirect: https://www.definitions.net/definition/artificial
+- webster1828: https://webstersdictionary1828.com/Dictionary/artificial
+- webster1913Artificial: https://www.websters1913.com/words/Artificial
+- shakespeareHenryVI: https://www.gutenberg.org/files/1502/1502-h/1502-h.htm
+- wollstonecraft: https://www.gutenberg.org/ebooks/67466.html.images
+- chambers: https://www.gutenberg.org/cache/epub/39803/pg39803-images.html
+- fdaColorHistory: https://www.fda.gov/industry/color-additives/color-additives-history
+- annArbor1893: https://aadl.org/node/521746
+- scientificAmerican1898: https://www.scientificamerican.com/article/artificial-coloring-of-food-products/
+- chroniclingArtificiallyColored: https://chroniclingamerica.loc.gov/lccn/sn86090233/1904-05-12/ed-1/seq-6/
+- chroniclingKitchenBouquet: https://chroniclingamerica.loc.gov/lccn/sn83045462/1950-05-03/ed-1/seq-42/
+- jamaCyclamate: https://jamanetwork.com/journals/jama/fullarticle/349150
+- newYorkerCyclamate: https://www.newyorker.com/magazine/1969/11/01/comment-5253
+- fdaMilestones: https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
+- nestle2015: https://www.nestleusa.com/media/pressreleases/nestle-usa-removing-artificial-flavors-colors-from-chocolate-candy
+- kraft2015: https://news.kraftheinzcompany.com/press-releases-details/2015/Kraft-Macaroni--Cheese-Announces-Recipe-Change/default.aspx
+- generalMills2015: https://www.generalmills.com/news/press-releases/general-mills-cereals-commits-to-remove-artificial-flavors-and-colors-from-artificial-sources
+- ecfr10122: https://ecfr.io/Title-21/Section-101.22
+- fdaNoArtificialColors: https://www.fda.gov/food/food-chemical-safety/letter-food-industry-no-artificial-colors-labeling-claims
+- fdaNoArtificialColorsRelease: https://www.fda.gov/news-events/press-announcements/fda-takes-new-approach-no-artificial-colors-claims
+- kraft2025: https://news.kraftheinzcompany.com/press-releases-details/2025/Kraft-Heinz-Commits-to-Remove-FDC-Colors-From-Its-U-S--Portfolio-Before-the-End-of-2027-and-Will-Not-Launch-New-Products-in-the-U-S--With-FDC-Colors-Effective-Immediately/default.aspx
+- pepsicoGatorade: https://www.pepsico.com/en/newsroom/press-releases/2026/gatorade-lower-sugar-brings-a-new-era-of-hydration-with-no-artificial-flavors-sweeteners-or-colors
+- swansonLessSodium: https://www.campbells.com/swanson/products/broth/50-less-sodium-beef-broth/
+- consumerReportsNatural: https://www.consumerreports.org/food-labels/seals-and-claims/natural
+- consumerReportsSweeteners: https://www.consumerreports.org/health/sugar-sweeteners/the-truth-about-artificial-sweeteners-a2293745150/
+- iftCleanLabel: https://www.ift.org/food-technology-magazine/ingredients-clean-label
+- freedoniaCleanLabel: https://www.freedoniagroup.com/press-releases/new-report-consumers-crave-transparency-clean-label-foods-on-the-rise
+- cambridgeThesaurus: https://dictionary.cambridge.org/us/thesaurus/articles/made-by-humans
+- oxfordArtificial: https://www.oxfordlearnersdictionaries.com/definition/english/artificial
+- wordReferenceArtificial: https://www.wordreference.com/definition/artificial
+- merriamArtificial: https://www.merriam-webster.com/dictionary/artificial
+- merriamFake: https://www.merriam-webster.com/dictionary/fake
+- merriamSynthetic: https://www.merriam-webster.com/dictionary/synthetic

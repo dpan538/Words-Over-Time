@@ -9,6 +9,7 @@ import {
 
 const INK = "#111018";
 const RULE = "rgba(17,16,24,0.68)";
+const SOFT_RULE = "rgba(17,16,24,0.38)";
 const MUTED = "rgba(17,16,24,0.94)";
 const DIM = "rgba(17,16,24,0.89)";
 const RED = "#A1081F";
@@ -18,20 +19,20 @@ const VW = 1100;
 const VH = 720;
 const TL_LEFT = 82;
 const TL_RIGHT = 1064;
-const AXIS_Y = 638;
+const AXIS_Y = 650;
 const HEADER_LEFT = 34;
 const HEADER_Y = 28;      // section header baseline
-const PLOT_TOP = 72;
-const PLOT_BOTTOM = 660;
-const SUCCESSION_FOOTER_Y = 684;
-const SUCCESSION_FOOTER_SECOND_Y = 702;
+const PLOT_TOP = 92;
+const PLOT_BOTTOM = 672;
+const SUCCESSION_FOOTER_Y = 696;
+const SUCCESSION_FOOTER_SECOND_Y = 714;
 
 function yearToX(year: number): number {
   return TL_LEFT + ((year - 1800) / 219) * (TL_RIGHT - TL_LEFT);
 }
 
 // Four sensory track centres — compact enough for one viewport, with label lanes.
-const TRACK_Y = { SIGHT: 150, SOUND: 292, LIGHT: 434, SCENE: 576 } as const;
+const TRACK_Y = { SIGHT: 198, SOUND: 374, LIGHT: 500, SCENE: 620 } as const;
 type TrackKey = keyof typeof TRACK_Y;
 
 // Per-track normalisation ceiling and max arc radius
@@ -57,18 +58,18 @@ type Term = {
 
 const termLaneOffset: Partial<Record<string, number>> = {
   daguerreotype: 0,
-  photograph: -22,
-  photography: 22,
-  "moving-picture": -20,
-  television: 18,
-  "motion-picture": -16,
+  photograph: -36,
+  photography: 46,
+  "moving-picture": 0,
+  television: -30,
+  "motion-picture": 34,
   "digital-image": 0,
-  phonograph: 0,
-  gramophone: 18,
-  "radio-broadcast": -20,
-  "tape-recording": 18,
-  "high-fidelity": -16,
-  "sound-recording": 20,
+  phonograph: 14,
+  gramophone: 42,
+  "radio-broadcast": -38,
+  "tape-recording": -12,
+  "high-fidelity": 4,
+  "sound-recording": 34,
   "gas-light": 0,
   limelight: -18,
   "arc-lamp": 16,
@@ -82,23 +83,23 @@ const termLaneOffset: Partial<Record<string, number>> = {
   "magic-lantern": -14,
   cinema: 0,
   simulation: -20,
-  "virtual-reality": 18,
+  "virtual-reality": 8,
 };
 
 const labelLaneOffset: Partial<Record<string, number>> = {
   daguerreotype: 28,
   phonograph: 30,
   photograph: -32,
-  photography: 36,
-  "moving-picture": 34,
-  television: -32,
+  photography: 38,
+  "moving-picture": -30,
+  television: -34,
   "motion-picture": 34,
   "digital-image": 30,
-  gramophone: 34,
+  gramophone: 38,
   "radio-broadcast": -34,
   "tape-recording": -30,
-  "high-fidelity": 34,
-  "sound-recording": -36,
+  "high-fidelity": -32,
+  "sound-recording": -48,
   limelight: -28,
   "arc-lamp": 34,
   "electric-light": 38,
@@ -108,8 +109,8 @@ const labelLaneOffset: Partial<Record<string, number>> = {
   diorama: -28,
   stereoscope: 34,
   "magic-lantern": -26,
-  simulation: -34,
-  "virtual-reality": 34,
+  simulation: -30,
+  "virtual-reality": 20,
 };
 
 const labelXOffset: Partial<Record<string, { dx: number; anchor: "start" | "middle" | "end" }>> = {
@@ -127,7 +128,7 @@ const labelXOffset: Partial<Record<string, { dx: number; anchor: "start" | "midd
   "sound-recording": { dx: 34, anchor: "start" },
   "electric-light": { dx: 18, anchor: "start" },
   simulation: { dx: -14, anchor: "end" },
-  "virtual-reality": { dx: 12, anchor: "start" },
+  "virtual-reality": { dx: -12, anchor: "end" },
 };
 
 const outsideLabelIds = new Set([
@@ -212,10 +213,10 @@ const biasOnlyMarkers: BiasOnlyMarker[] = [
 ];
 
 const biasMarkerOffset: Record<string, { y: number; labelX: number; labelY: number; anchor: "start" | "end" }> = {
-  "bias-cinematograph": { y: -74, labelX: 10, labelY: 4, anchor: "start" },
-  "bias-photomechanical": { y: 50, labelX: 12, labelY: -12, anchor: "start" },
-  "bias-halftone": { y: 86, labelX: -12, labelY: 6, anchor: "end" },
-  "bias-mass-production": { y: 42, labelX: 10, labelY: 4, anchor: "start" },
+  "bias-cinematograph": { y: -58, labelX: 10, labelY: 4, anchor: "start" },
+  "bias-photomechanical": { y: 70, labelX: 12, labelY: -12, anchor: "start" },
+  "bias-halftone": { y: 96, labelX: -12, labelY: 6, anchor: "end" },
+  "bias-mass-production": { y: 34, labelX: 10, labelY: 4, anchor: "start" },
 };
 
 function markerY(marker: BiasOnlyMarker) {
@@ -330,8 +331,23 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
         </text>
 
         {/* ── Track row dividers ──────────────────────────────── */}
-        {[PLOT_TOP, 214, 356, 498, PLOT_BOTTOM].map((y) => (
-          <line key={y} x1={0} y1={y} x2={VW} y2={y} stroke={RULE} strokeWidth={0.8} />
+        {[
+          { y: PLOT_TOP, strong: true },
+          { y: 310, strong: false },
+          { y: 432, strong: false },
+          { y: 568, strong: false },
+          { y: PLOT_BOTTOM, strong: true },
+        ].map(({ y, strong }) => (
+          <line
+            key={y}
+            x1={0}
+            y1={y}
+            x2={VW}
+            y2={y}
+            stroke={strong ? RULE : SOFT_RULE}
+            strokeWidth={strong ? 0.8 : 0.56}
+            strokeDasharray={strong ? undefined : "4 5"}
+          />
         ))}
 
         {/* ── Decade gridlines ────────────────────────────────── */}
