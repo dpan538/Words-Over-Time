@@ -8,11 +8,11 @@ import {
 } from "@/components/artificial/chart03/chart03Shared";
 
 const INK = "#111018";
-const RULE = "rgba(17,16,24,0.46)";
-const MUTED = "rgba(17,16,24,0.82)";
-const DIM = "rgba(17,16,24,0.74)";
+const RULE = "rgba(17,16,24,0.60)";
+const MUTED = "rgba(17,16,24,0.90)";
+const DIM = "rgba(17,16,24,0.84)";
 const RED = "#A1081F";
-const RED_DIM = "rgba(126,4,22,0.86)";
+const RED_DIM = "rgba(126,4,22,0.95)";
 
 const VW = 1100;
 const VH = 690;
@@ -283,7 +283,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
   ], []);
 
   return (
-    <div className="w-full overflow-x-auto">
+    <div className="w-full overflow-x-auto border border-ink/50">
       <svg
         viewBox={`0 0 ${VW} ${VH}`}
         style={{ display: "block", width: "100%", minWidth: 1160 }}
@@ -328,7 +328,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
 
         {/* ── Track row dividers ──────────────────────────────── */}
         {[50, 186, 322, 458, 632].map((y) => (
-          <line key={y} x1={0} y1={y} x2={VW} y2={y} stroke={RULE} strokeWidth={0.55} />
+          <line key={y} x1={0} y1={y} x2={VW} y2={y} stroke={RULE} strokeWidth={0.7} />
         ))}
 
         {/* ── Decade gridlines ────────────────────────────────── */}
@@ -337,7 +337,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
             key={yr}
             x1={yearToX(yr)} y1={50}
             x2={yearToX(yr)} y2={AXIS_Y}
-            stroke={RULE} strokeWidth={0.38}
+            stroke={RULE} strokeWidth={0.5}
             strokeDasharray="1 6"
           />
         ))}
@@ -368,7 +368,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
               fontFamily="monospace"
               letterSpacing="0.04em"
               className="select-none"
-              opacity={0.72}
+              opacity={0.82}
             >
               {trackSummaries[name]}
             </text>
@@ -391,8 +391,8 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
               key={`bar-${t.id}`}
               x1={x1} y1={y} x2={x2} y2={y}
               stroke={INK}
-              strokeWidth={isHov ? 1.4 : 0.6}
-                opacity={dimmed ? 0.12 : isHov ? 0.68 : 0.34}
+              strokeWidth={isHov ? 1.55 : 0.72}
+                opacity={dimmed ? 0.16 : isHov ? 0.78 : 0.46}
               style={{ transition: "opacity 0.18s, stroke-width 0.15s" }}
               pointerEvents="none"
             />
@@ -418,9 +418,9 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                 d={`M ${(x1 + r1 * 0.55).toFixed(1)} ${ay} Q ${mx.toFixed(1)} ${my.toFixed(1)} ${(x2 - r2 * 0.55).toFixed(1)} ${by}`}
                 fill="none"
                 stroke={INK}
-                strokeWidth={0.5}
+                strokeWidth={0.62}
                 strokeDasharray="2 3"
-                opacity={dimA ? 0.10 : 0.34}
+                opacity={dimA ? 0.14 : 0.44}
                 style={{ transition: "opacity 0.18s" }}
                 pointerEvents="none"
               />
@@ -473,7 +473,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                 fill="rgba(245,236,210,0.72)"
                 stroke={INK}
                 strokeWidth={isHov ? 2 : 1}
-                opacity={dimmed ? 0.22 : 0.90}
+                opacity={dimmed ? 0.30 : 0.94}
                 style={{ transition: "opacity 0.18s, stroke-width 0.15s" }}
               />
 
@@ -486,7 +486,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                   fontSize={r >= 22 ? 11.2 : 9.4}
                   fontFamily="monospace"
                   letterSpacing="0.05em"
-                  opacity={dimmed ? 0.18 : isHov ? 1 : 0.86}
+                  opacity={dimmed ? 0.24 : isHov ? 1 : 0.92}
                   style={{ transition: "opacity 0.18s" }}
                   className="select-none"
                 >
@@ -496,7 +496,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
 
               {/* Centre dot for tiny circles */}
               {r < 8 && (
-                <circle cx={cx} cy={cy} r={2.4} fill={INK} opacity={dimmed ? 0.22 : 0.74} />
+                <circle cx={cx} cy={cy} r={2.4} fill={INK} opacity={dimmed ? 0.28 : 0.82} />
               )}
 
               {/* Corpus-bias side mark: red dot position encodes BrE ← → AmE */}
@@ -509,14 +509,14 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                     y2={biasY}
                     stroke={RED_DIM}
                     strokeWidth={0.75}
-                    opacity={dimmed ? 0.18 : isHov ? 1 : 0.72}
+                    opacity={dimmed ? 0.24 : isHov ? 1 : 0.82}
                   />
                   <circle
                     cx={biasX}
                     cy={biasY}
                     r={isHov ? 4.4 : 3.4}
                     fill={RED}
-                    opacity={dimmed ? 0.20 : isHov ? 1 : 0.90}
+                    opacity={dimmed ? 0.26 : isHov ? 1 : 0.96}
                   />
                 </g>
               )}
@@ -531,7 +531,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                   fontSize={9}
                   fontFamily="monospace"
                   letterSpacing="0.04em"
-                  opacity={dimmed ? 0.18 : 0.82}
+                  opacity={dimmed ? 0.24 : 0.90}
                   className="select-none"
                 >
                   {t.label}
@@ -545,7 +545,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                     x={tx} y={ty}
                     width={tooltipW} height={tooltipH}
                     fill="rgba(245,236,210,0.97)"
-                    stroke={INK} strokeWidth={0.75}
+                    stroke={INK} strokeWidth={0.9}
                     rx={1.5}
                   />
                   {/* Term name */}
@@ -592,7 +592,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
               <path
                 d={`M ${cx} ${cy - 6} L ${cx + 6} ${cy} L ${cx} ${cy + 6} L ${cx - 6} ${cy} Z`}
                 fill={RED}
-                opacity={dimmed ? 0.18 : isHov ? 1 : 0.90}
+                opacity={dimmed ? 0.24 : isHov ? 1 : 0.96}
                 pointerEvents="none"
               />
               <text
@@ -610,7 +610,7 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
               </text>
               {isHov && (
                 <g pointerEvents="none">
-                  <rect x={tx} y={ty} width={tooltipW} height={tooltipH} fill="rgba(245,236,210,0.97)" stroke={RED} strokeWidth={0.8} rx={1.5} />
+                  <rect x={tx} y={ty} width={tooltipW} height={tooltipH} fill="rgba(245,236,210,0.97)" stroke={RED} strokeWidth={0.95} rx={1.5} />
                   <text x={tx + 12} y={ty + 18} fill={INK} fontSize={9.3} fontFamily="monospace" fontWeight="bold" letterSpacing="0.07em" className="select-none">
                     {m.label.toUpperCase()}
                   </text>
@@ -624,13 +624,13 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
         })}
 
         {/* ── Time axis ───────────────────────────────────────── */}
-        <line x1={TL_LEFT} y1={AXIS_Y} x2={TL_RIGHT} y2={AXIS_Y} stroke={RULE} strokeWidth={0.65} />
+        <line x1={TL_LEFT} y1={AXIS_Y} x2={TL_RIGHT} y2={AXIS_Y} stroke={RULE} strokeWidth={0.8} />
         {[1800, 1825, 1850, 1875, 1900, 1925, 1950, 1975, 2000, 2019].map((yr) => (
           <g key={yr}>
             <line
               x1={yearToX(yr)} y1={AXIS_Y - 3}
               x2={yearToX(yr)} y2={AXIS_Y + 3}
-              stroke={RULE} strokeWidth={0.8}
+              stroke={RULE} strokeWidth={0.95}
             />
             <text
               x={yearToX(yr)} y={AXIS_Y + 11}

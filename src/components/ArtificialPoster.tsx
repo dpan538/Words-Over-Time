@@ -117,7 +117,7 @@ export function ArtificialPoster() {
             id="chart-3-mechanical-reproduction"
             eyebrow="03 / mechanical reproduction — part i"
             title="In the Age of Mechanical Reproduction"
-            intro="A wide-view overview: three structural panels show the apparatus layers, the senses being manufactured, and the two-wave authenticity response — anchored by a burst-period timeline below."
+            intro="Part I maps the turn from artificial objects to reproducible experience: apparatus layers, manufactured senses, and authenticity pressure are read together against a burst-period timeline."
           >
             <ArtificialChart03InteractiveSuite />
           </PosterSection>
