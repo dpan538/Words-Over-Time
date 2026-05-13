@@ -1,0 +1,6 @@
+function_mode,total_terms,collected_ngram_terms,source_evidence_count,core_terms,visual_use,notes
+support,15,14,5,artificial respiration; artificial feeding; artificial life support; life support; mechanical ventilation,lower body-support layer; sustain/keep-alive logic,
+replacement,12,11,5,artificial limb; prosthesis; artificial heart; artificial kidney; artificial organ; artificial organs,body-replacement layer; restore/substitute function,
+continuation,8,7,4,artificial insemination; artificial fertilization; in vitro fertilization; artificial womb,reproduction/continuation layer; generate or carry life,
+simulation,10,10,6,artificial life; artificial language; artificial voice; artificial intelligence; artificial neural network,human process/cognition layer; model or externalize process,
+speculative_extension,8,8,5,,edge treatment only; speculative or unstable extension,Do not make these central without a separate intelligence-page argument.

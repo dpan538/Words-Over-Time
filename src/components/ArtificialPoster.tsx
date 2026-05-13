@@ -137,7 +137,7 @@ export function ArtificialPoster() {
             id="chart-4-artificial-semantic-distance"
             eyebrow="04 / semantic distance"
             title="Semantic Attractor"
-            intro="A semantic field for artificial as made, synthetic, simulated, realistic, and fake-adjacent without collapsing those relations into one synonym map."
+            intro="A semantic field for artificial as made, synthetic, simulated, realistic, and fake-adjacent without collapsing those relations into one synonym map: artificial stays closest to made and synthetic meanings, bends through simulation and realism, and only then drifts toward fake-adjacent uses."
           >
             <ArtificialChart04BSemanticAttractor />
           </PosterSection>

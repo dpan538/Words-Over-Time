@@ -12,6 +12,13 @@ const tiles = [
   "bg-ink",
   "bg-sun",
   "bg-nice",
+  "bg-hub-amethyst",
+  "bg-hub-teal",
+  "bg-hub-lime",
+  "bg-hub-ruby",
+  "bg-hub-blue",
+  "bg-hub-pearly",
+  "bg-hub-space",
 ];
 
 export function PosterMarks() {

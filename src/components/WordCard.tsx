@@ -9,9 +9,22 @@ export function WordCard({ word }: WordCardProps) {
   if (word.href) {
     const isBlueWord = word.slug === "depression" || word.slug === "data";
     const isArtificialWord = word.slug === "artificial";
-    const hoverTone = isArtificialWord ? "hover:text-wine" : isBlueWord ? "hover:text-nice" : "hover:text-blaze";
-    const labelTone = isArtificialWord ? "text-wine" : isBlueWord ? "text-nice" : "text-blaze";
-    const hoverLabel = isArtificialWord ? "semantic chamber" : "word page";
+    const isHubWord = word.slug === "hub";
+    const hoverTone = isHubWord
+      ? "hover:text-hub-teal"
+      : isArtificialWord
+        ? "hover:text-wine"
+        : isBlueWord
+          ? "hover:text-nice"
+          : "hover:text-blaze";
+    const labelTone = isHubWord
+      ? "text-hub-space"
+      : isArtificialWord
+        ? "text-wine"
+        : isBlueWord
+          ? "text-nice"
+          : "text-blaze";
+    const hoverLabel = isHubWord ? "center moved" : isArtificialWord ? "semantic chamber" : "word page";
     return (
       <Link
         href={word.href}

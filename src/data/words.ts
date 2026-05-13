@@ -31,6 +31,12 @@ export const words: Word[] = [
     href: "/words/artificial",
   },
   {
+    label: "hub",
+    slug: "hub",
+    status: "complete",
+    href: "/words/hub",
+  },
+  {
     label: "intelligence",
     slug: "intelligence",
     status: "coming-soon",

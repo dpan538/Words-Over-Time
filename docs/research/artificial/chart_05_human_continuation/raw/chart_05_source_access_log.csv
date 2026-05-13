@@ -1,0 +1,9 @@
+source_name,source_type,period_covered,access_status,terms_checked,usefulness,limitations,notes
+Google Books Ngram,frequency_source,1800-2019,accessed,all Chart 05 candidate terms,Broad visibility baseline,No sense disambiguation; book corpus bias; does not cover 2020-2026.,
+NCBI MeSH,medical_dictionary,modern controlled vocabulary with historical entry metadata,accessed,"respiration, artificial; nutritional support; life support care; artificial limbs; artificial heart; renal dialysis; IVF; artificial insemination",Strong body-support/replacement/reproduction boundaries,Controlled vocabulary dates are not first attestations.,
+NCBI Bookshelf / MedlinePlus,medical_reference,modern,accessed,enteral feeding; artificial limbs; nutritional support,Plain-language medical support/replacement context,Secondary/explanatory sources.,
+NLM Catalog,medical_catalog,1970s field consolidation,accessed,Artificial Organs journals,Evidence of medical field visibility,"Publication titles are field anchors, not definitions.",
+Britannica,encyclopedia,historical and modern summaries,accessed,AI; neural network; artificial life; Esperanto/artificial language,Good high-level definitions and historical anchors,"Encyclopedic, not corpus evidence.",
+Merriam-Webster,dictionary,modern dictionary,accessed,artificial; artificial language; AGI,Boundary definitions and medical artificial examples,"Dictionary examples are illustrative, not frequency evidence.",
+FCC,regulatory_source,2024,accessed,artificial voice / AI voice,Strong modern policy-sensitive voice evidence,Regulatory framing is not general language frequency.,
+PubMed reviews/articles,academic_article,2008-2026,accessed,artificial womb; artificial companions; artificial consciousness,Modern and speculative edge control,Some abstracts only; source interpretation cautious.,

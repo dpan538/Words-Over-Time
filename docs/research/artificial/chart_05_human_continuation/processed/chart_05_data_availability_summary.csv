@@ -1,0 +1,6 @@
+primary_layer,layer_name,total_terms,collected,missing,too_sparse,strongest_terms_by_ngram_peak,missing_terms,notes
+1,external_artificial_things,6,5,1,0,artificial aid; mechanical aid; artificial support; artificial device; artificial apparatus,life-saving apparatus,Layer 1 should remain background unless source anchors are strengthened.
+2,body_support,9,9,0,0,life support; mechanical ventilation; artificial respiration; artificial feeding; nutritional support,,Ngram visibility is baseline only; source evidence controls interpretation.
+3,body_replacement,12,11,1,0,prosthesis; artificial limbs; artificial limb; artificial kidney; artificial heart,heart-assist device,Ngram visibility is baseline only; source evidence controls interpretation.
+4,reproduction_continuation,8,7,1,0,artificial insemination; in vitro fertilization; in vitro fertilisation; artificial fertilization; artificial fertilisation,test-tube baby,Ngram visibility is baseline only; source evidence controls interpretation.
+5,human_process_cognition_presence,18,18,0,0,neural network; artificial intelligence; artificial neural network; machine intelligence; artificial life,,Layer 5 has broad signal; speculative controls should prevent AI over-dominance.

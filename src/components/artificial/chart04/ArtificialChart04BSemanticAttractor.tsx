@@ -241,23 +241,29 @@ function disposeObject(object: THREE.Object3D) {
 
 function makeTextSprite(text: string, options: { size?: number; color?: string; opacity?: number; weight?: string } = {}) {
   const size = options.size ?? 34;
-  const padding = 16;
+  const textureScale = 2.25;
+  const renderSize = size * textureScale;
+  const padding = 16 * textureScale;
   const canvas = document.createElement("canvas");
   const context = canvas.getContext("2d");
   if (!context) return new THREE.Sprite();
 
-  context.font = `${options.weight ?? "800"} ${size}px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`;
+  context.font = `${options.weight ?? "800"} ${renderSize}px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`;
   const metrics = context.measureText(text);
   canvas.width = Math.ceil(metrics.width + padding * 2);
-  canvas.height = Math.ceil(size * 1.48 + padding * 2);
+  canvas.height = Math.ceil(renderSize * 1.48 + padding * 2);
 
-  context.font = `${options.weight ?? "800"} ${size}px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`;
+  context.font = `${options.weight ?? "800"} ${renderSize}px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`;
   context.fillStyle = options.color ?? INK;
   context.textBaseline = "middle";
   context.fillText(text, padding, canvas.height / 2);
 
   const texture = new THREE.CanvasTexture(canvas);
   texture.colorSpace = THREE.SRGBColorSpace;
+  texture.generateMipmaps = false;
+  texture.minFilter = THREE.LinearFilter;
+  texture.magFilter = THREE.LinearFilter;
+  texture.anisotropy = 4;
   const material = new THREE.SpriteMaterial({
     map: texture,
     transparent: true,
@@ -265,7 +271,7 @@ function makeTextSprite(text: string, options: { size?: number; color?: string; 
     depthTest: false,
   });
   const sprite = new THREE.Sprite(material);
-  sprite.scale.set(canvas.width / 180, canvas.height / 180, 1);
+  sprite.scale.set(canvas.width / textureScale / 180, canvas.height / textureScale / 180, 1);
   return sprite;
 }
 
@@ -282,7 +288,7 @@ function makeCurveFromNodes(nodeIds: string[], lift = 0.26) {
     const offset = new THREE.Vector3(
       Math.sin(index * 1.7) * 0.2,
       Math.cos(index * 1.15) * 0.16,
-      Math.sin(index * 0.88) * lift,
+      Math.sin(index * 0.88) * lift * 1.48,
     );
     return [node.position.clone().add(offset)];
   });
@@ -338,7 +344,7 @@ function makeAttractorStrand({
       new THREE.Vector3(
         (Math.sin(t) * 1.45 + Math.sin(t * 0.5) * 1.1) * scale * envelope,
         (Math.sin(t * 1.65) * 0.78 + Math.cos(t * 0.33) * 0.28) * scale,
-        (Math.cos(t * 1.18) * 0.9 + Math.sin(t * 0.42) * 0.54) * scale,
+        (Math.cos(t * 1.18) * 1.22 + Math.sin(t * 0.42) * 0.72) * scale,
       ),
     );
   }
@@ -369,10 +375,66 @@ function makeOrbitShell({
   return group;
 }
 
-function makeAxisLabel(text: string, position: THREE.Vector3) {
-  const label = makeTextSprite(text, { size: 18, color: INK, opacity: 0.58, weight: "900" });
-  label.position.copy(position);
-  return label;
+function makeEllipseLine(radiusX: number, radiusY: number, color: string, opacity: number, samples = 180) {
+  const points: THREE.Vector3[] = [];
+  for (let i = 0; i <= samples; i += 1) {
+    const t = (i / samples) * Math.PI * 2;
+    points.push(new THREE.Vector3(Math.cos(t) * radiusX, Math.sin(t) * radiusY, 0));
+  }
+  return makeLine(points, color, opacity);
+}
+
+function makeBasinWell({
+  center,
+  radiusX,
+  radiusY,
+  color,
+  opacity,
+  rotation,
+}: {
+  center: THREE.Vector3;
+  radiusX: number;
+  radiusY: number;
+  color: string;
+  opacity: number;
+  rotation: THREE.Euler;
+}) {
+  const group = new THREE.Group();
+  group.position.copy(center);
+  group.rotation.copy(rotation);
+
+  const fill = new THREE.Mesh(
+    new THREE.CircleGeometry(1, 96),
+    new THREE.MeshBasicMaterial({
+      color,
+      transparent: true,
+      opacity,
+      side: THREE.DoubleSide,
+      depthWrite: false,
+    }),
+  );
+  fill.scale.set(radiusX, radiusY, 1);
+  group.add(fill);
+
+  group.add(makeEllipseLine(radiusX, radiusY, color, opacity * 7.2));
+  group.add(makeEllipseLine(radiusX * 0.72, radiusY * 0.72, color, opacity * 4.6));
+  group.add(makeEllipseLine(radiusX * 0.44, radiusY * 0.44, color, opacity * 3.2));
+
+  for (let i = 0; i < 6; i += 1) {
+    const t = (i / 6) * Math.PI * 2;
+    group.add(
+      makeLine(
+        [
+          new THREE.Vector3(Math.cos(t) * radiusX * 0.18, Math.sin(t) * radiusY * 0.18, 0),
+          new THREE.Vector3(Math.cos(t) * radiusX, Math.sin(t) * radiusY, 0),
+        ],
+        color,
+        opacity * 2.4,
+      ),
+    );
+  }
+
+  return group;
 }
 
 function relationLabel(kind: RelationKind) {
@@ -386,24 +448,33 @@ function relationLabel(kind: RelationKind) {
 
 export function ArtificialChart04BSemanticAttractor() {
   const mountRef = useRef<HTMLDivElement | null>(null);
+  const selectedIdRef = useRef("artificial");
+  const planeHintValueRef = useRef<string | null>(null);
+  const sceneControlsRef = useRef<{ updateSelectedRing: (id: string) => void } | null>(null);
   const [selectedId, setSelectedId] = useState("artificial");
-  const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const [planeHint, setPlaneHint] = useState<string | null>(null);
   const selectedNode = useMemo(
     () => semanticNodes.find((node) => node.id === selectedId) ?? semanticNodes[0],
     [selectedId],
   );
 
   useEffect(() => {
+    selectedIdRef.current = selectedId;
+    sceneControlsRef.current?.updateSelectedRing(selectedId);
+  }, [selectedId]);
+
+  useEffect(() => {
     if (!mountRef.current) return;
     const mountElement = mountRef.current;
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(33, 1, 0.1, 80);
-    camera.position.set(0, 0.18, 8.5);
+    camera.position.set(0, 0.18, 7.65);
     camera.lookAt(0, 0, 0);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.setClearColor(0x000000, 0);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2.5));
     renderer.domElement.className = "h-full w-full cursor-grab active:cursor-grabbing";
     mountElement.appendChild(renderer.domElement);
 
@@ -420,45 +491,111 @@ export function ArtificialChart04BSemanticAttractor() {
     raycaster.params.Points = { threshold: 0.05 };
     const pointer = new THREE.Vector2();
     const hitTargets: THREE.Object3D[] = [];
+    const basinTargets: THREE.Object3D[] = [];
     const nodeByUuid = new Map<string, SemanticNode>();
     const nodeMeshes = new Map<string, THREE.Mesh>();
     const nodeMaterials = new Map<string, THREE.MeshBasicMaterial>();
+    const setPlaneHintIfChanged = (next: string | null) => {
+      if (planeHintValueRef.current === next) return;
+      planeHintValueRef.current = next;
+      setPlaneHint(next);
+    };
+    const addBasin = (basin: THREE.Group, hint: string) => {
+      basin.traverse((child) => {
+        const item = child as THREE.Mesh & { isMesh?: boolean };
+        if (!item.isMesh) return;
+        item.userData.basinHint = hint;
+        basinTargets.push(item);
+      });
+      root.add(basin);
+    };
 
     const activeRing = new THREE.Mesh(
-      new THREE.TorusGeometry(0.24, 0.012, 8, 72),
-      new THREE.MeshBasicMaterial({ color: FIRE, transparent: true, opacity: 0.84, depthWrite: false }),
+      new THREE.TorusGeometry(0.16, 0.006, 8, 72),
+      new THREE.MeshBasicMaterial({ color: FIRE, transparent: true, opacity: 0.72, depthWrite: false }),
     );
     activeRing.visible = false;
     root.add(activeRing);
 
     const coreAxes = new THREE.Group();
-    coreAxes.add(makeLine([new THREE.Vector3(-2.8, 0, 0), new THREE.Vector3(2.45, 0, 0)], INK, 0.34));
-    coreAxes.add(makeLine([new THREE.Vector3(0, -1.6, 0), new THREE.Vector3(0, 1.54, 0)], INK, 0.28));
-    coreAxes.add(makeLine([new THREE.Vector3(0, 0, -1.6), new THREE.Vector3(0, 0, 1.6)], FIRE, 0.24));
-    coreAxes.add(makeLine([new THREE.Vector3(-2.4, -1.24, -1.0), new THREE.Vector3(2.2, 1.34, 1.0)], INK, 0.12));
-    coreAxes.add(makeLine([new THREE.Vector3(-2.32, 1.2, 0.92), new THREE.Vector3(2.1, -1.12, -0.9)], FIRE, 0.12));
-    coreAxes.add(makeAxisLabel("natural / real", new THREE.Vector3(-2.62, 0.13, 0.04)));
-    coreAxes.add(makeAxisLabel("made / synthetic", new THREE.Vector3(2.28, 0.12, 0.04)));
-    coreAxes.add(makeAxisLabel("realistic", new THREE.Vector3(-0.5, 1.48, 0.5)));
-    coreAxes.add(makeAxisLabel("fake edge", new THREE.Vector3(-0.82, -1.46, -0.54)));
+    coreAxes.add(makeLine([new THREE.Vector3(-2.8, 0, 0), new THREE.Vector3(2.45, 0, 0)], INK, 0.56));
+    coreAxes.add(makeLine([new THREE.Vector3(0, -1.6, 0), new THREE.Vector3(0, 1.54, 0)], INK, 0.46));
+    coreAxes.add(makeLine([new THREE.Vector3(0, 0, -1.6), new THREE.Vector3(0, 0, 1.6)], FIRE, 0.42));
+    coreAxes.add(makeLine([new THREE.Vector3(-2.4, -1.24, -1.0), new THREE.Vector3(2.2, 1.34, 1.0)], INK, 0.18));
+    coreAxes.add(makeLine([new THREE.Vector3(-2.32, 1.2, 0.92), new THREE.Vector3(2.1, -1.12, -0.9)], FIRE, 0.18));
+    coreAxes.add(makeLine([new THREE.Vector3(-2.62, 0.86, -0.78), new THREE.Vector3(2.18, -0.7, 0.78)], INK, 0.14));
+    coreAxes.add(makeLine([new THREE.Vector3(-2.4, -0.9, 0.8), new THREE.Vector3(2.24, 0.94, -0.7)], INK, 0.14));
+    coreAxes.add(makeLine([new THREE.Vector3(-2.24, 0.58, -1.24), new THREE.Vector3(2.34, 0.72, 1.24)], INK, 0.16));
+    coreAxes.add(makeLine([new THREE.Vector3(-2.08, -0.62, 1.18), new THREE.Vector3(2.18, -0.54, -1.22)], FIRE, 0.14));
     root.add(coreAxes);
 
-    root.add(makeOrbitShell({ center: new THREE.Vector3(0.42, 0.02, 0.06), radiusX: 1.52, radiusY: 0.74, radiusZ: 1.08, color: INK, opacity: 0.25, phase: 0.2 }));
-    root.add(makeOrbitShell({ center: new THREE.Vector3(0.55, 0.76, 0.42), radiusX: 1.48, radiusY: 0.54, radiusZ: 0.84, color: FIRE, opacity: 0.22, phase: 1.1 }));
-    root.add(makeOrbitShell({ center: new THREE.Vector3(-0.62, -0.68, -0.46), radiusX: 1.04, radiusY: 0.54, radiusZ: 0.78, color: FIRE, opacity: 0.18, phase: 2.4 }));
-    root.add(makeOrbitShell({ center: new THREE.Vector3(-1.86, -0.05, 0.46), radiusX: 0.64, radiusY: 0.7, radiusZ: 0.48, color: MUTED, opacity: 0.2, phase: 0.9 }));
+    addBasin(
+      makeBasinWell({
+        center: new THREE.Vector3(1.1, -0.2, 0.18),
+        radiusX: 1.22,
+        radiusY: 0.44,
+        color: INK,
+        opacity: 0.032,
+        rotation: new THREE.Euler(0.18, -0.6, -0.1),
+      }),
+      "Black plane: made, constructed, and synthetic meanings sit closest to artificial.",
+    );
+    addBasin(
+      makeBasinWell({
+        center: new THREE.Vector3(0.48, 0.9, 0.38),
+        radiusX: 1.18,
+        radiusY: 0.36,
+        color: FIRE,
+        opacity: 0.036,
+        rotation: new THREE.Euler(-0.24, 0.52, 0.34),
+      }),
+      "Red upper plane: simulation and realistic resemblance bridge artificial toward representation.",
+    );
+    addBasin(
+      makeBasinWell({
+        center: new THREE.Vector3(-0.78, -0.92, -0.48),
+        radiusX: 0.92,
+        radiusY: 0.34,
+        color: FIRE,
+        opacity: 0.032,
+        rotation: new THREE.Euler(0.36, -0.36, -0.58),
+      }),
+      "Red lower plane: imitation and counterfeit form the fake-adjacent drift edge.",
+    );
+    addBasin(
+      makeBasinWell({
+        center: new THREE.Vector3(-1.98, -0.04, 0.46),
+        radiusX: 0.72,
+        radiusY: 0.34,
+        color: MUTED,
+        opacity: 0.034,
+        rotation: new THREE.Euler(-0.14, 0.42, 0.18),
+      }),
+      "Grey plane: natural, real, genuine, and authentic are contrast fields, not synonyms.",
+    );
+
+    const artificialPosition = nodesById.get("artificial")?.position ?? new THREE.Vector3(0, 0, 0);
+    for (const node of semanticNodes) {
+      if (node.id === "artificial") continue;
+      root.add(makeLine([artificialPosition, node.position], node.color, node.relation === "contrast" ? 0.12 : 0.16));
+    }
+
+    root.add(makeOrbitShell({ center: new THREE.Vector3(0.42, 0.02, 0.06), radiusX: 1.6, radiusY: 0.78, radiusZ: 1.48, color: INK, opacity: 0.34, phase: 0.2 }));
+    root.add(makeOrbitShell({ center: new THREE.Vector3(0.55, 0.76, 0.42), radiusX: 1.52, radiusY: 0.56, radiusZ: 1.22, color: FIRE, opacity: 0.28, phase: 1.1 }));
+    root.add(makeOrbitShell({ center: new THREE.Vector3(-0.62, -0.68, -0.46), radiusX: 1.1, radiusY: 0.58, radiusZ: 1.1, color: FIRE, opacity: 0.25, phase: 2.4 }));
+    root.add(makeOrbitShell({ center: new THREE.Vector3(-1.86, -0.05, 0.46), radiusX: 0.7, radiusY: 0.74, radiusZ: 0.78, color: MUTED, opacity: 0.3, phase: 0.9 }));
 
     for (const strand of [
-      makeAttractorStrand({ phase: 0.3, scale: 1.05, color: INK, opacity: 0.22 }),
-      makeAttractorStrand({ phase: 1.8, scale: 0.94, color: INK, opacity: 0.14 }),
-      makeAttractorStrand({ phase: 2.7, scale: 0.82, color: FIRE, opacity: 0.16 }),
-      makeAttractorStrand({ phase: 4.2, scale: 0.72, color: MUTED, opacity: 0.12 }),
+      makeAttractorStrand({ phase: 0.3, scale: 1.05, color: INK, opacity: 0.16 }),
+      makeAttractorStrand({ phase: 1.8, scale: 0.94, color: INK, opacity: 0.11 }),
+      makeAttractorStrand({ phase: 2.7, scale: 0.82, color: FIRE, opacity: 0.1 }),
+      makeAttractorStrand({ phase: 4.2, scale: 0.72, color: MUTED, opacity: 0.08 }),
     ]) {
       root.add(strand);
     }
 
     for (const path of relationPaths) {
-      const curve = makeCurveFromNodes(path.nodeIds, path.kind === "bridge" ? 0.52 : 0.28);
+      const curve = makeCurveFromNodes(path.nodeIds, path.kind === "bridge" ? 0.78 : 0.42);
       const line = makeLine(curve.getPoints(280), path.color, path.opacity);
       root.add(line);
       const tube = new THREE.Mesh(
@@ -466,7 +603,7 @@ export function ArtificialChart04BSemanticAttractor() {
         new THREE.MeshBasicMaterial({
           color: path.color,
           transparent: true,
-          opacity: path.opacity * 0.16,
+          opacity: path.opacity * 0.1,
           depthWrite: false,
         }),
       );
@@ -483,7 +620,8 @@ export function ArtificialChart04BSemanticAttractor() {
     }
 
     for (const node of semanticNodes) {
-      const geometry = new THREE.SphereGeometry(node.radius, 24, 24);
+      const visualRadius = node.radius * 0.58;
+      const geometry = new THREE.SphereGeometry(visualRadius, 24, 24);
       const material = new THREE.MeshBasicMaterial({
         color: node.color,
         transparent: true,
@@ -498,7 +636,7 @@ export function ArtificialChart04BSemanticAttractor() {
       nodeMaterials.set(node.id, material);
 
       const hit = new THREE.Mesh(
-        new THREE.SphereGeometry(node.radius + 0.13, 12, 12),
+        new THREE.SphereGeometry(visualRadius + 0.055, 12, 12),
         new THREE.MeshBasicMaterial({ color: node.color, transparent: true, opacity: 0, depthWrite: false }),
       );
       hit.position.copy(node.position);
@@ -506,14 +644,21 @@ export function ArtificialChart04BSemanticAttractor() {
       hitTargets.push(hit);
       nodeByUuid.set(hit.uuid, node);
 
-      if (node.id === "artificial" || node.relation === "bridge" || node.relation === "drift" || node.relation === "contrast") {
+      if (
+        node.id === "artificial" ||
+        node.id === "made-constructed" ||
+        node.id === "synthetic" ||
+        node.relation === "bridge" ||
+        node.relation === "drift" ||
+        node.relation === "contrast"
+      ) {
         const label = makeTextSprite(node.shortLabel, {
-          size: node.id === "artificial" ? 28 : 17,
+          size: node.id === "artificial" ? 27 : 15,
           color: node.color,
-          opacity: node.id === "artificial" ? 0.92 : 0.74,
+          opacity: node.id === "artificial" ? 0.96 : 0.82,
           weight: "900",
         });
-        label.position.copy(node.position.clone().add(new THREE.Vector3(node.position.x >= 0 ? 0.14 : -0.2, node.position.y >= 0 ? 0.17 : -0.17, 0.08)));
+        label.position.copy(node.position.clone().add(new THREE.Vector3(node.position.x >= 0 ? 0.1 : -0.14, node.position.y >= 0 ? 0.12 : -0.12, 0.06)));
         root.add(label);
       }
     }
@@ -526,14 +671,15 @@ export function ArtificialChart04BSemanticAttractor() {
       }
       activeRing.visible = true;
       activeRing.position.copy(node.position);
-      activeRing.scale.setScalar(0.9 + node.radius * 2.5);
+      activeRing.scale.setScalar(0.66 + node.radius * 1.6);
       const material = activeRing.material as THREE.MeshBasicMaterial;
       material.color.set(node.color);
       for (const [nodeId, materialItem] of nodeMaterials.entries()) {
         materialItem.opacity = nodeId === id ? 1 : nodesById.get(nodeId)?.relation === "contrast" ? 0.48 : 0.76;
       }
     };
-    updateSelectedRing(selectedId);
+    sceneControlsRef.current = { updateSelectedRing };
+    updateSelectedRing(selectedIdRef.current);
 
     let width = 1;
     let height = 1;
@@ -541,6 +687,10 @@ export function ArtificialChart04BSemanticAttractor() {
       const rect = mountElement.getBoundingClientRect();
       width = Math.max(1, rect.width);
       height = Math.max(1, rect.height);
+      const narrow = width < 720;
+      camera.position.z = narrow ? 11 : 8.35;
+      root.scale.setScalar(narrow ? 0.86 : 1.1);
+      root.position.y = narrow ? -0.08 : -0.1;
       camera.aspect = width / height;
       camera.updateProjectionMatrix();
       renderer.setSize(width, height, false);
@@ -568,9 +718,16 @@ export function ArtificialChart04BSemanticAttractor() {
       return hit ? nodeByUuid.get(hit.object.uuid) ?? null : null;
     };
 
+    const hitBasin = () => {
+      raycaster.setFromCamera(pointer, camera);
+      const hit = raycaster.intersectObjects(basinTargets, false)[0];
+      return (hit?.object.userData.basinHint as string | undefined) ?? null;
+    };
+
     const pointerDown = (event: PointerEvent) => {
       dragging = true;
       pointerMoved = false;
+      setPlaneHintIfChanged(null);
       previousX = event.clientX;
       previousY = event.clientY;
       renderer.domElement.setPointerCapture(event.pointerId);
@@ -590,8 +747,14 @@ export function ArtificialChart04BSemanticAttractor() {
         return;
       }
       const node = hitNode();
-      setHoveredId(node?.id ?? null);
-      renderer.domElement.style.cursor = node ? "pointer" : "grab";
+      if (node) {
+        setPlaneHintIfChanged(null);
+        renderer.domElement.style.cursor = "pointer";
+        return;
+      }
+      const basinHint = hitBasin();
+      setPlaneHintIfChanged(basinHint);
+      renderer.domElement.style.cursor = basinHint ? "help" : "grab";
     };
 
     const pointerUp = (event: PointerEvent) => {
@@ -600,6 +763,7 @@ export function ArtificialChart04BSemanticAttractor() {
         const node = hitNode();
         if (node) {
           setSelectedId(node.id);
+          selectedIdRef.current = node.id;
           updateSelectedRing(node.id);
         }
       }
@@ -611,7 +775,7 @@ export function ArtificialChart04BSemanticAttractor() {
 
     const pointerLeave = () => {
       dragging = false;
-      setHoveredId(null);
+      setPlaneHintIfChanged(null);
       renderer.domElement.style.cursor = "grab";
     };
 
@@ -639,10 +803,10 @@ export function ArtificialChart04BSemanticAttractor() {
       root.rotation.x += (targetRotationX - root.rotation.x) * 0.08;
       activeRing.lookAt(camera.position);
       activeRing.rotation.z += 0.012;
-      const activeNode = nodesById.get(selectedId);
+      const activeNode = nodesById.get(selectedIdRef.current);
       if (activeNode) {
         const mesh = nodeMeshes.get(activeNode.id);
-        if (mesh) mesh.scale.setScalar(1 + Math.sin(frame * 2.2) * 0.045);
+        if (mesh) mesh.scale.setScalar(1);
       }
       renderer.render(scene, camera);
     };
@@ -658,12 +822,12 @@ export function ArtificialChart04BSemanticAttractor() {
       renderer.domElement.removeEventListener("pointerleave", pointerLeave);
       renderer.dispose();
       renderer.forceContextLoss();
+      sceneControlsRef.current = null;
+      planeHintValueRef.current = null;
       disposeObject(root);
       mountElement.replaceChildren();
     };
-  }, [selectedId]);
-
-  const hoveredNode = hoveredId ? semanticNodes.find((node) => node.id === hoveredId) : null;
+  }, []);
 
   return (
     <section className="border-b border-ink bg-wheat">
@@ -693,33 +857,11 @@ export function ArtificialChart04BSemanticAttractor() {
         </div>
       </div>
 
-      <div className="grid min-h-[820px] border-b border-ink/80 lg:grid-cols-[minmax(0,1fr)_22rem]">
-        <div className="relative min-h-[690px] overflow-hidden border-b border-ink/60 lg:border-b-0 lg:border-r">
-          <div className="pointer-events-none absolute inset-0 opacity-[0.18] [background-image:linear-gradient(90deg,rgba(5,5,16,0.42)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.32)_1px,transparent_1px)] [background-size:54px_54px]" />
-          <div ref={mountRef} className="absolute inset-0" aria-label="Artificial semantic attractor field" />
-          <div className="pointer-events-none absolute left-5 top-5 max-w-[30rem] font-mono text-[0.68rem] font-black uppercase leading-relaxed tracking-[0.13em] text-ink/62">
-            drag to rotate · click a semantic anchor · hover only previews
-          </div>
-          <div className="pointer-events-none absolute bottom-5 left-5 right-5 grid gap-2 border border-ink/28 bg-wheat/82 p-3 font-mono text-[0.58rem] font-black uppercase leading-4 tracking-[0.12em] text-ink/50 sm:grid-cols-3">
-            <span>origin axis: natural / real ↔ made / synthetic</span>
-            <span>status axis: genuine ↔ fake edge</span>
-            <span>depth axis: simulated / realistic representation</span>
-          </div>
-        </div>
-
-        <aside className="grid grid-rows-[auto_minmax(0,1fr)_auto] bg-wheat/52">
-          <div className="border-b border-ink/60 px-5 py-4">
-            <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.16em] text-ink/48">
-              artificial read
-            </p>
-            <p className="mt-3 font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.12em] text-ink">
-              artificial is adjacent to fake without becoming fake
-            </p>
-          </div>
-
-          <div className="px-5 py-5">
+      <div className="grid border-b border-ink/80 lg:h-[800px] lg:grid-cols-[28rem_minmax(0,1fr)]">
+        <aside className="grid min-h-[720px] grid-rows-[minmax(0,1fr)] border-b border-ink/60 bg-wheat/52 lg:min-h-0 lg:border-b-0 lg:border-r">
+          <div className="grid h-full min-h-0 grid-rows-[18rem_minmax(0,1fr)] gap-4 px-6 py-5">
             <div
-              className="border bg-wheat/88 p-4"
+              className="h-full overflow-hidden border bg-wheat/88 p-4"
               style={{
                 borderColor: selectedNode.color,
                 boxShadow: `inset 0 0 0 1px ${selectedNode.color}22`,
@@ -735,38 +877,76 @@ export function ArtificialChart04BSemanticAttractor() {
               <p className="mt-3 font-mono text-[0.72rem] font-black uppercase leading-5 tracking-[0.11em] text-ink/58">
                 {selectedNode.basin}
               </p>
-              <p className="mt-4 text-sm leading-6 text-ink/70">{selectedNode.summary}</p>
-              <p className="mt-4 border-t border-ink/25 pt-3 font-mono text-[0.58rem] font-black uppercase leading-4 tracking-[0.12em] text-ink/42">
+              <p
+                className="mt-4 overflow-hidden text-sm leading-6 text-ink/70"
+                style={{ display: "-webkit-box", WebkitBoxOrient: "vertical", WebkitLineClamp: 3 }}
+              >
+                {selectedNode.summary}
+              </p>
+              <p className="mt-4 border-t border-ink/25 pt-3 font-mono text-[0.56rem] font-black uppercase leading-4 tracking-[0.12em] text-ink/42">
                 Evidence: {selectedNode.evidence}
               </p>
             </div>
 
-            <div className="mt-5 grid gap-2">
+            <div className="grid h-full min-h-0 grid-cols-2 grid-rows-6 gap-2.5">
               {semanticNodes.map((node) => (
                 <button
                   key={node.id}
                   type="button"
                   onClick={() => setSelectedId(node.id)}
-                  className="grid grid-cols-[0.8rem_1fr_auto] items-center gap-3 border border-ink/22 bg-wheat/42 px-3 py-2 text-left font-mono text-[0.58rem] font-black uppercase tracking-[0.12em] transition hover:border-ink/60"
+                  className="grid h-full min-h-0 grid-cols-[1.1rem_1fr] items-center gap-4 overflow-hidden border border-ink/18 bg-wheat/38 px-4 text-left font-mono text-[0.9rem] font-black uppercase leading-6 tracking-[0.1em] transition hover:border-ink/60"
                   style={{
                     borderColor: selectedId === node.id ? node.color : undefined,
                     color: selectedId === node.id ? node.color : undefined,
                   }}
                 >
-                  <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: node.color }} />
+                  <span className="h-3.5 w-3.5 rounded-full" style={{ backgroundColor: node.color }} />
                   <span>{node.shortLabel}</span>
-                  <span className="text-ink/38">{relationLabel(node.relation)}</span>
                 </button>
               ))}
             </div>
           </div>
-
-          <div className="border-t border-ink/60 px-5 py-4 font-mono text-[0.62rem] font-black uppercase leading-5 tracking-[0.14em] text-ink/52">
-            {hoveredNode
-              ? `preview: ${hoveredNode.label} · click to lock`
-              : "interaction: click anchors, rotate field, read selected relation"}
-          </div>
         </aside>
+
+        <div className="relative min-h-[720px] overflow-hidden lg:min-h-0">
+          <div className="pointer-events-none absolute inset-0 opacity-[0.18] [background-image:linear-gradient(90deg,rgba(5,5,16,0.42)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.32)_1px,transparent_1px)] [background-size:54px_54px]" />
+          <div ref={mountRef} className="absolute inset-0" aria-label="Artificial semantic attractor field" />
+          <div className="pointer-events-none absolute left-5 top-5 max-w-[30rem] font-mono text-[0.68rem] font-black uppercase leading-relaxed tracking-[0.13em] text-ink/62">
+            drag to rotate · click an anchor · hover only previews
+          </div>
+          <div
+            className={`pointer-events-none absolute right-5 top-5 w-[17.5rem] border border-ink/24 bg-wheat/90 px-3 py-2 transition-opacity duration-150 ${
+              planeHint ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <p className="font-mono text-[0.68rem] font-black uppercase leading-[1.35] tracking-[0.13em] text-ink/64">
+              colored plane
+            </p>
+            <p className="mt-1 text-xs leading-4 text-ink/66">
+              {planeHint}
+            </p>
+          </div>
+          <div className="pointer-events-none absolute bottom-5 left-5 right-5 grid gap-2 border border-ink/24 bg-wheat/82 p-3.5 font-mono text-ink/62 sm:grid-cols-3">
+            <div>
+              <p className="text-[0.72rem] font-black uppercase leading-5 tracking-[0.095em]">origin axis</p>
+              <p className="mt-1 text-[0.62rem] font-black uppercase leading-4 tracking-[0.1em] text-ink/48">
+                natural / real ↔ made / synthetic
+              </p>
+            </div>
+            <div>
+              <p className="text-[0.72rem] font-black uppercase leading-5 tracking-[0.095em]">status axis</p>
+              <p className="mt-1 text-[0.62rem] font-black uppercase leading-4 tracking-[0.1em] text-ink/48">
+                genuine/authentic ↔ fake edge
+              </p>
+            </div>
+            <div>
+              <p className="text-[0.72rem] font-black uppercase leading-5 tracking-[0.095em]">depth axis</p>
+              <p className="mt-1 text-[0.62rem] font-black uppercase leading-4 tracking-[0.1em] text-ink/48">
+                simulated ↔ realistic representation
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

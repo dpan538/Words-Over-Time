@@ -1,0 +1,15 @@
+term,status,why_speculative_or_established,should_show_in_chart,visual_treatment,notes
+artificial intelligence,established_term,Established AI term with encyclopedia/dictionary support.,yes,solid_node,Keep in top layer but not central.
+artificial neural network,established_term,Established cognitive-computing and AI model term.,yes,solid_node,Good process/cognition anchor.
+artificial language,established_term,Historical constructed-language meaning predates modern AI.,yes,solid_node,Important counterweight to AI.
+artificial life,established_term,Established computational field but sense-split required.,yes,bridge_node,Use as bridge from life to computational simulation.
+artificial voice,policy_sensitive,Modern AI voice and regulatory evidence; voice-cloning risk context.,yes,solid_or_dotted_node,Do not over-expand into AI policy chart.
+synthetic voice,policy_sensitive,Related modern voice term; not necessarily artificial phrase.,maybe,hover_only,Use if voice cluster needs depth.
+AI companion,emerging_term,Modern social/presence term with recent scholarship and news.,maybe,dotted_node,"Can show edge, not core."
+artificial companion,emerging_term,"Academic review term, interdisciplinary and unstable boundaries.",maybe,dotted_node,Good presence edge but not center.
+artificial consciousness,philosophical_term,Theoretical obstacles and no established practical discipline.,maybe,hover_only,Avoid solid node unless chart explicitly shows speculative edge.
+machine consciousness,philosophical_term,Adjacent term; not a core artificial phrase.,no,notes_only,Keep in notes unless needed.
+artificial general intelligence,hype_sensitive,Dictionary/encyclopedia term but out-of-reach and controversial.,maybe,notes_only,Use only as boundary note.
+artificial agent,terminology_unstable,Agent language is broad and rapidly changing.,no,notes_only,Needs separate intelligence-page treatment.
+AI agent,terminology_unstable,Too current and unstable for this historical artificial chart.,no,notes_only,Avoid center.
+artificial creativity,emerging_term,Adjacent to computational creativity; not yet needed.,no,notes_only,Optional future intelligence page.

@@ -1,0 +1,9 @@
+priority,item,why_review,source_type_needed,current_status,blocking_level,notes
+1,artificial life sense split,Must distinguish biological/life-making language from computational ALife.,dictionary + snippet + corpus_context,partially_checked,blocks_visual_planning,Use as bridge node unless stronger biological evidence appears.
+1,Layer 1 apparatus evidence,External artificial things layer may look abstract without anchors.,Google Books snippets + public-domain medical texts,ngram_only,blocks_visual_planning,Keep background if not strengthened.
+1,artificial life support phrase,"Life Support Care is strong, but exact phrase artificial life support needs contextual source.",medical texts + snippets,partial,blocks_claim,Do not overclaim exact phrase without snippets.
+2,artificial fertilization vs IVF,Need historical phrase relationship and British spelling variant review.,PubMed history + Google Books snippets,partial,blocks_visual_planning,Ngram may be weak.
+2,artificial womb visual status,Preclinical/speculative status must be clear.,PubMed review + bioethics sources,checked,minor_risk,Use dotted/edge treatment if displayed.
+2,artificial voice source inheritance,Chart 4B sources can be reused but need Chart 05 framing.,FCC + AI voice literature,checked,minor_risk,"Voice is human process/presence, not semantic distance here."
+1,AI over-dominance risk,Layer 5 may have stronger modern signal than body layers.,visual mapping review,known_risk,blocks_visual_planning,Use layer geometry to keep body-side anchors visually strong.
+2,artificial consciousness,Term is speculative/philosophical.,philosophy + AI literature,checked,minor_risk,Likely hover-only/notes-only.
