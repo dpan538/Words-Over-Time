@@ -1,0 +1,12 @@
+source_name,source_type,url_or_path,access_status,date_accessed,used_for,notes
+FCC Declaratory Ruling FCC 24-17,regulatory_source,https://docs.fcc.gov/public/attachments/FCC-24-17A1_Rcd.pdf,accessed,2026-05-13,artificial vs simulated,Strongest official source.
+FCC Notice FCC 23-101,regulatory_source,https://docs.fcc.gov/public/attachments/FCC-23-101A1.pdf,accessed,2026-05-13,artificial voice chronology,Precursor to final ruling.
+FCC Notice FCC 24-84,regulatory_source,https://docs.fcc.gov/public/attachments/FCC-24-84A1.pdf,accessed,2026-05-13,positive accessibility use of artificial voice,Good nuance against suspicion-only reading.
+PubMed artificial skin suture training,PubMed_article,https://pubmed.ncbi.nlm.nih.gov/40276440/,accessed,2026-05-13,realistic artificial skin,Peer-reviewed biomedical source.
+NIH IRP realistic skin model,gov_research_news,https://irp.nih.gov/index.php/blog/post/2023/10/a-new-model-of-an-old-itch,accessed,2026-05-13,realistic artificial skin,NIH source.
+PMC engineered skin equivalents,PMC_review,https://pmc.ncbi.nlm.nih.gov/articles/PMC6615970/,accessed,2026-05-13,artificial skin as model/equivalent,Review article.
+PubMed artificially simulated microgravity,PubMed_article,https://pubmed.ncbi.nlm.nih.gov/28268313/,accessed,2026-05-13,artificial vs simulated,Non-voice simulated context.
+PubMed artificial maxillectomy models,PubMed_article,https://pubmed.ncbi.nlm.nih.gov/25975670/,accessed,2026-05-13,artificial vs simulated speech modeling,Technical voice/speech simulation context.
+Britannica artificial life,reference_source,https://www.britannica.com/technology/artificial-life,accessed,2026-05-13,human-process exit marker,Reference source.
+Springer artificial companions systematic review,systematic_review,https://link.springer.com/article/10.1007/s12369-023-01031-y,accessed,2026-05-13,human-process exit marker,Open access review.
+UBC AI textbook,open_textbook,https://www.cs.ubc.ca/~poole/aibook/2e/html2e/ArtInt2e.Ch1.S1.SS1.html,carried_forward,2026-05-13,artificial vs fake conceptual proof,Round 03 strongest conceptual source.

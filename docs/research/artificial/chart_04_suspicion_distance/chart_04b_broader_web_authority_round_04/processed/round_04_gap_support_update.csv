@@ -1,0 +1,7 @@
+gap,pre_round04_status,new_authority_support,updated_status,chart4b_impact,notes
+artificial_vs_simulated_context,mostly_ready,FCC official ruling plus PubMed artificially simulated microgravity and maxillectomy model studies,stronger_ready,high,Now supported by regulatory and biomedical modeling contexts rather than dictionary evidence alone.
+realistic_artificial_non_product_sources,ready,PubMed artificial skin model; NIH realistic 3D skin models; PMC engineered skin equivalents,stronger_ready,high,The bridge no longer depends heavily on commercial examples.
+human_process_exit_authority,mostly_ready,Britannica artificial life and Springer systematic review on artificial companions,stronger_ready,medium_high,Exit markers have better scholarly/reference grounding but should remain transitional.
+positive_or_non_suspicious_artificial_voice,partial,FCC 24-84 accessibility discussion,improved,medium,Useful nuance: artificial voice can be regulated for risk and also considered for accessibility benefit.
+realistic_artificial_intelligence,too_sparse,no retained high-quality source,unchanged_low,low,Still should not be emphasized.
+artificial_companion_source_quality,light evidence,Springer systematic literature review,stronger_but_exit_only,medium,Good source but belongs to Chart 5 preparation more than Chart 4B core.
