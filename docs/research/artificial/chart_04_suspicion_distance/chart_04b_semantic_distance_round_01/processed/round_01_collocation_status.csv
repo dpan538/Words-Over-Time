@@ -1,0 +1,32 @@
+search_phrase,status,strongest_source,source_type,example_year_or_period,chart4b_value,notes
+artificial but realistic,partial_or_snippet_only,Merriam-Webster realistic,dictionary,2026,medium,Bridge concept is strong though exact phrase is sparse.
+artificial but not fake,partial_or_snippet_only,WordReference artificial,learner_dictionary,current,high,Best supported conceptually by artificial satellite and regulatory uses.
+artificial and fake,partial_or_snippet_only,Merriam-Webster Thesaurus,thesaurus,current,low,Co listing is not corpus proof.
+artificial or fake,not_found,,,"",exclude,Sparse and not needed for current claim.
+artificial vs fake,confirmed,round_04_chart4b_bridge_leads.csv,local_processed_file,current,high,Definition boundary well supported.
+artificial versus fake,partial_or_snippet_only,Merriam-Webster fake,dictionary,current,medium,Variant query adds little beyond vs.
+artificial not fake,partial_or_snippet_only,WordReference artificial,learner_dictionary,current,high,Better evidenced by contexts than exact phrase.
+artificial but genuine,not_found,,,"",exclude,No strong direct hit collected.
+artificial and genuine,partial_or_snippet_only,WordReference genuine,learner_dictionary,current,low,Need broader corpus.
+artificial vs genuine,confirmed,Thoughts on the Education of Daughters,book_snippet,1787,high,Artificial manners gives strong sincerity contrast.
+artificial vs authentic,confirmed,Merriam-Webster authentic,dictionary,2026,medium,Definition evidence is usable.
+artificial vs natural,confirmed,WordReference natural,learner_dictionary,current,high,One of the strongest contrasts.
+artificial versus natural,partial_or_snippet_only,Webster 1828 Natural,historical_dictionary,1828,medium,Enough for planning.
+artificial vs synthetic,confirmed,WordReference synthetic,learner_dictionary,current,high,Strong material distinction.
+artificial versus synthetic,partial_or_snippet_only,round_04_chart4b_bridge_leads.csv,local_processed_file,current,medium,Needs corpus later.
+artificial vs real,confirmed,WordReference real,learner_dictionary,current,high,Strong contrast anchor.
+artificial versus real,partial_or_snippet_only,Webster 1828 real,historical_dictionary,1828,medium,Enough for planning.
+artificial vs realistic,confirmed,Merriam-Webster realistic,dictionary,2026,high,Best bridge evidence for visual placement.
+artificial versus realistic,partial_or_snippet_only,Merriam-Webster realistic,dictionary,2026,medium,Variant query sparse.
+artificial imitation,confirmed,WordReference imitation,learner_dictionary,current,medium,Good substitute basin support.
+artificial substitute,partial_or_snippet_only,Etymonline artificial,etymology_source,current,low,Chronology pointer only.
+artificial copy,not_found,,,"",exclude,Sparse and non essential.
+artificial simulation,not_found,,,"",exclude,Sparser than simulated.
+artificial but natural,not_found,,,"",exclude,Contradictory and not a useful target.
+realistic artificial,confirmed,Merriam-Webster realistic,dictionary,2026,high,Clear bridge.
+realistic artificial flowers,confirmed,modern news snippet,news_snippet,2025,medium,Good modern collocation.
+realistic artificial teeth,partial_or_snippet_only,,,"",low,Future medical corpus target.
+realistic artificial skin,confirmed,Merriam-Webster realistic,dictionary,2026,high,Strongest realistic bridge item.
+realistic artificial voice,partial_or_snippet_only,,,"",low,Could matter later for AI contexts.
+fake artificial,not_found,,,"",exclude,No useful hit collected.
+synthetic artificial,partial_or_snippet_only,WordReference synthetic,learner_dictionary,current,low,Better as conceptual comparison than collocation.

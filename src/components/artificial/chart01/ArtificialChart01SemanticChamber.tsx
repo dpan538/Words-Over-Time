@@ -692,8 +692,6 @@ function addChamberSpeakers(scene: THREE.Scene) {
 }
 
 function buildResting(group: THREE.Object3D) {
-  addPhaseSheets(group, "all", 0.075);
-  addCentralPhaseRings(group, 0.16);
   makeSphereNode(group, "artificial", visualScale.sphereMain, 1);
   makeFloorText(group, "a word and its semantic space", 0, -3, 0.25);
   makeFloorText(group, "1400s - present", 0, -5, 0.18);
@@ -913,12 +911,13 @@ export function ArtificialChart01SemanticChamber() {
     }
 
     addLeitnerChamber(scene);
-    addPhaseSweep(scene);
     addLighting(scene);
 
     let lastMeasureTime = 0;
+    let sceneVisible = true;
     const tick = () => {
       rafRef.current = requestAnimationFrame(tick);
+      if (!sceneVisible) return;
       const { targetX, targetY } = mouseRef.current;
       camera.position.x += (targetX - camera.position.x) * 0.16;
       camera.position.y += (targetY - camera.position.y) * 0.16;
@@ -954,6 +953,15 @@ export function ArtificialChart01SemanticChamber() {
     });
     resizeObserver.observe(wrap);
 
+    const visibilityObserver = new IntersectionObserver(
+      ([entry]) => {
+        sceneVisible = entry.isIntersecting;
+        if (sceneVisible) measureRef.current();
+      },
+      { threshold: 0.05 },
+    );
+    visibilityObserver.observe(wrap);
+
     const maxX = 1.4;
     const maxY = 0.8;
     const onMouseMove = (event: MouseEvent) => {
@@ -975,6 +983,7 @@ export function ArtificialChart01SemanticChamber() {
     return () => {
       cancelAnimationFrame(rafRef.current);
       resizeObserver.disconnect();
+      visibilityObserver.disconnect();
       wrap.removeEventListener("mousemove", onMouseMove);
       wrap.removeEventListener("mouseleave", onMouseLeave);
       if (rendererRef.current === renderer) rendererRef.current = null;

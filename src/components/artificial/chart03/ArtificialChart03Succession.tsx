@@ -8,6 +8,7 @@ import {
 } from "@/components/artificial/chart03/chart03Shared";
 
 const INK = "#111018";
+const PAPER = "#F5ECD2";
 const RULE = "rgba(17,16,24,0.68)";
 const SOFT_RULE = "rgba(17,16,24,0.38)";
 const MUTED = "rgba(17,16,24,0.94)";
@@ -16,23 +17,23 @@ const RED = "#A1081F";
 const RED_DIM = "rgba(126,4,22,0.95)";
 
 const VW = 1100;
-const VH = 720;
-const TL_LEFT = 82;
-const TL_RIGHT = 1064;
+const VH = 708;
+const TL_LEFT = 58;
+const TL_RIGHT = 1032;
 const AXIS_Y = 650;
 const HEADER_LEFT = 34;
-const HEADER_Y = 28;      // section header baseline
+const HEADER_Y = 43;      // section header baseline, optically centered in 0–PLOT_TOP
 const PLOT_TOP = 92;
-const PLOT_BOTTOM = 672;
-const SUCCESSION_FOOTER_Y = 696;
-const SUCCESSION_FOOTER_SECOND_Y = 714;
+const PLOT_BOTTOM = 636;
+const SUCCESSION_FOOTER_Y = 680;
+const SUCCESSION_FOOTER_SECOND_Y = 698;
 
 function yearToX(year: number): number {
   return TL_LEFT + ((year - 1800) / 219) * (TL_RIGHT - TL_LEFT);
 }
 
 // Four sensory track centres — compact enough for one viewport, with label lanes.
-const TRACK_Y = { SIGHT: 198, SOUND: 374, LIGHT: 500, SCENE: 620 } as const;
+const TRACK_Y = { SIGHT: 160, SOUND: 296, LIGHT: 428, SCENE: 562 } as const;
 type TrackKey = keyof typeof TRACK_Y;
 
 // Per-track normalisation ceiling and max arc radius
@@ -58,11 +59,11 @@ type Term = {
 
 const termLaneOffset: Partial<Record<string, number>> = {
   daguerreotype: 0,
-  photograph: -36,
-  photography: 46,
+  photograph: -26,
+  photography: 34,
   "moving-picture": 0,
   television: -30,
-  "motion-picture": 34,
+  "motion-picture": 30,
   "digital-image": 0,
   phonograph: 14,
   gramophone: 42,
@@ -82,18 +83,18 @@ const termLaneOffset: Partial<Record<string, number>> = {
   stereoscope: 18,
   "magic-lantern": -14,
   cinema: 0,
-  simulation: -20,
-  "virtual-reality": 8,
+  simulation: -14,
+  "virtual-reality": 0,
 };
 
 const labelLaneOffset: Partial<Record<string, number>> = {
   daguerreotype: 28,
   phonograph: 30,
-  photograph: -32,
-  photography: 38,
-  "moving-picture": -30,
-  television: -34,
-  "motion-picture": 34,
+  photograph: 0,
+  photography: 0,
+  "moving-picture": -24,
+  television: -20,
+  "motion-picture": 28,
   "digital-image": 30,
   gramophone: 38,
   "radio-broadcast": -34,
@@ -109,14 +110,14 @@ const labelLaneOffset: Partial<Record<string, number>> = {
   diorama: -28,
   stereoscope: 34,
   "magic-lantern": -26,
-  simulation: -30,
-  "virtual-reality": 20,
+  simulation: -24,
+  "virtual-reality": 14,
 };
 
 const labelXOffset: Partial<Record<string, { dx: number; anchor: "start" | "middle" | "end" }>> = {
   daguerreotype: { dx: -10, anchor: "end" },
   photograph: { dx: -16, anchor: "end" },
-  photography: { dx: 16, anchor: "start" },
+  photography: { dx: -18, anchor: "end" },
   "moving-picture": { dx: -8, anchor: "end" },
   television: { dx: -16, anchor: "end" },
   "motion-picture": { dx: 18, anchor: "start" },
@@ -128,7 +129,7 @@ const labelXOffset: Partial<Record<string, { dx: number; anchor: "start" | "midd
   "sound-recording": { dx: 34, anchor: "start" },
   "electric-light": { dx: 18, anchor: "start" },
   simulation: { dx: -14, anchor: "end" },
-  "virtual-reality": { dx: -12, anchor: "end" },
+  "virtual-reality": { dx: -24, anchor: "end" },
 };
 
 const outsideLabelIds = new Set([
@@ -213,10 +214,10 @@ const biasOnlyMarkers: BiasOnlyMarker[] = [
 ];
 
 const biasMarkerOffset: Record<string, { y: number; labelX: number; labelY: number; anchor: "start" | "end" }> = {
-  "bias-cinematograph": { y: -58, labelX: 10, labelY: 4, anchor: "start" },
-  "bias-photomechanical": { y: 70, labelX: 12, labelY: -12, anchor: "start" },
-  "bias-halftone": { y: 96, labelX: -12, labelY: 6, anchor: "end" },
-  "bias-mass-production": { y: 34, labelX: 10, labelY: 4, anchor: "start" },
+  "bias-cinematograph": { y: -48, labelX: 10, labelY: 4, anchor: "start" },
+  "bias-photomechanical": { y: 48, labelX: 14, labelY: -8, anchor: "start" },
+  "bias-halftone": { y: 62, labelX: -16, labelY: -4, anchor: "end" },
+  "bias-mass-production": { y: 28, labelX: 10, labelY: 4, anchor: "start" },
 };
 
 function markerY(marker: BiasOnlyMarker) {
@@ -333,9 +334,9 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
         {/* ── Track row dividers ──────────────────────────────── */}
         {[
           { y: PLOT_TOP, strong: true },
-          { y: 310, strong: false },
-          { y: 432, strong: false },
-          { y: 568, strong: false },
+          { y: 228, strong: false },
+          { y: 364, strong: false },
+          { y: 492, strong: false },
           { y: PLOT_BOTTOM, strong: true },
         ].map(({ y, strong }) => (
           <line
@@ -367,9 +368,9 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
           return (
           <g key={name} opacity={activeDomain && activeDomain.toUpperCase() !== name ? 0.38 : 1}>
             <text
-              x={TL_LEFT - 10}
+              x={26}
               y={cy + 4}
-              textAnchor="end"
+              textAnchor="start"
               fill={activeDomain?.toUpperCase() === name ? INK : MUTED}
               fontSize={10.8}
               fontFamily="monospace"
@@ -383,6 +384,9 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
               y={summary.y}
               textAnchor={summary.anchor}
               fill={activeDomain?.toUpperCase() === name ? INK : DIM}
+              stroke={PAPER}
+              strokeWidth={3}
+              paintOrder="stroke"
               fontSize={8}
               fontFamily="monospace"
               letterSpacing="0.04em"
@@ -502,6 +506,9 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                   x={cx} y={cy + 3}
                   textAnchor="middle"
                   fill={INK}
+                  stroke={PAPER}
+                  strokeWidth={3}
+                  paintOrder="stroke"
                   fontSize={r >= 22 ? 11.2 : 9.4}
                   fontFamily="monospace"
                   letterSpacing="0.05em"
@@ -547,6 +554,9 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                   y={labelY}
                   textAnchor={labelPosition.anchor}
                   fill={INK}
+                  stroke={PAPER}
+                  strokeWidth={3.5}
+                  paintOrder="stroke"
                   fontSize={9}
                   fontFamily="monospace"
                   letterSpacing="0.04em"
@@ -619,6 +629,9 @@ export function ArtificialChart03Succession({ activeHover, onHover }: Chart03Hov
                 y={cy + offset.labelY}
                 textAnchor={offset.anchor}
                 fill={isHov ? INK : RED_DIM}
+                stroke={PAPER}
+                strokeWidth={3.5}
+                paintOrder="stroke"
                 fontSize={isHov ? 9.4 : 8.6}
                 fontFamily="monospace"
                 letterSpacing="0.04em"

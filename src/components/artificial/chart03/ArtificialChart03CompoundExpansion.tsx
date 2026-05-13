@@ -398,6 +398,7 @@ export function ArtificialChart03CompoundExpansion({ activeHover, onHover }: Cha
     let dragging = false;
     let previousX = 0;
     let previousY = 0;
+    let sceneVisible = true;
 
     function pointerDown(event: PointerEvent) {
       dragging = true;
@@ -421,16 +422,29 @@ export function ArtificialChart03CompoundExpansion({ activeHover, onHover }: Cha
 
     function pointerUp(event: PointerEvent) {
       dragging = false;
-      renderer.domElement.releasePointerCapture(event.pointerId);
+      if (renderer.domElement.hasPointerCapture(event.pointerId)) {
+        renderer.domElement.releasePointerCapture(event.pointerId);
+      }
     }
+
+    function pointerLeave() {
+      dragging = false;
+      setHoveredId(null);
+      onHoverRef.current?.(null);
+    }
+
+    const visibilityObserver = new IntersectionObserver(
+      ([entry]) => {
+        sceneVisible = entry.isIntersecting;
+      },
+      { threshold: 0.05 },
+    );
+    visibilityObserver.observe(mountElement);
 
     renderer.domElement.addEventListener("pointerdown", pointerDown);
     renderer.domElement.addEventListener("pointermove", pointerMove);
     renderer.domElement.addEventListener("pointerup", pointerUp);
-    renderer.domElement.addEventListener("pointerleave", () => {
-      setHoveredId(null);
-      onHoverRef.current?.(null);
-    });
+    renderer.domElement.addEventListener("pointerleave", pointerLeave);
     window.addEventListener("resize", resize);
     resize();
 
@@ -438,6 +452,7 @@ export function ArtificialChart03CompoundExpansion({ activeHover, onHover }: Cha
     let lastFrontId = "";
     function animate() {
       frame = requestAnimationFrame(animate);
+      if (!sceneVisible) return;
       const selected = activeIdRef.current;
       miniRoot.rotation.y += (root.rotation.y - miniRoot.rotation.y) * 0.18;
 
@@ -495,9 +510,11 @@ export function ArtificialChart03CompoundExpansion({ activeHover, onHover }: Cha
     return () => {
       cancelAnimationFrame(frame);
       window.removeEventListener("resize", resize);
+      visibilityObserver.disconnect();
       renderer.domElement.removeEventListener("pointerdown", pointerDown);
       renderer.domElement.removeEventListener("pointermove", pointerMove);
       renderer.domElement.removeEventListener("pointerup", pointerUp);
+      renderer.domElement.removeEventListener("pointerleave", pointerLeave);
       renderer.dispose();
       miniRenderer.dispose();
       disposeObject(root);

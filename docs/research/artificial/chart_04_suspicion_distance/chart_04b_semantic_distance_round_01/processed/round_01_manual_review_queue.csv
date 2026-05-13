@@ -1,0 +1,9 @@
+priority,item,why_review,source_type_needed,current_status,blocking_level,notes
+1,artificial vs fake distinction,This is the main Chart 4B claim and needs at least one more direct corpus comparator if possible,book_snippet or newspaper_snippet,definition boundary strong but corpus pairing thin,blocks_claim,Highest priority.
+1,artificial but realistic contexts,Realistic bridge is conceptually central and would benefit from more than one dictionary example,web_snippet or technical corpus,partially covered,blocks_visual_planning,Artificial skin is strong but narrow.
+1,artificial vs synthetic distinction,Material branch needs stronger contextual examples outside labeling language,news_snippet or technical corpus,definition boundary strong,blocks_claim,Important for non fake placement.
+2,artificial vs genuine and authentic distinction,Sincerity and provenance contrast is clear but could use more direct pairings,book_snippet or essay snippet,partially covered,blocks_visual_planning,Artificial manners already helps.
+2,realistic artificial phrases,Additional collocations would stabilize the bridge basin,web_snippet,current pass has flowers and skin,blocks_visual_planning,Voice and teeth remain sparse.
+2,broad terms fake real natural genuine,These terms are semantically broad and easy to overclaim from,dictionary and corpus,mapped but still broad,minor_risk,Need careful wording later.
+2,dictionary versus corpus mismatch,Dictionary synonym clusters may exaggerate closeness compared with usage,corpus comparison,current pass mostly dictionary led,minor_risk,Particularly acute for fake and synthetic.
+3,fake artificial and artificial copy sparse queries,Low yield exact phrases may not matter but could be checked if needed,web_search,not found,optional,Not core blockers.

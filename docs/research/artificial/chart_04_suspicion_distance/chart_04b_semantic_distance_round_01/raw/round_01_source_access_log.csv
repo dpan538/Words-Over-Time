@@ -1,0 +1,30 @@
+source_name,source_type,url_or_path,access_status,date_accessed,used_for,notes
+chart_04_term_metadata.csv,local_processed_file,docs/research/artificial/chart_04_suspicion_distance/processed/chart_04_term_metadata.csv,read,2026-05-13,baseline term coverage,Existing Ngram visibility only.
+round_02_evidence_table.csv,local_processed_file,docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/processed/round_02_evidence_table.csv,read,2026-05-13,existing semantic and timeline evidence,Reused for early and consumer examples.
+round_03_pejoration_evidence_table.csv,local_processed_file,docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/processed/round_03_pejoration_evidence_table.csv,read,2026-05-13,4A to 4B bridge,Key negative charge anchors.
+round_04_chart4b_bridge_leads.csv,local_processed_file,docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/processed/round_04_chart4b_bridge_leads.csv,read,2026-05-13,starter leads,Used to seed term comparisons.
+round_04_lexical_authority_extracts.csv,local_raw_file,docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/raw/round_04_lexical_authority_extracts.csv,read,2026-05-13,lexical authority reuse,Important historical split.
+round_04_chart4b_lead_snippets.csv,local_raw_file,docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/raw/round_04_chart4b_lead_snippets.csv,read,2026-05-13,lead validation,Confirmed existing bridge logic.
+WordReference artificial,learner_dictionary,https://www.wordreference.com/definition/artificial,accessed,2026-05-13,definition boundary,Best compact polysemy evidence.
+WordReference false,learner_dictionary,https://www.wordreference.com/definition/false,accessed,2026-05-13,definition boundary,Useful truth and substitute split.
+WordReference imitation,learner_dictionary,https://www.wordreference.com/definition/imitation,accessed,2026-05-13,definition boundary,Copy and counterfeit branch.
+WordReference synthetic,learner_dictionary,https://www.wordreference.com/definition/synthetic,accessed,2026-05-13,definition boundary,Chemical process branch.
+WordReference real,learner_dictionary,https://www.wordreference.com/definition/real,accessed,2026-05-13,contrast boundary,Directly opposes artificial and imitation.
+WordReference genuine,learner_dictionary,https://www.wordreference.com/definition/genuine,accessed,2026-05-13,contrast boundary,Important sincerity and provenance term.
+WordReference natural,learner_dictionary,https://www.wordreference.com/definition/natural,accessed,2026-05-13,contrast boundary,Strong not artificial sense.
+Merriam-Webster fake,dictionary,https://www.merriam-webster.com/dictionary/fake,accessed,2026-05-13,definition boundary,Core fake basin term.
+Merriam-Webster counterfeit,dictionary,https://www.merriam-webster.com/dictionary/counterfeit,accessed,2026-05-13,definition boundary,Intent to deceive signal.
+Merriam-Webster simulated,dictionary,https://www.merriam-webster.com/dictionary/simulated,accessed,2026-05-13,simulation boundary,Useful bridge to appearance modeling.
+Merriam-Webster realistic,dictionary,https://www.merriam-webster.com/dictionary/realistic,accessed,2026-05-13,realistic bridge,Contains artificial skin example.
+Merriam-Webster authentic,dictionary,https://www.merriam-webster.com/dictionary/authentic,accessed,2026-05-13,contrast boundary,Authority and provenance nuance.
+Webster 1828 artificial,historical_dictionary,https://webstersdictionary1828.com/Dictionary/artificial,accessed,2026-05-13,historical split,Strong checkpoint.
+Webster 1828 genuine,historical_dictionary,https://webstersdictionary1828.com/Dictionary/genuine,accessed,2026-05-13,contrast history,Supports genuine as real and natural.
+Webster 1828 natural,historical_dictionary,https://webstersdictionary1828.com/Dictionary/Natural,accessed,2026-05-13,contrast history,Explicitly opposes artificial.
+Etymonline artificial,etymology_source,https://www.etymonline.com/word/artificial,accessed,2026-05-13,chronology pointer,Secondary but useful.
+Project Gutenberg Henry VI,book_snippet,https://www.gutenberg.org/files/1502/1502-h/1502-h.htm,accessed,2026-05-13,early fake adjacent usage,Artificial tears.
+Project Gutenberg Wollstonecraft,book_snippet,https://www.gutenberg.org/ebooks/67466.html.images,accessed,2026-05-13,early sincerity contrast,Artificial manners.
+Chronicling America food coloring,newspaper_snippet,https://chroniclingamerica.loc.gov/lccn/sn86090233/1904-05-12/ed-1/seq-6/,accessed,2026-05-13,consumer suspicion bridge,OCR caution.
+Chronicling America advertising,advertising_snippet,https://chroniclingamerica.loc.gov/lccn/sn83045462/1950-05-03/ed-1/seq-42/,accessed,2026-05-13,absence claim bridge,Page verification still desirable.
+21 CFR 101.22,regulatory_source,https://ecfr.io/Title-21/Section-101.22,accessed,2026-05-13,regulatory category,Background category evidence.
+FDA no artificial colors,regulatory_source,https://www.fda.gov/food/food-chemical-safety/letter-food-industry-no-artificial-colors-labeling-claims,accessed,2026-05-13,current absence claim,Official modern use.
+Times artificial flowers snippet,news_snippet,https://www.thetimes.com/uk/environment/article/alan-titchmarsh-flower-fake-srgk9k2hz,accessed,2026-05-13,realistic artificial collocation,Secondary modern usage only.

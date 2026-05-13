@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArtificialChart01SemanticChamber } from "@/components/artificial/chart01/ArtificialChart01SemanticChamber";
 import { ArtificialChart02PressureDiagram } from "@/components/artificial/chart02/ArtificialChart02PressureDiagram";
 import { ArtificialChart03InteractiveSuite } from "@/components/artificial/chart03/ArtificialChart03InteractiveSuite";
+import { ArtificialChart04APejorationOrbit } from "@/components/artificial/chart04/ArtificialChart04APejorationOrbit";
 import { Nav } from "@/components/Nav";
 import { PosterSection } from "@/components/PosterSection";
 
@@ -9,7 +10,7 @@ const artificialPanels = [
   { num: "01", label: "Semantic Chamber", color: "#050510" },
   { num: "02", label: "Under Pressure", color: "#1570AC" },
   { num: "03", label: "Mechanical Reproduction", color: "#A1081F" },
-  { num: "04", label: "Simulation", color: "#036C17" },
+  { num: "04", label: "Suspicion Orbit", color: "#036C17" },
 ];
 
 function ArtificialPanelProgress() {
@@ -120,6 +121,15 @@ export function ArtificialPoster() {
             intro="Part I maps the turn from artificial objects to reproducible experience: apparatus layers, manufactured senses, and authenticity pressure are read together against a burst-period timeline."
           >
             <ArtificialChart03InteractiveSuite />
+          </PosterSection>
+
+          <PosterSection
+            id="chart-4a-pejoration-trajectory"
+            eyebrow="04 / suspicion distance — part a"
+            title="Suspicion Orbit"
+            intro="Chart 4A reads negative charge as a field of returns: early feigned emotion and affected manners reappear later through food, synthetic, reformulation, and absence-claim language."
+          >
+            <ArtificialChart04APejorationOrbit />
           </PosterSection>
 
           <div className="mt-12 border-t border-ink/80 pb-12 pt-8">

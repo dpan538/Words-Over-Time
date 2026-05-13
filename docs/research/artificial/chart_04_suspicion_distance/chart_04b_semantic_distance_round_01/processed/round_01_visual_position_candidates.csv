@@ -1,0 +1,15 @@
+label,node_type,semantic_basin,suggested_visual_role,nearby_terms,opposite_or_contrast_terms,confidence,notes
+artificial,central_trajectory,made_constructed,central artificial trajectory,constructed; synthetic; imitation; simulated,natural; real; genuine,high,Should be drawn as a zone or path.
+synthetic,secondary_term,synthetic_material,constructed/synthetic attractor,manufactured; processed; artificial,natural; genuine,high,Material and additive pull.
+imitation,secondary_term,imitation_substitute,imitation/simulation attractor,fake; simulated; artificial,genuine; authentic; real,high,Copy branch.
+simulated,secondary_term,simulated_realistic,imitation/simulation attractor,realistic; imitation; artificial,real; natural,medium,Modeling and appearance bridge.
+realistic,secondary_term,simulated_realistic,realistic bridge term,simulated; artificial,real; genuine,high,Must sit between artificial and real not on top of real.
+fake,attractor_basin,fake_deceptive,fake/not-genuine attractor,sham; counterfeit; false,real; genuine; authentic,high,Strong attractor not synonym node.
+not genuine,boundary_label,fake_deceptive,fake/not-genuine attractor,fake; counterfeit; sham,genuine; authentic,high,Useful label for the deceptive edge.
+genuine,contrast_anchor,genuine_authentic,natural/real/genuine contrast field,authentic; real,artificial; fake,high,Sincerity and provenance anchor.
+authentic,contrast_anchor,genuine_authentic,natural/real/genuine contrast field,genuine; real,artificial; fake,high,Authority and verified origin anchor.
+natural,contrast_anchor,natural_real,natural/real/genuine contrast field,real; genuine,artificial; synthetic; processed,high,Origin and spontaneity field.
+real,contrast_anchor,natural_real,natural/real/genuine contrast field,genuine; authentic,artificial; imitation; fake,high,Separate from realistic.
+constructed,secondary_term,made_constructed,constructed/synthetic attractor,manufactured; artificial,natural; fake,high,Near the neutral core.
+processed,background_term,processed_consumer,processed consumer bridge,manufactured; synthetic; artificial,natural; minimally processed,medium,Useful lower right consumer field.
+manufactured,secondary_term,made_constructed,processed consumer bridge,constructed; processed; synthetic,natural; handmade,medium,Industrial build neighbor.

@@ -1,0 +1,32 @@
+search_phrase,source_checked,result_status,best_hit_or_note,year_or_period,source_url,confidence,notes
+artificial but realistic,web_search,partial_or_snippet_only,Found realistic artificial examples more readily than exact contrast phrase,2025-2026,https://www.merriam-webster.com/dictionary/realistic,medium,Usable for bridge logic.
+artificial but not fake,web_search,partial_or_snippet_only,Very sparse exact phrase; artificial satellite and regulatory uses function as clearer not fake evidence,current,https://www.wordreference.com/definition/artificial,medium,Concept supported better than exact string.
+artificial and fake,web_search,partial_or_snippet_only,Dictionary and thesaurus pages co list the terms but corpus pairing is sparse,current,https://www.merriam-webster.com/thesaurus/fake%21,low,Need broader corpus later.
+artificial or fake,web_search,not_found,No strong high confidence hit collected in this pass,current,,low,Sparse query.
+artificial vs fake,web_search,confirmed,Lead result cluster from dictionary comparison sources,current,https://www.merriam-webster.com/dictionary/artificial,medium,Definition boundary evidence is solid.
+artificial versus fake,web_search,partial_or_snippet_only,Variant query produced sparse direct hits,current,,low,Use same logic as vs.
+artificial not fake,web_search,partial_or_snippet_only,Sparse direct string; better evidenced by artificial satellite and label terms,current,https://www.wordreference.com/definition/artificial,medium,Conceptual not string match.
+artificial but genuine,web_search,not_found,No strong direct hit collected,current,,low,Sincere branch better supported by artificial manners as a contrast.
+artificial and genuine,web_search,partial_or_snippet_only,Mostly dictionary adjacency not strong corpus,current,https://www.wordreference.com/definition/genuine,low,Needs dedicated corpus sweep.
+artificial vs genuine,web_search,confirmed,Historical and modern dictionary contrast is clear,1787-2026,https://www.wordreference.com/definition/genuine,medium,Supported by artificial manners.
+artificial vs authentic,web_search,confirmed,Modern dictionary contrast is clear,current,https://www.merriam-webster.com/dictionary/authentic,medium,Authority and provenance nuance matters.
+artificial vs natural,web_search,confirmed,Strong dictionary and consumer label contrast,1828-2026,https://www.wordreference.com/definition/natural,high,One of the strongest contrasts.
+artificial versus natural,web_search,partial_or_snippet_only,Variant query unnecessary once core contrast was established,current,https://webstersdictionary1828.com/Dictionary/Natural,medium,Enough for this pass.
+artificial vs synthetic,web_search,confirmed,Dictionary boundary strong and existing lead file supports it,current,https://www.wordreference.com/definition/synthetic,high,Needs more corpus later.
+artificial versus synthetic,web_search,partial_or_snippet_only,Variant query sparse but semantic boundary is clear,current,https://www.wordreference.com/definition/synthetic,medium,Definition led.
+artificial vs real,web_search,confirmed,Real explicitly contrasts with artificial and imitation in dictionary evidence,current,https://www.wordreference.com/definition/real,high,Important contrast anchor.
+artificial versus real,web_search,partial_or_snippet_only,Variant query sparse,current,https://webstersdictionary1828.com/Home?word=real,medium,Boundary already clear.
+artificial vs realistic,web_search,confirmed,Realistic entry gives direct bridge example with artificial skin,current,https://www.merriam-webster.com/dictionary/realistic,high,Key 4B bridge.
+artificial versus realistic,web_search,partial_or_snippet_only,Variant query sparse,current,https://www.merriam-webster.com/dictionary/realistic,medium,Use bridge evidence instead.
+artificial imitation,web_search,confirmed,Historical and modern dictionaries allow imitation branch,current,https://www.wordreference.com/definition/imitation,medium,Good substitute basin support.
+artificial substitute,web_search,partial_or_snippet_only,Semantic fit is clear but exact phrase evidence is thin,current,https://www.etymonline.com/word/artificial,low,Needs broader corpus.
+artificial copy,web_search,not_found,No strong hit collected,current,,low,Not blocking.
+artificial simulation,web_search,not_found,No strong hit collected,current,,low,Prefer simulated rather than simulation.
+artificial but natural,web_search,not_found,Phrase appears contradictory and produced no useful evidence,current,,low,Not expected to be strong.
+realistic artificial,web_search,confirmed,Multiple hits around skin and flowers,current,https://www.merriam-webster.com/dictionary/realistic,high,Important for attractor field.
+realistic artificial flowers,web_search,confirmed,News and product snippets present,current,https://www.thetimes.com/uk/environment/article/alan-titchmarsh-flower-fake-srgk9k2hz,medium,Good modern collocation.
+realistic artificial teeth,web_search,partial_or_snippet_only,No stable source logged in this pass,current,,low,Could be checked in medical corpus later.
+realistic artificial skin,web_search,confirmed,Merriam-Webster example sentence,current,https://www.merriam-webster.com/dictionary/realistic,high,Strongest realistic bridge item.
+realistic artificial voice,web_search,partial_or_snippet_only,Sparse stable hit in this pass,current,,low,Future AI voice corpus could help.
+fake artificial,web_search,not_found,No useful high confidence evidence,current,,low,Term order likely not meaningful.
+synthetic artificial,web_search,partial_or_snippet_only,Some dictionary adjacency only,current,https://www.wordreference.com/definition/synthetic,low,Better as conceptual comparison than collocation.
