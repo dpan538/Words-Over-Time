@@ -1,0 +1,10 @@
+contrast_pair,status,strongest_source,source_type,chart4b_value,what_it_supports,notes
+artificial_vs_fake,confirmed,World-Architects artificial but not fake,web_snippet,high,Artificial is explicitly separable from fake while still able to drift toward fake adjacent uses,Best direct contrast result of round 02.
+artificial_vs_synthetic,confirmed,Headcount Coffee artificial and synthetic labels,web_snippet,high,Synthetic is a nearby material and source basin rather than the whole meaning of artificial,Modern and practically useful distinction.
+artificial_vs_imitation,partially_confirmed,WordReference imitation plus artificial substitute baseline,learner_dictionary,medium,Imitation is a copy and substitute branch not the whole field of artificial,Still more definition led than snippet led.
+artificial_vs_simulated,definition_only,Merriam-Webster simulated,dictionary,medium,Simulated is narrower and more representational than artificial,Direct contrast snippets remained sparse.
+artificial_vs_realistic,confirmed,Merriam-Webster realistic,dictionary,high,Artificial can be realistic without becoming real,Supported by multiple collocations this round.
+artificial_vs_genuine,partially_confirmed,Thoughts on the Education of Daughters,book_snippet,high,Artificial can oppose genuine in sincerity contexts,Still lacks many modern direct pairings.
+artificial_vs_authentic,partially_confirmed,World-Architects artificial but not fake,web_snippet,medium,Artificial can be paired with authenticity rather than deception,Direct exact contrast phrasing remains limited.
+artificial_vs_natural,confirmed,Webster 1828 and WordReference natural,historical_dictionary,high,Natural is still the strongest origin contrast field,Very well backed.
+artificial_vs_real,confirmed,WordReference real,learner_dictionary,high,Real remains a contrast anchor and should not be confused with realistic,Backed by realistic bridge evidence too.

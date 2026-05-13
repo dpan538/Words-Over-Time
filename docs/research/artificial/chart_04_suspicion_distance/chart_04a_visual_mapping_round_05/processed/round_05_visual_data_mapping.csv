@@ -1,0 +1,9 @@
+visual_item,visual_role,evidence_basis,status,hover_status,notes
+"large red/black dots","primary and secondary evidence anchors","round_03 and round_04 evidence tables","in_chart","hoverable","Primary anchors are stronger; secondary dots include unresolved leads."
+"moving orbit markers","trajectory direction cues","domain transfer / reactivation / absence acceleration interpretation from round_03 and round_04","in_chart","hoverable","Animated markers now report the path they represent."
+"outer black orbit shell","full Chart 4A suspicion field","round_03 and round_04 pejoration trajectory evidence","in_chart","hoverable","Binds early affective suspicion, industrial transfer, consumer transition, and absence claims."
+"left shell / halo","early negative potential","artificial tears, artificial manners, pre-1800 leads","in_chart","hoverable","Marks early false-emotion and affected-manners territory."
+"center shell","industrial bridge","artificial coloring, adulteration/pure/genuine gap","in_chart","hoverable","Represents 1850-1900 transition as mostly filled but still thin."
+"right shell / halo","absence and modern consumer field","no artificial flavoring, no artificial colors, no artificial ingredients, clean label leads","in_chart","hoverable","Represents strongest modern avoidance/exclusion evidence."
+"lower continuous timeline","timeline coverage backbone","1590s, 1773, 1787, 1828, 1856-1898, 1904, 1950, 1969-1976, 2015, 2025-2026 anchors","in_chart","hoverable","Added to reduce the earlier block-like period feeling."
+"fine dust field","Ngram/background signal atmosphere","existing Chart 4 Ngram frequency baseline","in_chart","hoverable_as_aggregate","Each dust field resolves to aggregate frequency/evidence-density context rather than individual citation claims."

@@ -1,0 +1,22 @@
+related_term,previous_closeness_score,updated_closeness_score,relation_type,strongest_new_evidence,confidence,notes
+fake,3,3,drift_target,Exact modern phrase artificial but not fake from World-Architects and LAW'S|EMPIRICS,high,New evidence strengthens non equivalence rather than increasing closeness.
+false,3,3,ambiguous,WordReference false remains broader than object authenticity alone,medium,No major update beyond caution.
+counterfeit,2,2,drift_target,Counterfeit still implies intentional deception more sharply than artificial,high,Closer to fake than to artificial.
+sham,2,2,drift_target,Artificial tears and manners still support only a narrowed overlap with sham,high,No reason to move score upward.
+synthetic,4,4,overlap,Headcount Coffee and other label explanations sharpen synthetic as a material subset,high,Strong near neighbor not synonym.
+imitation,4,4,near_synonym_contextual,Artificial substitute baseline plus realistic artificial objects support substitute logic,medium,Still object and copy specific.
+simulated,4,4,near_synonym_contextual,Merriam-Webster simulated plus realistic bridge evidence,medium,Still needs broader corpus.
+realistic,3,4,bridge_term,Realistic artificial skin voice plants eyes and teeth all reinforce the bridge,high,Round 02 is the main reason for the score increase.
+real,1,1,contrast,Real remains an actuality and genuineness anchor,high,Must stay distinct from realistic.
+genuine,1,1,contrast,Artificial manners still provides the clearest opposition,high,Sincerity and provenance field.
+authentic,1,1,contrast,Cormier's artificial but not fake with authenticity above all else supports contrast without collapse,medium,Good modern supplement.
+natural,1,1,contrast,Artificial continues to be defined against natural at core lexical and label levels,high,Strongest origin opposite.
+constructed,4,4,overlap,Neutral built branch remains central,high,No change needed.
+manufactured,4,4,overlap,Industrial production remains a close neighbor,medium,No strong new shift.
+processed,3,3,contextual_neighbor,Processed consumer zone remains adjacent through labeling discourse,medium,Negative charge does not make it fake.
+voice,n/a,3,exit_marker,Realistic artificial voice and artificial voice platforms,medium,Useful as a Chart 5 exit marker not a central 4B basin.
+language,n/a,3,exit_marker,Merriam-Webster artificial language entry and existing natural language pair,high,Clean language exit.
+life,n/a,3,exit_marker,Britannica artificial life emphasizes process and simulation,high,Strong exit lead.
+intelligence,n/a,3,exit_marker,Britannica artificial intelligence defines a major human cognition extension,high,Most visible exit term.
+consciousness,n/a,2,exit_marker,Artificial consciousness remains hypothetical and philosophically unstable,low,Keep at the edge.
+companion,n/a,2,exit_marker,Artificial companion points toward social presence but evidence is still light,low,Notes only for now.

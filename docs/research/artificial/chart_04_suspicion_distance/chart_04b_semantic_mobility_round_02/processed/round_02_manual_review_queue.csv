@@ -1,0 +1,8 @@
+priority,item,why_review,source_type_needed,current_status,blocking_level,notes
+1,direct artificial vs fake pairings,The exact phrase evidence improved but broader corpus pairings are still limited,book_snippet or newspaper_snippet,improved but still sparse,blocks_claim,Highest priority if stronger public prose is planned.
+1,realistic artificial intelligence,The phrase remains too sparse and easy to overread,academic_abstract or tech corpus,too_sparse,blocks_visual_planning,Do not force this into the map.
+1,artificial vs simulated,Definition evidence is decent but contextual usage is still thinner than other basins,technical corpus or academic snippet,definition_only,blocks_visual_planning,Would reduce uncertainty around the simulation branch.
+2,modern realistic artificial flowers and plants,Current evidence is product and lifestyle skewed,news_snippet or books snippet,usable but skewed,minor_risk,Would help balance consumer sources.
+2,artificial companion and consciousness,These exit terms quickly slide into Chart 5 or philosophy of mind,scholarly review or HRI source,light evidence,minor_risk,Keep them peripheral for now.
+2,artificial authenticity pairings,The Cormier phrase is valuable but singular,essay or design criticism snippet,partially_confirmed,minor_risk,Could strengthen authentic contrast.
+3,artificial and false exact phrases,This comparison remains low value and semantically broad,corpus snippet,weak,optional,Not essential unless writing later demands it.

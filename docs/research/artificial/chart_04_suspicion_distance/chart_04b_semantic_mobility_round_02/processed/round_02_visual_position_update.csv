@@ -1,0 +1,12 @@
+label,node_type,semantic_basin,suggested_visual_role,nearby_terms,opposite_or_contrast_terms,confidence,updated_from_round01,notes
+artificial,central_trajectory,made_constructed,central_trajectory,constructed; synthetic; imitation; simulated; realistic,natural / real; genuine / authentic,high,yes,Round 02 strengthens mobility more than point placement.
+made / constructed,primary_attractor,made_constructed,primary_attractor,manufactured; artificial,fake / not genuine; natural / real,high,yes,Still the safest home basin.
+synthetic,primary_attractor,synthetic_material,primary_attractor,processed / consumer; manufactured; artificial,natural / real; genuine / authentic,high,yes,Material basin is better defined now.
+imitation,secondary_attractor,imitation_substitute,secondary_attractor,fake / not genuine; simulated; realistic,genuine / authentic; real,medium,yes,Useful side basin for substitute objects.
+simulated,secondary_attractor,simulated_realistic,secondary_attractor,realistic; imitation; artificial,real; natural,medium,yes,Still slightly under evidenced compared with realistic.
+realistic,primary_attractor,simulated_realistic,primary_attractor,simulated; artificial,real; genuine / authentic,high,yes,Round 02 upgrades realistic into a stronger bridge basin.
+fake / not genuine,primary_attractor,fake_deceptive,primary_attractor,sham; counterfeit; false,real; genuine / authentic,high,yes,Should remain a drift target not a synonym node.
+natural / real,contrast_field,natural_real,contrast_field,genuine / authentic,artificial; synthetic; imitation,high,yes,Keep real separate from realistic even if visually adjacent.
+genuine / authentic,contrast_field,genuine_authentic,contrast_field,real; natural,fake / not genuine; artificial,high,yes,Distinct from natural_real but neighboring.
+processed / consumer,background_term,processed_consumer,background,synthetic; manufactured; artificial,natural / real,medium,yes,Useful lower weight bridge field.
+human process,exit_marker,human_process_exit,exit_zone,voice; language; life; intelligence,natural / real; genuine / authentic,high,yes,Only an exit marker toward Chart 5 not a main basin.

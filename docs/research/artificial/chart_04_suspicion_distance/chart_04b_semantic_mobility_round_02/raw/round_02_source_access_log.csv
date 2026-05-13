@@ -1,0 +1,24 @@
+source_name,source_type,url_or_path,access_status,date_accessed,used_for,notes
+round_01_definition_boundary_table.csv,local_processed_file,docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_definition_boundary_table.csv,read,2026-05-13,carry forward baseline,Round 02 update started from round 01 state.
+round_01_semantic_basin_assignment.csv,local_processed_file,docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_semantic_basin_assignment.csv,read,2026-05-13,carry forward basin model,Used for update logic.
+round_01_artificial_relation_matrix.csv,local_processed_file,docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_artificial_relation_matrix.csv,read,2026-05-13,relation score baseline,Updated from this matrix.
+round_01_context_evidence_table.csv,local_processed_file,docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_context_evidence_table.csv,read,2026-05-13,carry forward examples,Reused artificial tears and manners.
+round_01_collocation_status.csv,local_processed_file,docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_collocation_status.csv,read,2026-05-13,gap targeting,Used to focus round 02.
+round_01 notes,local_notes_set,docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/notes/,read,2026-05-13,interpretive continuity,Prevented overclaiming.
+round_04_chart4b_bridge_leads.csv,local_processed_file,docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/processed/round_04_chart4b_bridge_leads.csv,read,2026-05-13,lead reuse,Bridge starting points.
+round_03_pejoration_evidence_table.csv,local_processed_file,docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/processed/round_03_pejoration_evidence_table.csv,read,2026-05-13,4A link,Used for negative charge context.
+World-Architects,web_snippet,https://www.world-architects.com/en/architecture-news/film/artificial-but-not-fake,accessed,2026-05-13,direct contrast exact phrase,Key fake distinction source.
+LAW'S|EMPIRICS,web_snippet,https://legalempirics.com/10.25527/re.2019.07/why-lab-experiments-are-a-powerful-tool-for-legal-scholarship/,accessed,2026-05-13,direct contrast exact phrase,Process example.
+Headcount Coffee,web_snippet,https://www.headcountcoffee.com/blogs/food-drink/artificial-and-synthetic-food-labels-defined-by-source-rules,accessed,2026-05-13,artificial vs synthetic,Modern food label distinction.
+Dictionary.net compare page,comparison_page,https://www.dictionary.net/compare/artificial-vs-synthetic,accessed,2026-05-13,artificial vs synthetic,Secondary comparison source.
+Merriam-Webster realistic,dictionary,https://www.merriam-webster.com/dictionary/realistic,accessed,2026-05-13,realistic bridge,Artificial skin example.
+CDHP Dental Health Project,web_snippet,https://www.cdhp.org/can-you-get-realistic-fake-teeth/,accessed,2026-05-13,realistic teeth bridge,Near exact prosthetic evidence.
+IKEA FEJKA,product_page,https://www.ikea.com/us/en/p/fejka-artificial-potted-plant-indoor-outdoor-monstera-30493350/,accessed,2026-05-13,realistic plants bridge,Modern consumer collocation.
+Museum Mannequins,product_page,https://museummannequins.com/product/msh772-male-silicone-head/,accessed,2026-05-13,realistic eyes bridge,Product language but exact collocation.
+Bionity artificial limb,reference_source,https://www.bionity.com/en/encyclopedia/Artificial_limb.html,accessed,2026-05-13,realistic limb bridge,Embodiment lead.
+F6S Sonantic profile,web_snippet,https://www.f6s.com/company/sonantic,accessed,2026-05-13,realistic artificial voice and exit lead,Chart 4B to 5 bridge.
+Britannica artificial intelligence,reference_source,https://www.britannica.com/technology/artificial-intelligence,accessed,2026-05-13,human process exit,Strong cognition exit.
+Britannica artificial life,reference_source,https://www.britannica.com/technology/artificial-life,accessed,2026-05-13,human process exit,Strong process and life exit.
+Merriam-Webster artificial language,dictionary,https://www.merriam-webster.com/dictionary/artificial%20language,accessed,2026-05-13,human process exit,Clean language exit.
+NVIDIA artificial neural network,reference_source,https://developer.nvidia.com/discover/artificialneuralnetwork,accessed,2026-05-13,human process exit,Technical cognition lead.
+AI & Society artificial creativity,academic_abstract,https://link.springer.com/article/10.1007/s00146-025-02682-3,accessed,2026-05-13,human process exit,Notes only.

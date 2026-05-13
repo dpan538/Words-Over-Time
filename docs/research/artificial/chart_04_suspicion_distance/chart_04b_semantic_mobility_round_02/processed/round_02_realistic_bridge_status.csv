@@ -1,0 +1,10 @@
+collocation,status,strongest_source,source_type,meaning,confidence,chart4b_value,notes
+realistic artificial flowers,confirmed,round 01 modern flowers snippet,news_snippet,Lifelike resemblance without genuine natural origin,medium,medium,Useful but still a lighter source.
+realistic artificial teeth,confirmed,CDHP Dental Health Project,web_snippet,Prosthetic replacement can be crafted to look natural without being real teeth,medium,high,Good embodiment bridge.
+realistic artificial skin,confirmed,Merriam-Webster realistic,dictionary_example,Artificial can be realistic by mimicking real skin while remaining artificial,high,high,Strongest bridge evidence overall.
+realistic artificial eyes,confirmed,Museum Mannequins,product_page,Artificial eyes are marketed for lifelike display realism,medium,medium,Product skew but exact collocation.
+realistic artificial voice,confirmed,Sonantic profile and coverage,web_snippet,Artificial voice can sound expressive and realistic without becoming a human voice,medium,high,Important exit toward Chart 5.
+realistic artificial limb,confirmed,Bionity artificial limb,reference_source,Artificial limbs can be made to look more realistic through improved materials,medium,high,Good body continuation lead.
+realistic artificial plants,confirmed,IKEA FEJKA,product_page,Lifelike resemblance and zero maintenance are foregrounded rather than deception,high,medium,Very strong consumer collocation.
+realistic artificial intelligence,too_sparse,ScienceDirect AI generated faces abstract,academic_abstract,The nearest evidence concerns realistic artificially generated images rather than a stable realistic artificial intelligence phrase,low,low,Not ready for core use.
+artificial but realistic,partially_confirmed,Merriam-Webster realistic,dictionary_example,The exact string is sparse but the semantic pattern is well supported by artificial skin and related collocations,high,high,Strong concept even without many exact phrase hits.
