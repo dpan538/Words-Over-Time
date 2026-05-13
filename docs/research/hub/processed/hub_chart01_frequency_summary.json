@@ -1,0 +1,50 @@
+{
+  "word": "hub",
+  "chart": "chart01",
+  "generated_at": "2026-05-13T08:02:15.592200Z",
+  "generated_by_script": "scripts/process_hub_chart01_frequency.py",
+  "main_question": "Did hub lose its original mechanical sense or become semantically backgrounded by later meanings?",
+  "data_answer_preliminary": {
+    "mechanical_core_survives": true,
+    "mechanical_core_status": "backgrounded",
+    "later_semantic_groups_expand": true,
+    "dominant_modern_groups": [
+      "institutional_cluster",
+      "transport_routing",
+      "central_place"
+    ],
+    "important_caution": "This is a proxy-frequency answer, not final chart interpretation. Mechanical survival and semantic dominance are different questions."
+  },
+  "strongest_supported_observations": [
+    "Mechanical-core queries remain present in the modern bucket with status 'backgrounded'.",
+    "The strongest early-period group is mechanical_core in the visibility index.",
+    "The strongest modern-period groups are institutional_cluster, transport_routing, central_place."
+  ],
+  "observations_requiring_caution": [
+    "Group sums combine semantic proxies and should not be read as exact sense counts.",
+    "Regional hub, global hub, cultural hub, and community hub are ambiguous without context.",
+    "Hubcap and hub cap are related mechanical compounds, not identical to hub itself.",
+    "Modern digital/platform terms are often sparse before 2000."
+  ],
+  "not_supported_by_data": [
+    "The data does not support saying the mechanical sense disappeared.",
+    "The data does not support treating raw Ngram first appearance as a first attestation.",
+    "The data does not prove that all centrality/control interpretations are lexical facts."
+  ],
+  "recommended_chart01_data_inputs": [
+    "hub_chart01_semantic_frequency_series.json",
+    "hub_chart01_frequency_by_period.json",
+    "hub_chart01_semantic_visibility_index.json",
+    "hub_chart01_query_quality_flags.json",
+    "hub_evidence_quality_upgrade.json",
+    "hub_strengthened_attestations.json"
+  ],
+  "quality_flag_counts": {
+    "usable_trend": 28,
+    "strong_trend": 7,
+    "failed": 2,
+    "noisy_query": 3,
+    "sparse_presence": 18,
+    "ambiguous_sense": 4
+  }
+}

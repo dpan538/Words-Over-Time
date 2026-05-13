@@ -1,0 +1,1080 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart": "chart01",
+    "generated_at": "2026-05-13T08:02:15.592194Z",
+    "generated_by_script": "scripts/process_hub_chart01_frequency.py",
+    "purpose": "preprocessing aid for semantic visibility by period"
+  },
+  "periods": [
+    {
+      "period_id": "p1_pre_1850",
+      "period_label": "Before 1850",
+      "ranked_groups": [
+        {
+          "semantic_group": "mechanical_core",
+          "visibility_score": 0.0003880302,
+          "rank": 1,
+          "main_contributing_queries": [
+            {
+              "query": "hub of the wheel",
+              "mean_value": 0.00223875
+            },
+            {
+              "query": "hub of a wheel",
+              "mean_value": 0.00085092
+            },
+            {
+              "query": "wheel hub",
+              "mean_value": 0.00069961
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "transport_routing",
+          "visibility_score": 1.32243e-05,
+          "rank": 2,
+          "main_contributing_queries": [
+            {
+              "query": "logistics hub",
+              "mean_value": 6.464e-05
+            },
+            {
+              "query": "regional hub",
+              "mean_value": 5.171e-05
+            },
+            {
+              "query": "hub-and-spoke",
+              "mean_value": 3.064e-05
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "central_place",
+          "visibility_score": 8.1021e-06,
+          "rank": 3,
+          "main_contributing_queries": [
+            {
+              "query": "commercial hub",
+              "mean_value": 5.171e-05
+            },
+            {
+              "query": "hub of commerce",
+              "mean_value": 1.31e-05
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "institutional_cluster",
+          "visibility_score": 7.5616e-06,
+          "rank": 4,
+          "main_contributing_queries": [
+            {
+              "query": "financial hub",
+              "mean_value": 2.927e-05
+            },
+            {
+              "query": "business hub",
+              "mean_value": 2.586e-05
+            },
+            {
+              "query": "innovation hub",
+              "mean_value": 1.293e-05
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "digital_platform",
+          "visibility_score": 5.9231e-06,
+          "rank": 5,
+          "main_contributing_queries": [
+            {
+              "query": "community hub",
+              "mean_value": 5.331e-05
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "network_system",
+          "visibility_score": 0.0,
+          "rank": 6,
+          "main_contributing_queries": [],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        }
+      ],
+      "mechanical_core_status": {
+        "present": true,
+        "visibility_rank": 1,
+        "absolute_signal": 0.0003880302,
+        "relative_signal": 0.9176733682,
+        "status": "dominant",
+        "notes": "Status is a preprocessing aid. It distinguishes survival/presence from semantic dominance."
+      }
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "period_label": "1850-1899",
+      "ranked_groups": [
+        {
+          "semantic_group": "mechanical_core",
+          "visibility_score": 0.0110666641,
+          "rank": 1,
+          "main_contributing_queries": [
+            {
+              "query": "hub of the wheel",
+              "mean_value": 0.05960238
+            },
+            {
+              "query": "wheel hub",
+              "mean_value": 0.03998561
+            },
+            {
+              "query": "hub of a wheel",
+              "mean_value": 0.01232863
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "transport_routing",
+          "visibility_score": 0.0010241037,
+          "rank": 2,
+          "main_contributing_queries": [
+            {
+              "query": "hub and spoke",
+              "mean_value": 0.0138963
+            },
+            {
+              "query": "hub spoke",
+              "mean_value": 0.00015028
+            },
+            {
+              "query": "railroad hub",
+              "mean_value": 0.00013581
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "central_place",
+          "visibility_score": 3.69486e-05,
+          "rank": 3,
+          "main_contributing_queries": [
+            {
+              "query": "commercial hub",
+              "mean_value": 0.00010088
+            },
+            {
+              "query": "city hub",
+              "mean_value": 5.871e-05
+            },
+            {
+              "query": "hub of trade",
+              "mean_value": 5.12e-05
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "institutional_cluster",
+          "visibility_score": 7.4701e-06,
+          "rank": 4,
+          "main_contributing_queries": [
+            {
+              "query": "financial hub",
+              "mean_value": 5.968e-05
+            },
+            {
+              "query": "business hub",
+              "mean_value": 3.78e-06
+            },
+            {
+              "query": "cultural hub",
+              "mean_value": 3.78e-06
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "network_system",
+          "visibility_score": 0.0,
+          "rank": 5,
+          "main_contributing_queries": [],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "digital_platform",
+          "visibility_score": 0.0,
+          "rank": 6,
+          "main_contributing_queries": [],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        }
+      ],
+      "mechanical_core_status": {
+        "present": true,
+        "visibility_rank": 1,
+        "absolute_signal": 0.0110666641,
+        "relative_signal": 0.9119484155,
+        "status": "dominant",
+        "notes": "Status is a preprocessing aid. It distinguishes survival/presence from semantic dominance."
+      }
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "period_label": "1900-1945",
+      "ranked_groups": [
+        {
+          "semantic_group": "mechanical_core",
+          "visibility_score": 0.0282115562,
+          "rank": 1,
+          "main_contributing_queries": [
+            {
+              "query": "wheel hub",
+              "mean_value": 0.11384975
+            },
+            {
+              "query": "hub cap",
+              "mean_value": 0.06604357
+            },
+            {
+              "query": "hub of the wheel",
+              "mean_value": 0.06111301
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "transport_routing",
+          "visibility_score": 0.000727377,
+          "rank": 2,
+          "main_contributing_queries": [
+            {
+              "query": "hub and spoke",
+              "mean_value": 0.00768503
+            },
+            {
+              "query": "railroad hub",
+              "mean_value": 0.00049982
+            },
+            {
+              "query": "transit hub",
+              "mean_value": 0.00039514
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "central_place",
+          "visibility_score": 0.0006206361,
+          "rank": 3,
+          "main_contributing_queries": [
+            {
+              "query": "hub of activity",
+              "mean_value": 0.0011192
+            },
+            {
+              "query": "commercial hub",
+              "mean_value": 0.00108004
+            },
+            {
+              "query": "hub of commerce",
+              "mean_value": 0.00094598
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "institutional_cluster",
+          "visibility_score": 0.0002356869,
+          "rank": 4,
+          "main_contributing_queries": [
+            {
+              "query": "financial hub",
+              "mean_value": 0.00096566
+            },
+            {
+              "query": "business hub",
+              "mean_value": 0.00075114
+            },
+            {
+              "query": "cultural hub",
+              "mean_value": 0.00031336
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "network_system",
+          "visibility_score": 1.14521e-05,
+          "rank": 5,
+          "main_contributing_queries": [
+            {
+              "query": "communication hub",
+              "mean_value": 6.182e-05
+            },
+            {
+              "query": "USB hub",
+              "mean_value": 2.069e-05
+            },
+            {
+              "query": "network hub",
+              "mean_value": 1.169e-05
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "digital_platform",
+          "visibility_score": 9.7519e-06,
+          "rank": 6,
+          "main_contributing_queries": [
+            {
+              "query": "data hub",
+              "mean_value": 4.525e-05
+            },
+            {
+              "query": "community hub",
+              "mean_value": 2.393e-05
+            },
+            {
+              "query": "platform hub",
+              "mean_value": 1.11e-05
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        }
+      ],
+      "mechanical_core_status": {
+        "present": true,
+        "visibility_rank": 1,
+        "absolute_signal": 0.0282115562,
+        "relative_signal": 0.9461738922,
+        "status": "dominant",
+        "notes": "Status is a preprocessing aid. It distinguishes survival/presence from semantic dominance."
+      }
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "period_label": "1946-1979",
+      "ranked_groups": [
+        {
+          "semantic_group": "mechanical_core",
+          "visibility_score": 0.0182177627,
+          "rank": 1,
+          "main_contributing_queries": [
+            {
+              "query": "wheel hub",
+              "mean_value": 0.0605046
+            },
+            {
+              "query": "hub cap",
+              "mean_value": 0.04493612
+            },
+            {
+              "query": "hub assembly",
+              "mean_value": 0.02185753
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "central_place",
+          "visibility_score": 0.0023179491,
+          "rank": 2,
+          "main_contributing_queries": [
+            {
+              "query": "hub of activity",
+              "mean_value": 0.00695464
+            },
+            {
+              "query": "commercial hub",
+              "mean_value": 0.00510781
+            },
+            {
+              "query": "hub of commerce",
+              "mean_value": 0.00152877
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "transport_routing",
+          "visibility_score": 0.0008168443,
+          "rank": 3,
+          "main_contributing_queries": [
+            {
+              "query": "hub and spoke",
+              "mean_value": 0.00222351
+            },
+            {
+              "query": "hub-and-spoke",
+              "mean_value": 0.00213453
+            },
+            {
+              "query": "railroad hub",
+              "mean_value": 0.0021289
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "institutional_cluster",
+          "visibility_score": 0.0007761059,
+          "rank": 4,
+          "main_contributing_queries": [
+            {
+              "query": "financial hub",
+              "mean_value": 0.00252337
+            },
+            {
+              "query": "cultural hub",
+              "mean_value": 0.00229214
+            },
+            {
+              "query": "business hub",
+              "mean_value": 0.00192808
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "network_system",
+          "visibility_score": 0.0001128829,
+          "rank": 5,
+          "main_contributing_queries": [
+            {
+              "query": "communication hub",
+              "mean_value": 0.00058123
+            },
+            {
+              "query": "switching hub",
+              "mean_value": 0.00022746
+            },
+            {
+              "query": "network hub",
+              "mean_value": 0.00011997
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "digital_platform",
+          "visibility_score": 3.978e-05,
+          "rank": 6,
+          "main_contributing_queries": [
+            {
+              "query": "community hub",
+              "mean_value": 0.00015802
+            },
+            {
+              "query": "data hub",
+              "mean_value": 8.556e-05
+            },
+            {
+              "query": "digital hub",
+              "mean_value": 2.876e-05
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        }
+      ],
+      "mechanical_core_status": {
+        "present": true,
+        "visibility_rank": 1,
+        "absolute_signal": 0.0182177627,
+        "relative_signal": 0.81762475,
+        "status": "dominant",
+        "notes": "Status is a preprocessing aid. It distinguishes survival/presence from semantic dominance."
+      }
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "period_label": "1980-1999",
+      "ranked_groups": [
+        {
+          "semantic_group": "mechanical_core",
+          "visibility_score": 0.0183532212,
+          "rank": 1,
+          "main_contributing_queries": [
+            {
+              "query": "wheel hub",
+              "mean_value": 0.06380943
+            },
+            {
+              "query": "hub assembly",
+              "mean_value": 0.03436572
+            },
+            {
+              "query": "hubcap",
+              "mean_value": 0.03019724
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "transport_routing",
+          "visibility_score": 0.0092542413,
+          "rank": 2,
+          "main_contributing_queries": [
+            {
+              "query": "hub-and-spoke",
+              "mean_value": 0.05097652
+            },
+            {
+              "query": "hub and spoke",
+              "mean_value": 0.03280539
+            },
+            {
+              "query": "regional hub",
+              "mean_value": 0.01540096
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "central_place",
+          "visibility_score": 0.00525527,
+          "rank": 3,
+          "main_contributing_queries": [
+            {
+              "query": "commercial hub",
+              "mean_value": 0.01485075
+            },
+            {
+              "query": "hub of activity",
+              "mean_value": 0.01337332
+            },
+            {
+              "query": "social hub",
+              "mean_value": 0.00438564
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "network_system",
+          "visibility_score": 0.0043586162,
+          "rank": 4,
+          "main_contributing_queries": [
+            {
+              "query": "Ethernet hub",
+              "mean_value": 0.01370631
+            },
+            {
+              "query": "switching hub",
+              "mean_value": 0.00869248
+            },
+            {
+              "query": "network hub",
+              "mean_value": 0.00764546
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "institutional_cluster",
+          "visibility_score": 0.0023558794,
+          "rank": 5,
+          "main_contributing_queries": [
+            {
+              "query": "financial hub",
+              "mean_value": 0.00731386
+            },
+            {
+              "query": "business hub",
+              "mean_value": 0.0070327
+            },
+            {
+              "query": "cultural hub",
+              "mean_value": 0.00551371
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "digital_platform",
+          "visibility_score": 0.0004774463,
+          "rank": 6,
+          "main_contributing_queries": [
+            {
+              "query": "data hub",
+              "mean_value": 0.00158873
+            },
+            {
+              "query": "media hub",
+              "mean_value": 0.0013373
+            },
+            {
+              "query": "community hub",
+              "mean_value": 0.0006633
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        }
+      ],
+      "mechanical_core_status": {
+        "present": true,
+        "visibility_rank": 1,
+        "absolute_signal": 0.0183532212,
+        "relative_signal": 0.458204229,
+        "status": "dominant",
+        "notes": "Status is a preprocessing aid. It distinguishes survival/presence from semantic dominance."
+      }
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "period_label": "2000-2009",
+      "ranked_groups": [
+        {
+          "semantic_group": "transport_routing",
+          "visibility_score": 0.0215132782,
+          "rank": 1,
+          "main_contributing_queries": [
+            {
+              "query": "hub-and-spoke",
+              "mean_value": 0.11012224
+            },
+            {
+              "query": "hub and spoke",
+              "mean_value": 0.04925749
+            },
+            {
+              "query": "regional hub",
+              "mean_value": 0.03835234
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "mechanical_core",
+          "visibility_score": 0.0148517118,
+          "rank": 2,
+          "main_contributing_queries": [
+            {
+              "query": "hubcap",
+              "mean_value": 0.04456534
+            },
+            {
+              "query": "wheel hub",
+              "mean_value": 0.0434512
+            },
+            {
+              "query": "hub assembly",
+              "mean_value": 0.0131546
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "central_place",
+          "visibility_score": 0.0105704664,
+          "rank": 3,
+          "main_contributing_queries": [
+            {
+              "query": "commercial hub",
+              "mean_value": 0.0324897
+            },
+            {
+              "query": "hub of activity",
+              "mean_value": 0.0239739
+            },
+            {
+              "query": "social hub",
+              "mean_value": 0.01265029
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "network_system",
+          "visibility_score": 0.0100598828,
+          "rank": 4,
+          "main_contributing_queries": [
+            {
+              "query": "USB hub",
+              "mean_value": 0.02808083
+            },
+            {
+              "query": "Ethernet hub",
+              "mean_value": 0.02055104
+            },
+            {
+              "query": "network hub",
+              "mean_value": 0.01827614
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "institutional_cluster",
+          "visibility_score": 0.0092548338,
+          "rank": 5,
+          "main_contributing_queries": [
+            {
+              "query": "financial hub",
+              "mean_value": 0.02382224
+            },
+            {
+              "query": "business hub",
+              "mean_value": 0.02320063
+            },
+            {
+              "query": "cultural hub",
+              "mean_value": 0.0144726
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "digital_platform",
+          "visibility_score": 0.0040596919,
+          "rank": 6,
+          "main_contributing_queries": [
+            {
+              "query": "digital hub",
+              "mean_value": 0.0104291
+            },
+            {
+              "query": "data hub",
+              "mean_value": 0.00918535
+            },
+            {
+              "query": "media hub",
+              "mean_value": 0.00704093
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        }
+      ],
+      "mechanical_core_status": {
+        "present": true,
+        "visibility_rank": 2,
+        "absolute_signal": 0.0148517118,
+        "relative_signal": 0.2112322619,
+        "status": "visible",
+        "notes": "Status is a preprocessing aid. It distinguishes survival/presence from semantic dominance."
+      }
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "period_label": "2010-2019",
+      "ranked_groups": [
+        {
+          "semantic_group": "transport_routing",
+          "visibility_score": 0.0229453021,
+          "rank": 1,
+          "main_contributing_queries": [
+            {
+              "query": "hub-and-spoke",
+              "mean_value": 0.10690264
+            },
+            {
+              "query": "transport hub",
+              "mean_value": 0.0536254
+            },
+            {
+              "query": "hub and spoke",
+              "mean_value": 0.04722204
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "institutional_cluster",
+          "visibility_score": 0.0149072684,
+          "rank": 2,
+          "main_contributing_queries": [
+            {
+              "query": "cultural hub",
+              "mean_value": 0.023141
+            },
+            {
+              "query": "innovation hub",
+              "mean_value": 0.02154487
+            },
+            {
+              "query": "financial hub",
+              "mean_value": 0.02129172
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "central_place",
+          "visibility_score": 0.013779728,
+          "rank": 3,
+          "main_contributing_queries": [
+            {
+              "query": "commercial hub",
+              "mean_value": 0.03795854
+            },
+            {
+              "query": "hub of activity",
+              "mean_value": 0.02983535
+            },
+            {
+              "query": "social hub",
+              "mean_value": 0.0236074
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "mechanical_core",
+          "visibility_score": 0.0117434577,
+          "rank": 4,
+          "main_contributing_queries": [
+            {
+              "query": "hubcap",
+              "mean_value": 0.0478461
+            },
+            {
+              "query": "wheel hub",
+              "mean_value": 0.03339629
+            },
+            {
+              "query": "hub of the wheel",
+              "mean_value": 0.01318533
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "digital_platform",
+          "visibility_score": 0.0080258449,
+          "rank": 5,
+          "main_contributing_queries": [
+            {
+              "query": "data hub",
+              "mean_value": 0.02421776
+            },
+            {
+              "query": "community hub",
+              "mean_value": 0.01194735
+            },
+            {
+              "query": "digital hub",
+              "mean_value": 0.01007475
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "network_system",
+          "visibility_score": 0.0067570053,
+          "rank": 6,
+          "main_contributing_queries": [
+            {
+              "query": "USB hub",
+              "mean_value": 0.02413561
+            },
+            {
+              "query": "network hub",
+              "mean_value": 0.01102306
+            },
+            {
+              "query": "communication hub",
+              "mean_value": 0.00817532
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        }
+      ],
+      "mechanical_core_status": {
+        "present": true,
+        "visibility_rank": 4,
+        "absolute_signal": 0.0117434577,
+        "relative_signal": 0.150251626,
+        "status": "backgrounded",
+        "notes": "Status is a preprocessing aid. It distinguishes survival/presence from semantic dominance."
+      }
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "period_label": "2020-2022",
+      "ranked_groups": [
+        {
+          "semantic_group": "institutional_cluster",
+          "visibility_score": 0.0375639503,
+          "rank": 1,
+          "main_contributing_queries": [
+            {
+              "query": "education hub",
+              "mean_value": 0.1217509
+            },
+            {
+              "query": "innovation hub",
+              "mean_value": 0.07352103
+            },
+            {
+              "query": "cultural hub",
+              "mean_value": 0.03122379
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "transport_routing",
+          "visibility_score": 0.0229058176,
+          "rank": 2,
+          "main_contributing_queries": [
+            {
+              "query": "hub-and-spoke",
+              "mean_value": 0.10782686
+            },
+            {
+              "query": "transport hub",
+              "mean_value": 0.04666375
+            },
+            {
+              "query": "hub and spoke",
+              "mean_value": 0.04201593
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "central_place",
+          "visibility_score": 0.0138231967,
+          "rank": 3,
+          "main_contributing_queries": [
+            {
+              "query": "commercial hub",
+              "mean_value": 0.03985486
+            },
+            {
+              "query": "hub of activity",
+              "mean_value": 0.02622262
+            },
+            {
+              "query": "social hub",
+              "mean_value": 0.02262204
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "digital_platform",
+          "visibility_score": 0.0128073459,
+          "rank": 4,
+          "main_contributing_queries": [
+            {
+              "query": "data hub",
+              "mean_value": 0.03830628
+            },
+            {
+              "query": "community hub",
+              "mean_value": 0.02485689
+            },
+            {
+              "query": "digital hub",
+              "mean_value": 0.01451582
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "mechanical_core",
+          "visibility_score": 0.0082811512,
+          "rank": 5,
+          "main_contributing_queries": [
+            {
+              "query": "hubcap",
+              "mean_value": 0.03081679
+            },
+            {
+              "query": "wheel hub",
+              "mean_value": 0.02292792
+            },
+            {
+              "query": "hub of the wheel",
+              "mean_value": 0.01129475
+            }
+          ],
+          "confidence": "high",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        },
+        {
+          "semantic_group": "network_system",
+          "visibility_score": 0.0049498148,
+          "rank": 6,
+          "main_contributing_queries": [
+            {
+              "query": "network hub",
+              "mean_value": 0.01170899
+            },
+            {
+              "query": "communication hub",
+              "mean_value": 0.01005198
+            },
+            {
+              "query": "USB hub",
+              "mean_value": 0.00886693
+            }
+          ],
+          "confidence": "medium",
+          "interpretation_note": "Visibility score is a proxy based on grouped phrase frequency, not a final semantic claim."
+        }
+      ],
+      "mechanical_core_status": {
+        "present": true,
+        "visibility_rank": 5,
+        "absolute_signal": 0.0082811512,
+        "relative_signal": 0.0825380827,
+        "status": "backgrounded",
+        "notes": "Status is a preprocessing aid. It distinguishes survival/presence from semantic dominance."
+      }
+    }
+  ]
+}

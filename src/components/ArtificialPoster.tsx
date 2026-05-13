@@ -3,6 +3,7 @@ import { ArtificialChart01SemanticChamber } from "@/components/artificial/chart0
 import { ArtificialChart02PressureDiagram } from "@/components/artificial/chart02/ArtificialChart02PressureDiagram";
 import { ArtificialChart03InteractiveSuite } from "@/components/artificial/chart03/ArtificialChart03InteractiveSuite";
 import { ArtificialChart04APejorationOrbit } from "@/components/artificial/chart04/ArtificialChart04APejorationOrbit";
+import { ArtificialChart04BSemanticAttractor } from "@/components/artificial/chart04/ArtificialChart04BSemanticAttractor";
 import { Nav } from "@/components/Nav";
 import { PosterSection } from "@/components/PosterSection";
 
@@ -10,7 +11,7 @@ const artificialPanels = [
   { num: "01", label: "Semantic Chamber", color: "#050510" },
   { num: "02", label: "Under Pressure", color: "#1570AC" },
   { num: "03", label: "Mechanical Reproduction", color: "#A1081F" },
-  { num: "04", label: "Suspicion Orbit", color: "#036C17" },
+  { num: "04", label: "Suspicion / Distance", color: "#036C17" },
 ];
 
 function ArtificialPanelProgress() {
@@ -124,12 +125,21 @@ export function ArtificialPoster() {
           </PosterSection>
 
           <PosterSection
-            id="chart-4a-pejoration-trajectory"
-            eyebrow="04 / suspicion distance — part a"
+            id="chart-4-artificial-suspicion"
+            eyebrow="04 / artificial suspicion"
             title="Suspicion Orbit"
-            intro="Chart 4A reads negative charge as a field of returns: early feigned emotion and affected manners reappear later through food, synthetic, reformulation, and absence-claim language."
+            intro="Artificial gathers negative charge through returning contexts: feigned emotion and affected manners later reappear through food trust, reformulation, and absence-claim language."
           >
             <ArtificialChart04APejorationOrbit />
+          </PosterSection>
+
+          <PosterSection
+            id="chart-4-artificial-semantic-distance"
+            eyebrow="04 / semantic distance"
+            title="Semantic Attractor"
+            intro="A semantic field for artificial as made, synthetic, simulated, realistic, and fake-adjacent without collapsing those relations into one synonym map."
+          >
+            <ArtificialChart04BSemanticAttractor />
           </PosterSection>
 
           <div className="mt-12 border-t border-ink/80 pb-12 pt-8">

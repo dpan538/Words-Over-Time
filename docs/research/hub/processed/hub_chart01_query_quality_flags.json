@@ -1,0 +1,1072 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart": "chart01",
+    "generated_at": "2026-05-13T08:02:15.570870Z",
+    "generated_by_script": "scripts/process_hub_chart01_frequency.py"
+  },
+  "flag_counts": {
+    "usable_trend": 28,
+    "strong_trend": 7,
+    "failed": 2,
+    "noisy_query": 3,
+    "sparse_presence": 18,
+    "ambiguous_sense": 4
+  },
+  "flags": [
+    {
+      "query_id": "hub_chart01_query_001",
+      "query": "hub",
+      "semantic_group": "total_background",
+      "quality_flag": "usable_trend",
+      "reason": "Background denominator only, not a semantic sense.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1800,
+        "last_nonzero_year": 2022,
+        "peak_year": 1872,
+        "peak_frequency_per_million": 11.26854489,
+        "nonzero_year_count": 223,
+        "mean_frequency_per_million": 3.22789476
+      },
+      "notes": "Background only, not a sense."
+    },
+    {
+      "query_id": "hub_chart01_query_002",
+      "query": "hubs",
+      "semantic_group": "total_background",
+      "quality_flag": "usable_trend",
+      "reason": "Background denominator only, not a semantic sense.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1800,
+        "last_nonzero_year": 2022,
+        "peak_year": 2021,
+        "peak_frequency_per_million": 1.64315703,
+        "nonzero_year_count": 222,
+        "mean_frequency_per_million": 0.57825985
+      },
+      "notes": "Background only, not a sense."
+    },
+    {
+      "query_id": "hub_chart01_query_003",
+      "query": "wheel hub",
+      "semantic_group": "mechanical_core",
+      "quality_flag": "strong_trend",
+      "reason": "Sustained frequency signal suitable for a main trend layer.",
+      "recommended_use": "main_series",
+      "stats": {
+        "first_nonzero_year": 1832,
+        "last_nonzero_year": 2022,
+        "peak_year": 1872,
+        "peak_frequency_per_million": 0.24601964,
+        "nonzero_year_count": 181,
+        "mean_frequency_per_million": 0.05130921
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_004",
+      "query": "hub of a wheel",
+      "semantic_group": "mechanical_core",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1800,
+        "last_nonzero_year": 2022,
+        "peak_year": 1908,
+        "peak_frequency_per_million": 0.03840294,
+        "nonzero_year_count": 193,
+        "mean_frequency_per_million": 0.01051862
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_005",
+      "query": "hub of the wheel",
+      "semantic_group": "mechanical_core",
+      "quality_flag": "strong_trend",
+      "reason": "Sustained frequency signal suitable for a main trend layer.",
+      "recommended_use": "main_series",
+      "stats": {
+        "first_nonzero_year": 1810,
+        "last_nonzero_year": 2022,
+        "peak_year": 1872,
+        "peak_frequency_per_million": 0.19623241,
+        "nonzero_year_count": 196,
+        "mean_frequency_per_million": 0.03156494
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_006",
+      "query": "wheel-hub",
+      "semantic_group": "mechanical_core",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped.",
+      "recommended_use": "exclude_from_chart",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "mean_frequency_per_million": 0.0
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_007",
+      "query": "axle hub",
+      "semantic_group": "mechanical_core",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1823,
+        "last_nonzero_year": 2022,
+        "peak_year": 1949,
+        "peak_frequency_per_million": 0.04607077,
+        "nonzero_year_count": 144,
+        "mean_frequency_per_million": 0.0023504
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_008",
+      "query": "front hub",
+      "semantic_group": "mechanical_core",
+      "quality_flag": "strong_trend",
+      "reason": "Sustained frequency signal suitable for a main trend layer.",
+      "recommended_use": "main_series",
+      "stats": {
+        "first_nonzero_year": 1834,
+        "last_nonzero_year": 2022,
+        "peak_year": 2000,
+        "peak_frequency_per_million": 0.06141496,
+        "nonzero_year_count": 148,
+        "mean_frequency_per_million": 0.00634161
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_009",
+      "query": "rear hub",
+      "semantic_group": "mechanical_core",
+      "quality_flag": "strong_trend",
+      "reason": "Sustained frequency signal suitable for a main trend layer.",
+      "recommended_use": "main_series",
+      "stats": {
+        "first_nonzero_year": 1832,
+        "last_nonzero_year": 2022,
+        "peak_year": 1906,
+        "peak_frequency_per_million": 0.07820091,
+        "nonzero_year_count": 144,
+        "mean_frequency_per_million": 0.00844312
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_010",
+      "query": "bicycle hub",
+      "semantic_group": "mechanical_core",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1872,
+        "last_nonzero_year": 2022,
+        "peak_year": 1898,
+        "peak_frequency_per_million": 0.02403532,
+        "nonzero_year_count": 143,
+        "mean_frequency_per_million": 0.0016803
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_011",
+      "query": "hubcap",
+      "semantic_group": "mechanical_core",
+      "quality_flag": "noisy_query",
+      "reason": "Mechanical-adjacent compound; useful but should not dominate the core hub score.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1883,
+        "last_nonzero_year": 2022,
+        "peak_year": 2014,
+        "peak_frequency_per_million": 0.05755242,
+        "nonzero_year_count": 119,
+        "mean_frequency_per_million": 0.01033416
+      },
+      "notes": "Related mechanical compound; separated from core hub itself in quality flags. Mechanical-adjacent; do not let this dominate the core hub score."
+    },
+    {
+      "query_id": "hub_chart01_query_012",
+      "query": "hub cap",
+      "semantic_group": "mechanical_core",
+      "quality_flag": "noisy_query",
+      "reason": "Mechanical-adjacent compound; useful but should not dominate the core hub score.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1832,
+        "last_nonzero_year": 2022,
+        "peak_year": 1934,
+        "peak_frequency_per_million": 0.15969186,
+        "nonzero_year_count": 151,
+        "mean_frequency_per_million": 0.02378722
+      },
+      "notes": "Related mechanical compound; separated from core hub itself in quality flags. Mechanical-adjacent; do not let this dominate the core hub score."
+    },
+    {
+      "query_id": "hub_chart01_query_013",
+      "query": "hub assembly",
+      "semantic_group": "mechanical_core",
+      "quality_flag": "noisy_query",
+      "reason": "Mechanical-adjacent compound; useful but should not dominate the core hub score.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1865,
+        "last_nonzero_year": 2022,
+        "peak_year": 1944,
+        "peak_frequency_per_million": 0.06415041,
+        "nonzero_year_count": 114,
+        "mean_frequency_per_million": 0.00893961
+      },
+      "notes": "Mechanical-adjacent; do not let this dominate the core hub score."
+    },
+    {
+      "query_id": "hub_chart01_query_014",
+      "query": "hub of activity",
+      "semantic_group": "central_place",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1878,
+        "last_nonzero_year": 2022,
+        "peak_year": 2011,
+        "peak_frequency_per_million": 0.03413241,
+        "nonzero_year_count": 117,
+        "mean_frequency_per_million": 0.00525996
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_015",
+      "query": "hub of commerce",
+      "semantic_group": "central_place",
+      "quality_flag": "sparse_presence",
+      "reason": "Low signal; avoid trend claims.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1832,
+        "last_nonzero_year": 2022,
+        "peak_year": 1942,
+        "peak_frequency_per_million": 0.00705695,
+        "nonzero_year_count": 123,
+        "mean_frequency_per_million": 0.00118364
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_016",
+      "query": "hub of trade",
+      "semantic_group": "central_place",
+      "quality_flag": "sparse_presence",
+      "reason": "Low signal; avoid trend claims.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1883,
+        "last_nonzero_year": 2022,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.00609327,
+        "nonzero_year_count": 113,
+        "mean_frequency_per_million": 0.00083028
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_017",
+      "query": "hub of industry",
+      "semantic_group": "central_place",
+      "quality_flag": "sparse_presence",
+      "reason": "Too sparse for a reliable trend; useful only as a presence signal.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1906,
+        "last_nonzero_year": 2022,
+        "peak_year": 1956,
+        "peak_frequency_per_million": 0.00335411,
+        "nonzero_year_count": 115,
+        "mean_frequency_per_million": 0.0004736
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_018",
+      "query": "commercial hub",
+      "semantic_group": "central_place",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1843,
+        "last_nonzero_year": 2022,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.04390824,
+        "nonzero_year_count": 136,
+        "mean_frequency_per_million": 0.00606296
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_019",
+      "query": "social hub",
+      "semantic_group": "central_place",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1873,
+        "last_nonzero_year": 2022,
+        "peak_year": 2015,
+        "peak_frequency_per_million": 0.02660754,
+        "nonzero_year_count": 120,
+        "mean_frequency_per_million": 0.00262924
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_020",
+      "query": "city hub",
+      "semantic_group": "central_place",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1885,
+        "last_nonzero_year": 2022,
+        "peak_year": 1988,
+        "peak_frequency_per_million": 0.01031734,
+        "nonzero_year_count": 118,
+        "mean_frequency_per_million": 0.00078753
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_021",
+      "query": "urban hub",
+      "semantic_group": "central_place",
+      "quality_flag": "sparse_presence",
+      "reason": "Low signal; avoid trend claims.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1882,
+        "last_nonzero_year": 2022,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.00770908,
+        "nonzero_year_count": 84,
+        "mean_frequency_per_million": 0.00069885
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_022",
+      "query": "transport hub",
+      "semantic_group": "transport_routing",
+      "quality_flag": "strong_trend",
+      "reason": "Sustained frequency signal suitable for a main trend layer.",
+      "recommended_use": "main_series",
+      "stats": {
+        "first_nonzero_year": 1843,
+        "last_nonzero_year": 2022,
+        "peak_year": 2010,
+        "peak_frequency_per_million": 0.06270535,
+        "nonzero_year_count": 92,
+        "mean_frequency_per_million": 0.00558545
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_023",
+      "query": "transit hub",
+      "semantic_group": "transport_routing",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1889,
+        "last_nonzero_year": 2022,
+        "peak_year": 2009,
+        "peak_frequency_per_million": 0.0345423,
+        "nonzero_year_count": 107,
+        "mean_frequency_per_million": 0.00265933
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_024",
+      "query": "railway hub",
+      "semantic_group": "transport_routing",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1868,
+        "last_nonzero_year": 2022,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.01016971,
+        "nonzero_year_count": 118,
+        "mean_frequency_per_million": 0.00107645
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_025",
+      "query": "railroad hub",
+      "semantic_group": "transport_routing",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1832,
+        "last_nonzero_year": 2022,
+        "peak_year": 2008,
+        "peak_frequency_per_million": 0.01572582,
+        "nonzero_year_count": 121,
+        "mean_frequency_per_million": 0.0015106
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_026",
+      "query": "airport hub",
+      "semantic_group": "transport_routing",
+      "quality_flag": "sparse_presence",
+      "reason": "Low signal; avoid trend claims.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.00512579,
+        "nonzero_year_count": 70,
+        "mean_frequency_per_million": 0.00054555
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_027",
+      "query": "airline hub",
+      "semantic_group": "transport_routing",
+      "quality_flag": "sparse_presence",
+      "reason": "Low signal; avoid trend claims.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.00809336,
+        "nonzero_year_count": 76,
+        "mean_frequency_per_million": 0.00088277
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_028",
+      "query": "shipping hub",
+      "semantic_group": "transport_routing",
+      "quality_flag": "sparse_presence",
+      "reason": "Low signal; avoid trend claims.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1890,
+        "last_nonzero_year": 2022,
+        "peak_year": 2009,
+        "peak_frequency_per_million": 0.00778206,
+        "nonzero_year_count": 89,
+        "mean_frequency_per_million": 0.00070727
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_029",
+      "query": "logistics hub",
+      "semantic_group": "transport_routing",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1843,
+        "last_nonzero_year": 2022,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.02470736,
+        "nonzero_year_count": 62,
+        "mean_frequency_per_million": 0.0017733
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_030",
+      "query": "regional hub",
+      "semantic_group": "transport_routing",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Phrase can belong to multiple semantic contexts without snippet filtering.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1843,
+        "last_nonzero_year": 2022,
+        "peak_year": 2003,
+        "peak_frequency_per_million": 0.04504371,
+        "nonzero_year_count": 83,
+        "mean_frequency_per_million": 0.00514055
+      },
+      "notes": "May be transport, economic, institutional, or broad-center."
+    },
+    {
+      "query_id": "hub_chart01_query_031",
+      "query": "global hub",
+      "semantic_group": "transport_routing",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Phrase can belong to multiple semantic contexts without snippet filtering.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1843,
+        "last_nonzero_year": 2022,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.02823682,
+        "nonzero_year_count": 59,
+        "mean_frequency_per_million": 0.00185154
+      },
+      "notes": "May be transport, economic, institutional, or broad-center."
+    },
+    {
+      "query_id": "hub_chart01_query_032",
+      "query": "hub and spoke",
+      "semantic_group": "transport_routing",
+      "quality_flag": "strong_trend",
+      "reason": "Sustained frequency signal suitable for a main trend layer.",
+      "recommended_use": "main_series",
+      "stats": {
+        "first_nonzero_year": 1856,
+        "last_nonzero_year": 2022,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.0596957,
+        "nonzero_year_count": 167,
+        "mean_frequency_per_million": 0.01287389
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_033",
+      "query": "hub-and-spoke",
+      "semantic_group": "transport_routing",
+      "quality_flag": "strong_trend",
+      "reason": "Sustained frequency signal suitable for a main trend layer.",
+      "recommended_use": "main_series",
+      "stats": {
+        "first_nonzero_year": 1832,
+        "last_nonzero_year": 2022,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.15271277,
+        "nonzero_year_count": 97,
+        "mean_frequency_per_million": 0.01615469
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_034",
+      "query": "hub spoke",
+      "semantic_group": "transport_routing",
+      "quality_flag": "sparse_presence",
+      "reason": "Too sparse for a reliable trend; useful only as a presence signal.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1859,
+        "last_nonzero_year": 2022,
+        "peak_year": 1906,
+        "peak_frequency_per_million": 0.00379504,
+        "nonzero_year_count": 105,
+        "mean_frequency_per_million": 0.00018396
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_035",
+      "query": "hub spoke system",
+      "semantic_group": "transport_routing",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped.",
+      "recommended_use": "exclude_from_chart",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "mean_frequency_per_million": 0.0
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_036",
+      "query": "network hub",
+      "semantic_group": "network_system",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 1999,
+        "peak_frequency_per_million": 0.02438265,
+        "nonzero_year_count": 64,
+        "mean_frequency_per_million": 0.00217778
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_037",
+      "query": "communication hub",
+      "semantic_group": "network_system",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2020,
+        "peak_frequency_per_million": 0.01123648,
+        "nonzero_year_count": 83,
+        "mean_frequency_per_million": 0.00104695
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_038",
+      "query": "hub node",
+      "semantic_group": "network_system",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1954,
+        "last_nonzero_year": 2022,
+        "peak_year": 2009,
+        "peak_frequency_per_million": 0.01144716,
+        "nonzero_year_count": 47,
+        "mean_frequency_per_million": 0.00078209
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_039",
+      "query": "Ethernet hub",
+      "semantic_group": "network_system",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1950,
+        "last_nonzero_year": 2022,
+        "peak_year": 1997,
+        "peak_frequency_per_million": 0.06002097,
+        "nonzero_year_count": 42,
+        "mean_frequency_per_million": 0.0024662
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_040",
+      "query": "internet hub",
+      "semantic_group": "network_system",
+      "quality_flag": "sparse_presence",
+      "reason": "Low signal; avoid trend claims.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2000,
+        "peak_frequency_per_million": 0.00689854,
+        "nonzero_year_count": 41,
+        "mean_frequency_per_million": 0.0003362
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_041",
+      "query": "telecom hub",
+      "semantic_group": "network_system",
+      "quality_flag": "sparse_presence",
+      "reason": "Too sparse for a reliable trend; useful only as a presence signal.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1979,
+        "last_nonzero_year": 2022,
+        "peak_year": 1995,
+        "peak_frequency_per_million": 0.00126206,
+        "nonzero_year_count": 34,
+        "mean_frequency_per_million": 3.896e-05
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_042",
+      "query": "server hub",
+      "semantic_group": "network_system",
+      "quality_flag": "sparse_presence",
+      "reason": "Too sparse for a reliable trend; useful only as a presence signal.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.00095765,
+        "nonzero_year_count": 35,
+        "mean_frequency_per_million": 6.44e-05
+      },
+      "notes": "Ngram signal is sparse; keep as a candidate but avoid interpretation without snippets."
+    },
+    {
+      "query_id": "hub_chart01_query_043",
+      "query": "USB hub",
+      "semantic_group": "network_system",
+      "quality_flag": "sparse_presence",
+      "reason": "Low signal; avoid trend claims.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 1999,
+        "peak_frequency_per_million": 0.0459627,
+        "nonzero_year_count": 38,
+        "mean_frequency_per_million": 0.00288792
+      },
+      "notes": "Modern technical device/network-adjacent sense."
+    },
+    {
+      "query_id": "hub_chart01_query_044",
+      "query": "switching hub",
+      "semantic_group": "network_system",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 1996,
+        "peak_frequency_per_million": 0.03718459,
+        "nonzero_year_count": 64,
+        "mean_frequency_per_million": 0.00128021
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_045",
+      "query": "business hub",
+      "semantic_group": "institutional_cluster",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1843,
+        "last_nonzero_year": 2022,
+        "peak_year": 2003,
+        "peak_frequency_per_million": 0.03220517,
+        "nonzero_year_count": 122,
+        "mean_frequency_per_million": 0.00317442
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_046",
+      "query": "financial hub",
+      "semantic_group": "institutional_cluster",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1836,
+        "last_nonzero_year": 2022,
+        "peak_year": 2006,
+        "peak_frequency_per_million": 0.04079248,
+        "nonzero_year_count": 135,
+        "mean_frequency_per_million": 0.00363429
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_047",
+      "query": "education hub",
+      "semantic_group": "institutional_cluster",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1901,
+        "last_nonzero_year": 2022,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.2307503,
+        "nonzero_year_count": 45,
+        "mean_frequency_per_million": 0.00252715
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_048",
+      "query": "research hub",
+      "semantic_group": "institutional_cluster",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.02708962,
+        "nonzero_year_count": 64,
+        "mean_frequency_per_million": 0.00108271
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_049",
+      "query": "knowledge hub",
+      "semantic_group": "institutional_cluster",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1901,
+        "last_nonzero_year": 2022,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.0313085,
+        "nonzero_year_count": 43,
+        "mean_frequency_per_million": 0.00128136
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_050",
+      "query": "innovation hub",
+      "semantic_group": "institutional_cluster",
+      "quality_flag": "sparse_presence",
+      "reason": "Low signal; avoid trend claims.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1843,
+        "last_nonzero_year": 2022,
+        "peak_year": 2021,
+        "peak_frequency_per_million": 0.09266494,
+        "nonzero_year_count": 37,
+        "mean_frequency_per_million": 0.00223578
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_051",
+      "query": "startup hub",
+      "semantic_group": "institutional_cluster",
+      "quality_flag": "sparse_presence",
+      "reason": "Too sparse for a reliable trend; useful only as a presence signal.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1994,
+        "last_nonzero_year": 2022,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.00399683,
+        "nonzero_year_count": 13,
+        "mean_frequency_per_million": 8.409e-05
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_052",
+      "query": "creative hub",
+      "semantic_group": "institutional_cluster",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1941,
+        "last_nonzero_year": 2022,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.02020641,
+        "nonzero_year_count": 57,
+        "mean_frequency_per_million": 0.00069806
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_053",
+      "query": "cultural hub",
+      "semantic_group": "institutional_cluster",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Phrase can belong to multiple semantic contexts without snippet filtering.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1891,
+        "last_nonzero_year": 2022,
+        "peak_year": 2021,
+        "peak_frequency_per_million": 0.03337853,
+        "nonzero_year_count": 107,
+        "mean_frequency_per_million": 0.00301622
+      },
+      "notes": "May be central_place or institutional_cluster; assigned to institutional_cluster for this pass."
+    },
+    {
+      "query_id": "hub_chart01_query_054",
+      "query": "digital hub",
+      "semantic_group": "digital_platform",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1950,
+        "last_nonzero_year": 2022,
+        "peak_year": 2002,
+        "peak_frequency_per_million": 0.01943596,
+        "nonzero_year_count": 48,
+        "mean_frequency_per_million": 0.00114084
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_055",
+      "query": "content hub",
+      "semantic_group": "digital_platform",
+      "quality_flag": "sparse_presence",
+      "reason": "Low signal; avoid trend claims.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1974,
+        "last_nonzero_year": 2022,
+        "peak_year": 2017,
+        "peak_frequency_per_million": 0.00764498,
+        "nonzero_year_count": 28,
+        "mean_frequency_per_million": 0.00021551
+      },
+      "notes": "Digital/content proxy; likely sparse before modern usage."
+    },
+    {
+      "query_id": "hub_chart01_query_056",
+      "query": "data hub",
+      "semantic_group": "digital_platform",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1901,
+        "last_nonzero_year": 2022,
+        "peak_year": 2010,
+        "peak_frequency_per_million": 0.05921896,
+        "nonzero_year_count": 57,
+        "mean_frequency_per_million": 0.00217809
+      },
+      "notes": "Digital/platform proxy; likely late and potentially noisy before modern usage."
+    },
+    {
+      "query_id": "hub_chart01_query_057",
+      "query": "resource hub",
+      "semantic_group": "digital_platform",
+      "quality_flag": "sparse_presence",
+      "reason": "Low signal; avoid trend claims.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1964,
+        "last_nonzero_year": 2022,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.00821571,
+        "nonzero_year_count": 43,
+        "mean_frequency_per_million": 0.00033427
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_058",
+      "query": "learning hub",
+      "semantic_group": "digital_platform",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2018,
+        "peak_frequency_per_million": 0.01563867,
+        "nonzero_year_count": 44,
+        "mean_frequency_per_million": 0.00060039
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_059",
+      "query": "media hub",
+      "semantic_group": "digital_platform",
+      "quality_flag": "usable_trend",
+      "reason": "Usable trend proxy with caution about semantic ambiguity.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1953,
+        "last_nonzero_year": 2022,
+        "peak_year": 2011,
+        "peak_frequency_per_million": 0.0171888,
+        "nonzero_year_count": 52,
+        "mean_frequency_per_million": 0.00094252
+      },
+      "notes": ""
+    },
+    {
+      "query_id": "hub_chart01_query_060",
+      "query": "platform hub",
+      "semantic_group": "digital_platform",
+      "quality_flag": "sparse_presence",
+      "reason": "Too sparse for a reliable trend; useful only as a presence signal.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1934,
+        "last_nonzero_year": 2022,
+        "peak_year": 1945,
+        "peak_frequency_per_million": 0.00038027,
+        "nonzero_year_count": 23,
+        "mean_frequency_per_million": 1.555e-05
+      },
+      "notes": "Ngram signal is sparse; keep as a candidate but avoid interpretation without snippets."
+    },
+    {
+      "query_id": "hub_chart01_query_061",
+      "query": "community hub",
+      "semantic_group": "digital_platform",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Phrase can belong to multiple semantic contexts without snippet filtering.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1802,
+        "last_nonzero_year": 2022,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.02908804,
+        "nonzero_year_count": 72,
+        "mean_frequency_per_million": 0.00116075
+      },
+      "notes": "May be institutional, digital, or social-place."
+    },
+    {
+      "query_id": "hub_chart01_query_062",
+      "query": "online hub",
+      "semantic_group": "digital_platform",
+      "quality_flag": "sparse_presence",
+      "reason": "Low signal; avoid trend claims.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1940,
+        "last_nonzero_year": 2022,
+        "peak_year": 2021,
+        "peak_frequency_per_million": 0.00589033,
+        "nonzero_year_count": 34,
+        "mean_frequency_per_million": 0.00031034
+      },
+      "notes": ""
+    }
+  ]
+}

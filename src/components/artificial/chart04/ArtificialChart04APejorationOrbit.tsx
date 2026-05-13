@@ -233,11 +233,11 @@ const secondaryEvidenceNodes: EvidenceNode[] = [
   { id: "smile", label: "artificial smile", year: "pre-1800 lead", domain: "false emotion", note: "Needs snippet hardening; useful as early social/emotional pejoration.", position: new THREE.Vector3(-3.34, 0.08, 0.64), color: FIRE, charge: 2, kind: "secondary" },
   { id: "sentiment", label: "artificial sentiment", year: "pre-1800 lead", domain: "false emotion", note: "Sparse phrase evidence; keep as review cue for false feeling language.", position: new THREE.Vector3(-2.72, 0.72, 1.08), color: FIRE, charge: 2, kind: "secondary" },
   { id: "passion", label: "artificial passion", year: "pre-1800 lead", domain: "false emotion", note: "Candidate early affective charge; needs manual snippet review.", position: new THREE.Vector3(-2.55, -0.12, -1.18), color: FIRE, charge: 2, kind: "secondary" },
-  { id: "politeness", label: "artificial politeness", year: "18th-19th c.", domain: "affected manners", note: "Social performance cluster; weaker than manners but important for domain transfer.", position: new THREE.Vector3(-2.12, 0.48, -0.92), color: INK, charge: 1, kind: "secondary" },
+  { id: "politeness", label: "artificial politeness", year: "18th-19th c.", domain: "affected manners", note: "Social performance cluster; weaker than manners but important for the move from social behavior into later consumer distrust.", position: new THREE.Vector3(-2.12, 0.48, -0.92), color: INK, charge: 1, kind: "secondary" },
   { id: "style", label: "artificial style", year: "19th c.", domain: "aesthetic style", note: "Aesthetic criticism bridge; not always negative, so marked lower charge.", position: new THREE.Vector3(-1.68, 0.88, 0.36), color: INK, charge: 1, kind: "secondary" },
   { id: "affected", label: "artificially affected", year: "pre-1800 lead", domain: "affected / insincere", note: "Direct bridge to affectedness; needs stronger lexical/snippet confirmation.", position: new THREE.Vector3(-1.28, -0.74, 1.02), color: FIRE, charge: 2, kind: "secondary" },
   { id: "affectation", label: "artificial affectation", year: "pre-1800 queued", domain: "affected manners", note: "Collection target for early affectedness; visible as a queued gap, not a hardened anchor.", position: new THREE.Vector3(-1.92, -0.94, -0.64), color: FIRE, charge: 2, kind: "secondary" },
-  { id: "false", label: "artificial and false", year: "pre-1800 queued", domain: "false / not genuine", note: "High-value phrase for early negative potential inside Chart 4A; still needs direct source hardening.", position: new THREE.Vector3(-0.98, 0.82, -0.78), color: INK, charge: 1, kind: "secondary" },
+  { id: "false", label: "artificial and false", year: "pre-1800 queued", domain: "false / not genuine", note: "High-value phrase for early negative potential; still needs direct source hardening.", position: new THREE.Vector3(-0.98, 0.82, -0.78), color: INK, charge: 1, kind: "secondary" },
   { id: "imitation", label: "artificial imitation", year: "1800-1900", domain: "imitation substitute", note: "Substitution and imitation context within the pejoration trajectory.", position: new THREE.Vector3(-0.52, 0.52, -1.08), color: INK, charge: 1, kind: "secondary" },
   { id: "genuine", label: "not genuine", year: "lexical checkpoint", domain: "false / not genuine", note: "Lexical checkpoint for early negative potential; not treated as proof that artificial equals false.", position: new THREE.Vector3(-0.22, -0.46, 0.96), color: INK, charge: 1, kind: "secondary" },
   { id: "colour", label: "artificial colour / color", year: "1850-1900", domain: "industrial synthetic", note: "Industrial and food-color bridge; stronger than broad synthetic alone.", position: new THREE.Vector3(0.72, 0.16, -1.18), color: INK, charge: 1, kind: "secondary" },
@@ -249,10 +249,10 @@ const secondaryEvidenceNodes: EvidenceNode[] = [
   { id: "sweeteners", label: "artificial sweeteners", year: "1960s-2000s", domain: "additive scrutiny", note: "Consumer/regulatory bridge; useful but should avoid health-risk claims.", position: new THREE.Vector3(2.02, -0.62, 0.98), color: FIRE, charge: 2, kind: "secondary" },
   { id: "no-colors-flavors", label: "no artificial colors or flavors", year: "1950-2019 queued", domain: "absence claim", note: "Decade-anchor target for late-century packaging and advertising continuity.", position: new THREE.Vector3(2.34, -0.88, -0.16), color: FIRE, charge: 3, kind: "secondary" },
   { id: "nothing", label: "nothing artificial", year: "late 20th-2026", domain: "absence claim", note: "Strong avoidance language; packaging/web evidence should be expanded.", position: new THREE.Vector3(2.44, 0.06, -1.2), color: FIRE, charge: 3, kind: "secondary" },
-  { id: "all-natural", label: "all natural", year: "1950-2026 queued", domain: "consumer purity language", note: "Adjacent packaging language for the consumer field; keep only as context around artificial-removal claims.", position: new THREE.Vector3(2.7, -0.92, 0.7), color: INK, charge: 1, kind: "secondary" },
-  { id: "clean-label", label: "clean label", year: "2000-2026", domain: "consumer purity language", note: "Consumer-language context for removing or avoiding artificial additives; not itself an artificial phrase.", position: new THREE.Vector3(2.88, 0.84, 0.66), color: FIRE, charge: 3, kind: "secondary" },
+  { id: "without-artificial", label: "without artificial additives", year: "1950-2026 queued", domain: "absence claim", note: "Direct removal language: artificial is named as something left out of the product.", position: new THREE.Vector3(2.7, -0.92, 0.7), color: FIRE, charge: 3, kind: "secondary" },
+  { id: "no-preservatives", label: "no artificial preservatives", year: "2000-2026", domain: "absence claim", note: "A direct no-artificial claim; useful because the value comes from excluding artificial additives.", position: new THREE.Vector3(2.88, 0.84, 0.66), color: FIRE, charge: 3, kind: "secondary" },
   { id: "no-ingredients", label: "no artificial ingredients", year: "2019-2026", domain: "absence claim", note: "Modern brand/packaging source target; important because absence itself becomes the claim.", position: new THREE.Vector3(3.02, 0.48, -1.08), color: FIRE, charge: 4, kind: "secondary" },
-  { id: "free-from", label: "free from artificial", year: "2019-2026", domain: "absence claim", note: "Modern removal / exclusion language; high Chart 4A value.", position: new THREE.Vector3(3.16, -0.12, 1.2), color: FIRE, charge: 3, kind: "secondary" },
+  { id: "free-from", label: "free from artificial", year: "2019-2026", domain: "absence claim", note: "Modern removal / exclusion language; high value for the artificial suspicion trajectory.", position: new THREE.Vector3(3.16, -0.12, 1.2), color: FIRE, charge: 3, kind: "secondary" },
   { id: "label-avoidance", label: "avoid artificial additives", year: "2019-2026 queued", domain: "consumer avoidance", note: "Modern consumer/packaging target: artificial appears as something removed, avoided, or reformulated away from.", position: new THREE.Vector3(3.42, -0.72, -0.52), color: FIRE, charge: 3, kind: "secondary" },
 ];
 
@@ -270,7 +270,7 @@ const directionCues: DirectionCue[] = [
   },
   {
     id: "direction-transfer",
-    label: "domain transfer",
+    label: "social-to-consumer path",
     year: "1850-2019",
     domain: "trajectory direction",
     note: "The charge moves from social/aesthetic artificiality into industrial, processed, and packaging contexts.",
@@ -295,7 +295,7 @@ const directionCues: DirectionCue[] = [
 const shellCues: ShellCue[] = [
   {
     id: "shell-early-negative",
-    label: "early negative potential shell",
+    label: "early artificial suspicion field",
     year: "1590s-1787",
     domain: "false emotion / affected manners",
     note: "Bound to artificial tears and artificial manners. Smile, sentiment, passion, and affected remain collection leads.",
@@ -305,7 +305,7 @@ const shellCues: ShellCue[] = [
   },
   {
     id: "shell-industrial",
-    label: "industrial / food-trust shell",
+    label: "industrial food-trust field",
     year: "1850-1900",
     domain: "coloring / adulteration / pure / genuine",
     note: "Bound to artificial coloring and food adulteration context. Needs more direct newspaper and advertising examples.",
@@ -315,7 +315,7 @@ const shellCues: ShellCue[] = [
   },
   {
     id: "shell-consumer",
-    label: "consumer transition shell",
+    label: "consumer transition field",
     year: "1900-2019",
     domain: "flavoring / sweetener / reformulation",
     note: "Bound to 1904 artificially colored, 1950 no artificial flavoring, artificial sweetener, and 2015 reformulation anchors.",
@@ -325,20 +325,20 @@ const shellCues: ShellCue[] = [
   },
   {
     id: "shell-absence",
-    label: "absence claim shell",
+    label: "absence claim field",
     year: "1950-2026",
-    domain: "no artificial / clean label",
-    note: "Bound to no artificial flavoring, no artificial colors, nothing artificial, free from artificial, and clean-label leads.",
+    domain: "no artificial / removal claims",
+    note: "Bound to no artificial flavoring, no artificial colors, no artificial ingredients, nothing artificial, and free from artificial.",
     position: new THREE.Vector3(2.62, 0.02, -0.16),
     color: FIRE,
     kind: "shell",
   },
   {
     id: "shell-full-field",
-    label: "full suspicion field shell",
+    label: "full artificial suspicion field",
     year: "1590s-2026",
-    domain: "early split / transfer / absence",
-    note: "Outer shell binds the whole Chart 4A trajectory: early affective suspicion, industrial transfer, consumer transition, and absence claims.",
+    domain: "tears / manners / food trust / no artificial",
+    note: "Outer field binds the artificial trajectory: early affective suspicion, industrial transfer, consumer transition, and absence claims.",
     position: new THREE.Vector3(0, 0, 0),
     color: INK,
     kind: "shell",
@@ -381,7 +381,7 @@ const supportCues: ShellCue[] = [
     label: "domain coordinate scaffold",
     year: "visual structure",
     domain: "trajectory geometry",
-    note: "Reference lines organize the field by early split, industrial bridge, consumer transition, and absence claims.",
+    note: "Reference lines organize the field around artificial tears, artificial manners, artificial coloring, food trust, and no-artificial claims.",
     position: new THREE.Vector3(0, 0, 0),
     color: INK,
     kind: "support",
@@ -413,7 +413,7 @@ const timelineCues: ShellCue[] = [
     id: "timeline-pre-1800",
     label: "pre-1800 anchors",
     year: "1590s, 1773, 1787",
-    domain: "early split",
+    domain: "artificial tears / artificial manners",
     note: "Artificial tears and artificial manners are the strongest early anchors; smile/sentiment/passion/affected remain leads.",
     position: new THREE.Vector3(-3.28, -1.48, 0.18),
     color: FIRE,
@@ -454,7 +454,7 @@ const timelineCues: ShellCue[] = [
     label: "2019-2026 modern band",
     year: "2025-2026",
     domain: "modern absence",
-    note: "FDA, brand, and product pages support no artificial colors/flavors/ingredients. More clean-label sources can widen this lane.",
+    note: "FDA, brand, and product pages support no artificial colors, flavors, preservatives, and ingredients.",
     position: new THREE.Vector3(3.48, -1.32, 0.18),
     color: FIRE,
     kind: "timeline",
@@ -564,10 +564,15 @@ const timelineMilestones: ShellCue[] = [
   },
 ];
 
+const timelineMinX = -3.78;
+const timelineMaxX = 3.82;
+const timelinePositionPercent = (x: number) =>
+  Math.min(96, Math.max(4, ((x - timelineMinX) / (timelineMaxX - timelineMinX)) * 100));
+
 const orbitSpecs: OrbitSpec[] = [
   {
-    id: "early-split",
-    label: "early split",
+    id: "tears-manners",
+    label: "artificial tears / manners",
     domain: "lexical / emotional",
     color: INK,
     opacity: 0.78,
@@ -590,7 +595,7 @@ const orbitSpecs: OrbitSpec[] = [
   },
   {
     id: "industrial-transfer",
-    label: "domain transfer",
+    label: "social-to-consumer path",
     domain: "food / synthetic / processed",
     color: INK,
     opacity: 0.62,
@@ -608,7 +613,7 @@ const orbitSpecs: OrbitSpec[] = [
   {
     id: "absence-acceleration",
     label: "absence claim",
-    domain: "no artificial / clean label",
+    domain: "no artificial / removal claims",
     color: FIRE,
     opacity: 0.84,
     points: ellipticalArcPoints({
@@ -622,7 +627,7 @@ const orbitSpecs: OrbitSpec[] = [
   },
   {
     id: "spiral-return",
-    label: "spiral reactivation",
+    label: "returning suspicion",
     domain: "old suspicion in new domains",
     color: INK,
     opacity: 0.46,
@@ -630,12 +635,14 @@ const orbitSpecs: OrbitSpec[] = [
   },
 ];
 
-const domainRows = [
-  ["early split", "pre-1800", "tears / manners"],
-  ["industrial bridge", "1850-1900", "coloring / adulteration"],
-  ["consumer turn", "1900-2019", "flavoring / sweetener / removal"],
-  ["absence field", "2019-2026", "no artificial / clean label"],
-];
+function hoverKindLabel(item: HoverItem) {
+  if ("charge" in item) return `charge ${item.charge}`;
+  if (item.kind === "direction") return "path";
+  if (item.kind === "shell") return "field";
+  if (item.kind === "frequency") return "signal";
+  if (item.kind === "timeline") return "time";
+  return "structure";
+}
 
 function makeTextSprite(text: string, options: { size?: number; color?: string; opacity?: number; weight?: string } = {}) {
   const size = options.size ?? 36;
@@ -1022,6 +1029,35 @@ function makeWireTorus({
   return mesh;
 }
 
+function makeTorusHitVolume({
+  center = new THREE.Vector3(),
+  radius = 1,
+  tube = 0.12,
+  scale = new THREE.Vector3(1, 1, 1),
+  rotation = new THREE.Euler(),
+  color = INK,
+}: {
+  center?: THREE.Vector3;
+  radius?: number;
+  tube?: number;
+  scale?: THREE.Vector3;
+  rotation?: THREE.Euler;
+  color?: string;
+}) {
+  const geometry = new THREE.TorusGeometry(radius, tube, 8, 112);
+  const material = new THREE.MeshBasicMaterial({
+    color,
+    transparent: true,
+    opacity: 0,
+    depthWrite: false,
+  });
+  const mesh = new THREE.Mesh(geometry, material);
+  mesh.position.copy(center);
+  mesh.rotation.copy(rotation);
+  mesh.scale.copy(scale);
+  return mesh;
+}
+
 function makeCoreAxes() {
   const group = new THREE.Group();
   group.add(makeLine([new THREE.Vector3(-4.18, 0, 0), new THREE.Vector3(4.18, 0, 0)], INK, 0.32));
@@ -1138,6 +1174,8 @@ export function ArtificialChart04APejorationOrbit() {
       speed: number;
       offset: number;
       item: HoverItem;
+      paused: boolean;
+      t: number;
     }> = [];
 
     const activeRingMaterial = new THREE.MeshBasicMaterial({
@@ -1150,6 +1188,20 @@ export function ArtificialChart04APejorationOrbit() {
     activeRing.visible = false;
     root.add(activeRing);
 
+    const defaultHitRank = (item: HoverItem) => {
+      if (item.kind === "primary" || item.kind === "secondary") return 0;
+      if (item.kind === "direction") return 3;
+      if (item.kind === "shell" || item.kind === "timeline") return 5;
+      return 7;
+    };
+
+    const addHitObject = (object: THREE.Object3D, item: HoverItem, rank = defaultHitRank(item), overwrite = true) => {
+      if (!hitTargets.includes(object)) hitTargets.push(object);
+      if (!overwrite && itemByUuid.has(object.uuid)) return;
+      object.userData.chart04HitRank = rank;
+      itemByUuid.set(object.uuid, item);
+    };
+
     const addHitTarget = (item: HoverItem, radius = 0.16) => {
       const hitGeometry = new THREE.SphereGeometry(radius, 12, 12);
       const hitMaterial = new THREE.MeshBasicMaterial({
@@ -1161,22 +1213,34 @@ export function ArtificialChart04APejorationOrbit() {
       const target = new THREE.Mesh(hitGeometry, hitMaterial);
       target.position.copy(item.position);
       root.add(target);
-      hitTargets.push(target);
-      itemByUuid.set(target.uuid, item);
+      addHitObject(target, item, 0);
     };
 
-    const registerHoverObject = (item: HoverItem, object: THREE.Object3D, overwrite = true) => {
+    const registerHoverObject = (item: HoverItem, object: THREE.Object3D, overwrite = true, rank = defaultHitRank(item)) => {
       object.traverse((child) => {
         const candidate = child as THREE.Object3D & { geometry?: THREE.BufferGeometry };
         if (!candidate.geometry) return;
-        if (!hitTargets.includes(candidate)) hitTargets.push(candidate);
-        if (!overwrite && itemByUuid.has(candidate.uuid)) return;
-        itemByUuid.set(candidate.uuid, item);
+        addHitObject(candidate, item, rank, overwrite);
       });
+    };
+
+    const addTorusHitVolume = (
+      item: HoverItem,
+      options: Parameters<typeof makeTorusHitVolume>[0],
+      parent: THREE.Group | THREE.Object3D = root,
+      rank = 6,
+    ) => {
+      const hitVolume = makeTorusHitVolume(options);
+      parent.add(hitVolume);
+      registerHoverObject(item, hitVolume, true, rank);
+      return hitVolume;
     };
 
     const setHoveredItem = (item: HoverItem | null) => {
       setActiveItem((current) => (current?.id === item?.id ? current : item));
+      movingLights.forEach((light) => {
+        light.paused = item?.id === light.item.id;
+      });
       if (!item) {
         activeRing.visible = false;
         return;
@@ -1200,7 +1264,7 @@ export function ArtificialChart04APejorationOrbit() {
       seed: 14,
     });
     root.add(earlyFrequencyCloud);
-    registerHoverObject(supportCues[0], earlyFrequencyCloud);
+    registerHoverObject(supportCues[0], earlyFrequencyCloud, true, 7);
     const modernFrequencyCloud = makeParticleCloud({
       count: 980,
       center: new THREE.Vector3(2.65, 0.02, 0.05),
@@ -1210,7 +1274,7 @@ export function ArtificialChart04APejorationOrbit() {
       seed: 41,
     });
     root.add(modernFrequencyCloud);
-    registerHoverObject(supportCues[1], modernFrequencyCloud);
+    registerHoverObject(supportCues[1], modernFrequencyCloud, true, 7);
     const centralFrequencyCloud = makeParticleCloud({
       count: 280,
       center: new THREE.Vector3(0.03, 0, 0.08),
@@ -1221,7 +1285,7 @@ export function ArtificialChart04APejorationOrbit() {
       seed: 63,
     });
     root.add(centralFrequencyCloud);
-    registerHoverObject(supportCues[2], centralFrequencyCloud);
+    registerHoverObject(supportCues[2], centralFrequencyCloud, true, 7);
 
     const structure = new THREE.Group();
     const leftCenter = new THREE.Vector3(-2.42, 0.02, -0.18);
@@ -1237,7 +1301,19 @@ export function ArtificialChart04APejorationOrbit() {
       opacity: 0.1,
     });
     structure.add(outerTorus);
-    registerHoverObject(shellCues[4], outerTorus);
+    registerHoverObject(shellCues[4], outerTorus, true, 5);
+    addTorusHitVolume(
+      shellCues[4],
+      {
+        center: new THREE.Vector3(0.12, 0, 0),
+        radius: 2.42,
+        tube: 0.1,
+        scale: new THREE.Vector3(1.7, 0.48, 0.68),
+        rotation: new THREE.Euler(0.32, 0.72, 0.08),
+        color: INK,
+      },
+      structure,
+    );
     const transferTorus = makeWireTorus({
       center: new THREE.Vector3(0.08, 0.02, 0),
       radius: 2.26,
@@ -1248,7 +1324,19 @@ export function ArtificialChart04APejorationOrbit() {
       opacity: 0.08,
     });
     structure.add(transferTorus);
-    registerHoverObject(shellCues[2], transferTorus);
+    registerHoverObject(shellCues[2], transferTorus, true, 5);
+    addTorusHitVolume(
+      shellCues[2],
+      {
+        center: new THREE.Vector3(0.08, 0.02, 0),
+        radius: 2.26,
+        tube: 0.1,
+        scale: new THREE.Vector3(1.72, 0.42, 0.78),
+        rotation: new THREE.Euler(-0.38, -0.78, 0.36),
+        color: INK,
+      },
+      structure,
+    );
     const absenceTorus = makeWireTorus({
       center: new THREE.Vector3(0.16, 0.02, 0.08),
       radius: 1.86,
@@ -1259,19 +1347,31 @@ export function ArtificialChart04APejorationOrbit() {
       opacity: 0.1,
     });
     structure.add(absenceTorus);
-    registerHoverObject(shellCues[3], absenceTorus);
+    registerHoverObject(shellCues[3], absenceTorus, true, 5);
+    addTorusHitVolume(
+      shellCues[3],
+      {
+        center: new THREE.Vector3(0.16, 0.02, 0.08),
+        radius: 1.86,
+        tube: 0.1,
+        scale: new THREE.Vector3(1.82, 0.36, 0.88),
+        rotation: new THREE.Euler(0.68, -0.28, -0.5),
+        color: FIRE,
+      },
+      structure,
+    );
     const globalShell = makeOrbitShell({ center: new THREE.Vector3(0, 0, 0), radiusX: 3.52, radiusY: 1.08, radiusZ: 1.32, color: INK, opacity: 0.1 });
     structure.add(globalShell);
-    registerHoverObject(shellCues[4], globalShell);
+    registerHoverObject(shellCues[4], globalShell, true, 5);
     const earlyShell = makeOrbitShell({ center: leftCenter, radiusX: 1.76, radiusY: 0.96, radiusZ: 1.08, color: INK, opacity: 0.28 });
     structure.add(earlyShell);
-    registerHoverObject(shellCues[0], earlyShell);
+    registerHoverObject(shellCues[0], earlyShell, true, 5);
     const modernShell = makeOrbitShell({ center: rightCenter, radiusX: 1.84, radiusY: 1.0, radiusZ: 1.18, color: INK, opacity: 0.28 });
     structure.add(modernShell);
-    registerHoverObject(shellCues[3], modernShell);
+    registerHoverObject(shellCues[3], modernShell, true, 5);
     const innerShell = makeOrbitShell({ center: new THREE.Vector3(0, 0, 0), radiusX: 0.62, radiusY: 1.02, radiusZ: 1.18, color: FIRE, opacity: 0.26 });
     structure.add(innerShell);
-    registerHoverObject(shellCues[1], innerShell);
+    registerHoverObject(shellCues[1], innerShell, true, 5);
     structure.add(makeArcConstellation({ center: leftCenter, radiusX: 1.96, radiusY: 0.78, radiusZ: 1.34, color: INK, opacity: 0.15 }));
     structure.add(makeArcConstellation({ center: rightCenter, radiusX: 2.02, radiusY: 0.82, radiusZ: 1.42, color: INK, opacity: 0.15 }));
     structure.add(makeArcConstellation({ center: new THREE.Vector3(0.06, 0.02, 0.02), radiusX: 0.9, radiusY: 0.72, radiusZ: 1.42, color: FIRE, opacity: 0.12 }));
@@ -1299,7 +1399,7 @@ export function ArtificialChart04APejorationOrbit() {
     structure.add(makeLine([new THREE.Vector3(-3.82, 0.86, -0.32), new THREE.Vector3(3.82, -0.86, -0.32)], INK, 0.16));
     structure.add(makeLine([new THREE.Vector3(-3.82, -0.86, -0.32), new THREE.Vector3(3.82, 0.86, -0.32)], INK, 0.16));
     root.add(structure);
-    registerHoverObject(supportCues[3], structure, false);
+    registerHoverObject(supportCues[3], structure, false, 8);
 
     const evidenceGroup = new THREE.Group();
     for (const node of secondaryEvidenceNodes) {
@@ -1313,48 +1413,47 @@ export function ArtificialChart04APejorationOrbit() {
       const mesh = new THREE.Mesh(geometry, material);
       mesh.position.copy(node.position);
       evidenceGroup.add(mesh);
-      hitTargets.push(mesh);
-      itemByUuid.set(mesh.uuid, node);
+      addHitObject(mesh, node, 0);
       evidenceGroup.add(makeLine([new THREE.Vector3(0, 0, node.position.z * 0.24), node.position], node.color, 0.16));
       evidenceGroup.add(makeLine([new THREE.Vector3(node.position.x, 0, node.position.z), node.position], node.color, 0.1));
       addHitTarget(node, 0.14);
     }
     root.add(evidenceGroup);
-    registerHoverObject(supportCues[4], evidenceGroup, false);
+    registerHoverObject(supportCues[4], evidenceGroup, false, 8);
 
     for (const cue of directionCues) {
       const arrow = makeArrowHead(cue.position, cue.direction, cue.color, 0.76);
       arrow.scale.setScalar(1.25);
       root.add(arrow);
-      registerHoverObject(cue, arrow);
+      registerHoverObject(cue, arrow, true, 3);
       const cueLine = makeLine(
         [cue.position.clone().sub(cue.direction.clone().normalize().multiplyScalar(0.42)), cue.position],
         cue.color,
         cue.color === FIRE ? 0.46 : 0.34,
       );
       root.add(cueLine);
-      registerHoverObject(cue, cueLine);
+      registerHoverObject(cue, cueLine, true, 4);
       addHitTarget(cue, 0.2);
     }
 
     const leftHalo = makeDashedEllipse(1.7, 1.12, -0.32, INK, 0.34);
     leftHalo.position.x = -2.48;
     root.add(leftHalo);
-    registerHoverObject(shellCues[0], leftHalo);
+    registerHoverObject(shellCues[0], leftHalo, true, 5);
     const rightHalo = makeDashedEllipse(1.72, 1.16, -0.28, INK, 0.32);
     rightHalo.position.x = 2.62;
     root.add(rightHalo);
-    registerHoverObject(shellCues[3], rightHalo);
+    registerHoverObject(shellCues[3], rightHalo, true, 5);
 
     const verticalAxis = makeLine([new THREE.Vector3(0, -1.34, 0), new THREE.Vector3(0, 1.36, 0)], INK, 0.62);
     root.add(verticalAxis);
-    registerHoverObject(supportCues[3], verticalAxis);
+    registerHoverObject(supportCues[3], verticalAxis, true, 8);
     const horizontalAxis = makeLine([new THREE.Vector3(-3.95, 0, 0), new THREE.Vector3(3.95, 0, 0)], INK, 0.28);
     root.add(horizontalAxis);
-    registerHoverObject(supportCues[3], horizontalAxis);
+    registerHoverObject(supportCues[3], horizontalAxis, true, 8);
     const chargeAxis = makeLine([new THREE.Vector3(-0.18, -1.32, 0.02), new THREE.Vector3(0.18, 1.32, -0.02)], FIRE, 0.44);
     root.add(chargeAxis);
-    registerHoverObject(supportCues[3], chargeAxis);
+    registerHoverObject(supportCues[3], chargeAxis, true, 8);
 
     for (const spec of orbitSpecs) {
       const { line, curve } = makeCurve(spec);
@@ -1370,7 +1469,7 @@ export function ArtificialChart04APejorationOrbit() {
           spec.id === "absence-acceleration"
             ? "Direction cue for the late absence-claim loop: artificial becomes something named by removal."
             : spec.id === "spiral-return"
-              ? "Direction cue for possible spiral reactivation across old and new suspicion domains."
+              ? "Direction cue for suspicion returning in later artificial food and removal-claim contexts."
               : "Direction cue for movement between evidence domains; it is not a frequency claim.",
         position: last.clone(),
         direction,
@@ -1388,8 +1487,19 @@ export function ArtificialChart04APejorationOrbit() {
       );
       root.add(tube);
       root.add(line);
-      registerHoverObject(orbitHoverItem, tube);
-      registerHoverObject(orbitHoverItem, line);
+      registerHoverObject(orbitHoverItem, tube, true, 4);
+      registerHoverObject(orbitHoverItem, line, true, 4);
+      const orbitHitTube = new THREE.Mesh(
+        new THREE.TubeGeometry(curve, 160, 0.075, 8, false),
+        new THREE.MeshBasicMaterial({
+          color: spec.color,
+          transparent: true,
+          opacity: 0,
+          depthWrite: false,
+        }),
+      );
+      root.add(orbitHitTube);
+      registerHoverObject(orbitHoverItem, orbitHitTube, true, 6);
       const markerGeometry = new THREE.SphereGeometry(spec.id === "absence-acceleration" ? 0.045 : 0.035, 16, 16);
       const markerMaterial = new THREE.MeshBasicMaterial({
         color: spec.color,
@@ -1398,19 +1508,20 @@ export function ArtificialChart04APejorationOrbit() {
       });
       const marker = new THREE.Mesh(markerGeometry, markerMaterial);
       root.add(marker);
-      hitTargets.push(marker);
-      itemByUuid.set(marker.uuid, orbitHoverItem);
+      addHitObject(marker, orbitHoverItem, 2);
       movingLights.push({
         mesh: marker,
         curve,
         speed: spec.id === "absence-acceleration" ? 0.11 : 0.07,
         offset: movingLights.length * 0.17,
         item: orbitHoverItem,
+        paused: false,
+        t: 0,
       });
 
       const orbitArrow = makeArrowHead(last, direction, spec.color, Math.min(0.82, spec.opacity + 0.08));
       root.add(orbitArrow);
-      registerHoverObject(orbitHoverItem, orbitArrow);
+      registerHoverObject(orbitHoverItem, orbitArrow, true, 3);
       addHitTarget(orbitHoverItem, 0.18);
     }
 
@@ -1437,8 +1548,7 @@ export function ArtificialChart04APejorationOrbit() {
       const mesh = new THREE.Mesh(geometry, material);
       mesh.position.copy(anchor.position);
       root.add(mesh);
-      hitTargets.push(mesh);
-      itemByUuid.set(mesh.uuid, anchor);
+      addHitObject(mesh, anchor, 0);
       addHitTarget(anchor, 0.18);
 
       root.add(makeLine([new THREE.Vector3(0, 0, anchor.position.z * 0.2), anchor.position], anchor.color, 0.34));
@@ -1455,54 +1565,6 @@ export function ArtificialChart04APejorationOrbit() {
       }
     }
 
-    const timelineAxisItem: ShellCue = {
-      id: "continuous-timeline-axis",
-      label: "continuous evidence timeline",
-      year: "1590s-2026",
-      domain: "timeline coverage",
-      note: "This lower axis shows the evidence as uneven anchor points rather than equal historical blocks.",
-      position: new THREE.Vector3(0.1, -1.52, 0.28),
-      color: INK,
-      kind: "timeline",
-    };
-    const timelineAxis = makeLine([new THREE.Vector3(-3.78, -1.52, 0.24), new THREE.Vector3(3.82, -1.52, 0.24)], INK, 0.48);
-    root.add(timelineAxis);
-    registerHoverObject(timelineAxisItem, timelineAxis);
-
-    const timelineBands = [
-      [timelineCues[0], -3.68, -2.18],
-      [timelineCues[1], -0.42, 0.48],
-      [timelineCues[2], 0.66, 1.68],
-      [timelineCues[3], 1.7, 3.08],
-      [timelineCues[4], 3.08, 3.76],
-    ] as const;
-    for (const [cue, x0, x1] of timelineBands) {
-      const band = makeLine([new THREE.Vector3(x0, -1.52, 0.3), new THREE.Vector3(x1, -1.52, 0.3)], cue.color, cue.color === FIRE ? 0.58 : 0.38);
-      root.add(band);
-      registerHoverObject(cue, band);
-      addHitTarget(cue, 0.16);
-      const bandLabel = makeTextSprite(cue.year, { size: 10, color: cue.color, opacity: 0.58, weight: "800" });
-      bandLabel.position.set((x0 + x1) / 2, -1.34, 0.32);
-      root.add(bandLabel);
-    }
-
-    for (const [index, milestone] of timelineMilestones.entries()) {
-      const tickTop = new THREE.Vector3(milestone.position.x, -1.44, 0.3);
-      const tickBottom = new THREE.Vector3(milestone.position.x, -1.6, 0.3);
-      root.add(makeLine([tickTop, tickBottom], milestone.color, milestone.color === FIRE ? 0.58 : 0.38));
-      const marker = new THREE.Mesh(
-        new THREE.SphereGeometry(milestone.color === FIRE ? 0.035 : 0.028, 14, 14),
-        new THREE.MeshBasicMaterial({ color: milestone.color, transparent: true, opacity: 0.82, depthWrite: false }),
-      );
-      marker.position.copy(milestone.position);
-      root.add(marker);
-      hitTargets.push(marker);
-      itemByUuid.set(marker.uuid, milestone);
-      addHitTarget(milestone, 0.12);
-      const sprite = makeTextSprite(milestone.year, { size: 10, color: milestone.color, opacity: 0.62, weight: "800" });
-      sprite.position.set(milestone.position.x, index % 2 === 0 ? -1.68 : -1.28, 0.34);
-      root.add(sprite);
-    }
     registerHoverObject(supportCues[4], root, false);
     const activeRingTargetIndex = hitTargets.indexOf(activeRing);
     if (activeRingTargetIndex >= 0) hitTargets.splice(activeRingTargetIndex, 1);
@@ -1554,8 +1616,13 @@ export function ArtificialChart04APejorationOrbit() {
       }
       raycaster.setFromCamera(pointer, camera);
       const hits = raycaster.intersectObjects(hitTargets, false);
-      const lineHit = hits.find((candidate) => candidate.object.type === "Line");
-      const hit = lineHit && (!hits[0] || lineHit.distance - hits[0].distance < 0.28) ? lineHit : hits[0];
+      const hit = hits
+        .filter((candidate) => itemByUuid.has(candidate.object.uuid))
+        .sort((a, b) => {
+          const rankA = a.object.userData.chart04HitRank ?? 9;
+          const rankB = b.object.userData.chart04HitRank ?? 9;
+          return rankA === rankB ? a.distance - b.distance : rankA - rankB;
+        })[0];
       const nextItem = hit ? itemByUuid.get(hit.object.uuid) ?? null : null;
       setHoveredItem(nextItem);
     };
@@ -1599,8 +1666,8 @@ export function ArtificialChart04APejorationOrbit() {
       leftHalo.rotation.z += 0.001;
       rightHalo.rotation.z -= 0.0011;
       for (const light of movingLights) {
-        const t = (frame * light.speed + light.offset) % 1;
-        light.mesh.position.copy(light.curve.getPoint(t));
+        if (!light.paused) light.t = (frame * light.speed + light.offset) % 1;
+        light.mesh.position.copy(light.curve.getPoint(light.t));
         light.item.position.copy(light.mesh.position);
       }
       if (activeRing.visible) activeRing.lookAt(camera.position);
@@ -1623,16 +1690,21 @@ export function ArtificialChart04APejorationOrbit() {
     };
   }, []);
 
+  const activeTimelinePercent =
+    activeItem && (activeItem.kind === "primary" || activeItem.kind === "secondary" || activeItem.kind === "direction")
+      ? timelinePositionPercent(activeItem.position.x)
+      : null;
+
   return (
     <section className="border-b border-ink bg-wheat">
       <div className="border-b border-ink px-6 py-4">
         <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.16em] text-ink/45">
           Chart 04
         </p>
-        <h2 className="mt-1 text-2xl font-black leading-none">Suspicion orbit field</h2>
+        <h2 className="mt-1 text-2xl font-black leading-none">Artificial suspicion field</h2>
         <div className="mt-5 flex flex-wrap items-center justify-between gap-6">
           <p className="font-mono text-[0.62rem] font-black uppercase tracking-[0.16em] text-ink/58">
-            Chart 4A · pejoration trajectory
+            artificial · suspicion trajectory
           </p>
           <div className="flex flex-wrap items-center gap-5 font-mono text-[0.62rem] font-black uppercase tracking-[0.16em] text-ink">
             <span className="inline-flex items-center gap-2.5">
@@ -1650,28 +1722,78 @@ export function ArtificialChart04APejorationOrbit() {
       <div className="grid min-h-[880px] border-b border-ink/80 lg:grid-cols-[minmax(0,1fr)_20rem]">
         <div className="relative min-h-[740px] overflow-hidden border-b border-ink/60 bg-transparent lg:border-b-0 lg:border-r">
           <div className="pointer-events-none absolute inset-0 opacity-[0.18] [background-image:linear-gradient(90deg,rgba(5,5,16,0.42)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.32)_1px,transparent_1px)] [background-size:54px_54px]" />
-          <div ref={mountRef} className="absolute inset-0" aria-label="Chart 04A Three.js suspicion orbit field" />
+          <div ref={mountRef} className="absolute inset-0" aria-label="Artificial suspicion orbit field" />
+          {activeTimelinePercent !== null ? (
+            <div
+              className="pointer-events-none absolute top-20 bottom-[7.8rem] z-10 w-px"
+              style={{
+                left: `${activeTimelinePercent}%`,
+                backgroundColor: activeItem?.color ?? INK,
+                opacity: 0.36,
+              }}
+            />
+          ) : null}
           <div className="pointer-events-none absolute left-5 top-5 max-w-[24rem] font-mono text-[0.68rem] font-black uppercase leading-relaxed tracking-[0.13em] text-ink/62">
-            drag to rotate · every visible point / line / shell carries hover context
+            drag to rotate · hover points and paths for artificial evidence
           </div>
-          <div className="pointer-events-none absolute bottom-5 left-5 right-5 grid gap-2 font-mono text-[0.58rem] font-black uppercase tracking-[0.14em] text-ink/54 sm:grid-cols-4">
-            {domainRows.map(([domain, period, terms]) => (
-              <div key={domain} className="border border-ink/35 bg-wheat/64 px-3 py-2">
-                <p className="text-ink/80">{domain}</p>
-                <p className="mt-1 text-ink/46">{period}</p>
-                <p className="mt-1 text-ink/58">{terms}</p>
-              </div>
-            ))}
+          <div className="absolute bottom-5 left-5 right-5 z-20 border-t border-ink/45 bg-wheat/88 px-4 pb-3 pt-2 font-mono uppercase tracking-[0.12em] shadow-[0_-8px_18px_rgba(239,231,203,0.32)]">
+            <div className="mb-2 flex items-center justify-between text-[0.56rem] font-black text-ink/62">
+              <span>artificial evidence timeline</span>
+              <span>fixed reference</span>
+            </div>
+            <div className="relative h-[5.75rem]">
+              <div className="absolute left-0 right-0 top-[3.1rem] h-[2px] bg-ink/64" />
+              {timelineMilestones.map((milestone, index) => {
+                const left = timelinePositionPercent(milestone.position.x);
+                const showLabel = [0, 2, 3, 4, 5, 6, 7, 8, 9].includes(index);
+                return (
+                  <button
+                    key={milestone.id}
+                    type="button"
+                    className="absolute top-[3.1rem] h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 bg-wheat outline-none transition-transform hover:scale-125"
+                    style={{
+                      left: `${left}%`,
+                      borderColor: milestone.color,
+                      boxShadow: activeItem?.id === milestone.id ? `0 0 0 2px ${milestone.color}` : undefined,
+                    }}
+                    onMouseEnter={() => setActiveItem(milestone)}
+                    onFocus={() => setActiveItem(milestone)}
+                    onMouseLeave={() => setActiveItem(null)}
+                    onBlur={() => setActiveItem(null)}
+                    aria-label={`${milestone.year} ${milestone.label}`}
+                  >
+                    <span
+                      className="absolute left-1/2 h-3 w-px -translate-x-1/2"
+                      style={{
+                        backgroundColor: milestone.color,
+                        top: index % 2 === 0 ? "-0.95rem" : "1.25rem",
+                      }}
+                    />
+                    {showLabel ? (
+                      <span
+                        className="absolute left-1/2 min-w-max -translate-x-1/2 text-[0.62rem] font-black leading-none"
+                        style={{
+                          color: milestone.color,
+                          top: index % 2 === 0 ? "-1.65rem" : "2.08rem",
+                        }}
+                      >
+                        {milestone.year}
+                      </span>
+                    ) : null}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
 
         <aside className="grid grid-rows-[auto_minmax(0,1fr)_auto] bg-wheat/52">
           <div className="border-b border-ink/60 px-5 py-4">
             <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.16em] text-ink/48">
-              trajectory read
+              artificial read
             </p>
             <p className="mt-3 font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.12em] text-ink">
-              early split · domain transfer · cautious spiral
+              artificial tears · artificial manners · no artificial claims
             </p>
           </div>
 
@@ -1686,7 +1808,7 @@ export function ArtificialChart04APejorationOrbit() {
                   style={{ color: activeItem.color }}
                 >
                   {activeItem.year}
-                  {"charge" in activeItem ? ` · charge ${activeItem.charge}` : ` · ${activeItem.kind}`}
+                  {` · ${hoverKindLabel(activeItem)}`}
                 </p>
                 <h3 className="mt-3 text-xl font-black leading-none text-ink">{activeItem.label}</h3>
                 <p className="mt-3 font-mono text-[0.72rem] font-black uppercase leading-5 tracking-[0.11em] text-ink/58">
@@ -1697,10 +1819,10 @@ export function ArtificialChart04APejorationOrbit() {
             ) : (
               <div className="border border-ink/35 bg-wheat/54 p-4">
                 <p className="font-mono text-[0.68rem] font-black uppercase tracking-[0.16em] text-ink/46">
-                  hover an anchor
+                  hover evidence
                 </p>
                 <p className="mt-3 text-sm leading-6 text-ink/62">
-                  Hover dots, moving markers, shells, arcs, axes, or the lower timeline for evidence status.
+                  Hover a point or path to read how it relates to artificial. The evidence moves from feigned emotion and manners into food trust, reformulation, and no-artificial claims.
                 </p>
                 <p className="mt-4 font-mono text-[0.58rem] font-black uppercase leading-4 tracking-[0.12em] text-ink/40">
                   red = high charge · black = structure / context

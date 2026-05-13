@@ -1,0 +1,456 @@
+{
+  "metadata": {
+    "word": "hub",
+    "generated_at": "2026-05-13T07:58:20.656138Z",
+    "generated_by_script": "scripts/scrape_hub_chart01_frequency.py",
+    "cache_only": false
+  },
+  "queries_attempted": 62,
+  "existing_cache_hits": 49,
+  "targeted_ngram_queries": 13,
+  "log": [
+    {
+      "query_id": "hub_chart01_query_001",
+      "query": "hub",
+      "semantic_group": "total_background",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_002",
+      "query": "hubs",
+      "semantic_group": "total_background",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_003",
+      "query": "wheel hub",
+      "semantic_group": "mechanical_core",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_005",
+      "query": "hub of the wheel",
+      "semantic_group": "mechanical_core",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_007",
+      "query": "axle hub",
+      "semantic_group": "mechanical_core",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_008",
+      "query": "front hub",
+      "semantic_group": "mechanical_core",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_009",
+      "query": "rear hub",
+      "semantic_group": "mechanical_core",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_011",
+      "query": "hubcap",
+      "semantic_group": "mechanical_core",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_012",
+      "query": "hub cap",
+      "semantic_group": "mechanical_core",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_014",
+      "query": "hub of activity",
+      "semantic_group": "central_place",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_015",
+      "query": "hub of commerce",
+      "semantic_group": "central_place",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_016",
+      "query": "hub of trade",
+      "semantic_group": "central_place",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_017",
+      "query": "hub of industry",
+      "semantic_group": "central_place",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_022",
+      "query": "transport hub",
+      "semantic_group": "transport_routing",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_023",
+      "query": "transit hub",
+      "semantic_group": "transport_routing",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_024",
+      "query": "railway hub",
+      "semantic_group": "transport_routing",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_025",
+      "query": "railroad hub",
+      "semantic_group": "transport_routing",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_026",
+      "query": "airport hub",
+      "semantic_group": "transport_routing",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_027",
+      "query": "airline hub",
+      "semantic_group": "transport_routing",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_028",
+      "query": "shipping hub",
+      "semantic_group": "transport_routing",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_029",
+      "query": "logistics hub",
+      "semantic_group": "transport_routing",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_030",
+      "query": "regional hub",
+      "semantic_group": "transport_routing",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_031",
+      "query": "global hub",
+      "semantic_group": "transport_routing",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_032",
+      "query": "hub and spoke",
+      "semantic_group": "transport_routing",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_033",
+      "query": "hub-and-spoke",
+      "semantic_group": "transport_routing",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_036",
+      "query": "network hub",
+      "semantic_group": "network_system",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_037",
+      "query": "communication hub",
+      "semantic_group": "network_system",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_038",
+      "query": "hub node",
+      "semantic_group": "network_system",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_039",
+      "query": "Ethernet hub",
+      "semantic_group": "network_system",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_040",
+      "query": "internet hub",
+      "semantic_group": "network_system",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_041",
+      "query": "telecom hub",
+      "semantic_group": "network_system",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_042",
+      "query": "server hub",
+      "semantic_group": "network_system",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_045",
+      "query": "business hub",
+      "semantic_group": "institutional_cluster",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_046",
+      "query": "financial hub",
+      "semantic_group": "institutional_cluster",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_047",
+      "query": "education hub",
+      "semantic_group": "institutional_cluster",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_048",
+      "query": "research hub",
+      "semantic_group": "institutional_cluster",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_049",
+      "query": "knowledge hub",
+      "semantic_group": "institutional_cluster",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_050",
+      "query": "innovation hub",
+      "semantic_group": "institutional_cluster",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_051",
+      "query": "startup hub",
+      "semantic_group": "institutional_cluster",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_052",
+      "query": "creative hub",
+      "semantic_group": "institutional_cluster",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_053",
+      "query": "cultural hub",
+      "semantic_group": "institutional_cluster",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_054",
+      "query": "digital hub",
+      "semantic_group": "digital_platform",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_055",
+      "query": "content hub",
+      "semantic_group": "digital_platform",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_056",
+      "query": "data hub",
+      "semantic_group": "digital_platform",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_057",
+      "query": "resource hub",
+      "semantic_group": "digital_platform",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_058",
+      "query": "learning hub",
+      "semantic_group": "digital_platform",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_059",
+      "query": "media hub",
+      "semantic_group": "digital_platform",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_060",
+      "query": "platform hub",
+      "semantic_group": "digital_platform",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "query_id": "hub_chart01_query_061",
+      "query": "community hub",
+      "semantic_group": "digital_platform",
+      "action": "used_existing_cache",
+      "status": "success",
+      "source": "docs/research/hub/processed/hub_frequency_series.json"
+    },
+    {
+      "source": "Google Books Ngram Viewer",
+      "source_type": "ngram",
+      "queries": [
+        "hub of a wheel",
+        "wheel-hub",
+        "bicycle hub",
+        "hub assembly",
+        "commercial hub",
+        "social hub",
+        "city hub",
+        "urban hub"
+      ],
+      "url": "https://books.google.com/ngrams/json?content=hub+of+a+wheel%2Cwheel-hub%2Cbicycle+hub%2Chub+assembly%2Ccommercial+hub%2Csocial+hub%2Ccity+hub%2Curban+hub&year_start=1800&year_end=2022&corpus=en&smoothing=0&case_insensitive=true",
+      "status": "success",
+      "failure_reason": "",
+      "retrieved_at": "2026-05-13T07:58:18.465644Z",
+      "from_cache": false,
+      "returned_queries": [
+        "bicycle hub",
+        "city hub",
+        "commercial hub",
+        "hub assembly",
+        "hub of a wheel",
+        "social hub",
+        "urban hub",
+        "wheel - hub"
+      ]
+    },
+    {
+      "source": "Google Books Ngram Viewer",
+      "source_type": "ngram",
+      "queries": [
+        "hub spoke",
+        "hub spoke system",
+        "USB hub",
+        "switching hub",
+        "online hub"
+      ],
+      "url": "https://books.google.com/ngrams/json?content=hub+spoke%2Chub+spoke+system%2CUSB+hub%2Cswitching+hub%2Conline+hub&year_start=1800&year_end=2022&corpus=en&smoothing=0&case_insensitive=true",
+      "status": "success",
+      "failure_reason": "",
+      "retrieved_at": "2026-05-13T07:58:20.260570Z",
+      "from_cache": false,
+      "returned_queries": [
+        "hub spoke",
+        "online hub",
+        "switching hub",
+        "usb hub"
+      ]
+    }
+  ]
+}
