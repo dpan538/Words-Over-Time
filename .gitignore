@@ -2,9 +2,17 @@ node_modules
 .next
 out
 dist
+.cache
 .env*
 !.env.example
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .DS_Store
+
+# Large research intermediates and source caches
+docs/research/**/raw/
+docs/research/**/cache/
+docs/research/hub/processed/hub_chart02_recovered_frequency_series.json
+docs/research/hub/processed/hub_chart02_routing_frequency_series.json
+docs/research/hub/processed/hub_chart03_naming_frequency_series.json

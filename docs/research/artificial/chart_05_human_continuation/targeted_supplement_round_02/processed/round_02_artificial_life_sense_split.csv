@@ -1,0 +1,5 @@
+sense_track,status,strongest_source,period_anchor,visual_treatment,summary,risk
+biological_life,partially_supported,PubMed early synthetic biology review,early 20th century background,background_bridge,"Early synthetic-biology attempts frame artificial/synthetic life as crossing inert/living matter, but this is not the same as modern ALife.",medium
+computational_life,strong,Langton/Routledge proceedings; MIT Press Artificial Life journal,1987 workshop / 1989 proceedings / 1993-94 journal,solid_bridge_node,Computational artificial life is the strongest established sense for Chart 05: synthesis/simulation of living systems and life-as-it-could-be.,low
+philosophical_life,supported_as_boundary,Stanford Encyclopedia of Philosophy: Life,modern reference,notes_or_edge,"Strong A-Life and definitions of life remain contested, so philosophical life should control boundaries rather than become a visual center.",medium
+unclear,must_disambiguate,Ngram alone insufficient,all periods,do_not_use_without_context,"Bare artificial life frequency cannot say whether usage is biological, computational, fictional, or philosophical.",high

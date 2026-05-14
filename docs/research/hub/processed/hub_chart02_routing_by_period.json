@@ -1,0 +1,1198 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_02",
+    "purpose": "chart02_routing_frequency_layer",
+    "generated_at": "2026-05-13T13:20:38.080955Z",
+    "generated_by_script": "scripts/process_hub_chart02_routing.py",
+    "source_summary": [
+      "Existing first-pass hub Ngram frequency series.",
+      "Existing Chart 01 semantic-frequency raw data.",
+      "Targeted Google Books Ngram requests for missing routing terms where available."
+    ],
+    "value_unit": "frequency_per_million",
+    "limitations": [
+      "Google Books Ngram series begins at 1800 and ends at 2022.",
+      "Ngram values are printed-book frequency proxies, not direct semantic proof.",
+      "Search-result counts are not used as exact frequency.",
+      "Missing or failed query terms are retained with status and failure notes.",
+      "Group sums are routing proxy aggregates, not exact sense counts.",
+      "First nonzero Ngram year is not a historical first attestation.",
+      "Regional/global/institutional terms are kept separate because routing sense can be ambiguous."
+    ]
+  },
+  "periods": [
+    {
+      "period_id": "p1_pre_1850",
+      "label": "Before 1850",
+      "start_year": 1500,
+      "end_year": 1849
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "label": "1850-1899",
+      "start_year": 1850,
+      "end_year": 1899
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "label": "1900-1945",
+      "start_year": 1900,
+      "end_year": 1945
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "label": "1946-1979",
+      "start_year": 1946,
+      "end_year": 1979
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "label": "1980-1999",
+      "start_year": 1980,
+      "end_year": 1999
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "label": "2000-2009",
+      "start_year": 2000,
+      "end_year": 2009
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "label": "2010-2019",
+      "start_year": 2010,
+      "end_year": 2019
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "label": "2020-2022",
+      "start_year": 2020,
+      "end_year": 2022
+    }
+  ],
+  "rows": [
+    {
+      "period_id": "p1_pre_1850",
+      "period_label": "Before 1850",
+      "routing_layer": "rail_transit_route",
+      "routing_layer_label": "Rail / Transit Route",
+      "mean_frequency_per_million": 2.1011e-06,
+      "sum_frequency_per_million": 2.5213e-05,
+      "max_query_frequency_per_million": 1.29284e-05,
+      "active_query_count": 2,
+      "dominant_terms": [
+        {
+          "term": "transport hub",
+          "mean_frequency_per_million": 1.293e-05
+        },
+        {
+          "term": "railroad hub",
+          "mean_frequency_per_million": 1.228e-05
+        }
+      ],
+      "visibility_rank_within_period": 4,
+      "routing_visibility_status": "sparse",
+      "data_quality": "high",
+      "notes": "Available Ngram data begins at 1800, so this bucket is effectively 1800-1849."
+    },
+    {
+      "period_id": "p1_pre_1850",
+      "period_label": "Before 1850",
+      "routing_layer": "air_logistics_route",
+      "routing_layer_label": "Air / Logistics Route",
+      "mean_frequency_per_million": 1.07736e-05,
+      "sum_frequency_per_million": 0.0001292838,
+      "max_query_frequency_per_million": 6.46418e-05,
+      "active_query_count": 3,
+      "dominant_terms": [
+        {
+          "term": "logistics hub",
+          "mean_frequency_per_million": 6.464e-05
+        },
+        {
+          "term": "regional hub",
+          "mean_frequency_per_million": 5.171e-05
+        },
+        {
+          "term": "global hub",
+          "mean_frequency_per_million": 1.293e-05
+        }
+      ],
+      "visibility_rank_within_period": 1,
+      "routing_visibility_status": "sparse",
+      "data_quality": "medium",
+      "notes": "Available Ngram data begins at 1800, so this bucket is effectively 1800-1849."
+    },
+    {
+      "period_id": "p1_pre_1850",
+      "period_label": "Before 1850",
+      "routing_layer": "hub_and_spoke_model",
+      "routing_layer_label": "Hub-and-Spoke Model",
+      "mean_frequency_per_million": 2.5536e-06,
+      "sum_frequency_per_million": 3.06432e-05,
+      "max_query_frequency_per_million": 3.06432e-05,
+      "active_query_count": 1,
+      "dominant_terms": [
+        {
+          "term": "hub-and-spoke",
+          "mean_frequency_per_million": 3.064e-05
+        }
+      ],
+      "visibility_rank_within_period": 2,
+      "routing_visibility_status": "sparse",
+      "data_quality": "high",
+      "notes": "Available Ngram data begins at 1800, so this bucket is effectively 1800-1849."
+    },
+    {
+      "period_id": "p1_pre_1850",
+      "period_label": "Before 1850",
+      "routing_layer": "network_communication_route",
+      "routing_layer_label": "Network / Communication Route",
+      "mean_frequency_per_million": 0.0,
+      "sum_frequency_per_million": 0.0,
+      "max_query_frequency_per_million": 0.0,
+      "active_query_count": 0,
+      "dominant_terms": [],
+      "visibility_rank_within_period": 5,
+      "routing_visibility_status": "absent",
+      "data_quality": "medium",
+      "notes": "Available Ngram data begins at 1800, so this bucket is effectively 1800-1849."
+    },
+    {
+      "period_id": "p1_pre_1850",
+      "period_label": "Before 1850",
+      "routing_layer": "institutional_route_language",
+      "routing_layer_label": "Institutional Route Language",
+      "mean_frequency_per_million": 5.1714e-06,
+      "sum_frequency_per_million": 2.58568e-05,
+      "max_query_frequency_per_million": 2.58568e-05,
+      "active_query_count": 1,
+      "dominant_terms": [
+        {
+          "term": "business hub",
+          "mean_frequency_per_million": 2.586e-05
+        }
+      ],
+      "visibility_rank_within_period": 3,
+      "routing_visibility_status": "sparse",
+      "data_quality": "medium",
+      "notes": "Available Ngram data begins at 1800, so this bucket is effectively 1800-1849."
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "period_label": "1850-1899",
+      "routing_layer": "rail_transit_route",
+      "routing_layer_label": "Rail / Transit Route",
+      "mean_frequency_per_million": 2.31081e-05,
+      "sum_frequency_per_million": 0.0002772976,
+      "max_query_frequency_per_million": 0.0001358092,
+      "active_query_count": 3,
+      "dominant_terms": [
+        {
+          "term": "railroad hub",
+          "mean_frequency_per_million": 0.00013581
+        },
+        {
+          "term": "transit hub",
+          "mean_frequency_per_million": 9.843e-05
+        },
+        {
+          "term": "railway hub",
+          "mean_frequency_per_million": 4.306e-05
+        }
+      ],
+      "visibility_rank_within_period": 2,
+      "routing_visibility_status": "sparse",
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "period_label": "1850-1899",
+      "routing_layer": "air_logistics_route",
+      "routing_layer_label": "Air / Logistics Route",
+      "mean_frequency_per_million": 3.233e-07,
+      "sum_frequency_per_million": 3.8794e-06,
+      "max_query_frequency_per_million": 3.8794e-06,
+      "active_query_count": 1,
+      "dominant_terms": [
+        {
+          "term": "shipping hub",
+          "mean_frequency_per_million": 3.88e-06
+        }
+      ],
+      "visibility_rank_within_period": 3,
+      "routing_visibility_status": "sparse",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "period_label": "1850-1899",
+      "routing_layer": "hub_and_spoke_model",
+      "routing_layer_label": "Hub-and-Spoke Model",
+      "mean_frequency_per_million": 0.0011588333,
+      "sum_frequency_per_million": 0.0139059994,
+      "max_query_frequency_per_million": 0.013896298,
+      "active_query_count": 2,
+      "dominant_terms": [
+        {
+          "term": "hub and spoke",
+          "mean_frequency_per_million": 0.0138963
+        },
+        {
+          "term": "hub-and-spoke",
+          "mean_frequency_per_million": 9.7e-06
+        }
+      ],
+      "visibility_rank_within_period": 1,
+      "routing_visibility_status": "dominant",
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "period_label": "1850-1899",
+      "routing_layer": "network_communication_route",
+      "routing_layer_label": "Network / Communication Route",
+      "mean_frequency_per_million": 0.0,
+      "sum_frequency_per_million": 0.0,
+      "max_query_frequency_per_million": 0.0,
+      "active_query_count": 0,
+      "dominant_terms": [],
+      "visibility_rank_within_period": 5,
+      "routing_visibility_status": "absent",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "period_label": "1850-1899",
+      "routing_layer": "institutional_route_language",
+      "routing_layer_label": "Institutional Route Language",
+      "mean_frequency_per_million": 7.552e-07,
+      "sum_frequency_per_million": 3.776e-06,
+      "max_query_frequency_per_million": 3.776e-06,
+      "active_query_count": 1,
+      "dominant_terms": [
+        {
+          "term": "business hub",
+          "mean_frequency_per_million": 3.78e-06
+        }
+      ],
+      "visibility_rank_within_period": 4,
+      "routing_visibility_status": "sparse",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "period_label": "1900-1945",
+      "routing_layer": "rail_transit_route",
+      "routing_layer_label": "Rail / Transit Route",
+      "mean_frequency_per_million": 0.0001193187,
+      "sum_frequency_per_million": 0.0014318248,
+      "max_query_frequency_per_million": 0.0004998248,
+      "active_query_count": 4,
+      "dominant_terms": [
+        {
+          "term": "railroad hub",
+          "mean_frequency_per_million": 0.00049982
+        },
+        {
+          "term": "transit hub",
+          "mean_frequency_per_million": 0.00039514
+        },
+        {
+          "term": "railway hub",
+          "mean_frequency_per_million": 0.00039344
+        },
+        {
+          "term": "transport hub",
+          "mean_frequency_per_million": 0.00014343
+        }
+      ],
+      "visibility_rank_within_period": 2,
+      "routing_visibility_status": "sparse",
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "period_label": "1900-1945",
+      "routing_layer": "air_logistics_route",
+      "routing_layer_label": "Air / Logistics Route",
+      "mean_frequency_per_million": 3.02225e-05,
+      "sum_frequency_per_million": 0.0003626702,
+      "max_query_frequency_per_million": 0.0002307546,
+      "active_query_count": 6,
+      "dominant_terms": [
+        {
+          "term": "shipping hub",
+          "mean_frequency_per_million": 0.00023075
+        },
+        {
+          "term": "global hub",
+          "mean_frequency_per_million": 4.473e-05
+        },
+        {
+          "term": "airline hub",
+          "mean_frequency_per_million": 2.946e-05
+        },
+        {
+          "term": "regional hub",
+          "mean_frequency_per_million": 2.497e-05
+        }
+      ],
+      "visibility_rank_within_period": 4,
+      "routing_visibility_status": "sparse",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "period_label": "1900-1945",
+      "routing_layer": "hub_and_spoke_model",
+      "routing_layer_label": "Hub-and-Spoke Model",
+      "mean_frequency_per_million": 0.0006669489,
+      "sum_frequency_per_million": 0.008003387,
+      "max_query_frequency_per_million": 0.0076850298,
+      "active_query_count": 2,
+      "dominant_terms": [
+        {
+          "term": "hub and spoke",
+          "mean_frequency_per_million": 0.00768503
+        },
+        {
+          "term": "hub-and-spoke",
+          "mean_frequency_per_million": 0.00031836
+        }
+      ],
+      "visibility_rank_within_period": 1,
+      "routing_visibility_status": "dominant",
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "period_label": "1900-1945",
+      "routing_layer": "network_communication_route",
+      "routing_layer_label": "Network / Communication Route",
+      "mean_frequency_per_million": 1.2263e-05,
+      "sum_frequency_per_million": 0.0001594185,
+      "max_query_frequency_per_million": 6.1823e-05,
+      "active_query_count": 8,
+      "dominant_terms": [
+        {
+          "term": "communication hub",
+          "mean_frequency_per_million": 6.182e-05
+        },
+        {
+          "term": "data hub",
+          "mean_frequency_per_million": 4.525e-05
+        },
+        {
+          "term": "USB hub",
+          "mean_frequency_per_million": 2.069e-05
+        },
+        {
+          "term": "network hub",
+          "mean_frequency_per_million": 1.169e-05
+        }
+      ],
+      "visibility_rank_within_period": 5,
+      "routing_visibility_status": "sparse",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "period_label": "1900-1945",
+      "routing_layer": "institutional_route_language",
+      "routing_layer_label": "Institutional Route Language",
+      "mean_frequency_per_million": 0.000154319,
+      "sum_frequency_per_million": 0.000771595,
+      "max_query_frequency_per_million": 0.0007511413,
+      "active_query_count": 3,
+      "dominant_terms": [
+        {
+          "term": "business hub",
+          "mean_frequency_per_million": 0.00075114
+        },
+        {
+          "term": "knowledge hub",
+          "mean_frequency_per_million": 1.542e-05
+        },
+        {
+          "term": "learning hub",
+          "mean_frequency_per_million": 5.04e-06
+        }
+      ],
+      "visibility_rank_within_period": 3,
+      "routing_visibility_status": "sparse",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "period_label": "1946-1979",
+      "routing_layer": "rail_transit_route",
+      "routing_layer_label": "Rail / Transit Route",
+      "mean_frequency_per_million": 0.0004269707,
+      "sum_frequency_per_million": 0.0051236479,
+      "max_query_frequency_per_million": 0.0021288962,
+      "active_query_count": 4,
+      "dominant_terms": [
+        {
+          "term": "railroad hub",
+          "mean_frequency_per_million": 0.0021289
+        },
+        {
+          "term": "railway hub",
+          "mean_frequency_per_million": 0.00168122
+        },
+        {
+          "term": "transport hub",
+          "mean_frequency_per_million": 0.00108665
+        },
+        {
+          "term": "transit hub",
+          "mean_frequency_per_million": 0.00022688
+        }
+      ],
+      "visibility_rank_within_period": 1,
+      "routing_visibility_status": "dominant",
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "period_label": "1946-1979",
+      "routing_layer": "air_logistics_route",
+      "routing_layer_label": "Air / Logistics Route",
+      "mean_frequency_per_million": 0.0001519133,
+      "sum_frequency_per_million": 0.0018229597,
+      "max_query_frequency_per_million": 0.0008527888,
+      "active_query_count": 6,
+      "dominant_terms": [
+        {
+          "term": "regional hub",
+          "mean_frequency_per_million": 0.00085279
+        },
+        {
+          "term": "airline hub",
+          "mean_frequency_per_million": 0.00028796
+        },
+        {
+          "term": "airport hub",
+          "mean_frequency_per_million": 0.00026747
+        },
+        {
+          "term": "shipping hub",
+          "mean_frequency_per_million": 0.00026047
+        }
+      ],
+      "visibility_rank_within_period": 4,
+      "routing_visibility_status": "sparse",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "period_label": "1946-1979",
+      "routing_layer": "hub_and_spoke_model",
+      "routing_layer_label": "Hub-and-Spoke Model",
+      "mean_frequency_per_million": 0.0003631702,
+      "sum_frequency_per_million": 0.0043580426,
+      "max_query_frequency_per_million": 0.0022235124,
+      "active_query_count": 2,
+      "dominant_terms": [
+        {
+          "term": "hub and spoke",
+          "mean_frequency_per_million": 0.00222351
+        },
+        {
+          "term": "hub-and-spoke",
+          "mean_frequency_per_million": 0.00213453
+        }
+      ],
+      "visibility_rank_within_period": 2,
+      "routing_visibility_status": "visible",
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "period_label": "1946-1979",
+      "routing_layer": "network_communication_route",
+      "routing_layer_label": "Network / Communication Route",
+      "mean_frequency_per_million": 8.77119e-05,
+      "sum_frequency_per_million": 0.0011402553,
+      "max_query_frequency_per_million": 0.0005812306,
+      "active_query_count": 11,
+      "dominant_terms": [
+        {
+          "term": "communication hub",
+          "mean_frequency_per_million": 0.00058123
+        },
+        {
+          "term": "switching hub",
+          "mean_frequency_per_million": 0.00022746
+        },
+        {
+          "term": "network hub",
+          "mean_frequency_per_million": 0.00011997
+        },
+        {
+          "term": "data hub",
+          "mean_frequency_per_million": 8.556e-05
+        }
+      ],
+      "visibility_rank_within_period": 5,
+      "routing_visibility_status": "sparse",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "period_label": "1946-1979",
+      "routing_layer": "institutional_route_language",
+      "routing_layer_label": "Institutional Route Language",
+      "mean_frequency_per_million": 0.0003985313,
+      "sum_frequency_per_million": 0.0019926565,
+      "max_query_frequency_per_million": 0.0019280753,
+      "active_query_count": 4,
+      "dominant_terms": [
+        {
+          "term": "business hub",
+          "mean_frequency_per_million": 0.00192808
+        },
+        {
+          "term": "learning hub",
+          "mean_frequency_per_million": 2.686e-05
+        },
+        {
+          "term": "knowledge hub",
+          "mean_frequency_per_million": 2.542e-05
+        },
+        {
+          "term": "resource hub",
+          "mean_frequency_per_million": 1.231e-05
+        }
+      ],
+      "visibility_rank_within_period": 3,
+      "routing_visibility_status": "sparse",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "period_label": "1980-1999",
+      "routing_layer": "rail_transit_route",
+      "routing_layer_label": "Rail / Transit Route",
+      "mean_frequency_per_million": 0.0016061853,
+      "sum_frequency_per_million": 0.019274223,
+      "max_query_frequency_per_million": 0.009328428,
+      "active_query_count": 4,
+      "dominant_terms": [
+        {
+          "term": "transport hub",
+          "mean_frequency_per_million": 0.00932843
+        },
+        {
+          "term": "transit hub",
+          "mean_frequency_per_million": 0.004714
+        },
+        {
+          "term": "railroad hub",
+          "mean_frequency_per_million": 0.00321929
+        },
+        {
+          "term": "railway hub",
+          "mean_frequency_per_million": 0.00201251
+        }
+      ],
+      "visibility_rank_within_period": 4,
+      "routing_visibility_status": "emerging",
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "period_label": "1980-1999",
+      "routing_layer": "air_logistics_route",
+      "routing_layer_label": "Air / Logistics Route",
+      "mean_frequency_per_million": 0.0021911905,
+      "sum_frequency_per_million": 0.0262942855,
+      "max_query_frequency_per_million": 0.0154009575,
+      "active_query_count": 6,
+      "dominant_terms": [
+        {
+          "term": "regional hub",
+          "mean_frequency_per_million": 0.01540096
+        },
+        {
+          "term": "airline hub",
+          "mean_frequency_per_million": 0.00413108
+        },
+        {
+          "term": "airport hub",
+          "mean_frequency_per_million": 0.00200647
+        },
+        {
+          "term": "global hub",
+          "mean_frequency_per_million": 0.00168769
+        }
+      ],
+      "visibility_rank_within_period": 3,
+      "routing_visibility_status": "emerging",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "period_label": "1980-1999",
+      "routing_layer": "hub_and_spoke_model",
+      "routing_layer_label": "Hub-and-Spoke Model",
+      "mean_frequency_per_million": 0.0069818257,
+      "sum_frequency_per_million": 0.0837819085,
+      "max_query_frequency_per_million": 0.0509765165,
+      "active_query_count": 2,
+      "dominant_terms": [
+        {
+          "term": "hub-and-spoke",
+          "mean_frequency_per_million": 0.05097652
+        },
+        {
+          "term": "hub and spoke",
+          "mean_frequency_per_million": 0.03280539
+        }
+      ],
+      "visibility_rank_within_period": 1,
+      "routing_visibility_status": "dominant",
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "period_label": "1980-1999",
+      "routing_layer": "network_communication_route",
+      "routing_layer_label": "Network / Communication Route",
+      "mean_frequency_per_million": 0.0031592324,
+      "sum_frequency_per_million": 0.0410700215,
+      "max_query_frequency_per_million": 0.0137063135,
+      "active_query_count": 12,
+      "dominant_terms": [
+        {
+          "term": "Ethernet hub",
+          "mean_frequency_per_million": 0.01370631
+        },
+        {
+          "term": "switching hub",
+          "mean_frequency_per_million": 0.00869248
+        },
+        {
+          "term": "network hub",
+          "mean_frequency_per_million": 0.00764546
+        },
+        {
+          "term": "USB hub",
+          "mean_frequency_per_million": 0.00465389
+        }
+      ],
+      "visibility_rank_within_period": 2,
+      "routing_visibility_status": "visible",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "period_label": "1980-1999",
+      "routing_layer": "institutional_route_language",
+      "routing_layer_label": "Institutional Route Language",
+      "mean_frequency_per_million": 0.0015170492,
+      "sum_frequency_per_million": 0.007585246,
+      "max_query_frequency_per_million": 0.007032703,
+      "active_query_count": 4,
+      "dominant_terms": [
+        {
+          "term": "business hub",
+          "mean_frequency_per_million": 0.0070327
+        },
+        {
+          "term": "resource hub",
+          "mean_frequency_per_million": 0.00020905
+        },
+        {
+          "term": "knowledge hub",
+          "mean_frequency_per_million": 0.00017615
+        },
+        {
+          "term": "learning hub",
+          "mean_frequency_per_million": 0.00016734
+        }
+      ],
+      "visibility_rank_within_period": 5,
+      "routing_visibility_status": "emerging",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "period_label": "2000-2009",
+      "routing_layer": "rail_transit_route",
+      "routing_layer_label": "Rail / Transit Route",
+      "mean_frequency_per_million": 0.0053430433,
+      "sum_frequency_per_million": 0.06411652,
+      "max_query_frequency_per_million": 0.033855192,
+      "active_query_count": 4,
+      "dominant_terms": [
+        {
+          "term": "transport hub",
+          "mean_frequency_per_million": 0.03385519
+        },
+        {
+          "term": "transit hub",
+          "mean_frequency_per_million": 0.01886984
+        },
+        {
+          "term": "railroad hub",
+          "mean_frequency_per_million": 0.00766069
+        },
+        {
+          "term": "railway hub",
+          "mean_frequency_per_million": 0.00373079
+        }
+      ],
+      "visibility_rank_within_period": 4,
+      "routing_visibility_status": "visible",
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "period_label": "2000-2009",
+      "routing_layer": "air_logistics_route",
+      "routing_layer_label": "Air / Logistics Route",
+      "mean_frequency_per_million": 0.0064420302,
+      "sum_frequency_per_million": 0.077304362,
+      "max_query_frequency_per_million": 0.038352341,
+      "active_query_count": 6,
+      "dominant_terms": [
+        {
+          "term": "regional hub",
+          "mean_frequency_per_million": 0.03835234
+        },
+        {
+          "term": "logistics hub",
+          "mean_frequency_per_million": 0.01352017
+        },
+        {
+          "term": "global hub",
+          "mean_frequency_per_million": 0.01244421
+        },
+        {
+          "term": "airline hub",
+          "mean_frequency_per_million": 0.0053766
+        }
+      ],
+      "visibility_rank_within_period": 3,
+      "routing_visibility_status": "visible",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "period_label": "2000-2009",
+      "routing_layer": "hub_and_spoke_model",
+      "routing_layer_label": "Hub-and-Spoke Model",
+      "mean_frequency_per_million": 0.0132816445,
+      "sum_frequency_per_million": 0.159379734,
+      "max_query_frequency_per_million": 0.110122242,
+      "active_query_count": 2,
+      "dominant_terms": [
+        {
+          "term": "hub-and-spoke",
+          "mean_frequency_per_million": 0.11012224
+        },
+        {
+          "term": "hub and spoke",
+          "mean_frequency_per_million": 0.04925749
+        }
+      ],
+      "visibility_rank_within_period": 1,
+      "routing_visibility_status": "dominant",
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "period_label": "2000-2009",
+      "routing_layer": "network_communication_route",
+      "routing_layer_label": "Network / Communication Route",
+      "mean_frequency_per_million": 0.0084816983,
+      "sum_frequency_per_million": 0.110262078,
+      "max_query_frequency_per_million": 0.028080826,
+      "active_query_count": 12,
+      "dominant_terms": [
+        {
+          "term": "USB hub",
+          "mean_frequency_per_million": 0.02808083
+        },
+        {
+          "term": "Ethernet hub",
+          "mean_frequency_per_million": 0.02055104
+        },
+        {
+          "term": "network hub",
+          "mean_frequency_per_million": 0.01827614
+        },
+        {
+          "term": "digital hub",
+          "mean_frequency_per_million": 0.0104291
+        }
+      ],
+      "visibility_rank_within_period": 2,
+      "routing_visibility_status": "visible",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "period_label": "2000-2009",
+      "routing_layer": "institutional_route_language",
+      "routing_layer_label": "Institutional Route Language",
+      "mean_frequency_per_million": 0.0064473818,
+      "sum_frequency_per_million": 0.032236909,
+      "max_query_frequency_per_million": 0.023200634,
+      "active_query_count": 4,
+      "dominant_terms": [
+        {
+          "term": "business hub",
+          "mean_frequency_per_million": 0.02320063
+        },
+        {
+          "term": "knowledge hub",
+          "mean_frequency_per_million": 0.00563239
+        },
+        {
+          "term": "learning hub",
+          "mean_frequency_per_million": 0.00187861
+        },
+        {
+          "term": "resource hub",
+          "mean_frequency_per_million": 0.00152527
+        }
+      ],
+      "visibility_rank_within_period": 5,
+      "routing_visibility_status": "emerging",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "period_label": "2010-2019",
+      "routing_layer": "rail_transit_route",
+      "routing_layer_label": "Rail / Transit Route",
+      "mean_frequency_per_million": 0.0073948617,
+      "sum_frequency_per_million": 0.088738341,
+      "max_query_frequency_per_million": 0.053625399,
+      "active_query_count": 4,
+      "dominant_terms": [
+        {
+          "term": "transport hub",
+          "mean_frequency_per_million": 0.0536254
+        },
+        {
+          "term": "transit hub",
+          "mean_frequency_per_million": 0.02105537
+        },
+        {
+          "term": "railroad hub",
+          "mean_frequency_per_million": 0.00775738
+        },
+        {
+          "term": "railway hub",
+          "mean_frequency_per_million": 0.00630019
+        }
+      ],
+      "visibility_rank_within_period": 3,
+      "routing_visibility_status": "visible",
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "period_label": "2010-2019",
+      "routing_layer": "air_logistics_route",
+      "routing_layer_label": "Air / Logistics Route",
+      "mean_frequency_per_million": 0.0065069935,
+      "sum_frequency_per_million": 0.078083922,
+      "max_query_frequency_per_million": 0.032331281,
+      "active_query_count": 6,
+      "dominant_terms": [
+        {
+          "term": "regional hub",
+          "mean_frequency_per_million": 0.03233128
+        },
+        {
+          "term": "global hub",
+          "mean_frequency_per_million": 0.01770584
+        },
+        {
+          "term": "logistics hub",
+          "mean_frequency_per_million": 0.01581127
+        },
+        {
+          "term": "shipping hub",
+          "mean_frequency_per_million": 0.00486276
+        }
+      ],
+      "visibility_rank_within_period": 4,
+      "routing_visibility_status": "visible",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "period_label": "2010-2019",
+      "routing_layer": "hub_and_spoke_model",
+      "routing_layer_label": "Hub-and-Spoke Model",
+      "mean_frequency_per_million": 0.0128437229,
+      "sum_frequency_per_million": 0.154124675,
+      "max_query_frequency_per_million": 0.10690264,
+      "active_query_count": 2,
+      "dominant_terms": [
+        {
+          "term": "hub-and-spoke",
+          "mean_frequency_per_million": 0.10690264
+        },
+        {
+          "term": "hub and spoke",
+          "mean_frequency_per_million": 0.04722204
+        }
+      ],
+      "visibility_rank_within_period": 1,
+      "routing_visibility_status": "dominant",
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "period_label": "2010-2019",
+      "routing_layer": "network_communication_route",
+      "routing_layer_label": "Network / Communication Route",
+      "mean_frequency_per_million": 0.0073237827,
+      "sum_frequency_per_million": 0.095209175,
+      "max_query_frequency_per_million": 0.024217756,
+      "active_query_count": 12,
+      "dominant_terms": [
+        {
+          "term": "data hub",
+          "mean_frequency_per_million": 0.02421776
+        },
+        {
+          "term": "USB hub",
+          "mean_frequency_per_million": 0.02413561
+        },
+        {
+          "term": "network hub",
+          "mean_frequency_per_million": 0.01102306
+        },
+        {
+          "term": "digital hub",
+          "mean_frequency_per_million": 0.01007475
+        }
+      ],
+      "visibility_rank_within_period": 2,
+      "routing_visibility_status": "visible",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "period_label": "2010-2019",
+      "routing_layer": "institutional_route_language",
+      "routing_layer_label": "Institutional Route Language",
+      "mean_frequency_per_million": 0.0084729588,
+      "sum_frequency_per_million": 0.042364794,
+      "max_query_frequency_per_million": 0.017597956,
+      "active_query_count": 4,
+      "dominant_terms": [
+        {
+          "term": "business hub",
+          "mean_frequency_per_million": 0.01759796
+        },
+        {
+          "term": "knowledge hub",
+          "mean_frequency_per_million": 0.01448743
+        },
+        {
+          "term": "learning hub",
+          "mean_frequency_per_million": 0.00721858
+        },
+        {
+          "term": "resource hub",
+          "mean_frequency_per_million": 0.00306084
+        }
+      ],
+      "visibility_rank_within_period": 5,
+      "routing_visibility_status": "emerging",
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "period_label": "2020-2022",
+      "routing_layer": "rail_transit_route",
+      "routing_layer_label": "Rail / Transit Route",
+      "mean_frequency_per_million": 0.0068409231,
+      "sum_frequency_per_million": 0.0820910767,
+      "max_query_frequency_per_million": 0.0466637533,
+      "active_query_count": 4,
+      "dominant_terms": [
+        {
+          "term": "transport hub",
+          "mean_frequency_per_million": 0.04666375
+        },
+        {
+          "term": "transit hub",
+          "mean_frequency_per_million": 0.02289538
+        },
+        {
+          "term": "railway hub",
+          "mean_frequency_per_million": 0.00735897
+        },
+        {
+          "term": "railroad hub",
+          "mean_frequency_per_million": 0.00517297
+        }
+      ],
+      "visibility_rank_within_period": 4,
+      "routing_visibility_status": "visible",
+      "data_quality": "high",
+      "notes": "Final bucket is limited to 2020-2022 because the current Ngram corpus ends at 2022."
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "period_label": "2020-2022",
+      "routing_layer": "air_logistics_route",
+      "routing_layer_label": "Air / Logistics Route",
+      "mean_frequency_per_million": 0.0073840753,
+      "sum_frequency_per_million": 0.0886089033,
+      "max_query_frequency_per_million": 0.03291916,
+      "active_query_count": 6,
+      "dominant_terms": [
+        {
+          "term": "regional hub",
+          "mean_frequency_per_million": 0.03291916
+        },
+        {
+          "term": "global hub",
+          "mean_frequency_per_million": 0.02414222
+        },
+        {
+          "term": "logistics hub",
+          "mean_frequency_per_million": 0.02171158
+        },
+        {
+          "term": "shipping hub",
+          "mean_frequency_per_million": 0.00460582
+        }
+      ],
+      "visibility_rank_within_period": 3,
+      "routing_visibility_status": "visible",
+      "data_quality": "medium",
+      "notes": "Final bucket is limited to 2020-2022 because the current Ngram corpus ends at 2022."
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "period_label": "2020-2022",
+      "routing_layer": "hub_and_spoke_model",
+      "routing_layer_label": "Hub-and-Spoke Model",
+      "mean_frequency_per_million": 0.0124868986,
+      "sum_frequency_per_million": 0.1498427833,
+      "max_query_frequency_per_million": 0.1078268567,
+      "active_query_count": 2,
+      "dominant_terms": [
+        {
+          "term": "hub-and-spoke",
+          "mean_frequency_per_million": 0.10782686
+        },
+        {
+          "term": "hub and spoke",
+          "mean_frequency_per_million": 0.04201593
+        }
+      ],
+      "visibility_rank_within_period": 1,
+      "routing_visibility_status": "dominant",
+      "data_quality": "high",
+      "notes": "Final bucket is limited to 2020-2022 because the current Ngram corpus ends at 2022."
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "period_label": "2020-2022",
+      "routing_layer": "network_communication_route",
+      "routing_layer_label": "Network / Communication Route",
+      "mean_frequency_per_million": 0.0074967605,
+      "sum_frequency_per_million": 0.0974578867,
+      "max_query_frequency_per_million": 0.0383062767,
+      "active_query_count": 12,
+      "dominant_terms": [
+        {
+          "term": "data hub",
+          "mean_frequency_per_million": 0.03830628
+        },
+        {
+          "term": "digital hub",
+          "mean_frequency_per_million": 0.01451582
+        },
+        {
+          "term": "network hub",
+          "mean_frequency_per_million": 0.01170899
+        },
+        {
+          "term": "communication hub",
+          "mean_frequency_per_million": 0.01005198
+        }
+      ],
+      "visibility_rank_within_period": 2,
+      "routing_visibility_status": "visible",
+      "data_quality": "medium",
+      "notes": "Final bucket is limited to 2020-2022 because the current Ngram corpus ends at 2022."
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "period_label": "2020-2022",
+      "routing_layer": "institutional_route_language",
+      "routing_layer_label": "Institutional Route Language",
+      "mean_frequency_per_million": 0.0133081673,
+      "sum_frequency_per_million": 0.0665408367,
+      "max_query_frequency_per_million": 0.0264830633,
+      "active_query_count": 4,
+      "dominant_terms": [
+        {
+          "term": "knowledge hub",
+          "mean_frequency_per_million": 0.02648306
+        },
+        {
+          "term": "business hub",
+          "mean_frequency_per_million": 0.01922263
+        },
+        {
+          "term": "learning hub",
+          "mean_frequency_per_million": 0.0128078
+        },
+        {
+          "term": "resource hub",
+          "mean_frequency_per_million": 0.00802734
+        }
+      ],
+      "visibility_rank_within_period": 5,
+      "routing_visibility_status": "visible",
+      "data_quality": "medium",
+      "notes": "Final bucket is limited to 2020-2022 because the current Ngram corpus ends at 2022."
+    }
+  ]
+}

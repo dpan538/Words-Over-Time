@@ -4,6 +4,7 @@ import { ArtificialChart02PressureDiagram } from "@/components/artificial/chart0
 import { ArtificialChart03InteractiveSuite } from "@/components/artificial/chart03/ArtificialChart03InteractiveSuite";
 import { ArtificialChart04APejorationOrbit } from "@/components/artificial/chart04/ArtificialChart04APejorationOrbit";
 import { ArtificialChart04BSemanticAttractor } from "@/components/artificial/chart04/ArtificialChart04BSemanticAttractor";
+import { ArtificialChart05HumanBoundary } from "@/components/artificial/chart05/ArtificialChart05HumanBoundary";
 import { Nav } from "@/components/Nav";
 import { PosterSection } from "@/components/PosterSection";
 
@@ -12,11 +13,12 @@ const artificialPanels = [
   { num: "02", label: "Under Pressure", color: "#1570AC" },
   { num: "03", label: "Mechanical Reproduction", color: "#A1081F" },
   { num: "04", label: "Suspicion / Distance", color: "#036C17" },
+  { num: "05", label: "Human Boundary", color: "#B15825" },
 ];
 
 function ArtificialPanelProgress() {
   return (
-    <div className="grid border-b border-ink md:grid-cols-4">
+    <div className="grid border-b border-ink md:grid-cols-5">
       {artificialPanels.map((panel, index) => (
         <div
           key={panel.num}
@@ -140,6 +142,15 @@ export function ArtificialPoster() {
             intro="A semantic field for artificial as made, synthetic, simulated, realistic, and fake-adjacent without collapsing those relations into one synonym map: artificial stays closest to made and synthetic meanings, bends through simulation and realism, and only then drifts toward fake-adjacent uses."
           >
             <ArtificialChart04BSemanticAttractor />
+          </PosterSection>
+
+          <PosterSection
+            id="chart-5-artificial-human-boundary"
+            eyebrow="05 / human boundary"
+            title="Artificial Enters the Human"
+            intro="A layered 3D stack: artificial starts outside the body as apparatus, then moves through support, replacement, reproduction, and finally human process, voice, and cognition."
+          >
+            <ArtificialChart05HumanBoundary />
           </PosterSection>
 
           <div className="mt-12 border-t border-ink/80 pb-12 pt-8">

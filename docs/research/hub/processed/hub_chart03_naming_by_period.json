@@ -1,0 +1,1451 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_03",
+    "generated_at": "2026-05-14T06:07:27.453242Z",
+    "generated_by_script": "scripts/process_hub_chart03_naming.py",
+    "periods": [
+      {
+        "period_id": "p1_pre_1850",
+        "label": "Before 1850",
+        "start_year": 1500,
+        "end_year": 1849
+      },
+      {
+        "period_id": "p2_1850_1899",
+        "label": "1850-1899",
+        "start_year": 1850,
+        "end_year": 1899
+      },
+      {
+        "period_id": "p3_1900_1945",
+        "label": "1900-1945",
+        "start_year": 1900,
+        "end_year": 1945
+      },
+      {
+        "period_id": "p4_1946_1979",
+        "label": "1946-1979",
+        "start_year": 1946,
+        "end_year": 1979
+      },
+      {
+        "period_id": "p5_1980_1999",
+        "label": "1980-1999",
+        "start_year": 1980,
+        "end_year": 1999
+      },
+      {
+        "period_id": "p6_2000_2009",
+        "label": "2000-2009",
+        "start_year": 2000,
+        "end_year": 2009
+      },
+      {
+        "period_id": "p7_2010_2019",
+        "label": "2010-2019",
+        "start_year": 2010,
+        "end_year": 2019
+      },
+      {
+        "period_id": "p8_2020_2022",
+        "label": "2020-2022",
+        "start_year": 2020,
+        "end_year": 2022
+      }
+    ]
+  },
+  "periods": [
+    {
+      "period_id": "p1_pre_1850",
+      "period_label": "Before 1850",
+      "naming_pattern": "suffix_phrase",
+      "active_terms": [
+        "community hub",
+        "business hub",
+        "financial hub",
+        "innovation hub"
+      ],
+      "new_or_emerging_terms": [
+        "community hub",
+        "business hub",
+        "financial hub",
+        "innovation hub"
+      ],
+      "mean_frequency_per_million": 4.18e-06,
+      "max_term_frequency_per_million": 0.0026654,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point"
+      ],
+      "visibility_rank_within_period": 2,
+      "data_quality": "high",
+      "notes": "Before 1850 is effectively 1800-1849 for available Ngram data."
+    },
+    {
+      "period_id": "p1_pre_1850",
+      "period_label": "Before 1850",
+      "naming_pattern": "prefix_phrase",
+      "active_terms": [],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.0,
+      "max_term_frequency_per_million": 0.0,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [],
+      "visibility_rank_within_period": 3,
+      "data_quality": "low",
+      "notes": "Before 1850 is effectively 1800-1849 for available Ngram data."
+    },
+    {
+      "period_id": "p1_pre_1850",
+      "period_label": "Before 1850",
+      "naming_pattern": "closed_compound_or_brand",
+      "active_terms": [],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.0,
+      "max_term_frequency_per_million": 0.0,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [],
+      "visibility_rank_within_period": 4,
+      "data_quality": "low",
+      "notes": "Before 1850 is effectively 1800-1849 for available Ngram data."
+    },
+    {
+      "period_id": "p1_pre_1850",
+      "period_label": "Before 1850",
+      "naming_pattern": "institutional_access_point",
+      "active_terms": [
+        "community hub",
+        "business hub",
+        "financial hub",
+        "innovation hub"
+      ],
+      "new_or_emerging_terms": [
+        "community hub",
+        "business hub",
+        "financial hub",
+        "innovation hub"
+      ],
+      "mean_frequency_per_million": 5.28e-06,
+      "max_term_frequency_per_million": 0.0026654,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point"
+      ],
+      "visibility_rank_within_period": 1,
+      "data_quality": "high",
+      "notes": "Before 1850 is effectively 1800-1849 for available Ngram data."
+    },
+    {
+      "period_id": "p1_pre_1850",
+      "period_label": "Before 1850",
+      "naming_pattern": "platform_content_access",
+      "active_terms": [],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.0,
+      "max_term_frequency_per_million": 0.0,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [],
+      "visibility_rank_within_period": 5,
+      "data_quality": "low",
+      "notes": "Before 1850 is effectively 1800-1849 for available Ngram data."
+    },
+    {
+      "period_id": "p1_pre_1850",
+      "period_label": "Before 1850",
+      "naming_pattern": "technical_system",
+      "active_terms": [],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.0,
+      "max_term_frequency_per_million": 0.0,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [],
+      "visibility_rank_within_period": 6,
+      "data_quality": "low",
+      "notes": "Before 1850 is effectively 1800-1849 for available Ngram data."
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "period_label": "1850-1899",
+      "naming_pattern": "suffix_phrase",
+      "active_terms": [
+        "support hub",
+        "business hub",
+        "financial hub"
+      ],
+      "new_or_emerging_terms": [
+        "support hub"
+      ],
+      "mean_frequency_per_million": 3.2e-06,
+      "max_term_frequency_per_million": 0.0008193,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point"
+      ],
+      "visibility_rank_within_period": 4,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "period_label": "1850-1899",
+      "naming_pattern": "prefix_phrase",
+      "active_terms": [
+        "hub page",
+        "hub model",
+        "hub system",
+        "hub airport",
+        "hub city",
+        "hub location",
+        "hub site",
+        "hub room"
+      ],
+      "new_or_emerging_terms": [
+        "hub page",
+        "hub model",
+        "hub system",
+        "hub airport",
+        "hub city",
+        "hub location",
+        "hub site",
+        "hub room"
+      ],
+      "mean_frequency_per_million": 0.00032181,
+      "max_term_frequency_per_million": 0.0194507,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system",
+        "institutional_access_point",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 1,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "period_label": "1850-1899",
+      "naming_pattern": "closed_compound_or_brand",
+      "active_terms": [],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.0,
+      "max_term_frequency_per_million": 0.0,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [],
+      "visibility_rank_within_period": 6,
+      "data_quality": "low",
+      "notes": ""
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "period_label": "1850-1899",
+      "naming_pattern": "institutional_access_point",
+      "active_terms": [
+        "support hub",
+        "business hub",
+        "financial hub",
+        "hub city",
+        "hub location",
+        "hub room"
+      ],
+      "new_or_emerging_terms": [
+        "support hub",
+        "hub city",
+        "hub location",
+        "hub room"
+      ],
+      "mean_frequency_per_million": 0.00016953,
+      "max_term_frequency_per_million": 0.0194507,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point"
+      ],
+      "visibility_rank_within_period": 2,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "period_label": "1850-1899",
+      "naming_pattern": "platform_content_access",
+      "active_terms": [
+        "hub page",
+        "hub site"
+      ],
+      "new_or_emerging_terms": [
+        "hub page",
+        "hub site"
+      ],
+      "mean_frequency_per_million": 5.67e-06,
+      "max_term_frequency_per_million": 0.00032147,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 3,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p2_1850_1899",
+      "period_label": "1850-1899",
+      "naming_pattern": "technical_system",
+      "active_terms": [
+        "hub model",
+        "hub system",
+        "hub airport"
+      ],
+      "new_or_emerging_terms": [
+        "hub model",
+        "hub system",
+        "hub airport"
+      ],
+      "mean_frequency_per_million": 1.77e-06,
+      "max_term_frequency_per_million": 0.00031971,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system"
+      ],
+      "visibility_rank_within_period": 5,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "period_label": "1900-1945",
+      "naming_pattern": "suffix_phrase",
+      "active_terms": [
+        "student hub",
+        "learning hub",
+        "equipment hub",
+        "support hub",
+        "community hub",
+        "library hub",
+        "business hub",
+        "financial hub",
+        "innovation hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "data hub",
+        "online hub",
+        "network hub",
+        "USB hub",
+        "switching hub",
+        "communication hub"
+      ],
+      "new_or_emerging_terms": [
+        "student hub",
+        "learning hub",
+        "equipment hub",
+        "library hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "data hub",
+        "online hub",
+        "network hub",
+        "USB hub",
+        "switching hub",
+        "communication hub"
+      ],
+      "mean_frequency_per_million": 7.331e-05,
+      "max_term_frequency_per_million": 0.00267288,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point",
+        "technical_system",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 4,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "period_label": "1900-1945",
+      "naming_pattern": "prefix_phrase",
+      "active_terms": [
+        "hub page",
+        "hub model",
+        "hub system",
+        "hub network",
+        "hub airport",
+        "hub city",
+        "hub location",
+        "hub site",
+        "hub room",
+        "hub service",
+        "hub strategy"
+      ],
+      "new_or_emerging_terms": [
+        "hub network",
+        "hub service",
+        "hub strategy"
+      ],
+      "mean_frequency_per_million": 0.00332395,
+      "max_term_frequency_per_million": 0.08465808,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system",
+        "institutional_access_point",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 1,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "period_label": "1900-1945",
+      "naming_pattern": "closed_compound_or_brand",
+      "active_terms": [],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.0,
+      "max_term_frequency_per_million": 0.0,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [],
+      "visibility_rank_within_period": 6,
+      "data_quality": "low",
+      "notes": ""
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "period_label": "1900-1945",
+      "naming_pattern": "institutional_access_point",
+      "active_terms": [
+        "student hub",
+        "learning hub",
+        "equipment hub",
+        "support hub",
+        "community hub",
+        "library hub",
+        "business hub",
+        "financial hub",
+        "innovation hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "hub city",
+        "hub location",
+        "hub room",
+        "hub service"
+      ],
+      "new_or_emerging_terms": [
+        "student hub",
+        "learning hub",
+        "equipment hub",
+        "library hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "hub service"
+      ],
+      "mean_frequency_per_million": 0.00177596,
+      "max_term_frequency_per_million": 0.08465808,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point"
+      ],
+      "visibility_rank_within_period": 2,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "period_label": "1900-1945",
+      "naming_pattern": "platform_content_access",
+      "active_terms": [
+        "data hub",
+        "online hub",
+        "hub page",
+        "hub site"
+      ],
+      "new_or_emerging_terms": [
+        "data hub",
+        "online hub"
+      ],
+      "mean_frequency_per_million": 1.062e-05,
+      "max_term_frequency_per_million": 0.00194933,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 5,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p3_1900_1945",
+      "period_label": "1900-1945",
+      "naming_pattern": "technical_system",
+      "active_terms": [
+        "hub model",
+        "hub system",
+        "hub network",
+        "hub airport",
+        "hub strategy",
+        "network hub",
+        "USB hub",
+        "switching hub",
+        "communication hub"
+      ],
+      "new_or_emerging_terms": [
+        "hub network",
+        "hub strategy",
+        "network hub",
+        "USB hub",
+        "switching hub",
+        "communication hub"
+      ],
+      "mean_frequency_per_million": 9.187e-05,
+      "max_term_frequency_per_million": 0.0135171,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system"
+      ],
+      "visibility_rank_within_period": 3,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "period_label": "1946-1979",
+      "naming_pattern": "suffix_phrase",
+      "active_terms": [
+        "student hub",
+        "learning hub",
+        "resource hub",
+        "equipment hub",
+        "media hub",
+        "support hub",
+        "community hub",
+        "library hub",
+        "business hub",
+        "financial hub",
+        "innovation hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "content hub",
+        "data hub",
+        "digital hub",
+        "online hub",
+        "network hub",
+        "USB hub",
+        "Ethernet hub",
+        "switching hub",
+        "communication hub"
+      ],
+      "new_or_emerging_terms": [
+        "resource hub",
+        "media hub",
+        "content hub",
+        "digital hub",
+        "Ethernet hub"
+      ],
+      "mean_frequency_per_million": 0.00023789,
+      "max_term_frequency_per_million": 0.00414308,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point",
+        "technical_system",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 4,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "period_label": "1946-1979",
+      "naming_pattern": "prefix_phrase",
+      "active_terms": [
+        "hub page",
+        "hub model",
+        "hub system",
+        "hub network",
+        "hub node",
+        "hub airport",
+        "hub city",
+        "hub location",
+        "hub site",
+        "hub room",
+        "hub service",
+        "hub strategy"
+      ],
+      "new_or_emerging_terms": [
+        "hub node"
+      ],
+      "mean_frequency_per_million": 0.00465359,
+      "max_term_frequency_per_million": 0.08692352,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system",
+        "institutional_access_point",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 1,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "period_label": "1946-1979",
+      "naming_pattern": "closed_compound_or_brand",
+      "active_terms": [],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.0,
+      "max_term_frequency_per_million": 0.0,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [],
+      "visibility_rank_within_period": 6,
+      "data_quality": "low",
+      "notes": ""
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "period_label": "1946-1979",
+      "naming_pattern": "institutional_access_point",
+      "active_terms": [
+        "student hub",
+        "learning hub",
+        "resource hub",
+        "equipment hub",
+        "media hub",
+        "support hub",
+        "community hub",
+        "library hub",
+        "business hub",
+        "financial hub",
+        "innovation hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "hub city",
+        "hub location",
+        "hub room",
+        "hub service"
+      ],
+      "new_or_emerging_terms": [
+        "resource hub",
+        "media hub"
+      ],
+      "mean_frequency_per_million": 0.00237073,
+      "max_term_frequency_per_million": 0.08692352,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point"
+      ],
+      "visibility_rank_within_period": 2,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "period_label": "1946-1979",
+      "naming_pattern": "platform_content_access",
+      "active_terms": [
+        "content hub",
+        "data hub",
+        "digital hub",
+        "online hub",
+        "hub page",
+        "hub site"
+      ],
+      "new_or_emerging_terms": [
+        "content hub",
+        "digital hub"
+      ],
+      "mean_frequency_per_million": 4.642e-05,
+      "max_term_frequency_per_million": 0.0007777,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 5,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p4_1946_1979",
+      "period_label": "1946-1979",
+      "naming_pattern": "technical_system",
+      "active_terms": [
+        "hub model",
+        "hub system",
+        "hub network",
+        "hub node",
+        "hub airport",
+        "hub strategy",
+        "network hub",
+        "USB hub",
+        "Ethernet hub",
+        "switching hub",
+        "communication hub"
+      ],
+      "new_or_emerging_terms": [
+        "hub node",
+        "Ethernet hub"
+      ],
+      "mean_frequency_per_million": 0.00066138,
+      "max_term_frequency_per_million": 0.01427362,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system"
+      ],
+      "visibility_rank_within_period": 3,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "period_label": "1980-1999",
+      "naming_pattern": "suffix_phrase",
+      "active_terms": [
+        "student hub",
+        "learning hub",
+        "resource hub",
+        "equipment hub",
+        "media hub",
+        "support hub",
+        "community hub",
+        "library hub",
+        "career hub",
+        "business hub",
+        "financial hub",
+        "innovation hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "startup hub",
+        "content hub",
+        "data hub",
+        "digital hub",
+        "online hub",
+        "network hub",
+        "USB hub",
+        "Ethernet hub",
+        "switching hub",
+        "communication hub",
+        "integration hub"
+      ],
+      "new_or_emerging_terms": [
+        "career hub",
+        "startup hub",
+        "integration hub"
+      ],
+      "mean_frequency_per_million": 0.00205202,
+      "max_term_frequency_per_million": 0.06002097,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point",
+        "technical_system",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 4,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "period_label": "1980-1999",
+      "naming_pattern": "prefix_phrase",
+      "active_terms": [
+        "hub page",
+        "hub model",
+        "hub system",
+        "hub network",
+        "hub node",
+        "hub airport",
+        "hub city",
+        "hub location",
+        "hub site",
+        "hub room",
+        "hub service",
+        "hub strategy"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.00738167,
+      "max_term_frequency_per_million": 0.05773442,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system",
+        "institutional_access_point",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 1,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "period_label": "1980-1999",
+      "naming_pattern": "closed_compound_or_brand",
+      "active_terms": [],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.0,
+      "max_term_frequency_per_million": 0.0,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [],
+      "visibility_rank_within_period": 6,
+      "data_quality": "low",
+      "notes": ""
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "period_label": "1980-1999",
+      "naming_pattern": "institutional_access_point",
+      "active_terms": [
+        "student hub",
+        "learning hub",
+        "resource hub",
+        "equipment hub",
+        "media hub",
+        "support hub",
+        "community hub",
+        "library hub",
+        "career hub",
+        "business hub",
+        "financial hub",
+        "innovation hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "startup hub",
+        "hub city",
+        "hub location",
+        "hub room",
+        "hub service"
+      ],
+      "new_or_emerging_terms": [
+        "career hub",
+        "startup hub"
+      ],
+      "mean_frequency_per_million": 0.00310986,
+      "max_term_frequency_per_million": 0.05773442,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point"
+      ],
+      "visibility_rank_within_period": 3,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "period_label": "1980-1999",
+      "naming_pattern": "platform_content_access",
+      "active_terms": [
+        "content hub",
+        "data hub",
+        "digital hub",
+        "online hub",
+        "hub page",
+        "hub site"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.00095978,
+      "max_term_frequency_per_million": 0.01174454,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 5,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p5_1980_1999",
+      "period_label": "1980-1999",
+      "naming_pattern": "technical_system",
+      "active_terms": [
+        "hub model",
+        "hub system",
+        "hub network",
+        "hub node",
+        "hub airport",
+        "hub strategy",
+        "network hub",
+        "USB hub",
+        "Ethernet hub",
+        "switching hub",
+        "communication hub",
+        "integration hub"
+      ],
+      "new_or_emerging_terms": [
+        "integration hub"
+      ],
+      "mean_frequency_per_million": 0.00590025,
+      "max_term_frequency_per_million": 0.06002097,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system"
+      ],
+      "visibility_rank_within_period": 2,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "period_label": "2000-2009",
+      "naming_pattern": "suffix_phrase",
+      "active_terms": [
+        "student hub",
+        "learning hub",
+        "resource hub",
+        "equipment hub",
+        "media hub",
+        "support hub",
+        "community hub",
+        "library hub",
+        "wellbeing hub",
+        "career hub",
+        "business hub",
+        "financial hub",
+        "innovation hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "startup hub",
+        "content hub",
+        "data hub",
+        "digital hub",
+        "online hub",
+        "network hub",
+        "USB hub",
+        "Ethernet hub",
+        "switching hub",
+        "communication hub",
+        "integration hub"
+      ],
+      "new_or_emerging_terms": [
+        "wellbeing hub"
+      ],
+      "mean_frequency_per_million": 0.0065494,
+      "max_term_frequency_per_million": 0.04358626,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point",
+        "technical_system",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 3,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "period_label": "2000-2009",
+      "naming_pattern": "prefix_phrase",
+      "active_terms": [
+        "hub page",
+        "hub model",
+        "hub system",
+        "hub network",
+        "hub node",
+        "hub airport",
+        "hub city",
+        "hub location",
+        "hub site",
+        "hub room",
+        "hub service",
+        "hub strategy"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.00972202,
+      "max_term_frequency_per_million": 0.05226514,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system",
+        "institutional_access_point",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 2,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "period_label": "2000-2009",
+      "naming_pattern": "closed_compound_or_brand",
+      "active_terms": [],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.0,
+      "max_term_frequency_per_million": 0.0,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [],
+      "visibility_rank_within_period": 6,
+      "data_quality": "low",
+      "notes": ""
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "period_label": "2000-2009",
+      "naming_pattern": "institutional_access_point",
+      "active_terms": [
+        "student hub",
+        "learning hub",
+        "resource hub",
+        "equipment hub",
+        "media hub",
+        "support hub",
+        "community hub",
+        "library hub",
+        "wellbeing hub",
+        "career hub",
+        "business hub",
+        "financial hub",
+        "innovation hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "startup hub",
+        "hub city",
+        "hub location",
+        "hub room",
+        "hub service"
+      ],
+      "new_or_emerging_terms": [
+        "wellbeing hub"
+      ],
+      "mean_frequency_per_million": 0.0058005,
+      "max_term_frequency_per_million": 0.05226514,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point"
+      ],
+      "visibility_rank_within_period": 4,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "period_label": "2000-2009",
+      "naming_pattern": "platform_content_access",
+      "active_terms": [
+        "content hub",
+        "data hub",
+        "digital hub",
+        "online hub",
+        "hub page",
+        "hub site"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.00576023,
+      "max_term_frequency_per_million": 0.03285886,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 5,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p6_2000_2009",
+      "period_label": "2000-2009",
+      "naming_pattern": "technical_system",
+      "active_terms": [
+        "hub model",
+        "hub system",
+        "hub network",
+        "hub node",
+        "hub airport",
+        "hub strategy",
+        "network hub",
+        "USB hub",
+        "Ethernet hub",
+        "switching hub",
+        "communication hub",
+        "integration hub"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.01155201,
+      "max_term_frequency_per_million": 0.04358626,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system"
+      ],
+      "visibility_rank_within_period": 1,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "period_label": "2010-2019",
+      "naming_pattern": "suffix_phrase",
+      "active_terms": [
+        "student hub",
+        "learning hub",
+        "resource hub",
+        "equipment hub",
+        "media hub",
+        "support hub",
+        "community hub",
+        "library hub",
+        "wellbeing hub",
+        "career hub",
+        "business hub",
+        "financial hub",
+        "innovation hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "startup hub",
+        "content hub",
+        "data hub",
+        "digital hub",
+        "online hub",
+        "network hub",
+        "USB hub",
+        "Ethernet hub",
+        "switching hub",
+        "communication hub",
+        "integration hub"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.00830198,
+      "max_term_frequency_per_million": 0.05921896,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point",
+        "technical_system",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 3,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "period_label": "2010-2019",
+      "naming_pattern": "prefix_phrase",
+      "active_terms": [
+        "hub page",
+        "hub model",
+        "hub system",
+        "hub network",
+        "hub node",
+        "hub airport",
+        "hub city",
+        "hub location",
+        "hub site",
+        "hub room",
+        "hub service",
+        "hub strategy"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.00754703,
+      "max_term_frequency_per_million": 0.03037939,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system",
+        "institutional_access_point",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 5,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "period_label": "2010-2019",
+      "naming_pattern": "closed_compound_or_brand",
+      "active_terms": [],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.0,
+      "max_term_frequency_per_million": 0.0,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [],
+      "visibility_rank_within_period": 6,
+      "data_quality": "low",
+      "notes": ""
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "period_label": "2010-2019",
+      "naming_pattern": "institutional_access_point",
+      "active_terms": [
+        "student hub",
+        "learning hub",
+        "resource hub",
+        "equipment hub",
+        "media hub",
+        "support hub",
+        "community hub",
+        "library hub",
+        "wellbeing hub",
+        "career hub",
+        "business hub",
+        "financial hub",
+        "innovation hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "startup hub",
+        "hub city",
+        "hub location",
+        "hub room",
+        "hub service"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.00781626,
+      "max_term_frequency_per_million": 0.0489359,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point"
+      ],
+      "visibility_rank_within_period": 4,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "period_label": "2010-2019",
+      "naming_pattern": "platform_content_access",
+      "active_terms": [
+        "content hub",
+        "data hub",
+        "digital hub",
+        "online hub",
+        "hub page",
+        "hub site"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.0086456,
+      "max_term_frequency_per_million": 0.05921896,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 1,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p7_2010_2019",
+      "period_label": "2010-2019",
+      "naming_pattern": "technical_system",
+      "active_terms": [
+        "hub model",
+        "hub system",
+        "hub network",
+        "hub node",
+        "hub airport",
+        "hub strategy",
+        "network hub",
+        "USB hub",
+        "Ethernet hub",
+        "switching hub",
+        "communication hub",
+        "integration hub"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.00830619,
+      "max_term_frequency_per_million": 0.03121582,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system"
+      ],
+      "visibility_rank_within_period": 2,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "period_label": "2020-2022",
+      "naming_pattern": "suffix_phrase",
+      "active_terms": [
+        "student hub",
+        "learning hub",
+        "resource hub",
+        "equipment hub",
+        "media hub",
+        "support hub",
+        "community hub",
+        "library hub",
+        "wellbeing hub",
+        "career hub",
+        "business hub",
+        "financial hub",
+        "innovation hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "startup hub",
+        "content hub",
+        "data hub",
+        "digital hub",
+        "online hub",
+        "network hub",
+        "USB hub",
+        "Ethernet hub",
+        "switching hub",
+        "communication hub",
+        "integration hub"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.01603322,
+      "max_term_frequency_per_million": 0.2307503,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point",
+        "technical_system",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 2,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "period_label": "2020-2022",
+      "naming_pattern": "prefix_phrase",
+      "active_terms": [
+        "hub page",
+        "hub model",
+        "hub system",
+        "hub network",
+        "hub node",
+        "hub airport",
+        "hub city",
+        "hub location",
+        "hub site",
+        "hub room",
+        "hub service",
+        "hub strategy"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.00683712,
+      "max_term_frequency_per_million": 0.0173196,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system",
+        "institutional_access_point",
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 4,
+      "data_quality": "medium",
+      "notes": ""
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "period_label": "2020-2022",
+      "naming_pattern": "closed_compound_or_brand",
+      "active_terms": [],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.0,
+      "max_term_frequency_per_million": 0.0,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [],
+      "visibility_rank_within_period": 6,
+      "data_quality": "low",
+      "notes": ""
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "period_label": "2020-2022",
+      "naming_pattern": "institutional_access_point",
+      "active_terms": [
+        "student hub",
+        "learning hub",
+        "resource hub",
+        "equipment hub",
+        "media hub",
+        "support hub",
+        "community hub",
+        "library hub",
+        "wellbeing hub",
+        "career hub",
+        "business hub",
+        "financial hub",
+        "innovation hub",
+        "knowledge hub",
+        "research hub",
+        "education hub",
+        "creative hub",
+        "startup hub",
+        "hub city",
+        "hub location",
+        "hub room",
+        "hub service"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.01719016,
+      "max_term_frequency_per_million": 0.2307503,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "institutional_access_point"
+      ],
+      "visibility_rank_within_period": 1,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "period_label": "2020-2022",
+      "naming_pattern": "platform_content_access",
+      "active_terms": [
+        "content hub",
+        "data hub",
+        "digital hub",
+        "online hub",
+        "hub page",
+        "hub site"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.01233394,
+      "max_term_frequency_per_million": 0.04685173,
+      "search_visibility_status": "strong",
+      "dominant_object_types": [
+        "platform_content_access"
+      ],
+      "visibility_rank_within_period": 3,
+      "data_quality": "high",
+      "notes": ""
+    },
+    {
+      "period_id": "p8_2020_2022",
+      "period_label": "2020-2022",
+      "naming_pattern": "technical_system",
+      "active_terms": [
+        "hub model",
+        "hub system",
+        "hub network",
+        "hub node",
+        "hub airport",
+        "hub strategy",
+        "network hub",
+        "USB hub",
+        "Ethernet hub",
+        "switching hub",
+        "communication hub",
+        "integration hub"
+      ],
+      "new_or_emerging_terms": [],
+      "mean_frequency_per_million": 0.00646929,
+      "max_term_frequency_per_million": 0.0135004,
+      "search_visibility_status": "unavailable",
+      "dominant_object_types": [
+        "technical_system"
+      ],
+      "visibility_rank_within_period": 5,
+      "data_quality": "medium",
+      "notes": ""
+    }
+  ]
+}

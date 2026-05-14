@@ -1,0 +1,133 @@
+{
+  "chart_id": "chart_02",
+  "working_title": "The Transfer Model",
+  "core_model_status": {
+    "hub_and_spoke_strong_enough": true,
+    "main_model_terms": [
+      "hub and spoke",
+      "hub-and-spoke"
+    ],
+    "confidence": "high",
+    "notes": "Core model remains supported by the two existing hub-and-spoke frequency terms; expanded variants remain gap-limited."
+  },
+  "routing_layers": [
+    {
+      "routing_layer": "rail_transit_route",
+      "frequency_support": "strong",
+      "evidence_support": "strong",
+      "recommended_role": "main_series",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "routing_layer": "air_logistics_route",
+      "frequency_support": "usable",
+      "evidence_support": "strong",
+      "recommended_role": "supporting",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "routing_layer": "hub_and_spoke_model",
+      "frequency_support": "strong",
+      "evidence_support": "usable",
+      "recommended_role": "core_model",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "routing_layer": "network_communication_route",
+      "frequency_support": "usable",
+      "evidence_support": "strong",
+      "recommended_role": "supporting",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "routing_layer": "institutional_route_language",
+      "frequency_support": "usable",
+      "evidence_support": "absent",
+      "recommended_role": "annotation",
+      "confidence": "low",
+      "notes": "Use failed or ambiguous query variants only as cautions."
+    }
+  ],
+  "terms_to_use": {
+    "main_model": [
+      "hub and spoke",
+      "hub-and-spoke"
+    ],
+    "main_series": [
+      "transport hub"
+    ],
+    "supporting": [
+      "transit hub",
+      "railway hub",
+      "railroad hub",
+      "logistics hub",
+      "network hub",
+      "communication hub",
+      "hub node",
+      "Ethernet hub",
+      "switching hub",
+      "data hub",
+      "USB hub"
+    ],
+    "annotation": [
+      "rail hub",
+      "bus hub",
+      "metro hub",
+      "urban transit hub",
+      "route hub",
+      "passenger hub",
+      "intermodal hub",
+      "central station hub",
+      "airport hub",
+      "airline hub",
+      "air hub",
+      "shipping hub",
+      "distribution hub",
+      "cargo hub",
+      "freight hub",
+      "supply chain hub",
+      "regional hub",
+      "global hub",
+      "international hub",
+      "hub and spoke system",
+      "hub and spoke network",
+      "hub and spoke model",
+      "telecom hub",
+      "internet hub",
+      "server hub",
+      "digital hub",
+      "platform hub",
+      "service hub",
+      "resource hub",
+      "knowledge hub",
+      "learning hub",
+      "business hub"
+    ],
+    "exclude": [
+      "hub and spokes",
+      "hub-spoke",
+      "spoke and hub",
+      "spoke-hub",
+      "hub-and-spoke system",
+      "hub-and-spoke network",
+      "hub-and-spoke model",
+      "network switch hub"
+    ]
+  },
+  "remaining_gaps": [
+    {
+      "gap": "Expanded hub-and-spoke variants still lack recovered frequency series.",
+      "affected_terms": [
+        "hub-and-spoke system",
+        "hub-and-spoke network",
+        "hub-and-spoke model"
+      ],
+      "severity": "low",
+      "notes": "Core terms hub and spoke / hub-and-spoke remain available and strong enough for the model."
+    }
+  ]
+}

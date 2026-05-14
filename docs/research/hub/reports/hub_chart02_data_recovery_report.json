@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_02",
+    "pass": "data_recovery",
+    "generated_at": "2026-05-13T13:43:19.315055Z",
+    "generated_by_script": "scripts/process_hub_chart02_recovery.py"
+  },
+  "summary": {
+    "previous_summary": {
+      "queries_attempted": 54,
+      "successful": 28,
+      "failed": 26,
+      "evidence_items": 21,
+      "high_confidence_evidence": 3,
+      "medium_confidence_evidence": 15,
+      "low_confidence_evidence": 3
+    },
+    "recovery_summary": {
+      "failed_queries_retriaged": 26,
+      "frequency_series_recovered": 8,
+      "recovered_from_existing_cache": 0,
+      "recovered_from_ngram_retry": 8,
+      "failed_again": 3,
+      "marked_evidence_only": 10,
+      "dropped_or_excluded": 5,
+      "hardened_evidence_items": 21,
+      "high_confidence_evidence": 4,
+      "medium_confidence_evidence": 14,
+      "low_confidence_evidence": 3
+    },
+    "chart02_readiness_after_recovery": "ready",
+    "main_model_status": "Core model remains supported by the two existing hub-and-spoke frequency terms; expanded variants remain gap-limited.",
+    "notes": "Network-dependent frequency recovery remained transparent; no absent series were invented."
+  },
+  "failed_query_triage_summary": {
+    "evidence_only": 8,
+    "retry_frequency": 11,
+    "ambiguous_or_noisy": 2,
+    "drop_or_exclude": 5
+  },
+  "recovered_frequency_summary": {
+    "failed_queries_retriaged": 26,
+    "frequency_series_recovered": 8,
+    "recovered_from_existing_cache": 0,
+    "recovered_from_ngram_retry": 8,
+    "failed_again": 3,
+    "marked_evidence_only": 10,
+    "dropped_or_excluded": 5,
+    "hardened_evidence_items": 21,
+    "high_confidence_evidence": 4,
+    "medium_confidence_evidence": 14,
+    "low_confidence_evidence": 3
+  },
+  "hardened_evidence_summary": {
+    "confidence_counts": {
+      "medium": 14,
+      "high": 4,
+      "low": 3
+    },
+    "status_counts": {
+      "carried_forward": 17,
+      "upgraded": 1,
+      "retained_low": 3
+    }
+  },
+  "model_confidence_matrix_summary": {
+    "core_model_status": {
+      "hub_and_spoke_strong_enough": true,
+      "main_model_terms": [
+        "hub and spoke",
+        "hub-and-spoke"
+      ],
+      "confidence": "high",
+      "notes": "Core model remains supported by the two existing hub-and-spoke frequency terms; expanded variants remain gap-limited."
+    },
+    "routing_layers": [
+      {
+        "routing_layer": "rail_transit_route",
+        "frequency_support": "strong",
+        "evidence_support": "strong",
+        "recommended_role": "main_series",
+        "confidence": "high",
+        "notes": ""
+      },
+      {
+        "routing_layer": "air_logistics_route",
+        "frequency_support": "usable",
+        "evidence_support": "strong",
+        "recommended_role": "supporting",
+        "confidence": "medium",
+        "notes": ""
+      },
+      {
+        "routing_layer": "hub_and_spoke_model",
+        "frequency_support": "strong",
+        "evidence_support": "usable",
+        "recommended_role": "core_model",
+        "confidence": "high",
+        "notes": ""
+      },
+      {
+        "routing_layer": "network_communication_route",
+        "frequency_support": "usable",
+        "evidence_support": "strong",
+        "recommended_role": "supporting",
+        "confidence": "medium",
+        "notes": ""
+      },
+      {
+        "routing_layer": "institutional_route_language",
+        "frequency_support": "usable",
+        "evidence_support": "absent",
+        "recommended_role": "annotation",
+        "confidence": "low",
+        "notes": "Use failed or ambiguous query variants only as cautions."
+      }
+    ]
+  },
+  "remaining_gaps": [
+    {
+      "gap": "Expanded hub-and-spoke variants still lack recovered frequency series.",
+      "affected_terms": [
+        "hub-and-spoke system",
+        "hub-and-spoke network",
+        "hub-and-spoke model"
+      ],
+      "severity": "low",
+      "notes": "Core terms hub and spoke / hub-and-spoke remain available and strong enough for the model."
+    }
+  ],
+  "output_paths": {
+    "failed_query_triage": "docs/research/hub/processed/hub_chart02_failed_query_triage.json",
+    "recovered_routing_terms": "docs/research/hub/processed/hub_chart02_recovered_routing_terms.json",
+    "recovered_frequency_series": "docs/research/hub/processed/hub_chart02_recovered_frequency_series.json",
+    "hardened_evidence": "docs/research/hub/processed/hub_chart02_hardened_evidence.json",
+    "model_confidence_matrix": "docs/research/hub/processed/hub_chart02_model_confidence_matrix.json",
+    "recovery_summary": "docs/research/hub/processed/hub_chart02_recovery_summary.json",
+    "report_md": "docs/research/hub/reports/hub_chart02_data_recovery_report.md",
+    "report_json": "docs/research/hub/reports/hub_chart02_data_recovery_report.json"
+  }
+}

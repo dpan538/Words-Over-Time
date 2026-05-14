@@ -1,0 +1,43 @@
+{
+  "hypothesis": "Hub has become a reusable naming component for platforms, rooms, services, resources, communities, and access points.",
+  "verdict": "supported",
+  "supporting_findings": [
+    "X + hub has strong frequency support and strong search visibility support.",
+    "15 public institutional/campus/service examples were retained as naming evidence.",
+    "7 brand/platform examples were retained as platform-era naming forms.",
+    "Platform/content terms and technical terms remain separate from ordinary phrase-frequency interpretation."
+  ],
+  "findings_requiring_caution": [
+    "Ngram underrepresents very recent web-native naming patterns.",
+    "Search visibility shows public presence, not exact frequency.",
+    "Brand names are recognition anchors and naming examples, not lexical-frequency evidence.",
+    "Some broad terms such as community hub and service hub are semantically mixed without local context."
+  ],
+  "counter_evidence_or_limitations": [
+    "Hub + X appears less dominant and more technical/systemic than X + hub.",
+    "Some candidate terms are sparse or failed in Ngram despite visible modern web usage."
+  ],
+  "strongest_pattern": "suffix_phrase",
+  "weakest_pattern": "prefix_phrase",
+  "most_modern_pattern": "platform_content_access",
+  "most_institutional_pattern": "institutional_access_point",
+  "most_platform_like_pattern": "closed_compound_or_brand",
+  "recommended_chart03_focus": "Focus on X + hub as the main naming format for access points, with brand/platform compounds as recognition anchors and hub + X as a smaller technical-system modifier pattern.",
+  "do_not_claim": [
+    "Do not claim brand popularity equals lexical frequency.",
+    "Do not claim Pornhub defines the modern meaning of hub; it is only one neutral platform-era naming example.",
+    "Do not claim Ngram first nonzero year is a first attestation.",
+    "Do not claim all X + hub phrases are post-2000.",
+    "Do not claim every hub name has the same access-point meaning without context."
+  ],
+  "strongest_suffix_terms_by_frequency": [
+    "education hub",
+    "innovation hub",
+    "Ethernet hub",
+    "data hub",
+    "USB hub",
+    "financial hub",
+    "switching hub",
+    "business hub"
+  ]
+}

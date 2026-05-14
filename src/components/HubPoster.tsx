@@ -1,6 +1,20 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { HubChart01SemanticField, type HubChart01FieldData, type HubChart01Layer, type HubChart01PeriodSignal, type HubChart01Query } from "@/components/hub/HubChart01SemanticField";
+import {
+  HubChart01SemanticField,
+  type HubChart01FieldData,
+  type HubChart01Layer,
+  type HubChart01PeriodSignal,
+  type HubChart01Query,
+} from "@/components/hub/HubChart01SemanticField";
+import {
+  HubChart02TransferModel,
+  type HubChart02Evidence,
+  type HubChart02FlowTerm,
+  type HubChart02LayerConfidence,
+  type HubChart02TermRole,
+  type HubChart02TransferData,
+} from "@/components/hub/HubChart02TransferModel";
 import { Nav } from "@/components/Nav";
 import hubChartDataPreviewJson from "@/data/generated/hub_chart_data_preview.json";
 
@@ -62,6 +76,7 @@ type HubChartPreview = {
       chart_planning_note: string;
     };
   };
+  chart02_recovery_layer?: Chart02RecoveryLayer;
 };
 
 type LayerSpec = {
@@ -75,6 +90,77 @@ type LayerSpec = {
   accentColor: string;
 };
 
+type Chart02RecoveredTerm = {
+  term: string;
+  routing_layer: string;
+  recovery_status: string;
+  frequency_support: string;
+  evidence_ids: string[];
+  evidence_confidence: "high" | "medium" | "low";
+  recommended_role_after_recovery: string;
+  notes: string;
+};
+
+type Chart02HardenedEvidence = {
+  evidence_id: string;
+  term: string;
+  routing_layer: string;
+  year: number | null;
+  source_title: string;
+  source_type: string;
+  context_summary: string;
+  supports_claim: string;
+  confidence: "high" | "medium" | "low";
+  limitations: string;
+};
+
+type Chart02RecoveryLayer = {
+  metadata: {
+    generated_at: string;
+  };
+  recovered_terms: Chart02RecoveredTerm[];
+  hardened_evidence: Chart02HardenedEvidence[];
+  model_confidence: {
+    core_model_status: {
+      hub_and_spoke_strong_enough: boolean;
+      main_model_terms: string[];
+      confidence: "high" | "medium" | "low";
+      notes: string;
+    };
+    routing_layers: {
+      routing_layer: string;
+      frequency_support: string;
+      evidence_support: string;
+      recommended_role: string;
+      confidence: "high" | "medium" | "low";
+    }[];
+    terms_to_use: {
+      main_model: string[];
+      main_series: string[];
+      supporting: string[];
+      annotation: string[];
+      exclude: string[];
+    };
+    remaining_gaps: {
+      gap: string;
+      severity: string;
+      notes: string;
+    }[];
+  };
+  recovery_summary: {
+    recovery_summary: {
+      frequency_series_recovered: number;
+      hardened_evidence_items: number;
+      high_confidence_evidence: number;
+      medium_confidence_evidence: number;
+      low_confidence_evidence: number;
+    };
+    chart02_readiness_after_recovery: string;
+    main_model_status: string;
+    notes: string;
+  };
+};
+
 const preview = hubChartDataPreviewJson as HubChartPreview;
 
 const layerSpecs: LayerSpec[] = [
@@ -86,7 +172,7 @@ const layerSpecs: LayerSpec[] = [
     periodHint: "1800-1945 strongest",
     summary: "Wheel-center and spoke-bearing uses remain present across the series, then become less dominant in modern semantic visibility.",
     color: "#8BBEB2",
-    accentColor: "#0D0630",
+    accentColor: "#FBB728",
   },
   {
     id: "central_place",
@@ -95,8 +181,8 @@ const layerSpecs: LayerSpec[] = [
     semanticGroups: ["central_place"],
     periodHint: "1850s metaphor layer",
     summary: "The word expands from a physical center toward activity, commerce, city, and social center phrases.",
-    color: "#E6F9AF",
-    accentColor: "#852736",
+    color: "#FBB728",
+    accentColor: "#8BBEB2",
   },
   {
     id: "transport_routing",
@@ -106,7 +192,7 @@ const layerSpecs: LayerSpec[] = [
     periodHint: "route and transfer model",
     summary: "Transport and hub-and-spoke phrases make hub visible as a routing structure for people, goods, and movement.",
     color: "#8BBEB2",
-    accentColor: "#0D0630",
+    accentColor: "#FBB728",
   },
   {
     id: "network_system",
@@ -115,8 +201,8 @@ const layerSpecs: LayerSpec[] = [
     semanticGroups: ["network_system"],
     periodHint: "technical node model",
     summary: "Communication, computing, Ethernet, USB, and network phrases keep the central-node logic technical and device-adjacent.",
-    color: "#E6F9AF",
-    accentColor: "#0D0630",
+    color: "#FBB728",
+    accentColor: "#8BBEB2",
   },
   {
     id: "institutional_digital",
@@ -126,12 +212,12 @@ const layerSpecs: LayerSpec[] = [
     periodHint: "modern visible center",
     summary: "Business, research, knowledge, digital, content, and data phrases make hub a modern access point and institutional concentration.",
     color: "#8BBEB2",
-    accentColor: "#852736",
+    accentColor: "#FBB728",
   },
 ];
 
 const hubPanels = [
-  { num: "01", label: "Semantic Frequency Field", color: "#E6F9AF" },
+  { num: "01", label: "Semantic Frequency Field", color: "#FBB728" },
   { num: "02", label: "Transfer Model", color: "#414B9E" },
   { num: "03", label: "Compound Growth", color: "#8BBEB2" },
   { num: "04", label: "Centrality Pressure", color: "#852736" },
@@ -273,6 +359,163 @@ function buildHubChart01Data(): HubChart01FieldData {
   };
 }
 
+function asChart02Role(role: string | undefined, fallback: HubChart02TermRole): HubChart02TermRole {
+  if (role === "main_model" || role === "main_series" || role === "supporting" || role === "annotation") {
+    return role;
+  }
+  return fallback;
+}
+
+function findChart02Term(recovery: Chart02RecoveryLayer, term: string) {
+  return recovery.recovered_terms.find((item) => item.term.toLowerCase() === term.toLowerCase());
+}
+
+function findChart02Evidence(
+  recovery: Chart02RecoveryLayer,
+  term: string,
+  preferredTitle?: string,
+): Chart02HardenedEvidence | undefined {
+  const matches = recovery.hardened_evidence.filter((item) => item.term.toLowerCase() === term.toLowerCase());
+  return (
+    matches.find((item) => preferredTitle && item.source_title.toLowerCase().includes(preferredTitle.toLowerCase())) ??
+    matches.find((item) => item.confidence === "high" && item.year !== null) ??
+    matches.find((item) => item.confidence === "high") ??
+    matches.find((item) => item.year !== null) ??
+    matches[0]
+  );
+}
+
+function chart02TermNote(term: Chart02RecoveredTerm | undefined, routingLayer: string) {
+  const layerLabel = chart02LayerLabels[routingLayer] ?? routingLayer;
+  if (!term) {
+    return `${layerLabel}; included as a selected Chart 02 route from the recovery layer.`;
+  }
+  const frequency = term.frequency_support.replaceAll("_", " ");
+  const confidence = term.evidence_confidence;
+  return `${layerLabel}. ${frequency} frequency support; ${confidence}-confidence evidence. ${term.notes}`;
+}
+
+const chart02LayerLabels: Record<string, string> = {
+  rail_transit_route: "Rail and transit routing",
+  air_logistics_route: "Air, freight, and logistics routing",
+  hub_and_spoke_model: "Explicit hub-and-spoke model",
+  network_communication_route: "Communication and network routing",
+  institutional_route_language: "Access and service language",
+};
+
+function buildHubChart02Data(): HubChart02TransferData {
+  const recovery = preview.chart02_recovery_layer;
+
+  if (!recovery) {
+    return {
+      title: "The Transfer Model",
+      subtitle: "When the center became a routing machine.",
+      sourceSummary: "Chart 02 recovery data is unavailable in the generated hub preview.",
+      coreStatus: "missing recovery layer",
+      readiness: "not ready",
+      recoveredCount: 0,
+      evidenceCount: 0,
+      confidenceCounts: { high: 0, medium: 0, low: 0 },
+      flows: [],
+      evidence: [],
+      layers: [],
+      cautions: ["Chart 02 recovery data was not found in the generated preview file."],
+    };
+  }
+
+  const flowPlan: {
+    term: string;
+    routingLayer: string;
+    side: HubChart02FlowTerm["side"];
+    fallbackRole: HubChart02TermRole;
+    weight: number;
+  }[] = [
+    { term: "transport hub", routingLayer: "rail_transit_route", side: "left", fallbackRole: "main_series", weight: 1 },
+    { term: "transit hub", routingLayer: "rail_transit_route", side: "left", fallbackRole: "supporting", weight: 0.74 },
+    { term: "railway hub", routingLayer: "rail_transit_route", side: "left", fallbackRole: "supporting", weight: 0.68 },
+    { term: "railroad hub", routingLayer: "rail_transit_route", side: "left", fallbackRole: "supporting", weight: 0.58 },
+    { term: "logistics hub", routingLayer: "air_logistics_route", side: "left", fallbackRole: "supporting", weight: 0.62 },
+    { term: "distribution hub", routingLayer: "air_logistics_route", side: "left", fallbackRole: "annotation", weight: 0.36 },
+    { term: "hub-and-spoke", routingLayer: "hub_and_spoke_model", side: "center", fallbackRole: "main_model", weight: 1 },
+    { term: "hub and spoke", routingLayer: "hub_and_spoke_model", side: "center", fallbackRole: "main_model", weight: 0.92 },
+    { term: "network hub", routingLayer: "network_communication_route", side: "right", fallbackRole: "supporting", weight: 0.78 },
+    { term: "communication hub", routingLayer: "network_communication_route", side: "right", fallbackRole: "supporting", weight: 0.68 },
+    { term: "hub node", routingLayer: "network_communication_route", side: "right", fallbackRole: "supporting", weight: 0.5 },
+    { term: "Ethernet hub", routingLayer: "network_communication_route", side: "right", fallbackRole: "supporting", weight: 0.58 },
+    { term: "switching hub", routingLayer: "network_communication_route", side: "right", fallbackRole: "supporting", weight: 0.54 },
+    { term: "data hub", routingLayer: "network_communication_route", side: "right", fallbackRole: "supporting", weight: 0.48 },
+  ];
+
+  const flows: HubChart02FlowTerm[] = flowPlan.map((plan) => {
+    const term = findChart02Term(recovery, plan.term);
+    return {
+      term: plan.term,
+      routingLayer: term?.routing_layer ?? plan.routingLayer,
+      role: asChart02Role(term?.recommended_role_after_recovery, plan.fallbackRole),
+      side: plan.side,
+      weight: plan.weight,
+      confidence: term?.evidence_confidence ?? "medium",
+      note: chart02TermNote(term, term?.routing_layer ?? plan.routingLayer),
+    };
+  });
+
+  const evidencePlan = [
+    { term: "transit hub", label: "Transit route evidence" },
+    { term: "railway hub", label: "Railway routing evidence" },
+    { term: "hub-and-spoke", label: "Explicit model reference", preferredTitle: "Merriam" },
+    { term: "network hub", label: "Network-node reference" },
+  ];
+  const evidence: HubChart02Evidence[] = evidencePlan.flatMap((plan) => {
+    const item = findChart02Evidence(recovery, plan.term, plan.preferredTitle);
+    if (!item) return [];
+    return [
+      {
+        label: plan.label,
+        year: item.year === null ? "ref." : String(item.year),
+        term: item.term,
+        confidence: item.confidence,
+        note: item.context_summary || item.limitations || item.supports_claim.replaceAll("_", " "),
+      },
+    ];
+  });
+
+  const summary = recovery.recovery_summary.recovery_summary;
+  const layers: HubChart02LayerConfidence[] = recovery.model_confidence.routing_layers.map((layer) => ({
+    routingLayer: layer.routing_layer,
+    frequencySupport: layer.frequency_support,
+    evidenceSupport: layer.evidence_support,
+    recommendedRole: layer.recommended_role,
+    confidence: layer.confidence,
+  }));
+
+  return {
+    title: "The Transfer Model",
+    subtitle: "How hub turned centrality into routing: routes collect, compress, and redistribute through a model point.",
+    sourceSummary: "Hub Chart 02 recovery layer: routing terms, hardened evidence, and model confidence matrix.",
+    coreStatus: recovery.model_confidence.core_model_status.hub_and_spoke_strong_enough
+      ? "hub-and-spoke strong"
+      : "hub-and-spoke limited",
+    readiness: recovery.recovery_summary.chart02_readiness_after_recovery,
+    recoveredCount: summary.frequency_series_recovered,
+    evidenceCount: summary.hardened_evidence_items,
+    confidenceCounts: {
+      high: summary.high_confidence_evidence,
+      medium: summary.medium_confidence_evidence,
+      low: summary.low_confidence_evidence,
+    },
+    flows,
+    evidence,
+    layers,
+    cautions: [
+      "Flow width maps recommended data role, not exact traffic volume.",
+      "Ngram values are printed-book frequency proxies and do not prove first historical attestation.",
+      "Expanded hub-and-spoke variants remain gap-limited; the chart uses the stronger core terms.",
+      "Regional, global, and institutional hub terms are kept out of the main routing flow unless context shows transfer.",
+      "Early routing evidence is sparser than modern routing evidence.",
+    ],
+  };
+}
+
 function HubPanelProgress() {
   return (
     <div className="grid border-b border-ink/60 md:grid-cols-4">
@@ -328,6 +571,7 @@ function HubSection({
 
 export function HubPoster() {
   const chart01Data = buildHubChart01Data();
+  const chart02Data = buildHubChart02Data();
   const queryCount = Object.values(preview.chart01_frequency_layer.frequency_summary.quality_flag_counts).reduce(
     (total, count) => total + count,
     0,
@@ -434,6 +678,14 @@ export function HubPoster() {
               ))}
             </ul>
           </section>
+
+          <HubSection
+            eyebrow="02 / transfer model"
+            title={chart02Data.title}
+            intro="A flat transfer diagram follows selected routing terms from transport and logistics inputs into the hub-and-spoke model, then outward into communication and network extensions."
+          >
+            <HubChart02TransferModel data={chart02Data} />
+          </HubSection>
 
           <div className="border-t border-ink/70 pb-12 pt-8">
             <div className="flex flex-wrap gap-4 font-mono text-[0.8rem] font-black uppercase tracking-[0.13em]">

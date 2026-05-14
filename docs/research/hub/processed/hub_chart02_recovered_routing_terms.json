@@ -1,0 +1,585 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_02",
+    "generated_at": "2026-05-13T13:43:19.314989Z",
+    "generated_by_script": "scripts/process_hub_chart02_recovery.py"
+  },
+  "terms": [
+    {
+      "term": "transport hub",
+      "routing_layer": "rail_transit_route",
+      "recovery_status": "already_available",
+      "frequency_support": "strong",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_003",
+        "hub_chart02_recovered_evidence_010"
+      ],
+      "evidence_confidence": "high",
+      "recommended_role_after_recovery": "main_series",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "transit hub",
+      "routing_layer": "rail_transit_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_004",
+        "hub_chart02_recovered_evidence_011"
+      ],
+      "evidence_confidence": "medium",
+      "recommended_role_after_recovery": "supporting",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "railway hub",
+      "routing_layer": "rail_transit_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_005",
+        "hub_chart02_recovered_evidence_012"
+      ],
+      "evidence_confidence": "high",
+      "recommended_role_after_recovery": "supporting",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "railroad hub",
+      "routing_layer": "rail_transit_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "supporting",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "rail hub",
+      "routing_layer": "rail_transit_route",
+      "recovery_status": "evidence_only",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Frequency unavailable; keep only as evidence/annotation candidate."
+    },
+    {
+      "term": "bus hub",
+      "routing_layer": "rail_transit_route",
+      "recovery_status": "evidence_only",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Frequency unavailable; keep only as evidence/annotation candidate."
+    },
+    {
+      "term": "metro hub",
+      "routing_layer": "rail_transit_route",
+      "recovery_status": "evidence_only",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Frequency unavailable; keep only as evidence/annotation candidate."
+    },
+    {
+      "term": "urban transit hub",
+      "routing_layer": "rail_transit_route",
+      "recovery_status": "evidence_only",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Frequency unavailable; keep only as evidence/annotation candidate."
+    },
+    {
+      "term": "route hub",
+      "routing_layer": "rail_transit_route",
+      "recovery_status": "evidence_only",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Frequency unavailable; keep only as evidence/annotation candidate."
+    },
+    {
+      "term": "passenger hub",
+      "routing_layer": "rail_transit_route",
+      "recovery_status": "evidence_only",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Frequency unavailable; keep only as evidence/annotation candidate."
+    },
+    {
+      "term": "intermodal hub",
+      "routing_layer": "rail_transit_route",
+      "recovery_status": "recovered",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Recovered through targeted Ngram retry."
+    },
+    {
+      "term": "central station hub",
+      "routing_layer": "rail_transit_route",
+      "recovery_status": "evidence_only",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Frequency unavailable; keep only as evidence/annotation candidate."
+    },
+    {
+      "term": "airport hub",
+      "routing_layer": "air_logistics_route",
+      "recovery_status": "already_available",
+      "frequency_support": "sparse",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_013"
+      ],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "airline hub",
+      "routing_layer": "air_logistics_route",
+      "recovery_status": "already_available",
+      "frequency_support": "sparse",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_006",
+        "hub_chart02_recovered_evidence_014"
+      ],
+      "evidence_confidence": "high",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "air hub",
+      "routing_layer": "air_logistics_route",
+      "recovery_status": "evidence_only",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Frequency unavailable; keep only as evidence/annotation candidate."
+    },
+    {
+      "term": "shipping hub",
+      "routing_layer": "air_logistics_route",
+      "recovery_status": "already_available",
+      "frequency_support": "sparse",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_015"
+      ],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "logistics hub",
+      "routing_layer": "air_logistics_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_016"
+      ],
+      "evidence_confidence": "medium",
+      "recommended_role_after_recovery": "supporting",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "distribution hub",
+      "routing_layer": "air_logistics_route",
+      "recovery_status": "recovered",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Recovered through targeted Ngram retry."
+    },
+    {
+      "term": "cargo hub",
+      "routing_layer": "air_logistics_route",
+      "recovery_status": "recovered",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Recovered through targeted Ngram retry."
+    },
+    {
+      "term": "freight hub",
+      "routing_layer": "air_logistics_route",
+      "recovery_status": "recovered",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Recovered through targeted Ngram retry."
+    },
+    {
+      "term": "supply chain hub",
+      "routing_layer": "air_logistics_route",
+      "recovery_status": "recovered",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Recovered through targeted Ngram retry."
+    },
+    {
+      "term": "regional hub",
+      "routing_layer": "air_logistics_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "global hub",
+      "routing_layer": "air_logistics_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "international hub",
+      "routing_layer": "air_logistics_route",
+      "recovery_status": "evidence_only",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Ambiguous/noisy without context; not recovered as frequency series."
+    },
+    {
+      "term": "hub and spoke",
+      "routing_layer": "hub_and_spoke_model",
+      "recovery_status": "already_available",
+      "frequency_support": "strong",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_009"
+      ],
+      "evidence_confidence": "medium",
+      "recommended_role_after_recovery": "main_model",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "hub-and-spoke",
+      "routing_layer": "hub_and_spoke_model",
+      "recovery_status": "already_available",
+      "frequency_support": "strong",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_001",
+        "hub_chart02_recovered_evidence_002",
+        "hub_chart02_recovered_evidence_008"
+      ],
+      "evidence_confidence": "medium",
+      "recommended_role_after_recovery": "main_model",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "hub and spokes",
+      "routing_layer": "hub_and_spoke_model",
+      "recovery_status": "dropped",
+      "frequency_support": "failed",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "exclude",
+      "notes": "Dropped or excluded after triage."
+    },
+    {
+      "term": "hub-spoke",
+      "routing_layer": "hub_and_spoke_model",
+      "recovery_status": "dropped",
+      "frequency_support": "failed",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "exclude",
+      "notes": "Dropped or excluded after triage."
+    },
+    {
+      "term": "spoke and hub",
+      "routing_layer": "hub_and_spoke_model",
+      "recovery_status": "dropped",
+      "frequency_support": "failed",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "exclude",
+      "notes": "Dropped or excluded after triage."
+    },
+    {
+      "term": "spoke-hub",
+      "routing_layer": "hub_and_spoke_model",
+      "recovery_status": "dropped",
+      "frequency_support": "failed",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "exclude",
+      "notes": "Dropped or excluded after triage."
+    },
+    {
+      "term": "hub-and-spoke system",
+      "routing_layer": "hub_and_spoke_model",
+      "recovery_status": "failed_again",
+      "frequency_support": "failed",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "exclude",
+      "notes": "Targeted retry did not recover a usable series."
+    },
+    {
+      "term": "hub and spoke system",
+      "routing_layer": "hub_and_spoke_model",
+      "recovery_status": "recovered",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Recovered through targeted Ngram retry."
+    },
+    {
+      "term": "hub-and-spoke network",
+      "routing_layer": "hub_and_spoke_model",
+      "recovery_status": "failed_again",
+      "frequency_support": "failed",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "exclude",
+      "notes": "Targeted retry did not recover a usable series."
+    },
+    {
+      "term": "hub and spoke network",
+      "routing_layer": "hub_and_spoke_model",
+      "recovery_status": "recovered",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Recovered through targeted Ngram retry."
+    },
+    {
+      "term": "hub-and-spoke model",
+      "routing_layer": "hub_and_spoke_model",
+      "recovery_status": "failed_again",
+      "frequency_support": "failed",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "exclude",
+      "notes": "Targeted retry did not recover a usable series."
+    },
+    {
+      "term": "hub and spoke model",
+      "routing_layer": "hub_and_spoke_model",
+      "recovery_status": "recovered",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Recovered through targeted Ngram retry."
+    },
+    {
+      "term": "network hub",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_007",
+        "hub_chart02_recovered_evidence_017"
+      ],
+      "evidence_confidence": "high",
+      "recommended_role_after_recovery": "supporting",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "communication hub",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_018"
+      ],
+      "evidence_confidence": "medium",
+      "recommended_role_after_recovery": "supporting",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "hub node",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "supporting",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "Ethernet hub",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_019"
+      ],
+      "evidence_confidence": "medium",
+      "recommended_role_after_recovery": "supporting",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "switching hub",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_020"
+      ],
+      "evidence_confidence": "medium",
+      "recommended_role_after_recovery": "supporting",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "network switch hub",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "dropped",
+      "frequency_support": "failed",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "exclude",
+      "notes": "Dropped or excluded after triage."
+    },
+    {
+      "term": "telecom hub",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "already_available",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "internet hub",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "already_available",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "data hub",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [
+        "hub_chart02_recovered_evidence_021"
+      ],
+      "evidence_confidence": "medium",
+      "recommended_role_after_recovery": "supporting",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "server hub",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "already_available",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "USB hub",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "supporting",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "digital hub",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "platform hub",
+      "routing_layer": "network_communication_route",
+      "recovery_status": "already_available",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "service hub",
+      "routing_layer": "institutional_route_language",
+      "recovery_status": "evidence_only",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Ambiguous/noisy without context; not recovered as frequency series."
+    },
+    {
+      "term": "resource hub",
+      "routing_layer": "institutional_route_language",
+      "recovery_status": "already_available",
+      "frequency_support": "sparse",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "knowledge hub",
+      "routing_layer": "institutional_route_language",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "learning hub",
+      "routing_layer": "institutional_route_language",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    },
+    {
+      "term": "business hub",
+      "routing_layer": "institutional_route_language",
+      "recovery_status": "already_available",
+      "frequency_support": "usable",
+      "evidence_ids": [],
+      "evidence_confidence": "low",
+      "recommended_role_after_recovery": "annotation",
+      "notes": "Carried forward from previous Chart 02 pass."
+    }
+  ]
+}

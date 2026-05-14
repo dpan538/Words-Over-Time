@@ -1,0 +1,505 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_03",
+    "generated_at": "2026-05-14T06:07:27.453337Z",
+    "generated_by_script": "scripts/process_hub_chart03_naming.py"
+  },
+  "quality_flags": [
+    {
+      "term": "student hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "search_visible",
+      "reason": "Modern public web examples support naming-pattern presence more clearly than Ngram.",
+      "recommended_use": "naming_example",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "learning hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "resource hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "equipment hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "search_visible",
+      "reason": "Modern public web examples support naming-pattern presence more clearly than Ngram.",
+      "recommended_use": "naming_example",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "media hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from chart01_frequency_raw."
+    },
+    {
+      "term": "service hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "ambiguous_sense",
+      "reason": "The phrase can name a place, institution, service, or broad center without enough context.",
+      "recommended_use": "annotation_only",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "support hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "sparse_presence",
+      "reason": "Sparse frequency signal; useful as presence or annotation only.",
+      "recommended_use": "annotation_only",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "help hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "failed",
+      "reason": "No usable frequency series was recovered.",
+      "recommended_use": "exclude",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "community hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "ambiguous_sense",
+      "reason": "The phrase can name a place, institution, service, or broad center without enough context.",
+      "recommended_use": "annotation_only",
+      "notes": "Reused from chart01_frequency_raw."
+    },
+    {
+      "term": "campus hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "failed",
+      "reason": "No usable frequency series was recovered.",
+      "recommended_use": "exclude",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "library hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "sparse_presence",
+      "reason": "Sparse frequency signal; useful as presence or annotation only.",
+      "recommended_use": "annotation_only",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "wellbeing hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "search_visible",
+      "reason": "Modern public web examples support naming-pattern presence more clearly than Ngram.",
+      "recommended_use": "naming_example",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "career hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "search_visible",
+      "reason": "Modern public web examples support naming-pattern presence more clearly than Ngram.",
+      "recommended_use": "naming_example",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "maker hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "failed",
+      "reason": "No usable frequency series was recovered.",
+      "recommended_use": "exclude",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "business hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "ambiguous_sense",
+      "reason": "The phrase can name a place, institution, service, or broad center without enough context.",
+      "recommended_use": "annotation_only",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "financial hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "ambiguous_sense",
+      "reason": "The phrase can name a place, institution, service, or broad center without enough context.",
+      "recommended_use": "annotation_only",
+      "notes": "Reused from chart01_frequency_raw."
+    },
+    {
+      "term": "innovation hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "strong_trend",
+      "reason": "Printed-book series has a strong enough trend signal for chart planning.",
+      "recommended_use": "main_series",
+      "notes": "Reused from chart01_frequency_raw."
+    },
+    {
+      "term": "knowledge hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "research hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from chart01_frequency_raw."
+    },
+    {
+      "term": "education hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "strong_trend",
+      "reason": "Printed-book series has a strong enough trend signal for chart planning.",
+      "recommended_use": "main_series",
+      "notes": "Reused from chart01_frequency_raw."
+    },
+    {
+      "term": "creative hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from chart01_frequency_raw."
+    },
+    {
+      "term": "startup hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "sparse_presence",
+      "reason": "Sparse frequency signal; useful as presence or annotation only.",
+      "recommended_use": "annotation_only",
+      "notes": "Reused from chart01_frequency_raw."
+    },
+    {
+      "term": "content hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "platform_content_access",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from chart01_frequency_raw."
+    },
+    {
+      "term": "data hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "platform_content_access",
+      "quality_flag": "strong_trend",
+      "reason": "Printed-book series has a strong enough trend signal for chart planning.",
+      "recommended_use": "main_series",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "digital hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "platform_content_access",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "online hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "platform_content_access",
+      "quality_flag": "sparse_presence",
+      "reason": "Sparse frequency signal; useful as presence or annotation only.",
+      "recommended_use": "annotation_only",
+      "notes": "Reused from chart01_frequency_raw."
+    },
+    {
+      "term": "developer hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "platform_content_access",
+      "quality_flag": "failed",
+      "reason": "No usable frequency series was recovered.",
+      "recommended_use": "exclude",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "documentation hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "platform_content_access",
+      "quality_flag": "failed",
+      "reason": "No usable frequency series was recovered.",
+      "recommended_use": "exclude",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "API hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "platform_content_access",
+      "quality_flag": "failed",
+      "reason": "No usable frequency series was recovered.",
+      "recommended_use": "exclude",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "hub page",
+      "naming_pattern": "prefix_phrase",
+      "object_type": "platform_content_access",
+      "quality_flag": "sparse_presence",
+      "reason": "Sparse frequency signal; useful as presence or annotation only.",
+      "recommended_use": "annotation_only",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "hub model",
+      "naming_pattern": "prefix_phrase",
+      "object_type": "technical_system",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from first_pass_phrase_series."
+    },
+    {
+      "term": "hub system",
+      "naming_pattern": "prefix_phrase",
+      "object_type": "technical_system",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from first_pass_phrase_series."
+    },
+    {
+      "term": "hub network",
+      "naming_pattern": "prefix_phrase",
+      "object_type": "technical_system",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from first_pass_phrase_series."
+    },
+    {
+      "term": "hub node",
+      "naming_pattern": "prefix_phrase",
+      "object_type": "technical_system",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "hub airport",
+      "naming_pattern": "prefix_phrase",
+      "object_type": "technical_system",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "hub city",
+      "naming_pattern": "prefix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "ambiguous_sense",
+      "reason": "The phrase can name a place, institution, service, or broad center without enough context.",
+      "recommended_use": "annotation_only",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "hub location",
+      "naming_pattern": "prefix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "ambiguous_sense",
+      "reason": "The phrase can name a place, institution, service, or broad center without enough context.",
+      "recommended_use": "annotation_only",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "hub site",
+      "naming_pattern": "prefix_phrase",
+      "object_type": "platform_content_access",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "hub room",
+      "naming_pattern": "prefix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "hub service",
+      "naming_pattern": "prefix_phrase",
+      "object_type": "institutional_access_point",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "hub strategy",
+      "naming_pattern": "prefix_phrase",
+      "object_type": "technical_system",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "network hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "technical_system",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "USB hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "technical_system",
+      "quality_flag": "strong_trend",
+      "reason": "Printed-book series has a strong enough trend signal for chart planning.",
+      "recommended_use": "main_series",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "Ethernet hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "technical_system",
+      "quality_flag": "strong_trend",
+      "reason": "Printed-book series has a strong enough trend signal for chart planning.",
+      "recommended_use": "main_series",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "switching hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "technical_system",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "communication hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "technical_system",
+      "quality_flag": "usable_trend",
+      "reason": "Frequency series is usable but should remain a proxy.",
+      "recommended_use": "supporting_series",
+      "notes": "Reused from chart02_recovered_frequency_series."
+    },
+    {
+      "term": "integration hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "technical_system",
+      "quality_flag": "sparse_presence",
+      "reason": "Sparse frequency signal; useful as presence or annotation only.",
+      "recommended_use": "annotation_only",
+      "notes": "Targeted Chart 03 Ngram gap query; printed-book proxy only."
+    },
+    {
+      "term": "GitHub",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "platform",
+      "quality_flag": "brand_only",
+      "reason": "Brand/platform example supports naming structure but is not ordinary lexical frequency.",
+      "recommended_use": "naming_example",
+      "notes": ""
+    },
+    {
+      "term": "Pornhub",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "website",
+      "quality_flag": "brand_only",
+      "reason": "Brand/platform example supports naming structure but is not ordinary lexical frequency.",
+      "recommended_use": "naming_example",
+      "notes": "Adult-content platform; use neutrally as optional naming-pattern evidence only."
+    },
+    {
+      "term": "Sci-Hub",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "archive",
+      "quality_flag": "brand_only",
+      "reason": "Brand/platform example supports naming structure but is not ordinary lexical frequency.",
+      "recommended_use": "naming_example",
+      "notes": "Legally contested access platform; use only as naming-pattern evidence."
+    },
+    {
+      "term": "HubSpot",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "software_service",
+      "quality_flag": "brand_only",
+      "reason": "Brand/platform example supports naming structure but is not ordinary lexical frequency.",
+      "recommended_use": "naming_example",
+      "notes": ""
+    },
+    {
+      "term": "HubPages",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "website",
+      "quality_flag": "brand_only",
+      "reason": "Brand/platform example supports naming structure but is not ordinary lexical frequency.",
+      "recommended_use": "naming_example",
+      "notes": ""
+    },
+    {
+      "term": "Docker Hub",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "repository",
+      "quality_flag": "brand_only",
+      "reason": "Brand/platform example supports naming structure but is not ordinary lexical frequency.",
+      "recommended_use": "naming_example",
+      "notes": ""
+    },
+    {
+      "term": "Hugging Face Hub",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "repository",
+      "quality_flag": "brand_only",
+      "reason": "Brand/platform example supports naming structure but is not ordinary lexical frequency.",
+      "recommended_use": "naming_example",
+      "notes": "Approximate date; do not show as precise launch year without further verification."
+    },
+    {
+      "term": "Hubstaff",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "software_service",
+      "quality_flag": "brand_only",
+      "reason": "Brand/platform example supports naming structure but is not ordinary lexical frequency.",
+      "recommended_use": "annotation_only",
+      "notes": "Optional background example; not central to Chart 03."
+    }
+  ]
+}

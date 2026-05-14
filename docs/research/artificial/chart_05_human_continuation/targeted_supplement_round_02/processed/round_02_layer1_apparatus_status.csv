@@ -1,0 +1,12 @@
+term_or_phrase,status,strongest_source,should_show_in_chart,visual_treatment,notes
+life saving apparatus,collected,Ngram variant plus apparatus context,no_or_background,thin_base_scaffold,"Useful as apparatus-side context, not a main node."
+life-saving apparatus,missing,Ngram variant plus apparatus context,no_or_background,thin_base_scaffold,Weak as exact phrase; use apparatus concept instead.
+life saving device,collected,Ngram variant plus apparatus context,no_or_background,thin_base_scaffold,"Useful as apparatus-side context, not a main node."
+life-saving device,missing,Ngram variant plus apparatus context,no_or_background,thin_base_scaffold,Weak as exact phrase; use apparatus concept instead.
+artificial respiration apparatus,collected,Ngram variant plus apparatus context,no_or_background,thin_base_scaffold,"Useful as apparatus-side context, not a main node."
+artificial respiration device,collected,Ngram variant plus apparatus context,no_or_background,thin_base_scaffold,"Useful as apparatus-side context, not a main node."
+artificial respirator,collected,Britannica/JAMA respirator history,maybe_background,thin_base_scaffold,"Useful as apparatus-side context, not a main node."
+mechanical respirator,collected,Britannica/JAMA respirator history,maybe_background,thin_base_scaffold,"Useful as apparatus-side context, not a main node."
+Drinker respirator,collected,Britannica/JAMA respirator history,no_or_background,thin_base_scaffold,"Useful as apparatus-side context, not a main node."
+iron lung,collected,Britannica/JAMA respirator history,maybe_background,thin_base_scaffold,"Useful as apparatus-side context, not a main node."
+resuscitation apparatus,collected,Ngram variant plus apparatus context,no_or_background,thin_base_scaffold,"Useful as apparatus-side context, not a main node."

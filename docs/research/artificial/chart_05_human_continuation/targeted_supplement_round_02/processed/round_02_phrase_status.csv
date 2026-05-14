@@ -1,0 +1,4 @@
+item,status,strongest_source,source_type,suggested_chart_term,should_show_exact_phrase,notes
+artificial life support,partial,NCBI MeSH Life Support Care,medical_dictionary,life support,maybe,Exact phrase exists in Ngram but is weaker than life support plus artificial respiration / artificial feeding / mechanical ventilation.
+life-saving apparatus,weak_as_exact_phrase,variant Ngram and respirator history,ngram_variant + medical_history,apparatus / device support,no,"Use as conceptual Layer 1 background, not as labeled node."
+test-tube baby,strengthened,NCBI MeSH IVF entry terms; Britannica Louise Brown,medical_dictionary + encyclopedia,IVF / test-tube baby,maybe,"Use as public-language bridge under IVF, not as standalone technical core."

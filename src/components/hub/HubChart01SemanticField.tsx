@@ -60,12 +60,9 @@ type HubChart01SemanticFieldProps = {
 
 const INK = "#050510";
 const WHEAT = "#F5ECD2";
-const PAPER = "#FBF7E8";
 const AMETHYST = "#0D0630";
-const RUBY = "#852736";
 const TEAL = "#8BBEB2";
-const LIME = "#E6F9AF";
-const GOLD = "#CAAC4B";
+const SUN = "#FBB728";
 const GRAPHITE = "#57534B";
 
 function hexToNumber(hex: string) {
@@ -165,8 +162,9 @@ function makeTextSprite(
   }`;
   context.textAlign = options.align ?? "center";
   context.textBaseline = "middle";
+  const text = options.uppercase === false ? label : label.toUpperCase();
   context.fillStyle = options.color ?? WHEAT;
-  context.fillText(options.uppercase === false ? label : label.toUpperCase(), canvas.width / 2, canvas.height / 2);
+  context.fillText(text, canvas.width / 2, canvas.height / 2);
 
   const texture = new THREE.CanvasTexture(canvas);
   texture.colorSpace = THREE.SRGBColorSpace;
@@ -196,6 +194,14 @@ function layerZ() {
   return 0;
 }
 
+function isSunLayer(layer: HubChart01Layer) {
+  return layer.color.toLowerCase() === SUN.toLowerCase();
+}
+
+function queryLabelColor(layer: HubChart01Layer) {
+  return isSunLayer(layer) ? WHEAT : SUN;
+}
+
 function makeLayerDisc(
   layer: HubChart01Layer,
   index: number,
@@ -211,8 +217,8 @@ function makeLayerDisc(
 
   const displayBoost = [0.32, 0.08, 0.24, 0.02, 0.26][index] ?? 0;
   const radius = 0.82 + layer.normalizedPeak * 0.52 + displayBoost;
-  const focus = isDimmed ? 0.2 : 1;
-  const opacity = (isActive ? 0.58 : 0.31 + layer.normalizedPeak * 0.09) * focus;
+  const focus = isDimmed ? 0.07 : 1;
+  const opacity = (isActive ? 0.66 : 0.31 + layer.normalizedPeak * 0.09) * focus;
 
   const washGeometry = new THREE.CircleGeometry(1, 128);
   const washMaterial = new THREE.MeshBasicMaterial({
@@ -240,21 +246,21 @@ function makeLayerDisc(
   disc.userData = { layerId: layer.id, label: layer.label };
   group.add(disc);
 
-  const lowerRim = makeEllipseLine(radius * 1.03, radius * 1.03, GRAPHITE, (isActive ? 0.22 : 0.13) * focus);
+  const lowerRim = makeEllipseLine(radius * 1.03, radius * 1.03, TEAL, (isActive ? 0.24 : 0.14) * focus);
   lowerRim.position.z = -0.075;
   group.add(lowerRim);
 
-  const outline = makeEllipseLine(radius * 1.05, radius * 1.05, isActive ? RUBY : GRAPHITE, (isActive ? 0.62 : 0.2) * focus);
+  const outline = makeEllipseLine(radius * 1.05, radius * 1.05, isActive ? SUN : TEAL, (isActive ? 0.62 : 0.22) * focus);
   outline.position.z = 0.075;
   group.add(outline);
 
-  const inner = makeEllipseLine(radius * 0.26, radius * 0.26, RUBY, (isActive ? 0.46 : 0.22) * focus);
+  const inner = makeEllipseLine(radius * 0.26, radius * 0.26, SUN, (isActive ? 0.46 : 0.24) * focus);
   inner.position.z = 0.098;
   group.add(inner);
 
   const coreGeometry = new THREE.SphereGeometry(0.06 + layer.normalizedPeak * 0.1, 24, 24);
   const coreMaterial = new THREE.MeshBasicMaterial({
-    color: hexToNumber(isActive ? RUBY : layer.accentColor),
+    color: hexToNumber(isActive && isSunLayer(layer) ? AMETHYST : isActive ? SUN : layer.accentColor),
     transparent: true,
     opacity: (isActive ? 0.95 : 0.78) * focus,
   });
@@ -277,8 +283,8 @@ function addMechanicalSpokes(group: THREE.Group, radius: number, opacityFactor: 
     );
     group.add(makeLine(
       [new THREE.Vector3(0, 0, 0.055), end],
-      index % 3 === 0 ? RUBY : GOLD,
-      (index % 3 === 0 ? 0.14 : 0.1) * opacityFactor,
+      index % 3 === 0 ? SUN : TEAL,
+      (index % 3 === 0 ? 0.18 : 0.12) * opacityFactor,
     ));
   }
 }
@@ -292,7 +298,7 @@ function addQueryParticles(
 ) {
   const queries = layer.queryLabels.slice(0, 7);
   const maxMean = Math.max(...queries.map((query) => query.meanValue), 0.000001);
-  const focus = isDimmed ? 0.22 : 1;
+  const focus = isDimmed ? 0.06 : 1;
   queries.forEach((query, index) => {
     const angle = -Math.PI * 0.82 + (index / Math.max(queries.length - 1, 1)) * Math.PI * 1.64;
     const jitter = index % 2 === 0 ? 0.08 : -0.05;
@@ -312,18 +318,18 @@ function addQueryParticles(
     group.add(sphere);
     hitTargets.push(sphere);
 
-    const connector = makeLine([new THREE.Vector3(0, 0, 0.05), new THREE.Vector3(x, y, 0.072)], layer.accentColor, 0.18 * focus);
+    const connector = makeLine([new THREE.Vector3(0, 0, 0.05), new THREE.Vector3(x, y, 0.072)], layer.accentColor, 0.16 * focus);
     group.add(connector);
 
     if (index < 4 && !isDimmed) {
       const label = makeTextSprite(query.query, {
-        color: AMETHYST,
-        fontSize: 42,
+        color: queryLabelColor(layer),
+        fontSize: 44,
         fontFamily: "Georgia, Times New Roman, serif",
         fontWeight: "700",
         width: 720,
         height: 128,
-        scale: [1.36, 0.24],
+        scale: [1.43, 0.25],
         uppercase: false,
       });
       label.position.set(x + (x > 0 ? 0.5 : -0.5), y + 0.12, 0.14);
@@ -351,15 +357,22 @@ function buildScene(
   hitTargets: THREE.Object3D[],
 ) {
   const count = data.layers.length;
-  const centers: THREE.Vector3[] = [];
+  const centers = data.layers.map((_, index) => new THREE.Vector3(layerX(), layerY(index, count), layerZ()));
   const hasSelection = activeLayerId !== null;
 
-  data.layers.forEach((layer, index) => {
+  const drawLayers = hasSelection
+    ? [
+        ...data.layers.map((layer, index) => ({ layer, index })).filter((item) => item.layer.id !== activeLayerId),
+        ...data.layers.map((layer, index) => ({ layer, index })).filter((item) => item.layer.id === activeLayerId),
+      ]
+    : data.layers.map((layer, index) => ({ layer, index }));
+
+  drawLayers.forEach(({ layer, index }) => {
     const isActive = layer.id === activeLayerId;
     const isDimmed = hasSelection && !isActive;
-    const opacityFactor = isDimmed ? 0.22 : 1;
+    const opacityFactor = isDimmed ? 0.06 : 1;
     const { group, center, radius } = makeLayerDisc(layer, index, count, isActive, isDimmed);
-    centers.push(center.clone());
+    centers[index] = center.clone();
 
     if (layer.id === "mechanical_core") {
       addMechanicalSpokes(group, radius, opacityFactor);
@@ -374,7 +387,7 @@ function buildScene(
         const cloud = new THREE.Mesh(
           new THREE.SphereGeometry(0.012 + (dot % 5) * 0.003, 10, 10),
           new THREE.MeshBasicMaterial({
-            color: hexToNumber(dot % 3 === 0 ? LIME : TEAL),
+            color: hexToNumber(dot % 3 === 0 ? SUN : TEAL),
             transparent: true,
             opacity: (0.18 + (dot % 4) * 0.05) * opacityFactor,
           }),
@@ -386,30 +399,30 @@ function buildScene(
 
     addQueryParticles(group, layer, radius, hitTargets, isDimmed);
 
-    const label = makeTextSprite(`${layer.layerNumber} / ${layer.label}`, {
-      color: isActive ? RUBY : AMETHYST,
-      fontSize: 42,
+    const label = makeTextSprite(layer.layerNumber, {
+      color: isActive ? SUN : WHEAT,
+      fontSize: 48,
       fontFamily: "Georgia, Times New Roman, serif",
       fontWeight: "700",
-      width: 980,
-      height: 140,
-      scale: [3.05, 0.42],
+      width: 420,
+      height: 128,
+      scale: [1.11, 0.34],
       uppercase: false,
-      opacity: isDimmed ? 0.13 : 0.88,
+      opacity: isDimmed ? 0 : 0.9,
     });
-    label.position.set(-radius * 0.56, radius + 0.32, 0.15);
+    label.position.set(-radius * 0.18, radius + 0.3, 0.15);
     group.add(label);
 
     const period = makeTextSprite(layer.periodHint, {
-      color: index === 0 ? RUBY : TEAL,
-      fontSize: 34,
+      color: index === 0 ? SUN : TEAL,
+      fontSize: 36,
       fontFamily: "Georgia, Times New Roman, serif",
       fontWeight: "600",
       width: 760,
       height: 116,
-      scale: [1.78, 0.28],
+      scale: [1.87, 0.29],
       uppercase: false,
-      opacity: isDimmed ? 0.1 : 0.78,
+      opacity: isDimmed ? 0 : 0.74,
     });
     period.position.set(radius * 0.46, -radius - 0.18, 0.14);
     group.add(period);
@@ -419,7 +432,7 @@ function buildScene(
   });
 
   const axisCurve = new THREE.LineCurve3(centers[0].clone(), centers[centers.length - 1].clone());
-  root.add(makeTube(axisCurve, RUBY, hasSelection ? 0.7 : 0.6, 0.018));
+  root.add(makeTube(axisCurve, SUN, hasSelection ? 0.78 : 0.66, 0.018));
 
   scene.add(root);
 }
@@ -438,6 +451,15 @@ function peakPeriodLabel(layer: HubChart01Layer) {
     return winner;
   }, null);
   return peak?.periodLabel ?? layer.periodHint;
+}
+
+function currentRoleText(layer: HubChart01Layer) {
+  if (layer.id === "mechanical_core") return "Still present, less dominant";
+  if (layer.id === "central_place") return "Metaphor bridge";
+  if (layer.id === "transport_routing") return "Route and transfer layer";
+  if (layer.id === "network_system") return "Technical node layer";
+  if (layer.id === "institutional_digital") return "Most visible modern layer";
+  return statusLabel(layer.modernStatus);
 }
 
 function overviewQueries(layers: HubChart01Layer[]) {
@@ -488,17 +510,18 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
     rendererRef.current = renderer;
 
     const scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(hexToNumber(PAPER), 8, 18);
+    scene.fog = new THREE.Fog(hexToNumber(AMETHYST), 8, 18);
     sceneRef.current = scene;
 
-    const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 80);
-    camera.position.set(0, 5.8, 6.2);
-    camera.lookAt(0, 0.05, 0);
+    const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 80);
+    camera.position.set(0, 5.55, 6.0);
+    camera.lookAt(0, 0, 0);
     cameraRef.current = camera;
 
     scene.add(new THREE.AmbientLight(0xffffff, 1.1));
     const root = new THREE.Group();
-    root.scale.setScalar(0.78);
+    root.scale.setScalar(0.76);
+    root.position.set(0, -0.22, 0.05);
     root.rotation.y = rotationRef.current.y;
     rootRef.current = root;
     hitTargetsRef.current = [];
@@ -561,15 +584,15 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
   };
 
   return (
-    <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_22rem]">
-      <div className="relative min-h-[820px] overflow-hidden border border-ink/40 bg-[#FBF7E8]">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_14%,rgba(255,255,255,0.95),transparent_34%),radial-gradient(circle_at_70%_72%,rgba(139,190,178,0.2),transparent_30%),linear-gradient(90deg,rgba(13,6,48,0.045)_1px,transparent_1px),linear-gradient(180deg,rgba(13,6,48,0.035)_1px,transparent_1px)] bg-[size:auto,auto,96px_96px,96px_96px]" />
-        <div className="pointer-events-none absolute left-4 top-4 z-10 border border-ink/40 bg-[#FBF7E8]/90 px-3 py-2 font-mono text-[0.66rem] font-black uppercase tracking-[0.14em] text-hub-amethyst">
+    <div className="grid items-stretch gap-5 lg:grid-cols-[minmax(0,1fr)_22rem]">
+      <div className="relative min-h-[880px] overflow-hidden border border-hub-teal/50 bg-hub-amethyst">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_32%_18%,rgba(139,190,178,0.16),transparent_34%),linear-gradient(90deg,rgba(139,190,178,0.11)_1px,transparent_1px),linear-gradient(180deg,rgba(139,190,178,0.08)_1px,transparent_1px)] bg-[size:auto,96px_96px,96px_96px]" />
+        <div className="pointer-events-none absolute left-4 top-4 z-10 border border-hub-teal/55 bg-hub-amethyst/82 px-3 py-2 font-mono text-[0.66rem] font-black uppercase tracking-[0.14em] text-sun">
           Static 3D field / drag left-right / select to isolate
         </div>
         <canvas
           ref={canvasRef}
-          className={`relative h-[820px] w-full touch-none ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+          className={`absolute inset-0 h-full w-full touch-none ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
           aria-label="Five-layer semantic-frequency field for hub Chart 01"
           onPointerCancel={handlePointerEnd}
           onPointerDown={handlePointerDown}
@@ -579,15 +602,10 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerEnd}
         />
-        <div className="pointer-events-none absolute bottom-4 left-4 right-4 grid gap-3 bg-[#FBF7E8]/88 px-3 py-2 text-[0.68rem] font-black uppercase leading-4 tracking-[0.14em] text-hub-space sm:grid-cols-3">
-          <p>Frequency unit: Google Books Ngram, per million</p>
-          <p>Early bucket: 1800-1849 within this layer</p>
-          <p>Modern bucket: 2020-2022, not full present</p>
-        </div>
       </div>
 
       <aside className="grid content-start gap-4 text-ink">
-        <div className="border border-ink/40 bg-wheat px-4 py-4">
+        <div className="h-[25.5rem] border border-ink/40 bg-wheat px-4 py-4">
           <p className="font-mono text-[0.68rem] font-black uppercase tracking-[0.16em] text-hub-ruby">
             {activeLayer ? "selected semantic layer" : "semantic field overview"}
           </p>
@@ -603,13 +621,13 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
             <div className="border-r border-ink/30 px-2 py-3">
               <dt className="text-hub-space">{activeLayer ? "Most visible in" : "View state"}</dt>
               <dd className="mt-1 text-hub-amethyst">
-                {activeLayer ? peakPeriodLabel(activeLayer) : "All clear"}
+                {activeLayer ? peakPeriodLabel(activeLayer) : "All layers visible"}
               </dd>
             </div>
             <div className="px-2 py-3">
-              <dt className="text-hub-space">{activeLayer ? "Recent rank" : "Modern leader"}</dt>
+              <dt className="text-hub-space">{activeLayer ? "Current role" : "Modern center"}</dt>
               <dd className="mt-1 text-hub-amethyst">
-                {activeLayer ? `#${activeLayer.modernRank} of ${data.layers.length}` : modernLeader?.label ?? "Institutional / Digital Hub"}
+                {activeLayer ? currentRoleText(activeLayer) : modernLeader?.label ?? "Institutional / Digital Hub"}
               </dd>
             </div>
             <div className="border-r border-t border-ink/30 px-2 py-3">
@@ -621,9 +639,9 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
               </dd>
             </div>
             <div className="border-t border-ink/30 px-2 py-3">
-              <dt className="text-hub-space">{activeLayer ? "Recent proxy" : "Layer count"}</dt>
+              <dt className="text-hub-space">{activeLayer ? "Terms shown" : "Layer count"}</dt>
               <dd className="mt-1 text-hub-amethyst">
-                {activeLayer ? `${roundValue(activeLayer.modernScore)} per million` : `${data.layers.length} circles`}
+                {activeLayer ? `${queryLabels.length} examples` : `${data.layers.length} circles`}
               </dd>
             </div>
           </dl>
@@ -635,7 +653,7 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
             onClick={() => setActiveLayerId(null)}
             className={`grid grid-cols-[4.25rem_1fr] border px-0 py-0 text-left transition ${
               activeLayerId === null
-                ? "border-hub-space bg-hub-lime text-ink"
+                ? "border-hub-space bg-sun text-ink"
                 : "border-ink/35 bg-wheat text-ink hover:border-hub-teal hover:bg-hub-teal/20"
             }`}
           >
@@ -667,7 +685,7 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
           ))}
         </div>
 
-        <div className="border border-ink/35 bg-wheat px-4 py-4">
+        <div className="min-h-[11.5rem] border border-ink/35 bg-wheat px-4 py-4">
           <p className="font-mono text-[0.68rem] font-black uppercase tracking-[0.16em] text-hub-space">
             {activeLayer ? "main query examples" : "query examples across layers"}
           </p>

@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_03",
+    "generated_at": "2026-05-14T06:07:27.453449Z",
+    "generated_by_script": "scripts/process_hub_chart03_naming.py"
+  },
+  "summary_counts": {
+    "naming_patterns": 6,
+    "frequency_queries_attempted": 47,
+    "frequency_status_counts": {
+      "success": 15,
+      "reused_existing": 26,
+      "failed": 6
+    },
+    "search_visibility_items": 19,
+    "brand_platform_examples": 8,
+    "institutional_examples": 15,
+    "quality_flag_counts": {
+      "search_visible": 4,
+      "usable_trend": 20,
+      "ambiguous_sense": 6,
+      "sparse_presence": 6,
+      "failed": 6,
+      "strong_trend": 5,
+      "brand_only": 8
+    }
+  },
+  "pattern_counts": {
+    "suffix_phrase": {
+      "frequency_support": "strong",
+      "search_visibility_support": "strong",
+      "recommended_chart_role": "main",
+      "confidence": "high"
+    },
+    "prefix_phrase": {
+      "frequency_support": "strong",
+      "search_visibility_support": "unavailable",
+      "recommended_chart_role": "annotation",
+      "confidence": "medium"
+    },
+    "closed_compound_or_brand": {
+      "frequency_support": "unavailable",
+      "search_visibility_support": "strong",
+      "recommended_chart_role": "supporting",
+      "confidence": "medium"
+    },
+    "institutional_access_point": {
+      "frequency_support": "strong",
+      "search_visibility_support": "strong",
+      "recommended_chart_role": "main",
+      "confidence": "high"
+    },
+    "platform_content_access": {
+      "frequency_support": "strong",
+      "search_visibility_support": "strong",
+      "recommended_chart_role": "supporting",
+      "confidence": "high"
+    },
+    "technical_system": {
+      "frequency_support": "strong",
+      "search_visibility_support": "unavailable",
+      "recommended_chart_role": "supporting",
+      "confidence": "medium"
+    }
+  },
+  "frequency_query_counts": {
+    "success": 15,
+    "reused_existing": 26,
+    "failed": 6
+  },
+  "search_visibility_counts": {
+    "strong_presence": 2,
+    "visible": 11,
+    "sparse": 6
+  },
+  "brand_platform_inventory_counts": {
+    "platform": 1,
+    "website": 2,
+    "archive": 1,
+    "software_service": 2,
+    "repository": 2
+  },
+  "institutional_example_counts": {
+    "student_service": 5,
+    "resource_center": 2,
+    "equipment_room": 3,
+    "service_portal": 2,
+    "community_space": 2,
+    "digital_portal": 1
+  },
+  "hypothesis_verdict": "supported",
+  "recommended_chart_focus": "Focus on X + hub as the main naming format for access points, with brand/platform compounds as recognition anchors and hub + X as a smaller technical-system modifier pattern.",
+  "output_paths": {
+    "naming_patterns": "docs/research/hub/processed/hub_chart03_naming_patterns.json",
+    "naming_frequency_series": "docs/research/hub/processed/hub_chart03_naming_frequency_series.json",
+    "search_visibility_index": "docs/research/hub/processed/hub_chart03_search_visibility_index.json",
+    "brand_platform_inventory": "docs/research/hub/processed/hub_chart03_brand_platform_inventory.json",
+    "institutional_access_examples": "docs/research/hub/processed/hub_chart03_institutional_access_examples.json",
+    "naming_by_period": "docs/research/hub/processed/hub_chart03_naming_by_period.json",
+    "naming_quality_flags": "docs/research/hub/processed/hub_chart03_naming_quality_flags.json",
+    "hypothesis_evaluation": "docs/research/hub/processed/hub_chart03_hypothesis_evaluation.json",
+    "chart_data_preview": "docs/research/hub/processed/hub_chart03_chart_data_preview.json",
+    "report_md": "docs/research/hub/reports/hub_chart03_naming_data_report.md",
+    "report_json": "docs/research/hub/reports/hub_chart03_naming_data_report.json"
+  }
+}

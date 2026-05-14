@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_02",
+    "generated_at": "2026-05-13T13:20:38.081446Z",
+    "generated_by_script": "scripts/process_hub_chart02_routing.py"
+  },
+  "summary_counts": {
+    "routing_layers": 5,
+    "queries_attempted": 54,
+    "successful_queries": 28,
+    "partial_queries": 0,
+    "failed_queries": 26,
+    "evidence_items": 21
+  },
+  "routing_layer_counts": {
+    "rail_transit_route": 12,
+    "air_logistics_route": 12,
+    "hub_and_spoke_model": 12,
+    "network_communication_route": 13,
+    "institutional_route_language": 5
+  },
+  "query_status_counts": {
+    "success": 28,
+    "failed": 26
+  },
+  "quality_flag_counts": {
+    "strong_trend": 1,
+    "usable_trend": 10,
+    "failed": 26,
+    "sparse_presence": 6,
+    "ambiguous_sense": 9,
+    "core_model": 2
+  },
+  "evidence_confidence_counts": {
+    "medium": 15,
+    "high": 3,
+    "low": 3
+  },
+  "evidence_items_collected": 21,
+  "strongest_early_routing_layer": "air_logistics_route (sparse signal only)",
+  "strongest_modern_routing_layer": "hub_and_spoke_model",
+  "hub_and_spoke_status": "strong enough for main model",
+  "recommended_main_terms": {
+    "main_model_terms": [
+      "hub and spoke",
+      "hub-and-spoke"
+    ],
+    "main_series_terms": [
+      "transport hub"
+    ]
+  },
+  "recommended_inputs": {
+    "main_model_terms": [
+      "hub and spoke",
+      "hub-and-spoke"
+    ],
+    "main_series_terms": [
+      "transport hub"
+    ],
+    "supporting_terms": [
+      "transit hub",
+      "railway hub",
+      "railroad hub",
+      "logistics hub",
+      "network hub",
+      "communication hub",
+      "hub node",
+      "Ethernet hub",
+      "switching hub",
+      "USB hub"
+    ],
+    "annotation_terms": [
+      "airport hub",
+      "airline hub",
+      "shipping hub",
+      "regional hub",
+      "global hub",
+      "telecom hub",
+      "internet hub",
+      "data hub",
+      "server hub",
+      "digital hub",
+      "platform hub",
+      "resource hub",
+      "knowledge hub",
+      "learning hub",
+      "business hub"
+    ],
+    "exclude_terms": [
+      "rail hub",
+      "bus hub",
+      "metro hub",
+      "urban transit hub",
+      "route hub",
+      "passenger hub",
+      "intermodal hub",
+      "central station hub",
+      "air hub",
+      "distribution hub",
+      "cargo hub",
+      "freight hub",
+      "supply chain hub",
+      "international hub",
+      "hub and spokes",
+      "hub-spoke",
+      "spoke and hub",
+      "spoke-hub",
+      "hub-and-spoke system",
+      "hub and spoke system",
+      "hub-and-spoke network",
+      "hub and spoke network",
+      "hub-and-spoke model",
+      "hub and spoke model",
+      "network switch hub",
+      "service hub"
+    ]
+  },
+  "cautions": [
+    "Ngram is printed-book frequency, not semantic proof.",
+    "Group sums are routing proxy aggregates, not exact sense counts.",
+    "Regional, global, international, business, digital, and platform hub terms can be ambiguous without context.",
+    "The latest Ngram bucket ends at 2022.",
+    "First Ngram appearance is not first historical attestation."
+  ],
+  "output_paths": {
+    "routing_terms": "docs/research/hub/processed/hub_chart02_routing_terms.json",
+    "routing_frequency_series": "docs/research/hub/processed/hub_chart02_routing_frequency_series.json",
+    "routing_by_period": "docs/research/hub/processed/hub_chart02_routing_by_period.json",
+    "transfer_model_timeline": "docs/research/hub/processed/hub_chart02_transfer_model_timeline.json",
+    "transfer_model_evidence": "docs/research/hub/processed/hub_chart02_transfer_model_evidence.json",
+    "routing_quality_flags": "docs/research/hub/processed/hub_chart02_routing_quality_flags.json",
+    "chart_data_preview": "docs/research/hub/processed/hub_chart02_chart_data_preview.json",
+    "report_md": "docs/research/hub/reports/hub_chart02_routing_data_report.md",
+    "report_json": "docs/research/hub/reports/hub_chart02_routing_data_report.json"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_02",
+    "generated_at": "2026-05-13T13:20:38.073168Z",
+    "generated_by_script": "scripts/process_hub_chart02_routing.py"
+  },
+  "events": [
+    {
+      "event_id": "hub_chart02_event_001",
+      "year": 1908,
+      "year_type": "direct_evidence",
+      "label": "Transit hub direct evidence",
+      "routing_layer": "rail_transit_route",
+      "term": "transit hub",
+      "description": "transit hub is tracked as a transit routing node term for Chart 02.",
+      "evidence_ids": [
+        "hub_chart02_evidence_004",
+        "hub_chart02_evidence_011"
+      ],
+      "confidence": "medium",
+      "notes": "Ngram timing is a visibility signal, not a first attestation."
+    },
+    {
+      "event_id": "hub_chart02_event_002",
+      "year": 1943,
+      "year_type": "direct_evidence",
+      "label": "Railway hub route evidence",
+      "routing_layer": "rail_transit_route",
+      "term": "railway hub",
+      "description": "railway hub is tracked as a rail route node term for Chart 02.",
+      "evidence_ids": [
+        "hub_chart02_evidence_005",
+        "hub_chart02_evidence_012"
+      ],
+      "confidence": "medium",
+      "notes": "Ngram timing is a visibility signal, not a first attestation."
+    },
+    {
+      "event_id": "hub_chart02_event_003",
+      "year": 1980,
+      "year_type": "first_visible_period",
+      "label": "Airport hub visibility",
+      "routing_layer": "air_logistics_route",
+      "term": "airport hub",
+      "description": "airport hub is tracked as a air route node term for Chart 02.",
+      "evidence_ids": [
+        "hub_chart02_evidence_013"
+      ],
+      "confidence": "low",
+      "notes": "Ngram timing is a visibility signal, not a first attestation."
+    },
+    {
+      "event_id": "hub_chart02_event_004",
+      "year": 1980,
+      "year_type": "first_visible_period",
+      "label": "Airline hub route definition",
+      "routing_layer": "air_logistics_route",
+      "term": "airline hub",
+      "description": "airline hub is tracked as a airline route node term for Chart 02.",
+      "evidence_ids": [
+        "hub_chart02_evidence_006",
+        "hub_chart02_evidence_014"
+      ],
+      "confidence": "low",
+      "notes": "Ngram timing is a visibility signal, not a first attestation."
+    },
+    {
+      "event_id": "hub_chart02_event_005",
+      "year": 2000,
+      "year_type": "first_visible_period",
+      "label": "Logistics hub visibility",
+      "routing_layer": "air_logistics_route",
+      "term": "logistics hub",
+      "description": "logistics hub is tracked as a logistics distribution node term for Chart 02.",
+      "evidence_ids": [
+        "hub_chart02_evidence_016"
+      ],
+      "confidence": "medium",
+      "notes": "Ngram timing is a visibility signal, not a first attestation."
+    },
+    {
+      "event_id": "hub_chart02_event_006",
+      "year": 1946,
+      "year_type": "first_visible_period",
+      "label": "Hub-and-spoke model visibility",
+      "routing_layer": "hub_and_spoke_model",
+      "term": "hub-and-spoke",
+      "description": "hub-and-spoke is tracked as a explicit routing model term for Chart 02.",
+      "evidence_ids": [
+        "hub_chart02_evidence_001",
+        "hub_chart02_evidence_002",
+        "hub_chart02_evidence_008"
+      ],
+      "confidence": "medium",
+      "notes": "Ngram timing is a visibility signal, not a first attestation."
+    },
+    {
+      "event_id": "hub_chart02_event_007",
+      "year": 1980,
+      "year_type": "first_visible_period",
+      "label": "Network hub technical extension",
+      "routing_layer": "network_communication_route",
+      "term": "network hub",
+      "description": "network hub is tracked as a network node term for Chart 02.",
+      "evidence_ids": [
+        "hub_chart02_evidence_007",
+        "hub_chart02_evidence_017"
+      ],
+      "confidence": "medium",
+      "notes": "Ngram timing is a visibility signal, not a first attestation."
+    },
+    {
+      "event_id": "hub_chart02_event_008",
+      "year": 1980,
+      "year_type": "first_visible_period",
+      "label": "Communication hub visibility",
+      "routing_layer": "network_communication_route",
+      "term": "communication hub",
+      "description": "communication hub is tracked as a communication node term for Chart 02.",
+      "evidence_ids": [
+        "hub_chart02_evidence_018"
+      ],
+      "confidence": "medium",
+      "notes": "Ngram timing is a visibility signal, not a first attestation."
+    },
+    {
+      "event_id": "hub_chart02_event_009",
+      "year": 2000,
+      "year_type": "first_visible_period",
+      "label": "Data hub late access/routing extension",
+      "routing_layer": "network_communication_route",
+      "term": "data hub",
+      "description": "data hub is tracked as a data access or routing node term for Chart 02.",
+      "evidence_ids": [
+        "hub_chart02_evidence_021"
+      ],
+      "confidence": "medium",
+      "notes": "Ngram timing is a visibility signal, not a first attestation."
+    }
+  ]
+}

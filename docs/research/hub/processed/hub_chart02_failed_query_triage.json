@@ -1,0 +1,338 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_02",
+    "generated_at": "2026-05-13T13:43:19.313086Z",
+    "generated_by_script": "scripts/process_hub_chart02_recovery.py"
+  },
+  "triage_counts": {
+    "evidence_only": 8,
+    "retry_frequency": 11,
+    "ambiguous_or_noisy": 2,
+    "drop_or_exclude": 5
+  },
+  "failed_queries": [
+    {
+      "query": "rail hub",
+      "routing_layer": "rail_transit_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "evidence_only",
+      "recovery_priority": "low",
+      "recommended_action": "Frequency is not essential; retain only if later evidence supports it.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "evidence_only"
+    },
+    {
+      "query": "bus hub",
+      "routing_layer": "rail_transit_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "evidence_only",
+      "recovery_priority": "low",
+      "recommended_action": "Frequency is not essential; retain only if later evidence supports it.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "evidence_only"
+    },
+    {
+      "query": "metro hub",
+      "routing_layer": "rail_transit_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "evidence_only",
+      "recovery_priority": "low",
+      "recommended_action": "Frequency is not essential; retain only if later evidence supports it.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "evidence_only"
+    },
+    {
+      "query": "urban transit hub",
+      "routing_layer": "rail_transit_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "evidence_only",
+      "recovery_priority": "low",
+      "recommended_action": "Frequency is not essential; retain only if later evidence supports it.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "evidence_only"
+    },
+    {
+      "query": "route hub",
+      "routing_layer": "rail_transit_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "evidence_only",
+      "recovery_priority": "low",
+      "recommended_action": "Frequency is not essential; retain only if later evidence supports it.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "evidence_only"
+    },
+    {
+      "query": "passenger hub",
+      "routing_layer": "rail_transit_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "evidence_only",
+      "recovery_priority": "low",
+      "recommended_action": "Frequency is not essential; retain only if later evidence supports it.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "evidence_only"
+    },
+    {
+      "query": "intermodal hub",
+      "routing_layer": "rail_transit_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "retry_frequency",
+      "recovery_priority": "medium",
+      "recommended_action": "Network/cache failure only; retry a targeted Ngram request if possible.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "recovered"
+    },
+    {
+      "query": "central station hub",
+      "routing_layer": "rail_transit_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "evidence_only",
+      "recovery_priority": "low",
+      "recommended_action": "Frequency is not essential; retain only if later evidence supports it.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "evidence_only"
+    },
+    {
+      "query": "air hub",
+      "routing_layer": "air_logistics_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "evidence_only",
+      "recovery_priority": "low",
+      "recommended_action": "Frequency is not essential; retain only if later evidence supports it.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "evidence_only"
+    },
+    {
+      "query": "distribution hub",
+      "routing_layer": "air_logistics_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "retry_frequency",
+      "recovery_priority": "high",
+      "recommended_action": "Network/cache failure only; retry a targeted Ngram request if possible.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "recovered"
+    },
+    {
+      "query": "cargo hub",
+      "routing_layer": "air_logistics_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "retry_frequency",
+      "recovery_priority": "medium",
+      "recommended_action": "Network/cache failure only; retry a targeted Ngram request if possible.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "recovered"
+    },
+    {
+      "query": "freight hub",
+      "routing_layer": "air_logistics_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "retry_frequency",
+      "recovery_priority": "medium",
+      "recommended_action": "Network/cache failure only; retry a targeted Ngram request if possible.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "recovered"
+    },
+    {
+      "query": "supply chain hub",
+      "routing_layer": "air_logistics_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "retry_frequency",
+      "recovery_priority": "medium",
+      "recommended_action": "Network/cache failure only; retry a targeted Ngram request if possible.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "recovered"
+    },
+    {
+      "query": "international hub",
+      "routing_layer": "air_logistics_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "ambiguous_or_noisy",
+      "recovery_priority": "low",
+      "recommended_action": "Ambiguous without context; do not use as routing frequency evidence.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "evidence_only"
+    },
+    {
+      "query": "hub and spokes",
+      "routing_layer": "hub_and_spoke_model",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "drop_or_exclude",
+      "recovery_priority": "drop",
+      "recommended_action": "Malformed, reversed, or redundant variant with no current evidence need.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "dropped"
+    },
+    {
+      "query": "hub-spoke",
+      "routing_layer": "hub_and_spoke_model",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "drop_or_exclude",
+      "recovery_priority": "drop",
+      "recommended_action": "Malformed, reversed, or redundant variant with no current evidence need.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "dropped"
+    },
+    {
+      "query": "spoke and hub",
+      "routing_layer": "hub_and_spoke_model",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "drop_or_exclude",
+      "recovery_priority": "drop",
+      "recommended_action": "Malformed, reversed, or redundant variant with no current evidence need.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "dropped"
+    },
+    {
+      "query": "spoke-hub",
+      "routing_layer": "hub_and_spoke_model",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "drop_or_exclude",
+      "recovery_priority": "drop",
+      "recommended_action": "Malformed, reversed, or redundant variant with no current evidence need.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "dropped"
+    },
+    {
+      "query": "hub-and-spoke system",
+      "routing_layer": "hub_and_spoke_model",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "retry_frequency",
+      "recovery_priority": "high",
+      "recommended_action": "Network/cache failure only; retry a targeted Ngram request if possible.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "failed_again"
+    },
+    {
+      "query": "hub and spoke system",
+      "routing_layer": "hub_and_spoke_model",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "retry_frequency",
+      "recovery_priority": "high",
+      "recommended_action": "Network/cache failure only; retry a targeted Ngram request if possible.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "recovered"
+    },
+    {
+      "query": "hub-and-spoke network",
+      "routing_layer": "hub_and_spoke_model",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "retry_frequency",
+      "recovery_priority": "high",
+      "recommended_action": "Network/cache failure only; retry a targeted Ngram request if possible.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "failed_again"
+    },
+    {
+      "query": "hub and spoke network",
+      "routing_layer": "hub_and_spoke_model",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "retry_frequency",
+      "recovery_priority": "high",
+      "recommended_action": "Network/cache failure only; retry a targeted Ngram request if possible.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "recovered"
+    },
+    {
+      "query": "hub-and-spoke model",
+      "routing_layer": "hub_and_spoke_model",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "retry_frequency",
+      "recovery_priority": "high",
+      "recommended_action": "Network/cache failure only; retry a targeted Ngram request if possible.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "failed_again"
+    },
+    {
+      "query": "hub and spoke model",
+      "routing_layer": "hub_and_spoke_model",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "retry_frequency",
+      "recovery_priority": "high",
+      "recommended_action": "Network/cache failure only; retry a targeted Ngram request if possible.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "recovered"
+    },
+    {
+      "query": "network switch hub",
+      "routing_layer": "network_communication_route",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "drop_or_exclude",
+      "recovery_priority": "drop",
+      "recommended_action": "Malformed, reversed, or redundant variant with no current evidence need.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "dropped"
+    },
+    {
+      "query": "service hub",
+      "routing_layer": "institutional_route_language",
+      "previous_failure_reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "triage_category": "ambiguous_or_noisy",
+      "recovery_priority": "low",
+      "recommended_action": "Ambiguous without context; do not use as routing frequency evidence.",
+      "notes": "Transparent recovery triage; no missing frequency values were invented.",
+      "recovery_result": "evidence_only"
+    }
+  ],
+  "raw_recovery_log_summary": {
+    "metadata": {
+      "word": "hub",
+      "chart_id": "chart_02",
+      "generated_at": "2026-05-13T13:37:47.344448Z",
+      "generated_by_script": "scripts/recover_hub_chart02_routing_data.py"
+    },
+    "previous_failed_queries": 26,
+    "failed_queries_triaged": 26,
+    "triage_counts": {
+      "evidence_only": 8,
+      "retry_frequency": 11,
+      "ambiguous_or_noisy": 2,
+      "drop_or_exclude": 5
+    },
+    "recovered_frequency_status_counts": {
+      "already_available": 28,
+      "evidence_only": 10,
+      "recovered": 8,
+      "dropped": 5,
+      "failed_again": 3
+    },
+    "archive_status_counts": {
+      "success": 14
+    },
+    "local_cache_evidence_candidates": 31,
+    "ngram_retry_logs": [
+      {
+        "source": "google_books_ngram_retry",
+        "queries": [
+          "intermodal hub",
+          "distribution hub",
+          "cargo hub",
+          "freight hub",
+          "supply chain hub",
+          "hub-and-spoke system",
+          "hub and spoke system",
+          "hub-and-spoke network"
+        ],
+        "url": "https://books.google.com/ngrams/json?content=intermodal+hub%2Cdistribution+hub%2Ccargo+hub%2Cfreight+hub%2Csupply+chain+hub%2Chub-and-spoke+system%2Chub+and+spoke+system%2Chub-and-spoke+network&year_start=1800&year_end=2022&corpus=en&smoothing=0&case_insensitive=true",
+        "cache_path": "docs/research/hub/raw/chart02_recovery_cache/ngram_retry_intermodal_hub_distribution_hub_cargo_hub_freight_hub_supply_chain_hub_hub_and_spoke_system_hub_and_spoke_system_hub_and_spoke_network_51f82673d1f2be40.json",
+        "from_cache": false,
+        "ok": true,
+        "status_code": 200,
+        "error": null
+      },
+      {
+        "source": "google_books_ngram_retry",
+        "queries": [
+          "hub and spoke network",
+          "hub-and-spoke model",
+          "hub and spoke model"
+        ],
+        "url": "https://books.google.com/ngrams/json?content=hub+and+spoke+network%2Chub-and-spoke+model%2Chub+and+spoke+model&year_start=1800&year_end=2022&corpus=en&smoothing=0&case_insensitive=true",
+        "cache_path": "docs/research/hub/raw/chart02_recovery_cache/ngram_retry_hub_and_spoke_network_hub_and_spoke_model_hub_and_spoke_model_af36b2b8a4c9d0d2.json",
+        "from_cache": false,
+        "ok": true,
+        "status_code": 200,
+        "error": null
+      }
+    ]
+  }
+}

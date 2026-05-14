@@ -1,0 +1,274 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_03",
+    "generated_at": "2026-05-14T06:07:27.347271Z",
+    "generated_by_script": "scripts/process_hub_chart03_naming.py"
+  },
+  "patterns": [
+    {
+      "pattern_id": "suffix_phrase",
+      "label": "X + hub",
+      "description": "A domain, audience, resource, service, or institution is named as a centralized access point.",
+      "example_terms": [
+        "education hub",
+        "innovation hub",
+        "Ethernet hub",
+        "data hub",
+        "USB hub",
+        "financial hub",
+        "switching hub",
+        "business hub",
+        "knowledge hub",
+        "community hub"
+      ],
+      "object_types": [
+        "institutional_access_point",
+        "platform_content_access",
+        "technical_system"
+      ],
+      "semantic_functions": [
+        "access point",
+        "resource aggregation",
+        "service portal",
+        "community gathering point",
+        "knowledge organization",
+        "institutional branding"
+      ],
+      "frequency_support": "strong",
+      "search_visibility_support": "strong",
+      "representative_examples": [
+        "education hub",
+        "innovation hub",
+        "Ethernet hub",
+        "data hub",
+        "USB hub",
+        "financial hub",
+        "switching hub",
+        "business hub",
+        "knowledge hub",
+        "community hub"
+      ],
+      "recommended_chart_role": "main",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "pattern_id": "prefix_phrase",
+      "label": "hub + X",
+      "description": "Hub acts as a modifier meaning hub-like, central, systemic, or node-based.",
+      "example_terms": [
+        "hub city",
+        "hub airport",
+        "hub service",
+        "hub location",
+        "hub site",
+        "hub system",
+        "hub node",
+        "hub model",
+        "hub network",
+        "hub room"
+      ],
+      "object_types": [
+        "institutional_access_point",
+        "platform_content_access",
+        "technical_system"
+      ],
+      "semantic_functions": [
+        "technical connection",
+        "system model",
+        "node classification"
+      ],
+      "frequency_support": "strong",
+      "search_visibility_support": "unavailable",
+      "representative_examples": [
+        "hub city",
+        "hub airport",
+        "hub service",
+        "hub location",
+        "hub site",
+        "hub system",
+        "hub node",
+        "hub model",
+        "hub network",
+        "hub room"
+      ],
+      "recommended_chart_role": "annotation",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "pattern_id": "closed_compound_or_brand",
+      "label": "XHub / X-hub / HubX",
+      "description": "Hub is incorporated into a brand, platform, website, product, or service name.",
+      "example_terms": [
+        "GitHub",
+        "Pornhub",
+        "Sci-Hub",
+        "HubSpot",
+        "HubPages",
+        "Docker Hub",
+        "Hugging Face Hub"
+      ],
+      "object_types": [
+        "archive",
+        "platform",
+        "repository",
+        "software_service",
+        "website"
+      ],
+      "semantic_functions": [
+        "platform access",
+        "content aggregation",
+        "repository/distribution point",
+        "service portal"
+      ],
+      "frequency_support": "unavailable",
+      "search_visibility_support": "strong",
+      "representative_examples": [
+        "GitHub",
+        "Pornhub",
+        "Sci-Hub",
+        "HubSpot",
+        "HubPages",
+        "Docker Hub",
+        "Hugging Face Hub"
+      ],
+      "recommended_chart_role": "supporting",
+      "confidence": "medium",
+      "notes": "Keep brand/platform examples separate from ordinary phrase-frequency terms."
+    },
+    {
+      "pattern_id": "institutional_access_point",
+      "label": "Institutional Access Point",
+      "description": "Hub names a campus, service, office, room, portal, or resource access point.",
+      "example_terms": [
+        "student hub",
+        "learning hub",
+        "resource hub",
+        "media hub",
+        "maker hub",
+        "equipment hub",
+        "service hub",
+        "wellbeing hub",
+        "career hub",
+        "API hub"
+      ],
+      "object_types": [
+        "community_space",
+        "digital_portal",
+        "equipment_room",
+        "institutional_access_point",
+        "resource_center",
+        "service_portal",
+        "student_service"
+      ],
+      "semantic_functions": [
+        "access point",
+        "resource aggregation",
+        "service portal",
+        "institutional branding"
+      ],
+      "frequency_support": "strong",
+      "search_visibility_support": "strong",
+      "representative_examples": [
+        "student hub",
+        "learning hub",
+        "resource hub",
+        "media hub",
+        "maker hub",
+        "equipment hub",
+        "service hub",
+        "wellbeing hub",
+        "career hub",
+        "API hub"
+      ],
+      "recommended_chart_role": "main",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "pattern_id": "platform_content_access",
+      "label": "Platform / Content Access",
+      "description": "Hub names a digital, informational, content, data, documentation, or community access point.",
+      "example_terms": [
+        "data hub",
+        "digital hub",
+        "hub site",
+        "content hub",
+        "online hub",
+        "hub page",
+        "developer hub",
+        "documentation hub",
+        "API hub"
+      ],
+      "object_types": [
+        "platform_content_access"
+      ],
+      "semantic_functions": [
+        "content platform",
+        "data access",
+        "repository/distribution point",
+        "knowledge organization"
+      ],
+      "frequency_support": "strong",
+      "search_visibility_support": "strong",
+      "representative_examples": [
+        "data hub",
+        "digital hub",
+        "hub site",
+        "content hub",
+        "online hub",
+        "hub page",
+        "developer hub",
+        "documentation hub",
+        "API hub"
+      ],
+      "recommended_chart_role": "supporting",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "pattern_id": "technical_system",
+      "label": "Technical System",
+      "description": "Hub names a node, connector, integration point, or technical routing object.",
+      "example_terms": [
+        "Ethernet hub",
+        "USB hub",
+        "hub airport",
+        "switching hub",
+        "network hub",
+        "hub system",
+        "hub node",
+        "communication hub",
+        "hub model",
+        "hub network"
+      ],
+      "object_types": [
+        "technical_system"
+      ],
+      "semantic_functions": [
+        "technical connection",
+        "integration point",
+        "repository/distribution point"
+      ],
+      "frequency_support": "strong",
+      "search_visibility_support": "unavailable",
+      "representative_examples": [
+        "Ethernet hub",
+        "USB hub",
+        "hub airport",
+        "switching hub",
+        "network hub",
+        "hub system",
+        "hub node",
+        "communication hub",
+        "hub model",
+        "hub network"
+      ],
+      "recommended_chart_role": "supporting",
+      "confidence": "medium",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,447 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_03",
+    "generated_at": "2026-05-14T06:07:27.295479Z",
+    "generated_by_script": "scripts/process_hub_chart03_naming.py",
+    "limitations": [
+      "Search visibility is approximate presence evidence.",
+      "Source verification may be incomplete under restricted network access.",
+      "Search examples are not a complete census of institutional or platform naming."
+    ]
+  },
+  "records": [
+    {
+      "query": "student hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"student hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "wne.edu",
+        "birmingham.ac.uk",
+        "studenthub.torrens.edu.au",
+        "studenthub.swinburneonline.edu.au",
+        "tafensw.edu.au"
+      ],
+      "example_urls": [
+        "https://wne.edu/student-life/student-hub.cfm",
+        "https://www.birmingham.ac.uk/university/building/student-hub.aspx",
+        "https://studenthub.torrens.edu.au/Hub",
+        "https://studenthub.swinburneonline.edu.au/login",
+        "https://www.tafensw.edu.au/study/get-started/student-log-in"
+      ],
+      "example_titles": [
+        "Student Hub | Student Life",
+        "Aston Webb Student Hub",
+        "Home - Student Hub - Torrens and Think at Torrens Global Education",
+        "Student Hub | Swinburne Online",
+        "Access your account | TAFE NSW"
+      ],
+      "visibility_status": "strong_presence",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "learning hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"learning hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "sydney.edu.au",
+        "uis.edu",
+        "duckduckgo.com",
+        "duckduckgo.com",
+        "learninghub.mh.org.au"
+      ],
+      "example_urls": [
+        "https://www.sydney.edu.au/students/learning-hub.html",
+        "https://www.uis.edu/learning-hub",
+        "https://duckduckgo.com/y.js?ad_domain=capterra.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=uDumId75fIbdLMIcn896Nb2zZCLHVkfPA1yda%2Dm%2Dw4urFngCbs9j1eHjHLPM2Ir00y2DhcQt%2DYEPNe2nWN1BKcEPhlDwElagLwVoa1sPwLgwEBjrdG_YNxzps9dAYxkiXy61NowKeW%2DD9TttOErZd8LLiVOI1ju_8_kdXK_4IOw.gz2E3Q44mRkEClSyFYNPow&rut=096df376abe167719640c3bc2ee1e46b4a0cbdca77a2a8c4c940e0093262c680&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8JRvydoMEEhhxTJTv%2DuPOJTVUCUwHvq3dzH8ySB9yhoaKVpp3Xnyvg0ZfOhiQ3eJPYqYcNhQ7o7C_%2DRpkIZES7TWwXsmFrUehpW_S0obZaNti3UT41G8eeCPGXBv1P8oWMwDbWkCY9ae5bJr5%2DvF4tvr%2DOVVtupA71rTEuYxLmUZhQkrV3RyYsN9GLFPAKQI_bDPq26uWy06Bjx0u4SytGO0nC74%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuY2FwdGVycmEuY29tJTJmbXNuY2xpY2slM2Z1cmwlM2RsZWFybmluZy1tYW5hZ2VtZW50LXN5c3RlbS1zb2Z0d2FyZSUyNmhlYWRsaW5lJTNkTGVhcm5pbmclMjUyMFRvb2xzJTI2Y29tcGFyZV9zbHAlM2R0cnVlJTI2cHR5cGUlM2RiaW5nJTI2YWNjb3VudF9jYW1wYWlnbl9pZCUzZDY5ODEzNzYyMSUyNmFjY291bnRfYWRncm91cF9pZCUzZDEyNDkwNDY1MTE4NTc0OTQlMjZ0YXJnZXQlM2R3ZWIlMjUyMGJhc2VkJTI1MjBsZWFybmluZyUyNTIwcGxhdGZvcm0lMjZhZF9pZCUzZCUyNm1hdGNodHlwZSUzZHAlMjZ1dG1fc291cmNlJTNkcHMtYmluZyUyNnV0bV9tZWRpdW0lM2RwcGMlMjZ1dG1fY2FtcGFpZ24lM2QlM2ExJTNhQ0FQJTNhMiUzYUNPTSUzYTMlM2FBbGwlM2E0JTNhSU5UTCUzYTUlM2FCQVUlM2E2JTNhU09GJTNhNyUzYURlc2t0b3AlM2E4JTNhQlIlM2E5JTNhTGVhcm5pbmdfTWFuYWdlbWVudF9TeXN0ZW0lMjZuZXR3b3JrJTNkcyUyNm1zY2xraWQlM2RkMjk3ZjE3MzQ5OTExMWUyNTMwMDliNzYyZmIyZmI3Ng%26rlid%3Dd297f173499111e253009b762fb2fb76&vqd=4-73882224209957181721293900368434978382&iurl=%7B1%7DIG%3D5B4943B006F743DFB6B499E21BA121BF%26CID%3D2A40A9703ED864110D18BE293F0665CC%26ID%3DDevEx%2C5045.1",
+        "https://duckduckgo.com/y.js?ad_domain=ispring.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=tEq31Qew8sz98Ap7kccjc7_9fTW5X3kNc7IDz0%2DTWB09U2rrT_667YNqpO1h74w5yguE_7q_wSOVXyl7LYfDzSqqyRqwPyvwkwv0M6Ls1cGMjcveDPlWmQjFdkSx81QeHFPiHFB4JWWIMkPDvEk5rLOgOJ4eYyYzFdTm7IVDoG0.oyGQWfQXm60zbRtO1I2LlQ&rut=1066b4cbb2bddb9bfb4bd6f158d64b47faedb0dd7bf3a37cf0dac73fde6c82b6&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De80Ya4VnQ8GtgjKOJ0N3hHOzVUCUyexdj6B18lTKRYAB3kCcMIy_BLk0D0uqnsI4PZtAfkBre5gFW8LF6Nc5UqeHdnSMrUoSSemdEXuhMs7LiKIgp3agYNe9Nkhvp4D9l07B%2DwG8MK4JULbt4NSjNLstM02c4POWT7fLa7RA21VQd%2DF4XIAE1bb_vjYehcuVGpefsmq67T25qN8vv9qaXIo8qNz3A%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuaXNwcmluZy5jb20lM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RsbXNfYXBhY19wbSUyNnV0bV90ZXJtJTNkd3d3LmlzcHJpbmcuY29tJTI2dXRtX2NvbnRlbnQlM2Q3MzczNjMzNjU1OTA0NyUyNmFkX2dyb3VwJTNkJTI2YWdnX2NhbXBhaWduJTNkJTI2bXNjbGtpZCUzZDg4NjkxY2FjYWU2ZjE5YzYwNWU0NzZhOWM4NGMwNjIw%26rlid%3D88691cacae6f19c605e476a9c84c0620&vqd=4-240527539400786963458344060286871115108&iurl=%7B1%7DIG%3D5B4943B006F743DFB6B499E21BA121BF%26CID%3D2A40A9703ED864110D18BE293F0665CC%26ID%3DDevEx%2C5050.1",
+        "https://learninghub.mh.org.au/"
+      ],
+      "example_titles": [
+        "Learning Hub",
+        "The Learning Hub",
+        "Top 10 Learning Tools - Free List of the Top Products",
+        "iSpring LMS - Try Free for 30 Days",
+        "Royal Melbourne Hospital Learning Hub"
+      ],
+      "visibility_status": "strong_presence",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "resource hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"resource hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "scl.cornell.edu",
+        "valpo.edu"
+      ],
+      "example_urls": [
+        "https://scl.cornell.edu/new-student-resource-hub",
+        "https://www.valpo.edu/resource-hub/"
+      ],
+      "example_titles": [
+        "New Student Resource Hub",
+        "Resource Hub"
+      ],
+      "visibility_status": "visible",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "equipment hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"equipment hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "jobs.lancashire.ac.uk"
+      ],
+      "example_urls": [
+        "https://jobs.lancashire.ac.uk/Upload/vacancies/files/951/0424-24.pdf"
+      ],
+      "example_titles": [
+        "Support Technician Equipment Hub - IT & AV (Stores)"
+      ],
+      "visibility_status": "visible",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "media hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"media hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "technology.oregonstate.edu",
+        "plymouth.ac.uk"
+      ],
+      "example_urls": [
+        "https://technology.oregonstate.edu/services/media-hub",
+        "https://www.plymouth.ac.uk/facilities/media-hub"
+      ],
+      "example_titles": [
+        "Media Hub",
+        "Media Hub"
+      ],
+      "visibility_status": "visible",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "service hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"service hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "nyit.edu"
+      ],
+      "example_urls": [
+        "https://www.nyit.edu/students/student-service-hub/"
+      ],
+      "example_titles": [
+        "Student Service Hub"
+      ],
+      "visibility_status": "visible",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "wellbeing hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"wellbeing hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "buckingham.ac.uk"
+      ],
+      "example_urls": [
+        "https://www.buckingham.ac.uk/student-life/wellbeing-hub/"
+      ],
+      "example_titles": [
+        "Wellbeing Hub"
+      ],
+      "visibility_status": "visible",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "career hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"career hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "cla.umn.edu"
+      ],
+      "example_urls": [
+        "https://cla.umn.edu/get-ready"
+      ],
+      "example_titles": [
+        "CLA Career Hub"
+      ],
+      "visibility_status": "visible",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "maker hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "institutional_access_point",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"maker hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "elon.edu",
+        "georgefox.edu"
+      ],
+      "example_urls": [
+        "https://www.elon.edu/u/fa/technology/makerhub",
+        "https://www.georgefox.edu/college-admissions/campus-tour/maker-hub.html"
+      ],
+      "example_titles": [
+        "The Maker Hub",
+        "Engineering Maker Hub"
+      ],
+      "visibility_status": "visible",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "content hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "platform_content_access",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"content hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "doc.sitecore.com"
+      ],
+      "example_urls": [
+        "https://doc.sitecore.com/ch/en"
+      ],
+      "example_titles": [
+        "Sitecore Content Hub documentation"
+      ],
+      "visibility_status": "visible",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "data hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "platform_content_access",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"data hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "docs.dune.com"
+      ],
+      "example_urls": [
+        "https://docs.dune.com/web-app/overview"
+      ],
+      "example_titles": [
+        "Dune Data Hub overview"
+      ],
+      "visibility_status": "visible",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "API hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "platform_content_access",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"API hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "docs.cloud.google.com"
+      ],
+      "example_urls": [
+        "https://docs.cloud.google.com/apigee/docs/apihub/getting-started-apihub"
+      ],
+      "example_titles": [
+        "Get started with API hub"
+      ],
+      "visibility_status": "visible",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "developer hub",
+      "naming_pattern": "suffix_phrase",
+      "object_type": "platform_content_access",
+      "source": "web_search + curated_public_examples",
+      "search_query": "\"developer hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [
+        "docs.rapidapi.com"
+      ],
+      "example_urls": [
+        "https://docs.rapidapi.com/"
+      ],
+      "example_titles": [
+        "Rapid API Hub documentation"
+      ],
+      "visibility_status": "visible",
+      "evidence_quality": "high",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "GitHub",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "platform",
+      "source": "web_search",
+      "search_query": "\"GitHub\"",
+      "approx_result_count": null,
+      "top_result_domains": [],
+      "example_urls": [],
+      "example_titles": [],
+      "visibility_status": "sparse",
+      "evidence_quality": "low",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "Pornhub",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "website",
+      "source": "web_search",
+      "search_query": "\"Pornhub\"",
+      "approx_result_count": null,
+      "top_result_domains": [],
+      "example_urls": [],
+      "example_titles": [],
+      "visibility_status": "sparse",
+      "evidence_quality": "low",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "Sci-Hub",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "archive",
+      "source": "web_search",
+      "search_query": "\"Sci-Hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [],
+      "example_urls": [],
+      "example_titles": [],
+      "visibility_status": "sparse",
+      "evidence_quality": "low",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "HubSpot",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "software_service",
+      "source": "web_search",
+      "search_query": "\"HubSpot\"",
+      "approx_result_count": null,
+      "top_result_domains": [],
+      "example_urls": [],
+      "example_titles": [],
+      "visibility_status": "sparse",
+      "evidence_quality": "low",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "Docker Hub",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "repository",
+      "source": "web_search",
+      "search_query": "\"Docker Hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [],
+      "example_urls": [],
+      "example_titles": [],
+      "visibility_status": "sparse",
+      "evidence_quality": "low",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    },
+    {
+      "query": "Hugging Face Hub",
+      "naming_pattern": "closed_compound_or_brand",
+      "object_type": "repository",
+      "source": "web_search",
+      "search_query": "\"Hugging Face Hub\"",
+      "approx_result_count": null,
+      "top_result_domains": [],
+      "example_urls": [],
+      "example_titles": [],
+      "visibility_status": "sparse",
+      "evidence_quality": "low",
+      "notes": "Search visibility is approximate presence evidence, not corpus frequency."
+    }
+  ],
+  "pattern_summary": [
+    {
+      "pattern_id": "suffix_phrase",
+      "label": "X + hub",
+      "visibility_support": "strong",
+      "status_counts": {
+        "strong_presence": 2,
+        "visible": 11
+      },
+      "notes": "Visibility is presence evidence only; result counts are not used as exact frequency."
+    },
+    {
+      "pattern_id": "prefix_phrase",
+      "label": "hub + X",
+      "visibility_support": "unavailable",
+      "status_counts": {},
+      "notes": "Visibility is presence evidence only; result counts are not used as exact frequency."
+    },
+    {
+      "pattern_id": "closed_compound_or_brand",
+      "label": "XHub / X-hub / HubX",
+      "visibility_support": "strong",
+      "status_counts": {
+        "sparse": 6,
+        "visible": 8
+      },
+      "notes": "Visibility is presence evidence only; result counts are not used as exact frequency."
+    },
+    {
+      "pattern_id": "institutional_access_point",
+      "label": "Institutional Access Point",
+      "visibility_support": "strong",
+      "status_counts": {
+        "strong_presence": 2,
+        "visible": 22
+      },
+      "notes": "Visibility is presence evidence only; result counts are not used as exact frequency."
+    },
+    {
+      "pattern_id": "platform_content_access",
+      "label": "Platform / Content Access",
+      "visibility_support": "strong",
+      "status_counts": {
+        "visible": 10
+      },
+      "notes": "Visibility is presence evidence only; result counts are not used as exact frequency."
+    },
+    {
+      "pattern_id": "technical_system",
+      "label": "Technical System",
+      "visibility_support": "unavailable",
+      "status_counts": {},
+      "notes": "Visibility is presence evidence only; result counts are not used as exact frequency."
+    }
+  ]
+}

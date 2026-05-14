@@ -1,0 +1,6 @@
+question,status,strongest_support,remaining_gap,visual_guidance
+Can Layer 1 remain non-empty without stealing focus?,mostly_ready,artificial respiration apparatus / iron lung / mechanical respirator evidence,Exact artificial aid/apparatus snippets still sparse.,"Use as quiet base lattice, not a layer of large labels."
+Can artificial life be placed without confusing reproduction and computation?,mostly_ready,Langton/ALife field + SEP strong/weak A-Life boundary + early synthetic biology background,More direct biological/artificial life historical snippets would help.,Use artificial life as bridge node with split hover labels.
+Can exact artificial life support be used?,partial,Life Support Care + Ngram exact phrase + component technologies,Exact phrase source is weaker than life support component terms.,Prefer life support as main node; exact phrase can appear as annotation/variant.
+Can test-tube baby be restored?,ready_as_variant,MeSH IVF entry terms and Britannica Louise Brown,"It is press/public language, not technical core.","Use as historical label beside IVF, smaller than IVF node."
+Does this change AI boundary?,no_change,Body-side and reproduction anchors strengthened.,No need to center AI.,Keep AI as top-layer node inside larger human-continuation stack.

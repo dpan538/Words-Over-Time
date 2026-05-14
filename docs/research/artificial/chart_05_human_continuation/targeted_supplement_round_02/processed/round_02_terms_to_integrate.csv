@@ -1,0 +1,6 @@
+item,integration_status,terms,visual_role,notes
+Layer 1 apparatus base,use_quietly,artificial respiration apparatus; mechanical respirator; iron lung,background scaffolding under Body Support,Do not over-expand Layer 1; keep as entry ramp.
+Body Support,strengthened,artificial respiration; artificial feeding; life support; mechanical ventilation,core lower human-boundary layer,Exact artificial life support phrase should remain secondary.
+Reproduction / Continuation,strengthened,IVF; artificial insemination; artificial womb; test-tube baby as public phrase,continuation layer with careful experimental edge,Artificial womb needs preclinical/speculative styling.
+Artificial life bridge,strengthened_but_split,biological_life; computational_life; philosophical_life,bridge node between life continuation and process simulation,Do not assign artificial life solely to reproduction.
+AI boundary,unchanged_controlled,AI / AGI / consciousness / companion,highest edge only,No new reason to center AI.

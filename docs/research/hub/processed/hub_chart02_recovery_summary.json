@@ -1,0 +1,27 @@
+{
+  "previous_summary": {
+    "queries_attempted": 54,
+    "successful": 28,
+    "failed": 26,
+    "evidence_items": 21,
+    "high_confidence_evidence": 3,
+    "medium_confidence_evidence": 15,
+    "low_confidence_evidence": 3
+  },
+  "recovery_summary": {
+    "failed_queries_retriaged": 26,
+    "frequency_series_recovered": 8,
+    "recovered_from_existing_cache": 0,
+    "recovered_from_ngram_retry": 8,
+    "failed_again": 3,
+    "marked_evidence_only": 10,
+    "dropped_or_excluded": 5,
+    "hardened_evidence_items": 21,
+    "high_confidence_evidence": 4,
+    "medium_confidence_evidence": 14,
+    "low_confidence_evidence": 3
+  },
+  "chart02_readiness_after_recovery": "ready",
+  "main_model_status": "Core model remains supported by the two existing hub-and-spoke frequency terms; expanded variants remain gap-limited.",
+  "notes": "Network-dependent frequency recovery remained transparent; no absent series were invented."
+}

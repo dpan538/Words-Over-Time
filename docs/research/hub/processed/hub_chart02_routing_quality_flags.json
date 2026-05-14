@@ -1,0 +1,1098 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_02",
+    "generated_at": "2026-05-13T13:20:38.008465Z",
+    "generated_by_script": "scripts/process_hub_chart02_routing.py"
+  },
+  "flag_counts": {
+    "strong_trend": 1,
+    "usable_trend": 10,
+    "failed": 26,
+    "sparse_presence": 6,
+    "ambiguous_sense": 9,
+    "core_model": 2
+  },
+  "flags": [
+    {
+      "query_id": "hub_chart02_query_001",
+      "query": "transport hub",
+      "routing_layer": "rail_transit_route",
+      "quality_flag": "strong_trend",
+      "reason": "Sustained routing-frequency signal suitable for a main series.",
+      "recommended_use": "main_series",
+      "stats": {
+        "first_nonzero_year": 1843,
+        "last_nonzero_year": 2022,
+        "peak_year": 2010,
+        "peak_frequency_per_million": 0.06270535,
+        "mean_frequency_per_million": 0.00558545,
+        "nonzero_year_count": 92,
+        "first_visible_period": "p5_1980_1999",
+        "peak_period": "p7_2010_2019",
+        "latest_period_status": "stable"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_002",
+      "query": "transit hub",
+      "routing_layer": "rail_transit_route",
+      "quality_flag": "usable_trend",
+      "reason": "Usable routing-frequency proxy with caution.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1889,
+        "last_nonzero_year": 2022,
+        "peak_year": 2009,
+        "peak_frequency_per_million": 0.0345423,
+        "mean_frequency_per_million": 0.00265933,
+        "nonzero_year_count": 107,
+        "first_visible_period": "p5_1980_1999",
+        "peak_period": "p8_2020_2022",
+        "latest_period_status": "stable"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_003",
+      "query": "railway hub",
+      "routing_layer": "rail_transit_route",
+      "quality_flag": "usable_trend",
+      "reason": "Usable routing-frequency proxy with caution.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1868,
+        "last_nonzero_year": 2022,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.01016971,
+        "mean_frequency_per_million": 0.00107645,
+        "nonzero_year_count": 118,
+        "first_visible_period": "p5_1980_1999",
+        "peak_period": "p8_2020_2022",
+        "latest_period_status": "rising"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_004",
+      "query": "railroad hub",
+      "routing_layer": "rail_transit_route",
+      "quality_flag": "usable_trend",
+      "reason": "Usable routing-frequency proxy with caution.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1832,
+        "last_nonzero_year": 2022,
+        "peak_year": 2008,
+        "peak_frequency_per_million": 0.01572582,
+        "mean_frequency_per_million": 0.0015106,
+        "nonzero_year_count": 121,
+        "first_visible_period": "p4_1946_1979",
+        "peak_period": "p7_2010_2019",
+        "latest_period_status": "declining"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_005",
+      "query": "rail hub",
+      "routing_layer": "rail_transit_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_006",
+      "query": "bus hub",
+      "routing_layer": "rail_transit_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_007",
+      "query": "metro hub",
+      "routing_layer": "rail_transit_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_008",
+      "query": "urban transit hub",
+      "routing_layer": "rail_transit_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_009",
+      "query": "route hub",
+      "routing_layer": "rail_transit_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_010",
+      "query": "passenger hub",
+      "routing_layer": "rail_transit_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_011",
+      "query": "intermodal hub",
+      "routing_layer": "rail_transit_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_012",
+      "query": "central station hub",
+      "routing_layer": "rail_transit_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_013",
+      "query": "airport hub",
+      "routing_layer": "air_logistics_route",
+      "quality_flag": "sparse_presence",
+      "reason": "Sparse signal; useful only as a presence or annotation term.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.00512579,
+        "mean_frequency_per_million": 0.00054555,
+        "nonzero_year_count": 70,
+        "first_visible_period": "p5_1980_1999",
+        "peak_period": "p6_2000_2009",
+        "latest_period_status": "stable"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_014",
+      "query": "airline hub",
+      "routing_layer": "air_logistics_route",
+      "quality_flag": "sparse_presence",
+      "reason": "Sparse signal; useful only as a presence or annotation term.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.00809336,
+        "mean_frequency_per_million": 0.00088277,
+        "nonzero_year_count": 76,
+        "first_visible_period": "p5_1980_1999",
+        "peak_period": "p6_2000_2009",
+        "latest_period_status": "declining"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_015",
+      "query": "air hub",
+      "routing_layer": "air_logistics_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_016",
+      "query": "shipping hub",
+      "routing_layer": "air_logistics_route",
+      "quality_flag": "sparse_presence",
+      "reason": "Sparse signal; useful only as a presence or annotation term.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1890,
+        "last_nonzero_year": 2022,
+        "peak_year": 2009,
+        "peak_frequency_per_million": 0.00778206,
+        "mean_frequency_per_million": 0.00070727,
+        "nonzero_year_count": 89,
+        "first_visible_period": "p6_2000_2009",
+        "peak_period": "p7_2010_2019",
+        "latest_period_status": "stable"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_017",
+      "query": "logistics hub",
+      "routing_layer": "air_logistics_route",
+      "quality_flag": "usable_trend",
+      "reason": "Usable routing-frequency proxy with caution.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1843,
+        "last_nonzero_year": 2022,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.02470736,
+        "mean_frequency_per_million": 0.0017733,
+        "nonzero_year_count": 62,
+        "first_visible_period": "p6_2000_2009",
+        "peak_period": "p8_2020_2022",
+        "latest_period_status": "rising"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_018",
+      "query": "distribution hub",
+      "routing_layer": "air_logistics_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_019",
+      "query": "cargo hub",
+      "routing_layer": "air_logistics_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_020",
+      "query": "freight hub",
+      "routing_layer": "air_logistics_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_021",
+      "query": "supply chain hub",
+      "routing_layer": "air_logistics_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_022",
+      "query": "regional hub",
+      "routing_layer": "air_logistics_route",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Phrase can mean routing, institutional centrality, or broad importance without context.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1843,
+        "last_nonzero_year": 2022,
+        "peak_year": 2003,
+        "peak_frequency_per_million": 0.04504371,
+        "mean_frequency_per_million": 0.00514055,
+        "nonzero_year_count": 83,
+        "first_visible_period": "p5_1980_1999",
+        "peak_period": "p6_2000_2009",
+        "latest_period_status": "stable"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_023",
+      "query": "global hub",
+      "routing_layer": "air_logistics_route",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Phrase can mean routing, institutional centrality, or broad importance without context.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1843,
+        "last_nonzero_year": 2022,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.02823682,
+        "mean_frequency_per_million": 0.00185154,
+        "nonzero_year_count": 59,
+        "first_visible_period": "p6_2000_2009",
+        "peak_period": "p8_2020_2022",
+        "latest_period_status": "rising"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_024",
+      "query": "international hub",
+      "routing_layer": "air_logistics_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_025",
+      "query": "hub and spoke",
+      "routing_layer": "hub_and_spoke_model",
+      "quality_flag": "core_model",
+      "reason": "Explicit hub-and-spoke model language; useful as Chart 02 conceptual anchor.",
+      "recommended_use": "main_model",
+      "stats": {
+        "first_nonzero_year": 1856,
+        "last_nonzero_year": 2022,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.0596957,
+        "mean_frequency_per_million": 0.01287389,
+        "nonzero_year_count": 167,
+        "first_visible_period": "p2_1850_1899",
+        "peak_period": "p6_2000_2009",
+        "latest_period_status": "stable"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_026",
+      "query": "hub-and-spoke",
+      "routing_layer": "hub_and_spoke_model",
+      "quality_flag": "core_model",
+      "reason": "Explicit hub-and-spoke model language; useful as Chart 02 conceptual anchor.",
+      "recommended_use": "main_model",
+      "stats": {
+        "first_nonzero_year": 1832,
+        "last_nonzero_year": 2022,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.15271277,
+        "mean_frequency_per_million": 0.01615469,
+        "nonzero_year_count": 97,
+        "first_visible_period": "p4_1946_1979",
+        "peak_period": "p6_2000_2009",
+        "latest_period_status": "stable"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_027",
+      "query": "hub and spokes",
+      "routing_layer": "hub_and_spoke_model",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_028",
+      "query": "hub-spoke",
+      "routing_layer": "hub_and_spoke_model",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_029",
+      "query": "spoke and hub",
+      "routing_layer": "hub_and_spoke_model",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_030",
+      "query": "spoke-hub",
+      "routing_layer": "hub_and_spoke_model",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_031",
+      "query": "hub-and-spoke system",
+      "routing_layer": "hub_and_spoke_model",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_032",
+      "query": "hub and spoke system",
+      "routing_layer": "hub_and_spoke_model",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_033",
+      "query": "hub-and-spoke network",
+      "routing_layer": "hub_and_spoke_model",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_034",
+      "query": "hub and spoke network",
+      "routing_layer": "hub_and_spoke_model",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_035",
+      "query": "hub-and-spoke model",
+      "routing_layer": "hub_and_spoke_model",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_036",
+      "query": "hub and spoke model",
+      "routing_layer": "hub_and_spoke_model",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_037",
+      "query": "network hub",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "usable_trend",
+      "reason": "Usable routing-frequency proxy with caution.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 1999,
+        "peak_frequency_per_million": 0.02438265,
+        "mean_frequency_per_million": 0.00217778,
+        "nonzero_year_count": 64,
+        "first_visible_period": "p5_1980_1999",
+        "peak_period": "p6_2000_2009",
+        "latest_period_status": "stable"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_038",
+      "query": "communication hub",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "usable_trend",
+      "reason": "Usable routing-frequency proxy with caution.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2020,
+        "peak_frequency_per_million": 0.01123648,
+        "mean_frequency_per_million": 0.00104695,
+        "nonzero_year_count": 83,
+        "first_visible_period": "p5_1980_1999",
+        "peak_period": "p8_2020_2022",
+        "latest_period_status": "rising"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_039",
+      "query": "hub node",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "usable_trend",
+      "reason": "Usable routing-frequency proxy with caution.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1954,
+        "last_nonzero_year": 2022,
+        "peak_year": 2009,
+        "peak_frequency_per_million": 0.01144716,
+        "mean_frequency_per_million": 0.00078209,
+        "nonzero_year_count": 47,
+        "first_visible_period": "p6_2000_2009",
+        "peak_period": "p8_2020_2022",
+        "latest_period_status": "rising"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_040",
+      "query": "Ethernet hub",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "usable_trend",
+      "reason": "Technical device/network term; useful as later technical extension, not the whole routing model.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1950,
+        "last_nonzero_year": 2022,
+        "peak_year": 1997,
+        "peak_frequency_per_million": 0.06002097,
+        "mean_frequency_per_million": 0.0024662,
+        "nonzero_year_count": 42,
+        "first_visible_period": "p5_1980_1999",
+        "peak_period": "p6_2000_2009",
+        "latest_period_status": "declining"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_041",
+      "query": "switching hub",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "usable_trend",
+      "reason": "Technical device/network term; useful as later technical extension, not the whole routing model.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 1996,
+        "peak_frequency_per_million": 0.03718459,
+        "mean_frequency_per_million": 0.00128021,
+        "nonzero_year_count": 64,
+        "first_visible_period": "p5_1980_1999",
+        "peak_period": "p5_1980_1999",
+        "latest_period_status": "sparse"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_042",
+      "query": "network switch hub",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_043",
+      "query": "telecom hub",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "sparse_presence",
+      "reason": "Sparse signal; useful only as a presence or annotation term.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1979,
+        "last_nonzero_year": 2022,
+        "peak_year": 1995,
+        "peak_frequency_per_million": 0.00126206,
+        "mean_frequency_per_million": 3.896e-05,
+        "nonzero_year_count": 34,
+        "first_visible_period": "",
+        "peak_period": "p6_2000_2009",
+        "latest_period_status": "sparse"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_044",
+      "query": "internet hub",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "sparse_presence",
+      "reason": "Sparse signal; useful only as a presence or annotation term.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2000,
+        "peak_frequency_per_million": 0.00689854,
+        "mean_frequency_per_million": 0.0003362,
+        "nonzero_year_count": 41,
+        "first_visible_period": "p6_2000_2009",
+        "peak_period": "p6_2000_2009",
+        "latest_period_status": "stable"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_045",
+      "query": "data hub",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Phrase can mean routing, institutional centrality, or broad importance without context.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1901,
+        "last_nonzero_year": 2022,
+        "peak_year": 2010,
+        "peak_frequency_per_million": 0.05921896,
+        "mean_frequency_per_million": 0.00217809,
+        "nonzero_year_count": 57,
+        "first_visible_period": "p6_2000_2009",
+        "peak_period": "p8_2020_2022",
+        "latest_period_status": "rising"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_046",
+      "query": "server hub",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "sparse_presence",
+      "reason": "Sparse signal; useful only as a presence or annotation term.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.00095765,
+        "mean_frequency_per_million": 6.44e-05,
+        "nonzero_year_count": 35,
+        "first_visible_period": "",
+        "peak_period": "p8_2020_2022",
+        "latest_period_status": "sparse"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_047",
+      "query": "USB hub",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "usable_trend",
+      "reason": "Technical device/network term; useful as later technical extension, not the whole routing model.",
+      "recommended_use": "supporting_series",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 1999,
+        "peak_frequency_per_million": 0.0459627,
+        "mean_frequency_per_million": 0.00288792,
+        "nonzero_year_count": 38,
+        "first_visible_period": "p5_1980_1999",
+        "peak_period": "p6_2000_2009",
+        "latest_period_status": "declining"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_048",
+      "query": "digital hub",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Phrase can mean routing, institutional centrality, or broad importance without context.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1950,
+        "last_nonzero_year": 2022,
+        "peak_year": 2002,
+        "peak_frequency_per_million": 0.01943596,
+        "mean_frequency_per_million": 0.00114084,
+        "nonzero_year_count": 48,
+        "first_visible_period": "p6_2000_2009",
+        "peak_period": "p8_2020_2022",
+        "latest_period_status": "rising"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_049",
+      "query": "platform hub",
+      "routing_layer": "network_communication_route",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Phrase can mean routing, institutional centrality, or broad importance without context.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1934,
+        "last_nonzero_year": 2022,
+        "peak_year": 1945,
+        "peak_frequency_per_million": 0.00038027,
+        "mean_frequency_per_million": 1.555e-05,
+        "nonzero_year_count": 23,
+        "first_visible_period": "",
+        "peak_period": "p6_2000_2009",
+        "latest_period_status": "sparse"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_050",
+      "query": "service hub",
+      "routing_layer": "institutional_route_language",
+      "quality_flag": "failed",
+      "reason": "Query failed or was skipped; no trend should be inferred.",
+      "recommended_use": "exclude",
+      "stats": {
+        "first_nonzero_year": null,
+        "last_nonzero_year": null,
+        "peak_year": 1800,
+        "peak_frequency_per_million": 0.0,
+        "mean_frequency_per_million": 0.0,
+        "nonzero_year_count": 0,
+        "first_visible_period": "",
+        "peak_period": "",
+        "latest_period_status": "absent"
+      },
+      "notes": "No usable Ngram row; preserve as failed/sparse query."
+    },
+    {
+      "query_id": "hub_chart02_query_051",
+      "query": "resource hub",
+      "routing_layer": "institutional_route_language",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Boundary institutional-access term; useful only if the chart needs a late access bridge.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1964,
+        "last_nonzero_year": 2022,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.00821571,
+        "mean_frequency_per_million": 0.00033427,
+        "nonzero_year_count": 43,
+        "first_visible_period": "p7_2010_2019",
+        "peak_period": "p8_2020_2022",
+        "latest_period_status": "rising"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_052",
+      "query": "knowledge hub",
+      "routing_layer": "institutional_route_language",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Boundary institutional-access term; useful only if the chart needs a late access bridge.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1901,
+        "last_nonzero_year": 2022,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.0313085,
+        "mean_frequency_per_million": 0.00128136,
+        "nonzero_year_count": 43,
+        "first_visible_period": "p6_2000_2009",
+        "peak_period": "p8_2020_2022",
+        "latest_period_status": "rising"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_053",
+      "query": "learning hub",
+      "routing_layer": "institutional_route_language",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Boundary institutional-access term; useful only if the chart needs a late access bridge.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1900,
+        "last_nonzero_year": 2022,
+        "peak_year": 2018,
+        "peak_frequency_per_million": 0.01563867,
+        "mean_frequency_per_million": 0.00060039,
+        "nonzero_year_count": 44,
+        "first_visible_period": "p7_2010_2019",
+        "peak_period": "p8_2020_2022",
+        "latest_period_status": "rising"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    },
+    {
+      "query_id": "hub_chart02_query_054",
+      "query": "business hub",
+      "routing_layer": "institutional_route_language",
+      "quality_flag": "ambiguous_sense",
+      "reason": "Phrase can mean routing, institutional centrality, or broad importance without context.",
+      "recommended_use": "annotation_only",
+      "stats": {
+        "first_nonzero_year": 1843,
+        "last_nonzero_year": 2022,
+        "peak_year": 2003,
+        "peak_frequency_per_million": 0.03220517,
+        "mean_frequency_per_million": 0.00317442,
+        "nonzero_year_count": 122,
+        "first_visible_period": "p5_1980_1999",
+        "peak_period": "p6_2000_2009",
+        "latest_period_status": "stable"
+      },
+      "notes": "Reused local hub frequency data; no new request made."
+    }
+  ]
+}
