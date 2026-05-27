@@ -1,0 +1,905 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "layer_id": "geo_spatial_metrics",
+    "generated_at": "2026-05-26T13:27:12.868272Z",
+    "generated_by_script": "scripts/process_privacy_geo_spatial_metrics.py",
+    "raw_source": "docs/research/privacy/raw/privacy_geo_spatial_metrics_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_geo_spatial_metrics_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_geo_spatial_metrics_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_geo_spatial_metrics_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_geo_spatial_metrics_raw.json"
+    }
+  },
+  "source_success_failure_table": [
+    {
+      "source_id": "corpus_region_frequency::en",
+      "source_type": "corpus_region_frequency",
+      "source_name": "Google Books Ngram Viewer",
+      "available": true,
+      "records": 24581,
+      "notes": "Derived from processed privacy frequency series for English (mixed corpus)."
+    },
+    {
+      "source_id": "corpus_region_frequency::en-GB",
+      "source_type": "corpus_region_frequency",
+      "source_name": "Google Books Ngram Viewer",
+      "available": true,
+      "records": 24581,
+      "notes": "Derived from processed privacy frequency series for English (United Kingdom)."
+    },
+    {
+      "source_id": "corpus_region_frequency::en-US",
+      "source_type": "corpus_region_frequency",
+      "source_name": "Google Books Ngram Viewer",
+      "available": true,
+      "records": 24581,
+      "notes": "Derived from processed privacy frequency series for English (United States)."
+    },
+    {
+      "source_id": "google_trends",
+      "source_type": "search_interest_by_region",
+      "source_name": "Google Trends",
+      "available": false,
+      "records": 0,
+      "notes": "No reproducible Trends method is configured for this workspace."
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "source_name": "GDELT DOC 2.0",
+      "available": true,
+      "records": 195,
+      "notes": "Article/source-country geography recovered. Point-level mentioned-location geography was not available from the reachable mode."
+    },
+    {
+      "source_id": "openalex_works",
+      "source_type": "academic_geo_distribution",
+      "source_name": "OpenAlex works",
+      "available": true,
+      "records": 1233,
+      "notes": "Privacy-related works captured via query search and flattened by institution affiliation."
+    },
+    {
+      "source_id": "openalex_institutions",
+      "source_type": "academic_geo_distribution",
+      "source_name": "OpenAlex institutions",
+      "available": true,
+      "records": 30,
+      "notes": "Institution geo metadata used to enrich academic records with city/region/country and coordinates where available."
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "source_name": "Open-Elevation",
+      "available": true,
+      "records": 1,
+      "notes": "Elevation was added only for records that already had valid coordinates."
+    }
+  ],
+  "counts": {
+    "total_records": 75171,
+    "country_level_record_count": 1419,
+    "city_level_record_count": 374,
+    "point_level_record_count": 374,
+    "elevation_enriched_record_count": 37,
+    "failed_source_count": 65
+  },
+  "records_by_source_type": [
+    {
+      "source_type": "corpus_region_frequency",
+      "count": 73743
+    },
+    {
+      "source_type": "academic_geo_distribution",
+      "count": 1233
+    },
+    {
+      "source_type": "news_geo_discourse",
+      "count": 195
+    }
+  ],
+  "records_by_country_top20": [
+    {
+      "key": "United States",
+      "count": 707
+    },
+    {
+      "key": "United Kingdom",
+      "count": 94
+    },
+    {
+      "key": "China",
+      "count": 85
+    },
+    {
+      "key": "Canada",
+      "count": 70
+    },
+    {
+      "key": "Germany",
+      "count": 56
+    },
+    {
+      "key": "Philippines",
+      "count": 50
+    },
+    {
+      "key": "Australia",
+      "count": 42
+    },
+    {
+      "key": "Italy",
+      "count": 34
+    },
+    {
+      "key": "India",
+      "count": 22
+    },
+    {
+      "key": "Switzerland",
+      "count": 22
+    },
+    {
+      "key": "Netherlands",
+      "count": 21
+    },
+    {
+      "key": "Taiwan",
+      "count": 19
+    },
+    {
+      "key": "Singapore",
+      "count": 13
+    },
+    {
+      "key": "Hong Kong",
+      "count": 13
+    },
+    {
+      "key": "Brazil",
+      "count": 12
+    },
+    {
+      "key": "South Africa",
+      "count": 12
+    },
+    {
+      "key": "Spain",
+      "count": 12
+    },
+    {
+      "key": "Japan",
+      "count": 11
+    },
+    {
+      "key": "South Korea",
+      "count": 10
+    },
+    {
+      "key": "France",
+      "count": 8
+    }
+  ],
+  "records_by_city_top20": [
+    {
+      "key": "Pittsburgh",
+      "count": 37
+    },
+    {
+      "key": "Boca Raton",
+      "count": 27
+    },
+    {
+      "key": "Seattle",
+      "count": 19
+    },
+    {
+      "key": "Raleigh",
+      "count": 18
+    },
+    {
+      "key": "Washington",
+      "count": 18
+    },
+    {
+      "key": "Boston",
+      "count": 16
+    },
+    {
+      "key": "Mountain View",
+      "count": 15
+    },
+    {
+      "key": "State College",
+      "count": 13
+    },
+    {
+      "key": "Atlanta",
+      "count": 13
+    },
+    {
+      "key": "Armonk",
+      "count": 11
+    },
+    {
+      "key": "Ithaca",
+      "count": 11
+    },
+    {
+      "key": "Oxford",
+      "count": 11
+    },
+    {
+      "key": "Stanford",
+      "count": 11
+    },
+    {
+      "key": "New York",
+      "count": 11
+    },
+    {
+      "key": "Xi'an",
+      "count": 11
+    },
+    {
+      "key": "West Lafayette",
+      "count": 10
+    },
+    {
+      "key": "Madison",
+      "count": 10
+    },
+    {
+      "key": "Taichung",
+      "count": 10
+    },
+    {
+      "key": "Lausanne",
+      "count": 10
+    },
+    {
+      "key": "Charlotte",
+      "count": 10
+    }
+  ],
+  "records_by_elevation_band": [
+    {
+      "band_id": "100_500m",
+      "count": 37
+    }
+  ],
+  "strong_signals": [
+    "Corpus-region frequency is the most stable long-run regional comparison source in this layer.",
+    "Academic geography has usable country-level coverage and a real institution-coordinate subset.",
+    "GDELT source-country records support country-level privacy news attention/discourse mapping.",
+    "Elevation enrichment is technically usable for the coordinate subset, but should remain a visual attribute only."
+  ],
+  "weak_signals": [
+    "Search-interest by region is unavailable in this environment and should not be inferred from other sources.",
+    "GDELT did not yield reliable point-level mentioned-location coordinates in this pass."
+  ],
+  "failed_sources": [
+    {
+      "source_id": "google_trends",
+      "source_type": "search_interest_by_region",
+      "availability": "failed",
+      "reason": "No official Trends credentials detected and no reproducible unofficial client available.",
+      "retrieved_at": "2026-05-26T13:26:32.117633Z",
+      "official_config_detected": false,
+      "experimental_client_available": false
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:32.117811Z",
+      "query": "privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:32.627278Z",
+      "query": "data privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:33.139335Z",
+      "query": "online privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=online+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:33.651210Z",
+      "query": "internet privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=internet+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:34.170232Z",
+      "query": "digital privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=digital+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:34.425333Z",
+      "query": "digital privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=digital+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:34.680693Z",
+      "query": "information privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=information+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:35.192047Z",
+      "query": "privacy policy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+policy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:35.704317Z",
+      "query": "privacy settings",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+settings&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:36.215172Z",
+      "query": "privacy rights",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+rights&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:36.725517Z",
+      "query": "right to privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=right+to+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:36.980852Z",
+      "query": "right to privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=right+to+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:37.236068Z",
+      "query": "invasion of privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=invasion+of+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:37.491318Z",
+      "query": "invasion of privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=invasion+of+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:37.746575Z",
+      "query": "privacy breach",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+breach&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:38.001805Z",
+      "query": "privacy breach",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+breach&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:38.257244Z",
+      "query": "privacy concern",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+concern&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:38.508925Z",
+      "query": "privacy concern",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+concern&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:38.764212Z",
+      "query": "privacy concerns",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+concerns&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:39.014728Z",
+      "query": "privacy concerns",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+concerns&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:39.268126Z",
+      "query": "privacy and security",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+and+security&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:39.523671Z",
+      "query": "privacy and security",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+and+security&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:39.774657Z",
+      "query": "privacy and surveillance",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+and+surveillance&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:40.283566Z",
+      "query": "surveillance privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=surveillance+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:40.793358Z",
+      "query": "GDPR privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=GDPR+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:41.048230Z",
+      "query": "GDPR privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=GDPR+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:41.299940Z",
+      "query": "biometric privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=biometric+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:41.808643Z",
+      "query": "location privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=location+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:42.060970Z",
+      "query": "location privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=location+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:42.316180Z",
+      "query": "consumer privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=consumer+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:42.825447Z",
+      "query": "medical privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=medical+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:43.080726Z",
+      "query": "medical privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=medical+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:43.335970Z",
+      "query": "financial privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=financial+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:43.591270Z",
+      "query": "financial privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=financial+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:26:43.846488Z",
+      "query": "genetic privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=genetic+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:04.558975Z",
+      "batch_index": 1,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=37.38605,-122.08385"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:04.809904Z",
+      "batch_index": 2,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=47.67399,-122.12151"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:05.063729Z",
+      "batch_index": 3,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=41.10853958129883,-73.72046661376953"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:05.318423Z",
+      "batch_index": 4,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=37.21099853515625,-121.80500030517578"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:05.572531Z",
+      "batch_index": 5,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=40.42587,-86.90807"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:05.825756Z",
+      "batch_index": 6,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=42.44063,-76.49661"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:06.077966Z",
+      "batch_index": 7,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=26.35869026184082,-80.08309936523438"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:06.333340Z",
+      "batch_index": 8,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=39.50699996948242,-84.74523162841797"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:06.588485Z",
+      "batch_index": 9,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=40.79339,-77.86"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:06.842340Z",
+      "batch_index": 10,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=33.749,-84.38798"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:07.093134Z",
+      "batch_index": 11,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=43.07305,-89.40123"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:07.346774Z",
+      "batch_index": 12,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=41.70019,-86.23793"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:07.602138Z",
+      "batch_index": 13,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=39.9075,116.39723"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:07.856965Z",
+      "batch_index": 14,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=47.60621,-122.33207"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:08.108999Z",
+      "batch_index": 15,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=51.47999954223633,-3.180000066757202"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:08.364218Z",
+      "batch_index": 16,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=42.37537,-72.51925"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:08.619577Z",
+      "batch_index": 17,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=24.18207550048828,120.64830017089844"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:08.871913Z",
+      "batch_index": 18,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=42.35843,-71.05977"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:09.125529Z",
+      "batch_index": 19,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=35.7721,-78.63861"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:09.380772Z",
+      "batch_index": 20,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=37.42411,-122.16608"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:09.636086Z",
+      "batch_index": 21,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=43.70643,-79.39864"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:09.891493Z",
+      "batch_index": 22,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=38.89511,-77.03637"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:10.146833Z",
+      "batch_index": 23,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=40.71427,-74.00597"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:10.402204Z",
+      "batch_index": 24,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=46.516,6.63282"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:10.657511Z",
+      "batch_index": 25,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=35.22709,-80.84313"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:10.908971Z",
+      "batch_index": 26,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=39.68128204345703,-84.1341781616211"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:11.164321Z",
+      "batch_index": 27,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=34.258331298828125,108.9286117553711"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:11.419865Z",
+      "batch_index": 28,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=45.464271545410156,9.189510345458984"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "availability": "failed",
+      "reason": "cache-only mode active: no cached response available.",
+      "retrieved_at": "2026-05-26T13:27:11.673246Z",
+      "batch_index": 29,
+      "url": "https://api.open-elevation.com/api/v1/lookup?locations=40.48622,-74.45182"
+    }
+  ]
+}

@@ -484,7 +484,7 @@ function SensesScatter({ activeHover, onHover }: Chart03HoverProps) {
 
       {/* Center */}
       <circle cx={CX} cy={CY} r={5} fill={BG} stroke="rgba(17,16,24,0.48)" strokeWidth={0.7} />
-      <text x={CX} y={CY + 3.5} textAnchor="middle" fill={DIM} fontSize={5} fontFamily="monospace">
+      <text x={CX} y={CY + 3.5} textAnchor="middle" fill={DIM} fontSize={5.5} fontFamily="monospace">
         artificial
       </text>
 

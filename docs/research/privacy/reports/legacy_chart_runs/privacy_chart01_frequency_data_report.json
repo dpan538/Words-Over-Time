@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "chart_id": "chart01_frequency",
+    "generated_at": "2026-05-26T12:26:16.984924Z",
+    "generated_by_script": "scripts/process_privacy_chart01_frequency.py",
+    "source_raw_file": "docs/research/privacy/raw/privacy_chart01_frequency_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_chart01_frequency_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_chart01_frequency_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_chart01_frequency_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_chart01_frequency_raw.json"
+    }
+  },
+  "counts": {
+    "term_count": 11,
+    "years": [
+      1800,
+      2022
+    ],
+    "collected_terms": 0,
+    "sparse_terms": 0,
+    "missing_or_failed_terms": 11,
+    "inflection_points": 0
+  },
+  "raw_source": {
+    "name": "Google Books Ngram Viewer",
+    "corpus": "en",
+    "start_year": 1800,
+    "end_year": 2022,
+    "smoothing": 0
+  },
+  "combined_series_summary": {
+    "highest_value": 0.0,
+    "year_of_highest": 1800,
+    "earliest_reliable_year": null,
+    "rise_candidates": [],
+    "fall_candidates": []
+  },
+  "source_notes": [
+    "Google Books Ngram is a printed-text corpus signal and may miss contemporary web-era drift.",
+    "Case-insensitive aggregate rows were preferred when available.",
+    "Some multi-word terms may be underscored or hyphen-normalized differently in raw ngram responses."
+  ],
+  "term_status": [
+    {
+      "term": "privacy",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "private",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "secrecy",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "seclusion",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "solitude",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "publicity",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "surveillance",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "data privacy",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "information privacy",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "digital privacy",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "online privacy",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    }
+  ],
+  "outputs": {
+    "processed": "docs/research/privacy/processed/privacy_chart01_frequency_processed.json",
+    "report_json": "docs/research/privacy/reports/privacy_chart01_frequency_data_report.json",
+    "report_md": "docs/research/privacy/reports/privacy_chart01_frequency_data_report.md",
+    "raw": "docs/research/privacy/raw/privacy_chart01_frequency_raw.json"
+  },
+  "next_research_questions": [
+    "Which comparison terms should stay in this baseline layer versus annotation-only roles?",
+    "How does 1980 onward shift separate digital/informational senses from privacy-as-private-life language?",
+    "Which terms need contemporary corpus validation beyond printed-books for the modern chapter?"
+  ]
+}

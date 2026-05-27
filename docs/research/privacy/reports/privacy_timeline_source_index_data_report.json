@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "layer_id": "timeline_source_index",
+    "generated_at": "2026-05-26T12:51:21.361353Z",
+    "generated_by_script": "scripts/process_privacy_timeline_source_index.py",
+    "raw_source": "docs/research/privacy/raw/privacy_timeline_source_index_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_timeline_source_index_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_timeline_source_index_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_timeline_source_index_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_timeline_source_index_raw.json"
+    }
+  },
+  "counts": {
+    "anchor_count": 19,
+    "high_confidence": 3,
+    "medium_confidence": 8,
+    "low_confidence": 8,
+    "source_count": 11,
+    "reachable_sources": 8
+  },
+  "earliest_anchor": {
+    "year": 1300,
+    "label": "Latin privatus/privare lineage noted in private-related scholarship",
+    "category": "lexical_origin",
+    "description": "Privacy is likely a much later noun stabilized in modern English; roots are linked through private/seclusion traditions.",
+    "source": "Oxford-style etymological references (subscription/public)",
+    "source_url": "https://www.oed.com/search/dictionary/?scope=Entries&q=private",
+    "confidence": "low",
+    "notes": "Indirect and often secondary reconstruction in this pass.",
+    "date_label": "c. 14th-15th century (indirect)",
+    "source_status": {
+      "source_id": "www.oed.com",
+      "reachable": false,
+      "status_code_or_error": "HTTPError 403 Forbidden",
+      "checked_at": "2026-05-26T12:51:09.710021Z"
+    },
+    "anchor_id": "privacy_lexical_origin_private"
+  },
+  "latest_anchor": {
+    "year": 2022,
+    "label": "Search-intent measures remain a recommended future anchor source",
+    "category": "uncertain",
+    "description": "Search trend proxies are valuable for post-2020 attention but require a stable acquisition method.",
+    "source": "Project constraints",
+    "source_url": "https://trends.google.com/trends/",
+    "confidence": "low",
+    "notes": "Placeholder anchor; not date-grounded in this pass.",
+    "date_label": "placeholder",
+    "source_status": {
+      "source_id": "trends.google.com",
+      "reachable": true,
+      "status_code_or_error": "200",
+      "checked_at": "2026-05-26T12:51:20.071010Z"
+    },
+    "anchor_id": "privacy_google_trends_gap"
+  },
+  "category_counts": {
+    "lexical_origin": 1,
+    "early_usage": 1,
+    "public_private_distinction": 1,
+    "legal_rights": 1,
+    "information_theory": 1,
+    "domestic_life": 1,
+    "data_protection": 2,
+    "computing": 1,
+    "internet": 1,
+    "platform_governance": 1,
+    "surveillance": 1,
+    "breach": 1,
+    "cultural_event": 1,
+    "policy_regulation": 2,
+    "advertising": 1,
+    "ai_biometrics": 1,
+    "uncertain": 1
+  },
+  "confidence_counts": {
+    "low": 8,
+    "high": 3,
+    "medium": 8
+  },
+  "uncertain_anchors": [
+    {
+      "year": 1300,
+      "label": "Latin privatus/privare lineage noted in private-related scholarship",
+      "category": "lexical_origin",
+      "confidence": "low",
+      "notes": "Indirect and often secondary reconstruction in this pass."
+    },
+    {
+      "year": 1500,
+      "label": "Private / privacy-adjacent terms appear in moral and social meaning fields",
+      "category": "early_usage",
+      "confidence": "low",
+      "notes": "Needs direct primary verification in a later pass."
+    },
+    {
+      "year": 1814,
+      "label": "Early public/private distinction appears in legal and social writing",
+      "category": "public_private_distinction",
+      "confidence": "low",
+      "notes": "Keep as directional; not fixed to a single definitive source line yet."
+    },
+    {
+      "year": 1950,
+      "label": "Domestic/privacy-of-home framing appears in family and personal life contexts",
+      "category": "domestic_life",
+      "confidence": "low",
+      "notes": "Needs direct text-level support."
+    },
+    {
+      "year": 2001,
+      "label": "Security and surveillance language tightens with post-9/11 governance",
+      "category": "surveillance",
+      "confidence": "low",
+      "notes": "Directional; broad year spread."
+    },
+    {
+      "year": 2005,
+      "label": "Breach-disclosure reporting begins to normalize privacy-security discourse",
+      "category": "breach",
+      "confidence": "low",
+      "notes": "Broad marker, year precision is low."
+    },
+    {
+      "year": 2020,
+      "label": "Biometric and generative-model privacy concerns move into policy and rights discussions",
+      "category": "ai_biometrics",
+      "confidence": "low",
+      "notes": "Early and high-uncertainty, especially in exact year placement."
+    },
+    {
+      "year": 2022,
+      "label": "Search-intent measures remain a recommended future anchor source",
+      "category": "uncertain",
+      "confidence": "low",
+      "notes": "Placeholder anchor; not date-grounded in this pass."
+    }
+  ],
+  "source_status_counts": {
+    "unreachable": 10,
+    "reachable": 9
+  },
+  "next_research_questions": [
+    "Can we assign direct primary-source citations to low-confidence origin and early-usage rows?",
+    "Which event anchors should move to higher confidence after legal text verification?",
+    "Can category labels split into separate digital-era and policy-era buckets for clearer chart annotation."
+  ]
+}

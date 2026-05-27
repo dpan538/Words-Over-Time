@@ -1,0 +1,683 @@
+{
+  "word": "privacy",
+  "layer_id": "attention_metrics",
+  "title": "Privacy attention/click proxy layer",
+  "description": "Yearly public-attention proxy from Wikimedia pageviews plus event annotations where attention is likely policy-driven.",
+  "sources": [
+    {
+      "source_id": "wikipedia_pageviews",
+      "description": "Wikimedia Pageviews API (monthly, aggregated to yearly totals).",
+      "available": true,
+      "page_count": 11
+    }
+  ],
+  "series": [
+    {
+      "label": "Privacy",
+      "page": "Privacy",
+      "source": "wikipedia_pageviews",
+      "values": [
+        {
+          "date": "2016",
+          "views": 272160
+        },
+        {
+          "date": "2017",
+          "views": 283181
+        },
+        {
+          "date": "2018",
+          "views": 292916
+        },
+        {
+          "date": "2019",
+          "views": 285054
+        },
+        {
+          "date": "2020",
+          "views": 219390
+        },
+        {
+          "date": "2021",
+          "views": 176859
+        },
+        {
+          "date": "2022",
+          "views": 191213
+        },
+        {
+          "date": "2023",
+          "views": 488142
+        },
+        {
+          "date": "2024",
+          "views": 333496
+        },
+        {
+          "date": "2025",
+          "views": 214136
+        },
+        {
+          "date": "2026",
+          "views": 37478
+        }
+      ],
+      "total_views": 2794025,
+      "available": true,
+      "notes": null
+    },
+    {
+      "label": "Internet_privacy",
+      "page": "Internet_privacy",
+      "source": "wikipedia_pageviews",
+      "values": [
+        {
+          "date": "2016",
+          "views": 177003
+        },
+        {
+          "date": "2017",
+          "views": 212684
+        },
+        {
+          "date": "2018",
+          "views": 238930
+        },
+        {
+          "date": "2019",
+          "views": 251008
+        },
+        {
+          "date": "2020",
+          "views": 123075
+        },
+        {
+          "date": "2021",
+          "views": 106206
+        },
+        {
+          "date": "2022",
+          "views": 71707
+        },
+        {
+          "date": "2023",
+          "views": 59585
+        },
+        {
+          "date": "2024",
+          "views": 55037
+        },
+        {
+          "date": "2025",
+          "views": 50349
+        },
+        {
+          "date": "2026",
+          "views": 7510
+        }
+      ],
+      "total_views": 1353094,
+      "available": true,
+      "notes": null
+    },
+    {
+      "label": "Information_privacy",
+      "page": "Information_privacy",
+      "source": "wikipedia_pageviews",
+      "values": [
+        {
+          "date": "2016",
+          "views": 81322
+        },
+        {
+          "date": "2017",
+          "views": 92956
+        },
+        {
+          "date": "2018",
+          "views": 132829
+        },
+        {
+          "date": "2019",
+          "views": 120045
+        },
+        {
+          "date": "2020",
+          "views": 72870
+        },
+        {
+          "date": "2021",
+          "views": 63229
+        },
+        {
+          "date": "2022",
+          "views": 64316
+        },
+        {
+          "date": "2023",
+          "views": 68055
+        },
+        {
+          "date": "2024",
+          "views": 64820
+        },
+        {
+          "date": "2025",
+          "views": 44468
+        },
+        {
+          "date": "2026",
+          "views": 6841
+        }
+      ],
+      "total_views": 811751,
+      "available": true,
+      "notes": null
+    },
+    {
+      "label": "Data_privacy",
+      "page": "Data_privacy",
+      "source": "wikipedia_pageviews",
+      "values": [
+        {
+          "date": "2016",
+          "views": 11407
+        },
+        {
+          "date": "2017",
+          "views": 11969
+        },
+        {
+          "date": "2018",
+          "views": 13017
+        },
+        {
+          "date": "2019",
+          "views": 11727
+        },
+        {
+          "date": "2020",
+          "views": 9010
+        },
+        {
+          "date": "2021",
+          "views": 6211
+        },
+        {
+          "date": "2022",
+          "views": 5470
+        },
+        {
+          "date": "2023",
+          "views": 4771
+        },
+        {
+          "date": "2024",
+          "views": 4788
+        },
+        {
+          "date": "2025",
+          "views": 6068
+        },
+        {
+          "date": "2026",
+          "views": 1328
+        }
+      ],
+      "total_views": 85766,
+      "available": true,
+      "notes": null
+    },
+    {
+      "label": "Privacy_policy",
+      "page": "Privacy_policy",
+      "source": "wikipedia_pageviews",
+      "values": [
+        {
+          "date": "2016",
+          "views": 134928
+        },
+        {
+          "date": "2017",
+          "views": 147185
+        },
+        {
+          "date": "2018",
+          "views": 242312
+        },
+        {
+          "date": "2019",
+          "views": 182271
+        },
+        {
+          "date": "2020",
+          "views": 264611
+        },
+        {
+          "date": "2021",
+          "views": 320542
+        },
+        {
+          "date": "2022",
+          "views": 415211
+        },
+        {
+          "date": "2023",
+          "views": 423556
+        },
+        {
+          "date": "2024",
+          "views": 329139
+        },
+        {
+          "date": "2025",
+          "views": 297019
+        },
+        {
+          "date": "2026",
+          "views": 43008
+        }
+      ],
+      "total_views": 2799782,
+      "available": true,
+      "notes": null
+    },
+    {
+      "label": "Right_to_privacy",
+      "page": "Right_to_privacy",
+      "source": "wikipedia_pageviews",
+      "values": [
+        {
+          "date": "2016",
+          "views": 142170
+        },
+        {
+          "date": "2017",
+          "views": 270696
+        },
+        {
+          "date": "2018",
+          "views": 238998
+        },
+        {
+          "date": "2019",
+          "views": 237961
+        },
+        {
+          "date": "2020",
+          "views": 217968
+        },
+        {
+          "date": "2021",
+          "views": 179606
+        },
+        {
+          "date": "2022",
+          "views": 201549
+        },
+        {
+          "date": "2023",
+          "views": 117913
+        },
+        {
+          "date": "2024",
+          "views": 113540
+        },
+        {
+          "date": "2025",
+          "views": 85984
+        },
+        {
+          "date": "2026",
+          "views": 9336
+        }
+      ],
+      "total_views": 1815721,
+      "available": true,
+      "notes": null
+    },
+    {
+      "label": "Surveillance",
+      "page": "Surveillance",
+      "source": "wikipedia_pageviews",
+      "values": [
+        {
+          "date": "2016",
+          "views": 294546
+        },
+        {
+          "date": "2017",
+          "views": 279037
+        },
+        {
+          "date": "2018",
+          "views": 284413
+        },
+        {
+          "date": "2019",
+          "views": 287200
+        },
+        {
+          "date": "2020",
+          "views": 227039
+        },
+        {
+          "date": "2021",
+          "views": 193061
+        },
+        {
+          "date": "2022",
+          "views": 182568
+        },
+        {
+          "date": "2023",
+          "views": 192926
+        },
+        {
+          "date": "2024",
+          "views": 161045
+        },
+        {
+          "date": "2025",
+          "views": 123774
+        },
+        {
+          "date": "2026",
+          "views": 17557
+        }
+      ],
+      "total_views": 2243166,
+      "available": true,
+      "notes": null
+    },
+    {
+      "label": "General_data_protection_regulation",
+      "page": "General_data_protection_regulation",
+      "source": "wikipedia_pageviews",
+      "values": [
+        {
+          "date": "2022",
+          "views": 3960
+        },
+        {
+          "date": "2023",
+          "views": 5524
+        },
+        {
+          "date": "2024",
+          "views": 2448
+        },
+        {
+          "date": "2025",
+          "views": 1159
+        },
+        {
+          "date": "2026",
+          "views": 282
+        }
+      ],
+      "total_views": 13373,
+      "available": true,
+      "notes": null
+    },
+    {
+      "label": "California_Consumer_Privacy_Act",
+      "page": "California_Consumer_Privacy_Act",
+      "source": "wikipedia_pageviews",
+      "values": [
+        {
+          "date": "2018",
+          "views": 1590
+        },
+        {
+          "date": "2019",
+          "views": 342473
+        },
+        {
+          "date": "2020",
+          "views": 274808
+        },
+        {
+          "date": "2021",
+          "views": 127402
+        },
+        {
+          "date": "2022",
+          "views": 94390
+        },
+        {
+          "date": "2023",
+          "views": 85493
+        },
+        {
+          "date": "2024",
+          "views": 79137
+        },
+        {
+          "date": "2025",
+          "views": 63592
+        },
+        {
+          "date": "2026",
+          "views": 8734
+        }
+      ],
+      "total_views": 1077619,
+      "available": true,
+      "notes": null
+    },
+    {
+      "label": "Data_breach",
+      "page": "Data_breach",
+      "source": "wikipedia_pageviews",
+      "values": [
+        {
+          "date": "2016",
+          "views": 86908
+        },
+        {
+          "date": "2017",
+          "views": 97560
+        },
+        {
+          "date": "2018",
+          "views": 152935
+        },
+        {
+          "date": "2019",
+          "views": 171500
+        },
+        {
+          "date": "2020",
+          "views": 153061
+        },
+        {
+          "date": "2021",
+          "views": 138969
+        },
+        {
+          "date": "2022",
+          "views": 113421
+        },
+        {
+          "date": "2023",
+          "views": 154826
+        },
+        {
+          "date": "2024",
+          "views": 147149
+        },
+        {
+          "date": "2025",
+          "views": 101982
+        },
+        {
+          "date": "2026",
+          "views": 12843
+        }
+      ],
+      "total_views": 1331154,
+      "available": true,
+      "notes": null
+    },
+    {
+      "label": "Digital_rights",
+      "page": "Digital_rights",
+      "source": "wikipedia_pageviews",
+      "values": [
+        {
+          "date": "2016",
+          "views": 36402
+        },
+        {
+          "date": "2017",
+          "views": 35946
+        },
+        {
+          "date": "2018",
+          "views": 41674
+        },
+        {
+          "date": "2019",
+          "views": 42596
+        },
+        {
+          "date": "2020",
+          "views": 30559
+        },
+        {
+          "date": "2021",
+          "views": 24795
+        },
+        {
+          "date": "2022",
+          "views": 24033
+        },
+        {
+          "date": "2023",
+          "views": 19053
+        },
+        {
+          "date": "2024",
+          "views": 21217
+        },
+        {
+          "date": "2025",
+          "views": 17260
+        },
+        {
+          "date": "2026",
+          "views": 2055
+        }
+      ],
+      "total_views": 295590,
+      "available": true,
+      "notes": null
+    }
+  ],
+  "events": [
+    {
+      "date": "1988-01-01",
+      "label": "1988 - U.S. Privacy Act enforcement era visibility growth in federal record privacy language.",
+      "category": "policy",
+      "confidence": "medium"
+    },
+    {
+      "date": "2013-06-01",
+      "label": "2013 - Mass-surveillance disclosures increase public interest in privacy and surveillance topics.",
+      "category": "attention",
+      "confidence": "medium"
+    },
+    {
+      "date": "2018-05-25",
+      "label": "2018 - GDPR launches practical policy discourse in public and platform communication.",
+      "category": "policy",
+      "confidence": "high"
+    },
+    {
+      "date": "2020-01-01",
+      "label": "2020 - CCPA becomes active and enters consumer-facing privacy coverage.",
+      "category": "policy",
+      "confidence": "medium"
+    },
+    {
+      "date": "2020-06-01",
+      "label": "2020-2024 - Platform settings and privacy controls become major coverage topics.",
+      "category": "attention",
+      "confidence": "low"
+    }
+  ],
+  "unavailable_sources": [
+    {
+      "source_id": "google_trends",
+      "source": "Google Trends",
+      "availability": "not_fetched",
+      "reason": "No stable official public API available in this environment."
+    },
+    {
+      "source_id": "now_corpus",
+      "source": "NOW Corpus",
+      "availability": "not_fetched",
+      "reason": "Requires paid/managed access or exports outside this environment."
+    },
+    {
+      "source_id": "coca",
+      "source": "COCA",
+      "availability": "not_fetched",
+      "reason": "No public API in this environment."
+    }
+  ],
+  "notes": [
+    "Pageviews are a proxy for public attention and should not be interpreted as usage frequency.",
+    "Google Trends and NOW/COCA were intentionally not collected in this pass.",
+    "Failures and fetch gaps are preserved as part of the source audit."
+  ],
+  "source_notes": [
+    "Wikimedia pageviews are available for many concept pages, but data shifts with media cycles and coverage quality.",
+    "The source is user-activity based and not a replacement for linguistic or policy-document frequency."
+  ],
+  "analysis": {
+    "series_count": 11,
+    "available_series_count": 11,
+    "unavailable_series_count": 0,
+    "total_views": 14621041,
+    "earliest_year": 2016,
+    "latest_year": 2026,
+    "years_covered": [
+      2016,
+      2026
+    ]
+  },
+  "events_summary": [
+    {
+      "date": "1988-01-01",
+      "label": "1988 - U.S. Privacy Act enforcement era visibility growth in federal record privacy language.",
+      "category": "policy",
+      "confidence": "medium"
+    },
+    {
+      "date": "2013-06-01",
+      "label": "2013 - Mass-surveillance disclosures increase public interest in privacy and surveillance topics.",
+      "category": "attention",
+      "confidence": "medium"
+    },
+    {
+      "date": "2018-05-25",
+      "label": "2018 - GDPR launches practical policy discourse in public and platform communication.",
+      "category": "policy",
+      "confidence": "high"
+    },
+    {
+      "date": "2020-01-01",
+      "label": "2020 - CCPA becomes active and enters consumer-facing privacy coverage.",
+      "category": "policy",
+      "confidence": "medium"
+    },
+    {
+      "date": "2020-06-01",
+      "label": "2020-2024 - Platform settings and privacy controls become major coverage topics.",
+      "category": "attention",
+      "confidence": "low"
+    }
+  ]
+}

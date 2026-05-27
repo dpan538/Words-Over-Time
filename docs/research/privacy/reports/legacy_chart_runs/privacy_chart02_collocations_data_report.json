@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "chart_id": "chart02_collocations",
+    "generated_at": "2026-05-26T12:26:18.165076Z",
+    "generated_by_script": "scripts/process_privacy_chart02_collocations.py",
+    "raw_source": "docs/research/privacy/raw/privacy_chart02_collocations_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_chart02_collocations_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_chart02_collocations_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_chart02_collocations_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_chart02_collocations_raw.json"
+    }
+  },
+  "counts": {
+    "query_count": 19,
+    "bucket_count": 5,
+    "phrases_collected": 0,
+    "phrases_sparse": 0,
+    "phrases_missing_or_failed": 19,
+    "strong_or_usable_phrase_count": 0
+  },
+  "bucket_summary": [
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase_count": 3,
+      "usable_or_stronger_count": 0,
+      "top_phrases": [
+        "personal privacy",
+        "individual privacy",
+        "domestic privacy"
+      ]
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase_count": 4,
+      "usable_or_stronger_count": 0,
+      "top_phrases": [
+        "right to privacy",
+        "privacy rights",
+        "invasion of privacy",
+        "privacy law"
+      ]
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase_count": 3,
+      "usable_or_stronger_count": 0,
+      "top_phrases": [
+        "information privacy",
+        "data privacy",
+        "privacy concerns"
+      ]
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase_count": 5,
+      "usable_or_stronger_count": 0,
+      "top_phrases": [
+        "digital privacy",
+        "online privacy",
+        "internet privacy",
+        "privacy policy"
+      ]
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase_count": 4,
+      "usable_or_stronger_count": 0,
+      "top_phrases": [
+        "privacy and security",
+        "privacy and surveillance",
+        "privacy breach",
+        "privacy protection"
+      ]
+    }
+  ],
+  "raw_source": {
+    "name": "Google Books Ngram Viewer",
+    "corpus": "en",
+    "start_year": 1800,
+    "end_year": 2022,
+    "smoothing": 0
+  },
+  "recommendations": {
+    "strong_candidates": [],
+    "weak_or_missing": [
+      {
+        "bucket_id": "seclusion_private_life",
+        "query": "personal privacy",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "seclusion_private_life",
+        "query": "individual privacy",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "seclusion_private_life",
+        "query": "domestic privacy",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "legal_rights_intrusion",
+        "query": "right to privacy",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "legal_rights_intrusion",
+        "query": "privacy rights",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "legal_rights_intrusion",
+        "query": "invasion of privacy",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "legal_rights_intrusion",
+        "query": "privacy law",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "information_data_control",
+        "query": "information privacy",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "information_data_control",
+        "query": "data privacy",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "information_data_control",
+        "query": "privacy concerns",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "digital_platform_governance",
+        "query": "digital privacy",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "digital_platform_governance",
+        "query": "online privacy",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "digital_platform_governance",
+        "query": "internet privacy",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "digital_platform_governance",
+        "query": "privacy policy",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "digital_platform_governance",
+        "query": "privacy settings",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "surveillance_security_tension",
+        "query": "privacy and security",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "surveillance_security_tension",
+        "query": "privacy and surveillance",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "surveillance_security_tension",
+        "query": "privacy breach",
+        "status": "failed"
+      },
+      {
+        "bucket_id": "surveillance_security_tension",
+        "query": "privacy protection",
+        "status": "failed"
+      }
+    ]
+  },
+  "next_research_questions": [
+    "Which phrases from legal rights + surveillance buckets should move to chart text or anchors?",
+    "Can modern digital phrases be validated against contemporary corpora (COCA/NOW) before finalizing chart narratives?",
+    "Which weak phrases need alternate spellings or historical variants to stabilize signal (e.g., privacy policy vs privacy-policy)?"
+  ]
+}

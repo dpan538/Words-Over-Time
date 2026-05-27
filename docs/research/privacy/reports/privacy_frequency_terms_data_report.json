@@ -1,0 +1,2027 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "layer_id": "frequency_terms",
+    "generated_at": "2026-05-26T12:50:44.650317Z",
+    "generated_by_script": "scripts/process_privacy_frequency_terms.py",
+    "raw_source": "docs/research/privacy/raw/privacy_frequency_terms_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_frequency_terms_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_frequency_terms_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_frequency_terms_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_frequency_terms_raw.json"
+    }
+  },
+  "counts": {
+    "term_count": 47,
+    "source_count": 3,
+    "year_range": [
+      1500,
+      2022
+    ],
+    "query_status": {
+      "collected": 141,
+      "sparse": 0,
+      "missing_or_failed": 0
+    },
+    "query_rows": 141,
+    "inflection_point_count": 24
+  },
+  "raw_source": {
+    "name": "Google Books Ngram Viewer",
+    "corpora": [
+      "en",
+      "en-GB",
+      "en-US"
+    ],
+    "start_year": 1500,
+    "end_year": 2022,
+    "smoothing": 0
+  },
+  "combined_series_summary": {
+    "highest_value": 7202.6592233672,
+    "peak_year": 1508,
+    "earliest_reliable_year": 1500,
+    "rise_candidates": [
+      "1508 (+7202.65922337)",
+      "1764 (+3603.2060466)",
+      "1551 (+3285.39160162)",
+      "1709 (+2510.00781597)",
+      "1601 (+2314.40013924)",
+      "1592 (+2305.69808974)",
+      "1701 (+2198.75272848)",
+      "1501 (+1873.16168285)",
+      "1759 (+1833.44375596)",
+      "1651 (+1745.43071532)"
+    ],
+    "fall_candidates": [
+      "1509 (-7193.0204831)",
+      "1552 (-4519.48896512)",
+      "1502 (-4294.63147429)",
+      "1765 (-3670.96920184)",
+      "1702 (-2531.85493983)",
+      "1710 (-2461.40366065)",
+      "1602 (-2314.27893264)",
+      "1652 (-2263.52857056)",
+      "1593 (-2251.70357689)",
+      "1622 (-1835.76791487)"
+    ]
+  },
+  "query_status": [
+    {
+      "term": "privacy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 411,
+      "notes": ""
+    },
+    {
+      "term": "private",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 489,
+      "notes": ""
+    },
+    {
+      "term": "privy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 460,
+      "notes": ""
+    },
+    {
+      "term": "privately",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 457,
+      "notes": ""
+    },
+    {
+      "term": "privateness",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 290,
+      "notes": ""
+    },
+    {
+      "term": "privatism",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 100,
+      "notes": ""
+    },
+    {
+      "term": "privatise",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 95,
+      "notes": ""
+    },
+    {
+      "term": "privatize",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 113,
+      "notes": ""
+    },
+    {
+      "term": "privatization",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 125,
+      "notes": ""
+    },
+    {
+      "term": "secrecy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 433,
+      "notes": ""
+    },
+    {
+      "term": "secret",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 494,
+      "notes": ""
+    },
+    {
+      "term": "seclusion",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 305,
+      "notes": ""
+    },
+    {
+      "term": "solitude",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 420,
+      "notes": ""
+    },
+    {
+      "term": "isolation",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 274,
+      "notes": ""
+    },
+    {
+      "term": "publicity",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 324,
+      "notes": ""
+    },
+    {
+      "term": "public",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 479,
+      "notes": ""
+    },
+    {
+      "term": "personal",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 481,
+      "notes": ""
+    },
+    {
+      "term": "domestic",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 419,
+      "notes": ""
+    },
+    {
+      "term": "intimate",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 455,
+      "notes": ""
+    },
+    {
+      "term": "confidentiality",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 217,
+      "notes": ""
+    },
+    {
+      "term": "anonymity",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 216,
+      "notes": ""
+    },
+    {
+      "term": "surveillance",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 264,
+      "notes": ""
+    },
+    {
+      "term": "data privacy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 81,
+      "notes": ""
+    },
+    {
+      "term": "information privacy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 93,
+      "notes": ""
+    },
+    {
+      "term": "digital privacy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 50,
+      "notes": ""
+    },
+    {
+      "term": "online privacy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 71,
+      "notes": ""
+    },
+    {
+      "term": "internet privacy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 69,
+      "notes": ""
+    },
+    {
+      "term": "personal privacy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 179,
+      "notes": ""
+    },
+    {
+      "term": "individual privacy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 182,
+      "notes": ""
+    },
+    {
+      "term": "domestic privacy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 239,
+      "notes": ""
+    },
+    {
+      "term": "private life",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 437,
+      "notes": ""
+    },
+    {
+      "term": "right to privacy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 183,
+      "notes": ""
+    },
+    {
+      "term": "privacy rights",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 117,
+      "notes": ""
+    },
+    {
+      "term": "invasion of privacy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 181,
+      "notes": ""
+    },
+    {
+      "term": "privacy policy",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 91,
+      "notes": ""
+    },
+    {
+      "term": "privacy policies",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 81,
+      "notes": ""
+    },
+    {
+      "term": "privacy settings",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 51,
+      "notes": ""
+    },
+    {
+      "term": "privacy notice",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 70,
+      "notes": ""
+    },
+    {
+      "term": "privacy concern",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 68,
+      "notes": ""
+    },
+    {
+      "term": "privacy concerns",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 93,
+      "notes": ""
+    },
+    {
+      "term": "privacy and security",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 207,
+      "notes": ""
+    },
+    {
+      "term": "privacy and surveillance",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 65,
+      "notes": ""
+    },
+    {
+      "term": "privacy breach",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 60,
+      "notes": ""
+    },
+    {
+      "term": "privacy violation",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 82,
+      "notes": ""
+    },
+    {
+      "term": "information control",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 119,
+      "notes": ""
+    },
+    {
+      "term": "data protection",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 104,
+      "notes": ""
+    },
+    {
+      "term": "data security",
+      "source": "en",
+      "status": "collected",
+      "nonzero_points": 100,
+      "notes": ""
+    },
+    {
+      "term": "privacy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 272,
+      "notes": ""
+    },
+    {
+      "term": "private",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 384,
+      "notes": ""
+    },
+    {
+      "term": "privy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 323,
+      "notes": ""
+    },
+    {
+      "term": "privately",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 329,
+      "notes": ""
+    },
+    {
+      "term": "privateness",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 207,
+      "notes": ""
+    },
+    {
+      "term": "privatism",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 94,
+      "notes": ""
+    },
+    {
+      "term": "privatise",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 54,
+      "notes": ""
+    },
+    {
+      "term": "privatize",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 98,
+      "notes": ""
+    },
+    {
+      "term": "privatization",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 112,
+      "notes": ""
+    },
+    {
+      "term": "secrecy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 285,
+      "notes": ""
+    },
+    {
+      "term": "secret",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 365,
+      "notes": ""
+    },
+    {
+      "term": "seclusion",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 233,
+      "notes": ""
+    },
+    {
+      "term": "solitude",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 279,
+      "notes": ""
+    },
+    {
+      "term": "isolation",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 232,
+      "notes": ""
+    },
+    {
+      "term": "publicity",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 254,
+      "notes": ""
+    },
+    {
+      "term": "public",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 360,
+      "notes": ""
+    },
+    {
+      "term": "personal",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 341,
+      "notes": ""
+    },
+    {
+      "term": "domestic",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 312,
+      "notes": ""
+    },
+    {
+      "term": "intimate",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 341,
+      "notes": ""
+    },
+    {
+      "term": "confidentiality",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 183,
+      "notes": ""
+    },
+    {
+      "term": "anonymity",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 189,
+      "notes": ""
+    },
+    {
+      "term": "surveillance",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 230,
+      "notes": ""
+    },
+    {
+      "term": "data privacy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 78,
+      "notes": ""
+    },
+    {
+      "term": "information privacy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 86,
+      "notes": ""
+    },
+    {
+      "term": "digital privacy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 47,
+      "notes": ""
+    },
+    {
+      "term": "online privacy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 68,
+      "notes": ""
+    },
+    {
+      "term": "internet privacy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 64,
+      "notes": ""
+    },
+    {
+      "term": "personal privacy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 162,
+      "notes": ""
+    },
+    {
+      "term": "individual privacy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 157,
+      "notes": ""
+    },
+    {
+      "term": "domestic privacy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 217,
+      "notes": ""
+    },
+    {
+      "term": "private life",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 283,
+      "notes": ""
+    },
+    {
+      "term": "right to privacy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 163,
+      "notes": ""
+    },
+    {
+      "term": "privacy rights",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 109,
+      "notes": ""
+    },
+    {
+      "term": "invasion of privacy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 160,
+      "notes": ""
+    },
+    {
+      "term": "privacy policy",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 85,
+      "notes": ""
+    },
+    {
+      "term": "privacy policies",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 76,
+      "notes": ""
+    },
+    {
+      "term": "privacy settings",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 46,
+      "notes": ""
+    },
+    {
+      "term": "privacy notice",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 66,
+      "notes": ""
+    },
+    {
+      "term": "privacy concern",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 66,
+      "notes": ""
+    },
+    {
+      "term": "privacy concerns",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 90,
+      "notes": ""
+    },
+    {
+      "term": "privacy and security",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 162,
+      "notes": ""
+    },
+    {
+      "term": "privacy and surveillance",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 62,
+      "notes": ""
+    },
+    {
+      "term": "privacy breach",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 58,
+      "notes": ""
+    },
+    {
+      "term": "privacy violation",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 82,
+      "notes": ""
+    },
+    {
+      "term": "information control",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 112,
+      "notes": ""
+    },
+    {
+      "term": "data protection",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 92,
+      "notes": ""
+    },
+    {
+      "term": "data security",
+      "source": "en-US",
+      "status": "collected",
+      "nonzero_points": 94,
+      "notes": ""
+    },
+    {
+      "term": "privacy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 399,
+      "notes": ""
+    },
+    {
+      "term": "private",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 476,
+      "notes": ""
+    },
+    {
+      "term": "privy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 453,
+      "notes": ""
+    },
+    {
+      "term": "privately",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 449,
+      "notes": ""
+    },
+    {
+      "term": "privateness",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 285,
+      "notes": ""
+    },
+    {
+      "term": "privatism",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 68,
+      "notes": ""
+    },
+    {
+      "term": "privatise",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 80,
+      "notes": ""
+    },
+    {
+      "term": "privatize",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 72,
+      "notes": ""
+    },
+    {
+      "term": "privatization",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 87,
+      "notes": ""
+    },
+    {
+      "term": "secrecy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 417,
+      "notes": ""
+    },
+    {
+      "term": "secret",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 479,
+      "notes": ""
+    },
+    {
+      "term": "seclusion",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 291,
+      "notes": ""
+    },
+    {
+      "term": "solitude",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 411,
+      "notes": ""
+    },
+    {
+      "term": "isolation",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 258,
+      "notes": ""
+    },
+    {
+      "term": "publicity",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 302,
+      "notes": ""
+    },
+    {
+      "term": "public",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 450,
+      "notes": ""
+    },
+    {
+      "term": "personal",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 448,
+      "notes": ""
+    },
+    {
+      "term": "domestic",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 396,
+      "notes": ""
+    },
+    {
+      "term": "intimate",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 445,
+      "notes": ""
+    },
+    {
+      "term": "confidentiality",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 196,
+      "notes": ""
+    },
+    {
+      "term": "anonymity",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 202,
+      "notes": ""
+    },
+    {
+      "term": "surveillance",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 244,
+      "notes": ""
+    },
+    {
+      "term": "data privacy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 58,
+      "notes": ""
+    },
+    {
+      "term": "information privacy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 53,
+      "notes": ""
+    },
+    {
+      "term": "digital privacy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 28,
+      "notes": ""
+    },
+    {
+      "term": "online privacy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 30,
+      "notes": ""
+    },
+    {
+      "term": "internet privacy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 29,
+      "notes": ""
+    },
+    {
+      "term": "personal privacy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 147,
+      "notes": ""
+    },
+    {
+      "term": "individual privacy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 149,
+      "notes": ""
+    },
+    {
+      "term": "domestic privacy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 239,
+      "notes": ""
+    },
+    {
+      "term": "private life",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 421,
+      "notes": ""
+    },
+    {
+      "term": "right to privacy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 154,
+      "notes": ""
+    },
+    {
+      "term": "privacy rights",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 62,
+      "notes": ""
+    },
+    {
+      "term": "invasion of privacy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 168,
+      "notes": ""
+    },
+    {
+      "term": "privacy policy",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 51,
+      "notes": ""
+    },
+    {
+      "term": "privacy policies",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 36,
+      "notes": ""
+    },
+    {
+      "term": "privacy settings",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 28,
+      "notes": ""
+    },
+    {
+      "term": "privacy notice",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 25,
+      "notes": ""
+    },
+    {
+      "term": "privacy concern",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 34,
+      "notes": ""
+    },
+    {
+      "term": "privacy concerns",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 51,
+      "notes": ""
+    },
+    {
+      "term": "privacy and security",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 165,
+      "notes": ""
+    },
+    {
+      "term": "privacy and surveillance",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 37,
+      "notes": ""
+    },
+    {
+      "term": "privacy breach",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 22,
+      "notes": ""
+    },
+    {
+      "term": "privacy violation",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 36,
+      "notes": ""
+    },
+    {
+      "term": "information control",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 89,
+      "notes": ""
+    },
+    {
+      "term": "data protection",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 80,
+      "notes": ""
+    },
+    {
+      "term": "data security",
+      "source": "en-GB",
+      "status": "collected",
+      "nonzero_points": 67,
+      "notes": ""
+    }
+  ],
+  "most_robust_terms": [
+    "anonymity",
+    "anonymity",
+    "anonymity",
+    "confidentiality",
+    "confidentiality",
+    "confidentiality",
+    "data protection",
+    "domestic",
+    "domestic",
+    "domestic",
+    "domestic privacy",
+    "domestic privacy",
+    "domestic privacy",
+    "individual privacy",
+    "individual privacy",
+    "individual privacy",
+    "information control",
+    "information control",
+    "intimate",
+    "intimate",
+    "intimate",
+    "invasion of privacy",
+    "invasion of privacy",
+    "invasion of privacy",
+    "isolation",
+    "isolation",
+    "isolation",
+    "personal",
+    "personal",
+    "personal",
+    "personal privacy",
+    "personal privacy",
+    "personal privacy",
+    "privacy",
+    "privacy",
+    "privacy",
+    "privacy and security",
+    "privacy and security",
+    "privacy and security",
+    "privacy rights",
+    "privacy rights",
+    "private",
+    "private",
+    "private",
+    "private life",
+    "private life",
+    "private life",
+    "privately",
+    "privately",
+    "privately",
+    "privateness",
+    "privateness",
+    "privateness",
+    "privatization",
+    "privatization",
+    "privatize",
+    "privy",
+    "privy",
+    "privy",
+    "public",
+    "public",
+    "public",
+    "publicity",
+    "publicity",
+    "publicity",
+    "right to privacy",
+    "right to privacy",
+    "right to privacy",
+    "seclusion",
+    "seclusion",
+    "seclusion",
+    "secrecy",
+    "secrecy",
+    "secrecy",
+    "secret",
+    "secret",
+    "secret",
+    "solitude",
+    "solitude",
+    "solitude",
+    "surveillance",
+    "surveillance",
+    "surveillance"
+  ],
+  "earliest_observations": [
+    {
+      "term": "domestic",
+      "source": "en",
+      "first_nonzero_year": 1500,
+      "peak_year": 1550
+    },
+    {
+      "term": "domestic",
+      "source": "en-US",
+      "first_nonzero_year": 1500,
+      "peak_year": 1550
+    },
+    {
+      "term": "personal",
+      "source": "en",
+      "first_nonzero_year": 1500,
+      "peak_year": 1508
+    },
+    {
+      "term": "personal",
+      "source": "en-US",
+      "first_nonzero_year": 1500,
+      "peak_year": 1508
+    },
+    {
+      "term": "private",
+      "source": "en",
+      "first_nonzero_year": 1500,
+      "peak_year": 1508
+    },
+    {
+      "term": "private",
+      "source": "en-US",
+      "first_nonzero_year": 1500,
+      "peak_year": 1611
+    },
+    {
+      "term": "privately",
+      "source": "en",
+      "first_nonzero_year": 1500,
+      "peak_year": 1508
+    },
+    {
+      "term": "privately",
+      "source": "en-US",
+      "first_nonzero_year": 1500,
+      "peak_year": 1693
+    },
+    {
+      "term": "public",
+      "source": "en",
+      "first_nonzero_year": 1500,
+      "peak_year": 1508
+    },
+    {
+      "term": "public",
+      "source": "en-US",
+      "first_nonzero_year": 1500,
+      "peak_year": 1764
+    },
+    {
+      "term": "confidentiality",
+      "source": "en",
+      "first_nonzero_year": 1501,
+      "peak_year": 2001
+    },
+    {
+      "term": "intimate",
+      "source": "en",
+      "first_nonzero_year": 1501,
+      "peak_year": 1748
+    },
+    {
+      "term": "privacy",
+      "source": "en",
+      "first_nonzero_year": 1501,
+      "peak_year": 2021
+    },
+    {
+      "term": "private life",
+      "source": "en",
+      "first_nonzero_year": 1501,
+      "peak_year": 1781
+    },
+    {
+      "term": "publicity",
+      "source": "en",
+      "first_nonzero_year": 1501,
+      "peak_year": 1938
+    },
+    {
+      "term": "publicity",
+      "source": "en-US",
+      "first_nonzero_year": 1501,
+      "peak_year": 1571
+    },
+    {
+      "term": "right to privacy",
+      "source": "en",
+      "first_nonzero_year": 1501,
+      "peak_year": 2002
+    },
+    {
+      "term": "secrecy",
+      "source": "en",
+      "first_nonzero_year": 1501,
+      "peak_year": 1742
+    },
+    {
+      "term": "secrecy",
+      "source": "en-US",
+      "first_nonzero_year": 1501,
+      "peak_year": 1673
+    },
+    {
+      "term": "secret",
+      "source": "en",
+      "first_nonzero_year": 1501,
+      "peak_year": 1520
+    },
+    {
+      "term": "secret",
+      "source": "en-US",
+      "first_nonzero_year": 1501,
+      "peak_year": 1588
+    },
+    {
+      "term": "surveillance",
+      "source": "en",
+      "first_nonzero_year": 1501,
+      "peak_year": 1501
+    },
+    {
+      "term": "domestic",
+      "source": "en-GB",
+      "first_nonzero_year": 1517,
+      "peak_year": 2000
+    },
+    {
+      "term": "intimate",
+      "source": "en-GB",
+      "first_nonzero_year": 1517,
+      "peak_year": 1748
+    },
+    {
+      "term": "personal",
+      "source": "en-GB",
+      "first_nonzero_year": 1517,
+      "peak_year": 2021
+    },
+    {
+      "term": "private",
+      "source": "en-GB",
+      "first_nonzero_year": 1517,
+      "peak_year": 1997
+    },
+    {
+      "term": "privately",
+      "source": "en-GB",
+      "first_nonzero_year": 1517,
+      "peak_year": 1796
+    },
+    {
+      "term": "privy",
+      "source": "en",
+      "first_nonzero_year": 1517,
+      "peak_year": 1538
+    },
+    {
+      "term": "privy",
+      "source": "en-GB",
+      "first_nonzero_year": 1517,
+      "peak_year": 1538
+    },
+    {
+      "term": "public",
+      "source": "en-GB",
+      "first_nonzero_year": 1517,
+      "peak_year": 1812
+    },
+    {
+      "term": "secrecy",
+      "source": "en-GB",
+      "first_nonzero_year": 1517,
+      "peak_year": 1742
+    },
+    {
+      "term": "secret",
+      "source": "en-GB",
+      "first_nonzero_year": 1517,
+      "peak_year": 1517
+    },
+    {
+      "term": "personal privacy",
+      "source": "en",
+      "first_nonzero_year": 1541,
+      "peak_year": 1541
+    },
+    {
+      "term": "solitude",
+      "source": "en",
+      "first_nonzero_year": 1549,
+      "peak_year": 1827
+    },
+    {
+      "term": "privacy",
+      "source": "en-US",
+      "first_nonzero_year": 1550,
+      "peak_year": 1700
+    },
+    {
+      "term": "privy",
+      "source": "en-US",
+      "first_nonzero_year": 1551,
+      "peak_year": 1721
+    },
+    {
+      "term": "private life",
+      "source": "en-GB",
+      "first_nonzero_year": 1559,
+      "peak_year": 1781
+    },
+    {
+      "term": "solitude",
+      "source": "en-GB",
+      "first_nonzero_year": 1580,
+      "peak_year": 1823
+    },
+    {
+      "term": "isolation",
+      "source": "en",
+      "first_nonzero_year": 1581,
+      "peak_year": 1987
+    },
+    {
+      "term": "privacy",
+      "source": "en-GB",
+      "first_nonzero_year": 1581,
+      "peak_year": 2022
+    },
+    {
+      "term": "intimate",
+      "source": "en-US",
+      "first_nonzero_year": 1586,
+      "peak_year": 1730
+    },
+    {
+      "term": "solitude",
+      "source": "en-US",
+      "first_nonzero_year": 1587,
+      "peak_year": 1667
+    },
+    {
+      "term": "anonymity",
+      "source": "en",
+      "first_nonzero_year": 1601,
+      "peak_year": 2016
+    },
+    {
+      "term": "anonymity",
+      "source": "en-US",
+      "first_nonzero_year": 1601,
+      "peak_year": 1711
+    },
+    {
+      "term": "isolation",
+      "source": "en-US",
+      "first_nonzero_year": 1601,
+      "peak_year": 2012
+    },
+    {
+      "term": "privatize",
+      "source": "en",
+      "first_nonzero_year": 1602,
+      "peak_year": 1995
+    },
+    {
+      "term": "privatize",
+      "source": "en-GB",
+      "first_nonzero_year": 1602,
+      "peak_year": 1997
+    },
+    {
+      "term": "publicity",
+      "source": "en-GB",
+      "first_nonzero_year": 1603,
+      "peak_year": 1962
+    },
+    {
+      "term": "private life",
+      "source": "en-US",
+      "first_nonzero_year": 1604,
+      "peak_year": 1711
+    },
+    {
+      "term": "seclusion",
+      "source": "en",
+      "first_nonzero_year": 1605,
+      "peak_year": 1841
+    },
+    {
+      "term": "surveillance",
+      "source": "en-GB",
+      "first_nonzero_year": 1611,
+      "peak_year": 2022
+    },
+    {
+      "term": "privateness",
+      "source": "en",
+      "first_nonzero_year": 1625,
+      "peak_year": 1668
+    },
+    {
+      "term": "privateness",
+      "source": "en-GB",
+      "first_nonzero_year": 1625,
+      "peak_year": 1668
+    },
+    {
+      "term": "privatise",
+      "source": "en",
+      "first_nonzero_year": 1626,
+      "peak_year": 1995
+    },
+    {
+      "term": "privatise",
+      "source": "en-GB",
+      "first_nonzero_year": 1626,
+      "peak_year": 1995
+    },
+    {
+      "term": "isolation",
+      "source": "en-GB",
+      "first_nonzero_year": 1634,
+      "peak_year": 1984
+    },
+    {
+      "term": "seclusion",
+      "source": "en-GB",
+      "first_nonzero_year": 1642,
+      "peak_year": 1835
+    },
+    {
+      "term": "surveillance",
+      "source": "en-US",
+      "first_nonzero_year": 1647,
+      "peak_year": 2022
+    },
+    {
+      "term": "anonymity",
+      "source": "en-GB",
+      "first_nonzero_year": 1692,
+      "peak_year": 2019
+    },
+    {
+      "term": "invasion of privacy",
+      "source": "en",
+      "first_nonzero_year": 1701,
+      "peak_year": 1987
+    },
+    {
+      "term": "invasion of privacy",
+      "source": "en-US",
+      "first_nonzero_year": 1701,
+      "peak_year": 1759
+    },
+    {
+      "term": "privacy rights",
+      "source": "en",
+      "first_nonzero_year": 1702,
+      "peak_year": 2006
+    },
+    {
+      "term": "privacy and security",
+      "source": "en",
+      "first_nonzero_year": 1703,
+      "peak_year": 2022
+    },
+    {
+      "term": "privacy and security",
+      "source": "en-GB",
+      "first_nonzero_year": 1703,
+      "peak_year": 2022
+    },
+    {
+      "term": "confidentiality",
+      "source": "en-US",
+      "first_nonzero_year": 1709,
+      "peak_year": 1738
+    },
+    {
+      "term": "individual privacy",
+      "source": "en",
+      "first_nonzero_year": 1717,
+      "peak_year": 1974
+    },
+    {
+      "term": "domestic privacy",
+      "source": "en",
+      "first_nonzero_year": 1723,
+      "peak_year": 1785
+    },
+    {
+      "term": "domestic privacy",
+      "source": "en-GB",
+      "first_nonzero_year": 1723,
+      "peak_year": 1785
+    },
+    {
+      "term": "right to privacy",
+      "source": "en-GB",
+      "first_nonzero_year": 1725,
+      "peak_year": 2018
+    },
+    {
+      "term": "seclusion",
+      "source": "en-US",
+      "first_nonzero_year": 1738,
+      "peak_year": 1842
+    },
+    {
+      "term": "invasion of privacy",
+      "source": "en-GB",
+      "first_nonzero_year": 1752,
+      "peak_year": 2018
+    },
+    {
+      "term": "right to privacy",
+      "source": "en-US",
+      "first_nonzero_year": 1759,
+      "peak_year": 1759
+    },
+    {
+      "term": "privatism",
+      "source": "en",
+      "first_nonzero_year": 1771,
+      "peak_year": 1989
+    },
+    {
+      "term": "privatism",
+      "source": "en-GB",
+      "first_nonzero_year": 1771,
+      "peak_year": 1989
+    },
+    {
+      "term": "personal privacy",
+      "source": "en-GB",
+      "first_nonzero_year": 1779,
+      "peak_year": 1999
+    },
+    {
+      "term": "privateness",
+      "source": "en-US",
+      "first_nonzero_year": 1789,
+      "peak_year": 1844
+    },
+    {
+      "term": "privacy and security",
+      "source": "en-US",
+      "first_nonzero_year": 1800,
+      "peak_year": 2021
+    },
+    {
+      "term": "domestic privacy",
+      "source": "en-US",
+      "first_nonzero_year": 1803,
+      "peak_year": 1833
+    },
+    {
+      "term": "confidentiality",
+      "source": "en-GB",
+      "first_nonzero_year": 1804,
+      "peak_year": 2007
+    },
+    {
+      "term": "personal privacy",
+      "source": "en-US",
+      "first_nonzero_year": 1804,
+      "peak_year": 1977
+    },
+    {
+      "term": "privacy rights",
+      "source": "en-US",
+      "first_nonzero_year": 1804,
+      "peak_year": 2006
+    },
+    {
+      "term": "privatization",
+      "source": "en",
+      "first_nonzero_year": 1807,
+      "peak_year": 1995
+    },
+    {
+      "term": "privatization",
+      "source": "en-US",
+      "first_nonzero_year": 1807,
+      "peak_year": 1992
+    },
+    {
+      "term": "individual privacy",
+      "source": "en-US",
+      "first_nonzero_year": 1813,
+      "peak_year": 1974
+    },
+    {
+      "term": "individual privacy",
+      "source": "en-GB",
+      "first_nonzero_year": 1822,
+      "peak_year": 2008
+    },
+    {
+      "term": "privacy rights",
+      "source": "en-GB",
+      "first_nonzero_year": 1829,
+      "peak_year": 2021
+    },
+    {
+      "term": "data security",
+      "source": "en",
+      "first_nonzero_year": 1832,
+      "peak_year": 2022
+    },
+    {
+      "term": "data security",
+      "source": "en-US",
+      "first_nonzero_year": 1832,
+      "peak_year": 2021
+    },
+    {
+      "term": "privacy concern",
+      "source": "en",
+      "first_nonzero_year": 1832,
+      "peak_year": 2019
+    },
+    {
+      "term": "privacy concern",
+      "source": "en-US",
+      "first_nonzero_year": 1832,
+      "peak_year": 2019
+    },
+    {
+      "term": "information control",
+      "source": "en",
+      "first_nonzero_year": 1842,
+      "peak_year": 1946
+    },
+    {
+      "term": "information control",
+      "source": "en-GB",
+      "first_nonzero_year": 1842,
+      "peak_year": 1987
+    },
+    {
+      "term": "data privacy",
+      "source": "en",
+      "first_nonzero_year": 1843,
+      "peak_year": 2022
+    },
+    {
+      "term": "data privacy",
+      "source": "en-GB",
+      "first_nonzero_year": 1843,
+      "peak_year": 2022
+    },
+    {
+      "term": "data protection",
+      "source": "en",
+      "first_nonzero_year": 1843,
+      "peak_year": 2022
+    },
+    {
+      "term": "data protection",
+      "source": "en-GB",
+      "first_nonzero_year": 1843,
+      "peak_year": 2020
+    },
+    {
+      "term": "online privacy",
+      "source": "en",
+      "first_nonzero_year": 1843,
+      "peak_year": 2001
+    },
+    {
+      "term": "online privacy",
+      "source": "en-GB",
+      "first_nonzero_year": 1843,
+      "peak_year": 2021
+    },
+    {
+      "term": "privacy and surveillance",
+      "source": "en",
+      "first_nonzero_year": 1843,
+      "peak_year": 2021
+    },
+    {
+      "term": "privacy and surveillance",
+      "source": "en-GB",
+      "first_nonzero_year": 1843,
+      "peak_year": 2018
+    },
+    {
+      "term": "privacy breach",
+      "source": "en",
+      "first_nonzero_year": 1843,
+      "peak_year": 2022
+    },
+    {
+      "term": "privacy breach",
+      "source": "en-GB",
+      "first_nonzero_year": 1843,
+      "peak_year": 2018
+    },
+    {
+      "term": "privacy concerns",
+      "source": "en",
+      "first_nonzero_year": 1843,
+      "peak_year": 2022
+    },
+    {
+      "term": "privacy concerns",
+      "source": "en-GB",
+      "first_nonzero_year": 1843,
+      "peak_year": 2022
+    },
+    {
+      "term": "privacy policies",
+      "source": "en",
+      "first_nonzero_year": 1843,
+      "peak_year": 2000
+    },
+    {
+      "term": "privacy policies",
+      "source": "en-GB",
+      "first_nonzero_year": 1843,
+      "peak_year": 2019
+    },
+    {
+      "term": "privacy policy",
+      "source": "en",
+      "first_nonzero_year": 1843,
+      "peak_year": 2008
+    },
+    {
+      "term": "privacy policy",
+      "source": "en-GB",
+      "first_nonzero_year": 1843,
+      "peak_year": 2008
+    },
+    {
+      "term": "privacy settings",
+      "source": "en",
+      "first_nonzero_year": 1843,
+      "peak_year": 2011
+    },
+    {
+      "term": "privacy settings",
+      "source": "en-GB",
+      "first_nonzero_year": 1843,
+      "peak_year": 2022
+    },
+    {
+      "term": "privatism",
+      "source": "en-US",
+      "first_nonzero_year": 1843,
+      "peak_year": 2021
+    },
+    {
+      "term": "privatization",
+      "source": "en-GB",
+      "first_nonzero_year": 1843,
+      "peak_year": 2000
+    },
+    {
+      "term": "data security",
+      "source": "en-GB",
+      "first_nonzero_year": 1844,
+      "peak_year": 2022
+    },
+    {
+      "term": "information privacy",
+      "source": "en",
+      "first_nonzero_year": 1847,
+      "peak_year": 2020
+    },
+    {
+      "term": "information control",
+      "source": "en-US",
+      "first_nonzero_year": 1854,
+      "peak_year": 1976
+    },
+    {
+      "term": "internet privacy",
+      "source": "en",
+      "first_nonzero_year": 1868,
+      "peak_year": 2001
+    },
+    {
+      "term": "data protection",
+      "source": "en-US",
+      "first_nonzero_year": 1874,
+      "peak_year": 2020
+    },
+    {
+      "term": "information privacy",
+      "source": "en-US",
+      "first_nonzero_year": 1874,
+      "peak_year": 2019
+    },
+    {
+      "term": "internet privacy",
+      "source": "en-US",
+      "first_nonzero_year": 1874,
+      "peak_year": 2001
+    },
+    {
+      "term": "online privacy",
+      "source": "en-US",
+      "first_nonzero_year": 1874,
+      "peak_year": 2001
+    },
+    {
+      "term": "data privacy",
+      "source": "en-US",
+      "first_nonzero_year": 1900,
+      "peak_year": 2021
+    },
+    {
+      "term": "digital privacy",
+      "source": "en",
+      "first_nonzero_year": 1900,
+      "peak_year": 2021
+    },
+    {
+      "term": "privacy concerns",
+      "source": "en-US",
+      "first_nonzero_year": 1900,
+      "peak_year": 2019
+    },
+    {
+      "term": "privacy notice",
+      "source": "en",
+      "first_nonzero_year": 1900,
+      "peak_year": 2001
+    },
+    {
+      "term": "privacy policies",
+      "source": "en-US",
+      "first_nonzero_year": 1900,
+      "peak_year": 2000
+    },
+    {
+      "term": "privacy policy",
+      "source": "en-US",
+      "first_nonzero_year": 1900,
+      "peak_year": 2002
+    },
+    {
+      "term": "privacy settings",
+      "source": "en-US",
+      "first_nonzero_year": 1900,
+      "peak_year": 2011
+    },
+    {
+      "term": "privatize",
+      "source": "en-US",
+      "first_nonzero_year": 1900,
+      "peak_year": 1995
+    },
+    {
+      "term": "privacy and surveillance",
+      "source": "en-US",
+      "first_nonzero_year": 1905,
+      "peak_year": 2022
+    },
+    {
+      "term": "privacy violation",
+      "source": "en",
+      "first_nonzero_year": 1912,
+      "peak_year": 2021
+    },
+    {
+      "term": "privacy violation",
+      "source": "en-US",
+      "first_nonzero_year": 1912,
+      "peak_year": 2021
+    },
+    {
+      "term": "privatise",
+      "source": "en-US",
+      "first_nonzero_year": 1922,
+      "peak_year": 1987
+    },
+    {
+      "term": "information privacy",
+      "source": "en-GB",
+      "first_nonzero_year": 1931,
+      "peak_year": 2006
+    },
+    {
+      "term": "privacy notice",
+      "source": "en-US",
+      "first_nonzero_year": 1931,
+      "peak_year": 2000
+    },
+    {
+      "term": "privacy breach",
+      "source": "en-US",
+      "first_nonzero_year": 1949,
+      "peak_year": 2010
+    },
+    {
+      "term": "digital privacy",
+      "source": "en-US",
+      "first_nonzero_year": 1964,
+      "peak_year": 2020
+    },
+    {
+      "term": "privacy concern",
+      "source": "en-GB",
+      "first_nonzero_year": 1967,
+      "peak_year": 2022
+    },
+    {
+      "term": "privacy violation",
+      "source": "en-GB",
+      "first_nonzero_year": 1972,
+      "peak_year": 2020
+    },
+    {
+      "term": "digital privacy",
+      "source": "en-GB",
+      "first_nonzero_year": 1987,
+      "peak_year": 2021
+    },
+    {
+      "term": "privacy notice",
+      "source": "en-GB",
+      "first_nonzero_year": 1991,
+      "peak_year": 2019
+    },
+    {
+      "term": "internet privacy",
+      "source": "en-GB",
+      "first_nonzero_year": 1994,
+      "peak_year": 2014
+    }
+  ],
+  "rising_period_candidates": [
+    "1508",
+    "1764",
+    "1551",
+    "1709",
+    "1601",
+    "1592",
+    "1701",
+    "1501",
+    "1759",
+    "1651"
+  ],
+  "falling_period_candidates": [
+    "1509",
+    "1552",
+    "1502",
+    "1765",
+    "1702",
+    "1710",
+    "1602",
+    "1652",
+    "1593",
+    "1622"
+  ],
+  "output_files": {
+    "processed": "docs/research/privacy/processed/privacy_frequency_terms_processed.json",
+    "report_json": "docs/research/privacy/reports/privacy_frequency_terms_data_report.json",
+    "report_md": "docs/research/privacy/reports/privacy_frequency_terms_data_report.md",
+    "raw": "docs/research/privacy/raw/privacy_frequency_terms_raw.json"
+  },
+  "next_research_questions": [
+    "Can later passes validate high-confidence modern rises against contemporary corpora or pageview proxies?",
+    "Which root-family terms (private/privy/confidentiality) behave as noise versus signal for this project?",
+    "Which time windows should be normalized against total corpus volume rather than raw per-million counts?"
+  ]
+}

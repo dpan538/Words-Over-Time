@@ -1,0 +1,1289 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_04",
+    "generated_at": "2026-05-24T13:03:40.938045Z",
+    "generated_by_script": "scripts/process_hub_chart04_dependency.py",
+    "purpose": "semantic dependency and modifier-dominance layer for Chart 04 planning"
+  },
+  "summary": {
+    "record_count": 56,
+    "dependency_class_counts": {
+      "brand_compound": 7,
+      "modifier_defined": 24,
+      "institutional_modifier_defined": 6,
+      "hub_as_modifier": 12,
+      "specified_object": 3,
+      "relational_phrase": 2,
+      "standalone": 2
+    },
+    "dependency_tier_counts": {
+      "high_dependency": 37,
+      "medium_dependency": 15,
+      "contextual_dependency": 2,
+      "low_dependency": 2
+    },
+    "object_type_count": 17,
+    "object_type_counts": {
+      "platform": 1,
+      "website": 2,
+      "software_service": 1,
+      "archive": 1,
+      "repository": 2,
+      "platform_content_access": 6,
+      "service_portal": 1,
+      "equipment_room": 1,
+      "student_service": 2,
+      "institutional_access_point": 19,
+      "technical_system": 12,
+      "digital_portal": 1,
+      "community_space": 1,
+      "routing_node": 1,
+      "mechanical_core": 1,
+      "central_place": 2,
+      "lexical_background": 2
+    },
+    "interpretive_note": "High dependency means the attached domain/modifier does much of the work of specifying what kind of object or access point hub names."
+  },
+  "records": [
+    {
+      "term": "GitHub",
+      "form_type": "closed_compound",
+      "form_label": "closed compound",
+      "dependency_class": "brand_compound",
+      "modifier_or_domain": "Git",
+      "object_type": "platform",
+      "modifier_dependency_score": 0.96,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_brand_platform_inventory"
+      ],
+      "notes": "Brand/platform example; do not treat as ordinary phrase frequency."
+    },
+    {
+      "term": "HubPages",
+      "form_type": "prefix_brand",
+      "form_label": "HubX brand form",
+      "dependency_class": "brand_compound",
+      "modifier_or_domain": "Pages",
+      "object_type": "website",
+      "modifier_dependency_score": 0.96,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_brand_platform_inventory"
+      ],
+      "notes": "Content-platform naming example."
+    },
+    {
+      "term": "HubSpot",
+      "form_type": "prefix_brand",
+      "form_label": "HubX brand form",
+      "dependency_class": "brand_compound",
+      "modifier_or_domain": "Spot",
+      "object_type": "software_service",
+      "modifier_dependency_score": 0.96,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_brand_platform_inventory"
+      ],
+      "notes": "Hub as brand prefix rather than suffix phrase."
+    },
+    {
+      "term": "Pornhub",
+      "form_type": "closed_compound",
+      "form_label": "closed compound",
+      "dependency_class": "brand_compound",
+      "modifier_or_domain": "Porn",
+      "object_type": "website",
+      "modifier_dependency_score": 0.96,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_brand_platform_inventory"
+      ],
+      "notes": "Useful only as a platform-era compound naming example."
+    },
+    {
+      "term": "Sci-Hub",
+      "form_type": "hyphenated_compound",
+      "form_label": "hyphenated compound",
+      "dependency_class": "brand_compound",
+      "modifier_or_domain": "Sci",
+      "object_type": "archive",
+      "modifier_dependency_score": 0.96,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_brand_platform_inventory"
+      ],
+      "notes": "Brand/platform-like form; not ordinary lexical frequency."
+    },
+    {
+      "term": "Docker Hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "brand_compound",
+      "modifier_or_domain": "Docker",
+      "object_type": "repository",
+      "modifier_dependency_score": 0.94,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_brand_platform_inventory"
+      ],
+      "notes": "Repository/distribution hub example."
+    },
+    {
+      "term": "Hugging Face Hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "brand_compound",
+      "modifier_or_domain": "Hugging Face",
+      "object_type": "repository",
+      "modifier_dependency_score": 0.94,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_brand_platform_inventory"
+      ],
+      "notes": "Modern technical platform hub example."
+    },
+    {
+      "term": "data hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "data",
+      "object_type": "platform_content_access",
+      "modifier_dependency_score": 0.92,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1901,
+        "peak_year": 2010,
+        "peak_frequency_per_million": 0.05921896,
+        "nonzero_year_count": 57,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "career hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "institutional_modifier_defined",
+      "modifier_or_domain": "career",
+      "object_type": "service_portal",
+      "modifier_dependency_score": 0.91,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_institutional_access_examples"
+      ],
+      "notes": "Career Hub names an online career-readiness access and navigation point."
+    },
+    {
+      "term": "equipment hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "institutional_modifier_defined",
+      "modifier_or_domain": "equipment",
+      "object_type": "equipment_room",
+      "modifier_dependency_score": 0.91,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_institutional_access_examples"
+      ],
+      "notes": "Equipment Hub appears as a named IT/AV stores function in a university-related job document."
+    },
+    {
+      "term": "student hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "institutional_modifier_defined",
+      "modifier_or_domain": "student",
+      "object_type": "student_service",
+      "modifier_dependency_score": 0.91,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_institutional_access_examples"
+      ],
+      "notes": "Campus center offices and drop-in student services are named as a Student Hub."
+    },
+    {
+      "term": "wellbeing hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "institutional_modifier_defined",
+      "modifier_or_domain": "wellbeing",
+      "object_type": "student_service",
+      "modifier_dependency_score": 0.91,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_institutional_access_examples"
+      ],
+      "notes": "Wellbeing Hub names a support service for students experiencing difficulties with university life."
+    },
+    {
+      "term": "content hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "content",
+      "object_type": "platform_content_access",
+      "modifier_dependency_score": 0.9,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1974,
+        "peak_year": 2017,
+        "peak_frequency_per_million": 0.00764498,
+        "nonzero_year_count": 28,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "digital hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "digital",
+      "object_type": "platform_content_access",
+      "modifier_dependency_score": 0.9,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1950,
+        "peak_year": 2002,
+        "peak_frequency_per_million": 0.01943596,
+        "nonzero_year_count": 48,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "education hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "education",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.89,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1901,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.2307503,
+        "nonzero_year_count": 45,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "Ethernet hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "Ethernet",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.89,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1950,
+        "peak_year": 1997,
+        "peak_frequency_per_million": 0.06002097,
+        "nonzero_year_count": 42,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "financial hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "financial",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.89,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1836,
+        "peak_year": 2006,
+        "peak_frequency_per_million": 0.04079248,
+        "nonzero_year_count": 135,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "innovation hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "innovation",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.89,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1843,
+        "peak_year": 2021,
+        "peak_frequency_per_million": 0.09266494,
+        "nonzero_year_count": 37,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "API hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "institutional_modifier_defined",
+      "modifier_or_domain": "API",
+      "object_type": "digital_portal",
+      "modifier_dependency_score": 0.88,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_institutional_access_examples"
+      ],
+      "notes": "API hub names a managed API inventory and access/management surface."
+    },
+    {
+      "term": "maker hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "institutional_modifier_defined",
+      "modifier_or_domain": "maker",
+      "object_type": "community_space",
+      "modifier_dependency_score": 0.88,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_institutional_access_examples"
+      ],
+      "notes": "Maker Hub names a campus making/fabrication access space."
+    },
+    {
+      "term": "business hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "business",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.87,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1843,
+        "peak_year": 2003,
+        "peak_frequency_per_million": 0.03220517,
+        "nonzero_year_count": 122,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "communication hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "communication",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.87,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1900,
+        "peak_year": 2020,
+        "peak_frequency_per_million": 0.01123648,
+        "nonzero_year_count": 83,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "community hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "community",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.87,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1802,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.02908804,
+        "nonzero_year_count": 72,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "creative hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "creative",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.87,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1941,
+        "peak_year": 2019,
+        "peak_frequency_per_million": 0.02020641,
+        "nonzero_year_count": 57,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "knowledge hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "knowledge",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.87,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1901,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.0313085,
+        "nonzero_year_count": 43,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "learning hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "learning",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.87,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1900,
+        "peak_year": 2018,
+        "peak_frequency_per_million": 0.01563867,
+        "nonzero_year_count": 44,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "media hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "media",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.87,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1953,
+        "peak_year": 2011,
+        "peak_frequency_per_million": 0.0171888,
+        "nonzero_year_count": 52,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "research hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "research",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.87,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1900,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.02708962,
+        "nonzero_year_count": 64,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "resource hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "resource",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.87,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1964,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.00821571,
+        "nonzero_year_count": 43,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "USB hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "USB",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.86,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "online hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "online",
+      "object_type": "platform_content_access",
+      "modifier_dependency_score": 0.85,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "startup hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "startup",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.85,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1994,
+        "peak_year": 2022,
+        "peak_frequency_per_million": 0.00399683,
+        "nonzero_year_count": 13,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "switching hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "switching",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.84,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "integration hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "integration",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.82,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "library hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "library",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.82,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "service hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "service",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.82,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "support hub",
+      "form_type": "suffix_phrase",
+      "form_label": "X + hub",
+      "dependency_class": "modifier_defined",
+      "modifier_or_domain": "support",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.82,
+      "dependency_tier": "high_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "hub model",
+      "form_type": "prefix_phrase",
+      "form_label": "hub + X",
+      "dependency_class": "hub_as_modifier",
+      "modifier_or_domain": "model",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.69,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1885,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.01119581,
+        "nonzero_year_count": 97,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "hub network",
+      "form_type": "prefix_phrase",
+      "form_label": "hub + X",
+      "dependency_class": "hub_as_modifier",
+      "modifier_or_domain": "network",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.69,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1936,
+        "peak_year": 2016,
+        "peak_frequency_per_million": 0.00935232,
+        "nonzero_year_count": 62,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "hub node",
+      "form_type": "prefix_phrase",
+      "form_label": "hub + X",
+      "dependency_class": "hub_as_modifier",
+      "modifier_or_domain": "node",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.69,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1954,
+        "peak_year": 2009,
+        "peak_frequency_per_million": 0.01144716,
+        "nonzero_year_count": 47,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "hub site",
+      "form_type": "prefix_phrase",
+      "form_label": "hub + X",
+      "dependency_class": "hub_as_modifier",
+      "modifier_or_domain": "site",
+      "object_type": "platform_content_access",
+      "modifier_dependency_score": 0.69,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "hub system",
+      "form_type": "prefix_phrase",
+      "form_label": "hub + X",
+      "dependency_class": "hub_as_modifier",
+      "modifier_or_domain": "system",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.69,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1895,
+        "peak_year": 1980,
+        "peak_frequency_per_million": 0.01312393,
+        "nonzero_year_count": 103,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "hub city",
+      "form_type": "prefix_phrase",
+      "form_label": "hub + X",
+      "dependency_class": "hub_as_modifier",
+      "modifier_or_domain": "city",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.68,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "hub page",
+      "form_type": "prefix_phrase",
+      "form_label": "hub + X",
+      "dependency_class": "hub_as_modifier",
+      "modifier_or_domain": "page",
+      "object_type": "platform_content_access",
+      "modifier_dependency_score": 0.67,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "hub airport",
+      "form_type": "prefix_phrase",
+      "form_label": "hub + X",
+      "dependency_class": "hub_as_modifier",
+      "modifier_or_domain": "airport",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.66,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "hub location",
+      "form_type": "prefix_phrase",
+      "form_label": "hub + X",
+      "dependency_class": "hub_as_modifier",
+      "modifier_or_domain": "location",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.66,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "hub room",
+      "form_type": "prefix_phrase",
+      "form_label": "hub + X",
+      "dependency_class": "hub_as_modifier",
+      "modifier_or_domain": "room",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.66,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "hub service",
+      "form_type": "prefix_phrase",
+      "form_label": "hub + X",
+      "dependency_class": "hub_as_modifier",
+      "modifier_or_domain": "service",
+      "object_type": "institutional_access_point",
+      "modifier_dependency_score": 0.66,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "hub strategy",
+      "form_type": "prefix_phrase",
+      "form_label": "hub + X",
+      "dependency_class": "hub_as_modifier",
+      "modifier_or_domain": "strategy",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.66,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "not_found_existing",
+        "first_nonzero_year": null,
+        "peak_year": null,
+        "peak_frequency_per_million": null,
+        "nonzero_year_count": null,
+        "period_count": 0
+      },
+      "evidence_sources": [
+        "chart03_representative_terms"
+      ],
+      "notes": "Modern naming candidate from Chart 03."
+    },
+    {
+      "term": "network hub",
+      "form_type": "modifier_plus_hub",
+      "form_label": "X + hub",
+      "dependency_class": "specified_object",
+      "modifier_or_domain": "network",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.61,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1900,
+        "peak_year": 1999,
+        "peak_frequency_per_million": 0.02438265,
+        "nonzero_year_count": 64,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    },
+    {
+      "term": "transport hub",
+      "form_type": "modifier_plus_hub",
+      "form_label": "X + hub",
+      "dependency_class": "specified_object",
+      "modifier_or_domain": "transport",
+      "object_type": "routing_node",
+      "modifier_dependency_score": 0.59,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1843,
+        "peak_year": 2010,
+        "peak_frequency_per_million": 0.06270535,
+        "nonzero_year_count": 92,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    },
+    {
+      "term": "wheel hub",
+      "form_type": "modifier_plus_hub",
+      "form_label": "X + hub",
+      "dependency_class": "specified_object",
+      "modifier_or_domain": "wheel",
+      "object_type": "mechanical_core",
+      "modifier_dependency_score": 0.59,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1832,
+        "peak_year": 1872,
+        "peak_frequency_per_million": 0.24601964,
+        "nonzero_year_count": 181,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    },
+    {
+      "term": "hub of activity",
+      "form_type": "hub_of_x",
+      "form_label": "hub of X",
+      "dependency_class": "relational_phrase",
+      "modifier_or_domain": "",
+      "object_type": "central_place",
+      "modifier_dependency_score": 0.51,
+      "dependency_tier": "contextual_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1878,
+        "peak_year": 2011,
+        "peak_frequency_per_million": 0.03413241,
+        "nonzero_year_count": 117,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    },
+    {
+      "term": "hub of commerce",
+      "form_type": "hub_of_x",
+      "form_label": "hub of X",
+      "dependency_class": "relational_phrase",
+      "modifier_or_domain": "",
+      "object_type": "central_place",
+      "modifier_dependency_score": 0.51,
+      "dependency_tier": "contextual_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1832,
+        "peak_year": 1942,
+        "peak_frequency_per_million": 0.00705695,
+        "nonzero_year_count": 123,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    },
+    {
+      "term": "hub",
+      "form_type": "standalone_headword",
+      "form_label": "standalone hub",
+      "dependency_class": "standalone",
+      "modifier_or_domain": "",
+      "object_type": "lexical_background",
+      "modifier_dependency_score": 0.15,
+      "dependency_tier": "low_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1800,
+        "peak_year": 1872,
+        "peak_frequency_per_million": 11.26854489,
+        "nonzero_year_count": 223,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    },
+    {
+      "term": "hubs",
+      "form_type": "standalone_headword",
+      "form_label": "standalone hub",
+      "dependency_class": "standalone",
+      "modifier_or_domain": "",
+      "object_type": "lexical_background",
+      "modifier_dependency_score": 0.15,
+      "dependency_tier": "low_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1800,
+        "peak_year": 2021,
+        "peak_frequency_per_million": 1.64315703,
+        "nonzero_year_count": 222,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    }
+  ]
+}

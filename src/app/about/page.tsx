@@ -1,5 +1,4 @@
 import { AboutSectionNav } from "@/components/AboutSectionNav";
-import { ConstraintGrid } from "@/components/ConstraintGrid";
 import { GridRuler } from "@/components/GridRuler";
 import { MethodDiagram } from "@/components/MethodDiagram";
 import { Nav } from "@/components/Nav";
@@ -57,11 +56,12 @@ const evidenceFlow = [
 ];
 
 const wordIndex = [
-  { word: "forever", status: "complete", color: "#F06B04", href: "/words/forever" },
-  { word: "depression", status: "complete", color: "#1570AC", href: "/words/depression" },
   { word: "data", status: "complete", color: "#1570AC", href: "/words/data" },
-  { word: "privacy", status: "planned", color: "#050510" },
-  { word: "artificial", status: "planned", color: "#050510" },
+  { word: "privacy", status: "complete", color: "#6C4FA3", href: "/words/privacy" },
+  { word: "artificial", status: "complete", color: "#A1081F", href: "/words/artificial" },
+  { word: "hub", status: "complete", color: "#18314F", href: "/words/hub" },
+  { word: "depression", status: "complete", color: "#1570AC", href: "/words/depression" },
+  { word: "forever", status: "complete", color: "#F06B04", href: "/words/forever" },
   { word: "intelligence", status: "planned", color: "#050510" },
 ];
 
@@ -69,88 +69,100 @@ const dataSources = [
   {
     source: "Google Books Ngram Viewer",
     use: "Frequency time series",
-    coverage: "English corpus, 1500-2022; smoothing 0",
-    access: "Public JSON API",
-    license: "Creative Commons Attribution 3.0",
+    coverage: "English corpora through 2022; queried at smoothing 0 before local transforms",
+    access: "Public JSON endpoint / scripted fetch",
+    license: "Google Books Ngram terms; attribution required",
   },
   {
     source: "Project Gutenberg",
-    use: "Context snippets, collocates, phrases",
-    coverage: "Public-domain books, 1726-1930",
-    access: "Public text API",
-    license: "Project Gutenberg License; public-domain content",
+    use: "Public-domain context text",
+    coverage: "Selected public-domain books, mainly eighteenth to early twentieth century",
+    access: "Gutenberg text files / local processed extracts",
+    license: "Project Gutenberg License; public-domain status varies outside the US",
   },
   {
-    source: "Wikinews (EN)",
-    use: "Modern context snapshots",
-    coverage: "2024-2026 news snippets",
-    access: "MediaWiki API",
-    license: "Creative Commons Attribution 2.5",
+    source: "Library of Congress / Chronicling America",
+    use: "Historical newspaper evidence",
+    coverage: "Digitized US newspapers, chiefly 1770s-1960s depending on collection availability",
+    access: "LOC JSON, OCR text, image/PDF metadata",
+    license: "Library of Congress rights statements; item-level rights vary",
   },
   {
-    source: "Online Etymology Dictionary",
-    use: "Historical form tracing",
-    coverage: "Middle English through 14c.",
-    access: "Manual review; secondary citation",
-    license: "Copyright Douglas Harper; cited only",
+    source: "Wikimedia / Wikinews / MediaWiki APIs",
+    use: "Modern context and attention signals",
+    coverage: "Contemporary page, article, and context metadata where relevant",
+    access: "MediaWiki and Wikimedia public APIs",
+    license: "CC BY / CC BY-SA family; project-specific terms apply",
   },
   {
-    source: "Wiktionary",
-    use: "Word variants and historical spellings",
-    coverage: "Multilingual, from 14c.",
-    access: "Manual review; secondary citation",
-    license: "Creative Commons Attribution-ShareAlike",
+    source: "Lexical references",
+    use: "Attestation and sense-history checks",
+    coverage: "OED candidate checks, Online Etymology Dictionary, Wiktionary, Merriam-Webster, Cambridge",
+    access: "Manual review and citation pointers only",
+    license: "Publisher-specific; entries are not reproduced",
+  },
+  {
+    source: "Policy, clinical, and technical references",
+    use: "Domain context anchors",
+    coverage: "EU AI Act, GDPR/ICO, FTC/NIST/OECD, PubMed/MeSH, WHO/NIMH, Stanford HAI and related pages",
+    access: "Public web pages, APIs, and manual source audits",
+    license: "Source-specific; used as citation targets and metadata, not republished text",
   },
 ];
 
 const roleColors: Record<string, string> = {
   "Frequency time series": "#F06B04",
-  "Context snippets, collocates, phrases": "#1570AC",
-  "Modern context snapshots": "#2C9FC7",
-  "Historical form tracing": "#050510",
-  "Word variants and historical spellings": "#050510",
+  "Public-domain context text": "#1570AC",
+  "Historical newspaper evidence": "#1570AC",
+  "Modern context and attention signals": "#2C9FC7",
+  "Attestation and sense-history checks": "#050510",
+  "Domain context anchors": "#036C17",
 };
 
 const calculationMethods = [
   {
-    title: "Frequency Normalization",
-    body: "All frequency values come from the Google Books Ngram API and are expressed as occurrences per million words. Raw values are not smoothed; smoothing is set to 0.",
+    title: "Source capture",
+    body: "Scripts fetch or ingest source-specific data into generated JSON files. Ngram queries are pulled as yearly series; Gutenberg and LOC material are stored as text or metadata extracts; policy, dictionary, clinical, and technical references are stored as source pointers or curated records when full-text reuse is restricted.",
   },
   {
-    title: "Display Scale Transformation",
-    body: "To reduce the visual masking caused by high-frequency years, the frequency axis uses a square-root display transform: displayValue = sqrt(frequencyPerMillion). This common nonlinear compression keeps trend direction visible while reducing the visual weight of extreme values.",
+    title: "Frequency normalization",
+    body: "Google Ngram values are converted into comparable per-million visibility where needed. Most charts keep smoothing at 0, then apply local period aggregation, rank lookup, or max-normalization so that a chart compares terms within the same source family rather than across incompatible corpora.",
   },
   {
-    title: "Category Classification",
-    body: "The six semantic categories (Eternity/Religion, Romance/Vow, Permanence/Duration, Memory/Remembrance, Hyperbole/Colloquial, Digital Permanence) are assigned through keyword heuristics. Classification depends on whether a target phrase appears in a curated phrase list and whether collocates overlap with a category keyword list. This is a curated interpretive layer, not an automatic semantic classifier.",
+    title: "Display transformation",
+    body: "Visual scales may use square-root, max-normalized, indexed, or ranked transforms. These transforms are display devices only: the interface labels them as visual intensity, visibility index, or relative signal rather than raw counts.",
   },
   {
-    title: "Pre-1700 Data Handling",
-    body: "Ngram data before 1700 has known OCR noise, spelling normalization errors, and metadata quality issues. The joined form forever is marked unreliable in this interval and shown as a shaded region rather than a main-line signal. The spaced form for ever is available in this interval but should be read cautiously.",
+    title: "Phrase and variant policy",
+    body: "Each word page declares which forms belong together and which remain separate. Examples include spelling variants, compounds, X + word phrases, word + X phrases, singular/plural grammar, and domain phrases. Variant aggregation is treated as an editorial decision, not a default.",
   },
   {
-    title: "Era Segmentation",
-    body: "Eight eras are manually defined around Gutenberg coverage density and Ngram signal quality: 1700-1799 (sparse Gutenberg coverage), 1800-1849, 1850-1899 (strongest Gutenberg coverage), 1900-1949 (limited public-domain text), 1950-1999 and 2000-2019 (Ngram only, no Gutenberg snippets), and recent (2020-2022).",
+    title: "Semantic grouping",
+    body: "Semantic layers are built from curated phrase sets, keyword/collocate overlaps, source annotations, and domain-specific evidence records. They are not presented as machine-learned sense disambiguation; they are interpretive maps backed by visible source categories and caution language.",
   },
   {
-    title: "Stopword Filtering",
-    body: "Collocate extraction filters a standard English stopword list and also removes the forms ever, forever, would, shall, could, should, said, now, yet, still, upon, one, two, thing, and things.",
+    title: "Branch and dependency scoring",
+    body: "For pages such as hub, form groups and dependency tiers are computed from curated examples: counts, object-type spread, phrase form, and modifier dependence are converted into visual branch maps. The score indicates how much the attached word specifies the object, not popularity or legal meaning.",
+  },
+  {
+    title: "Confidence and boundary labels",
+    body: "A claim can be source-supported, corpus-visible, manually attested, derived, pending, or cautionary. The page text must name that status instead of collapsing everything into proof. Absence, sparse data, OCR noise, rights limits, and genre bias remain attached to the claim.",
   },
 ];
 
 const archiveClaims = [
-  "That the recorded frequency of a word in a corpus changes over time",
-  "That those changes correlate with documentable cultural contexts",
-  "That text snippets provide auditable evidence of contextual usage",
-  "That category assignments are interpretive, not classificatory",
+  "Corpus frequency can show that selected forms become more or less visible within a named source boundary.",
+  "Lexical and scanned sources can support attestation claims when source type and uncertainty are named.",
+  "Semantic charts can show curated interpretive structure when the grouping rule is disclosed.",
+  "Data collection, transformation, and visualization choices should be visible enough to audit.",
 ];
 
 const archiveLimits = [
-  "That frequency equals cultural importance or literary quality",
-  "That a Gutenberg seed corpus of 48 texts from 1726-1930 represents all historical English usage",
-  "That modern Wikinews snippets are comparable in scale or register to historical text evidence",
-  "That semantic categories are stable, mutually exclusive, or exhaustive",
-  "That the absence of evidence is evidence of absence",
+  "Frequency does not equal cultural importance, lived experience, literary value, or legal meaning.",
+  "A selected corpus is not all English usage, all genres, or all communities.",
+  "A semantic group is not an automatic definition and is not mutually exclusive by default.",
+  "A first detected corpus point is not the first historical use of a word.",
+  "A missing result is not evidence that a usage did not exist.",
 ];
 
 const designReferences = [
@@ -187,18 +199,18 @@ const designReferences = [
     work: "Hochschule für Gestaltung",
     year: "1953-1968",
     relevance:
-      "The Ulm model treated design as an epistemological practice: structure makes claims, not just appearances. The ConstraintGrid and RelationalConstellation are design research artifacts; they argue through their structure that evidence should be shown as a relational system.",
+      "The Ulm model treated design as an epistemological practice: structure makes claims, not just appearances. The page modules and evidence diagrams are design research artifacts; they argue through their structure that evidence should be shown as a relational system.",
     color: "#036C17",
   },
 ];
 
 const evidenceColumns = [
-  { label: "Frequency", sub: "corpus signal", color: "#F06B04", filled: true },
+  { label: "Signal", sub: "source-specific", color: "#F06B04", filled: true },
   { label: "Attestation", sub: "lexical proof", color: "#F06B04", filled: true },
   { label: "Variant", sub: "form policy", color: "#1570AC", filled: true },
   { label: "Context", sub: "snippet evidence", color: "#1570AC", filled: true },
-  { label: "Confidence", sub: "partially filled", color: "#050510", filled: false },
-  { label: "Source", sub: "pending", color: "#050510", filled: false, dashed: true },
+  { label: "Boundary", sub: "claim limit", color: "#050510", filled: false },
+  { label: "Rights", sub: "attribution", color: "#050510", filled: false, dashed: true },
 ];
 
 const openItems = [
@@ -226,7 +238,7 @@ const licenses = [
       "Methodology text and interface design",
     ],
     statement: "© 2026 Words Over Time. All rights reserved.",
-    note: "Not licensed for reproduction without permission.",
+    note: "The public repository makes the work inspectable, but it does not grant a blanket reuse license for text, visuals, code, or design.",
   },
   {
     category: "Corpus frequency data",
@@ -237,16 +249,20 @@ const licenses = [
   },
   {
     category: "Archival text snippets",
-    items: ["Project Gutenberg public-domain texts (1726-1930)"],
+    items: [
+      "Project Gutenberg public-domain texts (1726-1930)",
+      "Library of Congress / Chronicling America page records",
+      "Internet Archive public-domain dictionary scans",
+    ],
     statement: "Sourced from Project Gutenberg (gutenberg.org).",
-    note: "Texts are in the public domain in the United States. Rights status outside the US may vary by jurisdiction.",
+    note: "Only brief excerpts, metadata, or page pointers are used. Public-domain status is source- and jurisdiction-specific; item records should remain linked.",
     url: "https://www.gutenberg.org/policy/license.html",
   },
   {
     category: "Modern context snippets",
     items: ["Wikinews English edition (2024-2026)"],
     statement: "Sourced from Wikinews via MediaWiki API.",
-    note: "Used under Creative Commons Attribution 2.5 Generic.",
+    note: "Used as short contextual evidence under Creative Commons Attribution 2.5 Generic; article text is not republished in full.",
     url: "https://creativecommons.org/licenses/by/2.5/",
   },
   {
@@ -267,6 +283,8 @@ const licenses = [
       "EU AI Act / EUR-Lex",
       "ICO and GDPR reference pages",
       "FTC, NIST, OECD, Census, and Stanford HAI pages",
+      "PubMed, MeSH, NCBI, clinical, and public-health references",
+      "Britannica, Cleveland Clinic, FCC, PLOS, and publisher pages",
       "Academic references for data science and datafication",
     ],
     statement: "Used as context anchors, source audits, and citation targets.",
@@ -292,10 +310,19 @@ const licenses = [
       "EarlyPrint / EEBO-TCP",
     ],
     statement: "Listed as candidate or manual-review controls unless an authorized export is available.",
-    note: "These sources are not bundled, republished, or treated as integrated public data in this prototype.",
+    note: "These sources are not bundled, republished, or treated as integrated public data in this prototype. Pending or restricted records should not be promoted into public-facing excerpts.",
   },
   {
-    category: "Privacy and data",
+    category: "Raw caches and generated datasets",
+    items: [
+      "Research JSON, source indexes, and API response caches",
+      "Derived scores, labels, and visualization-ready records",
+    ],
+    statement: "Generated files document research provenance and transformation steps.",
+    note: "They are not a rights grant for upstream material. Before publication or reuse, follow the rights status attached to the original source.",
+  },
+  {
+    category: "Site privacy and data use",
     items: [],
     statement: "This site does not use accounts, cookies, or user tracking.",
     note: "No personal data is collected or stored.",
@@ -320,14 +347,14 @@ function AboutSectionHeader({
       <span className="select-none font-mono text-[clamp(2.8rem,4vw,4.5rem)] font-black leading-none text-ink/10">
         {num}
       </span>
-      <p className="-mt-1 font-mono text-[0.72rem] font-black uppercase tracking-[0.22em] text-fire">
+      <p className="-mt-1 font-mono text-[0.96rem] font-black uppercase tracking-[0.22em] text-fire">
         {kicker}
       </p>
       <h2 className="mt-3 text-[clamp(1.6rem,2.4vw,2.6rem)] font-black leading-[0.96]">
         {title}
       </h2>
       {desc ? (
-        <p className="mt-4 text-[0.82rem] font-bold leading-5 text-ink/52">
+        <p className="mt-4 text-[0.96rem] font-bold leading-5 text-ink/52">
           {desc}
         </p>
       ) : null}
@@ -348,7 +375,7 @@ export default function AboutPage() {
           className="scroll-mt-20 grid gap-8 border-y-2 border-ink py-8 lg:grid-cols-[16rem_1fr] lg:gap-16"
         >
           <header>
-            <p className="font-mono text-xs font-black uppercase tracking-[0.22em] text-fire">
+            <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.22em] text-fire">
               00 / project statement
             </p>
             <h1 className="mt-4 text-[clamp(2.7rem,5vw,6rem)] font-black leading-[0.9] tracking-normal">
@@ -361,7 +388,7 @@ export default function AboutPage() {
               <br />
               not a search engine.
             </p>
-            <div className="mt-8 grid gap-5 text-sm font-bold leading-6 text-ink/70 md:grid-cols-2">
+            <div className="mt-8 grid gap-5 text-[0.96rem] font-bold leading-6 text-ink/70 md:grid-cols-2">
               <p>
                 Each entry begins with a word selected for its cultural weight:
                 a word that has shifted meaning, accumulated associations, or
@@ -379,7 +406,7 @@ export default function AboutPage() {
                 limits, and gaps stated alongside the data.
               </p>
             </div>
-            <p className="mt-7 border-t border-ink/22 pt-4 font-mono text-[0.74rem] font-black uppercase leading-5 tracking-[0.14em] text-ink/70">
+            <p className="mt-7 border-t border-ink/22 pt-4 font-mono text-[0.84rem] font-black uppercase leading-5 tracking-[0.14em] text-ink/70">
               Intended audience: researchers, writers, educators, and anyone
               curious about how language carries history.
             </p>
@@ -392,7 +419,7 @@ export default function AboutPage() {
         >
           <div className="grid gap-4 lg:grid-cols-[0.48fr_0.74fr_0.78fr] lg:items-stretch">
             <header className="border-b-2 border-ink pb-4 lg:border-b-0 lg:border-r-2 lg:pb-0 lg:pr-5">
-              <p className="text-xs font-black uppercase tracking-[0.22em] text-fire">
+              <p className="text-[0.82rem] font-black uppercase tracking-[0.22em] text-fire">
                 01 / methodology
               </p>
               <h1 className="mt-4 text-[clamp(2.8rem,4.5vw,4.8rem)] font-black leading-[0.9] tracking-normal">
@@ -409,7 +436,7 @@ export default function AboutPage() {
             </div>
 
             <aside className="border-t border-ink/30 pt-5 lg:border-l lg:border-t-0 lg:pl-5 lg:pt-0">
-              <p className="font-mono text-xs font-black uppercase tracking-[0.22em] text-fire">
+              <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.22em] text-fire">
                 word index
               </p>
               <div className="mt-4 flex flex-col gap-2">
@@ -421,21 +448,21 @@ export default function AboutPage() {
                     {href ? (
                       <Link
                         href={href}
-                        className="font-mono text-sm font-black uppercase transition hover:text-nice"
+                        className="font-mono text-[0.96rem] font-black uppercase transition hover:text-nice"
                         style={{ color }}
                       >
                         {word}
                       </Link>
                     ) : (
                       <span
-                        className="font-mono text-sm font-black uppercase"
+                        className="font-mono text-[0.96rem] font-black uppercase"
                         style={{ color }}
                       >
                         {word}
                       </span>
                     )}
                     <span
-                      className={`font-mono text-[0.65rem] font-black uppercase tracking-[0.14em] ${
+                      className={`font-mono text-[0.86rem] font-black uppercase tracking-[0.14em] ${
                         status === "complete" ? "text-sail" : "text-ink/30"
                       }`}
                     >
@@ -470,7 +497,7 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <p className="mb-3 font-mono text-[0.72rem] font-black uppercase tracking-[0.16em] text-fire">
+              <p className="mb-3 font-mono text-[0.96rem] font-black uppercase tracking-[0.16em] text-fire">
                 the visual programme / six evidence columns
               </p>
               <div
@@ -492,20 +519,20 @@ export default function AboutPage() {
                     }}
                   >
                     <p
-                      className="font-mono text-[0.6rem] font-black uppercase tracking-[0.14em]"
+                      className="font-mono text-[0.84rem] font-black uppercase tracking-[0.14em]"
                       style={{
                         color: col.filled ? col.color : "rgba(5,5,16,0.3)",
                       }}
                     >
                       {col.label}
                     </p>
-                    <p className="mt-1 font-mono text-[0.58rem] font-bold leading-4 text-ink/40">
+                    <p className="mt-1 font-mono text-[0.84rem] font-bold leading-4 text-ink/40">
                       {col.sub}
                     </p>
                   </div>
                 ))}
               </div>
-              <p className="mt-2 font-mono text-[0.62rem] font-bold leading-4 text-ink/38">
+              <p className="mt-2 font-mono text-[0.84rem] font-bold leading-4 text-ink/38">
                 Faded columns = evidence not yet implemented. The absence is
                 structural, not hidden.
               </p>
@@ -530,23 +557,23 @@ export default function AboutPage() {
                     style={{ backgroundColor: ref.color }}
                   />
                   <p
-                    className="font-mono text-[0.65rem] font-black uppercase tracking-[0.13em]"
+                    className="font-mono text-[0.86rem] font-black uppercase tracking-[0.13em]"
                     style={{ color: ref.color }}
                   >
                     {ref.author}
                   </p>
-                  <p className="mt-0.5 font-mono text-[0.58rem] font-bold text-ink/32">
+                  <p className="mt-0.5 font-mono text-[0.84rem] font-bold text-ink/32">
                     {ref.years}
                   </p>
 
-                  <p className="mt-3 font-mono text-[0.62rem] font-black uppercase leading-4 tracking-[0.1em] text-ink/55">
+                  <p className="mt-3 font-mono text-[0.84rem] font-black uppercase leading-4 tracking-[0.1em] text-ink/55">
                     {ref.work}
                   </p>
-                  <p className="font-mono text-[0.58rem] font-bold text-ink/30">
+                  <p className="font-mono text-[0.84rem] font-bold text-ink/30">
                     {ref.year}
                   </p>
 
-                  <p className="mt-3 border-t border-ink/12 pt-3 text-[0.78rem] font-bold leading-[1.5] text-ink/55">
+                  <p className="mt-3 border-t border-ink/12 pt-3 text-[0.86rem] font-bold leading-[1.5] text-ink/55">
                     {ref.relevance}
                   </p>
                 </article>
@@ -554,7 +581,7 @@ export default function AboutPage() {
             </div>
 
             <div className="border-t border-ink/18 pt-5">
-              <p className="max-w-3xl text-sm font-bold leading-6 text-ink/58">
+              <p className="max-w-3xl text-[0.96rem] font-bold leading-6 text-ink/58">
                 This is not an application of Swiss design as historical style.
                 It is an application of the underlying principle: that the
                 structure of a design makes claims, and those claims should be
@@ -588,10 +615,10 @@ export default function AboutPage() {
                 <div className={`flex items-center gap-3 border-l-[3px] border-ink/30 px-4 py-3
                                  transition duration-200 ${item.border}`}>
                   <span className={`h-3 w-3 flex-shrink-0 border border-ink/60 ${item.accent}`} />
-                  <p className="font-mono text-[0.6rem] font-black uppercase tracking-[0.16em] text-ink/40">
+                  <p className="font-mono text-[0.84rem] font-black uppercase tracking-[0.16em] text-ink/40">
                     {item.number} / source
                   </p>
-                  <p className={`font-mono text-[0.62rem] font-black uppercase tracking-[0.1em]
+                  <p className={`font-mono text-[0.84rem] font-black uppercase tracking-[0.1em]
                                  text-ink/55 transition duration-200 ${item.text}`}>
                     {item.source}
                   </p>
@@ -599,17 +626,17 @@ export default function AboutPage() {
 
                 {/* Output content */}
                 <div className="flex flex-1 flex-col px-4 pb-5 pt-4">
-                  <p className={`font-mono text-[0.65rem] font-black uppercase tracking-[0.16em]
+                  <p className={`font-mono text-[0.86rem] font-black uppercase tracking-[0.16em]
                                  text-fire transition duration-200 ${item.text}`}>
                     output / {item.title}
                   </p>
                   <h3 className="mt-2 text-[clamp(1.15rem,1.6vw,1.5rem)] font-black leading-[1.02]">
                     {item.output}
                   </h3>
-                  <p className="mt-3 text-[0.82rem] font-bold leading-[1.55] text-ink/65">
+                  <p className="mt-3 text-[0.96rem] font-bold leading-[1.55] text-ink/65">
                     {item.body}
                   </p>
-                  <p className="mt-4 border-t border-ink/12 pt-3 text-[0.74rem] font-bold
+                  <p className="mt-4 border-t border-ink/12 pt-3 text-[0.84rem] font-bold
                                 leading-5 text-ink/45 transition duration-200
                                 group-hover/evidence:text-ink/65">
                     {item.constraint}
@@ -631,7 +658,7 @@ export default function AboutPage() {
           />
           <div className="overflow-x-auto border border-ink/40">
             <table className="w-full min-w-[560px] border-collapse text-left">
-              <thead className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-fire">
+              <thead className="font-mono text-[0.86rem] uppercase tracking-[0.14em] text-fire">
                 <tr className="border-b border-ink/30">
                   <th className="px-4 py-2.5">Source</th>
                   <th className="px-4 py-2.5">Role</th>
@@ -639,7 +666,7 @@ export default function AboutPage() {
                   <th className="px-4 py-2.5">License</th>
                 </tr>
               </thead>
-              <tbody className="text-[0.8rem] font-bold leading-5 text-ink/68">
+              <tbody className="text-[0.92rem] font-bold leading-5 text-ink/68">
                 {dataSources.map((source, index) => {
                   const roleColor = roleColors[source.use] ?? "#050510";
                   return (
@@ -655,16 +682,16 @@ export default function AboutPage() {
                       <td className="px-4 py-3">
                         <span
                           className="inline-block px-1.5 py-0.5 font-mono
-                                     text-[0.58rem] font-black uppercase tracking-[0.09em]"
+                                     text-[0.84rem] font-black uppercase tracking-[0.09em]"
                           style={{ color: roleColor, border: `1px solid ${roleColor}` }}
                         >
                           {source.use}
                         </span>
                       </td>
-                      <td className="px-4 py-3 font-mono text-[0.72rem] text-ink/60">
+                      <td className="px-4 py-3 font-mono text-[0.96rem] text-ink/60">
                         {source.coverage}
                       </td>
-                      <td className="px-4 py-3 text-[0.76rem] text-ink/48">
+                      <td className="px-4 py-3 text-[0.84rem] text-ink/48">
                         {source.license}
                       </td>
                     </tr>
@@ -695,12 +722,12 @@ export default function AboutPage() {
                 }`}
               >
                 <div className="border-b border-ink/10 px-4 py-3.5 sm:border-b-0 sm:border-r sm:border-ink/15">
-                  <p className="font-mono text-[0.66rem] font-black uppercase leading-[1.4] tracking-[0.13em] text-fire">
+                  <p className="font-mono text-[0.86rem] font-black uppercase leading-[1.4] tracking-[0.13em] text-fire">
                     {method.title}
                   </p>
                 </div>
                 <div className="px-5 py-3.5">
-                  <p className="text-[0.8rem] font-bold leading-[1.55] text-ink/60">
+                  <p className="text-[0.92rem] font-bold leading-[1.55] text-ink/60">
                     {method.body}
                   </p>
                 </div>
@@ -718,72 +745,29 @@ export default function AboutPage() {
             kicker="epistemological position"
             title="Claim boundaries"
           />
-          <div className="grid gap-5 md:grid-cols-2">
-            <article className="flex flex-col border border-sail/60">
-              <header className="border-b border-sail/30 bg-sail/[0.08] px-5 py-3">
-                <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.16em] text-sail">
-                  Yes / what this archive claims
-                </p>
-              </header>
-              <ul className="flex flex-1 flex-col divide-y divide-ink/10 px-5 py-2">
-                {archiveClaims.map((claim) => (
-                  <li key={claim} className="flex items-baseline gap-3 py-3">
-                    <span className="mt-[2px] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-sail" />
-                    <span className="text-sm font-bold leading-6 text-ink/72">
-                      {claim}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </article>
-
-            <article className="flex flex-col border border-wine/50">
-              <header className="border-b border-wine/25 bg-wine/[0.06] px-5 py-3">
-                <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.16em] text-wine">
-                  No / what this archive does not claim
-                </p>
-              </header>
-              <ul className="flex flex-1 flex-col divide-y divide-ink/10 px-5 py-2">
-                {archiveLimits.map((limit) => (
-                  <li key={limit} className="flex items-baseline gap-3 py-3">
-                    <span className="font-mono text-[0.72rem] font-black text-wine/60">
-                      -
-                    </span>
-                    <span className="text-sm font-bold leading-6 text-ink/62">
-                      {limit}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <section id="constraint-grid" className="scroll-mt-20">
-          <div className="mb-8 grid gap-6 border-t-2 border-ink pt-10 lg:grid-cols-[16rem_1fr]">
-            <AboutSectionHeader
-              num="07"
-              kicker="audit grid"
-              title="Claim, module & risk"
-            />
-            <div className="max-w-3xl">
-              <p className="text-sm font-bold leading-6 text-ink/68">
-                The grid maps three types of element:{" "}
-                <strong>claim columns</strong> (left three) describe what kind
-                of statement is being made about a word;{" "}
-                <strong>module columns</strong> (right three) describe the
-                planned analysis instrument; <strong>risk rows</strong> (bottom)
-                list the uncertainty categories that attach to each route.
-              </p>
-              <p className="mt-3 text-sm font-bold leading-6 text-ink/58">
-                Hover or click a module to expose the audit route. The colored
-                lines show which claim language and which risks attach to that
-                particular instrument. No line is drawn until you select a
-                module, because the relationships only matter in context.
-              </p>
+          <div className="space-y-6">
+            <p className="max-w-4xl text-[1.06rem] font-bold leading-7 text-ink/70">
+              The archive makes bounded claims. It can show that a selected form is visible in a named corpus, that a cited source supports an attestation, or that a curated semantic grouping organizes the evidence. It does not turn those signals into universal claims about all English usage, all communities, or all meanings of a word.
+            </p>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div>
+                <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.16em] text-sail">claims allowed</p>
+                <ul className="mt-3 space-y-3 text-[0.96rem] font-bold leading-6 text-ink/72">
+                  {archiveClaims.map((claim) => (
+                    <li key={claim}>+ {claim}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.16em] text-wine">claims refused</p>
+                <ul className="mt-3 space-y-3 text-[0.96rem] font-bold leading-6 text-ink/62">
+                  {archiveLimits.map((limit) => (
+                    <li key={limit}>- {limit}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
-          <ConstraintGrid />
         </section>
 
         <section
@@ -791,10 +775,10 @@ export default function AboutPage() {
           className="scroll-mt-20 grid gap-8 border-t-2 border-ink pt-10 lg:grid-cols-[16rem_1fr] lg:gap-16"
         >
           <AboutSectionHeader
-            num="08"
-            kicker="open source"
+            num="07"
+            kicker="public repository"
             title="Code & data"
-            desc="The data pipeline and all visualization components are publicly available."
+            desc="The data pipeline and visualization components are public for inspection, reproducibility, and citation review."
           />
 
           <div className="flex flex-col gap-6">
@@ -815,17 +799,17 @@ export default function AboutPage() {
               </div>
               <div className="flex flex-1 items-center justify-between gap-4 px-5 py-4">
                 <div>
-                  <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.14em] text-fire">
+                  <p className="font-mono text-[0.96rem] font-black uppercase tracking-[0.14em] text-fire">
                     github / dpan538
                   </p>
-                  <p className="mt-1 text-sm font-black text-ink">
+                  <p className="mt-1 text-[0.96rem] font-black text-ink">
                     Words-Over-Time
                   </p>
-                  <p className="mt-1 font-mono text-[0.68rem] font-bold text-ink/48">
+                  <p className="mt-1 font-mono text-[0.86rem] font-bold text-ink/48">
                     Public repository / Data pipeline / All components
                   </p>
                 </div>
-                <span className="font-mono text-[0.72rem] font-black uppercase tracking-[0.1em] text-ink/30 transition group-hover:text-ink/60">
+                <span className="font-mono text-[0.96rem] font-black uppercase tracking-[0.1em] text-ink/30 transition group-hover:text-ink/60">
                   -&gt;
                 </span>
               </div>
@@ -833,10 +817,10 @@ export default function AboutPage() {
 
             <div className="grid gap-4 sm:grid-cols-2">
               <article className="border-l-2 border-ink/40 px-5 py-3">
-                <p className="font-mono text-[0.68rem] font-black uppercase tracking-[0.14em] text-ink/50">
-                  What is open
+                <p className="font-mono text-[0.86rem] font-black uppercase tracking-[0.14em] text-ink/50">
+                  What is inspectable
                 </p>
-                <ul className="mt-3 space-y-2 text-sm font-bold leading-5 text-ink/68">
+                <ul className="mt-3 space-y-2 text-[0.96rem] font-bold leading-5 text-ink/68">
                   {openItems.map((item) => (
                     <li key={item} className="flex gap-2">
                       <span className="text-sail">+</span>
@@ -846,10 +830,10 @@ export default function AboutPage() {
                 </ul>
               </article>
               <article className="border-l-2 border-ink/20 px-5 py-3">
-                <p className="font-mono text-[0.68rem] font-black uppercase tracking-[0.14em] text-ink/40">
+                <p className="font-mono text-[0.86rem] font-black uppercase tracking-[0.14em] text-ink/40">
                   What is curated (not generic)
                 </p>
-                <ul className="mt-3 space-y-2 text-sm font-bold leading-5 text-ink/52">
+                <ul className="mt-3 space-y-2 text-[0.96rem] font-bold leading-5 text-ink/52">
                   {curatedItems.map((item) => (
                     <li key={item} className="flex gap-2">
                       <span className="text-ink/30">.</span>
@@ -861,15 +845,25 @@ export default function AboutPage() {
             </div>
 
             <div className="border border-ink/20 bg-ink/[0.03] px-5 py-4">
-              <p className="font-mono text-[0.68rem] font-black uppercase tracking-[0.14em] text-fire">
+              <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.14em] text-fire">
                 citation note
               </p>
-              <p className="mt-2 text-sm font-bold leading-6 text-ink/64">
-                If you use data or code from this project in research, please
-                cite both the original data sources (Google Books Ngram, Project
-                Gutenberg, Wikinews, lexical references, policy/legal sources,
-                and metadata APIs where applicable) and this archive. The
-                pipeline scripts are designed to be inspectable and reproducible.
+              <div className="mt-3 grid gap-4 text-[0.96rem] font-bold leading-6 text-ink/66 lg:grid-cols-[1fr_1.1fr]">
+                <p>
+                  Cite the archive and the upstream sources separately. A Words Over Time chart is an editorial synthesis of source retrieval, cleaning, transformation, semantic grouping, and visual design; it is not a replacement citation for Google Books Ngram, Project Gutenberg, Library of Congress, Wikimedia, dictionary publishers, policy pages, or clinical/technical references.
+                </p>
+                <div className="border-l border-ink/22 pl-4">
+                  <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.12em] text-ink/58">suggested website citation style</p>
+                  <p className="mt-2 font-mono text-[0.86rem] font-bold leading-6 text-ink/72">
+                    Words Over Time. "[Word page title]." Words Over Time, 2026, [page URL]. Accessed [day month year].
+                  </p>
+                  <p className="mt-3 font-mono text-[0.86rem] font-bold leading-6 text-ink/72">
+                    Example: Words Over Time. "Hub." Words Over Time, 2026, /words/hub. Accessed 27 May 2026.
+                  </p>
+                </div>
+              </div>
+              <p className="mt-4 border-t border-ink/14 pt-4 text-[0.9rem] font-bold leading-6 text-ink/54">
+                Rights note: this page is a research and design archive, not legal advice. Public launch should keep source URLs visible, avoid full third-party reproductions, and remove or paraphrase any pending, restricted, or subscription-only excerpt.
               </p>
             </div>
           </div>
@@ -878,7 +872,7 @@ export default function AboutPage() {
         <footer id="licensing" className="scroll-mt-20 border-t-2 border-ink py-8">
           <div className="grid gap-8 lg:grid-cols-[16rem_1fr] lg:gap-16">
             <AboutSectionHeader
-              num="09"
+              num="08"
               kicker="rights & attribution"
               title="Licensing"
             />
@@ -888,26 +882,26 @@ export default function AboutPage() {
                   key={license.category}
                   className="border-l-2 border-ink/45 px-5 pb-5 pt-1"
                 >
-                  <h3 className="font-mono text-[0.78rem] font-black uppercase tracking-[0.14em] text-fire">
+                  <h3 className="font-mono text-[0.86rem] font-black uppercase tracking-[0.14em] text-fire">
                     {license.category}
                   </h3>
                   {license.items.length > 0 ? (
-                    <ul className="mt-3 space-y-1 text-xs font-bold leading-5 text-ink/58">
+                    <ul className="mt-3 space-y-1 text-[0.82rem] font-bold leading-5 text-ink/58">
                       {license.items.map((item) => (
                         <li key={item}>{item}</li>
                       ))}
                     </ul>
                   ) : null}
-                  <p className="mt-4 text-sm font-black leading-5 text-ink/78">
+                  <p className="mt-4 text-[0.96rem] font-black leading-5 text-ink/78">
                     {license.statement}
                   </p>
-                  <p className="mt-2 text-xs font-bold leading-5 text-ink/62">
+                  <p className="mt-2 text-[0.82rem] font-bold leading-5 text-ink/62">
                     {license.note}
                   </p>
                   {license.url ? (
                     <a
                       href={license.url}
-                      className="mt-3 inline-block border-b border-ink/40 font-mono text-[0.66rem] font-black uppercase tracking-[0.14em] text-ink/64 transition hover:border-fire hover:text-fire"
+                      className="mt-3 inline-block border-b border-ink/40 font-mono text-[0.86rem] font-black uppercase tracking-[0.14em] text-ink/64 transition hover:border-fire hover:text-fire"
                       rel="noreferrer"
                       target="_blank"
                     >

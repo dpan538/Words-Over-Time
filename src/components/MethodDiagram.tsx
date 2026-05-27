@@ -70,18 +70,18 @@ export function MethodDiagram() {
               index < layers.length - 1 ? "border-b" : ""
             } ${isActive ? "bg-white/30" : "hover:bg-white/15"}`}
           >
-            <span className="flex items-center gap-2 border-r border-ink/35 p-3 text-sm font-black uppercase tracking-[0.12em] text-fire">
+            <span className="flex items-center gap-2 border-r border-ink/35 p-3 text-[0.96rem] font-black uppercase tracking-[0.12em] text-fire">
               <span
                 className={`h-3 w-3 border border-ink ${layer.colorClass}`}
               />
               {layer.number}
             </span>
             <span className="p-3">
-              <span className="block text-sm font-black uppercase tracking-[0.12em]">
+              <span className="block text-[0.96rem] font-black uppercase tracking-[0.12em]">
                 {layer.label}
               </span>
               <span
-                className={`mt-1 block text-[0.72rem] font-bold leading-4 transition duration-200 ${
+                className={`mt-1 block text-[0.86rem] font-bold leading-4 transition duration-200 ${
                   isActive ? "text-ink/74" : "text-ink/50"
                 }`}
               >
@@ -91,7 +91,7 @@ export function MethodDiagram() {
           </button>
         );
       })}
-      <p className="border-t border-ink/35 p-3 text-sm font-bold leading-5 text-ink/66">
+      <p className="border-t border-ink/35 p-3 text-[0.96rem] font-bold leading-5 text-ink/66">
         Not a general search engine. Each word is selected, structured, and
         annotated before it becomes a public entry.
       </p>

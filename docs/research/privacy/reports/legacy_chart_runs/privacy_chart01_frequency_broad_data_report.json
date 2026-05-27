@@ -1,0 +1,1052 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "chart_id": "chart01_frequency_broad",
+    "generated_at": "2026-05-26T12:26:25.892232Z",
+    "generated_by_script": "scripts/process_privacy_chart01_frequency_broad.py",
+    "raw_source": "docs/research/privacy/raw/privacy_chart01_frequency_broad_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_chart01_frequency_broad_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_chart01_frequency_broad_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_chart01_frequency_broad_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_chart01_frequency_broad_raw.json"
+    }
+  },
+  "counts": {
+    "term_count": 47,
+    "source_count": 3,
+    "year_range": [
+      1500,
+      2022
+    ],
+    "query_status": {
+      "collected": 0,
+      "sparse": 0,
+      "missing_or_failed": 141
+    },
+    "query_rows": 141,
+    "inflection_point_count": 0
+  },
+  "raw_source": {
+    "name": "Google Books Ngram Viewer",
+    "corpora": [
+      "en",
+      "en-GB",
+      "en-US"
+    ],
+    "start_year": 1500,
+    "end_year": 2022,
+    "smoothing": 0
+  },
+  "combined_series_summary": {
+    "highest_value": 0.0,
+    "peak_year": 1500,
+    "earliest_reliable_year": null,
+    "rise_candidates": [],
+    "fall_candidates": []
+  },
+  "query_status": [
+    {
+      "term": "privacy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "private",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privately",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privateness",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privatism",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privatise",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privatize",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privatization",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "secrecy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "secret",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "seclusion",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "solitude",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "isolation",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "publicity",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "public",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "personal",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "domestic",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "intimate",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "confidentiality",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "anonymity",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "surveillance",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "data privacy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "information privacy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "digital privacy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "online privacy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "internet privacy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "personal privacy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "individual privacy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "domestic privacy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "private life",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "right to privacy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy rights",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "invasion of privacy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy policy",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy policies",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy settings",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy notice",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy concern",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy concerns",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy and security",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy and surveillance",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy breach",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy violation",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "information control",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "data protection",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "data security",
+      "source": "en",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "private",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privately",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privateness",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privatism",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privatise",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privatize",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privatization",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "secrecy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "secret",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "seclusion",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "solitude",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "isolation",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "publicity",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "public",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "personal",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "domestic",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "intimate",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "confidentiality",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "anonymity",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "surveillance",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "data privacy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "information privacy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "digital privacy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "online privacy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "internet privacy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "personal privacy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "individual privacy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "domestic privacy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "private life",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "right to privacy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy rights",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "invasion of privacy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy policy",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy policies",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy settings",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy notice",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy concern",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy concerns",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy and security",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy and surveillance",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy breach",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy violation",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "information control",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "data protection",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "data security",
+      "source": "en-US",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "private",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privately",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privateness",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privatism",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privatise",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privatize",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privatization",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "secrecy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "secret",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "seclusion",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "solitude",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "isolation",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "publicity",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "public",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "personal",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "domestic",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "intimate",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "confidentiality",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "anonymity",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "surveillance",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "data privacy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "information privacy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "digital privacy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "online privacy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "internet privacy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "personal privacy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "individual privacy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "domestic privacy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "private life",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "right to privacy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy rights",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "invasion of privacy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy policy",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy policies",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy settings",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy notice",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy concern",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy concerns",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy and security",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy and surveillance",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy breach",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "privacy violation",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "information control",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "data protection",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "term": "data security",
+      "source": "en-GB",
+      "status": "failed",
+      "nonzero_points": 0,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    }
+  ],
+  "most_robust_terms": [],
+  "earliest_observations": [],
+  "rising_period_candidates": [],
+  "falling_period_candidates": [],
+  "output_files": {
+    "processed": "docs/research/privacy/processed/privacy_chart01_frequency_broad_processed.json",
+    "report_json": "docs/research/privacy/reports/privacy_chart01_frequency_broad_data_report.json",
+    "report_md": "docs/research/privacy/reports/privacy_chart01_frequency_broad_data_report.md",
+    "raw": "docs/research/privacy/raw/privacy_chart01_frequency_broad_raw.json"
+  },
+  "next_research_questions": [
+    "Can later passes validate high-confidence modern rises against contemporary corpora or pageview proxies?",
+    "Which root-family terms (private/privy/confidentiality) behave as noise versus signal for this project?",
+    "Which time windows should be normalized against total corpus volume rather than raw per-million counts?"
+  ]
+}

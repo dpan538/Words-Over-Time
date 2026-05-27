@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "updated_at": "2026-05-27T04:19:49.836538Z",
+    "note": "Research baseline for privacy first pass."
+  },
+  "frequency_terms_layer": {
+    "layer_id": "frequency_terms",
+    "title": "Privacy broad frequency baseline",
+    "generated_at": "2026-05-26T12:50:44.689077Z",
+    "generated_by_script": "scripts/process_privacy_frequency_terms.py",
+    "source_count": 3,
+    "term_count": 47,
+    "year_range": [
+      1500,
+      2022
+    ]
+  },
+  "etymology_early_usage_layer": {
+    "layer_id": "etymology_early_usage",
+    "title": "Etymology and early usage evidence for privacy",
+    "generated_at": "2026-05-26T12:50:46.136255Z",
+    "generated_by_script": "scripts/process_privacy_etymology_early_usage.py",
+    "entry_count": 32,
+    "earliest_candidate_year": 1200,
+    "earliest_reliable_year": 1200
+  },
+  "collocations_semantic_field_layer": {
+    "layer_id": "collocations_semantic_field",
+    "title": "Privacy broad collocation and semantic field layer",
+    "generated_at": "2026-05-26T12:50:51.016657Z",
+    "generated_by_script": "scripts/process_privacy_collocations_semantic_field.py",
+    "bucket_count": 9,
+    "strong_or_usable_count": 60,
+    "term_count": 89
+  },
+  "attention_metrics_layer": {
+    "layer_id": "attention_metrics",
+    "title": "Privacy attention/click proxy layer",
+    "generated_at": "2026-05-26T12:51:21.332840Z",
+    "generated_by_script": "scripts/process_privacy_attention_metrics.py",
+    "sources_available": 11,
+    "sources_total": 11,
+    "event_count": 5,
+    "unavailable_sources_count": 3
+  },
+  "timeline_source_index_layer": {
+    "layer_id": "timeline_source_index",
+    "title": "Privacy timeline source index",
+    "generated_at": "2026-05-26T12:51:21.362316Z",
+    "generated_by_script": "scripts/process_privacy_timeline_source_index.py",
+    "anchor_count": 19,
+    "high_confidence_count": 3,
+    "year_range": [
+      1300,
+      2022
+    ]
+  },
+  "geo_spatial_metrics_layer": {
+    "layer_id": "geo_spatial_metrics",
+    "title": "Privacy geo-spatial metrics",
+    "generated_at": "2026-05-26T13:27:13.321646Z",
+    "generated_by_script": "scripts/process_privacy_geo_spatial_metrics.py",
+    "total_records": 75171,
+    "country_level_record_count": 1419,
+    "point_level_record_count": 374,
+    "elevation_enriched_record_count": 37
+  },
+  "research_expansion_layer": {
+    "layer_id": "research_expansion",
+    "title": "Privacy research expansion",
+    "generated_at": "2026-05-27T03:18:32.517372Z",
+    "generated_by_script": "scripts/process_privacy_research_expansion.py",
+    "total_record_count": 1139,
+    "public_dated_evidence_count": 84,
+    "news_attention_count": 359,
+    "academic_transition_count": 218,
+    "failed_source_count": 1
+  },
+  "pre_modern_semantic_weather_layer": {
+    "layer_id": "pre_modern_semantic_weather",
+    "title": "Pre-modern semantic weather for privacy",
+    "generated_at": "2026-05-27T04:19:49.830940Z",
+    "generated_by_script": "scripts/process_privacy_pre_modern_semantic_weather.py",
+    "period_count": 4,
+    "track_count": 3,
+    "weather_point_count": 44,
+    "threshold_count": 1
+  },
+  "legal_injury_matrix_layer": {
+    "layer_id": "legal_injury_matrix",
+    "title": "From privacy to legal injury",
+    "status": "derived_for_chart01b",
+    "processed_path": "docs/research/privacy/processed/privacy_legal_injury_matrix_processed.json",
+    "generated_path": "src/data/generated/privacy_legal_injury_matrix.json",
+    "generated_by_script": "scripts/process_privacy_legal_injury_matrix.py",
+    "note": "Privacy chart 01B layer; intentionally not chart02."
+  },
+  "modern_transit_system_layer": {
+    "layer_id": "modern_transit_system",
+    "title": "Privacy modern semantic transit system",
+    "status": "source_supported_for_chart01c",
+    "processed_path": "docs/research/privacy/processed/privacy_modern_transit_system_processed.json",
+    "generated_path": "src/data/generated/privacy_modern_transit_system.json",
+    "generated_by_script": "scripts/process_privacy_modern_transit_system.py",
+    "generated_at": "2026-05-27T10:45:42.420697+00:00",
+    "route_count": 7,
+    "station_count": 23,
+    "transfer_station_count": 17,
+    "note": "Privacy chart 01C layer inside chart01; intentionally not chart02."
+  }
+}

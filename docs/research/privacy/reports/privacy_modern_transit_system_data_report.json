@@ -1,0 +1,65 @@
+{
+  "word": "privacy",
+  "layer_id": "modern_transit_system",
+  "generated_at": "2026-05-27T10:45:42.420697+00:00",
+  "route_count": 7,
+  "station_count": 23,
+  "transfer_station_count": 17,
+  "route_segment_count": 39,
+  "flow_metric_count": 42,
+  "reachable_source_count": 23,
+  "source_count": 23,
+  "manual_review_count": 3,
+  "failed_sources": [],
+  "routes": [
+    {
+      "route_id": "rights_personhood",
+      "station_count": 4,
+      "frequency_series_count": 15,
+      "collocation_hit_count": 5,
+      "max_particle_density": 0.782
+    },
+    {
+      "route_id": "information_data_protection",
+      "station_count": 15,
+      "frequency_series_count": 9,
+      "collocation_hit_count": 4,
+      "max_particle_density": 1.0
+    },
+    {
+      "route_id": "internet_platform_interface",
+      "station_count": 8,
+      "frequency_series_count": 21,
+      "collocation_hit_count": 8,
+      "max_particle_density": 0.879
+    },
+    {
+      "route_id": "surveillance_security_tension",
+      "station_count": 5,
+      "frequency_series_count": 9,
+      "collocation_hit_count": 5,
+      "max_particle_density": 0.968
+    },
+    {
+      "route_id": "breach_risk_compliance",
+      "station_count": 7,
+      "frequency_series_count": 3,
+      "collocation_hit_count": 5,
+      "max_particle_density": 0.703
+    },
+    {
+      "route_id": "identity_consent_advertising",
+      "station_count": 5,
+      "frequency_series_count": 0,
+      "collocation_hit_count": 4,
+      "max_particle_density": 0.425
+    },
+    {
+      "route_id": "ai_biometrics_sensitive_data",
+      "station_count": 2,
+      "frequency_series_count": 0,
+      "collocation_hit_count": 6,
+      "max_particle_density": 0.258
+    }
+  ]
+}

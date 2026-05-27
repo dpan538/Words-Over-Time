@@ -2,39 +2,46 @@ import type { Metric, Word } from "@/types/word";
 
 export const words: Word[] = [
   {
-    label: "forever",
-    slug: "forever",
-    status: "complete",
-    href: "/words/forever",
-  },
-  {
-    label: "depression",
-    slug: "depression",
-    status: "complete",
-    href: "/words/depression",
-  },
-  {
     label: "data",
     slug: "data",
     status: "complete",
     href: "/words/data",
+    hoverLabel: "social count",
   },
   {
     label: "privacy",
     slug: "privacy",
-    status: "coming-soon",
+    status: "complete",
+    href: "/words/privacy",
+    hoverLabel: "private weather",
   },
   {
     label: "artificial",
     slug: "artificial",
     status: "complete",
     href: "/words/artificial",
+    hoverLabel: "made meaning",
   },
   {
     label: "hub",
     slug: "hub",
     status: "complete",
     href: "/words/hub",
+    hoverLabel: "center moved",
+  },
+  {
+    label: "depression",
+    slug: "depression",
+    status: "complete",
+    href: "/words/depression",
+    hoverLabel: "double crisis",
+  },
+  {
+    label: "forever",
+    slug: "forever",
+    status: "complete",
+    href: "/words/forever",
+    hoverLabel: "long promise",
   },
   {
     label: "intelligence",

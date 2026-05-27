@@ -1,0 +1,294 @@
+{
+  "word": "privacy",
+  "chart_id": "chart04_attention_clicks",
+  "title": "Privacy attention/click proxy layer",
+  "description": "Yearly public-attention proxy from Wikimedia pageviews plus event annotations where attention is likely policy-driven.",
+  "sources": [
+    {
+      "source_id": "wikipedia_pageviews",
+      "description": "Wikimedia Pageviews API (monthly, aggregated to yearly totals).",
+      "available": false,
+      "page_count": 11
+    }
+  ],
+  "series": [
+    {
+      "label": "Privacy",
+      "page": "Privacy",
+      "source": "wikipedia_pageviews",
+      "values": [],
+      "total_views": 0,
+      "available": false,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "label": "Internet_privacy",
+      "page": "Internet_privacy",
+      "source": "wikipedia_pageviews",
+      "values": [],
+      "total_views": 0,
+      "available": false,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "label": "Information_privacy",
+      "page": "Information_privacy",
+      "source": "wikipedia_pageviews",
+      "values": [],
+      "total_views": 0,
+      "available": false,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "label": "Data_privacy",
+      "page": "Data_privacy",
+      "source": "wikipedia_pageviews",
+      "values": [],
+      "total_views": 0,
+      "available": false,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "label": "Privacy_policy",
+      "page": "Privacy_policy",
+      "source": "wikipedia_pageviews",
+      "values": [],
+      "total_views": 0,
+      "available": false,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "label": "Right_to_privacy",
+      "page": "Right_to_privacy",
+      "source": "wikipedia_pageviews",
+      "values": [],
+      "total_views": 0,
+      "available": false,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "label": "Surveillance",
+      "page": "Surveillance",
+      "source": "wikipedia_pageviews",
+      "values": [],
+      "total_views": 0,
+      "available": false,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "label": "General_data_protection_regulation",
+      "page": "General_data_protection_regulation",
+      "source": "wikipedia_pageviews",
+      "values": [],
+      "total_views": 0,
+      "available": false,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "label": "California_Consumer_Privacy_Act",
+      "page": "California_Consumer_Privacy_Act",
+      "source": "wikipedia_pageviews",
+      "values": [],
+      "total_views": 0,
+      "available": false,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "label": "Data_breach",
+      "page": "Data_breach",
+      "source": "wikipedia_pageviews",
+      "values": [],
+      "total_views": 0,
+      "available": false,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "label": "Digital_rights",
+      "page": "Digital_rights",
+      "source": "wikipedia_pageviews",
+      "values": [],
+      "total_views": 0,
+      "available": false,
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known"
+    }
+  ],
+  "events": [
+    {
+      "date": "1988-01-01",
+      "label": "1988 - U.S. Privacy Act enforcement era visibility growth in federal record privacy language.",
+      "category": "policy",
+      "confidence": "medium"
+    },
+    {
+      "date": "2013-06-01",
+      "label": "2013 - Mass-surveillance disclosures increase public interest in privacy and surveillance topics.",
+      "category": "attention",
+      "confidence": "medium"
+    },
+    {
+      "date": "2018-05-25",
+      "label": "2018 - GDPR launches practical policy discourse in public and platform communication.",
+      "category": "policy",
+      "confidence": "high"
+    },
+    {
+      "date": "2020-01-01",
+      "label": "2020 - CCPA becomes active and enters consumer-facing privacy coverage.",
+      "category": "policy",
+      "confidence": "medium"
+    },
+    {
+      "date": "2020-06-01",
+      "label": "2020-2024 - Platform settings and privacy controls become major coverage topics.",
+      "category": "attention",
+      "confidence": "low"
+    }
+  ],
+  "unavailable_sources": [
+    {
+      "source_id": "google_trends",
+      "source": "Google Trends",
+      "availability": "not_fetched",
+      "reason": "No stable official public API available in this environment."
+    },
+    {
+      "source_id": "now_corpus",
+      "source": "NOW Corpus",
+      "availability": "not_fetched",
+      "reason": "Requires paid/managed access or exports outside this environment."
+    },
+    {
+      "source_id": "coca",
+      "source": "COCA",
+      "availability": "not_fetched",
+      "reason": "No public API in this environment."
+    },
+    {
+      "source_id": "wikipedia_pageviews",
+      "source": "Wikimedia Pageviews API",
+      "availability": "failed",
+      "reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "page": "Privacy"
+    },
+    {
+      "source_id": "wikipedia_pageviews",
+      "source": "Wikimedia Pageviews API",
+      "availability": "failed",
+      "reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "page": "Internet_privacy"
+    },
+    {
+      "source_id": "wikipedia_pageviews",
+      "source": "Wikimedia Pageviews API",
+      "availability": "failed",
+      "reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "page": "Information_privacy"
+    },
+    {
+      "source_id": "wikipedia_pageviews",
+      "source": "Wikimedia Pageviews API",
+      "availability": "failed",
+      "reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "page": "Data_privacy"
+    },
+    {
+      "source_id": "wikipedia_pageviews",
+      "source": "Wikimedia Pageviews API",
+      "availability": "failed",
+      "reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "page": "Privacy_policy"
+    },
+    {
+      "source_id": "wikipedia_pageviews",
+      "source": "Wikimedia Pageviews API",
+      "availability": "failed",
+      "reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "page": "Right_to_privacy"
+    },
+    {
+      "source_id": "wikipedia_pageviews",
+      "source": "Wikimedia Pageviews API",
+      "availability": "failed",
+      "reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "page": "Surveillance"
+    },
+    {
+      "source_id": "wikipedia_pageviews",
+      "source": "Wikimedia Pageviews API",
+      "availability": "failed",
+      "reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "page": "General_data_protection_regulation"
+    },
+    {
+      "source_id": "wikipedia_pageviews",
+      "source": "Wikimedia Pageviews API",
+      "availability": "failed",
+      "reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "page": "California_Consumer_Privacy_Act"
+    },
+    {
+      "source_id": "wikipedia_pageviews",
+      "source": "Wikimedia Pageviews API",
+      "availability": "failed",
+      "reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "page": "Data_breach"
+    },
+    {
+      "source_id": "wikipedia_pageviews",
+      "source": "Wikimedia Pageviews API",
+      "availability": "failed",
+      "reason": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "page": "Digital_rights"
+    }
+  ],
+  "notes": [
+    "Pageviews are a proxy for public attention and should not be interpreted as usage frequency.",
+    "Google Trends and NOW/COCA were intentionally not collected in this pass.",
+    "Failures and fetch gaps are preserved as part of the source audit."
+  ],
+  "source_notes": [
+    "Wikimedia pageviews are available for many concept pages, but data shifts with media cycles and coverage quality.",
+    "The source is user-activity based and not a replacement for linguistic or policy-document frequency."
+  ],
+  "analysis": {
+    "series_count": 11,
+    "available_series_count": 0,
+    "unavailable_series_count": 11,
+    "total_views": 0,
+    "earliest_year": null,
+    "latest_year": null,
+    "years_covered": []
+  },
+  "events_summary": [
+    {
+      "date": "1988-01-01",
+      "label": "1988 - U.S. Privacy Act enforcement era visibility growth in federal record privacy language.",
+      "category": "policy",
+      "confidence": "medium"
+    },
+    {
+      "date": "2013-06-01",
+      "label": "2013 - Mass-surveillance disclosures increase public interest in privacy and surveillance topics.",
+      "category": "attention",
+      "confidence": "medium"
+    },
+    {
+      "date": "2018-05-25",
+      "label": "2018 - GDPR launches practical policy discourse in public and platform communication.",
+      "category": "policy",
+      "confidence": "high"
+    },
+    {
+      "date": "2020-01-01",
+      "label": "2020 - CCPA becomes active and enters consumer-facing privacy coverage.",
+      "category": "policy",
+      "confidence": "medium"
+    },
+    {
+      "date": "2020-06-01",
+      "label": "2020-2024 - Platform settings and privacy controls become major coverage topics.",
+      "category": "attention",
+      "confidence": "low"
+    }
+  ]
+}

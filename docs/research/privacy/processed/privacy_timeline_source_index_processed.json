@@ -1,0 +1,614 @@
+{
+  "word": "privacy",
+  "layer_id": "timeline_source_index",
+  "title": "Privacy timeline source index",
+  "anchors": [
+    {
+      "year": 1300,
+      "label": "Latin privatus/privare lineage noted in private-related scholarship",
+      "category": "lexical_origin",
+      "description": "Privacy is likely a much later noun stabilized in modern English; roots are linked through private/seclusion traditions.",
+      "source": "Oxford-style etymological references (subscription/public)",
+      "source_url": "https://www.oed.com/search/dictionary/?scope=Entries&q=private",
+      "confidence": "low",
+      "notes": "Indirect and often secondary reconstruction in this pass.",
+      "date_label": "c. 14th-15th century (indirect)",
+      "source_status": {
+        "source_id": "www.oed.com",
+        "reachable": false,
+        "status_code_or_error": "HTTPError 403 Forbidden",
+        "checked_at": "2026-05-26T12:51:09.710021Z"
+      },
+      "anchor_id": "privacy_lexical_origin_private"
+    },
+    {
+      "year": 1500,
+      "label": "Private / privacy-adjacent terms appear in moral and social meaning fields",
+      "category": "early_usage",
+      "description": "Historical dictionary traditions describe private as opposed to public or common exposure in pre-modern records.",
+      "source": "Historical dictionary references and usage guides",
+      "source_url": "https://www.oed.com/search/dictionary/?scope=Entries&q=private",
+      "confidence": "low",
+      "notes": "Needs direct primary verification in a later pass.",
+      "date_label": "pre-1600 (candidate)",
+      "source_status": {
+        "source_id": "www.oed.com",
+        "reachable": false,
+        "status_code_or_error": "HTTPError 403 Forbidden",
+        "checked_at": "2026-05-26T12:51:10.654158Z"
+      },
+      "anchor_id": "privacy_early_private_usage"
+    },
+    {
+      "year": 1814,
+      "label": "Early public/private distinction appears in legal and social writing",
+      "category": "public_private_distinction",
+      "description": "Scholarly framing of privacy as seclusion vs exposure becomes increasingly explicit.",
+      "source": "Legal-philosophical literature overviews",
+      "source_url": "https://www.merriam-webster.com/dictionary/private",
+      "confidence": "low",
+      "notes": "Keep as directional; not fixed to a single definitive source line yet.",
+      "date_label": "around 1814",
+      "source_status": {
+        "source_id": "www.merriam-webster.com",
+        "reachable": true,
+        "status_code_or_error": "200",
+        "checked_at": "2026-05-26T12:51:10.861466Z"
+      },
+      "anchor_id": "privacy_public_private_distinction"
+    },
+    {
+      "year": 1890,
+      "label": "Warren and Brandeis publish 'The Right to Privacy'",
+      "category": "legal_rights",
+      "description": "The article frames privacy as a legal right against unjustified intrusion.",
+      "source": "Warren & Brandeis, The Right to Privacy",
+      "source_url": "https://www.law.cornell.edu/wex/right_to_privacy",
+      "confidence": "high",
+      "notes": "Well-established publication anchor.",
+      "date_label": "1890",
+      "source_status": {
+        "source_id": "www.law.cornell.edu",
+        "reachable": true,
+        "status_code_or_error": "200",
+        "checked_at": "2026-05-26T12:51:12.226251Z"
+      },
+      "anchor_id": "privacy_1890_right_to_privacy"
+    },
+    {
+      "year": 1950,
+      "label": "Information privacy terminology gains traction in mid-century governance discourse",
+      "category": "information_theory",
+      "description": "The term family begins to treat privacy as informational control rather than only seclusion.",
+      "source": "Privacy policy histories and archival legal summaries",
+      "source_url": "https://www.ftc.gov/news-events/topics/privacy-technology",
+      "confidence": "medium",
+      "notes": "Approximate anchor for semantic expansion.",
+      "date_label": "mid-20th century",
+      "source_status": {
+        "source_id": "www.ftc.gov",
+        "reachable": false,
+        "status_code_or_error": "HTTPError 404 Not Found",
+        "checked_at": "2026-05-26T12:51:12.727810Z"
+      },
+      "anchor_id": "privacy_information_theory"
+    },
+    {
+      "year": 1950,
+      "label": "Domestic/privacy-of-home framing appears in family and personal life contexts",
+      "category": "domestic_life",
+      "description": "Privacy remains linked to family, home, and bodily/person-based protection.",
+      "source": "Secondary legal and social science summaries",
+      "source_url": "https://www.oed.com/search/dictionary/?scope=Entries&q=domestic",
+      "confidence": "low",
+      "notes": "Needs direct text-level support.",
+      "date_label": "mid-late 20th century",
+      "source_status": {
+        "source_id": "www.oed.com",
+        "reachable": false,
+        "status_code_or_error": "HTTPError 403 Forbidden",
+        "checked_at": "2026-05-26T12:51:13.662965Z"
+      },
+      "anchor_id": "privacy_domestic_life"
+    },
+    {
+      "year": 1974,
+      "label": "U.S. Privacy Act",
+      "category": "data_protection",
+      "description": "Federal regulations begin restricting agency handling of records and personal data governance.",
+      "source": "U.S. Privacy Act of 1974",
+      "source_url": "https://www.justice.gov/opcl/privacy-act-1974",
+      "confidence": "high",
+      "notes": "Strong legal anchor.",
+      "date_label": "1974",
+      "source_status": {
+        "source_id": "www.justice.gov",
+        "reachable": true,
+        "status_code_or_error": "200",
+        "checked_at": "2026-05-26T12:51:13.768770Z"
+      },
+      "anchor_id": "privacy_data_protection_1974_us"
+    },
+    {
+      "year": 1980,
+      "label": "OECD data protection guidance for automated processing",
+      "category": "data_protection",
+      "description": "OECD starts shaping international data-protection and personal-information language.",
+      "source": "OECD Recommendation on Data Protection",
+      "source_url": "https://www.oecd.org/en/data/",
+      "confidence": "medium",
+      "notes": "Policy-level anchor rather than a single source quote in this pass.",
+      "date_label": "1980",
+      "source_status": {
+        "source_id": "www.oecd.org",
+        "reachable": false,
+        "status_code_or_error": "HTTPError 403 Forbidden",
+        "checked_at": "2026-05-26T12:51:13.954403Z"
+      },
+      "anchor_id": "privacy_data_protection_1980_oecd"
+    },
+    {
+      "year": 1984,
+      "label": "Privacy language begins to be associated with automated and database systems",
+      "category": "computing",
+      "description": "Data banking, records systems, and computer processing expand the privacy vocabulary.",
+      "source": "Technical/legal overviews on U.S./U.K. data governance",
+      "source_url": "https://www.legislation.gov.uk/ukpga/1984/2/contents",
+      "confidence": "medium",
+      "notes": "Category proxy; supports transition into information-technology contexts.",
+      "date_label": "1980s",
+      "source_status": {
+        "source_id": "www.legislation.gov.uk",
+        "reachable": true,
+        "status_code_or_error": "200",
+        "checked_at": "2026-05-26T12:51:14.120427Z"
+      },
+      "anchor_id": "privacy_computing_mainframes"
+    },
+    {
+      "year": 1995,
+      "label": "Internet-era usage introduces privacy as online activity concern",
+      "category": "internet",
+      "description": "Commercial web adoption drives user-facing privacy language around cookies, tracking, and account safety.",
+      "source": "Web policy histories and privacy concept pages",
+      "source_url": "https://www.ftc.gov/news-events/topics/privacy-technology",
+      "confidence": "medium",
+      "notes": "Directional marker for chart planning.",
+      "date_label": "1990s",
+      "source_status": {
+        "source_id": "www.ftc.gov",
+        "reachable": false,
+        "status_code_or_error": "HTTPError 404 Not Found",
+        "checked_at": "2026-05-26T12:51:14.447038Z"
+      },
+      "anchor_id": "privacy_internet_1990"
+    },
+    {
+      "year": 2000,
+      "label": "Privacy policy and settings interfaces become user-facing in platforms",
+      "category": "platform_governance",
+      "description": "Online services increasingly expose privacy settings and policy controls to end-users.",
+      "source": "Platform terms history and consumer privacy literature",
+      "source_url": "https://www.ftc.gov/news-events/topics/privacy-technology",
+      "confidence": "medium",
+      "notes": "Needs product-level primary-page audit in later pass.",
+      "date_label": "2000s",
+      "source_status": {
+        "source_id": "www.ftc.gov",
+        "reachable": false,
+        "status_code_or_error": "HTTPError 404 Not Found",
+        "checked_at": "2026-05-26T12:51:14.782661Z"
+      },
+      "anchor_id": "privacy_platform_governance_2000"
+    },
+    {
+      "year": 2001,
+      "label": "Security and surveillance language tightens with post-9/11 governance",
+      "category": "surveillance",
+      "description": "Institutional security concerns increase public focus on surveillance/privacy trade-offs.",
+      "source": "Public safety and civil-liberty summaries",
+      "source_url": "https://www.oag.ca.gov/privacy",
+      "confidence": "low",
+      "notes": "Directional; broad year spread.",
+      "date_label": "2001+",
+      "source_status": {
+        "source_id": "www.oag.ca.gov",
+        "reachable": true,
+        "status_code_or_error": "200",
+        "checked_at": "2026-05-26T12:51:15.538018Z"
+      },
+      "anchor_id": "privacy_surveillance_2001"
+    },
+    {
+      "year": 2005,
+      "label": "Breach-disclosure reporting begins to normalize privacy-security discourse",
+      "category": "breach",
+      "description": "Privacy/security risk language strengthens as breach notices and protections expand.",
+      "source": "Policy briefings and breach reporting frameworks",
+      "source_url": "https://www.ftc.gov/news-events/topics/privacy-technology",
+      "confidence": "low",
+      "notes": "Broad marker, year precision is low.",
+      "date_label": "2000s",
+      "source_status": {
+        "source_id": "www.ftc.gov",
+        "reachable": false,
+        "status_code_or_error": "HTTPError 404 Not Found",
+        "checked_at": "2026-05-26T12:51:15.836452Z"
+      },
+      "anchor_id": "privacy_security_breach_2005"
+    },
+    {
+      "year": 2013,
+      "label": "Post-Snowden public discourse broadens around surveillance and personal autonomy",
+      "category": "cultural_event",
+      "description": "Large-scale surveillance disclosures become a major reference point for privacy debates.",
+      "source": "Media/legal retrospectives",
+      "source_url": "https://www.privacyinternational.org",
+      "confidence": "medium",
+      "notes": "Directional event marker, not a single legal anchor.",
+      "date_label": "2013",
+      "source_status": {
+        "source_id": "www.privacyinternational.org",
+        "reachable": true,
+        "status_code_or_error": "200",
+        "checked_at": "2026-05-26T12:51:18.656743Z"
+      },
+      "anchor_id": "privacy_snowden_2013"
+    },
+    {
+      "year": 2018,
+      "label": "GDPR enforcement era expands consumer-facing privacy consciousness",
+      "category": "policy_regulation",
+      "description": "Regulatory framework accelerates global references to consent, rights, and platform duties.",
+      "source": "EU GDPR",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "confidence": "high",
+      "notes": "High-confidence anchor with stable legal source.",
+      "date_label": "2018 enforcement",
+      "source_status": {
+        "source_id": "eur-lex.europa.eu",
+        "reachable": true,
+        "status_code_or_error": "202",
+        "checked_at": "2026-05-26T12:51:16.388156Z"
+      },
+      "anchor_id": "privacy_gdpr_2016"
+    },
+    {
+      "year": 2018,
+      "label": "Targeted advertising and social profiling scandals intensify privacy attention",
+      "category": "advertising",
+      "description": "Data use and microtargeting controversies reshape public language around privacy.",
+      "source": "Social media and governance reporting",
+      "source_url": "https://www.ftc.gov/news-events/topics/privacy-technology",
+      "confidence": "medium",
+      "notes": "Media-driven marker; useful for event annotation.",
+      "date_label": "2018",
+      "source_status": {
+        "source_id": "www.ftc.gov",
+        "reachable": false,
+        "status_code_or_error": "HTTPError 404 Not Found",
+        "checked_at": "2026-05-26T12:51:18.962177Z"
+      },
+      "anchor_id": "privacy_cambridge_analytica_2018"
+    },
+    {
+      "year": 2020,
+      "label": "U.S. state privacy regulation enters mainstream product and press attention",
+      "category": "policy_regulation",
+      "description": "CCPA introduces state-level consumer privacy rights framing and private-sector obligations.",
+      "source": "California Consumer Privacy Act",
+      "source_url": "https://www.oag.ca.gov/privacy/ccpa",
+      "confidence": "medium",
+      "notes": "Use as policy-growth anchor, not corpus evidence.",
+      "date_label": "2018 law, 2020 active",
+      "source_status": {
+        "source_id": "www.oag.ca.gov",
+        "reachable": true,
+        "status_code_or_error": "200",
+        "checked_at": "2026-05-26T12:51:17.272170Z"
+      },
+      "anchor_id": "privacy_ccpa_2020"
+    },
+    {
+      "year": 2020,
+      "label": "Biometric and generative-model privacy concerns move into policy and rights discussions",
+      "category": "ai_biometrics",
+      "description": "AI and biometric analytics create privacy tensions around inference, identity, and automated profiling.",
+      "source": "AI and governance overviews",
+      "source_url": "https://www.oecd.org/going-further/ai/",
+      "confidence": "low",
+      "notes": "Early and high-uncertainty, especially in exact year placement.",
+      "date_label": "2020s",
+      "source_status": {
+        "source_id": "www.oecd.org",
+        "reachable": false,
+        "status_code_or_error": "HTTPError 403 Forbidden",
+        "checked_at": "2026-05-26T12:51:19.043087Z"
+      },
+      "anchor_id": "privacy_ai_biometrics_2020"
+    },
+    {
+      "year": 2022,
+      "label": "Search-intent measures remain a recommended future anchor source",
+      "category": "uncertain",
+      "description": "Search trend proxies are valuable for post-2020 attention but require a stable acquisition method.",
+      "source": "Project constraints",
+      "source_url": "https://trends.google.com/trends/",
+      "confidence": "low",
+      "notes": "Placeholder anchor; not date-grounded in this pass.",
+      "date_label": "placeholder",
+      "source_status": {
+        "source_id": "trends.google.com",
+        "reachable": true,
+        "status_code_or_error": "200",
+        "checked_at": "2026-05-26T12:51:20.071010Z"
+      },
+      "anchor_id": "privacy_google_trends_gap"
+    }
+  ],
+  "categories": [
+    "lexical_origin",
+    "early_usage",
+    "public_private_distinction",
+    "legal_rights",
+    "domestic_life",
+    "information_theory",
+    "data_protection",
+    "computing",
+    "internet",
+    "platform_governance",
+    "surveillance",
+    "security",
+    "advertising",
+    "breach",
+    "policy_regulation",
+    "ai_biometrics",
+    "cultural_event",
+    "uncertain"
+  ],
+  "category_labels": {
+    "lexical_origin": "Lexical origin",
+    "early_usage": "Early usage",
+    "public_private_distinction": "Public-private distinction",
+    "legal_rights": "Legal rights",
+    "domestic_life": "Domestic life and private life",
+    "information_theory": "Information and data theory",
+    "data_protection": "Data protection law",
+    "computing": "Computing and systems",
+    "internet": "Internet and web era",
+    "platform_governance": "Platform governance",
+    "surveillance": "Surveillance and monitoring",
+    "security": "Security and threat management",
+    "advertising": "Advertising and targeting",
+    "breach": "Breach incidents",
+    "policy_regulation": "Policy regulation",
+    "ai_biometrics": "AI and biometrics",
+    "cultural_event": "Cultural event",
+    "uncertain": "Uncertain"
+  },
+  "source_index": [
+    {
+      "source_id": "www.oed.com",
+      "source_url": "https://www.oed.com/search/dictionary/?scope=Entries&q=private",
+      "title": "Oxford-style etymological references (subscription/public)",
+      "checked_at": "2026-05-26T12:51:09.709899Z",
+      "checks": 3,
+      "reachable": false,
+      "failure_examples": [
+        "HTTPError 403 Forbidden",
+        "HTTPError 403 Forbidden",
+        "HTTPError 403 Forbidden"
+      ]
+    },
+    {
+      "source_id": "www.merriam-webster.com",
+      "source_url": "https://www.merriam-webster.com/dictionary/private",
+      "title": "Legal-philosophical literature overviews",
+      "checked_at": "2026-05-26T12:51:10.861395Z",
+      "checks": 1,
+      "reachable": true,
+      "failure_examples": []
+    },
+    {
+      "source_id": "www.law.cornell.edu",
+      "source_url": "https://www.law.cornell.edu/wex/right_to_privacy",
+      "title": "Warren & Brandeis, The Right to Privacy",
+      "checked_at": "2026-05-26T12:51:12.226191Z",
+      "checks": 1,
+      "reachable": true,
+      "failure_examples": []
+    },
+    {
+      "source_id": "www.ftc.gov",
+      "source_url": "https://www.ftc.gov/news-events/topics/privacy-technology",
+      "title": "Privacy policy histories and archival legal summaries",
+      "checked_at": "2026-05-26T12:51:12.727769Z",
+      "checks": 5,
+      "reachable": false,
+      "failure_examples": [
+        "HTTPError 404 Not Found",
+        "HTTPError 404 Not Found",
+        "HTTPError 404 Not Found",
+        "HTTPError 404 Not Found",
+        "HTTPError 404 Not Found"
+      ]
+    },
+    {
+      "source_id": "www.justice.gov",
+      "source_url": "https://www.justice.gov/opcl/privacy-act-1974",
+      "title": "U.S. Privacy Act of 1974",
+      "checked_at": "2026-05-26T12:51:13.768720Z",
+      "checks": 1,
+      "reachable": true,
+      "failure_examples": []
+    },
+    {
+      "source_id": "www.oecd.org",
+      "source_url": "https://www.oecd.org/en/data/",
+      "title": "OECD Recommendation on Data Protection",
+      "checked_at": "2026-05-26T12:51:13.954380Z",
+      "checks": 2,
+      "reachable": false,
+      "failure_examples": [
+        "HTTPError 403 Forbidden",
+        "HTTPError 403 Forbidden"
+      ]
+    },
+    {
+      "source_id": "www.legislation.gov.uk",
+      "source_url": "https://www.legislation.gov.uk/ukpga/1984/2/contents",
+      "title": "Technical/legal overviews on U.S./U.K. data governance",
+      "checked_at": "2026-05-26T12:51:14.120410Z",
+      "checks": 1,
+      "reachable": true,
+      "failure_examples": []
+    },
+    {
+      "source_id": "www.oag.ca.gov",
+      "source_url": "https://www.oag.ca.gov/privacy",
+      "title": "Public safety and civil-liberty summaries",
+      "checked_at": "2026-05-26T12:51:15.537968Z",
+      "checks": 2,
+      "reachable": true,
+      "failure_examples": []
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "title": "EU GDPR",
+      "checked_at": "2026-05-26T12:51:16.388122Z",
+      "checks": 1,
+      "reachable": true,
+      "failure_examples": []
+    },
+    {
+      "source_id": "www.privacyinternational.org",
+      "source_url": "https://www.privacyinternational.org",
+      "title": "Media/legal retrospectives",
+      "checked_at": "2026-05-26T12:51:18.656680Z",
+      "checks": 1,
+      "reachable": true,
+      "failure_examples": []
+    },
+    {
+      "source_id": "trends.google.com",
+      "source_url": "https://trends.google.com/trends/",
+      "title": "Project constraints",
+      "checked_at": "2026-05-26T12:51:20.070948Z",
+      "checks": 1,
+      "reachable": true,
+      "failure_examples": []
+    }
+  ],
+  "uncertain_anchors": [
+    {
+      "year": 1300,
+      "label": "Latin privatus/privare lineage noted in private-related scholarship",
+      "category": "lexical_origin",
+      "confidence": "low",
+      "notes": "Indirect and often secondary reconstruction in this pass."
+    },
+    {
+      "year": 1500,
+      "label": "Private / privacy-adjacent terms appear in moral and social meaning fields",
+      "category": "early_usage",
+      "confidence": "low",
+      "notes": "Needs direct primary verification in a later pass."
+    },
+    {
+      "year": 1814,
+      "label": "Early public/private distinction appears in legal and social writing",
+      "category": "public_private_distinction",
+      "confidence": "low",
+      "notes": "Keep as directional; not fixed to a single definitive source line yet."
+    },
+    {
+      "year": 1950,
+      "label": "Domestic/privacy-of-home framing appears in family and personal life contexts",
+      "category": "domestic_life",
+      "confidence": "low",
+      "notes": "Needs direct text-level support."
+    },
+    {
+      "year": 2001,
+      "label": "Security and surveillance language tightens with post-9/11 governance",
+      "category": "surveillance",
+      "confidence": "low",
+      "notes": "Directional; broad year spread."
+    },
+    {
+      "year": 2005,
+      "label": "Breach-disclosure reporting begins to normalize privacy-security discourse",
+      "category": "breach",
+      "confidence": "low",
+      "notes": "Broad marker, year precision is low."
+    },
+    {
+      "year": 2020,
+      "label": "Biometric and generative-model privacy concerns move into policy and rights discussions",
+      "category": "ai_biometrics",
+      "confidence": "low",
+      "notes": "Early and high-uncertainty, especially in exact year placement."
+    },
+    {
+      "year": 2022,
+      "label": "Search-intent measures remain a recommended future anchor source",
+      "category": "uncertain",
+      "confidence": "low",
+      "notes": "Placeholder anchor; not date-grounded in this pass."
+    }
+  ],
+  "notes": [
+    "Anchors are modular and should be treated as source-planning points.",
+    "Low-confidence items include directional markers and placeholders where year precision is weak.",
+    "Source reachability checks are preliminary and do not certify semantic claims."
+  ],
+  "source_notes": [
+    "Some anchors intentionally include event-level placeholders for future follow-up.",
+    "Early lexical origin anchors remain date-uncertain due sparse direct dictionary digitization in this pass.",
+    "This file is meant to support later chart annotation layers."
+  ],
+  "statistics": {
+    "anchor_count": 19,
+    "high_confidence_count": 3,
+    "medium_confidence_count": 8,
+    "low_confidence_count": 8,
+    "category_counts": {
+      "lexical_origin": 1,
+      "early_usage": 1,
+      "public_private_distinction": 1,
+      "legal_rights": 1,
+      "information_theory": 1,
+      "domestic_life": 1,
+      "data_protection": 2,
+      "computing": 1,
+      "internet": 1,
+      "platform_governance": 1,
+      "surveillance": 1,
+      "breach": 1,
+      "cultural_event": 1,
+      "policy_regulation": 2,
+      "advertising": 1,
+      "ai_biometrics": 1,
+      "uncertain": 1
+    },
+    "confidence_counts": {
+      "low": 8,
+      "high": 3,
+      "medium": 8
+    },
+    "source_status_counts": {
+      "unreachable": 10,
+      "reachable": 9
+    },
+    "reachable_sources": 8,
+    "source_total": 11
+  },
+  "metadata_summary": {
+    "year_range": [
+      1300,
+      2022
+    ],
+    "uncertain_anchor_count": 8
+  }
+}

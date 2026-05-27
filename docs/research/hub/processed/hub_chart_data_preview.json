@@ -150625,5 +150625,1059 @@
       "Modern naming patterns may be undercounted in printed-book corpora.",
       "Ambiguous broad phrases need context before making semantic claims."
     ]
+  },
+  "chart04_dependency_layer": {
+    "metadata": {
+      "word": "hub",
+      "chart_id": "chart_04",
+      "generated_at": "2026-05-24T13:03:40.938303Z",
+      "generated_by_script": "scripts/process_hub_chart04_dependency.py",
+      "purpose": "semantic dependency and modifier-dominance layer for Chart 04 planning",
+      "working_title": "Centrality Rebuilt",
+      "narrative_direction": "hub as modifier-dependent naming operator",
+      "source_summary": [
+        "Reuses Chart 03 naming data, institutional examples, and brand/platform inventory.",
+        "Reuses first-pass frequency/phrase records where local series exist.",
+        "No new broad scraping or UI work in this pass."
+      ],
+      "limitations": [
+        "Do not claim hub has lost all meaning.",
+        "Do not claim brand popularity equals lexical meaning.",
+        "Do not claim corpus data can prove individual recognition or first exposure.",
+        "Do not claim every X + hub phrase means the same thing."
+      ]
+    },
+    "semantic_dependency_index": {
+      "record_count": 56,
+      "dependency_class_counts": {
+        "brand_compound": 7,
+        "modifier_defined": 24,
+        "institutional_modifier_defined": 6,
+        "hub_as_modifier": 12,
+        "specified_object": 3,
+        "relational_phrase": 2,
+        "standalone": 2
+      },
+      "dependency_tier_counts": {
+        "high_dependency": 37,
+        "medium_dependency": 15,
+        "contextual_dependency": 2,
+        "low_dependency": 2
+      },
+      "object_type_count": 17,
+      "object_type_counts": {
+        "platform": 1,
+        "website": 2,
+        "software_service": 1,
+        "archive": 1,
+        "repository": 2,
+        "platform_content_access": 6,
+        "service_portal": 1,
+        "equipment_room": 1,
+        "student_service": 2,
+        "institutional_access_point": 19,
+        "technical_system": 12,
+        "digital_portal": 1,
+        "community_space": 1,
+        "routing_node": 1,
+        "mechanical_core": 1,
+        "central_place": 2,
+        "lexical_background": 2
+      },
+      "interpretive_note": "High dependency means the attached domain/modifier does much of the work of specifying what kind of object or access point hub names."
+    },
+    "modifier_dominance_terms": [
+      {
+        "term": "GitHub",
+        "form_type": "closed_compound",
+        "dependency_class": "brand_compound",
+        "modifier_or_domain": "Git",
+        "object_type": "platform",
+        "modifier_dependency_score": 0.96,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "sparse",
+        "recommended_use": "main_example",
+        "caution": "Brand/platform form; do not treat as ordinary lexical frequency."
+      },
+      {
+        "term": "HubPages",
+        "form_type": "prefix_brand",
+        "dependency_class": "brand_compound",
+        "modifier_or_domain": "Pages",
+        "object_type": "website",
+        "modifier_dependency_score": 0.96,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Brand/platform form; do not treat as ordinary lexical frequency."
+      },
+      {
+        "term": "HubSpot",
+        "form_type": "prefix_brand",
+        "dependency_class": "brand_compound",
+        "modifier_or_domain": "Spot",
+        "object_type": "software_service",
+        "modifier_dependency_score": 0.96,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "sparse",
+        "recommended_use": "main_example",
+        "caution": "Brand/platform form; do not treat as ordinary lexical frequency."
+      },
+      {
+        "term": "Pornhub",
+        "form_type": "closed_compound",
+        "dependency_class": "brand_compound",
+        "modifier_or_domain": "Porn",
+        "object_type": "website",
+        "modifier_dependency_score": 0.96,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "sparse",
+        "recommended_use": "main_example",
+        "caution": "Brand/platform form; do not treat as ordinary lexical frequency."
+      },
+      {
+        "term": "Sci-Hub",
+        "form_type": "hyphenated_compound",
+        "dependency_class": "brand_compound",
+        "modifier_or_domain": "Sci",
+        "object_type": "archive",
+        "modifier_dependency_score": 0.96,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "sparse",
+        "recommended_use": "main_example",
+        "caution": "Brand/platform form; do not treat as ordinary lexical frequency."
+      },
+      {
+        "term": "Docker Hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "brand_compound",
+        "modifier_or_domain": "Docker",
+        "object_type": "repository",
+        "modifier_dependency_score": 0.94,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "sparse",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "Hugging Face Hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "brand_compound",
+        "modifier_or_domain": "Hugging Face",
+        "object_type": "repository",
+        "modifier_dependency_score": 0.94,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "sparse",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "data hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "data",
+        "object_type": "platform_content_access",
+        "modifier_dependency_score": 0.92,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "visible",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "career hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "institutional_modifier_defined",
+        "modifier_or_domain": "career",
+        "object_type": "service_portal",
+        "modifier_dependency_score": 0.91,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "visible",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "equipment hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "institutional_modifier_defined",
+        "modifier_or_domain": "equipment",
+        "object_type": "equipment_room",
+        "modifier_dependency_score": 0.91,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "visible",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "student hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "institutional_modifier_defined",
+        "modifier_or_domain": "student",
+        "object_type": "student_service",
+        "modifier_dependency_score": 0.91,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "strong_presence",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "wellbeing hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "institutional_modifier_defined",
+        "modifier_or_domain": "wellbeing",
+        "object_type": "student_service",
+        "modifier_dependency_score": 0.91,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "visible",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "content hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "content",
+        "object_type": "platform_content_access",
+        "modifier_dependency_score": 0.9,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "visible",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "digital hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "digital",
+        "object_type": "platform_content_access",
+        "modifier_dependency_score": 0.9,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "education hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "education",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.89,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "Ethernet hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "Ethernet",
+        "object_type": "technical_system",
+        "modifier_dependency_score": 0.89,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "financial hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "financial",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.89,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "innovation hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "innovation",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.89,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "API hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "institutional_modifier_defined",
+        "modifier_or_domain": "API",
+        "object_type": "digital_portal",
+        "modifier_dependency_score": 0.88,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "visible",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "maker hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "institutional_modifier_defined",
+        "modifier_or_domain": "maker",
+        "object_type": "community_space",
+        "modifier_dependency_score": 0.88,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "visible",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "business hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "business",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.87,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "communication hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "communication",
+        "object_type": "technical_system",
+        "modifier_dependency_score": 0.87,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "community hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "community",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.87,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "creative hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "creative",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.87,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "knowledge hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "knowledge",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.87,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "learning hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "learning",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.87,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "strong_presence",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "media hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "media",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.87,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "visible",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "research hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "research",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.87,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "resource hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "resource",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.87,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "visible",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "USB hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "USB",
+        "object_type": "technical_system",
+        "modifier_dependency_score": 0.86,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "online hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "online",
+        "object_type": "platform_content_access",
+        "modifier_dependency_score": 0.85,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "startup hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "startup",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.85,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "switching hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "switching",
+        "object_type": "technical_system",
+        "modifier_dependency_score": 0.84,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "integration hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "integration",
+        "object_type": "technical_system",
+        "modifier_dependency_score": 0.82,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "library hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "library",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.82,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "service hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "service",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.82,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "visible",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "support hub",
+        "form_type": "suffix_phrase",
+        "dependency_class": "modifier_defined",
+        "modifier_or_domain": "support",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.82,
+        "dependency_tier": "high_dependency",
+        "visibility_status": "",
+        "recommended_use": "main_example",
+        "caution": "Useful for showing domain/modifier-driven hub naming."
+      },
+      {
+        "term": "hub model",
+        "form_type": "prefix_phrase",
+        "dependency_class": "hub_as_modifier",
+        "modifier_or_domain": "model",
+        "object_type": "technical_system",
+        "modifier_dependency_score": 0.69,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "hub network",
+        "form_type": "prefix_phrase",
+        "dependency_class": "hub_as_modifier",
+        "modifier_or_domain": "network",
+        "object_type": "technical_system",
+        "modifier_dependency_score": 0.69,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "hub node",
+        "form_type": "prefix_phrase",
+        "dependency_class": "hub_as_modifier",
+        "modifier_or_domain": "node",
+        "object_type": "technical_system",
+        "modifier_dependency_score": 0.69,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "hub site",
+        "form_type": "prefix_phrase",
+        "dependency_class": "hub_as_modifier",
+        "modifier_or_domain": "site",
+        "object_type": "platform_content_access",
+        "modifier_dependency_score": 0.69,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "hub system",
+        "form_type": "prefix_phrase",
+        "dependency_class": "hub_as_modifier",
+        "modifier_or_domain": "system",
+        "object_type": "technical_system",
+        "modifier_dependency_score": 0.69,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "hub city",
+        "form_type": "prefix_phrase",
+        "dependency_class": "hub_as_modifier",
+        "modifier_or_domain": "city",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.68,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "hub page",
+        "form_type": "prefix_phrase",
+        "dependency_class": "hub_as_modifier",
+        "modifier_or_domain": "page",
+        "object_type": "platform_content_access",
+        "modifier_dependency_score": 0.67,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "hub airport",
+        "form_type": "prefix_phrase",
+        "dependency_class": "hub_as_modifier",
+        "modifier_or_domain": "airport",
+        "object_type": "technical_system",
+        "modifier_dependency_score": 0.66,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "hub location",
+        "form_type": "prefix_phrase",
+        "dependency_class": "hub_as_modifier",
+        "modifier_or_domain": "location",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.66,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "hub room",
+        "form_type": "prefix_phrase",
+        "dependency_class": "hub_as_modifier",
+        "modifier_or_domain": "room",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.66,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "hub service",
+        "form_type": "prefix_phrase",
+        "dependency_class": "hub_as_modifier",
+        "modifier_or_domain": "service",
+        "object_type": "institutional_access_point",
+        "modifier_dependency_score": 0.66,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "hub strategy",
+        "form_type": "prefix_phrase",
+        "dependency_class": "hub_as_modifier",
+        "modifier_or_domain": "strategy",
+        "object_type": "technical_system",
+        "modifier_dependency_score": 0.66,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "network hub",
+        "form_type": "modifier_plus_hub",
+        "dependency_class": "specified_object",
+        "modifier_or_domain": "network",
+        "object_type": "technical_system",
+        "modifier_dependency_score": 0.61,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "transport hub",
+        "form_type": "modifier_plus_hub",
+        "dependency_class": "specified_object",
+        "modifier_or_domain": "transport",
+        "object_type": "routing_node",
+        "modifier_dependency_score": 0.59,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      },
+      {
+        "term": "wheel hub",
+        "form_type": "modifier_plus_hub",
+        "dependency_class": "specified_object",
+        "modifier_or_domain": "wheel",
+        "object_type": "mechanical_core",
+        "modifier_dependency_score": 0.59,
+        "dependency_tier": "medium_dependency",
+        "visibility_status": "",
+        "recommended_use": "supporting_example",
+        "caution": "Use as supporting evidence, not a central claim."
+      }
+    ],
+    "subject_object_tension": {
+      "metadata": {
+        "word": "hub",
+        "chart_id": "chart_04",
+        "generated_at": "2026-05-24T13:03:40.938287Z",
+        "generated_by_script": "scripts/process_hub_chart04_dependency.py",
+        "purpose": "semantic dependency and modifier-dominance layer for Chart 04 planning"
+      },
+      "concept": "hub becomes stable as a naming operator but unstable as a single object category",
+      "object_type_diversity": {
+        "count": 17,
+        "object_types": [
+          "archive",
+          "central_place",
+          "community_space",
+          "digital_portal",
+          "equipment_room",
+          "institutional_access_point",
+          "lexical_background",
+          "mechanical_core",
+          "platform",
+          "platform_content_access",
+          "repository",
+          "routing_node",
+          "service_portal",
+          "software_service",
+          "student_service",
+          "technical_system",
+          "website"
+        ],
+        "interpretation": "The same hub form names platforms, rooms, service portals, technical nodes, content access points, and lexical background uses."
+      },
+      "dependency_distribution": {
+        "high_dependency": [
+          "GitHub",
+          "HubPages",
+          "HubSpot",
+          "Pornhub",
+          "Sci-Hub",
+          "Docker Hub",
+          "Hugging Face Hub",
+          "data hub",
+          "career hub",
+          "equipment hub",
+          "student hub",
+          "wellbeing hub",
+          "content hub",
+          "digital hub",
+          "education hub",
+          "Ethernet hub",
+          "financial hub",
+          "innovation hub"
+        ],
+        "medium_dependency": [
+          "hub model",
+          "hub network",
+          "hub node",
+          "hub site",
+          "hub system",
+          "hub city",
+          "hub page",
+          "hub airport",
+          "hub location",
+          "hub room",
+          "hub service",
+          "hub strategy",
+          "network hub",
+          "transport hub",
+          "wheel hub"
+        ],
+        "contextual_dependency": [
+          "hub of activity",
+          "hub of commerce"
+        ],
+        "low_dependency": [
+          "hub",
+          "hubs"
+        ]
+      },
+      "standalone_comparison": [
+        {
+          "term": "network hub",
+          "form_type": "modifier_plus_hub",
+          "form_label": "X + hub",
+          "dependency_class": "specified_object",
+          "modifier_or_domain": "network",
+          "object_type": "technical_system",
+          "modifier_dependency_score": 0.61,
+          "dependency_tier": "medium_dependency",
+          "frequency_summary": {
+            "frequency_record_status": "found_existing",
+            "first_nonzero_year": 1900,
+            "peak_year": 1999,
+            "peak_frequency_per_million": 0.02438265,
+            "nonzero_year_count": 64,
+            "period_count": 5
+          },
+          "evidence_sources": [
+            "first_pass_frequency",
+            "chart01_chart02_context"
+          ],
+          "notes": "Baseline comparison term for modifier dependency."
+        },
+        {
+          "term": "transport hub",
+          "form_type": "modifier_plus_hub",
+          "form_label": "X + hub",
+          "dependency_class": "specified_object",
+          "modifier_or_domain": "transport",
+          "object_type": "routing_node",
+          "modifier_dependency_score": 0.59,
+          "dependency_tier": "medium_dependency",
+          "frequency_summary": {
+            "frequency_record_status": "found_existing",
+            "first_nonzero_year": 1843,
+            "peak_year": 2010,
+            "peak_frequency_per_million": 0.06270535,
+            "nonzero_year_count": 92,
+            "period_count": 5
+          },
+          "evidence_sources": [
+            "first_pass_frequency",
+            "chart01_chart02_context"
+          ],
+          "notes": "Baseline comparison term for modifier dependency."
+        },
+        {
+          "term": "wheel hub",
+          "form_type": "modifier_plus_hub",
+          "form_label": "X + hub",
+          "dependency_class": "specified_object",
+          "modifier_or_domain": "wheel",
+          "object_type": "mechanical_core",
+          "modifier_dependency_score": 0.59,
+          "dependency_tier": "medium_dependency",
+          "frequency_summary": {
+            "frequency_record_status": "found_existing",
+            "first_nonzero_year": 1832,
+            "peak_year": 1872,
+            "peak_frequency_per_million": 0.24601964,
+            "nonzero_year_count": 181,
+            "period_count": 5
+          },
+          "evidence_sources": [
+            "first_pass_frequency",
+            "chart01_chart02_context"
+          ],
+          "notes": "Baseline comparison term for modifier dependency."
+        },
+        {
+          "term": "hub of activity",
+          "form_type": "hub_of_x",
+          "form_label": "hub of X",
+          "dependency_class": "relational_phrase",
+          "modifier_or_domain": "",
+          "object_type": "central_place",
+          "modifier_dependency_score": 0.51,
+          "dependency_tier": "contextual_dependency",
+          "frequency_summary": {
+            "frequency_record_status": "found_existing",
+            "first_nonzero_year": 1878,
+            "peak_year": 2011,
+            "peak_frequency_per_million": 0.03413241,
+            "nonzero_year_count": 117,
+            "period_count": 5
+          },
+          "evidence_sources": [
+            "first_pass_frequency",
+            "chart01_chart02_context"
+          ],
+          "notes": "Baseline comparison term for modifier dependency."
+        },
+        {
+          "term": "hub of commerce",
+          "form_type": "hub_of_x",
+          "form_label": "hub of X",
+          "dependency_class": "relational_phrase",
+          "modifier_or_domain": "",
+          "object_type": "central_place",
+          "modifier_dependency_score": 0.51,
+          "dependency_tier": "contextual_dependency",
+          "frequency_summary": {
+            "frequency_record_status": "found_existing",
+            "first_nonzero_year": 1832,
+            "peak_year": 1942,
+            "peak_frequency_per_million": 0.00705695,
+            "nonzero_year_count": 123,
+            "period_count": 5
+          },
+          "evidence_sources": [
+            "first_pass_frequency",
+            "chart01_chart02_context"
+          ],
+          "notes": "Baseline comparison term for modifier dependency."
+        },
+        {
+          "term": "hub",
+          "form_type": "standalone_headword",
+          "form_label": "standalone hub",
+          "dependency_class": "standalone",
+          "modifier_or_domain": "",
+          "object_type": "lexical_background",
+          "modifier_dependency_score": 0.15,
+          "dependency_tier": "low_dependency",
+          "frequency_summary": {
+            "frequency_record_status": "found_existing",
+            "first_nonzero_year": 1800,
+            "peak_year": 1872,
+            "peak_frequency_per_million": 11.26854489,
+            "nonzero_year_count": 223,
+            "period_count": 5
+          },
+          "evidence_sources": [
+            "first_pass_frequency",
+            "chart01_chart02_context"
+          ],
+          "notes": "Baseline comparison term for modifier dependency."
+        },
+        {
+          "term": "hubs",
+          "form_type": "standalone_headword",
+          "form_label": "standalone hub",
+          "dependency_class": "standalone",
+          "modifier_or_domain": "",
+          "object_type": "lexical_background",
+          "modifier_dependency_score": 0.15,
+          "dependency_tier": "low_dependency",
+          "frequency_summary": {
+            "frequency_record_status": "found_existing",
+            "first_nonzero_year": 1800,
+            "peak_year": 2021,
+            "peak_frequency_per_million": 1.64315703,
+            "nonzero_year_count": 222,
+            "period_count": 5
+          },
+          "evidence_sources": [
+            "first_pass_frequency",
+            "chart01_chart02_context"
+          ],
+          "notes": "Baseline comparison term for modifier dependency."
+        }
+      ],
+      "cautions": [
+        "This layer can support modifier-driven naming, but it cannot directly measure reader cognition.",
+        "Do not claim hub becomes meaningless; the stronger claim is that hub becomes relational and underspecified without a modifier.",
+        "Brand examples are recognition anchors and naming evidence, not corpus-frequency evidence."
+      ]
+    },
+    "narrative_support_matrix": {
+      "metadata": {
+        "word": "hub",
+        "chart_id": "chart_04",
+        "generated_at": "2026-05-24T13:03:40.938300Z",
+        "generated_by_script": "scripts/process_hub_chart04_dependency.py",
+        "purpose": "semantic dependency and modifier-dominance layer for Chart 04 planning"
+      },
+      "summary": {
+        "overall_verdict": "supported_with_caution",
+        "high_dependency_terms": 37,
+        "medium_dependency_terms": 15,
+        "brand_platform_examples": 7,
+        "institutional_examples": 15,
+        "object_type_diversity_count": 17
+      },
+      "claims": [
+        {
+          "claim_id": "chart04_claim_001",
+          "claim": "Modern hub naming is often modifier-defined: the X before hub determines the object or domain.",
+          "support_status": "supported",
+          "evidence_basis": [
+            "37 high-dependency terms",
+            "Chart 03 suffix_phrase pattern supported"
+          ],
+          "confidence": "high",
+          "caution": "This supports naming behavior, not every speaker's interpretation."
+        },
+        {
+          "claim_id": "chart04_claim_002",
+          "claim": "Hub is stable as a format but unstable as a single object category.",
+          "support_status": "supported",
+          "evidence_basis": [
+            "17 object types across retained hub forms"
+          ],
+          "confidence": "high",
+          "caution": "Object-type diversity comes from curated terms and source metadata, not a full language census."
+        },
+        {
+          "claim_id": "chart04_claim_003",
+          "claim": "Brand/platform forms show hub as a naming material rather than ordinary lexical frequency.",
+          "support_status": "supported",
+          "evidence_basis": [
+            "7 retained brand/platform examples"
+          ],
+          "confidence": "medium",
+          "caution": "Brand recognition must not be equated with lexical frequency or semantic dominance."
+        },
+        {
+          "claim_id": "chart04_claim_004",
+          "claim": "The narrative can frame hub as semantically bleached only cautiously.",
+          "support_status": "partially_supported",
+          "evidence_basis": [
+            "High modifier dependency",
+            "Chart 01 confirms older senses survive",
+            "Chart 03 confirms X + hub pattern"
+          ],
+          "confidence": "medium",
+          "caution": "Use 'relational / underspecified / naming operator' rather than 'meaningless' or 'disappeared'."
+        },
+        {
+          "claim_id": "chart04_claim_005",
+          "claim": "The data cannot prove that many people first know hub through one brand example such as Pornhub.",
+          "support_status": "not_supported",
+          "evidence_basis": [
+            "No audience-recognition survey in the dataset"
+          ],
+          "confidence": "high",
+          "caution": "Pornhub can be a neutral recognition anchor if used sparingly, but not proof of general cognition."
+        }
+      ],
+      "recommended_chart04_focus": "Show hub as a center-word whose object is increasingly supplied by its modifier: X carries the domain, hub supplies the access/centrality format.",
+      "do_not_claim": [
+        "Do not claim hub has lost all meaning.",
+        "Do not claim brand popularity equals lexical meaning.",
+        "Do not claim corpus data can prove individual recognition or first exposure.",
+        "Do not claim every X + hub phrase means the same thing."
+      ]
+    },
+    "recommended_visual_inputs": {
+      "main_terms": [
+        "GitHub",
+        "HubPages",
+        "HubSpot",
+        "Pornhub",
+        "Sci-Hub",
+        "Docker Hub",
+        "Hugging Face Hub",
+        "data hub",
+        "career hub",
+        "equipment hub",
+        "student hub",
+        "wellbeing hub"
+      ],
+      "comparison_terms": [
+        "network hub",
+        "transport hub",
+        "wheel hub",
+        "hub of activity",
+        "hub of commerce",
+        "hub",
+        "hubs"
+      ],
+      "brand_or_platform_examples": [
+        "GitHub",
+        "HubPages",
+        "HubSpot",
+        "Pornhub",
+        "Sci-Hub",
+        "Docker Hub",
+        "Hugging Face Hub"
+      ],
+      "cautions": [
+        "Do not claim hub has lost all meaning.",
+        "Do not claim brand popularity equals lexical meaning.",
+        "Do not claim corpus data can prove individual recognition or first exposure.",
+        "Do not claim every X + hub phrase means the same thing."
+      ]
+    }
   }
 }

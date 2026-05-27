@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "chart_id": "chart02_etymology_early_usage",
+    "generated_at": "2026-05-26T12:26:30.346533Z",
+    "generated_by_script": "scripts/process_privacy_chart02_etymology_early_usage.py",
+    "raw_source": "docs/research/privacy/raw/privacy_chart02_etymology_early_usage_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_chart02_etymology_early_usage_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_chart02_etymology_early_usage_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_chart02_etymology_early_usage_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_chart02_etymology_early_usage_raw.json"
+    }
+  },
+  "summary": {
+    "earliest_candidate_year": null,
+    "earliest_reliable_year": null,
+    "entries": 15,
+    "root_family_count": 6,
+    "uncertain_items": 15,
+    "high_confidence_terms": 0,
+    "medium_confidence_terms": 0,
+    "low_confidence_terms": 15
+  },
+  "evidence_category_counts": {
+    "uncertain": 15
+  },
+  "evidence_term_counts": {
+    "privacy": 5,
+    "private": 6,
+    "privy": 3,
+    "right to privacy": 1
+  },
+  "earliest_candidates": [],
+  "uncertain_candidates": [
+    {
+      "term": "privacy",
+      "spelling": "privacy",
+      "date_label": "uncertain",
+      "source": "Online Etymology Dictionary",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "private",
+      "spelling": "private",
+      "date_label": "uncertain",
+      "source": "Online Etymology Dictionary",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "privy",
+      "spelling": "privy",
+      "date_label": "uncertain",
+      "source": "Online Etymology Dictionary",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "privacy",
+      "spelling": "privacy",
+      "date_label": "uncertain",
+      "source": "Merriam-Webster",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "private",
+      "spelling": "private",
+      "date_label": "uncertain",
+      "source": "Merriam-Webster",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "privy",
+      "spelling": "privy",
+      "date_label": "uncertain",
+      "source": "Merriam-Webster",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "privacy",
+      "spelling": "privacy",
+      "date_label": "uncertain",
+      "source": "Wiktionary",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "private",
+      "spelling": "private",
+      "date_label": "uncertain",
+      "source": "Wiktionary",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "privacy",
+      "spelling": "privacy",
+      "date_label": "uncertain",
+      "source": "Oxford English Dictionary",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "private",
+      "spelling": "private",
+      "date_label": "uncertain",
+      "source": "Oxford English Dictionary",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "privy",
+      "spelling": "privy",
+      "date_label": "uncertain",
+      "source": "Oxford English Dictionary",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "private",
+      "spelling": "private",
+      "date_label": "uncertain",
+      "source": "Webster 1828",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "private",
+      "spelling": "private",
+      "date_label": "uncertain",
+      "source": "Webster 1913",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "privacy",
+      "spelling": "privacy",
+      "date_label": "uncertain",
+      "source": "Merriam-Webster - 'Right to Privacy' legal article",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "right to privacy",
+      "spelling": "right to privacy",
+      "date_label": "uncertain",
+      "source": "Merriam-Webster - 'Right to Privacy' legal article",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    }
+  ],
+  "recommendations": {
+    "immediate_followups": [
+      "Cross-check historical dictionary citations directly for private/privy earliest printed usage.",
+      "Prioritize direct dated examples where privacy appears with privacy rights or intrusion language.",
+      "Separate direct attestations (date + quotation context) from dictionary 'first known use' claims."
+    ],
+    "high_value_uncertainties": [
+      "Whether privacy should anchor as a noun before or after legal-meaning consolidation (19th vs 20th c. records).",
+      "Whether privy/private forms function as direct historical ancestors or adjacent semantic neighbors."
+    ]
+  },
+  "next_research_questions": [
+    "Can we find one primary 17th-18th century dictionary or text citation for the earliest private/privacy family split?",
+    "Do legal sources shift from private life/seclusion to rights/intrusion before formal n-gram signal appears?",
+    "Which candidate sources remain reliable after anti-bot or script-rendered page barriers are bypassed?"
+  ]
+}

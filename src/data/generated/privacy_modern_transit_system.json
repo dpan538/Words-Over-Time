@@ -1,0 +1,2217 @@
+{
+  "word": "privacy",
+  "layer_id": "modern_transit_system",
+  "status": "source_supported_for_chart01c",
+  "intended_use": "privacy_chart01_third_phase_metro_map",
+  "title": "Privacy modern semantic transit system",
+  "subtitle": "1950-2026 routes from rights to data, platforms, surveillance, and AI-era privacy",
+  "generated_at": "2026-05-27T10:45:42.420697+00:00",
+  "generated_by_script": "scripts/process_privacy_modern_transit_system.py",
+  "year_range": [
+    1950,
+    2026
+  ],
+  "routes": [
+    {
+      "route_id": "rights_personhood",
+      "label": "Rights / personhood",
+      "color": "#7E42B8",
+      "description": "Privacy as personal autonomy, private life, constitutional liberty, and legal rights.",
+      "terms": [
+        "right to privacy",
+        "privacy rights",
+        "reasonable expectation of privacy",
+        "private life",
+        "domestic privacy",
+        "individual privacy"
+      ],
+      "suggested_row": 0,
+      "station_count": 4,
+      "transfer_count": 2,
+      "frequency_series_count": 15,
+      "collocation_hit_count": 5,
+      "first_station_year": 1950,
+      "latest_station_year": 1981,
+      "max_particle_density": 0.782
+    },
+    {
+      "route_id": "information_data_protection",
+      "label": "Information / data protection",
+      "color": "#2E8FAF",
+      "description": "Privacy as information control, data protection, personal data, and governance duty.",
+      "terms": [
+        "information privacy",
+        "data privacy",
+        "data protection",
+        "personal data",
+        "privacy law",
+        "privacy protection"
+      ],
+      "suggested_row": 1,
+      "station_count": 15,
+      "transfer_count": 12,
+      "frequency_series_count": 9,
+      "collocation_hit_count": 4,
+      "first_station_year": 1973,
+      "latest_station_year": 2024,
+      "max_particle_density": 1.0
+    },
+    {
+      "route_id": "internet_platform_interface",
+      "label": "Internet / platform interface",
+      "color": "#F26A21",
+      "description": "Privacy as web interface, policy notice, settings, consent screens, and platform defaults.",
+      "terms": [
+        "online privacy",
+        "internet privacy",
+        "digital privacy",
+        "privacy policy",
+        "privacy policies",
+        "privacy notice",
+        "privacy settings",
+        "privacy controls"
+      ],
+      "suggested_row": 2,
+      "station_count": 8,
+      "transfer_count": 8,
+      "frequency_series_count": 21,
+      "collocation_hit_count": 8,
+      "first_station_year": 1998,
+      "latest_station_year": 2023,
+      "max_particle_density": 0.879
+    },
+    {
+      "route_id": "surveillance_security_tension",
+      "label": "Surveillance / security",
+      "color": "#D83232",
+      "description": "Privacy as a tension with policing, national security, monitoring, and mass surveillance.",
+      "terms": [
+        "surveillance",
+        "privacy and security",
+        "security and privacy",
+        "privacy and surveillance",
+        "surveillance privacy",
+        "privacy and monitoring"
+      ],
+      "suggested_row": 3,
+      "station_count": 5,
+      "transfer_count": 4,
+      "frequency_series_count": 9,
+      "collocation_hit_count": 5,
+      "first_station_year": 1967,
+      "latest_station_year": 2024,
+      "max_particle_density": 0.968
+    },
+    {
+      "route_id": "breach_risk_compliance",
+      "label": "Breach / risk / compliance",
+      "color": "#2F9F5F",
+      "description": "Privacy as operational risk, breach disclosure, compliance process, and institutional accountability.",
+      "terms": [
+        "data breach",
+        "privacy breach",
+        "breach of privacy",
+        "privacy risk",
+        "privacy impact",
+        "privacy audit",
+        "privacy compliance"
+      ],
+      "suggested_row": 4,
+      "station_count": 7,
+      "transfer_count": 7,
+      "frequency_series_count": 3,
+      "collocation_hit_count": 5,
+      "first_station_year": 1974,
+      "latest_station_year": 2023,
+      "max_particle_density": 0.703
+    },
+    {
+      "route_id": "identity_consent_advertising",
+      "label": "Identity / consent / advertising",
+      "color": "#DDBE24",
+      "description": "Privacy as identity control, consent, anonymity, trust, profiling, and targeted advertising.",
+      "terms": [
+        "privacy and identity",
+        "privacy and consent",
+        "privacy and anonymity",
+        "privacy and trust",
+        "consumer privacy",
+        "privacy and transparency"
+      ],
+      "suggested_row": 5,
+      "station_count": 5,
+      "transfer_count": 5,
+      "frequency_series_count": 0,
+      "collocation_hit_count": 4,
+      "first_station_year": 1998,
+      "latest_station_year": 2020,
+      "max_particle_density": 0.425
+    },
+    {
+      "route_id": "ai_biometrics_sensitive_data",
+      "label": "AI / biometrics / sensitive data",
+      "color": "#1F6678",
+      "description": "Privacy as biometric, genetic, location, inference, and automated-decision concern.",
+      "terms": [
+        "biometric privacy",
+        "genetic privacy",
+        "location privacy",
+        "medical privacy",
+        "financial privacy",
+        "privacy preserving",
+        "privacy-enhancing"
+      ],
+      "suggested_row": 6,
+      "station_count": 2,
+      "transfer_count": 2,
+      "frequency_series_count": 0,
+      "collocation_hit_count": 6,
+      "first_station_year": 1996,
+      "latest_station_year": 2024,
+      "max_particle_density": 0.258
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "echr_article_8_1950",
+      "year": 1950,
+      "label": "ECHR Article 8",
+      "route_ids": [
+        "rights_personhood"
+      ],
+      "station_type": "rights_anchor",
+      "description": "European rights language protects private and family life, home, and correspondence.",
+      "source_title": "European Convention on Human Rights",
+      "source_url": "https://rm.coe.int/168007aee0",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 5,
+      "radius": 29.24,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:08.883776+00:00",
+      "needs_manual_review": false,
+      "transfer": false
+    },
+    {
+      "station_id": "griswold_1965",
+      "year": 1965,
+      "label": "Griswold v. Connecticut",
+      "route_ids": [
+        "rights_personhood"
+      ],
+      "station_type": "constitutional_privacy",
+      "description": "U.S. constitutional privacy becomes visible through marital and reproductive-rights reasoning.",
+      "source_title": "Griswold v. Connecticut",
+      "source_url": "https://www.oyez.org/cases/1964/496",
+      "confidence": "medium",
+      "manual_review": false,
+      "evidence_strength": 4,
+      "radius": 27.0,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:11.791714+00:00",
+      "needs_manual_review": false,
+      "transfer": false
+    },
+    {
+      "station_id": "katz_1967",
+      "year": 1967,
+      "label": "Reasonable expectation",
+      "route_ids": [
+        "rights_personhood",
+        "surveillance_security_tension"
+      ],
+      "station_type": "transfer",
+      "description": "Katz reframes Fourth Amendment privacy around reasonable expectation rather than only property trespass.",
+      "source_title": "Katz v. United States",
+      "source_url": "https://www.oyez.org/cases/1967/35",
+      "confidence": "medium",
+      "manual_review": false,
+      "evidence_strength": 5,
+      "radius": 29.24,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:14.215845+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "hew_fipps_1973",
+      "year": 1973,
+      "label": "Fair information practices",
+      "route_ids": [
+        "information_data_protection"
+      ],
+      "station_type": "data_governance",
+      "description": "The HEW report helps consolidate fair information practice principles for computerized records.",
+      "source_title": "Records, Computers, and the Rights of Citizens",
+      "source_url": "https://aspe.hhs.gov/reports/records-computers-rights-citizens",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 5,
+      "radius": 29.24,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:15.857331+00:00",
+      "needs_manual_review": false,
+      "transfer": false
+    },
+    {
+      "station_id": "privacy_act_1974",
+      "year": 1974,
+      "label": "U.S. Privacy Act",
+      "route_ids": [
+        "information_data_protection",
+        "breach_risk_compliance"
+      ],
+      "station_type": "transfer",
+      "description": "Federal records privacy becomes a statutory administrative-control framework.",
+      "source_title": "Privacy Act of 1974",
+      "source_url": "https://www.justice.gov/opcl/privacy-act-1974",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 6,
+      "radius": 31.27,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:28.126179+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "oecd_guidelines_1980",
+      "year": 1980,
+      "label": "OECD privacy guidelines",
+      "route_ids": [
+        "information_data_protection"
+      ],
+      "station_type": "data_governance",
+      "description": "OECD guidelines internationalize privacy principles for personal-data flows.",
+      "source_title": "OECD Privacy Guidelines",
+      "source_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0188",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 5,
+      "radius": 29.24,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:28.431766+00:00",
+      "needs_manual_review": false,
+      "transfer": false
+    },
+    {
+      "station_id": "convention_108_1981",
+      "year": 1981,
+      "label": "Convention 108",
+      "route_ids": [
+        "information_data_protection",
+        "rights_personhood"
+      ],
+      "station_type": "transfer",
+      "description": "Council of Europe Convention 108 makes personal-data protection a treaty framework.",
+      "source_title": "Convention 108",
+      "source_url": "https://rm.coe.int/1680078b37",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 6,
+      "radius": 31.27,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:29.578070+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "ecpa_1986",
+      "year": 1986,
+      "label": "Electronic communications",
+      "route_ids": [
+        "surveillance_security_tension",
+        "information_data_protection"
+      ],
+      "station_type": "transfer",
+      "description": "Electronic communications privacy links communications networks, search, disclosure, and surveillance.",
+      "source_title": "Electronic Communications Privacy Act",
+      "source_url": "https://bja.ojp.gov/program/it/privacy-civil-liberties/authorities/statutes/1285",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 6,
+      "radius": 31.27,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:32.042285+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "eu_directive_1995",
+      "year": 1995,
+      "label": "EU Data Protection Directive",
+      "route_ids": [
+        "information_data_protection"
+      ],
+      "station_type": "data_governance",
+      "description": "EU privacy governance centers personal data, processing, and cross-border protection.",
+      "source_title": "Directive 95/46/EC",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31995L0046",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 5,
+      "radius": 29.24,
+      "source_reachable": true,
+      "source_status": 202,
+      "source_checked_at": "2026-05-27T10:44:32.613718+00:00",
+      "needs_manual_review": false,
+      "transfer": false
+    },
+    {
+      "station_id": "hipaa_1996",
+      "year": 1996,
+      "label": "Health privacy",
+      "route_ids": [
+        "ai_biometrics_sensitive_data",
+        "information_data_protection"
+      ],
+      "station_type": "transfer",
+      "description": "Health-information privacy becomes an institutional and sectoral compliance domain.",
+      "source_title": "HIPAA Privacy Rule",
+      "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 6,
+      "radius": 31.27,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:33.292451+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "coppa_1998",
+      "year": 1998,
+      "label": "Children online",
+      "route_ids": [
+        "internet_platform_interface",
+        "identity_consent_advertising"
+      ],
+      "station_type": "transfer",
+      "description": "Children's online privacy turns consent, notice, and platform collection into a regulatory object.",
+      "source_title": "Children's Online Privacy Protection Rule",
+      "source_url": "https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 6,
+      "radius": 31.27,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:34.936632+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "patriot_act_2001",
+      "year": 2001,
+      "label": "Security turn",
+      "route_ids": [
+        "surveillance_security_tension"
+      ],
+      "station_type": "security_policy",
+      "description": "Post-9/11 security law intensifies the privacy-surveillance tension.",
+      "source_title": "USA PATRIOT Act",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-107publ56/html/PLAW-107publ56.htm",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 5,
+      "radius": 29.24,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:35.781444+00:00",
+      "needs_manual_review": false,
+      "transfer": false
+    },
+    {
+      "station_id": "eprivacy_directive_2002",
+      "year": 2002,
+      "label": "ePrivacy / cookies",
+      "route_ids": [
+        "internet_platform_interface",
+        "information_data_protection"
+      ],
+      "station_type": "transfer",
+      "description": "European ePrivacy rules connect communications privacy, cookies, and online tracking.",
+      "source_title": "Directive 2002/58/EC",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32002L0058",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 6,
+      "radius": 31.27,
+      "source_reachable": true,
+      "source_status": 202,
+      "source_checked_at": "2026-05-27T10:44:36.789655+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "california_breach_2003",
+      "year": 2003,
+      "label": "Breach notification",
+      "route_ids": [
+        "breach_risk_compliance",
+        "information_data_protection"
+      ],
+      "station_type": "transfer",
+      "description": "California breach-notification law helps make data breaches a visible privacy-risk category.",
+      "source_title": "California breach notification law",
+      "source_url": "https://oag.ca.gov/privacy/databreach/reporting",
+      "confidence": "medium",
+      "manual_review": false,
+      "evidence_strength": 5,
+      "radius": 29.24,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:37.349393+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "ftc_privacy_report_2012",
+      "year": 2012,
+      "label": "Privacy framework",
+      "route_ids": [
+        "internet_platform_interface",
+        "identity_consent_advertising",
+        "breach_risk_compliance"
+      ],
+      "station_type": "transfer",
+      "description": "FTC consumer-privacy guidance ties privacy by design, simplified choice, and transparency to platform practice.",
+      "source_title": "Protecting Consumer Privacy in an Era of Rapid Change",
+      "source_url": "https://www.ftc.gov/reports/protecting-consumer-privacy-era-rapid-change-recommendations-businesses-policymakers",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 6,
+      "radius": 31.27,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:38.924639+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "snowden_2013",
+      "year": 2013,
+      "label": "Mass surveillance",
+      "route_ids": [
+        "surveillance_security_tension",
+        "internet_platform_interface"
+      ],
+      "station_type": "transfer",
+      "description": "Snowden disclosures make mass surveillance a global public-attention privacy frame.",
+      "source_title": "Privacy and Civil Liberties Oversight Board archive",
+      "source_url": "https://www.pclob.gov/",
+      "confidence": "medium",
+      "manual_review": true,
+      "evidence_strength": 4,
+      "radius": 27.0,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:40.206383+00:00",
+      "needs_manual_review": true,
+      "transfer": true
+    },
+    {
+      "station_id": "gdpr_adoption_2016",
+      "year": 2016,
+      "label": "GDPR adopted",
+      "route_ids": [
+        "information_data_protection",
+        "breach_risk_compliance",
+        "identity_consent_advertising"
+      ],
+      "station_type": "transfer",
+      "description": "GDPR adoption consolidates personal-data rights, consent, accountability, and penalties.",
+      "source_title": "Regulation (EU) 2016/679",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 6,
+      "radius": 31.27,
+      "source_reachable": true,
+      "source_status": 202,
+      "source_checked_at": "2026-05-27T10:44:45.270785+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "cambridge_analytica_2018",
+      "year": 2018,
+      "label": "Platform profiling",
+      "route_ids": [
+        "identity_consent_advertising",
+        "internet_platform_interface"
+      ],
+      "station_type": "platform_event",
+      "description": "Cambridge Analytica and Facebook enforcement make profiling, consent, and social data visible privacy harms.",
+      "source_title": "FTC Facebook privacy enforcement",
+      "source_url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 6,
+      "radius": 31.27,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:49.727348+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "gdpr_applies_2018",
+      "year": 2018,
+      "label": "GDPR applies",
+      "route_ids": [
+        "information_data_protection",
+        "internet_platform_interface",
+        "breach_risk_compliance"
+      ],
+      "station_type": "transfer",
+      "description": "GDPR enforcement begins and privacy becomes a mainstream product, policy, and compliance interface.",
+      "source_title": "European Commission data protection",
+      "source_url": "https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 6,
+      "radius": 31.27,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:46.898387+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "ccpa_2018_2020",
+      "year": 2020,
+      "label": "Consumer privacy rights",
+      "route_ids": [
+        "information_data_protection",
+        "identity_consent_advertising",
+        "breach_risk_compliance"
+      ],
+      "station_type": "transfer",
+      "description": "CCPA makes U.S. state consumer privacy rights and business obligations a mainstream privacy line.",
+      "source_title": "California Consumer Privacy Act",
+      "source_url": "https://oag.ca.gov/privacy/ccpa",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 6,
+      "radius": 31.27,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:50.581960+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    },
+    {
+      "station_id": "china_pipl_2021",
+      "year": 2021,
+      "label": "PIPL",
+      "route_ids": [
+        "information_data_protection",
+        "internet_platform_interface"
+      ],
+      "station_type": "data_governance",
+      "description": "China's Personal Information Protection Law extends large-scale personal-information governance.",
+      "source_title": "Personal Information Protection Law of the PRC",
+      "source_url": "https://en.spp.gov.cn/2021-12/29/c_948419.htm",
+      "confidence": "medium",
+      "manual_review": true,
+      "evidence_strength": 4,
+      "radius": 27.0,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:54.369607+00:00",
+      "needs_manual_review": true,
+      "transfer": true
+    },
+    {
+      "station_id": "state_privacy_2023",
+      "year": 2023,
+      "label": "State privacy wave",
+      "route_ids": [
+        "information_data_protection",
+        "breach_risk_compliance",
+        "internet_platform_interface"
+      ],
+      "station_type": "policy_wave",
+      "description": "Virginia, Colorado, Connecticut, and other state privacy laws broaden U.S. privacy compliance geography.",
+      "source_title": "California Privacy Protection Agency privacy resources",
+      "source_url": "https://cppa.ca.gov/",
+      "confidence": "medium",
+      "manual_review": true,
+      "evidence_strength": 4,
+      "radius": 27.0,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:54.699115+00:00",
+      "needs_manual_review": true,
+      "transfer": true
+    },
+    {
+      "station_id": "eu_ai_act_2024",
+      "year": 2024,
+      "label": "AI and biometrics",
+      "route_ids": [
+        "ai_biometrics_sensitive_data",
+        "information_data_protection",
+        "surveillance_security_tension"
+      ],
+      "station_type": "transfer",
+      "description": "AI regulation brings biometric identification, sensitive inference, and automated profiling into privacy-adjacent governance.",
+      "source_title": "EU AI Act regulatory framework",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "confidence": "high",
+      "manual_review": false,
+      "evidence_strength": 6,
+      "radius": 31.27,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T10:44:57.058846+00:00",
+      "needs_manual_review": false,
+      "transfer": true
+    }
+  ],
+  "route_segments": [
+    {
+      "route_id": "rights_personhood",
+      "from_station_id": "echr_article_8_1950",
+      "to_station_id": "griswold_1965",
+      "start_year": 1950,
+      "end_year": 1965,
+      "duration_years": 15,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "rights_personhood",
+      "from_station_id": "griswold_1965",
+      "to_station_id": "katz_1967",
+      "start_year": 1965,
+      "end_year": 1967,
+      "duration_years": 2,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "rights_personhood",
+      "from_station_id": "katz_1967",
+      "to_station_id": "convention_108_1981",
+      "start_year": 1967,
+      "end_year": 1981,
+      "duration_years": 14,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "hew_fipps_1973",
+      "to_station_id": "privacy_act_1974",
+      "start_year": 1973,
+      "end_year": 1974,
+      "duration_years": 1,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "privacy_act_1974",
+      "to_station_id": "oecd_guidelines_1980",
+      "start_year": 1974,
+      "end_year": 1980,
+      "duration_years": 6,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "oecd_guidelines_1980",
+      "to_station_id": "convention_108_1981",
+      "start_year": 1980,
+      "end_year": 1981,
+      "duration_years": 1,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "convention_108_1981",
+      "to_station_id": "ecpa_1986",
+      "start_year": 1981,
+      "end_year": 1986,
+      "duration_years": 5,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "ecpa_1986",
+      "to_station_id": "eu_directive_1995",
+      "start_year": 1986,
+      "end_year": 1995,
+      "duration_years": 9,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "eu_directive_1995",
+      "to_station_id": "hipaa_1996",
+      "start_year": 1995,
+      "end_year": 1996,
+      "duration_years": 1,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "hipaa_1996",
+      "to_station_id": "eprivacy_directive_2002",
+      "start_year": 1996,
+      "end_year": 2002,
+      "duration_years": 6,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "eprivacy_directive_2002",
+      "to_station_id": "california_breach_2003",
+      "start_year": 2002,
+      "end_year": 2003,
+      "duration_years": 1,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "california_breach_2003",
+      "to_station_id": "gdpr_adoption_2016",
+      "start_year": 2003,
+      "end_year": 2016,
+      "duration_years": 13,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "gdpr_adoption_2016",
+      "to_station_id": "gdpr_applies_2018",
+      "start_year": 2016,
+      "end_year": 2018,
+      "duration_years": 2,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "gdpr_applies_2018",
+      "to_station_id": "ccpa_2018_2020",
+      "start_year": 2018,
+      "end_year": 2020,
+      "duration_years": 2,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "ccpa_2018_2020",
+      "to_station_id": "china_pipl_2021",
+      "start_year": 2020,
+      "end_year": 2021,
+      "duration_years": 1,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "china_pipl_2021",
+      "to_station_id": "state_privacy_2023",
+      "start_year": 2021,
+      "end_year": 2023,
+      "duration_years": 2,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "information_data_protection",
+      "from_station_id": "state_privacy_2023",
+      "to_station_id": "eu_ai_act_2024",
+      "start_year": 2023,
+      "end_year": 2024,
+      "duration_years": 1,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "internet_platform_interface",
+      "from_station_id": "coppa_1998",
+      "to_station_id": "eprivacy_directive_2002",
+      "start_year": 1998,
+      "end_year": 2002,
+      "duration_years": 4,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "internet_platform_interface",
+      "from_station_id": "eprivacy_directive_2002",
+      "to_station_id": "ftc_privacy_report_2012",
+      "start_year": 2002,
+      "end_year": 2012,
+      "duration_years": 10,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "internet_platform_interface",
+      "from_station_id": "ftc_privacy_report_2012",
+      "to_station_id": "snowden_2013",
+      "start_year": 2012,
+      "end_year": 2013,
+      "duration_years": 1,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "internet_platform_interface",
+      "from_station_id": "snowden_2013",
+      "to_station_id": "cambridge_analytica_2018",
+      "start_year": 2013,
+      "end_year": 2018,
+      "duration_years": 5,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "internet_platform_interface",
+      "from_station_id": "cambridge_analytica_2018",
+      "to_station_id": "gdpr_applies_2018",
+      "start_year": 2018,
+      "end_year": 2018,
+      "duration_years": 0,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "internet_platform_interface",
+      "from_station_id": "gdpr_applies_2018",
+      "to_station_id": "china_pipl_2021",
+      "start_year": 2018,
+      "end_year": 2021,
+      "duration_years": 3,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "internet_platform_interface",
+      "from_station_id": "china_pipl_2021",
+      "to_station_id": "state_privacy_2023",
+      "start_year": 2021,
+      "end_year": 2023,
+      "duration_years": 2,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "surveillance_security_tension",
+      "from_station_id": "katz_1967",
+      "to_station_id": "ecpa_1986",
+      "start_year": 1967,
+      "end_year": 1986,
+      "duration_years": 19,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "surveillance_security_tension",
+      "from_station_id": "ecpa_1986",
+      "to_station_id": "patriot_act_2001",
+      "start_year": 1986,
+      "end_year": 2001,
+      "duration_years": 15,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "surveillance_security_tension",
+      "from_station_id": "patriot_act_2001",
+      "to_station_id": "snowden_2013",
+      "start_year": 2001,
+      "end_year": 2013,
+      "duration_years": 12,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "surveillance_security_tension",
+      "from_station_id": "snowden_2013",
+      "to_station_id": "eu_ai_act_2024",
+      "start_year": 2013,
+      "end_year": 2024,
+      "duration_years": 11,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "breach_risk_compliance",
+      "from_station_id": "privacy_act_1974",
+      "to_station_id": "california_breach_2003",
+      "start_year": 1974,
+      "end_year": 2003,
+      "duration_years": 29,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "breach_risk_compliance",
+      "from_station_id": "california_breach_2003",
+      "to_station_id": "ftc_privacy_report_2012",
+      "start_year": 2003,
+      "end_year": 2012,
+      "duration_years": 9,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "breach_risk_compliance",
+      "from_station_id": "ftc_privacy_report_2012",
+      "to_station_id": "gdpr_adoption_2016",
+      "start_year": 2012,
+      "end_year": 2016,
+      "duration_years": 4,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "breach_risk_compliance",
+      "from_station_id": "gdpr_adoption_2016",
+      "to_station_id": "gdpr_applies_2018",
+      "start_year": 2016,
+      "end_year": 2018,
+      "duration_years": 2,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "breach_risk_compliance",
+      "from_station_id": "gdpr_applies_2018",
+      "to_station_id": "ccpa_2018_2020",
+      "start_year": 2018,
+      "end_year": 2020,
+      "duration_years": 2,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "breach_risk_compliance",
+      "from_station_id": "ccpa_2018_2020",
+      "to_station_id": "state_privacy_2023",
+      "start_year": 2020,
+      "end_year": 2023,
+      "duration_years": 3,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "identity_consent_advertising",
+      "from_station_id": "coppa_1998",
+      "to_station_id": "ftc_privacy_report_2012",
+      "start_year": 1998,
+      "end_year": 2012,
+      "duration_years": 14,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "identity_consent_advertising",
+      "from_station_id": "ftc_privacy_report_2012",
+      "to_station_id": "gdpr_adoption_2016",
+      "start_year": 2012,
+      "end_year": 2016,
+      "duration_years": 4,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "identity_consent_advertising",
+      "from_station_id": "gdpr_adoption_2016",
+      "to_station_id": "cambridge_analytica_2018",
+      "start_year": 2016,
+      "end_year": 2018,
+      "duration_years": 2,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "identity_consent_advertising",
+      "from_station_id": "cambridge_analytica_2018",
+      "to_station_id": "ccpa_2018_2020",
+      "start_year": 2018,
+      "end_year": 2020,
+      "duration_years": 2,
+      "suggested_motion": "continuous_particles"
+    },
+    {
+      "route_id": "ai_biometrics_sensitive_data",
+      "from_station_id": "hipaa_1996",
+      "to_station_id": "eu_ai_act_2024",
+      "start_year": 1996,
+      "end_year": 2024,
+      "duration_years": 28,
+      "suggested_motion": "continuous_particles"
+    }
+  ],
+  "transfer_stations": [
+    {
+      "station_id": "katz_1967",
+      "label": "Reasonable expectation",
+      "year": 1967,
+      "route_ids": [
+        "rights_personhood",
+        "surveillance_security_tension"
+      ],
+      "evidence_strength": 5
+    },
+    {
+      "station_id": "privacy_act_1974",
+      "label": "U.S. Privacy Act",
+      "year": 1974,
+      "route_ids": [
+        "information_data_protection",
+        "breach_risk_compliance"
+      ],
+      "evidence_strength": 6
+    },
+    {
+      "station_id": "convention_108_1981",
+      "label": "Convention 108",
+      "year": 1981,
+      "route_ids": [
+        "information_data_protection",
+        "rights_personhood"
+      ],
+      "evidence_strength": 6
+    },
+    {
+      "station_id": "ecpa_1986",
+      "label": "Electronic communications",
+      "year": 1986,
+      "route_ids": [
+        "surveillance_security_tension",
+        "information_data_protection"
+      ],
+      "evidence_strength": 6
+    },
+    {
+      "station_id": "hipaa_1996",
+      "label": "Health privacy",
+      "year": 1996,
+      "route_ids": [
+        "ai_biometrics_sensitive_data",
+        "information_data_protection"
+      ],
+      "evidence_strength": 6
+    },
+    {
+      "station_id": "coppa_1998",
+      "label": "Children online",
+      "year": 1998,
+      "route_ids": [
+        "internet_platform_interface",
+        "identity_consent_advertising"
+      ],
+      "evidence_strength": 6
+    },
+    {
+      "station_id": "eprivacy_directive_2002",
+      "label": "ePrivacy / cookies",
+      "year": 2002,
+      "route_ids": [
+        "internet_platform_interface",
+        "information_data_protection"
+      ],
+      "evidence_strength": 6
+    },
+    {
+      "station_id": "california_breach_2003",
+      "label": "Breach notification",
+      "year": 2003,
+      "route_ids": [
+        "breach_risk_compliance",
+        "information_data_protection"
+      ],
+      "evidence_strength": 5
+    },
+    {
+      "station_id": "ftc_privacy_report_2012",
+      "label": "Privacy framework",
+      "year": 2012,
+      "route_ids": [
+        "internet_platform_interface",
+        "identity_consent_advertising",
+        "breach_risk_compliance"
+      ],
+      "evidence_strength": 6
+    },
+    {
+      "station_id": "snowden_2013",
+      "label": "Mass surveillance",
+      "year": 2013,
+      "route_ids": [
+        "surveillance_security_tension",
+        "internet_platform_interface"
+      ],
+      "evidence_strength": 4
+    },
+    {
+      "station_id": "gdpr_adoption_2016",
+      "label": "GDPR adopted",
+      "year": 2016,
+      "route_ids": [
+        "information_data_protection",
+        "breach_risk_compliance",
+        "identity_consent_advertising"
+      ],
+      "evidence_strength": 6
+    },
+    {
+      "station_id": "cambridge_analytica_2018",
+      "label": "Platform profiling",
+      "year": 2018,
+      "route_ids": [
+        "identity_consent_advertising",
+        "internet_platform_interface"
+      ],
+      "evidence_strength": 6
+    },
+    {
+      "station_id": "gdpr_applies_2018",
+      "label": "GDPR applies",
+      "year": 2018,
+      "route_ids": [
+        "information_data_protection",
+        "internet_platform_interface",
+        "breach_risk_compliance"
+      ],
+      "evidence_strength": 6
+    },
+    {
+      "station_id": "ccpa_2018_2020",
+      "label": "Consumer privacy rights",
+      "year": 2020,
+      "route_ids": [
+        "information_data_protection",
+        "identity_consent_advertising",
+        "breach_risk_compliance"
+      ],
+      "evidence_strength": 6
+    },
+    {
+      "station_id": "china_pipl_2021",
+      "label": "PIPL",
+      "year": 2021,
+      "route_ids": [
+        "information_data_protection",
+        "internet_platform_interface"
+      ],
+      "evidence_strength": 4
+    },
+    {
+      "station_id": "state_privacy_2023",
+      "label": "State privacy wave",
+      "year": 2023,
+      "route_ids": [
+        "information_data_protection",
+        "breach_risk_compliance",
+        "internet_platform_interface"
+      ],
+      "evidence_strength": 4
+    },
+    {
+      "station_id": "eu_ai_act_2024",
+      "label": "AI and biometrics",
+      "year": 2024,
+      "route_ids": [
+        "ai_biometrics_sensitive_data",
+        "information_data_protection",
+        "surveillance_security_tension"
+      ],
+      "evidence_strength": 6
+    }
+  ],
+  "flow_metrics": {
+    "periods": [
+      {
+        "period_id": "1950_1974",
+        "label": "1950-1974",
+        "start_year": 1950,
+        "end_year": 1974
+      },
+      {
+        "period_id": "1974_1995",
+        "label": "1974-1995",
+        "start_year": 1974,
+        "end_year": 1995
+      },
+      {
+        "period_id": "1995_2001",
+        "label": "1995-2001",
+        "start_year": 1995,
+        "end_year": 2001
+      },
+      {
+        "period_id": "2001_2013",
+        "label": "2001-2013",
+        "start_year": 2001,
+        "end_year": 2013
+      },
+      {
+        "period_id": "2013_2018",
+        "label": "2013-2018",
+        "start_year": 2013,
+        "end_year": 2018
+      },
+      {
+        "period_id": "2018_2026",
+        "label": "2018-2026",
+        "start_year": 2018,
+        "end_year": 2026
+      }
+    ],
+    "by_route_period": [
+      {
+        "route_id": "rights_personhood",
+        "period_id": "1950_1974",
+        "period_label": "1950-1974",
+        "frequency_signal": 0.255768,
+        "attention_views": 0,
+        "anchor_count": 3,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "echr_article_8_1950",
+          "griswold_1965",
+          "katz_1967"
+        ],
+        "raw_flow_score": 3.0534495584112493,
+        "particle_density": 0.519,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "rights_personhood",
+        "period_id": "1974_1995",
+        "period_label": "1974-1995",
+        "frequency_signal": 0.351525,
+        "attention_views": 0,
+        "anchor_count": 1,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "convention_108_1981"
+        ],
+        "raw_flow_score": 2.2021705779807164,
+        "particle_density": 0.43,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "rights_personhood",
+        "period_id": "1995_2001",
+        "period_label": "1995-2001",
+        "frequency_signal": 0.478958,
+        "attention_views": 0,
+        "anchor_count": 0,
+        "collocation_hit_count": 5,
+        "station_ids": [],
+        "raw_flow_score": 1.9091720964855794,
+        "particle_density": 0.4,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "rights_personhood",
+        "period_id": "2001_2013",
+        "period_label": "2001-2013",
+        "frequency_signal": 0.536021,
+        "attention_views": 0,
+        "anchor_count": 0,
+        "collocation_hit_count": 5,
+        "station_ids": [],
+        "raw_flow_score": 2.0058281850290216,
+        "particle_density": 0.41,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "rights_personhood",
+        "period_id": "2013_2018",
+        "period_label": "2013-2018",
+        "frequency_signal": 0.565433,
+        "attention_views": 1500121,
+        "anchor_count": 0,
+        "collocation_hit_count": 5,
+        "station_ids": [],
+        "raw_flow_score": 4.654988091567687,
+        "particle_density": 0.687,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "rights_personhood",
+        "period_id": "2018_2026",
+        "period_label": "2018-2026",
+        "frequency_signal": 0.609014,
+        "attention_views": 3641539,
+        "anchor_count": 0,
+        "collocation_hit_count": 5,
+        "station_ids": [],
+        "raw_flow_score": 5.562330445695947,
+        "particle_density": 0.782,
+        "particle_speed_hint": "fast"
+      },
+      {
+        "route_id": "information_data_protection",
+        "period_id": "1950_1974",
+        "period_label": "1950-1974",
+        "frequency_signal": 0.011963,
+        "attention_views": 0,
+        "anchor_count": 2,
+        "collocation_hit_count": 4,
+        "station_ids": [
+          "hew_fipps_1973",
+          "privacy_act_1974"
+        ],
+        "raw_flow_score": 1.234138470660024,
+        "particle_density": 0.329,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "information_data_protection",
+        "period_id": "1974_1995",
+        "period_label": "1974-1995",
+        "frequency_signal": 0.256635,
+        "attention_views": 0,
+        "anchor_count": 5,
+        "collocation_hit_count": 4,
+        "station_ids": [
+          "privacy_act_1974",
+          "oecd_guidelines_1980",
+          "convention_108_1981",
+          "ecpa_1986",
+          "eu_directive_1995"
+        ],
+        "raw_flow_score": 4.156003905798219,
+        "particle_density": 0.635,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "information_data_protection",
+        "period_id": "1995_2001",
+        "period_label": "1995-2001",
+        "frequency_signal": 0.501453,
+        "attention_views": 0,
+        "anchor_count": 2,
+        "collocation_hit_count": 4,
+        "station_ids": [
+          "eu_directive_1995",
+          "hipaa_1996"
+        ],
+        "raw_flow_score": 3.048397770249596,
+        "particle_density": 0.519,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "information_data_protection",
+        "period_id": "2001_2013",
+        "period_label": "2001-2013",
+        "frequency_signal": 0.686903,
+        "attention_views": 0,
+        "anchor_count": 2,
+        "collocation_hit_count": 4,
+        "station_ids": [
+          "eprivacy_directive_2002",
+          "california_breach_2003"
+        ],
+        "raw_flow_score": 3.3238484679819873,
+        "particle_density": 0.548,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "information_data_protection",
+        "period_id": "2013_2018",
+        "period_label": "2013-2018",
+        "frequency_signal": 0.811531,
+        "attention_views": 343500,
+        "anchor_count": 2,
+        "collocation_hit_count": 4,
+        "station_ids": [
+          "gdpr_adoption_2016",
+          "gdpr_applies_2018"
+        ],
+        "raw_flow_score": 4.8251386778460965,
+        "particle_density": 0.705,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "information_data_protection",
+        "period_id": "2018_2026",
+        "period_label": "2018-2026",
+        "frequency_signal": 1.522149,
+        "attention_views": 713236,
+        "anchor_count": 5,
+        "collocation_hit_count": 4,
+        "station_ids": [
+          "gdpr_applies_2018",
+          "ccpa_2018_2020",
+          "china_pipl_2021",
+          "state_privacy_2023",
+          "eu_ai_act_2024"
+        ],
+        "raw_flow_score": 7.6461559073162535,
+        "particle_density": 1.0,
+        "particle_speed_hint": "fast"
+      },
+      {
+        "route_id": "internet_platform_interface",
+        "period_id": "1950_1974",
+        "period_label": "1950-1974",
+        "frequency_signal": 0.000552,
+        "attention_views": 0,
+        "anchor_count": 0,
+        "collocation_hit_count": 8,
+        "station_ids": [],
+        "raw_flow_score": 0.006599740691042452,
+        "particle_density": 0.201,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "internet_platform_interface",
+        "period_id": "1974_1995",
+        "period_label": "1974-1995",
+        "frequency_signal": 0.002641,
+        "attention_views": 0,
+        "anchor_count": 0,
+        "collocation_hit_count": 8,
+        "station_ids": [],
+        "raw_flow_score": 0.031196627988973033,
+        "particle_density": 0.203,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "internet_platform_interface",
+        "period_id": "1995_2001",
+        "period_label": "1995-2001",
+        "frequency_signal": 0.046398,
+        "attention_views": 0,
+        "anchor_count": 1,
+        "collocation_hit_count": 8,
+        "station_ids": [
+          "coppa_1998"
+        ],
+        "raw_flow_score": 0.9926164107752288,
+        "particle_density": 0.304,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "internet_platform_interface",
+        "period_id": "2001_2013",
+        "period_label": "2001-2013",
+        "frequency_signal": 0.101866,
+        "attention_views": 0,
+        "anchor_count": 3,
+        "collocation_hit_count": 8,
+        "station_ids": [
+          "eprivacy_directive_2002",
+          "ftc_privacy_report_2012",
+          "snowden_2013"
+        ],
+        "raw_flow_score": 2.4485838965823623,
+        "particle_density": 0.456,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "internet_platform_interface",
+        "period_id": "2013_2018",
+        "period_label": "2013-2018",
+        "frequency_signal": 0.100754,
+        "attention_views": 1153042,
+        "anchor_count": 3,
+        "collocation_hit_count": 8,
+        "station_ids": [
+          "snowden_2013",
+          "cambridge_analytica_2018",
+          "gdpr_applies_2018"
+        ],
+        "raw_flow_score": 4.804232348660551,
+        "particle_density": 0.703,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "internet_platform_interface",
+        "period_id": "2018_2026",
+        "period_label": "2018-2026",
+        "frequency_signal": 0.119013,
+        "attention_views": 3481076,
+        "anchor_count": 4,
+        "collocation_hit_count": 8,
+        "station_ids": [
+          "cambridge_analytica_2018",
+          "gdpr_applies_2018",
+          "china_pipl_2021",
+          "state_privacy_2023"
+        ],
+        "raw_flow_score": 6.488630810510218,
+        "particle_density": 0.879,
+        "particle_speed_hint": "fast"
+      },
+      {
+        "route_id": "surveillance_security_tension",
+        "period_id": "1950_1974",
+        "period_label": "1950-1974",
+        "frequency_signal": 1.187459,
+        "attention_views": 0,
+        "anchor_count": 1,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "katz_1967"
+        ],
+        "raw_flow_score": 3.2745475565902638,
+        "particle_density": 0.543,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "surveillance_security_tension",
+        "period_id": "1974_1995",
+        "period_label": "1974-1995",
+        "frequency_signal": 3.042099,
+        "attention_views": 0,
+        "anchor_count": 1,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "ecpa_1986"
+        ],
+        "raw_flow_score": 4.174479261907386,
+        "particle_density": 0.637,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "surveillance_security_tension",
+        "period_id": "1995_2001",
+        "period_label": "1995-2001",
+        "frequency_signal": 3.381424,
+        "attention_views": 0,
+        "anchor_count": 1,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "patriot_act_2001"
+        ],
+        "raw_flow_score": 4.277549291930473,
+        "particle_density": 0.648,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "surveillance_security_tension",
+        "period_id": "2001_2013",
+        "period_label": "2001-2013",
+        "frequency_signal": 4.130278,
+        "attention_views": 0,
+        "anchor_count": 2,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "patriot_act_2001",
+          "snowden_2013"
+        ],
+        "raw_flow_score": 5.023226686809065,
+        "particle_density": 0.726,
+        "particle_speed_hint": "fast"
+      },
+      {
+        "route_id": "surveillance_security_tension",
+        "period_id": "2013_2018",
+        "period_label": "2013-2018",
+        "frequency_signal": 4.497229,
+        "attention_views": 857996,
+        "anchor_count": 1,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "snowden_2013"
+        ],
+        "raw_flow_score": 6.654742179476863,
+        "particle_density": 0.896,
+        "particle_speed_hint": "fast"
+      },
+      {
+        "route_id": "surveillance_security_tension",
+        "period_id": "2018_2026",
+        "period_label": "2018-2026",
+        "frequency_signal": 4.902208,
+        "attention_views": 1669583,
+        "anchor_count": 1,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "eu_ai_act_2024"
+        ],
+        "raw_flow_score": 7.3436947353773565,
+        "particle_density": 0.968,
+        "particle_speed_hint": "fast"
+      },
+      {
+        "route_id": "breach_risk_compliance",
+        "period_id": "1950_1974",
+        "period_label": "1950-1974",
+        "frequency_signal": 0.000111,
+        "attention_views": 0,
+        "anchor_count": 1,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "privacy_act_1974"
+        ],
+        "raw_flow_score": 0.5513283747115127,
+        "particle_density": 0.258,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "breach_risk_compliance",
+        "period_id": "1974_1995",
+        "period_label": "1974-1995",
+        "frequency_signal": 0.000278,
+        "attention_views": 0,
+        "anchor_count": 1,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "privacy_act_1974"
+        ],
+        "raw_flow_score": 0.5533330362764369,
+        "particle_density": 0.258,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "breach_risk_compliance",
+        "period_id": "1995_2001",
+        "period_label": "1995-2001",
+        "frequency_signal": 0.000906,
+        "attention_views": 0,
+        "anchor_count": 0,
+        "collocation_hit_count": 5,
+        "station_ids": [],
+        "raw_flow_score": 0.010813940183206847,
+        "particle_density": 0.201,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "breach_risk_compliance",
+        "period_id": "2001_2013",
+        "period_label": "2001-2013",
+        "frequency_signal": 0.006578,
+        "attention_views": 0,
+        "anchor_count": 2,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "california_breach_2003",
+          "ftc_privacy_report_2012"
+        ],
+        "raw_flow_score": 1.1759780965234057,
+        "particle_density": 0.323,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "breach_risk_compliance",
+        "period_id": "2013_2018",
+        "period_label": "2013-2018",
+        "frequency_signal": 0.011395,
+        "attention_views": 338993,
+        "anchor_count": 2,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "gdpr_adoption_2016",
+          "gdpr_applies_2018"
+        ],
+        "raw_flow_score": 2.5697115313396903,
+        "particle_density": 0.469,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "breach_risk_compliance",
+        "period_id": "2018_2026",
+        "period_label": "2018-2026",
+        "frequency_signal": 0.016942,
+        "attention_views": 2224305,
+        "anchor_count": 3,
+        "collocation_hit_count": 5,
+        "station_ids": [
+          "gdpr_applies_2018",
+          "ccpa_2018_2020",
+          "state_privacy_2023"
+        ],
+        "raw_flow_score": 4.807326514593562,
+        "particle_density": 0.703,
+        "particle_speed_hint": "medium"
+      },
+      {
+        "route_id": "identity_consent_advertising",
+        "period_id": "1950_1974",
+        "period_label": "1950-1974",
+        "frequency_signal": 0.0,
+        "attention_views": 0,
+        "anchor_count": 0,
+        "collocation_hit_count": 4,
+        "station_ids": [],
+        "raw_flow_score": 0.0,
+        "particle_density": 0.2,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "identity_consent_advertising",
+        "period_id": "1974_1995",
+        "period_label": "1974-1995",
+        "frequency_signal": 0.0,
+        "attention_views": 0,
+        "anchor_count": 0,
+        "collocation_hit_count": 4,
+        "station_ids": [],
+        "raw_flow_score": 0.0,
+        "particle_density": 0.2,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "identity_consent_advertising",
+        "period_id": "1995_2001",
+        "period_label": "1995-2001",
+        "frequency_signal": 0.0,
+        "attention_views": 0,
+        "anchor_count": 1,
+        "collocation_hit_count": 4,
+        "station_ids": [
+          "coppa_1998"
+        ],
+        "raw_flow_score": 0.55,
+        "particle_density": 0.258,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "identity_consent_advertising",
+        "period_id": "2001_2013",
+        "period_label": "2001-2013",
+        "frequency_signal": 0.0,
+        "attention_views": 0,
+        "anchor_count": 1,
+        "collocation_hit_count": 4,
+        "station_ids": [
+          "ftc_privacy_report_2012"
+        ],
+        "raw_flow_score": 0.55,
+        "particle_density": 0.258,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "identity_consent_advertising",
+        "period_id": "2013_2018",
+        "period_label": "2013-2018",
+        "frequency_signal": 0.0,
+        "attention_views": 114022,
+        "anchor_count": 2,
+        "collocation_hit_count": 4,
+        "station_ids": [
+          "gdpr_adoption_2016",
+          "cambridge_analytica_2018"
+        ],
+        "raw_flow_score": 1.7679233852503426,
+        "particle_density": 0.385,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "identity_consent_advertising",
+        "period_id": "2018_2026",
+        "period_label": "2018-2026",
+        "frequency_signal": 0.0,
+        "attention_views": 223242,
+        "anchor_count": 2,
+        "collocation_hit_count": 4,
+        "station_ids": [
+          "cambridge_analytica_2018",
+          "ccpa_2018_2020"
+        ],
+        "raw_flow_score": 2.1509439949666085,
+        "particle_density": 0.425,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "ai_biometrics_sensitive_data",
+        "period_id": "1950_1974",
+        "period_label": "1950-1974",
+        "frequency_signal": 0.0,
+        "attention_views": 0,
+        "anchor_count": 0,
+        "collocation_hit_count": 6,
+        "station_ids": [],
+        "raw_flow_score": 0.0,
+        "particle_density": 0.2,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "ai_biometrics_sensitive_data",
+        "period_id": "1974_1995",
+        "period_label": "1974-1995",
+        "frequency_signal": 0.0,
+        "attention_views": 0,
+        "anchor_count": 0,
+        "collocation_hit_count": 6,
+        "station_ids": [],
+        "raw_flow_score": 0.0,
+        "particle_density": 0.2,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "ai_biometrics_sensitive_data",
+        "period_id": "1995_2001",
+        "period_label": "1995-2001",
+        "frequency_signal": 0.0,
+        "attention_views": 0,
+        "anchor_count": 1,
+        "collocation_hit_count": 6,
+        "station_ids": [
+          "hipaa_1996"
+        ],
+        "raw_flow_score": 0.55,
+        "particle_density": 0.258,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "ai_biometrics_sensitive_data",
+        "period_id": "2001_2013",
+        "period_label": "2001-2013",
+        "frequency_signal": 0.0,
+        "attention_views": 0,
+        "anchor_count": 0,
+        "collocation_hit_count": 6,
+        "station_ids": [],
+        "raw_flow_score": 0.0,
+        "particle_density": 0.2,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "ai_biometrics_sensitive_data",
+        "period_id": "2013_2018",
+        "period_label": "2013-2018",
+        "frequency_signal": 0.0,
+        "attention_views": 0,
+        "anchor_count": 0,
+        "collocation_hit_count": 6,
+        "station_ids": [],
+        "raw_flow_score": 0.0,
+        "particle_density": 0.2,
+        "particle_speed_hint": "slow"
+      },
+      {
+        "route_id": "ai_biometrics_sensitive_data",
+        "period_id": "2018_2026",
+        "period_label": "2018-2026",
+        "frequency_signal": 0.0,
+        "attention_views": 0,
+        "anchor_count": 1,
+        "collocation_hit_count": 6,
+        "station_ids": [
+          "eu_ai_act_2024"
+        ],
+        "raw_flow_score": 0.55,
+        "particle_density": 0.258,
+        "particle_speed_hint": "slow"
+      }
+    ]
+  },
+  "animated_particles": [
+    {
+      "route_id": "rights_personhood",
+      "color": "#7E42B8",
+      "motion_rule": "particles follow route segments from older to newer stations",
+      "density_source": "particle_density from frequency, attention, and anchor density"
+    },
+    {
+      "route_id": "information_data_protection",
+      "color": "#2E8FAF",
+      "motion_rule": "particles follow route segments from older to newer stations",
+      "density_source": "particle_density from frequency, attention, and anchor density"
+    },
+    {
+      "route_id": "internet_platform_interface",
+      "color": "#F26A21",
+      "motion_rule": "particles follow route segments from older to newer stations",
+      "density_source": "particle_density from frequency, attention, and anchor density"
+    },
+    {
+      "route_id": "surveillance_security_tension",
+      "color": "#D83232",
+      "motion_rule": "particles follow route segments from older to newer stations",
+      "density_source": "particle_density from frequency, attention, and anchor density"
+    },
+    {
+      "route_id": "breach_risk_compliance",
+      "color": "#2F9F5F",
+      "motion_rule": "particles follow route segments from older to newer stations",
+      "density_source": "particle_density from frequency, attention, and anchor density"
+    },
+    {
+      "route_id": "identity_consent_advertising",
+      "color": "#DDBE24",
+      "motion_rule": "particles follow route segments from older to newer stations",
+      "density_source": "particle_density from frequency, attention, and anchor density"
+    },
+    {
+      "route_id": "ai_biometrics_sensitive_data",
+      "color": "#1F6678",
+      "motion_rule": "particles follow route segments from older to newer stations",
+      "density_source": "particle_density from frequency, attention, and anchor density"
+    }
+  ],
+  "small_support_charts": {
+    "route_scale": "Station radius encodes source support and transfer importance.",
+    "modern_phrase_signal": "Route flow uses frequency_terms phrase series and Wikimedia attention where available.",
+    "anchor_strip": "Station bars can show legal, technical, and cultural anchors by year without implying all transitions are legal events."
+  },
+  "source_support": {
+    "source_rows": [
+      {
+        "station_id": "echr_article_8_1950",
+        "year": 1950,
+        "label": "ECHR Article 8",
+        "source_title": "European Convention on Human Rights",
+        "source_url": "https://rm.coe.int/168007aee0",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "griswold_1965",
+        "year": 1965,
+        "label": "Griswold v. Connecticut",
+        "source_title": "Griswold v. Connecticut",
+        "source_url": "https://www.oyez.org/cases/1964/496",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "katz_1967",
+        "year": 1967,
+        "label": "Reasonable expectation",
+        "source_title": "Katz v. United States",
+        "source_url": "https://www.oyez.org/cases/1967/35",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "hew_fipps_1973",
+        "year": 1973,
+        "label": "Fair information practices",
+        "source_title": "Records, Computers, and the Rights of Citizens",
+        "source_url": "https://aspe.hhs.gov/reports/records-computers-rights-citizens",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "privacy_act_1974",
+        "year": 1974,
+        "label": "U.S. Privacy Act",
+        "source_title": "Privacy Act of 1974",
+        "source_url": "https://www.justice.gov/opcl/privacy-act-1974",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "oecd_guidelines_1980",
+        "year": 1980,
+        "label": "OECD privacy guidelines",
+        "source_title": "OECD Privacy Guidelines",
+        "source_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0188",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "convention_108_1981",
+        "year": 1981,
+        "label": "Convention 108",
+        "source_title": "Convention 108",
+        "source_url": "https://rm.coe.int/1680078b37",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "ecpa_1986",
+        "year": 1986,
+        "label": "Electronic communications",
+        "source_title": "Electronic Communications Privacy Act",
+        "source_url": "https://bja.ojp.gov/program/it/privacy-civil-liberties/authorities/statutes/1285",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "eu_directive_1995",
+        "year": 1995,
+        "label": "EU Data Protection Directive",
+        "source_title": "Directive 95/46/EC",
+        "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31995L0046",
+        "reachable": true,
+        "status": 202,
+        "manual_review": false
+      },
+      {
+        "station_id": "hipaa_1996",
+        "year": 1996,
+        "label": "Health privacy",
+        "source_title": "HIPAA Privacy Rule",
+        "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "coppa_1998",
+        "year": 1998,
+        "label": "Children online",
+        "source_title": "Children's Online Privacy Protection Rule",
+        "source_url": "https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "patriot_act_2001",
+        "year": 2001,
+        "label": "Security turn",
+        "source_title": "USA PATRIOT Act",
+        "source_url": "https://www.govinfo.gov/content/pkg/PLAW-107publ56/html/PLAW-107publ56.htm",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "eprivacy_directive_2002",
+        "year": 2002,
+        "label": "ePrivacy / cookies",
+        "source_title": "Directive 2002/58/EC",
+        "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32002L0058",
+        "reachable": true,
+        "status": 202,
+        "manual_review": false
+      },
+      {
+        "station_id": "california_breach_2003",
+        "year": 2003,
+        "label": "Breach notification",
+        "source_title": "California breach notification law",
+        "source_url": "https://oag.ca.gov/privacy/databreach/reporting",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "ftc_privacy_report_2012",
+        "year": 2012,
+        "label": "Privacy framework",
+        "source_title": "Protecting Consumer Privacy in an Era of Rapid Change",
+        "source_url": "https://www.ftc.gov/reports/protecting-consumer-privacy-era-rapid-change-recommendations-businesses-policymakers",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "snowden_2013",
+        "year": 2013,
+        "label": "Mass surveillance",
+        "source_title": "Privacy and Civil Liberties Oversight Board archive",
+        "source_url": "https://www.pclob.gov/",
+        "reachable": true,
+        "status": 200,
+        "manual_review": true
+      },
+      {
+        "station_id": "gdpr_adoption_2016",
+        "year": 2016,
+        "label": "GDPR adopted",
+        "source_title": "Regulation (EU) 2016/679",
+        "source_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "reachable": true,
+        "status": 202,
+        "manual_review": false
+      },
+      {
+        "station_id": "gdpr_applies_2018",
+        "year": 2018,
+        "label": "GDPR applies",
+        "source_title": "European Commission data protection",
+        "source_url": "https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "cambridge_analytica_2018",
+        "year": 2018,
+        "label": "Platform profiling",
+        "source_title": "FTC Facebook privacy enforcement",
+        "source_url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "ccpa_2018_2020",
+        "year": 2020,
+        "label": "Consumer privacy rights",
+        "source_title": "California Consumer Privacy Act",
+        "source_url": "https://oag.ca.gov/privacy/ccpa",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      },
+      {
+        "station_id": "china_pipl_2021",
+        "year": 2021,
+        "label": "PIPL",
+        "source_title": "Personal Information Protection Law of the PRC",
+        "source_url": "https://en.spp.gov.cn/2021-12/29/c_948419.htm",
+        "reachable": true,
+        "status": 200,
+        "manual_review": true
+      },
+      {
+        "station_id": "state_privacy_2023",
+        "year": 2023,
+        "label": "State privacy wave",
+        "source_title": "California Privacy Protection Agency privacy resources",
+        "source_url": "https://cppa.ca.gov/",
+        "reachable": true,
+        "status": 200,
+        "manual_review": true
+      },
+      {
+        "station_id": "eu_ai_act_2024",
+        "year": 2024,
+        "label": "AI and biometrics",
+        "source_title": "EU AI Act regulatory framework",
+        "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+        "reachable": true,
+        "status": 200,
+        "manual_review": false
+      }
+    ],
+    "reachable_source_count": 23,
+    "source_count": 23,
+    "manual_review_count": 3,
+    "failed_sources": []
+  },
+  "source_inputs": [
+    {
+      "source_id": "curated_modern_station_sources",
+      "record_count": 23,
+      "reachable_count": 23,
+      "manual_review_count": 3
+    },
+    {
+      "source_id": "frequency_terms",
+      "record_count": 141,
+      "year_range": [
+        1500,
+        2022
+      ]
+    },
+    {
+      "source_id": "collocations_semantic_field",
+      "record_count": 89
+    },
+    {
+      "source_id": "attention_metrics",
+      "record_count": 11,
+      "note": "Wikimedia pageviews support attention intensity after 2015 only."
+    },
+    {
+      "source_id": "timeline_source_index",
+      "record_count": 19
+    }
+  ],
+  "visual_plan": {
+    "map_type": "metro_map",
+    "recommended_height_px": 1250,
+    "route_layout": "Use separate horizontal/diagonal route corridors with transfer stations at GDPR, consent, data breach, surveillance, and AI/biometrics.",
+    "animation": "Use small moving dots along routes; do not animate station labels. Particle density can increase after 1995, 2013, and 2018 where data supports it.",
+    "interaction": "Hover should resolve to fixed side-panel station details, not floating labels over the route map."
+  },
+  "limitations": [
+    "This is a chart-support data layer, not a complete global privacy-law database.",
+    "Google Books data ends at 2022, while the visual range runs to 2026; post-2022 flow should lean on anchors and attention metrics, not Ngram values.",
+    "Wikimedia pageviews are public attention proxies only and do not equal social importance.",
+    "Manual-review stations are useful for layout continuity but should be visually marked lighter until source-grade verification is complete.",
+    "Some legal sources are jurisdiction-specific; the metro metaphor should show branching semantic routes, not a single universal legal timeline."
+  ]
+}

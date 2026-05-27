@@ -31,6 +31,7 @@ export type Word = {
   slug: string;
   status: WordStatus;
   href?: string;
+  hoverLabel?: string;
   displayLemma?: string;
   subtitle?: string;
   forms?: WordForm[];

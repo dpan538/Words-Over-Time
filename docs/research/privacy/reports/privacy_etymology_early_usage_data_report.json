@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "layer_id": "etymology_early_usage",
+    "generated_at": "2026-05-26T12:50:46.135054Z",
+    "generated_by_script": "scripts/process_privacy_etymology_early_usage.py",
+    "raw_source": "docs/research/privacy/raw/privacy_etymology_early_usage_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_etymology_early_usage_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_etymology_early_usage_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_etymology_early_usage_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_etymology_early_usage_raw.json"
+    }
+  },
+  "summary": {
+    "earliest_candidate_year": 1200,
+    "earliest_reliable_year": 1200,
+    "entries": 32,
+    "root_family_count": 6,
+    "uncertain_items": 5,
+    "high_confidence_terms": 0,
+    "medium_confidence_terms": 27,
+    "low_confidence_terms": 5
+  },
+  "evidence_category_counts": {
+    "freedom_from_intrusion": 8,
+    "secrecy_confidentiality": 19,
+    "uncertain": 5
+  },
+  "evidence_term_counts": {
+    "privacy": 10,
+    "private": 14,
+    "privy": 7,
+    "right to privacy": 1
+  },
+  "earliest_candidates": [
+    {
+      "term": "privy",
+      "year": 1200,
+      "date_label": "1200",
+      "source_title": "Online Etymology Dictionary",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privy",
+      "year": 1300,
+      "date_label": "1300",
+      "source_title": "Online Etymology Dictionary",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privacy",
+      "year": 1400,
+      "date_label": "1400",
+      "source_title": "Online Etymology Dictionary",
+      "meaning_category": "freedom_from_intrusion",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 1400,
+      "date_label": "1400",
+      "source_title": "Merriam-Webster",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privy",
+      "year": 1400,
+      "date_label": "1400",
+      "source_title": "Merriam-Webster",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privacy",
+      "year": 1500,
+      "date_label": "1500",
+      "source_title": "Merriam-Webster",
+      "meaning_category": "freedom_from_intrusion",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 1500,
+      "date_label": "1500",
+      "source_title": "Merriam-Webster",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privacy",
+      "year": 1530,
+      "date_label": "1530",
+      "source_title": "Online Etymology Dictionary",
+      "meaning_category": "freedom_from_intrusion",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 1530,
+      "date_label": "1530",
+      "source_title": "Online Etymology Dictionary",
+      "meaning_category": "freedom_from_intrusion",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privy",
+      "year": 1530,
+      "date_label": "1530",
+      "source_title": "Online Etymology Dictionary",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privacy",
+      "year": 1550,
+      "date_label": "1550",
+      "source_title": "Online Etymology Dictionary",
+      "meaning_category": "freedom_from_intrusion",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 1550,
+      "date_label": "1550",
+      "source_title": "Online Etymology Dictionary",
+      "meaning_category": "freedom_from_intrusion",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 1570,
+      "date_label": "1570",
+      "source_title": "Online Etymology Dictionary",
+      "meaning_category": "freedom_from_intrusion",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 1596,
+      "date_label": "1596",
+      "source_title": "Wiktionary",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 1599,
+      "date_label": "1599",
+      "source_title": "Wiktionary",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 1601,
+      "date_label": "1601",
+      "source_title": "Wiktionary",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 1611,
+      "date_label": "1611",
+      "source_title": "Webster 1828",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privacy",
+      "year": 1680,
+      "date_label": "1680",
+      "source_title": "Wiktionary",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 1828,
+      "date_label": "1828",
+      "source_title": "Webster 1828",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privy",
+      "year": 1849,
+      "date_label": "1849",
+      "source_title": "Merriam-Webster",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privacy",
+      "year": 1910,
+      "date_label": "1910",
+      "source_title": "Wiktionary",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privacy",
+      "year": 1911,
+      "date_label": "1911",
+      "source_title": "Wiktionary",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 1913,
+      "date_label": "1913",
+      "source_title": "Webster 1913",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privy",
+      "year": 1988,
+      "date_label": "1988",
+      "source_title": "Merriam-Webster",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 2024,
+      "date_label": "2024",
+      "source_title": "Webster 1828",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "privacy",
+      "year": 2026,
+      "date_label": "2026",
+      "source_title": "Merriam-Webster",
+      "meaning_category": "freedom_from_intrusion",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    {
+      "term": "private",
+      "year": 2026,
+      "date_label": "2026",
+      "source_title": "Merriam-Webster",
+      "meaning_category": "secrecy_confidentiality",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    }
+  ],
+  "uncertain_candidates": [
+    {
+      "term": "privacy",
+      "spelling": "privacy",
+      "date_label": "uncertain",
+      "source": "Oxford English Dictionary",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "private",
+      "spelling": "private",
+      "date_label": "uncertain",
+      "source": "Oxford English Dictionary",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "privy",
+      "spelling": "privy",
+      "date_label": "uncertain",
+      "source": "Oxford English Dictionary",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "privacy",
+      "spelling": "privacy",
+      "date_label": "uncertain",
+      "source": "Merriam-Webster - 'Right to Privacy' legal article",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    },
+    {
+      "term": "right to privacy",
+      "spelling": "right to privacy",
+      "date_label": "uncertain",
+      "source": "Merriam-Webster - 'Right to Privacy' legal article",
+      "notes": "URLError: [Errno 8] nodename nor servname provided, or not known",
+      "confidence": "low",
+      "evidence_basis": "unfetched_source"
+    }
+  ],
+  "recommendations": {
+    "immediate_followups": [
+      "Cross-check historical dictionary citations directly for private/privy earliest printed usage.",
+      "Prioritize direct dated examples where privacy appears with privacy rights or intrusion language.",
+      "Separate direct attestations (date + quotation context) from dictionary 'first known use' claims."
+    ],
+    "high_value_uncertainties": [
+      "Whether privacy should anchor as a noun before or after legal-meaning consolidation (19th vs 20th c. records).",
+      "Whether privy/private forms function as direct historical ancestors or adjacent semantic neighbors."
+    ]
+  },
+  "next_research_questions": [
+    "Can we find one primary 17th-18th century dictionary or text citation for the earliest private/privacy family split?",
+    "Do legal sources shift from private life/seclusion to rights/intrusion before formal n-gram signal appears?",
+    "Which candidate sources remain reliable after anti-bot or script-rendered page barriers are bypassed?"
+  ]
+}

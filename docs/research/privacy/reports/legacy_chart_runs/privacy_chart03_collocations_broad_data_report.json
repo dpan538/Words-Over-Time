@@ -1,0 +1,536 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "chart_id": "chart03_collocations_broad",
+    "generated_at": "2026-05-26T12:26:35.157750Z",
+    "generated_by_script": "scripts/process_privacy_chart03_collocations_broad.py",
+    "raw_source": "docs/research/privacy/raw/privacy_chart03_collocations_broad_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_chart03_collocations_broad_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_chart03_collocations_broad_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_chart03_collocations_broad_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_chart03_collocations_broad_raw.json"
+    }
+  },
+  "counts": {
+    "query_count": 89,
+    "term_count": 89,
+    "collected_count": 0,
+    "missing_or_failed_count": 89,
+    "weak_or_missing_count": 89,
+    "discovered_term_count": 10,
+    "bucket_count": 9
+  },
+  "strong_or_usable": [],
+  "weak_or_missing_phrases": [
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "privacy of",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "privacy in",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "privacy from",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "privacy for",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "private life",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "domestic privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "family privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "workplace privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "workers' privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "patient privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "bodily privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "sexual privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "intimate privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "right to privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "rights of privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "privacy rights",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "reasonable expectation of privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "invasion of privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "loss of privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "violation of privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "information privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "data privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "privacy protection",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "privacy and confidentiality",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "confidentiality of privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "privacy concerns",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "privacy risk",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "privacy breach",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "privacy and information",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "personal data privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "data breach",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "consumer privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "medical privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "financial privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "genetic privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "location privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "identity privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "digital privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "online privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "internet privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy policy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy policies",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy notice",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy settings",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy controls",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy preferences",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy by design",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy-preserving",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy enhancing",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "network privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "platform privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy and platform",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and security",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "security and privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and surveillance",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "surveillance privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and monitoring",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and camera",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and biometrics",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and tracking",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and advertising",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase": "privacy and identity",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase": "identity and privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase": "anonymity and privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase": "consent and privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase": "privacy and transparency",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase": "privacy and trust",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy law",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy legislation",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy policy compliance",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy audit",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy impact assessment",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy by policy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy impact",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "gdpr privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "technical_privacy_preserving",
+      "phrase": "privacy preserving",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "technical_privacy_preserving",
+      "phrase": "privacy-enhancing",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "technical_privacy_preserving",
+      "phrase": "privacy security",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "technical_privacy_preserving",
+      "phrase": "encrypted privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy and privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "public privacy",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy movement",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy culture",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy discourse",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy debate",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy concerns about",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy of the self",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy politics",
+      "status": "failed"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy narrative",
+      "status": "failed"
+    }
+  ],
+  "discovered_terms": [
+    "privacy and privacy",
+    "privacy concerns about",
+    "privacy culture",
+    "privacy debate",
+    "privacy discourse",
+    "privacy movement",
+    "privacy narrative",
+    "privacy of the self",
+    "privacy politics",
+    "public privacy"
+  ],
+  "bucket_summary": [
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase_count": 13,
+      "usable_or_stronger_count": 0
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase_count": 7,
+      "usable_or_stronger_count": 0
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase_count": 17,
+      "usable_or_stronger_count": 0
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase_count": 15,
+      "usable_or_stronger_count": 0
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase_count": 9,
+      "usable_or_stronger_count": 0
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase_count": 6,
+      "usable_or_stronger_count": 0
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase_count": 8,
+      "usable_or_stronger_count": 0
+    },
+    {
+      "bucket_id": "technical_privacy_preserving",
+      "phrase_count": 4,
+      "usable_or_stronger_count": 0
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase_count": 10,
+      "usable_or_stronger_count": 0
+    }
+  ],
+  "next_research_questions": [
+    "Which weak phrases should be dropped versus promoted into dedicated modern registers?",
+    "Can legal and platform-era anchors raise confidence for selected semantic buckets?",
+    "Which phrases should be re-queried with explicit alternatives (hyphenation/plurals) if data is sparse?"
+  ]
+}

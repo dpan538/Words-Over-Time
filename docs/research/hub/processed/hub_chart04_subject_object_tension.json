@@ -1,0 +1,248 @@
+{
+  "metadata": {
+    "word": "hub",
+    "chart_id": "chart_04",
+    "generated_at": "2026-05-24T13:03:40.938287Z",
+    "generated_by_script": "scripts/process_hub_chart04_dependency.py",
+    "purpose": "semantic dependency and modifier-dominance layer for Chart 04 planning"
+  },
+  "concept": "hub becomes stable as a naming operator but unstable as a single object category",
+  "object_type_diversity": {
+    "count": 17,
+    "object_types": [
+      "archive",
+      "central_place",
+      "community_space",
+      "digital_portal",
+      "equipment_room",
+      "institutional_access_point",
+      "lexical_background",
+      "mechanical_core",
+      "platform",
+      "platform_content_access",
+      "repository",
+      "routing_node",
+      "service_portal",
+      "software_service",
+      "student_service",
+      "technical_system",
+      "website"
+    ],
+    "interpretation": "The same hub form names platforms, rooms, service portals, technical nodes, content access points, and lexical background uses."
+  },
+  "dependency_distribution": {
+    "high_dependency": [
+      "GitHub",
+      "HubPages",
+      "HubSpot",
+      "Pornhub",
+      "Sci-Hub",
+      "Docker Hub",
+      "Hugging Face Hub",
+      "data hub",
+      "career hub",
+      "equipment hub",
+      "student hub",
+      "wellbeing hub",
+      "content hub",
+      "digital hub",
+      "education hub",
+      "Ethernet hub",
+      "financial hub",
+      "innovation hub"
+    ],
+    "medium_dependency": [
+      "hub model",
+      "hub network",
+      "hub node",
+      "hub site",
+      "hub system",
+      "hub city",
+      "hub page",
+      "hub airport",
+      "hub location",
+      "hub room",
+      "hub service",
+      "hub strategy",
+      "network hub",
+      "transport hub",
+      "wheel hub"
+    ],
+    "contextual_dependency": [
+      "hub of activity",
+      "hub of commerce"
+    ],
+    "low_dependency": [
+      "hub",
+      "hubs"
+    ]
+  },
+  "standalone_comparison": [
+    {
+      "term": "network hub",
+      "form_type": "modifier_plus_hub",
+      "form_label": "X + hub",
+      "dependency_class": "specified_object",
+      "modifier_or_domain": "network",
+      "object_type": "technical_system",
+      "modifier_dependency_score": 0.61,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1900,
+        "peak_year": 1999,
+        "peak_frequency_per_million": 0.02438265,
+        "nonzero_year_count": 64,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    },
+    {
+      "term": "transport hub",
+      "form_type": "modifier_plus_hub",
+      "form_label": "X + hub",
+      "dependency_class": "specified_object",
+      "modifier_or_domain": "transport",
+      "object_type": "routing_node",
+      "modifier_dependency_score": 0.59,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1843,
+        "peak_year": 2010,
+        "peak_frequency_per_million": 0.06270535,
+        "nonzero_year_count": 92,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    },
+    {
+      "term": "wheel hub",
+      "form_type": "modifier_plus_hub",
+      "form_label": "X + hub",
+      "dependency_class": "specified_object",
+      "modifier_or_domain": "wheel",
+      "object_type": "mechanical_core",
+      "modifier_dependency_score": 0.59,
+      "dependency_tier": "medium_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1832,
+        "peak_year": 1872,
+        "peak_frequency_per_million": 0.24601964,
+        "nonzero_year_count": 181,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    },
+    {
+      "term": "hub of activity",
+      "form_type": "hub_of_x",
+      "form_label": "hub of X",
+      "dependency_class": "relational_phrase",
+      "modifier_or_domain": "",
+      "object_type": "central_place",
+      "modifier_dependency_score": 0.51,
+      "dependency_tier": "contextual_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1878,
+        "peak_year": 2011,
+        "peak_frequency_per_million": 0.03413241,
+        "nonzero_year_count": 117,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    },
+    {
+      "term": "hub of commerce",
+      "form_type": "hub_of_x",
+      "form_label": "hub of X",
+      "dependency_class": "relational_phrase",
+      "modifier_or_domain": "",
+      "object_type": "central_place",
+      "modifier_dependency_score": 0.51,
+      "dependency_tier": "contextual_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1832,
+        "peak_year": 1942,
+        "peak_frequency_per_million": 0.00705695,
+        "nonzero_year_count": 123,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    },
+    {
+      "term": "hub",
+      "form_type": "standalone_headword",
+      "form_label": "standalone hub",
+      "dependency_class": "standalone",
+      "modifier_or_domain": "",
+      "object_type": "lexical_background",
+      "modifier_dependency_score": 0.15,
+      "dependency_tier": "low_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1800,
+        "peak_year": 1872,
+        "peak_frequency_per_million": 11.26854489,
+        "nonzero_year_count": 223,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    },
+    {
+      "term": "hubs",
+      "form_type": "standalone_headword",
+      "form_label": "standalone hub",
+      "dependency_class": "standalone",
+      "modifier_or_domain": "",
+      "object_type": "lexical_background",
+      "modifier_dependency_score": 0.15,
+      "dependency_tier": "low_dependency",
+      "frequency_summary": {
+        "frequency_record_status": "found_existing",
+        "first_nonzero_year": 1800,
+        "peak_year": 2021,
+        "peak_frequency_per_million": 1.64315703,
+        "nonzero_year_count": 222,
+        "period_count": 5
+      },
+      "evidence_sources": [
+        "first_pass_frequency",
+        "chart01_chart02_context"
+      ],
+      "notes": "Baseline comparison term for modifier dependency."
+    }
+  ],
+  "cautions": [
+    "This layer can support modifier-driven naming, but it cannot directly measure reader cognition.",
+    "Do not claim hub becomes meaningless; the stronger claim is that hub becomes relational and underspecified without a modifier.",
+    "Brand examples are recognition anchors and naming evidence, not corpus-frequency evidence."
+  ]
+}

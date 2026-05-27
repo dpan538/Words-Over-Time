@@ -16,9 +16,8 @@ const sections: SectionEntry[] = [
   { id: "source-ledger", num: "04", label: "Sources" },
   { id: "calculation-methods", num: "05", label: "Methods" },
   { id: "claim-boundaries", num: "06", label: "Position" },
-  { id: "constraint-grid", num: "07", label: "Audit Grid" },
-  { id: "open-source", num: "08", label: "GitHub" },
-  { id: "licensing", num: "09", label: "Licensing" },
+  { id: "open-source", num: "07", label: "GitHub" },
+  { id: "licensing", num: "08", label: "Licensing" },
 ];
 
 export function AboutSectionNav() {
@@ -48,13 +47,13 @@ export function AboutSectionNav() {
   const activeSection = sections.find((section) => section.id === activeId);
 
   return (
-    <nav className="fixed left-0 top-0 z-30 hidden h-screen w-12 flex-col items-center border-r border-ink/14 bg-wheat/90 py-6 backdrop-blur lg:flex xl:w-14">
+    <nav className="fixed left-0 top-0 z-30 hidden h-screen w-16 flex-col items-center border-r border-ink/14 bg-wheat/[0.92] py-6 backdrop-blur lg:flex xl:w-[4.5rem]">
       <a
         href="#project-statement"
-        className="mb-6 flex h-7 w-7 items-center justify-center border border-ink/30 transition hover:border-fire"
+        className="group mb-7 flex h-11 w-11 items-center justify-center border border-ink/42 bg-wheat shadow-[3px_3px_0_rgba(5,5,16,0.14)] transition duration-200 hover:border-fire hover:bg-fire hover:shadow-[3px_3px_0_rgba(5,5,16,0.26)]"
         title="Words Over Time"
       >
-        <span className="font-mono text-[0.5rem] font-black uppercase tracking-[0.08em] text-fire">
+        <span className="font-mono text-[1.05rem] font-black uppercase tracking-[0.08em] text-fire transition group-hover:text-wheat">
           WOT
         </span>
       </a>
@@ -77,12 +76,12 @@ export function AboutSectionNav() {
                       : "border-ink/30 bg-wheat group-hover:border-blaze group-hover:bg-blaze/20"
                   }`}
                 />
-                <span className="pointer-events-none absolute left-6 top-1/2 -translate-y-1/2 whitespace-nowrap opacity-0 transition-opacity duration-150 group-hover:opacity-100">
+                <span className="pointer-events-none absolute left-8 top-1/2 -translate-y-1/2 whitespace-nowrap opacity-0 transition-opacity duration-150 group-hover:opacity-100">
                   <span className="block border border-ink bg-wheat px-2 py-1 shadow-[2px_2px_0_#050510]">
-                    <span className="font-mono text-[0.6rem] font-black uppercase tracking-[0.12em] text-fire">
+                    <span className="font-mono text-[0.8rem] font-black uppercase tracking-[0.12em] text-fire">
                       {section.num}
                     </span>
-                    <span className="ml-2 font-mono text-[0.6rem] font-black uppercase tracking-[0.1em]">
+                    <span className="ml-2 font-mono text-[0.8rem] font-black uppercase tracking-[0.1em]">
                       {section.label}
                     </span>
                   </span>
@@ -97,7 +96,7 @@ export function AboutSectionNav() {
       </div>
 
       <div className="mt-4">
-        <span className="font-mono text-[0.5rem] font-black uppercase tracking-[0.1em] text-ink/28">
+        <span className="font-mono text-[0.88rem] font-black uppercase tracking-[0.1em] text-ink/34">
           {activeSection?.num ?? "00"}
         </span>
       </div>

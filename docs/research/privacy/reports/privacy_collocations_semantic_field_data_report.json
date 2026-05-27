@@ -1,0 +1,537 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "layer_id": "collocations_semantic_field",
+    "generated_at": "2026-05-26T12:50:50.995435Z",
+    "generated_by_script": "scripts/process_privacy_collocations_semantic_field.py",
+    "raw_source": "docs/research/privacy/raw/privacy_collocations_semantic_field_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_collocations_semantic_field_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_collocations_semantic_field_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_collocations_semantic_field_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_collocations_semantic_field_raw.json"
+    }
+  },
+  "counts": {
+    "query_count": 89,
+    "term_count": 89,
+    "collected_count": 73,
+    "missing_or_failed_count": 16,
+    "weak_or_missing_count": 29,
+    "discovered_term_count": 10,
+    "bucket_count": 9
+  },
+  "strong_or_usable": [
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "privacy of",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "private life",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "privacy in",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "privacy for",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "domestic privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "patient privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "privacy from",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "family privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "intimate privacy",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "workplace privacy",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "sexual privacy",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "reasonable expectation of privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "right to privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "invasion of privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "privacy rights",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "rights of privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "loss of privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase": "violation of privacy",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "data privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "privacy and confidentiality",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "privacy protection",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "privacy concerns",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "data breach",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "financial privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "information privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "consumer privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "location privacy",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "medical privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "privacy risk",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "genetic privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "privacy breach",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "privacy and information",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "personal data privacy",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "identity privacy",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy policy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy policies",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy settings",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "online privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "internet privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy notice",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy by design",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy preferences",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "digital privacy",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy controls",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy enhancing",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "network privacy",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "security and privacy",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and security",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and surveillance",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase": "privacy and trust",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase": "privacy and identity",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase": "anonymity and privacy",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy law",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy legislation",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy impact",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy impact assessment",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "technical_privacy_preserving",
+      "phrase": "privacy preserving",
+      "strength": "strong"
+    },
+    {
+      "bucket_id": "technical_privacy_preserving",
+      "phrase": "privacy security",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy debate",
+      "strength": "usable"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy of the self",
+      "strength": "usable"
+    }
+  ],
+  "weak_or_missing_phrases": [
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "bodily privacy",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase": "workers' privacy",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase": "confidentiality of privacy",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy-preserving",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "platform privacy",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase": "privacy and platform",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "surveillance privacy",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and monitoring",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and camera",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and biometrics",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and tracking",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase": "privacy and advertising",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase": "identity and privacy",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase": "privacy and transparency",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase": "consent and privacy",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy audit",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "gdpr privacy",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy policy compliance",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase": "privacy by policy",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "technical_privacy_preserving",
+      "phrase": "privacy-enhancing",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "technical_privacy_preserving",
+      "phrase": "encrypted privacy",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "public privacy",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy concerns about",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy and privacy",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy culture",
+      "status": "collected"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy movement",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy discourse",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy politics",
+      "status": "missing"
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase": "privacy narrative",
+      "status": "missing"
+    }
+  ],
+  "discovered_terms": [
+    "privacy and privacy",
+    "privacy concerns about",
+    "privacy culture",
+    "privacy debate",
+    "privacy discourse",
+    "privacy movement",
+    "privacy narrative",
+    "privacy of the self",
+    "privacy politics",
+    "public privacy"
+  ],
+  "bucket_summary": [
+    {
+      "bucket_id": "seclusion_private_life",
+      "phrase_count": 13,
+      "usable_or_stronger_count": 11
+    },
+    {
+      "bucket_id": "legal_rights_intrusion",
+      "phrase_count": 7,
+      "usable_or_stronger_count": 7
+    },
+    {
+      "bucket_id": "information_data_control",
+      "phrase_count": 17,
+      "usable_or_stronger_count": 16
+    },
+    {
+      "bucket_id": "digital_platform_governance",
+      "phrase_count": 15,
+      "usable_or_stronger_count": 12
+    },
+    {
+      "bucket_id": "surveillance_security_tension",
+      "phrase_count": 9,
+      "usable_or_stronger_count": 3
+    },
+    {
+      "bucket_id": "identity_anonymity_consent",
+      "phrase_count": 6,
+      "usable_or_stronger_count": 3
+    },
+    {
+      "bucket_id": "policy_compliance_institutional",
+      "phrase_count": 8,
+      "usable_or_stronger_count": 4
+    },
+    {
+      "bucket_id": "technical_privacy_preserving",
+      "phrase_count": 4,
+      "usable_or_stronger_count": 2
+    },
+    {
+      "bucket_id": "uncertain_other",
+      "phrase_count": 10,
+      "usable_or_stronger_count": 2
+    }
+  ],
+  "next_research_questions": [
+    "Which weak phrases should be dropped versus promoted into dedicated modern registers?",
+    "Can legal and platform-era anchors raise confidence for selected semantic buckets?",
+    "Which phrases should be re-queried with explicit alternatives (hyphenation/plurals) if data is sparse?"
+  ]
+}

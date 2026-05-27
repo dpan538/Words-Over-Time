@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "layer_id": "attention_metrics",
+    "generated_at": "2026-05-26T12:51:21.331858Z",
+    "generated_by_script": "scripts/process_privacy_attention_metrics.py",
+    "raw_source": "docs/research/privacy/raw/privacy_attention_metrics_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_attention_metrics_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_attention_metrics_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_attention_metrics_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_attention_metrics_raw.json"
+    }
+  },
+  "counts": {
+    "series_count": 11,
+    "available_series_count": 11,
+    "unavailable_series_count": 0,
+    "total_views": 14621041,
+    "source_count": 1
+  },
+  "events": [
+    {
+      "date": "1988-01-01",
+      "label": "1988 - U.S. Privacy Act enforcement era visibility growth in federal record privacy language.",
+      "category": "policy",
+      "confidence": "medium"
+    },
+    {
+      "date": "2013-06-01",
+      "label": "2013 - Mass-surveillance disclosures increase public interest in privacy and surveillance topics.",
+      "category": "attention",
+      "confidence": "medium"
+    },
+    {
+      "date": "2018-05-25",
+      "label": "2018 - GDPR launches practical policy discourse in public and platform communication.",
+      "category": "policy",
+      "confidence": "high"
+    },
+    {
+      "date": "2020-01-01",
+      "label": "2020 - CCPA becomes active and enters consumer-facing privacy coverage.",
+      "category": "policy",
+      "confidence": "medium"
+    },
+    {
+      "date": "2020-06-01",
+      "label": "2020-2024 - Platform settings and privacy controls become major coverage topics.",
+      "category": "attention",
+      "confidence": "low"
+    }
+  ],
+  "high_confidence_events": [
+    {
+      "date": "1988-01-01",
+      "label": "1988 - U.S. Privacy Act enforcement era visibility growth in federal record privacy language.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2013-06-01",
+      "label": "2013 - Mass-surveillance disclosures increase public interest in privacy and surveillance topics.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2018-05-25",
+      "label": "2018 - GDPR launches practical policy discourse in public and platform communication.",
+      "confidence": "high"
+    },
+    {
+      "date": "2020-01-01",
+      "label": "2020 - CCPA becomes active and enters consumer-facing privacy coverage.",
+      "confidence": "medium"
+    }
+  ],
+  "unavailable_sources": [
+    {
+      "source_id": "google_trends",
+      "source": "Google Trends",
+      "availability": "not_fetched",
+      "reason": "No stable official public API available in this environment."
+    },
+    {
+      "source_id": "now_corpus",
+      "source": "NOW Corpus",
+      "availability": "not_fetched",
+      "reason": "Requires paid/managed access or exports outside this environment."
+    },
+    {
+      "source_id": "coca",
+      "source": "COCA",
+      "availability": "not_fetched",
+      "reason": "No public API in this environment."
+    }
+  ],
+  "source_health": {
+    "available": true,
+    "unavailable_count": 0
+  },
+  "next_research_questions": [
+    "Can these pageview spikes be cross-checked against registry-level publication events or release dates?",
+    "Would platform policy pages and legal text access logs provide a stronger attention proxy than concept pages alone?",
+    "If Google Trends remains unavailable, can a stable academic-news source be added in a follow-up pass?"
+  ]
+}

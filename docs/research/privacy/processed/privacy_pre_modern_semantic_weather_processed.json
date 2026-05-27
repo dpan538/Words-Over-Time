@@ -1,0 +1,973 @@
+{
+  "word": "privacy",
+  "layer_id": "pre_modern_semantic_weather",
+  "title": "Pre-modern semantic weather for privacy",
+  "status": "derived_for_chart01_planning",
+  "intended_use": "radial semantic-weather chart for privacy before strong legal and digital acceleration",
+  "generated_at": "2026-05-27T04:19:49.830940Z",
+  "source_layers": [
+    "docs/research/privacy/processed/privacy_frequency_terms_processed.json",
+    "docs/research/privacy/processed/privacy_etymology_early_usage_processed.json",
+    "docs/research/privacy/processed/privacy_timeline_source_index_processed.json"
+  ],
+  "visual_reference_interpretation": {
+    "reference_logic": "circular time field with multiple simultaneous pressure variables",
+    "privacy_translation": "early privacy is shown as a slow semantic climate: seclusion/private life, secrecy/confidentiality, and publicity/observation pressure.",
+    "style_independence": "Use the site's poster structure but give privacy its own paper-like, translucent, radial field language."
+  },
+  "periods": [
+    {
+      "period_id": "root_field",
+      "label": "Root Field",
+      "start_year": 1200,
+      "end_year": 1400,
+      "angle_start_degrees": -92,
+      "angle_end_degrees": -18,
+      "interpretation": "Root-family evidence around private and privy before privacy is treated as a stable modern noun.",
+      "data_basis": "etymology_only"
+    },
+    {
+      "period_id": "seclusion_secret",
+      "label": "Seclusion / Secret",
+      "start_year": 1400,
+      "end_year": 1600,
+      "angle_start_degrees": -18,
+      "angle_end_degrees": 72,
+      "interpretation": "Privacy sits near private matter, privy knowledge, secrecy, and withdrawal from common view.",
+      "data_basis": "etymology_plus_ngram"
+    },
+    {
+      "period_id": "public_private",
+      "label": "Public / Private",
+      "start_year": 1600,
+      "end_year": 1750,
+      "angle_start_degrees": 72,
+      "angle_end_degrees": 178,
+      "interpretation": "The public/private contrast becomes a stronger organizing field than privacy as an independent legal word.",
+      "data_basis": "ngram_with_caution"
+    },
+    {
+      "period_id": "intrusion_threshold",
+      "label": "Intrusion Begins",
+      "start_year": 1750,
+      "end_year": 1890,
+      "angle_start_degrees": 178,
+      "angle_end_degrees": 268,
+      "interpretation": "Publicity, observation, and interference pressure rise toward the later legal-rights threshold.",
+      "data_basis": "ngram_plus_timeline_anchor"
+    }
+  ],
+  "tracks": [
+    {
+      "track_id": "seclusion_private_life",
+      "label": "Seclusion and private life",
+      "visual_role": "large_translucent_yellow_circles",
+      "color": "#DDBE24",
+      "terms": [
+        "privacy",
+        "private",
+        "private life",
+        "seclusion",
+        "solitude",
+        "isolation",
+        "domestic privacy"
+      ]
+    },
+    {
+      "track_id": "secrecy_confidentiality",
+      "label": "Secrecy and confidential knowledge",
+      "visual_role": "small_green_inner_circles",
+      "color": "#5FA66B",
+      "terms": [
+        "privy",
+        "secrecy",
+        "secret",
+        "confidentiality",
+        "privately"
+      ]
+    },
+    {
+      "track_id": "publicity_observation_pressure",
+      "label": "Publicity and observation pressure",
+      "visual_role": "purple_pressure_spikes",
+      "color": "#6C4FA3",
+      "terms": [
+        "publicity",
+        "surveillance",
+        "right to privacy",
+        "invasion of privacy",
+        "privacy rights"
+      ],
+      "context_terms": [
+        "public"
+      ]
+    }
+  ],
+  "period_track_scores": [
+    {
+      "period_id": "root_field",
+      "track_id": "seclusion_private_life",
+      "raw_score": 2,
+      "normalized_score": 0.0176,
+      "evidence_count": 2,
+      "top_terms": [],
+      "data_quality": "directional",
+      "notes": "Pre-1800 Google Books Ngram values can be sparse or noisy; this score is for visual staging, not first-attestation proof."
+    },
+    {
+      "period_id": "root_field",
+      "track_id": "secrecy_confidentiality",
+      "raw_score": 3,
+      "normalized_score": 0.050114,
+      "evidence_count": 3,
+      "top_terms": [],
+      "data_quality": "directional",
+      "notes": "Pre-1800 Google Books Ngram values can be sparse or noisy; this score is for visual staging, not first-attestation proof."
+    },
+    {
+      "period_id": "root_field",
+      "track_id": "publicity_observation_pressure",
+      "raw_score": 0,
+      "normalized_score": 0.0,
+      "evidence_count": 0,
+      "top_terms": [],
+      "data_quality": "directional",
+      "notes": "Pre-1800 Google Books Ngram values can be sparse or noisy; this score is for visual staging, not first-attestation proof."
+    },
+    {
+      "period_id": "seclusion_secret",
+      "track_id": "seclusion_private_life",
+      "raw_score": 21.33189978,
+      "normalized_score": 0.187725,
+      "evidence_count": 11,
+      "top_terms": [
+        {
+          "term": "private",
+          "mean_frequency_per_million": 17.83802684
+        },
+        {
+          "term": "privacy",
+          "mean_frequency_per_million": 0.50434514
+        },
+        {
+          "term": "private life",
+          "mean_frequency_per_million": 0.17459795
+        },
+        {
+          "term": "solitude",
+          "mean_frequency_per_million": 0.06279535
+        },
+        {
+          "term": "isolation",
+          "mean_frequency_per_million": 0.00213449
+        }
+      ],
+      "data_quality": "directional",
+      "notes": "Pre-1800 Google Books Ngram values can be sparse or noisy; this score is for visual staging, not first-attestation proof."
+    },
+    {
+      "period_id": "seclusion_secret",
+      "track_id": "secrecy_confidentiality",
+      "raw_score": 28.30489793,
+      "normalized_score": 0.472828,
+      "evidence_count": 2,
+      "top_terms": [
+        {
+          "term": "privy",
+          "mean_frequency_per_million": 13.77038494
+        },
+        {
+          "term": "secret",
+          "mean_frequency_per_million": 12.64211239
+        },
+        {
+          "term": "privately",
+          "mean_frequency_per_million": 1.16175475
+        },
+        {
+          "term": "secrecy",
+          "mean_frequency_per_million": 0.196799
+        },
+        {
+          "term": "confidentiality",
+          "mean_frequency_per_million": 0.03384686
+        }
+      ],
+      "data_quality": "directional",
+      "notes": "Pre-1800 Google Books Ngram values can be sparse or noisy; this score is for visual staging, not first-attestation proof."
+    },
+    {
+      "period_id": "seclusion_secret",
+      "track_id": "publicity_observation_pressure",
+      "raw_score": 0.33731413,
+      "normalized_score": 0.165508,
+      "evidence_count": 0,
+      "top_terms": [
+        {
+          "term": "publicity",
+          "mean_frequency_per_million": 0.33731413
+        }
+      ],
+      "data_quality": "directional",
+      "notes": "Pre-1800 Google Books Ngram values can be sparse or noisy; this score is for visual staging, not first-attestation proof."
+    },
+    {
+      "period_id": "public_private",
+      "track_id": "seclusion_private_life",
+      "raw_score": 80.86316751,
+      "normalized_score": 0.711611,
+      "evidence_count": 3,
+      "top_terms": [
+        {
+          "term": "private",
+          "mean_frequency_per_million": 75.68846228
+        },
+        {
+          "term": "solitude",
+          "mean_frequency_per_million": 1.96483453
+        },
+        {
+          "term": "privacy",
+          "mean_frequency_per_million": 1.3213111
+        },
+        {
+          "term": "private life",
+          "mean_frequency_per_million": 1.1191751
+        },
+        {
+          "term": "seclusion",
+          "mean_frequency_per_million": 0.01149048
+        }
+      ],
+      "data_quality": "directional",
+      "notes": "Pre-1800 Google Books Ngram values can be sparse or noisy; this score is for visual staging, not first-attestation proof."
+    },
+    {
+      "period_id": "public_private",
+      "track_id": "secrecy_confidentiality",
+      "raw_score": 48.08694544,
+      "normalized_score": 0.803283,
+      "evidence_count": 0,
+      "top_terms": [
+        {
+          "term": "privy",
+          "mean_frequency_per_million": 22.03386023
+        },
+        {
+          "term": "secret",
+          "mean_frequency_per_million": 14.80727696
+        },
+        {
+          "term": "privately",
+          "mean_frequency_per_million": 9.24530119
+        },
+        {
+          "term": "secrecy",
+          "mean_frequency_per_million": 1.97617473
+        },
+        {
+          "term": "confidentiality",
+          "mean_frequency_per_million": 0.02433234
+        }
+      ],
+      "data_quality": "directional",
+      "notes": "Pre-1800 Google Books Ngram values can be sparse or noisy; this score is for visual staging, not first-attestation proof."
+    },
+    {
+      "period_id": "public_private",
+      "track_id": "publicity_observation_pressure",
+      "raw_score": 0.03215363,
+      "normalized_score": 0.015777,
+      "evidence_count": 0,
+      "top_terms": [
+        {
+          "term": "publicity",
+          "mean_frequency_per_million": 0.02168038
+        },
+        {
+          "term": "surveillance",
+          "mean_frequency_per_million": 0.00934374
+        },
+        {
+          "term": "privacy rights",
+          "mean_frequency_per_million": 0.00044278
+        },
+        {
+          "term": "right to privacy",
+          "mean_frequency_per_million": 0.00041693
+        },
+        {
+          "term": "invasion of privacy",
+          "mean_frequency_per_million": 0.0002698
+        }
+      ],
+      "data_quality": "directional",
+      "notes": "Pre-1800 Google Books Ngram values can be sparse or noisy; this score is for visual staging, not first-attestation proof."
+    },
+    {
+      "period_id": "intrusion_threshold",
+      "track_id": "seclusion_private_life",
+      "raw_score": 113.63393876,
+      "normalized_score": 1.0,
+      "evidence_count": 1,
+      "top_terms": [
+        {
+          "term": "private",
+          "mean_frequency_per_million": 100.95530517
+        },
+        {
+          "term": "solitude",
+          "mean_frequency_per_million": 5.28158428
+        },
+        {
+          "term": "private life",
+          "mean_frequency_per_million": 3.39879554
+        },
+        {
+          "term": "privacy",
+          "mean_frequency_per_million": 1.68692346
+        },
+        {
+          "term": "seclusion",
+          "mean_frequency_per_million": 1.2754897
+        }
+      ],
+      "data_quality": "directional",
+      "notes": "Pre-1800 Google Books Ngram values can be sparse or noisy; this score is for visual staging, not first-attestation proof."
+    },
+    {
+      "period_id": "intrusion_threshold",
+      "track_id": "secrecy_confidentiality",
+      "raw_score": 59.86299384,
+      "normalized_score": 1.0,
+      "evidence_count": 1,
+      "top_terms": [
+        {
+          "term": "secret",
+          "mean_frequency_per_million": 30.60148955
+        },
+        {
+          "term": "privy",
+          "mean_frequency_per_million": 18.57148803
+        },
+        {
+          "term": "privately",
+          "mean_frequency_per_million": 7.65322679
+        },
+        {
+          "term": "secrecy",
+          "mean_frequency_per_million": 2.77666114
+        },
+        {
+          "term": "confidentiality",
+          "mean_frequency_per_million": 0.01012832
+        }
+      ],
+      "data_quality": "directional",
+      "notes": "Pre-1800 Google Books Ngram values can be sparse or noisy; this score is for visual staging, not first-attestation proof."
+    },
+    {
+      "period_id": "intrusion_threshold",
+      "track_id": "publicity_observation_pressure",
+      "raw_score": 2.03805798,
+      "normalized_score": 1.0,
+      "evidence_count": 0,
+      "top_terms": [
+        {
+          "term": "publicity",
+          "mean_frequency_per_million": 1.62965491
+        },
+        {
+          "term": "surveillance",
+          "mean_frequency_per_million": 0.40119652
+        },
+        {
+          "term": "right to privacy",
+          "mean_frequency_per_million": 0.00387785
+        },
+        {
+          "term": "invasion of privacy",
+          "mean_frequency_per_million": 0.00285998
+        },
+        {
+          "term": "privacy rights",
+          "mean_frequency_per_million": 0.00046871
+        }
+      ],
+      "data_quality": "directional",
+      "notes": "Pre-1800 Google Books Ngram values can be sparse or noisy; this score is for visual staging, not first-attestation proof."
+    }
+  ],
+  "weather_points": [
+    {
+      "point_id": "root_field_seclusion_private_life_1",
+      "period_id": "root_field",
+      "track_id": "seclusion_private_life",
+      "term": "seclusion_private_life",
+      "angle_degrees": -66.84,
+      "radius": 0.72,
+      "size": 0.0832,
+      "opacity": 0.2874,
+      "value": 2
+    },
+    {
+      "point_id": "root_field_secrecy_confidentiality_1",
+      "period_id": "root_field",
+      "track_id": "secrecy_confidentiality",
+      "term": "secrecy_confidentiality",
+      "angle_degrees": -66.84,
+      "radius": 0.54,
+      "size": 0.089,
+      "opacity": 0.301,
+      "value": 3
+    },
+    {
+      "point_id": "root_field_publicity_observation_pressure_1",
+      "period_id": "root_field",
+      "track_id": "publicity_observation_pressure",
+      "term": "publicity_observation_pressure",
+      "angle_degrees": -66.84,
+      "radius": 0.66,
+      "size": 0.08,
+      "opacity": 0.28,
+      "value": 0
+    },
+    {
+      "point_id": "seclusion_secret_seclusion_private_life_1",
+      "period_id": "seclusion_secret",
+      "track_id": "seclusion_private_life",
+      "term": "private",
+      "angle_degrees": 12.6,
+      "radius": 0.72,
+      "size": 0.1138,
+      "opacity": 0.3588,
+      "value": 17.83802684
+    },
+    {
+      "point_id": "seclusion_secret_seclusion_private_life_2",
+      "period_id": "seclusion_secret",
+      "track_id": "seclusion_private_life",
+      "term": "privacy",
+      "angle_degrees": 19.8,
+      "radius": 0.755,
+      "size": 0.1258,
+      "opacity": 0.3588,
+      "value": 0.50434514
+    },
+    {
+      "point_id": "seclusion_secret_seclusion_private_life_3",
+      "period_id": "seclusion_secret",
+      "track_id": "seclusion_private_life",
+      "term": "private life",
+      "angle_degrees": 27.0,
+      "radius": 0.72,
+      "size": 0.1378,
+      "opacity": 0.3588,
+      "value": 0.17459795
+    },
+    {
+      "point_id": "seclusion_secret_seclusion_private_life_4",
+      "period_id": "seclusion_secret",
+      "track_id": "seclusion_private_life",
+      "term": "solitude",
+      "angle_degrees": 34.2,
+      "radius": 0.755,
+      "size": 0.1498,
+      "opacity": 0.3588,
+      "value": 0.06279535
+    },
+    {
+      "point_id": "seclusion_secret_seclusion_private_life_5",
+      "period_id": "seclusion_secret",
+      "track_id": "seclusion_private_life",
+      "term": "isolation",
+      "angle_degrees": 41.4,
+      "radius": 0.72,
+      "size": 0.1618,
+      "opacity": 0.3588,
+      "value": 0.00213449
+    },
+    {
+      "point_id": "seclusion_secret_secrecy_confidentiality_1",
+      "period_id": "seclusion_secret",
+      "track_id": "secrecy_confidentiality",
+      "term": "privy",
+      "angle_degrees": 12.6,
+      "radius": 0.54,
+      "size": 0.1651,
+      "opacity": 0.4786,
+      "value": 13.77038494
+    },
+    {
+      "point_id": "seclusion_secret_secrecy_confidentiality_2",
+      "period_id": "seclusion_secret",
+      "track_id": "secrecy_confidentiality",
+      "term": "secret",
+      "angle_degrees": 19.8,
+      "radius": 0.575,
+      "size": 0.1771,
+      "opacity": 0.4786,
+      "value": 12.64211239
+    },
+    {
+      "point_id": "seclusion_secret_secrecy_confidentiality_3",
+      "period_id": "seclusion_secret",
+      "track_id": "secrecy_confidentiality",
+      "term": "privately",
+      "angle_degrees": 27.0,
+      "radius": 0.54,
+      "size": 0.1891,
+      "opacity": 0.4786,
+      "value": 1.16175475
+    },
+    {
+      "point_id": "seclusion_secret_secrecy_confidentiality_4",
+      "period_id": "seclusion_secret",
+      "track_id": "secrecy_confidentiality",
+      "term": "secrecy",
+      "angle_degrees": 34.2,
+      "radius": 0.575,
+      "size": 0.2011,
+      "opacity": 0.4786,
+      "value": 0.196799
+    },
+    {
+      "point_id": "seclusion_secret_secrecy_confidentiality_5",
+      "period_id": "seclusion_secret",
+      "track_id": "secrecy_confidentiality",
+      "term": "confidentiality",
+      "angle_degrees": 41.4,
+      "radius": 0.54,
+      "size": 0.2131,
+      "opacity": 0.4786,
+      "value": 0.03384686
+    },
+    {
+      "point_id": "seclusion_secret_publicity_observation_pressure_1",
+      "period_id": "seclusion_secret",
+      "track_id": "publicity_observation_pressure",
+      "term": "publicity",
+      "angle_degrees": 12.6,
+      "radius": 0.66,
+      "size": 0.1098,
+      "opacity": 0.3495,
+      "value": 0.33731413
+    },
+    {
+      "point_id": "public_private_seclusion_private_life_1",
+      "period_id": "public_private",
+      "track_id": "seclusion_private_life",
+      "term": "private",
+      "angle_degrees": 108.04,
+      "radius": 0.72,
+      "size": 0.2081,
+      "opacity": 0.5789,
+      "value": 75.68846228
+    },
+    {
+      "point_id": "public_private_seclusion_private_life_2",
+      "period_id": "public_private",
+      "track_id": "seclusion_private_life",
+      "term": "solitude",
+      "angle_degrees": 116.52,
+      "radius": 0.755,
+      "size": 0.2201,
+      "opacity": 0.5789,
+      "value": 1.96483453
+    },
+    {
+      "point_id": "public_private_seclusion_private_life_3",
+      "period_id": "public_private",
+      "track_id": "seclusion_private_life",
+      "term": "privacy",
+      "angle_degrees": 125.0,
+      "radius": 0.72,
+      "size": 0.2321,
+      "opacity": 0.5789,
+      "value": 1.3213111
+    },
+    {
+      "point_id": "public_private_seclusion_private_life_4",
+      "period_id": "public_private",
+      "track_id": "seclusion_private_life",
+      "term": "private life",
+      "angle_degrees": 133.48,
+      "radius": 0.755,
+      "size": 0.2441,
+      "opacity": 0.5789,
+      "value": 1.1191751
+    },
+    {
+      "point_id": "public_private_seclusion_private_life_5",
+      "period_id": "public_private",
+      "track_id": "seclusion_private_life",
+      "term": "seclusion",
+      "angle_degrees": 141.96,
+      "radius": 0.72,
+      "size": 0.2561,
+      "opacity": 0.5789,
+      "value": 0.01149048
+    },
+    {
+      "point_id": "public_private_secrecy_confidentiality_1",
+      "period_id": "public_private",
+      "track_id": "secrecy_confidentiality",
+      "term": "privy",
+      "angle_degrees": 108.04,
+      "radius": 0.54,
+      "size": 0.2246,
+      "opacity": 0.6174,
+      "value": 22.03386023
+    },
+    {
+      "point_id": "public_private_secrecy_confidentiality_2",
+      "period_id": "public_private",
+      "track_id": "secrecy_confidentiality",
+      "term": "secret",
+      "angle_degrees": 116.52,
+      "radius": 0.575,
+      "size": 0.2366,
+      "opacity": 0.6174,
+      "value": 14.80727696
+    },
+    {
+      "point_id": "public_private_secrecy_confidentiality_3",
+      "period_id": "public_private",
+      "track_id": "secrecy_confidentiality",
+      "term": "privately",
+      "angle_degrees": 125.0,
+      "radius": 0.54,
+      "size": 0.2486,
+      "opacity": 0.6174,
+      "value": 9.24530119
+    },
+    {
+      "point_id": "public_private_secrecy_confidentiality_4",
+      "period_id": "public_private",
+      "track_id": "secrecy_confidentiality",
+      "term": "secrecy",
+      "angle_degrees": 133.48,
+      "radius": 0.575,
+      "size": 0.2606,
+      "opacity": 0.6174,
+      "value": 1.97617473
+    },
+    {
+      "point_id": "public_private_secrecy_confidentiality_5",
+      "period_id": "public_private",
+      "track_id": "secrecy_confidentiality",
+      "term": "confidentiality",
+      "angle_degrees": 141.96,
+      "radius": 0.54,
+      "size": 0.2726,
+      "opacity": 0.6174,
+      "value": 0.02433234
+    },
+    {
+      "point_id": "public_private_publicity_observation_pressure_1",
+      "period_id": "public_private",
+      "track_id": "publicity_observation_pressure",
+      "term": "publicity",
+      "angle_degrees": 108.04,
+      "radius": 0.66,
+      "size": 0.0828,
+      "opacity": 0.2866,
+      "value": 0.02168038
+    },
+    {
+      "point_id": "public_private_publicity_observation_pressure_2",
+      "period_id": "public_private",
+      "track_id": "publicity_observation_pressure",
+      "term": "surveillance",
+      "angle_degrees": 116.52,
+      "radius": 0.695,
+      "size": 0.0948,
+      "opacity": 0.2866,
+      "value": 0.00934374
+    },
+    {
+      "point_id": "public_private_publicity_observation_pressure_3",
+      "period_id": "public_private",
+      "track_id": "publicity_observation_pressure",
+      "term": "privacy rights",
+      "angle_degrees": 125.0,
+      "radius": 0.66,
+      "size": 0.1068,
+      "opacity": 0.2866,
+      "value": 0.00044278
+    },
+    {
+      "point_id": "public_private_publicity_observation_pressure_4",
+      "period_id": "public_private",
+      "track_id": "publicity_observation_pressure",
+      "term": "right to privacy",
+      "angle_degrees": 133.48,
+      "radius": 0.695,
+      "size": 0.1188,
+      "opacity": 0.2866,
+      "value": 0.00041693
+    },
+    {
+      "point_id": "public_private_publicity_observation_pressure_5",
+      "period_id": "public_private",
+      "track_id": "publicity_observation_pressure",
+      "term": "invasion of privacy",
+      "angle_degrees": 141.96,
+      "radius": 0.66,
+      "size": 0.1308,
+      "opacity": 0.2866,
+      "value": 0.0002698
+    },
+    {
+      "point_id": "intrusion_threshold_seclusion_private_life_1",
+      "period_id": "intrusion_threshold",
+      "track_id": "seclusion_private_life",
+      "term": "private",
+      "angle_degrees": 208.6,
+      "radius": 0.72,
+      "size": 0.26,
+      "opacity": 0.7,
+      "value": 100.95530517
+    },
+    {
+      "point_id": "intrusion_threshold_seclusion_private_life_2",
+      "period_id": "intrusion_threshold",
+      "track_id": "seclusion_private_life",
+      "term": "solitude",
+      "angle_degrees": 215.8,
+      "radius": 0.755,
+      "size": 0.272,
+      "opacity": 0.7,
+      "value": 5.28158428
+    },
+    {
+      "point_id": "intrusion_threshold_seclusion_private_life_3",
+      "period_id": "intrusion_threshold",
+      "track_id": "seclusion_private_life",
+      "term": "private life",
+      "angle_degrees": 223.0,
+      "radius": 0.72,
+      "size": 0.284,
+      "opacity": 0.7,
+      "value": 3.39879554
+    },
+    {
+      "point_id": "intrusion_threshold_seclusion_private_life_4",
+      "period_id": "intrusion_threshold",
+      "track_id": "seclusion_private_life",
+      "term": "privacy",
+      "angle_degrees": 230.2,
+      "radius": 0.755,
+      "size": 0.296,
+      "opacity": 0.7,
+      "value": 1.68692346
+    },
+    {
+      "point_id": "intrusion_threshold_seclusion_private_life_5",
+      "period_id": "intrusion_threshold",
+      "track_id": "seclusion_private_life",
+      "term": "seclusion",
+      "angle_degrees": 237.4,
+      "radius": 0.72,
+      "size": 0.308,
+      "opacity": 0.7,
+      "value": 1.2754897
+    },
+    {
+      "point_id": "intrusion_threshold_secrecy_confidentiality_1",
+      "period_id": "intrusion_threshold",
+      "track_id": "secrecy_confidentiality",
+      "term": "secret",
+      "angle_degrees": 208.6,
+      "radius": 0.54,
+      "size": 0.26,
+      "opacity": 0.7,
+      "value": 30.60148955
+    },
+    {
+      "point_id": "intrusion_threshold_secrecy_confidentiality_2",
+      "period_id": "intrusion_threshold",
+      "track_id": "secrecy_confidentiality",
+      "term": "privy",
+      "angle_degrees": 215.8,
+      "radius": 0.575,
+      "size": 0.272,
+      "opacity": 0.7,
+      "value": 18.57148803
+    },
+    {
+      "point_id": "intrusion_threshold_secrecy_confidentiality_3",
+      "period_id": "intrusion_threshold",
+      "track_id": "secrecy_confidentiality",
+      "term": "privately",
+      "angle_degrees": 223.0,
+      "radius": 0.54,
+      "size": 0.284,
+      "opacity": 0.7,
+      "value": 7.65322679
+    },
+    {
+      "point_id": "intrusion_threshold_secrecy_confidentiality_4",
+      "period_id": "intrusion_threshold",
+      "track_id": "secrecy_confidentiality",
+      "term": "secrecy",
+      "angle_degrees": 230.2,
+      "radius": 0.575,
+      "size": 0.296,
+      "opacity": 0.7,
+      "value": 2.77666114
+    },
+    {
+      "point_id": "intrusion_threshold_secrecy_confidentiality_5",
+      "period_id": "intrusion_threshold",
+      "track_id": "secrecy_confidentiality",
+      "term": "confidentiality",
+      "angle_degrees": 237.4,
+      "radius": 0.54,
+      "size": 0.308,
+      "opacity": 0.7,
+      "value": 0.01012832
+    },
+    {
+      "point_id": "intrusion_threshold_publicity_observation_pressure_1",
+      "period_id": "intrusion_threshold",
+      "track_id": "publicity_observation_pressure",
+      "term": "publicity",
+      "angle_degrees": 208.6,
+      "radius": 0.66,
+      "size": 0.26,
+      "opacity": 0.7,
+      "value": 1.62965491
+    },
+    {
+      "point_id": "intrusion_threshold_publicity_observation_pressure_2",
+      "period_id": "intrusion_threshold",
+      "track_id": "publicity_observation_pressure",
+      "term": "surveillance",
+      "angle_degrees": 215.8,
+      "radius": 0.695,
+      "size": 0.272,
+      "opacity": 0.7,
+      "value": 0.40119652
+    },
+    {
+      "point_id": "intrusion_threshold_publicity_observation_pressure_3",
+      "period_id": "intrusion_threshold",
+      "track_id": "publicity_observation_pressure",
+      "term": "right to privacy",
+      "angle_degrees": 223.0,
+      "radius": 0.66,
+      "size": 0.284,
+      "opacity": 0.7,
+      "value": 0.00387785
+    },
+    {
+      "point_id": "intrusion_threshold_publicity_observation_pressure_4",
+      "period_id": "intrusion_threshold",
+      "track_id": "publicity_observation_pressure",
+      "term": "invasion of privacy",
+      "angle_degrees": 230.2,
+      "radius": 0.695,
+      "size": 0.296,
+      "opacity": 0.7,
+      "value": 0.00285998
+    },
+    {
+      "point_id": "intrusion_threshold_publicity_observation_pressure_5",
+      "period_id": "intrusion_threshold",
+      "track_id": "publicity_observation_pressure",
+      "term": "privacy rights",
+      "angle_degrees": 237.4,
+      "radius": 0.66,
+      "size": 0.308,
+      "opacity": 0.7,
+      "value": 0.00046871
+    }
+  ],
+  "thresholds": [
+    {
+      "year": 1890,
+      "label": "Warren and Brandeis publish 'The Right to Privacy'",
+      "category": "legal_rights",
+      "angle_degrees": 268,
+      "description": "The article frames privacy as a legal right against unjustified intrusion.",
+      "confidence": "high",
+      "source": "Warren & Brandeis, The Right to Privacy",
+      "source_url": "https://www.law.cornell.edu/wex/right_to_privacy",
+      "visual_role": "thin_threshold_mark"
+    }
+  ],
+  "phase_reading": [
+    {
+      "period_id": "root_field",
+      "dominant_track_id": "secrecy_confidentiality",
+      "dominant_score": 0.050114,
+      "reading": "Root-family evidence around private and privy before privacy is treated as a stable modern noun."
+    },
+    {
+      "period_id": "seclusion_secret",
+      "dominant_track_id": "secrecy_confidentiality",
+      "dominant_score": 0.472828,
+      "reading": "Privacy sits near private matter, privy knowledge, secrecy, and withdrawal from common view."
+    },
+    {
+      "period_id": "public_private",
+      "dominant_track_id": "secrecy_confidentiality",
+      "dominant_score": 0.803283,
+      "reading": "The public/private contrast becomes a stronger organizing field than privacy as an independent legal word."
+    },
+    {
+      "period_id": "intrusion_threshold",
+      "dominant_track_id": "seclusion_private_life",
+      "dominant_score": 1.0,
+      "reading": "Publicity, observation, and interference pressure rise toward the later legal-rights threshold."
+    }
+  ],
+  "content_plan": {
+    "hero_title": "privacy",
+    "hero_tagline": "A word that moved from seclusion to rights, then into information.",
+    "hero_terms": [
+      "private life",
+      "secrecy",
+      "observation",
+      "intrusion",
+      "right to privacy"
+    ],
+    "chart01_title": "Before Privacy Became a Right",
+    "chart01_intro": "Before privacy became a legal or digital issue, it moved through older fields of seclusion, secrecy, private life, and freedom from observation.",
+    "homepage_hover_label": "semantic weather",
+    "recommended_hover_color": "hub-teal"
+  },
+  "evidence_summary": {
+    "pre_1890_candidate_terms": [
+      {
+        "term": "private",
+        "count": 10
+      },
+      {
+        "term": "privy",
+        "count": 5
+      },
+      {
+        "term": "privacy",
+        "count": 5
+      }
+    ],
+    "earliest_privacy_candidate": {
+      "term": "privacy",
+      "year": 1400,
+      "date_label": "1400",
+      "source_title": "Online Etymology Dictionary",
+      "meaning_category": "freedom_from_intrusion",
+      "confidence": "medium",
+      "evidence_basis": "extractable_year_candidate"
+    },
+    "threshold_year": 1890
+  },
+  "limitations": [
+    "This layer is not a first-attestation layer.",
+    "Pre-1800 Ngram values are treated as visual-directional signals because sparse early book data can create spikes.",
+    "The 1890 marker is a legal-semantic threshold, not the origin of privacy as a word.",
+    "The visual should show weak pre-modern change rather than claiming a sharp pre-industrial rupture."
+  ]
+}

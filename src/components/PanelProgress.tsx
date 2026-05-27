@@ -8,11 +8,12 @@ type PanelProgressPanel = {
 
 type PanelProgressProps = {
   panels: PanelProgressPanel[];
+  className?: string;
 };
 
-export function PanelProgress({ panels }: PanelProgressProps) {
+export function PanelProgress({ panels, className = "" }: PanelProgressProps) {
   return (
-    <div className="flex items-start gap-0 border-b border-ink/14 pb-4 pt-6">
+    <div className={`flex items-start gap-0 border-b border-ink/14 pb-4 pt-6 ${className}`}>
       {panels.map((panel, index) => (
         <div key={panel.num} className="flex flex-1 items-start gap-0">
           <div className="flex min-w-0 flex-col items-start gap-1.5">

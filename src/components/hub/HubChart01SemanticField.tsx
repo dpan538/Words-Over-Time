@@ -60,9 +60,9 @@ type HubChart01SemanticFieldProps = {
 
 const INK = "#050510";
 const WHEAT = "#F5ECD2";
-const AMETHYST = "#0D0630";
-const TEAL = "#8BBEB2";
-const SUN = "#FBB728";
+const AMETHYST = "#090817";
+const TEAL = "#A9C9BC";
+const SUN = "#E7A92B";
 const GRAPHITE = "#57534B";
 
 function hexToNumber(hex: string) {
@@ -210,6 +210,7 @@ function makeLayerDisc(
   isDimmed: boolean,
 ) {
   const group = new THREE.Group();
+  group.userData = { layerId: layer.id, layerIndex: index };
   const center = new THREE.Vector3(layerX(), layerY(index, count), layerZ());
   group.position.copy(center);
   group.rotation.x = -Math.PI / 2;
@@ -218,7 +219,7 @@ function makeLayerDisc(
   const displayBoost = [0.32, 0.08, 0.24, 0.02, 0.26][index] ?? 0;
   const radius = 0.82 + layer.normalizedPeak * 0.52 + displayBoost;
   const focus = isDimmed ? 0.07 : 1;
-  const opacity = (isActive ? 0.66 : 0.31 + layer.normalizedPeak * 0.09) * focus;
+  const opacity = (isActive ? 0.58 : 0.25 + layer.normalizedPeak * 0.08) * focus;
 
   const washGeometry = new THREE.CircleGeometry(1, 128);
   const washMaterial = new THREE.MeshBasicMaterial({
@@ -246,15 +247,15 @@ function makeLayerDisc(
   disc.userData = { layerId: layer.id, label: layer.label };
   group.add(disc);
 
-  const lowerRim = makeEllipseLine(radius * 1.03, radius * 1.03, TEAL, (isActive ? 0.24 : 0.14) * focus);
+  const lowerRim = makeEllipseLine(radius * 1.03, radius * 1.03, TEAL, (isActive ? 0.2 : 0.11) * focus);
   lowerRim.position.z = -0.075;
   group.add(lowerRim);
 
-  const outline = makeEllipseLine(radius * 1.05, radius * 1.05, isActive ? SUN : TEAL, (isActive ? 0.62 : 0.22) * focus);
+  const outline = makeEllipseLine(radius * 1.05, radius * 1.05, isActive ? SUN : TEAL, (isActive ? 0.54 : 0.18) * focus);
   outline.position.z = 0.075;
   group.add(outline);
 
-  const inner = makeEllipseLine(radius * 0.26, radius * 0.26, SUN, (isActive ? 0.46 : 0.24) * focus);
+  const inner = makeEllipseLine(radius * 0.26, radius * 0.26, SUN, (isActive ? 0.4 : 0.2) * focus);
   inner.position.z = 0.098;
   group.add(inner);
 
@@ -477,6 +478,7 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
   const sceneRef = useRef<THREE.Scene | null>(null);
   const rootRef = useRef<THREE.Group | null>(null);
+  const animationRef = useRef<number | null>(null);
   const hitTargetsRef = useRef<THREE.Object3D[]>([]);
   const renderRef = useRef<(() => void) | null>(null);
   const dragRef = useRef({ active: false, lastX: 0 });
@@ -532,6 +534,26 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
     };
     renderRef.current = renderScene;
 
+    const animate = () => {
+      const time = performance.now() * 0.001;
+      if (!dragRef.current.active) {
+        const speed = activeLayerId ? 0.00055 : 0.00115;
+        rotationRef.current.y += speed;
+        root.rotation.y = rotationRef.current.y;
+      }
+
+      root.children.forEach((child) => {
+        if (!child.userData.layerId) return;
+        const layerIndex = Number(child.userData.layerIndex ?? 0);
+        const pulse = 1 + Math.sin(time * 1.2 + layerIndex * 0.72) * (activeLayerId ? 0.006 : 0.012);
+        child.scale.setScalar(pulse);
+        child.position.z = Math.sin(time * 0.95 + layerIndex * 0.8) * 0.018;
+      });
+
+      renderScene();
+      animationRef.current = window.requestAnimationFrame(animate);
+    };
+
     const resize = () => {
       const rect = canvas.getBoundingClientRect();
       const width = Math.max(1, rect.width);
@@ -544,10 +566,14 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
 
     resize();
     window.addEventListener("resize", resize);
-    renderScene();
+    animationRef.current = window.requestAnimationFrame(animate);
 
     return () => {
       window.removeEventListener("resize", resize);
+      if (animationRef.current !== null) {
+        window.cancelAnimationFrame(animationRef.current);
+        animationRef.current = null;
+      }
       disposeObject(scene);
       renderer.dispose();
       rendererRef.current = null;
@@ -585,10 +611,10 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
 
   return (
     <div className="grid items-stretch gap-5 lg:grid-cols-[minmax(0,1fr)_22rem]">
-      <div className="relative min-h-[880px] overflow-hidden border border-hub-teal/50 bg-hub-amethyst">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_32%_18%,rgba(139,190,178,0.16),transparent_34%),linear-gradient(90deg,rgba(139,190,178,0.11)_1px,transparent_1px),linear-gradient(180deg,rgba(139,190,178,0.08)_1px,transparent_1px)] bg-[size:auto,96px_96px,96px_96px]" />
-        <div className="pointer-events-none absolute left-4 top-4 z-10 border border-hub-teal/55 bg-hub-amethyst/82 px-3 py-2 font-mono text-[0.66rem] font-black uppercase tracking-[0.14em] text-sun">
-          Static 3D field / drag left-right / select to isolate
+      <div className="relative min-h-[880px] overflow-hidden border border-ink/80 bg-[#090817]">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_16%,rgba(231,169,43,0.14),transparent_30%),radial-gradient(circle_at_72%_72%,rgba(169,201,188,0.14),transparent_34%),linear-gradient(90deg,rgba(169,201,188,0.085)_1px,transparent_1px),linear-gradient(180deg,rgba(169,201,188,0.06)_1px,transparent_1px)] bg-[size:auto,auto,104px_104px,104px_104px]" />
+        <div className="pointer-events-none absolute left-4 top-4 z-10 border border-hub-teal/45 bg-[#090817]/84 px-3 py-2 font-mono text-[0.84rem] font-black uppercase tracking-[0.14em] text-sun">
+          Animated semantic field / drag to interrupt / select to isolate
         </div>
         <canvas
           ref={canvasRef}
@@ -605,8 +631,8 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
       </div>
 
       <aside className="grid content-start gap-4 text-ink">
-        <div className="h-[25.5rem] border border-ink/40 bg-wheat px-4 py-4">
-          <p className="font-mono text-[0.68rem] font-black uppercase tracking-[0.16em] text-hub-ruby">
+        <div className="h-[25.5rem] border border-ink/56 bg-[#F8F1DA] px-4 py-4">
+          <p className="font-mono text-[0.86rem] font-black uppercase tracking-[0.16em] text-hub-ruby">
             {activeLayer ? "selected semantic layer" : "semantic field overview"}
           </p>
           <h3 className="mt-3 text-[clamp(1.7rem,3vw,2.55rem)] font-black leading-none text-hub-amethyst">
@@ -617,7 +643,7 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
               ? activeLayer.summary
               : "No single layer is isolated. All five semantic circles stay clear so the full movement from wheel center to modern access point can be read together."}
           </p>
-          <dl className="mt-5 grid grid-cols-2 border-y border-ink/30 text-[0.74rem] font-black uppercase tracking-[0.1em]">
+          <dl className="mt-5 grid grid-cols-2 border-y border-ink/38 text-[0.95rem] font-black uppercase tracking-[0.1em]">
             <div className="border-r border-ink/30 px-2 py-3">
               <dt className="text-hub-space">{activeLayer ? "Most visible in" : "View state"}</dt>
               <dd className="mt-1 text-hub-amethyst">
@@ -657,10 +683,10 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
                 : "border-ink/35 bg-wheat text-ink hover:border-hub-teal hover:bg-hub-teal/20"
             }`}
           >
-            <span className="border-r border-current/28 px-3 py-2 font-mono text-[0.68rem] font-black uppercase tracking-[0.14em]">
+            <span className="border-r border-current/28 px-3 py-2 font-mono text-[0.86rem] font-black uppercase tracking-[0.14em]">
               all
             </span>
-            <span className="px-3 py-2 text-[0.88rem] font-black leading-5">
+            <span className="px-3 py-2 text-[1.12rem] font-black leading-6">
               All layers clear
             </span>
           </button>
@@ -675,25 +701,25 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
                   : "border-ink/35 bg-wheat text-ink hover:border-hub-teal hover:bg-hub-teal/20"
               }`}
             >
-              <span className="border-r border-current/28 px-3 py-2 font-mono text-[0.68rem] font-black uppercase tracking-[0.14em]">
+              <span className="border-r border-current/28 px-3 py-2 font-mono text-[0.86rem] font-black uppercase tracking-[0.14em]">
                 {layer.layerNumber}
               </span>
-              <span className="px-3 py-2 text-[0.88rem] font-black leading-5">
+              <span className="px-3 py-2 text-[1.12rem] font-black leading-6">
                 {layer.label}
               </span>
             </button>
           ))}
         </div>
 
-        <div className="min-h-[11.5rem] border border-ink/35 bg-wheat px-4 py-4">
-          <p className="font-mono text-[0.68rem] font-black uppercase tracking-[0.16em] text-hub-space">
+        <div className="min-h-[11.5rem] border border-ink/56 bg-[#F8F1DA] px-4 py-4">
+          <p className="font-mono text-[0.86rem] font-black uppercase tracking-[0.16em] text-hub-space">
             {activeLayer ? "main query examples" : "query examples across layers"}
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
             {queryLabels.map((query) => (
               <span
                 key={query.query}
-                className="border border-hub-space/35 bg-[#E9F2E4] px-2 py-1 text-[0.72rem] font-black uppercase tracking-[0.1em] text-hub-amethyst"
+                className="border border-hub-space/35 bg-[#E9F2E4] px-2 py-1 text-[0.92rem] font-black uppercase tracking-[0.1em] text-hub-amethyst"
               >
                 {query.query}
               </span>

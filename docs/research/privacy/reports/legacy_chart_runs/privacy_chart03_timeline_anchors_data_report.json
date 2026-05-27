@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "chart_id": "chart03_timeline_anchors",
+    "generated_at": "2026-05-26T12:26:18.272009Z",
+    "generated_by_script": "scripts/process_privacy_chart03_timeline_anchors.py",
+    "raw_source": "docs/research/privacy/raw/privacy_chart03_timeline_anchors_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_chart03_timeline_anchors_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_chart03_timeline_anchors_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_chart03_timeline_anchors_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_chart03_timeline_anchors_raw.json"
+    }
+  },
+  "counts": {
+    "anchor_count": 12,
+    "categories": 5,
+    "high_confidence_anchors": 3,
+    "medium_confidence_anchors": 3,
+    "low_confidence_anchors": 6,
+    "unreachable_sources": 12
+  },
+  "category_counts": {
+    "seclusion_private_life": 2,
+    "legal_rights_intrusion": 2,
+    "information_data_control": 4,
+    "digital_platform_governance": 3,
+    "surveillance_security_tension": 1
+  },
+  "highlights": {
+    "earliest_anchor": {
+      "year": 1580,
+      "label": "Private / privacy as solitary, secluded state",
+      "category": "seclusion_private_life",
+      "description": "Earliest dictionary traditions describe related 'private' usage as secluded or apart from public view. The noun privacy is later used to encode this meaning indirectly and with uneven standardization.",
+      "source": "Merriam-Webster / OED family references",
+      "source_url": "https://www.merriam-webster.com/dictionary/privacy",
+      "confidence": "low",
+      "notes": "Date estimate is intentionally cautious; early usage differs across historical sources."
+    },
+    "latest_anchor": {
+      "year": 2020,
+      "label": "AI and algorithmic inference expand data-privacy risk surface",
+      "category": "information_data_control",
+      "description": "AI-era privacy claims connect model training, inference, and automated decision risks with individual autonomy.",
+      "source": "OECD/academic AI governance and data rights work",
+      "source_url": "https://www.oecd.org/going-further/ai/",
+      "confidence": "low",
+      "notes": "Low confidence for year-level precision; use as a modern directional anchor only."
+    },
+    "most_important_anchor_years": [
+      1890,
+      1974,
+      2018
+    ]
+  },
+  "category_timelines": {
+    "seclusion_private_life": [
+      {
+        "year": 1580,
+        "label": "Private / privacy as solitary, secluded state",
+        "category": "seclusion_private_life",
+        "description": "Earliest dictionary traditions describe related 'private' usage as secluded or apart from public view. The noun privacy is later used to encode this meaning indirectly and with uneven standardization.",
+        "source": "Merriam-Webster / OED family references",
+        "source_url": "https://www.merriam-webster.com/dictionary/privacy",
+        "confidence": "low",
+        "notes": "Date estimate is intentionally cautious; early usage differs across historical sources."
+      },
+      {
+        "year": 1814,
+        "label": "Toward freedom from intrusion framing",
+        "category": "seclusion_private_life",
+        "description": "Shift from descriptive 'private/secluded' meaning toward civic concern about unwanted observation and interference appears in 19th-century legal/philosophical treatments.",
+        "source": "Historical legal and language scholarship references",
+        "source_url": "https://www.merriam-webster.com/dictionary/privacy",
+        "confidence": "low",
+        "notes": "Used as an approximate turning window for first-pass planning."
+      }
+    ],
+    "legal_rights_intrusion": [
+      {
+        "year": 1890,
+        "label": "Warren and Brandeis publish 'The Right to Privacy'",
+        "category": "legal_rights_intrusion",
+        "description": "Defines privacy as 'the right to be let alone', introducing legal discourse around intrusion in American public law.",
+        "source": "Warren & Brandeis, The Right to Privacy, 1890",
+        "source_url": "https://www.law.cornell.edu/wex/right_to_privacy",
+        "confidence": "high",
+        "notes": "Anchorable publication year for modern legal privacy discourse."
+      },
+      {
+        "year": 1948,
+        "label": "Mid-century privacy/legal commentary consolidates",
+        "category": "legal_rights_intrusion",
+        "description": "Privacy language continues in legal journalism and constitutional discussion around informational and personal autonomy boundaries.",
+        "source": "Constitutional and civil-liberty scholarship (mid-20th century)",
+        "source_url": "https://www.law.cornell.edu/wex/constitutional_privacy",
+        "confidence": "low",
+        "notes": "Broad period marker; used as context, not single-source claim."
+      }
+    ],
+    "information_data_control": [
+      {
+        "year": 1974,
+        "label": "US Privacy Act and early information-privacy law",
+        "category": "information_data_control",
+        "description": "Federal privacy framework begins to regulate U.S. federal agency handling of personal records.",
+        "source": "US Privacy Act of 1974",
+        "source_url": "https://www.justice.gov/opcl/privacy-act-1974",
+        "confidence": "high",
+        "notes": "Strong legal source, limited to U.S. federal agencies and records handling."
+      },
+      {
+        "year": 1980,
+        "label": "Privacy in information systems and policy recommendations",
+        "category": "information_data_control",
+        "description": "The OECD begins to frame data protection principles for automated systems and personal data handling.",
+        "source": "OECD Recommendation on Data Protection (1980)",
+        "source_url": "https://www.oecd.org/en/data/",
+        "confidence": "medium",
+        "notes": "The exact principle text is broad and often implemented via derivative documents."
+      },
+      {
+        "year": 1984,
+        "label": "United Kingdom enacts Data Protection Act",
+        "category": "information_data_control",
+        "description": "A major legal move toward codified personal data rights and processing limitations.",
+        "source": "Data Protection Act 1984/1988 (United Kingdom)",
+        "source_url": "https://www.legislation.gov.uk/ukpga/1984/2/contents",
+        "confidence": "medium",
+        "notes": "Sourceable in legal records; later replaced/amended by the 2018 UK regime."
+      },
+      {
+        "year": 2020,
+        "label": "AI and algorithmic inference expand data-privacy risk surface",
+        "category": "information_data_control",
+        "description": "AI-era privacy claims connect model training, inference, and automated decision risks with individual autonomy.",
+        "source": "OECD/academic AI governance and data rights work",
+        "source_url": "https://www.oecd.org/going-further/ai/",
+        "confidence": "low",
+        "notes": "Low confidence for year-level precision; use as a modern directional anchor only."
+      }
+    ],
+    "digital_platform_governance": [
+      {
+        "year": 1998,
+        "label": "Digital identity and cross-border data risk become explicit policy concerns",
+        "category": "digital_platform_governance",
+        "description": "The early web era pushes 'online privacy' into mainstream regulatory and consumer discussion.",
+        "source": "Public policy literature on internet governance and data security",
+        "source_url": "https://ico.org.uk/",
+        "confidence": "low",
+        "notes": "Used as a context marker for internet-facing privacy concerns."
+      },
+      {
+        "year": 2000,
+        "label": "Privacy settings and privacy-policy language become user-facing platform defaults",
+        "category": "digital_platform_governance",
+        "description": "Web services begin offering explicit consent and account-level controls tied to privacy claims.",
+        "source": "Platform policy history (policy terms and settings conventions)",
+        "source_url": "https://www.ftc.gov/news-events/topics/privacy-technology",
+        "confidence": "low",
+        "notes": "Conservative marker for the shift to product-level governance language."
+      },
+      {
+        "year": 2018,
+        "label": "GDPR-era platform-era privacy obligations",
+        "category": "digital_platform_governance",
+        "description": "Globalization of data rights and platform accountability through modern privacy frameworks.",
+        "source": "General Data Protection Regulation (EU) and follow-on summaries",
+        "source_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "confidence": "high",
+        "notes": "Use 2018 as practical enforcement-era marker."
+      }
+    ],
+    "surveillance_security_tension": [
+      {
+        "year": 2013,
+        "label": "Post-surveillance leak era re-centers security versus privacy",
+        "category": "surveillance_security_tension",
+        "description": "Public attention moves sharply toward state monitoring, corporate surveillance, and security trade-offs.",
+        "source": "Surveillance/security policy discussions in the 2010s",
+        "source_url": "https://oag.ca.gov/privacy",
+        "confidence": "medium",
+        "notes": "Year used as a broad shift marker for narrative planning."
+      }
+    ]
+  },
+  "raw_metadata": {
+    "source_category_notes": "Sources are checked for reachability only; each anchor remains a machine-readable planning record."
+  },
+  "recommendations": {
+    "chart_ready_high_confidence": [
+      "1890 Warren and Brandeis publish 'The Right to Privacy' (legal_rights_intrusion)",
+      "1974 US Privacy Act and early information-privacy law (information_data_control)",
+      "2018 GDPR-era platform-era privacy obligations (digital_platform_governance)"
+    ],
+    "requires_source_followup": [
+      "Private / privacy as solitary, secluded state",
+      "Toward freedom from intrusion framing",
+      "Mid-century privacy/legal commentary consolidates",
+      "Digital identity and cross-border data risk become explicit policy concerns",
+      "Privacy settings and privacy-policy language become user-facing platform defaults",
+      "AI and algorithmic inference expand data-privacy risk surface"
+    ]
+  },
+  "next_research_questions": [
+    "Which low-confidence early anchors can be converted to high-confidence with direct scans?",
+    "Can 1970s markers be split into legal, technical, and social tracks?",
+    "Where do 'privacy policy' and 'privacy settings' separate into policy-layer versus platform-ui-layer arcs?",
+    "Which AI-era anchors are strongest if using model training papers versus media coverage only?"
+  ]
+}

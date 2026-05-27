@@ -1,0 +1,3139 @@
+{
+  "word": "privacy",
+  "layer_id": "legal_injury_matrix",
+  "status": "derived_for_chart01b",
+  "intended_use": "privacy_chart01_second_phase_panel",
+  "title": "From Privacy to Legal Injury",
+  "subtitle": "1890-1950 legal-rights and privacy-injury formation",
+  "generated_at": "2026-05-27T07:02:38.334002+00:00",
+  "generated_by_script": "scripts/process_privacy_legal_injury_matrix.py",
+  "year_range": [
+    1890,
+    1950
+  ],
+  "branches": [
+    {
+      "branch_id": "right_articulated",
+      "label": "Right articulated",
+      "description": "Privacy becomes a legal claim rather than only a condition of seclusion.",
+      "color": "#7E42B8"
+    },
+    {
+      "branch_id": "publicity_press",
+      "label": "Publicity and press",
+      "description": "The injury is often exposure: press, publicity, image, name, and reputation.",
+      "color": "#DDBE24"
+    },
+    {
+      "branch_id": "name_likeness",
+      "label": "Name / likeness",
+      "description": "Early statutory and case-law forms treat unauthorized commercial identity use as privacy harm.",
+      "color": "#C7663D"
+    },
+    {
+      "branch_id": "tort_injury",
+      "label": "Tort injury",
+      "description": "Privacy becomes a civil injury vocabulary: invasion, disclosure, intrusion, appropriation.",
+      "color": "#2F9F5F"
+    },
+    {
+      "branch_id": "constitutional_surveillance",
+      "label": "Constitutional edge",
+      "description": "Surveillance and home/correspondence concerns begin to pull privacy toward constitutional language.",
+      "color": "#2E8FAF"
+    },
+    {
+      "branch_id": "human_rights",
+      "label": "Human-rights language",
+      "description": "Privacy enters international rights language around family, home, correspondence, and interference.",
+      "color": "#1F6678"
+    }
+  ],
+  "matrix_nodes": [
+    {
+      "anchor_id": "privacy_1890_warren_brandeis",
+      "year": 1890,
+      "label": "The Right to Privacy",
+      "branch_id": "right_articulated",
+      "source_title": "Warren and Brandeis, The Right to Privacy",
+      "source_url": "https://en.wikisource.org/wiki/The_Right_to_Privacy",
+      "description": "A law-review article frames privacy as a right against unwanted publicity and intrusion.",
+      "evidence_type": "legal_article",
+      "strength": 5,
+      "confidence": "high",
+      "x_year": 1890,
+      "radius": 25.34,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T07:01:47.770442+00:00"
+    },
+    {
+      "anchor_id": "privacy_1902_roberson",
+      "year": 1902,
+      "label": "Roberson v. Rochester Folding Box Co.",
+      "branch_id": "publicity_press",
+      "source_title": "Roberson v. Rochester Folding Box Co.",
+      "source_url": "https://law.justia.com/cases/new-york/court-of-appeals/1902/171-n-y-538-3591680.html",
+      "description": "A widely cited New York case rejects a common-law privacy claim after unauthorized use of a person's image.",
+      "evidence_type": "case_law",
+      "strength": 3,
+      "confidence": "medium",
+      "x_year": 1902,
+      "radius": 21.2,
+      "source_reachable": false,
+      "source_status": 403,
+      "source_checked_at": "2026-05-27T07:01:49.217018+00:00"
+    },
+    {
+      "anchor_id": "privacy_1903_new_york_name_picture",
+      "year": 1903,
+      "label": "New York name and picture statute",
+      "branch_id": "name_likeness",
+      "source_title": "New York Civil Rights Law sections 50 and 51",
+      "source_url": "https://www.nysenate.gov/legislation/laws/CVR/50",
+      "description": "New York's statutory privacy response protects against unauthorized use of name, portrait, or picture.",
+      "evidence_type": "statute",
+      "strength": 4,
+      "confidence": "medium",
+      "x_year": 1903,
+      "radius": 23.4,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T07:01:49.346548+00:00"
+    },
+    {
+      "anchor_id": "privacy_1905_pavesich",
+      "year": 1905,
+      "label": "Pavesich recognizes privacy injury",
+      "branch_id": "tort_injury",
+      "source_title": "Pavesich v. New England Life Insurance Co.",
+      "source_url": "https://law.justia.com/cases/georgia/supreme-court/1905/122-ga-190-1.html",
+      "description": "A Georgia decision is commonly treated as early recognition of a privacy right against unauthorized commercial image use.",
+      "evidence_type": "case_law",
+      "strength": 4,
+      "confidence": "medium",
+      "x_year": 1905,
+      "radius": 23.4,
+      "source_reachable": false,
+      "source_status": 403,
+      "source_checked_at": "2026-05-27T07:01:50.902351+00:00"
+    },
+    {
+      "anchor_id": "privacy_1928_olmstead",
+      "year": 1928,
+      "label": "Olmstead dissent",
+      "branch_id": "constitutional_surveillance",
+      "source_title": "Olmstead v. United States",
+      "source_url": "https://supreme.justia.com/cases/federal/us/277/438/",
+      "description": "Brandeis's dissent links privacy to constitutional limits on surveillance and the right to be let alone.",
+      "evidence_type": "case_law_dissent",
+      "strength": 5,
+      "confidence": "high",
+      "x_year": 1928,
+      "radius": 25.34,
+      "source_reachable": false,
+      "source_status": 403,
+      "source_checked_at": "2026-05-27T07:01:50.989731+00:00"
+    },
+    {
+      "anchor_id": "privacy_1931_melvin",
+      "year": 1931,
+      "label": "Melvin v. Reid",
+      "branch_id": "tort_injury",
+      "source_title": "Melvin v. Reid",
+      "source_url": "https://www.courtlistener.com/opinion/3285175/melvin-v-reid/",
+      "description": "A California case is often cited in privacy tort history around disclosure, reputation, and renewed public exposure.",
+      "evidence_type": "case_law",
+      "strength": 3,
+      "confidence": "medium",
+      "x_year": 1931,
+      "radius": 21.2,
+      "source_reachable": true,
+      "source_status": 202,
+      "source_checked_at": "2026-05-27T07:01:51.109771+00:00"
+    },
+    {
+      "anchor_id": "privacy_1939_restatement",
+      "year": 1939,
+      "label": "Restatement privacy tort language",
+      "branch_id": "tort_injury",
+      "source_title": "Restatement (First) of Torts privacy reference",
+      "source_url": "https://www.law.cornell.edu/wex/invasion_of_privacy",
+      "description": "Privacy becomes increasingly legible as tort injury vocabulary in legal summaries and doctrine.",
+      "evidence_type": "legal_doctrine",
+      "strength": 3,
+      "confidence": "medium",
+      "x_year": 1939,
+      "radius": 21.2,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T07:01:51.673190+00:00"
+    },
+    {
+      "anchor_id": "privacy_1940_sidis",
+      "year": 1940,
+      "label": "Sidis and newsworthiness",
+      "branch_id": "publicity_press",
+      "source_title": "Sidis v. F-R Publishing Corp.",
+      "source_url": "https://www.courtlistener.com/opinion/1506784/sidis-v-f-r-pub-corporation/",
+      "description": "A public-interest/newsworthiness case marks tension between privacy claims and publicity or press coverage.",
+      "evidence_type": "case_law",
+      "strength": 3,
+      "confidence": "medium",
+      "x_year": 1940,
+      "radius": 21.2,
+      "source_reachable": true,
+      "source_status": 202,
+      "source_checked_at": "2026-05-27T07:01:54.263793+00:00"
+    },
+    {
+      "anchor_id": "privacy_1948_udhr",
+      "year": 1948,
+      "label": "UDHR Article 12",
+      "branch_id": "human_rights",
+      "source_title": "Universal Declaration of Human Rights",
+      "source_url": "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+      "description": "International human-rights language protects against arbitrary interference with privacy, family, home, and correspondence.",
+      "evidence_type": "human_rights",
+      "strength": 5,
+      "confidence": "high",
+      "x_year": 1948,
+      "radius": 25.34,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T07:01:55.777960+00:00"
+    },
+    {
+      "anchor_id": "privacy_1950_echr_article_8",
+      "year": 1950,
+      "label": "ECHR Article 8",
+      "branch_id": "human_rights",
+      "source_title": "European Convention on Human Rights, Article 8",
+      "source_url": "https://www.echr.coe.int/documents/d/echr/convention_ENG",
+      "description": "European rights language protects private and family life, home, and correspondence.",
+      "evidence_type": "human_rights",
+      "strength": 4,
+      "confidence": "high",
+      "x_year": 1950,
+      "radius": 23.4,
+      "source_reachable": true,
+      "source_status": 200,
+      "source_checked_at": "2026-05-27T07:01:56.721421+00:00"
+    }
+  ],
+  "phrase_series": [
+    {
+      "term": "invasion of privacy",
+      "source": "en",
+      "query_id": "privacy_frequency_terms_query_034",
+      "mean_1890_1950": 0.017520045370491802,
+      "max_1890_1950": 0.186730851,
+      "peak_year_1890_1950": 1936,
+      "nonzero_years_1890_1950": 61,
+      "first_nonzero_1890_1950": 1890,
+      "values": [
+        {
+          "year": 1890,
+          "value": 0.0033403487
+        },
+        {
+          "year": 1891,
+          "value": 0.0071196773
+        },
+        {
+          "year": 1892,
+          "value": 0.003781119
+        },
+        {
+          "year": 1893,
+          "value": 0.0041161745
+        },
+        {
+          "year": 1894,
+          "value": 0.0020765826
+        },
+        {
+          "year": 1895,
+          "value": 0.0039505542
+        },
+        {
+          "year": 1896,
+          "value": 0.0053455864
+        },
+        {
+          "year": 1897,
+          "value": 0.0045021262
+        },
+        {
+          "year": 1898,
+          "value": 0.007146951
+        },
+        {
+          "year": 1899,
+          "value": 0.0139006621
+        },
+        {
+          "year": 1900,
+          "value": 0.0166167764
+        },
+        {
+          "year": 1901,
+          "value": 0.0081542466
+        },
+        {
+          "year": 1902,
+          "value": 0.0045034056
+        },
+        {
+          "year": 1903,
+          "value": 0.003307862
+        },
+        {
+          "year": 1904,
+          "value": 0.0051240489
+        },
+        {
+          "year": 1905,
+          "value": 0.0092269677
+        },
+        {
+          "year": 1906,
+          "value": 0.0028605692
+        },
+        {
+          "year": 1907,
+          "value": 0.0061568942
+        },
+        {
+          "year": 1908,
+          "value": 0.0041388393
+        },
+        {
+          "year": 1909,
+          "value": 0.0042236324
+        },
+        {
+          "year": 1910,
+          "value": 0.005946271
+        },
+        {
+          "year": 1911,
+          "value": 0.0037251482
+        },
+        {
+          "year": 1912,
+          "value": 0.0047926765
+        },
+        {
+          "year": 1913,
+          "value": 0.0062730337
+        },
+        {
+          "year": 1914,
+          "value": 0.0038185648
+        },
+        {
+          "year": 1915,
+          "value": 0.0070676947
+        },
+        {
+          "year": 1916,
+          "value": 0.0060644022
+        },
+        {
+          "year": 1917,
+          "value": 0.0033563987
+        },
+        {
+          "year": 1918,
+          "value": 0.0039883422
+        },
+        {
+          "year": 1919,
+          "value": 0.0019699055
+        },
+        {
+          "year": 1920,
+          "value": 0.0045042897
+        },
+        {
+          "year": 1921,
+          "value": 0.0033338247
+        },
+        {
+          "year": 1922,
+          "value": 0.0051457263
+        },
+        {
+          "year": 1923,
+          "value": 0.0039075141
+        },
+        {
+          "year": 1924,
+          "value": 0.0101849935
+        },
+        {
+          "year": 1925,
+          "value": 0.0064285291
+        },
+        {
+          "year": 1926,
+          "value": 0.0061103842
+        },
+        {
+          "year": 1927,
+          "value": 0.0114872428
+        },
+        {
+          "year": 1928,
+          "value": 0.0063974449
+        },
+        {
+          "year": 1929,
+          "value": 0.0075535422
+        },
+        {
+          "year": 1930,
+          "value": 0.0084123531
+        },
+        {
+          "year": 1931,
+          "value": 0.008225574
+        },
+        {
+          "year": 1932,
+          "value": 0.0262714431
+        },
+        {
+          "year": 1933,
+          "value": 0.0032559349
+        },
+        {
+          "year": 1934,
+          "value": 0.0169510651
+        },
+        {
+          "year": 1935,
+          "value": 0.0093359434
+        },
+        {
+          "year": 1936,
+          "value": 0.186730851
+        },
+        {
+          "year": 1937,
+          "value": 0.0109085287
+        },
+        {
+          "year": 1938,
+          "value": 0.0112933188
+        },
+        {
+          "year": 1939,
+          "value": 0.0402293281
+        },
+        {
+          "year": 1940,
+          "value": 0.0268734574
+        },
+        {
+          "year": 1941,
+          "value": 0.0200146502
+        },
+        {
+          "year": 1942,
+          "value": 0.0275606573
+        },
+        {
+          "year": 1943,
+          "value": 0.0470132718
+        },
+        {
+          "year": 1944,
+          "value": 0.0206745376
+        },
+        {
+          "year": 1945,
+          "value": 0.0377839295
+        },
+        {
+          "year": 1946,
+          "value": 0.0243221386
+        },
+        {
+          "year": 1947,
+          "value": 0.0436830121
+        },
+        {
+          "year": 1948,
+          "value": 0.0792128857
+        },
+        {
+          "year": 1949,
+          "value": 0.1166953539
+        },
+        {
+          "year": 1950,
+          "value": 0.07162558
+        }
+      ]
+    },
+    {
+      "term": "invasion of privacy",
+      "source": "en-GB",
+      "query_id": "privacy_frequency_terms_query_034",
+      "mean_1890_1950": 0.0050357866,
+      "max_1890_1950": 0.0287071416,
+      "peak_year_1890_1950": 1948,
+      "nonzero_years_1890_1950": 56,
+      "first_nonzero_1890_1950": 1890,
+      "values": [
+        {
+          "year": 1890,
+          "value": 0.0053843237
+        },
+        {
+          "year": 1891,
+          "value": 0.0040255861
+        },
+        {
+          "year": 1892,
+          "value": 0.0033667154
+        },
+        {
+          "year": 1893,
+          "value": 0.0012213609
+        },
+        {
+          "year": 1894,
+          "value": 0.0
+        },
+        {
+          "year": 1895,
+          "value": 0.0
+        },
+        {
+          "year": 1896,
+          "value": 0.0025210201
+        },
+        {
+          "year": 1897,
+          "value": 0.0006497574
+        },
+        {
+          "year": 1898,
+          "value": 0.0064911929
+        },
+        {
+          "year": 1899,
+          "value": 0.0022848052
+        },
+        {
+          "year": 1900,
+          "value": 0.0124881508
+        },
+        {
+          "year": 1901,
+          "value": 0.0098025204
+        },
+        {
+          "year": 1902,
+          "value": 0.0016050641
+        },
+        {
+          "year": 1903,
+          "value": 0.0005441413
+        },
+        {
+          "year": 1904,
+          "value": 0.00364866
+        },
+        {
+          "year": 1905,
+          "value": 0.0016087959
+        },
+        {
+          "year": 1906,
+          "value": 0.0015332255
+        },
+        {
+          "year": 1907,
+          "value": 0.0005834203
+        },
+        {
+          "year": 1908,
+          "value": 0.0015753687
+        },
+        {
+          "year": 1909,
+          "value": 0.00119191
+        },
+        {
+          "year": 1910,
+          "value": 0.003732111
+        },
+        {
+          "year": 1911,
+          "value": 0.0091711509
+        },
+        {
+          "year": 1912,
+          "value": 0.0024103999
+        },
+        {
+          "year": 1913,
+          "value": 0.0030375289
+        },
+        {
+          "year": 1914,
+          "value": 0.0018274691
+        },
+        {
+          "year": 1915,
+          "value": 0.0037749137
+        },
+        {
+          "year": 1916,
+          "value": 0.0048614464
+        },
+        {
+          "year": 1917,
+          "value": 0.0008330071
+        },
+        {
+          "year": 1918,
+          "value": 0.0027484212
+        },
+        {
+          "year": 1919,
+          "value": 0.0
+        },
+        {
+          "year": 1920,
+          "value": 0.0
+        },
+        {
+          "year": 1921,
+          "value": 0.005087045
+        },
+        {
+          "year": 1922,
+          "value": 0.0067899326
+        },
+        {
+          "year": 1923,
+          "value": 0.0008922433
+        },
+        {
+          "year": 1924,
+          "value": 0.0009098076
+        },
+        {
+          "year": 1925,
+          "value": 0.0037044496
+        },
+        {
+          "year": 1926,
+          "value": 0.0017957039
+        },
+        {
+          "year": 1927,
+          "value": 0.0120178671
+        },
+        {
+          "year": 1928,
+          "value": 0.0043817123
+        },
+        {
+          "year": 1929,
+          "value": 0.0099209907
+        },
+        {
+          "year": 1930,
+          "value": 0.003506018
+        },
+        {
+          "year": 1931,
+          "value": 0.0049397055
+        },
+        {
+          "year": 1932,
+          "value": 0.0063565628
+        },
+        {
+          "year": 1933,
+          "value": 0.0046416554
+        },
+        {
+          "year": 1934,
+          "value": 0.0017346322
+        },
+        {
+          "year": 1935,
+          "value": 0.0035509935
+        },
+        {
+          "year": 1936,
+          "value": 0.0084920497
+        },
+        {
+          "year": 1937,
+          "value": 0.0040028252
+        },
+        {
+          "year": 1938,
+          "value": 0.0032259058
+        },
+        {
+          "year": 1939,
+          "value": 0.0081957703
+        },
+        {
+          "year": 1940,
+          "value": 0.0186479427
+        },
+        {
+          "year": 1941,
+          "value": 0.0014645687
+        },
+        {
+          "year": 1942,
+          "value": 0.0014521137
+        },
+        {
+          "year": 1943,
+          "value": 0.0079987759
+        },
+        {
+          "year": 1944,
+          "value": 0.0
+        },
+        {
+          "year": 1945,
+          "value": 0.014674585
+        },
+        {
+          "year": 1946,
+          "value": 0.0091016725
+        },
+        {
+          "year": 1947,
+          "value": 0.0123224212
+        },
+        {
+          "year": 1948,
+          "value": 0.0287071416
+        },
+        {
+          "year": 1949,
+          "value": 0.0187255817
+        },
+        {
+          "year": 1950,
+          "value": 0.0070198422
+        }
+      ]
+    },
+    {
+      "term": "invasion of privacy",
+      "source": "en-US",
+      "query_id": "privacy_frequency_terms_query_034",
+      "mean_1890_1950": 0.020369472449180328,
+      "max_1890_1950": 0.1570245282,
+      "peak_year_1890_1950": 1936,
+      "nonzero_years_1890_1950": 61,
+      "first_nonzero_1890_1950": 1890,
+      "values": [
+        {
+          "year": 1890,
+          "value": 0.0024290414
+        },
+        {
+          "year": 1891,
+          "value": 0.0072787336
+        },
+        {
+          "year": 1892,
+          "value": 0.0034675764
+        },
+        {
+          "year": 1893,
+          "value": 0.005446168
+        },
+        {
+          "year": 1894,
+          "value": 0.0031832064
+        },
+        {
+          "year": 1895,
+          "value": 0.0034884415
+        },
+        {
+          "year": 1896,
+          "value": 0.0076568817
+        },
+        {
+          "year": 1897,
+          "value": 0.0036426475
+        },
+        {
+          "year": 1898,
+          "value": 0.0094817993
+        },
+        {
+          "year": 1899,
+          "value": 0.0231511413
+        },
+        {
+          "year": 1900,
+          "value": 0.0131289024
+        },
+        {
+          "year": 1901,
+          "value": 0.0076429907
+        },
+        {
+          "year": 1902,
+          "value": 0.0028389198
+        },
+        {
+          "year": 1903,
+          "value": 0.0034917664
+        },
+        {
+          "year": 1904,
+          "value": 0.0036713849
+        },
+        {
+          "year": 1905,
+          "value": 0.0097575204
+        },
+        {
+          "year": 1906,
+          "value": 0.0033640182
+        },
+        {
+          "year": 1907,
+          "value": 0.006478174
+        },
+        {
+          "year": 1908,
+          "value": 0.0061905882
+        },
+        {
+          "year": 1909,
+          "value": 0.0027211239
+        },
+        {
+          "year": 1910,
+          "value": 0.0063040133
+        },
+        {
+          "year": 1911,
+          "value": 0.002423325
+        },
+        {
+          "year": 1912,
+          "value": 0.0046246224
+        },
+        {
+          "year": 1913,
+          "value": 0.0052702108
+        },
+        {
+          "year": 1914,
+          "value": 0.0029647849
+        },
+        {
+          "year": 1915,
+          "value": 0.0054884258
+        },
+        {
+          "year": 1916,
+          "value": 0.0060678025
+        },
+        {
+          "year": 1917,
+          "value": 0.0034689078
+        },
+        {
+          "year": 1918,
+          "value": 0.0032759528
+        },
+        {
+          "year": 1919,
+          "value": 0.0022367758
+        },
+        {
+          "year": 1920,
+          "value": 0.0028951201
+        },
+        {
+          "year": 1921,
+          "value": 0.0029290754
+        },
+        {
+          "year": 1922,
+          "value": 0.0034302441
+        },
+        {
+          "year": 1923,
+          "value": 0.0047666966
+        },
+        {
+          "year": 1924,
+          "value": 0.0117663486
+        },
+        {
+          "year": 1925,
+          "value": 0.0076929026
+        },
+        {
+          "year": 1926,
+          "value": 0.0075999229
+        },
+        {
+          "year": 1927,
+          "value": 0.013192696
+        },
+        {
+          "year": 1928,
+          "value": 0.007035809
+        },
+        {
+          "year": 1929,
+          "value": 0.0062625673
+        },
+        {
+          "year": 1930,
+          "value": 0.010584154
+        },
+        {
+          "year": 1931,
+          "value": 0.0103087123
+        },
+        {
+          "year": 1932,
+          "value": 0.0367250434
+        },
+        {
+          "year": 1933,
+          "value": 0.0035298337
+        },
+        {
+          "year": 1934,
+          "value": 0.023787555
+        },
+        {
+          "year": 1935,
+          "value": 0.0125041128
+        },
+        {
+          "year": 1936,
+          "value": 0.1570245282
+        },
+        {
+          "year": 1937,
+          "value": 0.0129434588
+        },
+        {
+          "year": 1938,
+          "value": 0.0157600784
+        },
+        {
+          "year": 1939,
+          "value": 0.0547464982
+        },
+        {
+          "year": 1940,
+          "value": 0.0311790347
+        },
+        {
+          "year": 1941,
+          "value": 0.0247968985
+        },
+        {
+          "year": 1942,
+          "value": 0.0323632343
+        },
+        {
+          "year": 1943,
+          "value": 0.0603125687
+        },
+        {
+          "year": 1944,
+          "value": 0.0259223895
+        },
+        {
+          "year": 1945,
+          "value": 0.0474571663
+        },
+        {
+          "year": 1946,
+          "value": 0.0309930506
+        },
+        {
+          "year": 1947,
+          "value": 0.0545692409
+        },
+        {
+          "year": 1948,
+          "value": 0.1055351332
+        },
+        {
+          "year": 1949,
+          "value": 0.1567484367
+        },
+        {
+          "year": 1950,
+          "value": 0.0965394615
+        }
+      ]
+    },
+    {
+      "term": "privacy rights",
+      "source": "en",
+      "query_id": "privacy_frequency_terms_query_033",
+      "mean_1890_1950": 0.002807197770491803,
+      "max_1890_1950": 0.0713705989,
+      "peak_year_1890_1950": 1936,
+      "nonzero_years_1890_1950": 35,
+      "first_nonzero_1890_1950": 1896,
+      "values": [
+        {
+          "year": 1890,
+          "value": 0.0
+        },
+        {
+          "year": 1891,
+          "value": 0.0
+        },
+        {
+          "year": 1892,
+          "value": 0.0
+        },
+        {
+          "year": 1893,
+          "value": 0.0
+        },
+        {
+          "year": 1894,
+          "value": 0.0
+        },
+        {
+          "year": 1895,
+          "value": 0.0
+        },
+        {
+          "year": 1896,
+          "value": 0.0003161033
+        },
+        {
+          "year": 1897,
+          "value": 0.0
+        },
+        {
+          "year": 1898,
+          "value": 0.0
+        },
+        {
+          "year": 1899,
+          "value": 0.0
+        },
+        {
+          "year": 1900,
+          "value": 0.0014800487
+        },
+        {
+          "year": 1901,
+          "value": 0.0006424979
+        },
+        {
+          "year": 1902,
+          "value": 0.0003856251
+        },
+        {
+          "year": 1903,
+          "value": 0.0
+        },
+        {
+          "year": 1904,
+          "value": 0.0
+        },
+        {
+          "year": 1905,
+          "value": 0.0005937435
+        },
+        {
+          "year": 1906,
+          "value": 0.0
+        },
+        {
+          "year": 1907,
+          "value": 0.0002342987
+        },
+        {
+          "year": 1908,
+          "value": 0.0
+        },
+        {
+          "year": 1909,
+          "value": 0.0
+        },
+        {
+          "year": 1910,
+          "value": 0.0
+        },
+        {
+          "year": 1911,
+          "value": 0.0
+        },
+        {
+          "year": 1912,
+          "value": 0.0
+        },
+        {
+          "year": 1913,
+          "value": 0.0003873063
+        },
+        {
+          "year": 1914,
+          "value": 0.0
+        },
+        {
+          "year": 1915,
+          "value": 0.0
+        },
+        {
+          "year": 1916,
+          "value": 9.85535e-05
+        },
+        {
+          "year": 1917,
+          "value": 9.87114e-05
+        },
+        {
+          "year": 1918,
+          "value": 0.0
+        },
+        {
+          "year": 1919,
+          "value": 0.0003990398
+        },
+        {
+          "year": 1920,
+          "value": 0.0001905735
+        },
+        {
+          "year": 1921,
+          "value": 0.0
+        },
+        {
+          "year": 1922,
+          "value": 0.0007512311
+        },
+        {
+          "year": 1923,
+          "value": 0.0
+        },
+        {
+          "year": 1924,
+          "value": 0.0002615745
+        },
+        {
+          "year": 1925,
+          "value": 0.0001302861
+        },
+        {
+          "year": 1926,
+          "value": 0.0
+        },
+        {
+          "year": 1927,
+          "value": 0.0007390514
+        },
+        {
+          "year": 1928,
+          "value": 0.0
+        },
+        {
+          "year": 1929,
+          "value": 0.0002259516
+        },
+        {
+          "year": 1930,
+          "value": 0.0
+        },
+        {
+          "year": 1931,
+          "value": 0.0009900902
+        },
+        {
+          "year": 1932,
+          "value": 0.0030102473
+        },
+        {
+          "year": 1933,
+          "value": 0.0
+        },
+        {
+          "year": 1934,
+          "value": 0.0021895177
+        },
+        {
+          "year": 1935,
+          "value": 0.0003649428
+        },
+        {
+          "year": 1936,
+          "value": 0.0713705989
+        },
+        {
+          "year": 1937,
+          "value": 0.0010157823
+        },
+        {
+          "year": 1938,
+          "value": 0.0058803862
+        },
+        {
+          "year": 1939,
+          "value": 0.0071811588
+        },
+        {
+          "year": 1940,
+          "value": 0.001891058
+        },
+        {
+          "year": 1941,
+          "value": 0.0031319113
+        },
+        {
+          "year": 1942,
+          "value": 0.0034692257
+        },
+        {
+          "year": 1943,
+          "value": 0.0225397168
+        },
+        {
+          "year": 1944,
+          "value": 0.0061168765
+        },
+        {
+          "year": 1945,
+          "value": 0.0016240885
+        },
+        {
+          "year": 1946,
+          "value": 0.0060213703
+        },
+        {
+          "year": 1947,
+          "value": 0.0015560032
+        },
+        {
+          "year": 1948,
+          "value": 0.0048286612
+        },
+        {
+          "year": 1949,
+          "value": 0.0169209392
+        },
+        {
+          "year": 1950,
+          "value": 0.0042018927
+        }
+      ]
+    },
+    {
+      "term": "privacy rights",
+      "source": "en-GB",
+      "query_id": "privacy_frequency_terms_query_033",
+      "mean_1890_1950": 7.893462786885246e-05,
+      "max_1890_1950": 0.0026097922,
+      "peak_year_1890_1950": 1900,
+      "nonzero_years_1890_1950": 4,
+      "first_nonzero_1890_1950": 1900,
+      "values": [
+        {
+          "year": 1890,
+          "value": 0.0
+        },
+        {
+          "year": 1891,
+          "value": 0.0
+        },
+        {
+          "year": 1892,
+          "value": 0.0
+        },
+        {
+          "year": 1893,
+          "value": 0.0
+        },
+        {
+          "year": 1894,
+          "value": 0.0
+        },
+        {
+          "year": 1895,
+          "value": 0.0
+        },
+        {
+          "year": 1896,
+          "value": 0.0
+        },
+        {
+          "year": 1897,
+          "value": 0.0
+        },
+        {
+          "year": 1898,
+          "value": 0.0
+        },
+        {
+          "year": 1899,
+          "value": 0.0
+        },
+        {
+          "year": 1900,
+          "value": 0.0026097922
+        },
+        {
+          "year": 1901,
+          "value": 0.0004748394
+        },
+        {
+          "year": 1902,
+          "value": 0.0
+        },
+        {
+          "year": 1903,
+          "value": 0.0
+        },
+        {
+          "year": 1904,
+          "value": 0.0
+        },
+        {
+          "year": 1905,
+          "value": 0.0
+        },
+        {
+          "year": 1906,
+          "value": 0.0
+        },
+        {
+          "year": 1907,
+          "value": 0.0
+        },
+        {
+          "year": 1908,
+          "value": 0.0
+        },
+        {
+          "year": 1909,
+          "value": 0.0
+        },
+        {
+          "year": 1910,
+          "value": 0.0
+        },
+        {
+          "year": 1911,
+          "value": 0.0
+        },
+        {
+          "year": 1912,
+          "value": 0.0
+        },
+        {
+          "year": 1913,
+          "value": 0.0005561515
+        },
+        {
+          "year": 1914,
+          "value": 0.0
+        },
+        {
+          "year": 1915,
+          "value": 0.0
+        },
+        {
+          "year": 1916,
+          "value": 0.0
+        },
+        {
+          "year": 1917,
+          "value": 0.0
+        },
+        {
+          "year": 1918,
+          "value": 0.0
+        },
+        {
+          "year": 1919,
+          "value": 0.0
+        },
+        {
+          "year": 1920,
+          "value": 0.0
+        },
+        {
+          "year": 1921,
+          "value": 0.0
+        },
+        {
+          "year": 1922,
+          "value": 0.0
+        },
+        {
+          "year": 1923,
+          "value": 0.0
+        },
+        {
+          "year": 1924,
+          "value": 0.0
+        },
+        {
+          "year": 1925,
+          "value": 0.0
+        },
+        {
+          "year": 1926,
+          "value": 0.0
+        },
+        {
+          "year": 1927,
+          "value": 0.0
+        },
+        {
+          "year": 1928,
+          "value": 0.0
+        },
+        {
+          "year": 1929,
+          "value": 0.0
+        },
+        {
+          "year": 1930,
+          "value": 0.0
+        },
+        {
+          "year": 1931,
+          "value": 0.0
+        },
+        {
+          "year": 1932,
+          "value": 0.0
+        },
+        {
+          "year": 1933,
+          "value": 0.0
+        },
+        {
+          "year": 1934,
+          "value": 0.0
+        },
+        {
+          "year": 1935,
+          "value": 0.0
+        },
+        {
+          "year": 1936,
+          "value": 0.0
+        },
+        {
+          "year": 1937,
+          "value": 0.0
+        },
+        {
+          "year": 1938,
+          "value": 0.0
+        },
+        {
+          "year": 1939,
+          "value": 0.0
+        },
+        {
+          "year": 1940,
+          "value": 0.0
+        },
+        {
+          "year": 1941,
+          "value": 0.0
+        },
+        {
+          "year": 1942,
+          "value": 0.0
+        },
+        {
+          "year": 1943,
+          "value": 0.0
+        },
+        {
+          "year": 1944,
+          "value": 0.0011742292
+        },
+        {
+          "year": 1945,
+          "value": 0.0
+        },
+        {
+          "year": 1946,
+          "value": 0.0
+        },
+        {
+          "year": 1947,
+          "value": 0.0
+        },
+        {
+          "year": 1948,
+          "value": 0.0
+        },
+        {
+          "year": 1949,
+          "value": 0.0
+        },
+        {
+          "year": 1950,
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "term": "privacy rights",
+      "source": "en-US",
+      "query_id": "privacy_frequency_terms_query_033",
+      "mean_1890_1950": 0.002628111018032787,
+      "max_1890_1950": 0.0296655503,
+      "peak_year_1890_1950": 1943,
+      "nonzero_years_1890_1950": 34,
+      "first_nonzero_1890_1950": 1896,
+      "values": [
+        {
+          "year": 1890,
+          "value": 0.0
+        },
+        {
+          "year": 1891,
+          "value": 0.0
+        },
+        {
+          "year": 1892,
+          "value": 0.0
+        },
+        {
+          "year": 1893,
+          "value": 0.0
+        },
+        {
+          "year": 1894,
+          "value": 0.0
+        },
+        {
+          "year": 1895,
+          "value": 0.0
+        },
+        {
+          "year": 1896,
+          "value": 0.0005858154
+        },
+        {
+          "year": 1897,
+          "value": 0.0
+        },
+        {
+          "year": 1898,
+          "value": 0.0
+        },
+        {
+          "year": 1899,
+          "value": 0.0
+        },
+        {
+          "year": 1900,
+          "value": 0.0009832386
+        },
+        {
+          "year": 1901,
+          "value": 0.0002409029
+        },
+        {
+          "year": 1902,
+          "value": 0.0007088791
+        },
+        {
+          "year": 1903,
+          "value": 0.0
+        },
+        {
+          "year": 1904,
+          "value": 0.0
+        },
+        {
+          "year": 1905,
+          "value": 0.0010390349
+        },
+        {
+          "year": 1906,
+          "value": 0.0
+        },
+        {
+          "year": 1907,
+          "value": 0.000408692
+        },
+        {
+          "year": 1908,
+          "value": 0.0
+        },
+        {
+          "year": 1909,
+          "value": 0.0
+        },
+        {
+          "year": 1910,
+          "value": 0.0
+        },
+        {
+          "year": 1911,
+          "value": 0.0
+        },
+        {
+          "year": 1912,
+          "value": 0.0
+        },
+        {
+          "year": 1913,
+          "value": 0.0004235596
+        },
+        {
+          "year": 1914,
+          "value": 0.0
+        },
+        {
+          "year": 1915,
+          "value": 0.0
+        },
+        {
+          "year": 1916,
+          "value": 0.0001315905
+        },
+        {
+          "year": 1917,
+          "value": 0.0
+        },
+        {
+          "year": 1918,
+          "value": 0.0
+        },
+        {
+          "year": 1919,
+          "value": 0.0005438482
+        },
+        {
+          "year": 1920,
+          "value": 0.0001316332
+        },
+        {
+          "year": 1921,
+          "value": 0.0
+        },
+        {
+          "year": 1922,
+          "value": 0.0010433913
+        },
+        {
+          "year": 1923,
+          "value": 0.0
+        },
+        {
+          "year": 1924,
+          "value": 0.0003700561
+        },
+        {
+          "year": 1925,
+          "value": 0.0001845516
+        },
+        {
+          "year": 1926,
+          "value": 0.0
+        },
+        {
+          "year": 1927,
+          "value": 0.0010297377
+        },
+        {
+          "year": 1928,
+          "value": 0.0
+        },
+        {
+          "year": 1929,
+          "value": 0.0003089551
+        },
+        {
+          "year": 1930,
+          "value": 0.0
+        },
+        {
+          "year": 1931,
+          "value": 0.0011520769
+        },
+        {
+          "year": 1932,
+          "value": 0.0044546009
+        },
+        {
+          "year": 1933,
+          "value": 0.0
+        },
+        {
+          "year": 1934,
+          "value": 0.0032602765
+        },
+        {
+          "year": 1935,
+          "value": 0.0005427626
+        },
+        {
+          "year": 1936,
+          "value": 0.0293581029
+        },
+        {
+          "year": 1937,
+          "value": 0.0014914155
+        },
+        {
+          "year": 1938,
+          "value": 0.008673277
+        },
+        {
+          "year": 1939,
+          "value": 0.0100898504
+        },
+        {
+          "year": 1940,
+          "value": 0.0024723756
+        },
+        {
+          "year": 1941,
+          "value": 0.0040505064
+        },
+        {
+          "year": 1942,
+          "value": 0.00429603
+        },
+        {
+          "year": 1943,
+          "value": 0.0296655503
+        },
+        {
+          "year": 1944,
+          "value": 0.0057767151
+        },
+        {
+          "year": 1945,
+          "value": 0.0022302017
+        },
+        {
+          "year": 1946,
+          "value": 0.0079708288
+        },
+        {
+          "year": 1947,
+          "value": 0.0018914241
+        },
+        {
+          "year": 1948,
+          "value": 0.0057931748
+        },
+        {
+          "year": 1949,
+          "value": 0.0236859393
+        },
+        {
+          "year": 1950,
+          "value": 0.0053257771
+        }
+      ]
+    },
+    {
+      "term": "right to privacy",
+      "source": "en",
+      "query_id": "privacy_frequency_terms_query_032",
+      "mean_1890_1950": 0.01859312642295082,
+      "max_1890_1950": 0.1520031242,
+      "peak_year_1890_1950": 1936,
+      "nonzero_years_1890_1950": 61,
+      "first_nonzero_1890_1950": 1890,
+      "values": [
+        {
+          "year": 1890,
+          "value": 0.007098241
+        },
+        {
+          "year": 1891,
+          "value": 0.0311231602
+        },
+        {
+          "year": 1892,
+          "value": 0.0089552814
+        },
+        {
+          "year": 1893,
+          "value": 0.007109756
+        },
+        {
+          "year": 1894,
+          "value": 0.0115155943
+        },
+        {
+          "year": 1895,
+          "value": 0.0206115867
+        },
+        {
+          "year": 1896,
+          "value": 0.0151745681
+        },
+        {
+          "year": 1897,
+          "value": 0.0076702897
+        },
+        {
+          "year": 1898,
+          "value": 0.0071469512
+        },
+        {
+          "year": 1899,
+          "value": 0.0087070082
+        },
+        {
+          "year": 1900,
+          "value": 0.0232340773
+        },
+        {
+          "year": 1901,
+          "value": 0.0088571987
+        },
+        {
+          "year": 1902,
+          "value": 0.0113992451
+        },
+        {
+          "year": 1903,
+          "value": 0.0096479306
+        },
+        {
+          "year": 1904,
+          "value": 0.0047195184
+        },
+        {
+          "year": 1905,
+          "value": 0.0132556442
+        },
+        {
+          "year": 1906,
+          "value": 0.0090791975
+        },
+        {
+          "year": 1907,
+          "value": 0.0039763276
+        },
+        {
+          "year": 1908,
+          "value": 0.0062082592
+        },
+        {
+          "year": 1909,
+          "value": 0.0084472644
+        },
+        {
+          "year": 1910,
+          "value": 0.0071804027
+        },
+        {
+          "year": 1911,
+          "value": 0.0056911986
+        },
+        {
+          "year": 1912,
+          "value": 0.0067533169
+        },
+        {
+          "year": 1913,
+          "value": 0.0054224526
+        },
+        {
+          "year": 1914,
+          "value": 0.0122813293
+        },
+        {
+          "year": 1915,
+          "value": 0.0153314606
+        },
+        {
+          "year": 1916,
+          "value": 0.0047648873
+        },
+        {
+          "year": 1917,
+          "value": 0.0034646696
+        },
+        {
+          "year": 1918,
+          "value": 0.003284517
+        },
+        {
+          "year": 1919,
+          "value": 0.0053625204
+        },
+        {
+          "year": 1920,
+          "value": 0.0037710332
+        },
+        {
+          "year": 1921,
+          "value": 0.0055216475
+        },
+        {
+          "year": 1922,
+          "value": 0.0069981876
+        },
+        {
+          "year": 1923,
+          "value": 0.0056591584
+        },
+        {
+          "year": 1924,
+          "value": 0.0157795672
+        },
+        {
+          "year": 1925,
+          "value": 0.0089999409
+        },
+        {
+          "year": 1926,
+          "value": 0.005446212
+        },
+        {
+          "year": 1927,
+          "value": 0.0104060907
+        },
+        {
+          "year": 1928,
+          "value": 0.0143302773
+        },
+        {
+          "year": 1929,
+          "value": 0.008915656
+        },
+        {
+          "year": 1930,
+          "value": 0.0138113262
+        },
+        {
+          "year": 1931,
+          "value": 0.0211687571
+        },
+        {
+          "year": 1932,
+          "value": 0.0184824215
+        },
+        {
+          "year": 1933,
+          "value": 0.0137637253
+        },
+        {
+          "year": 1934,
+          "value": 0.0159622529
+        },
+        {
+          "year": 1935,
+          "value": 0.0157377334
+        },
+        {
+          "year": 1936,
+          "value": 0.1520031242
+        },
+        {
+          "year": 1937,
+          "value": 0.0159909111
+        },
+        {
+          "year": 1938,
+          "value": 0.0327630358
+        },
+        {
+          "year": 1939,
+          "value": 0.0312762132
+        },
+        {
+          "year": 1940,
+          "value": 0.0245525686
+        },
+        {
+          "year": 1941,
+          "value": 0.0245578532
+        },
+        {
+          "year": 1942,
+          "value": 0.0275606571
+        },
+        {
+          "year": 1943,
+          "value": 0.0608814936
+        },
+        {
+          "year": 1944,
+          "value": 0.0125473049
+        },
+        {
+          "year": 1945,
+          "value": 0.0191657611
+        },
+        {
+          "year": 1946,
+          "value": 0.0443253925
+        },
+        {
+          "year": 1947,
+          "value": 0.0399539741
+        },
+        {
+          "year": 1948,
+          "value": 0.0398100762
+        },
+        {
+          "year": 1949,
+          "value": 0.0676152163
+        },
+        {
+          "year": 1950,
+          "value": 0.0629492879
+        }
+      ]
+    },
+    {
+      "term": "right to privacy",
+      "source": "en-GB",
+      "query_id": "privacy_frequency_terms_query_032",
+      "mean_1890_1950": 0.003906565536065574,
+      "max_1890_1950": 0.0189542764,
+      "peak_year_1890_1950": 1919,
+      "nonzero_years_1890_1950": 56,
+      "first_nonzero_1890_1950": 1890,
+      "values": [
+        {
+          "year": 1890,
+          "value": 0.0033652023
+        },
+        {
+          "year": 1891,
+          "value": 0.000670931
+        },
+        {
+          "year": 1892,
+          "value": 0.0013466861
+        },
+        {
+          "year": 1893,
+          "value": 0.0
+        },
+        {
+          "year": 1894,
+          "value": 0.0006463017
+        },
+        {
+          "year": 1895,
+          "value": 0.0032198528
+        },
+        {
+          "year": 1896,
+          "value": 0.0056722952
+        },
+        {
+          "year": 1897,
+          "value": 0.003248787
+        },
+        {
+          "year": 1898,
+          "value": 0.0
+        },
+        {
+          "year": 1899,
+          "value": 0.0
+        },
+        {
+          "year": 1900,
+          "value": 0.0124881507
+        },
+        {
+          "year": 1901,
+          "value": 0.0061910654
+        },
+        {
+          "year": 1902,
+          "value": 0.0021400854
+        },
+        {
+          "year": 1903,
+          "value": 0.0005441413
+        },
+        {
+          "year": 1904,
+          "value": 0.0010424743
+        },
+        {
+          "year": 1905,
+          "value": 0.0
+        },
+        {
+          "year": 1906,
+          "value": 0.0005110752
+        },
+        {
+          "year": 1907,
+          "value": 0.0005834203
+        },
+        {
+          "year": 1908,
+          "value": 0.0026256144
+        },
+        {
+          "year": 1909,
+          "value": 0.00119191
+        },
+        {
+          "year": 1910,
+          "value": 0.001244037
+        },
+        {
+          "year": 1911,
+          "value": 0.0126103329
+        },
+        {
+          "year": 1912,
+          "value": 0.0024103999
+        },
+        {
+          "year": 1913,
+          "value": 0.007290069
+        },
+        {
+          "year": 1914,
+          "value": 0.0006091563
+        },
+        {
+          "year": 1915,
+          "value": 0.0
+        },
+        {
+          "year": 1916,
+          "value": 0.0016204822
+        },
+        {
+          "year": 1917,
+          "value": 0.0008330071
+        },
+        {
+          "year": 1918,
+          "value": 0.0009161404
+        },
+        {
+          "year": 1919,
+          "value": 0.0189542764
+        },
+        {
+          "year": 1920,
+          "value": 0.0006354267
+        },
+        {
+          "year": 1921,
+          "value": 0.0057229257
+        },
+        {
+          "year": 1922,
+          "value": 0.0033949663
+        },
+        {
+          "year": 1923,
+          "value": 0.0008922433
+        },
+        {
+          "year": 1924,
+          "value": 0.0027294229
+        },
+        {
+          "year": 1925,
+          "value": 0.0027783371
+        },
+        {
+          "year": 1926,
+          "value": 0.0026935558
+        },
+        {
+          "year": 1927,
+          "value": 0.0036978052
+        },
+        {
+          "year": 1928,
+          "value": 0.0008763424
+        },
+        {
+          "year": 1929,
+          "value": 0.0018038165
+        },
+        {
+          "year": 1930,
+          "value": 0.005259027
+        },
+        {
+          "year": 1931,
+          "value": 0.0162304614
+        },
+        {
+          "year": 1932,
+          "value": 0.0047674221
+        },
+        {
+          "year": 1933,
+          "value": 0.0046416553
+        },
+        {
+          "year": 1934,
+          "value": 0.0069385289
+        },
+        {
+          "year": 1935,
+          "value": 0.0008877484
+        },
+        {
+          "year": 1936,
+          "value": 0.002547615
+        },
+        {
+          "year": 1937,
+          "value": 0.0016011301
+        },
+        {
+          "year": 1938,
+          "value": 0.0120971464
+        },
+        {
+          "year": 1939,
+          "value": 0.0036425647
+        },
+        {
+          "year": 1940,
+          "value": 0.0024863924
+        },
+        {
+          "year": 1941,
+          "value": 0.0058582748
+        },
+        {
+          "year": 1942,
+          "value": 0.0130690232
+        },
+        {
+          "year": 1943,
+          "value": 0.0013331293
+        },
+        {
+          "year": 1944,
+          "value": 0.0012723813
+        },
+        {
+          "year": 1945,
+          "value": 0.0022576285
+        },
+        {
+          "year": 1946,
+          "value": 0.0100118398
+        },
+        {
+          "year": 1947,
+          "value": 0.0041074739
+        },
+        {
+          "year": 1948,
+          "value": 0.0043060711
+        },
+        {
+          "year": 1949,
+          "value": 0.0069354007
+        },
+        {
+          "year": 1950,
+          "value": 0.0108488472
+        }
+      ]
+    },
+    {
+      "term": "right to privacy",
+      "source": "en-US",
+      "query_id": "privacy_frequency_terms_query_032",
+      "mean_1890_1950": 0.0226729022852459,
+      "max_1890_1950": 0.1328795434,
+      "peak_year_1890_1950": 1936,
+      "nonzero_years_1890_1950": 61,
+      "first_nonzero_1890_1950": 1890,
+      "values": [
+        {
+          "year": 1890,
+          "value": 0.0105258462
+        },
+        {
+          "year": 1891,
+          "value": 0.0432680278
+        },
+        {
+          "year": 1892,
+          "value": 0.0146408786
+        },
+        {
+          "year": 1893,
+          "value": 0.0090769466
+        },
+        {
+          "year": 1894,
+          "value": 0.0183918595
+        },
+        {
+          "year": 1895,
+          "value": 0.0339330206
+        },
+        {
+          "year": 1896,
+          "value": 0.0197802785
+        },
+        {
+          "year": 1897,
+          "value": 0.0112314965
+        },
+        {
+          "year": 1898,
+          "value": 0.0122345801
+        },
+        {
+          "year": 1899,
+          "value": 0.0158989763
+        },
+        {
+          "year": 1900,
+          "value": 0.0168800174
+        },
+        {
+          "year": 1901,
+          "value": 0.0108056071
+        },
+        {
+          "year": 1902,
+          "value": 0.0178077699
+        },
+        {
+          "year": 1903,
+          "value": 0.0144658895
+        },
+        {
+          "year": 1904,
+          "value": 0.0053846976
+        },
+        {
+          "year": 1905,
+          "value": 0.0211034751
+        },
+        {
+          "year": 1906,
+          "value": 0.0152502161
+        },
+        {
+          "year": 1907,
+          "value": 0.0053612474
+        },
+        {
+          "year": 1908,
+          "value": 0.0083252739
+        },
+        {
+          "year": 1909,
+          "value": 0.0114287205
+        },
+        {
+          "year": 1910,
+          "value": 0.0095368407
+        },
+        {
+          "year": 1911,
+          "value": 0.0045437346
+        },
+        {
+          "year": 1912,
+          "value": 0.0086113665
+        },
+        {
+          "year": 1913,
+          "value": 0.0043401735
+        },
+        {
+          "year": 1914,
+          "value": 0.016751034
+        },
+        {
+          "year": 1915,
+          "value": 0.0182453064
+        },
+        {
+          "year": 1916,
+          "value": 0.0059233311
+        },
+        {
+          "year": 1917,
+          "value": 0.0037579834
+        },
+        {
+          "year": 1918,
+          "value": 0.0042119395
+        },
+        {
+          "year": 1919,
+          "value": 0.0028332493
+        },
+        {
+          "year": 1920,
+          "value": 0.0050664604
+        },
+        {
+          "year": 1921,
+          "value": 0.0057116967
+        },
+        {
+          "year": 1922,
+          "value": 0.0084326832
+        },
+        {
+          "year": 1923,
+          "value": 0.0059107041
+        },
+        {
+          "year": 1924,
+          "value": 0.0210982813
+        },
+        {
+          "year": 1925,
+          "value": 0.0117417992
+        },
+        {
+          "year": 1926,
+          "value": 0.0055609193
+        },
+        {
+          "year": 1927,
+          "value": 0.0133811632
+        },
+        {
+          "year": 1928,
+          "value": 0.0186448949
+        },
+        {
+          "year": 1929,
+          "value": 0.010324773
+        },
+        {
+          "year": 1930,
+          "value": 0.0155234262
+        },
+        {
+          "year": 1931,
+          "value": 0.0235110988
+        },
+        {
+          "year": 1932,
+          "value": 0.0242229015
+        },
+        {
+          "year": 1933,
+          "value": 0.0172079395
+        },
+        {
+          "year": 1934,
+          "value": 0.0214719526
+        },
+        {
+          "year": 1935,
+          "value": 0.022626491
+        },
+        {
+          "year": 1936,
+          "value": 0.1328795434
+        },
+        {
+          "year": 1937,
+          "value": 0.0215116641
+        },
+        {
+          "year": 1938,
+          "value": 0.0437983575
+        },
+        {
+          "year": 1939,
+          "value": 0.0418155758
+        },
+        {
+          "year": 1940,
+          "value": 0.0311790355
+        },
+        {
+          "year": 1941,
+          "value": 0.0289297143
+        },
+        {
+          "year": 1942,
+          "value": 0.0291606228
+        },
+        {
+          "year": 1943,
+          "value": 0.0778580458
+        },
+        {
+          "year": 1944,
+          "value": 0.0151693992
+        },
+        {
+          "year": 1945,
+          "value": 0.0216570412
+        },
+        {
+          "year": 1946,
+          "value": 0.0513372068
+        },
+        {
+          "year": 1947,
+          "value": 0.0385543566
+        },
+        {
+          "year": 1948,
+          "value": 0.0537296667
+        },
+        {
+          "year": 1949,
+          "value": 0.0888241169
+        },
+        {
+          "year": 1950,
+          "value": 0.0816557237
+        }
+      ]
+    }
+  ],
+  "yearly_phrase_signal": [
+    {
+      "year": 1890,
+      "value": 0.003571444811111111,
+      "raw_total": 0.0321430033,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1891,
+      "value": 0.010387346222222222,
+      "raw_total": 0.093486116,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1892,
+      "value": 0.003950917433333334,
+      "raw_total": 0.0355582569,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1893,
+      "value": 0.0029967117777777775,
+      "raw_total": 0.026970406,
+      "active_phrase_count": 5,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1894,
+      "value": 0.003979282722222223,
+      "raw_total": 0.0358135445,
+      "active_phrase_count": 5,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1895,
+      "value": 0.0072448284222222225,
+      "raw_total": 0.0652034558,
+      "active_phrase_count": 5,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1896,
+      "value": 0.006339172077777778,
+      "raw_total": 0.057052548700000004,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1897,
+      "value": 0.003438344922222222,
+      "raw_total": 0.030945104299999998,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1898,
+      "value": 0.004722386055555555,
+      "raw_total": 0.0425014745,
+      "active_phrase_count": 5,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1899,
+      "value": 0.007104732566666667,
+      "raw_total": 0.0639425931,
+      "active_phrase_count": 5,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1900,
+      "value": 0.011101017166666666,
+      "raw_total": 0.0999091545,
+      "active_phrase_count": 9,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1901,
+      "value": 0.005867985455555555,
+      "raw_total": 0.0528118691,
+      "active_phrase_count": 9,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1902,
+      "value": 0.004598777122222222,
+      "raw_total": 0.0413889941,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1903,
+      "value": 0.0035557479,
+      "raw_total": 0.0320017311,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1904,
+      "value": 0.0026211982333333335,
+      "raw_total": 0.0235907841,
+      "active_phrase_count": 6,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1905,
+      "value": 0.0062872424111111115,
+      "raw_total": 0.0565851817,
+      "active_phrase_count": 7,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1906,
+      "value": 0.0036220335222222223,
+      "raw_total": 0.0325983017,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1907,
+      "value": 0.0026424971666666663,
+      "raw_total": 0.023782474499999998,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1908,
+      "value": 0.003229327077777778,
+      "raw_total": 0.0290639437,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1909,
+      "value": 0.0032449512444444445,
+      "raw_total": 0.0292045612,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1910,
+      "value": 0.0037715195222222226,
+      "raw_total": 0.0339436757,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1911,
+      "value": 0.004240543355555555,
+      "raw_total": 0.038164890199999996,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1912,
+      "value": 0.0032891980111111113,
+      "raw_total": 0.029602782100000002,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1913,
+      "value": 0.0036667206555555556,
+      "raw_total": 0.0330004859,
+      "active_phrase_count": 9,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1914,
+      "value": 0.004250259822222223,
+      "raw_total": 0.0382523384,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1915,
+      "value": 0.0055453112444444445,
+      "raw_total": 0.049907801200000004,
+      "active_phrase_count": 5,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1916,
+      "value": 0.0032813884111111114,
+      "raw_total": 0.0295324957,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1917,
+      "value": 0.0017569650111111113,
+      "raw_total": 0.0158126851,
+      "active_phrase_count": 7,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1918,
+      "value": 0.002047257011111111,
+      "raw_total": 0.0184253131,
+      "active_phrase_count": 6,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1919,
+      "value": 0.003588846155555556,
+      "raw_total": 0.0322996154,
+      "active_phrase_count": 7,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1920,
+      "value": 0.0019105040888888888,
+      "raw_total": 0.0171945368,
+      "active_phrase_count": 7,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1921,
+      "value": 0.003145135,
+      "raw_total": 0.028306215,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1922,
+      "value": 0.003998484722222222,
+      "raw_total": 0.0359863625,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1923,
+      "value": 0.0024476177555555556,
+      "raw_total": 0.0220285598,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1924,
+      "value": 0.0070111168555555565,
+      "raw_total": 0.0631000517,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1925,
+      "value": 0.004628977355555556,
+      "raw_total": 0.0416607962,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1926,
+      "value": 0.003245188677777778,
+      "raw_total": 0.0292066981,
+      "active_phrase_count": 6,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1927,
+      "value": 0.007327961566666668,
+      "raw_total": 0.0659516541,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1928,
+      "value": 0.005740720088888889,
+      "raw_total": 0.0516664808,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1929,
+      "value": 0.0050351391555555555,
+      "raw_total": 0.0453162524,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1930,
+      "value": 0.0063440338333333336,
+      "raw_total": 0.0570963045,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1931,
+      "value": 0.009614052911111112,
+      "raw_total": 0.08652647620000001,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1932,
+      "value": 0.0138100714,
+      "raw_total": 0.1242906426,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1933,
+      "value": 0.0052267493444444445,
+      "raw_total": 0.047040744100000004,
+      "active_phrase_count": 6,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1934,
+      "value": 0.010255086766666666,
+      "raw_total": 0.0922957809,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1935,
+      "value": 0.007283414211111111,
+      "raw_total": 0.0655507279,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1936,
+      "value": 0.08226737925555555,
+      "raw_total": 0.7404064133,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1937,
+      "value": 0.007718412866666667,
+      "raw_total": 0.06946571580000001,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1938,
+      "value": 0.014832389544444444,
+      "raw_total": 0.1334915059,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1939,
+      "value": 0.021908551055555555,
+      "raw_total": 0.1971769595,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1940,
+      "value": 0.015475762766666666,
+      "raw_total": 0.1392818649,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1941,
+      "value": 0.01253381971111111,
+      "raw_total": 0.1128043774,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1942,
+      "value": 0.015436840455555557,
+      "raw_total": 0.13893156410000002,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1943,
+      "value": 0.03417806135555555,
+      "raw_total": 0.3076025522,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1944,
+      "value": 0.009850425922222222,
+      "raw_total": 0.0886538333,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1945,
+      "value": 0.01631671131111111,
+      "raw_total": 0.1468504018,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1946,
+      "value": 0.020453722211111112,
+      "raw_total": 0.1840834999,
+      "active_phrase_count": 8,
+      "top_phrase": "right to privacy"
+    },
+    {
+      "year": 1947,
+      "value": 0.021848656233333333,
+      "raw_total": 0.1966379061,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1948,
+      "value": 0.03576920116666667,
+      "raw_total": 0.3219228105,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1949,
+      "value": 0.05512788718888889,
+      "raw_total": 0.4961509847,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    },
+    {
+      "year": 1950,
+      "value": 0.03779626803333333,
+      "raw_total": 0.3401664123,
+      "active_phrase_count": 8,
+      "top_phrase": "invasion of privacy"
+    }
+  ],
+  "scale": [
+    {
+      "label": "minor citation",
+      "strength": 2,
+      "radius": 18.6
+    },
+    {
+      "label": "doctrinal marker",
+      "strength": 3,
+      "radius": 21.2
+    },
+    {
+      "label": "major threshold",
+      "strength": 5,
+      "radius": 25.34
+    }
+  ],
+  "small_charts": {
+    "size_scale": "Bubble size encodes curated source strength, not objective legal importance.",
+    "legal_phrase_line": "Line uses averaged Ngram phrase signal across selected legal phrases, 1890-1950."
+  },
+  "sources": [
+    {
+      "source_id": "source_verified_legal_anchors",
+      "description": "Curated legal and human-rights anchors with source reachability attempts.",
+      "record_count": 10,
+      "reachable_count": 7
+    },
+    {
+      "source_id": "google_books_ngram_legal_phrases",
+      "description": "Existing privacy frequency_terms phrase series filtered to legal-rights vocabulary.",
+      "record_count": 9,
+      "year_range": [
+        1890,
+        1950
+      ]
+    }
+  ],
+  "source_attempts": [
+    {
+      "anchor_id": "privacy_1890_warren_brandeis",
+      "url": "https://en.wikisource.org/wiki/The_Right_to_Privacy",
+      "checked_at": "2026-05-27T07:01:47.770442+00:00",
+      "reachable": true,
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes_sampled": 178616,
+      "html_title": "The Right to Privacy - Wikisource, the free online library",
+      "contains_privacy": true,
+      "contains_right": true
+    },
+    {
+      "anchor_id": "privacy_1902_roberson",
+      "url": "https://law.justia.com/cases/new-york/court-of-appeals/1902/171-n-y-538-3591680.html",
+      "checked_at": "2026-05-27T07:01:49.217018+00:00",
+      "reachable": false,
+      "status": 403,
+      "error": "HTTPError 403: Forbidden"
+    },
+    {
+      "anchor_id": "privacy_1903_new_york_name_picture",
+      "url": "https://www.nysenate.gov/legislation/laws/CVR/50",
+      "checked_at": "2026-05-27T07:01:49.346548+00:00",
+      "reachable": true,
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes_sampled": 31917,
+      "html_title": "NYS Open Legislation | NYSenate.gov",
+      "contains_privacy": true,
+      "contains_right": true
+    },
+    {
+      "anchor_id": "privacy_1905_pavesich",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/1905/122-ga-190-1.html",
+      "checked_at": "2026-05-27T07:01:50.902351+00:00",
+      "reachable": false,
+      "status": 403,
+      "error": "HTTPError 403: Forbidden"
+    },
+    {
+      "anchor_id": "privacy_1928_olmstead",
+      "url": "https://supreme.justia.com/cases/federal/us/277/438/",
+      "checked_at": "2026-05-27T07:01:50.989731+00:00",
+      "reachable": false,
+      "status": 403,
+      "error": "HTTPError 403: Forbidden"
+    },
+    {
+      "anchor_id": "privacy_1931_melvin",
+      "url": "https://www.courtlistener.com/opinion/3285175/melvin-v-reid/",
+      "checked_at": "2026-05-27T07:01:51.109771+00:00",
+      "reachable": true,
+      "status": 202,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes_sampled": 0,
+      "html_title": "",
+      "contains_privacy": false,
+      "contains_right": false
+    },
+    {
+      "anchor_id": "privacy_1939_restatement",
+      "url": "https://www.law.cornell.edu/wex/invasion_of_privacy",
+      "checked_at": "2026-05-27T07:01:51.673190+00:00",
+      "reachable": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes_sampled": 27867,
+      "html_title": "invasion of privacy | Wex | US Law | LII / Legal Information Institute",
+      "contains_privacy": true,
+      "contains_right": true
+    },
+    {
+      "anchor_id": "privacy_1940_sidis",
+      "url": "https://www.courtlistener.com/opinion/1506784/sidis-v-f-r-pub-corporation/",
+      "checked_at": "2026-05-27T07:01:54.263793+00:00",
+      "reachable": true,
+      "status": 202,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes_sampled": 0,
+      "html_title": "",
+      "contains_privacy": false,
+      "contains_right": false
+    },
+    {
+      "anchor_id": "privacy_1948_udhr",
+      "url": "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+      "checked_at": "2026-05-27T07:01:55.777960+00:00",
+      "reachable": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes_sampled": 104533,
+      "html_title": "Universal Declaration of Human Rights | United Nations",
+      "contains_privacy": true,
+      "contains_right": true
+    },
+    {
+      "anchor_id": "privacy_1950_echr_article_8",
+      "url": "https://www.echr.coe.int/documents/d/echr/convention_ENG",
+      "checked_at": "2026-05-27T07:01:56.721421+00:00",
+      "reachable": true,
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes_sampled": 240000,
+      "html_title": "",
+      "contains_privacy": false,
+      "contains_right": true
+    }
+  ],
+  "failed_sources": [
+    {
+      "anchor_id": "privacy_1902_roberson",
+      "url": "https://law.justia.com/cases/new-york/court-of-appeals/1902/171-n-y-538-3591680.html",
+      "checked_at": "2026-05-27T07:01:49.217018+00:00",
+      "reachable": false,
+      "status": 403,
+      "error": "HTTPError 403: Forbidden"
+    },
+    {
+      "anchor_id": "privacy_1905_pavesich",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/1905/122-ga-190-1.html",
+      "checked_at": "2026-05-27T07:01:50.902351+00:00",
+      "reachable": false,
+      "status": 403,
+      "error": "HTTPError 403: Forbidden"
+    },
+    {
+      "anchor_id": "privacy_1928_olmstead",
+      "url": "https://supreme.justia.com/cases/federal/us/277/438/",
+      "checked_at": "2026-05-27T07:01:50.989731+00:00",
+      "reachable": false,
+      "status": 403,
+      "error": "HTTPError 403: Forbidden"
+    }
+  ],
+  "limitations": [
+    "This is a design-ready legal-history scaffold, not an exhaustive legal history.",
+    "Ngram phrase hits before modern legal consolidation can include false positives and OCR noise.",
+    "Several case-law anchors are source-backed through public summaries or public opinion repositories; final legal copy should verify quotation-level text.",
+    "This is chart01B within privacy, not chart02."
+  ]
+}

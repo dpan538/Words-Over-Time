@@ -1,0 +1,185 @@
+# Privacy Collocations and Semantic Field Data Report
+
+Generated: 2026-05-26T12:50:50.995435Z
+
+## What Was Collected
+
+- Query phrases: 89
+- Collected phrases: 73
+- Weak or missing phrases: 29
+- Discovered terms list size: 10
+
+## Bucket Overview
+
+### Seclusion and private life
+- `privacy of` (strong, peak 1541, bucket pre_1800)
+- `private life` (strong, peak 1781, bucket pre_1800)
+- `privacy in` (strong, peak 2021, bucket 2010_present)
+- `privacy for` (strong, peak 2021, bucket 2010_present)
+- `domestic privacy` (strong, peak 1785, bucket pre_1800)
+- `patient privacy` (strong, peak 2022, bucket 2010_present)
+- `privacy from` (strong, peak 1654, bucket pre_1800)
+- `family privacy` (strong, peak 1995, bucket 1980_2000)
+- `intimate privacy` (usable, peak 1671, bucket pre_1800)
+- `workplace privacy` (usable, peak 1999, bucket 1980_2000)
+- `sexual privacy` (usable, peak 2006, bucket 2000_2010)
+- `bodily privacy` (weak, peak 2018, bucket 2010_present)
+- `workers' privacy` (missing, peak None, bucket unknown)
+### Legal rights and intrusion
+- `reasonable expectation of privacy` (strong, peak 1501, bucket pre_1800)
+- `right to privacy` (strong, peak 2002, bucket 2000_2010)
+- `invasion of privacy` (strong, peak 1987, bucket 1980_2000)
+- `privacy rights` (strong, peak 2006, bucket 2000_2010)
+- `rights of privacy` (strong, peak 1974, bucket 1950_1980)
+- `loss of privacy` (strong, peak 2018, bucket 2010_present)
+- `violation of privacy` (usable, peak 2007, bucket 2000_2010)
+### Information and data control
+- `data privacy` (strong, peak 2022, bucket 2010_present)
+- `privacy and confidentiality` (strong, peak 1501, bucket pre_1800)
+- `privacy protection` (strong, peak 2001, bucket 2000_2010)
+- `privacy concerns` (strong, peak 2022, bucket 2010_present)
+- `data breach` (strong, peak 2021, bucket 2010_present)
+- `financial privacy` (strong, peak 1980, bucket 1950_1980)
+- `information privacy` (strong, peak 2020, bucket 2010_present)
+- `consumer privacy` (strong, peak 2021, bucket 2010_present)
+- `location privacy` (usable, peak 2016, bucket 2010_present)
+- `medical privacy` (strong, peak 2001, bucket 2000_2010)
+- `privacy risk` (strong, peak 2022, bucket 2010_present)
+- `genetic privacy` (strong, peak 2021, bucket 2010_present)
+- `privacy breach` (usable, peak 2022, bucket 2010_present)
+- `privacy and information` (usable, peak 2008, bucket 2000_2010)
+- `personal data privacy` (usable, peak 2021, bucket 2010_present)
+- `identity privacy` (usable, peak 2022, bucket 2010_present)
+- `confidentiality of privacy` (missing, peak None, bucket unknown)
+### Digital/platform governance
+- `privacy policy` (strong, peak 2008, bucket 2000_2010)
+- `privacy policies` (strong, peak 2000, bucket 1980_2000)
+- `privacy settings` (strong, peak 2011, bucket 2010_present)
+- `online privacy` (strong, peak 2001, bucket 2000_2010)
+- `internet privacy` (strong, peak 2001, bucket 2000_2010)
+- `privacy notice` (strong, peak 2001, bucket 2000_2010)
+- `privacy by design` (usable, peak 2021, bucket 2010_present)
+- `privacy preferences` (strong, peak 2010, bucket 2000_2010)
+- `digital privacy` (usable, peak 2021, bucket 2010_present)
+- `privacy controls` (usable, peak 2016, bucket 2010_present)
+- `privacy enhancing` (usable, peak 2010, bucket 2000_2010)
+- `network privacy` (usable, peak 2003, bucket 2000_2010)
+- `privacy-preserving` (missing, peak None, bucket unknown)
+- `platform privacy` (missing, peak None, bucket unknown)
+- `privacy and platform` (missing, peak None, bucket unknown)
+### Surveillance and security tension
+- `security and privacy` (strong, peak 2022, bucket 2010_present)
+- `privacy and security` (strong, peak 2022, bucket 2010_present)
+- `privacy and surveillance` (usable, peak 2021, bucket 2010_present)
+- `surveillance privacy` (weak, peak 2021, bucket 2010_present)
+- `privacy and monitoring` (weak, peak 2001, bucket 2000_2010)
+- `privacy and camera` (missing, peak None, bucket unknown)
+- `privacy and biometrics` (missing, peak None, bucket unknown)
+- `privacy and tracking` (missing, peak None, bucket unknown)
+- `privacy and advertising` (missing, peak None, bucket unknown)
+### Identity, anonymity, consent
+- `privacy and trust` (usable, peak 2022, bucket 2010_present)
+- `privacy and identity` (usable, peak 2011, bucket 2010_present)
+- `anonymity and privacy` (usable, peak 2021, bucket 2010_present)
+- `identity and privacy` (weak, peak 2020, bucket 2010_present)
+- `privacy and transparency` (weak, peak 2021, bucket 2010_present)
+- `consent and privacy` (weak, peak 1982, bucket 1980_2000)
+### Policy and compliance
+- `privacy law` (strong, peak 2003, bucket 2000_2010)
+- `privacy legislation` (strong, peak 1976, bucket 1950_1980)
+- `privacy impact` (strong, peak 2012, bucket 2010_present)
+- `privacy impact assessment` (usable, peak 2012, bucket 2010_present)
+- `privacy audit` (weak, peak 2005, bucket 2000_2010)
+- `gdpr privacy` (weak, peak 2021, bucket 2010_present)
+- `privacy policy compliance` (weak, peak 2008, bucket 2000_2010)
+- `privacy by policy` (missing, peak None, bucket unknown)
+### Technical privacy mechanisms
+- `privacy preserving` (strong, peak 2022, bucket 2010_present)
+- `privacy security` (usable, peak 2022, bucket 2010_present)
+- `privacy-enhancing` (missing, peak None, bucket unknown)
+- `encrypted privacy` (missing, peak None, bucket unknown)
+### Uncertain/other
+- `privacy debate` (usable, peak 2001, bucket 2000_2010)
+- `privacy of the self` (usable, peak 2018, bucket 2010_present)
+- `public privacy` (weak, peak 2018, bucket 2010_present)
+- `privacy concerns about` (weak, peak 2022, bucket 2010_present)
+- `privacy and privacy` (weak, peak 2005, bucket 2000_2010)
+- `privacy culture` (weak, peak 2020, bucket 2010_present)
+- `privacy movement` (missing, peak None, bucket unknown)
+- `privacy discourse` (missing, peak None, bucket unknown)
+- `privacy politics` (missing, peak None, bucket unknown)
+- `privacy narrative` (missing, peak None, bucket unknown)
+
+## Discovered bucket candidates
+
+privacy and privacy, privacy concerns about, privacy culture, privacy debate, privacy discourse, privacy movement, privacy narrative, privacy of the self, privacy politics, public privacy
+
+## Strong or usable candidates
+
+- seclusion_private_life: privacy of (strong)
+- seclusion_private_life: private life (strong)
+- seclusion_private_life: privacy in (strong)
+- seclusion_private_life: privacy for (strong)
+- seclusion_private_life: domestic privacy (strong)
+- seclusion_private_life: patient privacy (strong)
+- seclusion_private_life: privacy from (strong)
+- seclusion_private_life: family privacy (strong)
+- seclusion_private_life: intimate privacy (usable)
+- seclusion_private_life: workplace privacy (usable)
+- seclusion_private_life: sexual privacy (usable)
+- legal_rights_intrusion: reasonable expectation of privacy (strong)
+- legal_rights_intrusion: right to privacy (strong)
+- legal_rights_intrusion: invasion of privacy (strong)
+- legal_rights_intrusion: privacy rights (strong)
+- legal_rights_intrusion: rights of privacy (strong)
+- legal_rights_intrusion: loss of privacy (strong)
+- legal_rights_intrusion: violation of privacy (usable)
+- information_data_control: data privacy (strong)
+- information_data_control: privacy and confidentiality (strong)
+- information_data_control: privacy protection (strong)
+- information_data_control: privacy concerns (strong)
+- information_data_control: data breach (strong)
+- information_data_control: financial privacy (strong)
+- information_data_control: information privacy (strong)
+- information_data_control: consumer privacy (strong)
+- information_data_control: location privacy (usable)
+- information_data_control: medical privacy (strong)
+- information_data_control: privacy risk (strong)
+- information_data_control: genetic privacy (strong)
+- information_data_control: privacy breach (usable)
+- information_data_control: privacy and information (usable)
+- information_data_control: personal data privacy (usable)
+- information_data_control: identity privacy (usable)
+- digital_platform_governance: privacy policy (strong)
+- digital_platform_governance: privacy policies (strong)
+- digital_platform_governance: privacy settings (strong)
+- digital_platform_governance: online privacy (strong)
+- digital_platform_governance: internet privacy (strong)
+- digital_platform_governance: privacy notice (strong)
+- digital_platform_governance: privacy by design (usable)
+- digital_platform_governance: privacy preferences (strong)
+- digital_platform_governance: digital privacy (usable)
+- digital_platform_governance: privacy controls (usable)
+- digital_platform_governance: privacy enhancing (usable)
+- digital_platform_governance: network privacy (usable)
+- surveillance_security_tension: security and privacy (strong)
+- surveillance_security_tension: privacy and security (strong)
+- surveillance_security_tension: privacy and surveillance (usable)
+- identity_anonymity_consent: privacy and trust (usable)
+- identity_anonymity_consent: privacy and identity (usable)
+- identity_anonymity_consent: anonymity and privacy (usable)
+- policy_compliance_institutional: privacy law (strong)
+- policy_compliance_institutional: privacy legislation (strong)
+- policy_compliance_institutional: privacy impact (strong)
+- policy_compliance_institutional: privacy impact assessment (usable)
+- technical_privacy_preserving: privacy preserving (strong)
+- technical_privacy_preserving: privacy security (usable)
+- uncertain_other: privacy debate (usable)
+- uncertain_other: privacy of the self (usable)
+
+## Outputs
+
+- Raw: `docs/research/privacy/raw/privacy_collocations_semantic_field_raw.json`
+- Processed: `docs/research/privacy/processed/privacy_collocations_semantic_field_processed.json`
+- JSON report: `docs/research/privacy/reports/privacy_collocations_semantic_field_data_report.json`
+- Markdown report: `docs/research/privacy/reports/privacy_collocations_semantic_field_data_report.md`

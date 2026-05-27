@@ -1,0 +1,1261 @@
+{
+  "metadata": {
+    "word": "privacy",
+    "layer_id": "research_expansion",
+    "generated_at": "2026-05-27T03:18:32.491845Z",
+    "generated_by_script": "scripts/process_privacy_research_expansion.py",
+    "raw_source": "docs/research/privacy/raw/privacy_research_expansion_raw.json",
+    "outputs": {
+      "processed": "docs/research/privacy/processed/privacy_research_expansion_processed.json",
+      "report_json": "docs/research/privacy/reports/privacy_research_expansion_data_report.json",
+      "report_md": "docs/research/privacy/reports/privacy_research_expansion_data_report.md",
+      "raw": "docs/research/privacy/raw/privacy_research_expansion_raw.json"
+    }
+  },
+  "counts": {
+    "public_dated_evidence_count": 84,
+    "supplemental_phrase_frequency_count": 84,
+    "platform_policy_document_count": 8,
+    "wikipedia_reference_count": 11,
+    "legal_institutional_count": 5,
+    "news_discourse_count": 110,
+    "news_attention_count": 359,
+    "court_opinion_count": 120,
+    "archive_metadata_count": 40,
+    "publication_metadata_count": 80,
+    "academic_transition_count": 218,
+    "academic_institution_count": 20,
+    "failed_source_count": 1,
+    "total_record_count": 1139
+  },
+  "sources": [
+    {
+      "source_id": "loc_chronicling_america_collection",
+      "source_type": "public_dated_evidence",
+      "source_name": "Library of Congress Chronicling America Collection",
+      "available": true,
+      "records": 84,
+      "notes": "Used as dated public evidence metadata rather than a full OCR citation layer."
+    },
+    {
+      "source_id": "google_books_ngram",
+      "source_type": "supplemental_phrase_frequency",
+      "source_name": "Google Books Ngram Viewer",
+      "available": true,
+      "records": 84,
+      "notes": "Used for legal, informational, and tension phrase growth signals."
+    },
+    {
+      "source_id": "platform_policy_corpus",
+      "source_type": "platform_policy_corpus",
+      "source_name": "Platform and regulator policy documents",
+      "available": true,
+      "records": 8,
+      "notes": "Curated public policy texts used to recover compliance and interface language."
+    },
+    {
+      "source_id": "wikipedia_rest_summary",
+      "source_type": "wikipedia_reference_corpus",
+      "source_name": "Wikipedia REST Summary",
+      "available": true,
+      "records": 11,
+      "notes": "Public summary layer used to widen concept coverage beyond dictionaries and isolated legal texts."
+    },
+    {
+      "source_id": "legal_institutional_corpus",
+      "source_type": "legal_institutional_corpus",
+      "source_name": "Legal and institutional public reference documents",
+      "available": true,
+      "records": 5,
+      "notes": "Explanatory legal and institutional pages broaden privacy beyond dictionary-style summaries and platform policy language."
+    },
+    {
+      "source_id": "gdelt_doc_artlist",
+      "source_type": "news_discourse_expansion",
+      "source_name": "GDELT DOC 2.0 ArtList",
+      "available": true,
+      "records": 110,
+      "notes": "Used for recent discourse metadata around legal, platform, and transition privacy queries."
+    },
+    {
+      "source_id": "gdelt_doc_timelinevol",
+      "source_type": "news_attention_proxy",
+      "source_name": "GDELT DOC 2.0 TimelineVol",
+      "available": true,
+      "records": 359,
+      "notes": "Used as a second attention-like proxy via news volume intensity."
+    },
+    {
+      "source_id": "courtlistener_search",
+      "source_type": "court_opinion_metadata",
+      "source_name": "CourtListener search",
+      "available": true,
+      "records": 120,
+      "notes": "Opinion-search metadata adds a case-law discovery channel to the privacy research stack."
+    },
+    {
+      "source_id": "internet_archive_advanced_search",
+      "source_type": "archive_metadata",
+      "source_name": "Internet Archive Advanced Search",
+      "available": true,
+      "records": 40,
+      "notes": "Archive metadata adds a discovery channel for book/article titles and collections touching privacy vocabulary."
+    },
+    {
+      "source_id": "crossref_works",
+      "source_type": "publication_metadata",
+      "source_name": "Crossref works",
+      "available": true,
+      "records": 80,
+      "notes": "Publication metadata adds another non-dictionary discovery channel for privacy-related scholarship and books."
+    },
+    {
+      "source_id": "openalex_transition_works",
+      "source_type": "academic_transition_expansion",
+      "source_name": "OpenAlex works",
+      "available": true,
+      "records": 218,
+      "notes": "Used for extra transition and institution geography beyond the first geo layer."
+    },
+    {
+      "source_id": "openalex_transition_institutions",
+      "source_type": "academic_transition_expansion",
+      "source_name": "OpenAlex institutions",
+      "available": true,
+      "records": 20,
+      "notes": "Enriched high-frequency institutions with city/region/country/coordinates."
+    }
+  ],
+  "aggregates": {
+    "public_evidence_by_query": [
+      {
+        "key": "privacy",
+        "count": 12
+      },
+      {
+        "key": "private",
+        "count": 12
+      },
+      {
+        "key": "privy",
+        "count": 12
+      },
+      {
+        "key": "right to privacy",
+        "count": 12
+      },
+      {
+        "key": "invasion of privacy",
+        "count": 12
+      },
+      {
+        "key": "information privacy",
+        "count": 12
+      },
+      {
+        "key": "privacy law",
+        "count": 12
+      }
+    ],
+    "public_evidence_by_year": [
+      {
+        "year": 1836,
+        "count": 21
+      },
+      {
+        "year": 1885,
+        "count": 7
+      },
+      {
+        "year": 1890,
+        "count": 14
+      },
+      {
+        "year": 1915,
+        "count": 21
+      },
+      {
+        "year": 1942,
+        "count": 7
+      },
+      {
+        "year": 1943,
+        "count": 14
+      }
+    ],
+    "phrase_group_summary": [
+      {
+        "group_id": "information_transition",
+        "row_count": 36,
+        "collected_count": 34,
+        "strongest_examples": [
+          {
+            "query": "data protection",
+            "corpus": "en-GB",
+            "peak_value": 9.0399164492
+          },
+          {
+            "query": "data protection",
+            "corpus": "en",
+            "peak_value": 3.3520764234
+          },
+          {
+            "query": "personal information",
+            "corpus": "en-US",
+            "peak_value": 3.1328897415
+          },
+          {
+            "query": "personal information",
+            "corpus": "en",
+            "peak_value": 2.6168080403
+          },
+          {
+            "query": "PII",
+            "corpus": "en-GB",
+            "peak_value": 2.2952676634
+          },
+          {
+            "query": "personal information",
+            "corpus": "en-GB",
+            "peak_value": 2.1742780194
+          },
+          {
+            "query": "data protection",
+            "corpus": "en-US",
+            "peak_value": 2.0289932091
+          },
+          {
+            "query": "PII",
+            "corpus": "en",
+            "peak_value": 1.8051955184
+          },
+          {
+            "query": "PII",
+            "corpus": "en-US",
+            "peak_value": 1.6248025171
+          },
+          {
+            "query": "data governance",
+            "corpus": "en-US",
+            "peak_value": 0.7255900361
+          }
+        ]
+      },
+      {
+        "group_id": "legal_transition",
+        "row_count": 24,
+        "collected_count": 24,
+        "strongest_examples": [
+          {
+            "query": "right to privacy",
+            "corpus": "en-GB",
+            "peak_value": 1.2894333175
+          },
+          {
+            "query": "invasion of privacy",
+            "corpus": "en-US",
+            "peak_value": 1.0727648324
+          },
+          {
+            "query": "expectation of privacy",
+            "corpus": "en-US",
+            "peak_value": 0.9984135522
+          },
+          {
+            "query": "right to privacy",
+            "corpus": "en-US",
+            "peak_value": 0.9462753941
+          },
+          {
+            "query": "right to privacy",
+            "corpus": "en",
+            "peak_value": 0.8514330049
+          },
+          {
+            "query": "invasion of privacy",
+            "corpus": "en",
+            "peak_value": 0.7359987718
+          },
+          {
+            "query": "expectation of privacy",
+            "corpus": "en",
+            "peak_value": 0.6603029614
+          },
+          {
+            "query": "privacy rights",
+            "corpus": "en-US",
+            "peak_value": 0.5742849889
+          },
+          {
+            "query": "privacy law",
+            "corpus": "en-GB",
+            "peak_value": 0.5542549987
+          },
+          {
+            "query": "privacy rights",
+            "corpus": "en-GB",
+            "peak_value": 0.464440151
+          }
+        ]
+      },
+      {
+        "group_id": "tension_terms",
+        "row_count": 24,
+        "collected_count": 21,
+        "strongest_examples": [
+          {
+            "query": "security and privacy",
+            "corpus": "en-US",
+            "peak_value": 1.1962665065
+          },
+          {
+            "query": "security and privacy",
+            "corpus": "en",
+            "peak_value": 1.1003783685
+          },
+          {
+            "query": "privacy and security",
+            "corpus": "en-US",
+            "peak_value": 0.7508092904
+          },
+          {
+            "query": "privacy and security",
+            "corpus": "en",
+            "peak_value": 0.5494548716
+          },
+          {
+            "query": "security and privacy",
+            "corpus": "en-GB",
+            "peak_value": 0.4084248179
+          },
+          {
+            "query": "privacy and security",
+            "corpus": "en-GB",
+            "peak_value": 0.3318451473
+          },
+          {
+            "query": "privacy and publicity",
+            "corpus": "en-US",
+            "peak_value": 0.0512464976
+          },
+          {
+            "query": "privacy and safety",
+            "corpus": "en-US",
+            "peak_value": 0.0419707068
+          },
+          {
+            "query": "privacy and publicity",
+            "corpus": "en",
+            "peak_value": 0.0348386731
+          },
+          {
+            "query": "privacy and safety",
+            "corpus": "en",
+            "peak_value": 0.0328308527
+          }
+        ]
+      }
+    ],
+    "policy_term_summary": [
+      {
+        "term": "data protection",
+        "count": 188
+      },
+      {
+        "term": "cookies",
+        "count": 144
+      },
+      {
+        "term": "consent",
+        "count": 140
+      },
+      {
+        "term": "personal information",
+        "count": 134
+      },
+      {
+        "term": "privacy policy",
+        "count": 66
+      },
+      {
+        "term": "privacy settings",
+        "count": 37
+      },
+      {
+        "term": "privacy rights",
+        "count": 15
+      },
+      {
+        "term": "privacy controls",
+        "count": 9
+      },
+      {
+        "term": "privacy notice",
+        "count": 6
+      },
+      {
+        "term": "privacy preferences",
+        "count": 3
+      }
+    ],
+    "wikipedia_page_summary": [
+      {
+        "key": "Information privacy",
+        "count": 2
+      },
+      {
+        "key": "Privacy",
+        "count": 1
+      },
+      {
+        "key": "Right to privacy",
+        "count": 1
+      },
+      {
+        "key": "Internet privacy",
+        "count": 1
+      },
+      {
+        "key": "Privacy policy",
+        "count": 1
+      },
+      {
+        "key": "General Data Protection Regulation",
+        "count": 1
+      },
+      {
+        "key": "Mass surveillance",
+        "count": 1
+      },
+      {
+        "key": "Data breach",
+        "count": 1
+      },
+      {
+        "key": "Personal data",
+        "count": 1
+      },
+      {
+        "key": "Privacy concerns with social networking services",
+        "count": 1
+      }
+    ],
+    "legal_reference_summary": [
+      {
+        "key": "Cornell Wex Privacy",
+        "count": 1
+      },
+      {
+        "key": "Cornell Constitution Annotated Reasonable Expectation of Privacy",
+        "count": 1
+      },
+      {
+        "key": "DOJ Privacy Act of 1974",
+        "count": 1
+      },
+      {
+        "key": "NIST Privacy Framework",
+        "count": 1
+      },
+      {
+        "key": "European Commission Data Protection",
+        "count": 1
+      }
+    ],
+    "gdelt_discourse_by_query": [
+      {
+        "key": "privacy law",
+        "count": 10
+      },
+      {
+        "key": "privacy policy",
+        "count": 10
+      },
+      {
+        "key": "privacy settings",
+        "count": 10
+      },
+      {
+        "key": "privacy controls",
+        "count": 10
+      },
+      {
+        "key": "privacy and security",
+        "count": 10
+      },
+      {
+        "key": "privacy and surveillance",
+        "count": 10
+      },
+      {
+        "key": "privacy and transparency",
+        "count": 10
+      },
+      {
+        "key": "information privacy",
+        "count": 10
+      },
+      {
+        "key": "data protection",
+        "count": 10
+      },
+      {
+        "key": "personally identifiable information",
+        "count": 10
+      },
+      {
+        "key": "data governance",
+        "count": 10
+      }
+    ],
+    "gdelt_discourse_by_country": [
+      {
+        "key": "United States",
+        "count": 53
+      },
+      {
+        "key": "Canada",
+        "count": 12
+      },
+      {
+        "key": "China",
+        "count": 10
+      },
+      {
+        "key": "New Zealand",
+        "count": 6
+      },
+      {
+        "key": "Mexico",
+        "count": 4
+      },
+      {
+        "key": "Taiwan",
+        "count": 3
+      },
+      {
+        "key": "United Kingdom",
+        "count": 3
+      },
+      {
+        "key": "Kazakhstan",
+        "count": 3
+      },
+      {
+        "key": "Turkey",
+        "count": 2
+      },
+      {
+        "key": "Argentina",
+        "count": 2
+      },
+      {
+        "key": "Morocco",
+        "count": 1
+      },
+      {
+        "key": "Philippines",
+        "count": 1
+      },
+      {
+        "key": "Libya",
+        "count": 1
+      },
+      {
+        "key": "Portugal",
+        "count": 1
+      },
+      {
+        "key": "Qatar",
+        "count": 1
+      },
+      {
+        "key": "Nigeria",
+        "count": 1
+      },
+      {
+        "key": "South Korea",
+        "count": 1
+      },
+      {
+        "key": "Russia",
+        "count": 1
+      },
+      {
+        "key": "India",
+        "count": 1
+      },
+      {
+        "key": "Poland",
+        "count": 1
+      }
+    ],
+    "gdelt_attention_by_query": [
+      {
+        "key": "privacy policy",
+        "count": 180
+      },
+      {
+        "key": "privacy",
+        "count": 179
+      }
+    ],
+    "court_by_query": [
+      {
+        "key": "right to privacy",
+        "count": 20
+      },
+      {
+        "key": "invasion of privacy",
+        "count": 20
+      },
+      {
+        "key": "reasonable expectation of privacy",
+        "count": 20
+      },
+      {
+        "key": "intrusion upon seclusion",
+        "count": 20
+      },
+      {
+        "key": "privacy act",
+        "count": 20
+      },
+      {
+        "key": "data privacy",
+        "count": 20
+      }
+    ],
+    "court_by_year": [
+      {
+        "year": 1979,
+        "count": 1
+      },
+      {
+        "year": 1980,
+        "count": 1
+      },
+      {
+        "year": 1982,
+        "count": 1
+      },
+      {
+        "year": 1987,
+        "count": 2
+      },
+      {
+        "year": 1995,
+        "count": 1
+      },
+      {
+        "year": 1997,
+        "count": 1
+      },
+      {
+        "year": 1999,
+        "count": 1
+      },
+      {
+        "year": 2000,
+        "count": 2
+      },
+      {
+        "year": 2001,
+        "count": 1
+      },
+      {
+        "year": 2008,
+        "count": 2
+      },
+      {
+        "year": 2009,
+        "count": 1
+      },
+      {
+        "year": 2012,
+        "count": 1
+      },
+      {
+        "year": 2016,
+        "count": 1
+      },
+      {
+        "year": 2017,
+        "count": 6
+      },
+      {
+        "year": 2018,
+        "count": 12
+      },
+      {
+        "year": 2019,
+        "count": 11
+      },
+      {
+        "year": 2020,
+        "count": 6
+      },
+      {
+        "year": 2021,
+        "count": 6
+      },
+      {
+        "year": 2022,
+        "count": 9
+      },
+      {
+        "year": 2023,
+        "count": 14
+      },
+      {
+        "year": 2024,
+        "count": 18
+      },
+      {
+        "year": 2025,
+        "count": 21
+      },
+      {
+        "year": 2026,
+        "count": 1
+      }
+    ],
+    "archive_by_query": [
+      {
+        "key": "privacy",
+        "count": 8
+      },
+      {
+        "key": "right to privacy",
+        "count": 8
+      },
+      {
+        "key": "privacy law",
+        "count": 8
+      },
+      {
+        "key": "data privacy",
+        "count": 8
+      },
+      {
+        "key": "online privacy",
+        "count": 8
+      }
+    ],
+    "archive_by_year": [
+      {
+        "year": 1920,
+        "count": 1
+      },
+      {
+        "year": 1979,
+        "count": 1
+      },
+      {
+        "year": 1981,
+        "count": 1
+      },
+      {
+        "year": 1991,
+        "count": 1
+      },
+      {
+        "year": 1994,
+        "count": 1
+      },
+      {
+        "year": 1995,
+        "count": 1
+      },
+      {
+        "year": 1999,
+        "count": 1
+      },
+      {
+        "year": 2002,
+        "count": 4
+      },
+      {
+        "year": 2003,
+        "count": 1
+      },
+      {
+        "year": 2005,
+        "count": 1
+      },
+      {
+        "year": 2011,
+        "count": 1
+      },
+      {
+        "year": 2012,
+        "count": 1
+      },
+      {
+        "year": 2013,
+        "count": 2
+      },
+      {
+        "year": 2014,
+        "count": 2
+      },
+      {
+        "year": 2015,
+        "count": 1
+      },
+      {
+        "year": 2016,
+        "count": 1
+      },
+      {
+        "year": 2019,
+        "count": 2
+      },
+      {
+        "year": 2020,
+        "count": 2
+      },
+      {
+        "year": 2021,
+        "count": 2
+      },
+      {
+        "year": 2022,
+        "count": 1
+      },
+      {
+        "year": 2023,
+        "count": 1
+      },
+      {
+        "year": 2024,
+        "count": 2
+      },
+      {
+        "year": 2025,
+        "count": 2
+      }
+    ],
+    "publication_by_query": [
+      {
+        "key": "privacy",
+        "count": 10
+      },
+      {
+        "key": "right to privacy",
+        "count": 10
+      },
+      {
+        "key": "data privacy",
+        "count": 10
+      },
+      {
+        "key": "information privacy",
+        "count": 10
+      },
+      {
+        "key": "online privacy",
+        "count": 10
+      },
+      {
+        "key": "privacy policy",
+        "count": 10
+      },
+      {
+        "key": "medical privacy",
+        "count": 10
+      },
+      {
+        "key": "genetic privacy",
+        "count": 10
+      }
+    ],
+    "publication_by_year": [
+      {
+        "year": 1928,
+        "count": 1
+      },
+      {
+        "year": 1981,
+        "count": 1
+      },
+      {
+        "year": 1984,
+        "count": 2
+      },
+      {
+        "year": 1985,
+        "count": 1
+      },
+      {
+        "year": 1996,
+        "count": 1
+      },
+      {
+        "year": 1999,
+        "count": 1
+      },
+      {
+        "year": 2002,
+        "count": 1
+      },
+      {
+        "year": 2003,
+        "count": 1
+      },
+      {
+        "year": 2004,
+        "count": 1
+      },
+      {
+        "year": 2005,
+        "count": 2
+      },
+      {
+        "year": 2007,
+        "count": 2
+      },
+      {
+        "year": 2008,
+        "count": 2
+      },
+      {
+        "year": 2009,
+        "count": 3
+      },
+      {
+        "year": 2010,
+        "count": 1
+      },
+      {
+        "year": 2011,
+        "count": 4
+      },
+      {
+        "year": 2012,
+        "count": 3
+      },
+      {
+        "year": 2013,
+        "count": 4
+      },
+      {
+        "year": 2014,
+        "count": 2
+      },
+      {
+        "year": 2015,
+        "count": 1
+      },
+      {
+        "year": 2016,
+        "count": 2
+      },
+      {
+        "year": 2017,
+        "count": 5
+      },
+      {
+        "year": 2018,
+        "count": 8
+      },
+      {
+        "year": 2019,
+        "count": 3
+      },
+      {
+        "year": 2020,
+        "count": 5
+      },
+      {
+        "year": 2021,
+        "count": 3
+      },
+      {
+        "year": 2022,
+        "count": 4
+      },
+      {
+        "year": 2023,
+        "count": 2
+      },
+      {
+        "year": 2024,
+        "count": 1
+      },
+      {
+        "year": 2025,
+        "count": 6
+      },
+      {
+        "year": 2026,
+        "count": 1
+      }
+    ],
+    "academic_by_query": [
+      {
+        "key": "data governance",
+        "count": 36
+      },
+      {
+        "key": "records privacy",
+        "count": 25
+      },
+      {
+        "key": "database privacy",
+        "count": 24
+      },
+      {
+        "key": "data protection",
+        "count": 23
+      },
+      {
+        "key": "personally identifiable information",
+        "count": 22
+      },
+      {
+        "key": "informational privacy",
+        "count": 21
+      },
+      {
+        "key": "privacy policy",
+        "count": 21
+      },
+      {
+        "key": "privacy law",
+        "count": 19
+      },
+      {
+        "key": "fair information practices",
+        "count": 17
+      },
+      {
+        "key": "computer privacy",
+        "count": 10
+      }
+    ],
+    "academic_by_country": [
+      {
+        "key": "US",
+        "count": 64
+      },
+      {
+        "key": "United States",
+        "count": 37
+      },
+      {
+        "key": "United Kingdom",
+        "count": 21
+      },
+      {
+        "key": "Spain",
+        "count": 7
+      },
+      {
+        "key": "GB",
+        "count": 6
+      },
+      {
+        "key": "The Netherlands",
+        "count": 6
+      },
+      {
+        "key": "CA",
+        "count": 5
+      },
+      {
+        "key": "CH",
+        "count": 5
+      },
+      {
+        "key": "IT",
+        "count": 4
+      },
+      {
+        "key": "AU",
+        "count": 3
+      },
+      {
+        "key": "NL",
+        "count": 3
+      },
+      {
+        "key": "India",
+        "count": 3
+      },
+      {
+        "key": "ZA",
+        "count": 3
+      },
+      {
+        "key": "ES",
+        "count": 3
+      },
+      {
+        "key": "GR",
+        "count": 3
+      },
+      {
+        "key": "Greece",
+        "count": 3
+      },
+      {
+        "key": "Belgium",
+        "count": 3
+      },
+      {
+        "key": "DE",
+        "count": 3
+      },
+      {
+        "key": "TW",
+        "count": 3
+      },
+      {
+        "key": "LI",
+        "count": 3
+      }
+    ],
+    "academic_by_year": [
+      {
+        "year": 1968,
+        "count": 1
+      },
+      {
+        "year": 1988,
+        "count": 2
+      },
+      {
+        "year": 1994,
+        "count": 1
+      },
+      {
+        "year": 1996,
+        "count": 3
+      },
+      {
+        "year": 1999,
+        "count": 2
+      },
+      {
+        "year": 2000,
+        "count": 3
+      },
+      {
+        "year": 2001,
+        "count": 4
+      },
+      {
+        "year": 2002,
+        "count": 7
+      },
+      {
+        "year": 2003,
+        "count": 1
+      },
+      {
+        "year": 2004,
+        "count": 7
+      },
+      {
+        "year": 2005,
+        "count": 12
+      },
+      {
+        "year": 2006,
+        "count": 10
+      },
+      {
+        "year": 2007,
+        "count": 4
+      },
+      {
+        "year": 2008,
+        "count": 3
+      },
+      {
+        "year": 2009,
+        "count": 13
+      },
+      {
+        "year": 2010,
+        "count": 7
+      },
+      {
+        "year": 2011,
+        "count": 17
+      },
+      {
+        "year": 2012,
+        "count": 8
+      },
+      {
+        "year": 2013,
+        "count": 8
+      },
+      {
+        "year": 2014,
+        "count": 12
+      },
+      {
+        "year": 2016,
+        "count": 1
+      },
+      {
+        "year": 2017,
+        "count": 16
+      },
+      {
+        "year": 2018,
+        "count": 12
+      },
+      {
+        "year": 2019,
+        "count": 9
+      },
+      {
+        "year": 2020,
+        "count": 31
+      },
+      {
+        "year": 2022,
+        "count": 14
+      },
+      {
+        "year": 2023,
+        "count": 6
+      },
+      {
+        "year": 2025,
+        "count": 4
+      }
+    ]
+  },
+  "strong_signals": [
+    "Public dated evidence now includes collection-level historical publication metadata across multiple windows and terms.",
+    "Supplemental phrase-frequency rows recovered legal, informational, and tension vocabulary beyond the first collocation pass.",
+    "Real platform and regulator documents now contribute modern compliance and interface-language evidence.",
+    "Wikipedia concept summaries now widen topical coverage across privacy, surveillance, policy, and data-governance branches.",
+    "Public legal and institutional explanation pages now add doctrinal and governance vocabulary outside platform policies.",
+    "A second attention-like proxy exists via GDELT news volume intensity.",
+    "Court opinion search metadata adds a case-law discovery layer for privacy doctrines and legal phrases.",
+    "Internet Archive discovery metadata adds bibliographic and collection-level leads outside the standard word-frequency stack.",
+    "Crossref publication metadata adds article-, chapter-, and book-title discovery for privacy branches beyond dictionaries and news.",
+    "Academic transition queries recovered additional institution geography with coordinates."
+  ],
+  "weak_signals": [
+    "LOC collection-search evidence is useful for dated-publication presence but is too noisy to treat as exact first-attestation proof.",
+    "Some requested source windows or query variants still failed and remain candidates for targeted reruns."
+  ],
+  "failed_sources": [
+    {
+      "source_id": "gdelt_doc_artlist",
+      "source_type": "news_discourse_expansion",
+      "availability": "failed",
+      "reason": "json-decode: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-27T03:17:37.273891Z",
+      "query": "right to privacy",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=right+to+privacy&mode=ArtList&format=json&maxrecords=10&sort=datedesc&startdatetime=20240101000000&enddatetime=20261231235959"
+    }
+  ]
+}

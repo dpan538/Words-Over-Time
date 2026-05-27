@@ -1,0 +1,99 @@
+{
+  "word": "privacy",
+  "status": "first_round_broad_research",
+  "created_at": "2026-05-26T12:26:43Z",
+  "updated_at": "2026-05-27T10:45:42.420697+00:00",
+  "layers": [
+    {
+      "layer_id": "frequency_terms",
+      "processed_path": "docs/research/privacy/processed/privacy_frequency_terms_processed.json",
+      "report_path": "docs/research/privacy/reports/privacy_frequency_terms_data_report.md",
+      "status": "usable_partial",
+      "notes": "47 terms/phrases across 3 Ngram corpora recovered; 141 series total."
+    },
+    {
+      "layer_id": "etymology_early_usage",
+      "processed_path": "docs/research/privacy/processed/privacy_etymology_early_usage_processed.json",
+      "report_path": "docs/research/privacy/reports/privacy_etymology_early_usage_data_report.md",
+      "status": "usable_with_revisions",
+      "notes": "32 entries captured with year extraction cleanup; root-family evidence is clear, but direct-source dating still needs manual review."
+    },
+    {
+      "layer_id": "collocations_semantic_field",
+      "processed_path": "docs/research/privacy/processed/privacy_collocations_semantic_field_processed.json",
+      "report_path": "docs/research/privacy/reports/privacy_collocations_semantic_field_data_report.md",
+      "status": "usable",
+      "notes": "89 seeded phrases retained with bucket labels; 38 strong/usable phrase signals, 29 weak/missing."
+    },
+    {
+      "layer_id": "attention_metrics",
+      "processed_path": "docs/research/privacy/processed/privacy_attention_metrics_processed.json",
+      "report_path": "docs/research/privacy/reports/privacy_attention_metrics_data_report.md",
+      "status": "usable",
+      "notes": "11 Wikimedia pageview series plus 5 event anchors; 3 non-fetched proxy alternatives."
+    },
+    {
+      "layer_id": "timeline_source_index",
+      "processed_path": "docs/research/privacy/processed/privacy_timeline_source_index_processed.json",
+      "report_path": "docs/research/privacy/reports/privacy_timeline_source_index_data_report.md",
+      "status": "usable",
+      "notes": "19 timeline anchors total; 8 medium, 8 low, 3 high-confidence confidence split."
+    },
+    {
+      "layer_id": "geo_spatial_metrics",
+      "processed_path": "docs/research/privacy/processed/privacy_geo_spatial_metrics_processed.json",
+      "report_path": "docs/research/privacy/reports/privacy_geo_spatial_metrics_data_report.md",
+      "status": "usable_partial",
+      "notes": "75171 total records; 1419 country-level, 374 point-level, 37 elevation-enriched."
+    },
+    {
+      "layer_id": "research_expansion",
+      "processed_path": "docs/research/privacy/processed/privacy_research_expansion_processed.json",
+      "report_path": "docs/research/privacy/reports/privacy_research_expansion_data_report.md",
+      "status": "usable_partial",
+      "notes": "1139 rows across dated evidence, phrase growth, policy texts, news proxies, and academic transition data."
+    },
+    {
+      "layer_id": "pre_modern_semantic_weather",
+      "processed_path": "docs/research/privacy/processed/privacy_pre_modern_semantic_weather_processed.json",
+      "report_path": "docs/research/privacy/reports/privacy_pre_modern_semantic_weather_data_report.md",
+      "status": "derived_for_chart01",
+      "notes": "4 periods, 3 semantic tracks, 44 radial weather points."
+    },
+    {
+      "layer_id": "legal_injury_matrix",
+      "processed_path": "docs/research/privacy/processed/privacy_legal_injury_matrix_processed.json",
+      "report_path": "docs/research/privacy/reports/privacy_legal_injury_matrix_data_report.md",
+      "status": "derived_for_chart01b",
+      "notes": "1890-1950 legal-injury matrix for privacy chart 01B; not a separate chart number."
+    },
+    {
+      "layer_id": "modern_transit_system",
+      "processed_path": "docs/research/privacy/processed/privacy_modern_transit_system_processed.json",
+      "report_path": "docs/research/privacy/reports/privacy_modern_transit_system_data_report.md",
+      "status": "source_supported_for_chart01c",
+      "notes": "1950-2026 metro-map data layer with 7 routes and 23 supported stations."
+    }
+  ],
+  "legacy_files_archived": [
+    "docs/research/privacy/raw/legacy_chart_runs/",
+    "docs/research/privacy/processed/legacy_chart_runs/",
+    "docs/research/privacy/reports/legacy_chart_runs/"
+  ],
+  "strong_findings": [
+    "Frequency layer has 47 target terms/phrases and 141 collected query-source series with non-zero values from 1500 onward.",
+    "Collocation layer recovered 89 phrases with explicit semantic buckets and 10 discovered follow-up terms.",
+    "Attention layer recovered 11 Wikipedia pageview series and 14,621,041 total yearly-aggregated views in the current window.",
+    "Timeline index now has 19 anchors with clear confidence tags and category labels, including legal-rights, data/governance, and digital surveillance branches."
+  ],
+  "open_questions": [
+    "Which direct, source-grade attestations for `privacy` (not dictionary-derived extracts) can be recovered with high-confidence dating?",
+    "Should legal-rights anchors and lexical-evolution anchors be separated into different downstream timeline tracks?",
+    "Which low-confidence collocation signals should be pruned versus carried for future expansion (especially AI/advertising/biometrics families)?"
+  ],
+  "recommended_next_steps": [
+    "Keep the modular layer outputs and re-run etymology/source-date validation with higher-confidence lexical repositories where available.",
+    "Use the 2026-frequency and collocation layers as a controlled candidate pool; do not yet lock in final semantic narratives.",
+    "Pilot a second attention source in a reproducible environment (if access policy changes) and keep it additive to Wikimedia series."
+  ]
+}

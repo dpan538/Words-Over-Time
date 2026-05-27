@@ -1,0 +1,36 @@
+{
+  "word": "privacy",
+  "layer_id": "legal_injury_matrix",
+  "generated_at": "2026-05-27T07:02:38.334002+00:00",
+  "node_count": 10,
+  "branch_count": 6,
+  "phrase_series_count": 9,
+  "yearly_signal_points": 61,
+  "reachable_sources": 7,
+  "failed_sources": [
+    {
+      "anchor_id": "privacy_1902_roberson",
+      "url": "https://law.justia.com/cases/new-york/court-of-appeals/1902/171-n-y-538-3591680.html",
+      "checked_at": "2026-05-27T07:01:49.217018+00:00",
+      "reachable": false,
+      "status": 403,
+      "error": "HTTPError 403: Forbidden"
+    },
+    {
+      "anchor_id": "privacy_1905_pavesich",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/1905/122-ga-190-1.html",
+      "checked_at": "2026-05-27T07:01:50.902351+00:00",
+      "reachable": false,
+      "status": 403,
+      "error": "HTTPError 403: Forbidden"
+    },
+    {
+      "anchor_id": "privacy_1928_olmstead",
+      "url": "https://supreme.justia.com/cases/federal/us/277/438/",
+      "checked_at": "2026-05-27T07:01:50.989731+00:00",
+      "reachable": false,
+      "status": 403,
+      "error": "HTTPError 403: Forbidden"
+    }
+  ]
+}

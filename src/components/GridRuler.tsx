@@ -3,21 +3,21 @@
 import { useState } from "react";
 
 const columns = [
-  { num: "01", label: "frequency", color: "#F06B04" },
+  { num: "01", label: "signal", color: "#F06B04" },
   { num: "02", label: "attestation", color: "#F06B04" },
   { num: "03", label: "variant", color: "#1570AC" },
   { num: "04", label: "context", color: "#1570AC" },
-  { num: "05", label: "confidence", color: "#050510" },
-  { num: "06", label: "source", color: "#050510" },
+  { num: "05", label: "boundary", color: "#050510" },
+  { num: "06", label: "rights", color: "#050510" },
 ];
 
 const descriptions = [
-  "Google Ngram frequency signal, 1500-2022",
-  "Dictionary and lexical earliest attestation",
-  "Orthographic variants and spelling history",
-  "Gutenberg + Wikinews contextual evidence",
-  "Confidence label: high / medium / low",
-  "Source corpus and rights status",
+  "Ngram, archive, or source-specific usage signal",
+  "Dictionary, scanned page, or cited record",
+  "Forms, phrases, compounds, and spelling variants",
+  "Snippet, metadata, domain, and historical setting",
+  "Confidence label plus explicit claim limits",
+  "Source URL, attribution, and reuse status",
 ];
 
 export function GridRuler() {
@@ -43,12 +43,12 @@ export function GridRuler() {
               className="h-1.5 w-1.5 flex-shrink-0"
               style={{ backgroundColor: col.color, opacity: 0.7 }}
             />
-            <span className="font-mono text-[0.85rem] font-black uppercase tracking-[0.14em] text-ink/42">
+            <span className="font-mono text-[0.88rem] font-black uppercase tracking-[0.14em] text-ink/58">
               {col.num}
             </span>
             <span
               className={`truncate font-mono text-[0.85rem] font-black uppercase tracking-[0.1em] text-ink/34 transition-opacity duration-200 ${
-                expanded ? "opacity-100" : "opacity-0 sm:opacity-100"
+                expanded ? "text-ink/54 opacity-100" : "text-ink/42 opacity-0 sm:opacity-100"
               }`}
             >
               {col.label}
@@ -65,7 +65,7 @@ export function GridRuler() {
           {descriptions.map((desc, index) => (
             <div
               key={desc}
-              className={`px-2 py-3 font-mono text-[0.85rem] font-bold leading-5 text-ink/48 sm:px-3 ${
+              className={`px-2 py-3 font-mono text-[0.86rem] font-bold leading-5 text-ink/60 sm:px-3 ${
                 index < descriptions.length - 1 ? "border-r border-ink/10" : ""
               }`}
             >

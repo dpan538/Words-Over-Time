@@ -55,19 +55,19 @@ export function ArtificialPoster() {
                 artificial
               </h1>
               <p className="mt-7 max-w-5xl text-[clamp(1.12rem,2.15vw,2.8rem)] font-black leading-[1.02] text-ink">
-                A word built from art, skill, making, rule, and suspicion.
+                A word that moves from skilled making to synthetic matter, reproduced experience, suspicion, and the human boundary.
               </p>
               <p className="mt-4 max-w-3xl font-mono text-[clamp(0.76rem,1.02vw,0.96rem)] font-black uppercase leading-6 tracking-[0.12em] text-ink/58">
-                Art / artifice / artificer / technical construction / not natural / not fake.
+                Artifice / manufacture / reproduction / suspicion / body / cognition.
               </p>
             </div>
 
             <dl className="grid border-y border-ink bg-wheat/74">
               {[
-                ["status", "in progress"],
-                ["chart 01", "semantic chamber"],
-                ["mode", "static-first 3d"],
-                ["scope", "pre-ai"],
+                ["status", "near complete"],
+                ["sequence", "five charts"],
+                ["mode", "interactive atlas"],
+                ["scope", "artifice to ai"],
               ].map(([label, value], index) => (
                 <div
                   key={label}
@@ -95,7 +95,7 @@ export function ArtificialPoster() {
               entry note
             </p>
             <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/68">
-              The first chart uses a semantic chamber rather than a standard timeline: a static-first spatial apparatus for separating art, skill, contrivance, not-natural contrast, and the later burden of fakery.
+              Five linked charts trace artificial from artifice before fake into manufactured perception, mechanical reproduction, suspicion, semantic distance, and finally the boundary where artificial enters bodies, voices, and cognition.
             </p>
           </div>
 
@@ -152,6 +152,15 @@ export function ArtificialPoster() {
           >
             <ArtificialChart05HumanBoundary />
           </PosterSection>
+
+          <div className="mt-10 grid gap-5 border-y border-ink/70 py-8 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
+            <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-ink/45">
+              closing note
+            </p>
+            <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/70">
+              Artificial never settles as merely fake: it names the made thing, the reproduced experience, and the human process remade by technique. What remains open is where making ends, and where a second nature begins.
+            </p>
+          </div>
 
           <div className="mt-12 border-t border-ink/80 pb-12 pt-8">
             <div className="flex flex-wrap gap-4 font-mono text-[0.8rem] font-black uppercase tracking-[0.13em]">
