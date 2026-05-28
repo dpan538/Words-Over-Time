@@ -7,12 +7,12 @@ type WordListProps = {
 
 export function WordList({ words }: WordListProps) {
   const rows = [
-    words.filter((word) => word.slug === "data" || word.slug === "hub"),
-    words.filter((word) => word.slug === "privacy"),
     words.filter((word) => word.slug === "forever"),
     words.filter((word) => word.slug === "artificial"),
-    words.filter((word) => word.slug === "intelligence"),
+    words.filter((word) => word.slug === "privacy" || word.slug === "hub"),
     words.filter((word) => word.slug === "depression"),
+    words.filter((word) => word.slug === "intelligence"),
+    words.filter((word) => word.slug === "data"),
   ].filter((row) => row.length > 0);
 
   return (
