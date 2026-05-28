@@ -73,7 +73,7 @@ const GRID = {
 const YEAR_START = 1890;
 const YEAR_END = 2026;
 const INK = "#050510";
-const WARM_WHITE = "#f3eee3";
+const WARM_WHITE = "#fff8e6";
 const NODE_SCALE = 1.05;
 
 const branches: Branch[] = [
@@ -291,18 +291,18 @@ export function PrivacyChart03GovernanceInterface({ dataset }: PrivacyChart03Gov
   const years = [1890, 1950, 1974, 1995, 2013, 2018, 2020, 2026];
 
   return (
-    <div className="relative overflow-hidden border-y border-ink/70 bg-[#f3eee3]">
+    <div className="relative overflow-hidden border-y border-ink/65 bg-[#fff8e6]">
       <div className="grid min-h-[7.6rem] gap-4 px-4 py-3 lg:grid-cols-[minmax(0,1fr)_21rem] lg:px-6">
         <div>
-          <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+          <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-privacy-violet">
             hover a semantic node / same color means same branch
           </p>
-          <p className="mt-2 max-w-[1040px] text-[1rem] font-bold leading-6 text-ink/68">
+          <p className="mt-2 max-w-[1040px] text-[1rem] font-bold leading-6 text-ink/74">
             Each circle is a recovered privacy term placed in a density-spaced year field. Black links connect terms inside the same semantic branch.
           </p>
         </div>
-        <div className="h-[5.9rem] overflow-hidden border border-ink/20 bg-[#f3eee3]/88 p-3 font-mono text-[0.78rem] font-black uppercase leading-5 tracking-[0.1em] text-ink/76">
-          <p className="h-5 truncate text-[#7E42B8]">{activeNode ? activeNode.label : "semantic time field"}</p>
+        <div className="h-[5.9rem] overflow-hidden border border-ink/22 bg-wheat/82 p-3 font-mono text-[0.78rem] font-black uppercase leading-5 tracking-[0.1em] text-ink/80">
+          <p className="h-5 truncate text-privacy-violet">{activeNode ? activeNode.label : "semantic time field"}</p>
           <p className="mt-2 min-h-10">
             {activeNode
               ? `${activeNode.year} / ${branchById.get(activeNode.branch)?.label} / ${formatCount(activeNode.count)} records`

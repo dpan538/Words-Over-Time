@@ -134,7 +134,7 @@ const MIN_LAT = -50;
 const MAX_LAT = 78;
 const BADGE_RADIUS = 5.8;
 const INK = "#050510";
-const PAPER = "#e9dfc9";
+const PAPER = "#F7F0DC";
 const HOTSPOT_COLORS = ["#1570AC", "#036C17", "#FBB728", "#A1081F"] as const;
 const RADIATION_DOT = "#f27624";
 const RADIATION_BADGE = "#1f6f80";
@@ -483,13 +483,13 @@ export function PrivacyChart02GeoAttention({ dataset }: PrivacyChart02GeoAttenti
     <section className="border-y border-ink/75 py-7">
       <div className="mb-5 grid gap-6 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-end">
         <div>
-          <p className="font-mono text-[0.86rem] font-black uppercase leading-5 tracking-[0.18em] text-[#7E42B8]">
+          <p className="font-mono text-[0.86rem] font-black uppercase leading-5 tracking-[0.18em] text-privacy-violet">
             02A / global geo attention
           </p>
           <h3 className="mt-3 max-w-[920px] text-[clamp(1.5rem,2.45vw,2.55rem)] font-black leading-[1.02] tracking-normal text-ink">
             Where privacy concentrates, then radiates.
           </h3>
-          <p className="mt-3 max-w-[1120px] text-[1rem] font-bold leading-[1.48] text-ink/66">
+          <p className="mt-3 max-w-[1120px] text-[1rem] font-bold leading-[1.48] text-ink/74">
             A flat world map from recovered country, city, news, and academic signals. Hotspot mode reads density;
             radiation mode reads high-probability paths from the strongest recovered hubs.
           </p>
@@ -497,19 +497,19 @@ export function PrivacyChart02GeoAttention({ dataset }: PrivacyChart02GeoAttenti
 
         <div className="grid grid-cols-2 gap-x-6 gap-y-3 font-mono text-[0.74rem] font-black uppercase leading-5 tracking-[0.12em] text-ink/72">
           <p>
-            <span className="block text-[#7E42B8]">Countries</span>
+            <span className="block text-privacy-violet">Countries</span>
             {dataset.statistics.map_country_count}
           </p>
           <p>
-            <span className="block text-[#7E42B8]">City points</span>
+            <span className="block text-privacy-violet">City points</span>
             {dataset.statistics.map_city_point_count}
           </p>
           <p>
-            <span className="block text-[#7E42B8]">Radiation links</span>
+            <span className="block text-privacy-violet">Radiation links</span>
             {dataset.statistics.radiation_link_count}
           </p>
           <p>
-            <span className="block text-[#7E42B8]">Elevation held</span>
+            <span className="block text-privacy-violet">Elevation held</span>
             {dataset.statistics.elevation_point_count}
           </p>
           <div className="col-span-2 mt-1 flex items-center gap-3 border-t border-ink/20 pt-3">
@@ -519,14 +519,14 @@ export function PrivacyChart02GeoAttention({ dataset }: PrivacyChart02GeoAttenti
         </div>
       </div>
 
-      <div className="relative overflow-hidden border-y border-ink/45 bg-[#f3efe4]">
+      <div className="relative overflow-hidden border-y border-ink/45 bg-[#fff8e6]">
         <svg
           className="block h-[520px] w-full sm:h-[590px] xl:h-[660px]"
           viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`}
           role="img"
           aria-label="Global privacy attention map"
         >
-          <rect width={MAP_WIDTH} height={MAP_HEIGHT} fill="#f3efe4" />
+          <rect width={MAP_WIDTH} height={MAP_HEIGHT} fill="#fff8e6" />
 
           {[-120, -60, 0, 60, 120].map((lon) => {
             const point = project(lon, 0);
@@ -694,7 +694,7 @@ export function PrivacyChart02GeoAttention({ dataset }: PrivacyChart02GeoAttenti
               const point = project(hub.lon, hub.lat);
               return (
                 <g key={hub.hub_id}>
-                  <circle cx={point.x} cy={point.y} r={15} fill="#f3efe4" stroke={INK} strokeOpacity={0.78} strokeWidth={2} />
+                  <circle cx={point.x} cy={point.y} r={15} fill="#fff8e6" stroke={INK} strokeOpacity={0.78} strokeWidth={2} />
                   <circle cx={point.x} cy={point.y} r={7} fill={INK} />
                   <text
                     x={point.x + 18}
@@ -789,8 +789,8 @@ export function PrivacyChart02GeoAttention({ dataset }: PrivacyChart02GeoAttenti
               onClick={() => setMode(value as "hotspot" | "radiation")}
               className={`border px-4 py-3 font-mono text-[0.74rem] font-black uppercase leading-none tracking-[0.14em] transition ${
                 mode === value
-                  ? "border-[#7E42B8] bg-[#7E42B8] text-[#f6f2e8]"
-                  : "border-ink/65 text-ink hover:border-[#7E42B8] hover:text-[#7E42B8]"
+                  ? "border-privacy-violet bg-privacy-violet text-[#fff8e6]"
+                  : "border-ink/65 text-ink hover:border-privacy-violet hover:text-privacy-violet"
               }`}
             >
               {label}
@@ -800,7 +800,7 @@ export function PrivacyChart02GeoAttention({ dataset }: PrivacyChart02GeoAttenti
 
         <div className="grid min-h-[132px] gap-5 overflow-hidden border-t border-ink/28 pt-5 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1fr)]">
           <div>
-            <p className="font-mono text-[0.78rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+            <p className="font-mono text-[0.78rem] font-black uppercase leading-5 tracking-[0.16em] text-privacy-violet">
               {selectedCopy.eyebrow}
             </p>
             <h4 className="mt-2 max-w-3xl text-[clamp(1.15rem,1.85vw,1.75rem)] font-black leading-[1.05] text-ink">

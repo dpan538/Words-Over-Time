@@ -167,7 +167,7 @@ const GRID = "#686255";
 const WARM = "#F27624";
 
 const regionPalette: Record<string, string> = {
-  "North America": "#7E42B8",
+  "North America": "#6F3AA6",
   "Europe & Central Asia": "#238eaa",
   "East Asia & Pacific": "#2F8C4B",
   "South Asia": "#DDBE24",
@@ -524,13 +524,13 @@ export function PrivacyChart02DemographicContext({ dataset }: PrivacyChart02Demo
   const hoveredRecord = hoveredNode?.record;
 
   return (
-    <div className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[#e9dfc9]">
+    <div className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-wheat">
       <div className="relative px-2 py-3 sm:px-4 lg:px-5">
         <aside
-          className="pointer-events-none absolute right-12 top-5 z-10 min-h-[10.8rem] w-[min(21rem,calc(100vw-6rem))] border border-ink/22 bg-[#e9dfc9]/88 px-6 py-5 font-mono uppercase leading-6 tracking-[0.1em] text-ink shadow-[0_12px_42px_rgba(5,5,16,0.09)] backdrop-blur-[1px] sm:right-24 sm:top-7"
+          className="pointer-events-none absolute right-12 top-5 z-10 min-h-[10.8rem] w-[min(21rem,calc(100vw-6rem))] border border-ink/24 bg-wheat/90 px-6 py-5 font-mono uppercase leading-6 tracking-[0.1em] text-ink shadow-[0_12px_42px_rgba(5,5,16,0.08)] backdrop-blur-[1px] sm:right-24 sm:top-7"
           aria-live="polite"
         >
-          <p className="text-[0.72rem] font-black text-[#7E42B8]">
+          <p className="text-[0.72rem] font-black text-privacy-violet">
             {hoveredNode ? hoveredNode.label : "hover a country cluster"}
           </p>
           <p className="text-[0.78rem] font-black text-ink/72">
@@ -583,7 +583,7 @@ export function PrivacyChart02DemographicContext({ dataset }: PrivacyChart02Demo
             `}</style>
           </defs>
 
-          <rect width={WIDTH} height={HEIGHT} fill="#e9dfc9" />
+          <rect width={WIDTH} height={HEIGHT} fill="#F7F0DC" />
           <rect x={PLOT.left} y={PLOT.top} width={PLOT.right - PLOT.left} height={PLOT.bottom - PLOT.top} fill={INK} opacity={0.014} />
 
           {[0, 0.25, 0.5, 0.75, 1].map((tick) => {
@@ -771,7 +771,7 @@ export function PrivacyChart02DemographicContext({ dataset }: PrivacyChart02Demo
                     y={-node.size * 0.18}
                     width={node.size * 0.36}
                     height={node.size * 0.36}
-                    fill="#e9dfc9"
+                    fill="#F7F0DC"
                     stroke={INK}
                     strokeOpacity={0.55}
                     strokeWidth={1.2}

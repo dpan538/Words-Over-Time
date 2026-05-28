@@ -56,30 +56,30 @@ export function PrivacyPoster({
   researchExpansion,
 }: PrivacyPosterProps) {
   return (
-    <main className="min-h-screen bg-[#e9dfc9] text-ink">
+    <main className="min-h-screen bg-wheat text-ink">
       <div className="mx-auto flex w-full max-w-[1960px] flex-col px-4 py-5 sm:px-7 lg:px-10 xl:px-12">
         <Nav />
 
-        <section className="relative overflow-hidden border-y border-ink/72 py-10 sm:py-12 lg:py-14">
-          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(5,5,16,0.075)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.065)_1px,transparent_1px)] bg-[size:86px_86px,86px_86px]" />
+        <section className="relative overflow-hidden border-y border-ink/70 py-10 sm:py-12 lg:py-14">
+          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(5,5,16,0.058)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.05)_1px,transparent_1px)] bg-[size:86px_86px,86px_86px]" />
           <div className="pointer-events-none absolute inset-x-0 top-1/2 h-px bg-ink/10" />
           <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_19rem] lg:items-center">
             <div>
-              <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.18em] text-[#7E42B8]">
+              <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.18em] text-privacy-violet">
                 Words Over Time / lexical study
               </p>
-              <h1 className="mt-5 text-[clamp(5.15rem,14.2vw,14.2rem)] font-black leading-[0.9] tracking-normal text-[#7E42B8]">
+              <h1 className="mt-5 text-[clamp(5.15rem,14.2vw,14.2rem)] font-black leading-[0.9] tracking-normal text-privacy-violet">
                 privacy
               </h1>
               <p className="mt-10 max-w-5xl text-[clamp(1.12rem,2.12vw,2.7rem)] font-black leading-[1.04] text-ink">
                 A word that moves from private life and secrecy, into legal and data systems, across geography, then into governance interfaces.
               </p>
-              <p className="mt-4 max-w-3xl font-mono text-[clamp(0.76rem,1.02vw,0.96rem)] font-black uppercase leading-6 tracking-[0.12em] text-ink/70">
+              <p className="mt-4 max-w-3xl font-mono text-[clamp(0.76rem,1.02vw,0.96rem)] font-black uppercase leading-6 tracking-[0.12em] text-ink/74">
                 Seclusion / secrecy / legal claim / data protection / geography / population / consent / surveillance / AI-sensitive data.
               </p>
             </div>
 
-            <dl className="grid self-end border-y border-ink/72 bg-[#e9dfc9]/78 lg:self-center">
+            <dl className="grid self-end border-y border-ink/70 bg-wheat/82 lg:self-center">
               {[
                 ["study", "word history"],
                 ["scope", "1200-2026"],
@@ -112,7 +112,7 @@ export function PrivacyPoster({
             <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-privacy-violet/70">
               entry note
             </p>
-            <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/68">
+            <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/74">
               Privacy does not begin as a digital panic, and it does not end as a single legal right. This page follows
               the word through an older semantic field of private life and secrecy, a legal and data-system transition,
               a geographic and demographic expansion of recovered signal, and a final interface layer where courts, regulators, platforms,
@@ -127,7 +127,7 @@ export function PrivacyPoster({
             intro={semanticWeather.content_plan.chart01_intro}
           >
             <div className="mb-6 grid gap-3 border-t border-ink/25 pt-5 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
-              <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+              <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-privacy-violet">
                 01A / semantic weather
               </p>
               <p className="max-w-[980px] font-mono text-[0.78rem] font-black uppercase leading-5 tracking-[0.12em] text-ink/52">
@@ -138,14 +138,14 @@ export function PrivacyPoster({
 
             <div className="mt-16 pt-10">
               <div className="mb-8 grid gap-5 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
-                <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+                <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-privacy-violet">
                   01B / legal injury
                 </p>
                 <div>
                   <h3 className="max-w-[920px] text-[clamp(1.22rem,2vw,1.95rem)] font-black leading-[1.02] tracking-normal text-ink">
                     From Privacy to Legal Injury
                   </h3>
-                  <p className="mt-2 max-w-[980px] text-[1.02rem] leading-[1.55] text-ink/68">
+                  <p className="mt-2 max-w-[980px] text-[1.02rem] leading-[1.55] text-ink/74">
                     After 1890, privacy starts to become a legal object: not just seclusion or private life, but
                     a claim about publicity, likeness, intrusion, injury, and eventually rights language.
                   </p>
@@ -156,14 +156,14 @@ export function PrivacyPoster({
 
             <div className="mt-16 pt-10">
               <div className="mb-1 grid gap-5 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
-                <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+                <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-privacy-violet">
                   01C / modern transit
                 </p>
                 <div>
                   <h3 className="max-w-[940px] text-[clamp(1.22rem,2vw,1.95rem)] font-black leading-[1.02] tracking-normal text-ink">
                     From Legal Right to Data System
                   </h3>
-                  <p className="mt-2 max-w-[1000px] text-[1.02rem] leading-[1.55] text-ink/68">
+                  <p className="mt-2 max-w-[1000px] text-[1.02rem] leading-[1.55] text-ink/74">
                     After 1950, privacy branches into routes: private life and rights, data protection,
                     platform interfaces, surveillance pressure, breach risk, identity, consent, and AI-era sensitive data.
                   </p>
@@ -183,14 +183,14 @@ export function PrivacyPoster({
 
             <div className="mt-16 pt-10">
               <div className="mb-8 grid gap-5 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
-                <p className="font-mono text-[0.98rem] font-black uppercase leading-6 tracking-[0.16em] text-[#7E42B8]">
+                <p className="font-mono text-[0.98rem] font-black uppercase leading-6 tracking-[0.16em] text-privacy-violet">
                   02B / elevation signal
                 </p>
                 <div>
                   <h3 className="max-w-[940px] text-[clamp(1.22rem,2vw,1.95rem)] font-black leading-[1.02] tracking-normal text-ink">
                     Privacy Signal Against Altitude
                   </h3>
-                  <p className="mt-2 max-w-[1000px] text-[1.02rem] leading-[1.55] text-ink/68">
+                  <p className="mt-2 max-w-[1000px] text-[1.02rem] leading-[1.55] text-ink/74">
                     The same recovered geo layer is folded by elevation: not to claim that altitude causes privacy
                     attention, but to test whether the signal gathers in low, coastal, institutional, or highland places.
                   </p>
@@ -201,25 +201,25 @@ export function PrivacyPoster({
 
             <div className="mt-16 pt-10">
               <div className="mb-1 grid gap-5 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
-                <p className="font-mono text-[0.98rem] font-black uppercase leading-6 tracking-[0.16em] text-[#7E42B8]">
+                <p className="font-mono text-[0.98rem] font-black uppercase leading-6 tracking-[0.16em] text-privacy-violet">
                   02C / demographic context
                 </p>
                 <div>
                   <h3 className="max-w-[980px] text-[clamp(1.22rem,2vw,1.95rem)] font-black leading-[1.02] tracking-normal text-ink">
                     Privacy Signal, Population, and Life Expectancy
                   </h3>
-                  <p className="mt-2 max-w-[1040px] text-[1.02rem] leading-[1.55] text-ink/68">
+                  <p className="mt-2 max-w-[1040px] text-[1.02rem] leading-[1.55] text-ink/74">
                     A macro field where population scale and life expectancy become spatial scaffolding; privacy
                     appears as recovered signal density, mesh, and motion rather than a single explanation.
                   </p>
                 </div>
               </div>
               <PrivacyChart02DemographicContext dataset={geoDemographic} />
-              <div className="grid gap-5 bg-[#e9dfc9] px-4 py-8 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10 lg:px-6">
-                <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+              <div className="grid gap-5 bg-wheat px-4 py-8 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10 lg:px-6">
+                <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-privacy-violet">
                   observed relation
                 </p>
-                <p className="max-w-[1080px] text-[1.02rem] leading-[1.58] text-ink/70">
+                <p className="max-w-[1080px] text-[1.02rem] leading-[1.58] text-ink/74">
                   In the joined country records, population is plotted on a logarithmic x-axis and life expectancy on
                   the y-axis, while recovered privacy search frequency is expressed through node density, local mesh,
                   and per-million signal. Larger populations often produce larger absolute record counts, but the
@@ -240,11 +240,11 @@ export function PrivacyPoster({
             className="mt-6 border-t border-ink/35 pt-10"
           >
             <PrivacyChart03GovernanceInterface dataset={researchExpansion} />
-            <div className="grid gap-5 border-b border-ink/25 bg-[#f3eee3] px-4 py-7 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10 lg:px-6">
-              <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+            <div className="grid gap-5 border-b border-ink/25 bg-[#fff8e6] px-4 py-7 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10 lg:px-6">
+              <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-privacy-violet">
                 semantic trace
               </p>
-              <p className="max-w-[1080px] text-[1.02rem] leading-[1.58] text-ink/70">
+              <p className="max-w-[1080px] text-[1.02rem] leading-[1.58] text-ink/74">
                 The circles do not measure time as equal distance. They group the years where the recovered data becomes
                 dense, so the recent platform, policy, surveillance, and technical terms occupy more visual room than a
                 linear 1890-2026 scale would allow. The branches show privacy moving from legal-right vocabulary into
@@ -256,10 +256,10 @@ export function PrivacyPoster({
 
           <div className="mt-12 pb-8 pt-0">
             <div className="grid gap-5 border-b border-ink/80 py-8 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
-              <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+              <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-privacy-violet">
                 next boundary
               </p>
-              <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/72">
+              <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/80">
                 By the end of the page, privacy is no longer only a moral boundary or a legal injury. It has become
                 an operating surface where forms, settings, policies, platforms, courts, archives, and technical systems
                 keep translating older desires for protected life into rules. What remains open is where the next

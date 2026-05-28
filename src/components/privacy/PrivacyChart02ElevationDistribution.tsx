@@ -110,7 +110,7 @@ const COOL = "#238eaa";
 const LOW = "#a8914d";
 const WARM = "#e2b900";
 const HOT = "#c73a2b";
-const VIOLET = "#7E42B8";
+const VIOLET = "#6F3AA6";
 
 const GRID_LINES = [
   PLOT.top,
@@ -229,7 +229,7 @@ export function PrivacyChart02ElevationDistribution({ dataset }: PrivacyChart02E
     <div className="border-y border-ink/70">
       <div className="grid gap-6 border-b border-ink/25 px-4 py-5 lg:grid-cols-[minmax(0,1fr)_21rem] lg:px-6">
         <div>
-          <p className="font-mono text-[0.98rem] font-black uppercase leading-6 tracking-[0.18em] text-[#7E42B8]">
+          <p className="font-mono text-[0.98rem] font-black uppercase leading-6 tracking-[0.18em] text-privacy-violet">
             altitude distribution / recovered signal
           </p>
           <p className="mt-2 max-w-[980px] text-[1.1rem] font-bold leading-7 text-ink/78">
@@ -239,32 +239,32 @@ export function PrivacyChart02ElevationDistribution({ dataset }: PrivacyChart02E
         </div>
         <div className="grid grid-cols-2 gap-x-6 gap-y-3 font-mono text-[0.86rem] font-black uppercase tracking-[0.14em]">
           <div>
-            <p className="text-[#7E42B8]">city points</p>
+            <p className="text-privacy-violet">city points</p>
             <p className="mt-1 text-[1.12rem] text-ink">{dataset.statistics.point_count}</p>
           </div>
           <div>
-            <p className="text-[#7E42B8]">records</p>
+            <p className="text-privacy-violet">records</p>
             <p className="mt-1 text-[1.12rem] text-ink">{dataset.statistics.record_count_total.toLocaleString()}</p>
           </div>
           <div>
-            <p className="text-[#7E42B8]">median altitude</p>
+            <p className="text-privacy-violet">median altitude</p>
             <p className="mt-1 text-[1.12rem] text-ink">{formatElevation(dataset.statistics.median_elevation_m)}</p>
           </div>
           <div>
-            <p className="text-[#7E42B8]">highest point</p>
+            <p className="text-privacy-violet">highest point</p>
             <p className="mt-1 text-[1.12rem] text-ink">{formatElevation(dataset.statistics.elevation_max_m)}</p>
           </div>
         </div>
       </div>
 
-      <div className="relative overflow-hidden bg-[#eee5d2]">
+      <div className="relative overflow-hidden bg-wheat">
         <svg
           viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
           role="img"
           aria-label="Privacy recovered signal compared with elevation distribution"
           className="block h-[620px] w-full sm:h-[700px] xl:h-[750px]"
         >
-          <rect width={WIDTH} height={HEIGHT} fill="#eee5d2" />
+          <rect width={WIDTH} height={HEIGHT} fill="#F7F0DC" />
 
           {GRID_LINES.map((y, index) => (
             <line
@@ -499,7 +499,7 @@ export function PrivacyChart02ElevationDistribution({ dataset }: PrivacyChart02E
 
       <div className="grid min-h-[190px] gap-6 border-t border-ink/30 px-4 py-5 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1fr)] lg:px-6">
         <div>
-          <p className="font-mono text-[0.94rem] font-black uppercase tracking-[0.16em] text-[#7E42B8]">
+          <p className="font-mono text-[0.94rem] font-black uppercase tracking-[0.16em] text-privacy-violet">
             selected point
           </p>
           <h4 className="mt-2 text-[1.45rem] font-black leading-tight text-ink">

@@ -56,8 +56,8 @@ type LabelPosition = Point & {
 };
 
 const INK = "#050510";
-const PAPER = "#e9dfc9";
-const VIOLET = "#7E42B8";
+const PAPER = "#F7F0DC";
+const VIOLET = "#6F3AA6";
 const MONO_STYLE = { fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace" };
 const SANS_STYLE = { fontFamily: "Arial, Helvetica, sans-serif" };
 const ROUTE_CODE_STYLE: CSSProperties = {

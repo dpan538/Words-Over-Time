@@ -14,7 +14,7 @@ type OgImageOptions = {
   keywords?: string[];
 };
 
-const palette = ["#050510", "#d93621", "#f3b61f", "#006fb6", "#036c17", "#7e42b8"];
+const palette = ["#050510", "#d93621", "#f3b61f", "#006fb6", "#036c17", "#6f3aa6"];
 
 export function createOgImage({ title, eyebrow = siteConfig.name, description, accent = "#006fb6", keywords = [] }: OgImageOptions) {
   const displayedKeywords = keywords.slice(0, 5);
@@ -28,7 +28,7 @@ export function createOgImage({ title, eyebrow = siteConfig.name, description, a
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#f5ecd2",
+          background: "#f7f0dc",
           color: "#050510",
           padding: "56px 64px",
           border: "18px solid #050510",

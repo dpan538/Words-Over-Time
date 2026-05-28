@@ -85,7 +85,7 @@ type PrivacyChart01LegalInjuryProps = {
 
 const INK = "#050510";
 const GRID = "#504a3d";
-const VIOLET = "#7E42B8";
+const VIOLET = "#6F3AA6";
 const RUST = "#B95A34";
 const MONO_STYLE = { fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace" };
 
@@ -192,7 +192,7 @@ export function PrivacyChart01LegalInjury({ dataset }: PrivacyChart01LegalInjury
   return (
     <div className="grid gap-8 xl:grid-cols-[23rem_minmax(0,1fr)]">
       <aside className="border-l-2 border-ink/45 pl-4">
-        <p className="font-mono text-[0.74rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+        <p className="font-mono text-[0.74rem] font-black uppercase leading-5 tracking-[0.16em] text-privacy-violet">
           legal injury hover
         </p>
         {activeNode ? (
@@ -200,10 +200,10 @@ export function PrivacyChart01LegalInjury({ dataset }: PrivacyChart01LegalInjury
             <p className="font-mono text-[0.9rem] font-black uppercase leading-[1.25] tracking-[0.1em] text-ink">
               {activeNode.label}
             </p>
-            <p className="mt-3 font-mono text-[0.82rem] font-black leading-5 text-ink/68">
+            <p className="mt-3 font-mono text-[0.82rem] font-black leading-5 text-ink/74">
               {activeNode.year} / {branchById.get(activeNode.branch_id)?.label}
             </p>
-            <p className="mt-3 text-[0.9rem] leading-6 text-ink/68">{activeNode.description}</p>
+            <p className="mt-3 text-[0.9rem] leading-6 text-ink/74">{activeNode.description}</p>
             <p className="mt-4 font-mono text-[0.72rem] font-black uppercase leading-5 tracking-[0.1em] text-ink/52">
               confidence {activeNode.confidence} / source{" "}
               {activeNode.source_reachable ? "verified" : `needs manual check ${activeNode.source_status ?? ""}`}
@@ -215,10 +215,10 @@ export function PrivacyChart01LegalInjury({ dataset }: PrivacyChart01LegalInjury
           {dataset.branches.map((branch) => (
             <div key={branch.branch_id} className="grid grid-cols-[1rem_1fr] gap-3">
               <span
-                className="mt-1 h-3 w-3 rounded-full border border-ink/35"
+                className="mt-1 h-3 w-3 rounded-full border border-ink/40"
                 style={{ backgroundColor: branch.color }}
               />
-              <p className="font-mono text-[0.74rem] font-black uppercase leading-[1.35] tracking-[0.11em] text-ink/68">
+              <p className="font-mono text-[0.74rem] font-black uppercase leading-[1.35] tracking-[0.11em] text-ink/74">
                 {branch.label}
               </p>
             </div>
@@ -226,7 +226,7 @@ export function PrivacyChart01LegalInjury({ dataset }: PrivacyChart01LegalInjury
         </div>
 
         <div className="mt-7 border-t border-ink/20 pt-5">
-          <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+          <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-privacy-violet">
             legal phrase line
           </p>
           <svg viewBox="0 0 315 150" className="mt-2 h-auto w-full overflow-visible" aria-label="Legal phrase line chart">

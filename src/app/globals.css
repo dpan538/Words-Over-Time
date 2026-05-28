@@ -4,7 +4,7 @@
 
 :root {
   color: #050510;
-  background: #f5ecd2;
+  background: #f7f0dc;
 }
 
 * {
@@ -18,7 +18,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: #f5ecd2;
+  background: #f7f0dc;
   color: #050510;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-rendering: geometricPrecision;
@@ -31,7 +31,7 @@ a {
 
 ::selection {
   background: #f06b04;
-  color: #f5ecd2;
+  color: #f7f0dc;
 }
 
 .scroll-reveal {

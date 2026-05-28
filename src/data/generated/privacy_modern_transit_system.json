@@ -15,7 +15,7 @@
     {
       "route_id": "rights_personhood",
       "label": "Rights / personhood",
-      "color": "#7E42B8",
+      "color": "#6F3AA6",
       "description": "Privacy as personal autonomy, private life, constitutional liberty, and legal rights.",
       "terms": [
         "right to privacy",
@@ -1887,7 +1887,7 @@
   "animated_particles": [
     {
       "route_id": "rights_personhood",
-      "color": "#7E42B8",
+      "color": "#6F3AA6",
       "motion_rule": "particles follow route segments from older to newer stations",
       "density_source": "particle_density from frequency, attention, and anchor density"
     },
