@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/JsonLd";
 import { PrivacyPoster } from "@/components/PrivacyPoster";
 import semanticWeatherJson from "@/data/generated/privacy_pre_modern_semantic_weather.json";
 import legalInjuryJson from "@/data/generated/privacy_legal_injury_matrix.json";
@@ -5,7 +6,7 @@ import modernTransitJson from "@/data/generated/privacy_modern_transit_system.js
 import geoAttentionJson from "@/data/generated/privacy_geo_attention_map.json";
 import geoElevationJson from "@/data/generated/privacy_geo_elevation_distribution.json";
 import geoDemographicJson from "@/data/generated/privacy_geo_demographic_context.json";
-import { createPageMetadata } from "@/lib/site";
+import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
 import researchExpansionJson from "../../../../docs/research/privacy/processed/privacy_research_expansion_processed.json";
 import type { PrivacySemanticWeatherDataset } from "@/components/privacy/PrivacyChart01SemanticWeather";
 import type { PrivacyLegalInjuryDataset } from "@/components/privacy/PrivacyChart01LegalInjury";
@@ -24,17 +25,21 @@ const geoDemographic = geoDemographicJson as unknown as PrivacyGeoDemographicCon
 const researchExpansion = researchExpansionJson as unknown as PrivacyResearchExpansionDataset;
 
 export const metadata = createPageMetadata("/words/privacy");
+const jsonLd = createRouteJsonLd("/words/privacy");
 
 export default function PrivacyPage() {
   return (
-    <PrivacyPoster
-      semanticWeather={semanticWeather}
-      legalInjury={legalInjury}
-      modernTransit={modernTransit}
-      geoAttention={geoAttention}
-      geoElevation={geoElevation}
-      geoDemographic={geoDemographic}
-      researchExpansion={researchExpansion}
-    />
+    <>
+      <JsonLd data={jsonLd} />
+      <PrivacyPoster
+        semanticWeather={semanticWeather}
+        legalInjury={legalInjury}
+        modernTransit={modernTransit}
+        geoAttention={geoAttention}
+        geoElevation={geoElevation}
+        geoDemographic={geoDemographic}
+        researchExpansion={researchExpansion}
+      />
+    </>
   );
 }

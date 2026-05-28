@@ -1,8 +1,15 @@
 import { ArtificialPoster } from "@/components/ArtificialPoster";
-import { createPageMetadata } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
+import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
 
 export const metadata = createPageMetadata("/words/artificial");
+const jsonLd = createRouteJsonLd("/words/artificial");
 
 export default function ArtificialPage() {
-  return <ArtificialPoster />;
+  return (
+    <>
+      <JsonLd data={jsonLd} />
+      <ArtificialPoster />
+    </>
+  );
 }

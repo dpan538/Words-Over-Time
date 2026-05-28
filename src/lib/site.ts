@@ -16,6 +16,7 @@ export type SiteRoute = {
   priority: number;
   changeFrequency: "weekly" | "monthly" | "yearly";
   section: "home" | "method" | "word";
+  keywords: string[];
 };
 
 export const siteRoutes: SiteRoute[] = [
@@ -27,6 +28,7 @@ export const siteRoutes: SiteRoute[] = [
     priority: 1,
     changeFrequency: "weekly",
     section: "home",
+    keywords: ["word history", "semantic change", "historical linguistics", "data visualisation"],
   },
   {
     path: "/about",
@@ -36,6 +38,7 @@ export const siteRoutes: SiteRoute[] = [
     priority: 0.9,
     changeFrequency: "monthly",
     section: "method",
+    keywords: ["research methodology", "source provenance", "copyright", "digital humanities"],
   },
   {
     path: "/words/forever",
@@ -45,6 +48,7 @@ export const siteRoutes: SiteRoute[] = [
     priority: 0.86,
     changeFrequency: "monthly",
     section: "word",
+    keywords: ["forever", "permanence", "memory", "archive", "platform persistence"],
   },
   {
     path: "/words/artificial",
@@ -54,6 +58,7 @@ export const siteRoutes: SiteRoute[] = [
     priority: 0.86,
     changeFrequency: "monthly",
     section: "word",
+    keywords: ["artificial", "artifice", "imitation", "synthetic", "machine intelligence"],
   },
   {
     path: "/words/privacy",
@@ -63,6 +68,7 @@ export const siteRoutes: SiteRoute[] = [
     priority: 0.86,
     changeFrequency: "monthly",
     section: "word",
+    keywords: ["privacy", "data protection", "surveillance", "consent", "legal injury"],
   },
   {
     path: "/words/hub",
@@ -72,6 +78,7 @@ export const siteRoutes: SiteRoute[] = [
     priority: 0.84,
     changeFrequency: "monthly",
     section: "word",
+    keywords: ["hub", "network", "transportation", "platform", "centrality"],
   },
   {
     path: "/words/depression",
@@ -81,6 +88,7 @@ export const siteRoutes: SiteRoute[] = [
     priority: 0.84,
     changeFrequency: "monthly",
     section: "word",
+    keywords: ["depression", "melancholy", "economy", "diagnosis", "public health"],
   },
   {
     path: "/words/data",
@@ -90,6 +98,7 @@ export const siteRoutes: SiteRoute[] = [
     priority: 0.76,
     changeFrequency: "monthly",
     section: "word",
+    keywords: ["data", "datum", "AI data", "social traces", "data governance"],
   },
 ];
 
@@ -113,6 +122,9 @@ export function createPageMetadata(path: string, overrides: Partial<Pick<SiteRou
     description,
     alternates: {
       canonical,
+      languages: {
+        en: canonical,
+      },
     },
     openGraph: {
       type: "article",
@@ -120,12 +132,93 @@ export function createPageMetadata(path: string, overrides: Partial<Pick<SiteRou
       siteName: siteConfig.name,
       title: `${title} | ${siteConfig.name}`,
       description,
+      images: [
+        {
+          url: absoluteUrl("/opengraph-image"),
+          width: 1200,
+          height: 630,
+          alt: `${siteConfig.name}: ${title}`,
+        },
+      ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: `${title} | ${siteConfig.name}`,
       description,
+      images: [absoluteUrl("/twitter-image")],
     },
+  };
+}
+
+export function createRouteJsonLd(path: string) {
+  const route = routeByPath(path) || siteRoutes[0];
+  const url = absoluteUrl(route.path);
+  const pageId = `${url}#webpage`;
+  const breadcrumbId = `${url}#breadcrumb`;
+  const pageType = route.section === "home" ? "CollectionPage" : route.section === "method" ? "AboutPage" : "WebPage";
+  const breadcrumbItems = [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: absoluteUrl("/"),
+    },
+    ...(route.path === "/"
+      ? []
+      : [
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: route.title,
+            item: url,
+          },
+        ]),
+  ];
+
+  const graph: Record<string, unknown>[] = [
+    {
+      "@type": pageType,
+      "@id": pageId,
+      url,
+      name: route.title,
+      headline: route.title,
+      description: route.description,
+      inLanguage: "en",
+      dateModified: siteConfig.updatedAt,
+      isPartOf: {
+        "@id": `${siteConfig.url}/#website`,
+      },
+      breadcrumb: {
+        "@id": breadcrumbId,
+      },
+      keywords: route.keywords.join(", "),
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": breadcrumbId,
+      itemListElement: breadcrumbItems,
+    },
+  ];
+
+  if (route.section === "word") {
+    graph.push({
+      "@type": "CreativeWork",
+      "@id": `${url}#word-study`,
+      name: `${route.title} word study`,
+      headline: route.title,
+      url,
+      description: route.description,
+      genre: ["digital humanities", "historical linguistics", "data visualization"],
+      about: route.keywords.map((keyword) => ({ "@type": "Thing", name: keyword })),
+      isPartOf: {
+        "@id": `${siteConfig.url}/#collection`,
+      },
+    });
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": graph,
   };
 }
 

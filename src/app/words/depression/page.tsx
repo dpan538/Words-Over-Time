@@ -1,10 +1,11 @@
 import { DepressionPoster } from "@/components/DepressionPoster";
+import { JsonLd } from "@/components/JsonLd";
 import branchesJson from "@/data/generated/depression_branches.json";
 import coverageJson from "@/data/generated/depression_coverage_report.json";
 import evidenceJson from "@/data/generated/depression_evidence_normalized.json";
 import frequencyJson from "@/data/generated/depression_frequency.json";
 import prehistoryJson from "@/data/generated/depression_prehistory.json";
-import { createPageMetadata } from "@/lib/site";
+import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
 import type {
   DepressionBranchesFile,
   DepressionCoverageReport,
@@ -20,15 +21,19 @@ const evidence = evidenceJson as DepressionEvidenceFile;
 const coverage = coverageJson as DepressionCoverageReport;
 
 export const metadata = createPageMetadata("/words/depression");
+const jsonLd = createRouteJsonLd("/words/depression");
 
 export default function DepressionPage() {
   return (
-    <DepressionPoster
-      frequency={frequency}
-      prehistory={prehistory}
-      branches={branches}
-      evidence={evidence}
-      coverage={coverage}
-    />
+    <>
+      <JsonLd data={jsonLd} />
+      <DepressionPoster
+        frequency={frequency}
+        prehistory={prehistory}
+        branches={branches}
+        evidence={evidence}
+        coverage={coverage}
+      />
+    </>
   );
 }

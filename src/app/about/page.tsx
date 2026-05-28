@@ -1,11 +1,13 @@
 import { AboutSectionNav } from "@/components/AboutSectionNav";
 import { GridRuler } from "@/components/GridRuler";
+import { JsonLd } from "@/components/JsonLd";
 import { MethodDiagram } from "@/components/MethodDiagram";
 import { Nav } from "@/components/Nav";
-import { createPageMetadata } from "@/lib/site";
+import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
 import Link from "next/link";
 
 export const metadata = createPageMetadata("/about");
+const jsonLd = createRouteJsonLd("/about");
 
 const evidenceFlow = [
   {
@@ -407,6 +409,7 @@ function AboutSectionHeader({
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-wheat text-ink">
+      <JsonLd data={jsonLd} />
       <AboutSectionNav />
       <div className="flex w-full flex-col gap-8 px-5 py-5 sm:px-10 sm:py-7 lg:gap-12 lg:pl-20 lg:pr-16 xl:pl-24 xl:pr-20">
         <Nav />
