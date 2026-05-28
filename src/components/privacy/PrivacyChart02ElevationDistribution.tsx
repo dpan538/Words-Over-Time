@@ -95,12 +95,14 @@ type BandSegment = PrivacyGeoElevationBand & {
 const WIDTH = 1680;
 const HEIGHT = 780;
 const PLOT = {
-  left: 170,
-  right: 1325,
+  left: 145,
+  right: 1535,
   top: 148,
   baseline: 390,
   bottom: 560,
 };
+const BAND_GAP = 34;
+const MIN_BAND_WIDTH = 170;
 
 const INK = "#050510";
 const GRID = "#686255";
@@ -154,14 +156,15 @@ const stableNoise = (value: string) => {
 const createBandSegments = (bands: PrivacyGeoElevationBand[]) => {
   const activeBands = bands.filter((band) => band.point_count > 0);
   const totalWeight = activeBands.reduce((sum, band) => sum + Math.pow(band.point_count, 0.74), 0);
-  const gap = 34;
-  const usableWidth = PLOT.right - PLOT.left - gap * Math.max(0, activeBands.length - 1);
+  const usableWidth = PLOT.right - PLOT.left - BAND_GAP * Math.max(0, activeBands.length - 1);
+  const minWidth = Math.min(MIN_BAND_WIDTH, usableWidth / Math.max(activeBands.length, 1));
+  const weightedWidth = Math.max(0, usableWidth - minWidth * activeBands.length);
   let cursor = PLOT.left;
 
   return activeBands.map((band) => {
-    const width = Math.max(190, usableWidth * (Math.pow(band.point_count, 0.74) / totalWeight));
+    const width = minWidth + weightedWidth * (Math.pow(band.point_count, 0.74) / totalWeight);
     const segment = { ...band, x0: cursor, x1: cursor + width, width };
-    cursor += width + gap;
+    cursor += width + BAND_GAP;
     return segment;
   });
 };
@@ -456,9 +459,10 @@ export function PrivacyChart02ElevationDistribution({ dataset }: PrivacyChart02E
 
           <g transform={`translate(${PLOT.left}, 690)`}>
             {bandSegments
-              .map((band) => {
-                const width = Math.min(260, band.width);
-                const x = Math.min(band.x0 - PLOT.left, PLOT.right - PLOT.left - 260);
+              .map((band, index) => {
+                const slotWidth = (PLOT.right - PLOT.left) / bandSegments.length;
+                const x = index * slotWidth;
+                const width = Math.max(150, slotWidth - 34);
                 const rel = band.relative_to_global_mean ?? 0;
                 const color = pointColor(rel);
                 return (
