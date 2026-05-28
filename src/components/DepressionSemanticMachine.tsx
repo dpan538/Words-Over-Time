@@ -84,15 +84,15 @@ const paper = "#F5ECD2";
 const labelPaper = "#FFF6D8";
 const rose = "#9C2031";
 const orange = "#F06B04";
-const blue = "#1570AC";
-const paleBlue = "#2C9FC7";
+const blue = "#006FB6";
+const paleBlue = "#009FCE";
 const charcoal = "#403E3B";
-const warmGray = "#766C75";
-const teal = "#0B7F73";
+const warmGray = "#625764";
+const teal = "#008B79";
 const green = "#036C17";
-const violetGray = "#6E6476";
-const ochre = "#D99A14";
-const silver = "#A8A39A";
+const violetGray = "#5E4C8E";
+const ochre = "#E39B00";
+const silver = "#7F786B";
 
 const subsystemFrames: [string, number, number, number, number, string, GearNode["subsystem"]][] = [
   ["lexical-clinical translation", 118, 198, 590, 545, rose, "lexical_clinical"],
@@ -1053,10 +1053,10 @@ export function DepressionSemanticMachine({ activeInspectorId, onHover, onInspec
           <text x="96" y="126" fill={ink} fontFamily="Helvetica Neue, Helvetica, Arial, sans-serif" fontSize="42" fontWeight="900">
             Depression as a semantic transmission machine
           </text>
-          <text x={WIDTH - 96} y="84" textAnchor="end" fill={ink} opacity="0.58" fontFamily="monospace" fontSize="15" fontWeight="900" letterSpacing="1.4">
+          <text x={WIDTH - 96} y="84" textAnchor="end" fill={ink} opacity="0.72" fontFamily="monospace" fontSize="15" fontWeight="900" letterSpacing="1.4">
             relation groups / collectors / delayed feedback
           </text>
-          <text x={WIDTH - 96} y="111" textAnchor="end" fill={ink} opacity="0.52" fontFamily="monospace" fontSize="14" fontWeight="900" letterSpacing="0.9">
+          <text x={WIDTH - 96} y="111" textAnchor="end" fill={ink} opacity="0.76" fontFamily="monospace" fontSize="14" fontWeight="900" letterSpacing="0.9">
             line weight = curated prominence, not causation
           </text>
         </g>
@@ -1388,7 +1388,7 @@ export function DepressionSemanticMachine({ activeInspectorId, onHover, onInspec
               {line}
             </text>
           ))}
-          <text x="498" y="1638" fill={ink} opacity="0.66" fontFamily="monospace" fontSize="13" fontWeight="900" letterSpacing="1">
+          <text x="498" y="1638" fill={ink} opacity="0.76" fontFamily="monospace" fontSize="13" fontWeight="900" letterSpacing="1">
             {info.type}
           </text>
           {splitLabel(info.role, 58).slice(0, 3).map((line, index) => (
@@ -1401,7 +1401,7 @@ export function DepressionSemanticMachine({ activeInspectorId, onHover, onInspec
               {line}
             </text>
           ))}
-          <text x="1228" y="1736" fill={ink} opacity="0.66" fontFamily="monospace" fontSize="12" fontWeight="900" letterSpacing="0.7">
+          <text x="1228" y="1736" fill={ink} opacity="0.76" fontFamily="monospace" fontSize="12" fontWeight="900" letterSpacing="0.7">
             <tspan x="1228">lines are semantic transmission,</tspan>
             <tspan x="1228" dy="18">
               not causal effect size
@@ -1453,7 +1453,7 @@ export function DepressionSemanticMachine({ activeInspectorId, onHover, onInspec
               <text x="76" y="0" fill={ink} fontFamily="Helvetica Neue, Helvetica, Arial, sans-serif" fontSize="16" fontWeight="900">
                 {label}
               </text>
-              <text x="76" y="24" fill={ink} opacity="0.68" fontFamily="monospace" fontSize="13" fontWeight="900" letterSpacing="0.8">
+              <text x="76" y="24" fill={ink} opacity="0.8" fontFamily="monospace" fontSize="13" fontWeight="900" letterSpacing="0.8">
                 {detail}
               </text>
             </g>

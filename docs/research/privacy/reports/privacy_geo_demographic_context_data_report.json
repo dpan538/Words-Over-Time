@@ -1,0 +1,30 @@
+{
+  "word": "privacy",
+  "layer_id": "geo_demographic_context",
+  "generated_at": "2026-05-28T03:58:52.872538Z",
+  "status": "source_supported_for_chart02c",
+  "source_failures": [],
+  "statistics": {
+    "country_signal_count": 58,
+    "countries_with_population": 58,
+    "countries_with_life_expectancy": 58,
+    "countries_joined_for_02c": 58,
+    "network_node_count": 58,
+    "context_edge_count": 42,
+    "median_population": 18522644.5,
+    "mean_life_expectancy": 78.705,
+    "median_privacy_records_per_million": 19.3888
+  },
+  "missing_demographic_context_count": 0,
+  "outputs": {
+    "processed": "docs/research/privacy/processed/privacy_geo_demographic_context_processed.json",
+    "generated": "src/data/generated/privacy_geo_demographic_context.json",
+    "report_json": "docs/research/privacy/reports/privacy_geo_demographic_context_data_report.json",
+    "report_md": "docs/research/privacy/reports/privacy_geo_demographic_context_data_report.md"
+  },
+  "recommended_visual_direction": [
+    "Use a macro scatter or network field: privacy signal as node weight/color, population as horizontal spread, life expectancy as vertical context.",
+    "Avoid regression language; show density, clusters, and outliers as data aesthetics.",
+    "Pair this with 02A and 02B as a geographic-complexity group rather than a ranking system."
+  ]
+}

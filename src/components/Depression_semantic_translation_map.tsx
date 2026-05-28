@@ -88,12 +88,12 @@ export const translationEffects: { id: TranslationEffect; label: string; note: s
 ];
 
 export const translationCategoryStyles: Record<EvidenceCategory, { label: string; color: string }> = {
-  experience: { label: "experience", color: "#1570AC" },
-  clinical: { label: "clinical", color: "#7C345A" },
-  measurement: { label: "measurement", color: "#0B7F73" },
-  public_health: { label: "public health", color: "#596F82" },
-  discourse: { label: "discourse", color: "#B05B2A" },
-  stigma_help_seeking: { label: "stigma / help-seeking", color: "#6E6476" },
+  experience: { label: "experience", color: "#006FB6" },
+  clinical: { label: "clinical", color: "#9B2F67" },
+  measurement: { label: "measurement", color: "#008B79" },
+  public_health: { label: "public health", color: "#315F88" },
+  discourse: { label: "discourse", color: "#C84F17" },
+  stigma_help_seeking: { label: "stigma / help-seeking", color: "#5E4C8E" },
 };
 
 export const translationEvidencePoints: TranslationEvidencePoint[] = [
@@ -649,289 +649,544 @@ export function DepressionSemanticTranslationMap({
   const [hovered, setHovered] = useState<ActiveState>(null);
   const active = activeFromInspectorId(activeInspectorId) ?? hovered;
 
+  const layout = {
+    width: 1760,
+    height: 1260,
+    chartLeft: 86,
+    chartTop: 220,
+    effectStart: 360,
+    effectEnd: 1348,
+    rowHeight: 132,
+    summaryLeft: 1416,
+    summaryCenter: 1588,
+    summaryScale: 126,
+  };
+  const chartBottom = layout.chartTop + layout.rowHeight * translationSystems.length;
+  const effectBandWidth = layout.effectEnd - layout.effectStart;
+  const stableEffects = new Set<TranslationEffect>([
+    "preserved",
+    "standardized",
+    "amplified",
+  ]);
+
+  const effectX = (effect: TranslationEffect) => {
+    const index = translationEffects.findIndex((item) => item.id === effect);
+    return layout.effectStart + (index / (translationEffects.length - 1)) * effectBandWidth;
+  };
+
+  const systemY = (system: TranslationSystem) => {
+    const index = translationSystems.findIndex((item) => item.id === system);
+    return layout.chartTop + index * layout.rowHeight + layout.rowHeight / 2;
+  };
+
+  const hashValue = (input: string) => {
+    let hash = 0;
+    for (let index = 0; index < input.length; index += 1) {
+      hash = (hash * 31 + input.charCodeAt(index)) % 1000003;
+    }
+    return hash / 1000003;
+  };
+
+  const jitter = (key: string, scale: number) => (hashValue(key) - 0.5) * scale;
+  const dotCount = (point: TranslationEvidencePoint) => Math.max(3, Math.round(point.weight * 7));
+
+  const pointById = useMemo(
+    () => new Map(translationEvidencePoints.map((point) => [point.id, point])),
+    [],
+  );
+
   const pointPositions = useMemo(() => {
     const groupIndex = new Map<string, number>();
     const positions = new Map<string, { x: number; y: number }>();
 
     translationEvidencePoints.forEach((point) => {
-      const systemIndex = translationSystems.findIndex((system) => system.id === point.system);
-      const effectIndex = translationEffects.findIndex((effect) => effect.id === point.effect);
-      const groupKey = `${point.system}-${point.effect}`;
-      const index = groupIndex.get(groupKey) ?? 0;
-      groupIndex.set(groupKey, index + 1);
-      const offset = pointOffsets[index % pointOffsets.length];
+      const key = `${point.system}-${point.effect}`;
+      const index = groupIndex.get(key) ?? 0;
+      groupIndex.set(key, index + 1);
+      const side = index % 2 === 0 ? -1 : 1;
+      const stack = Math.floor(index / 2);
+
       positions.set(point.id, {
-        x: chartLeft + systemIndex * colWidth + colWidth / 2 + offset.x,
-        y: chartTop + effectIndex * rowHeight + rowHeight / 2 + offset.y,
+        x: effectX(point.effect) + side * (18 + stack * 10) + jitter(`${point.id}-x`, 26),
+        y: systemY(point.system) + jitter(`${point.id}-y`, 34) + stack * 7,
       });
     });
 
     return positions;
   }, []);
 
-  const pointById = useMemo(() => new Map(translationEvidencePoints.map((point) => [point.id, point])), []);
+  const systemSummaries = useMemo(
+    () =>
+      translationSystems.map((system, index) => {
+        const points = translationEvidencePoints.filter((point) => point.system === system.id);
+        const retainedWeight = points
+          .filter((point) => stableEffects.has(point.effect))
+          .reduce((sum, point) => sum + point.weight, 0);
+        const alteredWeight = points
+          .filter((point) => !stableEffects.has(point.effect))
+          .reduce((sum, point) => sum + point.weight, 0);
+        const totalWeight = Math.max(0.01, retainedWeight + alteredWeight);
+
+        return {
+          system,
+          index,
+          points,
+          retainedWeight,
+          alteredWeight,
+          totalWeight,
+          retainedShare: retainedWeight / totalWeight,
+          alteredShare: alteredWeight / totalWeight,
+        };
+      }),
+    [],
+  );
+
+  const coveredCells = useMemo(
+    () =>
+      new Set(
+        translationEvidencePoints.map((point) => `${point.system}-${point.effect}`),
+      ).size,
+    [],
+  );
+
   const connectedIds = useMemo(() => {
     if (!active || active.kind !== "point") return new Set<string>();
     const ids = new Set<string>([active.id]);
     translationConnections.forEach((connection) => {
-      if (connection.sourceId === active.id || connection.targetId === active.id) {
-        ids.add(connection.sourceId);
-        ids.add(connection.targetId);
-      }
+      if (connection.sourceId === active.id) ids.add(connection.targetId);
+      if (connection.targetId === active.id) ids.add(connection.sourceId);
     });
     return ids;
   }, [active]);
 
-  function activeMatches(point: TranslationEvidencePoint) {
+  const activeMatchesPoint = (point: TranslationEvidencePoint) => {
     if (!active) return true;
     if (active.kind === "point") return connectedIds.has(point.id);
     if (active.kind === "system") return point.system === active.id;
     if (active.kind === "effect") return point.effect === active.id;
     if (active.kind === "category") return point.category === active.id;
     return true;
-  }
+  };
 
-  function setPoint(point: TranslationEvidencePoint) {
+  const setPoint = (
+    point: TranslationEvidencePoint,
+    position?: { x: number; y: number },
+  ) => {
     setHovered({ kind: "point", id: point.id });
-    onHover(translationPointInspectorId(point.id));
-  }
+    onHover?.(translationPointInspectorId(point.id), position);
+  };
 
-  function clearActive() {
+  const setSystem = (system: TranslationSystem, position?: { x: number; y: number }) => {
+    setHovered({ kind: "system", id: system });
+    onHover?.(translationSystemInspectorId(system), position);
+  };
+
+  const setEffect = (effect: TranslationEffect, position?: { x: number; y: number }) => {
+    setHovered({ kind: "effect", id: effect });
+    onHover?.(translationEffectInspectorId(effect), position);
+  };
+
+  const setCategory = (
+    category: EvidenceCategory,
+    position?: { x: number; y: number },
+  ) => {
+    setHovered({ kind: "category", id: category });
+    onHover?.(translationCategoryInspectorId(category), position);
+  };
+
+  const clearActive = () => {
     setHovered(null);
-    onHover(null);
-  }
+    onHover?.(null);
+  };
+
+  const featuredDefaultLabels = new Set([
+    "private distress",
+    "diagnostic threshold",
+    "score",
+    "prevalence",
+    "shared language",
+    "stigma drag",
+  ]);
+
+  const selectedPoint =
+    active?.kind === "point" ? translationEvidencePoints.find((point) => point.id === active.id) : null;
+  const boundaryX = (effectX("compressed") + effectX("amplified")) / 2;
 
   return (
-    <div className="relative bg-wheat py-0">
-      <div className="depression-translation-scroll overflow-x-auto">
-        <div className="relative min-w-[1160px] w-full">
-          <svg
-            viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-            className="depression-translation-map h-auto w-full select-none"
-            role="img"
-            aria-label="Semantic translation matrix showing evidence fragments by system and translation effect"
-            onMouseLeave={clearActive}
-          >
-            <defs>
-              <pattern id="depression-translation-matrix-grid" width="58" height="58" patternUnits="userSpaceOnUse">
-                <path d="M 58 0 L 0 0 0 58" fill="none" stroke={ink} strokeOpacity="0.026" strokeWidth="1" />
-              </pattern>
-            </defs>
+    <div className="relative overflow-x-auto border border-[#ddd4bd] bg-[#f7efd8]">
+      <div className="min-w-[1180px]">
+        <svg
+          viewBox={`0 0 ${layout.width} ${layout.height}`}
+          className="block h-auto w-full"
+          role="img"
+          aria-label="Depression semantic translation rain field"
+          onMouseLeave={clearActive}
+        >
+          <defs>
+            <pattern id="translation-rain-grid" width="44" height="44" patternUnits="userSpaceOnUse">
+              <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#cfc4aa" strokeWidth="1" opacity="0.5" />
+            </pattern>
+            <filter id="translation-dot-glow" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation="4" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
 
-            <rect width={WIDTH} height={HEIGHT} fill={paper} />
-            <rect width={WIDTH} height={HEIGHT} fill="url(#depression-translation-matrix-grid)" />
+          <rect width={layout.width} height={layout.height} fill="#f7efd8" />
+          <rect width={layout.width} height={layout.height} fill="url(#translation-rain-grid)" opacity="0.58" />
 
-            <g>
-              {translationSystems.map((system, index) => {
-                const x = chartLeft + index * colWidth;
-                const activeColumn = active?.kind === "system" && active.id === system.id;
-                return (
-                  <g
-                    key={system.id}
-                    className="cursor-crosshair"
-                    onMouseEnter={() => {
-                      setHovered({ kind: "system", id: system.id });
-                      onHover(translationSystemInspectorId(system.id));
-                    }}
-                    onClick={() => onInspect(translationSystemInspectorId(system.id))}
-                  >
-                    <rect x={x} y={chartTop - 78} width={colWidth} height={chartHeight + 98} fill={activeColumn ? ink : "transparent"} fillOpacity={activeColumn ? 0.035 : 0} />
-                    <line x1={x} x2={x} y1={chartTop} y2={chartTop + chartHeight} stroke={ink} strokeOpacity="0.12" />
-                    <text x={x + colWidth / 2} y={chartTop - 54} textAnchor="middle" fill={activeColumn ? ink : system.id === "public_discourse" ? "#B05B2A" : ink} opacity={activeColumn ? 0.94 : 0.78} fontFamily="monospace" fontSize="14" fontWeight="900" letterSpacing="1.1">
-                      {String(index + 1).padStart(2, "0")} / {system.shortLabel.toUpperCase()}
-                    </text>
-                    {splitLabel(system.label, 18).map((line, lineIndex) => (
-                      <text key={`${system.id}-${line}`} x={x + colWidth / 2} y={chartTop - 25 + lineIndex * 19} textAnchor="middle" fill={ink} opacity="0.86" fontFamily="Helvetica Neue, Helvetica, Arial, sans-serif" fontSize="16" fontWeight="900">
-                        {line}
+          <g transform="translate(72 58)">
+          </g>
+
+          <g>
+            <line
+              x1={boundaryX}
+              x2={boundaryX}
+              y1={layout.chartTop - 46}
+              y2={chartBottom + 18}
+              stroke="#050510"
+              strokeWidth="2"
+              opacity="0.52"
+            />
+            <text
+              x={boundaryX + 12}
+              y={layout.chartTop - 58}
+              fill="#a94f28"
+              fontSize="14"
+              fontWeight="800"
+              letterSpacing="3"
+            >
+              SYSTEM BOUNDARY
+            </text>
+          </g>
+
+          {translationEffects.map((effect) => {
+            const x = effectX(effect.id);
+            const isActive = active?.kind === "effect" && active.id === effect.id;
+            return (
+              <g
+                key={effect.id}
+                className="cursor-crosshair"
+                onMouseEnter={(event) => setEffect(effect.id, { x: event.clientX, y: event.clientY })}
+                onMouseMove={(event) => onHover?.(translationEffectInspectorId(effect.id), { x: event.clientX, y: event.clientY })}
+                onClick={(event) => {
+                  event.stopPropagation();
+                  onInspect?.(translationEffectInspectorId(effect.id), { x: event.clientX, y: event.clientY });
+                }}
+              >
+                <line
+                  x1={x}
+                  x2={x}
+                  y1={layout.chartTop - 18}
+                  y2={chartBottom + 14}
+                  stroke={isActive ? "#050510" : "#8a826f"}
+                  strokeWidth={isActive ? 2.4 : 1}
+                  opacity={isActive ? 0.75 : 0.28}
+                />
+                <text
+                  x={x}
+                  y={layout.chartTop - 118}
+                  textAnchor="middle"
+                  fill={isActive ? "#050510" : "#6b665b"}
+                  fontSize="15"
+                  fontWeight="900"
+                  letterSpacing="2"
+                >
+                  {effect.label.toUpperCase()}
+                </text>
+                <text
+                  x={x}
+                  y={layout.chartTop - 84}
+                  textAnchor="middle"
+                  fill="#554f45"
+                  fontSize="10"
+                  fontWeight="900"
+                  letterSpacing="1"
+                >
+                  {effect.note.toUpperCase()}
+                </text>
+              </g>
+            );
+          })}
+
+          {systemSummaries.map((summary) => {
+            const y = systemY(summary.system.id);
+            const activeRow = active?.kind === "system" && active.id === summary.system.id;
+            const retainedWidth = summary.retainedShare * layout.summaryScale;
+            const alteredWidth = summary.alteredShare * layout.summaryScale;
+            const rowOpacity = active && !activeRow && active.kind === "system" ? 0.22 : 1;
+
+            return (
+              <g
+                key={summary.system.id}
+                className="cursor-crosshair"
+                opacity={rowOpacity}
+                onMouseEnter={(event) => setSystem(summary.system.id, { x: event.clientX, y: event.clientY })}
+                onMouseMove={(event) => onHover?.(translationSystemInspectorId(summary.system.id), { x: event.clientX, y: event.clientY })}
+                onClick={(event) => {
+                  event.stopPropagation();
+                  onInspect?.(translationSystemInspectorId(summary.system.id), { x: event.clientX, y: event.clientY });
+                }}
+              >
+                <rect
+                  x={layout.chartLeft}
+                  y={y - layout.rowHeight / 2 + 8}
+                  width={layout.width - layout.chartLeft - 76}
+                  height={layout.rowHeight - 16}
+                  fill={activeRow ? "#fff8df" : "transparent"}
+                  opacity="0.52"
+                />
+                <line x1={layout.chartLeft} x2={layout.width - 78} y1={y} y2={y} stroke="#756d60" strokeWidth="1.2" opacity="0.62" />
+                <text x={layout.chartLeft} y={y - 10} fill="#050510" fontSize="24" fontWeight="900" letterSpacing="4">
+                  {String(summary.index + 1).padStart(2, "0")}
+                </text>
+                <text x={layout.chartLeft + 54} y={y - 12} fill="#050510" fontSize="18" fontWeight="900" letterSpacing="3">
+                  {summary.system.label.toUpperCase()}
+                </text>
+                <text x={layout.chartLeft + 54} y={y + 16} fill="#4d473d" fontSize="12" fontWeight="900" letterSpacing="2.4">
+                  {summary.points.length} FRAGMENTS / {summary.system.shortLabel.toUpperCase()}
+                </text>
+
+                <line x1={layout.effectStart - 22} x2={layout.effectEnd + 24} y1={y} y2={y} stroke="#050510" strokeWidth="1.3" opacity="0.42" />
+                <circle cx={layout.effectStart - 22} cy={y} r="4" fill="#050510" opacity="0.52" />
+                <circle cx={layout.effectEnd + 24} cy={y} r="4" fill="#050510" opacity="0.52" />
+
+                <line x1={layout.summaryCenter} x2={layout.summaryCenter} y1={y - 31} y2={y + 31} stroke="#050510" strokeWidth="1" opacity="0.48" />
+                <rect
+                  x={layout.summaryCenter - retainedWidth}
+                  y={y - 17}
+                  width={retainedWidth}
+                  height="13"
+                  fill="#0079B8"
+                  opacity="0.88"
+                  className="summary-bar-left"
+                />
+                <rect
+                  x={layout.summaryCenter}
+                  y={y + 5}
+                  width={alteredWidth}
+                  height="13"
+                  fill="#C24C18"
+                  opacity="0.84"
+                  className="summary-bar-right"
+                />
+                <text x={layout.summaryLeft} y={y - 24} fill="#453f36" fontSize="12" fontWeight="900" letterSpacing="2">
+                  KEPT
+                </text>
+                <text x={layout.summaryCenter + 78} y={y + 28} fill="#453f36" fontSize="12" fontWeight="900" letterSpacing="2">
+                  BENT
+                </text>
+              </g>
+            );
+          })}
+
+          {translationConnections.map((connection, index) => {
+            const source = pointPositions.get(connection.sourceId);
+            const target = pointPositions.get(connection.targetId);
+            if (!source || !target) return null;
+            const isActive = active?.kind === "point" && connectedIds.has(connection.sourceId) && connectedIds.has(connection.targetId);
+            const sourcePoint = pointById.get(connection.sourceId);
+            const categoryColor = sourcePoint
+              ? translationCategoryStyles[sourcePoint.category].color
+              : "#050510";
+            return (
+              <path
+                key={connection.id}
+                d={connectionPath(source, target, index)}
+                fill="none"
+                stroke={isActive ? categoryColor : "#050510"}
+                strokeWidth={isActive ? 2.2 : 0.8}
+                strokeDasharray={index % 2 === 0 ? "5 9" : "1 8"}
+                opacity={isActive ? 0.58 : 0.14}
+                pointerEvents="none"
+              />
+            );
+          })}
+
+          {translationEvidencePoints.map((point, pointIndex) => {
+            const position = pointPositions.get(point.id);
+            if (!position) return null;
+            const category = translationCategoryStyles[point.category];
+            const visible = activeMatchesPoint(point);
+            const isActivePoint = active?.kind === "point" && active.id === point.id;
+            const showLabel =
+              isActivePoint ||
+              (!active && point.defaultLabel && featuredDefaultLabels.has(point.label));
+            const labelLines = splitLabel(point.label, 18).slice(0, 2);
+            const labelWidth = Math.max(
+              150,
+              Math.min(380, Math.max(...labelLines.map((line) => line.length)) * 15 + 58),
+            );
+            const labelX = Math.min(layout.width - labelWidth - 86, position.x + 18);
+            const labelY = position.y - 30;
+            const microDots = Array.from({ length: dotCount(point) });
+
+            return (
+              <g
+                key={point.id}
+                className="cursor-crosshair"
+                opacity={visible ? 1 : 0.14}
+                onMouseEnter={(event) => setPoint(point, { x: event.clientX, y: event.clientY })}
+                onMouseMove={(event) => onHover?.(translationPointInspectorId(point.id), { x: event.clientX, y: event.clientY })}
+                onClick={(event) => {
+                  event.stopPropagation();
+                  onInspect?.(translationPointInspectorId(point.id), { x: event.clientX, y: event.clientY });
+                }}
+              >
+                <circle cx={position.x} cy={position.y} r="30" fill="transparent" />
+                {microDots.map((_, microIndex) => {
+                  const dx = jitter(`${point.id}-dot-x-${microIndex}`, 38);
+                  const dy = jitter(`${point.id}-dot-y-${microIndex}`, 24);
+                  const radius = pointRadius(point) * (0.42 + hashValue(`${point.id}-r-${microIndex}`) * 0.42);
+                  return (
+                    <circle
+                      key={`${point.id}-${microIndex}`}
+                      cx={position.x + dx}
+                      cy={position.y + dy}
+                      r={radius}
+                      fill={category.color}
+                      opacity={isActivePoint ? 0.92 : 0.28 + point.weight * 0.42}
+                      className="translation-breath-dot"
+                      style={{ animationDelay: `${(pointIndex + microIndex) * 0.11}s` }}
+                    />
+                  );
+                })}
+                <circle
+                  cx={position.x}
+                  cy={position.y}
+                  r={isActivePoint ? 22 : 14 + point.weight * 12}
+                  fill={category.color}
+                  opacity={isActivePoint ? 0.82 : 0.24}
+                  filter={isActivePoint ? "url(#translation-dot-glow)" : undefined}
+                />
+                <circle
+                  cx={position.x}
+                  cy={position.y}
+                  r={isActivePoint ? 28 : 18}
+                  fill="none"
+                  stroke={category.color}
+                  strokeWidth={isActivePoint ? 3 : 1.2}
+                  opacity={isActivePoint ? 0.92 : 0.35}
+                />
+                {showLabel && (
+                  <g pointerEvents="none" className="translation-label-card">
+                    <line x1={position.x} y1={position.y} x2={labelX + 14} y2={labelY + 22} stroke={category.color} strokeWidth="2" opacity="0.88" />
+                    <rect
+                      x={labelX}
+                      y={labelY}
+                      width={labelWidth}
+                      height={labelLines.length > 1 ? 82 : 58}
+                      fill="#fff6d8"
+                      stroke={category.color}
+                      strokeWidth="2"
+                    />
+                    {labelLines.map((line, lineIndex) => (
+                      <text
+                        key={line}
+                        x={labelX + 14}
+                        y={labelY + 27 + lineIndex * 22}
+                        fill="#050510"
+                        fontSize="15"
+                        fontWeight="900"
+                        letterSpacing="1.2"
+                      >
+                        {line.toUpperCase()}
                       </text>
                     ))}
                   </g>
-                );
-              })}
-              <line x1={chartLeft + chartWidth} x2={chartLeft + chartWidth} y1={chartTop} y2={chartTop + chartHeight} stroke={ink} strokeOpacity="0.12" />
-            </g>
+                )}
+              </g>
+            );
+          })}
 
-            <g>
-              {translationEffects.map((effect, index) => {
-                const y = chartTop + index * rowHeight;
-                const activeRow = active?.kind === "effect" && active.id === effect.id;
-                return (
-                  <g
-                    key={effect.id}
-                    className="cursor-crosshair"
-                    onMouseEnter={() => {
-                      setHovered({ kind: "effect", id: effect.id });
-                      onHover(translationEffectInspectorId(effect.id));
-                    }}
-                    onClick={() => onInspect(translationEffectInspectorId(effect.id))}
-                  >
-                    <rect x={chartLeft - 190} y={y} width={chartWidth + 190} height={rowHeight} fill={activeRow ? ink : "transparent"} fillOpacity={activeRow ? 0.035 : 0} />
-                    <line x1={chartLeft} x2={chartLeft + chartWidth} y1={y} y2={y} stroke={ink} strokeOpacity="0.12" />
-                    <text x={chartLeft - 24} y={y + 40} textAnchor="end" fill={activeRow ? ink : "#403E3B"} opacity={activeRow ? 0.94 : 0.82} fontFamily="Helvetica Neue, Helvetica, Arial, sans-serif" fontSize="20" fontWeight="900">
-                      {effect.label}
-                    </text>
-                    <text x={chartLeft - 24} y={y + 66} textAnchor="end" fill={ink} opacity="0.52" fontFamily="monospace" fontSize="13" fontWeight="900" letterSpacing="0.45">
-                      {effect.note}
-                    </text>
-                  </g>
-                );
-              })}
-              <line x1={chartLeft} x2={chartLeft + chartWidth} y1={chartTop + chartHeight} y2={chartTop + chartHeight} stroke={ink} strokeOpacity="0.12" />
-            </g>
+          <g transform={`translate(${layout.chartLeft} ${chartBottom + 82})`}>
+            <text x="0" y="0" fill="#a94f28" fontSize="16" fontWeight="900" letterSpacing="4">
+              CATEGORY COLOUR KEY
+            </text>
+            {(Object.keys(translationCategoryStyles) as EvidenceCategory[]).map((categoryId, index) => {
+              const style = translationCategoryStyles[categoryId];
+              const x = (index % 3) * 360;
+              const y = 42 + Math.floor(index / 3) * 42;
+              const isActive = active?.kind === "category" && active.id === categoryId;
+              return (
+                <g
+                  key={categoryId}
+                  transform={`translate(${x} ${y})`}
+                  className="cursor-crosshair"
+                  onMouseEnter={(event) => setCategory(categoryId, { x: event.clientX, y: event.clientY })}
+                  onMouseMove={(event) => onHover?.(translationCategoryInspectorId(categoryId), { x: event.clientX, y: event.clientY })}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    onInspect?.(translationCategoryInspectorId(categoryId), { x: event.clientX, y: event.clientY });
+                  }}
+                >
+                  <rect x="0" y="-14" width="30" height="14" fill={style.color} opacity={isActive ? 1 : 0.72} />
+                  <text x="42" y="0" fill="#050510" fontSize="15" fontWeight="900" letterSpacing="2.2">
+                    {style.label.toUpperCase()}
+                  </text>
+                </g>
+              );
+            })}
+          </g>
 
-            <g>
-              {translationConnections.map((connection, index) => {
-                const source = pointPositions.get(connection.sourceId);
-                const target = pointPositions.get(connection.targetId);
-                if (!source || !target) return null;
-                const activeConnection =
-                  active?.kind === "point" &&
-                  (active.id === connection.sourceId || active.id === connection.targetId);
-                const dimmed = Boolean(active && !activeConnection);
-                const labelPoint = connectionLabelPoint(source, target, connection, index);
-                return (
-                  <g key={connection.id} opacity={dimmed ? 0.12 : 1}>
-                    <path
-                      d={connectionPath(source, target, index)}
-                      fill="none"
-                      stroke={ink}
-                      strokeOpacity={activeConnection ? 0.42 : 0.18}
-                      strokeWidth={n(activeConnection ? 1.6 + connection.strength * 1.7 : 1.1 + connection.strength)}
-                      strokeDasharray="5 7"
-                      strokeLinecap="round"
-                    />
-                    <text
-                      x={n(labelPoint.x)}
-                      y={n(labelPoint.y)}
-                      textAnchor="middle"
-                      fill={ink}
-                      opacity={activeConnection ? 0.78 : 0.48}
-                      fontFamily="monospace"
-                      fontSize={activeConnection ? "12.5" : "11.8"}
-                      fontWeight="900"
-                      letterSpacing="0.35"
-                      paintOrder="stroke"
-                      stroke={paper}
-                      strokeWidth="6"
-                      strokeLinejoin="round"
-                    >
-                      {connection.label}
-                    </text>
-                  </g>
-                );
-              })}
-            </g>
+          <g transform={`translate( 104)`}>
+          </g>
 
-            <g>
-              {translationEvidencePoints.map((point) => {
-                const position = pointPositions.get(point.id);
-                if (!position) return null;
-                const category = translationCategoryStyles[point.category];
-                const activePoint = active?.kind === "point" && active.id === point.id;
-                const visible = activeMatches(point);
-                const dimmed = Boolean(active && !visible);
-                const showLabel = activePoint || (!active && point.defaultLabel);
-                const radius = pointRadius(point);
-                const labelOffset = labelOffsets[point.id] ?? { x: 0, y: -radius - 13, anchor: "middle" as const };
-                const labelFontSize = activePoint ? 14 : 13;
-                const labelBox = pointLabelBox(point.label, labelFontSize);
-                const labelX = position.x + labelOffset.x;
-                const labelY = position.y + labelOffset.y;
-                return (
-                  <g
-                    key={point.id}
-                    className="cursor-crosshair depression-translation-satellite"
-                    opacity={dimmed ? 0.16 : activePoint ? 1 : active ? 0.84 : 0.78}
-                    onMouseEnter={() => setPoint(point)}
-                    onMouseMove={() => setPoint(point)}
-                    onClick={() => onInspect(translationPointInspectorId(point.id))}
-                  >
-                    <circle cx={position.x} cy={position.y} r={radius + 9} fill="transparent" />
-                    <circle
-                      cx={position.x}
-                      cy={position.y}
-                      r={radius}
-                      fill={category.color}
-                      fillOpacity={activePoint ? 0.92 : 0.68}
-                      stroke={activePoint ? ink : category.color}
-                      strokeOpacity={activePoint ? 0.82 : 0.62}
-                      strokeWidth={activePoint ? 2.3 : 1.1}
-                    />
-                    <circle cx={position.x} cy={position.y} r={Math.max(2.8, radius * 0.32)} fill={paper} fillOpacity={activePoint ? 0.88 : 0.54} />
-                    {showLabel ? (
-                      <g>
-                        <rect
-                          x={labelOffset.anchor === "end" ? labelX - labelBox.width : labelOffset.anchor === "start" ? labelX : labelX - labelBox.width / 2}
-                          y={labelY - labelBox.height + 4}
-                          width={labelBox.width}
-                          height={labelBox.height}
-                          rx="4"
-                          fill={labelPaper}
-                          fillOpacity={activePoint ? 0.9 : 0.76}
-                          stroke={category.color}
-                          strokeOpacity={activePoint ? 0.34 : 0.16}
-                          strokeWidth="0.8"
-                        />
-                        <text
-                          x={labelX}
-                          y={labelY}
-                          textAnchor={labelOffset.anchor ?? "middle"}
-                          fill={ink}
-                          opacity={activePoint ? 0.94 : 0.76}
-                          fontFamily="monospace"
-                          fontSize={labelFontSize}
-                          fontWeight="900"
-                          letterSpacing="0.2"
-                        >
-                          {point.label}
-                        </text>
-                      </g>
-                    ) : null}
-                  </g>
-                );
-              })}
-            </g>
-
-            <g transform="translate(278 758)">
-              <line x1="0" x2="610" y1="0" y2="0" stroke={ink} strokeOpacity="0.24" strokeWidth="1.2" />
-              <text x="0" y="30" fill={ink} opacity="0.68" fontFamily="monospace" fontSize="13" fontWeight="900" letterSpacing="0.45">
-                <tspan x="0">Hover details appear in the fixed annotation strip at the bottom of the page.</tspan>
-                <tspan x="0" dy="22">Matrix axes remain visible while the selected fragment is explained below.</tspan>
+          {selectedPoint && (
+            <g transform={`translate(${layout.summaryLeft} ${chartBottom + 34})`} pointerEvents="none">
+              <rect x="0" y="0" width="338" height="112" fill="#fff6d8" stroke={translationCategoryStyles[selectedPoint.category].color} strokeWidth="2" />
+              <text x="20" y="32" fill="#050510" fontSize="19" fontWeight="900" letterSpacing="2">
+                {selectedPoint.label.toUpperCase()}
+              </text>
+              <text x="20" y="61" fill="#453f36" fontSize="13" fontWeight="900" letterSpacing="2">
+                {translationSystems.find((system) => system.id === selectedPoint.system)?.label.toUpperCase()}
+              </text>
+              <text x="20" y="88" fill="#453f36" fontSize="13" fontWeight="900" letterSpacing="2">
+                {translationEffects.find((effect) => effect.id === selectedPoint.effect)?.label.toUpperCase()} / WEIGHT {n(selectedPoint.weight)}
               </text>
             </g>
+          )}
+        </svg>
+        <style>{`
+          .translation-breath-dot {
+            transform-box: fill-box;
+            transform-origin: center;
+            animation: translation-breathe 4.8s ease-in-out infinite;
+          }
 
-            <g transform="translate(1012 760)">
-              <text x="0" y="0" fill={ink} opacity="0.62" fontFamily="monospace" fontSize="13" fontWeight="900" letterSpacing="1.2">
-                CATEGORY
-              </text>
-              {(Object.keys(translationCategoryStyles) as EvidenceCategory[]).map((categoryId, index) => {
-                const category = translationCategoryStyles[categoryId];
-                const activeCategory = active?.kind === "category" && active.id === categoryId;
-                const x = (index % 3) * 206;
-                const y = 32 + Math.floor(index / 3) * 32;
-                return (
-                  <g
-                    key={categoryId}
-                    className="cursor-crosshair"
-                    transform={`translate(${x} ${y})`}
-                    opacity={active && !activeCategory ? 0.5 : 1}
-                    onMouseEnter={() => {
-                      setHovered({ kind: "category", id: categoryId });
-                      onHover(translationCategoryInspectorId(categoryId));
-                    }}
-                    onClick={() => onInspect(translationCategoryInspectorId(categoryId))}
-                  >
-                    <circle cx="0" cy="-4" r={activeCategory ? 7 : 5.8} fill={category.color} fillOpacity="0.72" />
-                    <text x="17" y="0" fill={ink} opacity={activeCategory ? 0.88 : 0.68} fontFamily="monospace" fontSize="13" fontWeight="900" letterSpacing="0.35">
-                      {category.label.toUpperCase()}
-                    </text>
-                  </g>
-                );
-              })}
-            </g>
-          </svg>
+          .summary-bar-left,
+          .summary-bar-right {
+            transform-box: fill-box;
+            transform-origin: center left;
+            animation: translation-bar-draw 1.15s ease-out both;
+          }
 
-        </div>
+          .mono-title,
+          .mono-note {
+            font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+          }
+
+          @keyframes translation-breathe {
+            0%, 100% { transform: scale(0.84); opacity: 0.34; }
+            48% { transform: scale(1.16); opacity: 0.76; }
+          }
+
+          @keyframes translation-bar-draw {
+            from { transform: scaleX(0); opacity: 0.18; }
+            to { transform: scaleX(1); }
+          }
+
+          @media (prefers-reduced-motion: reduce) {
+            .translation-breath-dot,
+            .summary-bar-left,
+            .summary-bar-right {
+              animation: none;
+            }
+          }
+        `}</style>
       </div>
     </div>
   );

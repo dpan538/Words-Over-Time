@@ -113,14 +113,14 @@ const MODULE = 52;
 
 const ink = "#050510";
 const paper = "#F5ECD2";
-const silver = "#A8A39A";
-const orange = "#F06B04";
-const ochre = "#FBB728";
-const blue = "#2C9FC7";
-const deepBlue = "#1570AC";
+const silver = "#7F786B";
+const orange = "#F65B00";
+const ochre = "#F2A900";
+const blue = "#009FCE";
+const deepBlue = "#006FB6";
 const wine = "#A1081F";
 const rust = "#AE4202";
-const green = "#5FCA00";
+const green = "#269A00";
 const deepGreen = "#036C17";
 
 const phases: Phase[] = [
@@ -1352,7 +1352,7 @@ export function DepressionSemanticPlate({
                 <text x="112" y={n(phase.y0 + 60)} fill={deepBlue} opacity="0.86" fontFamily="monospace" fontSize="14" fontWeight="900" letterSpacing="0.9">
                   {phase.years}
                 </text>
-                <text x="112" y={n(phase.y0 + 84)} fill={ink} opacity="0.56" fontFamily="monospace" fontSize="13" fontWeight="900" letterSpacing="0.3">
+                <text x="112" y={n(phase.y0 + 84)} fill={ink} opacity="0.7" fontFamily="monospace" fontSize="13" fontWeight="900" letterSpacing="0.3">
                   {phase.note}
                 </text>
               </g>
@@ -1366,13 +1366,13 @@ export function DepressionSemanticPlate({
             <text x="96" y="116" fill={ink} fontFamily="Helvetica Neue, Helvetica, Arial, sans-serif" fontSize="38" fontWeight="900">
               Depression as a historical semantic axis
             </text>
-            <text x="98" y="150" fill={ink} opacity="0.58" fontFamily="Helvetica Neue, Helvetica, Arial, sans-serif" fontSize="18" fontWeight="800">
+            <text x="98" y="150" fill={ink} opacity="0.72" fontFamily="Helvetica Neue, Helvetica, Arial, sans-serif" fontSize="18" fontWeight="800">
               a reduced timeline of attestation, sense branching, frequency, and evidence support
             </text>
-            <text x={n(WIDTH - 96)} y="82" textAnchor="end" fill={ink} opacity="0.5" fontFamily="monospace" fontSize="15" fontWeight="900" letterSpacing="1.4">
+            <text x={n(WIDTH - 96)} y="82" textAnchor="end" fill={ink} opacity="0.78" fontFamily="monospace" fontSize="15" fontWeight="900" letterSpacing="1.4">
               axis / dates / branches / evidence
             </text>
-            <text x={n(WIDTH - 96)} y="108" textAnchor="end" fill={ink} opacity="0.42" fontFamily="monospace" fontSize="14" fontWeight="900" letterSpacing="0.8">
+            <text x={n(WIDTH - 96)} y="108" textAnchor="end" fill={ink} opacity="0.72" fontFamily="monospace" fontSize="14" fontWeight="900" letterSpacing="0.8">
               visual marks reduced to source support
             </text>
           </g>
@@ -1390,7 +1390,7 @@ export function DepressionSemanticPlate({
               return (
                 <g key={`year-${year}`}>
                   <line x1={n(SPINE_X - 34)} x2={n(SPINE_X + 34)} y1={n(y)} y2={n(y)} stroke={ink} strokeOpacity="0.76" strokeWidth={year === 1300 || year === 2026 ? "3" : "1.7"} />
-                  <text x={n(SPINE_X - 50)} y={n(y + 6)} textAnchor="end" fill={ink} opacity="0.66" fontFamily="monospace" fontSize="16" fontWeight="900" letterSpacing="0.9">
+                  <text x={n(SPINE_X - 50)} y={n(y + 6)} textAnchor="end" fill={ink} opacity="0.78" fontFamily="monospace" fontSize="16" fontWeight="900" letterSpacing="0.9">
                     {year}
                   </text>
                 </g>
@@ -1486,7 +1486,7 @@ export function DepressionSemanticPlate({
                     x={n(titleX)}
                     y={n(recordsY)}
                     fill={ink}
-                    opacity="0.68"
+                    opacity="0.8"
                     fontFamily="monospace"
                     fontSize={isCompactBranch ? "13" : "15"}
                     fontWeight="900"
@@ -1587,7 +1587,7 @@ export function DepressionSemanticPlate({
           </g>
 
           <g opacity="0.86">
-            <rect x="96" y={n(HEIGHT - 116)} width={n(WIDTH - 192)} height="1.4" fill={ink} opacity="0.58" />
+            <rect x="96" y={n(HEIGHT - 116)} width={n(WIDTH - 192)} height="1.4" fill={ink} opacity="0.72" />
             {[
               ["axis", "historical number line", ink],
               ["colored rows", "semantic branch support", orange],
@@ -1598,7 +1598,7 @@ export function DepressionSemanticPlate({
                 <text x="18" y="0" fill={ink} fontFamily="Helvetica Neue, Helvetica, Arial, sans-serif" fontSize="16" fontWeight="900">
                   {label}
                 </text>
-                <text x="18" y="25" fill={ink} opacity="0.52" fontFamily="monospace" fontSize="15" fontWeight="900" letterSpacing="0.6">
+                <text x="18" y="25" fill={ink} opacity="0.8" fontFamily="monospace" fontSize="15" fontWeight="900" letterSpacing="0.6">
                   {description}
                 </text>
               </g>

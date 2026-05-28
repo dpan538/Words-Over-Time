@@ -1,0 +1,4900 @@
+{
+  "word": "privacy",
+  "layer_id": "geo_attention_map",
+  "status": "source_supported_for_chart02a",
+  "intended_use": "chart02a_global_hotspot_and_radiation_map",
+  "title": "Privacy geographic attention map",
+  "description": "Map-ready global layer for privacy attention, discourse, and research geography.",
+  "generated_at": "2026-05-28T01:08:08.518266Z",
+  "generated_by_script": "scripts/process_privacy_geo_attention_map.py",
+  "source_layer": "docs/research/privacy/processed/privacy_geo_spatial_metrics_processed.json",
+  "map_projection": {
+    "projection": "equirectangular",
+    "scope": "global_horizontal_map",
+    "notes": [
+      "The map is a flat world projection, not a globe.",
+      "Country hotspots are density signals from recovered country-level records.",
+      "Radiation links are high-probability visual paths from concentrated hubs, not causal claims."
+    ]
+  },
+  "statistics": {
+    "source_total_records": 139071,
+    "map_country_count": 58,
+    "map_city_point_count": 90,
+    "radiation_link_count": 34,
+    "elevation_point_count": 90,
+    "top_country": "United States",
+    "top_country_record_count": 18615,
+    "google_trends_available": false
+  },
+  "sources": [
+    {
+      "source_id": "openalex_works_institutions",
+      "source_type": "academic_geo_distribution",
+      "role_in_map": "country and city/institution density",
+      "status": "usable"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "role_in_map": "country-level news/source attention",
+      "status": "usable_partial"
+    },
+    {
+      "source_id": "google_trends",
+      "source_type": "search_interest_by_region",
+      "role_in_map": "not used",
+      "status": "unavailable"
+    },
+    {
+      "source_id": "open_elevation",
+      "source_type": "elevation_enrichment",
+      "role_in_map": "stored for later 02B only",
+      "status": "usable_for_coordinate_subset"
+    }
+  ],
+  "country_hotspots": [
+    {
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 38.9,
+      "longitude": -77.04,
+      "record_count": 18615,
+      "academic_records": 18131,
+      "news_records": 484,
+      "weighted_score": 18784.4,
+      "top_queries": [
+        {
+          "query": "personal data protection Pakistan",
+          "count": 1167
+        },
+        {
+          "query": "personal data Russia",
+          "count": 1050
+        },
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 1032
+        },
+        {
+          "query": "data protection Mexico",
+          "count": 700
+        },
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 680
+        }
+      ],
+      "peak_year": 2018,
+      "density_score": 1.0,
+      "density_class": "very_high",
+      "dot_count": 48
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.5,
+      "longitude": -0.12,
+      "record_count": 6109,
+      "academic_records": 5977,
+      "news_records": 132,
+      "weighted_score": 6155.2,
+      "top_queries": [
+        {
+          "query": "privacy Ecuador",
+          "count": 354
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 298
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 269
+        },
+        {
+          "query": "data protection Kenya",
+          "count": 178
+        },
+        {
+          "query": "privacy Nepal",
+          "count": 172
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.3277,
+      "density_class": "medium",
+      "dot_count": 29
+    },
+    {
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 39.9,
+      "longitude": 116.4,
+      "record_count": 3267,
+      "academic_records": 2942,
+      "news_records": 325,
+      "weighted_score": 3380.75,
+      "top_queries": [
+        {
+          "query": "data protection China",
+          "count": 277
+        },
+        {
+          "query": "privacy Mongolia",
+          "count": 188
+        },
+        {
+          "query": "data protection Taiwan",
+          "count": 178
+        },
+        {
+          "query": "China data security law privacy",
+          "count": 173
+        },
+        {
+          "query": "privacy China",
+          "count": 158
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.18,
+      "density_class": "medium",
+      "dot_count": 22
+    },
+    {
+      "country": "Australia",
+      "country_code": "AU",
+      "latitude": -35.28,
+      "longitude": 149.13,
+      "record_count": 2244,
+      "academic_records": 2183,
+      "news_records": 61,
+      "weighted_score": 2265.35,
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 140
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 107
+        },
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 85
+        },
+        {
+          "query": "privacy Laos",
+          "count": 70
+        },
+        {
+          "query": "personal information protection Korea",
+          "count": 65
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.1206,
+      "density_class": "low",
+      "dot_count": 19
+    },
+    {
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 45.42,
+      "longitude": -75.69,
+      "record_count": 1743,
+      "academic_records": 1607,
+      "news_records": 136,
+      "weighted_score": 1790.6,
+      "top_queries": [
+        {
+          "query": "personal information protection Korea",
+          "count": 64
+        },
+        {
+          "query": "data privacy act Philippines",
+          "count": 58
+        },
+        {
+          "query": "privacy Middle East",
+          "count": 56
+        },
+        {
+          "query": "PIPA privacy Korea",
+          "count": 55
+        },
+        {
+          "query": "privacy Korea PIPA",
+          "count": 55
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0953,
+      "density_class": "low",
+      "dot_count": 17
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "latitude": 52.52,
+      "longitude": 13.4,
+      "record_count": 1703,
+      "academic_records": 1621,
+      "news_records": 82,
+      "weighted_score": 1731.7,
+      "top_queries": [
+        {
+          "query": "152-FZ privacy Russia",
+          "count": 64
+        },
+        {
+          "query": "privacy settings",
+          "count": 62
+        },
+        {
+          "query": "privacy Panama",
+          "count": 56
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 49
+        },
+        {
+          "query": "privacy Singapore",
+          "count": 45
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0922,
+      "density_class": "low",
+      "dot_count": 17
+    },
+    {
+      "country": "India",
+      "country_code": "IN",
+      "latitude": 28.61,
+      "longitude": 77.21,
+      "record_count": 1549,
+      "academic_records": 1450,
+      "news_records": 99,
+      "weighted_score": 1583.65,
+      "top_queries": [
+        {
+          "query": "DPDP Act privacy",
+          "count": 141
+        },
+        {
+          "query": "privacy India",
+          "count": 133
+        },
+        {
+          "query": "PIPL privacy China",
+          "count": 66
+        },
+        {
+          "query": "personal data Russia",
+          "count": 61
+        },
+        {
+          "query": "APPI privacy Japan",
+          "count": 59
+        }
+      ],
+      "peak_year": 2024,
+      "density_score": 0.0843,
+      "density_class": "low",
+      "dot_count": 16
+    },
+    {
+      "country": "Brazil",
+      "country_code": "BR",
+      "latitude": -23.55,
+      "longitude": -46.63,
+      "record_count": 1295,
+      "academic_records": 1199,
+      "news_records": 96,
+      "weighted_score": 1328.6,
+      "top_queries": [
+        {
+          "query": "data protection Brazil",
+          "count": 371
+        },
+        {
+          "query": "privacy Brazil",
+          "count": 301
+        },
+        {
+          "query": "LGPD privacy",
+          "count": 200
+        },
+        {
+          "query": "privacy Venezuela",
+          "count": 40
+        },
+        {
+          "query": "privacy Colombia",
+          "count": 27
+        }
+      ],
+      "peak_year": 2021,
+      "density_score": 0.0707,
+      "density_class": "low",
+      "dot_count": 15
+    },
+    {
+      "country": "South Africa",
+      "country_code": "ZA",
+      "latitude": -26.2,
+      "longitude": 28.04,
+      "record_count": 1262,
+      "academic_records": 1225,
+      "news_records": 37,
+      "weighted_score": 1274.95,
+      "top_queries": [
+        {
+          "query": "data protection Africa",
+          "count": 309
+        },
+        {
+          "query": "POPIA privacy",
+          "count": 265
+        },
+        {
+          "query": "privacy South Africa",
+          "count": 131
+        },
+        {
+          "query": "privacy law Africa",
+          "count": 56
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 36
+        }
+      ],
+      "peak_year": 2021,
+      "density_score": 0.0679,
+      "density_class": "low",
+      "dot_count": 15
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "latitude": 52.37,
+      "longitude": 4.9,
+      "record_count": 1226,
+      "academic_records": 1225,
+      "news_records": 1,
+      "weighted_score": 1226.35,
+      "top_queries": [
+        {
+          "query": "privacy Morocco",
+          "count": 70
+        },
+        {
+          "query": "data protection Kenya",
+          "count": 48
+        },
+        {
+          "query": "APPI privacy Japan",
+          "count": 48
+        },
+        {
+          "query": "privacy Japan APPI",
+          "count": 48
+        },
+        {
+          "query": "privacy Rwanda",
+          "count": 42
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0653,
+      "density_class": "low",
+      "dot_count": 14
+    },
+    {
+      "country": "Italy",
+      "country_code": "IT",
+      "latitude": 41.9,
+      "longitude": 12.5,
+      "record_count": 1143,
+      "academic_records": 1093,
+      "news_records": 50,
+      "weighted_score": 1160.5,
+      "top_queries": [
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 157
+        },
+        {
+          "query": "privacy Chile",
+          "count": 40
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 38
+        },
+        {
+          "query": "privacy Venezuela",
+          "count": 36
+        },
+        {
+          "query": "privacy Colombia",
+          "count": 33
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0618,
+      "density_class": "low",
+      "dot_count": 14
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "latitude": 48.86,
+      "longitude": 2.35,
+      "record_count": 1154,
+      "academic_records": 1148,
+      "news_records": 6,
+      "weighted_score": 1156.1,
+      "top_queries": [
+        {
+          "query": "privacy Costa Rica",
+          "count": 58
+        },
+        {
+          "query": "privacy Venezuela",
+          "count": 57
+        },
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 55
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 49
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 43
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0615,
+      "density_class": "low",
+      "dot_count": 14
+    },
+    {
+      "country": "Spain",
+      "country_code": "ES",
+      "latitude": 40.42,
+      "longitude": -3.7,
+      "record_count": 1136,
+      "academic_records": 1103,
+      "news_records": 33,
+      "weighted_score": 1147.55,
+      "top_queries": [
+        {
+          "query": "privacy Costa Rica",
+          "count": 82
+        },
+        {
+          "query": "privacy Chile",
+          "count": 67
+        },
+        {
+          "query": "privacy Colombia",
+          "count": 62
+        },
+        {
+          "query": "privacy Uruguay",
+          "count": 62
+        },
+        {
+          "query": "APPI privacy Japan",
+          "count": 60
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0611,
+      "density_class": "low",
+      "dot_count": 14
+    },
+    {
+      "country": "Japan",
+      "country_code": "JP",
+      "latitude": 35.68,
+      "longitude": 139.76,
+      "record_count": 1047,
+      "academic_records": 1014,
+      "news_records": 33,
+      "weighted_score": 1058.55,
+      "top_queries": [
+        {
+          "query": "privacy Japan",
+          "count": 181
+        },
+        {
+          "query": "personal information protection Japan",
+          "count": 172
+        },
+        {
+          "query": "Act on Protection of Personal Information Japan",
+          "count": 140
+        },
+        {
+          "query": "APPI privacy Japan",
+          "count": 67
+        },
+        {
+          "query": "privacy Japan APPI",
+          "count": 67
+        }
+      ],
+      "peak_year": 2021,
+      "density_score": 0.0564,
+      "density_class": "trace",
+      "dot_count": 14
+    },
+    {
+      "country": "China Taiwan",
+      "country_code": "TW",
+      "latitude": 25.04,
+      "longitude": 121.56,
+      "record_count": 877,
+      "academic_records": 812,
+      "news_records": 65,
+      "weighted_score": 899.75,
+      "top_queries": [
+        {
+          "query": "data protection Taiwan",
+          "count": 335
+        },
+        {
+          "query": "privacy Taiwan",
+          "count": 218
+        },
+        {
+          "query": "Taiwan PDPA privacy",
+          "count": 75
+        },
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 39
+        },
+        {
+          "query": "privacy Japan",
+          "count": 16
+        }
+      ],
+      "peak_year": 2026,
+      "density_score": 0.0479,
+      "density_class": "trace",
+      "dot_count": 13
+    },
+    {
+      "country": "South Korea",
+      "country_code": "KR",
+      "latitude": 37.57,
+      "longitude": 126.98,
+      "record_count": 884,
+      "academic_records": 851,
+      "news_records": 33,
+      "weighted_score": 895.55,
+      "top_queries": [
+        {
+          "query": "personal information protection Korea",
+          "count": 144
+        },
+        {
+          "query": "privacy South Korea",
+          "count": 140
+        },
+        {
+          "query": "PIPA privacy Korea",
+          "count": 74
+        },
+        {
+          "query": "privacy Korea PIPA",
+          "count": 74
+        },
+        {
+          "query": "personal information protection Japan",
+          "count": 34
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0477,
+      "density_class": "trace",
+      "dot_count": 13
+    },
+    {
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 46.95,
+      "longitude": 7.45,
+      "record_count": 888,
+      "academic_records": 868,
+      "news_records": 20,
+      "weighted_score": 895.0,
+      "top_queries": [
+        {
+          "query": "privacy Tanzania",
+          "count": 41
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 32
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 26
+        },
+        {
+          "query": "privacy Panama",
+          "count": 26
+        },
+        {
+          "query": "location privacy",
+          "count": 25
+        }
+      ],
+      "peak_year": 2015,
+      "density_score": 0.0476,
+      "density_class": "trace",
+      "dot_count": 13
+    },
+    {
+      "country": "Philippines",
+      "country_code": "PH",
+      "latitude": 14.6,
+      "longitude": 120.98,
+      "record_count": 680,
+      "academic_records": 275,
+      "news_records": 405,
+      "weighted_score": 821.75,
+      "top_queries": [
+        {
+          "query": "privacy Philippines",
+          "count": 181
+        },
+        {
+          "query": "data privacy act Philippines",
+          "count": 112
+        },
+        {
+          "query": "privacy Singapore",
+          "count": 37
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 26
+        },
+        {
+          "query": "privacy UAE",
+          "count": 25
+        }
+      ],
+      "peak_year": 2026,
+      "density_score": 0.0437,
+      "density_class": "trace",
+      "dot_count": 12
+    },
+    {
+      "country": "China Hong Kong",
+      "country_code": "HK",
+      "latitude": 22.32,
+      "longitude": 114.17,
+      "record_count": 775,
+      "academic_records": 773,
+      "news_records": 2,
+      "weighted_score": 775.7,
+      "top_queries": [
+        {
+          "query": "privacy Hong Kong",
+          "count": 161
+        },
+        {
+          "query": "personal data privacy ordinance Hong Kong",
+          "count": 148
+        },
+        {
+          "query": "Hong Kong PDPO privacy",
+          "count": 55
+        },
+        {
+          "query": "personal information protection law China",
+          "count": 36
+        },
+        {
+          "query": "privacy Mongolia",
+          "count": 34
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0413,
+      "density_class": "trace",
+      "dot_count": 12
+    },
+    {
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "latitude": 24.71,
+      "longitude": 46.67,
+      "record_count": 765,
+      "academic_records": 764,
+      "news_records": 1,
+      "weighted_score": 765.35,
+      "top_queries": [
+        {
+          "query": "privacy Saudi Arabia",
+          "count": 181
+        },
+        {
+          "query": "China cybersecurity law privacy",
+          "count": 69
+        },
+        {
+          "query": "personal information protection Korea",
+          "count": 58
+        },
+        {
+          "query": "personal information protection law China",
+          "count": 53
+        },
+        {
+          "query": "China data security law privacy",
+          "count": 52
+        }
+      ],
+      "peak_year": 2023,
+      "density_score": 0.0407,
+      "density_class": "trace",
+      "dot_count": 12
+    },
+    {
+      "country": "Malaysia",
+      "country_code": "MY",
+      "latitude": 3.14,
+      "longitude": 101.69,
+      "record_count": 662,
+      "academic_records": 656,
+      "news_records": 6,
+      "weighted_score": 664.1,
+      "top_queries": [
+        {
+          "query": "privacy Malaysia",
+          "count": 192
+        },
+        {
+          "query": "PDPA privacy Singapore",
+          "count": 40
+        },
+        {
+          "query": "Taiwan PDPA privacy",
+          "count": 29
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 22
+        },
+        {
+          "query": "privacy UAE",
+          "count": 21
+        }
+      ],
+      "peak_year": 2022,
+      "density_score": 0.0354,
+      "density_class": "trace",
+      "dot_count": 11
+    },
+    {
+      "country": "Singapore",
+      "country_code": "SG",
+      "latitude": 1.35,
+      "longitude": 103.82,
+      "record_count": 657,
+      "academic_records": 653,
+      "news_records": 4,
+      "weighted_score": 658.4,
+      "top_queries": [
+        {
+          "query": "PDPA privacy Singapore",
+          "count": 150
+        },
+        {
+          "query": "privacy Singapore",
+          "count": 133
+        },
+        {
+          "query": "Taiwan PDPA privacy",
+          "count": 24
+        },
+        {
+          "query": "privacy Uruguay",
+          "count": 18
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 17
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0351,
+      "density_class": "trace",
+      "dot_count": 11
+    },
+    {
+      "country": "Pakistan",
+      "country_code": "PK",
+      "latitude": 33.68,
+      "longitude": 73.05,
+      "record_count": 634,
+      "academic_records": 631,
+      "news_records": 3,
+      "weighted_score": 635.05,
+      "top_queries": [
+        {
+          "query": "privacy Pakistan",
+          "count": 207
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 76
+        },
+        {
+          "query": "personal data Russia",
+          "count": 60
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 20
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 20
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0338,
+      "density_class": "trace",
+      "dot_count": 11
+    },
+    {
+      "country": "Russia",
+      "country_code": "RU",
+      "latitude": 55.76,
+      "longitude": 37.62,
+      "record_count": 594,
+      "academic_records": 542,
+      "news_records": 52,
+      "weighted_score": 612.2,
+      "top_queries": [
+        {
+          "query": "152-FZ privacy Russia",
+          "count": 138
+        },
+        {
+          "query": "personal data Russia",
+          "count": 99
+        },
+        {
+          "query": "data protection Russia",
+          "count": 95
+        },
+        {
+          "query": "Roskomnadzor privacy",
+          "count": 52
+        },
+        {
+          "query": "privacy Russia",
+          "count": 47
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0326,
+      "density_class": "trace",
+      "dot_count": 11
+    },
+    {
+      "country": "Kenya",
+      "country_code": "KE",
+      "latitude": -1.29,
+      "longitude": 36.82,
+      "record_count": 595,
+      "academic_records": 554,
+      "news_records": 41,
+      "weighted_score": 609.35,
+      "top_queries": [
+        {
+          "query": "data protection Kenya",
+          "count": 244
+        },
+        {
+          "query": "privacy Kenya",
+          "count": 147
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 19
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 18
+        },
+        {
+          "query": "privacy Tanzania",
+          "count": 17
+        }
+      ],
+      "peak_year": 2021,
+      "density_score": 0.0324,
+      "density_class": "trace",
+      "dot_count": 11
+    },
+    {
+      "country": "Nigeria",
+      "country_code": "NG",
+      "latitude": 9.08,
+      "longitude": 7.49,
+      "record_count": 581,
+      "academic_records": 555,
+      "news_records": 26,
+      "weighted_score": 590.1,
+      "top_queries": [
+        {
+          "query": "data privacy Nigeria",
+          "count": 158
+        },
+        {
+          "query": "privacy Nigeria",
+          "count": 115
+        },
+        {
+          "query": "privacy Ghana",
+          "count": 71
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 35
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 15
+        }
+      ],
+      "peak_year": 2018,
+      "density_score": 0.0314,
+      "density_class": "trace",
+      "dot_count": 11
+    },
+    {
+      "country": "Belgium",
+      "country_code": "BE",
+      "latitude": 50.85,
+      "longitude": 4.35,
+      "record_count": 589,
+      "academic_records": 588,
+      "news_records": 1,
+      "weighted_score": 589.35,
+      "top_queries": [
+        {
+          "query": "privacy Ecuador",
+          "count": 208
+        },
+        {
+          "query": "privacy Costa Rica",
+          "count": 65
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 16
+        },
+        {
+          "query": "privacy Kenya",
+          "count": 15
+        },
+        {
+          "query": "data protection Kenya",
+          "count": 14
+        }
+      ],
+      "peak_year": 2022,
+      "density_score": 0.0314,
+      "density_class": "trace",
+      "dot_count": 11
+    },
+    {
+      "country": "Sweden",
+      "country_code": "SE",
+      "latitude": 59.33,
+      "longitude": 18.07,
+      "record_count": 550,
+      "academic_records": 523,
+      "news_records": 27,
+      "weighted_score": 559.45,
+      "top_queries": [
+        {
+          "query": "privacy Costa Rica",
+          "count": 56
+        },
+        {
+          "query": "privacy Ecuador",
+          "count": 25
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 23
+        },
+        {
+          "query": "privacy Nepal",
+          "count": 21
+        },
+        {
+          "query": "privacy Venezuela",
+          "count": 21
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0298,
+      "density_class": "trace",
+      "dot_count": 11
+    },
+    {
+      "country": "Thailand",
+      "country_code": "TH",
+      "latitude": 13.76,
+      "longitude": 100.5,
+      "record_count": 465,
+      "academic_records": 458,
+      "news_records": 7,
+      "weighted_score": 467.45,
+      "top_queries": [
+        {
+          "query": "privacy Laos",
+          "count": 126
+        },
+        {
+          "query": "privacy Thailand",
+          "count": 111
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 75
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 57
+        },
+        {
+          "query": "Taiwan PDPA privacy",
+          "count": 13
+        }
+      ],
+      "peak_year": 2021,
+      "density_score": 0.0249,
+      "density_class": "trace",
+      "dot_count": 10
+    },
+    {
+      "country": "Bangladesh",
+      "country_code": "BD",
+      "latitude": 23.81,
+      "longitude": 90.41,
+      "record_count": 424,
+      "academic_records": 416,
+      "news_records": 8,
+      "weighted_score": 426.8,
+      "top_queries": [
+        {
+          "query": "privacy Bangladesh",
+          "count": 163
+        },
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 70
+        },
+        {
+          "query": "Bangladesh data protection privacy",
+          "count": 64
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 20
+        },
+        {
+          "query": "privacy Laos",
+          "count": 18
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0227,
+      "density_class": "trace",
+      "dot_count": 10
+    },
+    {
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "latitude": -41.29,
+      "longitude": 174.78,
+      "record_count": 403,
+      "academic_records": 375,
+      "news_records": 28,
+      "weighted_score": 412.8,
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 199
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 10
+        },
+        {
+          "query": "privacy Middle East",
+          "count": 9
+        },
+        {
+          "query": "privacy Peru",
+          "count": 9
+        },
+        {
+          "query": "privacy breach",
+          "count": 8
+        }
+      ],
+      "peak_year": 2021,
+      "density_score": 0.022,
+      "density_class": "trace",
+      "dot_count": 10
+    },
+    {
+      "country": "Norway",
+      "country_code": "NO",
+      "latitude": 59.91,
+      "longitude": 10.75,
+      "record_count": 392,
+      "academic_records": 390,
+      "news_records": 2,
+      "weighted_score": 392.7,
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 22
+        },
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 16
+        },
+        {
+          "query": "APPI privacy Japan",
+          "count": 15
+        },
+        {
+          "query": "privacy Japan APPI",
+          "count": 15
+        },
+        {
+          "query": "data privacy act Philippines",
+          "count": 12
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0209,
+      "density_class": "trace",
+      "dot_count": 10
+    },
+    {
+      "country": "Denmark",
+      "country_code": "DK",
+      "latitude": 55.68,
+      "longitude": 12.57,
+      "record_count": 386,
+      "academic_records": 386,
+      "news_records": 0,
+      "weighted_score": 386.0,
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 51
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 16
+        },
+        {
+          "query": "data protection Russia",
+          "count": 13
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 12
+        },
+        {
+          "query": "privacy Panama",
+          "count": 12
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0205,
+      "density_class": "trace",
+      "dot_count": 9
+    },
+    {
+      "country": "Finland",
+      "country_code": "FI",
+      "latitude": 60.17,
+      "longitude": 24.94,
+      "record_count": 343,
+      "academic_records": 343,
+      "news_records": 0,
+      "weighted_score": 343.0,
+      "top_queries": [
+        {
+          "query": "data protection Russia",
+          "count": 54
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 18
+        },
+        {
+          "query": "data privacy Nigeria",
+          "count": 15
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 15
+        },
+        {
+          "query": "privacy Morocco",
+          "count": 14
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0183,
+      "density_class": "trace",
+      "dot_count": 9
+    },
+    {
+      "country": "Austria",
+      "country_code": "AT",
+      "latitude": 48.21,
+      "longitude": 16.37,
+      "record_count": 312,
+      "academic_records": 272,
+      "news_records": 40,
+      "weighted_score": 326.0,
+      "top_queries": [
+        {
+          "query": "privacy Costa Rica",
+          "count": 31
+        },
+        {
+          "query": "data privacy",
+          "count": 13
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 12
+        },
+        {
+          "query": "privacy Chile",
+          "count": 12
+        },
+        {
+          "query": "personal information protection Japan",
+          "count": 11
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0174,
+      "density_class": "trace",
+      "dot_count": 9
+    },
+    {
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "latitude": 24.45,
+      "longitude": 54.38,
+      "record_count": 285,
+      "academic_records": 272,
+      "news_records": 13,
+      "weighted_score": 289.55,
+      "top_queries": [
+        {
+          "query": "privacy UAE",
+          "count": 166
+        },
+        {
+          "query": "privacy Middle East",
+          "count": 21
+        },
+        {
+          "query": "China cybersecurity law privacy",
+          "count": 10
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 10
+        },
+        {
+          "query": "privacy and security",
+          "count": 8
+        }
+      ],
+      "peak_year": 2024,
+      "density_score": 0.0154,
+      "density_class": "trace",
+      "dot_count": 9
+    },
+    {
+      "country": "Argentina",
+      "country_code": "AR",
+      "latitude": -34.6,
+      "longitude": -58.38,
+      "record_count": 281,
+      "academic_records": 264,
+      "news_records": 17,
+      "weighted_score": 286.95,
+      "top_queries": [
+        {
+          "query": "privacy Argentina",
+          "count": 75
+        },
+        {
+          "query": "privacy Uruguay",
+          "count": 42
+        },
+        {
+          "query": "privacy Costa Rica",
+          "count": 25
+        },
+        {
+          "query": "privacy Ecuador",
+          "count": 20
+        },
+        {
+          "query": "Latin America data protection privacy",
+          "count": 16
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0153,
+      "density_class": "trace",
+      "dot_count": 9
+    },
+    {
+      "country": "Qatar",
+      "country_code": "QA",
+      "latitude": 25.4,
+      "longitude": 51.2,
+      "record_count": 282,
+      "academic_records": 282,
+      "news_records": 0,
+      "weighted_score": 282.0,
+      "top_queries": [
+        {
+          "query": "privacy Qatar",
+          "count": 191
+        },
+        {
+          "query": "privacy Middle East",
+          "count": 12
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 10
+        },
+        {
+          "query": "privacy Morocco",
+          "count": 9
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 6
+        }
+      ],
+      "peak_year": 2022,
+      "density_score": 0.015,
+      "density_class": "trace",
+      "dot_count": 9
+    },
+    {
+      "country": "Vietnam",
+      "country_code": "VN",
+      "latitude": 21.03,
+      "longitude": 105.85,
+      "record_count": 269,
+      "academic_records": 252,
+      "news_records": 17,
+      "weighted_score": 274.95,
+      "top_queries": [
+        {
+          "query": "privacy Vietnam",
+          "count": 150
+        },
+        {
+          "query": "privacy Laos",
+          "count": 22
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 11
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 10
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 9
+        }
+      ],
+      "peak_year": 2021,
+      "density_score": 0.0146,
+      "density_class": "trace",
+      "dot_count": 8
+    },
+    {
+      "country": "Portugal",
+      "country_code": "PT",
+      "latitude": 39.4,
+      "longitude": -8.2,
+      "record_count": 266,
+      "academic_records": 261,
+      "news_records": 5,
+      "weighted_score": 267.75,
+      "top_queries": [
+        {
+          "query": "privacy Venezuela",
+          "count": 24
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 20
+        },
+        {
+          "query": "privacy Chile",
+          "count": 14
+        },
+        {
+          "query": "privacy Brazil",
+          "count": 13
+        },
+        {
+          "query": "APPI privacy Japan",
+          "count": 11
+        }
+      ],
+      "peak_year": 2018,
+      "density_score": 0.0143,
+      "density_class": "trace",
+      "dot_count": 8
+    },
+    {
+      "country": "Jordan",
+      "country_code": "JO",
+      "latitude": 31.95,
+      "longitude": 35.93,
+      "record_count": 224,
+      "academic_records": 222,
+      "news_records": 2,
+      "weighted_score": 224.7,
+      "top_queries": [
+        {
+          "query": "privacy Qatar",
+          "count": 28
+        },
+        {
+          "query": "privacy Morocco",
+          "count": 25
+        },
+        {
+          "query": "privacy Middle East",
+          "count": 25
+        },
+        {
+          "query": "privacy Saudi Arabia",
+          "count": 22
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 17
+        }
+      ],
+      "peak_year": 2021,
+      "density_score": 0.012,
+      "density_class": "trace",
+      "dot_count": 8
+    },
+    {
+      "country": "Poland",
+      "country_code": "PL",
+      "latitude": 52.23,
+      "longitude": 21.01,
+      "record_count": 209,
+      "academic_records": 197,
+      "news_records": 12,
+      "weighted_score": 213.2,
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 101
+        },
+        {
+          "query": "privacy Venezuela",
+          "count": 17
+        },
+        {
+          "query": "privacy Panama",
+          "count": 11
+        },
+        {
+          "query": "privacy Brunei",
+          "count": 6
+        },
+        {
+          "query": "privacy Uruguay",
+          "count": 6
+        }
+      ],
+      "peak_year": 2021,
+      "density_score": 0.0113,
+      "density_class": "trace",
+      "dot_count": 8
+    },
+    {
+      "country": "Ireland",
+      "country_code": "IE",
+      "latitude": 53.4,
+      "longitude": -8.2,
+      "record_count": 196,
+      "academic_records": 194,
+      "news_records": 2,
+      "weighted_score": 196.7,
+      "top_queries": [
+        {
+          "query": "privacy Laos",
+          "count": 14
+        },
+        {
+          "query": "privacy Brazil",
+          "count": 12
+        },
+        {
+          "query": "personal data Russia",
+          "count": 11
+        },
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 11
+        },
+        {
+          "query": "China cybersecurity law privacy",
+          "count": 10
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0105,
+      "density_class": "trace",
+      "dot_count": 8
+    },
+    {
+      "country": "Turkey",
+      "country_code": "TR",
+      "latitude": 39.93,
+      "longitude": 32.86,
+      "record_count": 184,
+      "academic_records": 180,
+      "news_records": 4,
+      "weighted_score": 185.4,
+      "top_queries": [
+        {
+          "query": "privacy Chile",
+          "count": 49
+        },
+        {
+          "query": "privacy Venezuela",
+          "count": 11
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 7
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 7
+        },
+        {
+          "query": "Roskomnadzor privacy",
+          "count": 6
+        }
+      ],
+      "peak_year": 2021,
+      "density_score": 0.0099,
+      "density_class": "trace",
+      "dot_count": 7
+    },
+    {
+      "country": "Greece",
+      "country_code": "GR",
+      "latitude": 37.98,
+      "longitude": 23.73,
+      "record_count": 154,
+      "academic_records": 123,
+      "news_records": 31,
+      "weighted_score": 164.85,
+      "top_queries": [
+        {
+          "query": "GDPR privacy",
+          "count": 17
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 12
+        },
+        {
+          "query": "digital privacy",
+          "count": 11
+        },
+        {
+          "query": "privacy Venezuela",
+          "count": 10
+        },
+        {
+          "query": "privacy breach",
+          "count": 8
+        }
+      ],
+      "peak_year": 2026,
+      "density_score": 0.0088,
+      "density_class": "trace",
+      "dot_count": 7
+    },
+    {
+      "country": "Israel",
+      "country_code": "IL",
+      "latitude": 31.77,
+      "longitude": 35.21,
+      "record_count": 135,
+      "academic_records": 117,
+      "news_records": 18,
+      "weighted_score": 141.3,
+      "top_queries": [
+        {
+          "query": "data privacy",
+          "count": 8
+        },
+        {
+          "query": "privacy",
+          "count": 7
+        },
+        {
+          "query": "privacy Thailand",
+          "count": 7
+        },
+        {
+          "query": "privacy Venezuela",
+          "count": 7
+        },
+        {
+          "query": "privacy Colombia",
+          "count": 6
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0075,
+      "density_class": "trace",
+      "dot_count": 7
+    },
+    {
+      "country": "Czechia",
+      "country_code": "CZ",
+      "latitude": 49.8,
+      "longitude": 15.5,
+      "record_count": 105,
+      "academic_records": 105,
+      "news_records": 0,
+      "weighted_score": 105.0,
+      "top_queries": [
+        {
+          "query": "Act on Protection of Personal Information Japan",
+          "count": 10
+        },
+        {
+          "query": "personal information protection Japan",
+          "count": 9
+        },
+        {
+          "query": "privacy Venezuela",
+          "count": 8
+        },
+        {
+          "query": "privacy Brunei",
+          "count": 7
+        },
+        {
+          "query": "privacy Ghana",
+          "count": 6
+        }
+      ],
+      "peak_year": 2017,
+      "density_score": 0.0056,
+      "density_class": "trace",
+      "dot_count": 6
+    },
+    {
+      "country": "Lebanon",
+      "country_code": "LB",
+      "latitude": 33.9,
+      "longitude": 35.9,
+      "record_count": 96,
+      "academic_records": 96,
+      "news_records": 0,
+      "weighted_score": 96.0,
+      "top_queries": [
+        {
+          "query": "privacy Middle East",
+          "count": 20
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 15
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 7
+        },
+        {
+          "query": "privacy Uganda",
+          "count": 6
+        },
+        {
+          "query": "APPI privacy Japan",
+          "count": 4
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0051,
+      "density_class": "trace",
+      "dot_count": 6
+    },
+    {
+      "country": "Romania",
+      "country_code": "RO",
+      "latitude": 44.43,
+      "longitude": 26.1,
+      "record_count": 70,
+      "academic_records": 61,
+      "news_records": 9,
+      "weighted_score": 73.15,
+      "top_queries": [
+        {
+          "query": "financial privacy",
+          "count": 8
+        },
+        {
+          "query": "privacy Morocco",
+          "count": 7
+        },
+        {
+          "query": "PIPA privacy Korea",
+          "count": 6
+        },
+        {
+          "query": "privacy Korea PIPA",
+          "count": 6
+        },
+        {
+          "query": "privacy Philippines",
+          "count": 5
+        }
+      ],
+      "peak_year": 2022,
+      "density_score": 0.0039,
+      "density_class": "trace",
+      "dot_count": 6
+    },
+    {
+      "country": "Hungary",
+      "country_code": "HU",
+      "latitude": 47.2,
+      "longitude": 19.5,
+      "record_count": 52,
+      "academic_records": 49,
+      "news_records": 3,
+      "weighted_score": 53.05,
+      "top_queries": [
+        {
+          "query": "data protection Kenya",
+          "count": 6
+        },
+        {
+          "query": "location privacy",
+          "count": 5
+        },
+        {
+          "query": "privacy Nepal",
+          "count": 5
+        },
+        {
+          "query": "privacy Ecuador",
+          "count": 5
+        },
+        {
+          "query": "data protection Brazil",
+          "count": 3
+        }
+      ],
+      "peak_year": 2018,
+      "density_score": 0.0028,
+      "density_class": "trace",
+      "dot_count": 5
+    },
+    {
+      "country": "Cyprus",
+      "country_code": "CY",
+      "latitude": 35.1,
+      "longitude": 33.4,
+      "record_count": 40,
+      "academic_records": 37,
+      "news_records": 3,
+      "weighted_score": 41.05,
+      "top_queries": [
+        {
+          "query": "personal information protection Japan",
+          "count": 11
+        },
+        {
+          "query": "GDPR privacy",
+          "count": 5
+        },
+        {
+          "query": "privacy Chile",
+          "count": 3
+        },
+        {
+          "query": "China cybersecurity law privacy",
+          "count": 2
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 2
+        }
+      ],
+      "peak_year": 2010,
+      "density_score": 0.0022,
+      "density_class": "trace",
+      "dot_count": 5
+    },
+    {
+      "country": "China Macao",
+      "country_code": "MO",
+      "latitude": 22.2,
+      "longitude": 113.5,
+      "record_count": 34,
+      "academic_records": 33,
+      "news_records": 1,
+      "weighted_score": 34.35,
+      "top_queries": [
+        {
+          "query": "privacy breach",
+          "count": 4
+        },
+        {
+          "query": "PIPL privacy China",
+          "count": 4
+        },
+        {
+          "query": "personal information protection law China",
+          "count": 3
+        },
+        {
+          "query": "data privacy",
+          "count": 2
+        },
+        {
+          "query": "digital privacy",
+          "count": 2
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0018,
+      "density_class": "trace",
+      "dot_count": 5
+    },
+    {
+      "country": "Luxembourg",
+      "country_code": "LU",
+      "latitude": 49.8,
+      "longitude": 6.1,
+      "record_count": 32,
+      "academic_records": 32,
+      "news_records": 0,
+      "weighted_score": 32.0,
+      "top_queries": [
+        {
+          "query": "privacy policy",
+          "count": 9
+        },
+        {
+          "query": "GDPR privacy",
+          "count": 9
+        },
+        {
+          "query": "data privacy",
+          "count": 3
+        },
+        {
+          "query": "APPI privacy Japan",
+          "count": 3
+        },
+        {
+          "query": "privacy Japan APPI",
+          "count": 3
+        }
+      ],
+      "peak_year": 2021,
+      "density_score": 0.0017,
+      "density_class": "trace",
+      "dot_count": 5
+    },
+    {
+      "country": "Lithuania",
+      "country_code": "LT",
+      "latitude": 55.2,
+      "longitude": 23.9,
+      "record_count": 29,
+      "academic_records": 24,
+      "news_records": 5,
+      "weighted_score": 30.75,
+      "top_queries": [
+        {
+          "query": "privacy Venezuela",
+          "count": 10
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 7
+        },
+        {
+          "query": "genetic privacy",
+          "count": 2
+        },
+        {
+          "query": "personal data Russia",
+          "count": 2
+        },
+        {
+          "query": "data protection Russia",
+          "count": 2
+        }
+      ],
+      "peak_year": 2018,
+      "density_score": 0.0016,
+      "density_class": "trace",
+      "dot_count": 5
+    },
+    {
+      "country": "Croatia",
+      "country_code": "HR",
+      "latitude": 45.1,
+      "longitude": 15.2,
+      "record_count": 17,
+      "academic_records": 15,
+      "news_records": 2,
+      "weighted_score": 17.7,
+      "top_queries": [
+        {
+          "query": "privacy and surveillance",
+          "count": 4
+        },
+        {
+          "query": "online privacy",
+          "count": 3
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 3
+        },
+        {
+          "query": "privacy Uruguay",
+          "count": 3
+        },
+        {
+          "query": "privacy settings",
+          "count": 1
+        }
+      ],
+      "peak_year": 2019,
+      "density_score": 0.0009,
+      "density_class": "trace",
+      "dot_count": 4
+    },
+    {
+      "country": "Mauritania",
+      "country_code": "MR",
+      "latitude": 21.0,
+      "longitude": -10.9,
+      "record_count": 11,
+      "academic_records": 0,
+      "news_records": 11,
+      "weighted_score": 14.85,
+      "top_queries": [
+        {
+          "query": "privacy breach",
+          "count": 10
+        },
+        {
+          "query": "privacy Morocco",
+          "count": 1
+        }
+      ],
+      "peak_year": 2026,
+      "density_score": 0.0008,
+      "density_class": "trace",
+      "dot_count": 4
+    },
+    {
+      "country": "Malta",
+      "country_code": "MT",
+      "latitude": 35.9,
+      "longitude": 14.4,
+      "record_count": 12,
+      "academic_records": 12,
+      "news_records": 0,
+      "weighted_score": 12.0,
+      "top_queries": [
+        {
+          "query": "privacy Nigeria",
+          "count": 2
+        },
+        {
+          "query": "data privacy Nigeria",
+          "count": 2
+        },
+        {
+          "query": "GDPR privacy",
+          "count": 1
+        },
+        {
+          "query": "privacy Argentina",
+          "count": 1
+        },
+        {
+          "query": "privacy Chile",
+          "count": 1
+        }
+      ],
+      "peak_year": 2018,
+      "density_score": 0.0006,
+      "density_class": "trace",
+      "dot_count": 4
+    },
+    {
+      "country": "Fiji",
+      "country_code": "FJ",
+      "latitude": -17.7,
+      "longitude": 178.1,
+      "record_count": 7,
+      "academic_records": 7,
+      "news_records": 0,
+      "weighted_score": 7.0,
+      "top_queries": [
+        {
+          "query": "Ghana data protection privacy",
+          "count": 6
+        },
+        {
+          "query": "financial privacy",
+          "count": 1
+        }
+      ],
+      "peak_year": 2020,
+      "density_score": 0.0004,
+      "density_class": "trace",
+      "dot_count": 4
+    }
+  ],
+  "city_points": [
+    {
+      "city": "Seattle",
+      "region": "Washington",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 47.60621,
+      "longitude": -122.33207,
+      "record_count": 4728,
+      "elevation_meters": 64.0,
+      "top_queries": [
+        {
+          "query": "personal data protection Pakistan",
+          "count": 731
+        },
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 647
+        },
+        {
+          "query": "personal data Russia",
+          "count": 633
+        }
+      ]
+    },
+    {
+      "city": "Cambridge",
+      "region": "Massachusetts",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.3751,
+      "longitude": -71.10561,
+      "record_count": 1046,
+      "elevation_meters": 17.0,
+      "top_queries": [
+        {
+          "query": "data protection Mexico",
+          "count": 99
+        },
+        {
+          "query": "personal information protection Korea",
+          "count": 98
+        },
+        {
+          "query": "personal data Russia",
+          "count": 63
+        }
+      ]
+    },
+    {
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "record_count": 883,
+      "elevation_meters": 25.0,
+      "top_queries": [
+        {
+          "query": "personal data protection Pakistan",
+          "count": 66
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 46
+        },
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 36
+        }
+      ]
+    },
+    {
+      "city": "Oxford",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.75222,
+      "longitude": -1.25596,
+      "record_count": 550,
+      "elevation_meters": 71.0,
+      "top_queries": [
+        {
+          "query": "Ghana data protection privacy",
+          "count": 97
+        },
+        {
+          "query": "privacy Laos",
+          "count": 46
+        },
+        {
+          "query": "data protection Kenya",
+          "count": 38
+        }
+      ]
+    },
+    {
+      "city": "London",
+      "region": "Camden",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.52090072631836,
+      "longitude": -0.1307000070810318,
+      "record_count": 548,
+      "elevation_meters": 35.0,
+      "top_queries": [
+        {
+          "query": "data protection Kenya",
+          "count": 40
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 34
+        },
+        {
+          "query": "privacy Tanzania",
+          "count": 34
+        }
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "region": null,
+      "country": "China Hong Kong",
+      "country_code": "HK",
+      "latitude": 22.2783203125,
+      "longitude": 114.17469024658203,
+      "record_count": 484,
+      "elevation_meters": 57.0,
+      "top_queries": [
+        {
+          "query": "privacy Hong Kong",
+          "count": 95
+        },
+        {
+          "query": "personal data privacy ordinance Hong Kong",
+          "count": 75
+        },
+        {
+          "query": "Hong Kong PDPO privacy",
+          "count": 45
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "region": "New South Wales",
+      "country": "Australia",
+      "country_code": "AU",
+      "latitude": -33.86785,
+      "longitude": 151.20732,
+      "record_count": 454,
+      "elevation_meters": 63.0,
+      "top_queries": [
+        {
+          "query": "privacy Mongolia",
+          "count": 24
+        },
+        {
+          "query": "privacy Brunei",
+          "count": 23
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 39.29038,
+      "longitude": -76.61219,
+      "record_count": 433,
+      "elevation_meters": 28.0,
+      "top_queries": [
+        {
+          "query": "data protection Africa",
+          "count": 32
+        },
+        {
+          "query": "privacy Kenya",
+          "count": 24
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 24
+        }
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "country_code": "AU",
+      "latitude": -37.814,
+      "longitude": 144.96332,
+      "record_count": 375,
+      "elevation_meters": 27.0,
+      "top_queries": [
+        {
+          "query": "privacy Myanmar",
+          "count": 41
+        },
+        {
+          "query": "privacy breach",
+          "count": 20
+        },
+        {
+          "query": "privacy Laos",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "city": "Singapore",
+      "region": null,
+      "country": "Singapore",
+      "country_code": "SG",
+      "latitude": 1.28967,
+      "longitude": 103.85007,
+      "record_count": 374,
+      "elevation_meters": 19.0,
+      "top_queries": [
+        {
+          "query": "privacy Singapore",
+          "count": 93
+        },
+        {
+          "query": "PDPA privacy Singapore",
+          "count": 54
+        },
+        {
+          "query": "privacy Uruguay",
+          "count": 14
+        }
+      ]
+    },
+    {
+      "city": "Cambridge",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 52.2,
+      "longitude": 0.11667,
+      "record_count": 363,
+      "elevation_meters": 14.0,
+      "top_queries": [
+        {
+          "query": "privacy Ecuador",
+          "count": 101
+        },
+        {
+          "query": "personal information protection Japan",
+          "count": 45
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 23
+        }
+      ]
+    },
+    {
+      "city": "New York",
+      "region": "New York",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 40.71427,
+      "longitude": -74.00597,
+      "record_count": 346,
+      "elevation_meters": 51.0,
+      "top_queries": [
+        {
+          "query": "privacy Peru",
+          "count": 19
+        },
+        {
+          "query": "privacy Thailand",
+          "count": 15
+        },
+        {
+          "query": "privacy Vietnam",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "city": "Boston",
+      "region": "Massachusetts",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.35843,
+      "longitude": -71.05977,
+      "record_count": 326,
+      "elevation_meters": 27.0,
+      "top_queries": [
+        {
+          "query": "data protection Mexico",
+          "count": 44
+        },
+        {
+          "query": "personal information protection Korea",
+          "count": 43
+        },
+        {
+          "query": "personal data Russia",
+          "count": 41
+        }
+      ]
+    },
+    {
+      "city": "Geneva",
+      "region": "Geneva",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 46.20222,
+      "longitude": 6.14569,
+      "record_count": 315,
+      "elevation_meters": 397.0,
+      "top_queries": [
+        {
+          "query": "privacy Myanmar",
+          "count": 22
+        },
+        {
+          "query": "privacy Tanzania",
+          "count": 21
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "region": "Queensland",
+      "country": "Australia",
+      "country_code": "AU",
+      "latitude": -27.46794,
+      "longitude": 153.02809,
+      "record_count": 297,
+      "elevation_meters": 47.0,
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 63
+        },
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 26
+        },
+        {
+          "query": "personal information protection Korea",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "city": "Nairobi",
+      "region": null,
+      "country": "Kenya",
+      "country_code": "KE",
+      "latitude": -1.283329963684082,
+      "longitude": 36.81666946411133,
+      "record_count": 293,
+      "elevation_meters": 1677.0,
+      "top_queries": [
+        {
+          "query": "data protection Kenya",
+          "count": 155
+        },
+        {
+          "query": "privacy Kenya",
+          "count": 69
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "region": "Riyadh Region",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "latitude": 24.68773,
+      "longitude": 46.72185,
+      "record_count": 276,
+      "elevation_meters": 612.0,
+      "top_queries": [
+        {
+          "query": "China cybersecurity law privacy",
+          "count": 41
+        },
+        {
+          "query": "personal information protection Korea",
+          "count": 40
+        },
+        {
+          "query": "personal information protection law China",
+          "count": 39
+        }
+      ]
+    },
+    {
+      "city": "Atlanta",
+      "region": "Georgia",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 33.749,
+      "longitude": -84.38798,
+      "record_count": 261,
+      "elevation_meters": 336.0,
+      "top_queries": [
+        {
+          "query": "data protection Kenya",
+          "count": 17
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 15
+        },
+        {
+          "query": "data protection Africa",
+          "count": 14
+        }
+      ]
+    },
+    {
+      "city": "Pittsburgh",
+      "region": "Pennsylvania",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 40.44062,
+      "longitude": -79.99589,
+      "record_count": 254,
+      "elevation_meters": 231.0,
+      "top_queries": [
+        {
+          "query": "privacy policy",
+          "count": 62
+        },
+        {
+          "query": "privacy and security",
+          "count": 23
+        },
+        {
+          "query": "privacy settings",
+          "count": 17
+        }
+      ]
+    },
+    {
+      "city": "Beijing",
+      "region": "Beijing",
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 39.9075,
+      "longitude": 116.39723,
+      "record_count": 240,
+      "elevation_meters": 50.0,
+      "top_queries": [
+        {
+          "query": "data protection China",
+          "count": 33
+        },
+        {
+          "query": "personal data privacy ordinance Hong Kong",
+          "count": 25
+        },
+        {
+          "query": "privacy Chile",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "city": "Auckland",
+      "region": null,
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "latitude": -36.853233337402344,
+      "longitude": 174.76649475097656,
+      "record_count": 240,
+      "elevation_meters": 47.0,
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 199
+        },
+        {
+          "query": "surveillance privacy",
+          "count": 5
+        },
+        {
+          "query": "privacy settings",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "city": "Pok Fu Lam",
+      "region": "Southern",
+      "country": "China Hong Kong",
+      "country_code": "HK",
+      "latitude": 22.26861,
+      "longitude": 114.12924,
+      "record_count": 235,
+      "elevation_meters": 90.0,
+      "top_queries": [
+        {
+          "query": "personal data privacy ordinance Hong Kong",
+          "count": 62
+        },
+        {
+          "query": "privacy Hong Kong",
+          "count": 57
+        },
+        {
+          "query": "personal information protection law China",
+          "count": 24
+        }
+      ]
+    },
+    {
+      "city": "Rondebosch",
+      "region": "Western Cape",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "latitude": -33.96333,
+      "longitude": 18.47639,
+      "record_count": 226,
+      "elevation_meters": 27.0,
+      "top_queries": [
+        {
+          "query": "data protection Africa",
+          "count": 27
+        },
+        {
+          "query": "POPIA privacy",
+          "count": 25
+        },
+        {
+          "query": "privacy South Africa",
+          "count": 23
+        }
+      ]
+    },
+    {
+      "city": "Seoul",
+      "region": "Seoul",
+      "country": "South Korea",
+      "country_code": "KR",
+      "latitude": 37.566,
+      "longitude": 126.9784,
+      "record_count": 220,
+      "elevation_meters": 36.0,
+      "top_queries": [
+        {
+          "query": "privacy South Korea",
+          "count": 50
+        },
+        {
+          "query": "personal information protection Korea",
+          "count": 31
+        },
+        {
+          "query": "PIPA privacy Korea",
+          "count": 26
+        }
+      ]
+    },
+    {
+      "city": "Washington",
+      "region": "District of Columbia",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 38.89511,
+      "longitude": -77.03637,
+      "record_count": 216,
+      "elevation_meters": 4.0,
+      "top_queries": [
+        {
+          "query": "information privacy",
+          "count": 14
+        },
+        {
+          "query": "privacy Rwanda",
+          "count": 12
+        },
+        {
+          "query": "privacy Nepal",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "city": "Washington D.C.",
+      "region": "District of Columbia",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 38.90072250366211,
+      "longitude": -77.03477478027344,
+      "record_count": 211,
+      "elevation_meters": 41.0,
+      "top_queries": [
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 99
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 99
+        },
+        {
+          "query": "China data security law privacy",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "city": "Stockholm",
+      "region": null,
+      "country": "Sweden",
+      "country_code": "SE",
+      "latitude": 59.32938003540039,
+      "longitude": 18.068710327148438,
+      "record_count": 191,
+      "elevation_meters": 27.0,
+      "top_queries": [
+        {
+          "query": "privacy Costa Rica",
+          "count": 42
+        },
+        {
+          "query": "privacy Ecuador",
+          "count": 15
+        },
+        {
+          "query": "personal data Russia",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "city": "Durban",
+      "region": "KwaZulu-Natal",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "latitude": -29.8579,
+      "longitude": 31.0292,
+      "record_count": 188,
+      "elevation_meters": 14.0,
+      "top_queries": [
+        {
+          "query": "data protection Africa",
+          "count": 95
+        },
+        {
+          "query": "POPIA privacy",
+          "count": 42
+        },
+        {
+          "query": "privacy law Africa",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "city": "Kampala",
+      "region": null,
+      "country": "Uganda",
+      "country_code": null,
+      "latitude": 0.3162800073623657,
+      "longitude": 32.582191467285156,
+      "record_count": 183,
+      "elevation_meters": 1210.0,
+      "top_queries": [
+        {
+          "query": "privacy Uganda",
+          "count": 139
+        },
+        {
+          "query": "privacy Ghana",
+          "count": 7
+        },
+        {
+          "query": "privacy Ethiopia",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 43.70643,
+      "longitude": -79.39864,
+      "record_count": 181,
+      "elevation_meters": 167.0,
+      "top_queries": [
+        {
+          "query": "data privacy act Philippines",
+          "count": 13
+        },
+        {
+          "query": "privacy Bangladesh",
+          "count": 13
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "city": "Pretoria",
+      "region": null,
+      "country": "South Africa",
+      "country_code": "ZA",
+      "latitude": -25.74485969543457,
+      "longitude": 28.187829971313477,
+      "record_count": 171,
+      "elevation_meters": 1335.0,
+      "top_queries": [
+        {
+          "query": "POPIA privacy",
+          "count": 52
+        },
+        {
+          "query": "privacy South Africa",
+          "count": 39
+        },
+        {
+          "query": "privacy law Africa",
+          "count": 21
+        }
+      ]
+    },
+    {
+      "city": "Brasília",
+      "region": "Federal District",
+      "country": "Brazil",
+      "country_code": "BR",
+      "latitude": -15.77972,
+      "longitude": -47.92972,
+      "record_count": 170,
+      "elevation_meters": 1136.0,
+      "top_queries": [
+        {
+          "query": "LGPD privacy",
+          "count": 83
+        },
+        {
+          "query": "privacy Brazil",
+          "count": 33
+        },
+        {
+          "query": "data protection Brazil",
+          "count": 27
+        }
+      ]
+    },
+    {
+      "city": "Swansea",
+      "region": "Wales",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.62079,
+      "longitude": -3.94323,
+      "record_count": 166,
+      "elevation_meters": 14.0,
+      "top_queries": [
+        {
+          "query": "China data security law privacy",
+          "count": 19
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 12
+        },
+        {
+          "query": "privacy Vietnam",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "city": "Wuhan",
+      "region": null,
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 30.583330154418945,
+      "longitude": 114.26667022705078,
+      "record_count": 165,
+      "elevation_meters": 18.0,
+      "top_queries": [
+        {
+          "query": "personal information protection Korea",
+          "count": 42
+        },
+        {
+          "query": "data protection China",
+          "count": 15
+        },
+        {
+          "query": "data protection Taiwan",
+          "count": 13
+        }
+      ]
+    },
+    {
+      "city": "Johannesburg",
+      "region": "Gauteng",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "latitude": -26.20227,
+      "longitude": 28.04363,
+      "record_count": 162,
+      "elevation_meters": 1762.0,
+      "top_queries": [
+        {
+          "query": "data protection Africa",
+          "count": 60
+        },
+        {
+          "query": "POPIA privacy",
+          "count": 26
+        },
+        {
+          "query": "privacy South Africa",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "city": "Edinburgh",
+      "region": "Scotland",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 55.95206,
+      "longitude": -3.19648,
+      "record_count": 161,
+      "elevation_meters": 60.0,
+      "top_queries": [
+        {
+          "query": "privacy Middle East",
+          "count": 12
+        },
+        {
+          "query": "China data security law privacy",
+          "count": 9
+        },
+        {
+          "query": "data protection Brazil",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "city": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "country_code": "FR",
+      "latitude": 48.85341,
+      "longitude": 2.3488,
+      "record_count": 161,
+      "elevation_meters": 38.0,
+      "top_queries": [
+        {
+          "query": "privacy Costa Rica",
+          "count": 12
+        },
+        {
+          "query": "privacy Ecuador",
+          "count": 11
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "region": "North Holland",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "latitude": 52.37403,
+      "longitude": 4.88969,
+      "record_count": 159,
+      "elevation_meters": 14.0,
+      "top_queries": [
+        {
+          "query": "privacy Laos",
+          "count": 12
+        },
+        {
+          "query": "privacy concern",
+          "count": 11
+        },
+        {
+          "query": "privacy concerns",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "city": "Dhaka",
+      "region": null,
+      "country": "Bangladesh",
+      "country_code": "BD",
+      "latitude": 23.710399627685547,
+      "longitude": 90.40744018554688,
+      "record_count": 159,
+      "elevation_meters": 19.0,
+      "top_queries": [
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 70
+        },
+        {
+          "query": "privacy Bangladesh",
+          "count": 31
+        },
+        {
+          "query": "Bangladesh data protection privacy",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "city": "São Paulo",
+      "region": "São Paulo",
+      "country": "Brazil",
+      "country_code": "BR",
+      "latitude": -23.5475,
+      "longitude": -46.63611,
+      "record_count": 156,
+      "elevation_meters": 763.0,
+      "top_queries": [
+        {
+          "query": "data protection Brazil",
+          "count": 46
+        },
+        {
+          "query": "privacy Brazil",
+          "count": 18
+        },
+        {
+          "query": "privacy Argentina",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "city": "Bangkok",
+      "region": "Bangkok",
+      "country": "Thailand",
+      "country_code": "TH",
+      "latitude": 13.75398,
+      "longitude": 100.50144,
+      "record_count": 152,
+      "elevation_meters": 12.0,
+      "top_queries": [
+        {
+          "query": "privacy Laos",
+          "count": 51
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 33
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 23
+        }
+      ]
+    },
+    {
+      "city": "Ann Arbor",
+      "region": "Michigan",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.27756,
+      "longitude": -83.74088,
+      "record_count": 150,
+      "elevation_meters": 272.0,
+      "top_queries": [
+        {
+          "query": "digital privacy",
+          "count": 11
+        },
+        {
+          "query": "privacy Mongolia",
+          "count": 10
+        },
+        {
+          "query": "Roskomnadzor privacy",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "city": "Munich",
+      "region": "Bavaria",
+      "country": "Germany",
+      "country_code": "DE",
+      "latitude": 48.13743,
+      "longitude": 11.57549,
+      "record_count": 148,
+      "elevation_meters": 523.0,
+      "top_queries": [
+        {
+          "query": "privacy Singapore",
+          "count": 23
+        },
+        {
+          "query": "privacy Nigeria",
+          "count": 21
+        },
+        {
+          "query": "data privacy Nigeria",
+          "count": 21
+        }
+      ]
+    },
+    {
+      "city": "Liverpool",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 53.41058,
+      "longitude": -2.97794,
+      "record_count": 143,
+      "elevation_meters": 29.0,
+      "top_queries": [
+        {
+          "query": "privacy Uganda",
+          "count": 19
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 16
+        },
+        {
+          "query": "privacy Nepal",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "city": "Berkeley",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 37.87159,
+      "longitude": -122.27275,
+      "record_count": 141,
+      "elevation_meters": 58.0,
+      "top_queries": [
+        {
+          "query": "right to privacy",
+          "count": 10
+        },
+        {
+          "query": "privacy Venezuela",
+          "count": 8
+        },
+        {
+          "query": "privacy Rwanda",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 37.77493,
+      "longitude": -122.41942,
+      "record_count": 140,
+      "elevation_meters": 16.0,
+      "top_queries": [
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 12
+        },
+        {
+          "query": "privacy Mexico",
+          "count": 11
+        },
+        {
+          "query": "privacy Kenya",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "city": "Tokyo",
+      "region": null,
+      "country": "Japan",
+      "country_code": "JP",
+      "latitude": 35.68949890136719,
+      "longitude": 139.69171142578125,
+      "record_count": 138,
+      "elevation_meters": 42.0,
+      "top_queries": [
+        {
+          "query": "Act on Protection of Personal Information Japan",
+          "count": 42
+        },
+        {
+          "query": "personal information protection Japan",
+          "count": 26
+        },
+        {
+          "query": "privacy Japan",
+          "count": 19
+        }
+      ]
+    },
+    {
+      "city": "Rotterdam",
+      "region": null,
+      "country": "Netherlands",
+      "country_code": "NL",
+      "latitude": 51.92250061035156,
+      "longitude": 4.479169845581055,
+      "record_count": 137,
+      "elevation_meters": 8.0,
+      "top_queries": [
+        {
+          "query": "privacy Morocco",
+          "count": 24
+        },
+        {
+          "query": "privacy Argentina",
+          "count": 20
+        },
+        {
+          "query": "privacy Rwanda",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "city": "Montreal",
+      "region": null,
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 45.50883865356445,
+      "longitude": -73.58780670166016,
+      "record_count": 136,
+      "elevation_meters": 217.0,
+      "top_queries": [
+        {
+          "query": "privacy Middle East",
+          "count": 14
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 12
+        },
+        {
+          "query": "privacy Hong Kong",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "city": "New Haven",
+      "region": "Connecticut",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 41.30815,
+      "longitude": -72.92816,
+      "record_count": 136,
+      "elevation_meters": 15.0,
+      "top_queries": [
+        {
+          "query": "data protection China",
+          "count": 12
+        },
+        {
+          "query": "privacy Ghana",
+          "count": 8
+        },
+        {
+          "query": "China data security law privacy",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "city": "Tehran",
+      "region": null,
+      "country": "Iran",
+      "country_code": null,
+      "latitude": 35.69438934326172,
+      "longitude": 51.4215087890625,
+      "record_count": 133,
+      "elevation_meters": 1177.0,
+      "top_queries": [
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 71
+        },
+        {
+          "query": "PIPA privacy Korea",
+          "count": 7
+        },
+        {
+          "query": "privacy Korea PIPA",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "city": "Antwerp",
+      "region": null,
+      "country": "Belgium",
+      "country_code": "BE",
+      "latitude": 51.22272872924805,
+      "longitude": 4.408430099487305,
+      "record_count": 129,
+      "elevation_meters": 13.0,
+      "top_queries": [
+        {
+          "query": "privacy Ecuador",
+          "count": 101
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 8
+        },
+        {
+          "query": "privacy Argentina",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "city": "Xi'an",
+      "region": "Shaanxi",
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 34.25833,
+      "longitude": 108.92861,
+      "record_count": 124,
+      "elevation_meters": 410.0,
+      "top_queries": [
+        {
+          "query": "medical privacy",
+          "count": 26
+        },
+        {
+          "query": "location privacy",
+          "count": 12
+        },
+        {
+          "query": "biometric privacy",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "city": "Stanford",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 37.42411,
+      "longitude": -122.16608,
+      "record_count": 123,
+      "elevation_meters": 30.0,
+      "top_queries": [
+        {
+          "query": "APPI privacy Japan",
+          "count": 10
+        },
+        {
+          "query": "privacy Japan APPI",
+          "count": 10
+        },
+        {
+          "query": "privacy Mexico",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "city": "Doha",
+      "region": null,
+      "country": "Qatar",
+      "country_code": "QA",
+      "latitude": 25.377225875854492,
+      "longitude": 51.48714828491211,
+      "record_count": 123,
+      "elevation_meters": 19.0,
+      "top_queries": [
+        {
+          "query": "privacy Qatar",
+          "count": 83
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 6
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 34.05223,
+      "longitude": -118.24368,
+      "record_count": 120,
+      "elevation_meters": 102.0,
+      "top_queries": [
+        {
+          "query": "privacy Peru",
+          "count": 12
+        },
+        {
+          "query": "surveillance privacy",
+          "count": 6
+        },
+        {
+          "query": "APPI privacy Japan",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "city": "Ithaca",
+      "region": "New York",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.44063,
+      "longitude": -76.49661,
+      "record_count": 118,
+      "elevation_meters": 128.0,
+      "top_queries": [
+        {
+          "query": "privacy",
+          "count": 10
+        },
+        {
+          "query": "privacy breach",
+          "count": 9
+        },
+        {
+          "query": "privacy Bangladesh",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "city": "Chicago",
+      "region": "Illinois",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 41.85003,
+      "longitude": -87.65005,
+      "record_count": 117,
+      "elevation_meters": 179.0,
+      "top_queries": [
+        {
+          "query": "privacy settings",
+          "count": 12
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 5
+        },
+        {
+          "query": "privacy Panama",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "city": "Shanghai",
+      "region": null,
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 31.222219467163086,
+      "longitude": 121.45806121826172,
+      "record_count": 116,
+      "elevation_meters": 11.0,
+      "top_queries": [
+        {
+          "query": "data protection Taiwan",
+          "count": 20
+        },
+        {
+          "query": "location privacy",
+          "count": 14
+        },
+        {
+          "query": "PIPL privacy China",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "city": "Ibadan",
+      "region": "Oyo State",
+      "country": "Nigeria",
+      "country_code": "NG",
+      "latitude": 7.37756,
+      "longitude": 3.90591,
+      "record_count": 116,
+      "elevation_meters": 183.0,
+      "top_queries": [
+        {
+          "query": "privacy Ghana",
+          "count": 14
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 9
+        },
+        {
+          "query": "data privacy Nigeria",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "region": "British Columbia",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 49.24966,
+      "longitude": -123.11934,
+      "record_count": 112,
+      "elevation_meters": 76.0,
+      "top_queries": [
+        {
+          "query": "privacy Uganda",
+          "count": 8
+        },
+        {
+          "query": "privacy Tanzania",
+          "count": 8
+        },
+        {
+          "query": "privacy policy",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "city": "Accra",
+      "region": null,
+      "country": "Ghana",
+      "country_code": null,
+      "latitude": 5.5560197830200195,
+      "longitude": -0.19689999520778656,
+      "record_count": 106,
+      "elevation_meters": 29.0,
+      "top_queries": [
+        {
+          "query": "privacy Ghana",
+          "count": 47
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 25
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "city": "Bethesda",
+      "region": "Maryland",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 38.98067,
+      "longitude": -77.10026,
+      "record_count": 104,
+      "elevation_meters": 108.0,
+      "top_queries": [
+        {
+          "query": "privacy law Africa",
+          "count": 9
+        },
+        {
+          "query": "data protection Africa",
+          "count": 9
+        },
+        {
+          "query": "privacy Mexico",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "city": "Bangkok",
+      "region": null,
+      "country": "Thailand",
+      "country_code": "TH",
+      "latitude": 13.766231536865234,
+      "longitude": 100.53362274169922,
+      "record_count": 103,
+      "elevation_meters": 24.0,
+      "top_queries": [
+        {
+          "query": "privacy Laos",
+          "count": 46
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 27
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 23
+        }
+      ]
+    },
+    {
+      "city": "Antwerp",
+      "region": null,
+      "country": "Belgium",
+      "country_code": "BE",
+      "latitude": 51.2204704284668,
+      "longitude": 4.400259971618652,
+      "record_count": 101,
+      "elevation_meters": 12.0,
+      "top_queries": [
+        {
+          "query": "privacy Ecuador",
+          "count": 100
+        },
+        {
+          "query": "POPIA privacy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "city": "Cambridge",
+      "region": "Cambridgeshire",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 52.17599868774414,
+      "longitude": 0.14000000059604645,
+      "record_count": 101,
+      "elevation_meters": 21.0,
+      "top_queries": [
+        {
+          "query": "privacy Ecuador",
+          "count": 99
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 1
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "city": "Wacol",
+      "region": "Queensland",
+      "country": "Australia",
+      "country_code": "AU",
+      "latitude": -27.58810043334961,
+      "longitude": 152.92495727539062,
+      "record_count": 99,
+      "elevation_meters": 21.0,
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 60
+        },
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 15
+        },
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "city": "Warsaw",
+      "region": null,
+      "country": "Poland",
+      "country_code": "PL",
+      "latitude": 52.22977066040039,
+      "longitude": 21.01177978515625,
+      "record_count": 99,
+      "elevation_meters": 112.0,
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 99
+        }
+      ]
+    },
+    {
+      "city": "Enschede",
+      "region": "Overijssel",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "latitude": 52.21833,
+      "longitude": 6.89583,
+      "record_count": 98,
+      "elevation_meters": 44.0,
+      "top_queries": [
+        {
+          "query": "online privacy",
+          "count": 10
+        },
+        {
+          "query": "privacy Chile",
+          "count": 10
+        },
+        {
+          "query": "privacy and security",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "city": "Cape Town",
+      "region": null,
+      "country": "South Africa",
+      "country_code": "ZA",
+      "latitude": -33.91628646850586,
+      "longitude": 18.604434967041016,
+      "record_count": 97,
+      "elevation_meters": 44.0,
+      "top_queries": [
+        {
+          "query": "data protection Africa",
+          "count": 29
+        },
+        {
+          "query": "POPIA privacy",
+          "count": 19
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "city": "Nanjing",
+      "region": "Jiangsu",
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 32.06167,
+      "longitude": 118.77778,
+      "record_count": 96,
+      "elevation_meters": 20.0,
+      "top_queries": [
+        {
+          "query": "China data security law privacy",
+          "count": 62
+        },
+        {
+          "query": "China cybersecurity law privacy",
+          "count": 16
+        },
+        {
+          "query": "data protection China",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "city": "Karachi",
+      "region": null,
+      "country": "Pakistan",
+      "country_code": "PK",
+      "latitude": 24.86079978942871,
+      "longitude": 67.0103988647461,
+      "record_count": 90,
+      "elevation_meters": 10.0,
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 60
+        },
+        {
+          "query": "privacy Pakistan",
+          "count": 15
+        },
+        {
+          "query": "privacy Mongolia",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "city": "Rome",
+      "region": "Lazio",
+      "country": "Italy",
+      "country_code": "IT",
+      "latitude": 41.89193,
+      "longitude": 12.51133,
+      "record_count": 89,
+      "elevation_meters": 55.0,
+      "top_queries": [
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 70
+        },
+        {
+          "query": "privacy Chile",
+          "count": 3
+        },
+        {
+          "query": "privacy Colombia",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "city": "San Diego",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 32.71571,
+      "longitude": -117.16472,
+      "record_count": 88,
+      "elevation_meters": 20.0,
+      "top_queries": [
+        {
+          "query": "privacy Uruguay",
+          "count": 5
+        },
+        {
+          "query": "privacy Colombia",
+          "count": 4
+        },
+        {
+          "query": "privacy Peru",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "city": "Bandar Seri Begawan",
+      "region": null,
+      "country": "Brunei",
+      "country_code": null,
+      "latitude": 4.890349864959717,
+      "longitude": 114.9400634765625,
+      "record_count": 88,
+      "elevation_meters": 10.0,
+      "top_queries": [
+        {
+          "query": "privacy Brunei",
+          "count": 60
+        },
+        {
+          "query": "privacy Philippines",
+          "count": 4
+        },
+        {
+          "query": "data privacy act Philippines",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "city": "Oslo",
+      "region": "Oslo",
+      "country": "Norway",
+      "country_code": "NO",
+      "latitude": 59.91273,
+      "longitude": 10.74609,
+      "record_count": 86,
+      "elevation_meters": 29.0,
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 11
+        },
+        {
+          "query": "privacy Tanzania",
+          "count": 5
+        },
+        {
+          "query": "data privacy",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "city": "Kuala Lumpur",
+      "region": "Kuala Lumpur",
+      "country": "Malaysia",
+      "country_code": "MY",
+      "latitude": 3.1412,
+      "longitude": 101.68653,
+      "record_count": 84,
+      "elevation_meters": 50.0,
+      "top_queries": [
+        {
+          "query": "privacy Malaysia",
+          "count": 12
+        },
+        {
+          "query": "privacy Singapore",
+          "count": 9
+        },
+        {
+          "query": "internet privacy",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "city": "Zurich",
+      "region": "Zurich",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.36667,
+      "longitude": 8.55,
+      "record_count": 83,
+      "elevation_meters": 438.0,
+      "top_queries": [
+        {
+          "query": "privacy Brunei",
+          "count": 11
+        },
+        {
+          "query": "online privacy",
+          "count": 7
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "city": "Manchester",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 53.48095,
+      "longitude": -2.23743,
+      "record_count": 83,
+      "elevation_meters": 52.0,
+      "top_queries": [
+        {
+          "query": "privacy Ecuador",
+          "count": 46
+        },
+        {
+          "query": "China cybersecurity law privacy",
+          "count": 3
+        },
+        {
+          "query": "LGPD privacy",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "city": "St Louis",
+      "region": "Missouri",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 38.62727,
+      "longitude": -90.19789,
+      "record_count": 81,
+      "elevation_meters": 155.0,
+      "top_queries": [
+        {
+          "query": "privacy Qatar",
+          "count": 11
+        },
+        {
+          "query": "privacy law Africa",
+          "count": 7
+        },
+        {
+          "query": "data privacy Nigeria",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "city": "Bristol",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.45523,
+      "longitude": -2.59665,
+      "record_count": 79,
+      "elevation_meters": 22.0,
+      "top_queries": [
+        {
+          "query": "privacy Nepal",
+          "count": 14
+        },
+        {
+          "query": "privacy Brunei",
+          "count": 12
+        },
+        {
+          "query": "privacy Mongolia",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "region": "Berlin",
+      "country": "Germany",
+      "country_code": "DE",
+      "latitude": 52.52437,
+      "longitude": 13.41053,
+      "record_count": 79,
+      "elevation_meters": 47.0,
+      "top_queries": [
+        {
+          "query": "privacy Middle East",
+          "count": 10
+        },
+        {
+          "query": "privacy Singapore",
+          "count": 9
+        },
+        {
+          "query": "privacy Saudi Arabia",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "city": "Kumasi",
+      "region": "Ashanti",
+      "country": "Ghana",
+      "country_code": null,
+      "latitude": 6.68848,
+      "longitude": -1.62443,
+      "record_count": 79,
+      "elevation_meters": 272.0,
+      "top_queries": [
+        {
+          "query": "privacy Ghana",
+          "count": 51
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 13
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "city": "Washington D.C.",
+      "region": "District of Columbia",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 38.90393829345703,
+      "longitude": -77.03337860107422,
+      "record_count": 79,
+      "elevation_meters": 29.0,
+      "top_queries": [
+        {
+          "query": "privacy Brunei",
+          "count": 79
+        }
+      ]
+    },
+    {
+      "city": "Evanston",
+      "region": "Illinois",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.04114,
+      "longitude": -87.69006,
+      "record_count": 77,
+      "elevation_meters": 190.0,
+      "top_queries": [
+        {
+          "query": "privacy Colombia",
+          "count": 5
+        },
+        {
+          "query": "privacy policy",
+          "count": 4
+        },
+        {
+          "query": "privacy Argentina",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "city": "Calgary",
+      "region": "Alberta",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 51.05011,
+      "longitude": -114.08529,
+      "record_count": 75,
+      "elevation_meters": 1042.0,
+      "top_queries": [
+        {
+          "query": "PIPA privacy Korea",
+          "count": 14
+        },
+        {
+          "query": "privacy Korea PIPA",
+          "count": 14
+        },
+        {
+          "query": "right to privacy",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "city": "Lausanne",
+      "region": "Vaud",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 46.516,
+      "longitude": 6.63282,
+      "record_count": 75,
+      "elevation_meters": 449.0,
+      "top_queries": [
+        {
+          "query": "location privacy",
+          "count": 20
+        },
+        {
+          "query": "surveillance privacy",
+          "count": 17
+        },
+        {
+          "query": "privacy and surveillance",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "city": "New Delhi",
+      "region": null,
+      "country": "India",
+      "country_code": "IN",
+      "latitude": 28.543344497680664,
+      "longitude": 77.14846801757812,
+      "record_count": 75,
+      "elevation_meters": 266.0,
+      "top_queries": [
+        {
+          "query": "personal data protection Pakistan",
+          "count": 6
+        },
+        {
+          "query": "privacy Middle East",
+          "count": 5
+        },
+        {
+          "query": "privacy Sri Lanka",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "city": "State College",
+      "region": "Pennsylvania",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 40.79339,
+      "longitude": -77.86,
+      "record_count": 74,
+      "elevation_meters": 351.0,
+      "top_queries": [
+        {
+          "query": "privacy policy",
+          "count": 6
+        },
+        {
+          "query": "online privacy",
+          "count": 5
+        },
+        {
+          "query": "information privacy",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "city": "Copenhagen",
+      "region": "Capital Region",
+      "country": "Denmark",
+      "country_code": "DK",
+      "latitude": 55.67594,
+      "longitude": 12.56553,
+      "record_count": 73,
+      "elevation_meters": 14.0,
+      "top_queries": [
+        {
+          "query": "data privacy",
+          "count": 4
+        },
+        {
+          "query": "data protection Kenya",
+          "count": 4
+        },
+        {
+          "query": "privacy Vietnam",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "radiation_hubs": [
+    {
+      "hub_id": "us_policy_platform",
+      "label": "United States policy + platform",
+      "country": "United States",
+      "lat": 38.9,
+      "lon": -77.04,
+      "region": "north_america",
+      "source_basis": "largest recovered country-level signal; mixed academic, policy, and news attention",
+      "confidence": "high"
+    },
+    {
+      "hub_id": "eu_data_governance",
+      "label": "EU data governance",
+      "country": "Belgium",
+      "lat": 50.85,
+      "lon": 4.35,
+      "region": "europe",
+      "source_basis": "GDPR, data-protection, and regulatory concentration around EU institutions",
+      "confidence": "high"
+    },
+    {
+      "hub_id": "uk_common_law_research",
+      "label": "UK research + rights",
+      "country": "United Kingdom",
+      "lat": 51.5,
+      "lon": -0.12,
+      "region": "europe",
+      "source_basis": "strong country-level and institution-level signal with legal/research continuity",
+      "confidence": "medium"
+    },
+    {
+      "hub_id": "china_platform_governance",
+      "label": "China platform governance",
+      "country": "China",
+      "lat": 39.9,
+      "lon": 116.4,
+      "region": "asia",
+      "source_basis": "large recovered country-level academic and policy-adjacent signal",
+      "confidence": "medium"
+    },
+    {
+      "hub_id": "apac_data_interface",
+      "label": "Asia-Pacific data interface",
+      "country": "Singapore",
+      "lat": 1.35,
+      "lon": 103.82,
+      "region": "asia_pacific",
+      "source_basis": "regional bridge visible in city and country-level academic/institutional records",
+      "confidence": "medium"
+    }
+  ],
+  "radiation_links": [
+    {
+      "link_id": "apac_data_interface_to_AU",
+      "from_hub_id": "apac_data_interface",
+      "from_label": "Asia-Pacific data interface",
+      "from_latitude": 1.35,
+      "from_longitude": 103.82,
+      "to_country": "Australia",
+      "to_country_code": "AU",
+      "to_latitude": -35.28,
+      "to_longitude": 149.13,
+      "weighted_score": 2265.35,
+      "density_score": 0.1206,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "us_policy_platform_to_CA",
+      "from_hub_id": "us_policy_platform",
+      "from_label": "United States policy + platform",
+      "from_latitude": 38.9,
+      "from_longitude": -77.04,
+      "to_country": "Canada",
+      "to_country_code": "CA",
+      "to_latitude": 45.42,
+      "to_longitude": -75.69,
+      "weighted_score": 1790.6,
+      "density_score": 0.0953,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "eu_data_governance_to_DE",
+      "from_hub_id": "eu_data_governance",
+      "from_label": "EU data governance",
+      "from_latitude": 50.85,
+      "from_longitude": 4.35,
+      "to_country": "Germany",
+      "to_country_code": "DE",
+      "to_latitude": 52.52,
+      "to_longitude": 13.4,
+      "weighted_score": 1731.7,
+      "density_score": 0.0922,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "china_platform_governance_to_IN",
+      "from_hub_id": "china_platform_governance",
+      "from_label": "China platform governance",
+      "from_latitude": 39.9,
+      "from_longitude": 116.4,
+      "to_country": "India",
+      "to_country_code": "IN",
+      "to_latitude": 28.61,
+      "to_longitude": 77.21,
+      "weighted_score": 1583.65,
+      "density_score": 0.0843,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "us_policy_platform_to_BR",
+      "from_hub_id": "us_policy_platform",
+      "from_label": "United States policy + platform",
+      "from_latitude": 38.9,
+      "from_longitude": -77.04,
+      "to_country": "Brazil",
+      "to_country_code": "BR",
+      "to_latitude": -23.55,
+      "to_longitude": -46.63,
+      "weighted_score": 1328.6,
+      "density_score": 0.0707,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "us_policy_platform_to_ZA",
+      "from_hub_id": "us_policy_platform",
+      "from_label": "United States policy + platform",
+      "from_latitude": 38.9,
+      "from_longitude": -77.04,
+      "to_country": "South Africa",
+      "to_country_code": "ZA",
+      "to_latitude": -26.2,
+      "to_longitude": 28.04,
+      "weighted_score": 1274.95,
+      "density_score": 0.0679,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "eu_data_governance_to_NL",
+      "from_hub_id": "eu_data_governance",
+      "from_label": "EU data governance",
+      "from_latitude": 50.85,
+      "from_longitude": 4.35,
+      "to_country": "Netherlands",
+      "to_country_code": "NL",
+      "to_latitude": 52.37,
+      "to_longitude": 4.9,
+      "weighted_score": 1226.35,
+      "density_score": 0.0653,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "eu_data_governance_to_IT",
+      "from_hub_id": "eu_data_governance",
+      "from_label": "EU data governance",
+      "from_latitude": 50.85,
+      "from_longitude": 4.35,
+      "to_country": "Italy",
+      "to_country_code": "IT",
+      "to_latitude": 41.9,
+      "to_longitude": 12.5,
+      "weighted_score": 1160.5,
+      "density_score": 0.0618,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "eu_data_governance_to_FR",
+      "from_hub_id": "eu_data_governance",
+      "from_label": "EU data governance",
+      "from_latitude": 50.85,
+      "from_longitude": 4.35,
+      "to_country": "France",
+      "to_country_code": "FR",
+      "to_latitude": 48.86,
+      "to_longitude": 2.35,
+      "weighted_score": 1156.1,
+      "density_score": 0.0615,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "eu_data_governance_to_ES",
+      "from_hub_id": "eu_data_governance",
+      "from_label": "EU data governance",
+      "from_latitude": 50.85,
+      "from_longitude": 4.35,
+      "to_country": "Spain",
+      "to_country_code": "ES",
+      "to_latitude": 40.42,
+      "to_longitude": -3.7,
+      "weighted_score": 1147.55,
+      "density_score": 0.0611,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "china_platform_governance_to_JP",
+      "from_hub_id": "china_platform_governance",
+      "from_label": "China platform governance",
+      "from_latitude": 39.9,
+      "from_longitude": 116.4,
+      "to_country": "Japan",
+      "to_country_code": "JP",
+      "to_latitude": 35.68,
+      "to_longitude": 139.76,
+      "weighted_score": 1058.55,
+      "density_score": 0.0564,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "china_platform_governance_to_TW",
+      "from_hub_id": "china_platform_governance",
+      "from_label": "China platform governance",
+      "from_latitude": 39.9,
+      "from_longitude": 116.4,
+      "to_country": "China Taiwan",
+      "to_country_code": "TW",
+      "to_latitude": 25.04,
+      "to_longitude": 121.56,
+      "weighted_score": 899.75,
+      "density_score": 0.0479,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "china_platform_governance_to_KR",
+      "from_hub_id": "china_platform_governance",
+      "from_label": "China platform governance",
+      "from_latitude": 39.9,
+      "from_longitude": 116.4,
+      "to_country": "South Korea",
+      "to_country_code": "KR",
+      "to_latitude": 37.57,
+      "to_longitude": 126.98,
+      "weighted_score": 895.55,
+      "density_score": 0.0477,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "eu_data_governance_to_CH",
+      "from_hub_id": "eu_data_governance",
+      "from_label": "EU data governance",
+      "from_latitude": 50.85,
+      "from_longitude": 4.35,
+      "to_country": "Switzerland",
+      "to_country_code": "CH",
+      "to_latitude": 46.95,
+      "to_longitude": 7.45,
+      "weighted_score": 895.0,
+      "density_score": 0.0476,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "apac_data_interface_to_PH",
+      "from_hub_id": "apac_data_interface",
+      "from_label": "Asia-Pacific data interface",
+      "from_latitude": 1.35,
+      "from_longitude": 103.82,
+      "to_country": "Philippines",
+      "to_country_code": "PH",
+      "to_latitude": 14.6,
+      "to_longitude": 120.98,
+      "weighted_score": 821.75,
+      "density_score": 0.0437,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "china_platform_governance_to_HK",
+      "from_hub_id": "china_platform_governance",
+      "from_label": "China platform governance",
+      "from_latitude": 39.9,
+      "from_longitude": 116.4,
+      "to_country": "China Hong Kong",
+      "to_country_code": "HK",
+      "to_latitude": 22.32,
+      "to_longitude": 114.17,
+      "weighted_score": 775.7,
+      "density_score": 0.0413,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "china_platform_governance_to_SA",
+      "from_hub_id": "china_platform_governance",
+      "from_label": "China platform governance",
+      "from_latitude": 39.9,
+      "from_longitude": 116.4,
+      "to_country": "Saudi Arabia",
+      "to_country_code": "SA",
+      "to_latitude": 24.71,
+      "to_longitude": 46.67,
+      "weighted_score": 765.35,
+      "density_score": 0.0407,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "apac_data_interface_to_MY",
+      "from_hub_id": "apac_data_interface",
+      "from_label": "Asia-Pacific data interface",
+      "from_latitude": 1.35,
+      "from_longitude": 103.82,
+      "to_country": "Malaysia",
+      "to_country_code": "MY",
+      "to_latitude": 3.14,
+      "to_longitude": 101.69,
+      "weighted_score": 664.1,
+      "density_score": 0.0354,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "china_platform_governance_to_PK",
+      "from_hub_id": "china_platform_governance",
+      "from_label": "China platform governance",
+      "from_latitude": 39.9,
+      "from_longitude": 116.4,
+      "to_country": "Pakistan",
+      "to_country_code": "PK",
+      "to_latitude": 33.68,
+      "to_longitude": 73.05,
+      "weighted_score": 635.05,
+      "density_score": 0.0338,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "us_policy_platform_to_RU",
+      "from_hub_id": "us_policy_platform",
+      "from_label": "United States policy + platform",
+      "from_latitude": 38.9,
+      "from_longitude": -77.04,
+      "to_country": "Russia",
+      "to_country_code": "RU",
+      "to_latitude": 55.76,
+      "to_longitude": 37.62,
+      "weighted_score": 612.2,
+      "density_score": 0.0326,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "us_policy_platform_to_KE",
+      "from_hub_id": "us_policy_platform",
+      "from_label": "United States policy + platform",
+      "from_latitude": 38.9,
+      "from_longitude": -77.04,
+      "to_country": "Kenya",
+      "to_country_code": "KE",
+      "to_latitude": -1.29,
+      "to_longitude": 36.82,
+      "weighted_score": 609.35,
+      "density_score": 0.0324,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "us_policy_platform_to_NG",
+      "from_hub_id": "us_policy_platform",
+      "from_label": "United States policy + platform",
+      "from_latitude": 38.9,
+      "from_longitude": -77.04,
+      "to_country": "Nigeria",
+      "to_country_code": "NG",
+      "to_latitude": 9.08,
+      "to_longitude": 7.49,
+      "weighted_score": 590.1,
+      "density_score": 0.0314,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "eu_data_governance_to_SE",
+      "from_hub_id": "eu_data_governance",
+      "from_label": "EU data governance",
+      "from_latitude": 50.85,
+      "from_longitude": 4.35,
+      "to_country": "Sweden",
+      "to_country_code": "SE",
+      "to_latitude": 59.33,
+      "to_longitude": 18.07,
+      "weighted_score": 559.45,
+      "density_score": 0.0298,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "china_platform_governance_to_TH",
+      "from_hub_id": "china_platform_governance",
+      "from_label": "China platform governance",
+      "from_latitude": 39.9,
+      "from_longitude": 116.4,
+      "to_country": "Thailand",
+      "to_country_code": "TH",
+      "to_latitude": 13.76,
+      "to_longitude": 100.5,
+      "weighted_score": 467.45,
+      "density_score": 0.0249,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "china_platform_governance_to_BD",
+      "from_hub_id": "china_platform_governance",
+      "from_label": "China platform governance",
+      "from_latitude": 39.9,
+      "from_longitude": 116.4,
+      "to_country": "Bangladesh",
+      "to_country_code": "BD",
+      "to_latitude": 23.81,
+      "to_longitude": 90.41,
+      "weighted_score": 426.8,
+      "density_score": 0.0227,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "apac_data_interface_to_NZ",
+      "from_hub_id": "apac_data_interface",
+      "from_label": "Asia-Pacific data interface",
+      "from_latitude": 1.35,
+      "from_longitude": 103.82,
+      "to_country": "New Zealand",
+      "to_country_code": "NZ",
+      "to_latitude": -41.29,
+      "to_longitude": 174.78,
+      "weighted_score": 412.8,
+      "density_score": 0.022,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "eu_data_governance_to_NO",
+      "from_hub_id": "eu_data_governance",
+      "from_label": "EU data governance",
+      "from_latitude": 50.85,
+      "from_longitude": 4.35,
+      "to_country": "Norway",
+      "to_country_code": "NO",
+      "to_latitude": 59.91,
+      "to_longitude": 10.75,
+      "weighted_score": 392.7,
+      "density_score": 0.0209,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "eu_data_governance_to_DK",
+      "from_hub_id": "eu_data_governance",
+      "from_label": "EU data governance",
+      "from_latitude": 50.85,
+      "from_longitude": 4.35,
+      "to_country": "Denmark",
+      "to_country_code": "DK",
+      "to_latitude": 55.68,
+      "to_longitude": 12.57,
+      "weighted_score": 386.0,
+      "density_score": 0.0205,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "eu_data_governance_to_FI",
+      "from_hub_id": "eu_data_governance",
+      "from_label": "EU data governance",
+      "from_latitude": 50.85,
+      "from_longitude": 4.35,
+      "to_country": "Finland",
+      "to_country_code": "FI",
+      "to_latitude": 60.17,
+      "to_longitude": 24.94,
+      "weighted_score": 343.0,
+      "density_score": 0.0183,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "eu_data_governance_to_AT",
+      "from_hub_id": "eu_data_governance",
+      "from_label": "EU data governance",
+      "from_latitude": 50.85,
+      "from_longitude": 4.35,
+      "to_country": "Austria",
+      "to_country_code": "AT",
+      "to_latitude": 48.21,
+      "to_longitude": 16.37,
+      "weighted_score": 326.0,
+      "density_score": 0.0174,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "china_platform_governance_to_AE",
+      "from_hub_id": "china_platform_governance",
+      "from_label": "China platform governance",
+      "from_latitude": 39.9,
+      "from_longitude": 116.4,
+      "to_country": "United Arab Emirates",
+      "to_country_code": "AE",
+      "to_latitude": 24.45,
+      "to_longitude": 54.38,
+      "weighted_score": 289.55,
+      "density_score": 0.0154,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "us_policy_platform_to_AR",
+      "from_hub_id": "us_policy_platform",
+      "from_label": "United States policy + platform",
+      "from_latitude": 38.9,
+      "from_longitude": -77.04,
+      "to_country": "Argentina",
+      "to_country_code": "AR",
+      "to_latitude": -34.6,
+      "to_longitude": -58.38,
+      "weighted_score": 286.95,
+      "density_score": 0.0153,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "china_platform_governance_to_QA",
+      "from_hub_id": "china_platform_governance",
+      "from_label": "China platform governance",
+      "from_latitude": 39.9,
+      "from_longitude": 116.4,
+      "to_country": "Qatar",
+      "to_country_code": "QA",
+      "to_latitude": 25.4,
+      "to_longitude": 51.2,
+      "weighted_score": 282.0,
+      "density_score": 0.015,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    },
+    {
+      "link_id": "china_platform_governance_to_VN",
+      "from_hub_id": "china_platform_governance",
+      "from_label": "China platform governance",
+      "from_latitude": 39.9,
+      "from_longitude": 116.4,
+      "to_country": "Vietnam",
+      "to_country_code": "VN",
+      "to_latitude": 21.03,
+      "to_longitude": 105.85,
+      "weighted_score": 274.95,
+      "density_score": 0.0146,
+      "route_basis": "high-probability concentration path from recovered country-level signal",
+      "confidence": "high",
+      "notes": "Radiation links are visual attention/discourse paths, not proof of causal diffusion."
+    }
+  ],
+  "density_palette": [
+    {
+      "class": "trace",
+      "label": "Trace",
+      "color": "#ded7c4"
+    },
+    {
+      "class": "low",
+      "label": "Low",
+      "color": "#b8b09c"
+    },
+    {
+      "class": "medium",
+      "label": "Medium",
+      "color": "#7c6d8f"
+    },
+    {
+      "class": "high",
+      "label": "High",
+      "color": "#7e42b8"
+    },
+    {
+      "class": "very_high",
+      "label": "Very high",
+      "color": "#30104f"
+    }
+  ],
+  "strong_signals": [
+    "Global country-level hotspot map is supported by recovered OpenAlex and GDELT records.",
+    "City-level points are strongest for academic and institutional geography.",
+    "Radiation can be shown as high-probability concentration paths from major recovered hubs."
+  ],
+  "limitations": [
+    "This is not a pure Google search-interest map because Google Trends region data was unavailable.",
+    "Country hotspots combine academic production and news/source geography; they approximate attention/discourse, not population-normalized search demand.",
+    "Radiation paths are visual and probabilistic; they should not be described as proven diffusion routes.",
+    "Elevation is carried forward for the coordinate subset but belongs to a later 02B layer."
+  ]
+}

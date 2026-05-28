@@ -2,9 +2,15 @@
   "name": "words-over-time",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "npm@10.9.4",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "typecheck": "tsc --noEmit --pretty false",
+    "verify": "npm run typecheck && npm run data:data:validate && npm run build",
     "start": "next start",
     "data:forever:ngram": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_ngram_forever.ts",
     "data:forever:gutenberg": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_gutenberg_forever.ts",

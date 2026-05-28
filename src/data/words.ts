@@ -9,20 +9,6 @@ export const words: Word[] = [
     hoverLabel: "social count",
   },
   {
-    label: "privacy",
-    slug: "privacy",
-    status: "complete",
-    href: "/words/privacy",
-    hoverLabel: "private weather",
-  },
-  {
-    label: "artificial",
-    slug: "artificial",
-    status: "complete",
-    href: "/words/artificial",
-    hoverLabel: "made meaning",
-  },
-  {
     label: "hub",
     slug: "hub",
     status: "complete",
@@ -30,11 +16,11 @@ export const words: Word[] = [
     hoverLabel: "center moved",
   },
   {
-    label: "depression",
-    slug: "depression",
+    label: "privacy",
+    slug: "privacy",
     status: "complete",
-    href: "/words/depression",
-    hoverLabel: "double crisis",
+    href: "/words/privacy",
+    hoverLabel: "private weather",
   },
   {
     label: "forever",
@@ -44,9 +30,23 @@ export const words: Word[] = [
     hoverLabel: "long promise",
   },
   {
+    label: "artificial",
+    slug: "artificial",
+    status: "complete",
+    href: "/words/artificial",
+    hoverLabel: "made meaning",
+  },
+  {
     label: "intelligence",
     slug: "intelligence",
     status: "coming-soon",
+  },
+  {
+    label: "depression",
+    slug: "depression",
+    status: "complete",
+    href: "/words/depression",
+    hoverLabel: "double crisis",
   },
 ];
 

@@ -11,6 +11,22 @@ import {
   PrivacyChart01ModernTransit,
   type PrivacyModernTransitDataset,
 } from "@/components/privacy/PrivacyChart01ModernTransit";
+import {
+  PrivacyChart02GeoAttention,
+  type PrivacyGeoAttentionDataset,
+} from "@/components/privacy/PrivacyChart02GeoAttention";
+import {
+  PrivacyChart02ElevationDistribution,
+  type PrivacyGeoElevationDataset,
+} from "@/components/privacy/PrivacyChart02ElevationDistribution";
+import {
+  PrivacyChart02DemographicContext,
+  type PrivacyGeoDemographicContextDataset,
+} from "@/components/privacy/PrivacyChart02DemographicContext";
+import {
+  PrivacyChart03GovernanceInterface,
+  type PrivacyResearchExpansionDataset,
+} from "@/components/privacy/PrivacyChart03GovernanceInterface";
 import { Nav } from "@/components/Nav";
 import { PanelProgress } from "@/components/PanelProgress";
 import { PosterSection } from "@/components/PosterSection";
@@ -19,15 +35,27 @@ type PrivacyPosterProps = {
   semanticWeather: PrivacySemanticWeatherDataset;
   legalInjury: PrivacyLegalInjuryDataset;
   modernTransit: PrivacyModernTransitDataset;
+  geoAttention: PrivacyGeoAttentionDataset;
+  geoElevation: PrivacyGeoElevationDataset;
+  geoDemographic: PrivacyGeoDemographicContextDataset;
+  researchExpansion: PrivacyResearchExpansionDataset;
 };
 
 const privacyPanels = [
-  { num: "01", label: "Semantic Weather", color: "#6C4FA3" },
-  { num: "02", label: "Rights Threshold", color: "#DDBE24" },
-  { num: "03", label: "Information Boundary", color: "#5FA66B" },
+  { num: "01", label: "Semantic Formation", color: "#6C4FA3" },
+  { num: "02", label: "World Signal", color: "#2f7891" },
+  { num: "03", label: "Governance Interface", color: "#5FA66B" },
 ];
 
-export function PrivacyPoster({ semanticWeather, legalInjury, modernTransit }: PrivacyPosterProps) {
+export function PrivacyPoster({
+  semanticWeather,
+  legalInjury,
+  modernTransit,
+  geoAttention,
+  geoElevation,
+  geoDemographic,
+  researchExpansion,
+}: PrivacyPosterProps) {
   return (
     <main className="min-h-screen bg-[#e9dfc9] text-ink">
       <div className="mx-auto flex w-full max-w-[1960px] flex-col px-4 py-5 sm:px-7 lg:px-10 xl:px-12">
@@ -45,24 +73,25 @@ export function PrivacyPoster({ semanticWeather, legalInjury, modernTransit }: P
                 privacy
               </h1>
               <p className="mt-10 max-w-5xl text-[clamp(1.12rem,2.12vw,2.7rem)] font-black leading-[1.04] text-ink">
-                A word that moved from seclusion to rights, then into information.
+                A word that moves from private life and secrecy, into legal and data systems, across geography, then into governance interfaces.
               </p>
               <p className="mt-4 max-w-3xl font-mono text-[clamp(0.76rem,1.02vw,0.96rem)] font-black uppercase leading-6 tracking-[0.12em] text-ink/70">
-                Private life / secrecy / observation / intrusion / right to privacy / data boundary.
+                Seclusion / secrecy / legal claim / data protection / geography / population / consent / surveillance / AI-sensitive data.
               </p>
             </div>
 
             <dl className="grid self-end border-y border-ink/72 bg-[#e9dfc9]/78 lg:self-center">
               {[
                 ["study", "word history"],
-                ["scope", "1200-1890"],
-                ["chart 01", "semantic weather"],
+                ["scope", "1200-2026"],
+                ["sequence", "01A-03 / 7 views"],
+                ["method", "source-led evidence"],
                 ["not", "site privacy policy"],
               ].map(([label, value], index) => (
                 <div
                   key={label}
                   className={`grid grid-cols-[7.25rem_1fr] border-ink/72 ${
-                    index < 3 ? "border-b" : ""
+                    index < 4 ? "border-b" : ""
                   }`}
                 >
                   <dt className="border-r border-ink/72 px-3 py-3 font-mono text-[0.74rem] font-black uppercase leading-5 tracking-[0.14em] text-privacy-violet/76">
@@ -85,9 +114,10 @@ export function PrivacyPoster({ semanticWeather, legalInjury, modernTransit }: P
               entry note
             </p>
             <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/68">
-              Privacy does not begin as a digital panic. Before it becomes a civil right or an information boundary,
-              it moves through older fields of private life, secrecy, withdrawal, and pressure from public exposure.
-              This first chart keeps that early motion intentionally quiet.
+              Privacy does not begin as a digital panic, and it does not end as a single legal right. This page follows
+              the word through an older semantic field of private life and secrecy, a legal and data-system transition,
+              a geographic and demographic expansion of recovered signal, and a final interface layer where courts, regulators, platforms,
+              public attention, and technical research braid the word into modern governance.
             </p>
           </div>
 
@@ -107,7 +137,7 @@ export function PrivacyPoster({ semanticWeather, legalInjury, modernTransit }: P
             </div>
             <PrivacyChart01SemanticWeather dataset={semanticWeather} />
 
-            <div className="mt-16 border-t border-ink/35 pt-10">
+            <div className="mt-16 pt-10">
               <div className="mb-8 grid gap-5 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
                 <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
                   01B / legal injury
@@ -125,8 +155,8 @@ export function PrivacyPoster({ semanticWeather, legalInjury, modernTransit }: P
               <PrivacyChart01LegalInjury dataset={legalInjury} />
             </div>
 
-            <div className="mt-16 border-t border-ink/35 pt-10">
-              <div className="mb-8 grid gap-5 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
+            <div className="mt-16 pt-10">
+              <div className="mb-1 grid gap-5 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
                 <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
                   01C / modern transit
                 </p>
@@ -144,7 +174,99 @@ export function PrivacyPoster({ semanticWeather, legalInjury, modernTransit }: P
             </div>
           </PosterSection>
 
-          <div className="mt-12 border-t border-ink/80 pb-12 pt-0">
+          <PosterSection
+            id="chart-2-geo-attention"
+            eyebrow="02 / geographic attention"
+            title="Privacy as a World Signal"
+            intro="The next layer leaves the timeline and asks where privacy becomes visible: through country-level density, city and institution points, and high-probability paths between concentrated attention hubs."
+          >
+            <PrivacyChart02GeoAttention dataset={geoAttention} />
+
+            <div className="mt-16 pt-10">
+              <div className="mb-8 grid gap-5 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
+                <p className="font-mono text-[0.98rem] font-black uppercase leading-6 tracking-[0.16em] text-[#7E42B8]">
+                  02B / elevation signal
+                </p>
+                <div>
+                  <h3 className="max-w-[940px] text-[clamp(1.22rem,2vw,1.95rem)] font-black leading-[1.02] tracking-normal text-ink">
+                    Privacy Signal Against Altitude
+                  </h3>
+                  <p className="mt-2 max-w-[1000px] text-[1.02rem] leading-[1.55] text-ink/68">
+                    The same recovered geo layer is folded by elevation: not to claim that altitude causes privacy
+                    attention, but to test whether the signal gathers in low, coastal, institutional, or highland places.
+                  </p>
+                </div>
+              </div>
+              <PrivacyChart02ElevationDistribution dataset={geoElevation} />
+            </div>
+
+            <div className="mt-16 pt-10">
+              <div className="mb-1 grid gap-5 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
+                <p className="font-mono text-[0.98rem] font-black uppercase leading-6 tracking-[0.16em] text-[#7E42B8]">
+                  02C / demographic context
+                </p>
+                <div>
+                  <h3 className="max-w-[980px] text-[clamp(1.22rem,2vw,1.95rem)] font-black leading-[1.02] tracking-normal text-ink">
+                    Privacy Signal, Population, and Life Expectancy
+                  </h3>
+                  <p className="mt-2 max-w-[1040px] text-[1.02rem] leading-[1.55] text-ink/68">
+                    A macro field where population scale and life expectancy become spatial scaffolding; privacy
+                    appears as recovered signal density, mesh, and motion rather than a single explanation.
+                  </p>
+                </div>
+              </div>
+              <PrivacyChart02DemographicContext dataset={geoDemographic} />
+              <div className="grid gap-5 bg-[#e9dfc9] px-4 py-8 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10 lg:px-6">
+                <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+                  observed relation
+                </p>
+                <p className="max-w-[1080px] text-[1.02rem] leading-[1.58] text-ink/70">
+                  In the joined country records, population is plotted on a logarithmic x-axis and life expectancy on
+                  the y-axis, while recovered privacy search frequency is expressed through node density, local mesh,
+                  and per-million signal. Larger populations often produce larger absolute record counts, but the
+                  per-million layer makes smaller countries visible when their privacy frequency is high relative to
+                  population. Countries with similar life expectancy can still show different privacy densities, so the
+                  field is read as a macro comparison between demographic scale, longevity context, and recovered word
+                  frequency rather than as a single directional relationship.
+                </p>
+              </div>
+            </div>
+          </PosterSection>
+
+          <PosterSection
+            id="chart-3-governance-interface"
+            eyebrow="03 / governance interface"
+            title="Privacy Becomes an Interface"
+            intro="The final layer turns away from geography and gathers the unused research-expansion sources into a density-spaced semantic time field: same-color circles mark related privacy branches, and black connector lines show how those terms are sequenced across the 1890-2026 axis."
+            className="mt-6 border-t border-ink/35 pt-10"
+          >
+            <PrivacyChart03GovernanceInterface dataset={researchExpansion} />
+            <div className="grid gap-5 border-b border-ink/25 bg-[#f3eee3] px-4 py-7 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10 lg:px-6">
+              <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+                semantic trace
+              </p>
+              <p className="max-w-[1080px] text-[1.02rem] leading-[1.58] text-ink/70">
+                The circles do not measure time as equal distance. They group the years where the recovered data becomes
+                dense, so the recent platform, policy, surveillance, and technical terms occupy more visual room than a
+                linear 1890-2026 scale would allow. The branches show privacy moving from legal-right vocabulary into
+                policy language, interface controls, public-risk language, and technical governance terms, while each
+                node remains tied to a recovered record count rather than a purely decorative category.
+              </p>
+            </div>
+          </PosterSection>
+
+          <div className="mt-12 pb-12 pt-0">
+            <div className="grid gap-5 border-b border-ink/80 py-8 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
+              <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
+                next boundary
+              </p>
+              <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/72">
+                By the end of the page, privacy is no longer only a moral boundary or a legal injury. It has become
+                an operating surface where forms, settings, policies, platforms, courts, archives, and technical systems
+                keep translating older desires for protected life into rules. What remains open is where the next
+                boundary will be drawn, and who gets to draw it.
+              </p>
+            </div>
             <div className="mt-8 flex flex-wrap gap-4 font-mono text-[0.8rem] font-black uppercase tracking-[0.13em]">
               <Link href="/" className="border-b border-ink pb-1 transition hover:border-privacy-violet hover:text-privacy-violet">
                 Back home

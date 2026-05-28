@@ -36,18 +36,18 @@ type EvidenceArchiveProps = {
 };
 
 const width = 1900;
-const height = 1340;
+const height = 1360;
 const left = 96;
 const archiveEnd = 1264;
 const modernStart = 1560;
 const modernEnd = 1812;
 
 const rows = {
-  attestation: 152,
-  ngram: 328,
-  archive: 574,
-  gap: 944,
-  modern: 1076,
+  attestation: 138,
+  ngram: 410,
+  archive: 656,
+  gap: 900,
+  modern: 1150,
 };
 
 const colors: Record<string, string> = {
@@ -146,11 +146,11 @@ export function EvidenceArchive({
   const visiblePhrases = phrases
     .filter((phrase) => (selectedEra === "all" ? phrase.eraId === "all" : phrase.eraId === selectedEra) && phrase.displayEligible)
     .sort((a, b) => b.count - a.count)
-    .slice(0, 10);
+    .slice(0, 8);
   const visibleCollocates = collocates
     .filter((collocate) => (selectedEra === "all" ? collocate.eraId === "all" : collocate.eraId === selectedEra) && collocate.displayEligible)
     .sort((a, b) => b.count - a.count)
-    .slice(0, 12);
+    .slice(0, 10);
   const visibleLedger = ledger.filter((cell) =>
     selectedEra === "all"
       ? ["1700-1799", "1800-1849", "1850-1899", "1900-1949"].includes(cell.eraId)
@@ -193,19 +193,19 @@ export function EvidenceArchive({
 
           {[1375, 1500, 1700, 1726, 1819, 1930, 2024, 2026].map((year) => (
             <g key={year}>
-              <line x1={x(year)} x2={x(year)} y1="92" y2="1218" stroke="#050510" strokeOpacity={year === 1930 || year === 2024 ? 0.24 : 0.08} strokeDasharray={year === 1930 || year === 2024 ? "4 10" : undefined} />
-              <text x={x(year)} y="1260" textAnchor="middle" className="fill-ink/62 font-mono text-[16px] font-black uppercase tracking-[0.08em]">
+              <line x1={x(year)} x2={x(year)} y1="86" y2="1238" stroke="#050510" strokeOpacity={year === 1930 || year === 2024 ? 0.22 : 0.07} strokeDasharray={year === 1930 || year === 2024 ? "4 10" : undefined} />
+              <text x={x(year)} y="1268" textAnchor="middle" className="fill-ink/62 font-mono text-[15px] font-black uppercase tracking-[0.08em]">
                 {year}
               </text>
             </g>
           ))}
 
-          <rect x={archiveEnd} y="96" width={modernStart - archiveEnd} height="1126" fill="url(#archive-gap)" opacity="0.24" />
-          <path d={`M ${archiveEnd} 96 L ${archiveEnd + 72} 236 L ${archiveEnd + 18} 392 L ${archiveEnd + 92} 548 L ${archiveEnd + 28} 716 L ${archiveEnd + 104} 892 L ${archiveEnd + 46} 1222`} fill="none" stroke="#050510" strokeWidth="3" strokeOpacity="0.34" />
-          <text x={(archiveEnd + modernStart) / 2} y={rows.gap - 18} textAnchor="middle" className="fill-ink/66 font-mono text-[18px] font-black uppercase tracking-[0.16em]">
+          <rect x={archiveEnd} y="92" width={modernStart - archiveEnd} height="1146" fill="url(#archive-gap)" opacity="0.18" />
+          <path d={`M ${archiveEnd} 92 L ${archiveEnd + 64} 252 L ${archiveEnd + 22} 426 L ${archiveEnd + 84} 598 L ${archiveEnd + 30} 782 L ${archiveEnd + 96} 970 L ${archiveEnd + 44} 1238`} fill="none" stroke="#050510" strokeWidth="2.4" strokeOpacity="0.28" />
+          <text x={(archiveEnd + modernStart) / 2} y={rows.gap - 14} textAnchor="middle" className="fill-ink/66 font-mono text-[16px] font-black uppercase tracking-[0.14em]">
             1930-2023 context gap
           </text>
-          <text x={(archiveEnd + modernStart) / 2} y={rows.gap + 14} textAnchor="middle" className="fill-ink/48 font-mono text-[16px] font-black uppercase tracking-[0.1em]">
+          <text x={(archiveEnd + modernStart) / 2} y={rows.gap + 14} textAnchor="middle" className="fill-ink/48 font-mono text-[14px] font-black uppercase tracking-[0.08em]">
             no comparable corpus layer
           </text>
 
@@ -220,7 +220,7 @@ export function EvidenceArchive({
               <text x="76" y={Number(yRow) - 56} className="fill-ink font-mono text-[17px] font-black uppercase tracking-[0.13em]">
                 {label}
               </text>
-              <line x1="76" x2={width - 76} y1={Number(yRow) - 32} y2={Number(yRow) - 32} stroke={String(color)} strokeWidth="3" strokeOpacity="0.34" />
+              <line x1="76" x2={width - 76} y1={Number(yRow) - 30} y2={Number(yRow) - 30} stroke={String(color)} strokeWidth="2.5" strokeOpacity="0.3" />
             </g>
           ))}
 
@@ -236,8 +236,8 @@ export function EvidenceArchive({
             });
             const active = activeId === record.id || match === "active";
             const related = match === "related";
-            const xx = x(record.yearApproximation);
-            const yy = rows.attestation + (index % 3) * 34;
+            const xx = Math.max(148, x(record.yearApproximation));
+            const yy = rows.attestation + index * 54;
             const lines = wrapWords(`${record.form} ${record.dateLabel}`, 18);
             return (
               <g
@@ -256,9 +256,9 @@ export function EvidenceArchive({
               >
                 <circle cx={xx} cy={yy} r={active ? 10 : 7} fill="#F5ECD2" stroke="#050510" strokeWidth="2.5" />
                 <line x1={xx} x2={xx + 70} y1={yy} y2={yy} stroke="#1570AC" strokeWidth={active ? 5 : 3} strokeLinecap="round" />
-                <text x={xx + 82} y={yy - 8} className="fill-ink font-mono text-[16px] font-black uppercase tracking-[0.07em]">
+                <text x={xx + 88} y={yy - 9} className="fill-ink font-mono text-[15px] font-black uppercase tracking-[0.06em]">
                   {lines.map((line, lineIndex) => (
-                    <tspan key={line} x={xx + 82} dy={lineIndex === 0 ? 0 : 17}>
+                    <tspan key={line} x={xx + 88} dy={lineIndex === 0 ? 0 : 17}>
                       {line}
                     </tspan>
                   ))}
@@ -279,7 +279,7 @@ export function EvidenceArchive({
             });
             const active = activeId === series.inspectorId || match === "active";
             const related = match === "related";
-            const yy = rows.ngram - 18 + index * 40;
+            const yy = rows.ngram - 82 + index * 48;
             const lines = wrapWords(series.query, 18);
             return (
               <g
@@ -319,7 +319,7 @@ export function EvidenceArchive({
               eraId: cell.eraId,
               categoryIds: [cell.categoryId],
             });
-            const yy = rows.archive - 88 + (index % 6) * 22;
+            const yy = rows.archive - 112 + (index % 6) * 40;
             const xx = x(1726) + Math.floor(index / 6) * 210 + (index % 2) * 26;
             return (
               <line
@@ -352,9 +352,11 @@ export function EvidenceArchive({
             });
             const active = activeId === id || match === "active";
             const related = match === "related";
-            const xx = x(1726) + 18 + Math.floor(index / 5) * 286 + (index % 2) * 28;
-            const yy = rows.archive + 50 + (index % 5) * 42;
-            const lines = wrapWords(label, 18);
+            const col = index % 6;
+            const row = Math.floor(index / 6);
+            const xx = left + 18 + col * 186;
+            const yy = rows.archive + 154 + row * 72;
+            const lines = wrapWords(label, 13).slice(0, 2);
             return (
               <g
                 key={`${id}-${index}`}
@@ -372,16 +374,17 @@ export function EvidenceArchive({
               >
                 <line
                   x1={xx}
-                  x2={xx + archivalStripWidth(xx, 50 + support * 10, 42)}
+                  x2={xx + archivalStripWidth(xx, 44 + support * 7, 38)}
                   y1={yy}
                   y2={yy}
                   stroke={color}
-                  strokeWidth={active ? 7 : 4}
+                  strokeWidth={active ? 7 : 4.5}
                   strokeLinecap="round"
                 />
-                <text x={xx} y={yy - 12} className="fill-ink/74 font-mono text-[15px] font-black uppercase tracking-[0.07em]">
+                <circle cx={xx - 11} cy={yy} r={active ? 6.5 : 4.4} fill={color} stroke="#050510" strokeWidth="1.5" />
+                <text x={xx} y={yy - 12} className="fill-ink/70 font-mono text-[12.5px] font-black uppercase tracking-[0.055em]">
                   {lines.map((line, lineIndex) => (
-                    <tspan key={line} x={xx} dy={lineIndex === 0 ? 0 : 15}>
+                    <tspan key={line} x={xx} dy={lineIndex === 0 ? 0 : 13}>
                       {line}
                     </tspan>
                   ))}
@@ -406,8 +409,8 @@ export function EvidenceArchive({
             });
             const active = activeId === snippet.inspectorId || highlightSet.has(snippet.id) || match === "active";
             const related = match === "related";
-            const xx = x(snippet.year) + ((index % 3) - 1) * 10;
-            const yy = rows.archive + 292 + lane * 34 + (index % 2) * 10;
+            const xx = Math.max(334, x(snippet.year) + ((index % 3) - 1) * 18);
+            const yy = rows.gap + 56 + lane * 44 + (index % 2) * 14;
             return (
               <g
                 key={snippet.id}
@@ -459,9 +462,9 @@ export function EvidenceArchive({
             });
             const active = activeId === snippet.id || highlightSet.has(snippet.id) || match === "active";
             const related = match === "related";
-            const xx = x(snippet.year) + Math.floor(index / 5) * 48;
-            const yy = rows.modern - 18 + (index % 5) * 44;
-            const lines = index < 5 ? wrapWords(snippet.query, 16) : [];
+            const xx = Math.min(x(snippet.year) + Math.floor(index / 5) * 58, modernEnd - 170);
+            const yy = rows.modern - 24 + (index % 5) * 46;
+            const lines = index < 4 ? wrapWords(snippet.query, 14).slice(0, 2) : [];
             return (
               <g
                 key={snippet.id}
@@ -493,7 +496,7 @@ export function EvidenceArchive({
             );
           })}
 
-          <g transform="translate(76 1292)" className="font-mono text-[16px] font-black uppercase tracking-[0.1em]">
+          <g transform="translate(76 1318)" className="font-mono text-[15px] font-black uppercase tracking-[0.095em]">
             <line x1="0" x2="64" y1="-4" y2="-4" stroke="#F06B04" strokeWidth="5" strokeLinecap="round" />
             <text x="82" y="0" className="fill-ink/58">frequency coverage</text>
             <rect x="352" y="-15" width="58" height="22" fill="#050510" opacity="0.7" />

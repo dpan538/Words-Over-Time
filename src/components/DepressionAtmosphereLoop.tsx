@@ -66,13 +66,13 @@ const CY = 560;
 const TILT = 0.58;
 const ink = "#050510";
 const paper = "#F5ECD2";
-const blue = "#1570AC";
-const cyan = "#2C9FC7";
-const grayBlue = "#596F82";
-const orangeRed = "#E04A22";
-const ochre = "#C88D18";
-const wine = "#7C345A";
-const teal = "#0B7F73";
+const blue = "#006FB6";
+const cyan = "#009FCE";
+const grayBlue = "#3F668D";
+const orangeRed = "#F2521A";
+const ochre = "#D79500";
+const wine = "#9B2F67";
+const teal = "#008B79";
 
 const laneDefs: {
   id: LaneId;
@@ -826,10 +826,10 @@ export function DepressionAtmosphereLoop({
             <text x="96" y="126" fill={ink} fontFamily="Helvetica Neue, Helvetica, Arial, sans-serif" fontSize="42" fontWeight="900">
               Depression as a social atmosphere
             </text>
-            <text x={WIDTH - 96} y="82" textAnchor="end" fill={ink} opacity="0.58" fontFamily="monospace" fontSize="16" fontWeight="900" letterSpacing="1.4">
+            <text x={WIDTH - 96} y="82" textAnchor="end" fill={ink} opacity="0.72" fontFamily="monospace" fontSize="16" fontWeight="900" letterSpacing="1.4">
               from expert term to generalized social condition
             </text>
-            <text x={WIDTH - 96} y="110" textAnchor="end" fill={ink} opacity="0.46" fontFamily="monospace" fontSize="15" fontWeight="900" letterSpacing="0.9">
+            <text x={WIDTH - 96} y="110" textAnchor="end" fill={ink} opacity="0.76" fontFamily="monospace" fontSize="15" fontWeight="900" letterSpacing="0.9">
               projected ring / three source bands / inner circulation arcs
             </text>
           </g>
@@ -1070,7 +1070,7 @@ export function DepressionAtmosphereLoop({
           <text x={CX} y={CY - 18} textAnchor="middle" fill={ink} opacity="0.84" fontFamily="monospace" fontSize="18" fontWeight="900" letterSpacing="3.2">
             AMBIENT CORE
           </text>
-          <text x={CX} y={CY + 16} textAnchor="middle" fill={ink} opacity="0.6" fontFamily="monospace" fontSize="13" fontWeight="900" letterSpacing="1.3">
+          <text x={CX} y={CY + 16} textAnchor="middle" fill={ink} opacity="0.74" fontFamily="monospace" fontSize="13" fontWeight="900" letterSpacing="1.3">
             expert &gt; media &gt; lived
           </text>
 
@@ -1182,7 +1182,7 @@ export function DepressionAtmosphereLoop({
 
           <g transform="translate(1210 964)">
             <line x1="0" x2="330" y1="0" y2="0" stroke={ink} strokeOpacity="0.55" strokeWidth="1.8" />
-            <text x="0" y="30" fill={ink} opacity="0.68" fontFamily="monospace" fontSize="14" fontWeight="900" letterSpacing="2">
+            <text x="0" y="30" fill={ink} opacity="0.8" fontFamily="monospace" fontSize="14" fontWeight="900" letterSpacing="2">
               LANES
             </text>
             {laneDefs.map((lane, index) => (
@@ -1216,7 +1216,7 @@ export function DepressionAtmosphereLoop({
                 ? selectedPanelSector.keywords.slice(3).join(" / ")
                 : "condition-language moves outward, then feeds back through response"}
             </text>
-            <text x="0" y="148" fill={ink} opacity="0.64" fontFamily="monospace" fontSize="14" fontWeight="900" letterSpacing="0.7">
+            <text x="0" y="148" fill={ink} opacity="0.76" fontFamily="monospace" fontSize="14" fontWeight="900" letterSpacing="0.7">
               {selectedPanelSector ? `GENERALIZATION ${Math.round(selectedPanelSector.generalization * 100)} / WEIGHT ${Math.round(selectedPanelSector.weight * 100)}` : "SEMANTIC CIRCULATION / NOT PREVALENCE"}
             </text>
           </g>

@@ -54,7 +54,7 @@ export function MiniInspectorMenu({
   return (
     <div
       ref={ref}
-      className="fixed z-50 w-[20rem] border border-ink bg-wheat/96 px-3.5 py-3.5 font-mono text-ink shadow-[5px_5px_0_#050510] backdrop-blur"
+      className={`fixed z-50 w-[20rem] border border-ink bg-wheat/96 px-3.5 py-3.5 font-mono text-ink shadow-[5px_5px_0_#050510] backdrop-blur ${pinned ? "" : "pointer-events-none"}`}
       style={{ left: coords.x, top: coords.y }}
     >
       <div className="flex items-start justify-between gap-3">

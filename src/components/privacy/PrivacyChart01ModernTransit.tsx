@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { type CSSProperties, useMemo, useState } from "react";
 
 type ModernTransitRoute = {
   route_id: string;
@@ -60,8 +60,13 @@ const PAPER = "#e9dfc9";
 const VIOLET = "#7E42B8";
 const MONO_STYLE = { fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace" };
 const SANS_STYLE = { fontFamily: "Arial, Helvetica, sans-serif" };
+const ROUTE_CODE_STYLE: CSSProperties = {
+  ...SANS_STYLE,
+  textRendering: "geometricPrecision",
+  WebkitFontSmoothing: "antialiased",
+};
 const MAP_WIDTH = 1600;
-const MAP_HEIGHT = 1600;
+const MAP_HEIGHT = 1680;
 
 const ROUTE_CODES: Record<string, string> = {
   rights_personhood: "R",
@@ -114,7 +119,7 @@ const LABEL_POSITIONS: Record<string, LabelPosition> = {
   griswold_1965: { x: 390, y: 285, anchor: "start", lines: ["Griswold"] },
   katz_1967: { x: 528, y: 422, anchor: "start", lines: ["Reasonable", "expectation"] },
   hew_fipps_1973: { x: 210, y: 650, anchor: "middle", lines: ["Fair information", "practices"] },
-  privacy_act_1974: { x: 360, y: 512, anchor: "middle", lines: ["Privacy Act"] },
+  privacy_act_1974: { x: 360, y: 468, anchor: "middle", lines: ["Privacy Act"] },
   oecd_guidelines_1980: { x: 520, y: 650, anchor: "middle", lines: ["OECD", "guidelines"] },
   convention_108_1981: { x: 690, y: 422, anchor: "start", lines: ["Convention 108"] },
   ecpa_1986: { x: 815, y: 772, anchor: "start", lines: ["Electronic", "communications"] },
@@ -130,9 +135,9 @@ const LABEL_POSITIONS: Record<string, LabelPosition> = {
   cambridge_analytica_2018: { x: 1392, y: 774, anchor: "start", lines: ["Platform", "profiling"] },
   gdpr_applies_2018: { x: 1228, y: 452, anchor: "end", lines: ["GDPR", "applies"] },
   ccpa_2018_2020: { x: 1342, y: 1262, anchor: "end", lines: ["Consumer", "rights"] },
-  china_pipl_2021: { x: 1450, y: 492, anchor: "middle", lines: ["PIPL"] },
+  china_pipl_2021: { x: 1398, y: 636, anchor: "end", lines: ["PIPL"] },
   state_privacy_2023: { x: 1488, y: 1262, anchor: "end", lines: ["State privacy", "wave"] },
-  eu_ai_act_2024: { x: 1458, y: 280, anchor: "end", lines: ["AI +", "biometrics"] },
+  eu_ai_act_2024: { x: 1458, y: 238, anchor: "end", lines: ["AI +", "biometrics"] },
 };
 
 const ROUTE_PATHS: Record<string, string[]> = {
@@ -252,21 +257,30 @@ export function PrivacyChart01ModernTransit({ dataset }: PrivacyChart01ModernTra
           </text>
         </g>
 
-        <g transform="translate(1088 54)">
+        <g transform="translate(1036 54)">
           {dataset.routes.map((route, index) => {
-            const x = (index % 2) * 242;
-            const y = Math.floor(index / 2) * 46;
+            const x = (index % 2) * 270;
+            const y = Math.floor(index / 2) * 54;
             const code = ROUTE_CODES[route.route_id];
             return (
               <g key={`legend-${route.route_id}`} transform={`translate(${x} ${y})`}>
-                <circle cx="0" cy="0" r="16" fill={route.color} />
-                <text x="0" y="6" textAnchor="middle" style={SANS_STYLE} fontSize="17" fontWeight="900" fill={PAPER}>
+                <circle cx="0" cy="0" r="17" fill={route.color} />
+                <text
+                  x="0"
+                  y="0"
+                  textAnchor="middle"
+                  dominantBaseline="central"
+                  style={ROUTE_CODE_STYLE}
+                  fontSize="18"
+                  fontWeight="800"
+                  fill={PAPER}
+                >
                   {code}
                 </text>
-                <text x="26" y="-3" style={MONO_STYLE} fontSize="10" fontWeight="900" letterSpacing="1.2" fill={INK} fillOpacity="0.86">
+                <text x="30" y="-4" style={MONO_STYLE} fontSize="11" fontWeight="900" letterSpacing="1.2" fill={INK} fillOpacity="0.88">
                   {ROUTE_KEY_LABELS[route.route_id]}
                 </text>
-                <text x="26" y="13" style={MONO_STYLE} fontSize="9.5" fontWeight="900" letterSpacing="1.1" fill={INK} fillOpacity="0.62">
+                <text x="30" y="15" style={MONO_STYLE} fontSize="10.5" fontWeight="900" letterSpacing="1.1" fill={INK} fillOpacity="0.66">
                   {route.station_count} STOPS
                 </text>
               </g>
@@ -274,6 +288,7 @@ export function PrivacyChart01ModernTransit({ dataset }: PrivacyChart01ModernTra
           })}
         </g>
 
+        <g transform="translate(0 58)">
         <g>
           {[1950, 1970, 1990, 2010, 2026].map((year, index) => {
             const x = 170 + index * 340;
@@ -354,12 +369,30 @@ export function PrivacyChart01ModernTransit({ dataset }: PrivacyChart01ModernTra
             const code = ROUTE_CODES[route.route_id];
             return (
               <g key={`terminal-${route.route_id}`}>
-                <circle cx={start.x} cy={start.y} r="16" fill={route.color} />
-                <text x={start.x} y={start.y + 6} textAnchor="middle" style={SANS_STYLE} fontSize="17" fontWeight="900" fill={PAPER}>
+                <circle cx={start.x} cy={start.y} r="17" fill={route.color} />
+                <text
+                  x={start.x}
+                  y={start.y}
+                  textAnchor="middle"
+                  dominantBaseline="central"
+                  style={ROUTE_CODE_STYLE}
+                  fontSize="18"
+                  fontWeight="800"
+                  fill={PAPER}
+                >
                   {code}
                 </text>
-                <circle cx={end.x} cy={end.y} r="16" fill={route.color} />
-                <text x={end.x} y={end.y + 6} textAnchor="middle" style={SANS_STYLE} fontSize="17" fontWeight="900" fill={PAPER}>
+                <circle cx={end.x} cy={end.y} r="17" fill={route.color} />
+                <text
+                  x={end.x}
+                  y={end.y}
+                  textAnchor="middle"
+                  dominantBaseline="central"
+                  style={ROUTE_CODE_STYLE}
+                  fontSize="18"
+                  fontWeight="800"
+                  fill={PAPER}
+                >
                   {code}
                 </text>
               </g>
@@ -459,8 +492,9 @@ export function PrivacyChart01ModernTransit({ dataset }: PrivacyChart01ModernTra
             );
           })}
         </g>
+        </g>
 
-        <g transform="translate(56 1470)">
+        <g transform="translate(56 1560)">
           <rect x="0" y="-4" width="430" height="72" fill={PAPER} fillOpacity="0.72" />
           <text
             x="0"
@@ -490,7 +524,7 @@ export function PrivacyChart01ModernTransit({ dataset }: PrivacyChart01ModernTra
           </text>
         </g>
 
-        <g transform="translate(640 1520)">
+        <g transform="translate(640 1620)">
           <text
             x="0"
             y="0"

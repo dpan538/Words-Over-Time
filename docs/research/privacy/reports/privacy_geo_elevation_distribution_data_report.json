@@ -1,0 +1,201 @@
+{
+  "layer_id": "geo_elevation_distribution",
+  "status": "complete",
+  "point_count": 90,
+  "record_count_total": 21860,
+  "elevation_min_m": 4.0,
+  "elevation_max_m": 1762.0,
+  "bands": [
+    {
+      "band_id": "below_0m",
+      "label": "below 0m",
+      "min_m": null,
+      "max_m": 0,
+      "point_count": 0,
+      "record_count": 0,
+      "mean_log_signal": 0,
+      "median_log_signal": 0,
+      "relative_to_global_mean": null,
+      "top_places": []
+    },
+    {
+      "band_id": "0_100m",
+      "label": "0-100m",
+      "min_m": 0,
+      "max_m": 100,
+      "point_count": 60,
+      "record_count": 17454,
+      "mean_log_signal": 5.1954,
+      "median_log_signal": 5.0001,
+      "relative_to_global_mean": 0.1446,
+      "top_places": [
+        {
+          "city": "Seattle",
+          "country": "United States",
+          "elevation_meters": 64.0,
+          "record_count": 4728
+        },
+        {
+          "city": "Cambridge",
+          "country": "United States",
+          "elevation_meters": 17.0,
+          "record_count": 1046
+        },
+        {
+          "city": "London",
+          "country": "United Kingdom",
+          "elevation_meters": 25.0,
+          "record_count": 883
+        },
+        {
+          "city": "Oxford",
+          "country": "United Kingdom",
+          "elevation_meters": 71.0,
+          "record_count": 550
+        },
+        {
+          "city": "London",
+          "country": "United Kingdom",
+          "elevation_meters": 35.0,
+          "record_count": 548
+        }
+      ]
+    },
+    {
+      "band_id": "100_500m",
+      "label": "100-500m",
+      "min_m": 100,
+      "max_m": 500,
+      "point_count": 20,
+      "record_count": 2639,
+      "mean_log_signal": 4.7878,
+      "median_log_signal": 4.7664,
+      "relative_to_global_mean": -0.4506,
+      "top_places": [
+        {
+          "city": "Geneva",
+          "country": "Switzerland",
+          "elevation_meters": 397.0,
+          "record_count": 315
+        },
+        {
+          "city": "Atlanta",
+          "country": "United States",
+          "elevation_meters": 336.0,
+          "record_count": 261
+        },
+        {
+          "city": "Pittsburgh",
+          "country": "United States",
+          "elevation_meters": 231.0,
+          "record_count": 254
+        },
+        {
+          "city": "Toronto",
+          "country": "Canada",
+          "elevation_meters": 167.0,
+          "record_count": 181
+        },
+        {
+          "city": "Ann Arbor",
+          "country": "United States",
+          "elevation_meters": 272.0,
+          "record_count": 150
+        }
+      ]
+    },
+    {
+      "band_id": "500_1000m",
+      "label": "500-1000m",
+      "min_m": 500,
+      "max_m": 1000,
+      "point_count": 3,
+      "record_count": 580,
+      "mean_log_signal": 5.228,
+      "median_log_signal": 5.0562,
+      "relative_to_global_mean": 0.1923,
+      "top_places": [
+        {
+          "city": "Riyadh",
+          "country": "Saudi Arabia",
+          "elevation_meters": 612.0,
+          "record_count": 276
+        },
+        {
+          "city": "São Paulo",
+          "country": "Brazil",
+          "elevation_meters": 763.0,
+          "record_count": 156
+        },
+        {
+          "city": "Munich",
+          "country": "Germany",
+          "elevation_meters": 523.0,
+          "record_count": 148
+        }
+      ]
+    },
+    {
+      "band_id": "1000_2000m",
+      "label": "1000-2000m",
+      "min_m": 1000,
+      "max_m": 2000,
+      "point_count": 7,
+      "record_count": 1187,
+      "mean_log_signal": 5.0729,
+      "median_log_signal": 5.1417,
+      "relative_to_global_mean": -0.0344,
+      "top_places": [
+        {
+          "city": "Nairobi",
+          "country": "Kenya",
+          "elevation_meters": 1677.0,
+          "record_count": 293
+        },
+        {
+          "city": "Kampala",
+          "country": "Uganda",
+          "elevation_meters": 1210.0,
+          "record_count": 183
+        },
+        {
+          "city": "Pretoria",
+          "country": "South Africa",
+          "elevation_meters": 1335.0,
+          "record_count": 171
+        },
+        {
+          "city": "Brasília",
+          "country": "Brazil",
+          "elevation_meters": 1136.0,
+          "record_count": 170
+        },
+        {
+          "city": "Johannesburg",
+          "country": "South Africa",
+          "elevation_meters": 1762.0,
+          "record_count": 162
+        }
+      ]
+    },
+    {
+      "band_id": "above_2000m",
+      "label": "above 2000m",
+      "min_m": 2000,
+      "max_m": null,
+      "point_count": 0,
+      "record_count": 0,
+      "mean_log_signal": 0,
+      "median_log_signal": 0,
+      "relative_to_global_mean": null,
+      "top_places": []
+    }
+  ],
+  "failed_sources": [],
+  "limitations": [
+    "Elevation is a spatial attribute and does not imply causation.",
+    "Record counts are recovered source signals, not population-normalized search interest.",
+    "Google Trends regional data remains unavailable in this local reproducible pipeline.",
+    "Some city points are institution/news-source centroids rather than complete public attention measurements."
+  ]
+}

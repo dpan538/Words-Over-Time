@@ -1,6 +1,6 @@
 # Privacy Geo-Spatial Metrics Report
 
-Generated: 2026-05-26T13:27:12.868272Z
+Generated: 2026-05-28T00:36:45.415358Z
 
 ## Which Geo-Capable Sources Worked
 
@@ -8,93 +8,202 @@ Generated: 2026-05-26T13:27:12.868272Z
 - Google Books Ngram Viewer (corpus_region_frequency): available, 24581 records
 - Google Books Ngram Viewer (corpus_region_frequency): available, 24581 records
 - Google Trends (search_interest_by_region): unavailable, 0 records
-- GDELT DOC 2.0 (news_geo_discourse): available, 195 records
-- OpenAlex works (academic_geo_distribution): available, 1233 records
-- OpenAlex institutions (academic_geo_distribution): available, 30 records
-- Open-Elevation (elevation_enrichment): available, 1 records
+- GDELT DOC 2.0 (news_geo_discourse): available, 2813 records
+- OpenAlex works (academic_geo_distribution): available, 62515 records
+- OpenAlex institutions (academic_geo_distribution): available, 259 records
+- Open-Elevation (elevation_enrichment): available, 209 records
 
 ## Which Sources Failed
 
 - google_trends (search_interest_by_region): No official Trends credentials detected and no reproducible unofficial client available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- gdelt_doc_2 (news_geo_discourse): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
-- open_elevation (elevation_enrichment): cache-only mode active: no cached response available.
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): URLError: timed out
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): URLError: _ssl.c:1011: The handshake operation timed out
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): URLError: timed out
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): URLError: _ssl.c:1011: The handshake operation timed out
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): URLError: timed out
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): URLError: _ssl.c:1011: The handshake operation timed out
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): URLError: timed out
+- gdelt_doc_2 (news_geo_discourse): URLError: _ssl.c:1011: The handshake operation timed out
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): URLError: timed out
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
+- gdelt_doc_2 (news_geo_discourse): HTTPError 429 Too Many Requests
 
 ## Record Counts
 
-- Total records: 75171
-- Country-level records: 1419
-- City-level records: 374
-- Point-level records: 374
-- Latitude/longitude records: 374
-- Elevation-enriched records: 37
+- Total records: 139071
+- Country-level records: 64853
+- City-level records: 27436
+- Point-level records: 27436
+- Latitude/longitude records: 27436
+- Elevation-enriched records: 27436
 
 ## Records By Source Type
 
 - corpus_region_frequency: 73743
-- academic_geo_distribution: 1233
-- news_geo_discourse: 195
+- academic_geo_distribution: 62515
+- news_geo_discourse: 2813
 
 ## Strongest Current Geo Level
 

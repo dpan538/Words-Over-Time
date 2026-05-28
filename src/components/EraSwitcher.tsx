@@ -19,9 +19,10 @@ export function EraSwitcher({ eras, selectedEra, onChange }: EraSwitcherProps) {
           filters all panels
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-4 xl:grid-cols-8">
-        {eras.map((era) => {
+      <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-4 xl:grid-cols-7">
+        {eras.filter((era) => era.id !== "recent").map((era) => {
           const active = era.id === selectedEra;
+          const label = era.id === "2000-2019" ? "2000-2025" : era.label;
 
           return (
             <button
@@ -35,7 +36,7 @@ export function EraSwitcher({ eras, selectedEra, onChange }: EraSwitcherProps) {
               }`}
               title={era.note}
             >
-              {era.label}
+              {label}
               {era.note ? (
                 <span
                   className={`mt-1 max-w-full text-left text-[0.64rem] font-bold normal-case leading-3 tracking-normal opacity-0 transition-opacity group-hover:opacity-100 ${

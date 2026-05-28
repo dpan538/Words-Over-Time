@@ -1,25 +1,15 @@
 "use client";
 
-import { useMemo, useState } from "react";
 import type {
   ForeverEraId,
   GeneratedFrequencySeries,
   GeneratedPrehistory,
 } from "@/types/foreverRealData";
-import { getSelectionMatch } from "@/lib/visualSelection";
-import type { SelectedItem, SelectedLayer } from "@/types/visualSelection";
-
-type PointerPosition = { x: number; y: number };
 
 type VariantDriftFieldProps = {
   frequency: GeneratedFrequencySeries[];
   prehistory?: GeneratedPrehistory | null;
   selectedEra: ForeverEraId;
-  selectedItem?: SelectedItem | null;
-  selectedLayer?: SelectedLayer;
-  activeInspectorId?: string;
-  onHover: (inspectorId: string | null, position?: PointerPosition) => void;
-  onInspect: (inspectorId: string, position?: PointerPosition) => void;
 };
 
 type PressureAnchor = {
@@ -32,14 +22,6 @@ type PressureAnchor = {
   color: string;
   radius: number;
 };
-
-const width = 1900;
-const height = 920;
-const left = 106;
-const right = 106;
-const top = 94;
-const plotTop = 148;
-const plotBottom = 690;
 
 function n(value: number) {
   return Number(value.toFixed(3));
@@ -63,16 +45,6 @@ const pressureCategoryIds: Record<string, string[]> = {
   "pressure-modern-snapshot": ["digital_permanence", "hyperbole_colloquial"],
 };
 
-function xScale(year: number) {
-  return left + ((year - 1500) / (2022 - 1500)) * (width - left - right);
-}
-
-function pathFrom(points: Array<{ year: number; value: number }>) {
-  return points
-    .map((point, index) => `${index === 0 ? "M" : "L"} ${xScale(point.year).toFixed(1)} ${point.value.toFixed(1)}`)
-    .join(" ");
-}
-
 function wrapWords(label: string, maxChars = 17) {
   const words = label.split(" ");
   const lines: string[] = [];
@@ -94,273 +66,254 @@ export function VariantDriftField({
   frequency,
   prehistory,
   selectedEra,
-  selectedItem,
-  selectedLayer,
-  activeInspectorId,
-  onHover,
-  onInspect,
 }: VariantDriftFieldProps) {
-  const [hoveredId, setHoveredId] = useState<string | null>(null);
-  const activeId = activeInspectorId ?? hoveredId;
-  const focused = Boolean(activeId);
-  const forever = frequency.find((series) => series.query === "forever") ?? frequency[0];
-  const forEver = frequency.find((series) => series.query === "for ever");
+  const frequencySeriesCount = Math.max(1, frequency.length);
+  const growthBase = { x: 480, y: 780 };
+  const growthShoots = pressureAnchors.map((anchor, index) => {
+    const spread = [-310, -210, -110, 35, 170, 300][index] ?? 0;
+    const height = [230, 390, 500, 350, 310, 430][index] ?? 320;
+    const tip = { x: growthBase.x + spread, y: growthBase.y - height };
+    const controlA = { x: growthBase.x + spread * 0.12, y: growthBase.y - height * 0.42 };
+    const controlB = { x: growthBase.x + spread * 0.72, y: growthBase.y - height * 0.94 };
+    return {
+      ...anchor,
+      number: index + 1,
+      tip,
+      controlA,
+      controlB,
+      box: {
+        x: Math.min(growthBase.x, tip.x) - 20,
+        y: tip.y - 42,
+        w: Math.abs(spread) + 56,
+        h: height * 0.8,
+      },
+      delay: `${(index * 0.24).toFixed(2)}s`,
+    };
+  });
 
-  const curveData = useMemo(() => {
-    const points = forever.points.filter((point) => point.year >= 1500 && point.year <= 2022);
-    const max = Math.max(...points.map((point) => Math.sqrt(point.frequencyPerMillion)), 1);
-    return points
-      .filter((point) => point.year % 2 === 0)
-      .map((point) => ({
-        year: point.year,
-        value: plotBottom - (Math.sqrt(point.frequencyPerMillion) / max) * (plotBottom - plotTop),
-        raw: point.frequencyPerMillion,
-      }));
-  }, [forever]);
+  const frequencyShoots = frequency.map((series, index) => {
+    const spread = [-250, -86, 94, 260][index % 4];
+    const height = [210, 275, 180, 235][index % 4];
+    const tip = { x: growthBase.x + spread, y: growthBase.y - height };
+    return {
+      id: `variant-shoot-${series.id}`,
+      label: series.label,
+      color: series.color,
+      tip,
+      path: `M ${growthBase.x} ${growthBase.y} C ${n(growthBase.x + spread * 0.18)} ${n(growthBase.y - height * 0.35)}, ${n(growthBase.x + spread * 0.68)} ${n(growthBase.y - height * 0.82)}, ${n(tip.x)} ${n(tip.y)}`,
+      delay: `${(index * 0.18).toFixed(2)}s`,
+    };
+  });
 
-  const spacedCurveData = useMemo(() => {
-    if (!forEver) return [];
-    const points = forEver.points.filter((point) => point.year >= 1500 && point.year <= 2022);
-    const max = Math.max(...points.map((point) => Math.sqrt(point.frequencyPerMillion)), 1);
-    return points
-      .filter((point) => point.year % 4 === 0)
-      .map((point) => ({
-        year: point.year,
-        value: plotBottom - (Math.sqrt(point.frequencyPerMillion) / max) * (plotBottom - plotTop),
-        raw: point.frequencyPerMillion,
-      }));
-  }, [forEver]);
+  const orbitLevels = [190, 312, 438, 564, 690, 810];
+  const orbitNodes = pressureAnchors.flatMap((anchor, anchorIndex) =>
+    Array.from({ length: 8 }).map((_, step) => {
+      const level = orbitLevels[Math.min(orbitLevels.length - 1, anchorIndex)];
+      const angle = (step / 8) * Math.PI * 2 + anchorIndex * 0.28;
+      const rx = 108 + anchorIndex * 40;
+      const ry = 25 + anchorIndex * 8;
+      return {
+        id: `${anchor.id}-orbit-${step}`,
+        anchor,
+        x: 480 + Math.cos(angle) * rx,
+        y: level + Math.sin(angle) * ry,
+        angle,
+        label: ["SP", "DV", "LT", "MM", "MD", "NW"][anchorIndex] ?? anchor.label.slice(0, 2).toUpperCase(),
+      };
+    }),
+  );
 
-  const yAtYear = (year: number) => {
-    const nearest = curveData.reduce((best, point) =>
-      Math.abs(point.year - year) < Math.abs(best.year - year) ? point : best,
-    curveData[0]);
-    return nearest?.value ?? plotBottom;
-  };
+  const prehistorySeeds = (prehistory?.records ?? []).slice(0, 5);
 
   return (
-    <div className="relative overflow-hidden bg-wheat py-2">
-      <div className="overflow-x-auto">
+    <div className="grid items-start gap-5 xl:grid-cols-2">
+      <div className="relative overflow-hidden border border-ink/16 bg-[#fbf8ee]">
         <svg
-          viewBox={`0 0 ${width} ${height}`}
-          className="h-auto min-w-[1360px] w-full"
+          viewBox="0 0 960 1020"
+          className="h-auto w-full"
           role="img"
-          aria-label="Historical influence field for forever"
-          onMouseLeave={() => {
-            setHoveredId(null);
-            onHover(null);
-          }}
+          aria-label="Mathematical plant growth diagram for forever semantic evolution"
         >
           <defs>
-            <pattern id="pressure-paper" width="38" height="38" patternUnits="userSpaceOnUse">
-              <path d="M 38 0 L 0 0 0 38" fill="none" stroke="#050510" strokeOpacity="0.035" />
+            <pattern id="forever-growth-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+              <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#050510" strokeOpacity="0.045" />
             </pattern>
-            <pattern id="pressure-noise" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-              <line x1="0" x2="0" y1="0" y2="16" stroke="#050510" strokeOpacity="0.18" strokeWidth="2" />
-            </pattern>
-            <filter id="pressure-soft">
-              <feGaussianBlur stdDeviation="10" />
-            </filter>
           </defs>
-          <rect width={width} height={height} fill="#F5ECD2" />
-          <rect width={width} height={height} fill="url(#pressure-paper)" />
-          <rect x={left} y="88" width={xScale(1700) - left} height="662" fill="url(#pressure-noise)" />
-          <text x="76" y="52" className="fill-fire font-mono text-[18px] font-black uppercase tracking-[0.2em]">
-            historical influence field
+          <rect width="960" height="1020" fill="#fbf8ee" />
+          <rect width="960" height="1020" fill="url(#forever-growth-grid)" />
+
+          <text x="46" y="64" className="fill-ink font-mono text-[31px] font-black uppercase tracking-[0.11em]">
+            01B / growth field
           </text>
-          <text x={width - 76} y="52" textAnchor="end" className="fill-ink/58 font-mono text-[17px] font-black uppercase tracking-[0.12em]">
-            pressure anchors + Ngram curve / {selectedLayer ?? selectedEra}
+          <text x="46" y="104" className="fill-fire font-mono text-[22px] font-black uppercase tracking-[0.13em]">
+            forever / semantic shoots
           </text>
 
-          {[1500, 1600, 1700, 1800, 1900, 2000, 2022].map((year) => (
-            <g key={year}>
-              <line x1={xScale(year)} x2={xScale(year)} y1="96" y2="748" stroke="#050510" strokeOpacity={year === 1700 ? 0.26 : 0.1} />
-              <text x={xScale(year)} y="800" textAnchor="middle" className="fill-ink/64 font-mono text-[17px] font-black uppercase tracking-[0.08em]">
-                {year}
+          <g transform="translate(548 54)">
+            <text x="0" y="0" className="fill-ink font-mono text-[15px] font-black uppercase tracking-[0.1em]">Growth pathway</text>
+            <text x="0" y="27" className="fill-ink/58 font-mono text-[13px] font-black uppercase tracking-[0.08em]">spelling / devotion / literature</text>
+            <text x="0" y="49" className="fill-ink/58 font-mono text-[13px] font-black uppercase tracking-[0.08em]">memory / media / modern</text>
+          </g>
+          <g transform="translate(548 142)">
+            <text x="0" y="0" className="fill-ink font-mono text-[15px] font-black uppercase tracking-[0.1em]">Reading rule</text>
+            <text x="0" y="27" className="fill-ink/58 font-mono text-[13px] font-black uppercase tracking-[0.08em]">influence routes, not causal proof</text>
+            <text x="0" y="49" className="fill-ink/58 font-mono text-[13px] font-black uppercase tracking-[0.08em]">attestation seeds: {prehistorySeeds.length}</text>
+          </g>
+
+          {frequencyShoots.map((shoot, index) => (
+            <g key={shoot.id}>
+              <path
+                d={shoot.path}
+                fill="none"
+                stroke={shoot.color}
+                strokeWidth="1.8"
+                strokeOpacity="0.48"
+                strokeLinecap="round"
+                strokeDasharray="620"
+                strokeDashoffset="0"
+              >
+                <animate attributeName="stroke-dashoffset" values="620;0;0" dur={`${5.8 + index * 0.24}s`} begin={shoot.delay} repeatCount="indefinite" />
+              </path>
+              <rect x={n(shoot.tip.x - 5)} y={n(shoot.tip.y - 5)} width="10" height="10" fill={shoot.color} opacity="0.82" />
+              <text x={n(shoot.tip.x + 14)} y={n(shoot.tip.y + 4)} className="fill-ink/62 font-mono text-[12px] font-black uppercase tracking-[0.08em]">
+                {shoot.label}
               </text>
             </g>
           ))}
 
-          {pressureAnchors.map((anchor) => (
-            <circle key={`${anchor.id}-halo`} cx={anchor.x} cy={anchor.y} r={anchor.radius * 2.6} fill={anchor.color} opacity="0.08" filter="url(#pressure-soft)" />
-          ))}
-
-          <path d={pathFrom(curveData)} fill="none" stroke="#050510" strokeWidth="16" strokeOpacity="0.07" strokeLinecap="round" strokeLinejoin="round" />
-          {(() => {
-            const match = getSelectionMatch(selectedItem, {
-              inspectorId: forever.inspectorId,
-              label: forever.label,
-              query: forever.query,
-              form: forever.query,
-              layer: "frequency",
-              kind: "form",
-            });
-            const active = activeId === forever.inspectorId || match === "active";
-            const related = match === "related";
-            const opacity = Boolean(selectedItem) && match === "unrelated" ? 0.34 : related ? 0.58 : focused && !active ? 0.24 : 0.88;
-            return (
-          <path
-            d={pathFrom(curveData)}
-            fill="none"
-            stroke="#F06B04"
-            strokeWidth={active ? 9 : related ? 7.5 : 7}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            opacity={opacity}
-            className="cursor-crosshair transition duration-200"
-            onMouseEnter={(event) => {
-              setHoveredId(forever.inspectorId);
-              onHover(forever.inspectorId, { x: event.clientX, y: event.clientY });
-            }}
-            onMouseMove={(event) => onHover(forever.inspectorId, { x: event.clientX, y: event.clientY })}
-            onClick={(event) => {
-              event.stopPropagation();
-              onInspect(forever.inspectorId, { x: event.clientX, y: event.clientY });
-            }}
-          />
-            );
-          })()}
-          {forEver ? (
-            (() => {
-              const match = getSelectionMatch(selectedItem, {
-                inspectorId: forEver.inspectorId,
-                label: forEver.label,
-                query: forEver.query,
-                form: forEver.query,
-                layer: "frequency",
-                kind: "form",
-              });
-              const active = activeId === forEver.inspectorId || match === "active";
-              const related = match === "related";
-              const opacity = Boolean(selectedItem) && match === "unrelated" ? 0.14 : related ? 0.34 : focused && !active ? 0.14 : 0.42;
-              return (
-                <path
-                  d={pathFrom(spacedCurveData)}
-                  fill="none"
-                  stroke="#2C9FC7"
-                  strokeWidth={active ? 6.5 : 4}
-                  strokeDasharray="8 12"
-                  strokeLinecap="round"
-                  opacity={opacity}
-                  className="cursor-crosshair transition duration-200"
-                  onMouseEnter={(event) => {
-                    setHoveredId(forEver.inspectorId);
-                    onHover(forEver.inspectorId, { x: event.clientX, y: event.clientY });
-                  }}
-                  onMouseMove={(event) => onHover(forEver.inspectorId, { x: event.clientX, y: event.clientY })}
-                  onClick={(event) => {
-                    event.stopPropagation();
-                    onInspect(forEver.inspectorId, { x: event.clientX, y: event.clientY });
-                  }}
-                />
-              );
-            })()
-          ) : null}
-
-          {pressureAnchors.map((anchor, index) => {
-            const curveY = yAtYear(Math.max(1500, Math.min(2022, anchor.year)));
-            const anchorX = xScale(Math.max(1500, Math.min(2022, anchor.year)));
-            const match = getSelectionMatch(selectedItem, {
-              inspectorId: anchor.id,
-              id: anchor.id,
-              label: anchor.label,
-              kind: "pressure",
-              layer: "influence",
-              categoryIds: pressureCategoryIds[anchor.id],
-            });
-            const active = activeId === anchor.id || match === "active";
-            const related = match === "related";
-            const dimmed = (focused || Boolean(selectedItem)) && !active && !related;
+          {growthShoots.map((shoot, index) => {
+            const path = `M ${growthBase.x} ${growthBase.y} C ${n(shoot.controlA.x)} ${n(shoot.controlA.y)}, ${n(shoot.controlB.x)} ${n(shoot.controlB.y)}, ${n(shoot.tip.x)} ${n(shoot.tip.y)}`;
             return (
               <g
-                key={anchor.id}
-                opacity={dimmed ? 0.16 : related ? 0.7 : 1}
-                className="cursor-crosshair transition duration-200"
-                onMouseEnter={(event) => {
-                  setHoveredId(anchor.id);
-                  onHover(anchor.id, { x: event.clientX, y: event.clientY });
-                }}
-                onMouseMove={(event) => onHover(anchor.id, { x: event.clientX, y: event.clientY })}
-                onClick={(event) => {
-                  event.stopPropagation();
-                  onInspect(anchor.id, { x: event.clientX, y: event.clientY });
-                }}
+                key={shoot.id}
               >
-                <path
-                  d={`M ${anchor.x} ${anchor.y} C ${n((anchor.x + anchorX) / 2)} ${n(anchor.y + (index % 2 ? 140 : -120))}, ${n((anchor.x + anchorX) / 2)} ${n(curveY + (index % 2 ? -90 : 90))}, ${n(anchorX)} ${n(curveY)}`}
+                <rect
+                  x={n(shoot.box.x)}
+                  y={n(shoot.box.y)}
+                  width={n(shoot.box.w)}
+                  height={n(shoot.box.h)}
                   fill="none"
-                  stroke={anchor.color}
-                  strokeWidth={active ? 4 : 2}
-                  strokeOpacity={active ? 0.88 : 0.36}
-                  strokeLinecap="round"
+                  stroke={shoot.color}
+                  strokeWidth="2.2"
+                  strokeOpacity="0.58"
                 />
-                {Array.from({ length: 18 }).map((_, rayIndex) => {
-                  const angle = (rayIndex / 18) * Math.PI * 2;
-                  const r1 = anchor.radius * 0.75;
-                  const r2 = anchor.radius * (1.15 + (rayIndex % 4) * 0.18);
-                  return (
-                    <line
-                      key={`${anchor.id}-ray-${rayIndex}`}
-                      x1={n(anchor.x + Math.cos(angle) * r1)}
-                      y1={n(anchor.y + Math.sin(angle) * r1)}
-                      x2={n(anchor.x + Math.cos(angle) * r2)}
-                      y2={n(anchor.y + Math.sin(angle) * r2)}
-                      stroke={anchor.color}
-                      strokeWidth={active ? 3 : 1.7}
-                      strokeOpacity="0.55"
-                      strokeLinecap="round"
-                    />
-                  );
-                })}
-                <circle cx={anchor.x} cy={anchor.y} r={active ? anchor.radius * 0.62 : anchor.radius * 0.5} fill="#050510" stroke={anchor.color} strokeWidth={active ? 5 : 3} />
-                <text x={anchor.x} y={anchor.y + anchor.radius + 46} textAnchor="middle" className="fill-ink font-mono text-[16px] font-black uppercase tracking-[0.08em]">
-                  {wrapWords(anchor.label).map((line, lineIndex) => (
-                    <tspan key={line} x={anchor.x} dy={lineIndex === 0 ? 0 : 18}>
-                      {line}
-                    </tspan>
-                  ))}
+                <path
+                  d={path}
+                  fill="none"
+                  stroke="#050510"
+                  strokeWidth="2.2"
+                  strokeLinecap="round"
+                  strokeDasharray="900"
+                  strokeDashoffset="0"
+                >
+                  <animate attributeName="stroke-dashoffset" values="900;0;0" dur={`${7.2 + index * 0.3}s`} begin={shoot.delay} repeatCount="indefinite" />
+                </path>
+                <rect x={n(shoot.tip.x - 6)} y={n(shoot.tip.y - 6)} width="12" height="12" fill={shoot.color} opacity="0.92">
+                  <animate attributeName="opacity" values="0.46;1;0.62" dur={`${4.6 + index * 0.2}s`} begin={shoot.delay} repeatCount="indefinite" />
+                </rect>
+                <text x={n(shoot.tip.x + (shoot.tip.x < growthBase.x ? -26 : 26))} y={n(shoot.tip.y + 8)} textAnchor={shoot.tip.x < growthBase.x ? "end" : "start"} className="fill-ink font-mono text-[24px] font-normal">
+                  {shoot.number}
                 </text>
-                <text x={anchor.x} y={anchor.y + anchor.radius + 46 + wrapWords(anchor.label).length * 18} textAnchor="middle" className="fill-ink/55 font-mono text-[15px] font-black uppercase tracking-[0.07em]">
+              </g>
+            );
+          })}
+
+          <g transform="translate(62 860)">
+            {growthShoots.map((shoot, index) => (
+              <g key={`${shoot.id}-legend`} transform={`translate(${(index % 3) * 296} ${Math.floor(index / 3) * 58})`}>
+                <rect width="270" height="45" fill="#fbf8ee" stroke="#050510" strokeOpacity="0.38" />
+                <rect x="14" y="15" width="14" height="14" fill={shoot.color} />
+                <text x="40" y="19" className="fill-ink font-mono text-[16px] font-black uppercase tracking-[0.08em]">
+                  {shoot.number}. {wrapWords(shoot.label, 18)[0]}
+                </text>
+                <text x="40" y="35" className="fill-ink/58 font-mono text-[14px] font-black uppercase tracking-[0.07em]">
+                  {shoot.period}
+                </text>
+              </g>
+            ))}
+          </g>
+        </svg>
+      </div>
+
+      <div className="relative overflow-hidden border border-ink/20 bg-[#050510] text-wheat">
+        <svg
+          viewBox="0 0 960 1020"
+          className="h-auto w-full"
+          role="img"
+          aria-label="Layered orbital recurrence instrument for forever"
+        >
+          <defs>
+            <filter id="forever-orbit-grain">
+              <feTurbulence type="fractalNoise" baseFrequency="0.86" numOctaves="2" stitchTiles="stitch" />
+              <feColorMatrix type="saturate" values="0" />
+              <feComponentTransfer>
+                <feFuncA type="table" tableValues="0 0.16" />
+              </feComponentTransfer>
+            </filter>
+          </defs>
+          <rect width="960" height="1020" fill="#050510" />
+          <rect width="960" height="1020" filter="url(#forever-orbit-grain)" opacity="0.72" />
+
+          <text x="48" y="58" className="fill-wheat font-mono text-[28px] font-black uppercase tracking-[0.14em]">
+            01C / recurrence instrument
+          </text>
+          <text x="48" y="98" className="fill-wheat/70 font-mono text-[16px] font-black uppercase tracking-[0.1em]">
+            stacked semantic orbits / {selectedEra} / {frequencySeriesCount} frequency traces abstracted
+          </text>
+
+          <line x1="480" x2="480" y1="162" y2="900" stroke="#F5ECD2" strokeWidth="2" strokeOpacity="0.62" />
+          <line x1="455" x2="455" y1="180" y2="888" stroke="#F5ECD2" strokeWidth="1" strokeOpacity="0.34" />
+          <line x1="505" x2="505" y1="180" y2="888" stroke="#F5ECD2" strokeWidth="1" strokeOpacity="0.34" />
+          {orbitLevels.map((level, index) => {
+            const rx = 120 + index * 54;
+            const ry = 28 + index * 10;
+            return (
+              <g key={level}>
+                <ellipse cx="480" cy={level} rx={rx} ry={ry} fill="none" stroke="#F5ECD2" strokeWidth={index === 0 ? 1.4 : 1.8} strokeOpacity="0.78" strokeDasharray="1400" strokeDashoffset="0">
+                  <animate attributeName="stroke-dashoffset" values="1400;0;0" dur="10s" begin={`${index * 0.7}s`} repeatCount="indefinite" />
+                  <animate attributeName="rx" values={`${rx};${rx * 0.82};${rx}`} dur={`${8 + index * 0.45}s`} begin={`${index * 0.32}s`} repeatCount="indefinite" />
+                  <animate attributeName="stroke-opacity" values="0.48;0.86;0.58" dur={`${8 + index * 0.45}s`} begin={`${index * 0.32}s`} repeatCount="indefinite" />
+                </ellipse>
+                <ellipse cx="480" cy={level + 34} rx={Math.max(42, rx - 82)} ry={Math.max(12, ry - 11)} fill="none" stroke="#F5ECD2" strokeWidth="1" strokeOpacity="0.48" strokeDasharray="8 10">
+                  <animate attributeName="rx" values={`${Math.max(42, rx - 82)};${Math.max(28, (rx - 82) * 0.78)};${Math.max(42, rx - 82)}`} dur={`${8.4 + index * 0.4}s`} begin={`${index * 0.38}s`} repeatCount="indefinite" />
+                </ellipse>
+                <text x={n(480 + rx + 18)} y={level + 8} className="fill-wheat font-mono text-[18px] font-normal">
+                  {index + 1}
+                </text>
+                <line x1={n(480 - rx)} x2={n(480 - rx)} y1={level} y2="900" stroke="#F5ECD2" strokeOpacity="0.22" strokeWidth="1" strokeDasharray="6 10" />
+                <line x1={n(480 + rx)} x2={n(480 + rx)} y1={level} y2="900" stroke="#F5ECD2" strokeOpacity="0.22" strokeWidth="1" strokeDasharray="6 10" />
+              </g>
+            );
+          })}
+
+          <g transform="translate(56 150)">
+            {pressureAnchors.map((anchor, index) => (
+              <g key={`${anchor.id}-layer-key`} transform={`translate(0 ${index * 34})`}>
+                <rect x="-1" y="-13" width="10" height="10" fill={anchor.color} />
+                <text x="18" y="0" className="fill-wheat font-mono text-[17px] font-black uppercase tracking-[0.035em]">
+                  {index + 1}. {wrapWords(anchor.label, 16)[0]}
+                </text>
+                <text x="18" y="18" className="fill-wheat/48 font-mono text-[12px] font-black uppercase tracking-[0.07em]">
                   {anchor.period}
                 </text>
               </g>
-            );
-          })}
+            ))}
+          </g>
 
-          {(prehistory?.records ?? []).slice(0, 5).map((record, index) => {
-            const match = getSelectionMatch(selectedItem, {
-              id: record.id,
-              inspectorId: record.id,
-              label: record.form,
-              form: record.normalizedForm || record.form,
-              query: record.normalizedForm || record.form,
-              kind: "prehistory",
-              layer: "prehistory",
-            });
-            const active = activeId === record.id || match === "active";
-            const related = match === "related";
-            const xx = xScale(Math.max(1500, Math.min(2022, record.yearApproximation)));
-            const yy = 710 + (index % 2) * 26;
+          {orbitNodes.map((node, index) => {
             return (
               <g
-                key={record.id}
-                opacity={(focused || Boolean(selectedItem)) && !active && !related ? 0.18 : related ? 0.62 : 1}
-                className="cursor-crosshair transition duration-200"
-                onMouseEnter={(event) => {
-                  setHoveredId(record.id);
-                  onHover(record.id, { x: event.clientX, y: event.clientY });
-                }}
-                onMouseMove={(event) => onHover(record.id, { x: event.clientX, y: event.clientY })}
-                onClick={(event) => {
-                  event.stopPropagation();
-                  onInspect(record.id, { x: event.clientX, y: event.clientY });
-                }}
+                key={node.id}
               >
-                <line x1={xx} x2={xx} y1={yy - 48} y2={yy + 8} stroke="#050510" strokeDasharray="3 8" strokeWidth={active ? 3 : 1.7} />
-                <circle cx={xx} cy={yy} r={active ? 8 : 5} fill="#F5ECD2" stroke="#050510" strokeWidth="2" />
+                <line x1={n(node.x)} x2={n(node.x)} y1={n(node.y)} y2={n(node.y + 110 + (index % 4) * 20)} stroke={node.anchor.color} strokeOpacity="0.34" strokeWidth="1" />
+                <circle cx={n(node.x)} cy={n(node.y)} r="6" fill={node.anchor.color} stroke="#F5ECD2" strokeOpacity="0.76" strokeWidth="1" />
+                <text x={n(node.x + 10)} y={n(node.y - 9)} fill={node.anchor.color} className="font-mono text-[14px] font-black">
+                  {node.label}
+                </text>
               </g>
             );
           })}
+
         </svg>
       </div>
     </div>

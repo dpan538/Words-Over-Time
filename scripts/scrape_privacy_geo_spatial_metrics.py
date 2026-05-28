@@ -36,7 +36,7 @@ RAW_PATH = RAW_DIR / "privacy_geo_spatial_metrics_raw.json"
 FREQUENCY_PROCESSED_PATH = RESEARCH_DIR / "processed" / "privacy_frequency_terms_processed.json"
 
 USER_AGENT = "WordsOverTime/0.1 privacy geo-spatial metrics pass; contact: local research script"
-REQUEST_DELAY_SECONDS = 0.25
+REQUEST_DELAY_SECONDS = 0.12
 CACHE_ONLY = "--cache-only" in os.sys.argv
 
 QUERY_TERMS = [
@@ -64,6 +64,95 @@ QUERY_TERMS = [
     "medical privacy",
     "financial privacy",
     "genetic privacy",
+    "privacy law Africa",
+    "data protection Africa",
+    "privacy Nigeria",
+    "data privacy Nigeria",
+    "privacy Kenya",
+    "data protection Kenya",
+    "privacy South Africa",
+    "POPIA privacy",
+    "privacy Brazil",
+    "LGPD privacy",
+    "data protection Brazil",
+    "privacy Mexico",
+    "data protection Mexico",
+    "privacy Argentina",
+    "privacy Chile",
+    "privacy Colombia",
+    "privacy India",
+    "DPDP Act privacy",
+    "privacy Indonesia",
+    "personal data protection Indonesia",
+    "privacy Philippines",
+    "data privacy act Philippines",
+    "privacy Japan",
+    "APPI privacy Japan",
+    "privacy South Korea",
+    "PIPA privacy Korea",
+    "privacy Singapore",
+    "PDPA privacy Singapore",
+    "privacy Malaysia",
+    "privacy Thailand",
+    "privacy Vietnam",
+    "privacy Middle East",
+    "privacy Saudi Arabia",
+    "privacy UAE",
+    "privacy Qatar",
+    "privacy Russia",
+    "data protection Russia",
+    "personal data Russia",
+    "152-FZ privacy Russia",
+    "Roskomnadzor privacy",
+    "privacy China",
+    "data protection China",
+    "personal information protection law China",
+    "PIPL privacy China",
+    "China cybersecurity law privacy",
+    "China data security law privacy",
+    "privacy Taiwan",
+    "data protection Taiwan",
+    "Personal Data Protection Act Taiwan",
+    "Taiwan PDPA privacy",
+    "privacy Hong Kong",
+    "Hong Kong PDPO privacy",
+    "personal data privacy ordinance Hong Kong",
+    "privacy Japan APPI",
+    "Act on Protection of Personal Information Japan",
+    "personal information protection Japan",
+    "kojin joho privacy",
+    "privacy Korea PIPA",
+    "South Korea Personal Information Protection Act",
+    "personal information protection Korea",
+    "privacy Mongolia",
+    "privacy Nepal",
+    "privacy Sri Lanka",
+    "privacy Bangladesh",
+    "Bangladesh data protection privacy",
+    "privacy Pakistan",
+    "personal data protection Pakistan",
+    "privacy Myanmar",
+    "privacy Cambodia",
+    "privacy Laos",
+    "privacy Brunei",
+    "privacy Morocco",
+    "Morocco data protection privacy",
+    "privacy Ghana",
+    "Ghana data protection privacy",
+    "privacy Egypt",
+    "Egypt personal data protection privacy",
+    "privacy Uganda",
+    "privacy Rwanda",
+    "privacy Tanzania",
+    "privacy Ethiopia",
+    "privacy Peru",
+    "privacy Uruguay",
+    "privacy Ecuador",
+    "privacy Costa Rica",
+    "privacy Panama",
+    "privacy Venezuela",
+    "habeas data privacy",
+    "Latin America data protection privacy",
 ]
 
 GDELT_WINDOWS = [
@@ -79,11 +168,11 @@ GDELT_WINDOWS = [
     },
 ]
 
-GDELT_MAX_RECORDS = 15
-OPENALEX_PER_PAGE = 10
-OPENALEX_PAGES = 2
-OPENALEX_INSTITUTION_LIMIT = 30
-ELEVATION_BATCH_SIZE = 1
+GDELT_MAX_RECORDS = 60
+OPENALEX_PER_PAGE = 25
+OPENALEX_PAGES = 4
+OPENALEX_INSTITUTION_LIMIT = 260
+ELEVATION_BATCH_SIZE = 20
 
 COUNTRY_NAME_BY_CODE = {
     "AU": "Australia",
@@ -100,7 +189,7 @@ COUNTRY_NAME_BY_CODE = {
     "FI": "Finland",
     "FR": "France",
     "GB": "United Kingdom",
-    "HK": "Hong Kong",
+    "HK": "China Hong Kong",
     "IE": "Ireland",
     "IL": "Israel",
     "IN": "India",
@@ -113,7 +202,7 @@ COUNTRY_NAME_BY_CODE = {
     "NZ": "New Zealand",
     "SG": "Singapore",
     "SE": "Sweden",
-    "TW": "Taiwan",
+    "TW": "China Taiwan",
     "UK": "United Kingdom",
     "US": "United States",
     "ZA": "South Africa",

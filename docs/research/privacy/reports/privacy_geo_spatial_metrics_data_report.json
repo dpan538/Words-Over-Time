@@ -2,7 +2,7 @@
   "metadata": {
     "word": "privacy",
     "layer_id": "geo_spatial_metrics",
-    "generated_at": "2026-05-26T13:27:12.868272Z",
+    "generated_at": "2026-05-28T00:36:45.415358Z",
     "generated_by_script": "scripts/process_privacy_geo_spatial_metrics.py",
     "raw_source": "docs/research/privacy/raw/privacy_geo_spatial_metrics_raw.json",
     "outputs": {
@@ -50,7 +50,7 @@
       "source_type": "news_geo_discourse",
       "source_name": "GDELT DOC 2.0",
       "available": true,
-      "records": 195,
+      "records": 2813,
       "notes": "Article/source-country geography recovered. Point-level mentioned-location geography was not available from the reachable mode."
     },
     {
@@ -58,7 +58,7 @@
       "source_type": "academic_geo_distribution",
       "source_name": "OpenAlex works",
       "available": true,
-      "records": 1233,
+      "records": 62515,
       "notes": "Privacy-related works captured via query search and flattened by institution affiliation."
     },
     {
@@ -66,7 +66,7 @@
       "source_type": "academic_geo_distribution",
       "source_name": "OpenAlex institutions",
       "available": true,
-      "records": 30,
+      "records": 259,
       "notes": "Institution geo metadata used to enrich academic records with city/region/country and coordinates where available."
     },
     {
@@ -74,17 +74,17 @@
       "source_type": "elevation_enrichment",
       "source_name": "Open-Elevation",
       "available": true,
-      "records": 1,
+      "records": 209,
       "notes": "Elevation was added only for records that already had valid coordinates."
     }
   ],
   "counts": {
-    "total_records": 75171,
-    "country_level_record_count": 1419,
-    "city_level_record_count": 374,
-    "point_level_record_count": 374,
-    "elevation_enriched_record_count": 37,
-    "failed_source_count": 65
+    "total_records": 139071,
+    "country_level_record_count": 64853,
+    "city_level_record_count": 27436,
+    "point_level_record_count": 27436,
+    "elevation_enriched_record_count": 27436,
+    "failed_source_count": 174
   },
   "records_by_source_type": [
     {
@@ -93,181 +93,197 @@
     },
     {
       "source_type": "academic_geo_distribution",
-      "count": 1233
+      "count": 62515
     },
     {
       "source_type": "news_geo_discourse",
-      "count": 195
+      "count": 2813
     }
   ],
   "records_by_country_top20": [
     {
       "key": "United States",
-      "count": 707
+      "count": 18615
     },
     {
       "key": "United Kingdom",
-      "count": 94
+      "count": 6109
     },
     {
       "key": "China",
-      "count": 85
-    },
-    {
-      "key": "Canada",
-      "count": 70
-    },
-    {
-      "key": "Germany",
-      "count": 56
-    },
-    {
-      "key": "Philippines",
-      "count": 50
+      "count": 3267
     },
     {
       "key": "Australia",
-      "count": 42
+      "count": 2244
     },
     {
-      "key": "Italy",
-      "count": 34
+      "key": "Canada",
+      "count": 1743
+    },
+    {
+      "key": "Germany",
+      "count": 1703
     },
     {
       "key": "India",
-      "count": 22
-    },
-    {
-      "key": "Switzerland",
-      "count": 22
-    },
-    {
-      "key": "Netherlands",
-      "count": 21
-    },
-    {
-      "key": "Taiwan",
-      "count": 19
-    },
-    {
-      "key": "Singapore",
-      "count": 13
-    },
-    {
-      "key": "Hong Kong",
-      "count": 13
+      "count": 1549
     },
     {
       "key": "Brazil",
-      "count": 12
+      "count": 1295
     },
     {
       "key": "South Africa",
-      "count": 12
-    },
-    {
-      "key": "Spain",
-      "count": 12
-    },
-    {
-      "key": "Japan",
-      "count": 11
-    },
-    {
-      "key": "South Korea",
-      "count": 10
+      "count": 1262
     },
     {
       "key": "France",
-      "count": 8
+      "count": 1154
+    },
+    {
+      "key": "Italy",
+      "count": 1143
+    },
+    {
+      "key": "Spain",
+      "count": 1136
+    },
+    {
+      "key": "Japan",
+      "count": 1047
+    },
+    {
+      "key": "Switzerland",
+      "count": 888
+    },
+    {
+      "key": "South Korea",
+      "count": 884
+    },
+    {
+      "key": "Taiwan",
+      "count": 877
+    },
+    {
+      "key": "Hong Kong",
+      "count": 775
+    },
+    {
+      "key": "Singapore",
+      "count": 657
+    },
+    {
+      "key": "The Netherlands",
+      "count": 645
+    },
+    {
+      "key": "Belgium",
+      "count": 589
     }
   ],
   "records_by_city_top20": [
     {
-      "key": "Pittsburgh",
-      "count": 37
-    },
-    {
-      "key": "Boca Raton",
-      "count": 27
-    },
-    {
       "key": "Seattle",
-      "count": 19
+      "count": 4849
     },
     {
-      "key": "Raleigh",
-      "count": 18
+      "key": "Cambridge",
+      "count": 1620
     },
     {
-      "key": "Washington",
-      "count": 18
-    },
-    {
-      "key": "Boston",
-      "count": 16
-    },
-    {
-      "key": "Mountain View",
-      "count": 15
-    },
-    {
-      "key": "State College",
-      "count": 13
-    },
-    {
-      "key": "Atlanta",
-      "count": 13
-    },
-    {
-      "key": "Armonk",
-      "count": 11
-    },
-    {
-      "key": "Ithaca",
-      "count": 11
+      "key": "London",
+      "count": 1431
     },
     {
       "key": "Oxford",
-      "count": 11
+      "count": 550
     },
     {
-      "key": "Stanford",
-      "count": 11
+      "key": "Hong Kong",
+      "count": 484
+    },
+    {
+      "key": "Sydney",
+      "count": 454
+    },
+    {
+      "key": "Baltimore",
+      "count": 433
     },
     {
       "key": "New York",
-      "count": 11
+      "count": 395
     },
     {
-      "key": "Xi'an",
-      "count": 11
+      "key": "Boston",
+      "count": 389
     },
     {
-      "key": "West Lafayette",
-      "count": 10
+      "key": "Melbourne",
+      "count": 375
     },
     {
-      "key": "Madison",
-      "count": 10
+      "key": "Singapore",
+      "count": 374
     },
     {
-      "key": "Taichung",
-      "count": 10
+      "key": "Riyadh",
+      "count": 337
     },
     {
-      "key": "Lausanne",
-      "count": 10
+      "key": "Atlanta",
+      "count": 327
     },
     {
-      "key": "Charlotte",
-      "count": 10
+      "key": "Geneva",
+      "count": 315
+    },
+    {
+      "key": "Brisbane",
+      "count": 297
+    },
+    {
+      "key": "Nairobi",
+      "count": 293
+    },
+    {
+      "key": "Washington D.C.",
+      "count": 290
+    },
+    {
+      "key": "Bangkok",
+      "count": 255
+    },
+    {
+      "key": "Pittsburgh",
+      "count": 254
+    },
+    {
+      "key": "Beijing",
+      "count": 240
     }
   ],
   "records_by_elevation_band": [
     {
+      "band_id": "0_100m",
+      "count": 20479
+    },
+    {
       "band_id": "100_500m",
-      "count": 37
+      "count": 4278
+    },
+    {
+      "band_id": "1000_2000m",
+      "count": 1438
+    },
+    {
+      "band_id": "500_1000m",
+      "count": 1095
+    },
+    {
+      "band_id": "above_2000m",
+      "count": 146
     }
   ],
   "strong_signals": [
@@ -286,7 +302,7 @@
       "source_type": "search_interest_by_region",
       "availability": "failed",
       "reason": "No official Trends credentials detected and no reproducible unofficial client available.",
-      "retrieved_at": "2026-05-26T13:26:32.117633Z",
+      "retrieved_at": "2026-05-27T23:52:39.471781Z",
       "official_config_detected": false,
       "experimental_client_available": false
     },
@@ -294,612 +310,1731 @@
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:32.117811Z",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-27T23:52:48.338264Z",
       "query": "privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:32.627278Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:53:16.224396Z",
       "query": "data privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:33.139335Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:53:32.904111Z",
       "query": "online privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=online+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=online+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:33.651210Z",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-27T23:53:38.907662Z",
       "query": "internet privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=internet+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=internet+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:34.170232Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:53:56.772993Z",
+      "query": "internet privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=internet+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:54:03.551795Z",
       "query": "digital privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=digital+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=digital+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:34.425333Z",
-      "query": "digital privacy",
-      "window_id": "2020_2026",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=digital+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
-    },
-    {
-      "source_id": "gdelt_doc_2",
-      "source_type": "news_geo_discourse",
-      "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:34.680693Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:54:13.034139Z",
       "query": "information privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=information+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=information+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:35.192047Z",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-27T23:54:22.944294Z",
       "query": "privacy policy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+policy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+policy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:35.704317Z",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-27T23:54:32.909123Z",
       "query": "privacy settings",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+settings&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+settings&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:36.215172Z",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-27T23:54:46.803136Z",
       "query": "privacy rights",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+rights&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+rights&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:36.725517Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:54:53.605364Z",
+      "query": "privacy rights",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+rights&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:55:00.070293Z",
       "query": "right to privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=right+to+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=right+to+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:36.980852Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:55:06.264610Z",
       "query": "right to privacy",
       "window_id": "2020_2026",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=right+to+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=right+to+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:37.236068Z",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-27T23:55:12.610059Z",
       "query": "invasion of privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=invasion+of+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=invasion+of+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:37.491318Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:55:20.805287Z",
       "query": "invasion of privacy",
       "window_id": "2020_2026",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=invasion+of+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=invasion+of+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:37.746575Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:55:28.090351Z",
       "query": "privacy breach",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+breach&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+breach&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:38.001805Z",
-      "query": "privacy breach",
-      "window_id": "2020_2026",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+breach&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
-    },
-    {
-      "source_id": "gdelt_doc_2",
-      "source_type": "news_geo_discourse",
-      "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:38.257244Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:55:37.432481Z",
       "query": "privacy concern",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+concern&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+concern&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:38.508925Z",
-      "query": "privacy concern",
-      "window_id": "2020_2026",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+concern&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
-    },
-    {
-      "source_id": "gdelt_doc_2",
-      "source_type": "news_geo_discourse",
-      "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:38.764212Z",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-27T23:55:51.861833Z",
       "query": "privacy concerns",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+concerns&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+concerns&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:39.014728Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:55:58.370949Z",
       "query": "privacy concerns",
       "window_id": "2020_2026",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+concerns&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+concerns&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:39.268126Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:56:03.611705Z",
       "query": "privacy and security",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+and+security&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+and+security&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:39.523671Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:56:08.859936Z",
       "query": "privacy and security",
       "window_id": "2020_2026",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+and+security&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+and+security&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:39.774657Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:56:14.170385Z",
       "query": "privacy and surveillance",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+and+surveillance&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+and+surveillance&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:40.283566Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:56:19.917512Z",
       "query": "surveillance privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=surveillance+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=surveillance+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:40.793358Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:56:25.492723Z",
       "query": "GDPR privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=GDPR+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=GDPR+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:41.048230Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:56:30.220058Z",
       "query": "GDPR privacy",
       "window_id": "2020_2026",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=GDPR+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=GDPR+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:41.299940Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:56:35.064999Z",
       "query": "biometric privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=biometric+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=biometric+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:41.808643Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:56:40.007886Z",
       "query": "location privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=location+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=location+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:42.060970Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:56:44.194712Z",
       "query": "location privacy",
       "window_id": "2020_2026",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=location+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=location+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:42.316180Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:56:48.072962Z",
       "query": "consumer privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=consumer+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=consumer+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:42.825447Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:56:52.067292Z",
+      "query": "consumer privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=consumer+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:56:56.132816Z",
       "query": "medical privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=medical+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=medical+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:43.080726Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:57:00.617591Z",
       "query": "medical privacy",
       "window_id": "2020_2026",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=medical+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=medical+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:43.335970Z",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:57:05.523626Z",
       "query": "financial privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=financial+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=financial+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
       "source_id": "gdelt_doc_2",
       "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:43.591270Z",
-      "query": "financial privacy",
-      "window_id": "2020_2026",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=financial+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
-    },
-    {
-      "source_id": "gdelt_doc_2",
-      "source_type": "news_geo_discourse",
-      "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:26:43.846488Z",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-27T23:57:10.722718Z",
       "query": "genetic privacy",
       "window_id": "2015_2019",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=genetic+privacy&mode=ArtList&format=json&maxrecords=15&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=genetic+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:04.558975Z",
-      "batch_index": 1,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=37.38605,-122.08385"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:57:21.297530Z",
+      "query": "privacy law Africa",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+law+Africa&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:04.809904Z",
-      "batch_index": 2,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=47.67399,-122.12151"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:57:25.068758Z",
+      "query": "privacy law Africa",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+law+Africa&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:05.063729Z",
-      "batch_index": 3,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=41.10853958129883,-73.72046661376953"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:57:28.709343Z",
+      "query": "data protection Africa",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+protection+Africa&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:05.318423Z",
-      "batch_index": 4,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=37.21099853515625,-121.80500030517578"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:57:32.529587Z",
+      "query": "data protection Africa",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+protection+Africa&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:05.572531Z",
-      "batch_index": 5,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=40.42587,-86.90807"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:57:38.646131Z",
+      "query": "privacy Nigeria",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Nigeria&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:05.825756Z",
-      "batch_index": 6,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=42.44063,-76.49661"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:57:45.857114Z",
+      "query": "privacy Nigeria",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Nigeria&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:06.077966Z",
-      "batch_index": 7,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=26.35869026184082,-80.08309936523438"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:57:52.803592Z",
+      "query": "data privacy Nigeria",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+privacy+Nigeria&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:06.333340Z",
-      "batch_index": 8,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=39.50699996948242,-84.74523162841797"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:58:24.386280Z",
+      "query": "privacy Kenya",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Kenya&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:06.588485Z",
-      "batch_index": 9,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=40.79339,-77.86"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:58:32.279248Z",
+      "query": "privacy Kenya",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Kenya&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:06.842340Z",
-      "batch_index": 10,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=33.749,-84.38798"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:58:37.433200Z",
+      "query": "data protection Kenya",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+protection+Kenya&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:07.093134Z",
-      "batch_index": 11,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=43.07305,-89.40123"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:58:43.128506Z",
+      "query": "data protection Kenya",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+protection+Kenya&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:07.346774Z",
-      "batch_index": 12,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=41.70019,-86.23793"
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-27T23:58:48.573457Z",
+      "query": "privacy South Africa",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+South+Africa&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:07.602138Z",
-      "batch_index": 13,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=39.9075,116.39723"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:58:53.867046Z",
+      "query": "POPIA privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=POPIA+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:07.856965Z",
-      "batch_index": 14,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=47.60621,-122.33207"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:58:58.922094Z",
+      "query": "privacy Brazil",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Brazil&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:08.108999Z",
-      "batch_index": 15,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=51.47999954223633,-3.180000066757202"
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-27T23:59:18.126272Z",
+      "query": "LGPD privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=LGPD+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:08.364218Z",
-      "batch_index": 16,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=42.37537,-72.51925"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-27T23:59:30.182107Z",
+      "query": "data protection Brazil",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+protection+Brazil&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:08.619577Z",
-      "batch_index": 17,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=24.18207550048828,120.64830017089844"
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-27T23:59:51.418993Z",
+      "query": "privacy Mexico",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Mexico&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:08.871913Z",
-      "batch_index": 18,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=42.35843,-71.05977"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:00:03.323139Z",
+      "query": "privacy Mexico",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Mexico&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:09.125529Z",
-      "batch_index": 19,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=35.7721,-78.63861"
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:00:10.235086Z",
+      "query": "data protection Mexico",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+protection+Mexico&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:09.380772Z",
-      "batch_index": 20,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=37.42411,-122.16608"
+      "reason": "URLError: timed out",
+      "retrieved_at": "2026-05-28T00:00:40.365963Z",
+      "query": "data protection Mexico",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+protection+Mexico&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:09.636086Z",
-      "batch_index": 21,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=43.70643,-79.39864"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:00:54.157957Z",
+      "query": "privacy Argentina",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Argentina&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:09.891493Z",
-      "batch_index": 22,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=38.89511,-77.03637"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:01:04.928221Z",
+      "query": "privacy Argentina",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Argentina&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:10.146833Z",
-      "batch_index": 23,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=40.71427,-74.00597"
+      "reason": "URLError: _ssl.c:1011: The handshake operation timed out",
+      "retrieved_at": "2026-05-28T00:01:35.285425Z",
+      "query": "privacy Chile",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Chile&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:10.402204Z",
-      "batch_index": 24,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=46.516,6.63282"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:01:47.966608Z",
+      "query": "privacy Colombia",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Colombia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:10.657511Z",
-      "batch_index": 25,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=35.22709,-80.84313"
+      "reason": "URLError: timed out",
+      "retrieved_at": "2026-05-28T00:02:18.227189Z",
+      "query": "privacy India",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+India&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:10.908971Z",
-      "batch_index": 26,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=39.68128204345703,-84.1341781616211"
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:02:28.159500Z",
+      "query": "DPDP Act privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=DPDP+Act+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:11.164321Z",
-      "batch_index": 27,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=34.258331298828125,108.9286117553711"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:03:02.612368Z",
+      "query": "privacy Indonesia",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Indonesia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:11.419865Z",
-      "batch_index": 28,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=45.464271545410156,9.189510345458984"
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:03:09.021834Z",
+      "query": "privacy Indonesia",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Indonesia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     },
     {
-      "source_id": "open_elevation",
-      "source_type": "elevation_enrichment",
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
       "availability": "failed",
-      "reason": "cache-only mode active: no cached response available.",
-      "retrieved_at": "2026-05-26T13:27:11.673246Z",
-      "batch_index": 29,
-      "url": "https://api.open-elevation.com/api/v1/lookup?locations=40.48622,-74.45182"
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:03:24.611034Z",
+      "query": "personal data protection Indonesia",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=personal+data+protection+Indonesia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:03:36.840435Z",
+      "query": "privacy Philippines",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Philippines&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "URLError: _ssl.c:1011: The handshake operation timed out",
+      "retrieved_at": "2026-05-28T00:04:17.881724Z",
+      "query": "data privacy act Philippines",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+privacy+act+Philippines&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:04:37.973768Z",
+      "query": "privacy Japan",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Japan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:05:02.814386Z",
+      "query": "APPI privacy Japan",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=APPI+privacy+Japan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:05:10.476669Z",
+      "query": "privacy South Korea",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+South+Korea&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:05:22.534029Z",
+      "query": "privacy South Korea",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+South+Korea&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:05:28.585759Z",
+      "query": "PIPA privacy Korea",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=PIPA+privacy+Korea&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:05:36.035845Z",
+      "query": "privacy Singapore",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Singapore&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:05:42.809254Z",
+      "query": "PDPA privacy Singapore",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=PDPA+privacy+Singapore&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:06:05.007401Z",
+      "query": "privacy Malaysia",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Malaysia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:06:18.109409Z",
+      "query": "privacy Malaysia",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Malaysia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:06:26.121477Z",
+      "query": "privacy Thailand",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Thailand&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:06:41.173786Z",
+      "query": "privacy Vietnam",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Vietnam&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:07:02.507583Z",
+      "query": "privacy Vietnam",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Vietnam&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:07:11.579890Z",
+      "query": "privacy Middle East",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Middle+East&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:07:40.687659Z",
+      "query": "privacy Saudi Arabia",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Saudi+Arabia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "URLError: timed out",
+      "retrieved_at": "2026-05-28T00:08:10.813713Z",
+      "query": "privacy Saudi Arabia",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Saudi+Arabia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:08:40.863377Z",
+      "query": "privacy UAE",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+UAE&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "URLError: _ssl.c:1011: The handshake operation timed out",
+      "retrieved_at": "2026-05-28T00:09:31.986010Z",
+      "query": "privacy Qatar",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Qatar&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:09:49.663409Z",
+      "query": "privacy Qatar",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Qatar&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:10:07.233329Z",
+      "query": "privacy Russia",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Russia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:10:17.556528Z",
+      "query": "privacy Russia",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Russia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:10:27.974853Z",
+      "query": "data protection Russia",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+protection+Russia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:10:36.755089Z",
+      "query": "data protection Russia",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+protection+Russia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:10:43.921090Z",
+      "query": "personal data Russia",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=personal+data+Russia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:11:04.711526Z",
+      "query": "152-FZ privacy Russia",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=152-FZ+privacy+Russia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:11:14.121435Z",
+      "query": "152-FZ privacy Russia",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=152-FZ+privacy+Russia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:11:24.820239Z",
+      "query": "Roskomnadzor privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Roskomnadzor+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:11:32.583383Z",
+      "query": "Roskomnadzor privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Roskomnadzor+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:11:40.221660Z",
+      "query": "privacy China",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+China&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:11:47.157386Z",
+      "query": "privacy China",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+China&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:12:01.255635Z",
+      "query": "data protection China",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+protection+China&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:12:08.640119Z",
+      "query": "data protection China",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+protection+China&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:12:23.872118Z",
+      "query": "personal information protection law China",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=personal+information+protection+law+China&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:12:53.847123Z",
+      "query": "PIPL privacy China",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=PIPL+privacy+China&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:12:59.709768Z",
+      "query": "PIPL privacy China",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=PIPL+privacy+China&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:13:07.641457Z",
+      "query": "China cybersecurity law privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=China+cybersecurity+law+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:13:14.392469Z",
+      "query": "China cybersecurity law privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=China+cybersecurity+law+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:13:20.250256Z",
+      "query": "China data security law privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=China+data+security+law+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:13:29.973154Z",
+      "query": "China data security law privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=China+data+security+law+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:13:38.817558Z",
+      "query": "privacy Taiwan",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Taiwan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:13:56.136595Z",
+      "query": "data protection Taiwan",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=data+protection+Taiwan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:14:15.636215Z",
+      "query": "Personal Data Protection Act Taiwan",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Personal+Data+Protection+Act+Taiwan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:14:32.558697Z",
+      "query": "Personal Data Protection Act Taiwan",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Personal+Data+Protection+Act+Taiwan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:14:38.417241Z",
+      "query": "Taiwan PDPA privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Taiwan+PDPA+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:14:51.778344Z",
+      "query": "privacy Hong Kong",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Hong+Kong&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:14:56.668912Z",
+      "query": "privacy Hong Kong",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Hong+Kong&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:15:02.188906Z",
+      "query": "Hong Kong PDPO privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Hong+Kong+PDPO+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:15:10.616599Z",
+      "query": "Hong Kong PDPO privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Hong+Kong+PDPO+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:15:17.283368Z",
+      "query": "personal data privacy ordinance Hong Kong",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=personal+data+privacy+ordinance+Hong+Kong&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:15:30.517128Z",
+      "query": "personal data privacy ordinance Hong Kong",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=personal+data+privacy+ordinance+Hong+Kong&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:15:40.196530Z",
+      "query": "privacy Japan APPI",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Japan+APPI&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "URLError: timed out",
+      "retrieved_at": "2026-05-28T00:16:10.325683Z",
+      "query": "privacy Japan APPI",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Japan+APPI&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "URLError: _ssl.c:1011: The handshake operation timed out",
+      "retrieved_at": "2026-05-28T00:16:42.669102Z",
+      "query": "Act on Protection of Personal Information Japan",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Act+on+Protection+of+Personal+Information+Japan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:16:52.059132Z",
+      "query": "Act on Protection of Personal Information Japan",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Act+on+Protection+of+Personal+Information+Japan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "URLError: timed out",
+      "retrieved_at": "2026-05-28T00:17:22.196169Z",
+      "query": "personal information protection Japan",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=personal+information+protection+Japan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:17:44.341833Z",
+      "query": "kojin joho privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=kojin+joho+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:17:53.041758Z",
+      "query": "kojin joho privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=kojin+joho+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:18:01.405551Z",
+      "query": "privacy Korea PIPA",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Korea+PIPA&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:18:20.672325Z",
+      "query": "South Korea Personal Information Protection Act",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=South+Korea+Personal+Information+Protection+Act&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:18:35.438258Z",
+      "query": "South Korea Personal Information Protection Act",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=South+Korea+Personal+Information+Protection+Act&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:18:44.299654Z",
+      "query": "personal information protection Korea",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=personal+information+protection+Korea&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:19:03.958024Z",
+      "query": "privacy Mongolia",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Mongolia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:19:13.909757Z",
+      "query": "privacy Mongolia",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Mongolia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:19:20.874681Z",
+      "query": "privacy Nepal",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Nepal&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:19:39.368718Z",
+      "query": "privacy Sri Lanka",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Sri+Lanka&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:19:59.579088Z",
+      "query": "privacy Bangladesh",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Bangladesh&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:20:11.774673Z",
+      "query": "privacy Bangladesh",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Bangladesh&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:20:20.130237Z",
+      "query": "Bangladesh data protection privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Bangladesh+data+protection+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:20:35.320635Z",
+      "query": "Bangladesh data protection privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Bangladesh+data+protection+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:20:42.391559Z",
+      "query": "privacy Pakistan",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Pakistan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:20:48.430747Z",
+      "query": "privacy Pakistan",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Pakistan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:20:57.461063Z",
+      "query": "personal data protection Pakistan",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=personal+data+protection+Pakistan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:21:04.158500Z",
+      "query": "personal data protection Pakistan",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=personal+data+protection+Pakistan&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:21:12.098176Z",
+      "query": "privacy Myanmar",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Myanmar&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:21:28.673862Z",
+      "query": "privacy Cambodia",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Cambodia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:21:38.239313Z",
+      "query": "privacy Cambodia",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Cambodia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:21:46.102210Z",
+      "query": "privacy Laos",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Laos&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:22:08.027087Z",
+      "query": "privacy Brunei",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Brunei&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:22:16.804888Z",
+      "query": "privacy Brunei",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Brunei&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:22:26.616138Z",
+      "query": "privacy Morocco",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Morocco&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:22:47.761029Z",
+      "query": "Morocco data protection privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Morocco+data+protection+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:22:55.930533Z",
+      "query": "Morocco data protection privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Morocco+data+protection+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:23:02.165891Z",
+      "query": "privacy Ghana",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Ghana&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:23:32.534473Z",
+      "query": "Ghana data protection privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Ghana+data+protection+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:23:41.518036Z",
+      "query": "Ghana data protection privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Ghana+data+protection+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:23:50.359429Z",
+      "query": "privacy Egypt",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Egypt&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:23:56.119957Z",
+      "query": "privacy Egypt",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Egypt&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:24:02.112140Z",
+      "query": "Egypt personal data protection privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Egypt+personal+data+protection+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:24:23.065921Z",
+      "query": "privacy Uganda",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Uganda&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:24:33.083390Z",
+      "query": "privacy Uganda",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Uganda&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:24:42.001433Z",
+      "query": "privacy Rwanda",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Rwanda&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:25:04.023249Z",
+      "query": "privacy Tanzania",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Tanzania&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:25:21.120606Z",
+      "query": "privacy Ethiopia",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Ethiopia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:25:28.218652Z",
+      "query": "privacy Ethiopia",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Ethiopia&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:25:36.078792Z",
+      "query": "privacy Peru",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Peru&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:25:46.926412Z",
+      "query": "privacy Peru",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Peru&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:25:54.086574Z",
+      "query": "privacy Uruguay",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Uruguay&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:26:00.237033Z",
+      "query": "privacy Uruguay",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Uruguay&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:26:06.343960Z",
+      "query": "privacy Ecuador",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Ecuador&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:26:12.628776Z",
+      "query": "privacy Ecuador",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Ecuador&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:26:18.597633Z",
+      "query": "privacy Costa Rica",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Costa+Rica&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:26:25.114106Z",
+      "query": "privacy Costa Rica",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Costa+Rica&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:26:30.961209Z",
+      "query": "privacy Panama",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Panama&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "retrieved_at": "2026-05-28T00:26:45.077308Z",
+      "query": "privacy Venezuela",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Venezuela&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:26:49.696513Z",
+      "query": "privacy Venezuela",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=privacy+Venezuela&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:26:53.859637Z",
+      "query": "habeas data privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=habeas+data+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:26:58.116305Z",
+      "query": "habeas data privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=habeas+data+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:27:02.786521Z",
+      "query": "Latin America data protection privacy",
+      "window_id": "2015_2019",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Latin+America+data+protection+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20150101000000&enddatetime=20191231235959"
+    },
+    {
+      "source_id": "gdelt_doc_2",
+      "source_type": "news_geo_discourse",
+      "availability": "failed",
+      "reason": "HTTPError 429 Too Many Requests",
+      "retrieved_at": "2026-05-28T00:27:07.717484Z",
+      "query": "Latin America data protection privacy",
+      "window_id": "2020_2026",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=Latin+America+data+protection+privacy&mode=ArtList&format=json&maxrecords=60&sort=datedesc&startdatetime=20200101000000&enddatetime=20261231235959"
     }
   ]
 }

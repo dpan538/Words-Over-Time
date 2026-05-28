@@ -1,0 +1,3042 @@
+{
+  "word": "privacy",
+  "layer_id": "geo_elevation_distribution",
+  "status": "exploratory_visual_layer",
+  "intended_use": "available_for_later_elevation_distribution_chart_design",
+  "title": "Privacy signal by elevation",
+  "description": "Compares recovered privacy geo signals with elevation. The values are source-recovered attention/discourse counts, not population-normalized search share.",
+  "generated_at": "2026-05-28T02:13:47.864640+00:00",
+  "generated_by_script": "scripts/process_privacy_geo_elevation_distribution.py",
+  "source_layers": [
+    "src/data/generated/privacy_geo_attention_map.json",
+    "docs/research/privacy/processed/privacy_geo_spatial_metrics_processed.json"
+  ],
+  "statistics": {
+    "point_count": 90,
+    "elevation_point_count": 90,
+    "record_count_total": 21860,
+    "elevation_min_m": 4.0,
+    "elevation_max_m": 1762.0,
+    "mean_log_signal": 5.0964,
+    "median_elevation_m": 47.0,
+    "q1_elevation_m": 21.0,
+    "q3_elevation_m": 182.0,
+    "source_total_records": 139071,
+    "google_trends_available": false
+  },
+  "points": [
+    {
+      "id": "us_washington_24",
+      "city": "Washington",
+      "region": "District of Columbia",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 38.89511,
+      "longitude": -77.03637,
+      "elevation_meters": 4.0,
+      "record_count": 216,
+      "log_signal": 5.3799,
+      "signal_deviation": 0.4141,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "information privacy",
+          "count": 14
+        },
+        {
+          "query": "privacy Rwanda",
+          "count": 12
+        },
+        {
+          "query": "privacy Nepal",
+          "count": 8
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "nl_rotterdam_47",
+      "city": "Rotterdam",
+      "region": null,
+      "country": "Netherlands",
+      "country_code": "NL",
+      "latitude": 51.92250061035156,
+      "longitude": 4.479169845581055,
+      "elevation_meters": 8.0,
+      "record_count": 137,
+      "log_signal": 4.9273,
+      "signal_deviation": -0.247,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Morocco",
+          "count": 24
+        },
+        {
+          "query": "privacy Argentina",
+          "count": 20
+        },
+        {
+          "query": "privacy Rwanda",
+          "count": 12
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "none_bandar_seri_begawan_74",
+      "city": "Bandar Seri Begawan",
+      "region": null,
+      "country": "Brunei",
+      "country_code": null,
+      "latitude": 4.890349864959717,
+      "longitude": 114.9400634765625,
+      "elevation_meters": 10.0,
+      "record_count": 88,
+      "log_signal": 4.4886,
+      "signal_deviation": -0.8876,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Brunei",
+          "count": 60
+        },
+        {
+          "query": "privacy Philippines",
+          "count": 4
+        },
+        {
+          "query": "data privacy act Philippines",
+          "count": 4
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "pk_karachi_71",
+      "city": "Karachi",
+      "region": null,
+      "country": "Pakistan",
+      "country_code": "PK",
+      "latitude": 24.86079978942871,
+      "longitude": 67.0103988647461,
+      "elevation_meters": 10.0,
+      "record_count": 90,
+      "log_signal": 4.5109,
+      "signal_deviation": -0.8551,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 60
+        },
+        {
+          "query": "privacy Pakistan",
+          "count": 15
+        },
+        {
+          "query": "privacy Mongolia",
+          "count": 4
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "cn_shanghai_58",
+      "city": "Shanghai",
+      "region": null,
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 31.222219467163086,
+      "longitude": 121.45806121826172,
+      "elevation_meters": 11.0,
+      "record_count": 116,
+      "log_signal": 4.7622,
+      "signal_deviation": -0.4881,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "data protection Taiwan",
+          "count": 20
+        },
+        {
+          "query": "location privacy",
+          "count": 14
+        },
+        {
+          "query": "PIPL privacy China",
+          "count": 7
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "be_antwerp_64",
+      "city": "Antwerp",
+      "region": null,
+      "country": "Belgium",
+      "country_code": "BE",
+      "latitude": 51.2204704284668,
+      "longitude": 4.400259971618652,
+      "elevation_meters": 12.0,
+      "record_count": 101,
+      "log_signal": 4.625,
+      "signal_deviation": -0.6885,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Ecuador",
+          "count": 100
+        },
+        {
+          "query": "POPIA privacy",
+          "count": 1
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "th_bangkok_40",
+      "city": "Bangkok",
+      "region": "Bangkok",
+      "country": "Thailand",
+      "country_code": "TH",
+      "latitude": 13.75398,
+      "longitude": 100.50144,
+      "elevation_meters": 12.0,
+      "record_count": 152,
+      "log_signal": 5.0304,
+      "signal_deviation": -0.0963,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Laos",
+          "count": 51
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 33
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 23
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "be_antwerp_51",
+      "city": "Antwerp",
+      "region": null,
+      "country": "Belgium",
+      "country_code": "BE",
+      "latitude": 51.22272872924805,
+      "longitude": 4.408430099487305,
+      "elevation_meters": 13.0,
+      "record_count": 129,
+      "log_signal": 4.8675,
+      "signal_deviation": -0.3342,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Ecuador",
+          "count": 101
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 8
+        },
+        {
+          "query": "privacy Argentina",
+          "count": 4
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "dk_copenhagen_89",
+      "city": "Copenhagen",
+      "region": "Capital Region",
+      "country": "Denmark",
+      "country_code": "DK",
+      "latitude": 55.67594,
+      "longitude": 12.56553,
+      "elevation_meters": 14.0,
+      "record_count": 73,
+      "log_signal": 4.3041,
+      "signal_deviation": -1.1572,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "data privacy",
+          "count": 4
+        },
+        {
+          "query": "data protection Kenya",
+          "count": 4
+        },
+        {
+          "query": "privacy Vietnam",
+          "count": 4
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "nl_amsterdam_37",
+      "city": "Amsterdam",
+      "region": "North Holland",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "latitude": 52.37403,
+      "longitude": 4.88969,
+      "elevation_meters": 14.0,
+      "record_count": 159,
+      "log_signal": 5.0752,
+      "signal_deviation": -0.031,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Laos",
+          "count": 12
+        },
+        {
+          "query": "privacy concern",
+          "count": 11
+        },
+        {
+          "query": "privacy concerns",
+          "count": 11
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "za_durban_27",
+      "city": "Durban",
+      "region": "KwaZulu-Natal",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "latitude": -29.8579,
+      "longitude": 31.0292,
+      "elevation_meters": 14.0,
+      "record_count": 188,
+      "log_signal": 5.2417,
+      "signal_deviation": 0.2123,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "data protection Africa",
+          "count": 95
+        },
+        {
+          "query": "POPIA privacy",
+          "count": 42
+        },
+        {
+          "query": "privacy law Africa",
+          "count": 10
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "gb_cambridge_10",
+      "city": "Cambridge",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 52.2,
+      "longitude": 0.11667,
+      "elevation_meters": 14.0,
+      "record_count": 363,
+      "log_signal": 5.8972,
+      "signal_deviation": 1.1695,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Ecuador",
+          "count": 101
+        },
+        {
+          "query": "personal information protection Japan",
+          "count": 45
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 23
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "gb_swansea_32",
+      "city": "Swansea",
+      "region": "Wales",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.62079,
+      "longitude": -3.94323,
+      "elevation_meters": 14.0,
+      "record_count": 166,
+      "log_signal": 5.118,
+      "signal_deviation": 0.0316,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "China data security law privacy",
+          "count": 19
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 12
+        },
+        {
+          "query": "privacy Vietnam",
+          "count": 11
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_new_haven_49",
+      "city": "New Haven",
+      "region": "Connecticut",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 41.30815,
+      "longitude": -72.92816,
+      "elevation_meters": 15.0,
+      "record_count": 136,
+      "log_signal": 4.92,
+      "signal_deviation": -0.2576,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "data protection China",
+          "count": 12
+        },
+        {
+          "query": "privacy Ghana",
+          "count": 8
+        },
+        {
+          "query": "China data security law privacy",
+          "count": 7
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_san_francisco_45",
+      "city": "San Francisco",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 37.77493,
+      "longitude": -122.41942,
+      "elevation_meters": 16.0,
+      "record_count": 140,
+      "log_signal": 4.9488,
+      "signal_deviation": -0.2156,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 12
+        },
+        {
+          "query": "privacy Mexico",
+          "count": 11
+        },
+        {
+          "query": "privacy Kenya",
+          "count": 9
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_cambridge_1",
+      "city": "Cambridge",
+      "region": "Massachusetts",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.3751,
+      "longitude": -71.10561,
+      "elevation_meters": 17.0,
+      "record_count": 1046,
+      "log_signal": 6.9537,
+      "signal_deviation": 2.7125,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "data protection Mexico",
+          "count": 99
+        },
+        {
+          "query": "personal information protection Korea",
+          "count": 98
+        },
+        {
+          "query": "personal data Russia",
+          "count": 63
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "cn_wuhan_33",
+      "city": "Wuhan",
+      "region": null,
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 30.583330154418945,
+      "longitude": 114.26667022705078,
+      "elevation_meters": 18.0,
+      "record_count": 165,
+      "log_signal": 5.112,
+      "signal_deviation": 0.0228,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "personal information protection Korea",
+          "count": 42
+        },
+        {
+          "query": "data protection China",
+          "count": 15
+        },
+        {
+          "query": "data protection Taiwan",
+          "count": 13
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "bd_dhaka_38",
+      "city": "Dhaka",
+      "region": null,
+      "country": "Bangladesh",
+      "country_code": "BD",
+      "latitude": 23.710399627685547,
+      "longitude": 90.40744018554688,
+      "elevation_meters": 19.0,
+      "record_count": 159,
+      "log_signal": 5.0752,
+      "signal_deviation": -0.031,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 70
+        },
+        {
+          "query": "privacy Bangladesh",
+          "count": 31
+        },
+        {
+          "query": "Bangladesh data protection privacy",
+          "count": 15
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "qa_doha_54",
+      "city": "Doha",
+      "region": null,
+      "country": "Qatar",
+      "country_code": "QA",
+      "latitude": 25.377225875854492,
+      "longitude": 51.48714828491211,
+      "elevation_meters": 19.0,
+      "record_count": 123,
+      "log_signal": 4.8203,
+      "signal_deviation": -0.4032,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Qatar",
+          "count": 83
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 6
+        },
+        {
+          "query": "Egypt personal data protection privacy",
+          "count": 5
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "sg_singapore_9",
+      "city": "Singapore",
+      "region": null,
+      "country": "Singapore",
+      "country_code": "SG",
+      "latitude": 1.28967,
+      "longitude": 103.85007,
+      "elevation_meters": 19.0,
+      "record_count": 374,
+      "log_signal": 5.9269,
+      "signal_deviation": 1.213,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Singapore",
+          "count": 93
+        },
+        {
+          "query": "PDPA privacy Singapore",
+          "count": 54
+        },
+        {
+          "query": "privacy Uruguay",
+          "count": 14
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "cn_nanjing_70",
+      "city": "Nanjing",
+      "region": "Jiangsu",
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 32.06167,
+      "longitude": 118.77778,
+      "elevation_meters": 20.0,
+      "record_count": 96,
+      "log_signal": 4.5747,
+      "signal_deviation": -0.7619,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "China data security law privacy",
+          "count": 62
+        },
+        {
+          "query": "China cybersecurity law privacy",
+          "count": 16
+        },
+        {
+          "query": "data protection China",
+          "count": 12
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_san_diego_73",
+      "city": "San Diego",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 32.71571,
+      "longitude": -117.16472,
+      "elevation_meters": 20.0,
+      "record_count": 88,
+      "log_signal": 4.4886,
+      "signal_deviation": -0.8876,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Uruguay",
+          "count": 5
+        },
+        {
+          "query": "privacy Colombia",
+          "count": 4
+        },
+        {
+          "query": "privacy Peru",
+          "count": 4
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "au_wacol_66",
+      "city": "Wacol",
+      "region": "Queensland",
+      "country": "Australia",
+      "country_code": "AU",
+      "latitude": -27.58810043334961,
+      "longitude": 152.92495727539062,
+      "elevation_meters": 21.0,
+      "record_count": 99,
+      "log_signal": 4.6052,
+      "signal_deviation": -0.7174,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 60
+        },
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 15
+        },
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 4
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "gb_cambridge_65",
+      "city": "Cambridge",
+      "region": "Cambridgeshire",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 52.17599868774414,
+      "longitude": 0.14000000059604645,
+      "elevation_meters": 21.0,
+      "record_count": 101,
+      "log_signal": 4.625,
+      "signal_deviation": -0.6885,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Ecuador",
+          "count": 99
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 1
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 1
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "gb_bristol_80",
+      "city": "Bristol",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.45523,
+      "longitude": -2.59665,
+      "elevation_meters": 22.0,
+      "record_count": 79,
+      "log_signal": 4.382,
+      "signal_deviation": -1.0433,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Nepal",
+          "count": 14
+        },
+        {
+          "query": "privacy Brunei",
+          "count": 12
+        },
+        {
+          "query": "privacy Mongolia",
+          "count": 5
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "th_bangkok_63",
+      "city": "Bangkok",
+      "region": null,
+      "country": "Thailand",
+      "country_code": "TH",
+      "latitude": 13.766231536865234,
+      "longitude": 100.53362274169922,
+      "elevation_meters": 24.0,
+      "record_count": 103,
+      "log_signal": 4.6444,
+      "signal_deviation": -0.6601,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Laos",
+          "count": 46
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 27
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 23
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "gb_london_2",
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "elevation_meters": 25.0,
+      "record_count": 883,
+      "log_signal": 6.7845,
+      "signal_deviation": 2.4654,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "personal data protection Pakistan",
+          "count": 66
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 46
+        },
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 36
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "au_melbourne_8",
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "country_code": "AU",
+      "latitude": -37.814,
+      "longitude": 144.96332,
+      "elevation_meters": 27.0,
+      "record_count": 375,
+      "log_signal": 5.9296,
+      "signal_deviation": 1.2169,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Myanmar",
+          "count": 41
+        },
+        {
+          "query": "privacy breach",
+          "count": 20
+        },
+        {
+          "query": "privacy Laos",
+          "count": 12
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "za_rondebosch_22",
+      "city": "Rondebosch",
+      "region": "Western Cape",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "latitude": -33.96333,
+      "longitude": 18.47639,
+      "elevation_meters": 27.0,
+      "record_count": 226,
+      "log_signal": 5.425,
+      "signal_deviation": 0.4799,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "data protection Africa",
+          "count": 27
+        },
+        {
+          "query": "POPIA privacy",
+          "count": 25
+        },
+        {
+          "query": "privacy South Africa",
+          "count": 23
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "se_stockholm_26",
+      "city": "Stockholm",
+      "region": null,
+      "country": "Sweden",
+      "country_code": "SE",
+      "latitude": 59.32938003540039,
+      "longitude": 18.068710327148438,
+      "elevation_meters": 27.0,
+      "record_count": 191,
+      "log_signal": 5.2575,
+      "signal_deviation": 0.2353,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Costa Rica",
+          "count": 42
+        },
+        {
+          "query": "privacy Ecuador",
+          "count": 15
+        },
+        {
+          "query": "personal data Russia",
+          "count": 11
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_boston_12",
+      "city": "Boston",
+      "region": "Massachusetts",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.35843,
+      "longitude": -71.05977,
+      "elevation_meters": 27.0,
+      "record_count": 326,
+      "log_signal": 5.79,
+      "signal_deviation": 1.0129,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "data protection Mexico",
+          "count": 44
+        },
+        {
+          "query": "personal information protection Korea",
+          "count": 43
+        },
+        {
+          "query": "personal data Russia",
+          "count": 41
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_baltimore_7",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 39.29038,
+      "longitude": -76.61219,
+      "elevation_meters": 28.0,
+      "record_count": 433,
+      "log_signal": 6.073,
+      "signal_deviation": 1.4264,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "data protection Africa",
+          "count": 32
+        },
+        {
+          "query": "privacy Kenya",
+          "count": 24
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 24
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "none_accra_61",
+      "city": "Accra",
+      "region": null,
+      "country": "Ghana",
+      "country_code": null,
+      "latitude": 5.5560197830200195,
+      "longitude": -0.19689999520778656,
+      "elevation_meters": 29.0,
+      "record_count": 106,
+      "log_signal": 4.6728,
+      "signal_deviation": -0.6186,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Ghana",
+          "count": 47
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 25
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 8
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "no_oslo_75",
+      "city": "Oslo",
+      "region": "Oslo",
+      "country": "Norway",
+      "country_code": "NO",
+      "latitude": 59.91273,
+      "longitude": 10.74609,
+      "elevation_meters": 29.0,
+      "record_count": 86,
+      "log_signal": 4.4659,
+      "signal_deviation": -0.9208,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 11
+        },
+        {
+          "query": "privacy Tanzania",
+          "count": 5
+        },
+        {
+          "query": "data privacy",
+          "count": 4
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "gb_liverpool_43",
+      "city": "Liverpool",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 53.41058,
+      "longitude": -2.97794,
+      "elevation_meters": 29.0,
+      "record_count": 143,
+      "log_signal": 4.9698,
+      "signal_deviation": -0.1849,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Uganda",
+          "count": 19
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 16
+        },
+        {
+          "query": "privacy Nepal",
+          "count": 15
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_washington_dc_83",
+      "city": "Washington D.C.",
+      "region": "District of Columbia",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 38.90393829345703,
+      "longitude": -77.03337860107422,
+      "elevation_meters": 29.0,
+      "record_count": 79,
+      "log_signal": 4.382,
+      "signal_deviation": -1.0433,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Brunei",
+          "count": 79
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_stanford_53",
+      "city": "Stanford",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 37.42411,
+      "longitude": -122.16608,
+      "elevation_meters": 30.0,
+      "record_count": 123,
+      "log_signal": 4.8203,
+      "signal_deviation": -0.4032,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "APPI privacy Japan",
+          "count": 10
+        },
+        {
+          "query": "privacy Japan APPI",
+          "count": 10
+        },
+        {
+          "query": "privacy Mexico",
+          "count": 9
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "gb_london_4",
+      "city": "London",
+      "region": "Camden",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.52090072631836,
+      "longitude": -0.1307000070810318,
+      "elevation_meters": 35.0,
+      "record_count": 548,
+      "log_signal": 6.3081,
+      "signal_deviation": 1.7697,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "data protection Kenya",
+          "count": 40
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 34
+        },
+        {
+          "query": "privacy Tanzania",
+          "count": 34
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "kr_seoul_23",
+      "city": "Seoul",
+      "region": "Seoul",
+      "country": "South Korea",
+      "country_code": "KR",
+      "latitude": 37.566,
+      "longitude": 126.9784,
+      "elevation_meters": 36.0,
+      "record_count": 220,
+      "log_signal": 5.3982,
+      "signal_deviation": 0.4407,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy South Korea",
+          "count": 50
+        },
+        {
+          "query": "personal information protection Korea",
+          "count": 31
+        },
+        {
+          "query": "PIPA privacy Korea",
+          "count": 26
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "fr_paris_36",
+      "city": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "country_code": "FR",
+      "latitude": 48.85341,
+      "longitude": 2.3488,
+      "elevation_meters": 38.0,
+      "record_count": 161,
+      "log_signal": 5.0876,
+      "signal_deviation": -0.0128,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Costa Rica",
+          "count": 12
+        },
+        {
+          "query": "privacy Ecuador",
+          "count": 11
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 10
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_washington_dc_25",
+      "city": "Washington D.C.",
+      "region": "District of Columbia",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 38.90072250366211,
+      "longitude": -77.03477478027344,
+      "elevation_meters": 41.0,
+      "record_count": 211,
+      "log_signal": 5.3566,
+      "signal_deviation": 0.38,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 99
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 99
+        },
+        {
+          "query": "China data security law privacy",
+          "count": 7
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "jp_tokyo_46",
+      "city": "Tokyo",
+      "region": null,
+      "country": "Japan",
+      "country_code": "JP",
+      "latitude": 35.68949890136719,
+      "longitude": 139.69171142578125,
+      "elevation_meters": 42.0,
+      "record_count": 138,
+      "log_signal": 4.9345,
+      "signal_deviation": -0.2365,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "Act on Protection of Personal Information Japan",
+          "count": 42
+        },
+        {
+          "query": "personal information protection Japan",
+          "count": 26
+        },
+        {
+          "query": "privacy Japan",
+          "count": 19
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "nl_enschede_68",
+      "city": "Enschede",
+      "region": "Overijssel",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "latitude": 52.21833,
+      "longitude": 6.89583,
+      "elevation_meters": 44.0,
+      "record_count": 98,
+      "log_signal": 4.5951,
+      "signal_deviation": -0.7321,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "online privacy",
+          "count": 10
+        },
+        {
+          "query": "privacy Chile",
+          "count": 10
+        },
+        {
+          "query": "privacy and security",
+          "count": 5
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "za_cape_town_69",
+      "city": "Cape Town",
+      "region": null,
+      "country": "South Africa",
+      "country_code": "ZA",
+      "latitude": -33.91628646850586,
+      "longitude": 18.604434967041016,
+      "elevation_meters": 44.0,
+      "record_count": 97,
+      "log_signal": 4.585,
+      "signal_deviation": -0.7469,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "data protection Africa",
+          "count": 29
+        },
+        {
+          "query": "POPIA privacy",
+          "count": 19
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 7
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "au_brisbane_14",
+      "city": "Brisbane",
+      "region": "Queensland",
+      "country": "Australia",
+      "country_code": "AU",
+      "latitude": -27.46794,
+      "longitude": 153.02809,
+      "elevation_meters": 47.0,
+      "record_count": 297,
+      "log_signal": 5.6971,
+      "signal_deviation": 0.8773,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 63
+        },
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 26
+        },
+        {
+          "query": "personal information protection Korea",
+          "count": 12
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "de_berlin_81",
+      "city": "Berlin",
+      "region": "Berlin",
+      "country": "Germany",
+      "country_code": "DE",
+      "latitude": 52.52437,
+      "longitude": 13.41053,
+      "elevation_meters": 47.0,
+      "record_count": 79,
+      "log_signal": 4.382,
+      "signal_deviation": -1.0433,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Middle East",
+          "count": 10
+        },
+        {
+          "query": "privacy Singapore",
+          "count": 9
+        },
+        {
+          "query": "privacy Saudi Arabia",
+          "count": 8
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "nz_auckland_20",
+      "city": "Auckland",
+      "region": null,
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "latitude": -36.853233337402344,
+      "longitude": 174.76649475097656,
+      "elevation_meters": 47.0,
+      "record_count": 240,
+      "log_signal": 5.4848,
+      "signal_deviation": 0.5673,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 199
+        },
+        {
+          "query": "surveillance privacy",
+          "count": 5
+        },
+        {
+          "query": "privacy settings",
+          "count": 3
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "cn_beijing_19",
+      "city": "Beijing",
+      "region": "Beijing",
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 39.9075,
+      "longitude": 116.39723,
+      "elevation_meters": 50.0,
+      "record_count": 240,
+      "log_signal": 5.4848,
+      "signal_deviation": 0.5673,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "data protection China",
+          "count": 33
+        },
+        {
+          "query": "personal data privacy ordinance Hong Kong",
+          "count": 25
+        },
+        {
+          "query": "privacy Chile",
+          "count": 11
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "my_kuala_lumpur_76",
+      "city": "Kuala Lumpur",
+      "region": "Kuala Lumpur",
+      "country": "Malaysia",
+      "country_code": "MY",
+      "latitude": 3.1412,
+      "longitude": 101.68653,
+      "elevation_meters": 50.0,
+      "record_count": 84,
+      "log_signal": 4.4427,
+      "signal_deviation": -0.9548,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Malaysia",
+          "count": 12
+        },
+        {
+          "query": "privacy Singapore",
+          "count": 9
+        },
+        {
+          "query": "internet privacy",
+          "count": 6
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_new_york_11",
+      "city": "New York",
+      "region": "New York",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 40.71427,
+      "longitude": -74.00597,
+      "elevation_meters": 51.0,
+      "record_count": 346,
+      "log_signal": 5.8493,
+      "signal_deviation": 1.0996,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Peru",
+          "count": 19
+        },
+        {
+          "query": "privacy Thailand",
+          "count": 15
+        },
+        {
+          "query": "privacy Vietnam",
+          "count": 15
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "gb_manchester_78",
+      "city": "Manchester",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 53.48095,
+      "longitude": -2.23743,
+      "elevation_meters": 52.0,
+      "record_count": 83,
+      "log_signal": 4.4308,
+      "signal_deviation": -0.972,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Ecuador",
+          "count": 46
+        },
+        {
+          "query": "China cybersecurity law privacy",
+          "count": 3
+        },
+        {
+          "query": "LGPD privacy",
+          "count": 2
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "it_rome_72",
+      "city": "Rome",
+      "region": "Lazio",
+      "country": "Italy",
+      "country_code": "IT",
+      "latitude": 41.89193,
+      "longitude": 12.51133,
+      "elevation_meters": 55.0,
+      "record_count": 89,
+      "log_signal": 4.4998,
+      "signal_deviation": -0.8713,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 70
+        },
+        {
+          "query": "privacy Chile",
+          "count": 3
+        },
+        {
+          "query": "privacy Colombia",
+          "count": 3
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "hk_hong_kong_5",
+      "city": "Hong Kong",
+      "region": null,
+      "country": "China Hong Kong",
+      "country_code": "HK",
+      "latitude": 22.2783203125,
+      "longitude": 114.17469024658203,
+      "elevation_meters": 57.0,
+      "record_count": 484,
+      "log_signal": 6.1841,
+      "signal_deviation": 1.5886,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Hong Kong",
+          "count": 95
+        },
+        {
+          "query": "personal data privacy ordinance Hong Kong",
+          "count": 75
+        },
+        {
+          "query": "Hong Kong PDPO privacy",
+          "count": 45
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_berkeley_44",
+      "city": "Berkeley",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 37.87159,
+      "longitude": -122.27275,
+      "elevation_meters": 58.0,
+      "record_count": 141,
+      "log_signal": 4.9558,
+      "signal_deviation": -0.2053,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "right to privacy",
+          "count": 10
+        },
+        {
+          "query": "privacy Venezuela",
+          "count": 8
+        },
+        {
+          "query": "privacy Rwanda",
+          "count": 7
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "gb_edinburgh_35",
+      "city": "Edinburgh",
+      "region": "Scotland",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 55.95206,
+      "longitude": -3.19648,
+      "elevation_meters": 60.0,
+      "record_count": 161,
+      "log_signal": 5.0876,
+      "signal_deviation": -0.0128,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Middle East",
+          "count": 12
+        },
+        {
+          "query": "China data security law privacy",
+          "count": 9
+        },
+        {
+          "query": "data protection Brazil",
+          "count": 8
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "au_sydney_6",
+      "city": "Sydney",
+      "region": "New South Wales",
+      "country": "Australia",
+      "country_code": "AU",
+      "latitude": -33.86785,
+      "longitude": 151.20732,
+      "elevation_meters": 63.0,
+      "record_count": 454,
+      "log_signal": 6.1203,
+      "signal_deviation": 1.4954,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Mongolia",
+          "count": 24
+        },
+        {
+          "query": "privacy Brunei",
+          "count": 23
+        },
+        {
+          "query": "Morocco data protection privacy",
+          "count": 22
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_seattle_0",
+      "city": "Seattle",
+      "region": "Washington",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 47.60621,
+      "longitude": -122.33207,
+      "elevation_meters": 64.0,
+      "record_count": 4728,
+      "log_signal": 8.4615,
+      "signal_deviation": 4.9146,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "personal data protection Pakistan",
+          "count": 731
+        },
+        {
+          "query": "South Korea Personal Information Protection Act",
+          "count": 647
+        },
+        {
+          "query": "personal data Russia",
+          "count": 633
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "gb_oxford_3",
+      "city": "Oxford",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.75222,
+      "longitude": -1.25596,
+      "elevation_meters": 71.0,
+      "record_count": 550,
+      "log_signal": 6.3117,
+      "signal_deviation": 1.775,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "Ghana data protection privacy",
+          "count": 97
+        },
+        {
+          "query": "privacy Laos",
+          "count": 46
+        },
+        {
+          "query": "data protection Kenya",
+          "count": 38
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "ca_vancouver_60",
+      "city": "Vancouver",
+      "region": "British Columbia",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 49.24966,
+      "longitude": -123.11934,
+      "elevation_meters": 76.0,
+      "record_count": 112,
+      "log_signal": 4.7274,
+      "signal_deviation": -0.5389,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "privacy Uganda",
+          "count": 8
+        },
+        {
+          "query": "privacy Tanzania",
+          "count": 8
+        },
+        {
+          "query": "privacy policy",
+          "count": 6
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "hk_pok_fu_lam_21",
+      "city": "Pok Fu Lam",
+      "region": "Southern",
+      "country": "China Hong Kong",
+      "country_code": "HK",
+      "latitude": 22.26861,
+      "longitude": 114.12924,
+      "elevation_meters": 90.0,
+      "record_count": 235,
+      "log_signal": 5.4638,
+      "signal_deviation": 0.5366,
+      "band_id": "0_100m",
+      "top_queries": [
+        {
+          "query": "personal data privacy ordinance Hong Kong",
+          "count": 62
+        },
+        {
+          "query": "privacy Hong Kong",
+          "count": 57
+        },
+        {
+          "query": "personal information protection law China",
+          "count": 24
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_los_angeles_55",
+      "city": "Los Angeles",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 34.05223,
+      "longitude": -118.24368,
+      "elevation_meters": 102.0,
+      "record_count": 120,
+      "log_signal": 4.7958,
+      "signal_deviation": -0.439,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy Peru",
+          "count": 12
+        },
+        {
+          "query": "surveillance privacy",
+          "count": 6
+        },
+        {
+          "query": "APPI privacy Japan",
+          "count": 6
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_bethesda_62",
+      "city": "Bethesda",
+      "region": "Maryland",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 38.98067,
+      "longitude": -77.10026,
+      "elevation_meters": 108.0,
+      "record_count": 104,
+      "log_signal": 4.654,
+      "signal_deviation": -0.6462,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy law Africa",
+          "count": 9
+        },
+        {
+          "query": "data protection Africa",
+          "count": 9
+        },
+        {
+          "query": "privacy Mexico",
+          "count": 9
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "pl_warsaw_67",
+      "city": "Warsaw",
+      "region": null,
+      "country": "Poland",
+      "country_code": "PL",
+      "latitude": 52.22977066040039,
+      "longitude": 21.01177978515625,
+      "elevation_meters": 112.0,
+      "record_count": 99,
+      "log_signal": 4.6052,
+      "signal_deviation": -0.7174,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "personal data Russia",
+          "count": 99
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_ithaca_56",
+      "city": "Ithaca",
+      "region": "New York",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.44063,
+      "longitude": -76.49661,
+      "elevation_meters": 128.0,
+      "record_count": 118,
+      "log_signal": 4.7791,
+      "signal_deviation": -0.4634,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy",
+          "count": 10
+        },
+        {
+          "query": "privacy breach",
+          "count": 9
+        },
+        {
+          "query": "privacy Bangladesh",
+          "count": 9
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_st_louis_79",
+      "city": "St Louis",
+      "region": "Missouri",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 38.62727,
+      "longitude": -90.19789,
+      "elevation_meters": 155.0,
+      "record_count": 81,
+      "log_signal": 4.4067,
+      "signal_deviation": -1.0072,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy Qatar",
+          "count": 11
+        },
+        {
+          "query": "privacy law Africa",
+          "count": 7
+        },
+        {
+          "query": "data privacy Nigeria",
+          "count": 7
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "ca_toronto_29",
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 43.70643,
+      "longitude": -79.39864,
+      "elevation_meters": 167.0,
+      "record_count": 181,
+      "log_signal": 5.204,
+      "signal_deviation": 0.1572,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "data privacy act Philippines",
+          "count": 13
+        },
+        {
+          "query": "privacy Bangladesh",
+          "count": 13
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 10
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_chicago_57",
+      "city": "Chicago",
+      "region": "Illinois",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 41.85003,
+      "longitude": -87.65005,
+      "elevation_meters": 179.0,
+      "record_count": 117,
+      "log_signal": 4.7707,
+      "signal_deviation": -0.4757,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy settings",
+          "count": 12
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 5
+        },
+        {
+          "query": "privacy Panama",
+          "count": 5
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "ng_ibadan_59",
+      "city": "Ibadan",
+      "region": "Oyo State",
+      "country": "Nigeria",
+      "country_code": "NG",
+      "latitude": 7.37756,
+      "longitude": 3.90591,
+      "elevation_meters": 183.0,
+      "record_count": 116,
+      "log_signal": 4.7622,
+      "signal_deviation": -0.4881,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy Ghana",
+          "count": 14
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 9
+        },
+        {
+          "query": "data privacy Nigeria",
+          "count": 8
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_evanston_84",
+      "city": "Evanston",
+      "region": "Illinois",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.04114,
+      "longitude": -87.69006,
+      "elevation_meters": 190.0,
+      "record_count": 77,
+      "log_signal": 4.3567,
+      "signal_deviation": -1.0803,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy Colombia",
+          "count": 5
+        },
+        {
+          "query": "privacy policy",
+          "count": 4
+        },
+        {
+          "query": "privacy Argentina",
+          "count": 4
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "ca_montreal_48",
+      "city": "Montreal",
+      "region": null,
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 45.50883865356445,
+      "longitude": -73.58780670166016,
+      "elevation_meters": 217.0,
+      "record_count": 136,
+      "log_signal": 4.92,
+      "signal_deviation": -0.2576,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy Middle East",
+          "count": 14
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 12
+        },
+        {
+          "query": "privacy Hong Kong",
+          "count": 11
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_pittsburgh_18",
+      "city": "Pittsburgh",
+      "region": "Pennsylvania",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 40.44062,
+      "longitude": -79.99589,
+      "elevation_meters": 231.0,
+      "record_count": 254,
+      "log_signal": 5.5413,
+      "signal_deviation": 0.6497,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy policy",
+          "count": 62
+        },
+        {
+          "query": "privacy and security",
+          "count": 23
+        },
+        {
+          "query": "privacy settings",
+          "count": 17
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "in_new_delhi_87",
+      "city": "New Delhi",
+      "region": null,
+      "country": "India",
+      "country_code": "IN",
+      "latitude": 28.543344497680664,
+      "longitude": 77.14846801757812,
+      "elevation_meters": 266.0,
+      "record_count": 75,
+      "log_signal": 4.3307,
+      "signal_deviation": -1.1182,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "personal data protection Pakistan",
+          "count": 6
+        },
+        {
+          "query": "privacy Middle East",
+          "count": 5
+        },
+        {
+          "query": "privacy Sri Lanka",
+          "count": 5
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "none_kumasi_82",
+      "city": "Kumasi",
+      "region": "Ashanti",
+      "country": "Ghana",
+      "country_code": null,
+      "latitude": 6.68848,
+      "longitude": -1.62443,
+      "elevation_meters": 272.0,
+      "record_count": 79,
+      "log_signal": 4.382,
+      "signal_deviation": -1.0433,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy Ghana",
+          "count": 51
+        },
+        {
+          "query": "Ghana data protection privacy",
+          "count": 13
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 3
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_ann_arbor_41",
+      "city": "Ann Arbor",
+      "region": "Michigan",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.27756,
+      "longitude": -83.74088,
+      "elevation_meters": 272.0,
+      "record_count": 150,
+      "log_signal": 5.0173,
+      "signal_deviation": -0.1155,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "digital privacy",
+          "count": 11
+        },
+        {
+          "query": "privacy Mongolia",
+          "count": 10
+        },
+        {
+          "query": "Roskomnadzor privacy",
+          "count": 9
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_atlanta_17",
+      "city": "Atlanta",
+      "region": "Georgia",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 33.749,
+      "longitude": -84.38798,
+      "elevation_meters": 336.0,
+      "record_count": 261,
+      "log_signal": 5.5683,
+      "signal_deviation": 0.6893,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "data protection Kenya",
+          "count": 17
+        },
+        {
+          "query": "privacy Myanmar",
+          "count": 15
+        },
+        {
+          "query": "data protection Africa",
+          "count": 14
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "us_state_college_88",
+      "city": "State College",
+      "region": "Pennsylvania",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 40.79339,
+      "longitude": -77.86,
+      "elevation_meters": 351.0,
+      "record_count": 74,
+      "log_signal": 4.3175,
+      "signal_deviation": -1.1376,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy policy",
+          "count": 6
+        },
+        {
+          "query": "online privacy",
+          "count": 5
+        },
+        {
+          "query": "information privacy",
+          "count": 5
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "ch_geneva_13",
+      "city": "Geneva",
+      "region": "Geneva",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 46.20222,
+      "longitude": 6.14569,
+      "elevation_meters": 397.0,
+      "record_count": 315,
+      "log_signal": 5.7557,
+      "signal_deviation": 0.963,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy Myanmar",
+          "count": 22
+        },
+        {
+          "query": "privacy Tanzania",
+          "count": 21
+        },
+        {
+          "query": "privacy Cambodia",
+          "count": 15
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "cn_xian_52",
+      "city": "Xi'an",
+      "region": "Shaanxi",
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 34.25833,
+      "longitude": 108.92861,
+      "elevation_meters": 410.0,
+      "record_count": 124,
+      "log_signal": 4.8283,
+      "signal_deviation": -0.3915,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "medical privacy",
+          "count": 26
+        },
+        {
+          "query": "location privacy",
+          "count": 12
+        },
+        {
+          "query": "biometric privacy",
+          "count": 9
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "ch_zurich_77",
+      "city": "Zurich",
+      "region": "Zurich",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.36667,
+      "longitude": 8.55,
+      "elevation_meters": 438.0,
+      "record_count": 83,
+      "log_signal": 4.4308,
+      "signal_deviation": -0.972,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "privacy Brunei",
+          "count": 11
+        },
+        {
+          "query": "online privacy",
+          "count": 7
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 7
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "ch_lausanne_86",
+      "city": "Lausanne",
+      "region": "Vaud",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 46.516,
+      "longitude": 6.63282,
+      "elevation_meters": 449.0,
+      "record_count": 75,
+      "log_signal": 4.3307,
+      "signal_deviation": -1.1182,
+      "band_id": "100_500m",
+      "top_queries": [
+        {
+          "query": "location privacy",
+          "count": 20
+        },
+        {
+          "query": "surveillance privacy",
+          "count": 17
+        },
+        {
+          "query": "privacy and surveillance",
+          "count": 10
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "de_munich_42",
+      "city": "Munich",
+      "region": "Bavaria",
+      "country": "Germany",
+      "country_code": "DE",
+      "latitude": 48.13743,
+      "longitude": 11.57549,
+      "elevation_meters": 523.0,
+      "record_count": 148,
+      "log_signal": 5.0039,
+      "signal_deviation": -0.135,
+      "band_id": "500_1000m",
+      "top_queries": [
+        {
+          "query": "privacy Singapore",
+          "count": 23
+        },
+        {
+          "query": "privacy Nigeria",
+          "count": 21
+        },
+        {
+          "query": "data privacy Nigeria",
+          "count": 21
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "sa_riyadh_16",
+      "city": "Riyadh",
+      "region": "Riyadh Region",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "latitude": 24.68773,
+      "longitude": 46.72185,
+      "elevation_meters": 612.0,
+      "record_count": 276,
+      "log_signal": 5.624,
+      "signal_deviation": 0.7706,
+      "band_id": "500_1000m",
+      "top_queries": [
+        {
+          "query": "China cybersecurity law privacy",
+          "count": 41
+        },
+        {
+          "query": "personal information protection Korea",
+          "count": 40
+        },
+        {
+          "query": "personal information protection law China",
+          "count": 39
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "br_são_paulo_39",
+      "city": "São Paulo",
+      "region": "São Paulo",
+      "country": "Brazil",
+      "country_code": "BR",
+      "latitude": -23.5475,
+      "longitude": -46.63611,
+      "elevation_meters": 763.0,
+      "record_count": 156,
+      "log_signal": 5.0562,
+      "signal_deviation": -0.0586,
+      "band_id": "500_1000m",
+      "top_queries": [
+        {
+          "query": "data protection Brazil",
+          "count": 46
+        },
+        {
+          "query": "privacy Brazil",
+          "count": 18
+        },
+        {
+          "query": "privacy Argentina",
+          "count": 12
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "ca_calgary_85",
+      "city": "Calgary",
+      "region": "Alberta",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 51.05011,
+      "longitude": -114.08529,
+      "elevation_meters": 1042.0,
+      "record_count": 75,
+      "log_signal": 4.3307,
+      "signal_deviation": -1.1182,
+      "band_id": "1000_2000m",
+      "top_queries": [
+        {
+          "query": "PIPA privacy Korea",
+          "count": 14
+        },
+        {
+          "query": "privacy Korea PIPA",
+          "count": 14
+        },
+        {
+          "query": "right to privacy",
+          "count": 11
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "br_brasília_31",
+      "city": "Brasília",
+      "region": "Federal District",
+      "country": "Brazil",
+      "country_code": "BR",
+      "latitude": -15.77972,
+      "longitude": -47.92972,
+      "elevation_meters": 1136.0,
+      "record_count": 170,
+      "log_signal": 5.1417,
+      "signal_deviation": 0.0661,
+      "band_id": "1000_2000m",
+      "top_queries": [
+        {
+          "query": "LGPD privacy",
+          "count": 83
+        },
+        {
+          "query": "privacy Brazil",
+          "count": 33
+        },
+        {
+          "query": "data protection Brazil",
+          "count": 27
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "none_tehran_50",
+      "city": "Tehran",
+      "region": null,
+      "country": "Iran",
+      "country_code": null,
+      "latitude": 35.69438934326172,
+      "longitude": 51.4215087890625,
+      "elevation_meters": 1177.0,
+      "record_count": 133,
+      "log_signal": 4.8978,
+      "signal_deviation": -0.29,
+      "band_id": "1000_2000m",
+      "top_queries": [
+        {
+          "query": "Personal Data Protection Act Taiwan",
+          "count": 71
+        },
+        {
+          "query": "PIPA privacy Korea",
+          "count": 7
+        },
+        {
+          "query": "privacy Korea PIPA",
+          "count": 7
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "none_kampala_28",
+      "city": "Kampala",
+      "region": null,
+      "country": "Uganda",
+      "country_code": null,
+      "latitude": 0.3162800073623657,
+      "longitude": 32.582191467285156,
+      "elevation_meters": 1210.0,
+      "record_count": 183,
+      "log_signal": 5.2149,
+      "signal_deviation": 0.1731,
+      "band_id": "1000_2000m",
+      "top_queries": [
+        {
+          "query": "privacy Uganda",
+          "count": 139
+        },
+        {
+          "query": "privacy Ghana",
+          "count": 7
+        },
+        {
+          "query": "privacy Ethiopia",
+          "count": 7
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "za_pretoria_30",
+      "city": "Pretoria",
+      "region": null,
+      "country": "South Africa",
+      "country_code": "ZA",
+      "latitude": -25.74485969543457,
+      "longitude": 28.187829971313477,
+      "elevation_meters": 1335.0,
+      "record_count": 171,
+      "log_signal": 5.1475,
+      "signal_deviation": 0.0746,
+      "band_id": "1000_2000m",
+      "top_queries": [
+        {
+          "query": "POPIA privacy",
+          "count": 52
+        },
+        {
+          "query": "privacy South Africa",
+          "count": 39
+        },
+        {
+          "query": "privacy law Africa",
+          "count": 21
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "ke_nairobi_15",
+      "city": "Nairobi",
+      "region": null,
+      "country": "Kenya",
+      "country_code": "KE",
+      "latitude": -1.283329963684082,
+      "longitude": 36.81666946411133,
+      "elevation_meters": 1677.0,
+      "record_count": 293,
+      "log_signal": 5.6836,
+      "signal_deviation": 0.8576,
+      "band_id": "1000_2000m",
+      "top_queries": [
+        {
+          "query": "data protection Kenya",
+          "count": 155
+        },
+        {
+          "query": "privacy Kenya",
+          "count": 69
+        },
+        {
+          "query": "personal data protection Pakistan",
+          "count": 12
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    },
+    {
+      "id": "za_johannesburg_34",
+      "city": "Johannesburg",
+      "region": "Gauteng",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "latitude": -26.20227,
+      "longitude": 28.04363,
+      "elevation_meters": 1762.0,
+      "record_count": 162,
+      "log_signal": 5.0938,
+      "signal_deviation": -0.0039,
+      "band_id": "1000_2000m",
+      "top_queries": [
+        {
+          "query": "data protection Africa",
+          "count": 60
+        },
+        {
+          "query": "POPIA privacy",
+          "count": 26
+        },
+        {
+          "query": "privacy South Africa",
+          "count": 22
+        }
+      ],
+      "notes": [
+        "City-level recovered geo signal; not population-normalized search share."
+      ]
+    }
+  ],
+  "bands": [
+    {
+      "band_id": "below_0m",
+      "label": "below 0m",
+      "min_m": null,
+      "max_m": 0,
+      "point_count": 0,
+      "record_count": 0,
+      "mean_log_signal": 0,
+      "median_log_signal": 0,
+      "relative_to_global_mean": null,
+      "top_places": []
+    },
+    {
+      "band_id": "0_100m",
+      "label": "0-100m",
+      "min_m": 0,
+      "max_m": 100,
+      "point_count": 60,
+      "record_count": 17454,
+      "mean_log_signal": 5.1954,
+      "median_log_signal": 5.0001,
+      "relative_to_global_mean": 0.1446,
+      "top_places": [
+        {
+          "city": "Seattle",
+          "country": "United States",
+          "elevation_meters": 64.0,
+          "record_count": 4728
+        },
+        {
+          "city": "Cambridge",
+          "country": "United States",
+          "elevation_meters": 17.0,
+          "record_count": 1046
+        },
+        {
+          "city": "London",
+          "country": "United Kingdom",
+          "elevation_meters": 25.0,
+          "record_count": 883
+        },
+        {
+          "city": "Oxford",
+          "country": "United Kingdom",
+          "elevation_meters": 71.0,
+          "record_count": 550
+        },
+        {
+          "city": "London",
+          "country": "United Kingdom",
+          "elevation_meters": 35.0,
+          "record_count": 548
+        }
+      ]
+    },
+    {
+      "band_id": "100_500m",
+      "label": "100-500m",
+      "min_m": 100,
+      "max_m": 500,
+      "point_count": 20,
+      "record_count": 2639,
+      "mean_log_signal": 4.7878,
+      "median_log_signal": 4.7664,
+      "relative_to_global_mean": -0.4506,
+      "top_places": [
+        {
+          "city": "Geneva",
+          "country": "Switzerland",
+          "elevation_meters": 397.0,
+          "record_count": 315
+        },
+        {
+          "city": "Atlanta",
+          "country": "United States",
+          "elevation_meters": 336.0,
+          "record_count": 261
+        },
+        {
+          "city": "Pittsburgh",
+          "country": "United States",
+          "elevation_meters": 231.0,
+          "record_count": 254
+        },
+        {
+          "city": "Toronto",
+          "country": "Canada",
+          "elevation_meters": 167.0,
+          "record_count": 181
+        },
+        {
+          "city": "Ann Arbor",
+          "country": "United States",
+          "elevation_meters": 272.0,
+          "record_count": 150
+        }
+      ]
+    },
+    {
+      "band_id": "500_1000m",
+      "label": "500-1000m",
+      "min_m": 500,
+      "max_m": 1000,
+      "point_count": 3,
+      "record_count": 580,
+      "mean_log_signal": 5.228,
+      "median_log_signal": 5.0562,
+      "relative_to_global_mean": 0.1923,
+      "top_places": [
+        {
+          "city": "Riyadh",
+          "country": "Saudi Arabia",
+          "elevation_meters": 612.0,
+          "record_count": 276
+        },
+        {
+          "city": "São Paulo",
+          "country": "Brazil",
+          "elevation_meters": 763.0,
+          "record_count": 156
+        },
+        {
+          "city": "Munich",
+          "country": "Germany",
+          "elevation_meters": 523.0,
+          "record_count": 148
+        }
+      ]
+    },
+    {
+      "band_id": "1000_2000m",
+      "label": "1000-2000m",
+      "min_m": 1000,
+      "max_m": 2000,
+      "point_count": 7,
+      "record_count": 1187,
+      "mean_log_signal": 5.0729,
+      "median_log_signal": 5.1417,
+      "relative_to_global_mean": -0.0344,
+      "top_places": [
+        {
+          "city": "Nairobi",
+          "country": "Kenya",
+          "elevation_meters": 1677.0,
+          "record_count": 293
+        },
+        {
+          "city": "Kampala",
+          "country": "Uganda",
+          "elevation_meters": 1210.0,
+          "record_count": 183
+        },
+        {
+          "city": "Pretoria",
+          "country": "South Africa",
+          "elevation_meters": 1335.0,
+          "record_count": 171
+        },
+        {
+          "city": "Brasília",
+          "country": "Brazil",
+          "elevation_meters": 1136.0,
+          "record_count": 170
+        },
+        {
+          "city": "Johannesburg",
+          "country": "South Africa",
+          "elevation_meters": 1762.0,
+          "record_count": 162
+        }
+      ]
+    },
+    {
+      "band_id": "above_2000m",
+      "label": "above 2000m",
+      "min_m": 2000,
+      "max_m": null,
+      "point_count": 0,
+      "record_count": 0,
+      "mean_log_signal": 0,
+      "median_log_signal": 0,
+      "relative_to_global_mean": null,
+      "top_places": []
+    }
+  ],
+  "annotations": [
+    {
+      "annotation_id": "largest_recovered_signal",
+      "point_id": "us_seattle_0",
+      "label": "Seattle / strongest recovered signal",
+      "description": "The largest city-level recovered privacy signal in this layer."
+    },
+    {
+      "annotation_id": "low_elevation_cluster",
+      "point_id": "us_seattle_0",
+      "label": "Low-elevation signal cluster",
+      "description": "Most high-signal points sit near coastal or low-elevation institutional and technology centers."
+    },
+    {
+      "annotation_id": "high_elevation_counterpoint",
+      "point_id": "za_johannesburg_34",
+      "label": "Johannesburg / high-elevation counterpoint",
+      "description": "A useful reminder that elevation is context, not a causal explanation."
+    }
+  ],
+  "strong_signals": [
+    "90 city-level records include latitude, longitude, elevation, and recovered privacy signal counts.",
+    "The strongest recovered city signals are concentrated in low-elevation institutional and platform centers.",
+    "High-elevation points exist as counterpoints, but do not dominate the recovered signal."
+  ],
+  "limitations": [
+    "Elevation is a spatial attribute and does not imply causation.",
+    "Record counts are recovered source signals, not population-normalized search interest.",
+    "Google Trends regional data remains unavailable in this local reproducible pipeline.",
+    "Some city points are institution/news-source centroids rather than complete public attention measurements."
+  ],
+  "source_notes": [
+    "City point elevations come from the geo_spatial_metrics layer where latitude/longitude enrichment was available.",
+    "The geo_spatial_metrics aggregate by elevation band is preserved as source context."
+  ],
+  "spatial_aggregate_context": [
+    {
+      "band_id": "0_100m",
+      "count": 20479
+    },
+    {
+      "band_id": "100_500m",
+      "count": 4278
+    },
+    {
+      "band_id": "1000_2000m",
+      "count": 1438
+    },
+    {
+      "band_id": "500_1000m",
+      "count": 1095
+    },
+    {
+      "band_id": "above_2000m",
+      "count": 146
+    }
+  ]
+}

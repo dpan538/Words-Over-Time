@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type {
   ForeverEra,
   ForeverEraId,
@@ -173,9 +173,20 @@ export function ContextSignalField({
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [rotation, setRotation] = useState(-18);
   const [dragStart, setDragStart] = useState<number | null>(null);
+  const dragActiveRef = useRef(false);
+  const isDragging = dragStart !== null;
   const activeId = activeInspectorId ?? hoveredId;
   const focused = Boolean(activeId);
   const selectedEraRecord = eras.find((era) => era.id === selectedEra);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      if (dragActiveRef.current) return;
+      setRotation((current) => current + 0.12);
+    }, 80);
+
+    return () => window.clearInterval(interval);
+  }, []);
 
   const nodes = useMemo<GlobeNode[]>(() => {
     return categories
@@ -279,51 +290,74 @@ export function ContextSignalField({
   return (
     <div className="relative overflow-hidden bg-wheat py-2">
       <div className="overflow-x-auto">
-        <svg
-          viewBox={`0 0 ${width} ${height}`}
-          className={`h-auto min-w-[1400px] w-full touch-pan-y ${dragStart === null ? "cursor-grab" : "cursor-grabbing"}`}
+          <svg
+            viewBox={`0 0 ${width} ${height}`}
+          className={`h-auto min-w-[1400px] w-full select-none touch-pan-y ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
           role="img"
           aria-label="Semantic globe showing contextual category signals around forever"
           onPointerDown={(event) => {
             event.currentTarget.setPointerCapture(event.pointerId);
+            dragActiveRef.current = true;
+            setHoveredId(null);
+            onHover(null);
             setDragStart(event.clientX);
           }}
           onPointerMove={(event) => {
-            if (dragStart === null) return;
+            if (!dragActiveRef.current || dragStart === null) return;
+            event.preventDefault();
             setRotation((current) => current + (event.clientX - dragStart) * 0.18);
             setDragStart(event.clientX);
           }}
           onPointerUp={(event) => {
             event.currentTarget.releasePointerCapture(event.pointerId);
+            dragActiveRef.current = false;
             setDragStart(null);
+            setHoveredId(null);
+            onHover(null);
           }}
           onWheel={(event) => {
+            setHoveredId(null);
+            onHover(null);
             const delta = Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY;
             setRotation((current) => current + delta * 0.035);
           }}
           onPointerLeave={() => {
+            dragActiveRef.current = false;
             setDragStart(null);
             setHoveredId(null);
             onHover(null);
           }}
         >
           <defs>
-            <radialGradient id="globe-fill" cx="42%" cy="34%" r="68%">
-              <stop offset="0%" stopColor="#FBB728" stopOpacity="0.28" />
-              <stop offset="52%" stopColor="#F5ECD2" stopOpacity="0.88" />
-              <stop offset="100%" stopColor="#050510" stopOpacity="0.08" />
+            <radialGradient id="globe-fill" cx="38%" cy="30%" r="72%">
+              <stop offset="0%" stopColor="#FFE7A7" stopOpacity="0.36" />
+              <stop offset="42%" stopColor="#F5ECD2" stopOpacity="0.94" />
+              <stop offset="76%" stopColor="#D4C392" stopOpacity="0.34" />
+              <stop offset="100%" stopColor="#050510" stopOpacity="0.13" />
+            </radialGradient>
+            <radialGradient id="globe-glint" cx="36%" cy="28%" r="44%">
+              <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.34" />
+              <stop offset="52%" stopColor="#FFFFFF" stopOpacity="0.08" />
+              <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0" />
             </radialGradient>
             <pattern id="globe-paper" width="38" height="38" patternUnits="userSpaceOnUse">
-              <path d="M 38 0 L 0 0 0 38" fill="none" stroke="#050510" strokeOpacity="0.035" />
+              <path d="M 38 0 L 0 0 0 38" fill="none" stroke="#050510" strokeOpacity="0.026" />
             </pattern>
-            <pattern id="globe-gap" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(42)">
-              <line x1="0" x2="0" y1="0" y2="16" stroke="#050510" strokeOpacity="0.18" strokeWidth="2" />
+            <pattern id="globe-gap" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(42)">
+              <line x1="0" x2="0" y1="0" y2="14" stroke="#050510" strokeOpacity="0.14" strokeWidth="1.4" />
             </pattern>
             <filter id="globe-soft">
               <feGaussianBlur stdDeviation="8" />
             </filter>
+            <filter id="globe-node-glow" x="-80%" y="-80%" width="260%" height="260%">
+              <feGaussianBlur stdDeviation="5" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
           </defs>
-          <rect width={width} height={height} fill="#F5ECD2" />
+          <rect width={width} height={height} fill="#F2EBD4" />
           <rect width={width} height={height} fill="url(#globe-paper)" />
 
           <text x="76" y="54" className="fill-fire font-mono text-[18px] font-black uppercase tracking-[0.2em]">
@@ -333,13 +367,18 @@ export function ContextSignalField({
             {selectedLayer ?? selectedEraRecord?.label ?? selectedEra} / drag to turn
           </text>
 
-          <rect x="790" y="150" width="320" height="720" fill="url(#globe-gap)" opacity="0.22" />
+          <rect x="804" y="148" width="292" height="724" fill="#F5ECD2" opacity="0.3" />
+          <rect x="804" y="148" width="292" height="724" fill="url(#globe-gap)" opacity="0.36" />
+          <line x1="804" x2="804" y1="148" y2="872" stroke="#050510" strokeOpacity="0.14" />
+          <line x1="1096" x2="1096" y1="148" y2="872" stroke="#050510" strokeOpacity="0.14" />
           <text x="950" y="986" textAnchor="middle" className="fill-ink/52 font-mono text-[16px] font-black uppercase tracking-[0.11em]">
             1930-2023 contextual gap crosses the object
           </text>
 
-          <ellipse cx={cx} cy={cy} rx="518" ry="466" fill="#050510" opacity="0.07" filter="url(#globe-soft)" />
-          <circle cx={cx} cy={cy} r="424" fill="url(#globe-fill)" stroke="#050510" strokeOpacity="0.48" strokeWidth="2.2" />
+          <ellipse cx={cx} cy={cy + 20} rx="536" ry="478" fill="#050510" opacity="0.08" filter="url(#globe-soft)" />
+          <circle cx={cx} cy={cy} r="424" fill="url(#globe-fill)" stroke="#050510" strokeOpacity="0.56" strokeWidth="1.8" />
+          <circle cx={cx} cy={cy} r="424" fill="url(#globe-glint)" />
+          <circle cx={cx} cy={cy} r="386" fill="none" stroke="#FFFFFF" strokeOpacity="0.28" strokeWidth="1" />
 
           {[-70, -50, -30, -12, 0, 12, 30, 50, 70].map((lat) => (
             <ellipse
@@ -350,8 +389,8 @@ export function ContextSignalField({
               ry={n(globeRx * Math.cos(deg(lat)) * 0.18)}
               fill="none"
               stroke="#050510"
-              strokeOpacity={lat === 0 ? 0.3 : 0.13}
-              strokeWidth={lat === 0 ? 1.8 : 1}
+              strokeOpacity={lat === 0 ? 0.34 : 0.11}
+              strokeWidth={lat === 0 ? 1.55 : 0.82}
             />
           ))}
           {[-82, -64, -46, -28, -10, 10, 28, 46, 64, 82].map((angle) => (
@@ -363,8 +402,8 @@ export function ContextSignalField({
               ry="424"
               fill="none"
               stroke="#050510"
-              strokeOpacity="0.1"
-              strokeWidth="1"
+              strokeOpacity="0.085"
+              strokeWidth="0.82"
               transform={`rotate(${angle + rotation * 0.18} ${cx} ${cy})`}
             />
           ))}
@@ -389,15 +428,15 @@ export function ContextSignalField({
                 fill="none"
                 stroke={node.color}
                 strokeOpacity={opacity}
-                strokeWidth={1.8 + Math.min(3.4, Math.sqrt(Math.max(1, support)) * 0.22)}
-                strokeDasharray={node.confidence === "unavailable" ? "3 12" : undefined}
+                strokeWidth={1.15 + Math.min(2.6, Math.sqrt(Math.max(1, support)) * 0.18)}
+                strokeDasharray={node.confidence === "unavailable" ? "3 13" : index % 2 === 0 ? "18 8" : undefined}
                 transform={`rotate(${-52 + index * 27 + rotation * 0.035} ${cx} ${cy})`}
               />
             );
           })}
-          <ellipse cx={cx} cy={cy} rx="590" ry="248" fill="none" stroke="#1570AC" strokeOpacity="0.62" strokeWidth="3.8" transform={`rotate(${-18 + rotation * 0.04} ${cx} ${cy})`} />
-          <ellipse cx={cx} cy={cy} rx="540" ry="326" fill="none" stroke="#A1081F" strokeOpacity="0.48" strokeWidth="3.2" transform={`rotate(${28 + rotation * 0.04} ${cx} ${cy})`} />
-          <ellipse cx={cx} cy={cy} rx="470" ry="152" fill="none" stroke="#F06B04" strokeOpacity="0.58" strokeWidth="4" transform={`rotate(${68 + rotation * 0.04} ${cx} ${cy})`} />
+          <ellipse cx={cx} cy={cy} rx="590" ry="248" fill="none" stroke="#1570AC" strokeOpacity="0.58" strokeWidth="2.6" strokeDasharray="28 12" transform={`rotate(${-18 + rotation * 0.04} ${cx} ${cy})`} />
+          <ellipse cx={cx} cy={cy} rx="540" ry="326" fill="none" stroke="#A1081F" strokeOpacity="0.43" strokeWidth="2.4" strokeDasharray="16 10" transform={`rotate(${28 + rotation * 0.04} ${cx} ${cy})`} />
+          <ellipse cx={cx} cy={cy} rx="470" ry="152" fill="none" stroke="#F06B04" strokeOpacity="0.55" strokeWidth="2.8" strokeDasharray="34 10" transform={`rotate(${68 + rotation * 0.04} ${cx} ${cy})`} />
 
           {orbitMarks.map((mark) => {
             const point = orbitPoint(mark.angle + rotation * 0.42, mark.rx, mark.ry, mark.rotate + rotation * 0.04);
@@ -420,14 +459,20 @@ export function ContextSignalField({
                 stroke={active ? "#050510" : "none"}
                 strokeWidth={active ? 2 : 0}
                 opacity={(focused || Boolean(selectedItem)) && !active && !related ? 0.1 : related ? Math.max(0.34, mark.opacity * 0.74) : mark.opacity}
+                filter={active ? "url(#globe-node-glow)" : undefined}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
+                  if (dragActiveRef.current || isDragging) return;
                   setHoveredId(mark.inspectorId);
                   onHover(mark.inspectorId, { x: event.clientX, y: event.clientY });
                 }}
-                onMouseMove={(event) => onHover(mark.inspectorId, { x: event.clientX, y: event.clientY })}
+                onMouseMove={(event) => {
+                  if (dragActiveRef.current || isDragging) return;
+                  onHover(mark.inspectorId, { x: event.clientX, y: event.clientY });
+                }}
                 onClick={(event) => {
                   event.stopPropagation();
+                  if (dragActiveRef.current || isDragging) return;
                   onInspect(mark.inspectorId, { x: event.clientX, y: event.clientY });
                 }}
               />
@@ -453,16 +498,21 @@ export function ContextSignalField({
                 opacity={(focused || Boolean(selectedItem)) && !active && !related ? 0.14 : related ? 0.68 : 1}
                 className="cursor-crosshair transition duration-200"
                 onMouseEnter={(event) => {
+                  if (dragActiveRef.current || isDragging) return;
                   setHoveredId(point.id);
                   onHover(point.id, { x: event.clientX, y: event.clientY });
                 }}
-                onMouseMove={(event) => onHover(point.id, { x: event.clientX, y: event.clientY })}
+                onMouseMove={(event) => {
+                  if (dragActiveRef.current || isDragging) return;
+                  onHover(point.id, { x: event.clientX, y: event.clientY });
+                }}
                 onClick={(event) => {
                   event.stopPropagation();
+                  if (dragActiveRef.current || isDragging) return;
                   onInspect(point.id, { x: event.clientX, y: event.clientY });
                 }}
               >
-                <circle cx={p.x} cy={p.y} r={5 + Math.min(13, point.value * 2)} fill="#2C9FC7" stroke="#050510" strokeWidth={active ? 3 : 1.6} />
+                <circle cx={p.x} cy={p.y} r={5 + Math.min(13, point.value * 2)} fill="#2C9FC7" stroke="#050510" strokeWidth={active ? 3 : 1.4} filter={active ? "url(#globe-node-glow)" : undefined} />
               </g>
             );
           })}
@@ -493,16 +543,21 @@ export function ContextSignalField({
                   opacity={dimmed ? 0.14 : p.z < -0.35 ? 0.38 : 1}
                   className="cursor-crosshair transition duration-200"
                   onMouseEnter={(event) => {
+                    if (dragActiveRef.current || isDragging) return;
                     setHoveredId(node.inspectorId);
                     onHover(node.inspectorId, { x: event.clientX, y: event.clientY });
                   }}
-                  onMouseMove={(event) => onHover(node.inspectorId, { x: event.clientX, y: event.clientY })}
+                  onMouseMove={(event) => {
+                    if (dragActiveRef.current || isDragging) return;
+                    onHover(node.inspectorId, { x: event.clientX, y: event.clientY });
+                  }}
                   onClick={(event) => {
                     event.stopPropagation();
+                    if (dragActiveRef.current || isDragging) return;
                     onInspect(node.inspectorId, { x: event.clientX, y: event.clientY });
                   }}
                 >
-                  <line x1={p.x} x2={labelX} y1={p.y} y2={labelY} stroke={node.color} strokeWidth={active ? 3 : 1.5} strokeOpacity={p.z < -0.35 ? 0.22 : 0.54} />
+                  <line x1={p.x} x2={labelX} y1={p.y} y2={labelY} stroke={node.color} strokeWidth={active ? 2.6 : 1.2} strokeOpacity={p.z < -0.35 ? 0.18 : 0.48} strokeDasharray={active ? undefined : "7 6"} />
                   {Array.from({ length: Math.max(8, Math.min(36, Math.round(support / 2) + 8)) }).map((_, rayIndex) => {
                     const angle = (rayIndex / 18) * Math.PI * 2 + index;
                     return (
@@ -513,14 +568,15 @@ export function ContextSignalField({
                         x2={n(p.x + Math.cos(angle) * radius * 1.2)}
                         y2={n(p.y + Math.sin(angle) * radius * 1.2)}
                         stroke={node.color}
-                        strokeWidth={active ? 3 : 1.4}
-                        strokeOpacity={p.z < -0.35 ? 0.14 : 0.48}
+                        strokeWidth={active ? 2.6 : 1.05}
+                        strokeOpacity={p.z < -0.35 ? 0.1 : 0.36}
                         strokeLinecap="round"
                       />
                     );
                   })}
-                  <circle cx={p.x} cy={p.y} r={radius * 1.18} fill={node.color} opacity={p.z < -0.35 ? 0.04 : 0.1} filter="url(#globe-soft)" />
-                  <circle cx={p.x} cy={p.y} r={active ? radius * 0.72 : radius * 0.56} fill="#050510" stroke={node.color} strokeWidth={active ? 5 : 3} />
+                  <circle cx={p.x} cy={p.y} r={radius * 1.22} fill={node.color} opacity={p.z < -0.35 ? 0.035 : 0.11} filter="url(#globe-soft)" />
+                  <circle cx={p.x} cy={p.y} r={active ? radius * 0.74 : radius * 0.56} fill="#050510" stroke={node.color} strokeWidth={active ? 4.5 : 2.4} filter={active ? "url(#globe-node-glow)" : undefined} />
+                  <circle cx={n(p.x - radius * 0.16)} cy={n(p.y - radius * 0.18)} r={Math.max(3, radius * 0.11)} fill="#FFFFFF" opacity={p.z < -0.35 ? 0.05 : 0.22} />
                   <text x={labelX} y={labelY} textAnchor={labelSide} className="fill-ink font-mono text-[17px] font-black uppercase tracking-[0.07em]">
                     {lines.map((line, lineIndex) => (
                       <tspan key={line} x={labelX} dy={lineIndex === 0 ? 0 : 18}>

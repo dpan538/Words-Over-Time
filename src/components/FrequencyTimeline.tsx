@@ -51,10 +51,19 @@ export function FrequencyTimeline({
   const era = eras.find((item) => item.id === selectedEra);
   const visibleSeries = series.map((item) => ({ ...item, points: filterPoints(item, era) }));
   const allPoints = visibleSeries.flatMap((item) => item.points);
+  const allYears = series.flatMap((item) => item.points.map((point) => point.year));
   const years = allPoints.map((point) => point.year);
-  const maxValue = Math.max(...allPoints.map((point) => Math.sqrt(point.frequencyPerMillion)), 1);
-  const minYear = Math.min(...years);
-  const maxYear = Math.max(...years);
+  const fallbackMinYear =
+    era && era.id !== "all" && era.startYear !== null ? era.startYear : Math.min(...allYears);
+  const fallbackMaxYear =
+    era && era.id !== "all" && era.endYear !== null ? era.endYear : Math.max(...allYears);
+  const minYear = years.length > 0 ? Math.min(...years) : fallbackMinYear;
+  const maxYear = years.length > 0 ? Math.max(...years) : fallbackMaxYear;
+  const visibleValues = allPoints
+    .map((point) => Math.sqrt(Math.max(point.frequencyPerMillion, 0)))
+    .filter((value) => Number.isFinite(value));
+  const maxValue = Math.max(...visibleValues, 0.000001) * 1.08;
+  const eraDetailActive = selectedEra !== "all";
   const x = (year: number) =>
     padX + ((year - minYear) / Math.max(1, maxYear - minYear)) * (width - padX * 2);
   const y = (value: number) =>
@@ -123,6 +132,34 @@ export function FrequencyTimeline({
                 noisy early trace
               </text>
             </>
+          ) : null}
+          {allPoints.length === 0 ? (
+            <g>
+              <rect
+                x={padX}
+                y={padTop + 120}
+                width={width - padX * 2}
+                height="116"
+                fill="#F5ECD2"
+                opacity="0.86"
+              />
+              <text
+                x={width / 2}
+                y={padTop + 166}
+                textAnchor="middle"
+                className="fill-ink font-mono text-[20px] font-black uppercase tracking-[0.14em]"
+              >
+                no yearly ngram line inside this selected coverage
+              </text>
+              <text
+                x={width / 2}
+                y={padTop + 204}
+                textAnchor="middle"
+                className="fill-ink/55 font-mono text-[15px] font-black uppercase tracking-[0.1em]"
+              >
+                keep the card active for semantic context, not frequency measurement
+              </text>
+            </g>
           ) : null}
           <text
             x={padX}
@@ -250,10 +287,12 @@ export function FrequencyTimeline({
               : active
                 ? 0.98
                 : selectionRelated
-                  ? 0.44
+                  ? 0.62
                   : focusActive
                     ? 0.12
-                    : 0.74;
+                    : eraDetailActive
+                      ? 0.96
+                      : 0.84;
 
             return (
               <g key={item.id}>
@@ -263,8 +302,8 @@ export function FrequencyTimeline({
                   stroke="#050510"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={active ? 16 : 8}
-                  opacity={active ? 0.08 : 0}
+                  strokeWidth={active ? 18 : eraDetailActive ? 12 : 9}
+                  opacity={active ? 0.08 : eraDetailActive ? 0.045 : 0.025}
                 />
                 <path
                   d={path}
@@ -272,7 +311,7 @@ export function FrequencyTimeline({
                   stroke={item.color}
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={active ? 9 : selectionRelated ? 6.4 : index === 0 ? 5.2 : 4.2}
+                  strokeWidth={active ? 9 : selectionRelated ? 6.8 : eraDetailActive ? 7 : index === 0 ? 5.6 : 4.8}
                   opacity={lineOpacity}
                   className="cursor-crosshair transition duration-200 hover:opacity-100"
                   onMouseEnter={(event) => {

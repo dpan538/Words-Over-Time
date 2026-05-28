@@ -12,6 +12,7 @@ import { PosterSection } from "@/components/PosterSection";
 import { RelationalConstellation } from "@/components/RelationalConstellation";
 import { ContextSignalField } from "@/components/ContextSignalField";
 import { VariantDriftField } from "@/components/VariantDriftField";
+import { ForeverInstitutionalDoubt, ForeverModernCaptureSupplement } from "@/components/ForeverInstitutionalDoubt";
 import type {
   ForeverEraId,
   ForeverGeneratedDataset,
@@ -49,8 +50,10 @@ function NarrativeBridge({ children, from, to }: NarrativeBridgeProps) {
 }
 
 const foreverPanels = [
-  { num: "01", label: "Frequency", color: "#F06B04" },
-  { num: "02", label: "Influence", color: "#2C9FC7" },
+  { num: "01A", label: "Frequency", color: "#F06B04" },
+  { num: "01B", label: "Bloom", color: "#2C9FC7" },
+  { num: "01C", label: "Spiral", color: "#A1081F" },
+  { num: "02", label: "Doubt", color: "#FBB728" },
   { num: "03", label: "Constellation", color: "#A1081F" },
   { num: "04", label: "Signal", color: "#1570AC" },
   { num: "05", label: "Archive", color: "#050510" },
@@ -565,7 +568,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
                 and time.
               </p>
               <p className="mt-4 max-w-2xl font-mono text-[clamp(0.78rem,1.08vw,1rem)] font-black uppercase leading-6 tracking-[0.12em] text-ink/58">
-                Five layers of evidence. One word. Frequency / influence /
+                Five layers of evidence. One word. Semantic evolution /
                 company / meaning / proof.
               </p>
             </div>
@@ -599,49 +602,72 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
 
         <div className="mt-10 min-w-0">
           <PosterSection
-            eyebrow="01 / frequency field"
-            title="Frequency field"
-            intro="Four written forms of forever, tracked across three centuries of English print. The curve does not explain itself - but it is the starting point."
+            eyebrow="01 / semantic evolution"
+            title="Semantic evolution"
+            intro="The first movement keeps the frequency curve, then splits the historical pressure layer into a bloom and a recurrence spiral: forever as spelling drift, cultural force, and repeated return."
           >
-            <FrequencyTimeline
-              series={dataset.frequency}
-              eras={dataset.eras}
-              selectedEra={selectedEra}
-              selectedItem={selectedItem}
-              selectedLayer={selectedLayer}
-              activeInspectorId={activeInspectorId}
-              onHover={handleHover}
-              onInspect={handleInspect}
-            />
+            <div className="space-y-7">
+              <div>
+                <div className="mb-3 flex flex-wrap items-end justify-between gap-3 border-b border-ink/20 pb-3">
+                  <p className="font-mono text-[0.86rem] font-black uppercase tracking-[0.16em] text-fire">
+                    01A / frequency trace
+                  </p>
+                  <p className="max-w-2xl font-mono text-[0.76rem] font-black uppercase leading-5 tracking-[0.1em] text-ink/52">
+                    written variants, kept visible without requiring hover
+                  </p>
+                </div>
+                <FrequencyTimeline
+                  series={dataset.frequency}
+                  eras={dataset.eras}
+                  selectedEra={selectedEra}
+                  selectedItem={selectedItem}
+                  selectedLayer={selectedLayer}
+                  activeInspectorId={activeInspectorId}
+                  onHover={handleHover}
+                  onInspect={handleInspect}
+                />
+              </div>
+
+              <div>
+                <div className="mb-3 flex flex-wrap items-end justify-between gap-3 border-b border-ink/20 pb-3">
+                  <p className="font-mono text-[0.86rem] font-black uppercase tracking-[0.16em] text-fire">
+                    01B-C / pressure bloom + recurrence spiral
+                  </p>
+                  <p className="max-w-2xl font-mono text-[0.76rem] font-black uppercase leading-5 tracking-[0.1em] text-ink/52">
+                    cultural forces rendered as living forms instead of explanatory labels
+                  </p>
+                </div>
+                <VariantDriftField
+                  frequency={dataset.frequency}
+                  prehistory={dataset.prehistory}
+                  selectedEra={selectedEra}
+                />
+              </div>
+            </div>
           </PosterSection>
 
-          <NarrativeBridge
-            from="01"
-            to="02"
-            children="Three hundred years of print compressed into a line. What it cannot tell you is why the line moves - what was being written, read, and repeated when forever rose or fell. The next layer asks that question."
-          />
+          <div className="my-9 grid gap-6 border-t border-ink/20 pt-7 lg:grid-cols-[4rem_minmax(0,1fr)]">
+            <div className="flex flex-col justify-between gap-8 font-mono text-[0.74rem] font-black uppercase tracking-[0.16em] text-fire">
+              <span>01</span>
+              <span className="text-ink">02</span>
+            </div>
+            <p className="text-[clamp(1.05rem,1.1vw,1.2rem)] font-normal leading-[1.6] text-ink/64">
+              The first movement shows the word changing shape: a line, a bloom, and a spiral. Shared colour carries each semantic branch from growth into recurrence. But recurrence is not proof of permanence, so the next chart treats modern forever as a claim under suspicion.
+            </p>
+          </div>
 
           <PosterSection
-            eyebrow="02 / historical influence field"
-            title="Historical influence field"
-            intro="Six cultural forces mapped against the same curve: devotional print, romantic literature, memory and loss, media culture. None caused the frequency alone."
+            eyebrow="02 / permanence and institutional doubt"
+            title="Permanence under suspicion"
+            intro="Forever often appears as a promise made by institutions, archives, platforms, and risk vocabularies. This chart keeps the evidence visible while refusing to turn those promises into a settled answer."
           >
-            <VariantDriftField
-              frequency={dataset.frequency}
-              prehistory={dataset.prehistory}
-              selectedEra={selectedEra}
-              selectedItem={selectedItem}
-              selectedLayer={selectedLayer}
-              activeInspectorId={activeInspectorId}
-              onHover={handleHover}
-              onInspect={handleInspect}
-            />
+            <ForeverInstitutionalDoubt />
           </PosterSection>
 
           <NarrativeBridge
             from="02"
             to="03"
-            children="Cultural pressure explains the broad shape of the curve. But pressure is not the same as usage. The constellation moves from the historical forces into the actual texts - the phrases forever was anchored to, the words it consistently attracted, the contexts it kept returning to."
+            children="The doubt panel asks what kind of permanence is being claimed. The constellation returns to usage: the phrases forever was anchored to, the words it attracted, and the contexts it kept returning to."
           />
 
           <PosterSection
@@ -662,6 +688,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
               onHover={handleHover}
               onInspect={handleInspect}
             />
+            <ForeverModernCaptureSupplement />
           </PosterSection>
 
           <NarrativeBridge

@@ -625,6 +625,9 @@ export function RelationalConstellation({
             const labelX = node.labelX ?? computedLabelX;
             const labelY = node.labelY ?? computedLabelY;
             const textAnchor = node.labelAnchor ?? anchor;
+            const phraseBoxWidth = Math.max(185, Math.max(...lines.map((line) => line.length)) * 13.2 + 62);
+            const phraseBoxHeight = Math.max(56, lines.length * 23 + 24);
+            const phraseTextY = node.y - (lines.length - 1) * 10.5 + 6;
 
             return (
               <g
@@ -666,17 +669,17 @@ export function RelationalConstellation({
                   <>
                     <circle cx={node.x} cy={node.y} r={node.radius + 18} fill={node.color} opacity="0.08" />
                     <rect
-                      x={node.x - Math.max(72, Math.max(...lines.map((line) => line.length)) * 5 + 22)}
-                      y={node.y - 18}
-                      width={Math.max(154, Math.max(...lines.map((line) => line.length)) * 11 + 52)}
-                      height={Math.max(46, lines.length * 19 + 20)}
+                      x={node.x - phraseBoxWidth / 2}
+                      y={node.y - phraseBoxHeight / 2}
+                      width={phraseBoxWidth}
+                      height={phraseBoxHeight}
                       fill="#050510"
                       stroke={node.color}
                       strokeWidth={active ? 4.5 : 2.6}
                     />
-                    <text x={node.x} y={node.y - 1} textAnchor="middle" className="fill-wheat font-mono text-[14px] font-black uppercase tracking-[0.05em]">
+                    <text x={node.x} y={phraseTextY} textAnchor="middle" className="fill-wheat font-mono text-[16.8px] font-black uppercase tracking-[0.05em]">
                       {lines.map((line, index) => (
-                        <tspan key={line} x={node.x} dy={index === 0 ? 0 : 18}>
+                        <tspan key={line} x={node.x} dy={index === 0 ? 0 : 21}>
                           {line}
                         </tspan>
                       ))}
@@ -686,7 +689,7 @@ export function RelationalConstellation({
                   <>
                     <line x1={node.x - 20} x2={node.x + 20} y1={node.y} y2={node.y} stroke={node.color} strokeWidth={active ? 5 : 2.4} strokeLinecap="round" />
                     <circle cx={node.x} cy={node.y} r={active ? 6 : 3.8} fill="#050510" />
-                    <text x={labelX} y={labelY} textAnchor={textAnchor} className="fill-ink/64 font-mono text-[13.5px] font-black uppercase tracking-[0.07em]">
+                    <text x={labelX} y={labelY} textAnchor={textAnchor} className="fill-ink/64 font-mono text-[16.2px] font-black uppercase tracking-[0.07em]">
                       {node.label}
                     </text>
                   </>

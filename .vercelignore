@@ -1,0 +1,27 @@
+.DS_Store
+.cache/
+.next/
+dist/
+node_modules/
+out/
+tsconfig.tsbuildinfo
+
+# Local-only research archives and generated acquisition workspaces.
+docs/**
+
+# Keep the small processed datasets currently imported by the app at build time.
+!docs/
+!docs/research/
+!docs/research/hub/
+!docs/research/hub/processed/
+!docs/research/hub/processed/hub_chart02_recovered_routing_terms.json
+!docs/research/hub/processed/hub_chart02_routing_by_period.json
+!docs/research/hub/processed/hub_chart02_transfer_model_timeline.json
+!docs/research/hub/processed/hub_chart03_naming_by_period.json
+!docs/research/hub/processed/hub_chart03_naming_patterns.json
+!docs/research/hub/processed/hub_chart04_modifier_dominance_terms.json
+!docs/research/hub/processed/hub_chart04_narrative_support_matrix.json
+!docs/research/hub/processed/hub_chart04_semantic_dependency_index.json
+!docs/research/privacy/
+!docs/research/privacy/processed/
+!docs/research/privacy/processed/privacy_research_expansion_processed.json

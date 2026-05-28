@@ -104,9 +104,23 @@ const dataSources = [
   {
     source: "Policy, clinical, and technical references",
     use: "Domain context anchors",
-    coverage: "EU AI Act, GDPR/ICO, FTC/NIST/OECD, PubMed/MeSH, WHO/NIMH, Stanford HAI and related pages",
+    coverage: "EU AI Act, GDPR/ICO, FTC/NIST/OECD, PubMed/MeSH, WHO/NIMH, APA/DSM-history pointers, Stanford HAI and related pages",
     access: "Public web pages, APIs, and manual source audits",
     license: "Source-specific; used as citation targets and metadata, not republished text",
+  },
+  {
+    source: "Public law and human-rights repositories",
+    use: "Legal and rights anchors",
+    coverage: "Wikisource, CourtListener, Justia/Oyez, Cornell Wex, NY Senate, UN, ECHR, EUR-Lex, eCFR, govinfo, DOJ/HHS, FTC, OECD, CPPA and related public pages",
+    access: "Public source pages, case-law metadata, statute/regulation references, and curated descriptions",
+    license: "Source-specific; legal text, summaries, and court opinions are cited or paraphrased, not redistributed as a corpus",
+  },
+  {
+    source: "Geographic and demographic context sources",
+    use: "Aggregate context signals",
+    coverage: "OpenAlex, GDELT, World Bank indicators, Our World in Data fallback values, Open-Elevation, and Google Trends availability checks",
+    access: "Public APIs or processed aggregate records",
+    license: "Source-specific; used as aggregate metrics, metadata, or unavailable-source audits only",
   },
 ];
 
@@ -117,6 +131,8 @@ const roleColors: Record<string, string> = {
   "Modern context and attention signals": "#2C9FC7",
   "Attestation and sense-history checks": "#050510",
   "Domain context anchors": "#036C17",
+  "Legal and rights anchors": "#A1081F",
+  "Aggregate context signals": "#596F82",
 };
 
 const calculationMethods = [
@@ -260,10 +276,10 @@ const licenses = [
   },
   {
     category: "Modern context snippets",
-    items: ["Wikinews English edition (2024-2026)"],
+    items: ["Wikinews English edition (2024-2026)", "Wikipedia / Wikimedia page metadata and extracts where used"],
     statement: "Sourced from Wikinews via MediaWiki API.",
-    note: "Used as short contextual evidence under Creative Commons Attribution 2.5 Generic; article text is not republished in full.",
-    url: "https://creativecommons.org/licenses/by/2.5/",
+    note: "Used as short contextual evidence. Wikinews licensing depends on publication date: older English Wikinews material is generally CC BY 2.5, while material published from 16 December 2024 is CC BY 4.0. Wikipedia/Wikimedia text remains under the applicable CC BY-SA terms. Article text is not republished in full.",
+    url: "https://en.wikinews.org/wiki/Wikinews:Copyright",
   },
   {
     category: "Lexical and etymological references",
@@ -282,13 +298,36 @@ const licenses = [
     items: [
       "EU AI Act / EUR-Lex",
       "ICO and GDPR reference pages",
-      "FTC, NIST, OECD, Census, and Stanford HAI pages",
-      "PubMed, MeSH, NCBI, clinical, and public-health references",
+      "CourtListener, Justia/Oyez, Cornell Wex, UN, ECHR, NY Senate, eCFR, govinfo, DOJ/HHS, FTC, OECD, CPPA, Census, and Stanford HAI pages",
       "Britannica, Cleveland Clinic, FCC, PLOS, and publisher pages",
       "Academic references for data science and datafication",
     ],
     statement: "Used as context anchors, source audits, and citation targets.",
-    note: "Source texts, reports, and articles are not reproduced in full. Rights and reuse terms remain source-specific.",
+    note: "Legal opinions, statutes, regulations, treaty language, platform policy pages, reports, and publisher pages are cited, linked, summarized, or paraphrased. They are not republished as full texts or treated as reusable site-owned content. Rights and reuse terms remain source-specific.",
+  },
+  {
+    category: "Clinical and bibliographic metadata",
+    items: [
+      "PubMed and MeSH / NCBI records",
+      "PubMed Central Open Access Subset pointers",
+      "WHO, ICD-11, NIMH, APA DSM-history references",
+      "Journal article titles and publication metadata",
+    ],
+    statement: "Used for metadata, controlled-vocabulary signals, and public-health context only.",
+    note: "Article titles, identifiers, source URLs, and short metadata records are used as bibliographic evidence. Abstracts, full articles, DSM text, and publisher-owned clinical material are not redistributed; PMC and journal reuse terms vary by article.",
+    url: "https://pmc.ncbi.nlm.nih.gov/about/copyright/",
+  },
+  {
+    category: "Geographic, demographic, and attention signals",
+    items: [
+      "OpenAlex works/institution metadata",
+      "GDELT news/source attention",
+      "World Bank and Our World in Data demographic indicators",
+      "Open-Elevation enrichment",
+      "Google Trends candidate checks",
+    ],
+    statement: "Used for aggregate geography, population, and availability signals.",
+    note: "The site displays processed counts, indices, country/city labels, and contextual indicators. It does not redistribute full news articles, search exports, academic records, or upstream database dumps; each upstream source keeps its own terms.",
   },
   {
     category: "Contemporary metadata and attention signals",

@@ -2,7 +2,7 @@
   "word": "privacy",
   "status": "first_round_broad_research",
   "created_at": "2026-05-26T12:26:43Z",
-  "updated_at": "2026-05-27T10:45:42.420697+00:00",
+  "updated_at": "2026-05-28T03:58:52.882372Z",
   "layers": [
     {
       "layer_id": "frequency_terms",
@@ -44,7 +44,7 @@
       "processed_path": "docs/research/privacy/processed/privacy_geo_spatial_metrics_processed.json",
       "report_path": "docs/research/privacy/reports/privacy_geo_spatial_metrics_data_report.md",
       "status": "usable_partial",
-      "notes": "75171 total records; 1419 country-level, 374 point-level, 37 elevation-enriched."
+      "notes": "139071 total records; 64853 country-level, 27436 point-level, 27436 elevation-enriched."
     },
     {
       "layer_id": "research_expansion",
@@ -73,6 +73,22 @@
       "report_path": "docs/research/privacy/reports/privacy_modern_transit_system_data_report.md",
       "status": "source_supported_for_chart01c",
       "notes": "1950-2026 metro-map data layer with 7 routes and 23 supported stations."
+    },
+    {
+      "layer_id": "geo_attention_map",
+      "processed_path": "docs/research/privacy/processed/privacy_geo_attention_map_processed.json",
+      "generated_path": "src/data/generated/privacy_geo_attention_map.json",
+      "report_path": "docs/research/privacy/reports/privacy_geo_attention_map_data_report.md",
+      "status": "source_supported_for_chart02a",
+      "notes": "58 countries, 90 city points, 34 radiation links for chart02A."
+    },
+    {
+      "layer_id": "geo_demographic_context",
+      "processed_path": "docs/research/privacy/processed/privacy_geo_demographic_context_processed.json",
+      "generated_path": "src/data/generated/privacy_geo_demographic_context.json",
+      "report_path": "docs/research/privacy/reports/privacy_geo_demographic_context_data_report.md",
+      "status": "source_supported_for_chart02c",
+      "notes": "58 countries joined with population/life expectancy; 42 context edges for chart02C planning."
     }
   ],
   "legacy_files_archived": [

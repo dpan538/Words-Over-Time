@@ -1,7 +1,7 @@
 {
   "metadata": {
     "word": "privacy",
-    "updated_at": "2026-05-27T04:19:49.836538Z",
+    "updated_at": "2026-05-28T03:58:52.884935Z",
     "note": "Research baseline for privacy first pass."
   },
   "frequency_terms_layer": {
@@ -59,12 +59,12 @@
   "geo_spatial_metrics_layer": {
     "layer_id": "geo_spatial_metrics",
     "title": "Privacy geo-spatial metrics",
-    "generated_at": "2026-05-26T13:27:13.321646Z",
+    "generated_at": "2026-05-28T00:36:46.508928Z",
     "generated_by_script": "scripts/process_privacy_geo_spatial_metrics.py",
-    "total_records": 75171,
-    "country_level_record_count": 1419,
-    "point_level_record_count": 374,
-    "elevation_enriched_record_count": 37
+    "total_records": 139071,
+    "country_level_record_count": 64853,
+    "point_level_record_count": 27436,
+    "elevation_enriched_record_count": 27436
   },
   "research_expansion_layer": {
     "layer_id": "research_expansion",
@@ -108,5 +108,35 @@
     "station_count": 23,
     "transfer_station_count": 17,
     "note": "Privacy chart 01C layer inside chart01; intentionally not chart02."
+  },
+  "geo_attention_map_layer": {
+    "layer_id": "geo_attention_map",
+    "title": "Privacy geographic attention map",
+    "generated_path": "src/data/generated/privacy_geo_attention_map.json",
+    "generated_by_script": "scripts/process_privacy_geo_attention_map.py",
+    "source_total_records": 139071,
+    "map_country_count": 58,
+    "map_city_point_count": 90,
+    "radiation_link_count": 34,
+    "elevation_point_count": 90,
+    "top_country": "United States",
+    "top_country_record_count": 18615,
+    "google_trends_available": false
+  },
+  "geo_demographic_context_layer": {
+    "layer_id": "geo_demographic_context",
+    "title": "Privacy demographic context layer",
+    "generated_path": "src/data/generated/privacy_geo_demographic_context.json",
+    "generated_by_script": "scripts/process_privacy_geo_demographic_context.py",
+    "country_signal_count": 58,
+    "countries_with_population": 58,
+    "countries_with_life_expectancy": 58,
+    "countries_joined_for_02c": 58,
+    "network_node_count": 58,
+    "context_edge_count": 42,
+    "median_population": 18522644.5,
+    "mean_life_expectancy": 78.705,
+    "median_privacy_records_per_million": 19.3888,
+    "note": "Conceptual 02C layer: privacy signal plus population and life expectancy context, not causal fitting."
   }
 }

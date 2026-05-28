@@ -124,12 +124,17 @@ const BLUE = "#0b94bd";
 const VIOLET = "#8430c9";
 const MONO_STYLE = { fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace" };
 
+function roundSvg(value: number, precision = 3) {
+  const factor = 10 ** precision;
+  return Math.round(value * factor) / factor;
+}
+
 function polarToCartesian(angleDegrees: number, radiusRatio: number) {
   const angle = ((angleDegrees - 90) * Math.PI) / 180;
   const radius = radiusRatio * WEATHER_RADIUS;
   return {
-    x: CENTER + Math.cos(angle) * radius,
-    y: CENTER + Math.sin(angle) * radius,
+    x: roundSvg(CENTER + Math.cos(angle) * radius),
+    y: roundSvg(CENTER + Math.sin(angle) * radius),
   };
 }
 
@@ -137,7 +142,8 @@ function arcPath(startAngle: number, endAngle: number, radiusRatio: number) {
   const start = polarToCartesian(startAngle, radiusRatio);
   const end = polarToCartesian(endAngle, radiusRatio);
   const largeArcFlag = Math.abs(endAngle - startAngle) > 180 ? 1 : 0;
-  return `M ${start.x} ${start.y} A ${radiusRatio * WEATHER_RADIUS} ${radiusRatio * WEATHER_RADIUS} 0 ${largeArcFlag} 1 ${end.x} ${end.y}`;
+  const radius = roundSvg(radiusRatio * WEATHER_RADIUS);
+  return `M ${start.x} ${start.y} A ${radius} ${radius} 0 ${largeArcFlag} 1 ${end.x} ${end.y}`;
 }
 
 function sectorPath(startAngle: number, endAngle: number, innerRadius: number, outerRadius: number) {
@@ -149,16 +155,19 @@ function sectorPath(startAngle: number, endAngle: number, innerRadius: number, o
 
   return [
     `M ${outerStart.x} ${outerStart.y}`,
-    `A ${outerRadius * WEATHER_RADIUS} ${outerRadius * WEATHER_RADIUS} 0 ${largeArcFlag} 1 ${outerEnd.x} ${outerEnd.y}`,
+    `A ${roundSvg(outerRadius * WEATHER_RADIUS)} ${roundSvg(outerRadius * WEATHER_RADIUS)} 0 ${largeArcFlag} 1 ${outerEnd.x} ${outerEnd.y}`,
     `L ${innerEnd.x} ${innerEnd.y}`,
-    `A ${innerRadius * WEATHER_RADIUS} ${innerRadius * WEATHER_RADIUS} 0 ${largeArcFlag} 0 ${innerStart.x} ${innerStart.y}`,
+    `A ${roundSvg(innerRadius * WEATHER_RADIUS)} ${roundSvg(innerRadius * WEATHER_RADIUS)} 0 ${largeArcFlag} 0 ${innerStart.x} ${innerStart.y}`,
     "Z",
   ].join(" ");
 }
 
 function hashUnit(seed: number) {
-  const value = Math.sin(seed * 12.9898 + 78.233) * 43758.5453;
-  return value - Math.floor(value);
+  let hash = Math.round(seed * 1000) | 0;
+  hash ^= hash << 13;
+  hash ^= hash >>> 17;
+  hash ^= hash << 5;
+  return ((hash >>> 0) % 10000) / 10000;
 }
 
 function clamp(value: number, min: number, max: number) {
@@ -241,20 +250,20 @@ function evidenceCircleSeries({
     const progress = count === 1 ? 0.5 : index / (count - 1);
     const angleGrid = start + span * progress;
     const angleJitter = (hashUnit(seed + periodIndex * 19 + index * 2.7) - 0.5) * (2.2 + score * 3.2);
-    const radialWave = Math.sin(progress * Math.PI * 2 + periodIndex * 0.9 + seed) * 0.025;
+    const radialWave = (hashUnit(seed + periodIndex * 29 + index * 6.7) - 0.5) * 0.05;
     const radialJitter = (hashUnit(seed + periodIndex * 23 + index * 4.1) - 0.5) * (0.04 + score * 0.055);
-    const radius = clamp(bandCenter + bandLift * score + radialWave + radialJitter, 0.28, 1.02);
+    const radius = roundSvg(clamp(bandCenter + bandLift * score + radialWave + radialJitter, 0.28, 1.02), 4);
     const sizeNoise = hashUnit(seed + periodIndex * 31 + index * 5.3);
 
     return {
       id: `${trackId}-${period.period_id}-${index}`,
-      angle: angleGrid + angleJitter,
+      angle: roundSvg(angleGrid + angleJitter, 4),
       radius,
-      size: minSize + score * (maxSize - minSize) * 0.68 + sizeNoise * (maxSize - minSize) * 0.42,
+      size: roundSvg(minSize + score * (maxSize - minSize) * 0.68 + sizeNoise * (maxSize - minSize) * 0.42, 3),
       fill,
-      fillOpacity: 0.3 + score * 0.2,
-      strokeOpacity: 0.58 + score * 0.2,
-      strokeWidth: 1.25 + score * 0.55,
+      fillOpacity: roundSvg(0.3 + score * 0.2, 4),
+      strokeOpacity: roundSvg(0.58 + score * 0.2, 4),
+      strokeWidth: roundSvg(1.25 + score * 0.55, 3),
     };
   });
 }
@@ -304,10 +313,10 @@ function radialBarPolygon(angleDegrees: number, innerRadius: number, outerRadius
   };
 
   return [
-    `${inner.x + tx * halfWidth},${inner.y + ty * halfWidth}`,
-    `${outer.x + tx * halfWidth},${outer.y + ty * halfWidth}`,
-    `${outer.x - tx * halfWidth},${outer.y - ty * halfWidth}`,
-    `${inner.x - tx * halfWidth},${inner.y - ty * halfWidth}`,
+    `${roundSvg(inner.x + tx * halfWidth)},${roundSvg(inner.y + ty * halfWidth)}`,
+    `${roundSvg(outer.x + tx * halfWidth)},${roundSvg(outer.y + ty * halfWidth)}`,
+    `${roundSvg(outer.x - tx * halfWidth)},${roundSvg(outer.y - ty * halfWidth)}`,
+    `${roundSvg(inner.x - tx * halfWidth)},${roundSvg(inner.y - ty * halfWidth)}`,
   ].join(" ");
 }
 
@@ -330,9 +339,9 @@ function evidenceBars(dataset: PrivacySemanticWeatherDataset): EvidenceBarSample
 
     return Array.from({ length: count }, (_, index) => {
       const progress = count === 1 ? 0.5 : index / (count - 1);
-      const angle = start + span * progress + (hashUnit(201 + periodIndex * 37 + index * 2.1) - 0.5) * 3.8;
+      const angle = roundSvg(start + span * progress + (hashUnit(201 + periodIndex * 37 + index * 2.1) - 0.5) * 3.8, 4);
       const localPressure = pressureScoreForAngle(dataset, angle);
-      const length = 0.11 + localPressure * 0.22 + hashUnit(211 + periodIndex * 31 + index * 4.2) * 0.1;
+      const length = roundSvg(0.11 + localPressure * 0.22 + hashUnit(211 + periodIndex * 31 + index * 4.2) * 0.1, 4);
       const innerRadius = clamp(
         0.53 + localPressure * 0.13 + (hashUnit(223 + periodIndex * 23 + index * 3.4) - 0.5) * 0.18,
         0.36,
@@ -344,10 +353,10 @@ function evidenceBars(dataset: PrivacySemanticWeatherDataset): EvidenceBarSample
       return {
         id: `privacy-pressure-evidence-${period.period_id}-${index}`,
         angle,
-        innerRadius,
-        outerRadius,
-        width: 1.5 + localPressure * 2.2 + hashUnit(241 + index * 5.3) * 1.3,
-        opacity: 0.4 + localPressure * 0.34,
+        innerRadius: roundSvg(innerRadius, 4),
+        outerRadius: roundSvg(outerRadius, 4),
+        width: roundSvg(1.5 + localPressure * 2.2 + hashUnit(241 + index * 5.3) * 1.3, 3),
+        opacity: roundSvg(0.4 + localPressure * 0.34, 4),
         periodLabel: `${period.start_year}-${period.end_year} ${period.label}`,
         term: term.term,
         value: term.mean_frequency_per_million,
@@ -661,7 +670,7 @@ export function PrivacyChart01SemanticWeather({ dataset }: PrivacyChart01Semanti
                   stroke={point.fill}
                   strokeOpacity={point.strokeOpacity}
                   strokeWidth={point.strokeWidth}
-                  style={{ animationDelay: `${hashUnit(point.angle + point.size) * -5.8}s` }}
+                  style={{ animationDelay: `${roundSvg(hashUnit(point.angle + point.size) * -5.8, 3)}s` }}
                 />
               );
             })}
@@ -682,7 +691,7 @@ export function PrivacyChart01SemanticWeather({ dataset }: PrivacyChart01Semanti
                   stroke={point.fill}
                   strokeOpacity={point.strokeOpacity}
                   strokeWidth={point.strokeWidth}
-                  style={{ animationDelay: `${hashUnit(point.angle + point.size + 9) * -5.8}s` }}
+                  style={{ animationDelay: `${roundSvg(hashUnit(point.angle + point.size + 9) * -5.8, 3)}s` }}
                 />
               );
             })}
@@ -703,7 +712,7 @@ export function PrivacyChart01SemanticWeather({ dataset }: PrivacyChart01Semanti
                   stroke={point.fill}
                   strokeOpacity={point.strokeOpacity}
                   strokeWidth={point.strokeWidth}
-                  style={{ animationDelay: `${hashUnit(point.angle + point.size + 17) * -5.8}s` }}
+                  style={{ animationDelay: `${roundSvg(hashUnit(point.angle + point.size + 17) * -5.8, 3)}s` }}
                 />
               );
             })}
@@ -743,7 +752,7 @@ export function PrivacyChart01SemanticWeather({ dataset }: PrivacyChart01Semanti
                     stroke={VIOLET}
                     strokeOpacity="0.82"
                     strokeWidth="0.8"
-                    style={{ animationDelay: `${hashUnit(bar.angle + bar.width) * -4.8}s` }}
+                    style={{ animationDelay: `${roundSvg(hashUnit(bar.angle + bar.width) * -4.8, 3)}s` }}
                   />
                 </g>
               );

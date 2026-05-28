@@ -44,6 +44,7 @@ import {
   type GearNode,
   type OutputNode,
 } from "@/components/DepressionSemanticMachine";
+import { DepressionLivingMethodMap } from "@/components/DepressionLivingMethodMap";
 import { DepressionSemanticPlate } from "@/components/DepressionSemanticPlate";
 import {
   semanticRelationInspectorId,
@@ -121,15 +122,15 @@ function DepressionAnnotationStrip({
           </p>
         </div>
         <div>
-          <p className="text-ink/42">type</p>
+          <p className="text-ink/58">type</p>
           <p>{shortType(entry)}</p>
         </div>
         <div>
-          <p className="text-ink/42">era / value</p>
+          <p className="text-ink/58">era / value</p>
           <p>{entry.period} / {valueLabel(entry)}</p>
         </div>
         <div>
-          <p className="text-ink/42">source / caveat</p>
+          <p className="text-ink/58">source / caveat</p>
           <p className="normal-case tracking-normal">
             {entry.sourceCorpus}; {entry.caveats[0] ?? "context-limited evidence"}
           </p>
@@ -866,7 +867,7 @@ export function DepressionPoster({
           </PosterSection>
 
           <div className="pb-0 pt-8 sm:pt-10">
-            <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/68">
+            <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/86">
               The machine shows how the word is held in place. But depression
               also keeps moving, outward into social life, loosened from any
               single system. The next loop maps that diffusion: through affect,
@@ -884,11 +885,17 @@ export function DepressionPoster({
                 onHover={handleHover}
                 onInspect={handleInspect}
               />
+
+              <DepressionLivingMethodMap
+                activeInspectorId={activeInspectorId}
+                onHover={handleHover}
+                onInspect={handleInspect}
+              />
             </PosterSection>
           </div>
 
           <div className="pb-0 pt-8 sm:pt-10">
-            <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/68">
+            <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/86">
               Each domain reshapes what the word can do. What stays intact in
               lived experience gets compressed in clinical measurement,
               amplified in public health reporting, or distorted by the time it
@@ -899,7 +906,7 @@ export function DepressionPoster({
           <div id="chart-04">
             <PosterSection
               eyebrow="04 / SEMANTIC TRANSLATION"
-              title="What changes when depression moves between systems?"
+              title="Semantic translation field"
               intro="Each point is a piece of the word, placed by the system it passed through and what happened to it there. Where fragments gather, the word is most stable. Where they thin out or distort, something is lost or bent."
             >
               <DepressionSemanticTranslationMap
@@ -908,6 +915,23 @@ export function DepressionPoster({
                 onInspect={handleInspect}
               />
             </PosterSection>
+          </div>
+
+          <div className="pb-0 pt-8 sm:pt-10">
+            <p className="max-w-[1120px] text-[1.08rem] leading-[1.55] text-ink/82">
+              Chart 04 treats depression as something that changes shape when it passes between systems. Lived experience can remain emotionally dense, clinical language can make it measurable, public health can amplify it as a population signal, and media circulation can bend it into a simplified social marker. The chart does not decide which version is true; it shows how each system preserves some of the word while losing, compressing, or intensifying other parts.
+            </p>
+          </div>
+
+          <div className="mt-12 border-t border-ink/70 pt-8 sm:pt-10">
+            <div className="grid gap-6 lg:grid-cols-[18rem_minmax(0,1fr)]">
+              <p className="font-mono text-[1rem] font-black uppercase leading-6 tracking-[0.22em] text-fire">
+                Final register
+              </p>
+              <p className="max-w-[1120px] text-[1.16rem] leading-[1.58] text-ink/86">
+                Depression does not end here as one settled object. It remains a word that can name a body state, a clinical threshold, an economic fall, a public mood, a workplace atmosphere, or a route toward care. What the page leaves visible is the movement between those uses: each system makes the word useful by narrowing it, and each narrowing leaves something outside the frame.
+              </p>
+            </div>
           </div>
 
           <div className="pb-8 pt-10 sm:pt-12">
