@@ -8,6 +8,11 @@ tsconfig.tsbuildinfo
 
 # Local-only research archives and generated acquisition workspaces.
 docs/**
+docs/research/**/raw/**
+docs/research/**/cache/**
+docs/research/**/research_expansion_cache/**
+docs/research/**/etymology_cache/**
+docs/research/**/legacy_chart_runs/**
 
 # Keep the small processed datasets currently imported by the app at build time.
 !docs/
@@ -25,3 +30,10 @@ docs/**
 !docs/research/privacy/
 !docs/research/privacy/processed/
 !docs/research/privacy/processed/privacy_research_expansion_processed.json
+
+# Final deny guard: raw caches and legacy acquisition runs must never be uploaded.
+docs/research/**/raw/**
+docs/research/**/cache/**
+docs/research/**/research_expansion_cache/**
+docs/research/**/etymology_cache/**
+docs/research/**/legacy_chart_runs/**
