@@ -5,6 +5,7 @@ A curated historical word-frequency and semantic-branch visualization project.
 ## Routes
 
 - `/` - typographic home page
+- `/words` - public index of all word studies
 - `/words/data` - data as evidence, storage, and social infrastructure
 - `/words/privacy` - privacy as seclusion, legal right, and data-governance pressure
 - `/words/artificial` - artificial from artifice to computation and machine reproduction
@@ -12,6 +13,15 @@ A curated historical word-frequency and semantic-branch visualization project.
 - `/words/depression` - depression across economic, clinical, and atmospheric branches
 - `/words/forever` - forever across duration, devotion, and platform memory
 - `/about` - methodology, source ledger, citation style, and rights statement
+
+## Discovery surfaces
+
+- `/sitemap.xml` - canonical URL sitemap for search engines
+- `/robots.txt` - crawler access policy and raw-data exclusions
+- `/llms.txt` - concise AI retrieval entry point and public content boundary
+- `/feed.xml` - RSS discovery feed for public routes
+- `/opengraph-image` and `/twitter-image` - default social preview images
+- `/words/[slug]/opengraph-image` and `/words/[slug]/twitter-image` - route-specific word study previews
 
 ## Local Development
 

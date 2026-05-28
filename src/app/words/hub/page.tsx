@@ -1,5 +1,6 @@
 import { HubPoster } from "@/components/HubPoster";
 import { JsonLd } from "@/components/JsonLd";
+import { WordSeoSummary } from "@/components/WordSeoSummary";
 import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
 
 export const metadata = createPageMetadata("/words/hub");
@@ -10,6 +11,7 @@ export default function HubPage() {
     <>
       <JsonLd data={jsonLd} />
       <HubPoster />
+      <WordSeoSummary path="/words/hub" />
     </>
   );
 }

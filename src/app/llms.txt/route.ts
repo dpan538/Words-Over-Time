@@ -26,6 +26,8 @@ Important interpretation notes:
 
 - ${markdownLink("Home", "/")}: Index of the public word studies.
 - ${markdownLink("About, methodology, sources, and rights", "/about")}: Source ledger, data-layer policy, publication boundary, visual methodology, copyright notes, and site privacy note.
+- ${markdownLink("Word studies index", "/words")}: Human and machine-readable entry point for all public word routes.
+- ${markdownLink("RSS feed", "/feed.xml")}: Lightweight update/discovery feed for public pages.
 - ${markdownLink("Sitemap", "/sitemap.xml")}: Machine-readable list of public canonical URLs.
 - ${markdownLink("Robots policy", "/robots.txt")}: Crawler access rules and raw-data exclusions.
 

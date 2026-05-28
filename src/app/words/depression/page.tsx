@@ -1,5 +1,6 @@
 import { DepressionPoster } from "@/components/DepressionPoster";
 import { JsonLd } from "@/components/JsonLd";
+import { WordSeoSummary } from "@/components/WordSeoSummary";
 import branchesJson from "@/data/generated/depression_branches.json";
 import coverageJson from "@/data/generated/depression_coverage_report.json";
 import evidenceJson from "@/data/generated/depression_evidence_normalized.json";
@@ -34,6 +35,7 @@ export default function DepressionPage() {
         evidence={evidence}
         coverage={coverage}
       />
+      <WordSeoSummary path="/words/depression" />
     </>
   );
 }

@@ -16,7 +16,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: ["/", "/about", "/words/"],
+        allow: ["/", "/about", "/words/", "/feed.xml"],
         disallow: researchDataDisallow,
       },
       {
@@ -31,7 +31,7 @@ export default function robots(): MetadataRoute.Robots {
           "Google-Extended",
           "CCBot",
         ],
-        allow: ["/", "/about", "/words/", "/llms.txt"],
+        allow: ["/", "/about", "/words/", "/feed.xml", "/llms.txt"],
         disallow: researchDataDisallow,
       },
     ],

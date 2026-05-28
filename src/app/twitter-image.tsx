@@ -1,10 +1,8 @@
 import OpenGraphImage from "./opengraph-image";
+import { ogImageSize } from "@/lib/og-image";
 
 export const alt = "Words Over Time";
-export const size = {
-  width: 1200,
-  height: 630,
-};
+export const size = ogImageSize;
 export const contentType = "image/png";
 
 export default function TwitterImage() {

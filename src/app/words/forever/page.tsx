@@ -1,5 +1,6 @@
 import { ForeverPoster } from "@/components/ForeverPoster";
 import { JsonLd } from "@/components/JsonLd";
+import { WordSeoSummary } from "@/components/WordSeoSummary";
 import datasetJson from "@/data/generated/forever_dataset.json";
 import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
 import type { ForeverGeneratedDataset } from "@/types/foreverRealData";
@@ -14,6 +15,7 @@ export default function ForeverPage() {
     <>
       <JsonLd data={jsonLd} />
       <ForeverPoster dataset={dataset} />
+      <WordSeoSummary path="/words/forever" />
     </>
   );
 }

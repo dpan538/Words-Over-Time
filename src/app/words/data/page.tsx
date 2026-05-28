@@ -1,5 +1,6 @@
 import { DataPoster } from "@/components/DataPoster";
 import { JsonLd } from "@/components/JsonLd";
+import { WordSeoSummary } from "@/components/WordSeoSummary";
 import crossPressuresDatasetJson from "@/data/generated/data_cross_pressures.json";
 import datumRouteDatasetJson from "@/data/generated/data_datum_route.json";
 import datasetJson from "@/data/generated/data_historical_index.json";
@@ -28,6 +29,7 @@ export default function DataPage() {
         datumRouteDataset={datumRouteDataset}
         crossPressuresDataset={crossPressuresDataset}
       />
+      <WordSeoSummary path="/words/data" />
     </>
   );
 }
