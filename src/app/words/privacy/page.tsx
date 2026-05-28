@@ -5,6 +5,7 @@ import modernTransitJson from "@/data/generated/privacy_modern_transit_system.js
 import geoAttentionJson from "@/data/generated/privacy_geo_attention_map.json";
 import geoElevationJson from "@/data/generated/privacy_geo_elevation_distribution.json";
 import geoDemographicJson from "@/data/generated/privacy_geo_demographic_context.json";
+import { createPageMetadata } from "@/lib/site";
 import researchExpansionJson from "../../../../docs/research/privacy/processed/privacy_research_expansion_processed.json";
 import type { PrivacySemanticWeatherDataset } from "@/components/privacy/PrivacyChart01SemanticWeather";
 import type { PrivacyLegalInjuryDataset } from "@/components/privacy/PrivacyChart01LegalInjury";
@@ -21,6 +22,8 @@ const geoAttention = geoAttentionJson as unknown as PrivacyGeoAttentionDataset;
 const geoElevation = geoElevationJson as unknown as PrivacyGeoElevationDataset;
 const geoDemographic = geoDemographicJson as unknown as PrivacyGeoDemographicContextDataset;
 const researchExpansion = researchExpansionJson as unknown as PrivacyResearchExpansionDataset;
+
+export const metadata = createPageMetadata("/words/privacy");
 
 export default function PrivacyPage() {
   return (

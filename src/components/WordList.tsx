@@ -6,13 +6,16 @@ type WordListProps = {
 };
 
 export function WordList({ words }: WordListProps) {
+  const bySlug = new Map(words.map((word) => [word.slug, word]));
+  const row = (slugs: string[]) => slugs.map((slug) => bySlug.get(slug)).filter((word): word is Word => Boolean(word));
+
   const rows = [
-    words.filter((word) => word.slug === "forever"),
-    words.filter((word) => word.slug === "artificial"),
-    words.filter((word) => word.slug === "privacy" || word.slug === "hub"),
-    words.filter((word) => word.slug === "depression"),
-    words.filter((word) => word.slug === "intelligence"),
-    words.filter((word) => word.slug === "data"),
+    row(["forever"]),
+    row(["artificial"]),
+    row(["privacy", "hub"]),
+    row(["depression"]),
+    row(["intelligence"]),
+    row(["data"]),
   ].filter((row) => row.length > 0);
 
   return (

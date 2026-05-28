@@ -2,7 +2,10 @@ import { AboutSectionNav } from "@/components/AboutSectionNav";
 import { GridRuler } from "@/components/GridRuler";
 import { MethodDiagram } from "@/components/MethodDiagram";
 import { Nav } from "@/components/Nav";
+import { createPageMetadata } from "@/lib/site";
 import Link from "next/link";
+
+export const metadata = createPageMetadata("/about");
 
 const evidenceFlow = [
   {

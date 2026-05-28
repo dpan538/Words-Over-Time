@@ -2,10 +2,14 @@ import { Nav } from "@/components/Nav";
 import { PosterMarks } from "@/components/PosterMarks";
 import { WordList } from "@/components/WordList";
 import { words } from "@/data/words";
+import { createPageMetadata, homeJsonLd } from "@/lib/site";
+
+export const metadata = createPageMetadata("/");
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-wheat px-5 py-5 text-ink sm:px-10 sm:py-7 lg:px-16 xl:px-20">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }} />
       <Nav />
       <section className="grid flex-1 items-center gap-10 py-16 lg:grid-cols-[minmax(0,1fr)_250px] xl:grid-cols-[minmax(0,1fr)_300px]">
         <div className="flex flex-col gap-4 sm:gap-7">
