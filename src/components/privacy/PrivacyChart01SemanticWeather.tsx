@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePausableSvgAnimations } from "@/components/privacy/usePausableSvgAnimations";
 
 type WeatherPeriod = {
   period_id: string;
@@ -375,6 +376,7 @@ export function PrivacyChart01SemanticWeather({ dataset }: PrivacyChart01Semanti
   const threshold = dataset.thresholds[0];
   const pressureEvidenceBars = evidenceBars(dataset);
   const [activeEvidence, setActiveEvidence] = useState<EvidenceBarSample | null>(null);
+  const { svgRef, isMotionActive } = usePausableSvgAnimations();
   const visualPeriods = dataset.periods.map((period) => ({
     ...period,
     angle_start_degrees: visualAngle(period.angle_start_degrees),
@@ -447,7 +449,7 @@ export function PrivacyChart01SemanticWeather({ dataset }: PrivacyChart01Semanti
   ];
 
   return (
-    <div className="overflow-visible">
+    <div className="overflow-visible" data-motion-active={isMotionActive ? "true" : "false"}>
       <div className="grid items-start gap-6 xl:grid-cols-[20rem_minmax(0,1fr)]">
         <aside
           aria-live="polite"
@@ -512,6 +514,7 @@ export function PrivacyChart01SemanticWeather({ dataset }: PrivacyChart01Semanti
 
         <div className="relative -mt-6 mx-auto aspect-square w-full max-w-[1040px] overflow-visible">
           <svg
+            ref={svgRef}
             viewBox={`${VIEWBOX_OFFSET} ${VIEWBOX_OFFSET} ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`}
             role="img"
             aria-label="Geometric semantic weather diagram for privacy before the legal-rights threshold"
@@ -537,6 +540,11 @@ export function PrivacyChart01SemanticWeather({ dataset }: PrivacyChart01Semanti
               .privacy-evidence-bar {
                 pointer-events: none;
                 transition: opacity 180ms ease, stroke-width 180ms ease, filter 180ms ease, transform 180ms ease;
+              }
+
+              [data-motion-active="false"] .privacy-breathe,
+              [data-motion-active="false"] .privacy-evidence-bar {
+                animation-play-state: paused;
               }
 
               .privacy-evidence-hit {

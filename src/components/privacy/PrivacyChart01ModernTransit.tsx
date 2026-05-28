@@ -1,6 +1,7 @@
 "use client";
 
 import { type CSSProperties, useMemo, useState } from "react";
+import { usePausableSvgAnimations } from "@/components/privacy/usePausableSvgAnimations";
 
 type ModernTransitRoute = {
   route_id: string;
@@ -219,12 +220,14 @@ function stationPoint(station: ModernTransitStation) {
 
 export function PrivacyChart01ModernTransit({ dataset }: PrivacyChart01ModernTransitProps) {
   const [activeStationId, setActiveStationId] = useState("gdpr_applies_2018");
+  const { svgRef } = usePausableSvgAnimations();
   const routeById = useMemo(() => new Map(dataset.routes.map((route) => [route.route_id, route])), [dataset.routes]);
   const activeStation = dataset.stations.find((station) => station.station_id === activeStationId) ?? dataset.stations[0];
 
   return (
     <div className="min-w-0">
       <svg
+        ref={svgRef}
         viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`}
         role="img"
         aria-label="Privacy subway map from 1950 to 2026"

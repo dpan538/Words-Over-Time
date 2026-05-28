@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { usePausableSvgAnimations } from "@/components/privacy/usePausableSvgAnimations";
 
 type PrivacyGeoDemographicRecord = {
   country: string;
@@ -247,6 +248,7 @@ const formatPopulationAxis = (value: number) => {
 
 export function PrivacyChart02DemographicContext({ dataset }: PrivacyChart02DemographicContextProps) {
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
+  const { svgRef } = usePausableSvgAnimations();
 
   const { plotNodes, plotEdges, meshFibers, microFibers, microPoints, meanLifeY, lifeTicks, populationTicks } = useMemo(() => {
     const nodes = dataset.network_nodes.filter(
@@ -546,6 +548,7 @@ export function PrivacyChart02DemographicContext({ dataset }: PrivacyChart02Demo
         </aside>
 
         <svg
+          ref={svgRef}
           viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
           role="img"
           aria-label="Macro demographic context field for recovered privacy signals"

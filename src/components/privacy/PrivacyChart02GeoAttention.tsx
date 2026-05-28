@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import worldMapJson from "@/data/generated/world_countries_geojson.json";
+import { usePausableSvgAnimations } from "@/components/privacy/usePausableSvgAnimations";
 
 type QueryCount = {
   query: string;
@@ -429,6 +430,7 @@ export function PrivacyChart02GeoAttention({ dataset }: PrivacyChart02GeoAttenti
   const [selectedCountry, setSelectedCountry] = useState<CountryHotspot>(dataset.country_hotspots[0]);
   const [selectedLink, setSelectedLink] = useState<RadiationLink>(dataset.radiation_links[0]);
   const [selectedCorridor, setSelectedCorridor] = useState<VisualRadiationLink | null>(null);
+  const { svgRef, isMotionActive } = usePausableSvgAnimations();
 
   const countries = useMemo(() => dataset.country_hotspots.slice(0, 72), [dataset.country_hotspots]);
   const cityPoints = useMemo(() => dataset.city_points.slice(0, 32), [dataset.city_points]);
@@ -480,7 +482,7 @@ export function PrivacyChart02GeoAttention({ dataset }: PrivacyChart02GeoAttenti
         };
 
   return (
-    <section className="border-y border-ink/75 py-7">
+    <section className="border-y border-ink/75 py-7" data-motion-active={isMotionActive ? "true" : "false"}>
       <div className="mb-5 grid gap-6 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-end">
         <div>
           <p className="font-mono text-[0.86rem] font-black uppercase leading-5 tracking-[0.18em] text-privacy-violet">
@@ -521,6 +523,7 @@ export function PrivacyChart02GeoAttention({ dataset }: PrivacyChart02GeoAttenti
 
       <div className="relative overflow-hidden border-y border-ink/45 bg-[#fff8e6]">
         <svg
+          ref={svgRef}
           className="block h-[520px] w-full sm:h-[590px] xl:h-[660px]"
           viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`}
           role="img"
@@ -823,6 +826,10 @@ export function PrivacyChart02GeoAttention({ dataset }: PrivacyChart02GeoAttenti
       <style>{`
         .privacy-geo-badge {
           animation: privacyGeoBadge 4.8s ease-in-out infinite;
+        }
+
+        [data-motion-active="false"] .privacy-geo-badge {
+          animation-play-state: paused;
         }
 
         @keyframes privacyGeoBadge {

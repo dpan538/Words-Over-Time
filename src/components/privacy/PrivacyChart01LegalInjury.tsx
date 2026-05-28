@@ -310,13 +310,13 @@ export function PrivacyChart01LegalInjury({ dataset }: PrivacyChart01LegalInjury
           >
             <rect x="0" y="0" width={MATRIX_WIDTH} height={MATRIX_HEIGHT} fill="transparent" />
 
-            <g opacity="0.5">
+            <g>
               {dataset.branches.map((branch, index) => {
                 const start = pointFor(START_YEAR, index);
                 const end = pointFor(END_YEAR, index);
                 return (
                   <g key={`${branch.branch_id}-row`}>
-                    <line x1={start.x} y1={start.y} x2={end.x} y2={end.y} stroke={GRID} strokeWidth="1.15" />
+                    <line x1={start.x} y1={start.y} x2={end.x} y2={end.y} stroke={GRID} strokeOpacity="0.34" strokeWidth="1.15" />
                     <text
                       x="24"
                       y={start.y + 4}
@@ -326,7 +326,7 @@ export function PrivacyChart01LegalInjury({ dataset }: PrivacyChart01LegalInjury
                       fontWeight="900"
                       letterSpacing="2.2"
                       fill={INK}
-                      fillOpacity="0.58"
+                      fillOpacity="0.56"
                     >
                       {branch.label.toUpperCase()}
                     </text>
@@ -340,7 +340,7 @@ export function PrivacyChart01LegalInjury({ dataset }: PrivacyChart01LegalInjury
                 const labelX = year === 1950 ? end.x - 10 : end.x + 18;
                 return (
                   <g key={year}>
-                    <line x1={start.x} y1={start.y} x2={end.x} y2={end.y} stroke={GRID} strokeWidth="1" />
+                    <line x1={start.x} y1={start.y} x2={end.x} y2={end.y} stroke={GRID} strokeOpacity="0.34" strokeWidth="1" />
                     <text
                       x={labelX}
                       y={end.y + 5}
@@ -450,7 +450,7 @@ export function PrivacyChart01LegalInjury({ dataset }: PrivacyChart01LegalInjury
               })}
             </g>
 
-            <g transform="translate(0 646)">
+            <g transform="translate(0 620)">
               <text
                 x="70"
                 y="0"
@@ -499,13 +499,13 @@ export function PrivacyChart01LegalInjury({ dataset }: PrivacyChart01LegalInjury
                     <line x1={x} y1="22" x2={x} y2="82" stroke={INK} strokeOpacity="0.14" />
                     <text
                       x={x}
-                      y="105"
+                      y="102"
                       textAnchor="middle"
                       style={MONO_STYLE}
                       fontSize="10"
                       fontWeight="900"
                       fill={INK}
-                      fillOpacity="0.56"
+                      fillOpacity="0.62"
                     >
                       {year}
                     </text>
@@ -559,7 +559,7 @@ export function PrivacyChart01LegalInjury({ dataset }: PrivacyChart01LegalInjury
                   </g>
                 );
               })}
-              <g transform="translate(70 102)">
+              <g transform="translate(70 125)">
                 <circle cx="0" cy="-3" r="2.4" fill={VIOLET} fillOpacity="0.55" />
                 <text
                   x="10"
@@ -569,7 +569,7 @@ export function PrivacyChart01LegalInjury({ dataset }: PrivacyChart01LegalInjury
                   fontWeight="900"
                   letterSpacing="0.8"
                   fill={INK}
-                  fillOpacity="0.44"
+                  fillOpacity="0.58"
                 >
                   ANNUAL PHRASE SIGNAL
                 </text>
@@ -582,7 +582,7 @@ export function PrivacyChart01LegalInjury({ dataset }: PrivacyChart01LegalInjury
                   fontWeight="900"
                   letterSpacing="0.8"
                   fill={INK}
-                  fillOpacity="0.44"
+                  fillOpacity="0.58"
                 >
                   LEGAL ANCHOR
                 </text>
