@@ -631,7 +631,7 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
       </div>
 
       <aside className="grid content-start gap-4 text-ink">
-        <div className="h-[25.5rem] border border-ink/56 bg-[#F8F1DA] px-4 py-4">
+        <div className="min-h-[25.5rem] border border-ink/56 bg-[#F8F1DA] px-4 py-4">
           <p className="font-mono text-[0.86rem] font-black uppercase tracking-[0.16em] text-hub-ruby">
             {activeLayer ? "selected semantic layer" : "semantic field overview"}
           </p>
@@ -643,20 +643,20 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
               ? activeLayer.summary
               : "No single layer is isolated. All five semantic circles stay clear so the full movement from wheel center to modern access point can be read together."}
           </p>
-          <dl className="mt-5 grid grid-cols-2 border-y border-ink/38 text-[0.95rem] font-black uppercase tracking-[0.1em]">
-            <div className="border-r border-ink/30 px-2 py-3">
+          <dl className="mt-5 grid grid-cols-2 border-y border-ink/38 text-[0.95rem] font-black uppercase leading-snug tracking-[0.1em]">
+            <div className="min-w-0 border-r border-ink/30 px-2 py-3">
               <dt className="text-hub-space">{activeLayer ? "Most visible in" : "View state"}</dt>
               <dd className="mt-1 text-hub-amethyst">
                 {activeLayer ? peakPeriodLabel(activeLayer) : "All layers visible"}
               </dd>
             </div>
-            <div className="px-2 py-3">
+            <div className="min-w-0 px-2 py-3">
               <dt className="text-hub-space">{activeLayer ? "Current role" : "Modern center"}</dt>
               <dd className="mt-1 text-hub-amethyst">
                 {activeLayer ? currentRoleText(activeLayer) : modernLeader?.label ?? "Institutional / Digital Hub"}
               </dd>
             </div>
-            <div className="border-r border-t border-ink/30 px-2 py-3">
+            <div className="min-w-0 border-r border-t border-ink/30 px-2 py-3">
               <dt className="text-hub-space">{activeLayer ? "Recent role" : "Wheel sense"}</dt>
               <dd className="mt-1 text-hub-amethyst">
                 {activeLayer
@@ -664,7 +664,7 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
                   : statusLabel(mechanicalLayer?.modernStatus ?? "present")}
               </dd>
             </div>
-            <div className="border-t border-ink/30 px-2 py-3">
+            <div className="min-w-0 border-t border-ink/30 px-2 py-3">
               <dt className="text-hub-space">{activeLayer ? "Terms shown" : "Layer count"}</dt>
               <dd className="mt-1 text-hub-amethyst">
                 {activeLayer ? `${queryLabels.length} examples` : `${data.layers.length} circles`}
