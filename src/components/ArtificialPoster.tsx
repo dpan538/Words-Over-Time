@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ArtificialChart01SemanticChamber } from "@/components/artificial/chart01/ArtificialChart01SemanticChamber";
 import { ArtificialChart02PressureDiagram } from "@/components/artificial/chart02/ArtificialChart02PressureDiagram";
 import { ArtificialChart03InteractiveSuite } from "@/components/artificial/chart03/ArtificialChart03InteractiveSuite";
@@ -152,26 +151,6 @@ export function ArtificialPoster() {
           >
             <ArtificialChart05HumanBoundary />
           </PosterSection>
-
-          <div className="mt-10 grid gap-5 border-y border-ink/70 py-8 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
-            <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-ink/45">
-              closing note
-            </p>
-            <p className="max-w-[1040px] text-[1.08rem] leading-[1.55] text-ink/70">
-              Artificial never settles as merely fake: it names the made thing, the reproduced experience, and the human process remade by technique. What remains open is where making ends, and where a second nature begins.
-            </p>
-          </div>
-
-          <div className="mt-12 border-t border-ink/80 pb-12 pt-8">
-            <div className="flex flex-wrap gap-4 font-mono text-[0.8rem] font-black uppercase tracking-[0.13em]">
-              <Link href="/" className="border-b border-ink pb-1 transition hover:border-wine hover:text-wine">
-                Back home
-              </Link>
-              <Link href="/about" className="border-b border-ink pb-1 transition hover:border-wine hover:text-wine">
-                About methodology
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
     </main>

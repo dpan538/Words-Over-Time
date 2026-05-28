@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
   PrivacyChart01SemanticWeather,
   type PrivacySemanticWeatherDataset,
@@ -255,7 +254,7 @@ export function PrivacyPoster({
             </div>
           </PosterSection>
 
-          <div className="mt-12 pb-12 pt-0">
+          <div className="mt-12 pb-8 pt-0">
             <div className="grid gap-5 border-b border-ink/80 py-8 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
               <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-[#7E42B8]">
                 next boundary
@@ -266,14 +265,6 @@ export function PrivacyPoster({
                 keep translating older desires for protected life into rules. What remains open is where the next
                 boundary will be drawn, and who gets to draw it.
               </p>
-            </div>
-            <div className="mt-8 flex flex-wrap gap-4 font-mono text-[0.8rem] font-black uppercase tracking-[0.13em]">
-              <Link href="/" className="border-b border-ink pb-1 transition hover:border-privacy-violet hover:text-privacy-violet">
-                Back home
-              </Link>
-              <Link href="/about" className="border-b border-ink pb-1 transition hover:border-privacy-violet hover:text-privacy-violet">
-                About methodology
-              </Link>
             </div>
           </div>
         </div>

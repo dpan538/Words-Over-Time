@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
 import { EraSwitcher } from "@/components/EraSwitcher";
 import { EvidenceArchive } from "@/components/EvidenceArchive";
 import { FrequencyTimeline } from "@/components/FrequencyTimeline";
@@ -755,16 +754,6 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
             children="Permanence is what forever promises. What the data shows is something more unstable: a word that meant eternity in devotional contexts, loyalty in literary vows, loss in elegies, and excess in everyday speech - across the same three centuries, sometimes in the same decade. Not a stable definition. A record of use."
           />
 
-          <div className="border-t border-ink/80 pb-12 pt-0">
-            <div className="mt-8 flex flex-wrap gap-4 font-mono text-[0.8rem] font-black uppercase tracking-[0.13em]">
-              <Link href="/" className="border-b border-ink pb-1 transition hover:border-blaze hover:text-blaze">
-                Back home
-              </Link>
-              <Link href="/about" className="border-b border-ink pb-1 transition hover:border-blaze hover:text-blaze">
-                About methodology
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
 

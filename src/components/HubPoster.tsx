@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
 import {
   HubChart01SemanticField,
@@ -1667,16 +1666,6 @@ export function HubPoster() {
             <HubChart04CentralityRebuilt data={chart04Data} />
           </HubSection>
 
-          <div className="border-t border-ink/70 pb-12 pt-8">
-            <div className="flex flex-wrap gap-4 font-mono text-[1rem] font-black uppercase tracking-[0.13em]">
-              <Link href="/" className="border-b border-ink pb-1 text-ink transition hover:border-hub-teal hover:text-hub-blue">
-                Back home
-              </Link>
-              <Link href="/about" className="border-b border-ink pb-1 text-ink transition hover:border-hub-teal hover:text-hub-blue">
-                About methodology
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
     </main>

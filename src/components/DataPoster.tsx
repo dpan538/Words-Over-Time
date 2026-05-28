@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { DataCrossPressures } from "@/components/DataCrossPressures";
 import { DataDatumRoute } from "@/components/DataDatumRoute";
 import { DataHistoricalIndex } from "@/components/DataHistoricalIndex";
@@ -139,16 +138,6 @@ export function DataPoster({ dataset, socializedDataset, datumRouteDataset, cros
             </div>
           </div>
 
-          <div className="border-t border-ink/80 pb-12 pt-0">
-            <div className="mt-8 flex flex-wrap gap-4 font-mono text-[0.8rem] font-black uppercase tracking-[0.13em]">
-              <Link href="/" className="border-b border-ink pb-1 transition hover:border-nice hover:text-nice">
-                Back home
-              </Link>
-              <Link href="/about" className="border-b border-ink pb-1 transition hover:border-nice hover:text-nice">
-                About methodology
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
     </main>

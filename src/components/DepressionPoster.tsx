@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
 import {
   DepressionAtmosphereLoop,
   atmosphereBridgeInspectorId,
@@ -934,16 +933,6 @@ export function DepressionPoster({
             </div>
           </div>
 
-          <div className="pb-8 pt-10 sm:pt-12">
-            <div className="mt-4 flex flex-wrap gap-4 border-t border-ink/80 pt-4 font-mono text-[0.8rem] font-black uppercase tracking-[0.13em]">
-              <Link href="/" className="border-b border-ink pb-1 transition hover:border-blaze hover:text-blaze">
-                Back home
-              </Link>
-              <Link href="/about" className="border-b border-ink pb-1 transition hover:border-blaze hover:text-blaze">
-                About methodology
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
 
