@@ -1,6 +1,8 @@
 # Words Over Time
 
-A curated historical word-frequency and semantic-branch visualization project.
+A semantic-change, word-frequency, and search-statistics research project by Dai Pan / 潘岱, presented as design research and infographic art.
+
+Dai Pan is a Chinese artist, designer, and design researcher working across visual art, photography, printmaking, writing, and research-led visual systems.
 
 ## Routes
 

@@ -21,6 +21,9 @@ export default function Home() {
           <p className="text-base font-black uppercase tracking-[0.18em] text-fire sm:text-xl">
             over time
           </p>
+          <p className="max-w-3xl border-t border-ink/24 pt-4 font-mono text-[0.78rem] font-black uppercase leading-5 tracking-[0.12em] text-ink/58 sm:text-[0.9rem]">
+            Semantic change / word frequency / search statistics / design research / infographic art by Dai Pan / 潘岱.
+          </p>
         </div>
         <PosterMarks />
       </section>

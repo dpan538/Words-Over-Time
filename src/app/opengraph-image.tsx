@@ -7,8 +7,8 @@ export const contentType = "image/png";
 
 export default function OpenGraphImage() {
   return createOgImage({
-    title: "word histories as visual evidence",
+    title: "semantic histories as visual evidence",
     description: siteConfig.description,
-    keywords: ["semantic change", "public corpora", "visual essays", "source boundaries"],
+    keywords: ["Dai Pan", "semantic change", "word frequency", "search statistics", "infographic art"],
   });
 }

@@ -4,9 +4,13 @@ export const siteConfig = {
   name: "Words Over Time",
   url: (process.env.NEXT_PUBLIC_SITE_URL || "https://words-over-time.vercel.app").replace(/\/$/, ""),
   description:
-    "A curated historical word-frequency and semantic visualisation archive for tracing how words change across culture, technology, law, and public discourse.",
-  author: "Words Over Time",
-  updatedAt: "2026-05-28",
+    "A semantic-change, word-frequency, and search-statistics research project by Dai Pan (潘岱), presented as design research and infographic art.",
+  author: "Dai Pan / 潘岱",
+  authorName: "Dai Pan",
+  authorNativeName: "潘岱",
+  authorUrl: "https://daipan.art/",
+  authorSameAs: ["https://daipan.art/", "https://www.daipan.ink/"],
+  updatedAt: "2026-05-29",
 };
 
 export type SiteRoute = {
@@ -27,11 +31,11 @@ export const siteRoutes: SiteRoute[] = [
     path: "/",
     title: "Words Over Time",
     description:
-      "A visual archive of word histories, built from public corpora, processed evidence layers, and source-led interpretation.",
+      "A semantic-change, word-frequency, and search-statistics research project by Dai Pan, presented as design research and infographic art.",
     priority: 1,
     changeFrequency: "weekly",
     section: "home",
-    keywords: ["word history", "semantic change", "historical linguistics", "data visualisation"],
+    keywords: ["Dai Pan", "潘岱", "word history", "semantic change", "word frequency", "search statistics", "infographic art"],
     accent: "#006fb6",
   },
   {
@@ -49,7 +53,7 @@ export const siteRoutes: SiteRoute[] = [
     path: "/about",
     title: "Methodology, Sources, and Rights",
     description:
-      "How Words Over Time handles source provenance, transformed evidence, public-domain material, third-party licenses, and publication boundaries.",
+      "How Dai Pan's Words Over Time handles source provenance, transformed evidence, design research, third-party licenses, and publication boundaries.",
     priority: 0.9,
     changeFrequency: "monthly",
     section: "method",
@@ -93,7 +97,7 @@ export const siteRoutes: SiteRoute[] = [
     changeFrequency: "monthly",
     section: "word",
     keywords: ["privacy", "data protection", "surveillance", "consent", "legal injury"],
-    accent: "#7e42b8",
+    accent: "#6f3aa6",
     summary:
       "Privacy is traced from private life and secrecy into legal rights, data protection, public attention, surveillance, consent, and governance interfaces.",
     related: ["/words/data", "/words/hub", "/words/artificial"],
@@ -164,6 +168,9 @@ export function createPageMetadata(path: string, overrides: Partial<Pick<SiteRou
   return {
     title,
     description,
+    authors: [{ name: siteConfig.author, url: siteConfig.authorUrl }],
+    creator: siteConfig.author,
+    publisher: siteConfig.author,
     alternates: {
       canonical,
       languages: {
@@ -196,6 +203,20 @@ export function createPageMetadata(path: string, overrides: Partial<Pick<SiteRou
     },
   };
 }
+
+const authorJsonLd = {
+  "@type": "Person",
+  "@id": `${siteConfig.url}/#dai-pan`,
+  name: siteConfig.authorName,
+  alternateName: [siteConfig.authorNativeName, siteConfig.author],
+  url: siteConfig.authorUrl,
+  sameAs: siteConfig.authorSameAs,
+  nationality: {
+    "@type": "Country",
+    name: "China",
+  },
+  jobTitle: "Artist, designer, and design researcher",
+};
 
 export function createRouteJsonLd(path: string) {
   const route = routeByPath(path) || siteRoutes[0];
@@ -234,6 +255,12 @@ export function createRouteJsonLd(path: string) {
       abstract: route.summary || route.description,
       inLanguage: "en",
       dateModified: siteConfig.updatedAt,
+      author: {
+        "@id": `${siteConfig.url}/#dai-pan`,
+      },
+      creator: {
+        "@id": `${siteConfig.url}/#dai-pan`,
+      },
       isPartOf: {
         "@id": `${siteConfig.url}/#website`,
       },
@@ -247,6 +274,7 @@ export function createRouteJsonLd(path: string) {
       "@id": breadcrumbId,
       itemListElement: breadcrumbItems,
     },
+    authorJsonLd,
   ];
 
   if (route.section === "word") {
@@ -259,6 +287,13 @@ export function createRouteJsonLd(path: string) {
       description: route.description,
       abstract: route.summary,
       genre: ["digital humanities", "historical linguistics", "data visualization"],
+      artform: "infographic art",
+      author: {
+        "@id": `${siteConfig.url}/#dai-pan`,
+      },
+      creator: {
+        "@id": `${siteConfig.url}/#dai-pan`,
+      },
       about: route.keywords.map((keyword) => ({ "@type": "Thing", name: keyword })),
       isPartOf: {
         "@id": `${siteConfig.url}/#collection`,
@@ -273,6 +308,9 @@ export function createRouteJsonLd(path: string) {
       name: wordRoute.title,
       url: absoluteUrl(wordRoute.path),
       description: wordRoute.description,
+      author: {
+        "@id": `${siteConfig.url}/#dai-pan`,
+      },
     }));
   }
 
@@ -292,13 +330,23 @@ export const homeJsonLd = {
       url: siteConfig.url,
       description: siteConfig.description,
       inLanguage: "en",
+      author: {
+        "@id": `${siteConfig.url}/#dai-pan`,
+      },
+      creator: {
+        "@id": `${siteConfig.url}/#dai-pan`,
+      },
     },
+    authorJsonLd,
     {
       "@type": "CollectionPage",
       "@id": `${siteConfig.url}/#collection`,
       name: siteConfig.name,
       url: siteConfig.url,
-      description: "A collection of visual word-history studies.",
+      description: "A collection of semantic-change, word-frequency, and search-statistics studies by Dai Pan.",
+      author: {
+        "@id": `${siteConfig.url}/#dai-pan`,
+      },
       isPartOf: {
         "@id": `${siteConfig.url}/#website`,
       },
@@ -310,6 +358,9 @@ export const homeJsonLd = {
           name: route.title,
           url: absoluteUrl(route.path),
           description: route.description,
+          author: {
+            "@id": `${siteConfig.url}/#dai-pan`,
+          },
         })),
     },
   ],

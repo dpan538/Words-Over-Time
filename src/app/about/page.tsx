@@ -429,18 +429,17 @@ export default function AboutPage() {
           </header>
           <div className="max-w-4xl">
             <p className="text-[clamp(1.45rem,2.6vw,2.8rem)] font-black leading-[0.98]">
-              is a curated editorial archive,
+              is a semantic-frequency research project,
               <br />
-              not a search engine.
+              design research, and infographic art.
             </p>
             <div className="mt-8 grid gap-5 text-[0.96rem] font-bold leading-6 text-ink/70 md:grid-cols-2">
               <p>
-                Each entry begins with a word selected for its cultural weight:
-                a word that has shifted meaning, accumulated associations, or
-                traveled across registers over centuries. The archive traces
-                that word through corpus frequency, lexical attestation,
-                scanned evidence, and interpretive annotation, presenting them
-                as distinct layers rather than a single authoritative answer.
+                Words Over Time is made by Dai Pan / 潘岱, a Chinese artist,
+                designer, and design researcher. It treats language as visual
+                material: a field of memory, evidence, attention, and public
+                pressure that can be studied through semantic change, word
+                frequency, search statistics, and source-led interpretation.
               </p>
               <p>
                 This is not a dictionary. It does not define words. It does not
@@ -451,9 +450,17 @@ export default function AboutPage() {
                 limits, and gaps stated alongside the data.
               </p>
             </div>
+            <div className="mt-7 grid gap-4 border-t border-ink/22 pt-5 font-mono text-[0.84rem] font-black uppercase leading-5 tracking-[0.12em] text-ink/62 md:grid-cols-[1fr_1fr]">
+              <a className="transition hover:text-fire" href="https://daipan.art/" target="_blank" rel="noreferrer">
+                Dai Pan / visual art, photography, printmaking, design research
+              </a>
+              <a className="transition hover:text-fire" href="https://www.daipan.ink/" target="_blank" rel="noreferrer">
+                Dai Pan / writing, image-text worlds, poetic research
+              </a>
+            </div>
             <p className="mt-7 border-t border-ink/22 pt-4 font-mono text-[0.84rem] font-black uppercase leading-5 tracking-[0.14em] text-ink/70">
-              Intended audience: researchers, writers, educators, and anyone
-              curious about how language carries history.
+              Intended audience: researchers, writers, educators, designers,
+              artists, and anyone curious about how language carries history.
             </p>
           </div>
         </section>
@@ -471,8 +478,9 @@ export default function AboutPage() {
                 methodology
               </h1>
               <p className="mt-5 max-w-md text-base font-bold leading-6 text-ink/72">
-                A selected-word archive for historical frequency, attestation,
-                scanned evidence, and interpretation.
+                A selected-word research system for historical frequency,
+                semantic grouping, search statistics, scanned evidence, and
+                interpretation.
               </p>
             </header>
 
@@ -900,10 +908,10 @@ export default function AboutPage() {
                 <div className="border-l border-ink/22 pl-4">
                   <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.12em] text-ink/58">suggested website citation style</p>
                   <p className="mt-2 font-mono text-[0.86rem] font-bold leading-6 text-ink/72">
-                    Words Over Time. "[Word page title]." Words Over Time, 2026, [page URL]. Accessed [day month year].
+                    Pan, Dai. "[Word page title]." Words Over Time, 2026, [page URL]. Accessed [day month year].
                   </p>
                   <p className="mt-3 font-mono text-[0.86rem] font-bold leading-6 text-ink/72">
-                    Example: Words Over Time. "Hub." Words Over Time, 2026, /words/hub. Accessed 27 May 2026.
+                    Example: Pan, Dai. "Hub." Words Over Time, 2026, /words/hub. Accessed 27 May 2026.
                   </p>
                 </div>
               </div>
