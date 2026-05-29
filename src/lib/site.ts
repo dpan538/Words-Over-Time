@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const siteConfig = {
   name: "Words Over Time",
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://words-over-time.vercel.app").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://wordsovertime.com").replace(/\/$/, ""),
   description:
     "A semantic-change, word-frequency, and search-statistics research project by Dai Pan (潘岱), presented as design research and infographic art.",
   author: "Dai Pan / 潘岱",
