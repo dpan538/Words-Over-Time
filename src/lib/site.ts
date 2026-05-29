@@ -29,7 +29,7 @@ export type SiteRoute = {
 export const siteRoutes: SiteRoute[] = [
   {
     path: "/",
-    title: "Words Over Time",
+    title: "Words Over Time by Dai Pan",
     description:
       "A semantic-change, word-frequency, and search-statistics research project by Dai Pan, presented as design research and infographic art.",
     priority: 1,
