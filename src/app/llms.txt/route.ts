@@ -15,6 +15,8 @@ function llmsTxt() {
 
 Author: Dai Pan / 潘岱, a Chinese artist, designer, and design researcher. Artist context: ${siteConfig.authorUrl} and ${siteConfig.authorSameAs[1]}.
 
+DOI: https://doi.org/10.5281/zenodo.20437678
+
 This file is a concise entry point for AI assistants, search agents, and retrieval tools. It lists public pages that may be summarized and linked. It does not grant rights to upstream sources, private datasets, raw source caches, API response caches, or full-text third-party materials.
 
 Important interpretation notes:
@@ -33,6 +35,7 @@ Important interpretation notes:
 - ${markdownLink("RSS feed", "/feed.xml")}: Lightweight update/discovery feed for public pages.
 - ${markdownLink("Sitemap", "/sitemap.xml")}: Machine-readable list of public canonical URLs.
 - ${markdownLink("Robots policy", "/robots.txt")}: Crawler access rules and raw-data exclusions.
+- [Zenodo DOI archive](https://doi.org/10.5281/zenodo.20437678): Public launch archive for citation.
 
 ## Word Studies
 

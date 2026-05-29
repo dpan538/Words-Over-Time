@@ -6,8 +6,14 @@ authors:
     given-names: "Dai"
     alias: "潘岱"
 date-released: 2026-05-29
-url: "https://words-over-time.vercel.app"
+doi: "10.5281/zenodo.20437678"
+url: "https://wordsovertime.com"
 repository-code: "https://github.com/dpan538/Words-Over-Time"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20437678"
+  - type: url
+    value: "https://zenodo.org/records/20437678"
 abstract: "A semantic-change, word-frequency, and search-statistics research project by Dai Pan / 潘岱, presented as design research and infographic art."
 license: "MIT"
 preferred-citation:
@@ -18,4 +24,5 @@ preferred-citation:
       given-names: "Dai"
       alias: "潘岱"
   year: 2026
-  url: "https://words-over-time.vercel.app"
+  doi: "10.5281/zenodo.20437678"
+  url: "https://wordsovertime.com"

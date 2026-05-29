@@ -921,10 +921,13 @@ export default function AboutPage() {
                 <div className="border-l border-ink/22 pl-4">
                   <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.12em] text-ink/58">suggested website citation style</p>
                   <p className="mt-2 font-mono text-[0.86rem] font-bold leading-6 text-ink/72">
-                    Pan, Dai. "[Word page title]." Words Over Time, 2026, [page URL]. Accessed [day month year].
+                    Pan, Dai. "[Word page title]." Words Over Time, 2026, [page URL]. DOI: 10.5281/zenodo.20437678. Accessed [day month year].
                   </p>
                   <p className="mt-3 font-mono text-[0.86rem] font-bold leading-6 text-ink/72">
-                    Example: Pan, Dai. "Hub." Words Over Time, 2026, /words/hub. Accessed 27 May 2026.
+                    Example: Pan, Dai. "Hub." Words Over Time, 2026, https://wordsovertime.com/words/hub. DOI: 10.5281/zenodo.20437678. Accessed 27 May 2026.
+                  </p>
+                  <p className="mt-3 font-mono text-[0.86rem] font-bold leading-6 text-ink/72">
+                    Project DOI: https://doi.org/10.5281/zenodo.20437678
                   </p>
                 </div>
               </div>

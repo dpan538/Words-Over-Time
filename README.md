@@ -4,6 +4,8 @@ A semantic-change, word-frequency, and search-statistics research project by Dai
 
 Dai Pan is a Chinese artist, designer, and design researcher working across visual art, photography, printmaking, writing, and research-led visual systems.
 
+DOI: [10.5281/zenodo.20437678](https://doi.org/10.5281/zenodo.20437678)
+
 ## Routes
 
 - `/` - typographic home page
@@ -60,3 +62,7 @@ Third-party data, source records, snippets, APIs, dictionary references, public-
 Raw source caches and large research intermediates are intentionally ignored through `.gitignore` patterns such as `docs/research/**/raw/` and `docs/research/**/cache/`. Before making the repository public, confirm those paths are not committed or deployed.
 
 See `LICENSE.md`, `LICENSE-CODE.md`, `NOTICE.md`, and `/about` for the publication rules, citation style, and rights notes.
+
+## Citation
+
+Pan, Dai. *Words Over Time*. 2026. DOI: [10.5281/zenodo.20437678](https://doi.org/10.5281/zenodo.20437678). Website: <https://wordsovertime.com>.

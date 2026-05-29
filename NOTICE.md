@@ -26,11 +26,11 @@ Raw source caches and large research intermediates, especially `docs/research/**
 
 Suggested site citation:
 
-Pan, Dai. "[Word page title]." Words Over Time, 2026, [page URL]. Accessed [day month year].
+Pan, Dai. "[Word page title]." Words Over Time, 2026, [page URL]. DOI: 10.5281/zenodo.20437678. Accessed [day month year].
 
 Example:
 
-Pan, Dai. "Hub." Words Over Time, 2026, /words/hub. Accessed 27 May 2026.
+Pan, Dai. "Hub." Words Over Time, 2026, https://wordsovertime.com/words/hub. DOI: 10.5281/zenodo.20437678. Accessed 27 May 2026.
 
 When citing a chart, cite Words Over Time for the editorial synthesis and cite the upstream source separately for the underlying data or evidence.
 
