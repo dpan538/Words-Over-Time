@@ -49,10 +49,14 @@ Additional scripts in `package.json` build the data, depression, and artificial 
 
 ## Rights and attribution
 
-The repository is public for inspection and reproducibility, but it is not released under an open-source license. Original code, writing, visual design, data transformations, and editorial classifications are all rights reserved.
+The repository is public for inspection, reproducibility, citation, and method review.
+
+Project source code is released under the MIT License. Research writing, methodology narrative, infographic and interface design, page composition, curated datasets, word lists, semantic groupings, editorial classifications, and the Dai Pan / 潘岱 authorship mark are not released under MIT.
+
+Non-code research and design materials may be cited, studied, and referenced for non-commercial research or educational purposes with clear attribution to Dai Pan / 潘岱 and Words Over Time. Commercial copying, resale, republication, product packaging, dataset extraction, or visual/design reproduction is not permitted without written permission.
 
 Third-party data, source records, snippets, APIs, dictionary references, public-domain texts, Creative Commons materials, and publisher pages remain governed by their original source terms. Do not republish full third-party articles, full books, full dictionary entries, subscription-only material, or restricted corpus exports from this repository.
 
 Raw source caches and large research intermediates are intentionally ignored through `.gitignore` patterns such as `docs/research/**/raw/` and `docs/research/**/cache/`. Before making the repository public, confirm those paths are not committed or deployed.
 
-See `LICENSE.md`, `NOTICE.md`, and `/about` for the publication rules, citation style, and rights notes.
+See `LICENSE.md`, `LICENSE-CODE.md`, `NOTICE.md`, and `/about` for the publication rules, citation style, and rights notes.

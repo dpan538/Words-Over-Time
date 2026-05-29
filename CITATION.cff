@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you cite Words Over Time, please cite Dai Pan / 潘岱 as the author and cite upstream sources separately where applicable."
+title: "Words Over Time"
+authors:
+  - family-names: "Pan"
+    given-names: "Dai"
+    alias: "潘岱"
+date-released: 2026-05-29
+url: "https://words-over-time.vercel.app"
+repository-code: "https://github.com/dpan538/Words-Over-Time"
+abstract: "A semantic-change, word-frequency, and search-statistics research project by Dai Pan / 潘岱, presented as design research and infographic art."
+license: "MIT"
+preferred-citation:
+  type: generic
+  title: "Words Over Time"
+  authors:
+    - family-names: "Pan"
+      given-names: "Dai"
+      alias: "潘岱"
+  year: 2026
+  url: "https://words-over-time.vercel.app"

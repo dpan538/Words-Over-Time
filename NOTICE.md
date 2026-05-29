@@ -1,6 +1,10 @@
 # Words Over Time rights and attribution notice
 
-Words Over Time is a research, editorial, and visualization project. Original page text, interface design, chart composition, curation, data transformations, and code are copyright 2026 Words Over Time. All rights reserved unless a separate written permission is provided.
+Words Over Time is a research, editorial, and visualization project by Dai Pan / 潘岱.
+
+Project source code is released under the MIT License in `LICENSE-CODE.md`. The MIT grant is limited to software implementation.
+
+Original research text, methodology narrative, infographic compositions, visual design, page composition, curated datasets, word lists, semantic groupings, derived scores, editorial classifications, annotations, interpretive frameworks, project naming, author identity, attribution language, and the Dai Pan / 潘岱 authorship mark are copyright 2026 Dai Pan / 潘岱. These non-code materials may be cited, studied, quoted in short form, and referenced for non-commercial research, criticism, review, teaching, or educational purposes with clear attribution. Commercial copying, resale, republication, product packaging, dataset extraction, or visual/design reproduction requires written permission from Dai Pan.
 
 ## Upstream sources
 
@@ -22,11 +26,11 @@ Raw source caches and large research intermediates, especially `docs/research/**
 
 Suggested site citation:
 
-Words Over Time. "[Word page title]." Words Over Time, 2026, [page URL]. Accessed [day month year].
+Pan, Dai. "[Word page title]." Words Over Time, 2026, [page URL]. Accessed [day month year].
 
 Example:
 
-Words Over Time. "Hub." Words Over Time, 2026, /words/hub. Accessed 27 May 2026.
+Pan, Dai. "Hub." Words Over Time, 2026, /words/hub. Accessed 27 May 2026.
 
 When citing a chart, cite Words Over Time for the editorial synthesis and cite the upstream source separately for the underlying data or evidence.
 

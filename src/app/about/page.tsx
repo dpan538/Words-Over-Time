@@ -250,16 +250,29 @@ const curatedItems = [
 
 const licenses = [
   {
-    category: "Original editorial content",
+    category: "Project source code",
     items: [
-      "Word selection and curation",
-      "Category definitions and heuristics",
-      "Interpretive annotations",
-      "Pressure anchor narratives",
-      "Methodology text and interface design",
+      "Application code and components",
+      "Styles, utilities, scripts, and configuration",
+      "Data-processing pipeline implementation",
     ],
-    statement: "© 2026 Words Over Time. All rights reserved.",
-    note: "The public repository makes the work inspectable, but it does not grant a blanket reuse license for text, visuals, code, or design.",
+    statement: "Released under the MIT License.",
+    note: "The MIT grant applies to software implementation only. It supports inspection, extension, reproducibility, and method study; it does not apply to research writing, visual design, curated datasets, semantic classifications, or authorship marks.",
+    url: "https://opensource.org/license/mit",
+  },
+  {
+    category: "Original research and design",
+    items: [
+      "Research text and methodology narrative",
+      "Infographic and interface design",
+      "Page composition and visual expression",
+      "Curated datasets and word lists",
+      "Category definitions and heuristics",
+      "Interpretive annotations and pressure anchors",
+      "Dai Pan / 潘岱 author identity and attribution",
+    ],
+    statement: "© 2026 Dai Pan / 潘岱. Non-commercial citation and study permitted with attribution.",
+    note: "These materials may be cited, studied, quoted in short form, and referenced for non-commercial research, criticism, review, teaching, or educational purposes. Commercial copying, resale, republication, product packaging, dataset extraction, or visual/design reproduction is not permitted without written permission.",
   },
   {
     category: "Corpus frequency data",
@@ -363,7 +376,7 @@ const licenses = [
       "Derived scores, labels, and visualization-ready records",
     ],
     statement: "Generated files document research provenance and transformation steps.",
-    note: "They are not a rights grant for upstream material. Before publication or reuse, follow the rights status attached to the original source.",
+    note: "They are not released under MIT and are not a rights grant for upstream material. Public pages may cite or summarize the research synthesis, but commercial extraction, republication, or reuse of curated datasets and classifications requires written permission and must follow the rights status attached to the original source.",
   },
   {
     category: "Site privacy and data use",
