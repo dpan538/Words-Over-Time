@@ -14,7 +14,6 @@ export default function NotFound() {
   return (
     <ErrorStatePage
       code="404"
-      kicker="missing route / public boundary"
       title="not found"
       message="This word path is outside the public index."
       note="The archive exposes selected studies, methodology notes, citation records, and public routes. Raw caches, private acquisition logs, and unpublished intermediates remain outside the searchable surface."

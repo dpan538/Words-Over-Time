@@ -10,11 +10,10 @@ type ErrorAction = {
 
 type ErrorStatePageProps = {
   code: "404" | "500";
-  kicker: string;
   title: string;
   message: string;
   note: string;
-  actions?: ErrorAction[];
+  reset?: () => void;
 };
 
 const defaultActions: ErrorAction[] = [
@@ -25,19 +24,26 @@ const defaultActions: ErrorAction[] = [
 
 export function ErrorStatePage({
   code,
-  kicker,
   title,
   message,
   note,
-  actions = defaultActions,
+  reset,
 }: ErrorStatePageProps) {
   const accent = "text-nice";
+  const actions = reset
+    ? [
+        defaultActions[0],
+        defaultActions[1],
+        defaultActions[2],
+        { label: "Try again", onClick: reset },
+      ]
+    : defaultActions;
 
   return (
     <main className="flex min-h-screen items-center bg-wheat px-5 py-12 text-ink sm:px-10 lg:px-16">
       <section className="w-full max-w-[92rem] border-t-2 border-ink pt-7">
         <p className={`font-mono text-[0.86rem] font-black uppercase tracking-[0.22em] sm:text-[1rem] ${accent}`}>
-          {kicker}
+          Missing route / public boundary
         </p>
 
         <h1 className="mt-10 flex flex-col text-[clamp(4.8rem,18vw,15rem)] font-black leading-[0.86] tracking-normal">
