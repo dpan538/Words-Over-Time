@@ -40,9 +40,11 @@ export function ErrorStatePage({
           {kicker}
         </p>
 
-        <h1 className="mt-10 text-[clamp(4.6rem,18vw,15rem)] font-black leading-[0.9] tracking-normal">
-          {code}
-          <span className="mx-[0.08em] text-ink">/</span>
+        <h1 className="mt-10 flex flex-col text-[clamp(4.8rem,18vw,15rem)] font-black leading-[0.86] tracking-normal">
+          <span>
+            {code}
+            <span className="ml-[0.08em] text-ink">/</span>
+          </span>
           <span className={accent}>{title}</span>
         </h1>
 
