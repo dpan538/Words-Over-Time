@@ -31,7 +31,7 @@ export function ErrorStatePage({
   note,
   actions = defaultActions,
 }: ErrorStatePageProps) {
-  const accent = code === "404" ? "text-nice" : "text-wine";
+  const accent = "text-nice";
 
   return (
     <main className="flex min-h-screen items-center bg-wheat px-5 py-12 text-ink sm:px-10 lg:px-16">
@@ -41,14 +41,14 @@ export function ErrorStatePage({
         </p>
 
         <h1 className="mt-10 flex flex-col text-[clamp(4.8rem,18vw,15rem)] font-black leading-[0.86] tracking-normal">
-          <span>
+          <span className="block min-w-[0]">
             {code}
             <span className="ml-[0.08em] text-ink">/</span>
           </span>
-          <span className={accent}>{title}</span>
+          <span className={`block w-[5.9em] ${accent}`}>{title}</span>
         </h1>
 
-        <div className="mt-9 grid gap-5 border-t border-ink/12 pt-7 md:grid-cols-[0.8fr_1.2fr]">
+        <div className="mt-9 grid min-h-[8.75rem] gap-5 border-t border-ink/12 pt-7 md:grid-cols-[0.8fr_1.2fr]">
           <p className="max-w-xl text-[1.45rem] font-black leading-[1.08] text-ink sm:text-[2rem]">
             {message}
           </p>
@@ -63,7 +63,7 @@ export function ErrorStatePage({
               <Link
                 key={action.label}
                 href={action.href}
-                className="border-2 border-ink px-5 py-4 font-mono text-[0.9rem] font-black uppercase tracking-[0.16em] transition hover:bg-ink hover:text-wheat"
+                className="w-full border-2 border-ink px-5 py-4 text-center font-mono text-[0.9rem] font-black uppercase tracking-[0.16em] transition hover:bg-ink hover:text-wheat sm:w-[12.4rem]"
               >
                 {action.label}
               </Link>
@@ -72,7 +72,7 @@ export function ErrorStatePage({
                 key={action.label}
                 type="button"
                 onClick={action.onClick}
-                className="border-2 border-ink px-5 py-4 font-mono text-[0.9rem] font-black uppercase tracking-[0.16em] transition hover:bg-ink hover:text-wheat"
+                className="w-full border-2 border-ink px-5 py-4 text-center font-mono text-[0.9rem] font-black uppercase tracking-[0.16em] transition hover:bg-ink hover:text-wheat sm:w-[12.4rem]"
               >
                 {action.label}
               </button>
