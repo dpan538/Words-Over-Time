@@ -1,0 +1,4 @@
+interface:
+  display_name: "Infographic Editorial Design"
+  short_description: "Research-led infographic and editorial systems"
+  default_prompt: "Use $infographic-editorial-design to design a source-led infographic page with auditable evidence, editorial hierarchy, and restrained Swiss-inspired structure."

@@ -11,6 +11,7 @@ yarn-error.log*
 .DS_Store
 __pycache__/
 *.pyc
+.publish/
 
 # Large research intermediates and source caches
 docs/research/**/raw/

@@ -16,8 +16,9 @@ const sections: SectionEntry[] = [
   { id: "source-ledger", num: "04", label: "Sources" },
   { id: "calculation-methods", num: "05", label: "Methods" },
   { id: "claim-boundaries", num: "06", label: "Position" },
-  { id: "open-source", num: "07", label: "GitHub" },
-  { id: "licensing", num: "08", label: "Licensing" },
+  { id: "open-skill", num: "07", label: "Open Skill" },
+  { id: "open-source", num: "08", label: "GitHub" },
+  { id: "licensing", num: "09", label: "Licensing" },
 ];
 
 export function AboutSectionNav() {

@@ -837,11 +837,96 @@ export default function AboutPage() {
         </section>
 
         <section
-          id="open-source"
+          id="open-skill"
           className="scroll-mt-20 grid gap-8 border-t-2 border-ink pt-10 lg:grid-cols-[16rem_1fr] lg:gap-16"
         >
           <AboutSectionHeader
             num="07"
+            kicker="open method"
+            title="Infographic Editorial Design Skill"
+            desc="The design method behind this archive is also published as an open Codex skill for source-led infographic and editorial design."
+          />
+
+          <div className="flex flex-col gap-6">
+            <div className="border-l-4 border-fire py-1 pl-5">
+              <p className="max-w-4xl text-[clamp(1.08rem,1.7vw,1.5rem)] font-black leading-[1.15]">
+                Words Over Time is the complete case study. The skill is the
+                portable method: define the claim, expose the evidence contract,
+                design the reading path, and keep uncertainty visible.
+              </p>
+            </div>
+
+            <a
+              href="https://github.com/dpan538/infographic-editorial-design-skill"
+              target="_blank"
+              rel="noreferrer"
+              className="group flex items-stretch border border-ink/40 transition duration-200 hover:border-fire hover:bg-white/20"
+            >
+              <div className="flex w-12 flex-shrink-0 items-center justify-center border-r border-ink/30 bg-fire/[0.08]">
+                <span className="font-mono text-[0.9rem] font-black uppercase tracking-[0.08em] text-fire">
+                  SK
+                </span>
+              </div>
+              <div className="flex flex-1 items-center justify-between gap-4 px-5 py-4">
+                <div>
+                  <p className="font-mono text-[0.96rem] font-black uppercase tracking-[0.14em] text-fire">
+                    github / open skill
+                  </p>
+                  <p className="mt-1 text-[0.96rem] font-black text-ink">
+                    infographic-editorial-design-skill
+                  </p>
+                  <p className="mt-1 font-mono text-[0.86rem] font-bold uppercase leading-5 tracking-[0.1em] text-ink/48">
+                    MIT package / Codex skill / research-led infographic method
+                  </p>
+                </div>
+                <span className="font-mono text-[0.96rem] font-black uppercase tracking-[0.1em] text-ink/30 transition group-hover:text-fire">
+                  -&gt;
+                </span>
+              </div>
+            </a>
+
+            <div className="grid gap-4 md:grid-cols-3">
+              {[
+                {
+                  label: "claim",
+                  body: "The artifact starts by naming what the evidence can and cannot support.",
+                },
+                {
+                  label: "contract",
+                  body: "Source types, transforms, caveats, rights, and curated decisions stay visible.",
+                },
+                {
+                  label: "review",
+                  body: "The skill includes a rubric for overclaiming, hierarchy, accessibility, and publication readiness.",
+                },
+              ].map((item) => (
+                <article key={item.label} className="border-l-2 border-ink/30 px-4 py-2">
+                  <p className="font-mono text-[0.84rem] font-black uppercase tracking-[0.14em] text-fire">
+                    {item.label}
+                  </p>
+                  <p className="mt-2 text-[0.94rem] font-bold leading-6 text-ink/62">
+                    {item.body}
+                  </p>
+                </article>
+              ))}
+            </div>
+
+            <p className="max-w-4xl border-t border-ink/16 pt-4 text-[0.94rem] font-bold leading-6 text-ink/58">
+              The skill generalizes the method, not the finished identity. The
+              MIT license covers the skill package itself; Words Over Time's
+              research writing, curated datasets, page compositions, visual
+              identity, authorship marks, and third-party source material remain
+              outside that grant.
+            </p>
+          </div>
+        </section>
+
+        <section
+          id="open-source"
+          className="scroll-mt-20 grid gap-8 border-t-2 border-ink pt-10 lg:grid-cols-[16rem_1fr] lg:gap-16"
+        >
+          <AboutSectionHeader
+            num="08"
             kicker="public repository"
             title="Code & data"
             desc="The data pipeline and visualization components are public for inspection, reproducibility, and citation review."
@@ -941,7 +1026,7 @@ export default function AboutPage() {
         <footer id="licensing" className="scroll-mt-20 border-t-2 border-ink py-8">
           <div className="grid gap-8 lg:grid-cols-[16rem_1fr] lg:gap-16">
             <AboutSectionHeader
-              num="08"
+              num="09"
               kicker="rights & attribution"
               title="Licensing"
             />
