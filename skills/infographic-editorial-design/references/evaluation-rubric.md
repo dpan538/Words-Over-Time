@@ -56,6 +56,40 @@ Common fixes:
 - Add panel progress.
 - Convert long explanatory blocks into section intros and note bands.
 
+### Grid System
+
+Check:
+
+- Is the grid type appropriate to the evidence task: manuscript, column, modular, baseline, timeline, map/spatial, constellation/network, or evidence-lane?
+- Does the grid make comparison, sequence, boundary, and absence legible?
+- Can the reader tell why elements sit where they sit?
+- Does the grid preserve the same argument on mobile and desktop?
+- Are source labels and caveats attached to the correct grid module?
+
+Common fixes:
+
+- Replace decorative symmetry with a grid tied to evidence categories.
+- Add evidence lanes for signal, attestation, variant, context, boundary, and rights.
+- Split overloaded modules into small multiples.
+- Use horizontal scroll for dense comparisons instead of shrinking labels.
+
+### Style Positioning
+
+Check:
+
+- Is the style source named by region/school, historical period, medium, and drawing bias?
+- Does the style clarify the evidence rather than merely decorate it?
+- Does the visual language avoid copying a protected or project-specific identity?
+- Are historical references used as method rather than costume?
+- Is the drawing bias appropriate: diagrammatic, cartographic, typographic, technical, pictorial, archival, expressive, or minimal?
+
+Common fixes:
+
+- Write a style positioning brief before changing visuals.
+- Replace vague style language with a country/school/period/medium reference.
+- Change color, type, line, and drawing choices to match the evidence task.
+- Remove historical styling that makes the project feel nostalgic but less readable.
+
 ### Visual System
 
 Check:

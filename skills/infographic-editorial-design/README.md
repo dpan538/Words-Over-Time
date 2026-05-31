@@ -59,7 +59,9 @@ The skill is designed to produce:
 - A bounded concept statement
 - An evidence contract and source hierarchy
 - An editorial page sequence
-- Grid, typography, palette, and interaction rules
+- Grid system and rationale
+- Style positioning by region/school, historical period, medium, and drawing bias
+- Typography, palette, and interaction rules
 - Legibility standards for body text, labels, captions, source notes, and responsive states
 - Data mark and annotation guidance
 - Claim boundaries and caveats
@@ -70,8 +72,10 @@ For implementation tasks, it can also guide code changes in an existing web app 
 ## References
 
 - `references/design-principles.md` - designer references, evidence model, visual programme, and rights boundaries.
+- `references/grid-system.md` - grid selection, evidence-lane structure, responsive grid rules, and grid QA.
 - `references/legibility-standards.md` - minimum type sizes, line-height rules, label-density strategy, and mobile/print readability checks.
 - `references/pattern-library.md` - reusable page and module patterns.
+- `references/style-positioning.md` - country/school, historical period, medium, and drawing-style direction.
 - `references/prompt-recipes.md` - prompts for common use cases.
 - `references/evaluation-rubric.md` - publication and critique checklist.
 - `references/publication-boundaries.md` - attribution, adaptation, and licensing guidance.

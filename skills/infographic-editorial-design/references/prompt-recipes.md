@@ -15,6 +15,8 @@ Expected output:
 - Concept statement.
 - Evidence contract.
 - Section-by-section page spine.
+- Grid system and rationale.
+- Style positioning brief.
 - Visual rules for grid, typography, color, data marks, and interaction.
 - Claim boundaries and rights notes.
 
@@ -91,5 +93,25 @@ Expected output:
 
 - Which principles transfer.
 - Which project-specific elements should not be copied.
+- Region/school, historical period, medium, and drawing bias.
 - New visual programme.
 - Attribution language.
+
+## Locate A Historical Or Regional Style
+
+Prompt:
+
+```text
+Use $infographic-editorial-design to locate a suitable information-design style for this subject. Give me the region or school, historical period, medium, drawing bias, grid implication, typography implication, color implication, and what to avoid.
+```
+
+Expected output:
+
+- Style source.
+- Why it fits the content.
+- Grid implication.
+- Typography implication.
+- Color implication.
+- Drawing bias.
+- Risks and anti-patterns.
+- Prompt-ready visual direction.

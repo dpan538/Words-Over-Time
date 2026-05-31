@@ -19,7 +19,9 @@ When a user asks for an infographic/editorial design, first produce or infer the
 2. Claim: what the artifact is allowed to say.
 3. Evidence: source families, data transforms, interpretation layers, and rights limits.
 4. Sequence: the reader's path from subject to proof to synthesis.
-5. Form: web page, static poster, presentation, report section, dashboard, or design critique.
+5. Grid: the structural system that makes comparison, sequence, and absence legible.
+6. Style provenance: region/school, historical period, medium, and drawing bias.
+7. Form: web page, static poster, presentation, report section, dashboard, or design critique.
 
 If the user asks for code or a design implementation, apply the workflow directly in the target files. If the user asks for strategy, return a compact design spec.
 
@@ -40,18 +42,28 @@ If the user asks for code or a design implementation, apply the workflow directl
    - Follow with panel progress, entry note, major chart sections, synthesis, source ledger, methods, and boundaries where appropriate.
    - Use section rhythm to make the reader move from assertion to inspection, not from spectacle to footnote.
 
-4. Design the visual programme.
+4. Choose the grid system.
+   - Select manuscript, column, modular, baseline, timeline, map/spatial, constellation/network, or evidence-lane grids according to the evidence task.
+   - Explain what the grid makes comparable, sequential, separate, or visibly absent.
+   - Preserve the grid argument across responsive states.
+
+5. Position the style.
+   - Identify the relevant region/school, historical period, medium, and drawing bias before rendering.
+   - Use references as method, not costume. Borrow structural logic, not a finished identity.
+   - Match style to evidence fit: diagrammatic, cartographic, typographic, technical, pictorial, archival, expressive, or minimal.
+
+6. Design the visual programme.
    - Treat color, type, spacing, grid, and motion as rules.
    - Use color tokens consistently for source families, emphasis, confidence, warnings, and domain branches.
    - Use neutral sans typography when the visual system should carry research rather than personality.
    - Set readable type sizes before adding visual density; source labels and caveats must remain legible.
 
-5. Make interpretation auditable.
+7. Make interpretation auditable.
    - Label transforms as index, relative signal, visual intensity, rank, or curated grouping.
    - Never let a frequency chart imply cultural importance, universal usage, causation, or legal/clinical meaning unless the sources actually support that claim.
    - Put caveats close to the visual element they qualify.
 
-6. Verify the page as an editorial object.
+8. Verify the page as an editorial object.
    - Check hierarchy, source traceability, responsive behavior, text size, text fit, and visual contrast.
    - Confirm that data-dense modules remain readable at rest and become more inspectable through hover, focus, tabs, toggles, or drilldown.
    - Confirm that empty states, sparse data, restricted sources, and pending checks remain visible.
@@ -68,6 +80,8 @@ If the user asks for code or a design implementation, apply the workflow directl
 
 - Treat legibility as a hard constraint. Body text, captions, chart labels, source labels, and caveats must meet readable size thresholds before the design is considered complete.
 - Use a modular grid as an argument. Columns should correspond to evidence categories, comparison groups, or reading lanes.
+- State the grid rationale. A reader should be able to understand why elements sit where they sit.
+- State the style provenance. The design should know whether it is drawing from Swiss systems, Dutch public information, Japanese dense editorial design, British explanatory graphics, American science communication, or another relevant tradition.
 - Keep cards for repeated records, modals, and framed tools. Do not put cards inside cards or style every section as a floating card.
 - Use dense but calm editorial hierarchy: large subject title, compact metadata table, monospace eyebrows, strong section titles, and readable body notes.
 - Use borders, rules, tables, and small color chips as information-bearing structure.
@@ -80,8 +94,10 @@ If the user asks for code or a design implementation, apply the workflow directl
 Load only the reference needed for the current task:
 
 - `references/design-principles.md` for design lineage, evidence model, color/type logic, and claim boundaries.
+- `references/grid-system.md` for grid selection, evidence-lane structure, responsive grid rules, and grid QA.
 - `references/legibility-standards.md` for minimum type sizes, line heights, dense-chart label rules, and mobile/print readability checks.
 - `references/pattern-library.md` for reusable page patterns, evidence modules, data-led editorial structures, interaction rules, and responsive checks.
+- `references/style-positioning.md` for country/school, historical period, medium, and drawing-style bias.
 - `references/prompt-recipes.md` for external-user prompt examples.
 - `references/evaluation-rubric.md` for reviewing a design before shipping.
 - `references/publication-boundaries.md` for attribution, adaptation, and open release boundaries.
@@ -93,7 +109,9 @@ For design planning tasks, return:
 - A concise concept statement.
 - The evidence contract and source hierarchy.
 - The editorial sequence.
-- The visual system: grid, type, palette, interaction, and data marks.
+- The grid system and rationale.
+- The style positioning brief: region/school, period, medium, drawing bias, and what to avoid.
+- The visual system: type, palette, interaction, and data marks.
 - Legibility standards for body text, labels, captions, source notes, and responsive states.
 - Claim boundaries and caveats.
 - A verification checklist.
