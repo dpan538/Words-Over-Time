@@ -73,6 +73,7 @@ Typography:
 - Use a neutral sans for the primary voice when the visual system should carry research rather than personality.
 - Use monospace for metadata, numeric tags, source labels, claim states, and compact uppercase UI.
 - Use large scale only for true subject identity or major editorial turns.
+- Establish minimum readable sizes for body text, captions, metadata, source labels, chart labels, and caveats before setting the rest of the visual density.
 - Keep letter spacing at 0 for normal headings; use modest positive tracking only for small uppercase metadata.
 
 Layout:

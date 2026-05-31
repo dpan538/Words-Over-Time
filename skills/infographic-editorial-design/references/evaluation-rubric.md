@@ -4,8 +4,8 @@ Use this reference to critique or verify an infographic, editorial data story, r
 
 ## Severity Levels
 
-- Critical: the design makes an unsupported claim, mislabels evidence, hides a major caveat, or breaks the primary reading path.
-- High: the design weakens source traceability, confuses data and interpretation, fails responsive reading, or loses key hierarchy.
+- Critical: the design makes an unsupported claim, mislabels evidence, hides a major caveat, makes essential evidence text unreadable, or breaks the primary reading path.
+- High: the design weakens source traceability, confuses data and interpretation, fails responsive reading, uses undersized labels for important evidence, or loses key hierarchy.
 - Medium: the design is readable but has avoidable ambiguity, weak rhythm, overloaded labels, inconsistent color semantics, or insufficient method notes.
 - Low: polish issues that do not materially affect meaning.
 
@@ -71,6 +71,25 @@ Common fixes:
 - Replace cards with rule-separated sections where the content is editorial.
 - Use borders, chips, tables, and lanes as information structure.
 
+### Legibility
+
+Check:
+
+- Does body text meet the digital minimum of 16px, with 18px preferred for long reading?
+- Are dense explanatory notes at least 14px?
+- Are metadata, captions, source labels, and table cells at least 13px?
+- Are chart labels and legends at least 12px, with 13-14px preferred?
+- Are axis ticks at least 11px only when sparse, and preferably 12-13px?
+- Are uppercase labels short, tracked modestly, and readable on mobile?
+- Do source notes and caveats use enough size and contrast to be read without zooming?
+
+Common fixes:
+
+- Increase type size before reducing evidence content.
+- Move dense labels into inspectors, legends, small multiples, or scrollable regions.
+- Replace long visible labels with short labels plus an explicit key.
+- Increase chart dimensions rather than shrinking essential text.
+
 ### Accessibility And Responsiveness
 
 Check:
@@ -80,12 +99,14 @@ Check:
 - Are hover states also focus-accessible?
 - Does contrast remain sufficient for small labels and metadata?
 - Does the artifact still read without animation?
+- Does browser zoom at 125% preserve source labels, caveats, and chart annotations?
 
 Common fixes:
 
 - Use stable dimensions and responsive grid tracks.
 - Stack metadata rows on mobile.
 - Reduce secondary labels before compressing evidence structure.
+- Use `legibility-standards.md` to decide whether to resize, hide, group, or inspect dense labels.
 
 ## Publication Readiness
 
@@ -96,3 +117,4 @@ Before publication, confirm:
 - Citation language distinguishes the artifact from upstream sources.
 - The design does not copy a protected project identity unless permission exists.
 - The final artifact has been checked at mobile and desktop sizes.
+- The final artifact has passed legibility checks for body text, chart labels, metadata, captions, caveats, and source notes.

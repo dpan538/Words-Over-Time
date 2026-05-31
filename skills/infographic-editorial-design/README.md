@@ -60,6 +60,7 @@ The skill is designed to produce:
 - An evidence contract and source hierarchy
 - An editorial page sequence
 - Grid, typography, palette, and interaction rules
+- Legibility standards for body text, labels, captions, source notes, and responsive states
 - Data mark and annotation guidance
 - Claim boundaries and caveats
 - A publication review checklist
@@ -69,6 +70,7 @@ For implementation tasks, it can also guide code changes in an existing web app 
 ## References
 
 - `references/design-principles.md` - designer references, evidence model, visual programme, and rights boundaries.
+- `references/legibility-standards.md` - minimum type sizes, line-height rules, label-density strategy, and mobile/print readability checks.
 - `references/pattern-library.md` - reusable page and module patterns.
 - `references/prompt-recipes.md` - prompts for common use cases.
 - `references/evaluation-rubric.md` - publication and critique checklist.

@@ -44,6 +44,7 @@ If the user asks for code or a design implementation, apply the workflow directl
    - Treat color, type, spacing, grid, and motion as rules.
    - Use color tokens consistently for source families, emphasis, confidence, warnings, and domain branches.
    - Use neutral sans typography when the visual system should carry research rather than personality.
+   - Set readable type sizes before adding visual density; source labels and caveats must remain legible.
 
 5. Make interpretation auditable.
    - Label transforms as index, relative signal, visual intensity, rank, or curated grouping.
@@ -51,7 +52,7 @@ If the user asks for code or a design implementation, apply the workflow directl
    - Put caveats close to the visual element they qualify.
 
 6. Verify the page as an editorial object.
-   - Check hierarchy, source traceability, responsive behavior, text fit, and visual contrast.
+   - Check hierarchy, source traceability, responsive behavior, text size, text fit, and visual contrast.
    - Confirm that data-dense modules remain readable at rest and become more inspectable through hover, focus, tabs, toggles, or drilldown.
    - Confirm that empty states, sparse data, restricted sources, and pending checks remain visible.
 
@@ -65,6 +66,7 @@ If the user asks for code or a design implementation, apply the workflow directl
 
 ## Design Rules
 
+- Treat legibility as a hard constraint. Body text, captions, chart labels, source labels, and caveats must meet readable size thresholds before the design is considered complete.
 - Use a modular grid as an argument. Columns should correspond to evidence categories, comparison groups, or reading lanes.
 - Keep cards for repeated records, modals, and framed tools. Do not put cards inside cards or style every section as a floating card.
 - Use dense but calm editorial hierarchy: large subject title, compact metadata table, monospace eyebrows, strong section titles, and readable body notes.
@@ -78,6 +80,7 @@ If the user asks for code or a design implementation, apply the workflow directl
 Load only the reference needed for the current task:
 
 - `references/design-principles.md` for design lineage, evidence model, color/type logic, and claim boundaries.
+- `references/legibility-standards.md` for minimum type sizes, line heights, dense-chart label rules, and mobile/print readability checks.
 - `references/pattern-library.md` for reusable page patterns, evidence modules, data-led editorial structures, interaction rules, and responsive checks.
 - `references/prompt-recipes.md` for external-user prompt examples.
 - `references/evaluation-rubric.md` for reviewing a design before shipping.
@@ -91,6 +94,7 @@ For design planning tasks, return:
 - The evidence contract and source hierarchy.
 - The editorial sequence.
 - The visual system: grid, type, palette, interaction, and data marks.
+- Legibility standards for body text, labels, captions, source notes, and responsive states.
 - Claim boundaries and caveats.
 - A verification checklist.
 
@@ -110,5 +114,6 @@ For implementation tasks, edit the local files directly and preserve the host ap
 - Do not turn every research page into a marketing landing page.
 - Do not use decorative gradients, abstract blobs, stock-like imagery, or oversized hero composition when the subject is evidence inspection.
 - Do not let a chart's beauty exceed its proof.
+- Do not shrink evidence text, source notes, caveats, or chart labels below readable thresholds to make a layout fit.
 - Do not clone a project-specific visual identity when the task calls for a transferable method.
 - Do not strip attribution when a design lineage, method, or provided example materially informs the output.

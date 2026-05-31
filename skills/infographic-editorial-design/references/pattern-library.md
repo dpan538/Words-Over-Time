@@ -134,11 +134,13 @@ This pattern prevents interactive charts from becoming uninspectable spectacle.
 
 ## Responsive Rules
 
+- Preserve readable type sizes before preserving density.
 - Give charts stable dimensions with `aspect-ratio`, min/max widths, or fixed grid tracks.
 - Let dense charts scroll horizontally only when preserving structure is more important than compression.
 - Keep metadata tables readable on mobile by stacking label/value rows.
 - Reduce labels before reducing evidence structure.
 - Check that long words, uppercase labels, and numeric strings do not overflow.
+- Use `legibility-standards.md` when deciding whether labels should remain visible, move into an inspector, or be split into small multiples.
 
 ## Visual QA Checklist
 
@@ -151,6 +153,7 @@ Before finishing:
 - Caveats sit near the claim they qualify.
 - Palette has more than one functional family.
 - Text fits mobile and desktop containers.
+- Body text, captions, source notes, chart labels, and metadata meet the minimum readable sizes from `legibility-standards.md`.
 - Tables can scroll or reflow without losing labels.
 - Interactive states are keyboard and hover accessible.
 - The design still makes sense with motion disabled.
