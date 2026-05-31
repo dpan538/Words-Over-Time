@@ -1,6 +1,6 @@
 # Evaluation Rubric
 
-Use this reference to critique or verify an infographic, editorial data story, research poster, or Words Over Time-inspired page.
+Use this reference to critique or verify an infographic, editorial data story, research poster, or research-led editorial page.
 
 ## Severity Levels
 

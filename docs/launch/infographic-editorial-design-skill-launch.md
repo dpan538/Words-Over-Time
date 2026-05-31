@@ -2,19 +2,19 @@
 
 ## Short Announcement
 
-I open-sourced the infographic and editorial design method behind *Words Over Time* as a Codex skill:
+I published `infographic-editorial-design-skill`, an open Codex skill for research-led infographic and editorial design:
 
 https://github.com/dpan538/infographic-editorial-design-skill
 
 It is built for source-led visual work: research posters, data stories, evidence maps, source ledgers, visual essays, and methods pages. The skill helps an agent define the claim, expose the evidence contract, design the reading path, and review whether the artifact overclaims or hides uncertainty.
 
-The skill package is MIT licensed. The original *Words Over Time* visual identity, research writing, curated datasets, page compositions, authorship marks, and third-party source material remain outside that license.
+The skill package is MIT licensed. It shares a transferable design method, not a project-specific visual identity, dataset, page composition, or brand system.
 
 ## Longer Launch Post
 
 I have published `infographic-editorial-design-skill`, an open Codex skill for research-led infographic and editorial design.
 
-The skill comes out of *Words Over Time*, my semantic-change and word-frequency design research project. While building the project, I kept running into the same design problem: visual systems can become persuasive faster than they become accountable. A chart can look resolved while its sources, transformations, caveats, and rights limits are still unclear.
+The motivation is simple: AI tools can produce polished charts and layouts very quickly, but polish can arrive before accountability. A chart can look resolved while its sources, transformations, caveats, rights limits, and interpretive decisions are still unclear.
 
 This skill tries to make the opposite habit reusable.
 
@@ -32,20 +32,16 @@ The skill includes:
 - A pattern library for editorial data pages, poster sections, source ledgers, evidence rulers, and inspectors
 - Prompt recipes for design, critique, and implementation tasks
 - A publication review rubric for overclaiming, hierarchy, accessibility, and attribution
-- A boundary note explaining how to adapt the *Words Over Time* method without cloning its visual identity
+- A boundary note explaining how to adapt a design method without cloning a project identity
 
 Repository:
 
 https://github.com/dpan538/infographic-editorial-design-skill
 
-Originating project:
-
-https://wordsovertime.com
-
 Recommended attribution:
 
 ```text
-Infographic/editorial design method adapted from the Words Over Time design research system by Dai Pan / 潘岱.
+Built with the Infographic Editorial Design Skill by Dai Pan / 潘岱.
 ```
 
 ## GitHub Repo Topics
@@ -63,7 +59,6 @@ design-research
 information-design
 visual-essay
 digital-humanities
-words-over-time
 ```
 
 ## Outreach Targets
@@ -86,7 +81,6 @@ This skill provides a reusable workflow for research-led infographic and editori
 ## First Iteration Checklist
 
 - Skill repo has README, MIT license, examples, and references.
-- Words Over Time about page links to the open skill.
 - GitHub topics are set.
 - One launch post is published.
 - One issue is opened for future examples/screenshots.

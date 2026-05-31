@@ -1,6 +1,6 @@
 # Pattern Library
 
-Use this reference when planning or implementing a source-led infographic, editorial data story, or Words Over Time-style page.
+Use this reference when planning or implementing a source-led infographic, editorial data story, or research-led editorial page.
 
 ## Page Spine
 

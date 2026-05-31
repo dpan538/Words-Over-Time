@@ -1,33 +1,34 @@
-# Words Over Time Principles
+# Design Principles
 
-Use this reference when adapting the design experience of Words Over Time into a research-led infographic or editorial design task.
+Use this reference when adapting research-led infographic and editorial design experience into a new project without copying any specific project's finished visual identity.
 
-## Project DNA
+## Project-Agnostic DNA
 
-Words Over Time is a semantic-change, word-frequency, and search-statistics research project presented as design research and infographic art. Its design position is:
+This skill treats information design as an evidence practice:
 
-- Language is treated as visual material: evidence, attention, memory, public pressure, and interpretation.
-- A chart is not a neutral decoration. It is an argument about what the source can support.
+- Research material becomes visual only after its claim boundary is clear.
+- A chart is not neutral decoration. It is an argument about what the source can support.
 - The reader should be able to inspect the route from source to transform to visual mark to claim.
 - Missing evidence, sparse data, restricted rights, OCR noise, and corpus boundaries remain visible.
+- Visual style is not a costume. It is a system of decisions that helps the reader audit meaning.
 
 ## Designer References
 
 Use these references as operating principles, not as surface styling:
 
-- Josef Muller-Brockmann: modular grid as a disciplined structure for comparison. In this project, the grid makes evidence categories commensurate and keeps absence visible.
+- Josef Muller-Brockmann: modular grid as a disciplined structure for comparison. Use the grid to make evidence categories commensurate and keep absence visible.
 - Karl Gerstner: design as programme. Color and layout tokens behave as rules, not moods.
-- Emil Ruder: typography serves communication. Helvetica Neue works as an information-neutral carrier rather than a decorative voice.
+- Emil Ruder: typography serves communication. Neutral typography can carry information without performing personality.
 - HfG Ulm: design as epistemological practice. Structure makes claims, and those claims should be auditable.
 
-The relevant lineage is Swiss International Typographic Style, Basel School discipline, and Ulm-style systematic design. Do not imitate the historical style as nostalgia; apply the principle that design structure is accountable.
+The relevant lineage is systematic information design, Swiss typographic discipline, and design research. Do not imitate historical style as nostalgia; apply the principle that design structure is accountable.
 
 ## Evidence Model
 
 The core evidence grid can use six lanes:
 
 1. Signal: corpus frequency, archive count, search attention, or source-specific trace.
-2. Attestation: dictionary record, cited first use, scanned page, or verified lexical source.
+2. Attestation: dictionary record, cited first use, scanned page, or verified source.
 3. Variant: spelling, form, compound, phrase family, singular/plural, or domain grouping.
 4. Context: snippet, source metadata, legal/clinical/policy domain, geography, or historical setting.
 5. Boundary: confidence, caveat, transform label, absence, pending check, or claim limit.
@@ -39,7 +40,7 @@ A project can rename or reduce these lanes, but it should not collapse source ev
 
 Allowed claim types:
 
-- A selected form is visible in a named corpus or source family.
+- A selected form or pattern is visible in a named corpus or source family.
 - A cited source supports an attestation or contextual anchor.
 - A curated grouping organizes evidence under a disclosed rule.
 - A visual transform supports comparison within its stated source boundary.
@@ -55,23 +56,21 @@ Refused claim types unless separately proven:
 
 ## Visual Programme
 
-Base palette from Words Over Time:
+Use a functional palette rather than a mood palette:
 
-- `ink` `#050510`: primary text, rules, claim structure.
-- `wheat` `#F7F0DC`: paper ground.
-- `blaze` `#F06B04`: emphasis, interaction, historical heat.
-- `sun` `#FBB728`: highlighted evidence or caution.
-- `nice` `#1570AC`: data/source layer, corpus signal.
-- `wine` `#A1081F`: pressure, risk, negative branch, contested force.
-- `fire` `#AE4202`: editorial section markers.
-- `sail` `#036C17`: confidence, allowed claim, resolved support.
-- `ulm` `#7E8082`: secondary neutral.
+- Primary ink: text, rules, claim structure.
+- Paper ground: calm reading surface.
+- Emphasis color: interaction, heat, or major turn.
+- Source color: data/source layer, corpus signal, or archival trace.
+- Warning color: risk, pressure, contested branch, or caveat.
+- Confidence color: resolved support or allowed claim.
+- Secondary neutral: labels, inactive states, scaffolding.
 
-Use project-specific palettes as branches, not as a one-note wash. A word page may have a dominant accent, but evidence families should still remain distinguishable.
+Project-specific palettes can branch from these roles, but evidence families should remain distinguishable.
 
 Typography:
 
-- Use Helvetica Neue, Helvetica, Arial, or a close neutral sans for the primary voice.
+- Use a neutral sans for the primary voice when the visual system should carry research rather than personality.
 - Use monospace for metadata, numeric tags, source labels, claim states, and compact uppercase UI.
 - Use large scale only for true subject identity or major editorial turns.
 - Keep letter spacing at 0 for normal headings; use modest positive tracking only for small uppercase metadata.
@@ -86,9 +85,9 @@ Layout:
 
 ## Rights and Attribution
 
-Words Over Time separates code, research writing, visual design, curated datasets, semantic groupings, and third-party source material. When using this design approach:
+When using this design approach:
 
-- Cite the artifact and upstream sources separately.
+- Cite the artifact and the upstream sources separately.
 - Do not reproduce full third-party articles, full books, full dictionary entries, subscription material, or restricted corpus exports.
 - Keep source URLs, licenses, and rights notes visible where they affect reuse.
-- Treat Dai Pan / 潘岱 and Words Over Time visual composition and curated classification as a studied reference, not generic reusable clip art.
+- Treat any supplied project examples as references for method, not generic reusable visual identity.

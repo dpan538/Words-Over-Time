@@ -79,12 +79,12 @@ Expected output:
 - Fixes that preserve the user's visual direction where possible.
 - Residual risks.
 
-## Adapt The Words Over Time Method
+## Adapt An Editorial Design Method
 
 Prompt:
 
 ```text
-Use $infographic-editorial-design to adapt the Words Over Time design method for a different subject without copying its visual identity. Keep the evidence discipline and editorial structure, but propose a new palette and module language.
+Use $infographic-editorial-design to adapt a rigorous editorial design method for a different subject without copying any existing project's visual identity. Keep the evidence discipline and editorial structure, but propose a new palette and module language.
 ```
 
 Expected output:

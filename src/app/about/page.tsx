@@ -850,8 +850,8 @@ export default function AboutPage() {
           <div className="flex flex-col gap-6">
             <div className="border-l-4 border-fire py-1 pl-5">
               <p className="max-w-4xl text-[clamp(1.08rem,1.7vw,1.5rem)] font-black leading-[1.15]">
-                Words Over Time is the complete case study. The skill is the
-                portable method: define the claim, expose the evidence contract,
+                The skill is a portable method refined from this design
+                experience: define the claim, expose the evidence contract,
                 design the reading path, and keep uncertainty visible.
               </p>
             </div>
@@ -913,7 +913,7 @@ export default function AboutPage() {
 
             <p className="max-w-4xl border-t border-ink/16 pt-4 text-[0.94rem] font-bold leading-6 text-ink/58">
               The skill generalizes the method, not the finished identity. The
-              MIT license covers the skill package itself; Words Over Time's
+              MIT license covers the skill package itself; this archive's
               research writing, curated datasets, page compositions, visual
               identity, authorship marks, and third-party source material remain
               outside that grant.

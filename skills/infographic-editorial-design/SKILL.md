@@ -1,6 +1,6 @@
 ---
 name: infographic-editorial-design
-description: Research-led infographic and editorial design system for turning evidence, datasets, archival material, semantic maps, timelines, and source-led arguments into auditable visual pages, posters, dashboards, essays, and web interfaces. Use when Codex needs to design, critique, or implement an infographic, editorial data story, visual essay, source ledger, evidence map, word-history page, research poster, methods page, or Words Over Time-inspired interface with strong hierarchy, grid discipline, claim boundaries, responsible attribution, and designer-informed visual rules.
+description: Research-led infographic and editorial design system for turning evidence, datasets, archival material, semantic maps, timelines, and source-led arguments into auditable visual pages, posters, dashboards, essays, and web interfaces. Use when Codex needs to design, critique, or implement an infographic, editorial data story, visual essay, source ledger, evidence map, word-history page, research poster, methods page, or information design interface with strong hierarchy, grid discipline, claim boundaries, responsible attribution, and designer-informed visual rules.
 ---
 
 # Infographic Editorial Design
@@ -9,7 +9,7 @@ description: Research-led infographic and editorial design system for turning ev
 
 Use this skill to convert research material into an editorial information system: a page, poster, deck, dashboard, or web artifact where the design structure makes the evidence, uncertainty, rights, and interpretive decisions legible.
 
-The reference model is Words Over Time by Dai Pan / 潘岱: Swiss-influenced grid discipline, research-led visual hierarchy, restrained typography, explicit source boundaries, and infographic art that treats layout as an argument rather than decoration. The skill generalizes the method; it does not license or reproduce the full Words Over Time visual identity.
+The reference model is not a single project style. It is a reusable information-design practice: grid discipline, research-led visual hierarchy, restrained typography, explicit source boundaries, and infographic work that treats layout as an argument rather than decoration.
 
 ## Quick Start
 
@@ -43,7 +43,7 @@ If the user asks for code or a design implementation, apply the workflow directl
 4. Design the visual programme.
    - Treat color, type, spacing, grid, and motion as rules.
    - Use color tokens consistently for source families, emphasis, confidence, warnings, and domain branches.
-   - Use Helvetica-like neutral sans typography when the visual system should carry research rather than personality.
+   - Use neutral sans typography when the visual system should carry research rather than personality.
 
 5. Make interpretation auditable.
    - Label transforms as index, relative signal, visual intensity, rank, or curated grouping.
@@ -61,7 +61,7 @@ If the user asks for code or a design implementation, apply the workflow directl
 - Redesign: preserve the user's content, then repair hierarchy, evidence traceability, contrast, rhythm, and claim boundaries.
 - Critique: lead with problems that affect meaning, proof, accessibility, or comprehension; then suggest concrete changes.
 - Implementation: prefer existing local components and tokens. Add new abstractions only when the pattern repeats or removes real complexity.
-- Publication packaging: keep this skill generic enough for other projects, and keep project-specific visual identity in references or examples.
+- Publication packaging: keep the skill generic enough for other projects, and keep project-specific visual identity in external references or examples.
 
 ## Design Rules
 
@@ -73,17 +73,15 @@ If the user asks for code or a design implementation, apply the workflow directl
 - Prefer diagrams that expose data transformation over decorative illustrations.
 - Use visual silence deliberately: an empty column, faded lane, dashed rule, or low-opacity record should mean incomplete, unsupported, pending, or secondary.
 
-## Words Over Time Pattern
+## Reference Files
 
-When adapting the Words Over Time approach or publishing this skill, read:
+Load only the reference needed for the current task:
 
-- `references/words-over-time-principles.md` for the project DNA, designer references, color/type logic, and claim boundaries.
+- `references/design-principles.md` for design lineage, evidence model, color/type logic, and claim boundaries.
 - `references/pattern-library.md` for reusable page patterns, evidence modules, data-led editorial structures, interaction rules, and responsive checks.
 - `references/prompt-recipes.md` for external-user prompt examples.
 - `references/evaluation-rubric.md` for reviewing a design before shipping.
 - `references/publication-boundaries.md` for attribution, adaptation, and open release boundaries.
-
-Load only the reference needed for the current task.
 
 ## Output Expectations
 
@@ -103,7 +101,7 @@ For critique tasks, return:
 - Specific fixes for layout, data mapping, copy, interaction, or source labeling.
 - Remaining risks after the fixes.
 
-For implementation tasks, edit the local files directly and preserve the host application's existing component style. In a Words Over Time codebase, prefer the local `PosterSection`, `PanelProgress`, `GridRuler`, source-led datasets, Tailwind color tokens, and section rhythm before inventing new abstractions.
+For implementation tasks, edit the local files directly and preserve the host application's existing component style. Prefer local components, design tokens, datasets, and section rhythm before inventing new abstractions.
 
 ## Anti-Patterns
 
@@ -112,5 +110,5 @@ For implementation tasks, edit the local files directly and preserve the host ap
 - Do not turn every research page into a marketing landing page.
 - Do not use decorative gradients, abstract blobs, stock-like imagery, or oversized hero composition when the subject is evidence inspection.
 - Do not let a chart's beauty exceed its proof.
-- Do not reproduce the original Words Over Time visual identity wholesale for unrelated use; treat it as a reference system and adapt the underlying methods.
-- Do not strip attribution when the design lineage, method, or examples come from Words Over Time.
+- Do not clone a project-specific visual identity when the task calls for a transferable method.
+- Do not strip attribution when a design lineage, method, or provided example materially informs the output.
