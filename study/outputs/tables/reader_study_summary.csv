@@ -1,0 +1,7 @@
+condition,participant_group,n_participants,n_task_rows,overall_accuracy,evidence_identification_score,claim_boundary_comprehension_score,frequency_misinterpretation_rate,source_transparency_rating_mean,confidence_rating_mean,credibility_rating_mean,difficulty_rating_mean
+baseline,design,1,2,0.50,1.00,,1.00,3.00,5.00,4.00,3.00
+baseline,dh,1,2,0.50,0.00,1.00,,4.00,4.00,5.00,4.00
+baseline,general,1,2,0.00,0.00,0.00,,2.00,4.00,4.00,3.00
+evidence_grid,design,1,2,1.00,1.00,,0.00,6.00,5.00,6.00,4.00
+evidence_grid,dh,1,2,1.00,1.00,1.00,,6.00,6.00,6.00,5.00
+evidence_grid,general,1,2,1.00,1.00,1.00,,5.00,5.00,5.00,5.00

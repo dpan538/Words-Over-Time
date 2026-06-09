@@ -1,0 +1,6 @@
+table_id,working_title,intended_location,source_material,status,notes
+table_1,Participant group summary,methods,study/data_templates/participant_demographics_template.csv,draft,Use aggregate non-identifying counts only.
+table_2,Task and construct map,methods,study/data_templates/task_answer_key.csv,draft,Maps tasks to constructs and scoring rules.
+table_3,Reader-study summary metrics,findings,study/outputs/tables/reader_study_summary.csv,pending_data,Aggregate by condition and group.
+table_4,Task-level accuracy,findings,study/outputs/tables/task_level_accuracy.csv,pending_data,Report by task and condition.
+table_5,Qualitative theme counts,findings,study/outputs/tables/qualitative_theme_counts.csv,pending_data,Aggregate only; no identifying quotes.

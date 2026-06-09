@@ -1,0 +1,13 @@
+word,condition,task_id,measured_construct,n,accuracy
+artificial,baseline,t03,claim_boundary_comprehension,1,1
+artificial,baseline,t06,evidence_type_identification,1,0
+artificial,evidence_grid,t03,claim_boundary_comprehension,1,1
+artificial,evidence_grid,t06,evidence_type_identification,1,1
+data,baseline,t01,evidence_type_identification,1,1
+data,baseline,t02,frequency_misinterpretation,1,0
+data,evidence_grid,t01,evidence_type_identification,1,1
+data,evidence_grid,t02,frequency_misinterpretation,1,1
+forever,baseline,t07,claim_boundary_comprehension,1,0
+forever,baseline,t08,evidence_type_identification,1,0
+forever,evidence_grid,t07,claim_boundary_comprehension,1,1
+forever,evidence_grid,t08,evidence_type_identification,1,1

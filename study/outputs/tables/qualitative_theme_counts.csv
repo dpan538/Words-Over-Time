@@ -1,0 +1,8 @@
+condition,qualitative_code,count
+baseline,cognitive_load,1
+baseline,evidence_type_confusion,4
+baseline,source_trust,1
+evidence_grid,grid_clarity,2
+evidence_grid,rights_boundary_awareness,2
+evidence_grid,source_trust,1
+evidence_grid,visible_uncertainty,2

@@ -1,0 +1,13 @@
+participant_id,participant_group,word,condition,task_id,response_text,selected_answer,is_correct,evidence_type,likert_source_transparency,likert_confidence,likert_credibility,likert_difficulty,qualitative_codes
+p001,design,data,baseline,t01,"The chart seems to be the evidence.",frequency_line,1,signal,3,5,4,3,evidence_type_confusion
+p001,design,data,baseline,t02,"It probably became more important because the line rises.",yes_frequency_equals_importance,0,signal,3,5,4,3,evidence_type_confusion
+p001,design,data,evidence_grid,t01,"The attestation column supports earliest known use.",attestation_column,1,attestation,6,5,6,4,grid_clarity
+p001,design,data,evidence_grid,t02,"No, frequency is only corpus visibility.",no_frequency_is_source_signal,1,boundary,6,5,6,4,rights_boundary_awareness
+p002,dh,artificial,baseline,t03,"It cannot prove all historical English usage.",cannot_prove_all_english,1,boundary,4,4,5,4,source_trust
+p002,dh,artificial,baseline,t06,"The group looks like a definition.",semantic_group_is_definition,0,context,4,4,5,4,evidence_type_confusion
+p002,dh,artificial,evidence_grid,t03,"It only shows evidence from named sources.",cannot_prove_all_english,1,boundary,6,6,6,5,visible_uncertainty
+p002,dh,artificial,evidence_grid,t06,"No, it is an interpretive semantic grouping.",semantic_group_is_interpretive,1,variant,6,6,6,5,grid_clarity
+p003,general,forever,baseline,t07,"Missing evidence means maybe it was not there.",missing_means_absent,0,boundary,2,4,4,3,evidence_type_confusion
+p003,general,forever,baseline,t08,"The word changed because it became common online.",single_evidence_explanation,0,signal,2,4,4,3,cognitive_load
+p003,general,forever,evidence_grid,t07,"Missing evidence does not prove the usage did not exist.",missing_does_not_prove_absence,1,boundary,5,5,5,5,visible_uncertainty
+p003,general,forever,evidence_grid,t08,"Frequency shows visibility, while context examples show devotional and platform uses.",multi_evidence_explanation,1,context,5,5,5,5,source_trust;rights_boundary_awareness

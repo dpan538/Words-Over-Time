@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const siteConfig = {
   name: "Words Over Time",
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://wordsovertime.com").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.wordsovertime.com").replace(/\/$/, ""),
   description:
     "A semantic-change, word-frequency, and search-statistics research project by Dai Pan (潘岱), presented as design research and infographic art.",
   author: "Dai Pan / 潘岱",
@@ -10,7 +10,7 @@ export const siteConfig = {
   authorNativeName: "潘岱",
   authorUrl: "https://daipan.art/",
   authorSameAs: ["https://daipan.art/", "https://www.daipan.ink/"],
-  updatedAt: "2026-05-29",
+  updatedAt: "2026-06-09",
 };
 
 export type SiteRoute = {

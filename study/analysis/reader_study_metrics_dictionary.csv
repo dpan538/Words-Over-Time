@@ -1,0 +1,7 @@
+metric_name,level,definition,source_columns,output_table
+evidence_identification_score,condition_group,"Mean proportion correct on tasks measuring evidence type identification.","task_id;selected_answer;is_correct",reader_study_summary.csv
+claim_boundary_comprehension_score,condition_group,"Mean proportion correct on tasks measuring what the material cannot claim.","task_id;selected_answer;is_correct",reader_study_summary.csv
+frequency_misinterpretation_rate,condition_group,"Mean proportion incorrect on frequency-misinterpretation tasks.","task_id;selected_answer;is_correct",reader_study_summary.csv
+source_transparency_rating_summary,condition,"Mean 1-7 source-transparency rating by condition.","likert_source_transparency",reader_study_summary.csv
+confidence_calibration_summary,condition,"Mean confidence and mean correctness by condition.","likert_confidence;is_correct",reader_study_summary.csv
+qualitative_code_counts,condition,"Count of qualitative codes by condition.","qualitative_codes",qualitative_theme_counts.csv

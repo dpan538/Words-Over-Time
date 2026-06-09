@@ -1,0 +1,2 @@
+response_id,participant_id,word,condition,task_id,code,code_description,coder_id,notes
+example_response_001,p001,data,evidence_grid,t02,rights_boundary_awareness,"Participant refers to limitations, rights, or claim boundaries.",coder_a,Example only; replace before formal analysis.

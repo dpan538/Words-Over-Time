@@ -1,0 +1,11 @@
+task_id,word,condition,correct_answer,accepted_variants,measured_construct,scoring_rule
+t01,any,any,attestation_column,"lexical_attestation;earliest_attestation;attestation",evidence_type_identification,"1 if response identifies attestation or lexical evidence rather than only frequency"
+t02,any,any,no_frequency_is_source_signal,"frequency_not_importance;no;source_specific_signal",frequency_misinterpretation,"1 if response rejects frequency as automatic importance or universality"
+t03,any,any,cannot_prove_all_english,"no_first_historical_use;source_limited;corpus_boundary",claim_boundary_comprehension,"1 if response says material cannot prove first use in all English"
+t04,any,any,boundary_column,"claim_boundary;limitations;boundary",claim_boundary_comprehension,"1 if response identifies the boundary or limitation area"
+t05,any,any,named_source_boundary,"corpus_boundary;source_boundary;ngram_boundary;archive_boundary",source_transparency,"1 if response names a source boundary"
+t06,any,any,semantic_group_is_interpretive,"not_dictionary_definition;curated_group;interpretive_grouping",evidence_type_identification,"1 if response distinguishes semantic grouping from automatic definition"
+t07,any,any,missing_does_not_prove_absence,"missing_not_absent;absence_not_nonexistence;no",claim_boundary_comprehension,"1 if response rejects missing evidence as proof of non-existence"
+t08,any,any,multi_evidence_explanation,"uses_two_evidence_types;frequency_and_context;signal_and_attestation",evidence_type_identification,"1 if response uses at least two evidence types"
+t09,any,any,trust_and_uncertainty_named,"names_trusted_and_uncertain;compares_evidence_types",source_transparency,"1 if response names both a trusted and uncertain evidence type"
+t10,any,any,visual_structure_named,"grid;columns;hierarchy;labels;layout",source_transparency,"1 if response names a visual structure and its effect"

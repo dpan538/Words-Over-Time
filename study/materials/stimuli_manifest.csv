@@ -1,0 +1,7 @@
+stimulus_id,word,condition,material_path,source_page,capture_date,viewport_size,commit_hash,included_evidence_columns,known_limitations,status
+data_baseline,data,baseline,study/materials/baseline_pages/data.md,/words/data,pending,pending,pending,signal_only,"Prototype note only; screenshot pending after material review",draft
+data_evidence_grid,data,evidence_grid,study/materials/evidence_grid_pages/data.md,/words/data,pending,pending,pending,"signal;attestation;variant;context;boundary;rights","Requires current page capture after material review",draft
+artificial_baseline,artificial,baseline,study/materials/baseline_pages/artificial.md,/words/artificial,pending,pending,pending,signal_only,"Prototype note only; screenshot pending after material review",draft
+artificial_evidence_grid,artificial,evidence_grid,study/materials/evidence_grid_pages/artificial.md,/words/artificial,pending,pending,pending,"signal;attestation;variant;context;boundary;rights","Requires current page capture after material review",draft
+forever_baseline,forever,baseline,study/materials/baseline_pages/forever.md,/words/forever,pending,pending,pending,signal_only,"Prototype note only; screenshot pending after material review",draft
+forever_evidence_grid,forever,evidence_grid,study/materials/evidence_grid_pages/forever.md,/words/forever,pending,pending,pending,"signal;attestation;variant;context;boundary;rights","Requires current page capture after material review",draft

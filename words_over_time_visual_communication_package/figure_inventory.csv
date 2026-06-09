@@ -1,0 +1,10 @@
+figure_id,working_title,article_section,source_or_capture,visual_argument,status,notes
+figure_1,From frequency curve to source-boundary grid,introduction,diagram_to_create,"Shows the article's conceptual shift from one frequency line to six evidence roles.",draft,"Can be a clean schematic rather than screenshot."
+figure_2,Words Over Time interface overview,project_context,screenshot_manifest.csv,"Establishes the site as a public-facing semantic-change interface.",pending_capture,"Use data or hub full-page capture."
+figure_3,Six evidence roles: Signal Attestation Variant Context Boundary Rights,source_boundary_grid,evidence_column_dictionary.csv,"Defines the framework as visual communication method.",draft,"Can use a table or diagram."
+figure_4,Claim-boundary matrix,source_boundary_grid,claim_boundary_matrix.csv,"Shows what each visual element permits and blocks as inference.",draft,"Likely main method figure/table."
+figure_5,Comparative artifact analysis,method,comparative_interface_table.csv,"Positions Words Over Time against Ngram curves, dictionary entries, corpus search, timelines, and dashboards.",draft,"Could be table rather than figure."
+figure_6,Data case sequence,case_data,screenshot_manifest.csv,"Shows signal, context, variant, and boundary across the four data charts.",pending_capture,"Use one overview plus selected crops."
+figure_7,Artificial semantic attractor or human boundary,case_artificial,screenshot_manifest.csv,"Shows semantic proximity without synonym collapse.",pending_capture,"Use as visual grammar figure."
+figure_8,Hub naming and boundary system,case_hub,screenshot_manifest.csv,"Shows naming productivity and boundary instrument.",pending_capture,"Primary third case figure."
+figure_9,Source-boundary-aware visual communication model,discussion,diagram_to_create,"Synthesizes visual structure as epistemic structure.",draft,"Final discussion model."
