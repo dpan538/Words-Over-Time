@@ -39,7 +39,12 @@ Important interpretation notes:
 
 ## Word Studies
 
-${wordRoutes.map((route) => `- ${markdownLink(route.title, route.path)}: ${route.description}`).join("\n")}
+${wordRoutes
+  .map((route) => {
+    const machineContext = route.searchIntents?.length ? ` Machine context: ${route.searchIntents.join("; ")}.` : "";
+    return `- ${markdownLink(route.title, route.path)}: ${route.seoDescription || route.description}${machineContext}`;
+  })
+  .join("\n")}
 
 ## Public Content Boundary
 

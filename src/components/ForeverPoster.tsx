@@ -548,7 +548,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
   };
 
   return (
-    <main className="min-h-screen bg-wheat text-ink">
+    <main className="min-h-screen bg-wheat text-ink" aria-labelledby="forever-word-title">
       <div className="mx-auto flex w-full max-w-[1960px] flex-col px-4 py-5 sm:px-7 lg:px-10 xl:px-12">
         <Nav />
 
@@ -559,7 +559,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
               <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.18em] text-fire">
                 Words Over Time / word page
               </p>
-              <h1 className="mt-5 text-[clamp(5.6rem,18vw,19rem)] font-black leading-[0.72] tracking-normal text-blaze">
+              <h1 id="forever-word-title" className="mt-5 text-[clamp(5.6rem,18vw,19rem)] font-black leading-[0.72] tracking-normal text-blaze">
                 forever
               </h1>
               <p className="mt-7 max-w-4xl text-[clamp(1.15rem,2.25vw,3rem)] font-black leading-[1.02] text-ink">
@@ -601,6 +601,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
 
         <div className="mt-10 min-w-0">
           <PosterSection
+            id="semantic-evolution"
             eyebrow="01 / semantic evolution"
             title="Semantic evolution"
             intro="The first movement keeps the frequency curve, then splits the historical pressure layer into a bloom and a recurrence spiral: forever as spelling drift, cultural force, and repeated return."
@@ -656,6 +657,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           </div>
 
           <PosterSection
+            id="permanence-under-suspicion"
             eyebrow="02 / permanence and institutional doubt"
             title="Permanence under suspicion"
             intro="Forever often appears as a promise made by institutions, archives, platforms, and risk vocabularies. This chart keeps the evidence visible while refusing to turn those promises into a settled answer."
@@ -670,6 +672,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           />
 
           <PosterSection
+            id="relational-constellation"
             eyebrow="03 / relational constellation"
             title="Relational constellation"
             intro="Phrases, collocates, and context anchors pulled from 200 years of Gutenberg texts and a 2024-2026 news snapshot. What forever tends to sit next to."
@@ -697,6 +700,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           />
 
           <PosterSection
+            id="context-signal-field"
             eyebrow="04 / context signal field"
             title="Context signal field"
             intro="Six semantic categories compressed into one field. Archival signal and modern snapshot held together - with the gap between them kept visible."
@@ -722,6 +726,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           />
 
           <PosterSection
+            id="evidence-archive"
             eyebrow="05 / evidence archive"
             title="Evidence archive"
             intro="The actual source material: prehistory attestations from the 14th century, Ngram marks, Gutenberg snippets, and Wikinews captures. Every claim traceable."

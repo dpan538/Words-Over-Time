@@ -56,7 +56,7 @@ export function PrivacyPoster({
   researchExpansion,
 }: PrivacyPosterProps) {
   return (
-    <main className="min-h-screen bg-wheat text-ink">
+    <main className="min-h-screen bg-wheat text-ink" aria-labelledby="privacy-word-title">
       <div className="mx-auto flex w-full max-w-[1960px] flex-col px-4 py-5 sm:px-7 lg:px-10 xl:px-12">
         <Nav />
 
@@ -68,7 +68,7 @@ export function PrivacyPoster({
               <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.18em] text-privacy-violet">
                 Words Over Time / lexical study
               </p>
-              <h1 className="mt-5 text-[clamp(5.15rem,14.2vw,14.2rem)] font-black leading-[0.9] tracking-normal text-privacy-violet">
+              <h1 id="privacy-word-title" className="mt-5 text-[clamp(5.15rem,14.2vw,14.2rem)] font-black leading-[0.9] tracking-normal text-privacy-violet">
                 privacy
               </h1>
               <p className="mt-10 max-w-5xl text-[clamp(1.12rem,2.12vw,2.7rem)] font-black leading-[1.04] text-ink">

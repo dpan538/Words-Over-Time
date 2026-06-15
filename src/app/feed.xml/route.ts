@@ -18,7 +18,7 @@ function rssItem(route: (typeof siteRoutes)[number]) {
     <title>${escapeXml(`${route.title} | ${siteConfig.name}`)}</title>
     <link>${escapeXml(url)}</link>
     <guid isPermaLink="true">${escapeXml(url)}</guid>
-    <description>${escapeXml(route.summary || route.description)}</description>
+    <description>${escapeXml(route.summary || route.seoDescription || route.description)}</description>
     <category>${escapeXml(route.section)}</category>
     <pubDate>${new Date(siteConfig.updatedAt).toUTCString()}</pubDate>
   </item>`;

@@ -21,10 +21,12 @@ export function PosterSection({
   className = "",
 }: PosterSectionProps) {
   const revealRef = useScrollReveal();
+  const titleId = id ? `${id}-title` : undefined;
 
   return (
     <section
       id={id}
+      aria-labelledby={titleId}
       ref={revealRef}
       className={`scroll-reveal pb-0 pt-8 sm:pt-9 lg:pt-10 ${className}`}
     >
@@ -33,7 +35,7 @@ export function PosterSection({
           {eyebrow}
         </p>
         <div className="max-w-5xl">
-          <h2 className="text-[clamp(1.22rem,2vw,1.95rem)] font-black leading-[1.02] tracking-normal">
+          <h2 id={titleId} className="text-[clamp(1.22rem,2vw,1.95rem)] font-black leading-[1.02] tracking-normal">
             {title}
           </h2>
           {intro ? (
