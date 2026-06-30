@@ -9,7 +9,7 @@ export const metadata = createPageMetadata("/");
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-wheat px-5 py-5 text-ink sm:px-10 sm:py-7 lg:px-16 xl:px-20">
+    <main aria-labelledby="home-title" className="flex min-h-screen flex-col bg-wheat px-5 py-5 text-ink sm:px-10 sm:py-7 lg:px-16 xl:px-20">
       <JsonLd data={homeJsonLd} />
       <Nav />
       <section className="grid flex-1 items-center gap-10 py-16 lg:grid-cols-[minmax(0,1fr)_250px] xl:grid-cols-[minmax(0,1fr)_300px]">
@@ -27,6 +27,9 @@ export default function Home() {
         </div>
         <PosterMarks />
       </section>
+      <h1 id="home-title" className="border-t border-ink/18 pt-3 font-mono text-[0.68rem] font-black uppercase leading-4 tracking-[0.16em] text-ink/34 sm:text-[0.72rem]">
+        Words Over Time: semantic change and word usage over time
+      </h1>
     </main>
   );
 }

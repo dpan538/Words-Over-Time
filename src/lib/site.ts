@@ -10,7 +10,7 @@ export const siteConfig = {
   authorNativeName: "潘岱",
   authorUrl: "https://daipan.art/",
   authorSameAs: ["https://daipan.art/", "https://www.daipan.ink/"],
-  updatedAt: "2026-06-15",
+  updatedAt: "2026-06-30",
 };
 
 export type SiteRoute = {
@@ -45,6 +45,10 @@ export const siteRoutes: SiteRoute[] = [
     section: "home",
     keywords: ["Dai Pan", "潘岱", "word history", "semantic change", "word frequency", "search statistics", "infographic art"],
     accent: "#006fb6",
+    seoTitle: "Words Over Time: Semantic Change and Word Usage Over Time",
+    seoDescription:
+      "A visual research project on semantic change, word meaning, word frequency, and how words shift through time, by Dai Pan.",
+    searchIntents: ["word usage over time", "word meaning over time", "semantic change words", "word frequency over time"],
   },
   {
     path: "/words",
@@ -54,8 +58,12 @@ export const siteRoutes: SiteRoute[] = [
     priority: 0.92,
     changeFrequency: "weekly",
     section: "index",
-    keywords: ["word studies", "semantic history", "digital humanities", "visual essays"],
+    keywords: ["word studies", "semantic history", "digital humanities", "visual essays", "word usage over time", "semantic change"],
     accent: "#050510",
+    seoTitle: "Word Studies: Semantic Change, Word Meaning, and Usage Over Time",
+    seoDescription:
+      "Browse source-led visual studies of how words change meaning over time, including privacy, forever, artificial, hub, depression, and data.",
+    searchIntents: ["word studies", "word usage over time", "word meaning over time", "semantic change examples", "word history studies"],
   },
   {
     path: "/about",
@@ -116,11 +124,36 @@ export const siteRoutes: SiteRoute[] = [
     priority: 0.86,
     changeFrequency: "monthly",
     section: "word",
-    keywords: ["artificial", "artifice", "imitation", "synthetic", "machine intelligence"],
+    keywords: [
+      "artificial",
+      "artifice",
+      "imitation",
+      "synthetic",
+      "machine intelligence",
+      "artificial etymology",
+      "artificial meaning",
+      "artificial word history",
+    ],
     accent: "#a1081f",
     summary:
       "Artificial moves from skilled making and artifice toward synthetic materials, reproduced experience, suspicion, and the boundary between human and machine intelligence.",
     related: ["/words/forever", "/words/data", "/words/privacy"],
+    seoTitle: "Artificial: Etymology, Meaning, and How the Word Changed Over Time",
+    seoDescription:
+      "A source-led study of artificial: artifice, imitation, technical reproduction, synthetic material, suspicion, and machine-era intelligence.",
+    searchIntents: [
+      "artificial etymology",
+      "artificial meaning",
+      "artificial word origin",
+      "artificial meaning over time",
+      "history of the word artificial",
+    ],
+    definedTerm: {
+      name: "artificial",
+      alternateName: ["artifice"],
+      description:
+        "Artificial is treated as a word whose meanings move through artifice, skilled making, imitation, synthetic material, suspicion, and machine-era intelligence.",
+    },
   },
   {
     path: "/words/privacy",
@@ -169,11 +202,20 @@ export const siteRoutes: SiteRoute[] = [
     priority: 0.84,
     changeFrequency: "monthly",
     section: "word",
-    keywords: ["hub", "network", "transportation", "platform", "centrality"],
+    keywords: ["hub", "network", "transportation", "platform", "centrality", "hub etymology", "hub meaning", "hub word origin"],
     accent: "#0b7f86",
     summary:
       "Hub begins as a center of rotation and becomes a transport, commercial, digital, and platform term for access, routing, and control.",
     related: ["/words/privacy", "/words/data", "/words/artificial"],
+    seoTitle: "Hub: Etymology and Meaning, from Wheel Center to Network Metaphor",
+    seoDescription:
+      "A source-led word-history study of hub, from wheel center and transport node to commercial center, platform access point, and network metaphor.",
+    searchIntents: ["hub etymology", "hub meaning", "hub word origin", "hub meaning over time", "hub network metaphor"],
+    definedTerm: {
+      name: "hub",
+      description:
+        "Hub is treated as a word for a wheel center that shifts into transportation, commercial, digital, and platform metaphors of access, routing, and control.",
+    },
   },
   {
     path: "/words/depression",
@@ -183,11 +225,36 @@ export const siteRoutes: SiteRoute[] = [
     priority: 0.84,
     changeFrequency: "monthly",
     section: "word",
-    keywords: ["depression", "melancholy", "economy", "diagnosis", "public health"],
+    keywords: [
+      "depression",
+      "melancholy",
+      "economy",
+      "diagnosis",
+      "public health",
+      "depression etymology",
+      "depression meaning",
+      "depression word history",
+    ],
     accent: "#006fb6",
     summary:
       "Depression branches through loweredness, melancholy, weather, economic crisis, diagnosis, and public-health discourse.",
     related: ["/words/forever", "/words/privacy", "/words/data"],
+    seoTitle: "Depression: Etymology, Meaning, and Economic / Clinical History",
+    seoDescription:
+      "A source-led study of depression across loweredness, melancholy, weather, economic crisis, diagnosis, and public-health discourse.",
+    searchIntents: [
+      "depression etymology",
+      "depression meaning",
+      "depression word origin",
+      "depression meaning over time",
+      "history of the word depression",
+      "depression economic clinical meaning",
+    ],
+    definedTerm: {
+      name: "depression",
+      description:
+        "Depression is treated as a word branching through loweredness, melancholy, weather, economic crisis, clinical diagnosis, and public-health discourse.",
+    },
   },
   {
     path: "/words/data",
@@ -197,11 +264,28 @@ export const siteRoutes: SiteRoute[] = [
     priority: 0.76,
     changeFrequency: "monthly",
     section: "word",
-    keywords: ["data", "datum", "AI data", "social traces", "data governance"],
+    keywords: ["data", "datum", "AI data", "social traces", "data governance", "data etymology", "data meaning", "datum meaning"],
     accent: "#1570ac",
     summary:
       "Data is followed from given facts and counted observations into social traces, infrastructure, governance objects, and AI-era material.",
     related: ["/words/privacy", "/words/hub", "/words/artificial"],
+    seoTitle: "Data: Etymology, Datum, Meaning, and How the Word Changed Over Time",
+    seoDescription:
+      "A source-led study of data and datum, from given facts and counted observations to social traces, infrastructure, governance, and AI-era material.",
+    searchIntents: [
+      "data etymology",
+      "datum data etymology",
+      "data word origin",
+      "data meaning over time",
+      "history of the word data",
+      "datum meaning",
+    ],
+    definedTerm: {
+      name: "data",
+      alternateName: ["datum"],
+      description:
+        "Data is treated as a word moving from given facts and counted observations into social traces, infrastructure, governance objects, and AI-era material.",
+    },
   },
 ];
 
@@ -239,6 +323,7 @@ export function createPageMetadata(path: string, overrides: Partial<Pick<SiteRou
   const canonical = absoluteUrl(path);
   const imagePath = route?.section === "word" ? `${path}/opengraph-image` : "/opengraph-image";
   const twitterImagePath = route?.section === "word" ? `${path}/twitter-image` : "/twitter-image";
+  const openGraphType = route?.section === "word" || route?.section === "method" ? "article" : "website";
 
   return {
     title,
@@ -257,7 +342,7 @@ export function createPageMetadata(path: string, overrides: Partial<Pick<SiteRou
       },
     },
     openGraph: {
-      type: "article",
+      type: openGraphType,
       url: canonical,
       siteName: siteConfig.name,
       title: `${title} | ${siteConfig.name}`,
@@ -434,6 +519,9 @@ export function createRouteJsonLd(path: string) {
   };
 }
 
+const homeRoute = routeByPath("/") || siteRoutes[0];
+const wordsIndexRoute = routeByPath("/words") || siteRoutes[1];
+
 export const homeJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -442,8 +530,15 @@ export const homeJsonLd = {
       "@id": `${siteConfig.url}/#website`,
       name: siteConfig.name,
       url: siteConfig.url,
-      description: siteConfig.description,
+      description: routeSeoDescription(homeRoute),
       inLanguage: "en",
+      keywords: routeSearchTerms(homeRoute).join(", "),
+      about: [
+        { "@type": "Thing", name: "semantic change" },
+        { "@type": "Thing", name: "word usage over time" },
+        { "@type": "Thing", name: "word meaning over time" },
+        { "@type": "Thing", name: "word frequency" },
+      ],
       author: {
         "@id": `${siteConfig.url}/#dai-pan`,
       },
@@ -457,7 +552,7 @@ export const homeJsonLd = {
       "@id": `${siteConfig.url}/#defined-term-set`,
       name: `${siteConfig.name} word studies`,
       url: absoluteUrl("/words"),
-      description: "A set of public word-history and semantic-change studies by Dai Pan.",
+      description: routeSeoDescription(wordsIndexRoute),
       hasDefinedTerm: wordRoutes.map((route) => ({
         "@type": "DefinedTerm",
         "@id": `${absoluteUrl(route.path)}#defined-term`,
@@ -472,7 +567,8 @@ export const homeJsonLd = {
       "@id": `${siteConfig.url}/#collection`,
       name: siteConfig.name,
       url: siteConfig.url,
-      description: "A collection of semantic-change, word-frequency, and search-statistics studies by Dai Pan.",
+      description: routeSeoDescription(wordsIndexRoute),
+      keywords: routeSearchTerms(wordsIndexRoute).join(", "),
       author: {
         "@id": `${siteConfig.url}/#dai-pan`,
       },
