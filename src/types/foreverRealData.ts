@@ -20,7 +20,7 @@ export type ForeverEra = {
 
 export type GeneratedFrequencyPoint = {
   year: number;
-  value: number;
+  value?: number;
   frequencyPerMillion: number;
 };
 

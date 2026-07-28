@@ -20,7 +20,7 @@ function rssItem(route: (typeof siteRoutes)[number]) {
     <guid isPermaLink="true">${escapeXml(url)}</guid>
     <description>${escapeXml(route.summary || route.seoDescription || route.description)}</description>
     <category>${escapeXml(route.section)}</category>
-    <pubDate>${new Date(siteConfig.updatedAt).toUTCString()}</pubDate>
+    <pubDate>${new Date(route.updatedAt).toUTCString()}</pubDate>
   </item>`;
 }
 

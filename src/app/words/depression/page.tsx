@@ -15,7 +15,17 @@ import type {
   DepressionPrehistoryFile,
 } from "@/types/depressionData";
 
-const frequency = frequencyJson as DepressionFrequencyFile;
+const fullFrequency = frequencyJson as DepressionFrequencyFile;
+const frequency: DepressionFrequencyFile = {
+  ...fullFrequency,
+  series: fullFrequency.series.map((series) => ({
+    ...series,
+    points: series.points.map(({ year, frequencyPerMillion }) => ({
+      year,
+      frequencyPerMillion,
+    })),
+  })),
+};
 const prehistory = prehistoryJson as DepressionPrehistoryFile;
 const branches = branchesJson as DepressionBranchesFile;
 const evidence = evidenceJson as DepressionEvidenceFile;

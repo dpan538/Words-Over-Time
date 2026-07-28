@@ -17,13 +17,59 @@ import type { PrivacyGeoElevationDataset } from "@/components/privacy/PrivacyCha
 import type { PrivacyGeoDemographicContextDataset } from "@/components/privacy/PrivacyChart02DemographicContext";
 import type { PrivacyResearchExpansionDataset } from "@/components/privacy/PrivacyChart03GovernanceInterface";
 
-const semanticWeather = semanticWeatherJson as PrivacySemanticWeatherDataset;
-const legalInjury = legalInjuryJson as unknown as PrivacyLegalInjuryDataset;
-const modernTransit = modernTransitJson as unknown as PrivacyModernTransitDataset;
-const geoAttention = geoAttentionJson as unknown as PrivacyGeoAttentionDataset;
-const geoElevation = geoElevationJson as unknown as PrivacyGeoElevationDataset;
-const geoDemographic = geoDemographicJson as unknown as PrivacyGeoDemographicContextDataset;
-const researchExpansion = researchExpansionJson as unknown as PrivacyResearchExpansionDataset;
+// Keep the source files complete for research reproducibility while sending only
+// fields consumed by the interactive charts across the Server/Client boundary.
+const semanticWeather = {
+  periods: semanticWeatherJson.periods,
+  period_track_scores: semanticWeatherJson.period_track_scores,
+  thresholds: semanticWeatherJson.thresholds,
+  content_plan: semanticWeatherJson.content_plan,
+} as unknown as PrivacySemanticWeatherDataset;
+
+const legalInjury = {
+  branches: legalInjuryJson.branches,
+  matrix_nodes: legalInjuryJson.matrix_nodes,
+  yearly_phrase_signal: legalInjuryJson.yearly_phrase_signal,
+  scale: legalInjuryJson.scale,
+} as unknown as PrivacyLegalInjuryDataset;
+
+const modernTransit = {
+  routes: modernTransitJson.routes,
+  stations: modernTransitJson.stations,
+  flow_metrics: modernTransitJson.flow_metrics,
+} as unknown as PrivacyModernTransitDataset;
+
+const geoAttention = {
+  statistics: geoAttentionJson.statistics,
+  country_hotspots: geoAttentionJson.country_hotspots,
+  city_points: geoAttentionJson.city_points,
+  radiation_hubs: geoAttentionJson.radiation_hubs,
+  radiation_links: geoAttentionJson.radiation_links,
+} as unknown as PrivacyGeoAttentionDataset;
+
+const geoElevation = {
+  statistics: geoElevationJson.statistics,
+  points: geoElevationJson.points,
+  bands: geoElevationJson.bands,
+} as unknown as PrivacyGeoElevationDataset;
+
+const geoDemographic = {
+  statistics: geoDemographicJson.statistics,
+  records: geoDemographicJson.records,
+  network_nodes: geoDemographicJson.network_nodes,
+  network_edges: geoDemographicJson.network_edges,
+} as unknown as PrivacyGeoDemographicContextDataset;
+
+const researchExpansion: PrivacyResearchExpansionDataset = {
+  word: "privacy",
+  layer_id: "research_expansion",
+  status: researchExpansionJson.status,
+  intended_use: researchExpansionJson.intended_use,
+  statistics: researchExpansionJson.statistics,
+  aggregates: researchExpansionJson.aggregates,
+  strong_signals: researchExpansionJson.strong_signals,
+  limitations: researchExpansionJson.limitations,
+};
 
 export const metadata = createPageMetadata("/words/privacy");
 const jsonLd = createRouteJsonLd("/words/privacy");

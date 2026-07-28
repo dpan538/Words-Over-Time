@@ -1,6 +1,6 @@
 export type DepressionFrequencyPoint = {
   year: number;
-  value: number;
+  value?: number;
   frequencyPerMillion: number;
 };
 

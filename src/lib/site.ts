@@ -10,7 +10,7 @@ export const siteConfig = {
   authorNativeName: "潘岱",
   authorUrl: "https://daipan.art/",
   authorSameAs: ["https://daipan.art/", "https://www.daipan.ink/"],
-  updatedAt: "2026-06-30",
+  updatedAt: "2026-07-28",
 };
 
 export type SiteRoute = {
@@ -22,6 +22,8 @@ export type SiteRoute = {
   section: "home" | "index" | "method" | "word";
   keywords: string[];
   accent: string;
+  publishedAt: string;
+  updatedAt: string;
   summary?: string;
   related?: string[];
   seoTitle?: string;
@@ -45,9 +47,11 @@ export const siteRoutes: SiteRoute[] = [
     section: "home",
     keywords: ["Dai Pan", "潘岱", "word history", "semantic change", "word frequency", "search statistics", "infographic art"],
     accent: "#006fb6",
-    seoTitle: "Words Over Time: Semantic Change and Word Usage Over Time",
+    publishedAt: "2026-05-07",
+    updatedAt: "2026-07-28",
+    seoTitle: "Words Over Time: Word Meaning, History, and Usage",
     seoDescription:
-      "A visual research project on semantic change, word meaning, word frequency, and how words shift through time, by Dai Pan.",
+      "Explore source-led visual studies of word meaning, etymology, semantic change, and usage over time by artist and design researcher Dai Pan.",
     searchIntents: ["word usage over time", "word meaning over time", "semantic change words", "word frequency over time"],
   },
   {
@@ -60,9 +64,11 @@ export const siteRoutes: SiteRoute[] = [
     section: "index",
     keywords: ["word studies", "semantic history", "digital humanities", "visual essays", "word usage over time", "semantic change"],
     accent: "#050510",
-    seoTitle: "Word Studies: Semantic Change, Word Meaning, and Usage Over Time",
+    publishedAt: "2026-05-28",
+    updatedAt: "2026-07-28",
+    seoTitle: "Word Studies: Meaning and Usage Over Time",
     seoDescription:
-      "Browse source-led visual studies of how words change meaning over time, including privacy, forever, artificial, hub, depression, and data.",
+      "Browse source-led visual studies of how privacy, forever, artificial, hub, depression, and data changed in meaning and usage over time.",
     searchIntents: ["word studies", "word usage over time", "word meaning over time", "semantic change examples", "word history studies"],
   },
   {
@@ -75,6 +81,11 @@ export const siteRoutes: SiteRoute[] = [
     section: "method",
     keywords: ["research methodology", "source provenance", "copyright", "digital humanities"],
     accent: "#d93621",
+    publishedAt: "2026-05-07",
+    updatedAt: "2026-07-28",
+    seoTitle: "Methodology, Sources, and Rights",
+    seoDescription:
+      "Read the research methods, source-provenance rules, evidence boundaries, licenses, and publication rights behind Words Over Time.",
   },
   {
     path: "/words/forever",
@@ -95,19 +106,26 @@ export const siteRoutes: SiteRoute[] = [
       "forever origin",
     ],
     accent: "#f06b04",
+    publishedAt: "2026-05-07",
+    updatedAt: "2026-07-28",
     summary:
       "Forever is read as a promise of duration whose meaning changes when memory becomes archival, searchable, platformed, and hard to delete.",
     related: ["/words/artificial", "/words/privacy", "/words/data"],
-    seoTitle: "Forever: Meaning, Spelling, Origin, and How the Word Changed Over Time",
+    seoTitle: "Forever Spelling, Meaning, and Origin",
     seoDescription:
-      "A source-led study of forever: spelling variants, current meaning, earlier for ever forms, permanence, devotion, memory, archives, and platform-era promises.",
+      "Explore how “for ever” became “forever,” and how the word shifted across duration, devotion, memory, archives, and platform persistence.",
     searchIntents: [
       "how do you spell forever",
       "spell forever",
+      "is forever one word",
+      "for ever or forever",
       "forever meaning",
       "how long is forever meaning",
       "forever origin",
       "forever etymology",
+      "history of the word forever",
+      "forever meaning over time",
+      "forever digital permanence",
     ],
     definedTerm: {
       name: "forever",
@@ -135,18 +153,25 @@ export const siteRoutes: SiteRoute[] = [
       "artificial word history",
     ],
     accent: "#a1081f",
+    publishedAt: "2026-05-10",
+    updatedAt: "2026-07-28",
     summary:
       "Artificial moves from skilled making and artifice toward synthetic materials, reproduced experience, suspicion, and the boundary between human and machine intelligence.",
     related: ["/words/forever", "/words/data", "/words/privacy"],
-    seoTitle: "Artificial: Etymology, Meaning, and How the Word Changed Over Time",
+    seoTitle: "Artificial Etymology: Artifice to AI",
     seoDescription:
-      "A source-led study of artificial: artifice, imitation, technical reproduction, synthetic material, suspicion, and machine-era intelligence.",
+      "Trace artificial from artifice and skilled making to imitation, synthetic materials, suspicion, technical reproduction, and machine intelligence.",
     searchIntents: [
       "artificial etymology",
       "artificial meaning",
+      "what does artificial mean",
       "artificial word origin",
+      "artificial and artifice",
       "artificial meaning over time",
       "history of the word artificial",
+      "created by artificial means",
+      "artificial meaning before AI",
+      "artificial intelligence word history",
     ],
     definedTerm: {
       name: "artificial",
@@ -175,18 +200,26 @@ export const siteRoutes: SiteRoute[] = [
       "privacy over time",
     ],
     accent: "#6f3aa6",
+    publishedAt: "2026-05-27",
+    updatedAt: "2026-07-28",
     summary:
       "Privacy is traced from private life and secrecy into legal rights, data protection, public attention, surveillance, consent, and governance interfaces.",
     related: ["/words/data", "/words/hub", "/words/artificial"],
-    seoTitle: "Privacy: Etymology, Meaning, and How the Word Changed Over Time",
+    seoTitle: "Privacy Etymology and Meaning Over Time",
     seoDescription:
-      "A source-led study of privacy: current meaning, older senses of private life and secrecy, legal-right language, data protection, surveillance, consent, and governance.",
+      "Trace privacy from private life and secrecy to legal rights, data protection, surveillance, consent, and digital governance.",
     searchIntents: [
       "privacy etymology",
       "etymology of privacy",
+      "origin of the word privacy",
+      "history of privacy meaning",
       "privacy meaning over time",
       "privacy definition through history",
       "privacy definition over years",
+      "privacy legal meaning",
+      "privacy and data protection",
+      "privacy and surveillance history",
+      "modern meaning of privacy",
     ],
     definedTerm: {
       name: "privacy",
@@ -204,13 +237,26 @@ export const siteRoutes: SiteRoute[] = [
     section: "word",
     keywords: ["hub", "network", "transportation", "platform", "centrality", "hub etymology", "hub meaning", "hub word origin"],
     accent: "#0b7f86",
+    publishedAt: "2026-05-13",
+    updatedAt: "2026-07-28",
     summary:
       "Hub begins as a center of rotation and becomes a transport, commercial, digital, and platform term for access, routing, and control.",
     related: ["/words/privacy", "/words/data", "/words/artificial"],
-    seoTitle: "Hub: Etymology and Meaning, from Wheel Center to Network Metaphor",
+    seoTitle: "Hub Etymology: From Wheel Center to Network",
     seoDescription:
-      "A source-led word-history study of hub, from wheel center and transport node to commercial center, platform access point, and network metaphor.",
-    searchIntents: ["hub etymology", "hub meaning", "hub word origin", "hub meaning over time", "hub network metaphor"],
+      "Trace hub from a wheel center to transport node, commercial center, digital access point, and network metaphor.",
+    searchIntents: [
+      "hub etymology",
+      "hub meaning",
+      "hub word origin",
+      "origin of the word hub",
+      "original meaning of hub",
+      "why is a center called a hub",
+      "hub meaning over time",
+      "hub transportation meaning",
+      "hub network metaphor",
+      "digital platform hub meaning",
+    ],
     definedTerm: {
       name: "hub",
       description:
@@ -236,12 +282,14 @@ export const siteRoutes: SiteRoute[] = [
       "depression word history",
     ],
     accent: "#006fb6",
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-07-28",
     summary:
       "Depression branches through loweredness, melancholy, weather, economic crisis, diagnosis, and public-health discourse.",
     related: ["/words/forever", "/words/privacy", "/words/data"],
-    seoTitle: "Depression: Etymology, Meaning, and Economic / Clinical History",
+    seoTitle: "Depression: Economic and Clinical Meanings",
     seoDescription:
-      "A source-led study of depression across loweredness, melancholy, weather, economic crisis, diagnosis, and public-health discourse.",
+      "Trace depression across physical loweredness, melancholy, weather, economic crisis, clinical diagnosis, and public-health discourse.",
     searchIntents: [
       "depression etymology",
       "depression meaning",
@@ -249,6 +297,11 @@ export const siteRoutes: SiteRoute[] = [
       "depression meaning over time",
       "history of the word depression",
       "depression economic clinical meaning",
+      "economic meaning of depression",
+      "clinical meaning of depression",
+      "depression weather meaning",
+      "depression and melancholy word history",
+      "how depression changed meaning",
     ],
     definedTerm: {
       name: "depression",
@@ -266,12 +319,14 @@ export const siteRoutes: SiteRoute[] = [
     section: "word",
     keywords: ["data", "datum", "AI data", "social traces", "data governance", "data etymology", "data meaning", "datum meaning"],
     accent: "#1570ac",
+    publishedAt: "2026-05-10",
+    updatedAt: "2026-07-28",
     summary:
       "Data is followed from given facts and counted observations into social traces, infrastructure, governance objects, and AI-era material.",
     related: ["/words/privacy", "/words/hub", "/words/artificial"],
-    seoTitle: "Data: Etymology, Datum, Meaning, and How the Word Changed Over Time",
+    seoTitle: "Data Etymology: Datum, Meaning, and Usage",
     seoDescription:
-      "A source-led study of data and datum, from given facts and counted observations to social traces, infrastructure, governance, and AI-era material.",
+      "Trace data and datum from given facts and counted observations to social traces, infrastructure, governance, and AI-era material.",
     searchIntents: [
       "data etymology",
       "datum data etymology",
@@ -279,6 +334,12 @@ export const siteRoutes: SiteRoute[] = [
       "data meaning over time",
       "history of the word data",
       "datum meaning",
+      "data vs datum",
+      "is data singular or plural",
+      "what is the singular of data",
+      "data as given facts",
+      "data meaning in AI",
+      "data governance meaning",
     ],
     definedTerm: {
       name: "data",
@@ -316,17 +377,24 @@ export function routeByPath(path: string) {
   return siteRoutes.find((route) => route.path === path);
 }
 
+export function routeSocialImagePath(route: SiteRoute, kind: "openGraph" | "twitter" = "openGraph") {
+  const imageName = kind === "twitter" ? "twitter-image" : "opengraph-image";
+  return route.section === "word" ? `${route.path}/${imageName}` : `/${imageName}`;
+}
+
 export function createPageMetadata(path: string, overrides: Partial<Pick<SiteRoute, "title" | "description">> = {}): Metadata {
   const route = routeByPath(path);
   const title = overrides.title || (route ? routeSeoTitle(route) : siteConfig.name);
   const description = overrides.description || (route ? routeSeoDescription(route) : siteConfig.description);
   const canonical = absoluteUrl(path);
-  const imagePath = route?.section === "word" ? `${path}/opengraph-image` : "/opengraph-image";
-  const twitterImagePath = route?.section === "word" ? `${path}/twitter-image` : "/twitter-image";
-  const openGraphType = route?.section === "word" || route?.section === "method" ? "article" : "website";
+  const imagePath = route ? routeSocialImagePath(route) : "/opengraph-image";
+  const twitterImagePath = route ? routeSocialImagePath(route, "twitter") : "/twitter-image";
+  const isArticle = route?.section === "word" || route?.section === "method";
+  const openGraphType = isArticle ? "article" : "website";
+  const socialTitle = `${title} | ${siteConfig.name}`;
 
   return {
-    title,
+    title: path === "/" ? { absolute: title } : title,
     description,
     keywords: route ? routeSearchTerms(route) : undefined,
     authors: [{ name: siteConfig.author, url: siteConfig.authorUrl }],
@@ -345,7 +413,8 @@ export function createPageMetadata(path: string, overrides: Partial<Pick<SiteRou
       type: openGraphType,
       url: canonical,
       siteName: siteConfig.name,
-      title: `${title} | ${siteConfig.name}`,
+      locale: "en_US",
+      title: socialTitle,
       description,
       images: [
         {
@@ -353,14 +422,29 @@ export function createPageMetadata(path: string, overrides: Partial<Pick<SiteRou
           width: 1200,
           height: 630,
           alt: `${siteConfig.name}: ${title}`,
+          type: "image/png",
         },
       ],
+      ...(isArticle && route
+        ? {
+            publishedTime: route.publishedAt,
+            modifiedTime: route.updatedAt,
+            authors: [siteConfig.authorUrl],
+            section: route.section === "word" ? "Word Studies" : "Methodology",
+            tags: routeSearchTerms(route),
+          }
+        : {}),
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | ${siteConfig.name}`,
+      title: socialTitle,
       description,
-      images: [absoluteUrl(twitterImagePath)],
+      images: [
+        {
+          url: absoluteUrl(twitterImagePath),
+          alt: `${siteConfig.name}: ${title}`,
+        },
+      ],
     },
   };
 }
@@ -385,9 +469,15 @@ export function createRouteJsonLd(path: string) {
   const pageId = `${url}#webpage`;
   const breadcrumbId = `${url}#breadcrumb`;
   const definedTermId = `${url}#defined-term`;
+  const wordStudyId = `${url}#word-study`;
+  const datasetId = `${url}#dataset`;
   const structuredTitle = routeSeoTitle(route);
   const structuredDescription = routeSeoDescription(route);
   const searchTerms = routeSearchTerms(route);
+  const imageUrl = absoluteUrl(routeSocialImagePath(route));
+  const relatedWordRoutes = (route.related || [])
+    .map((relatedPath) => routeByPath(relatedPath))
+    .filter((relatedRoute): relatedRoute is SiteRoute => Boolean(relatedRoute));
   const pageType =
     route.section === "home" || route.section === "index" ? "CollectionPage" : route.section === "method" ? "AboutPage" : "WebPage";
   const breadcrumbItems = [
@@ -397,16 +487,31 @@ export function createRouteJsonLd(path: string) {
       name: "Home",
       item: absoluteUrl("/"),
     },
-    ...(route.path === "/"
-      ? []
-      : [
+    ...(route.section === "word"
+      ? [
           {
             "@type": "ListItem",
             position: 2,
+            name: "Word Studies",
+            item: absoluteUrl("/words"),
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
             name: route.title,
             item: url,
           },
-        ]),
+        ]
+      : route.path === "/"
+        ? []
+        : [
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: route.title,
+              item: url,
+            },
+          ]),
   ];
 
   const graph: Record<string, unknown>[] = [
@@ -418,8 +523,10 @@ export function createRouteJsonLd(path: string) {
       headline: structuredTitle,
       description: structuredDescription,
       abstract: route.summary || structuredDescription,
+      image: imageUrl,
       inLanguage: "en",
-      dateModified: siteConfig.updatedAt,
+      datePublished: route.publishedAt,
+      dateModified: route.updatedAt,
       isAccessibleForFree: true,
       author: {
         "@id": `${siteConfig.url}/#dai-pan`,
@@ -439,6 +546,13 @@ export function createRouteJsonLd(path: string) {
             mainEntity: {
               "@id": definedTermId,
             },
+            primaryImageOfPage: {
+              "@type": "ImageObject",
+              url: imageUrl,
+              width: 1200,
+              height: 630,
+            },
+            relatedLink: relatedWordRoutes.map((relatedRoute) => absoluteUrl(relatedRoute.path)),
           }
         : {}),
     },
@@ -462,19 +576,24 @@ export function createRouteJsonLd(path: string) {
         "@id": `${siteConfig.url}/#defined-term-set`,
       },
       subjectOf: {
-        "@id": `${url}#word-study`,
+        "@id": wordStudyId,
       },
       keywords: searchTerms.join(", "),
     });
 
     graph.push({
-      "@type": "CreativeWork",
-      "@id": `${url}#word-study`,
+      "@type": ["Article", "CreativeWork"],
+      "@id": wordStudyId,
       name: `${route.title} word study`,
       headline: structuredTitle,
       url,
+      image: imageUrl,
       description: structuredDescription,
       abstract: route.summary,
+      datePublished: route.publishedAt,
+      dateModified: route.updatedAt,
+      inLanguage: "en",
+      articleSection: "Word Studies",
       genre: ["digital humanities", "historical linguistics", "data visualization"],
       artform: "infographic art",
       learningResourceType: "word history visual essay",
@@ -488,8 +607,21 @@ export function createRouteJsonLd(path: string) {
         "@id": `${siteConfig.url}/#dai-pan`,
       },
       about: route.keywords.map((keyword) => ({ "@type": "Thing", name: keyword })),
+      mentions: relatedWordRoutes.map((relatedRoute) => ({
+        "@type": "DefinedTerm",
+        "@id": `${absoluteUrl(relatedRoute.path)}#defined-term`,
+        name: relatedRoute.definedTerm?.name || relatedRoute.title.toLowerCase(),
+        url: absoluteUrl(relatedRoute.path),
+        description: relatedRoute.definedTerm?.description || relatedRoute.summary || routeSeoDescription(relatedRoute),
+      })),
       mainEntity: {
         "@id": definedTermId,
+      },
+      mainEntityOfPage: {
+        "@id": pageId,
+      },
+      hasPart: {
+        "@id": datasetId,
       },
       isPartOf: {
         "@id": `${siteConfig.url}/#collection`,
@@ -497,6 +629,41 @@ export function createRouteJsonLd(path: string) {
       isBasedOn: {
         "@id": `${absoluteUrl("/about")}#webpage`,
       },
+    });
+
+    graph.push({
+      "@type": "Dataset",
+      "@id": datasetId,
+      name: `${route.title} semantic-change research dataset`,
+      description: route.summary || structuredDescription,
+      url,
+      image: imageUrl,
+      inLanguage: "en",
+      datePublished: route.publishedAt,
+      dateModified: route.updatedAt,
+      isAccessibleForFree: true,
+      license: absoluteUrl("/about"),
+      keywords: searchTerms,
+      creator: {
+        "@id": `${siteConfig.url}/#dai-pan`,
+      },
+      publisher: {
+        "@id": `${siteConfig.url}/#dai-pan`,
+      },
+      mainEntityOfPage: {
+        "@id": pageId,
+      },
+      isPartOf: {
+        "@id": `${siteConfig.url}/#collection`,
+      },
+      about: {
+        "@id": definedTermId,
+      },
+      measurementTechnique: [
+        "source-led corpus research",
+        "dictionary and archival evidence synthesis",
+        "semantic-change data visualization",
+      ],
     });
   }
 

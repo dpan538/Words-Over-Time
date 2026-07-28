@@ -5,7 +5,17 @@ import datasetJson from "@/data/generated/forever_dataset.json";
 import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
 import type { ForeverGeneratedDataset } from "@/types/foreverRealData";
 
-const dataset = datasetJson as ForeverGeneratedDataset;
+const fullDataset = datasetJson as ForeverGeneratedDataset;
+const dataset: ForeverGeneratedDataset = {
+  ...fullDataset,
+  frequency: fullDataset.frequency.map((series) => ({
+    ...series,
+    points: series.points.map(({ year, frequencyPerMillion }) => ({
+      year,
+      frequencyPerMillion,
+    })),
+  })),
+};
 
 export const metadata = createPageMetadata("/words/forever");
 const jsonLd = createRouteJsonLd("/words/forever");
