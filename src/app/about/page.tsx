@@ -487,9 +487,9 @@ export default function AboutPage() {
               <p className="text-[0.82rem] font-black uppercase tracking-[0.22em] text-fire">
                 01 / methodology
               </p>
-              <h1 className="mt-4 text-[clamp(2.8rem,4.5vw,4.8rem)] font-black leading-[0.9] tracking-normal">
+              <h2 className="mt-4 text-[clamp(2.8rem,4.5vw,4.8rem)] font-black leading-[0.9] tracking-normal">
                 methodology
-              </h1>
+              </h2>
               <p className="mt-5 max-w-md text-base font-bold leading-6 text-ink/72">
                 A selected-word research system for historical frequency,
                 semantic grouping, search statistics, scanned evidence, and
