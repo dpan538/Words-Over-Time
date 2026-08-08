@@ -5,22 +5,24 @@ import { EraSwitcher } from "@/components/EraSwitcher";
 import { EvidenceArchive } from "@/components/EvidenceArchive";
 import { FrequencyTimeline } from "@/components/FrequencyTimeline";
 import { MiniInspectorMenu } from "@/components/MiniInspectorMenu";
-import { Nav } from "@/components/Nav";
 import { PanelProgress } from "@/components/PanelProgress";
 import { PosterSection } from "@/components/PosterSection";
 import { RelationalConstellation } from "@/components/RelationalConstellation";
 import { ContextSignalField } from "@/components/ContextSignalField";
 import { VariantDriftField } from "@/components/VariantDriftField";
-import { ForeverInstitutionalDoubt, ForeverModernCaptureSupplement } from "@/components/ForeverInstitutionalDoubt";
+import {
+  DeferredForeverInstitutionalDoubt,
+  DeferredForeverModernCaptureSupplement,
+} from "@/components/DeferredForeverFigures";
 import type {
+  ForeverClientDataset,
   ForeverEraId,
-  ForeverGeneratedDataset,
 } from "@/types/foreverRealData";
 import type { InspectorEntry } from "@/types/inspector";
 import type { SelectedItem, SelectedLayer } from "@/types/visualSelection";
 
 type ForeverPosterProps = {
-  dataset: ForeverGeneratedDataset;
+  dataset: ForeverClientDataset;
 };
 
 type NarrativeBridgeProps = {
@@ -548,58 +550,13 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
   };
 
   return (
-    <main className="min-h-screen bg-wheat text-ink" aria-labelledby="forever-word-title">
+    <div className="min-h-screen bg-wheat text-ink">
       <div className="mx-auto flex w-full max-w-[1960px] flex-col px-4 py-5 sm:px-7 lg:px-10 xl:px-12">
-        <Nav />
-
-        <section className="relative overflow-hidden border-y border-ink py-8 sm:py-10 lg:py-12">
-          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(5,5,16,0.09)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.07)_1px,transparent_1px)] bg-[size:72px_72px]" />
-          <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-end">
-            <div>
-              <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.18em] text-fire">
-                Words Over Time / word page
-              </p>
-              <h1 id="forever-word-title" className="mt-5 text-[clamp(5.6rem,18vw,19rem)] font-black leading-[0.72] tracking-normal text-blaze">
-                forever
-              </h1>
-              <p className="mt-7 max-w-4xl text-[clamp(1.15rem,2.25vw,3rem)] font-black leading-[1.02] text-ink">
-                A word traced through permanence, repetition, devotion, memory,
-                and time.
-              </p>
-              <p className="mt-4 max-w-2xl font-mono text-[clamp(0.78rem,1.08vw,1rem)] font-black uppercase leading-6 tracking-[0.12em] text-ink/58">
-                Five layers of evidence. One word. Semantic evolution /
-                company / meaning / proof.
-              </p>
-            </div>
-
-            <dl className="grid border-y border-ink bg-wheat/74">
-              {[
-                ["ngram", `${dataset.coverage.ngramStartYear}-${dataset.coverage.ngramEndYear}`],
-                ["archive", `${dataset.coverage.gutenbergStartYear}-${dataset.coverage.gutenbergEndYear}`],
-                ["modern", dataset.coverage.recentImplemented ? `${dataset.coverage.modernContextStartYear}-${dataset.coverage.modernContextEndYear}` : "needed"],
-              ].map(([label, value], index) => (
-                <div
-                  key={label}
-                  className={`grid grid-cols-[7.25rem_1fr] border-ink ${
-                    index < 2 ? "border-b" : ""
-                  }`}
-                >
-                  <dt className="border-r border-ink px-3 py-3 font-mono text-[0.74rem] font-black uppercase leading-5 tracking-[0.14em] text-fire">
-                    {label}
-                  </dt>
-                  <dd className="px-3 py-3 font-mono text-[0.8rem] font-black uppercase leading-5 tracking-[0.1em]">
-                    {value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </section>
-
         <PanelProgress panels={foreverPanels} />
         <EraSwitcher eras={dataset.eras} selectedEra={selectedEra} onChange={handleEraChange} />
 
         <div className="mt-10 min-w-0">
+          <span id="meaning-over-time" className="block scroll-mt-6" aria-hidden="true" />
           <PosterSection
             id="semantic-evolution"
             eyebrow="01 / semantic evolution"
@@ -608,6 +565,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           >
             <div className="space-y-7">
               <div>
+                <span id="spelling" className="block scroll-mt-6" aria-hidden="true" />
                 <div className="mb-3 flex flex-wrap items-end justify-between gap-3 border-b border-ink/20 pb-3">
                   <p className="font-mono text-[0.86rem] font-black uppercase tracking-[0.16em] text-fire">
                     01A / frequency trace
@@ -662,7 +620,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
             title="Permanence under suspicion"
             intro="Forever often appears as a promise made by institutions, archives, platforms, and risk vocabularies. This chart keeps the evidence visible while refusing to turn those promises into a settled answer."
           >
-            <ForeverInstitutionalDoubt />
+            <DeferredForeverInstitutionalDoubt />
           </PosterSection>
 
           <NarrativeBridge
@@ -690,7 +648,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
               onHover={handleHover}
               onInspect={handleInspect}
             />
-            <ForeverModernCaptureSupplement />
+            <DeferredForeverModernCaptureSupplement />
           </PosterSection>
 
           <NarrativeBridge
@@ -725,6 +683,7 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
             children="The signal field shows the distribution. The archive shows the sources it was built from - and the gaps it was built around. Every mark in the panels above is traceable here: the snippet it came from, the corpus that produced it, the confidence level it was assigned."
           />
 
+          <span id="origin" className="block scroll-mt-6" aria-hidden="true" />
           <PosterSection
             id="evidence-archive"
             eyebrow="05 / evidence archive"
@@ -774,6 +733,6 @@ export function ForeverPoster({ dataset }: ForeverPosterProps) {
           setSelectedLayer(null);
         }}
       />
-    </main>
+    </div>
   );
 }

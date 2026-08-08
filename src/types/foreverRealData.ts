@@ -1,4 +1,4 @@
-import type { InspectorEntry } from "@/types/inspector";
+import type { InspectorEntry, InspectorSummary } from "@/types/inspector";
 
 export type ForeverEraId =
   | "all"
@@ -356,4 +356,11 @@ export type ForeverGeneratedDataset = {
     edges: GeneratedNetworkEdge[];
   };
   inspectors: InspectorEntry[];
+};
+
+export type ForeverClientDataset = Omit<
+  ForeverGeneratedDataset,
+  "generatedAt" | "sourceLayers" | "flows" | "network" | "inspectors"
+> & {
+  inspectors: InspectorSummary[];
 };

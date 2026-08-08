@@ -28,7 +28,6 @@ import {
   HubChart04CentralityRebuilt,
   type HubChart04DependencyData,
 } from "@/components/hub/HubChart04CentralityRebuilt";
-import { Nav } from "@/components/Nav";
 import hubChartDataPreviewJson from "@/data/generated/hub_chart_data_preview.json";
 import hubChart02RecoveredRoutingTermsJson from "../../docs/research/hub/processed/hub_chart02_recovered_routing_terms.json";
 import hubChart02RoutingByPeriodJson from "../../docs/research/hub/processed/hub_chart02_routing_by_period.json";
@@ -1533,59 +1532,9 @@ export function HubPoster() {
   const chart02Data = buildHubChart02Data();
   const chart03Data = buildHubChart03Data();
   const chart04Data = buildHubChart04Data();
-  const queryCount = Object.values(preview.chart01_frequency_layer.frequency_summary.quality_flag_counts).reduce(
-    (total, count) => total + count,
-    0,
-  );
-
   return (
-    <main className="min-h-screen bg-wheat text-ink">
+    <div className="min-h-screen bg-wheat text-ink">
       <div className="mx-auto flex w-full max-w-[1960px] flex-col px-4 py-5 sm:px-7 lg:px-10 xl:px-12">
-        <Nav />
-
-        <section className="relative overflow-hidden border-y border-ink py-8 sm:py-10 lg:py-12">
-          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(103,183,174,0.24)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.055)_1px,transparent_1px)] bg-[size:72px_72px]" />
-          <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-end">
-            <div>
-              <p className="font-mono text-[1.04rem] font-black uppercase tracking-[0.18em] text-hub-space">
-                Words Over Time / word page
-              </p>
-              <h1 className="mt-5 text-[clamp(5.6rem,18vw,19rem)] font-black leading-[0.72] tracking-normal text-hub-amethyst">
-                hub
-              </h1>
-              <p className="mt-7 max-w-5xl text-[clamp(1.15rem,2.25vw,3rem)] font-black leading-[1.02] text-ink">
-                A word whose center moved from the wheel to the systems around us.
-              </p>
-              <p className="mt-4 max-w-3xl font-mono text-[clamp(1rem,1.28vw,1.26rem)] font-black uppercase leading-6 tracking-[0.12em] text-hub-space">
-                Wheel center / city center / transfer point / network node / institutional access point.
-              </p>
-            </div>
-
-            <dl className="grid border-y border-ink bg-wheat/74">
-              {[
-                ["ngram", "1800-2022"],
-                ["chart 01", "semantic field"],
-                ["layers", String(chart01Data.layers.length)],
-                ["queries", String(queryCount)],
-              ].map(([label, value], index) => (
-                <div
-                  key={label}
-                  className={`grid grid-cols-[7.25rem_1fr] border-ink ${
-                    index < 3 ? "border-b" : ""
-                  }`}
-                >
-                  <dt className="border-r border-ink px-3 py-3 font-mono text-[0.95rem] font-black uppercase leading-5 tracking-[0.14em] text-hub-ruby">
-                    {label}
-                  </dt>
-                  <dd className="px-3 py-3 font-mono text-[1.02rem] font-black uppercase leading-5 tracking-[0.1em] text-ink">
-                    {value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </section>
-
         <HubPanelProgress />
 
         <div className="mt-10 min-w-0">
@@ -1598,6 +1547,8 @@ export function HubPoster() {
             </p>
           </div>
 
+          <span id="origin" className="block scroll-mt-6" aria-hidden="true" />
+          <span id="wheel-to-network" className="block scroll-mt-6" aria-hidden="true" />
           <HubSection
             eyebrow="01 / semantic frequency field"
             title={chart01Data.title}
@@ -1648,6 +1599,8 @@ export function HubPoster() {
             <HubChart02TransferModel data={chart02Data} />
           </HubSection>
 
+          <span id="hub-naming-machine" className="block scroll-mt-6" aria-hidden="true" />
+          <span id="hub-as-format" className="block scroll-mt-6" aria-hidden="true" />
           <HubSection
             eyebrow="03 / naming machine"
             title={chart03Data.title}
@@ -1658,6 +1611,7 @@ export function HubPoster() {
 
           <HubChart35MinorHubBranch chart03Data={chart03Data} chart04Data={chart04Data} />
 
+          <span id="hub-dependency" className="block scroll-mt-6" aria-hidden="true" />
           <HubSection
             eyebrow="04 / stable format"
             title={chart04Data.title}
@@ -1668,6 +1622,6 @@ export function HubPoster() {
 
         </div>
       </div>
-    </main>
+    </div>
   );
 }

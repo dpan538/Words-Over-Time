@@ -1,6 +1,6 @@
 import { JsonLd } from "@/components/JsonLd";
 import { PrivacyPoster } from "@/components/PrivacyPoster";
-import { WordSeoSummary } from "@/components/WordSeoSummary";
+import { WordPageShell } from "@/components/WordPageShell";
 import semanticWeatherJson from "@/data/generated/privacy_pre_modern_semantic_weather.json";
 import legalInjuryJson from "@/data/generated/privacy_legal_injury_matrix.json";
 import modernTransitJson from "@/data/generated/privacy_modern_transit_system.json";
@@ -78,16 +78,17 @@ export default function PrivacyPage() {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <PrivacyPoster
-        semanticWeather={semanticWeather}
-        legalInjury={legalInjury}
-        modernTransit={modernTransit}
-        geoAttention={geoAttention}
-        geoElevation={geoElevation}
-        geoDemographic={geoDemographic}
-        researchExpansion={researchExpansion}
-      />
-      <WordSeoSummary path="/words/privacy" />
+      <WordPageShell path="/words/privacy">
+        <PrivacyPoster
+          semanticWeather={semanticWeather}
+          legalInjury={legalInjury}
+          modernTransit={modernTransit}
+          geoAttention={geoAttention}
+          geoElevation={geoElevation}
+          geoDemographic={geoDemographic}
+          researchExpansion={researchExpansion}
+        />
+      </WordPageShell>
     </>
   );
 }

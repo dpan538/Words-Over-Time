@@ -1,6 +1,6 @@
 import { DepressionPoster } from "@/components/DepressionPoster";
 import { JsonLd } from "@/components/JsonLd";
-import { WordSeoSummary } from "@/components/WordSeoSummary";
+import { WordPageShell } from "@/components/WordPageShell";
 import branchesJson from "@/data/generated/depression_branches.json";
 import coverageJson from "@/data/generated/depression_coverage_report.json";
 import evidenceJson from "@/data/generated/depression_evidence_normalized.json";
@@ -38,14 +38,15 @@ export default function DepressionPage() {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <DepressionPoster
-        frequency={frequency}
-        prehistory={prehistory}
-        branches={branches}
-        evidence={evidence}
-        coverage={coverage}
-      />
-      <WordSeoSummary path="/words/depression" />
+      <WordPageShell path="/words/depression">
+        <DepressionPoster
+          frequency={frequency}
+          prehistory={prehistory}
+          branches={branches}
+          evidence={evidence}
+          coverage={coverage}
+        />
+      </WordPageShell>
     </>
   );
 }

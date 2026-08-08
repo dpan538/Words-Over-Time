@@ -35,6 +35,23 @@ export type InspectorEntry = {
   caveats: string[];
 };
 
+/** The subset of an inspector that is rendered in the browser-side quick view. */
+export type InspectorSummary = Pick<
+  InspectorEntry,
+  | "id"
+  | "title"
+  | "visualType"
+  | "elementType"
+  | "period"
+  | "evidenceCount"
+  | "documentFrequency"
+  | "scoreType"
+  | "scoreValue"
+  | "sourceCorpus"
+  | "relatedSnippetIds"
+  | "caveats"
+>;
+
 export type VisualElementMeta = {
   inspectorId: string;
   title: string;

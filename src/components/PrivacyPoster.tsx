@@ -26,7 +26,6 @@ import {
   PrivacyChart03GovernanceInterface,
   type PrivacyResearchExpansionDataset,
 } from "@/components/privacy/PrivacyChart03GovernanceInterface";
-import { Nav } from "@/components/Nav";
 import { PanelProgress } from "@/components/PanelProgress";
 import { PosterSection } from "@/components/PosterSection";
 
@@ -56,55 +55,8 @@ export function PrivacyPoster({
   researchExpansion,
 }: PrivacyPosterProps) {
   return (
-    <main className="min-h-screen bg-wheat text-ink" aria-labelledby="privacy-word-title">
+    <div className="min-h-screen bg-wheat text-ink">
       <div className="mx-auto flex w-full max-w-[1960px] flex-col px-4 py-5 sm:px-7 lg:px-10 xl:px-12">
-        <Nav />
-
-        <section className="relative overflow-hidden border-y border-ink/70 py-10 sm:py-12 lg:py-14">
-          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(5,5,16,0.058)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.05)_1px,transparent_1px)] bg-[size:86px_86px,86px_86px]" />
-          <div className="pointer-events-none absolute inset-x-0 top-1/2 h-px bg-ink/10" />
-          <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_19rem] lg:items-center">
-            <div>
-              <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.18em] text-privacy-violet">
-                Words Over Time / lexical study
-              </p>
-              <h1 id="privacy-word-title" className="mt-5 text-[clamp(5.15rem,14.2vw,14.2rem)] font-black leading-[0.9] tracking-normal text-privacy-violet">
-                privacy
-              </h1>
-              <p className="mt-10 max-w-5xl text-[clamp(1.12rem,2.12vw,2.7rem)] font-black leading-[1.04] text-ink">
-                A word that moves from private life and secrecy, into legal and data systems, across geography, then into governance interfaces.
-              </p>
-              <p className="mt-4 max-w-3xl font-mono text-[clamp(0.76rem,1.02vw,0.96rem)] font-black uppercase leading-6 tracking-[0.12em] text-ink/74">
-                Seclusion / secrecy / legal claim / data protection / geography / population / consent / surveillance / AI-sensitive data.
-              </p>
-            </div>
-
-            <dl className="grid self-end border-y border-ink/70 bg-wheat/82 lg:self-center">
-              {[
-                ["study", "word history"],
-                ["scope", "1200-2026"],
-                ["sequence", "01A-03 / 7 views"],
-                ["method", "source-led evidence"],
-                ["not", "site privacy policy"],
-              ].map(([label, value], index) => (
-                <div
-                  key={label}
-                  className={`grid grid-cols-[7.25rem_1fr] border-ink/72 ${
-                    index < 4 ? "border-b" : ""
-                  }`}
-                >
-                  <dt className="border-r border-ink/72 px-3 py-3 font-mono text-[0.74rem] font-black uppercase leading-5 tracking-[0.14em] text-privacy-violet/76">
-                    {label}
-                  </dt>
-                  <dd className="px-3 py-3 font-mono text-[0.8rem] font-black uppercase leading-5 tracking-[0.1em]">
-                    {value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </section>
-
         <PanelProgress panels={privacyPanels} className="pb-3 pt-4" />
 
         <div className="mt-7 min-w-0">
@@ -120,6 +72,8 @@ export function PrivacyPoster({
             </p>
           </div>
 
+          <span id="etymology" className="block scroll-mt-6" aria-hidden="true" />
+          <span id="privacy-seclusion" className="block scroll-mt-6" aria-hidden="true" />
           <PosterSection
             id="chart-1-semantic-weather"
             eyebrow="01 / semantic formation"
@@ -136,7 +90,7 @@ export function PrivacyPoster({
             </div>
             <PrivacyChart01SemanticWeather dataset={semanticWeather} />
 
-            <div className="mt-16 pt-10">
+            <div id="legal-and-data-meaning" className="mt-16 scroll-mt-6 pt-10">
               <div className="mb-8 grid gap-5 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-10">
                 <p className="font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.16em] text-privacy-violet">
                   01B / legal injury
@@ -173,6 +127,7 @@ export function PrivacyPoster({
             </div>
           </PosterSection>
 
+          <span id="chart-2-world-signal" className="block scroll-mt-6" aria-hidden="true" />
           <PosterSection
             id="chart-2-geo-attention"
             eyebrow="02 / geographic attention"
@@ -232,6 +187,7 @@ export function PrivacyPoster({
             </div>
           </PosterSection>
 
+          <span id="privacy-and-surveillance" className="block scroll-mt-6" aria-hidden="true" />
           <PosterSection
             id="chart-3-governance-interface"
             eyebrow="03 / governance interface"
@@ -269,6 +225,6 @@ export function PrivacyPoster({
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

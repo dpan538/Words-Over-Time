@@ -395,7 +395,7 @@ function ForeverDoubtGlobe() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_48%,rgba(5,5,16,0.08),transparent_38%),linear-gradient(90deg,rgba(5,5,16,0.055)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.045)_1px,transparent_1px)] bg-[size:auto,44px_44px,44px_44px]" />
 <canvas ref={canvasRef} className="absolute inset-0 h-full w-full cursor-ew-resize active:cursor-ew-resize" aria-label="Three dimensional evidence globe for forever" />
       {webglFailed ? (
-        <div className="absolute inset-x-8 top-1/2 -translate-y-1/2 border border-ink/20 bg-wheat/90 p-5 font-mono text-[0.85rem] font-black uppercase leading-6 tracking-[0.08em] text-ink/64">
+        <div className="absolute inset-x-8 top-1/2 -translate-y-1/2 border border-ink/20 bg-wheat/90 p-5 font-mono text-[0.85rem] font-black uppercase leading-6 tracking-[0.08em] text-ink/70">
           WebGL preview is unavailable in this browser state. The evidence cards below remain readable.
         </div>
       ) : null}
@@ -403,16 +403,16 @@ function ForeverDoubtGlobe() {
         <p className="font-mono text-[0.76rem] font-black uppercase tracking-[0.14em] text-fire">
           chart 02 / 3d evidence instrument
         </p>
-        <p className="mt-3 font-mono text-[0.7rem] font-black uppercase leading-5 tracking-[0.08em] text-ink/58">
+        <p className="mt-3 font-mono text-[0.7rem] font-black uppercase leading-5 tracking-[0.08em] text-ink/60">
           A and B mark two possible readings.<br />Drag horizontally to turn the instrument.<br />Hover coloured blocks for evidence.
         </p>
       </div>
       {hovered ? (
-        <div className="pointer-events-none absolute right-6 top-6 max-w-[24rem] border border-ink/25 bg-wheat/92 p-4 shadow-[8px_8px_0_rgba(5,5,16,0.18)]">
+        <div className="pointer-events-none absolute right-6 top-6 max-w-[24rem] border border-ink/25 bg-wheat/[0.92] p-4 shadow-[8px_8px_0_rgba(5,5,16,0.18)]">
           <p className="font-mono text-[0.76rem] font-black uppercase tracking-[0.12em] text-fire">hover evidence</p>
           <p className="mt-2 font-mono text-[1rem] font-black uppercase leading-6 tracking-[0.08em] text-ink">{hovered.evidence}</p>
-          <p className="mt-2 font-mono text-[0.78rem] font-black uppercase leading-5 tracking-[0.08em] text-ink/48">{hovered.source}</p>
-          <p className="mt-3 text-sm leading-6 text-ink/68">{hovered.doubt}</p>
+          <p className="mt-2 font-mono text-[0.78rem] font-black uppercase leading-5 tracking-[0.08em] text-ink/60">{hovered.source}</p>
+          <p className="mt-3 text-sm leading-6 text-ink/[0.68]">{hovered.doubt}</p>
         </div>
       ) : null}
     </div>
@@ -421,16 +421,16 @@ function ForeverDoubtGlobe() {
 
 export function ForeverInstitutionalDoubt() {
   return (
-    <div className="overflow-hidden border border-ink/18 bg-[#fbf8ee]">
-      <div className="grid border-b border-ink/18 lg:grid-cols-[22rem_1fr]">
-        <div className="border-b border-ink/18 p-6 lg:border-b-0 lg:border-r">
+    <div className="overflow-hidden border border-ink/[0.18] bg-[#fbf8ee]">
+      <div className="grid border-b border-ink/[0.18] lg:grid-cols-[22rem_1fr]">
+        <div className="border-b border-ink/[0.18] p-6 lg:border-b-0 lg:border-r">
           <p className="font-mono text-[0.9rem] font-black uppercase tracking-[0.16em] text-fire">
             chart 02 / permanence under suspicion
           </p>
           <h3 className="mt-4 text-[clamp(1.9rem,2.9vw,3.6rem)] font-black leading-[0.95] text-ink">
             Evidence does not settle forever.
           </h3>
-          <p className="mt-5 text-base leading-7 text-ink/68">
+          <p className="mt-5 text-base leading-7 text-ink/[0.68]">
             A 3D evidence instrument tests institutional permanence without turning it into a final answer.
           </p>
         </div>
@@ -438,17 +438,17 @@ export function ForeverInstitutionalDoubt() {
       </div>
       <div className="grid lg:grid-cols-4">
         {doubtCards.map((card, index) => (
-          <article key={card.id} className={`min-h-[200px] border-ink/18 p-5 ${index < 3 ? "border-b lg:border-b-0 lg:border-r" : ""}`}>
+          <article key={card.id} className={`min-h-[200px] border-ink/[0.18] p-5 ${index < 3 ? "border-b lg:border-b-0 lg:border-r" : ""}`}>
             <p className="font-mono text-[0.84rem] font-black uppercase tracking-[0.14em] text-fire">
               evidence {String(index + 1).padStart(2, "0")}
             </p>
             <p className="mt-4 font-mono text-[1rem] font-black uppercase leading-6 tracking-[0.08em] text-ink">
               {card.evidence}
             </p>
-            <p className="mt-3 font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.08em] text-ink/48">
+            <p className="mt-3 font-mono text-[0.82rem] font-black uppercase leading-5 tracking-[0.08em] text-ink/60">
               {card.source}
             </p>
-            <p className="mt-4 text-base leading-7 text-ink/68">
+            <p className="mt-4 text-base leading-7 text-ink/[0.68]">
               {card.doubt}
             </p>
           </article>
@@ -567,9 +567,9 @@ export function ForeverModernCaptureSupplement() {
 
   if (!mounted) {
     return (
-      <div className="mt-6 overflow-hidden border border-ink/18 bg-[#020204] text-wheat">
+      <div className="mt-6 overflow-hidden border border-ink/[0.18] bg-[#020204] text-wheat">
         <div className="relative flex min-h-[820px] items-center justify-center overflow-hidden">
-          <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.18em] text-[#f3efe1]/42">
+          <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.18em] text-[#f3efe1]/50">
             preparing historical signal semicircle
           </p>
         </div>
@@ -578,7 +578,7 @@ export function ForeverModernCaptureSupplement() {
   }
 
   return (
-    <div className="mt-6 overflow-hidden border border-ink/18 bg-[#020204] text-wheat">
+    <div className="mt-6 overflow-hidden border border-ink/[0.18] bg-[#020204] text-wheat">
       <div className="relative min-h-[820px] overflow-hidden">
         <svg viewBox="0 0 1200 820" role="img" aria-label="Two layer historical meaning and signal-length semicircle for forever" className="relative z-10 h-full min-h-[820px] w-full bg-[#020204]">
           <defs>
@@ -742,8 +742,8 @@ export function ForeverModernCaptureSupplement() {
           </text>
         </svg>
       </div>
-      <div className="border-t border-wheat/16 bg-[#020204] p-5">
-        <p className="max-w-6xl font-mono text-[0.68rem] font-black uppercase leading-6 tracking-[0.1em] text-[#f3efe1]/58">
+      <div className="border-t border-wheat/[0.16] bg-[#020204] p-5">
+        <p className="max-w-6xl font-mono text-[0.68rem] font-black uppercase leading-6 tracking-[0.1em] text-[#f3efe1]/60">
           Reading note . meanings move clockwise from devotional print to platform retention; solid ray length marks frequency, dotted extension marks public-search pressure. Hover a meaning band for the exact cue.
         </p>
       </div>

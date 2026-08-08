@@ -50,7 +50,6 @@ import {
   semanticRelationRoutes,
   type SemanticRelationRoute,
 } from "@/components/DepressionSemanticPlate";
-import { Nav } from "@/components/Nav";
 import { PosterSection } from "@/components/PosterSection";
 import type {
   DepressionBranchesFile,
@@ -779,7 +778,7 @@ export function DepressionPoster({
   };
 
   return (
-    <main
+    <div
       className="min-h-screen bg-wheat text-ink"
       onPointerDownCapture={(event) => {
         if (!pinnedInspectorId) return;
@@ -790,53 +789,10 @@ export function DepressionPoster({
       }}
     >
       <div className="mx-auto flex w-full max-w-[1960px] flex-col px-4 py-5 sm:px-7 lg:px-10 xl:px-12">
-        <Nav />
-
-        <section className="relative overflow-hidden border-y border-ink py-8 sm:py-10 lg:py-12">
-          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(5,5,16,0.09)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.07)_1px,transparent_1px)] bg-[size:72px_72px]" />
-          <div className="relative grid gap-10 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-end">
-            <div>
-              <div className="flex items-center gap-5">
-                <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.18em] text-nice">
-                  Words Over Time / word page
-                </p>
-              </div>
-              <h1 className="mt-6 max-w-[72rem] text-[clamp(4.4rem,12.2vw,13.2rem)] font-black leading-[0.76] tracking-normal text-nice">
-                depression
-              </h1>
-              <p className="mt-14 max-w-6xl text-[clamp(1.15rem,2.2vw,2.85rem)] font-black leading-[1.04] text-ink">
-                A record of how one word branches through seven centuries,
-                from loweredness and melancholy to economy, diagnosis, and
-                public discourse.
-              </p>
-            </div>
-
-            <dl className="grid border-y border-ink bg-wheat/74">
-              {[
-                ["ngram", `${frequency.source.startYear}-${frequency.source.endYear}`],
-                ["lexical", `${prehistory.coverage.earliestApproximateYear}-${prehistory.coverage.latestApproximateYear}`],
-                ["archive", `${coverage.layerCoverage.archivalContext.coverage.startYear}-${coverage.layerCoverage.archivalContext.coverage.endYear}`],
-                ["modern", `${coverage.layerCoverage.modernContext.coverage.startYear}-${coverage.layerCoverage.modernContext.coverage.endYear}`],
-              ].map(([label, value], index) => (
-                <div
-                  key={label}
-                  className={`grid grid-cols-[7.25rem_1fr] border-ink ${
-                    index < 3 ? "border-b" : ""
-                  }`}
-                >
-                  <dt className="border-r border-ink px-3 py-3 font-mono text-[0.74rem] font-black uppercase leading-5 tracking-[0.14em] text-nice">
-                    {label}
-                  </dt>
-                  <dd className="px-3 py-3 font-mono text-[0.8rem] font-black uppercase leading-5 tracking-[0.1em]">
-                    {value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </section>
-
         <div className="mt-10 min-w-0">
+          <span id="meaning-over-time" className="block scroll-mt-6" aria-hidden="true" />
+          <span id="physical-and-weather" className="block scroll-mt-6" aria-hidden="true" />
+          <span id="depression-historical-plate" className="block scroll-mt-6" aria-hidden="true" />
           <PosterSection
             eyebrow="01 / HISTORICAL SEMANTIC PLATE"
             title="Geometric semantic anatomy"
@@ -853,6 +809,7 @@ export function DepressionPoster({
             />
           </PosterSection>
 
+          <span id="clinical-meaning" className="block scroll-mt-6" aria-hidden="true" />
           <PosterSection
             eyebrow="02 / MODERN SEMANTIC MACHINE"
             title="Depression as a semantic machine"
@@ -874,7 +831,8 @@ export function DepressionPoster({
             </p>
           </div>
 
-          <div id="chart-03">
+          <div id="economic-meaning" className="scroll-mt-6">
+            <span id="chart-03" className="block scroll-mt-6" aria-hidden="true" />
             <PosterSection
               eyebrow="03 / SOCIAL ATMOSPHERE LOOP"
               title="Depression as a social atmosphere"
@@ -944,6 +902,6 @@ export function DepressionPoster({
           setHoveredInspectorId(null);
         }}
       />
-    </main>
+    </div>
   );
 }
