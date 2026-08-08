@@ -51,13 +51,13 @@ export const wordStudyProfiles: Record<WordStudyPath, WordStudyProfile> = {
     route: "/words/forever",
     word: "forever",
     eyebrow: "Words Over Time / word study",
-    heroSummary: "A source-led study of written form, duration, devotion, memory, archives, and platform persistence.",
+    heroSummary: "A source-led study of written form, duration, devotion, memory, archives, and questions of platform persistence.",
     scopeLine: "Spelling variation / printed frequency / archival contexts / modern capture",
     primaryAnswerId: "spelling-answer",
     coverage: [
       { label: "Ngram", value: "1500–2022", note: "yearly printed-book frequency; 1700+ is the recommended public emphasis" },
       { label: "Archive", value: "1726–1930", note: "selected Project Gutenberg contexts" },
-      { label: "Modern", value: "2024–2026", note: "a separate, non-comparable open-news snapshot" },
+      { label: "Modern", value: "2024–2026", note: "Wikinews search-result revision years; a separate, non-comparable snapshot" },
     ],
     evidenceTypes: ["lexical leads", "Ngram series", "public-domain snippets", "collocates", "modern context"],
     chapters: [
@@ -100,7 +100,7 @@ export const wordStudyProfiles: Record<WordStudyPath, WordStudyProfile> = {
         route: "/words/forever",
         question: "What does forever mean in this study?",
         shortAnswer:
-          "Across the selected evidence, forever carries claims of duration and permanence through devotional, affective, memorial, archival, institutional, and platform contexts. The page studies those uses rather than supplying one universal definition.",
+          "Across the selected corpus evidence, forever carries claims of duration and permanence through devotional, affective, memorial, and archival contexts. Institutional and platform persistence remain interpretive prompts on this page, not established corpus findings.",
         evidenceBasis: ["semantic categories", "phrases and collocates", "archival snippets", "modern context layer"],
         caveat: "The historical corpus and the 2024–2026 snapshot are not directly comparable, and semantic groups are interpretive.",
         anchor: "meaning-over-time",
@@ -210,7 +210,7 @@ export const wordStudyProfiles: Record<WordStudyPath, WordStudyProfile> = {
         route: "/words/artificial",
         question: "What does ‘created by artificial means’ name here?",
         shortAnswer:
-          "On this page, the phrase belongs to made-by-art, technical construction, and not-natural layers; it is kept distinct from later fake-adjacent, synthetic, and suspicion readings.",
+          "In this page’s semantic model, ‘created by artificial means’ is read through made-by-art, technical-construction, and not-natural layers. Those layers are kept distinct from fake-adjacent, synthetic, and suspicion readings, which can coexist across periods.",
         evidenceBasis: ["Chart 01 semantic chamber", "safe-claims boundary", "technical construction records"],
         caveat: "The phrase can change with its object and period, so this is a research-scoped relation rather than an exhaustive definition.",
         anchor: "created-by-artificial-means",
@@ -303,7 +303,7 @@ export const wordStudyProfiles: Record<WordStudyPath, WordStudyProfile> = {
     primaryAnswerId: "depression-branching-answer",
     coverage: [
       { label: "Ngram", value: "1500–2022", note: "yearly printed-book series; pre-1700 values require caution" },
-      { label: "Lexical", value: "c.1300–present", note: "secondary lexical leads and selected attestations" },
+      { label: "Lexical leads", value: "c.1400–1930", note: "target-word leads; related melancholy evidence begins c.1300" },
       { label: "Modern", value: "to 2026", note: "clinical, economic, public-health, and discourse layers" },
     ],
     evidenceTypes: ["lexical records", "Ngram series", "archival context", "clinical sources", "economic sources"],
@@ -332,7 +332,7 @@ export const wordStudyProfiles: Record<WordStudyPath, WordStudyProfile> = {
         route: "/words/depression",
         question: "What connects physical and weather depression?",
         shortAnswer:
-          "The page keeps a lowering relation visible across physical hollows and meteorological or barometric lows, while treating those as distinct domain branches rather than one definition.",
+          "The page keeps a lowering relation visible across literal pressing or downward uses, geographic hollows, and meteorological or barometric lows, while treating them as distinct domain branches rather than one definition.",
         evidenceBasis: ["physical branch", "geographic branch", "meteorological branch", "lexical lead records"],
         caveat: "Secondary lexical dates are evidence leads, not definitive first-use proof.",
         anchor: "physical-and-weather",
@@ -382,7 +382,7 @@ export const wordStudyProfiles: Record<WordStudyPath, WordStudyProfile> = {
         shortAnswer:
           "The grammar route keeps datum visible as a singular item and data as a historically plural form, then follows evidence for data used with both plural and singular or mass-noun grammar.",
         evidenceBasis: ["datum route dataset", "grammar usage records", "historical index"],
-        caveat: "The chart describes attested usage patterns; it does not issue a universal prescriptive rule.",
+        caveat: "The chart describes genre-sensitive printed-book usage signals; it does not issue a universal prescriptive rule.",
         anchor: "datum-and-data",
         relatedSection: "datum-and-data",
         searchIntent: "datum / singular and plural",
