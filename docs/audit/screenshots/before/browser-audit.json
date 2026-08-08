@@ -1,0 +1,5114 @@
+[
+  {
+    "body": {
+      "clientWidth": 320,
+      "scrollHeight": 815,
+      "scrollWidth": 413
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "Words Over Time: semantic change and word usage over time"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Words Over Time: semantic change and word usage over time"
+      }
+    ],
+    "horizontalOverflow": true,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about"
+    ],
+    "root": {
+      "clientWidth": 320,
+      "scrollWidth": 413
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      }
+    ],
+    "svgRoleImages": 0,
+    "tables": 0,
+    "title": "Words Over Time: Word Meaning, History, and Usage",
+    "url": "http://localhost:3100/",
+    "viewport": {
+      "dpr": 1,
+      "height": 568,
+      "width": 320
+    },
+    "visibleControls": 8,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 320,
+      "scrollHeight": 3015,
+      "scrollWidth": 320
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "word studies"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "word studies"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about"
+    ],
+    "root": {
+      "clientWidth": 320,
+      "scrollWidth": 320
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      }
+    ],
+    "svgRoleImages": 0,
+    "tables": 0,
+    "title": "Word Studies: Meaning and Usage Over Time | Words Over Time",
+    "url": "http://localhost:3100/words",
+    "viewport": {
+      "dpr": 1,
+      "height": 568,
+      "width": 320
+    },
+    "visibleControls": 8,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 320,
+      "scrollHeight": 12090,
+      "scrollWidth": 320
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "forever"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "forever"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic evolution"
+      },
+      {
+        "level": "H2",
+        "text": "Permanence under suspicion"
+      },
+      {
+        "level": "H3",
+        "text": "Evidence does not settle forever."
+      },
+      {
+        "level": "H2",
+        "text": "Relational constellation"
+      },
+      {
+        "level": "H2",
+        "text": "Context signal field"
+      },
+      {
+        "level": "H2",
+        "text": "Evidence archive"
+      },
+      {
+        "level": "H2",
+        "text": "About forever/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/artificial",
+      "/words/privacy",
+      "/words/data",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 320,
+      "scrollWidth": 320
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 280
+      }
+    ],
+    "svgRoleImages": 7,
+    "tables": 0,
+    "title": "Forever Spelling, Meaning, and Origin | Words Over Time",
+    "url": "http://localhost:3100/words/forever",
+    "viewport": {
+      "dpr": 1,
+      "height": 568,
+      "width": 320
+    },
+    "visibleControls": 14,
+    "widerScreenFallbackVisible": true
+  },
+  {
+    "body": {
+      "clientWidth": 320,
+      "scrollHeight": 12594,
+      "scrollWidth": 320
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "privacy"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "privacy"
+      },
+      {
+        "level": "H2",
+        "text": "Before Privacy Became a Right"
+      },
+      {
+        "level": "H3",
+        "text": "From Privacy to Legal Injury"
+      },
+      {
+        "level": "H3",
+        "text": "From Legal Right to Data System"
+      },
+      {
+        "level": "H2",
+        "text": "Privacy as a World Signal"
+      },
+      {
+        "level": "H3",
+        "text": "Where privacy concentrates, then radiates."
+      },
+      {
+        "level": "H3",
+        "text": "Privacy Signal Against Altitude"
+      },
+      {
+        "level": "H3",
+        "text": "Privacy Signal, Population, and Life Expectancy"
+      },
+      {
+        "level": "H2",
+        "text": "Privacy Becomes an Interface"
+      },
+      {
+        "level": "H2",
+        "text": "About privacy/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/data",
+      "/words/hub",
+      "/words/artificial",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 320,
+      "scrollWidth": 320
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 38,
+        "href": null,
+        "name": "Hotspot map",
+        "tag": "button",
+        "width": 131
+      },
+      {
+        "height": 38,
+        "href": null,
+        "name": "Radiation map",
+        "tag": "button",
+        "width": 148
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/hub",
+        "name": "Hub/",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 280
+      }
+    ],
+    "svgRoleImages": 7,
+    "tables": 0,
+    "title": "Privacy Etymology and Meaning Over Time | Words Over Time",
+    "url": "http://localhost:3100/words/privacy",
+    "viewport": {
+      "dpr": 1,
+      "height": 568,
+      "width": 320
+    },
+    "visibleControls": 9,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 320,
+      "scrollHeight": 11924,
+      "scrollWidth": 337
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "artificial"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "artificial"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial before fake"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic chamber"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial Under Pressure"
+      },
+      {
+        "level": "H2",
+        "text": "Under pressure"
+      },
+      {
+        "level": "H2",
+        "text": "In the Age of Mechanical Reproduction"
+      },
+      {
+        "level": "H3",
+        "text": "Artificial as the Reproduced Experience"
+      },
+      {
+        "level": "H2",
+        "text": "Suspicion Orbit"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial suspicion field"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic Attractor"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial semantic attractor field"
+      },
+      {
+        "level": "H3",
+        "text": "artificial"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial Enters the Human"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial human boundary stack"
+      },
+      {
+        "level": "H2",
+        "text": "About artificial/"
+      }
+    ],
+    "horizontalOverflow": true,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/forever",
+      "/words/data",
+      "/words/privacy",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 320,
+      "scrollWidth": 336
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 14,
+        "href": null,
+        "name": "artificial",
+        "tag": "button",
+        "width": 53
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "resting",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "word family",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "technical",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "sense boundary",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "full overlay",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1590s artificial tears",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1773 artificial manner / style",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1787 artificial manners",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1828 not natural / not genuine",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1856-1898 artificial coloring",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1904 artificially colored",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1950 no artificial flavoring",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1969-1976 artificial sweetener",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "2015 remove artificial colors / flavors",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "2025-2026 no artificial colors / flavors",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/forever",
+        "name": "Forever/",
+        "tag": "a",
+        "width": 91
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 280
+      }
+    ],
+    "svgRoleImages": 1,
+    "tables": 0,
+    "title": "Artificial Etymology: Artifice to AI | Words Over Time",
+    "url": "http://localhost:3100/words/artificial",
+    "viewport": {
+      "dpr": 1,
+      "height": 568,
+      "width": 320
+    },
+    "visibleControls": 34,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 320,
+      "scrollHeight": 17408,
+      "scrollWidth": 320
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "hub"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "hub"
+      },
+      {
+        "level": "H2",
+        "text": "A Word Whose Center Moved"
+      },
+      {
+        "level": "H3",
+        "text": "All Semantic Layers"
+      },
+      {
+        "level": "H2",
+        "text": "The Transfer Model"
+      },
+      {
+        "level": "H2",
+        "text": "What Goes Around Hub"
+      },
+      {
+        "level": "H2",
+        "text": "Small Hubs, Specific Worlds"
+      },
+      {
+        "level": "H3",
+        "text": "Room, Desk, Portal"
+      },
+      {
+        "level": "H3",
+        "text": "Named Surface"
+      },
+      {
+        "level": "H3",
+        "text": "Collected Access"
+      },
+      {
+        "level": "H3",
+        "text": "Connective Object"
+      },
+      {
+        "level": "H2",
+        "text": "Centrality Rebuilt"
+      },
+      {
+        "level": "H3",
+        "text": "All Dependency Layers"
+      },
+      {
+        "level": "H3",
+        "text": "Hub keeps branching after the central model."
+      },
+      {
+        "level": "H3",
+        "text": "Modifier gravity field"
+      },
+      {
+        "level": "H3",
+        "text": "Dependency radius"
+      },
+      {
+        "level": "H2",
+        "text": "About hub/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/privacy",
+      "/words/data",
+      "/words/artificial",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 320,
+      "scrollWidth": 320
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "allAll layers clear",
+        "tag": "button",
+        "width": 288
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "institution",
+        "tag": "button",
+        "width": 155
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "platform",
+        "tag": "button",
+        "width": 127
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "content",
+        "tag": "button",
+        "width": 118
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "technical",
+        "tag": "button",
+        "width": 136
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "community",
+        "tag": "button",
+        "width": 136
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 280
+      }
+    ],
+    "svgRoleImages": 10,
+    "tables": 0,
+    "title": "Hub Etymology: From Wheel Center to Network | Words Over Time",
+    "url": "http://localhost:3100/words/hub",
+    "viewport": {
+      "dpr": 1,
+      "height": 568,
+      "width": 320
+    },
+    "visibleControls": 24,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 360,
+      "scrollHeight": 815,
+      "scrollWidth": 413
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "Words Over Time: semantic change and word usage over time"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Words Over Time: semantic change and word usage over time"
+      }
+    ],
+    "horizontalOverflow": true,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about"
+    ],
+    "root": {
+      "clientWidth": 360,
+      "scrollWidth": 413
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      }
+    ],
+    "svgRoleImages": 0,
+    "tables": 0,
+    "title": "Words Over Time: Word Meaning, History, and Usage",
+    "url": "http://localhost:3100/",
+    "viewport": {
+      "dpr": 1,
+      "height": 800,
+      "width": 360
+    },
+    "visibleControls": 8,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 360,
+      "scrollHeight": 2779,
+      "scrollWidth": 360
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "word studies"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "word studies"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about"
+    ],
+    "root": {
+      "clientWidth": 360,
+      "scrollWidth": 360
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      }
+    ],
+    "svgRoleImages": 0,
+    "tables": 0,
+    "title": "Word Studies: Meaning and Usage Over Time | Words Over Time",
+    "url": "http://localhost:3100/words",
+    "viewport": {
+      "dpr": 1,
+      "height": 800,
+      "width": 360
+    },
+    "visibleControls": 8,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 360,
+      "scrollHeight": 11564,
+      "scrollWidth": 360
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "forever"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "forever"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic evolution"
+      },
+      {
+        "level": "H2",
+        "text": "Permanence under suspicion"
+      },
+      {
+        "level": "H3",
+        "text": "Evidence does not settle forever."
+      },
+      {
+        "level": "H2",
+        "text": "Relational constellation"
+      },
+      {
+        "level": "H2",
+        "text": "Context signal field"
+      },
+      {
+        "level": "H2",
+        "text": "Evidence archive"
+      },
+      {
+        "level": "H2",
+        "text": "About forever/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/artificial",
+      "/words/privacy",
+      "/words/data",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 360,
+      "scrollWidth": 360
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 320
+      }
+    ],
+    "svgRoleImages": 7,
+    "tables": 0,
+    "title": "Forever Spelling, Meaning, and Origin | Words Over Time",
+    "url": "http://localhost:3100/words/forever",
+    "viewport": {
+      "dpr": 1,
+      "height": 800,
+      "width": 360
+    },
+    "visibleControls": 14,
+    "widerScreenFallbackVisible": true
+  },
+  {
+    "body": {
+      "clientWidth": 360,
+      "scrollHeight": 11766,
+      "scrollWidth": 360
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "privacy"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "privacy"
+      },
+      {
+        "level": "H2",
+        "text": "Before Privacy Became a Right"
+      },
+      {
+        "level": "H3",
+        "text": "From Privacy to Legal Injury"
+      },
+      {
+        "level": "H3",
+        "text": "From Legal Right to Data System"
+      },
+      {
+        "level": "H2",
+        "text": "Privacy as a World Signal"
+      },
+      {
+        "level": "H3",
+        "text": "Where privacy concentrates, then radiates."
+      },
+      {
+        "level": "H3",
+        "text": "Privacy Signal Against Altitude"
+      },
+      {
+        "level": "H3",
+        "text": "Privacy Signal, Population, and Life Expectancy"
+      },
+      {
+        "level": "H2",
+        "text": "Privacy Becomes an Interface"
+      },
+      {
+        "level": "H2",
+        "text": "About privacy/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/data",
+      "/words/hub",
+      "/words/artificial",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 360,
+      "scrollWidth": 360
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 38,
+        "href": null,
+        "name": "Hotspot map",
+        "tag": "button",
+        "width": 131
+      },
+      {
+        "height": 38,
+        "href": null,
+        "name": "Radiation map",
+        "tag": "button",
+        "width": 148
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/hub",
+        "name": "Hub/",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 320
+      }
+    ],
+    "svgRoleImages": 7,
+    "tables": 0,
+    "title": "Privacy Etymology and Meaning Over Time | Words Over Time",
+    "url": "http://localhost:3100/words/privacy",
+    "viewport": {
+      "dpr": 1,
+      "height": 800,
+      "width": 360
+    },
+    "visibleControls": 9,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 360,
+      "scrollHeight": 11323,
+      "scrollWidth": 360
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "artificial"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "artificial"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial before fake"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic chamber"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial Under Pressure"
+      },
+      {
+        "level": "H2",
+        "text": "Under pressure"
+      },
+      {
+        "level": "H2",
+        "text": "In the Age of Mechanical Reproduction"
+      },
+      {
+        "level": "H3",
+        "text": "Artificial as the Reproduced Experience"
+      },
+      {
+        "level": "H2",
+        "text": "Suspicion Orbit"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial suspicion field"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic Attractor"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial semantic attractor field"
+      },
+      {
+        "level": "H3",
+        "text": "artificial"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial Enters the Human"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial human boundary stack"
+      },
+      {
+        "level": "H2",
+        "text": "About artificial/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/forever",
+      "/words/data",
+      "/words/privacy",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 360,
+      "scrollWidth": 360
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 14,
+        "href": null,
+        "name": "artificial",
+        "tag": "button",
+        "width": 53
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "resting",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "word family",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "technical",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "sense boundary",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "full overlay",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1590s artificial tears",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1773 artificial manner / style",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1787 artificial manners",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1828 not natural / not genuine",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1856-1898 artificial coloring",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1904 artificially colored",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1950 no artificial flavoring",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1969-1976 artificial sweetener",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "2015 remove artificial colors / flavors",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "2025-2026 no artificial colors / flavors",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/forever",
+        "name": "Forever/",
+        "tag": "a",
+        "width": 91
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 320
+      }
+    ],
+    "svgRoleImages": 1,
+    "tables": 0,
+    "title": "Artificial Etymology: Artifice to AI | Words Over Time",
+    "url": "http://localhost:3100/words/artificial",
+    "viewport": {
+      "dpr": 1,
+      "height": 800,
+      "width": 360
+    },
+    "visibleControls": 34,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 360,
+      "scrollHeight": 16568,
+      "scrollWidth": 360
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "hub"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "hub"
+      },
+      {
+        "level": "H2",
+        "text": "A Word Whose Center Moved"
+      },
+      {
+        "level": "H3",
+        "text": "All Semantic Layers"
+      },
+      {
+        "level": "H2",
+        "text": "The Transfer Model"
+      },
+      {
+        "level": "H2",
+        "text": "What Goes Around Hub"
+      },
+      {
+        "level": "H2",
+        "text": "Small Hubs, Specific Worlds"
+      },
+      {
+        "level": "H3",
+        "text": "Room, Desk, Portal"
+      },
+      {
+        "level": "H3",
+        "text": "Named Surface"
+      },
+      {
+        "level": "H3",
+        "text": "Collected Access"
+      },
+      {
+        "level": "H3",
+        "text": "Connective Object"
+      },
+      {
+        "level": "H2",
+        "text": "Centrality Rebuilt"
+      },
+      {
+        "level": "H3",
+        "text": "All Dependency Layers"
+      },
+      {
+        "level": "H3",
+        "text": "Hub keeps branching after the central model."
+      },
+      {
+        "level": "H3",
+        "text": "Modifier gravity field"
+      },
+      {
+        "level": "H3",
+        "text": "Dependency radius"
+      },
+      {
+        "level": "H2",
+        "text": "About hub/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/privacy",
+      "/words/data",
+      "/words/artificial",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 360,
+      "scrollWidth": 360
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "allAll layers clear",
+        "tag": "button",
+        "width": 328
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "institution",
+        "tag": "button",
+        "width": 155
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "platform",
+        "tag": "button",
+        "width": 127
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "content",
+        "tag": "button",
+        "width": 118
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "technical",
+        "tag": "button",
+        "width": 136
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "community",
+        "tag": "button",
+        "width": 136
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 320
+      }
+    ],
+    "svgRoleImages": 10,
+    "tables": 0,
+    "title": "Hub Etymology: From Wheel Center to Network | Words Over Time",
+    "url": "http://localhost:3100/words/hub",
+    "viewport": {
+      "dpr": 1,
+      "height": 800,
+      "width": 360
+    },
+    "visibleControls": 24,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 390,
+      "scrollHeight": 844,
+      "scrollWidth": 413
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "Words Over Time: semantic change and word usage over time"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Words Over Time: semantic change and word usage over time"
+      }
+    ],
+    "horizontalOverflow": true,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about"
+    ],
+    "root": {
+      "clientWidth": 390,
+      "scrollWidth": 413
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      }
+    ],
+    "svgRoleImages": 0,
+    "tables": 0,
+    "title": "Words Over Time: Word Meaning, History, and Usage",
+    "url": "http://localhost:3100/",
+    "viewport": {
+      "dpr": 1,
+      "height": 844,
+      "width": 390
+    },
+    "visibleControls": 8,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 390,
+      "scrollHeight": 2644,
+      "scrollWidth": 390
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "word studies"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "word studies"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about"
+    ],
+    "root": {
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      }
+    ],
+    "svgRoleImages": 0,
+    "tables": 0,
+    "title": "Word Studies: Meaning and Usage Over Time | Words Over Time",
+    "url": "http://localhost:3100/words",
+    "viewport": {
+      "dpr": 1,
+      "height": 844,
+      "width": 390
+    },
+    "visibleControls": 8,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 390,
+      "scrollHeight": 11431,
+      "scrollWidth": 390
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "forever"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "forever"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic evolution"
+      },
+      {
+        "level": "H2",
+        "text": "Permanence under suspicion"
+      },
+      {
+        "level": "H3",
+        "text": "Evidence does not settle forever."
+      },
+      {
+        "level": "H2",
+        "text": "Relational constellation"
+      },
+      {
+        "level": "H2",
+        "text": "Context signal field"
+      },
+      {
+        "level": "H2",
+        "text": "Evidence archive"
+      },
+      {
+        "level": "H2",
+        "text": "About forever/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/artificial",
+      "/words/privacy",
+      "/words/data",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 350
+      }
+    ],
+    "svgRoleImages": 7,
+    "tables": 0,
+    "title": "Forever Spelling, Meaning, and Origin | Words Over Time",
+    "url": "http://localhost:3100/words/forever",
+    "viewport": {
+      "dpr": 1,
+      "height": 844,
+      "width": 390
+    },
+    "visibleControls": 14,
+    "widerScreenFallbackVisible": true
+  },
+  {
+    "body": {
+      "clientWidth": 390,
+      "scrollHeight": 11591,
+      "scrollWidth": 390
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "privacy"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "privacy"
+      },
+      {
+        "level": "H2",
+        "text": "Before Privacy Became a Right"
+      },
+      {
+        "level": "H3",
+        "text": "From Privacy to Legal Injury"
+      },
+      {
+        "level": "H3",
+        "text": "From Legal Right to Data System"
+      },
+      {
+        "level": "H2",
+        "text": "Privacy as a World Signal"
+      },
+      {
+        "level": "H3",
+        "text": "Where privacy concentrates, then radiates."
+      },
+      {
+        "level": "H3",
+        "text": "Privacy Signal Against Altitude"
+      },
+      {
+        "level": "H3",
+        "text": "Privacy Signal, Population, and Life Expectancy"
+      },
+      {
+        "level": "H2",
+        "text": "Privacy Becomes an Interface"
+      },
+      {
+        "level": "H2",
+        "text": "About privacy/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/data",
+      "/words/hub",
+      "/words/artificial",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 38,
+        "href": null,
+        "name": "Hotspot map",
+        "tag": "button",
+        "width": 131
+      },
+      {
+        "height": 38,
+        "href": null,
+        "name": "Radiation map",
+        "tag": "button",
+        "width": 148
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/hub",
+        "name": "Hub/",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 350
+      }
+    ],
+    "svgRoleImages": 7,
+    "tables": 0,
+    "title": "Privacy Etymology and Meaning Over Time | Words Over Time",
+    "url": "http://localhost:3100/words/privacy",
+    "viewport": {
+      "dpr": 1,
+      "height": 844,
+      "width": 390
+    },
+    "visibleControls": 9,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 390,
+      "scrollHeight": 11181,
+      "scrollWidth": 390
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "artificial"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "artificial"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial before fake"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic chamber"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial Under Pressure"
+      },
+      {
+        "level": "H2",
+        "text": "Under pressure"
+      },
+      {
+        "level": "H2",
+        "text": "In the Age of Mechanical Reproduction"
+      },
+      {
+        "level": "H3",
+        "text": "Artificial as the Reproduced Experience"
+      },
+      {
+        "level": "H2",
+        "text": "Suspicion Orbit"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial suspicion field"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic Attractor"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial semantic attractor field"
+      },
+      {
+        "level": "H3",
+        "text": "artificial"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial Enters the Human"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial human boundary stack"
+      },
+      {
+        "level": "H2",
+        "text": "About artificial/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/forever",
+      "/words/data",
+      "/words/privacy",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 14,
+        "href": null,
+        "name": "artificial",
+        "tag": "button",
+        "width": 53
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "resting",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "word family",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "technical",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "sense boundary",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "full overlay",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1590s artificial tears",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1773 artificial manner / style",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1787 artificial manners",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1828 not natural / not genuine",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1856-1898 artificial coloring",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1904 artificially colored",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1950 no artificial flavoring",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1969-1976 artificial sweetener",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "2015 remove artificial colors / flavors",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "2025-2026 no artificial colors / flavors",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/forever",
+        "name": "Forever/",
+        "tag": "a",
+        "width": 91
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 350
+      }
+    ],
+    "svgRoleImages": 1,
+    "tables": 0,
+    "title": "Artificial Etymology: Artifice to AI | Words Over Time",
+    "url": "http://localhost:3100/words/artificial",
+    "viewport": {
+      "dpr": 1,
+      "height": 844,
+      "width": 390
+    },
+    "visibleControls": 34,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 390,
+      "scrollHeight": 16357,
+      "scrollWidth": 390
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "hub"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "hub"
+      },
+      {
+        "level": "H2",
+        "text": "A Word Whose Center Moved"
+      },
+      {
+        "level": "H3",
+        "text": "All Semantic Layers"
+      },
+      {
+        "level": "H2",
+        "text": "The Transfer Model"
+      },
+      {
+        "level": "H2",
+        "text": "What Goes Around Hub"
+      },
+      {
+        "level": "H2",
+        "text": "Small Hubs, Specific Worlds"
+      },
+      {
+        "level": "H3",
+        "text": "Room, Desk, Portal"
+      },
+      {
+        "level": "H3",
+        "text": "Named Surface"
+      },
+      {
+        "level": "H3",
+        "text": "Collected Access"
+      },
+      {
+        "level": "H3",
+        "text": "Connective Object"
+      },
+      {
+        "level": "H2",
+        "text": "Centrality Rebuilt"
+      },
+      {
+        "level": "H3",
+        "text": "All Dependency Layers"
+      },
+      {
+        "level": "H3",
+        "text": "Hub keeps branching after the central model."
+      },
+      {
+        "level": "H3",
+        "text": "Modifier gravity field"
+      },
+      {
+        "level": "H3",
+        "text": "Dependency radius"
+      },
+      {
+        "level": "H2",
+        "text": "About hub/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/privacy",
+      "/words/data",
+      "/words/artificial",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "allAll layers clear",
+        "tag": "button",
+        "width": 358
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "institution",
+        "tag": "button",
+        "width": 155
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "platform",
+        "tag": "button",
+        "width": 127
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "content",
+        "tag": "button",
+        "width": 118
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "technical",
+        "tag": "button",
+        "width": 136
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "community",
+        "tag": "button",
+        "width": 136
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 350
+      }
+    ],
+    "svgRoleImages": 10,
+    "tables": 0,
+    "title": "Hub Etymology: From Wheel Center to Network | Words Over Time",
+    "url": "http://localhost:3100/words/hub",
+    "viewport": {
+      "dpr": 1,
+      "height": 844,
+      "width": 390
+    },
+    "visibleControls": 24,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 430,
+      "scrollHeight": 932,
+      "scrollWidth": 430
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "Words Over Time: semantic change and word usage over time"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Words Over Time: semantic change and word usage over time"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about"
+    ],
+    "root": {
+      "clientWidth": 430,
+      "scrollWidth": 430
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      }
+    ],
+    "svgRoleImages": 0,
+    "tables": 0,
+    "title": "Words Over Time: Word Meaning, History, and Usage",
+    "url": "http://localhost:3100/",
+    "viewport": {
+      "dpr": 1,
+      "height": 932,
+      "width": 430
+    },
+    "visibleControls": 8,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 430,
+      "scrollHeight": 2529,
+      "scrollWidth": 430
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "word studies"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "word studies"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about"
+    ],
+    "root": {
+      "clientWidth": 430,
+      "scrollWidth": 430
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      }
+    ],
+    "svgRoleImages": 0,
+    "tables": 0,
+    "title": "Word Studies: Meaning and Usage Over Time | Words Over Time",
+    "url": "http://localhost:3100/words",
+    "viewport": {
+      "dpr": 1,
+      "height": 932,
+      "width": 430
+    },
+    "visibleControls": 8,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 430,
+      "scrollHeight": 11275,
+      "scrollWidth": 430
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "forever"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "forever"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic evolution"
+      },
+      {
+        "level": "H2",
+        "text": "Permanence under suspicion"
+      },
+      {
+        "level": "H3",
+        "text": "Evidence does not settle forever."
+      },
+      {
+        "level": "H2",
+        "text": "Relational constellation"
+      },
+      {
+        "level": "H2",
+        "text": "Context signal field"
+      },
+      {
+        "level": "H2",
+        "text": "Evidence archive"
+      },
+      {
+        "level": "H2",
+        "text": "About forever/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/artificial",
+      "/words/privacy",
+      "/words/data",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 430,
+      "scrollWidth": 430
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 390
+      }
+    ],
+    "svgRoleImages": 7,
+    "tables": 0,
+    "title": "Forever Spelling, Meaning, and Origin | Words Over Time",
+    "url": "http://localhost:3100/words/forever",
+    "viewport": {
+      "dpr": 1,
+      "height": 932,
+      "width": 430
+    },
+    "visibleControls": 14,
+    "widerScreenFallbackVisible": true
+  },
+  {
+    "body": {
+      "clientWidth": 430,
+      "scrollHeight": 11372,
+      "scrollWidth": 430
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "privacy"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "privacy"
+      },
+      {
+        "level": "H2",
+        "text": "Before Privacy Became a Right"
+      },
+      {
+        "level": "H3",
+        "text": "From Privacy to Legal Injury"
+      },
+      {
+        "level": "H3",
+        "text": "From Legal Right to Data System"
+      },
+      {
+        "level": "H2",
+        "text": "Privacy as a World Signal"
+      },
+      {
+        "level": "H3",
+        "text": "Where privacy concentrates, then radiates."
+      },
+      {
+        "level": "H3",
+        "text": "Privacy Signal Against Altitude"
+      },
+      {
+        "level": "H3",
+        "text": "Privacy Signal, Population, and Life Expectancy"
+      },
+      {
+        "level": "H2",
+        "text": "Privacy Becomes an Interface"
+      },
+      {
+        "level": "H2",
+        "text": "About privacy/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/data",
+      "/words/hub",
+      "/words/artificial",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 430,
+      "scrollWidth": 430
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 38,
+        "href": null,
+        "name": "Hotspot map",
+        "tag": "button",
+        "width": 131
+      },
+      {
+        "height": 38,
+        "href": null,
+        "name": "Radiation map",
+        "tag": "button",
+        "width": 148
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/hub",
+        "name": "Hub/",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 390
+      }
+    ],
+    "svgRoleImages": 7,
+    "tables": 0,
+    "title": "Privacy Etymology and Meaning Over Time | Words Over Time",
+    "url": "http://localhost:3100/words/privacy",
+    "viewport": {
+      "dpr": 1,
+      "height": 932,
+      "width": 430
+    },
+    "visibleControls": 9,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 430,
+      "scrollHeight": 10838,
+      "scrollWidth": 430
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "artificial"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "artificial"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial before fake"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic chamber"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial Under Pressure"
+      },
+      {
+        "level": "H2",
+        "text": "Under pressure"
+      },
+      {
+        "level": "H2",
+        "text": "In the Age of Mechanical Reproduction"
+      },
+      {
+        "level": "H3",
+        "text": "Artificial as the Reproduced Experience"
+      },
+      {
+        "level": "H2",
+        "text": "Suspicion Orbit"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial suspicion field"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic Attractor"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial semantic attractor field"
+      },
+      {
+        "level": "H3",
+        "text": "artificial"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial Enters the Human"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial human boundary stack"
+      },
+      {
+        "level": "H2",
+        "text": "About artificial/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/forever",
+      "/words/data",
+      "/words/privacy",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 430,
+      "scrollWidth": 430
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 14,
+        "href": null,
+        "name": "artificial",
+        "tag": "button",
+        "width": 53
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "resting",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "word family",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "technical",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "sense boundary",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "full overlay",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1590s artificial tears",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1773 artificial manner / style",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1787 artificial manners",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1828 not natural / not genuine",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1856-1898 artificial coloring",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1904 artificially colored",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1950 no artificial flavoring",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1969-1976 artificial sweetener",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "2015 remove artificial colors / flavors",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "2025-2026 no artificial colors / flavors",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/forever",
+        "name": "Forever/",
+        "tag": "a",
+        "width": 91
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 390
+      }
+    ],
+    "svgRoleImages": 1,
+    "tables": 0,
+    "title": "Artificial Etymology: Artifice to AI | Words Over Time",
+    "url": "http://localhost:3100/words/artificial",
+    "viewport": {
+      "dpr": 1,
+      "height": 932,
+      "width": 430
+    },
+    "visibleControls": 34,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 430,
+      "scrollHeight": 16175,
+      "scrollWidth": 430
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "hub"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "hub"
+      },
+      {
+        "level": "H2",
+        "text": "A Word Whose Center Moved"
+      },
+      {
+        "level": "H3",
+        "text": "All Semantic Layers"
+      },
+      {
+        "level": "H2",
+        "text": "The Transfer Model"
+      },
+      {
+        "level": "H2",
+        "text": "What Goes Around Hub"
+      },
+      {
+        "level": "H2",
+        "text": "Small Hubs, Specific Worlds"
+      },
+      {
+        "level": "H3",
+        "text": "Room, Desk, Portal"
+      },
+      {
+        "level": "H3",
+        "text": "Named Surface"
+      },
+      {
+        "level": "H3",
+        "text": "Collected Access"
+      },
+      {
+        "level": "H3",
+        "text": "Connective Object"
+      },
+      {
+        "level": "H2",
+        "text": "Centrality Rebuilt"
+      },
+      {
+        "level": "H3",
+        "text": "All Dependency Layers"
+      },
+      {
+        "level": "H3",
+        "text": "Hub keeps branching after the central model."
+      },
+      {
+        "level": "H3",
+        "text": "Modifier gravity field"
+      },
+      {
+        "level": "H3",
+        "text": "Dependency radius"
+      },
+      {
+        "level": "H2",
+        "text": "About hub/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/privacy",
+      "/words/data",
+      "/words/artificial",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 430,
+      "scrollWidth": 430
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "allAll layers clear",
+        "tag": "button",
+        "width": 398
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "institution",
+        "tag": "button",
+        "width": 155
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "platform",
+        "tag": "button",
+        "width": 127
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "content",
+        "tag": "button",
+        "width": 118
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "technical",
+        "tag": "button",
+        "width": 136
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "community",
+        "tag": "button",
+        "width": 136
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 390
+      }
+    ],
+    "svgRoleImages": 10,
+    "tables": 0,
+    "title": "Hub Etymology: From Wheel Center to Network | Words Over Time",
+    "url": "http://localhost:3100/words/hub",
+    "viewport": {
+      "dpr": 1,
+      "height": 932,
+      "width": 430
+    },
+    "visibleControls": 24,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 768,
+      "scrollHeight": 1024,
+      "scrollWidth": 768
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "Words Over Time: semantic change and word usage over time"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Words Over Time: semantic change and word usage over time"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about"
+    ],
+    "root": {
+      "clientWidth": 768,
+      "scrollWidth": 768
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      }
+    ],
+    "svgRoleImages": 0,
+    "tables": 0,
+    "title": "Words Over Time: Word Meaning, History, and Usage",
+    "url": "http://localhost:3100/",
+    "viewport": {
+      "dpr": 1,
+      "height": 1024,
+      "width": 768
+    },
+    "visibleControls": 8,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 768,
+      "scrollHeight": 2276,
+      "scrollWidth": 768
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "word studies"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "word studies"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about"
+    ],
+    "root": {
+      "clientWidth": 768,
+      "scrollWidth": 768
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      }
+    ],
+    "svgRoleImages": 0,
+    "tables": 0,
+    "title": "Word Studies: Meaning and Usage Over Time | Words Over Time",
+    "url": "http://localhost:3100/words",
+    "viewport": {
+      "dpr": 1,
+      "height": 1024,
+      "width": 768
+    },
+    "visibleControls": 8,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 768,
+      "scrollHeight": 11329,
+      "scrollWidth": 768
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "forever"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "forever"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic evolution"
+      },
+      {
+        "level": "H2",
+        "text": "Permanence under suspicion"
+      },
+      {
+        "level": "H3",
+        "text": "Evidence does not settle forever."
+      },
+      {
+        "level": "H2",
+        "text": "Relational constellation"
+      },
+      {
+        "level": "H2",
+        "text": "Context signal field"
+      },
+      {
+        "level": "H2",
+        "text": "Evidence archive"
+      },
+      {
+        "level": "H2",
+        "text": "About forever/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/artificial",
+      "/words/privacy",
+      "/words/data",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 768,
+      "scrollWidth": 768
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 688
+      }
+    ],
+    "svgRoleImages": 7,
+    "tables": 0,
+    "title": "Forever Spelling, Meaning, and Origin | Words Over Time",
+    "url": "http://localhost:3100/words/forever",
+    "viewport": {
+      "dpr": 1,
+      "height": 1024,
+      "width": 768
+    },
+    "visibleControls": 14,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 768,
+      "scrollHeight": 11488,
+      "scrollWidth": 768
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "privacy"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "privacy"
+      },
+      {
+        "level": "H2",
+        "text": "Before Privacy Became a Right"
+      },
+      {
+        "level": "H3",
+        "text": "From Privacy to Legal Injury"
+      },
+      {
+        "level": "H3",
+        "text": "From Legal Right to Data System"
+      },
+      {
+        "level": "H2",
+        "text": "Privacy as a World Signal"
+      },
+      {
+        "level": "H3",
+        "text": "Where privacy concentrates, then radiates."
+      },
+      {
+        "level": "H3",
+        "text": "Privacy Signal Against Altitude"
+      },
+      {
+        "level": "H3",
+        "text": "Privacy Signal, Population, and Life Expectancy"
+      },
+      {
+        "level": "H2",
+        "text": "Privacy Becomes an Interface"
+      },
+      {
+        "level": "H2",
+        "text": "About privacy/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/data",
+      "/words/hub",
+      "/words/artificial",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 768,
+      "scrollWidth": 768
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 38,
+        "href": null,
+        "name": "Hotspot map",
+        "tag": "button",
+        "width": 131
+      },
+      {
+        "height": 38,
+        "href": null,
+        "name": "Radiation map",
+        "tag": "button",
+        "width": 148
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/hub",
+        "name": "Hub/",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 688
+      }
+    ],
+    "svgRoleImages": 7,
+    "tables": 0,
+    "title": "Privacy Etymology and Meaning Over Time | Words Over Time",
+    "url": "http://localhost:3100/words/privacy",
+    "viewport": {
+      "dpr": 1,
+      "height": 1024,
+      "width": 768
+    },
+    "visibleControls": 9,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 768,
+      "scrollHeight": 10277,
+      "scrollWidth": 768
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "artificial"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "artificial"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial before fake"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic chamber"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial Under Pressure"
+      },
+      {
+        "level": "H2",
+        "text": "Under pressure"
+      },
+      {
+        "level": "H2",
+        "text": "In the Age of Mechanical Reproduction"
+      },
+      {
+        "level": "H3",
+        "text": "Artificial as the Reproduced Experience"
+      },
+      {
+        "level": "H2",
+        "text": "Suspicion Orbit"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial suspicion field"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic Attractor"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial semantic attractor field"
+      },
+      {
+        "level": "H3",
+        "text": "artificial"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial Enters the Human"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial human boundary stack"
+      },
+      {
+        "level": "H2",
+        "text": "About artificial/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/forever",
+      "/words/data",
+      "/words/privacy",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 768,
+      "scrollWidth": 768
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 14,
+        "href": null,
+        "name": "artificial",
+        "tag": "button",
+        "width": 53
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "resting",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "word family",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "technical",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "sense boundary",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "full overlay",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1590s artificial tears",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1773 artificial manner / style",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1787 artificial manners",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1828 not natural / not genuine",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1856-1898 artificial coloring",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1904 artificially colored",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1950 no artificial flavoring",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1969-1976 artificial sweetener",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "2015 remove artificial colors / flavors",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "2025-2026 no artificial colors / flavors",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/forever",
+        "name": "Forever/",
+        "tag": "a",
+        "width": 91
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 688
+      }
+    ],
+    "svgRoleImages": 1,
+    "tables": 0,
+    "title": "Artificial Etymology: Artifice to AI | Words Over Time",
+    "url": "http://localhost:3100/words/artificial",
+    "viewport": {
+      "dpr": 1,
+      "height": 1024,
+      "width": 768
+    },
+    "visibleControls": 34,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 768,
+      "scrollHeight": 14557,
+      "scrollWidth": 768
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "hub"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "hub"
+      },
+      {
+        "level": "H2",
+        "text": "A Word Whose Center Moved"
+      },
+      {
+        "level": "H3",
+        "text": "All Semantic Layers"
+      },
+      {
+        "level": "H2",
+        "text": "The Transfer Model"
+      },
+      {
+        "level": "H2",
+        "text": "What Goes Around Hub"
+      },
+      {
+        "level": "H2",
+        "text": "Small Hubs, Specific Worlds"
+      },
+      {
+        "level": "H3",
+        "text": "Room, Desk, Portal"
+      },
+      {
+        "level": "H3",
+        "text": "Named Surface"
+      },
+      {
+        "level": "H3",
+        "text": "Collected Access"
+      },
+      {
+        "level": "H3",
+        "text": "Connective Object"
+      },
+      {
+        "level": "H2",
+        "text": "Centrality Rebuilt"
+      },
+      {
+        "level": "H3",
+        "text": "All Dependency Layers"
+      },
+      {
+        "level": "H3",
+        "text": "Hub keeps branching after the central model."
+      },
+      {
+        "level": "H3",
+        "text": "Modifier gravity field"
+      },
+      {
+        "level": "H3",
+        "text": "Dependency radius"
+      },
+      {
+        "level": "H2",
+        "text": "About hub/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/privacy",
+      "/words/data",
+      "/words/artificial",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 768,
+      "scrollWidth": 768
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "allAll layers clear",
+        "tag": "button",
+        "width": 712
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "institution",
+        "tag": "button",
+        "width": 155
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "platform",
+        "tag": "button",
+        "width": 127
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "content",
+        "tag": "button",
+        "width": 118
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "technical",
+        "tag": "button",
+        "width": 136
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "community",
+        "tag": "button",
+        "width": 136
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 688
+      }
+    ],
+    "svgRoleImages": 10,
+    "tables": 0,
+    "title": "Hub Etymology: From Wheel Center to Network | Words Over Time",
+    "url": "http://localhost:3100/words/hub",
+    "viewport": {
+      "dpr": 1,
+      "height": 1024,
+      "width": 768
+    },
+    "visibleControls": 24,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 1440,
+      "scrollHeight": 1431,
+      "scrollWidth": 1440
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "Words Over Time: semantic change and word usage over time"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Words Over Time: semantic change and word usage over time"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about"
+    ],
+    "root": {
+      "clientWidth": 1440,
+      "scrollWidth": 1440
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      }
+    ],
+    "svgRoleImages": 0,
+    "tables": 0,
+    "title": "Words Over Time: Word Meaning, History, and Usage",
+    "url": "http://localhost:3100/",
+    "viewport": {
+      "dpr": 1,
+      "height": 900,
+      "width": 1440
+    },
+    "visibleControls": 8,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 1440,
+      "scrollHeight": 1476,
+      "scrollWidth": 1440
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "word studies"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "word studies"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about"
+    ],
+    "root": {
+      "clientWidth": 1440,
+      "scrollWidth": 1440
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      }
+    ],
+    "svgRoleImages": 0,
+    "tables": 0,
+    "title": "Word Studies: Meaning and Usage Over Time | Words Over Time",
+    "url": "http://localhost:3100/words",
+    "viewport": {
+      "dpr": 1,
+      "height": 900,
+      "width": 1440
+    },
+    "visibleControls": 8,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 1440,
+      "scrollHeight": 9240,
+      "scrollWidth": 1440
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "forever"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "forever"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic evolution"
+      },
+      {
+        "level": "H2",
+        "text": "Permanence under suspicion"
+      },
+      {
+        "level": "H3",
+        "text": "Evidence does not settle forever."
+      },
+      {
+        "level": "H2",
+        "text": "Relational constellation"
+      },
+      {
+        "level": "H2",
+        "text": "Context signal field"
+      },
+      {
+        "level": "H2",
+        "text": "Evidence archive"
+      },
+      {
+        "level": "H2",
+        "text": "About forever/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/artificial",
+      "/words/privacy",
+      "/words/data",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 1440,
+      "scrollWidth": 1440
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 321
+      }
+    ],
+    "svgRoleImages": 7,
+    "tables": 0,
+    "title": "Forever Spelling, Meaning, and Origin | Words Over Time",
+    "url": "http://localhost:3100/words/forever",
+    "viewport": {
+      "dpr": 1,
+      "height": 900,
+      "width": 1440
+    },
+    "visibleControls": 14,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 1440,
+      "scrollHeight": 10343,
+      "scrollWidth": 1440
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "privacy"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "privacy"
+      },
+      {
+        "level": "H2",
+        "text": "Before Privacy Became a Right"
+      },
+      {
+        "level": "H3",
+        "text": "From Privacy to Legal Injury"
+      },
+      {
+        "level": "H3",
+        "text": "From Legal Right to Data System"
+      },
+      {
+        "level": "H2",
+        "text": "Privacy as a World Signal"
+      },
+      {
+        "level": "H3",
+        "text": "Where privacy concentrates, then radiates."
+      },
+      {
+        "level": "H3",
+        "text": "Privacy Signal Against Altitude"
+      },
+      {
+        "level": "H3",
+        "text": "Privacy Signal, Population, and Life Expectancy"
+      },
+      {
+        "level": "H2",
+        "text": "Privacy Becomes an Interface"
+      },
+      {
+        "level": "H2",
+        "text": "About privacy/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/data",
+      "/words/hub",
+      "/words/artificial",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 1440,
+      "scrollWidth": 1440
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 38,
+        "href": null,
+        "name": "Hotspot map",
+        "tag": "button",
+        "width": 131
+      },
+      {
+        "height": 38,
+        "href": null,
+        "name": "Radiation map",
+        "tag": "button",
+        "width": 148
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/hub",
+        "name": "Hub/",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 321
+      }
+    ],
+    "svgRoleImages": 7,
+    "tables": 0,
+    "title": "Privacy Etymology and Meaning Over Time | Words Over Time",
+    "url": "http://localhost:3100/words/privacy",
+    "viewport": {
+      "dpr": 1,
+      "height": 900,
+      "width": 1440
+    },
+    "visibleControls": 9,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 1440,
+      "scrollHeight": 9980,
+      "scrollWidth": 1440
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "artificial"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "artificial"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial before fake"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic chamber"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial Under Pressure"
+      },
+      {
+        "level": "H2",
+        "text": "Under pressure"
+      },
+      {
+        "level": "H2",
+        "text": "In the Age of Mechanical Reproduction"
+      },
+      {
+        "level": "H3",
+        "text": "Artificial as the Reproduced Experience"
+      },
+      {
+        "level": "H2",
+        "text": "Suspicion Orbit"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial suspicion field"
+      },
+      {
+        "level": "H2",
+        "text": "Semantic Attractor"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial semantic attractor field"
+      },
+      {
+        "level": "H3",
+        "text": "artificial"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial Enters the Human"
+      },
+      {
+        "level": "H2",
+        "text": "Artificial human boundary stack"
+      },
+      {
+        "level": "H2",
+        "text": "About artificial/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/forever",
+      "/words/data",
+      "/words/privacy",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 1440,
+      "scrollWidth": 1440
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 14,
+        "href": null,
+        "name": "artificial",
+        "tag": "button",
+        "width": 53
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "resting",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "word family",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "technical",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "sense boundary",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "full overlay",
+        "tag": "button",
+        "width": 179
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1590s artificial tears",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1773 artificial manner / style",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1787 artificial manners",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1828 not natural / not genuine",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1856-1898 artificial coloring",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1904 artificially colored",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1950 no artificial flavoring",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "1969-1976 artificial sweetener",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "2015 remove artificial colors / flavors",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 20,
+        "href": null,
+        "name": "2025-2026 no artificial colors / flavors",
+        "tag": "button",
+        "width": 20
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/forever",
+        "name": "Forever/",
+        "tag": "a",
+        "width": 91
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 321
+      }
+    ],
+    "svgRoleImages": 1,
+    "tables": 0,
+    "title": "Artificial Etymology: Artifice to AI | Words Over Time",
+    "url": "http://localhost:3100/words/artificial",
+    "viewport": {
+      "dpr": 1,
+      "height": 900,
+      "width": 1440
+    },
+    "visibleControls": 34,
+    "widerScreenFallbackVisible": false
+  },
+  {
+    "body": {
+      "clientWidth": 1440,
+      "scrollHeight": 10336,
+      "scrollWidth": 1440
+    },
+    "emptyNamedButtons": 0,
+    "errorOverlay": false,
+    "figcaptions": 0,
+    "figures": 0,
+    "h1Count": 1,
+    "h1Text": [
+      "hub"
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "hub"
+      },
+      {
+        "level": "H2",
+        "text": "A Word Whose Center Moved"
+      },
+      {
+        "level": "H3",
+        "text": "All Semantic Layers"
+      },
+      {
+        "level": "H2",
+        "text": "The Transfer Model"
+      },
+      {
+        "level": "H2",
+        "text": "What Goes Around Hub"
+      },
+      {
+        "level": "H2",
+        "text": "Small Hubs, Specific Worlds"
+      },
+      {
+        "level": "H3",
+        "text": "Room, Desk, Portal"
+      },
+      {
+        "level": "H3",
+        "text": "Named Surface"
+      },
+      {
+        "level": "H3",
+        "text": "Collected Access"
+      },
+      {
+        "level": "H3",
+        "text": "Connective Object"
+      },
+      {
+        "level": "H2",
+        "text": "Centrality Rebuilt"
+      },
+      {
+        "level": "H3",
+        "text": "All Dependency Layers"
+      },
+      {
+        "level": "H3",
+        "text": "Hub keeps branching after the central model."
+      },
+      {
+        "level": "H3",
+        "text": "Modifier gravity field"
+      },
+      {
+        "level": "H3",
+        "text": "Dependency radius"
+      },
+      {
+        "level": "H2",
+        "text": "About hub/"
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainCount": 1,
+    "navHrefs": [
+      "/",
+      "/about",
+      "/words/privacy",
+      "/words/data",
+      "/words/artificial",
+      "/words"
+    ],
+    "root": {
+      "clientWidth": 1440,
+      "scrollWidth": 1440
+    },
+    "smallControls": [
+      {
+        "height": 32,
+        "href": "/",
+        "name": "Words Over Time",
+        "tag": "a",
+        "width": 158
+      },
+      {
+        "height": 32,
+        "href": "/about",
+        "name": "About",
+        "tag": "a",
+        "width": 57
+      },
+      {
+        "height": 42,
+        "href": null,
+        "name": "allAll layers clear",
+        "tag": "button",
+        "width": 352
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "institution",
+        "tag": "button",
+        "width": 155
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "platform",
+        "tag": "button",
+        "width": 127
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "content",
+        "tag": "button",
+        "width": 118
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "technical",
+        "tag": "button",
+        "width": 136
+      },
+      {
+        "height": 37,
+        "href": null,
+        "name": "community",
+        "tag": "button",
+        "width": 136
+      },
+      {
+        "height": 22,
+        "href": "/about",
+        "name": "Methodology and rights",
+        "tag": "a",
+        "width": 205
+      },
+      {
+        "height": 30,
+        "href": "/words/privacy",
+        "name": "Privacy/",
+        "tag": "a",
+        "width": 86
+      },
+      {
+        "height": 30,
+        "href": "/words/data",
+        "name": "Data/",
+        "tag": "a",
+        "width": 62
+      },
+      {
+        "height": 30,
+        "href": "/words/artificial",
+        "name": "Artificial/",
+        "tag": "a",
+        "width": 103
+      },
+      {
+        "height": 16,
+        "href": "/words",
+        "name": "Browse all word studies",
+        "tag": "a",
+        "width": 321
+      }
+    ],
+    "svgRoleImages": 10,
+    "tables": 0,
+    "title": "Hub Etymology: From Wheel Center to Network | Words Over Time",
+    "url": "http://localhost:3100/words/hub",
+    "viewport": {
+      "dpr": 1,
+      "height": 900,
+      "width": 1440
+    },
+    "visibleControls": 24,
+    "widerScreenFallbackVisible": false
+  }
+]

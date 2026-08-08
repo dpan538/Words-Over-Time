@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "captured_on": "2026-08-08",
+  "command": "npx next experimental-analyze --output",
+  "exit_code": 0,
+  "raw_output_size_reported": "3.9 MB (du -sh)",
+  "raw_output_retained_at": "/tmp/words_overtime_bundle_baseline_raw_2026-08-08",
+  "raw_output_committed": false,
+  "raw_output_exclusion_reason": "The analyzer compiled the user's pre-existing untracked /words/privacy/mobile-demo route; binary analyzer data and emitted chunks were excluded to avoid committing unrelated source.",
+  "canonical_route_summary": [
+    { "route": "/", "html_bytes": 40065, "rsc_flight_bytes": 20849, "initial_js_bytes": 670246, "initial_js_requests": 11 },
+    { "route": "/words", "html_bytes": 41726, "rsc_flight_bytes": 22015, "initial_js_bytes": 670246, "initial_js_requests": 11 },
+    { "route": "/about", "html_bytes": 168702, "rsc_flight_bytes": 82980, "initial_js_bytes": 677141, "initial_js_requests": 11 },
+    { "route": "/words/forever", "html_bytes": 1577554, "rsc_flight_bytes": 1104912, "initial_js_bytes": 1336840, "initial_js_requests": 13 },
+    { "route": "/words/privacy", "html_bytes": 1478587, "rsc_flight_bytes": 337119, "initial_js_bytes": 1007041, "initial_js_requests": 12 },
+    { "route": "/words/artificial", "html_bytes": 171898, "rsc_flight_bytes": 30266, "initial_js_bytes": 1424821, "initial_js_requests": 13 },
+    { "route": "/words/hub", "html_bytes": 439658, "rsc_flight_bytes": 147699, "initial_js_bytes": 1330183, "initial_js_requests": 13 },
+    { "route": "/words/depression", "html_bytes": 1715718, "rsc_flight_bytes": 1319717, "initial_js_bytes": 820384, "initial_js_requests": 12 },
+    { "route": "/words/data", "html_bytes": 427771, "rsc_flight_bytes": 148070, "initial_js_bytes": 746339, "initial_js_requests": 12 }
+  ],
+  "full_evidence": [
+    "../performance-baseline.json",
+    "../route-inventory.md"
+  ]
+}
