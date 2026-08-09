@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { routeByPath } from "@/lib/site";
 import type { Word } from "@/types/word";
 
 type WordCardProps = {
@@ -31,8 +30,6 @@ export function WordCard({ word }: WordCardProps) {
             ? "text-nice"
             : "text-blaze";
     const hoverLabel = word.hoverLabel ?? "word page";
-    const route = routeByPath(word.href);
-    const summary = route?.summary ?? route?.description;
     const mobileWordSize =
       word.slug === "intelligence"
         ? "text-[clamp(2rem,12vw,3.5rem)]"
@@ -41,24 +38,14 @@ export function WordCard({ word }: WordCardProps) {
     return (
       <Link
         href={word.href}
-        className={`group relative block min-h-11 min-w-0 py-4 text-ink transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current lg:inline-block lg:min-h-0 lg:py-0 lg:decoration-[0.08em] lg:underline-offset-[0.13em] lg:hover:-translate-y-1 lg:hover:skew-x-[-3deg] lg:hover:underline ${hoverTone}`}
+        className={`group relative inline-flex min-h-11 min-w-0 items-baseline py-1.5 text-ink transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current min-[960px]:inline-block min-[960px]:min-h-0 min-[960px]:py-0 min-[960px]:decoration-[0.08em] min-[960px]:underline-offset-[0.13em] min-[960px]:hover:-translate-y-1 min-[960px]:hover:skew-x-[-3deg] min-[960px]:hover:underline ${hoverTone}`}
       >
         <span
-          className={`block min-w-0 break-words leading-[0.86] tracking-[-0.04em] lg:inline lg:text-[1em] lg:leading-[inherit] lg:tracking-normal ${mobileWordSize}`}
+          className={`min-w-0 break-words leading-[0.9] tracking-[-0.04em] min-[960px]:inline min-[960px]:text-[1em] min-[960px]:leading-[inherit] min-[960px]:tracking-normal ${mobileWordSize}`}
         >
           {word.label}
         </span>
-        <span className="mt-3 grid gap-2 lg:hidden">
-          {summary ? (
-            <span className="max-w-2xl text-[0.92rem] font-bold leading-5 tracking-normal text-ink/[0.68]">
-              {summary}
-            </span>
-          ) : null}
-          <span className={`font-mono text-[0.7rem] font-black uppercase leading-4 tracking-[0.12em] ${labelTone}`}>
-            Available study / source notes + claim boundaries
-          </span>
-        </span>
-        <span className={`pointer-events-none absolute left-2 top-0 hidden -translate-y-[62%] text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] lg:group-hover:block ${labelTone}`}>
+        <span className={`pointer-events-none absolute left-2 top-0 hidden -translate-y-[62%] text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] min-[960px]:group-hover:block ${labelTone}`}>
           {hoverLabel}
         </span>
       </Link>
@@ -66,19 +53,11 @@ export function WordCard({ word }: WordCardProps) {
   }
 
   return (
-    <span className="group relative block min-w-0 py-4 text-ink lg:inline-block lg:py-0 lg:transition lg:duration-200 lg:hover:-translate-y-0.5 lg:hover:skew-x-[-2deg] lg:hover:text-sail">
-      <span className="block min-w-0 break-words text-[clamp(2rem,12vw,3.5rem)] leading-[0.86] tracking-[-0.04em] lg:inline lg:text-[1em] lg:leading-[inherit] lg:tracking-normal">
+    <span className="group relative inline-flex min-w-0 items-baseline py-1.5 text-ink/35 min-[960px]:inline-block min-[960px]:py-0 min-[960px]:text-ink min-[960px]:transition min-[960px]:duration-200 min-[960px]:hover:-translate-y-0.5 min-[960px]:hover:skew-x-[-2deg] min-[960px]:hover:text-sail">
+      <span className="min-w-0 break-words text-[clamp(2rem,12vw,3.5rem)] leading-[0.9] tracking-[-0.04em] min-[960px]:inline min-[960px]:text-[1em] min-[960px]:leading-[inherit] min-[960px]:tracking-normal">
         {word.label}
       </span>
-      <span className="mt-3 grid gap-2 lg:hidden">
-        <span className="max-w-2xl text-[0.92rem] font-bold leading-5 tracking-normal text-ink/60">
-          A future source-led study; no research conclusion is published yet.
-        </span>
-        <span className="font-mono text-[0.7rem] font-black uppercase leading-4 tracking-[0.12em] text-sail">
-          Coming soon
-        </span>
-      </span>
-      <span className="pointer-events-none absolute left-2 top-0 hidden -translate-y-[62%] whitespace-nowrap text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] text-sail lg:group-hover:block">
+      <span className="pointer-events-none absolute left-2 top-0 hidden -translate-y-[62%] whitespace-nowrap text-[0.105em] font-bold uppercase leading-none tracking-[0.16em] text-sail min-[960px]:group-hover:block">
         coming soon
       </span>
     </span>

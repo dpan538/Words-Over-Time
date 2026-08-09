@@ -23,13 +23,7 @@ export function Nav({ tone = "dark" }: NavProps) {
       >
         Words Over Time
       </Link>
-      <div className="flex items-center gap-3 sm:gap-6">
-        <Link
-          href="/words"
-          className={`${linkBase} after:left-0 ${linkTone}`}
-        >
-          Words
-        </Link>
+      <div className="flex items-center">
         <Link
           href="/about"
           className={`${linkBase} after:right-0 ${linkTone}`}

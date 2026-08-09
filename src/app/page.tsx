@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <main
       aria-labelledby="home-title"
-      className="flex min-h-screen min-w-0 flex-col bg-wheat px-5 py-5 text-ink sm:px-10 sm:py-7 lg:px-16 xl:px-20"
+      className="flex min-h-screen min-w-0 flex-col bg-paper-mobile px-5 py-5 text-ink min-[960px]:bg-wheat min-[960px]:px-16 min-[960px]:py-7 xl:px-20"
     >
       <JsonLd data={homeJsonLd} />
       <Nav />
-      <section className="grid min-w-0 flex-1 gap-10 py-8 sm:py-12 lg:grid-cols-[minmax(0,1fr)_250px] lg:items-center lg:py-16 xl:grid-cols-[minmax(0,1fr)_300px]">
-        <div className="flex min-w-0 flex-col gap-9 sm:gap-12">
-          <header className="grid gap-5 border-y-2 border-ink py-6 lg:grid-cols-[minmax(0,0.82fr)_minmax(18rem,0.48fr)] lg:items-end lg:gap-10">
+      <section className="grid min-w-0 flex-1 py-8 min-[960px]:grid-cols-[minmax(0,1fr)_250px] min-[960px]:items-center min-[960px]:gap-10 min-[960px]:py-16 xl:grid-cols-[minmax(0,1fr)_300px]">
+        <div className="flex min-w-0 flex-col min-[960px]:gap-12">
+          <header className="hidden gap-5 border-y-2 border-ink py-6 min-[960px]:grid min-[960px]:grid-cols-[minmax(0,0.82fr)_minmax(18rem,0.48fr)] min-[960px]:items-end min-[960px]:gap-10">
             <div className="min-w-0">
               <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.16em] text-nice sm:text-[0.82rem] sm:tracking-[0.2em]">
                 Source-led visual word studies
@@ -43,13 +43,16 @@ export default function Home() {
           </header>
 
           <div className="min-w-0">
-            <p className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-nice sm:text-base sm:tracking-[0.18em]">
+            <h1 className="mb-5 font-mono text-[0.72rem] font-semibold uppercase tracking-[0.14em] text-ink/62 min-[960px]:hidden">
+              Words you wanna know:
+            </h1>
+            <p className="mb-3 hidden text-sm font-black uppercase tracking-[0.16em] text-nice min-[960px]:block min-[960px]:text-base min-[960px]:tracking-[0.18em]">
               Available word studies
             </p>
             <WordList words={words} />
           </div>
 
-          <p className="max-w-4xl border-t border-ink/[0.24] pt-4 font-mono text-[0.72rem] font-black uppercase leading-5 tracking-[0.09em] text-ink/[0.58] sm:text-[0.9rem] sm:tracking-[0.12em]">
+          <p className="mt-16 max-w-4xl border-t border-ink/[0.24] pt-4 font-mono text-[0.68rem] font-medium uppercase leading-5 tracking-[0.07em] text-ink/55 min-[960px]:mt-0 min-[960px]:text-[0.9rem] min-[960px]:font-black min-[960px]:tracking-[0.12em]">
             Semantic change / word frequency / search statistics / design
             research / infographic art by Dai Pan / 潘岱.
           </p>
