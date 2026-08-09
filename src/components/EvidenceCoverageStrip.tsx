@@ -6,7 +6,7 @@ type EvidenceCoverageStripProps = {
 
 export function EvidenceCoverageStrip({ profile }: EvidenceCoverageStripProps) {
   return (
-    <section className="border-b border-ink py-6" aria-labelledby={`${profile.word}-coverage-title`}>
+    <section className="hidden border-b border-ink py-6 min-[960px]:block" aria-labelledby={`${profile.word}-coverage-title`}>
       <div className="grid gap-5 lg:grid-cols-[12rem_minmax(0,1fr)] lg:gap-8">
         <div>
           <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.18em] text-[var(--study-text-accent)]">evidence coverage</p>

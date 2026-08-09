@@ -1,6 +1,5 @@
 import type { CSSProperties, ReactNode } from "react";
 import { EvidenceCoverageStrip } from "@/components/EvidenceCoverageStrip";
-import { MobileChapterNav } from "@/components/MobileChapterNav";
 import { Nav } from "@/components/Nav";
 import { SearchIntentSummary } from "@/components/SearchIntentSummary";
 import { WordSeoSummary } from "@/components/WordSeoSummary";
@@ -21,33 +20,36 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
 
   return (
     <main
-      className="min-h-screen bg-wheat text-ink"
+      className="min-h-screen bg-paper-mobile text-ink min-[960px]:bg-wheat"
       aria-labelledby={`${profile.word}-study-title`}
       style={{ "--study-accent": route.accent, "--study-text-accent": textAccent } as CSSProperties}
     >
-      <div className="mx-auto w-full max-w-[1960px] px-4 pt-5 sm:px-7 lg:px-10 xl:px-12">
+      <div className="mx-auto w-full max-w-[1960px] px-5 pt-5 min-[960px]:px-10 xl:px-12">
         <Nav />
-        <header className="relative mt-1 overflow-hidden border-y-2 border-ink py-8 sm:py-11 lg:py-14">
-          <div className="pointer-events-none absolute inset-0 opacity-60 [background-image:linear-gradient(90deg,rgba(5,5,16,0.09)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.07)_1px,transparent_1px)] [background-size:72px_72px]" />
-          <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-end">
+        <header className="relative mt-1 py-12 min-[960px]:overflow-hidden min-[960px]:border-y-2 min-[960px]:border-ink min-[960px]:py-14">
+          <div className="pointer-events-none absolute inset-0 hidden opacity-60 [background-image:linear-gradient(90deg,rgba(5,5,16,0.09)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.07)_1px,transparent_1px)] [background-size:72px_72px] min-[960px]:block" />
+          <div className="relative grid gap-8 min-[960px]:grid-cols-[minmax(0,1fr)_22rem] min-[960px]:items-end">
             <div>
-              <p className="font-mono text-[0.75rem] font-black uppercase tracking-[0.18em] text-[var(--study-text-accent)] sm:text-[0.82rem]">
+              <p className="font-mono text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-[var(--study-text-accent)] min-[960px]:text-[0.82rem] min-[960px]:font-black min-[960px]:tracking-[0.18em]">
                 {profile.eyebrow}
               </p>
               <h1
                 id={`${profile.word}-study-title`}
-                className="mt-4 max-w-full break-words text-[clamp(4.3rem,17vw,18rem)] font-black leading-[0.76] tracking-[-0.045em] text-[var(--study-text-accent)]"
+                className="mt-5 max-w-full break-words text-[clamp(4.3rem,17vw,18rem)] font-black leading-[0.78] tracking-[-0.045em] text-[var(--study-text-accent)] min-[960px]:mt-4 min-[960px]:leading-[0.76]"
               >
                 {profile.word}
               </h1>
-              <p className="mt-7 max-w-5xl text-[clamp(1.12rem,2.2vw,2.85rem)] font-black leading-[1.04]">
+              <p className="mt-7 max-w-5xl text-[1.05rem] font-normal leading-[1.48] min-[960px]:text-[clamp(1.12rem,2.2vw,2.85rem)] min-[960px]:font-black min-[960px]:leading-[1.04]">
                 {profile.heroSummary}
               </p>
-              <p className="mt-4 max-w-4xl font-mono text-[0.75rem] font-black uppercase leading-6 tracking-[0.11em] text-ink/[0.62] sm:text-[0.88rem]">
+              <p className="mt-5 max-w-4xl font-mono text-[0.68rem] font-medium uppercase leading-5 tracking-[0.08em] text-ink/55 min-[960px]:mt-4 min-[960px]:text-[0.88rem] min-[960px]:font-black min-[960px]:leading-6 min-[960px]:tracking-[0.11em] min-[960px]:text-ink/[0.62]">
                 {profile.scopeLine}
               </p>
+              <p className="mt-3 font-mono text-[0.66rem] font-medium uppercase leading-5 tracking-[0.06em] text-ink/48 min-[960px]:hidden">
+                coverage / {profile.coverage.map((item) => `${item.label} ${item.value}`).join(" · ")}
+              </p>
             </div>
-            <dl className="hidden border-y border-ink bg-wheat/90 lg:grid">
+            <dl className="hidden border-y border-ink bg-wheat/90 min-[960px]:grid">
               {profile.coverage.map((item, index) => (
                 <div key={item.label} className={`grid grid-cols-[7rem_1fr] border-ink ${index > 0 ? "border-t" : ""}`}>
                   <dt className="border-r border-ink px-3 py-3 font-mono text-[0.7rem] font-black uppercase tracking-[0.12em] text-[var(--study-text-accent)]">
@@ -61,7 +63,6 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
         </header>
         <SearchIntentSummary profile={profile} />
         <EvidenceCoverageStrip profile={profile} />
-        <MobileChapterNav profile={profile} />
       </div>
       {children}
       <WordSeoSummary path={path} />

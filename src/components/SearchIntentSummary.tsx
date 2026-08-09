@@ -9,30 +9,31 @@ export function SearchIntentSummary({ profile }: SearchIntentSummaryProps) {
   const related = profile.answers.filter((answer) => answer.id !== primary.id);
 
   return (
-    <section className="border-b-2 border-ink py-8 sm:py-10" aria-labelledby={`${profile.word}-direct-answer`}>
-      <div className="grid gap-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(20rem,0.55fr)] lg:gap-12">
-        <article id={primary.id} className="scroll-mt-6 border-l-4 border-[var(--study-accent)] pl-4 sm:pl-6">
-          <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.18em] text-ink/[0.58]">
-            direct answer / source bounded
+    <section className="pb-14 pt-2 min-[960px]:border-b-2 min-[960px]:border-ink min-[960px]:py-10" aria-labelledby={`${profile.word}-direct-answer`}>
+      <div className="grid min-[960px]:grid-cols-[minmax(0,0.95fr)_minmax(20rem,0.55fr)] min-[960px]:gap-12">
+        <article id={primary.id} className="scroll-mt-6 min-[960px]:border-l-4 min-[960px]:border-[var(--study-accent)] min-[960px]:pl-6">
+          <p className="font-mono text-[0.68rem] font-medium uppercase tracking-[0.13em] text-ink/50 min-[960px]:text-[0.72rem] min-[960px]:font-black min-[960px]:tracking-[0.18em] min-[960px]:text-ink/[0.58]">
+            <span className="min-[960px]:hidden">research lead / source bounded</span>
+            <span className="hidden min-[960px]:inline">direct answer / source bounded</span>
           </p>
-          <h2 id={`${profile.word}-direct-answer`} className="mt-3 max-w-4xl text-[clamp(1.65rem,3.2vw,3.4rem)] font-black leading-[0.98]">
+          <h2 id={`${profile.word}-direct-answer`} className="mt-3 max-w-4xl text-2xl font-bold leading-[1.08] min-[960px]:text-[clamp(1.65rem,3.2vw,3.4rem)] min-[960px]:font-black min-[960px]:leading-[0.98]">
             {primary.question}
           </h2>
-          <p className="mt-4 max-w-4xl text-[1.05rem] font-bold leading-[1.48] text-anthracite sm:text-[1.22rem]">
+          <p className="mt-5 max-w-4xl text-[1rem] font-normal leading-[1.62] text-anthracite min-[960px]:mt-4 min-[960px]:text-[1.22rem] min-[960px]:font-bold min-[960px]:leading-[1.48]">
             {primary.shortAnswer}
           </p>
-          <p className="mt-5 max-w-3xl border-t border-ink/25 pt-4 font-mono text-[0.75rem] font-black uppercase leading-5 tracking-[0.1em] text-ink/[0.62]">
+          <p className="mt-4 max-w-3xl text-[0.75rem] font-normal leading-5 text-ink/52 min-[960px]:mt-5 min-[960px]:border-t min-[960px]:border-ink/25 min-[960px]:pt-4 min-[960px]:font-mono min-[960px]:font-black min-[960px]:uppercase min-[960px]:tracking-[0.1em] min-[960px]:text-ink/[0.62]">
             Caveat: {primary.caveat}
           </p>
           <a
             href={`#${primary.relatedSection}`}
-            className="mt-5 inline-flex min-h-11 items-center border-b-2 border-ink pb-1 text-[0.76rem] font-black uppercase tracking-[0.13em] transition hover:border-[var(--study-accent)] hover:text-[var(--study-text-accent)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink"
+            className="mt-5 hidden min-h-11 items-center border-b-2 border-ink pb-1 text-[0.76rem] font-black uppercase tracking-[0.13em] transition hover:border-[var(--study-accent)] hover:text-[var(--study-text-accent)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink min-[960px]:inline-flex"
           >
             Open the supporting research section
           </a>
         </article>
 
-        <div className="border-t border-ink/[0.45] pt-5 lg:border-l lg:border-t-0 lg:pl-7 lg:pt-0">
+        <div className="hidden border-t border-ink/[0.45] pt-5 min-[960px]:block min-[960px]:border-l min-[960px]:border-t-0 min-[960px]:pl-7 min-[960px]:pt-0">
           <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.18em] text-[var(--study-text-accent)]">
             related questions
           </p>

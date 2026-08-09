@@ -56,12 +56,12 @@ export function CitationAndSharing({ canonicalUrl, citation, title }: CitationAn
   };
 
   const buttonClass =
-    "min-h-11 border border-ink bg-transparent px-3 py-2 text-left font-mono text-[0.7rem] font-black uppercase leading-5 tracking-[0.1em] transition hover:bg-ink hover:text-wheat focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-ink";
+    "min-h-11 border-b border-ink/60 bg-transparent py-2 text-left font-mono text-[0.66rem] font-semibold uppercase leading-5 tracking-[0.07em] transition hover:border-wine hover:text-wine focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-ink min-[960px]:border min-[960px]:border-ink min-[960px]:px-3 min-[960px]:text-[0.7rem] min-[960px]:font-black min-[960px]:tracking-[0.1em] min-[960px]:hover:bg-ink min-[960px]:hover:text-wheat";
 
   return (
     <div>
       <div className="flex flex-wrap gap-2">
-        <button type="button" className={buttonClass} onClick={() => handleCopy(canonicalUrl, "Canonical page link copied.")}>
+        <button type="button" className={`${buttonClass} hidden min-[960px]:inline-block`} onClick={() => handleCopy(canonicalUrl, "Canonical page link copied.")}>
           Copy page link
         </button>
         <button type="button" className={buttonClass} onClick={() => handleCopy(citation, "Project citation copied.")}>
@@ -71,8 +71,8 @@ export function CitationAndSharing({ canonicalUrl, citation, title }: CitationAn
           Share this study
         </button>
       </div>
-      <p className="mt-3 select-all break-words text-sm font-semibold leading-6 text-ink/[0.68]">{citation}</p>
-      <p className="mt-2 min-h-5 font-mono text-[0.68rem] font-black uppercase tracking-[0.09em] text-[var(--study-text-accent)]" aria-live="polite">
+      <p className="mt-4 select-all break-words text-sm font-normal leading-6 text-ink/62 min-[960px]:mt-3 min-[960px]:font-semibold min-[960px]:text-ink/[0.68]">{citation}</p>
+      <p className="mt-2 min-h-5 font-mono text-[0.64rem] font-semibold uppercase tracking-[0.06em] text-[var(--study-text-accent)] min-[960px]:text-[0.68rem] min-[960px]:font-black min-[960px]:tracking-[0.09em]" aria-live="polite">
         {status}
       </p>
     </div>
