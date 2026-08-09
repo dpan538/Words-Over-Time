@@ -1,5 +1,7 @@
 # Mobile visual translation specification
 
+> **Superseded for implementation (2026-08-09):** The universal figure-component contract, inspector, per-figure actions, chips, sliders, filters, mini-networks, and mobile Three.js guidance below are retained as historical audit evidence. Current mobile implementation authority is [`docs/design/mobile-editorial-edition.md`](../design/mobile-editorial-edition.md). Its static editorial grammar overrides conflicting interaction requirements; evidence provenance, source separation, visible absence, and claim limits remain in force.
+
 **Audit date:** 2026-08-08
 
 **Implementation order:** complete the pattern on `/words/forever`, then generalize only proven primitives

@@ -1,5 +1,7 @@
 # Mobile-first information architecture
 
+> **Superseded for implementation (2026-08-09):** The component-stack, target hierarchy, chapter navigation, inspector, and required per-figure interaction sections below are retained as historical audit evidence. Current mobile implementation authority is [`docs/design/mobile-editorial-edition.md`](../design/mobile-editorial-edition.md). Its static editorial reading programme overrides conflicting guidance here; provenance, claim-boundary, accessibility, and no-overflow principles remain in force.
+
 **Audit date:** 2026-08-08
 
 **Scope:** `/`, `/words`, and the six published word studies, with the implementation priority on `/words/forever`

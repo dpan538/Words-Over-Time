@@ -7,6 +7,7 @@ const config: Config = {
       colors: {
         ink: "#050510",
         wheat: "#F7F0DC",
+        "paper-mobile": "#FCFAF3",
         blaze: "#F06B04",
         sun: "#FBB728",
         nice: "#1570AC",
