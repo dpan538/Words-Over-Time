@@ -315,6 +315,25 @@ export function MobileFrequencyStory({
           step="1"
           value={safeSelectedIndex}
           onChange={(event) => setSelectedPointIndex(Number(event.currentTarget.value))}
+          onKeyDown={(event) => {
+            const lastIndex = Math.max(0, points.length - 1);
+            let nextIndex: number | null = null;
+
+            if (event.key === "ArrowLeft" || event.key === "ArrowDown") {
+              nextIndex = Math.max(0, safeSelectedIndex - 1);
+            } else if (event.key === "ArrowRight" || event.key === "ArrowUp") {
+              nextIndex = Math.min(lastIndex, safeSelectedIndex + 1);
+            } else if (event.key === "Home") {
+              nextIndex = 0;
+            } else if (event.key === "End") {
+              nextIndex = lastIndex;
+            }
+
+            if (nextIndex !== null) {
+              event.preventDefault();
+              setSelectedPointIndex(nextIndex);
+            }
+          }}
           aria-valuetext={`${selectedPoint.year}: ${formatFrequency(selectedPoint.frequencyPerMillion)} occurrences per million`}
           className="mt-1 block h-11 w-full cursor-ew-resize accent-fire"
         />
