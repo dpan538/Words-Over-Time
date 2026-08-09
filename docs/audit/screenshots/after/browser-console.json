@@ -1,0 +1,34 @@
+{
+  "captured_at_utc": "2026-08-09T09:01:18.616Z",
+  "source_head": "4d777597487062c23c9a75f65470ac6e7760abe1",
+  "build_id": "EO9j2G4AzAu8Xfjy287UM",
+  "probes": [
+    {
+      "route": "/words",
+      "fresh_tab": true,
+      "warn_error_count": 0,
+      "entries": []
+    },
+    {
+      "route": "/words/forever",
+      "fresh_tab": true,
+      "warn_error_count": 1,
+      "entries": [
+        {
+          "level": "error",
+          "timestamp": "2026-08-09T09:01:18.616Z",
+          "source": "http://localhost:3200/_next/static/chunks/11461nooujz08.js",
+          "message": "Error: Minified React error #418; hydration failed because the server-rendered HTML did not match the client render."
+        }
+      ]
+    }
+  ],
+  "diagnostic_boundary": {
+    "production_error_reproduced": true,
+    "control_route_clean": true,
+    "component_level_diff_available": false,
+    "development_probe_1": "Turbopack stopped because the temporary node_modules symlink pointed outside its filesystem root.",
+    "development_probe_2": "Webpack development mode reached Forever route compilation but did not complete within the bounded diagnostic window and was stopped.",
+    "classification": "verified route-specific hydration defect; component-level cause remains unresolved"
+  }
+}

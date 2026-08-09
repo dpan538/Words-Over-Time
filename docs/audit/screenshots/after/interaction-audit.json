@@ -1,0 +1,41 @@
+{
+  "captured_at_utc": "2026-08-09T09:01:18.616Z",
+  "source_head": "4d777597487062c23c9a75f65470ac6e7760abe1",
+  "build_id": "EO9j2G4AzAu8Xfjy287UM",
+  "route": "/words/forever#spelling-frequency",
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "device_pixel_ratio": 1
+  },
+  "hash": {
+    "expected": "#spelling-frequency",
+    "observed": "#spelling-frequency",
+    "preserved": true
+  },
+  "frequency_slider": {
+    "locator_count": 1,
+    "before": {
+      "value": "322",
+      "accessible_name": "Inspect year: 2022",
+      "aria_valuetext": "2022: 26.01 occurrences per million"
+    },
+    "action": "ArrowLeft",
+    "after": {
+      "accessible_name": "Inspect year: 2021"
+    },
+    "changed": true
+  },
+  "yearly_data_table": {
+    "toggle_count": 1,
+    "table_count_after_toggle": 1,
+    "visible": true,
+    "body_rows": 323,
+    "caption": "Every plotted yearly Google Books Ngram value for forever, 1700 to 2022"
+  },
+  "overflow_after_table_open": {
+    "body_scroll_width": 390,
+    "document_client_width": 390,
+    "horizontal_overflow": false
+  }
+}

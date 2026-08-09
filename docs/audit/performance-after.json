@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0.0",
+  "audit": {
+    "name": "Words Over Time performance and mobile DOM after measurement",
+    "captured_on": "2026-08-09",
+    "timezone": "Australia/Brisbane",
+    "branch": "audit/mobile-search-growth-2026-08",
+    "baseline_source_head": "e9ee61e57294bb99fc4594a1b53b75935a244b53",
+    "measurement_build_id": "EO9j2G4AzAu8Xfjy287UM",
+    "source_head": "4d777597487062c23c9a75f65470ac6e7760abe1",
+    "source_commits_after_baseline": 8,
+    "production_domain": "https://www.wordsovertime.com/",
+    "local_origin": "http://localhost:3200",
+    "status": "PARTIAL_WITH_EVIDENCE",
+    "status_reason": "The final production build, npm run verify, 36-row browser matrix and Forever keyboard/table interaction passed their recorded checks. Status remains partial because Lighthouse-compatible lab timing did not run and /words/forever reproducibly logs React minified hydration error #418 in a fresh production tab."
+  },
+  "runtime": {
+    "node": "v22.21.0",
+    "npm": "10.9.4",
+    "next": "16.2.5",
+    "react": "19.1",
+    "typescript": "5.7"
+  },
+  "measurement_method": {
+    "payload": {
+      "baseline_source": "docs/audit/performance-baseline.json",
+      "baseline_artifact_build_id": "qNFv9jd8q4QZPP2pTUjr6",
+      "after_artifact_build_id": "EO9j2G4AzAu8Xfjy287UM",
+      "html_and_rsc": "Raw prerendered files on disk; not compressed network transfer sizes.",
+      "initial_js": "Sum of unique JavaScript files referenced by prerendered route HTML, including shared Next.js runtime; not route-exclusive and not compressed transfer size.",
+      "initial_js_requests": "Count of unique JavaScript URLs referenced by prerendered route HTML, not total network request count.",
+      "css": "One raw referenced CSS artifact of 79256 bytes on every measured route; not a compressed network transfer size.",
+      "serialized_props": "Buffer.byteLength(JSON.stringify(value)) estimates for the explicit values constructed by route code; estimates are reported separately from raw RSC bytes."
+    },
+    "browser": {
+      "browser": "Codex in-app browser against a local Next.js production server",
+      "device_scale_factor": 1,
+      "screenshot_directory": "docs/audit/screenshots/after/",
+      "png_count_at_document_creation": 36,
+      "audit_source": "docs/audit/screenshots/after/browser-audit.json",
+      "audit_row_count": 36,
+      "audit_routes": [
+        "/",
+        "/words",
+        "/words/forever",
+        "/words/privacy",
+        "/words/artificial",
+        "/words/hub"
+      ],
+      "viewports": [
+        { "width": 320, "height": 568 },
+        { "width": 360, "height": 800 },
+        { "width": 390, "height": 844 },
+        { "width": 430, "height": 932 },
+        { "width": 768, "height": 1024 },
+        { "width": 1440, "height": 900 }
+      ],
+      "required_png_count": 36,
+      "fresh_head_revalidation": "complete",
+      "scope_limit": "The 36 screenshots record initial render before the final keyboard-only source change. The final production build independently passed the Forever hash, slider keyboard, table, caption and containment interaction check. Browser error-overlay absence is not treated as proof of hydration success because the fresh Forever console reproducibly logs React minified error #418."
+    },
+    "laboratory_metrics": {
+      "collector": "Lighthouse-compatible tooling",
+      "collected": false,
+      "null_policy": "LCP, CLS, TBT, Speed Index, total request count, transferred bytes, image bytes, long-task totals and lab accessibility scores are null because no valid Lighthouse run completed. Zero is not substituted for an unavailable measurement."
+    }
+  },
+  "command_evidence": [
+    {
+      "command": "npm run typecheck",
+      "exit_code": 0,
+      "result": "success",
+      "observations": "The source TypeScript check passed and was repeated successfully inside the final npm run verify execution."
+    },
+    {
+      "command": "npm run build",
+      "exit_code": 0,
+      "result": "success",
+      "build_id": "EO9j2G4AzAu8Xfjy287UM",
+      "observations": "Final verification build EO9j2G4AzAu8Xfjy287UM compiled in approximately 4.5 minutes; Next's internal TypeScript phase took approximately 18.0 minutes, page-data collection 30.9 seconds, and static generation completed 31/31 pages in 83 seconds. The build discovered the unrelated user-owned untracked /words/privacy/mobile-demo route."
+    },
+    {
+      "command": "npm run start -- -p 3200",
+      "exit_code": null,
+      "result": "production_server_started_for_after_browser_audit",
+      "observations": "The 36 required initial-render PNGs and 36-row DOM audit came from the immediately preceding successful build. The final server for EO9j2G4AzAu8Xfjy287UM supplied the separate Forever hash/keyboard/table interaction and fresh-tab console evidence. A null exit code means the server was intentionally still running during capture, not that startup failed."
+    },
+    {
+      "command": "npm run verify",
+      "exit_code": 0,
+      "result": "success",
+      "build_id": "EO9j2G4AzAu8Xfjy287UM",
+      "observations": "Typecheck, data validation and production build passed. Data validation reported 46 terms, 27 sources, 29 evidence records, 37 relations and 0 warnings."
+    }
+  ],
+  "lighthouse_collection_limitations": [
+    {
+      "attempt": 1,
+      "environment": "sandboxed npx Lighthouse acquisition",
+      "exact_observed_error": "ENOTFOUND registry.npmjs.org",
+      "classification": "sandbox DNS failure",
+      "effect": "The Lighthouse package could not be acquired; no lab metrics were produced."
+    },
+    {
+      "attempt": 2,
+      "environment": "system Chrome launched by explicit path",
+      "exact_observed_error": "Crashpad lock and ECONNREFUSED 127.0.0.1",
+      "classification": "system Chrome launch/debug-endpoint connection failure",
+      "effect": "Chrome did not expose a reachable debugging endpoint; no lab metrics were produced."
+    },
+    {
+      "attempt": 3,
+      "environment": "Playwright headless shell",
+      "exact_observed_error": "Unable to connect to Chrome",
+      "classification": "headless shell connection failure",
+      "effect": "The Lighthouse client could not connect to the browser; no lab metrics were produced."
+    }
+  ],
+  "route_payload_comparison": [
+    {
+      "route": "/",
+      "baseline": { "html_bytes_raw": 40065, "rsc_flight_bytes_raw": 20849, "initial_js_bytes_raw": 670246, "initial_js_requests": 11 },
+      "after": { "html_bytes_raw": 57625, "rsc_flight_bytes_raw": 29747, "initial_js_bytes_raw": 670393, "initial_js_requests": 12, "css_bytes_raw": 79256, "css_requests": 1 },
+      "delta": { "html_bytes_raw": 17560, "html_percent": 43.829, "rsc_flight_bytes_raw": 8898, "rsc_percent": 42.678, "initial_js_bytes_raw": 147, "initial_js_percent": 0.022, "initial_js_requests": 1 }
+    },
+    {
+      "route": "/words",
+      "baseline": { "html_bytes_raw": 41726, "rsc_flight_bytes_raw": 22015, "initial_js_bytes_raw": 670246, "initial_js_requests": 11 },
+      "after": { "html_bytes_raw": 43460, "rsc_flight_bytes_raw": 22842, "initial_js_bytes_raw": 670393, "initial_js_requests": 12, "css_bytes_raw": 79256, "css_requests": 1 },
+      "delta": { "html_bytes_raw": 1734, "html_percent": 4.156, "rsc_flight_bytes_raw": 827, "rsc_percent": 3.757, "initial_js_bytes_raw": 147, "initial_js_percent": 0.022, "initial_js_requests": 1 }
+    },
+    {
+      "route": "/about",
+      "baseline": { "html_bytes_raw": 168702, "rsc_flight_bytes_raw": 82980, "initial_js_bytes_raw": 677141, "initial_js_requests": 11 },
+      "after": { "html_bytes_raw": 170406, "rsc_flight_bytes_raw": 83817, "initial_js_bytes_raw": 677288, "initial_js_requests": 12, "css_bytes_raw": 79256, "css_requests": 1 },
+      "delta": { "html_bytes_raw": 1704, "html_percent": 1.01, "rsc_flight_bytes_raw": 837, "rsc_percent": 1.009, "initial_js_bytes_raw": 147, "initial_js_percent": 0.022, "initial_js_requests": 1 }
+    },
+    {
+      "route": "/words/forever",
+      "baseline": { "html_bytes_raw": 1577554, "rsc_flight_bytes_raw": 1104912, "initial_js_bytes_raw": 1336840, "initial_js_requests": 13 },
+      "after": { "html_bytes_raw": 943341, "rsc_flight_bytes_raw": 496356, "initial_js_bytes_raw": 776341, "initial_js_requests": 13, "css_bytes_raw": 79256, "css_requests": 1 },
+      "delta": { "html_bytes_raw": -634213, "html_percent": -40.202, "rsc_flight_bytes_raw": -608556, "rsc_percent": -55.077, "initial_js_bytes_raw": -560499, "initial_js_percent": -41.927, "initial_js_requests": 0 }
+    },
+    {
+      "route": "/words/privacy",
+      "baseline": { "html_bytes_raw": 1478587, "rsc_flight_bytes_raw": 337119, "initial_js_bytes_raw": 1007041, "initial_js_requests": 12 },
+      "after": { "html_bytes_raw": 1502483, "rsc_flight_bytes_raw": 348815, "initial_js_bytes_raw": 1009182, "initial_js_requests": 13, "css_bytes_raw": 79256, "css_requests": 1 },
+      "delta": { "html_bytes_raw": 23896, "html_percent": 1.616, "rsc_flight_bytes_raw": 11696, "rsc_percent": 3.469, "initial_js_bytes_raw": 2141, "initial_js_percent": 0.213, "initial_js_requests": 1 }
+    },
+    {
+      "route": "/words/artificial",
+      "baseline": { "html_bytes_raw": 171898, "rsc_flight_bytes_raw": 30266, "initial_js_bytes_raw": 1424821, "initial_js_requests": 13 },
+      "after": { "html_bytes_raw": 197500, "rsc_flight_bytes_raw": 42716, "initial_js_bytes_raw": 1427050, "initial_js_requests": 14, "css_bytes_raw": 79256, "css_requests": 1 },
+      "delta": { "html_bytes_raw": 25602, "html_percent": 14.894, "rsc_flight_bytes_raw": 12450, "rsc_percent": 41.135, "initial_js_bytes_raw": 2229, "initial_js_percent": 0.156, "initial_js_requests": 1 }
+    },
+    {
+      "route": "/words/hub",
+      "baseline": { "html_bytes_raw": 439658, "rsc_flight_bytes_raw": 147699, "initial_js_bytes_raw": 1330183, "initial_js_requests": 13 },
+      "after": { "html_bytes_raw": 465210, "rsc_flight_bytes_raw": 160011, "initial_js_bytes_raw": 1332461, "initial_js_requests": 14, "css_bytes_raw": 79256, "css_requests": 1 },
+      "delta": { "html_bytes_raw": 25552, "html_percent": 5.812, "rsc_flight_bytes_raw": 12312, "rsc_percent": 8.336, "initial_js_bytes_raw": 2278, "initial_js_percent": 0.171, "initial_js_requests": 1 }
+    },
+    {
+      "route": "/words/depression",
+      "baseline": { "html_bytes_raw": 1715718, "rsc_flight_bytes_raw": 1319717, "initial_js_bytes_raw": 820384, "initial_js_requests": 12 },
+      "after": { "html_bytes_raw": 1744705, "rsc_flight_bytes_raw": 1335451, "initial_js_bytes_raw": 820224, "initial_js_requests": 13, "css_bytes_raw": 79256, "css_requests": 1 },
+      "delta": { "html_bytes_raw": 28987, "html_percent": 1.689, "rsc_flight_bytes_raw": 15734, "rsc_percent": 1.192, "initial_js_bytes_raw": -160, "initial_js_percent": -0.02, "initial_js_requests": 1 }
+    },
+    {
+      "route": "/words/data",
+      "baseline": { "html_bytes_raw": 427771, "rsc_flight_bytes_raw": 148070, "initial_js_bytes_raw": 746339, "initial_js_requests": 12 },
+      "after": { "html_bytes_raw": 452597, "rsc_flight_bytes_raw": 160384, "initial_js_bytes_raw": 748364, "initial_js_requests": 13, "css_bytes_raw": 79256, "css_requests": 1 },
+      "delta": { "html_bytes_raw": 24826, "html_percent": 5.804, "rsc_flight_bytes_raw": 12314, "rsc_percent": 8.316, "initial_js_bytes_raw": 2025, "initial_js_percent": 0.271, "initial_js_requests": 1 }
+    }
+  ],
+  "forever_payload_detail": {
+    "baseline_serialized_client_props_bytes_estimate": 1085004,
+    "after_explicit_client_dataset_bytes_estimate": 455827,
+    "delta_bytes": -629177,
+    "delta_percent": -57.988,
+    "full_generated_dataset_bytes": 1142920,
+    "explicit_client_dataset_bytes": 455827,
+    "full_to_client_projection_delta_bytes": -687093,
+    "full_to_client_projection_delta_percent": -60.117,
+    "baseline_inspector_bytes_estimate": 738779,
+    "after_inspector_summary_bytes": 149346,
+    "inspector_delta_bytes": -589433,
+    "after_inspector_records_retained": 313,
+    "source_inspector_records": 482,
+    "boundary": "The serialized values are JSON byte estimates and are not compressed transfer sizes. The raw RSC comparison above is the artifact-level result. Research source files and values were not modified to obtain the reduction."
+  },
+  "client_bundle_findings": {
+    "forever_threejs_in_initial_asset_list": false,
+    "home_threejs_in_initial_asset_list": false,
+    "unrelated_routes_threejs_in_initial_asset_list": false,
+    "artificial_threejs_in_initial_asset_list": true,
+    "hub_threejs_in_initial_asset_list": true,
+    "three_signature_chunks": [
+      ".next/static/chunks/01lh76562hwdt.js",
+      ".next/static/chunks/0l2ma5ud3efxp.js",
+      ".next/static/chunks/0okk8gdb0qe8x.js",
+      ".next/static/chunks/0xmo~ty939d0p.js"
+    ],
+    "method": "Initial HTML asset lists were scanned for chunks containing Three.js signatures such as WebGLRenderer, REVISION=, and three.module.",
+    "interpretation": "The Forever deferral succeeded for its initial asset list; Artificial and Hub remain follow-up performance work. This is a bundle-membership finding, not a Lighthouse timing result."
+  },
+  "final_after_browser_audit": {
+    "source": "docs/audit/screenshots/after/browser-audit.json",
+    "row_count": 36,
+    "required_png_count": 36,
+    "common_passes_across_36_rows": {
+      "h1_count": 1,
+      "main_count": 1,
+      "horizontal_overflow": false,
+      "duplicate_id_count": 0,
+      "empty_named_button_count": 0,
+      "error_overlay_visible": false,
+      "wider_screen_fallback_visible": false
+    },
+    "direct_answer_visible_routes": [
+      "/words/forever",
+      "/words/privacy",
+      "/words/artificial",
+      "/words/hub"
+    ],
+    "forever_frequency": {
+      "mobile_reader_visible_widths": [320, 360, 390, 430, 768],
+      "desktop_visual_visible_widths": [1440],
+      "figure_count_each_viewport": 3,
+      "figcaption_count_each_viewport": 3,
+      "table_count_on_initial_render": 0,
+      "wider_screen_refusal_visible": false,
+      "interpretation": "The mobile reader replaced the orientation refusal. The table is progressively disclosed, so the initial-render audit counts zero tables; the final interaction check opened and verified the table separately."
+    },
+    "controls_below_44px_flagged_count_at_320px": {
+      "/": 0,
+      "/words": 0,
+      "/words/forever": 0,
+      "/words/privacy": 0,
+      "/words/artificial": 11,
+      "/words/hub": 0
+    },
+    "no_overflow_viewports_by_route": {
+      "/": [320, 360, 390, 430, 768, 1440],
+      "/words": [320, 360, 390, 430, 768, 1440],
+      "/words/forever": [320, 360, 390, 430, 768, 1440],
+      "/words/privacy": [320, 360, 390, 430, 768, 1440],
+      "/words/artificial": [320, 360, 390, 430, 768, 1440],
+      "/words/hub": [320, 360, 390, 430, 768, 1440]
+    },
+    "forever_interaction_at_390px": {
+      "hash": "#spelling-frequency",
+      "hash_preserved": true,
+      "initial_slider_dom_value": 322,
+      "initial_slider_year": 2022,
+      "keyboard_action": "ArrowLeft",
+      "resulting_accessible_snapshot": "Inspect year 2021",
+      "yearly_table_toggle_count": 1,
+      "open_table_count": 1,
+      "table_row_count": 323,
+      "table_caption": "Every plotted yearly Google Books Ngram value for forever, 1700 to 2022",
+      "body_scroll_width": 390,
+      "body_client_width": 390,
+      "status": "pass"
+    },
+    "console": {
+      "/words": {
+        "fresh_production_tab_messages": [],
+        "status": "pass_for_captured_load"
+      },
+      "/words/forever": {
+        "fresh_production_tab_error_count": 1,
+        "reproducible": true,
+        "error": "React minified hydration error #418",
+        "status": "fail",
+        "priority": "P1"
+      },
+      "diagnostic_limit": "A temporary Turbopack dev run failed because node_modules is symlinked outside the project root. A webpack dev run compiled the route too slowly and was aborted before a full component-level mismatch could be isolated."
+    },
+    "screenshot_boundary": "The required 36 PNGs precede the last keyboard-only source change; the final keyboard interaction was exercised against build EO9j2G4AzAu8Xfjy287UM."
+  },
+  "lab_metrics": [
+    { "route": "/", "lcp_ms": null, "cls": null, "tbt_ms": null, "speed_index_ms": null, "total_request_count": null, "transferred_bytes": null, "image_bytes": null, "long_task_count": null },
+    { "route": "/words", "lcp_ms": null, "cls": null, "tbt_ms": null, "speed_index_ms": null, "total_request_count": null, "transferred_bytes": null, "image_bytes": null, "long_task_count": null },
+    { "route": "/words/forever", "lcp_ms": null, "cls": null, "tbt_ms": null, "speed_index_ms": null, "total_request_count": null, "transferred_bytes": null, "image_bytes": null, "long_task_count": null },
+    { "route": "/words/privacy", "lcp_ms": null, "cls": null, "tbt_ms": null, "speed_index_ms": null, "total_request_count": null, "transferred_bytes": null, "image_bytes": null, "long_task_count": null },
+    { "route": "/words/artificial", "lcp_ms": null, "cls": null, "tbt_ms": null, "speed_index_ms": null, "total_request_count": null, "transferred_bytes": null, "image_bytes": null, "long_task_count": null },
+    { "route": "/words/hub", "lcp_ms": null, "cls": null, "tbt_ms": null, "speed_index_ms": null, "total_request_count": null, "transferred_bytes": null, "image_bytes": null, "long_task_count": null }
+  ],
+  "target_assessment": [
+    {
+      "target": "CLS <= 0.1",
+      "status": "not_measured",
+      "reason": "No valid Lighthouse-compatible run completed."
+    },
+    {
+      "target": "home mobile lab LCP <= 2.5s",
+      "status": "not_measured",
+      "reason": "No valid Lighthouse-compatible run completed."
+    },
+    {
+      "target": "word-page mobile lab LCP <= 3.0s",
+      "status": "not_measured",
+      "reason": "No valid Lighthouse-compatible run completed."
+    },
+    {
+      "target": "home TBT <= 200ms",
+      "status": "not_measured",
+      "reason": "No valid Lighthouse-compatible run completed."
+    },
+    {
+      "target": "no initial-JS regression on any audited route",
+      "status": "missed_in_measured_artifact",
+      "reason": "Home, Words, About, Privacy, Artificial, Hub and Data increased by 147 to 2278 raw referenced JS bytes; Depression decreased by 160 bytes and Forever decreased by 560499 bytes."
+    },
+    {
+      "target": "meaningful Forever initial client JS or serialized-data reduction",
+      "status": "met_in_measured_artifact",
+      "reason": "Forever raw referenced initial JS fell 560499 bytes (41.927%), raw RSC fell 608556 bytes (55.077%), and estimated constructed client JSON fell 629177 bytes (57.988%)."
+    },
+    {
+      "target": "Three.js absent from unrelated initial route bundles",
+      "status": "met_for_unrelated_routes",
+      "reason": "Forever and Home initial asset lists contain no scanned Three.js signature. Artificial and Hub, which retain Three.js visuals, still reference signature chunks and remain route-specific optimization work."
+    },
+    {
+      "target": "no hydration errors",
+      "status": "failed",
+      "reason": "A fresh /words tab logged no messages, but a fresh /words/forever production tab reproducibly logged one React minified hydration error #418. Error-overlay absence in the screenshot matrix does not override console evidence."
+    },
+    {
+      "target": "no body overflow at 320, 360, 390 and 430px",
+      "status": "met_in_36_row_browser_matrix",
+      "reason": "Home, Words, Forever, Privacy, Artificial and Hub had body/root width equal to their viewport at 320, 360, 390 and 430px; the 768 and 1440 rows also reported no horizontal overflow."
+    },
+    {
+      "target": "npm run verify",
+      "status": "met",
+      "reason": "Exit code 0; typecheck, data validation and final production build succeeded with 0 data warnings."
+    }
+  ],
+  "release_interpretation": {
+    "result": "PARTIAL_WITH_EVIDENCE",
+    "verified_wins": [
+      "Forever raw HTML, RSC, initial JS and constructed client JSON are materially smaller in the measured production artifact.",
+      "Forever no longer exposes its wider-screen refusal in the captured viewport matrix and presents a mobile reader from 320 through 768px.",
+      "All 36 browser-audit rows show no horizontal overflow, one H1, one main landmark, no duplicate IDs, no unnamed visible buttons, no visible error overlay and no wider-screen fallback.",
+      "The final Forever interaction preserved #spelling-frequency, moved the 2022 slider to 2021 with ArrowLeft, opened a 323-row yearly table with the expected caption, and retained 390px body containment.",
+      "npm run verify passed on source HEAD 4d777597487062c23c9a75f65470ac6e7760abe1."
+    ],
+    "verified_misses_or_open_items": [
+      "The strict no-initial-JS-regression target was not met on seven routes, although increases were small in raw byte terms.",
+      "Artificial and Hub still include Three.js in their initial asset lists.",
+      "LCP, CLS, TBT and Speed Index remain unknown.",
+      "Forever reproducibly logs React minified hydration error #418 in a fresh production tab; this is a P1 defect even though interaction checks pass and no error overlay is visible.",
+      "Artificial still has 11 visible controls below the approximately 44px audit threshold at 320px.",
+      "Full reduced-motion, screen-reader and 200% text-zoom regression checks remain follow-up manual QA."
+    ],
+    "claim_boundary": "These measurements establish payload and implementation changes. They do not establish ranking, traffic, CTR, Core Web Vitals or user-behavior improvement."
+  }
+}
