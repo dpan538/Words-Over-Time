@@ -944,7 +944,7 @@ export function HubChart03NamingMachine({ data }: HubChart03NamingMachineProps) 
                 onMouseEnter={() => setActiveId(family.id)}
                 onMouseLeave={() => setActiveId(null)}
                 onClick={() => setLockedFamilyId(isLocked ? null : family.id)}
-                className={`border px-3 py-2 font-mono text-[0.78rem] font-black uppercase tracking-[0.13em] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hub-space ${
+                className={`min-h-11 border px-3 py-2 font-mono text-[0.78rem] font-black uppercase tracking-[0.13em] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hub-space ${
                   isLocked ? "border-ink bg-ink text-wheat" : "border-ink/52 bg-[#efe4c8] text-ink hover:bg-[#e8dcc0]"
                 }`}
                 aria-pressed={isLocked}

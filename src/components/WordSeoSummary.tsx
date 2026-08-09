@@ -22,7 +22,7 @@ export function WordSeoSummary({ path }: WordSeoSummaryProps) {
   return (
     <section className="bg-wheat px-5 py-8 text-ink sm:px-10 lg:px-16 xl:px-20" aria-labelledby={`${route.path.slice(1).replaceAll("/", "-")}-summary`}>
       <div className="mx-auto grid max-w-[1680px] gap-6 border-t border-ink/[0.55] pt-6 lg:grid-cols-[minmax(0,1fr)_minmax(300px,0.38fr)]">
-        <div className="max-w-4xl">
+        <div className="min-w-0 max-w-4xl">
           <p className="text-[0.72rem] font-black uppercase tracking-[0.18em] text-nice/90">canonical study / citation</p>
           <h2 id={`${route.path.slice(1).replaceAll("/", "-")}-summary`} className="mt-3 text-2xl font-extrabold leading-tight sm:text-4xl">
             Cite and continue this study/
@@ -41,7 +41,7 @@ export function WordSeoSummary({ path }: WordSeoSummaryProps) {
             <CitationAndSharing canonicalUrl={absoluteUrl(route.path)} citation={citation} title={`${route.title} | ${siteConfig.name}`} />
           </div>
         </div>
-        <nav aria-label={`Related word studies for ${route.title}`} className="flex flex-col justify-between gap-5 border-l-0 border-ink/[0.35] lg:border-l lg:pl-6">
+        <nav aria-label={`Related word studies for ${route.title}`} className="flex min-w-0 flex-col justify-between gap-5 border-l-0 border-ink/[0.35] lg:border-l lg:pl-6">
           <div>
             <p className="text-[0.72rem] font-black uppercase tracking-[0.18em] text-fire/90">related studies</p>
             <div className="mt-3 flex flex-wrap gap-2">

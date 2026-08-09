@@ -71,7 +71,7 @@ export function CitationAndSharing({ canonicalUrl, citation, title }: CitationAn
           Share this study
         </button>
       </div>
-      <p className="mt-3 select-all text-sm font-semibold leading-6 text-ink/[0.68]">{citation}</p>
+      <p className="mt-3 select-all break-words text-sm font-semibold leading-6 text-ink/[0.68]">{citation}</p>
       <p className="mt-2 min-h-5 font-mono text-[0.68rem] font-black uppercase tracking-[0.09em] text-[var(--study-text-accent)]" aria-live="polite">
         {status}
       </p>
