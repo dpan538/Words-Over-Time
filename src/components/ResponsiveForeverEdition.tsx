@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { useEffect, useState, type ReactNode } from "react";
 
-const desktopQuery = "(min-width: 60rem)";
+const desktopQuery = "(min-width: 960px)";
 
 const ForeverDesktopEdition = dynamic(
   () =>

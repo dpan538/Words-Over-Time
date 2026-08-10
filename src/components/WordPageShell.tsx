@@ -14,6 +14,8 @@ type WordPageShellProps = {
 export function WordPageShell({ path, children }: WordPageShellProps) {
   const profile = wordStudyProfile(path);
   const route = routeByPath(path);
+  const isForever = path === "/words/forever";
+  const primary = profile.answers.find((answer) => answer.id === profile.primaryAnswerId) ?? profile.answers[0];
   const textAccent = path === "/words/forever" ? "#AE4202" : path === "/words/hub" ? "#0B6B71" : route?.accent;
 
   if (!route) return children;
@@ -26,26 +28,26 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
     >
       <div className="mx-auto w-full max-w-[1960px] px-5 pt-5 min-[960px]:px-10 xl:px-12">
         <Nav />
-        <header className="relative mt-1 py-12 min-[960px]:overflow-hidden min-[960px]:border-y-2 min-[960px]:border-ink min-[960px]:py-14">
+        <header className={`relative mt-1 min-[960px]:overflow-hidden min-[960px]:border-y-2 min-[960px]:border-ink min-[960px]:py-14 ${isForever ? "py-10" : "py-12"}`}>
           <div className="pointer-events-none absolute inset-0 hidden opacity-60 [background-image:linear-gradient(90deg,rgba(5,5,16,0.09)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.07)_1px,transparent_1px)] [background-size:72px_72px] min-[960px]:block" />
-          <div className="relative grid gap-8 min-[960px]:grid-cols-[minmax(0,1fr)_22rem] min-[960px]:items-end">
-            <div>
-              <p className="font-mono text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-[var(--study-text-accent)] min-[960px]:text-[0.82rem] min-[960px]:font-black min-[960px]:tracking-[0.18em]">
+          <div className="relative grid min-w-0 gap-8 min-[960px]:grid-cols-[minmax(0,1fr)_22rem] min-[960px]:items-end">
+            <div className="min-w-0">
+              <p className="font-mono text-[0.8125rem] font-semibold uppercase tracking-[0.04em] text-fire min-[960px]:text-[0.82rem] min-[960px]:font-black min-[960px]:tracking-[0.18em] min-[960px]:text-[var(--study-text-accent)]">
                 {profile.eyebrow}
               </p>
               <h1
                 id={`${profile.word}-study-title`}
-                className="mt-5 max-w-full break-words text-[clamp(4.3rem,17vw,18rem)] font-black leading-[0.78] tracking-[-0.045em] text-[var(--study-text-accent)] min-[960px]:mt-4 min-[960px]:leading-[0.76]"
+                className={`mt-5 max-w-full break-words font-extrabold text-[var(--study-text-accent)] min-[960px]:mt-4 min-[960px]:text-[clamp(4.3rem,17vw,18rem)] min-[960px]:font-black min-[960px]:leading-[0.76] min-[960px]:tracking-[-0.045em] ${isForever ? "text-[clamp(3.5rem,23vw,7rem)] leading-[0.84] tracking-[-0.035em]" : "text-[clamp(4.3rem,17vw,18rem)] leading-[0.84] tracking-[-0.035em]"}`}
               >
                 {profile.word}
               </h1>
-              <p className="mt-7 max-w-5xl text-[1.05rem] font-medium leading-[1.48] min-[960px]:text-[clamp(1.12rem,2.2vw,2.85rem)] min-[960px]:font-black min-[960px]:leading-[1.04]">
+              <p className="mt-7 max-w-5xl text-[1.0625rem] font-normal leading-[1.55] min-[960px]:text-[clamp(1.12rem,2.2vw,2.85rem)] min-[960px]:font-black min-[960px]:leading-[1.04]">
                 {profile.heroSummary}
               </p>
-              <p className="mt-5 max-w-4xl font-mono text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.08em] text-ink/70 min-[960px]:mt-4 min-[960px]:text-[0.88rem] min-[960px]:font-black min-[960px]:leading-6 min-[960px]:tracking-[0.11em] min-[960px]:text-ink/[0.62]">
+              <p className="mt-5 max-w-4xl font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-ink/85 min-[960px]:mt-4 min-[960px]:text-[0.88rem] min-[960px]:font-black min-[960px]:leading-6 min-[960px]:tracking-[0.11em] min-[960px]:text-ink/[0.62]">
                 {profile.scopeLine}
               </p>
-              <p className="mt-3 font-mono text-[0.66rem] font-semibold uppercase leading-5 tracking-[0.06em] text-ink/64 min-[960px]:hidden">
+              <p className="mt-3 font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-ink/80 min-[960px]:hidden">
                 coverage / {profile.coverage.map((item) => `${item.label} ${item.value}`).join(" · ")}
               </p>
             </div>
@@ -61,7 +63,27 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
             </dl>
           </div>
         </header>
-        <SearchIntentSummary profile={profile} />
+        {isForever ? (
+          <section className="grid grid-cols-6 gap-x-3 pb-10 max-[300px]:gap-y-4 min-[960px]:hidden" aria-labelledby="forever-mobile-research-lead">
+            <p className="col-span-2 pt-1 font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-fire max-[300px]:col-span-6">
+              research<br />lead
+            </p>
+            <div className="col-span-4 min-w-0 max-[300px]:col-span-6">
+              <h2 id="forever-mobile-research-lead" className="text-[1.5rem] font-semibold leading-[1.12] tracking-[-0.015em]">
+                {primary.question}
+              </h2>
+              <p className="mt-4 text-[1.0625rem] font-normal leading-[1.55] text-ink">
+                {primary.shortAnswer}
+              </p>
+              <p className="mt-4 font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-ink/80">
+                Boundary / {primary.caveat}
+              </p>
+            </div>
+          </section>
+        ) : null}
+        <div className={isForever ? "hidden min-[960px]:block" : undefined}>
+          <SearchIntentSummary profile={profile} />
+        </div>
         <EvidenceCoverageStrip profile={profile} />
       </div>
       {children}

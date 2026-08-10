@@ -56,7 +56,7 @@ export function CitationAndSharing({ canonicalUrl, citation, title }: CitationAn
   };
 
   const buttonClass =
-    "min-h-11 border-b border-ink/60 bg-transparent py-2 text-left font-mono text-[0.66rem] font-semibold uppercase leading-5 tracking-[0.07em] transition hover:border-wine hover:text-wine focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-ink min-[960px]:border min-[960px]:border-ink min-[960px]:px-3 min-[960px]:text-[0.7rem] min-[960px]:font-black min-[960px]:tracking-[0.1em] min-[960px]:hover:bg-ink min-[960px]:hover:text-wheat";
+    "min-h-11 border-b border-ink/60 bg-transparent py-2 text-left font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] hover:border-wine hover:text-wine focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-ink motion-reduce:transition-none min-[960px]:border min-[960px]:border-ink min-[960px]:px-3 min-[960px]:text-[0.7rem] min-[960px]:font-black min-[960px]:tracking-[0.1em] min-[960px]:transition min-[960px]:hover:bg-ink min-[960px]:hover:text-wheat";
 
   return (
     <div>
@@ -71,8 +71,8 @@ export function CitationAndSharing({ canonicalUrl, citation, title }: CitationAn
           Share this study
         </button>
       </div>
-      <p className="mt-4 select-all break-words text-sm font-medium leading-6 text-ink/72 min-[960px]:mt-3 min-[960px]:font-semibold min-[960px]:text-ink/[0.68]">{citation}</p>
-      <p className="mt-2 min-h-5 font-mono text-[0.64rem] font-semibold uppercase tracking-[0.06em] text-[var(--study-text-accent)] min-[960px]:text-[0.68rem] min-[960px]:font-black min-[960px]:tracking-[0.09em]" aria-live="polite">
+      <p className="mt-4 select-all break-words text-sm font-normal leading-6 text-ink/85 min-[960px]:mt-3 min-[960px]:font-semibold min-[960px]:text-ink/[0.68]">{citation}</p>
+      <p className="mt-2 min-h-5 font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-fire min-[960px]:text-[0.68rem] min-[960px]:font-black min-[960px]:tracking-[0.09em] min-[960px]:text-[var(--study-text-accent)]" aria-live="polite">
         {status}
       </p>
     </div>
