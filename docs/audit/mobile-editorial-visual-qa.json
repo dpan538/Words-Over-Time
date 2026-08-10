@@ -1,0 +1,1081 @@
+{
+  "generatedAt": "2026-08-10T01:54:55.301Z",
+  "baseUrl": "http://127.0.0.1:3100",
+  "serverMode": "production",
+  "results": [
+    {
+      "url": "/",
+      "title": "Words Over Time: Word Meaning, History, and Usage",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "document": {
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 800,
+        "pageCount": 1
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "Words you wanna know:"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [
+        "foreverlong promise",
+        "artificialmade meaning",
+        "privacyprivate weather",
+        "hubcenter moved",
+        "depressiondouble crisis",
+        "datasocial count"
+      ],
+      "visibleFigureCount": 0,
+      "firstFigureTop": null,
+      "firstFigureViewportRatio": null,
+      "visibleControlCount": 0,
+      "visibleControlLabels": [],
+      "visibleCanvasCount": 0,
+      "detailsCount": 0,
+      "openDetailsCount": 0,
+      "lineageVisible": false,
+      "text": {
+        "hasWordPrompt": true,
+        "hasAvailableStudies": false,
+        "hasStaticTrace": false,
+        "hasMatrix": false,
+        "hasOrderedStrips": false,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js",
+        "http://127.0.0.1:3100/_next/static/chunks/03ser2oxaq32-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0_6fdr8mn.az-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0_5nooj1981zw.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xmo~ty939d0p.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0l_52e-i0f3kk.js"
+      ],
+      "routeName": "home",
+      "javascript": true,
+      "errors": [
+        "error: Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3100/favicon.ico"
+      ]
+    },
+    {
+      "url": "/",
+      "title": "Words Over Time: Word Meaning, History, and Usage",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "document": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "scrollHeight": 844,
+        "pageCount": 1
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "Words you wanna know:"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [
+        "foreverlong promise",
+        "artificialmade meaning",
+        "privacyprivate weather",
+        "hubcenter moved",
+        "depressiondouble crisis",
+        "datasocial count"
+      ],
+      "visibleFigureCount": 0,
+      "firstFigureTop": null,
+      "firstFigureViewportRatio": null,
+      "visibleControlCount": 0,
+      "visibleControlLabels": [],
+      "visibleCanvasCount": 0,
+      "detailsCount": 0,
+      "openDetailsCount": 0,
+      "lineageVisible": false,
+      "text": {
+        "hasWordPrompt": true,
+        "hasAvailableStudies": false,
+        "hasStaticTrace": false,
+        "hasMatrix": false,
+        "hasOrderedStrips": false,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js",
+        "http://127.0.0.1:3100/_next/static/chunks/03ser2oxaq32-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0_6fdr8mn.az-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0_5nooj1981zw.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0okk8gdb0qe8x.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xmo~ty939d0p.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0euz0u75yi9o3.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0l_52e-i0f3kk.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0n2ciuir.4n3p.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0l2ma5ud3efxp.js",
+        "http://127.0.0.1:3100/_next/static/chunks/02neffu0pgsg-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js"
+      ],
+      "routeName": "home",
+      "javascript": true,
+      "errors": []
+    },
+    {
+      "url": "/",
+      "title": "Words Over Time: Word Meaning, History, and Usage",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "document": {
+        "clientWidth": 430,
+        "scrollWidth": 430,
+        "scrollHeight": 932,
+        "pageCount": 1
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "Words you wanna know:"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [
+        "foreverlong promise",
+        "artificialmade meaning",
+        "privacyprivate weather",
+        "hubcenter moved",
+        "depressiondouble crisis",
+        "datasocial count"
+      ],
+      "visibleFigureCount": 0,
+      "firstFigureTop": null,
+      "firstFigureViewportRatio": null,
+      "visibleControlCount": 0,
+      "visibleControlLabels": [],
+      "visibleCanvasCount": 0,
+      "detailsCount": 0,
+      "openDetailsCount": 0,
+      "lineageVisible": false,
+      "text": {
+        "hasWordPrompt": true,
+        "hasAvailableStudies": false,
+        "hasStaticTrace": false,
+        "hasMatrix": false,
+        "hasOrderedStrips": false,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/03ser2oxaq32-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0_6fdr8mn.az-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0_5nooj1981zw.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xmo~ty939d0p.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0okk8gdb0qe8x.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0euz0u75yi9o3.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0l_52e-i0f3kk.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0l2ma5ud3efxp.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0n2ciuir.4n3p.js",
+        "http://127.0.0.1:3100/_next/static/chunks/02neffu0pgsg-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js"
+      ],
+      "routeName": "home",
+      "javascript": true,
+      "errors": []
+    },
+    {
+      "url": "/",
+      "title": "Words Over Time: Word Meaning, History, and Usage",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "document": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 1665,
+        "pageCount": 1.85
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "WordsOver Time"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [
+        "foreverlong promise",
+        "artificialmade meaning",
+        "privacyprivate weather",
+        "hubcenter moved"
+      ],
+      "visibleFigureCount": 0,
+      "firstFigureTop": null,
+      "firstFigureViewportRatio": null,
+      "visibleControlCount": 0,
+      "visibleControlLabels": [],
+      "visibleCanvasCount": 0,
+      "detailsCount": 0,
+      "openDetailsCount": 0,
+      "lineageVisible": false,
+      "text": {
+        "hasWordPrompt": false,
+        "hasAvailableStudies": true,
+        "hasStaticTrace": false,
+        "hasMatrix": false,
+        "hasOrderedStrips": false,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0_5nooj1981zw.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0okk8gdb0qe8x.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xmo~ty939d0p.js",
+        "http://127.0.0.1:3100/_next/static/chunks/03ser2oxaq32-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0euz0u75yi9o3.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0l_52e-i0f3kk.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0l2ma5ud3efxp.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0n2ciuir.4n3p.js",
+        "http://127.0.0.1:3100/_next/static/chunks/02neffu0pgsg-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js"
+      ],
+      "routeName": "home",
+      "javascript": true,
+      "errors": []
+    },
+    {
+      "url": "/words/forever",
+      "title": "Forever Spelling, Meaning, and Origin | Words Over Time",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "document": {
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 6640,
+        "pageCount": 8.3
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "forever"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [],
+      "visibleFigureCount": 3,
+      "firstFigureTop": 818,
+      "firstFigureViewportRatio": 1.02,
+      "visibleControlCount": 2,
+      "visibleControlLabels": [
+        "Copy project citation",
+        "Share this study"
+      ],
+      "visibleCanvasCount": 0,
+      "detailsCount": 1,
+      "openDetailsCount": 0,
+      "lineageVisible": false,
+      "text": {
+        "hasWordPrompt": false,
+        "hasAvailableStudies": false,
+        "hasStaticTrace": true,
+        "hasMatrix": true,
+        "hasOrderedStrips": true,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/02neffu0pgsg-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js",
+        "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js"
+      ],
+      "routeName": "forever",
+      "javascript": true,
+      "errors": []
+    },
+    {
+      "url": "/words/forever",
+      "title": "Forever Spelling, Meaning, and Origin | Words Over Time",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "document": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "scrollHeight": 6373,
+        "pageCount": 7.55
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "forever"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [],
+      "visibleFigureCount": 3,
+      "firstFigureTop": 792,
+      "firstFigureViewportRatio": 0.94,
+      "visibleControlCount": 2,
+      "visibleControlLabels": [
+        "Copy project citation",
+        "Share this study"
+      ],
+      "visibleCanvasCount": 0,
+      "detailsCount": 1,
+      "openDetailsCount": 0,
+      "lineageVisible": false,
+      "text": {
+        "hasWordPrompt": false,
+        "hasAvailableStudies": false,
+        "hasStaticTrace": true,
+        "hasMatrix": true,
+        "hasOrderedStrips": true,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/02neffu0pgsg-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js",
+        "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js"
+      ],
+      "routeName": "forever",
+      "javascript": true,
+      "errors": []
+    },
+    {
+      "url": "/words/forever",
+      "title": "Forever Spelling, Meaning, and Origin | Words Over Time",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "document": {
+        "clientWidth": 430,
+        "scrollWidth": 430,
+        "scrollHeight": 6108,
+        "pageCount": 6.55
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "forever"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [],
+      "visibleFigureCount": 3,
+      "firstFigureTop": 796,
+      "firstFigureViewportRatio": 0.85,
+      "visibleControlCount": 2,
+      "visibleControlLabels": [
+        "Copy project citation",
+        "Share this study"
+      ],
+      "visibleCanvasCount": 0,
+      "detailsCount": 1,
+      "openDetailsCount": 0,
+      "lineageVisible": false,
+      "text": {
+        "hasWordPrompt": false,
+        "hasAvailableStudies": false,
+        "hasStaticTrace": true,
+        "hasMatrix": true,
+        "hasOrderedStrips": true,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/02neffu0pgsg-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js",
+        "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js"
+      ],
+      "routeName": "forever",
+      "javascript": true,
+      "errors": []
+    },
+    {
+      "url": "/words/forever",
+      "title": "Forever Spelling, Meaning, and Origin | Words Over Time",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "document": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 12284,
+        "pageCount": 13.65
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "forever"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [],
+      "visibleFigureCount": 3,
+      "firstFigureTop": 1821,
+      "firstFigureViewportRatio": 2.02,
+      "visibleControlCount": 10,
+      "visibleControlLabels": [
+        "AllAll available real-data coverage.",
+        "1700-1799Sparse Gutenberg seed coverage; Ngram coverage is available.",
+        "1800-1849Gutenberg seed texts and Ngram coverage.",
+        "1850-1899Strongest Gutenberg context coverage in the current corpus layer.",
+        "1900-1949Limited public-domain context texts in the current corpus layer.",
+        "1950-1999Ngram coverage only in this round; no Gutenberg snippets selected.",
+        "2000-2025Ngram coverage only in this round; recent contextual corpus not implemented.",
+        "Copy page link",
+        "Copy project citation",
+        "Share this study"
+      ],
+      "visibleCanvasCount": 0,
+      "detailsCount": 0,
+      "openDetailsCount": 0,
+      "lineageVisible": false,
+      "text": {
+        "hasWordPrompt": false,
+        "hasAvailableStudies": false,
+        "hasStaticTrace": true,
+        "hasMatrix": false,
+        "hasOrderedStrips": false,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/02neffu0pgsg-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0lchqlzpkpza~.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0uhutbl6743dk.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js",
+        "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js"
+      ],
+      "routeName": "forever",
+      "javascript": true,
+      "errors": []
+    },
+    {
+      "url": "/about",
+      "title": "Methodology, Sources, and Rights | Words Over Time",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "document": {
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 3943,
+        "pageCount": 4.93
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "WordsOver Time"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [],
+      "visibleFigureCount": 0,
+      "firstFigureTop": null,
+      "firstFigureViewportRatio": null,
+      "visibleControlCount": 0,
+      "visibleControlLabels": [],
+      "visibleCanvasCount": 0,
+      "detailsCount": 3,
+      "openDetailsCount": 0,
+      "lineageVisible": true,
+      "text": {
+        "hasWordPrompt": false,
+        "hasAvailableStudies": false,
+        "hasStaticTrace": false,
+        "hasMatrix": false,
+        "hasOrderedStrips": false,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js"
+      ],
+      "routeName": "about",
+      "javascript": true,
+      "errors": []
+    },
+    {
+      "url": "/about",
+      "title": "Methodology, Sources, and Rights | Words Over Time",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "document": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "scrollHeight": 3814,
+        "pageCount": 4.52
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "WordsOver Time"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [],
+      "visibleFigureCount": 0,
+      "firstFigureTop": null,
+      "firstFigureViewportRatio": null,
+      "visibleControlCount": 0,
+      "visibleControlLabels": [],
+      "visibleCanvasCount": 0,
+      "detailsCount": 3,
+      "openDetailsCount": 0,
+      "lineageVisible": true,
+      "text": {
+        "hasWordPrompt": false,
+        "hasAvailableStudies": false,
+        "hasStaticTrace": false,
+        "hasMatrix": false,
+        "hasOrderedStrips": false,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js"
+      ],
+      "routeName": "about",
+      "javascript": true,
+      "errors": []
+    },
+    {
+      "url": "/about",
+      "title": "Methodology, Sources, and Rights | Words Over Time",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "document": {
+        "clientWidth": 430,
+        "scrollWidth": 430,
+        "scrollHeight": 3657,
+        "pageCount": 3.92
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "WordsOver Time"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [],
+      "visibleFigureCount": 0,
+      "firstFigureTop": null,
+      "firstFigureViewportRatio": null,
+      "visibleControlCount": 0,
+      "visibleControlLabels": [],
+      "visibleCanvasCount": 0,
+      "detailsCount": 3,
+      "openDetailsCount": 0,
+      "lineageVisible": true,
+      "text": {
+        "hasWordPrompt": false,
+        "hasAvailableStudies": false,
+        "hasStaticTrace": false,
+        "hasMatrix": false,
+        "hasOrderedStrips": false,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js"
+      ],
+      "routeName": "about",
+      "javascript": true,
+      "errors": []
+    },
+    {
+      "url": "/about",
+      "title": "Methodology, Sources, and Rights | Words Over Time",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "document": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 8519,
+        "pageCount": 9.47
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "Words Over Time"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [
+        "data",
+        "privacy",
+        "artificial",
+        "hub"
+      ],
+      "visibleFigureCount": 0,
+      "firstFigureTop": null,
+      "firstFigureViewportRatio": null,
+      "visibleControlCount": 5,
+      "visibleControlLabels": [
+        "01signal02attestation03variant04context05boundary06rights",
+        "01frequencyLong-run corpus signal.",
+        "02attestationDictionary and lexical proof.",
+        "03scan evidenceInspectable page evidence.",
+        "04annotationInterpretive uncertainty notes."
+      ],
+      "visibleCanvasCount": 0,
+      "detailsCount": 0,
+      "openDetailsCount": 0,
+      "lineageVisible": false,
+      "text": {
+        "hasWordPrompt": false,
+        "hasAvailableStudies": false,
+        "hasStaticTrace": false,
+        "hasMatrix": false,
+        "hasOrderedStrips": false,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0~nn6b9pg6cn4.js",
+        "http://127.0.0.1:3100/_next/static/chunks/02neffu0pgsg-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0_5nooj1981zw.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0okk8gdb0qe8x.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xmo~ty939d0p.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0l_52e-i0f3kk.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0l2ma5ud3efxp.js",
+        "http://127.0.0.1:3100/_next/static/chunks/03ser2oxaq32-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0_6fdr8mn.az-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0euz0u75yi9o3.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0n2ciuir.4n3p.js",
+        "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js"
+      ],
+      "routeName": "about",
+      "javascript": true,
+      "errors": []
+    },
+    {
+      "url": "/words/forever",
+      "title": "Forever Spelling, Meaning, and Origin | Words Over Time",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "document": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "scrollHeight": 6373,
+        "pageCount": 7.55
+      },
+      "visibleH1Count": 1,
+      "visibleH1Text": [
+        "forever"
+      ],
+      "navLinks": [
+        {
+          "text": "Words Over Time",
+          "href": "/"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        }
+      ],
+      "wordLinksInFirstScreen": [],
+      "visibleFigureCount": 3,
+      "firstFigureTop": 792,
+      "firstFigureViewportRatio": 0.94,
+      "visibleControlCount": 2,
+      "visibleControlLabels": [
+        "Copy project citation",
+        "Share this study"
+      ],
+      "visibleCanvasCount": 0,
+      "detailsCount": 1,
+      "openDetailsCount": 0,
+      "lineageVisible": false,
+      "text": {
+        "hasWordPrompt": false,
+        "hasAvailableStudies": false,
+        "hasStaticTrace": true,
+        "hasMatrix": true,
+        "hasOrderedStrips": true,
+        "hasSliderLanguage": false
+      },
+      "scriptResources": [
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+        "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+        "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+        "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+        "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+        "http://127.0.0.1:3100/_next/static/chunks/02neffu0pgsg-.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+        "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js"
+      ],
+      "routeName": "forever",
+      "javascript": false,
+      "errors": []
+    }
+  ],
+  "mobileForeverLoadedScriptAudit": [
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+      "bytes": 16304,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+      "bytes": 50771,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+      "bytes": 232787,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+      "bytes": 3377,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+      "bytes": 11507,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+      "bytes": 11467,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+      "bytes": 11085,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+      "bytes": 10580,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+      "bytes": 146184,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+      "bytes": 54646,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/02neffu0pgsg-.js",
+      "bytes": 15008,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js",
+      "bytes": 12708,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js",
+      "bytes": 9091,
+      "markers": []
+    }
+  ],
+  "mobileAboutLoadedScriptAudit": [
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0k_nay2kjudt9.js",
+      "bytes": 16304,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0qyhb8zx8hn5i.js",
+      "bytes": 50771,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/11461nooujz08.js",
+      "bytes": 232787,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/14_678uuyq.tf.js",
+      "bytes": 146184,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0sdads0bf6wwy.js",
+      "bytes": 11085,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0bfse~b~asib0.js",
+      "bytes": 12708,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0kqg.5l2x1gks.js",
+      "bytes": 11507,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/01xlw8hd842-c.js",
+      "bytes": 3377,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0xcr0hn8qn25d.js",
+      "bytes": 11467,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/turbopack-0yfgxfslswv5h.js",
+      "bytes": 10580,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/0d3shmwh5_nmn.js",
+      "bytes": 54646,
+      "markers": []
+    },
+    {
+      "url": "http://127.0.0.1:3100/_next/static/chunks/13h-0fd.p-1ga.js",
+      "bytes": 9091,
+      "markers": []
+    }
+  ],
+  "desktopOnlyAboutScripts": [
+    "http://127.0.0.1:3100/_next/static/chunks/0~nn6b9pg6cn4.js",
+    "http://127.0.0.1:3100/_next/static/chunks/02neffu0pgsg-.js",
+    "http://127.0.0.1:3100/_next/static/chunks/0_5nooj1981zw.js",
+    "http://127.0.0.1:3100/_next/static/chunks/0okk8gdb0qe8x.js",
+    "http://127.0.0.1:3100/_next/static/chunks/0xmo~ty939d0p.js",
+    "http://127.0.0.1:3100/_next/static/chunks/0l_52e-i0f3kk.js",
+    "http://127.0.0.1:3100/_next/static/chunks/0l2ma5ud3efxp.js",
+    "http://127.0.0.1:3100/_next/static/chunks/03ser2oxaq32-.js",
+    "http://127.0.0.1:3100/_next/static/chunks/0_6fdr8mn.az-.js",
+    "http://127.0.0.1:3100/_next/static/chunks/0euz0u75yi9o3.js",
+    "http://127.0.0.1:3100/_next/static/chunks/0n2ciuir.4n3p.js"
+  ]
+}
