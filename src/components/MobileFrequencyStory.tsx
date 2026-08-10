@@ -93,7 +93,7 @@ export function MobileFrequencyStory({ series }: MobileFrequencyStoryProps) {
                 <p className="text-base font-semibold leading-5" style={{ color: item.color }}>
                   {item.label}
                 </p>
-                <p className="text-right font-mono text-[0.64rem] font-medium uppercase leading-4 tracking-[0.05em] text-ink/52">
+                <p className="text-right font-mono text-[0.64rem] font-semibold uppercase leading-4 tracking-[0.05em] text-ink/66">
                   2022 / {frequencyLabel(last.frequencyPerMillion)} per million
                 </p>
               </div>
@@ -115,16 +115,16 @@ export function MobileFrequencyStory({ series }: MobileFrequencyStoryProps) {
                   r="3.5"
                   fill={item.color}
                 />
-                <text x="0" y={chartHeight - 4} className="fill-ink/50 font-mono text-[9px] font-medium">
+                <text x="0" y={chartHeight - 4} className="fill-ink/64 font-mono text-[9px] font-semibold">
                   {first.year}
                 </text>
-                <text x={chartWidth / 2} y={chartHeight - 4} textAnchor="middle" className="fill-ink/50 font-mono text-[9px] font-medium">
+                <text x={chartWidth / 2} y={chartHeight - 4} textAnchor="middle" className="fill-ink/64 font-mono text-[9px] font-semibold">
                   {middleYear}
                 </text>
-                <text x={chartWidth} y={chartHeight - 4} textAnchor="end" className="fill-ink/50 font-mono text-[9px] font-medium">
+                <text x={chartWidth} y={chartHeight - 4} textAnchor="end" className="fill-ink/64 font-mono text-[9px] font-semibold">
                   {last.year}
                 </text>
-                <text x="0" y="12" className="fill-ink/48 font-mono text-[9px] font-medium uppercase">
+                <text x="0" y="12" className="fill-ink/62 font-mono text-[9px] font-semibold uppercase">
                   high {frequencyLabel(highest.frequencyPerMillion)} / {highest.year}
                 </text>
               </svg>
@@ -134,10 +134,10 @@ export function MobileFrequencyStory({ series }: MobileFrequencyStoryProps) {
       </div>
 
       <figcaption className="mt-8">
-        <p className="max-w-xl text-[1rem] font-normal leading-[1.62] text-ink/76">
+        <p className="max-w-xl text-[1rem] font-medium leading-[1.62] text-ink/84">
           The spaced form remains far more visible through the earlier part of this plotted window, while the one-word headword rises later. The lower-frequency compounds have distinct traces but should not be read from line height alone: each row is independently scaled so its shape remains legible.
         </p>
-        <p className="mt-4 max-w-xl font-mono text-[0.66rem] font-medium uppercase leading-5 tracking-[0.06em] text-ink/48">
+        <p className="mt-4 max-w-xl font-mono text-[0.66rem] font-semibold uppercase leading-5 tracking-[0.06em] text-ink/64">
           Signal / Google Books Ngram, English corpus, smoothing 0, displayed from each series’ recommended start through 2022 · Transform / frequency per million, independent square-root row scales · Boundary / frequency is not first attestation
         </p>
       </figcaption>

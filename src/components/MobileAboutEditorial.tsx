@@ -85,10 +85,10 @@ export function MobileAboutEditorial() {
           Words
           <span className="block text-fire">Over Time</span>
         </h1>
-        <p className="mt-8 max-w-xl text-[1.08rem] font-normal leading-[1.55]">
+        <p className="mt-8 max-w-xl text-[1.08rem] font-medium leading-[1.55]">
           A source-led archive for historical word frequency, lexical attestation, form variation, semantic grouping, and interpretive annotation. It is not a simplified dictionary: provenance, uncertainty, rights, and claim limits remain part of the reading.
         </p>
-        <p className="mt-5 font-mono text-[0.68rem] font-medium uppercase leading-5 tracking-[0.08em] text-ink/52">
+        <p className="mt-5 font-mono text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.08em] text-ink/68">
           Research / data / writing / design by Dai Pan / 潘岱
         </p>
       </header>
@@ -111,7 +111,7 @@ export function MobileAboutEditorial() {
                 <p className="font-mono text-[0.65rem] font-semibold uppercase leading-4 tracking-[0.05em]">
                   {reference.work} / {reference.year}
                 </p>
-                <p className="mt-2 text-[0.82rem] font-normal leading-5 text-ink/66">{reference.role}</p>
+                <p className="mt-2 text-[0.82rem] font-medium leading-5 text-ink/76">{reference.role}</p>
               </div>
             </article>
           ))}
@@ -126,7 +126,7 @@ export function MobileAboutEditorial() {
         <h2 id="mobile-about-method" className="mt-3 text-[1.9rem] font-bold leading-[1.02]">
           Sources remain distinct at rest.
         </h2>
-        <p className="mt-5 text-[0.96rem] font-normal leading-[1.6] text-ink/68">
+        <p className="mt-5 text-[0.96rem] font-medium leading-[1.6] text-ink/78">
           Frequency, first attestation, scanned occurrence, and interpretation do different work. The mobile edition places each source label beside its output so the transition from evidence to claim remains readable without hover.
         </p>
         <ol className="mt-8">
@@ -135,18 +135,18 @@ export function MobileAboutEditorial() {
               <span className="col-span-1 font-mono text-[0.64rem] font-semibold text-nice">{number}</span>
               <div className="col-span-5">
                 <h3 className="text-[0.9rem] font-semibold leading-5">{title}</h3>
-                <p className="mt-1 text-[0.8rem] font-normal leading-5 text-ink/58">{body}</p>
+                <p className="mt-1 text-[0.8rem] font-medium leading-5 text-ink/70">{body}</p>
               </div>
             </li>
           ))}
         </ol>
         <div className="mt-9">
-          <p className="font-mono text-[0.64rem] font-semibold uppercase tracking-[0.1em] text-ink/48">six evidence dimensions</p>
+          <p className="font-mono text-[0.64rem] font-semibold uppercase tracking-[0.1em] text-ink/64">six evidence dimensions</p>
           <dl className="mt-4 grid grid-cols-2 gap-x-5 gap-y-5">
             {evidenceDimensions.map(([term, description]) => (
               <div key={term}>
                 <dt className="font-mono text-[0.62rem] font-semibold uppercase tracking-[0.05em]">{term}</dt>
-                <dd className="mt-1 text-[0.75rem] font-normal leading-4 text-ink/54">{description}</dd>
+                <dd className="mt-1 text-[0.75rem] font-medium leading-4 text-ink/68">{description}</dd>
               </div>
             ))}
           </dl>
@@ -158,17 +158,17 @@ export function MobileAboutEditorial() {
         <h2 id="mobile-about-boundaries" className="mt-3 text-[1.9rem] font-bold leading-[1.02]">
           A visible signal is not a universal meaning.
         </h2>
-        <p className="mt-5 text-[0.96rem] font-normal leading-[1.6] text-ink/68">
+        <p className="mt-5 text-[0.96rem] font-medium leading-[1.6] text-ink/78">
           The archive can report visibility inside a named corpus, cite an attestation, or disclose how evidence was grouped. It cannot turn those bounded observations into claims about all English, every community, cultural importance, causation, or an exact first use.
         </p>
         <div className="mt-8 grid grid-cols-2 gap-5">
           <div>
             <p className="font-mono text-[0.62rem] font-semibold uppercase tracking-[0.08em] text-sail">can support</p>
-            <p className="mt-2 text-[0.78rem] font-normal leading-5 text-ink/62">corpus visibility / cited lexical leads / disclosed semantic grouping / reproducible transformations</p>
+            <p className="mt-2 text-[0.78rem] font-medium leading-5 text-ink/72">corpus visibility / cited lexical leads / disclosed semantic grouping / reproducible transformations</p>
           </div>
           <div>
             <p className="font-mono text-[0.62rem] font-semibold uppercase tracking-[0.08em] text-wine">cannot support</p>
-            <p className="mt-2 text-[0.78rem] font-normal leading-5 text-ink/62">universal definition / first-use certainty / cultural value / absence outside current coverage</p>
+            <p className="mt-2 text-[0.78rem] font-medium leading-5 text-ink/72">universal definition / first-use certainty / cultural value / absence outside current coverage</p>
           </div>
         </div>
       </section>
@@ -178,10 +178,10 @@ export function MobileAboutEditorial() {
         <h2 id="mobile-about-rights" className="mt-3 text-[1.9rem] font-bold leading-[1.02]">
           Cite the archive and its upstream sources.
         </h2>
-        <p className="mt-5 text-[0.96rem] font-normal leading-[1.6] text-ink/68">
+        <p className="mt-5 text-[0.96rem] font-medium leading-[1.6] text-ink/78">
           Source URLs, coverage, transforms, attribution, and publication status remain part of each study. The project DOI identifies the archive as a whole; it is not assigned to every route as a separate dataset identifier.
         </p>
-        <p className="mt-5 font-mono text-[0.68rem] font-medium leading-5 text-ink/58">
+        <p className="mt-5 font-mono text-[0.68rem] font-semibold leading-5 text-ink/70">
           Pan, Dai. “Words Over Time.” 2026. https://www.wordsovertime.com/. DOI: 10.5281/zenodo.20437678.
         </p>
         <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-[0.76rem] font-semibold uppercase tracking-[0.06em]">
@@ -197,7 +197,7 @@ export function MobileAboutEditorial() {
               {methodLedger.map(([term, description]) => (
                 <div key={term}>
                   <dt className="text-[0.8rem] font-semibold">{term}</dt>
-                  <dd className="mt-1 text-[0.76rem] font-normal leading-5 text-ink/58">{description}</dd>
+                  <dd className="mt-1 text-[0.76rem] font-medium leading-5 text-ink/70">{description}</dd>
                 </div>
               ))}
             </dl>
@@ -208,14 +208,14 @@ export function MobileAboutEditorial() {
               {sourceLedger.map(([source, role, rights]) => (
                 <div key={source}>
                   <dt className="text-[0.8rem] font-semibold">{source}</dt>
-                  <dd className="mt-1 text-[0.76rem] font-normal leading-5 text-ink/58">{role} / {rights}</dd>
+                  <dd className="mt-1 text-[0.76rem] font-medium leading-5 text-ink/70">{role} / {rights}</dd>
                 </div>
               ))}
             </dl>
           </details>
           <details className="border-y border-ink/14">
             <summary className="min-h-11 cursor-pointer py-4 font-mono text-[0.66rem] font-semibold uppercase tracking-[0.08em] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink">Licensing boundary</summary>
-            <div className="space-y-3 pb-5 text-[0.76rem] font-normal leading-5 text-ink/60">
+            <div className="space-y-3 pb-5 text-[0.76rem] font-medium leading-5 text-ink/72">
               <p>Application code is released under MIT. That grant does not cover research writing, curated datasets, semantic classifications, page compositions, visual identity, or authorship marks.</p>
               <p>Original research and design are © 2026 Dai Pan / 潘岱. Non-commercial citation and study are permitted with attribution; third-party source material keeps its own rights status.</p>
               <p>Short excerpts and page pointers are used only where publication rights permit. Restricted or subscription material remains a citation target rather than a downloadable dataset.</p>

@@ -12,17 +12,17 @@ export function SearchIntentSummary({ profile }: SearchIntentSummaryProps) {
     <section className="pb-14 pt-2 min-[960px]:border-b-2 min-[960px]:border-ink min-[960px]:py-10" aria-labelledby={`${profile.word}-direct-answer`}>
       <div className="grid min-[960px]:grid-cols-[minmax(0,0.95fr)_minmax(20rem,0.55fr)] min-[960px]:gap-12">
         <article id={primary.id} className="scroll-mt-6 min-[960px]:border-l-4 min-[960px]:border-[var(--study-accent)] min-[960px]:pl-6">
-          <p className="font-mono text-[0.68rem] font-medium uppercase tracking-[0.13em] text-ink/50 min-[960px]:text-[0.72rem] min-[960px]:font-black min-[960px]:tracking-[0.18em] min-[960px]:text-ink/[0.58]">
+          <p className="font-mono text-[0.68rem] font-semibold uppercase tracking-[0.13em] text-ink/64 min-[960px]:text-[0.72rem] min-[960px]:font-black min-[960px]:tracking-[0.18em] min-[960px]:text-ink/[0.58]">
             <span className="min-[960px]:hidden">research lead / source bounded</span>
             <span className="hidden min-[960px]:inline">direct answer / source bounded</span>
           </p>
           <h2 id={`${profile.word}-direct-answer`} className="mt-3 max-w-4xl text-2xl font-bold leading-[1.08] min-[960px]:text-[clamp(1.65rem,3.2vw,3.4rem)] min-[960px]:font-black min-[960px]:leading-[0.98]">
             {primary.question}
           </h2>
-          <p className="mt-5 max-w-4xl text-[1rem] font-normal leading-[1.62] text-anthracite min-[960px]:mt-4 min-[960px]:text-[1.22rem] min-[960px]:font-bold min-[960px]:leading-[1.48]">
+          <p className="mt-5 max-w-4xl text-[1rem] font-medium leading-[1.62] text-ink/84 min-[960px]:mt-4 min-[960px]:text-[1.22rem] min-[960px]:font-bold min-[960px]:leading-[1.48] min-[960px]:text-anthracite">
             {primary.shortAnswer}
           </p>
-          <p className="mt-4 max-w-3xl text-[0.75rem] font-normal leading-5 text-ink/52 min-[960px]:mt-5 min-[960px]:border-t min-[960px]:border-ink/25 min-[960px]:pt-4 min-[960px]:font-mono min-[960px]:font-black min-[960px]:uppercase min-[960px]:tracking-[0.1em] min-[960px]:text-ink/[0.62]">
+          <p className="mt-4 max-w-3xl text-[0.75rem] font-medium leading-5 text-ink/68 min-[960px]:mt-5 min-[960px]:border-t min-[960px]:border-ink/25 min-[960px]:pt-4 min-[960px]:font-mono min-[960px]:font-black min-[960px]:uppercase min-[960px]:tracking-[0.1em] min-[960px]:text-ink/[0.62]">
             Caveat: {primary.caveat}
           </p>
           <a

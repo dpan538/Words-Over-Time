@@ -39,13 +39,13 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
               >
                 {profile.word}
               </h1>
-              <p className="mt-7 max-w-5xl text-[1.05rem] font-normal leading-[1.48] min-[960px]:text-[clamp(1.12rem,2.2vw,2.85rem)] min-[960px]:font-black min-[960px]:leading-[1.04]">
+              <p className="mt-7 max-w-5xl text-[1.05rem] font-medium leading-[1.48] min-[960px]:text-[clamp(1.12rem,2.2vw,2.85rem)] min-[960px]:font-black min-[960px]:leading-[1.04]">
                 {profile.heroSummary}
               </p>
-              <p className="mt-5 max-w-4xl font-mono text-[0.68rem] font-medium uppercase leading-5 tracking-[0.08em] text-ink/55 min-[960px]:mt-4 min-[960px]:text-[0.88rem] min-[960px]:font-black min-[960px]:leading-6 min-[960px]:tracking-[0.11em] min-[960px]:text-ink/[0.62]">
+              <p className="mt-5 max-w-4xl font-mono text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.08em] text-ink/70 min-[960px]:mt-4 min-[960px]:text-[0.88rem] min-[960px]:font-black min-[960px]:leading-6 min-[960px]:tracking-[0.11em] min-[960px]:text-ink/[0.62]">
                 {profile.scopeLine}
               </p>
-              <p className="mt-3 font-mono text-[0.66rem] font-medium uppercase leading-5 tracking-[0.06em] text-ink/48 min-[960px]:hidden">
+              <p className="mt-3 font-mono text-[0.66rem] font-semibold uppercase leading-5 tracking-[0.06em] text-ink/64 min-[960px]:hidden">
                 coverage / {profile.coverage.map((item) => `${item.label} ${item.value}`).join(" · ")}
               </p>
             </div>

@@ -27,7 +27,7 @@ export function WordSeoSummary({ path }: WordSeoSummaryProps) {
           <h2 id={`${route.path.slice(1).replaceAll("/", "-")}-summary`} className="mt-3 text-[1.75rem] font-bold leading-tight min-[960px]:text-4xl min-[960px]:font-extrabold">
             Cite and continue this study/
           </h2>
-          <p className="mt-4 max-w-3xl text-sm font-normal leading-relaxed text-ink/66 min-[960px]:mt-3 min-[960px]:text-[0.95rem] min-[960px]:font-medium min-[960px]:text-ink/70">
+          <p className="mt-4 max-w-3xl text-sm font-medium leading-relaxed text-ink/76 min-[960px]:mt-3 min-[960px]:text-[0.95rem] min-[960px]:text-ink/70">
             This public URL is the canonical entry for the {route.title.toLowerCase()} study. The DOI identifies the project archive, not a separate
             route-level dataset. Source boundaries, rights, and the raw-data publication policy remain on the methodology page.
           </p>

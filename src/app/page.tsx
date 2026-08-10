@@ -43,7 +43,7 @@ export default function Home() {
           </header>
 
           <div className="min-w-0">
-            <h1 className="mb-5 font-mono text-[0.72rem] font-semibold uppercase tracking-[0.14em] text-ink/62 min-[960px]:hidden">
+            <h1 className="mb-6 font-mono text-[0.72rem] font-bold uppercase tracking-[0.14em] text-ink/76 min-[960px]:hidden">
               Words you wanna know:
             </h1>
             <p className="mb-3 hidden text-sm font-black uppercase tracking-[0.16em] text-nice min-[960px]:block min-[960px]:text-base min-[960px]:tracking-[0.18em]">
@@ -52,7 +52,7 @@ export default function Home() {
             <WordList words={words} />
           </div>
 
-          <p className="mt-16 max-w-4xl border-t border-ink/[0.24] pt-4 font-mono text-[0.68rem] font-medium uppercase leading-5 tracking-[0.07em] text-ink/55 min-[960px]:mt-0 min-[960px]:text-[0.9rem] min-[960px]:font-black min-[960px]:tracking-[0.12em]">
+          <p className="mt-16 max-w-4xl border-t border-ink/[0.24] pt-4 font-mono text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.07em] text-ink/70 min-[960px]:mt-0 min-[960px]:text-[0.9rem] min-[960px]:font-black min-[960px]:tracking-[0.12em] min-[960px]:text-ink/55">
             Semantic change / word frequency / search statistics / design
             research / infographic art by Dai Pan / 潘岱.
           </p>

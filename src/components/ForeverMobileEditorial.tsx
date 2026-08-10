@@ -101,7 +101,7 @@ export function ForeverMobileEditorial({ dataset }: ForeverMobileEditorialProps)
           >
             Where does the current context record branch?
           </h2>
-          <p className="mt-4 max-w-xl text-[0.94rem] font-normal leading-6 text-ink/62">
+          <p className="mt-4 max-w-xl text-[0.94rem] font-medium leading-6 text-ink/76">
             The historical rows report only the current Project Gutenberg seed layer. A blank state names missing context coverage; it is not a zero and not evidence that a meaning did not exist.
           </p>
 
@@ -119,7 +119,7 @@ export function ForeverMobileEditorial({ dataset }: ForeverMobileEditorialProps)
                   >
                     {period.label}
                   </h3>
-                  <p className="mt-1 font-mono text-[0.6rem] font-medium uppercase leading-4 tracking-[0.04em] text-ink/42">
+                  <p className="mt-1 font-mono text-[0.6rem] font-semibold uppercase leading-4 tracking-[0.04em] text-ink/60">
                     Gutenberg seed texts
                   </p>
                 </div>
@@ -131,7 +131,7 @@ export function ForeverMobileEditorial({ dataset }: ForeverMobileEditorialProps)
                     const unavailable = state === "unavailable";
 
                     return (
-                      <div key={category.id} className={unavailable ? "text-ink/32" : "text-ink/74"}>
+                      <div key={category.id} className={unavailable ? "text-ink/50" : "text-ink/82"}>
                         <div className="flex gap-2">
                           {categoryMark(category)}
                           <div className="min-w-0">
@@ -158,7 +158,7 @@ export function ForeverMobileEditorial({ dataset }: ForeverMobileEditorialProps)
                 <h3 id="forever-period-modern" className="font-mono text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.08em]">
                   2024–2026
                 </h3>
-                <p className="mt-1 font-mono text-[0.6rem] font-medium uppercase leading-4 tracking-[0.04em] text-ink/42">
+                <p className="mt-1 font-mono text-[0.6rem] font-semibold uppercase leading-4 tracking-[0.04em] text-ink/60">
                   Wikinews revision snapshot
                 </p>
               </div>
@@ -167,7 +167,7 @@ export function ForeverMobileEditorial({ dataset }: ForeverMobileEditorialProps)
                   (category) => {
                     const count = modernCounts.get(category.id) ?? 0;
                     return (
-                      <div key={category.id} className="flex gap-2 text-ink/74">
+                      <div key={category.id} className="flex gap-2 text-ink/82">
                         {categoryMark(category)}
                         <div className="min-w-0">
                           <p className="text-[0.7rem] font-medium leading-4">
@@ -186,10 +186,10 @@ export function ForeverMobileEditorial({ dataset }: ForeverMobileEditorialProps)
           </div>
 
           <figcaption className="mt-3">
-            <p className="max-w-xl text-[1rem] font-normal leading-[1.62] text-ink/76">
+            <p className="max-w-xl text-[1rem] font-medium leading-[1.62] text-ink/84">
               The strongest selected historical coverage sits in 1850–1899, so a denser row there partly reflects the archive rather than a universal semantic peak. The modern layer is a separate open-news snapshot: its tagged snippets expose new persistence contexts, but they cannot extend the Gutenberg scale.
             </p>
-            <p className="mt-4 max-w-xl font-mono text-[0.66rem] font-medium uppercase leading-5 tracking-[0.06em] text-ink/48">
+            <p className="mt-4 max-w-xl font-mono text-[0.66rem] font-semibold uppercase leading-5 tracking-[0.06em] text-ink/64">
               Context / Project Gutenberg 1726–1930 + Wikinews revision snapshot 2024–2026 · Transform / curated category support shown by source period · Boundary / unlike corpora remain non-comparable; unavailable cells are not zero
             </p>
           </figcaption>
@@ -213,7 +213,7 @@ export function ForeverMobileEditorial({ dataset }: ForeverMobileEditorialProps)
                   <p className="text-[1.05rem] font-medium leading-5">
                     {phrase.phrase}
                   </p>
-                  <p className="text-right font-mono text-[0.62rem] font-medium uppercase leading-4 tracking-[0.05em] text-ink/48">
+                  <p className="text-right font-mono text-[0.62rem] font-semibold uppercase leading-4 tracking-[0.05em] text-ink/64">
                     {phrase.count} matches / {phrase.documentFrequency} texts
                   </p>
                 </div>
@@ -228,7 +228,7 @@ export function ForeverMobileEditorial({ dataset }: ForeverMobileEditorialProps)
           </div>
 
           <div className="mt-10 border-t border-ink/18 pt-5">
-            <p className="font-mono text-[0.64rem] font-semibold uppercase tracking-[0.1em] text-ink/50">
+            <p className="font-mono text-[0.64rem] font-semibold uppercase tracking-[0.1em] text-ink/66">
               modern context / grouped, not ranked
             </p>
             <div className="mt-4 grid grid-cols-2 gap-x-5 gap-y-4">
@@ -241,7 +241,7 @@ export function ForeverMobileEditorial({ dataset }: ForeverMobileEditorialProps)
                       <p className="text-[0.78rem] font-medium leading-4">
                         {category.label}
                       </p>
-                      <p className="mt-0.5 font-mono text-[0.58rem] font-medium uppercase tracking-[0.03em] text-ink/45">
+                      <p className="mt-0.5 font-mono text-[0.58rem] font-semibold uppercase tracking-[0.03em] text-ink/62">
                         {modernCounts.get(category.id)} snapshot records
                       </p>
                     </div>
@@ -251,10 +251,10 @@ export function ForeverMobileEditorial({ dataset }: ForeverMobileEditorialProps)
           </div>
 
           <figcaption className="mt-8">
-            <p className="max-w-xl text-[1rem] font-normal leading-[1.62] text-ink/76">
+            <p className="max-w-xl text-[1rem] font-medium leading-[1.62] text-ink/84">
               Three phrases repeat across more than one text in the same selected Gutenberg seed corpus, so their match counts can share a scale here. Modern category rows sit apart and carry no bars: their source, capture rule, and time basis differ from the archival phrase counts.
             </p>
-            <p className="mt-4 max-w-xl font-mono text-[0.66rem] font-medium uppercase leading-5 tracking-[0.06em] text-ink/48">
+            <p className="mt-4 max-w-xl font-mono text-[0.66rem] font-semibold uppercase leading-5 tracking-[0.06em] text-ink/64">
               Variant + context / selected Gutenberg texts, repeated phrase matches · Modern context / Wikinews revision snapshot · Boundary / archival bars compare only the same source family and rule
             </p>
           </figcaption>
@@ -281,23 +281,23 @@ export function ForeverMobileEditorial({ dataset }: ForeverMobileEditorialProps)
               ["06 Rights", "Ngram attribution, public-domain source checks, Wikinews licensing, and source URLs remain attached to the archive."],
             ].map(([label, value], index) => (
               <div key={label} className={`grid grid-cols-6 gap-x-3 py-3 ${index > 0 ? "border-t border-ink/14" : ""}`}>
-                <dt className="col-span-2 font-mono text-[0.62rem] font-semibold uppercase leading-5 tracking-[0.06em] text-ink/48">
+                <dt className="col-span-2 font-mono text-[0.62rem] font-semibold uppercase leading-5 tracking-[0.06em] text-ink/64">
                   {label}
                 </dt>
-                <dd className="col-span-4 text-[0.82rem] font-normal leading-5 text-ink/68">
+                <dd className="col-span-4 text-[0.82rem] font-medium leading-5 text-ink/78">
                   {value}
                 </dd>
               </div>
             ))}
           </dl>
-          <p id="origin" className="scroll-mt-6 mt-5 text-[0.75rem] font-normal leading-5 text-ink/50">
+          <p id="origin" className="scroll-mt-6 mt-5 text-[0.75rem] font-medium leading-5 text-ink/66">
             Origin note: the attestation layer is a set of medium-confidence lexical leads, not a comparable pre-1700 corpus and not proof of an earliest surviving occurrence.
           </p>
           <details className="mt-6 border-t border-ink/18 pt-4">
-            <summary className="min-h-11 cursor-pointer py-3 font-mono text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-ink/62 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink">
+            <summary className="min-h-11 cursor-pointer py-3 font-mono text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-ink/72 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink">
               Extended source and rights note
             </summary>
-            <div className="space-y-3 pb-3 text-[0.78rem] font-normal leading-5 text-ink/62">
+            <div className="space-y-3 pb-3 text-[0.78rem] font-medium leading-5 text-ink/72">
               <p>{dataset.modernContext?.source.caveat}</p>
               <p>{dataset.modernContext?.source.licenseNote}</p>
               <p>

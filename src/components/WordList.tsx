@@ -28,15 +28,15 @@ export function WordList({ words }: WordListProps) {
           {row.map((word) => (
             <div
               key={word.slug}
-              className="flex min-w-0 items-baseline min-[960px]:inline-block min-[960px]:whitespace-nowrap"
+              className="flex min-w-0 flex-wrap items-baseline min-[960px]:inline-block min-[960px]:whitespace-nowrap"
             >
               <WordCard word={word} />
-              <span aria-hidden="true" className="ml-[0.08em] text-[clamp(2.75rem,13.5vw,4.15rem)] leading-none text-ink min-[960px]:mx-[0.08em] min-[960px]:text-[1em] min-[960px]:leading-[inherit]">
+              <span aria-hidden="true" className="ml-[0.06em] text-[clamp(3.1rem,15vw,5rem)] font-black leading-none text-ink min-[960px]:mx-[0.08em] min-[960px]:text-[1em] min-[960px]:leading-[inherit]">
                 /
               </span>
               {word.status === "coming-soon" ? (
-                <span className="ml-2 font-mono text-[0.52rem] font-medium uppercase tracking-[0.08em] text-ink/40 min-[960px]:hidden">
-                  coming soon
+                <span className="-mt-1 mb-1 w-full pl-1 font-mono text-[0.6rem] font-bold uppercase tracking-[0.08em] text-fire min-[960px]:hidden">
+                  (coming soon)
                 </span>
               ) : null}
             </div>
