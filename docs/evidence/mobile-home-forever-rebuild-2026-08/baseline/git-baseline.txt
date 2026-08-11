@@ -1,0 +1,14 @@
+Captured before implementation: 2026-08-11 (Australia/Brisbane)
+Branch: audit/mobile-search-growth-2026-08
+HEAD: 33bc7ab2acadd25d134d2d87433318423e8c9ef0
+Remote: origin git@github.com:dpan538/Words-Over-Time.git
+
+Pre-existing worktree status:
+ D docs/research/privacy/processed/privacy_geo_spatial_metrics_processed.json
+ M tsconfig.tsbuildinfo
+?? src/app/words/privacy/mobile-demo/
+?? src/components/privacy/PrivacyMobileExperience.tsx
+
+Protection boundary:
+- The Privacy deletion and untracked Privacy implementation are user-owned and excluded from this task.
+- next-env.d.ts and tsconfig.tsbuildinfo build-time changes are excluded from staging.

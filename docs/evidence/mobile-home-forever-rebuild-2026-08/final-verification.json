@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "verifiedOn": "2026-08-11",
+  "repositoryBaseline": {
+    "branch": "audit/mobile-search-growth-2026-08",
+    "headBeforeTask": "33bc7ab2acadd25d134d2d87433318423e8c9ef0",
+    "workingTreeBuild": true
+  },
+  "productionBuild": {
+    "command": "npm run verify",
+    "exitCode": 0,
+    "buildId": "Bf-uEuLWPPjL-dPqKBD-1",
+    "nextVersion": "16.2.5",
+    "compiler": "Turbopack",
+    "compiledIn": "2.5min",
+    "nextInternalTypeScript": "4.9min",
+    "staticGeneration": "31/31 in 32.3s",
+    "executionBoundary": "The sandboxed attempt failed because Turbopack could not bind an internal worker port. The identical full command was rerun in an approved non-sandbox build environment and exited 0."
+  },
+  "verifyStages": {
+    "typecheck": "PASS",
+    "foreverAuditValidate": "PASS",
+    "dataDatasetValidate": {
+      "status": "PASS",
+      "terms": 46,
+      "sources": 27,
+      "evidenceItems": 29,
+      "relations": 37,
+      "warnings": 0
+    },
+    "productionBuild": "PASS"
+  },
+  "foreverAudit": {
+    "dataGate": "STOP_RAW_DATA_MISSING",
+    "registeredInputs": 32,
+    "findings": 7,
+    "contracts": 7,
+    "productionEligibleContracts": 0,
+    "spotChecks": 15,
+    "assertions": 7,
+    "twoConsecutiveByteStableChecks": true,
+    "hashes": {
+      "analysis": "155b23921ea9a4f9778cc180f0295ae92665f2f05b43ac69c74a63db7a9b4afd",
+      "manifest": "ec02ceb0b254bc891725e3168cb6b007fa797ff100e32a6ddc7287f4b41ff101",
+      "findings": "e5cb952dc26717ae1cd6c9ecb7fa099862940d57658e9f8abff03f65edd8bf30",
+      "contracts": "455e0fdb40cdc11f49e7b24d4dd1a71aa92e7a94bef658f8b443f331f34f72ba"
+    },
+    "renderedSpotCheckComparison": {
+      "expected": 15,
+      "rendered": 15,
+      "uniqueIds": 15,
+      "missing": 0,
+      "valueOrFindingIdMismatches": 0
+    },
+    "brokenFindingContractGapLinks": 0,
+    "unregisteredSourceSelectors": 0
+  },
+  "staticHtml": {
+    "home": {
+      "path": ".next/server/app/index.html",
+      "bytes": 75315,
+      "main": 1,
+      "h1": 1,
+      "canvas": 0,
+      "mobileEditionPresent": true,
+      "desktopEditionPresent": true,
+      "nullIsLink": false,
+      "intelligenceIsLink": false
+    },
+    "about": {
+      "path": ".next/server/app/about.html",
+      "bytes": 239363,
+      "main": 1,
+      "h1": 1,
+      "detailsIncludingNestedSourceRightsDisclosures": 6,
+      "canvas": 0,
+      "mobileEditionPresent": true,
+      "desktopEditionPresent": true
+    },
+    "forever": {
+      "path": ".next/server/app/words/forever.html",
+      "bytes": 127214,
+      "main": 1,
+      "h1": 1,
+      "details": 2,
+      "canvas": 0,
+      "stopGatePresent": true,
+      "renderedSpotChecks": 15
+    }
+  },
+  "mobileForeverInitialLoad": {
+    "initialScriptFiles": 12,
+    "initialScriptThreeOrWebglSignatureFiles": 0,
+    "initialHtmlCanvasElements": 0,
+    "allBuildChunkFiles": 27,
+    "desktopDynamicThreeSignatureFilesOutsideInitialSet": 4,
+    "runtimeCanvasCreationInstrumentation": "UNAVAILABLE_BROWSER_BACKEND",
+    "runtimeWebglContextInstrumentation": "UNAVAILABLE_BROWSER_BACKEND"
+  },
+  "prerenderManifest": {
+    "entries": 31,
+    "composition": {
+      "trackedPublicContentPages": 9,
+      "userOwnedUntrackedPrivacyDemo": 1,
+      "wordSocialImageRoutes": 12,
+      "metadataAndTextEndpoints": 7,
+      "internalErrorRoutes": 2
+    },
+    "cleanTrackedCheckoutExpectedEntries": 30,
+    "caveat": "31/31 is the actual protected working-tree build, not a claim that the repository has 31 public content pages."
+  },
+  "desktopVisualBaseline": {
+    "home1440Sha256Before": "da968b5c84e801d5d1569ce71c6fe32889f9e8afe6002709ffa6c308c4d8f3d7",
+    "home1440Sha256After": "da968b5c84e801d5d1569ce71c6fe32889f9e8afe6002709ffa6c308c4d8f3d7",
+    "forever1440Sha256Before": "22b347902d2a8202ba3a47c8329a42868b51642cbe5c2dc12ee31302e8383807",
+    "forever1440Sha256After": "22b347902d2a8202ba3a47c8329a42868b51642cbe5c2dc12ee31302e8383807",
+    "about": "Source/visual review found wrapper, d-prefixed ID, and semantic-H1 extraction changes only; PNG/JPEG captures are not byte-comparable."
+  },
+  "browserEvidence": {
+    "complete": false,
+    "reason": "The in-app Browser backend became unavailable and the production-server URL was policy-blocked; the tool prohibited an alternate browser/port fallback.",
+    "freshProductionConsole": "NOT_RUN",
+    "freshProductionJsOff": "NOT_RUN",
+    "finalFullPageScreenshots": "INCOMPLETE"
+  },
+  "openProductDataBlocker": {
+    "nullStudyRouteExists": false,
+    "publishedHomeLinks": 5,
+    "requestedPublishedHomeLinks": 6,
+    "publishedRegistryRouteOmittedByRequestedComposition": "/words/hub"
+  }
+}

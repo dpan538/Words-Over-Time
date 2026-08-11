@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "auditDate": "2026-08-11",
+  "sourceBaseline": {
+    "branch": "audit/mobile-search-growth-2026-08",
+    "head": "33bc7ab2acadd25d134d2d87433318423e8c9ef0"
+  },
+  "status": "STATIC_GEOMETRY_AFTER_BROWSER_BACKEND_BECAME_UNAVAILABLE",
+  "measurementBoundary": [
+    "Unchanged boxes reuse the final live measurements captured before the in-app Browser backend became unavailable.",
+    "The intelligence y-position is a deterministic CSS-grid derivation from the measured row edge after align-self:end.",
+    "The null box is the complete spine/status audit wrapper, not a tight glyph-only rectangle.",
+    "No value in this file is represented as a fresh final production-browser measurement."
+  ],
+  "viewports": [
+    {
+      "width": 240,
+      "height": 900,
+      "maxBlank": {
+        "panelOne": { "px": 90.05, "svh": 10.01 },
+        "panelTwo": { "px": 114.10, "svh": 12.68 }
+      },
+      "words": [
+        { "id": "m-home-word-forever", "word": "forever", "panel": "one", "state": "link", "x": 12, "y": 564.47, "width": 216, "height": 43.34 },
+        { "id": "m-home-word-artificial", "word": "artificial", "panel": "one", "state": "link", "x": 12, "y": 677.42, "width": 126, "height": 24.19 },
+        { "id": "m-home-word-privacy", "word": "privacy", "panel": "one", "state": "link", "x": 141.91, "y": 680.45, "width": 86.09, "height": 21.16 },
+        { "id": "m-home-word-null", "word": "null", "panel": "two", "state": "no-route", "x": 12, "y": 849.75, "width": 48.60, "height": 406.55 },
+        { "id": "m-home-word-depression", "word": "depression", "panel": "two", "state": "link", "x": 67.80, "y": 932.48, "width": 160.20, "height": 27.81 },
+        { "id": "m-home-word-intelligence", "word": "intelligence", "panel": "two", "state": "coming-soon", "x": 67.80, "y": 1210.06, "width": 160.20, "height": 46.23 },
+        { "id": "m-home-word-data", "word": "data", "panel": "two", "state": "link", "x": 45.86, "y": 1346.40, "width": 182.14, "height": 68.54 }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "maxBlank": {
+        "panelOne": { "px": 46.59, "svh": 8.20 },
+        "panelTwo": { "px": 31.89, "svh": 5.61 }
+      },
+      "words": [
+        { "id": "m-home-word-forever", "word": "forever", "panel": "one", "state": "link", "x": 16.31, "y": 358.17, "width": 287.37, "height": 48.38 },
+        { "id": "m-home-word-artificial", "word": "artificial", "panel": "one", "state": "link", "x": 16.31, "y": 453.15, "width": 167.63, "height": 26.88 },
+        { "id": "m-home-word-privacy", "word": "privacy", "panel": "one", "state": "link", "x": 207.48, "y": 456.38, "width": 96.20, "height": 23.65 },
+        { "id": "m-home-word-null", "word": "null", "panel": "two", "state": "no-route", "x": 16.31, "y": 561.77, "width": 41.90, "height": 233.26 },
+        { "id": "m-home-word-depression", "word": "depression", "panel": "two", "state": "link", "x": 65.41, "y": 595.99, "width": 238.27, "height": 38.16 },
+        { "id": "m-home-word-intelligence", "word": "intelligence", "panel": "two", "state": "coming-soon", "x": 65.41, "y": 740.12, "width": 238.27, "height": 54.90 },
+        { "id": "m-home-word-data", "word": "data", "panel": "two", "state": "link", "x": 60.83, "y": 826.91, "width": 242.85, "height": 91.38 }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "maxBlank": {
+        "panelOne": { "px": 95.23, "svh": 11.28 },
+        "panelTwo": { "px": 78.77, "svh": 9.33 }
+      },
+      "words": [
+        { "id": "m-home-word-forever", "word": "forever", "panel": "one", "state": "link", "x": 19.88, "y": 542.61, "width": 350.23, "height": 70.43 },
+        { "id": "m-home-word-artificial", "word": "artificial", "panel": "one", "state": "link", "x": 19.88, "y": 692.88, "width": 204.30, "height": 39.30 },
+        { "id": "m-home-word-privacy", "word": "privacy", "panel": "one", "state": "link", "x": 230.22, "y": 697.79, "width": 139.89, "height": 34.40 },
+        { "id": "m-home-word-null", "word": "null", "panel": "two", "state": "no-route", "x": 19.88, "y": 880.33, "width": 52.38, "height": 355.01 },
+        { "id": "m-home-word-depression", "word": "depression", "panel": "two", "state": "link", "x": 79.45, "y": 940.82, "width": 290.66, "height": 46.52 },
+        { "id": "m-home-word-intelligence", "word": "intelligence", "panel": "two", "state": "coming-soon", "x": 79.45, "y": 1173.66, "width": 290.66, "height": 61.67 },
+        { "id": "m-home-word-data", "word": "data", "panel": "two", "state": "link", "x": 74.13, "y": 1290.10, "width": 295.98, "height": 111.38 }
+      ]
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "maxBlank": {
+        "panelOne": { "px": 103.72, "svh": 11.13 },
+        "panelTwo": { "px": 83.03, "svh": 8.91 }
+      },
+      "words": [
+        { "id": "m-home-word-forever", "word": "forever", "panel": "one", "state": "link", "x": 21.93, "y": 579.82, "width": 386.14, "height": 77.66 },
+        { "id": "m-home-word-artificial", "word": "artificial", "panel": "one", "state": "link", "x": 21.93, "y": 745.63, "width": 225.24, "height": 43.34 },
+        { "id": "m-home-word-privacy", "word": "privacy", "panel": "one", "state": "link", "x": 253.83, "y": 751.05, "width": 154.24, "height": 37.92 },
+        { "id": "m-home-word-null", "word": "null", "panel": "two", "state": "no-route", "x": 21.93, "y": 937.11, "width": 58.36, "height": 392.02 },
+        { "id": "m-home-word-depression", "word": "depression", "panel": "two", "state": "link", "x": 87.48, "y": 1004.47, "width": 320.58, "height": 51.29 },
+        { "id": "m-home-word-intelligence", "word": "intelligence", "panel": "two", "state": "coming-soon", "x": 87.48, "y": 1263.58, "width": 320.58, "height": 65.55 },
+        { "id": "m-home-word-data", "word": "data", "panel": "two", "state": "link", "x": 81.73, "y": 1388.17, "width": 326.33, "height": 122.80 }
+      ]
+    }
+  ]
+}
