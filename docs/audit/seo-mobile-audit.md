@@ -1,5 +1,7 @@
 # Search discovery, mobile UX, performance, accessibility, and IA audit
 
+> **Historical audit, not current mobile design governance.** Its Home row treatment, reusable visual-contract proposal, “swipe is never required” statement, and prior mobile implementation conclusions are superseded for future design work by [`docs/design/mobile/words-over-time-mobile-design-governance.md`](../design/mobile/words-over-time-mobile-design-governance.md). Audit measurements remain historical evidence; they do not make desktop the analytical ceiling, limit mobile figures to prior implementations, or authorize implementation before the required data-led predesign and explicit user approval.
+
 **Audit date:** 2026-08-08; final evidence updated 2026-08-09 (Australia/Brisbane)
 
 **Repository:** `dpan538/Words-Over-Time`

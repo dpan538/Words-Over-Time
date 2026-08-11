@@ -1,6 +1,6 @@
 # Mobile visual translation specification
 
-> **Superseded for implementation (2026-08-09):** The universal figure-component contract, inspector, per-figure actions, chips, sliders, filters, mini-networks, and mobile Three.js guidance below are retained as historical audit evidence. Current mobile implementation authority is [`docs/design/mobile-editorial-edition.md`](../design/mobile-editorial-edition.md). Its static editorial grammar overrides conflicting interaction requirements; evidence provenance, source separation, visible absence, and claim limits remain in force.
+> **Superseded for implementation:** The universal shared-figure contract, responsive desktop/mobile selection, desktop-derived route translations, inspector, per-figure actions, chips, sliders, filters, mini-networks, and optional mobile Three.js guidance below are retained as historical audit evidence only. Current mobile authority is [`docs/design/mobile/words-over-time-mobile-design-governance.md`](../design/mobile/words-over-time-mobile-design-governance.md). Its independent data-led predesign, mobile-only figure/card contracts, 60/30/10 allocation, swipe rail, accordion expansion, reference reconstruction, and desktop-non-ceiling rules override all conflicting prescriptions here. Evidence provenance, source separation, visible missingness, accessibility, and claim limits remain useful when consistent with the canonical governance.
 
 **Audit date:** 2026-08-08
 

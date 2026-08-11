@@ -1,5 +1,7 @@
 # Before/after report: search entry, mobile research reader, and route payloads
 
+> **Historical verification report, not current mobile design governance.** Its prior mobile reading order, reusable-shell conclusions, always-visible answer/caveat treatment, and implemented figure scope are superseded for future design work by [`docs/design/mobile/words-over-time-mobile-design-governance.md`](../design/mobile/words-over-time-mobile-design-governance.md). The measurements remain historical evidence only and must not be used to impose desktop parity, limit new mobile analysis, bypass predesign approval, or reject the canonical swipe/accordion card system.
+
 **Report date:** 2026-08-09 (Australia/Brisbane)
 
 **Repository:** `dpan538/Words-Over-Time`

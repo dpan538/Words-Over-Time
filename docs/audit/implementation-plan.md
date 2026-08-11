@@ -1,5 +1,7 @@
 # Search discovery and mobile research implementation plan
 
+> **Historical implementation receipt, not current mobile design governance.** Any first-screen order, reusable-reader, figure inventory, desktop/mobile relationship, interaction, or completion direction in this plan is superseded by [`docs/design/mobile/words-over-time-mobile-design-governance.md`](../design/mobile/words-over-time-mobile-design-governance.md). Past implementation evidence remains historical; it must not be used to cap mobile analysis, justify parity with desktop, bypass user-approved predesign, or replace the required mobile-only swipe/accordion card system.
+
 **Plan date:** 2026-08-08 (Australia/Brisbane)
 
 **Branch:** `audit/mobile-search-growth-2026-08`

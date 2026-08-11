@@ -1,4 +1,6 @@
-# Words Over Time Mobile Research Editorial Edition
+# SUPERSEDED — Words Over Time Mobile Research Editorial Edition
+
+> **Superseded for all current mobile governance and future implementation.** This file is retained as historical design evidence only. Its desktop-as-canon, figure-count ceiling, no-card, static-only interaction, and visual-language constraints are non-operative wherever they conflict with [`docs/design/mobile/words-over-time-mobile-design-governance.md`](mobile/words-over-time-mobile-design-governance.md). The canonical governance defines mobile as an independently art-directed, data-led research edition; requires mobile-only swipeable/expandable cards and user-approved predesign; permits mobile-only analysis and figures; and keeps desktop read-only rather than authoritative over mobile.
 
 **Authority:** Desktop `/about` is the binding design canon. This edition changes composition, density, and enhancement strategy below `60rem`; it does not create a second visual language or alter the desktop poster programme.
 

@@ -1,6 +1,6 @@
 # Mobile-first information architecture
 
-> **Superseded for implementation (2026-08-09):** The component-stack, target hierarchy, chapter navigation, inspector, and required per-figure interaction sections below are retained as historical audit evidence. Current mobile implementation authority is [`docs/design/mobile-editorial-edition.md`](../design/mobile-editorial-edition.md). Its static editorial reading programme overrides conflicting guidance here; provenance, claim-boundary, accessibility, and no-overflow principles remain in force.
+> **Superseded for implementation:** The component stack, target hierarchy, Home first-screen order, shared-shell proposal, “swipe is never required” rule, inspector, and per-figure interaction sections below are retained as historical audit evidence only. Current mobile authority is [`docs/design/mobile/words-over-time-mobile-design-governance.md`](../design/mobile/words-over-time-mobile-design-governance.md). Its independent mobile art direction, data-first predesign gate, 60/30/10 allocation, swipe rail, expandable-card system, and desktop-non-ceiling rules override all conflicting prescriptions here. Provenance, claim-boundary, accessibility, and no-body-overflow findings remain useful when consistent with the canonical governance.
 
 **Audit date:** 2026-08-08
 

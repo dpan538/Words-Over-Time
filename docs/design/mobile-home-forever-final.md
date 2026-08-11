@@ -2,7 +2,7 @@
 
 > **Invalidated on 2026-08-11.** This document is retained only as design-audit history. It is not a current visual specification and none of its prior `PASS`, `COMPLETE_FOR_SCOPE`, shared-scale chart, spacing, or screenshot claims may be used as acceptance evidence.
 >
-> The only boundaries carried forward are: no desktop regression; 13px minimum visible mobile text; SSR/static prerendering; no mobile Three.js, WebGL, or canvas; citation closed by default; no ambiguous `match` unit; and overflow-free 240px reflow plus 390px and 430px layouts. Current Forever authority is the deterministic raw-data audit in `docs/research/forever/raw-data-audit.md`.
+> All mobile art-direction, page-rhythm, figure-count, interaction, and component-system directions below are superseded by [`docs/design/mobile/words-over-time-mobile-design-governance.md`](mobile/words-over-time-mobile-design-governance.md). The only historical engineering boundaries carried forward where they do not conflict with that governance are: no desktop regression; 13px minimum visible mobile text; SSR/static prerendering; no mobile Three.js, WebGL, or gratuitous canvas; citation closed by default; no ambiguous `match` unit; and overflow-free narrow reflow plus 390px and 430px layouts. Current Forever data authority remains the deterministic raw-data audit in `docs/research/forever/raw-data-audit.md`.
 
 ## Home
 
