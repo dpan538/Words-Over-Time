@@ -1,0 +1,572 @@
+{
+  "schemaVersion": "1.0.0",
+  "auditId": "forever-raw-audit-2026-08-11",
+  "dataGate": "STOP_RAW_DATA_MISSING",
+  "productionEligibleCount": 0,
+  "contracts": [
+    {
+      "id": "contract-coverage-matrix",
+      "candidatePanel": "Evidence coverage matrix",
+      "findingIds": [
+        "finding-modern-capture",
+        "finding-gutenberg-inventory"
+      ],
+      "productionEligible": false,
+      "eligibilityReason": "No typed coverage manifest distinguishes observed zero, not searched, unavailable, and incomparable.",
+      "researchQuestion": "Which source layers actually cover each period and evidence type?",
+      "rawFilesAndFields": [
+        {
+          "path": "src/data/generated/forever_frequency.json",
+          "selector": "source/series",
+          "fields": [
+            "year",
+            "query"
+          ]
+        },
+        {
+          "path": "src/data/generated/forever_gutenberg_sources.json",
+          "selector": "sources[]",
+          "fields": [
+            "year",
+            "tokenCount"
+          ]
+        },
+        {
+          "path": "src/data/generated/forever_modern_context.json",
+          "selector": "queries/snippets",
+          "fields": [
+            "query",
+            "year"
+          ]
+        }
+      ],
+      "recordGranularityAndN": {
+        "granularity": "dataset × period × coverage state",
+        "n": {
+          "currentDatasets": 4
+        }
+      },
+      "filters": [
+        "registered search scope only"
+      ],
+      "grouping": [
+        "dataset",
+        "year/decade",
+        "document/token/record coverage state"
+      ],
+      "denominator": "registered source universe per layer",
+      "formulaTransform": "coverage state derived from retained search/capture log, never from numeric zero",
+      "unit": "documents, tokens, records, and explicit coverage state",
+      "visualChannelMapping": [
+        {
+          "channel": "cell text + shape",
+          "field": "coverage state",
+          "mapping": "distinct redundant state marker"
+        },
+        {
+          "channel": "facet",
+          "field": "dataset",
+          "mapping": "one source layer per facet"
+        }
+      ],
+      "validInterpretation": [
+        "Where evidence is present, absent, unsearched, unavailable, or incomparable."
+      ],
+      "prohibitedInterpretation": [
+        "A blank area is evidence of zero usage."
+      ],
+      "missingnessErrorSourceLimitations": [
+        "Coverage state is not retained for current captures."
+      ],
+      "localDisclosureRequirements": [
+        "state legend",
+        "n by layer",
+        "source/release",
+        "coverage limitation"
+      ],
+      "blockedByGapIds": [
+        "gap-coverage-rights-transform-manifests",
+        "gap-gutenberg-raw-texts-metadata",
+        "gap-modern-raw-api-pages"
+      ]
+    },
+    {
+      "id": "contract-viewer-facets",
+      "candidatePanel": "Viewer-normalized form facets",
+      "findingIds": [
+        "finding-ngram-denominator",
+        "finding-ngram-window"
+      ],
+      "productionEligible": false,
+      "eligibilityReason": "Separate-unit option B is analytically possible, but the raw response and explicit corpus release are not retained.",
+      "researchQuestion": "How does each registered form move within its own Google Viewer denominator?",
+      "rawFilesAndFields": [
+        {
+          "path": "src/data/generated/forever_frequency.json",
+          "selector": "series[].points[]",
+          "fields": [
+            "query",
+            "year",
+            "value"
+          ]
+        }
+      ],
+      "recordGranularityAndN": {
+        "granularity": "query-year Viewer observation",
+        "n": {
+          "forever": 523,
+          "for ever": 523,
+          "forevermore": 523,
+          "forever and ever": 523
+        }
+      },
+      "filters": [
+        "smoothing=0",
+        "case_insensitive=false"
+      ],
+      "grouping": [
+        "ngram order",
+        "query",
+        "year"
+      ],
+      "denominator": "separate all-unigram/all-bigram/all-trigram corpus-year totals",
+      "formulaTransform": "Viewer fraction × 1,000,000; no cross-order arithmetic",
+      "unit": "per million unigrams OR per million bigrams OR per million trigrams, locally labeled",
+      "visualChannelMapping": [
+        {
+          "channel": "facet",
+          "field": "ngram order",
+          "mapping": "never share an axis across orders"
+        },
+        {
+          "channel": "x",
+          "field": "year",
+          "mapping": "linear time"
+        },
+        {
+          "channel": "y",
+          "field": "Viewer fraction",
+          "mapping": "within-facet fixed unit"
+        }
+      ],
+      "validInterpretation": [
+        "Within-series movement and same-order comparison after release is pinned."
+      ],
+      "prohibitedInterpretation": [
+        "joined/spaced share, ratio, crossover, overtaking, delta, or orthographic dominance"
+      ],
+      "missingnessErrorSourceLimitations": [
+        "Zero/missing ambiguity",
+        "corpus alias is unpinned",
+        "raw response absent"
+      ],
+      "localDisclosureRequirements": [
+        "exact unit per facet",
+        "corpus/release",
+        "smoothing",
+        "n/year range",
+        "zero/missing caveat"
+      ],
+      "blockedByGapIds": [
+        "gap-google-raw-response-release",
+        "gap-coverage-rights-transform-manifests"
+      ]
+    },
+    {
+      "id": "contract-transition-robustness",
+      "candidatePanel": "Transition robustness field",
+      "findingIds": [
+        "finding-ngram-denominator"
+      ],
+      "productionEligible": false,
+      "eligibilityReason": "Common denominator and multiple pinned corpus/release/smoothing analyses are absent.",
+      "researchQuestion": "Does a joined/spaced transition conclusion survive corpus, release, and smoothing choices?",
+      "rawFilesAndFields": [
+        {
+          "path": "docs/research/forever/raw/google/common-denominator.json",
+          "selector": "source-bound TSV paths plus registered analysis window",
+          "fields": [
+            "source.match_rows_path",
+            "source.annual_totals_path",
+            "source.release",
+            "analysisWindow.startYear",
+            "analysisWindow.endYear",
+            "TSV: form,ngram_order,year,match_count,annual_word_tokens,release"
+          ]
+        }
+      ],
+      "recordGranularityAndN": {
+        "granularity": "form × year × corpus release × smoothing specification",
+        "n": {}
+      },
+      "filters": [
+        "preregistered complete years/forms"
+      ],
+      "grouping": [
+        "corpus",
+        "release",
+        "smoothing"
+      ],
+      "denominator": "same-release annual word-token total",
+      "formulaTransform": "raw_match_count / annual_word_tokens × 1,000,000; sensitivity grid",
+      "unit": "appearances per million words",
+      "visualChannelMapping": [
+        {
+          "channel": "facet",
+          "field": "corpus/release",
+          "mapping": "one fixed cell per specification"
+        },
+        {
+          "channel": "symbol",
+          "field": "conclusion stability",
+          "mapping": "stable/unstable/indeterminate"
+        }
+      ],
+      "validInterpretation": [
+        "Sensitivity of a preregistered conclusion."
+      ],
+      "prohibitedInterpretation": [
+        "Robustness from one Viewer series or mixed denominators."
+      ],
+      "missingnessErrorSourceLimitations": [
+        "All required raw bulk rows/totals are missing."
+      ],
+      "localDisclosureRequirements": [
+        "formula",
+        "release",
+        "specification count",
+        "missing years"
+      ],
+      "blockedByGapIds": [
+        "gap-google-common-denominator",
+        "gap-google-raw-response-release"
+      ]
+    },
+    {
+      "id": "contract-orthographic-family",
+      "candidatePanel": "Orthographic-family small multiples",
+      "findingIds": [
+        "finding-ngram-denominator"
+      ],
+      "productionEligible": false,
+      "eligibilityReason": "No canonical preregistered complete family and no valid shared scale across all current forms.",
+      "researchQuestion": "How do all preregistered family forms vary on a genuinely common scale?",
+      "rawFilesAndFields": [
+        {
+          "path": "docs/research/forever/raw/forever-form-registry.json",
+          "selector": "forms[] and analysisWindow",
+          "fields": [
+            "form",
+            "ngramOrder",
+            "casePolicy",
+            "joinedSpacedPolicy",
+            "hyphenPolicy",
+            "queryPreregistered"
+          ]
+        },
+        {
+          "path": "docs/research/forever/raw/google/common-denominator.json",
+          "selector": "checksum-bound match rows and annual totals",
+          "fields": [
+            "form",
+            "ngram_order",
+            "year",
+            "match_count",
+            "annual_word_tokens",
+            "release"
+          ]
+        }
+      ],
+      "recordGranularityAndN": {
+        "granularity": "form-year",
+        "n": {}
+      },
+      "filters": [
+        "all preregistered forms; no post hoc omission"
+      ],
+      "grouping": [
+        "form",
+        "year"
+      ],
+      "denominator": "common annual word-token total",
+      "formulaTransform": "raw_match_count / annual_word_tokens × 1,000,000",
+      "unit": "appearances per million words",
+      "visualChannelMapping": [
+        {
+          "channel": "shared y",
+          "field": "rate",
+          "mapping": "one fixed scale for every multiple"
+        },
+        {
+          "channel": "facet",
+          "field": "form",
+          "mapping": "one form per panel"
+        }
+      ],
+      "validInterpretation": [
+        "Relative magnitude and shape on a verified common scale."
+      ],
+      "prohibitedInterpretation": [
+        "Independent shape scales or incomplete post hoc form selection."
+      ],
+      "missingnessErrorSourceLimitations": [
+        "Canonical registry and raw denominator inputs are absent."
+      ],
+      "localDisclosureRequirements": [
+        "complete form list",
+        "shared axis",
+        "n",
+        "release",
+        "missingness"
+      ],
+      "blockedByGapIds": [
+        "gap-canonical-form-registry",
+        "gap-google-common-denominator"
+      ]
+    },
+    {
+      "id": "contract-date-ledger",
+      "candidatePanel": "Source-bound date ledger",
+      "findingIds": [
+        "finding-prehistory-provenance"
+      ],
+      "productionEligible": false,
+      "eligibilityReason": "Current records lack quotations/editions and turn approximate labels into exact-looking years.",
+      "researchQuestion": "What date does each source actually establish, and at what precision?",
+      "rawFilesAndFields": [
+        {
+          "path": "src/data/generated/forever_prehistory.json",
+          "selector": "records[]",
+          "fields": [
+            "form",
+            "dateLabel",
+            "yearApproximation",
+            "sourceUrl",
+            "quote",
+            "verificationStatus"
+          ]
+        }
+      ],
+      "recordGranularityAndN": {
+        "granularity": "one verified source-bound claim",
+        "n": {
+          "currentUnverifiedClaims": 6
+        }
+      },
+      "filters": [
+        "verified quotation and edition required"
+      ],
+      "grouping": [
+        "date basis: composition/publication/edition/dictionary report"
+      ],
+      "denominator": "not applicable",
+      "formulaTransform": "retain original temporal precision; do not coerce century labels to exact point dates",
+      "unit": "source date with precision/uncertainty",
+      "visualChannelMapping": [
+        {
+          "channel": "position/interval",
+          "field": "date precision",
+          "mapping": "point only for exact date; bounded band for uncertainty"
+        },
+        {
+          "channel": "text",
+          "field": "date basis",
+          "mapping": "composition/publication/edition/report"
+        }
+      ],
+      "validInterpretation": [
+        "What each verified source claims at its actual precision."
+      ],
+      "prohibitedInterpretation": [
+        "First use, or a rail implying an interval/relationship between conflicting claims."
+      ],
+      "missingnessErrorSourceLimitations": [
+        "Six of six quotes are blank; conflict unresolved."
+      ],
+      "localDisclosureRequirements": [
+        "quotation",
+        "edition",
+        "date basis",
+        "verification",
+        "rights"
+      ],
+      "blockedByGapIds": [
+        "gap-attestation-primary-records",
+        "gap-coverage-rights-transform-manifests"
+      ]
+    },
+    {
+      "id": "contract-gutenberg-inventory",
+      "candidatePanel": "Selected Gutenberg form inventory",
+      "findingIds": [
+        "finding-gutenberg-inventory",
+        "finding-gutenberg-duplicates"
+      ],
+      "productionEligible": false,
+      "eligibilityReason": "Potentially substantive within-sample panel, but raw texts, edition metadata, selection manifest, and passage dedupe IDs are missing.",
+      "researchQuestion": "Within the explicitly selected texts, where do joined and spaced forms occur relative to token exposure?",
+      "rawFilesAndFields": [
+        {
+          "path": "src/data/generated/forever_gutenberg_sources.json",
+          "selector": "sources[]/occurrences[]",
+          "fields": [
+            "id",
+            "title",
+            "year",
+            "tokenCount",
+            "kind",
+            "phrase",
+            "tokenIndex",
+            "snippet"
+          ]
+        }
+      ],
+      "recordGranularityAndN": {
+        "granularity": "selected work and deduped passage",
+        "n": {
+          "selectedWorks": 23
+        }
+      },
+      "filters": [
+        "kind='form'",
+        "exact registered joined/spaced policy",
+        "one passage ID once"
+      ],
+      "grouping": [
+        "work",
+        "form",
+        "edition-date band"
+      ],
+      "denominator": "tokens in each retained selected text",
+      "formulaTransform": "form_count / text_tokens × 1,000,000; preserve record-level passage rows",
+      "unit": "occurrences per million selected-text tokens plus raw counts",
+      "visualChannelMapping": [
+        {
+          "channel": "facet",
+          "field": "form",
+          "mapping": "joined/spaced"
+        },
+        {
+          "channel": "position",
+          "field": "work/edition date",
+          "mapping": "verified date"
+        },
+        {
+          "channel": "size + label",
+          "field": "count/rate",
+          "mapping": "redundant value encoding"
+        }
+      ],
+      "validInterpretation": [
+        "Inventory of the declared selected texts only."
+      ],
+      "prohibitedInterpretation": [
+        "Population trend, orthographic dominance, or general literary frequency."
+      ],
+      "missingnessErrorSourceLimitations": [
+        "Selected sample",
+        "raw texts/editions absent",
+        "hyphen conflation risk",
+        "three duplicate role rows"
+      ],
+      "localDisclosureRequirements": [
+        "selected n",
+        "token denominator",
+        "selection rule",
+        "edition caveat",
+        "passage provenance"
+      ],
+      "blockedByGapIds": [
+        "gap-gutenberg-raw-texts-metadata",
+        "gap-canonical-form-registry"
+      ]
+    },
+    {
+      "id": "contract-modern-matrix",
+      "candidatePanel": "Modern capture/source matrix",
+      "findingIds": [
+        "finding-modern-capture"
+      ],
+      "productionEligible": false,
+      "eligibilityReason": "Raw search responses/page revisions, zero-result state, and three distinct date fields are absent.",
+      "researchQuestion": "What did one dated modern capture retrieve, from which source page/revision, for which query?",
+      "rawFilesAndFields": [
+        {
+          "path": "src/data/generated/forever_modern_context.json",
+          "selector": "queries[]/snippets[]",
+          "fields": [
+            "query",
+            "sourceUrl",
+            "title",
+            "year",
+            "dateBasis",
+            "quote",
+            "rightsStatus"
+          ]
+        }
+      ],
+      "recordGranularityAndN": {
+        "granularity": "unique page revision/passage per query capture",
+        "n": {
+          "currentSnippetRows": 17,
+          "currentUniqueUrls": 16
+        }
+      },
+      "filters": [
+        "dedupe page revision + passage hash",
+        "record zero-result queries"
+      ],
+      "grouping": [
+        "source facet",
+        "query",
+        "text date",
+        "page publication date",
+        "capture date"
+      ],
+      "denominator": "captured search inventory; no prevalence denominator",
+      "formulaTransform": "dedupe exact page-revision-passage; retain separate date fields",
+      "unit": "unique captured passage records",
+      "visualChannelMapping": [
+        {
+          "channel": "row",
+          "field": "unique passage",
+          "mapping": "one record"
+        },
+        {
+          "channel": "columns",
+          "field": "date types",
+          "mapping": "text/publication/capture dates"
+        },
+        {
+          "channel": "facet",
+          "field": "source",
+          "mapping": "Gutenberg and Wikinews never merged"
+        }
+      ],
+      "validInterpretation": [
+        "Contents of one documented inventory capture."
+      ],
+      "prohibitedInterpretation": [
+        "Persistence, survival, prevalence, or modern trend."
+      ],
+      "missingnessErrorSourceLimitations": [
+        "Mutable snippets",
+        "one duplicate URL row",
+        "four queries lack typed search outcome",
+        "license inferred from year"
+      ],
+      "localDisclosureRequirements": [
+        "capture timestamp",
+        "query",
+        "result total",
+        "page/revision ID",
+        "date bases",
+        "license"
+      ],
+      "blockedByGapIds": [
+        "gap-modern-raw-api-pages",
+        "gap-coverage-rights-transform-manifests"
+      ]
+    }
+  ]
+}

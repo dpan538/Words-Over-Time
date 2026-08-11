@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceRecords": [
+    {
+      "id": "google-ngram-viewer-denominator",
+      "publisher": "Google Books Ngram Viewer Team",
+      "title": "Google Ngram Viewer — What does the Ngram Viewer do?",
+      "url": "https://books.google.com/ngrams/info",
+      "accessedOn": "2026-08-11",
+      "official": true,
+      "applicableClaim": "Viewer percentages use the total population of the same n-gram order in the selected corpus and year: a unigram is relative to all unigrams, a bigram to all bigrams, and a trigram to all trigrams.",
+      "repositoryUse": "Determine the denominator label from the exact token count of each registered query; never place different n-gram orders on a shared generic per-million scale.",
+      "sourceLocation": "What does the Ngram Viewer do?, paragraphs 2–3",
+      "captureStatus": "Official URL and paraphrased authority record retained; page HTML is not vendored.",
+      "rightsBoundary": "Reference metadata and paraphrase only; no Google page content is redistributed."
+    },
+    {
+      "id": "google-ngram-viewer-release-mutation",
+      "publisher": "Google Books Ngram Viewer Team",
+      "title": "Google Ngram Viewer — Release Notes and Corpora",
+      "url": "https://books.google.com/ngrams/info",
+      "accessedOn": "2026-08-11",
+      "official": true,
+      "applicableClaim": "The current Viewer corpus can change when datasets, OCR, language detection, and scanned-book coverage change; older releases use persistent identifiers.",
+      "repositoryUse": "Treat the repository corpus alias en as unpinned until an explicit persistent release identifier and raw response are retained.",
+      "sourceLocation": "Release Notes; Corpora",
+      "captureStatus": "Official URL and paraphrased authority record retained; page HTML is not vendored.",
+      "rightsBoundary": "Reference metadata and paraphrase only; no Google page content is redistributed."
+    },
+    {
+      "id": "google-ngram-official-download-boundary",
+      "publisher": "Google Books Ngram Viewer Team",
+      "title": "Google Books Ngram datasets",
+      "url": "https://storage.googleapis.com/books/ngrams/books/datasetsv3.html",
+      "accessedOn": "2026-08-11",
+      "official": true,
+      "applicableClaim": "Google publishes downloadable n-gram datasets organized by language, n-gram order, and shard.",
+      "repositoryUse": "Any future common-denominator reconstruction must retain official same-release match rows and annual totals with URLs and checksums.",
+      "sourceLocation": "official datasets index",
+      "captureStatus": "Official URL and boundary record retained; no shard or index-page copy was acquired.",
+      "rightsBoundary": "Reference metadata and paraphrase only; dataset terms must be recorded at acquisition time."
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "schemaVersion": "1.0.0",
+  "auditId": "forever-raw-audit-2026-08-11",
+  "dataGate": "STOP_RAW_DATA_MISSING",
+  "findings": [
+    {
+      "id": "finding-ngram-denominator",
+      "status": "audited-blocker",
+      "productionEligible": false,
+      "question": "Can joined 'forever' and spaced 'for ever' share an appearances-per-million scale?",
+      "rawFields": [
+        {
+          "path": "src/data/generated/forever_frequency.json",
+          "selector": "series[query in {'forever','for ever'}]",
+          "fields": [
+            "query",
+            "points[].value",
+            "source.corpus",
+            "source.url"
+          ]
+        },
+        {
+          "path": "docs/research/forever/sources/google-ngram-official-authority.json",
+          "selector": "sourceRecords[id='google-ngram-viewer-denominator']",
+          "fields": [
+            "url",
+            "applicableClaim",
+            "sourceLocation",
+            "accessedOn"
+          ]
+        }
+      ],
+      "filters": [
+        "query is exactly 'forever' or 'for ever'",
+        "smoothing=0",
+        "case_insensitive=false"
+      ],
+      "grouping": [
+        "query",
+        "year"
+      ],
+      "denominator": "Viewer-specific all-unigram denominator for forever; all-bigram denominator for for ever",
+      "transformFormula": "Viewer fraction × 1,000,000, with unit retained by n-gram order",
+      "result": {
+        "summary": "Only option B is present: separate Viewer-normalized facets; a shared joined/spaced scale is invalid.",
+        "values": {
+          "foreverOrder": 1,
+          "forEverOrder": 2,
+          "rawMatchCountsAvailable": false,
+          "annualWordTokenTotalsAvailable": false,
+          "sharedScaleAllowed": false
+        }
+      },
+      "caveat": [
+        "Corpus release is not pinned.",
+        "No raw response or official bulk rows are retained."
+      ],
+      "sourceRowsFiles": [
+        {
+          "path": "src/data/generated/forever_frequency.json",
+          "selector": "source",
+          "fields": [
+            "corpus",
+            "url",
+            "smoothing",
+            "startYear",
+            "endYear"
+          ]
+        },
+        {
+          "path": "scripts/fetch_ngram_forever.ts",
+          "selector": "URL construction and response mapping",
+          "fields": [
+            "content",
+            "corpus",
+            "smoothing",
+            "case_insensitive",
+            "timeseries"
+          ]
+        },
+        {
+          "path": "docs/research/forever/sources/google-ngram-official-authority.json",
+          "selector": "sourceRecords[id in {'google-ngram-viewer-denominator','google-ngram-viewer-release-mutation'}]",
+          "fields": [
+            "publisher",
+            "title",
+            "url",
+            "accessedOn",
+            "applicableClaim",
+            "repositoryUse"
+          ]
+        }
+      ],
+      "blockedByGapIds": [
+        "gap-google-raw-response-release",
+        "gap-google-common-denominator"
+      ]
+    },
+    {
+      "id": "finding-ngram-window",
+      "status": "audited-limited-result",
+      "productionEligible": false,
+      "question": "What is the actual granularity of the historical 323-row Forever table?",
+      "rawFields": [
+        {
+          "path": "src/data/generated/forever_frequency.json",
+          "selector": "series[query='forever'].points",
+          "fields": [
+            "year",
+            "value",
+            "frequencyPerMillion"
+          ]
+        }
+      ],
+      "filters": [
+        "query='forever'",
+        "1700 <= year <= 2022"
+      ],
+      "grouping": [
+        "one row per year"
+      ],
+      "denominator": "all unigrams in each Viewer corpus-year",
+      "transformFormula": "inclusive filter; row_count = 2022 - 1700 + 1",
+      "result": {
+        "summary": "The table is 323 Viewer-normalized annual unigram observations, not 323 raw match-count rows.",
+        "values": {
+          "rowCount": 323,
+          "firstYear": 1700,
+          "lastYear": 2022
+        }
+      },
+      "caveat": [
+        "Numeric zero is not a typed missingness state.",
+        "The raw API response is absent."
+      ],
+      "sourceRowsFiles": [
+        {
+          "path": "src/data/generated/forever_frequency.json",
+          "selector": "series[query='forever'].points[1700..2022]",
+          "fields": [
+            "year",
+            "value"
+          ]
+        }
+      ],
+      "blockedByGapIds": [
+        "gap-google-raw-response-release"
+      ]
+    },
+    {
+      "id": "finding-gutenberg-inventory",
+      "status": "audited-limited-result",
+      "productionEligible": false,
+      "question": "What joined/spaced counts exist inside the selected Gutenberg inventory?",
+      "rawFields": [
+        {
+          "path": "src/data/generated/forever_gutenberg_sources.json",
+          "selector": "sources[] and sources[].occurrences[kind='form']",
+          "fields": [
+            "id",
+            "year",
+            "tokenCount",
+            "kind",
+            "phrase",
+            "tokenIndex"
+          ]
+        }
+      ],
+      "filters": [
+        "23 manually selected works",
+        "occurrence.kind='form'",
+        "phrase exactly 'forever' or 'for ever'"
+      ],
+      "grouping": [
+        "form",
+        "selected work"
+      ],
+      "denominator": "token count inside the selected 23 processed texts only",
+      "transformFormula": "count exact form rows; rate, if used, must equal form_count / selected_text_tokens × 1,000,000",
+      "result": {
+        "summary": "The generated inventory separates joined and spaced forms, but it is selected-corpus evidence without retained raw texts.",
+        "values": {
+          "selectedWorks": 23,
+          "tokens": 3249043,
+          "joinedOccurrences": 133,
+          "spacedOccurrences": 188,
+          "allFormOccurrences": 321
+        }
+      },
+      "caveat": [
+        "Not representative of print generally.",
+        "Hyphenated forms may be conflated.",
+        "Edition/translation dates are unresolved."
+      ],
+      "sourceRowsFiles": [
+        {
+          "path": "src/data/generated/forever_gutenberg_sources.json",
+          "selector": "sources[].occurrences[kind='form']",
+          "fields": [
+            "phrase",
+            "tokenIndex",
+            "snippet"
+          ]
+        }
+      ],
+      "blockedByGapIds": [
+        "gap-gutenberg-raw-texts-metadata",
+        "gap-canonical-form-registry"
+      ]
+    },
+    {
+      "id": "finding-gutenberg-duplicates",
+      "status": "audited-blocker",
+      "productionEligible": false,
+      "question": "Does one generated Gutenberg occurrence row equal one unique source passage position?",
+      "rawFields": [
+        {
+          "path": "src/data/generated/forever_gutenberg_sources.json",
+          "selector": "sources[].occurrences[]",
+          "fields": [
+            "source id",
+            "kind",
+            "phrase",
+            "tokenIndex"
+          ]
+        }
+      ],
+      "filters": [
+        "all generated occurrence rows"
+      ],
+      "grouping": [
+        "source id + tokenIndex"
+      ],
+      "denominator": "generated occurrence rows versus unique source-token positions",
+      "transformFormula": "duplicate_role_rows = occurrence_rows - unique(source_id, tokenIndex)",
+      "result": {
+        "summary": "Phrase and form roles create repeated source-token positions; a record-level figure must dedupe passages before counting.",
+        "values": {
+          "occurrenceRows": 332,
+          "uniqueSourceTokenPositions": 329,
+          "duplicateRoleRows": 3
+        }
+      },
+      "caveat": [
+        "A future passage ID should distinguish one verified passage from its multiple analytic roles."
+      ],
+      "sourceRowsFiles": [
+        {
+          "path": "src/data/generated/forever_gutenberg_sources.json",
+          "selector": "sources[].occurrences[]",
+          "fields": [
+            "kind",
+            "phrase",
+            "tokenIndex"
+          ]
+        }
+      ],
+      "blockedByGapIds": [
+        "gap-gutenberg-raw-texts-metadata"
+      ]
+    },
+    {
+      "id": "finding-prehistory-provenance",
+      "status": "audited-blocker",
+      "productionEligible": false,
+      "question": "Can current attestation claims support a source-bound date ledger?",
+      "rawFields": [
+        {
+          "path": "src/data/generated/forever_prehistory.json",
+          "selector": "records[]",
+          "fields": [
+            "form",
+            "dateLabel",
+            "yearApproximation",
+            "quote",
+            "verificationStatus",
+            "confidence",
+            "sourceUrl"
+          ]
+        }
+      ],
+      "filters": [
+        "all attestation records"
+      ],
+      "grouping": [
+        "form",
+        "source claim"
+      ],
+      "denominator": "not applicable; claim ledger",
+      "transformFormula": "count records, blank quotations, and verification states",
+      "result": {
+        "summary": "No: all quotations are blank and the layer contains unresolved secondary-source conflicts.",
+        "values": {
+          "claims": 6,
+          "blankQuotes": 6,
+          "conflictingClaims": 1
+        }
+      },
+      "caveat": [
+        "Approximate century labels are converted into exact-looking numeric coordinates."
+      ],
+      "sourceRowsFiles": [
+        {
+          "path": "src/data/generated/forever_prehistory.json",
+          "selector": "records[]",
+          "fields": [
+            "id",
+            "dateLabel",
+            "yearApproximation",
+            "sourceName",
+            "sourceUrl"
+          ]
+        }
+      ],
+      "blockedByGapIds": [
+        "gap-attestation-primary-records"
+      ]
+    },
+    {
+      "id": "finding-modern-capture",
+      "status": "audited-blocker",
+      "productionEligible": false,
+      "question": "Can the Wikinews capture show modern persistence or a source/date matrix?",
+      "rawFields": [
+        {
+          "path": "src/data/generated/forever_modern_context.json",
+          "selector": "queries[] and snippets[]",
+          "fields": [
+            "query",
+            "sourceUrl",
+            "title",
+            "year",
+            "dateBasis",
+            "quote",
+            "rightsStatus"
+          ]
+        }
+      ],
+      "filters": [
+        "retained snippets containing joined or spaced form",
+        "maximum six search rows per query"
+      ],
+      "grouping": [
+        "query",
+        "source URL"
+      ],
+      "denominator": "none; API search-result inventory",
+      "transformFormula": "count retained snippet rows and unique source URLs; find registered queries with no retained row",
+      "result": {
+        "summary": "The capture is a mutable one-time inventory, with one duplicate page across queries and no typed zero-result state.",
+        "values": {
+          "registeredQueries": 10,
+          "snippetRows": 17,
+          "uniqueSourceUrls": 16,
+          "duplicateUrlRows": 1,
+          "queriesWithoutRetainedRows": [
+            "\"takes forever\"",
+            "\"online forever\"",
+            "\"internet forever\"",
+            "\"digital forever\""
+          ]
+        }
+      },
+      "caveat": [
+        "Revision year is not page publication date, quoted-text date, or capture date.",
+        "Snippet-row counts are not occurrences in page text."
+      ],
+      "sourceRowsFiles": [
+        {
+          "path": "src/data/generated/forever_modern_context.json",
+          "selector": "snippets[]",
+          "fields": [
+            "id",
+            "query",
+            "sourceUrl",
+            "year",
+            "dateBasis"
+          ]
+        }
+      ],
+      "blockedByGapIds": [
+        "gap-modern-raw-api-pages",
+        "gap-coverage-rights-transform-manifests"
+      ]
+    },
+    {
+      "id": "finding-derived-authority",
+      "status": "audited-blocker",
+      "productionEligible": false,
+      "question": "Which current derived layers cannot continue as research results?",
+      "rawFields": [
+        {
+          "path": "scripts/build_forever_dataset.ts",
+          "selector": "simpleLogDice, flows, categories, ledger, atlas, network",
+          "fields": [
+            "counts",
+            "frequencyPerMillion",
+            "manual positions",
+            "heuristic weights"
+          ]
+        },
+        {
+          "path": "src/data/generated/forever_dataset.json",
+          "selector": "derived arrays",
+          "fields": [
+            "flows",
+            "atlas",
+            "network",
+            "categories",
+            "ledger",
+            "inspectors"
+          ]
+        }
+      ],
+      "filters": [
+        "all transforms without a finding/figure contract and all cross-denominator aggregates"
+      ],
+      "grouping": [
+        "derived layer"
+      ],
+      "denominator": "mixed or unregistered",
+      "transformFormula": "audit source code for mixed units, candidateCount=jointCount scoring, manual coordinates, and heuristic weights",
+      "result": {
+        "summary": "Flows, atlas/network geometry, heuristic category/ledger scores, selected snippets, and score arrays are excluded from research authority.",
+        "values": {
+          "flows": 32,
+          "atlasNodes": 95,
+          "networkNodes": 69,
+          "inspectors": 482
+        }
+      },
+      "caveat": [
+        "These may be editorial design artifacts, but cannot be presented as measured findings."
+      ],
+      "sourceRowsFiles": [
+        {
+          "path": "scripts/build_forever_dataset.ts",
+          "selector": "derived transforms",
+          "fields": [
+            "simpleLogDice",
+            "flows",
+            "network positions",
+            "sourceLayers.comparable"
+          ]
+        }
+      ],
+      "blockedByGapIds": [
+        "gap-canonical-form-registry",
+        "gap-coverage-rights-transform-manifests"
+      ]
+    }
+  ]
+}

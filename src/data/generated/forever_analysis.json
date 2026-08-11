@@ -1,0 +1,3072 @@
+{
+  "schemaVersion": "1.0.0",
+  "auditId": "forever-raw-audit-2026-08-11",
+  "auditSnapshot": "audit/mobile-search-growth-2026-08 at 33bc7ab2; inputs are authoritative by SHA-256, not by wall-clock time",
+  "deterministic": true,
+  "dataGate": {
+    "status": "STOP_RAW_DATA_MISSING",
+    "displayTitle": "Forever data gate: raw inputs missing",
+    "displaySummary": "The current repository can document its limits, but it cannot publish a rebuilt data-to-form story until the required official raw captures and denominators are retained.",
+    "productionPanelsAllowed": false,
+    "reasons": [
+      "Google Viewer fractions are retained without checksum-bound raw match rows, same-release annual word-token totals, exact raw response, or pinned corpus release.",
+      "Gutenberg source texts/editions/checksums, primary attestation records, and Wikinews raw API/page captures are absent.",
+      "No validated coverage, rights, transform, or canonical form registry distinguishes missing, zero, not searched, unavailable, and incomparable states.",
+      "Even under strict separate Viewer units, the remaining layers do not support five contract-complete substantive panels."
+    ],
+    "nextEligibleGate": "STOP_UNTRACEABLE_TRANSFORM"
+  },
+  "manifestSummary": {
+    "registeredInputCount": 32,
+    "inputSetSha256": "03949f39974b1d867210e4147bf51e11d035905592e521e754b43bc13eabaf2a",
+    "termFormRegistryFiles": 2,
+    "generatedCaptureFiles": 4,
+    "derivedArtifactFiles": 7,
+    "transformScriptFiles": 6,
+    "renderConsumerFiles": 12,
+    "sourceRecordFiles": 1,
+    "retainedRawFiles": 0,
+    "upstreamRawPresent": false,
+    "coverageManifestPresent": false,
+    "rightsManifestPresent": false,
+    "productionEligiblePanelCount": 0
+  },
+  "rawAvailabilityAudit": {
+    "discoveredCandidatePaths": [
+      "docs/research/forever/sources/google-ngram-official-authority.json",
+      "scripts/analyze_forever_raw.ts",
+      "scripts/build_forever_dataset.ts",
+      "scripts/build_prehistory_forever.ts",
+      "scripts/fetch_gutenberg_forever.ts",
+      "scripts/fetch_modern_context_forever.ts",
+      "scripts/fetch_ngram_forever.ts",
+      "src/data/forever.ts",
+      "src/data/generated/forever_atlas.json",
+      "src/data/generated/forever_categories.json",
+      "src/data/generated/forever_collocates.json",
+      "src/data/generated/forever_dataset.json",
+      "src/data/generated/forever_frequency.json",
+      "src/data/generated/forever_gutenberg_sources.json",
+      "src/data/generated/forever_ledger.json",
+      "src/data/generated/forever_modern_context.json",
+      "src/data/generated/forever_phrases.json",
+      "src/data/generated/forever_prehistory.json",
+      "src/data/generated/forever_snippets.json"
+    ],
+    "rawMatchCountKeyPaths": [],
+    "annualWordTokenTotalKeyPaths": [],
+    "pinnedCorpusReleaseKeyPaths": [],
+    "commonDenominatorValidatedFiles": [],
+    "canonicalFormRegistryPresent": false,
+    "googleRawResponsePresent": false,
+    "rawMatchCountsAvailable": false,
+    "annualWordTokenTotalsAvailable": false,
+    "commonAnnualWordTokenDenominatorAvailable": false,
+    "corpusReleasePinned": false,
+    "gutenbergRawTextsAndMetadataPresent": false,
+    "attestationPrimaryRecordsPresent": false,
+    "modernRawApiAndPageCapturesPresent": false,
+    "coverageManifestPresent": false,
+    "rightsManifestPresent": false,
+    "transformManifestPresent": false,
+    "upstreamRawPresent": false,
+    "allRequiredRawInputsPresent": false
+  },
+  "termFormRegistryAudit": {
+    "canonicalRegistryPresent": false,
+    "fragments": [
+      {
+        "path": "scripts/fetch_ngram_forever.ts",
+        "formsOrQueries": [
+          "forever",
+          "for ever",
+          "forevermore",
+          "forever and ever"
+        ],
+        "policy": "case-sensitive Viewer queries; mixed n-gram orders"
+      },
+      {
+        "path": "scripts/fetch_gutenberg_forever.ts",
+        "formsOrQueries": [
+          "forever",
+          "for ever",
+          "forever and ever",
+          "live forever",
+          "yours forever",
+          "remembered forever",
+          "takes forever",
+          "forever young",
+          "gone forever"
+        ],
+        "policy": "lowercased ASCII adjacent-token matching"
+      },
+      {
+        "path": "scripts/build_prehistory_forever.ts",
+        "formsOrQueries": [
+          "for ever",
+          "forever",
+          "for ever and ever",
+          "forevermore"
+        ],
+        "policy": "manual normalizedForm mapping"
+      },
+      {
+        "path": "scripts/fetch_modern_context_forever.ts",
+        "formsOrQueries": [
+          "forever",
+          "\"for ever\"",
+          "\"forever and ever\"",
+          "\"remembered forever\"",
+          "\"live forever\"",
+          "\"takes forever\"",
+          "\"gone forever\"",
+          "\"online forever\"",
+          "\"internet forever\"",
+          "\"digital forever\""
+        ],
+        "policy": "MediaWiki search strings with post-filtered snippets"
+      },
+      {
+        "path": "src/data/forever.ts",
+        "formsOrQueries": [
+          "for ever",
+          "forever",
+          "FOREVER-family",
+          "forevermore",
+          "forever and ever"
+        ],
+        "policy": "legacy placeholder registry; not imported by current data build"
+      }
+    ],
+    "separationFindings": [
+      "Joined 'forever' and spaced 'for ever' are separate in Viewer/Gutenberg query rows.",
+      "Gutenberg target phrases omit spaced 'for ever and ever' even though passages exist.",
+      "ASCII tokenization can conflate hyphenated 'for-ever' with spaced 'for ever'.",
+      "Ngram, Gutenberg, prehistory, and modern lists are not governed by one versioned form policy."
+    ]
+  },
+  "denominatorAudit": {
+    "rawMatchCountsAvailable": false,
+    "annualWordTokenTotalsAvailable": false,
+    "commonAnnualWordTokenDenominatorAvailable": false,
+    "corpusReleasePinned": false,
+    "viewerNormalizedOnly": true,
+    "sharedJoinedSpacedScaleAllowed": false,
+    "series": [
+      {
+        "query": "forever",
+        "ngramOrder": 1,
+        "denominator": "all unigrams in the selected Google Books Ngram corpus/year",
+        "allowedUnit": "per million unigrams",
+        "pointCount": 523,
+        "startYear": 1500,
+        "endYear": 2022
+      },
+      {
+        "query": "for ever",
+        "ngramOrder": 2,
+        "denominator": "all bigrams in the selected Google Books Ngram corpus/year",
+        "allowedUnit": "per million bigrams",
+        "pointCount": 523,
+        "startYear": 1500,
+        "endYear": 2022
+      },
+      {
+        "query": "forevermore",
+        "ngramOrder": 1,
+        "denominator": "all unigrams in the selected Google Books Ngram corpus/year",
+        "allowedUnit": "per million unigrams",
+        "pointCount": 523,
+        "startYear": 1500,
+        "endYear": 2022
+      },
+      {
+        "query": "forever and ever",
+        "ngramOrder": 3,
+        "denominator": "all trigrams in the selected Google Books Ngram corpus/year",
+        "allowedUnit": "per million trigrams",
+        "pointCount": 523,
+        "startYear": 1500,
+        "endYear": 2022
+      }
+    ],
+    "allowedUse": [
+      "Separate, explicitly labeled Viewer-normalized facets by n-gram order after raw response and release provenance are retained.",
+      "Within-series temporal description, subject to zero/missing and corpus caveats.",
+      "Same-order comparison only when corpus/release/query policy is identical and locally stated."
+    ],
+    "prohibitedUse": [
+      "joined/spaced share",
+      "direct joined/spaced ratio",
+      "crossover or overtaking year",
+      "joined/spaced delta",
+      "orthographic dominance",
+      "one shared generic frequency-per-million axis across unigram, bigram, and trigram series"
+    ]
+  },
+  "googleOfficialShardFeasibility": {
+    "status": "NOT_EXECUTED_OFFLINE_AUDIT",
+    "planningEnvelope": "approximately 1.2 GB",
+    "repositoryEvidenceForExactShardSize": false,
+    "officialSourcesOnly": true,
+    "requirements": [
+      "Identify exact official Google Ngram corpus release before transfer.",
+      "Acquire the official unigram shard(s) for forever/forevermore and bigram shard(s) for for ever; add trigram only if the phrase is preregistered.",
+      "Acquire same-release official total-count/year files needed for a common annual word-token denominator.",
+      "Record source URLs, compressed/uncompressed sizes, SHA-256, extraction command/version, row filters, and rights boundary."
+    ],
+    "boundary": [
+      "The approximately 1.2 GB figure is a requested planning envelope, not a size verified by repository evidence.",
+      "One lexical shard alone cannot establish a common denominator; same-release annual total-count inputs are also required.",
+      "Actual transfer, decompression, disk, memory, release layout, and query-to-shard mapping must be checked before acquisition.",
+      "No network acquisition was attempted in this audit."
+    ]
+  },
+  "rawDataManifest": {
+    "schemaVersion": "1.0.0",
+    "auditId": "forever-raw-audit-2026-08-11",
+    "dataGate": "STOP_RAW_DATA_MISSING",
+    "inputSetSha256": "03949f39974b1d867210e4147bf51e11d035905592e521e754b43bc13eabaf2a",
+    "expectedInputCount": 32,
+    "entries": [
+      {
+        "id": "script-analyze-forever-raw",
+        "path": "scripts/analyze_forever_raw.ts",
+        "role": "transform-script",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "b64df9c91a9825b348309557baaf982a971651e98d007999e845fa229c60b1a1",
+        "byteLength": 118392,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 2358,
+          "generatedAtCalls": 0,
+          "exportedConstants": 1
+        },
+        "timeRange": null,
+        "source": "repository transform code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited as executable transform logic."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "script-fetch-ngram-forever",
+        "path": "scripts/fetch_ngram_forever.ts",
+        "role": "transform-script",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "a5cfb74ef18633d8ddc560307d6d137c20238a75c421e2d3f8a1a84a574607f2",
+        "byteLength": 4743,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 145,
+          "generatedAtCalls": 1,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository transform code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited as executable transform logic."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "script-fetch-gutenberg-forever",
+        "path": "scripts/fetch_gutenberg_forever.ts",
+        "role": "transform-script",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "416ad286b73249c065d65b86f659e1c516bc926006f76cb668627776f457d7ee",
+        "byteLength": 9275,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 331,
+          "generatedAtCalls": 1,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository transform code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited as executable transform logic."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "script-build-prehistory-forever",
+        "path": "scripts/build_prehistory_forever.ts",
+        "role": "transform-script",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "738e2ff9b8fa884b6581dca54cc9f6d092ffcc471608dcd7732812cfb0fdd97f",
+        "byteLength": 5808,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 162,
+          "generatedAtCalls": 1,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository transform code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited as executable transform logic."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "script-fetch-modern-context-forever",
+        "path": "scripts/fetch_modern_context_forever.ts",
+        "role": "transform-script",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "105d725477201ab70c7a523b30b9586ad5224d604261de3c3572396b32f6f9d2",
+        "byteLength": 7725,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 270,
+          "generatedAtCalls": 1,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository transform code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited as executable transform logic."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "script-build-forever-dataset",
+        "path": "scripts/build_forever_dataset.ts",
+        "role": "transform-script",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "49feae3159aaac999d839843ba65087f4faeb0b80d9f36e0409ffc4574976119",
+        "byteLength": 72805,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 1843,
+          "generatedAtCalls": 1,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository transform code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited as executable transform logic."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "registry-forever",
+        "path": "src/data/forever.ts",
+        "role": "term-form-registry",
+        "authorityLevel": "placeholder-only",
+        "sha256": "c45df2ced70abebe78afd0e95328621d2ff15c7a5dfb18acd8801619c919f281",
+        "byteLength": 19977,
+        "productionAuthority": false,
+        "fields": [
+          "hard-coded sources/forms/claims/visual values",
+          "prose evidence references"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 624,
+          "generatedAtCalls": 0,
+          "exportedConstants": 14
+        },
+        "timeRange": null,
+        "source": "legacy repository registry/prose",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "Contains placeholders or editorial claims and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "registry-search-intents",
+        "path": "src/data/search-intents.ts",
+        "role": "term-form-registry",
+        "authorityLevel": "placeholder-only",
+        "sha256": "ba5312005ce9a97cbb3b5ed2efb1308e0e57f0685005dca9fafb357a7238a116",
+        "byteLength": 23144,
+        "productionAuthority": false,
+        "fields": [
+          "hard-coded sources/forms/claims/visual values",
+          "prose evidence references"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 423,
+          "generatedAtCalls": 0,
+          "exportedConstants": 1
+        },
+        "timeRange": null,
+        "source": "legacy repository registry/prose",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "Contains placeholders or editorial claims and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "capture-google-viewer-frequency",
+        "path": "src/data/generated/forever_frequency.json",
+        "role": "generated-capture",
+        "authorityLevel": "generated-capture-without-upstream-raw",
+        "sha256": "d5ce331eaf04562821ec972ff1281148837a6c8128ce0d44ec1de59a05d8875f",
+        "byteLength": 288645,
+        "productionAuthority": false,
+        "fields": [
+          "source.{label,url,corpus,startYear,endYear,smoothing}",
+          "series[].{query,corpus,smoothing,startYear,endYear}",
+          "series[].points[].{year,value,frequencyPerMillion}"
+        ],
+        "granularity": "one Google Viewer normalized observation per query-year",
+        "recordCounts": {
+          "series": 4,
+          "observations": 2092,
+          "foreverRows1700To2022": 323
+        },
+        "timeRange": {
+          "start": 1500,
+          "end": 2022,
+          "basis": "Viewer response year index",
+          "precision": "year"
+        },
+        "source": "Google Books Ngram Viewer",
+        "sourceUrl": "https://books.google.com/ngrams/json?content=forever%2Cfor+ever%2Cforevermore%2Cforever+and+ever&year_start=1500&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
+        "corpus": "en",
+        "release": null,
+        "missingness": [
+          "No null observations are encoded.",
+          "A numeric zero cannot be distinguished from observed zero, missing/below-threshold signal, or unavailable source material.",
+          "Raw match counts, volume counts, and annual token totals are absent."
+        ],
+        "duplicatePolicy": "No duplicate policy is recorded; query+year keys are unique in the generated file.",
+        "transformHistory": [
+          "Viewer JSON timeseries index is mapped to startYear + index.",
+          "frequencyPerMillion = Viewer normalized fraction × 1,000,000.",
+          "parent and type fields from the API response are discarded; the raw response is not retained."
+        ],
+        "rightsBoundary": "Google source URL is recorded, but release, downloadable-file terms, capture checksum, and reuse boundary are not.",
+        "caveats": [
+          "Corpus alias 'en' is not a pinned corpus release.",
+          "Unigram, bigram, and trigram Viewer fractions do not share a denominator."
+        ]
+      },
+      {
+        "id": "capture-gutenberg-selected-works",
+        "path": "src/data/generated/forever_gutenberg_sources.json",
+        "role": "generated-capture",
+        "authorityLevel": "generated-capture-without-upstream-raw",
+        "sha256": "574900cb1f810fd2f8520b431d5a1c897d913c7dd5be8b933733cdf9a4a63ba6",
+        "byteLength": 219519,
+        "productionAuthority": false,
+        "fields": [
+          "sources[].{id,gutenbergId,title,author,year,sourceUrl,rightsStatus,tokenCount,foreverFormCount}",
+          "sources[].phraseCounts{}",
+          "sources[].collocates{}",
+          "sources[].occurrences[].{kind,phrase,tokenIndex,charIndex,snippet}"
+        ],
+        "granularity": "23 manually selected works with nested occurrence-level rows",
+        "recordCounts": {
+          "selectedWorks": 23,
+          "tokens": 3249043,
+          "formOccurrences": 321,
+          "phraseOccurrences": 11,
+          "allOccurrenceRows": 332
+        },
+        "timeRange": {
+          "start": 1726,
+          "end": 1930,
+          "basis": "manually seeded work-publication year",
+          "precision": "year, not necessarily captured edition/translation year"
+        },
+        "source": "Project Gutenberg",
+        "sourceUrl": "https://www.gutenberg.org/",
+        "corpus": "manually selected Project Gutenberg works",
+        "release": null,
+        "missingness": [
+          "The downloaded source text files are not retained.",
+          "Edition, translator, language, Gutenberg release/update, capture date, and checksums are absent.",
+          "Selection coverage and searched-zero status outside the 23 works are not encoded."
+        ],
+        "duplicatePolicy": "No declared occurrence dedupe policy; phrase and form rows may share a source+tokenIndex.",
+        "transformHistory": [
+          "Fetch first successful URL from four fallbacks.",
+          "Strip Gutenberg boilerplate, lowercase ASCII tokenization, exact adjacent-token form/phrase matching.",
+          "Collocates count non-stopword tokens within ±5 tokens of joined/spaced form hits."
+        ],
+        "rightsBoundary": "Each row says 'Public domain in the USA'; source text revision, jurisdictional status, and passage-level provenance are not captured.",
+        "caveats": [
+          "The sample is selected, not a balanced corpus.",
+          "ASCII tokenization can conflate hyphenated 'for-ever' with spaced 'for ever'.",
+          "Work year cannot establish the wording date of a later English edition or translation."
+        ]
+      },
+      {
+        "id": "capture-secondary-attestation-claims",
+        "path": "src/data/generated/forever_prehistory.json",
+        "role": "generated-capture",
+        "authorityLevel": "generated-capture-without-upstream-raw",
+        "sha256": "750c5c107c21dd4bda36c55041edb8495eaf5145d789b589c8e346b563bcd8ce",
+        "byteLength": 5762,
+        "productionAuthority": false,
+        "fields": [
+          "records[].{id,form,normalizedForm,evidenceType,dateLabel,yearApproximation,sourceName,sourceUrl,quote,verificationStatus,confidence,caveat}",
+          "investigatedSources[].{id,name,coverage,status,sourceUrl,note}"
+        ],
+        "granularity": "one manually transcribed secondary lexical claim per record",
+        "recordCounts": {
+          "claims": 6,
+          "investigatedSources": 4,
+          "blankQuotes": 6
+        },
+        "timeRange": {
+          "start": 1375,
+          "end": 1819,
+          "basis": "manual approximate year assigned to source date label",
+          "precision": "mixed century/approximate-year/exact-looking-year"
+        },
+        "source": "secondary lexical websites",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "All claim quotations are blank.",
+          "No edition, access date, snapshot, source-row quotation, or primary occurrence is stored."
+        ],
+        "duplicatePolicy": "Claims from different secondary sources are retained separately; conflict resolution is not implemented.",
+        "transformHistory": [
+          "Date labels such as late 14c. and late 17c. are manually mapped to 1375 and 1680.",
+          "Source claims are hard-coded into a build script rather than extracted from retained captures."
+        ],
+        "rightsBoundary": "No quotation-reuse or snapshot rights record is stored.",
+        "caveats": [
+          "The layer cannot support a first-use claim or a verified source-bound date ledger."
+        ]
+      },
+      {
+        "id": "capture-wikinews-search-snippets",
+        "path": "src/data/generated/forever_modern_context.json",
+        "role": "generated-capture",
+        "authorityLevel": "generated-capture-without-upstream-raw",
+        "sha256": "a9217551e888929c8ccb776e3958552fd57155acd22f928737eee345239a9982",
+        "byteLength": 37994,
+        "productionAuthority": false,
+        "fields": [
+          "queries[]",
+          "snippets[].{id,sourceUrl,title,year,dateBasis,query,quote,rightsStatus}",
+          "phrases[].{phrase,count,documentFrequency,relatedSnippetIds}",
+          "collocates[].{token,count,documentFrequency,relatedSnippetIds}"
+        ],
+        "granularity": "one retained MediaWiki search-result snippet per title+snippet key",
+        "recordCounts": {
+          "registeredQueries": 10,
+          "snippetRows": 17,
+          "uniqueSourceUrls": 16,
+          "phraseAggregates": 5,
+          "collocateAggregates": 30
+        },
+        "timeRange": {
+          "start": 2024,
+          "end": 2026,
+          "basis": "search-result revision timestamp",
+          "precision": "year only; not text date, page publication date, or capture date"
+        },
+        "source": "Wikinews",
+        "sourceUrl": "https://en.wikinews.org/w/api.php",
+        "corpus": "Wikinews API search-result snippets",
+        "release": null,
+        "missingness": [
+          "Raw API responses, total hits, continuation state, page IDs, revision IDs, and capture timestamps are absent.",
+          "Queries with no retained snippets do not encode observed-zero versus unavailable/failed search.",
+          "Page publication date and quoted-text date are absent."
+        ],
+        "duplicatePolicy": "Dedupes title+snippet, not page URL/revision/passage; the same page may survive under multiple queries.",
+        "transformHistory": [
+          "Search up to six rows per query; strip HTML; keep snippets containing joined or spaced form.",
+          "Phrase counts count retained snippet rows, and collocates are token counts over snippets.",
+          "Rights label is inferred from revision year rather than exact revision timestamp/license metadata."
+        ],
+        "rightsBoundary": "Wikinews text is open licensed. Articles before 2024-12-16 are generally CC BY 2.5; newer text is CC BY 4.0 unless otherwise specified.",
+        "caveats": [
+          "A single mutable search capture cannot show persistence, survival, prevalence, or time trend."
+        ]
+      },
+      {
+        "id": "derived-forever-dataset",
+        "path": "src/data/generated/forever_dataset.json",
+        "role": "derived-artifact",
+        "authorityLevel": "derived-non-authoritative",
+        "sha256": "aeaf7280aa757722a635f3cac34f086154d0ee5aeeac9a68c02eec6e680ac7ec",
+        "byteLength": 1618403,
+        "productionAuthority": false,
+        "fields": [
+          "frequency[]",
+          "phrases[]",
+          "collocates[]",
+          "snippets[]",
+          "categories[]",
+          "flows[]",
+          "atlas{}",
+          "ledger[]",
+          "network{}",
+          "inspectors[]"
+        ],
+        "granularity": "derived display/interaction rows",
+        "recordCounts": {
+          "frequencySeries": 4,
+          "phrases": 9,
+          "collocates": 21,
+          "snippets": 48,
+          "categories": 6,
+          "flows": 32,
+          "atlasNodes": 95,
+          "atlasEdges": 46,
+          "ledgerCells": 42,
+          "networkNodes": 69,
+          "networkEdges": 68,
+          "inspectors": 482
+        },
+        "timeRange": null,
+        "source": "build_forever_dataset.ts",
+        "sourceUrl": null,
+        "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
+        "release": null,
+        "missingness": [
+          "Upstream missingness is not preserved as a complete typed state model."
+        ],
+        "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
+        "transformHistory": [
+          "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
+        ],
+        "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
+        "caveats": [
+          "Must not be used as raw analysis input or as a research result."
+        ]
+      },
+      {
+        "id": "derived-forever-phrases",
+        "path": "src/data/generated/forever_phrases.json",
+        "role": "derived-artifact",
+        "authorityLevel": "derived-non-authoritative",
+        "sha256": "125aebfa8e6caffc7b82b3a2fe9b4ad862eb4845b8acab05a0c70f90c1a98075",
+        "byteLength": 6653,
+        "productionAuthority": false,
+        "fields": [
+          "derived rows[]"
+        ],
+        "granularity": "derived display/interaction rows",
+        "recordCounts": {
+          "rows": 9
+        },
+        "timeRange": null,
+        "source": "build_forever_dataset.ts",
+        "sourceUrl": null,
+        "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
+        "release": null,
+        "missingness": [
+          "Upstream missingness is not preserved as a complete typed state model."
+        ],
+        "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
+        "transformHistory": [
+          "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
+        ],
+        "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
+        "caveats": [
+          "Must not be used as raw analysis input or as a research result."
+        ]
+      },
+      {
+        "id": "derived-forever-collocates",
+        "path": "src/data/generated/forever_collocates.json",
+        "role": "derived-artifact",
+        "authorityLevel": "derived-non-authoritative",
+        "sha256": "34529366b1e6f2d902216070d98d93e55ff2e07fc95b7242d03a722a226a026e",
+        "byteLength": 13820,
+        "productionAuthority": false,
+        "fields": [
+          "derived rows[]"
+        ],
+        "granularity": "derived display/interaction rows",
+        "recordCounts": {
+          "rows": 21
+        },
+        "timeRange": null,
+        "source": "build_forever_dataset.ts",
+        "sourceUrl": null,
+        "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
+        "release": null,
+        "missingness": [
+          "Upstream missingness is not preserved as a complete typed state model."
+        ],
+        "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
+        "transformHistory": [
+          "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
+        ],
+        "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
+        "caveats": [
+          "Must not be used as raw analysis input or as a research result."
+        ]
+      },
+      {
+        "id": "derived-forever-snippets",
+        "path": "src/data/generated/forever_snippets.json",
+        "role": "derived-artifact",
+        "authorityLevel": "derived-non-authoritative",
+        "sha256": "dc3abb7fbc9acbf41ad3cf8c90a6d94c22202be25bf0e610e4ba09e1d8acfde0",
+        "byteLength": 42879,
+        "productionAuthority": false,
+        "fields": [
+          "derived rows[]"
+        ],
+        "granularity": "derived display/interaction rows",
+        "recordCounts": {
+          "rows": 48
+        },
+        "timeRange": null,
+        "source": "build_forever_dataset.ts",
+        "sourceUrl": null,
+        "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
+        "release": null,
+        "missingness": [
+          "Upstream missingness is not preserved as a complete typed state model."
+        ],
+        "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
+        "transformHistory": [
+          "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
+        ],
+        "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
+        "caveats": [
+          "Must not be used as raw analysis input or as a research result."
+        ]
+      },
+      {
+        "id": "derived-forever-categories",
+        "path": "src/data/generated/forever_categories.json",
+        "role": "derived-artifact",
+        "authorityLevel": "derived-non-authoritative",
+        "sha256": "afb1dc0e9431c48bd76d975746fff5c8bbac582d68829e4435b65b3ddc764045",
+        "byteLength": 15825,
+        "productionAuthority": false,
+        "fields": [
+          "derived rows[]"
+        ],
+        "granularity": "derived display/interaction rows",
+        "recordCounts": {
+          "rows": 6
+        },
+        "timeRange": null,
+        "source": "build_forever_dataset.ts",
+        "sourceUrl": null,
+        "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
+        "release": null,
+        "missingness": [
+          "Upstream missingness is not preserved as a complete typed state model."
+        ],
+        "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
+        "transformHistory": [
+          "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
+        ],
+        "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
+        "caveats": [
+          "Must not be used as raw analysis input or as a research result."
+        ]
+      },
+      {
+        "id": "derived-forever-atlas",
+        "path": "src/data/generated/forever_atlas.json",
+        "role": "derived-artifact",
+        "authorityLevel": "derived-non-authoritative",
+        "sha256": "aa497923f0ecdffdb593108924fa57592b6ac02be6f7cb8eb8dcd71dc05e61ce",
+        "byteLength": 88387,
+        "productionAuthority": false,
+        "fields": [
+          "nodes[]",
+          "edges[]"
+        ],
+        "granularity": "derived display/interaction rows",
+        "recordCounts": {
+          "nodes": 95,
+          "edges": 46
+        },
+        "timeRange": null,
+        "source": "build_forever_dataset.ts",
+        "sourceUrl": null,
+        "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
+        "release": null,
+        "missingness": [
+          "Upstream missingness is not preserved as a complete typed state model."
+        ],
+        "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
+        "transformHistory": [
+          "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
+        ],
+        "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
+        "caveats": [
+          "Must not be used as raw analysis input or as a research result."
+        ]
+      },
+      {
+        "id": "derived-forever-ledger",
+        "path": "src/data/generated/forever_ledger.json",
+        "role": "derived-artifact",
+        "authorityLevel": "derived-non-authoritative",
+        "sha256": "7fa8504c50e0b9b1332ebf12e8332bcc2bf610fed3116ed11f7b134c913fd5b7",
+        "byteLength": 21585,
+        "productionAuthority": false,
+        "fields": [
+          "derived rows[]"
+        ],
+        "granularity": "derived display/interaction rows",
+        "recordCounts": {
+          "rows": 42
+        },
+        "timeRange": null,
+        "source": "build_forever_dataset.ts",
+        "sourceUrl": null,
+        "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
+        "release": null,
+        "missingness": [
+          "Upstream missingness is not preserved as a complete typed state model."
+        ],
+        "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
+        "transformHistory": [
+          "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
+        ],
+        "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
+        "caveats": [
+          "Must not be used as raw analysis input or as a research result."
+        ]
+      },
+      {
+        "id": "consumer-ForeverFormCurrent",
+        "path": "src/components/ForeverFormCurrent.tsx",
+        "role": "render-consumer",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "44f3d7154c52ecfc8c90377bc10d4655d4dfb4456292b73d36dc04dfd0dffe11",
+        "byteLength": 11199,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 219,
+          "generatedAtCalls": 0,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository render code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "consumer-FrequencyTimeline",
+        "path": "src/components/FrequencyTimeline.tsx",
+        "role": "render-consumer",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "9f2754a3949b0336b9ab9f2bcb270c6efb288d13c30529bd0548a9731a34638d",
+        "byteLength": 13356,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 322,
+          "generatedAtCalls": 0,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository render code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "consumer-MobileFrequencyStory",
+        "path": "src/components/MobileFrequencyStory.tsx",
+        "role": "render-consumer",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "b0cf71803324ea519a0af5962834cccd68186905fd8298a1532a2edcb32f5112",
+        "byteLength": 6593,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 146,
+          "generatedAtCalls": 0,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository render code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "consumer-ForeverInstitutionalDoubt",
+        "path": "src/components/ForeverInstitutionalDoubt.tsx",
+        "role": "render-consumer",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "fec0e633179dcfbedbde96c0bbc6e31054b4d7e7815c484f82ea7a9cb69fe9b9",
+        "byteLength": 31594,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 775,
+          "generatedAtCalls": 0,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository render code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "consumer-VariantDriftField",
+        "path": "src/components/VariantDriftField.tsx",
+        "role": "render-consumer",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "e4a4a1d62d88de3f5fa8b5d7b0f2297869e553dcb2546f0633b5152e2466babd",
+        "byteLength": 15167,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 321,
+          "generatedAtCalls": 0,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository render code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "consumer-ContextSignalField",
+        "path": "src/components/ContextSignalField.tsx",
+        "role": "render-consumer",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "28e23e92300b9d9af52e806ac75d0575e311b788f92f29818aee975b5de23bc4",
+        "byteLength": 26531,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 606,
+          "generatedAtCalls": 0,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository render code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "consumer-ForeverAttestationHinge",
+        "path": "src/components/ForeverAttestationHinge.tsx",
+        "role": "render-consumer",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "d67228b6e72c2607e3891cd663d6ce097b65531fd4e05eeefea3efce3a1580d6",
+        "byteLength": 7662,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 148,
+          "generatedAtCalls": 0,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository render code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "consumer-ForeverRecurrenceField",
+        "path": "src/components/ForeverRecurrenceField.tsx",
+        "role": "render-consumer",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "c5fdcb8c683f21e82bdd30992233477f6d04ab272c91ab3da73bd8e5488dea07",
+        "byteLength": 14599,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 286,
+          "generatedAtCalls": 0,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository render code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "consumer-ForeverPoster",
+        "path": "src/components/ForeverPoster.tsx",
+        "role": "render-consumer",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "c971d43c7f27a7042950d541626cfe7a4ec7b54489d4f20c2b27956dfb0639b3",
+        "byteLength": 29597,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 738,
+          "generatedAtCalls": 0,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository render code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "consumer-page",
+        "path": "src/app/words/forever/page.tsx",
+        "role": "render-consumer",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "3d5ea6fa0182f764f65673ef84c14aa190c170b6691b32e9d3b38c9f9327616b",
+        "byteLength": 826,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 22,
+          "generatedAtCalls": 0,
+          "exportedConstants": 1
+        },
+        "timeRange": null,
+        "source": "repository render code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "consumer-ForeverMobileDataGate",
+        "path": "src/components/forever/mobile/ForeverMobileDataGate.tsx",
+        "role": "render-consumer",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "3ffeaf50e38e243fa41e88666e897a9b6e8c9e76de818aaf35d684342db1045e",
+        "byteLength": 7355,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 199,
+          "generatedAtCalls": 0,
+          "exportedConstants": 0
+        },
+        "timeRange": null,
+        "source": "repository render code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "consumer-site",
+        "path": "src/lib/site.ts",
+        "role": "render-consumer",
+        "authorityLevel": "source-code-audit-only",
+        "sha256": "ed37f8e78a3455f20fc9762d011cde6d4a169307d68a077b62d9794ab68471c0",
+        "byteLength": 25867,
+        "productionAuthority": false,
+        "fields": [
+          "TypeScript source text",
+          "hard-coded query/filter/transform/coordinate literals"
+        ],
+        "granularity": "source file",
+        "recordCounts": {
+          "sourceLines": 759,
+          "generatedAtCalls": 0,
+          "exportedConstants": 4
+        },
+        "timeRange": null,
+        "source": "repository render code",
+        "sourceUrl": null,
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Source code cannot substitute for retained raw records or an explicit missingness state."
+        ],
+        "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+        "transformHistory": [
+          "Audited for manually encoded research claims or visual mappings."
+        ],
+        "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+        "caveats": [
+          "May contain untraceable transforms/geometry and is excluded from research authority."
+        ]
+      },
+      {
+        "id": "source-google-ngram-official-authority",
+        "path": "docs/research/forever/sources/google-ngram-official-authority.json",
+        "role": "source-record",
+        "authorityLevel": "official-source-reference",
+        "sha256": "c752c5308cadedd0f188663ab5c58ed67fd503a5a01b1dd376e7ad2c9b614b6f",
+        "byteLength": 2823,
+        "productionAuthority": false,
+        "fields": [
+          "sourceRecords[].{id,publisher,title,url,accessedOn,official}",
+          "sourceRecords[].{applicableClaim,repositoryUse,sourceLocation,captureStatus,rightsBoundary}"
+        ],
+        "granularity": "one repository-retained authority/provenance record per official Google documentation claim",
+        "recordCounts": {
+          "sourceRecords": 3
+        },
+        "timeRange": null,
+        "source": "Google Books Ngram Viewer Team official documentation",
+        "sourceUrl": "https://books.google.com/ngrams/info",
+        "corpus": null,
+        "release": null,
+        "missingness": [
+          "Official page HTML is not vendored; the URL, access date, location, and paraphrased claim are retained."
+        ],
+        "duplicatePolicy": "One record per authority question; denominator, release mutability, and official-download boundary remain separate.",
+        "transformHistory": [
+          "Manually transcribed as a paraphrased source authority record; no numeric research result is extracted."
+        ],
+        "rightsBoundary": "Reference metadata and paraphrase only; no official page or dataset content is redistributed.",
+        "caveats": [
+          "This record establishes denominator semantics and source boundaries, not raw observations or a pinned corpus release."
+        ]
+      }
+    ],
+    "upstreamRawPresent": false,
+    "coverageManifestPresent": false,
+    "transformManifestPresent": false,
+    "rightsManifestPresent": false
+  },
+  "findingsRegistry": {
+    "schemaVersion": "1.0.0",
+    "auditId": "forever-raw-audit-2026-08-11",
+    "dataGate": "STOP_RAW_DATA_MISSING",
+    "findings": [
+      {
+        "id": "finding-ngram-denominator",
+        "status": "audited-blocker",
+        "productionEligible": false,
+        "question": "Can joined 'forever' and spaced 'for ever' share an appearances-per-million scale?",
+        "rawFields": [
+          {
+            "path": "src/data/generated/forever_frequency.json",
+            "selector": "series[query in {'forever','for ever'}]",
+            "fields": [
+              "query",
+              "points[].value",
+              "source.corpus",
+              "source.url"
+            ]
+          },
+          {
+            "path": "docs/research/forever/sources/google-ngram-official-authority.json",
+            "selector": "sourceRecords[id='google-ngram-viewer-denominator']",
+            "fields": [
+              "url",
+              "applicableClaim",
+              "sourceLocation",
+              "accessedOn"
+            ]
+          }
+        ],
+        "filters": [
+          "query is exactly 'forever' or 'for ever'",
+          "smoothing=0",
+          "case_insensitive=false"
+        ],
+        "grouping": [
+          "query",
+          "year"
+        ],
+        "denominator": "Viewer-specific all-unigram denominator for forever; all-bigram denominator for for ever",
+        "transformFormula": "Viewer fraction × 1,000,000, with unit retained by n-gram order",
+        "result": {
+          "summary": "Only option B is present: separate Viewer-normalized facets; a shared joined/spaced scale is invalid.",
+          "values": {
+            "foreverOrder": 1,
+            "forEverOrder": 2,
+            "rawMatchCountsAvailable": false,
+            "annualWordTokenTotalsAvailable": false,
+            "sharedScaleAllowed": false
+          }
+        },
+        "caveat": [
+          "Corpus release is not pinned.",
+          "No raw response or official bulk rows are retained."
+        ],
+        "sourceRowsFiles": [
+          {
+            "path": "src/data/generated/forever_frequency.json",
+            "selector": "source",
+            "fields": [
+              "corpus",
+              "url",
+              "smoothing",
+              "startYear",
+              "endYear"
+            ]
+          },
+          {
+            "path": "scripts/fetch_ngram_forever.ts",
+            "selector": "URL construction and response mapping",
+            "fields": [
+              "content",
+              "corpus",
+              "smoothing",
+              "case_insensitive",
+              "timeseries"
+            ]
+          },
+          {
+            "path": "docs/research/forever/sources/google-ngram-official-authority.json",
+            "selector": "sourceRecords[id in {'google-ngram-viewer-denominator','google-ngram-viewer-release-mutation'}]",
+            "fields": [
+              "publisher",
+              "title",
+              "url",
+              "accessedOn",
+              "applicableClaim",
+              "repositoryUse"
+            ]
+          }
+        ],
+        "blockedByGapIds": [
+          "gap-google-raw-response-release",
+          "gap-google-common-denominator"
+        ]
+      },
+      {
+        "id": "finding-ngram-window",
+        "status": "audited-limited-result",
+        "productionEligible": false,
+        "question": "What is the actual granularity of the historical 323-row Forever table?",
+        "rawFields": [
+          {
+            "path": "src/data/generated/forever_frequency.json",
+            "selector": "series[query='forever'].points",
+            "fields": [
+              "year",
+              "value",
+              "frequencyPerMillion"
+            ]
+          }
+        ],
+        "filters": [
+          "query='forever'",
+          "1700 <= year <= 2022"
+        ],
+        "grouping": [
+          "one row per year"
+        ],
+        "denominator": "all unigrams in each Viewer corpus-year",
+        "transformFormula": "inclusive filter; row_count = 2022 - 1700 + 1",
+        "result": {
+          "summary": "The table is 323 Viewer-normalized annual unigram observations, not 323 raw match-count rows.",
+          "values": {
+            "rowCount": 323,
+            "firstYear": 1700,
+            "lastYear": 2022
+          }
+        },
+        "caveat": [
+          "Numeric zero is not a typed missingness state.",
+          "The raw API response is absent."
+        ],
+        "sourceRowsFiles": [
+          {
+            "path": "src/data/generated/forever_frequency.json",
+            "selector": "series[query='forever'].points[1700..2022]",
+            "fields": [
+              "year",
+              "value"
+            ]
+          }
+        ],
+        "blockedByGapIds": [
+          "gap-google-raw-response-release"
+        ]
+      },
+      {
+        "id": "finding-gutenberg-inventory",
+        "status": "audited-limited-result",
+        "productionEligible": false,
+        "question": "What joined/spaced counts exist inside the selected Gutenberg inventory?",
+        "rawFields": [
+          {
+            "path": "src/data/generated/forever_gutenberg_sources.json",
+            "selector": "sources[] and sources[].occurrences[kind='form']",
+            "fields": [
+              "id",
+              "year",
+              "tokenCount",
+              "kind",
+              "phrase",
+              "tokenIndex"
+            ]
+          }
+        ],
+        "filters": [
+          "23 manually selected works",
+          "occurrence.kind='form'",
+          "phrase exactly 'forever' or 'for ever'"
+        ],
+        "grouping": [
+          "form",
+          "selected work"
+        ],
+        "denominator": "token count inside the selected 23 processed texts only",
+        "transformFormula": "count exact form rows; rate, if used, must equal form_count / selected_text_tokens × 1,000,000",
+        "result": {
+          "summary": "The generated inventory separates joined and spaced forms, but it is selected-corpus evidence without retained raw texts.",
+          "values": {
+            "selectedWorks": 23,
+            "tokens": 3249043,
+            "joinedOccurrences": 133,
+            "spacedOccurrences": 188,
+            "allFormOccurrences": 321
+          }
+        },
+        "caveat": [
+          "Not representative of print generally.",
+          "Hyphenated forms may be conflated.",
+          "Edition/translation dates are unresolved."
+        ],
+        "sourceRowsFiles": [
+          {
+            "path": "src/data/generated/forever_gutenberg_sources.json",
+            "selector": "sources[].occurrences[kind='form']",
+            "fields": [
+              "phrase",
+              "tokenIndex",
+              "snippet"
+            ]
+          }
+        ],
+        "blockedByGapIds": [
+          "gap-gutenberg-raw-texts-metadata",
+          "gap-canonical-form-registry"
+        ]
+      },
+      {
+        "id": "finding-gutenberg-duplicates",
+        "status": "audited-blocker",
+        "productionEligible": false,
+        "question": "Does one generated Gutenberg occurrence row equal one unique source passage position?",
+        "rawFields": [
+          {
+            "path": "src/data/generated/forever_gutenberg_sources.json",
+            "selector": "sources[].occurrences[]",
+            "fields": [
+              "source id",
+              "kind",
+              "phrase",
+              "tokenIndex"
+            ]
+          }
+        ],
+        "filters": [
+          "all generated occurrence rows"
+        ],
+        "grouping": [
+          "source id + tokenIndex"
+        ],
+        "denominator": "generated occurrence rows versus unique source-token positions",
+        "transformFormula": "duplicate_role_rows = occurrence_rows - unique(source_id, tokenIndex)",
+        "result": {
+          "summary": "Phrase and form roles create repeated source-token positions; a record-level figure must dedupe passages before counting.",
+          "values": {
+            "occurrenceRows": 332,
+            "uniqueSourceTokenPositions": 329,
+            "duplicateRoleRows": 3
+          }
+        },
+        "caveat": [
+          "A future passage ID should distinguish one verified passage from its multiple analytic roles."
+        ],
+        "sourceRowsFiles": [
+          {
+            "path": "src/data/generated/forever_gutenberg_sources.json",
+            "selector": "sources[].occurrences[]",
+            "fields": [
+              "kind",
+              "phrase",
+              "tokenIndex"
+            ]
+          }
+        ],
+        "blockedByGapIds": [
+          "gap-gutenberg-raw-texts-metadata"
+        ]
+      },
+      {
+        "id": "finding-prehistory-provenance",
+        "status": "audited-blocker",
+        "productionEligible": false,
+        "question": "Can current attestation claims support a source-bound date ledger?",
+        "rawFields": [
+          {
+            "path": "src/data/generated/forever_prehistory.json",
+            "selector": "records[]",
+            "fields": [
+              "form",
+              "dateLabel",
+              "yearApproximation",
+              "quote",
+              "verificationStatus",
+              "confidence",
+              "sourceUrl"
+            ]
+          }
+        ],
+        "filters": [
+          "all attestation records"
+        ],
+        "grouping": [
+          "form",
+          "source claim"
+        ],
+        "denominator": "not applicable; claim ledger",
+        "transformFormula": "count records, blank quotations, and verification states",
+        "result": {
+          "summary": "No: all quotations are blank and the layer contains unresolved secondary-source conflicts.",
+          "values": {
+            "claims": 6,
+            "blankQuotes": 6,
+            "conflictingClaims": 1
+          }
+        },
+        "caveat": [
+          "Approximate century labels are converted into exact-looking numeric coordinates."
+        ],
+        "sourceRowsFiles": [
+          {
+            "path": "src/data/generated/forever_prehistory.json",
+            "selector": "records[]",
+            "fields": [
+              "id",
+              "dateLabel",
+              "yearApproximation",
+              "sourceName",
+              "sourceUrl"
+            ]
+          }
+        ],
+        "blockedByGapIds": [
+          "gap-attestation-primary-records"
+        ]
+      },
+      {
+        "id": "finding-modern-capture",
+        "status": "audited-blocker",
+        "productionEligible": false,
+        "question": "Can the Wikinews capture show modern persistence or a source/date matrix?",
+        "rawFields": [
+          {
+            "path": "src/data/generated/forever_modern_context.json",
+            "selector": "queries[] and snippets[]",
+            "fields": [
+              "query",
+              "sourceUrl",
+              "title",
+              "year",
+              "dateBasis",
+              "quote",
+              "rightsStatus"
+            ]
+          }
+        ],
+        "filters": [
+          "retained snippets containing joined or spaced form",
+          "maximum six search rows per query"
+        ],
+        "grouping": [
+          "query",
+          "source URL"
+        ],
+        "denominator": "none; API search-result inventory",
+        "transformFormula": "count retained snippet rows and unique source URLs; find registered queries with no retained row",
+        "result": {
+          "summary": "The capture is a mutable one-time inventory, with one duplicate page across queries and no typed zero-result state.",
+          "values": {
+            "registeredQueries": 10,
+            "snippetRows": 17,
+            "uniqueSourceUrls": 16,
+            "duplicateUrlRows": 1,
+            "queriesWithoutRetainedRows": [
+              "\"takes forever\"",
+              "\"online forever\"",
+              "\"internet forever\"",
+              "\"digital forever\""
+            ]
+          }
+        },
+        "caveat": [
+          "Revision year is not page publication date, quoted-text date, or capture date.",
+          "Snippet-row counts are not occurrences in page text."
+        ],
+        "sourceRowsFiles": [
+          {
+            "path": "src/data/generated/forever_modern_context.json",
+            "selector": "snippets[]",
+            "fields": [
+              "id",
+              "query",
+              "sourceUrl",
+              "year",
+              "dateBasis"
+            ]
+          }
+        ],
+        "blockedByGapIds": [
+          "gap-modern-raw-api-pages",
+          "gap-coverage-rights-transform-manifests"
+        ]
+      },
+      {
+        "id": "finding-derived-authority",
+        "status": "audited-blocker",
+        "productionEligible": false,
+        "question": "Which current derived layers cannot continue as research results?",
+        "rawFields": [
+          {
+            "path": "scripts/build_forever_dataset.ts",
+            "selector": "simpleLogDice, flows, categories, ledger, atlas, network",
+            "fields": [
+              "counts",
+              "frequencyPerMillion",
+              "manual positions",
+              "heuristic weights"
+            ]
+          },
+          {
+            "path": "src/data/generated/forever_dataset.json",
+            "selector": "derived arrays",
+            "fields": [
+              "flows",
+              "atlas",
+              "network",
+              "categories",
+              "ledger",
+              "inspectors"
+            ]
+          }
+        ],
+        "filters": [
+          "all transforms without a finding/figure contract and all cross-denominator aggregates"
+        ],
+        "grouping": [
+          "derived layer"
+        ],
+        "denominator": "mixed or unregistered",
+        "transformFormula": "audit source code for mixed units, candidateCount=jointCount scoring, manual coordinates, and heuristic weights",
+        "result": {
+          "summary": "Flows, atlas/network geometry, heuristic category/ledger scores, selected snippets, and score arrays are excluded from research authority.",
+          "values": {
+            "flows": 32,
+            "atlasNodes": 95,
+            "networkNodes": 69,
+            "inspectors": 482
+          }
+        },
+        "caveat": [
+          "These may be editorial design artifacts, but cannot be presented as measured findings."
+        ],
+        "sourceRowsFiles": [
+          {
+            "path": "scripts/build_forever_dataset.ts",
+            "selector": "derived transforms",
+            "fields": [
+              "simpleLogDice",
+              "flows",
+              "network positions",
+              "sourceLayers.comparable"
+            ]
+          }
+        ],
+        "blockedByGapIds": [
+          "gap-canonical-form-registry",
+          "gap-coverage-rights-transform-manifests"
+        ]
+      }
+    ]
+  },
+  "figureContractRegistry": {
+    "schemaVersion": "1.0.0",
+    "auditId": "forever-raw-audit-2026-08-11",
+    "dataGate": "STOP_RAW_DATA_MISSING",
+    "productionEligibleCount": 0,
+    "contracts": [
+      {
+        "id": "contract-coverage-matrix",
+        "candidatePanel": "Evidence coverage matrix",
+        "findingIds": [
+          "finding-modern-capture",
+          "finding-gutenberg-inventory"
+        ],
+        "productionEligible": false,
+        "eligibilityReason": "No typed coverage manifest distinguishes observed zero, not searched, unavailable, and incomparable.",
+        "researchQuestion": "Which source layers actually cover each period and evidence type?",
+        "rawFilesAndFields": [
+          {
+            "path": "src/data/generated/forever_frequency.json",
+            "selector": "source/series",
+            "fields": [
+              "year",
+              "query"
+            ]
+          },
+          {
+            "path": "src/data/generated/forever_gutenberg_sources.json",
+            "selector": "sources[]",
+            "fields": [
+              "year",
+              "tokenCount"
+            ]
+          },
+          {
+            "path": "src/data/generated/forever_modern_context.json",
+            "selector": "queries/snippets",
+            "fields": [
+              "query",
+              "year"
+            ]
+          }
+        ],
+        "recordGranularityAndN": {
+          "granularity": "dataset × period × coverage state",
+          "n": {
+            "currentDatasets": 4
+          }
+        },
+        "filters": [
+          "registered search scope only"
+        ],
+        "grouping": [
+          "dataset",
+          "year/decade",
+          "document/token/record coverage state"
+        ],
+        "denominator": "registered source universe per layer",
+        "formulaTransform": "coverage state derived from retained search/capture log, never from numeric zero",
+        "unit": "documents, tokens, records, and explicit coverage state",
+        "visualChannelMapping": [
+          {
+            "channel": "cell text + shape",
+            "field": "coverage state",
+            "mapping": "distinct redundant state marker"
+          },
+          {
+            "channel": "facet",
+            "field": "dataset",
+            "mapping": "one source layer per facet"
+          }
+        ],
+        "validInterpretation": [
+          "Where evidence is present, absent, unsearched, unavailable, or incomparable."
+        ],
+        "prohibitedInterpretation": [
+          "A blank area is evidence of zero usage."
+        ],
+        "missingnessErrorSourceLimitations": [
+          "Coverage state is not retained for current captures."
+        ],
+        "localDisclosureRequirements": [
+          "state legend",
+          "n by layer",
+          "source/release",
+          "coverage limitation"
+        ],
+        "blockedByGapIds": [
+          "gap-coverage-rights-transform-manifests",
+          "gap-gutenberg-raw-texts-metadata",
+          "gap-modern-raw-api-pages"
+        ]
+      },
+      {
+        "id": "contract-viewer-facets",
+        "candidatePanel": "Viewer-normalized form facets",
+        "findingIds": [
+          "finding-ngram-denominator",
+          "finding-ngram-window"
+        ],
+        "productionEligible": false,
+        "eligibilityReason": "Separate-unit option B is analytically possible, but the raw response and explicit corpus release are not retained.",
+        "researchQuestion": "How does each registered form move within its own Google Viewer denominator?",
+        "rawFilesAndFields": [
+          {
+            "path": "src/data/generated/forever_frequency.json",
+            "selector": "series[].points[]",
+            "fields": [
+              "query",
+              "year",
+              "value"
+            ]
+          }
+        ],
+        "recordGranularityAndN": {
+          "granularity": "query-year Viewer observation",
+          "n": {
+            "forever": 523,
+            "for ever": 523,
+            "forevermore": 523,
+            "forever and ever": 523
+          }
+        },
+        "filters": [
+          "smoothing=0",
+          "case_insensitive=false"
+        ],
+        "grouping": [
+          "ngram order",
+          "query",
+          "year"
+        ],
+        "denominator": "separate all-unigram/all-bigram/all-trigram corpus-year totals",
+        "formulaTransform": "Viewer fraction × 1,000,000; no cross-order arithmetic",
+        "unit": "per million unigrams OR per million bigrams OR per million trigrams, locally labeled",
+        "visualChannelMapping": [
+          {
+            "channel": "facet",
+            "field": "ngram order",
+            "mapping": "never share an axis across orders"
+          },
+          {
+            "channel": "x",
+            "field": "year",
+            "mapping": "linear time"
+          },
+          {
+            "channel": "y",
+            "field": "Viewer fraction",
+            "mapping": "within-facet fixed unit"
+          }
+        ],
+        "validInterpretation": [
+          "Within-series movement and same-order comparison after release is pinned."
+        ],
+        "prohibitedInterpretation": [
+          "joined/spaced share, ratio, crossover, overtaking, delta, or orthographic dominance"
+        ],
+        "missingnessErrorSourceLimitations": [
+          "Zero/missing ambiguity",
+          "corpus alias is unpinned",
+          "raw response absent"
+        ],
+        "localDisclosureRequirements": [
+          "exact unit per facet",
+          "corpus/release",
+          "smoothing",
+          "n/year range",
+          "zero/missing caveat"
+        ],
+        "blockedByGapIds": [
+          "gap-google-raw-response-release",
+          "gap-coverage-rights-transform-manifests"
+        ]
+      },
+      {
+        "id": "contract-transition-robustness",
+        "candidatePanel": "Transition robustness field",
+        "findingIds": [
+          "finding-ngram-denominator"
+        ],
+        "productionEligible": false,
+        "eligibilityReason": "Common denominator and multiple pinned corpus/release/smoothing analyses are absent.",
+        "researchQuestion": "Does a joined/spaced transition conclusion survive corpus, release, and smoothing choices?",
+        "rawFilesAndFields": [
+          {
+            "path": "docs/research/forever/raw/google/common-denominator.json",
+            "selector": "source-bound TSV paths plus registered analysis window",
+            "fields": [
+              "source.match_rows_path",
+              "source.annual_totals_path",
+              "source.release",
+              "analysisWindow.startYear",
+              "analysisWindow.endYear",
+              "TSV: form,ngram_order,year,match_count,annual_word_tokens,release"
+            ]
+          }
+        ],
+        "recordGranularityAndN": {
+          "granularity": "form × year × corpus release × smoothing specification",
+          "n": {}
+        },
+        "filters": [
+          "preregistered complete years/forms"
+        ],
+        "grouping": [
+          "corpus",
+          "release",
+          "smoothing"
+        ],
+        "denominator": "same-release annual word-token total",
+        "formulaTransform": "raw_match_count / annual_word_tokens × 1,000,000; sensitivity grid",
+        "unit": "appearances per million words",
+        "visualChannelMapping": [
+          {
+            "channel": "facet",
+            "field": "corpus/release",
+            "mapping": "one fixed cell per specification"
+          },
+          {
+            "channel": "symbol",
+            "field": "conclusion stability",
+            "mapping": "stable/unstable/indeterminate"
+          }
+        ],
+        "validInterpretation": [
+          "Sensitivity of a preregistered conclusion."
+        ],
+        "prohibitedInterpretation": [
+          "Robustness from one Viewer series or mixed denominators."
+        ],
+        "missingnessErrorSourceLimitations": [
+          "All required raw bulk rows/totals are missing."
+        ],
+        "localDisclosureRequirements": [
+          "formula",
+          "release",
+          "specification count",
+          "missing years"
+        ],
+        "blockedByGapIds": [
+          "gap-google-common-denominator",
+          "gap-google-raw-response-release"
+        ]
+      },
+      {
+        "id": "contract-orthographic-family",
+        "candidatePanel": "Orthographic-family small multiples",
+        "findingIds": [
+          "finding-ngram-denominator"
+        ],
+        "productionEligible": false,
+        "eligibilityReason": "No canonical preregistered complete family and no valid shared scale across all current forms.",
+        "researchQuestion": "How do all preregistered family forms vary on a genuinely common scale?",
+        "rawFilesAndFields": [
+          {
+            "path": "docs/research/forever/raw/forever-form-registry.json",
+            "selector": "forms[] and analysisWindow",
+            "fields": [
+              "form",
+              "ngramOrder",
+              "casePolicy",
+              "joinedSpacedPolicy",
+              "hyphenPolicy",
+              "queryPreregistered"
+            ]
+          },
+          {
+            "path": "docs/research/forever/raw/google/common-denominator.json",
+            "selector": "checksum-bound match rows and annual totals",
+            "fields": [
+              "form",
+              "ngram_order",
+              "year",
+              "match_count",
+              "annual_word_tokens",
+              "release"
+            ]
+          }
+        ],
+        "recordGranularityAndN": {
+          "granularity": "form-year",
+          "n": {}
+        },
+        "filters": [
+          "all preregistered forms; no post hoc omission"
+        ],
+        "grouping": [
+          "form",
+          "year"
+        ],
+        "denominator": "common annual word-token total",
+        "formulaTransform": "raw_match_count / annual_word_tokens × 1,000,000",
+        "unit": "appearances per million words",
+        "visualChannelMapping": [
+          {
+            "channel": "shared y",
+            "field": "rate",
+            "mapping": "one fixed scale for every multiple"
+          },
+          {
+            "channel": "facet",
+            "field": "form",
+            "mapping": "one form per panel"
+          }
+        ],
+        "validInterpretation": [
+          "Relative magnitude and shape on a verified common scale."
+        ],
+        "prohibitedInterpretation": [
+          "Independent shape scales or incomplete post hoc form selection."
+        ],
+        "missingnessErrorSourceLimitations": [
+          "Canonical registry and raw denominator inputs are absent."
+        ],
+        "localDisclosureRequirements": [
+          "complete form list",
+          "shared axis",
+          "n",
+          "release",
+          "missingness"
+        ],
+        "blockedByGapIds": [
+          "gap-canonical-form-registry",
+          "gap-google-common-denominator"
+        ]
+      },
+      {
+        "id": "contract-date-ledger",
+        "candidatePanel": "Source-bound date ledger",
+        "findingIds": [
+          "finding-prehistory-provenance"
+        ],
+        "productionEligible": false,
+        "eligibilityReason": "Current records lack quotations/editions and turn approximate labels into exact-looking years.",
+        "researchQuestion": "What date does each source actually establish, and at what precision?",
+        "rawFilesAndFields": [
+          {
+            "path": "src/data/generated/forever_prehistory.json",
+            "selector": "records[]",
+            "fields": [
+              "form",
+              "dateLabel",
+              "yearApproximation",
+              "sourceUrl",
+              "quote",
+              "verificationStatus"
+            ]
+          }
+        ],
+        "recordGranularityAndN": {
+          "granularity": "one verified source-bound claim",
+          "n": {
+            "currentUnverifiedClaims": 6
+          }
+        },
+        "filters": [
+          "verified quotation and edition required"
+        ],
+        "grouping": [
+          "date basis: composition/publication/edition/dictionary report"
+        ],
+        "denominator": "not applicable",
+        "formulaTransform": "retain original temporal precision; do not coerce century labels to exact point dates",
+        "unit": "source date with precision/uncertainty",
+        "visualChannelMapping": [
+          {
+            "channel": "position/interval",
+            "field": "date precision",
+            "mapping": "point only for exact date; bounded band for uncertainty"
+          },
+          {
+            "channel": "text",
+            "field": "date basis",
+            "mapping": "composition/publication/edition/report"
+          }
+        ],
+        "validInterpretation": [
+          "What each verified source claims at its actual precision."
+        ],
+        "prohibitedInterpretation": [
+          "First use, or a rail implying an interval/relationship between conflicting claims."
+        ],
+        "missingnessErrorSourceLimitations": [
+          "Six of six quotes are blank; conflict unresolved."
+        ],
+        "localDisclosureRequirements": [
+          "quotation",
+          "edition",
+          "date basis",
+          "verification",
+          "rights"
+        ],
+        "blockedByGapIds": [
+          "gap-attestation-primary-records",
+          "gap-coverage-rights-transform-manifests"
+        ]
+      },
+      {
+        "id": "contract-gutenberg-inventory",
+        "candidatePanel": "Selected Gutenberg form inventory",
+        "findingIds": [
+          "finding-gutenberg-inventory",
+          "finding-gutenberg-duplicates"
+        ],
+        "productionEligible": false,
+        "eligibilityReason": "Potentially substantive within-sample panel, but raw texts, edition metadata, selection manifest, and passage dedupe IDs are missing.",
+        "researchQuestion": "Within the explicitly selected texts, where do joined and spaced forms occur relative to token exposure?",
+        "rawFilesAndFields": [
+          {
+            "path": "src/data/generated/forever_gutenberg_sources.json",
+            "selector": "sources[]/occurrences[]",
+            "fields": [
+              "id",
+              "title",
+              "year",
+              "tokenCount",
+              "kind",
+              "phrase",
+              "tokenIndex",
+              "snippet"
+            ]
+          }
+        ],
+        "recordGranularityAndN": {
+          "granularity": "selected work and deduped passage",
+          "n": {
+            "selectedWorks": 23
+          }
+        },
+        "filters": [
+          "kind='form'",
+          "exact registered joined/spaced policy",
+          "one passage ID once"
+        ],
+        "grouping": [
+          "work",
+          "form",
+          "edition-date band"
+        ],
+        "denominator": "tokens in each retained selected text",
+        "formulaTransform": "form_count / text_tokens × 1,000,000; preserve record-level passage rows",
+        "unit": "occurrences per million selected-text tokens plus raw counts",
+        "visualChannelMapping": [
+          {
+            "channel": "facet",
+            "field": "form",
+            "mapping": "joined/spaced"
+          },
+          {
+            "channel": "position",
+            "field": "work/edition date",
+            "mapping": "verified date"
+          },
+          {
+            "channel": "size + label",
+            "field": "count/rate",
+            "mapping": "redundant value encoding"
+          }
+        ],
+        "validInterpretation": [
+          "Inventory of the declared selected texts only."
+        ],
+        "prohibitedInterpretation": [
+          "Population trend, orthographic dominance, or general literary frequency."
+        ],
+        "missingnessErrorSourceLimitations": [
+          "Selected sample",
+          "raw texts/editions absent",
+          "hyphen conflation risk",
+          "three duplicate role rows"
+        ],
+        "localDisclosureRequirements": [
+          "selected n",
+          "token denominator",
+          "selection rule",
+          "edition caveat",
+          "passage provenance"
+        ],
+        "blockedByGapIds": [
+          "gap-gutenberg-raw-texts-metadata",
+          "gap-canonical-form-registry"
+        ]
+      },
+      {
+        "id": "contract-modern-matrix",
+        "candidatePanel": "Modern capture/source matrix",
+        "findingIds": [
+          "finding-modern-capture"
+        ],
+        "productionEligible": false,
+        "eligibilityReason": "Raw search responses/page revisions, zero-result state, and three distinct date fields are absent.",
+        "researchQuestion": "What did one dated modern capture retrieve, from which source page/revision, for which query?",
+        "rawFilesAndFields": [
+          {
+            "path": "src/data/generated/forever_modern_context.json",
+            "selector": "queries[]/snippets[]",
+            "fields": [
+              "query",
+              "sourceUrl",
+              "title",
+              "year",
+              "dateBasis",
+              "quote",
+              "rightsStatus"
+            ]
+          }
+        ],
+        "recordGranularityAndN": {
+          "granularity": "unique page revision/passage per query capture",
+          "n": {
+            "currentSnippetRows": 17,
+            "currentUniqueUrls": 16
+          }
+        },
+        "filters": [
+          "dedupe page revision + passage hash",
+          "record zero-result queries"
+        ],
+        "grouping": [
+          "source facet",
+          "query",
+          "text date",
+          "page publication date",
+          "capture date"
+        ],
+        "denominator": "captured search inventory; no prevalence denominator",
+        "formulaTransform": "dedupe exact page-revision-passage; retain separate date fields",
+        "unit": "unique captured passage records",
+        "visualChannelMapping": [
+          {
+            "channel": "row",
+            "field": "unique passage",
+            "mapping": "one record"
+          },
+          {
+            "channel": "columns",
+            "field": "date types",
+            "mapping": "text/publication/capture dates"
+          },
+          {
+            "channel": "facet",
+            "field": "source",
+            "mapping": "Gutenberg and Wikinews never merged"
+          }
+        ],
+        "validInterpretation": [
+          "Contents of one documented inventory capture."
+        ],
+        "prohibitedInterpretation": [
+          "Persistence, survival, prevalence, or modern trend."
+        ],
+        "missingnessErrorSourceLimitations": [
+          "Mutable snippets",
+          "one duplicate URL row",
+          "four queries lack typed search outcome",
+          "license inferred from year"
+        ],
+        "localDisclosureRequirements": [
+          "capture timestamp",
+          "query",
+          "result total",
+          "page/revision ID",
+          "date bases",
+          "license"
+        ],
+        "blockedByGapIds": [
+          "gap-modern-raw-api-pages",
+          "gap-coverage-rights-transform-manifests"
+        ]
+      }
+    ]
+  },
+  "requiredRawGaps": [
+    {
+      "id": "gap-canonical-form-registry",
+      "priority": "P0",
+      "missingFilesOrFields": [
+        "one canonical term/form registry",
+        "ngram order",
+        "case policy",
+        "joined/spaced/hyphen policy",
+        "query preregistration"
+      ],
+      "whyRequired": "Current form lists are fragmented and inconsistent across Ngram, Gutenberg, prehistory, and modern scripts.",
+      "officialSourceBoundary": "Repository-authored registry; source query strings must remain exact and versioned.",
+      "blocksFindingIds": [
+        "finding-gutenberg-inventory",
+        "finding-derived-authority"
+      ],
+      "blocksContractIds": [
+        "contract-orthographic-family",
+        "contract-gutenberg-inventory"
+      ]
+    },
+    {
+      "id": "gap-google-raw-response-release",
+      "priority": "P0",
+      "missingFilesOrFields": [
+        "exact raw Viewer response",
+        "request manifest",
+        "explicit Google corpus release",
+        "response checksum",
+        "parent/type fields"
+      ],
+      "whyRequired": "The generated series discards response fields and pins only the mutable corpus alias 'en'.",
+      "officialSourceBoundary": "Google official Viewer/API or official downloadable Ngram release only.",
+      "blocksFindingIds": [
+        "finding-ngram-denominator",
+        "finding-ngram-window"
+      ],
+      "blocksContractIds": [
+        "contract-viewer-facets",
+        "contract-transition-robustness"
+      ]
+    },
+    {
+      "id": "gap-google-common-denominator",
+      "priority": "P0",
+      "missingFilesOrFields": [
+        "official raw match_count rows",
+        "same-release annual word-token totals",
+        "release/shard manifest",
+        "checksums"
+      ],
+      "whyRequired": "A common appearances-per-million-words scale cannot be reconstructed from Viewer normalized fractions.",
+      "officialSourceBoundary": "Google official downloadable Ngram shards and same-release total-count files only; no blog or third-party reconstruction.",
+      "blocksFindingIds": [
+        "finding-ngram-denominator"
+      ],
+      "blocksContractIds": [
+        "contract-transition-robustness",
+        "contract-orthographic-family"
+      ]
+    },
+    {
+      "id": "gap-gutenberg-raw-texts-metadata",
+      "priority": "P0",
+      "missingFilesOrFields": [
+        "23 retained official text files",
+        "Gutenberg metadata/release/update",
+        "edition/translator/language",
+        "capture date",
+        "SHA-256",
+        "selection manifest"
+      ],
+      "whyRequired": "Existing counts and passages cannot be deterministically re-extracted or dated to the wording edition.",
+      "officialSourceBoundary": "Project Gutenberg official files/metadata; passage reuse remains bounded by recorded edition and jurisdiction.",
+      "blocksFindingIds": [
+        "finding-gutenberg-inventory",
+        "finding-gutenberg-duplicates"
+      ],
+      "blocksContractIds": [
+        "contract-coverage-matrix",
+        "contract-gutenberg-inventory"
+      ]
+    },
+    {
+      "id": "gap-attestation-primary-records",
+      "priority": "P0",
+      "missingFilesOrFields": [
+        "source quotation",
+        "edition/publication record",
+        "date precision",
+        "access/snapshot date",
+        "rights",
+        "verification decision"
+      ],
+      "whyRequired": "All six current quotation fields are blank and two secondary claims conflict.",
+      "officialSourceBoundary": "Primary edition/scan or licensed lexical authority with quotation-reuse boundary.",
+      "blocksFindingIds": [
+        "finding-prehistory-provenance"
+      ],
+      "blocksContractIds": [
+        "contract-date-ledger"
+      ]
+    },
+    {
+      "id": "gap-modern-raw-api-pages",
+      "priority": "P0",
+      "missingFilesOrFields": [
+        "10 raw search responses",
+        "total/continuation/zero-result state",
+        "pageid/revid/timestamps",
+        "16 unique revision captures",
+        "page publication/text/capture dates",
+        "license metadata",
+        "passage hashes"
+      ],
+      "whyRequired": "Search snippets are mutable, duplicate one page across queries, and use revision year as the only date.",
+      "officialSourceBoundary": "Wikinews/MediaWiki official API and page revision content only.",
+      "blocksFindingIds": [
+        "finding-modern-capture"
+      ],
+      "blocksContractIds": [
+        "contract-coverage-matrix",
+        "contract-modern-matrix"
+      ]
+    },
+    {
+      "id": "gap-coverage-rights-transform-manifests",
+      "priority": "P0",
+      "missingFilesOrFields": [
+        "coverage manifest",
+        "observed-zero/not-searched/unavailable/incomparable states",
+        "rights manifest",
+        "transform history with versions"
+      ],
+      "whyRequired": "The current files cannot distinguish missing from zero or locally disclose all source/rights boundaries.",
+      "officialSourceBoundary": "Repository-authored manifests grounded in retained official captures.",
+      "blocksFindingIds": [
+        "finding-modern-capture",
+        "finding-derived-authority"
+      ],
+      "blocksContractIds": [
+        "contract-coverage-matrix",
+        "contract-viewer-facets",
+        "contract-date-ledger",
+        "contract-modern-matrix"
+      ]
+    }
+  ],
+  "untraceableResearchInputs": [
+    {
+      "id": "untraceable-legacy-placeholder-registry",
+      "path": "src/data/forever.ts",
+      "locations": [
+        "15-126",
+        "145-293",
+        "343-624"
+      ],
+      "kind": "placeholder sources, raw counts, token totals, frequencies, semantic scores, associations, network, and evidence rows",
+      "reason": "Values exist only as source literals tied to planned/not-selected corpora.",
+      "requiredDisposition": "exclude-from-research-results"
+    },
+    {
+      "id": "untraceable-derived-score-and-flow-arrays",
+      "path": "scripts/build_forever_dataset.ts",
+      "locations": [
+        "475-478",
+        "539-620",
+        "675-719",
+        "987-1095",
+        "1777-1794"
+      ],
+      "kind": "misnamed score, heuristic weighting, mixed-denominator flows, manual geometry, and false comparable flag",
+      "reason": "The transforms lack valid denominators or finding contracts and include manual positions.",
+      "requiredDisposition": "exclude-from-research-results"
+    },
+    {
+      "id": "untraceable-institutional-doubt",
+      "path": "src/components/ForeverInstitutionalDoubt.tsx",
+      "locations": [
+        "15-129",
+        "469-555"
+      ],
+      "kind": "hard-coded evidence cards, branch angles/strengths, historical band frequency/search scores",
+      "reason": "Research-looking values exist only in JSX/geometry literals.",
+      "requiredDisposition": "rebuild-from-registered-finding"
+    },
+    {
+      "id": "untraceable-variant-drift",
+      "path": "src/components/VariantDriftField.tsx",
+      "locations": [
+        "30-46",
+        "71-126"
+      ],
+      "kind": "manual years, coordinates, radii, spreads, heights, and orbit levels",
+      "reason": "Coordinates and semantic anchors are not derived from registered source fields.",
+      "requiredDisposition": "rebuild-from-registered-finding"
+    },
+    {
+      "id": "untraceable-context-globe",
+      "path": "src/components/ContextSignalField.tsx",
+      "locations": [
+        "56-70",
+        "105-115"
+      ],
+      "kind": "fake latitude/longitude and additive incompatible support counts",
+      "reason": "Geography and combined support units are editorial metaphors, not observations.",
+      "requiredDisposition": "rebuild-from-registered-finding"
+    },
+    {
+      "id": "untraceable-mobile-attestation-rail",
+      "path": "src/components/ForeverAttestationHinge.tsx",
+      "locations": [
+        "114-133"
+      ],
+      "kind": "rail joining conflicting dates",
+      "reason": "The connection implies a relationship/interval not present in source records.",
+      "requiredDisposition": "rebuild-from-registered-finding"
+    },
+    {
+      "id": "untraceable-mobile-recurrence",
+      "path": "src/components/ForeverRecurrenceField.tsx",
+      "locations": [
+        "113-273"
+      ],
+      "kind": "integer endpoint plots, 1930-2024 empty field, and modern stem/notch rake",
+      "reason": "One-number coordinates and decorative absence/source shapes are not contract-backed mappings.",
+      "requiredDisposition": "rebuild-from-registered-finding"
+    },
+    {
+      "id": "untraceable-frequency-shared-scale",
+      "path": "src/components/ForeverFormCurrent.tsx",
+      "locations": [
+        "102-106",
+        "138-141",
+        "175-215"
+      ],
+      "kind": "shared-denominator copy, shared axis, generic per-million unit, independent shape scales",
+      "reason": "Joined unigram and spaced bigram Viewer values are presented as directly comparable.",
+      "requiredDisposition": "rebuild-from-registered-finding"
+    },
+    {
+      "id": "untraceable-frequency-generic-units",
+      "path": "src/components/MobileFrequencyStory.tsx",
+      "locations": [
+        "97-109",
+        "128-142"
+      ],
+      "kind": "generic per-million labels and independent series scales",
+      "reason": "N-gram-order denominator is not locally visible and cross-form shapes invite invalid comparison.",
+      "requiredDisposition": "rebuild-from-registered-finding"
+    }
+  ],
+  "spotChecks": [
+    {
+      "id": "spot-ngram-series-count",
+      "rawPath": "src/data/generated/forever_frequency.json",
+      "rowSelector": "series[]",
+      "observedFields": [
+        "query"
+      ],
+      "observedValue": [
+        "forever",
+        "for ever",
+        "forevermore",
+        "forever and ever"
+      ],
+      "derivation": "array length",
+      "derivedAuditValue": 4,
+      "findingIds": [
+        "finding-ngram-denominator"
+      ],
+      "renderedValue": "4"
+    },
+    {
+      "id": "spot-forever-323-window",
+      "rawPath": "src/data/generated/forever_frequency.json",
+      "rowSelector": "series[query='forever'].points[1700<=year<=2022]",
+      "observedFields": [
+        "year"
+      ],
+      "observedValue": {
+        "first": 1700,
+        "last": 2022
+      },
+      "derivation": "inclusive filtered row count",
+      "derivedAuditValue": 323,
+      "findingIds": [
+        "finding-ngram-window"
+      ],
+      "renderedValue": "323"
+    },
+    {
+      "id": "spot-ngram-forever-2022",
+      "rawPath": "src/data/generated/forever_frequency.json",
+      "rowSelector": "series[query='forever'].points[year=2022]",
+      "observedFields": [
+        "value",
+        "frequencyPerMillion"
+      ],
+      "observedValue": 0.000026009796783910133,
+      "derivation": "Viewer fraction × 1,000,000; unit=per million unigrams",
+      "derivedAuditValue": 26.009796783910133,
+      "findingIds": [
+        "finding-ngram-denominator"
+      ],
+      "renderedValue": "26.009796783910133"
+    },
+    {
+      "id": "spot-ngram-for-ever-2022",
+      "rawPath": "src/data/generated/forever_frequency.json",
+      "rowSelector": "series[query='for ever'].points[year=2022]",
+      "observedFields": [
+        "value",
+        "frequencyPerMillion"
+      ],
+      "observedValue": 0.000006555555955856107,
+      "derivation": "Viewer fraction × 1,000,000; unit=per million bigrams",
+      "derivedAuditValue": 6.555555955856107,
+      "findingIds": [
+        "finding-ngram-denominator"
+      ],
+      "renderedValue": "6.555555955856107"
+    },
+    {
+      "id": "spot-ngram-forevermore-2022",
+      "rawPath": "src/data/generated/forever_frequency.json",
+      "rowSelector": "series[query='forevermore'].points[year=2022]",
+      "observedFields": [
+        "value",
+        "frequencyPerMillion"
+      ],
+      "observedValue": 2.533654708258837e-7,
+      "derivation": "Viewer fraction × 1,000,000; unit=per million unigrams",
+      "derivedAuditValue": 0.2533654708258837,
+      "findingIds": [
+        "finding-ngram-denominator"
+      ],
+      "renderedValue": "0.2533654708258837"
+    },
+    {
+      "id": "spot-ngram-forever-and-ever-2022",
+      "rawPath": "src/data/generated/forever_frequency.json",
+      "rowSelector": "series[query='forever and ever'].points[year=2022]",
+      "observedFields": [
+        "value",
+        "frequencyPerMillion"
+      ],
+      "observedValue": 4.844173417950515e-7,
+      "derivation": "Viewer fraction × 1,000,000; unit=per million trigrams",
+      "derivedAuditValue": 0.48441734179505147,
+      "findingIds": [
+        "finding-ngram-denominator"
+      ],
+      "renderedValue": "0.48441734179505147"
+    },
+    {
+      "id": "spot-gutenberg-work-count",
+      "rawPath": "src/data/generated/forever_gutenberg_sources.json",
+      "rowSelector": "sources[]",
+      "observedFields": [
+        "id"
+      ],
+      "observedValue": [
+        "gutenberg-829",
+        "gutenberg-1080",
+        "gutenberg-1342",
+        "gutenberg-158",
+        "gutenberg-84",
+        "gutenberg-1260",
+        "gutenberg-768",
+        "gutenberg-1184",
+        "gutenberg-25344",
+        "gutenberg-2701",
+        "gutenberg-98",
+        "gutenberg-1400",
+        "gutenberg-11",
+        "gutenberg-2600",
+        "gutenberg-74",
+        "gutenberg-174",
+        "gutenberg-1661",
+        "gutenberg-345",
+        "gutenberg-36",
+        "gutenberg-55",
+        "gutenberg-45",
+        "gutenberg-64317",
+        "gutenberg-77600"
+      ],
+      "derivation": "array length",
+      "derivedAuditValue": 23,
+      "findingIds": [
+        "finding-gutenberg-inventory"
+      ],
+      "renderedValue": "23"
+    },
+    {
+      "id": "spot-gutenberg-token-denominator",
+      "rawPath": "src/data/generated/forever_gutenberg_sources.json",
+      "rowSelector": "sources[].tokenCount",
+      "observedFields": [
+        "tokenCount"
+      ],
+      "observedValue": [
+        105657,
+        3428,
+        128565,
+        162099,
+        75328,
+        189604,
+        119368,
+        469260,
+        85773,
+        219054,
+        138490,
+        189051,
+        27427,
+        583368,
+        74383,
+        80485,
+        105863,
+        163401,
+        61005,
+        40000,
+        107151,
+        49975,
+        70308
+      ],
+      "derivation": "sum tokenCount across selected works",
+      "derivedAuditValue": 3249043,
+      "findingIds": [
+        "finding-gutenberg-inventory"
+      ],
+      "renderedValue": "3249043"
+    },
+    {
+      "id": "spot-gutenberg-joined-form",
+      "rawPath": "src/data/generated/forever_gutenberg_sources.json",
+      "rowSelector": "sources[].occurrences[kind='form' and phrase='forever']",
+      "observedFields": [
+        "kind",
+        "phrase"
+      ],
+      "observedValue": "forever",
+      "derivation": "exact joined-form row count",
+      "derivedAuditValue": 133,
+      "findingIds": [
+        "finding-gutenberg-inventory"
+      ],
+      "renderedValue": "133"
+    },
+    {
+      "id": "spot-gutenberg-spaced-form",
+      "rawPath": "src/data/generated/forever_gutenberg_sources.json",
+      "rowSelector": "sources[].occurrences[kind='form' and phrase='for ever']",
+      "observedFields": [
+        "kind",
+        "phrase"
+      ],
+      "observedValue": "for ever",
+      "derivation": "exact spaced-form row count",
+      "derivedAuditValue": 188,
+      "findingIds": [
+        "finding-gutenberg-inventory"
+      ],
+      "renderedValue": "188"
+    },
+    {
+      "id": "spot-gutenberg-duplicate-role-rows",
+      "rawPath": "src/data/generated/forever_gutenberg_sources.json",
+      "rowSelector": "sources[].occurrences[] grouped by source.id+tokenIndex",
+      "observedFields": [
+        "kind",
+        "phrase",
+        "tokenIndex"
+      ],
+      "observedValue": {
+        "rows": 332,
+        "uniquePositions": 329
+      },
+      "derivation": "rows - unique(sourceId, tokenIndex)",
+      "derivedAuditValue": 3,
+      "findingIds": [
+        "finding-gutenberg-duplicates"
+      ],
+      "renderedValue": "3"
+    },
+    {
+      "id": "spot-prehistory-blank-quotes",
+      "rawPath": "src/data/generated/forever_prehistory.json",
+      "rowSelector": "records[quote='']",
+      "observedFields": [
+        "quote"
+      ],
+      "observedValue": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "derivation": "count blank quotation fields",
+      "derivedAuditValue": 6,
+      "findingIds": [
+        "finding-prehistory-provenance"
+      ],
+      "renderedValue": "6"
+    },
+    {
+      "id": "spot-modern-query-count",
+      "rawPath": "src/data/generated/forever_modern_context.json",
+      "rowSelector": "queries[]",
+      "observedFields": [
+        "query"
+      ],
+      "observedValue": [
+        "forever",
+        "\"for ever\"",
+        "\"forever and ever\"",
+        "\"remembered forever\"",
+        "\"live forever\"",
+        "\"takes forever\"",
+        "\"gone forever\"",
+        "\"online forever\"",
+        "\"internet forever\"",
+        "\"digital forever\""
+      ],
+      "derivation": "array length",
+      "derivedAuditValue": 10,
+      "findingIds": [
+        "finding-modern-capture"
+      ],
+      "renderedValue": "10"
+    },
+    {
+      "id": "spot-modern-unique-urls",
+      "rawPath": "src/data/generated/forever_modern_context.json",
+      "rowSelector": "snippets[].sourceUrl",
+      "observedFields": [
+        "sourceUrl"
+      ],
+      "observedValue": {
+        "rows": 17,
+        "uniqueUrls": 16
+      },
+      "derivation": "snippet rows - unique source URLs",
+      "derivedAuditValue": 1,
+      "findingIds": [
+        "finding-modern-capture"
+      ],
+      "renderedValue": "1"
+    },
+    {
+      "id": "spot-modern-remembered-forever",
+      "rawPath": "src/data/generated/forever_modern_context.json",
+      "rowSelector": "phrases[phrase='remembered forever']",
+      "observedFields": [
+        "count",
+        "documentFrequency"
+      ],
+      "observedValue": {
+        "count": 2,
+        "documentFrequency": 1
+      },
+      "derivation": "compare retained snippet-row count to unique-title document frequency",
+      "derivedAuditValue": 1,
+      "findingIds": [
+        "finding-modern-capture"
+      ],
+      "renderedValue": "1"
+    }
+  ],
+  "assertions": [
+    {
+      "id": "assert-input-manifest-complete",
+      "passed": true,
+      "assertion": "Every registered audit input appears exactly once with SHA-256.",
+      "observed": {
+        "expected": 32,
+        "actual": 32,
+        "uniquePaths": 32,
+        "digestLengthOK": true
+      }
+    },
+    {
+      "id": "assert-joined-spaced-separated",
+      "passed": true,
+      "assertion": "Joined and spaced forms remain distinct query/form keys in every audited count used by a finding.",
+      "observed": {
+        "joined": "forever",
+        "spaced": "for ever",
+        "distinct": true
+      }
+    },
+    {
+      "id": "assert-denominator-incompatibility",
+      "passed": true,
+      "assertion": "The joined/spaced shared-scale flag follows the validated common-denominator predicate.",
+      "observed": {
+        "foreverOrder": 1,
+        "forEverOrder": 2,
+        "rawMatchCountsAvailable": false,
+        "annualWordTokenTotalsAvailable": false,
+        "sharedScaleAllowed": false
+      }
+    },
+    {
+      "id": "assert-missing-not-zero",
+      "passed": true,
+      "assertion": "Numeric zero is recorded as an ambiguous observed value and never reclassified as typed missingness.",
+      "observed": {
+        "zeroState": "numeric-observation-with-unknown-semantic-status",
+        "typedMissingStateAvailable": false,
+        "coverageManifestPresent": false
+      }
+    },
+    {
+      "id": "assert-323-window",
+      "passed": true,
+      "assertion": "The 1700-2022 inclusive Forever Viewer slice contains 323 query-year rows.",
+      "observed": {
+        "rowCount": 323,
+        "firstYear": 1700,
+        "lastYear": 2022
+      }
+    },
+    {
+      "id": "assert-stop-gate-is-valid",
+      "passed": true,
+      "assertion": "The data gate is derived from retained raw-input availability, and no figure contract is production eligible.",
+      "observed": {
+        "dataGate": "STOP_RAW_DATA_MISSING",
+        "productionEligibleCount": 0
+      }
+    },
+    {
+      "id": "assert-spot-check-minimum",
+      "passed": true,
+      "assertion": "At least ten raw-selector-to-derived-to-rendered-value spot checks are embedded.",
+      "observed": {
+        "spotCheckCount": 15
+      }
+    }
+  ]
+}
