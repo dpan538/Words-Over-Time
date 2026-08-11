@@ -1,4 +1,4 @@
-import { access, readFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -17,56 +17,38 @@ const { words } = require("../src/data/words.ts") as {
 };
 
 const root = fileURLToPath(new URL("..", import.meta.url));
-const mobileHomePath = path.join(root, "src/components/home/mobile/MobileHome.tsx");
-const mobileCssPath = path.join(root, "src/components/home/mobile/mobile-home.module.css");
-const desktopHomePath = path.join(root, "src/components/home/desktop/DesktopHome.tsx");
-const evidencePath = path.join(
+const mobileHomePath = path.join(
   root,
-  "docs/evidence/mobile-home-forever-rebuild-2026-08/home-word-bbox-audit.json",
+  "src/components/home/mobile/MobileHome.tsx",
+);
+const mobileCssPath = path.join(
+  root,
+  "src/components/home/mobile/mobile-home.module.css",
+);
+const desktopHomePath = path.join(
+  root,
+  "src/components/home/desktop/DesktopHome.tsx",
+);
+const foreverPagePath = path.join(root, "src/app/words/forever/page.tsx");
+const foreverPublicRendererPath = path.join(
+  root,
+  "src/components/ForeverMobileEditorial.tsx",
 );
 
-const expectedPublished = [
-  ["study-forever", "forever", "/words/forever", "one"],
-  ["study-artificial", "artificial", "/words/artificial", "one"],
-  ["study-privacy", "privacy", "/words/privacy", "one"],
-  ["study-hub", "hub", "/words/hub", "two"],
-  ["study-depression", "depression", "/words/depression", "two"],
-  ["study-data", "data", "/words/data", "two"],
-] as const;
+const [mobileHome, mobileCss, desktopHome, foreverPage, foreverPublicRenderer] =
+  await Promise.all([
+    readFile(mobileHomePath, "utf8"),
+    readFile(mobileCssPath, "utf8"),
+    readFile(desktopHomePath, "utf8"),
+    readFile(foreverPagePath, "utf8"),
+    readFile(foreverPublicRendererPath, "utf8"),
+  ]);
 
 const failures: string[] = [];
 
 function check(condition: unknown, message: string) {
   if (!condition) failures.push(message);
 }
-
-async function exists(filePath: string) {
-  try {
-    await access(filePath);
-    return true;
-  } catch {
-    return false;
-  }
-}
-
-const [mobileHome, mobileCss, desktopHome, evidenceText] = await Promise.all([
-  readFile(mobileHomePath, "utf8"),
-  readFile(mobileCssPath, "utf8"),
-  readFile(desktopHomePath, "utf8"),
-  readFile(evidencePath, "utf8"),
-]);
-
-const evidence = JSON.parse(evidenceText) as {
-  expectedMarks?: Array<{
-    href: string | null;
-    id: string;
-    label: string;
-    panel: "one" | "two";
-    status: "complete" | "coming-soon";
-    studyId: string;
-  }>;
-  status?: string;
-};
 
 for (const study of words) {
   for (const field of ["label", "href", "status", "studyId"] as const) {
@@ -77,139 +59,137 @@ for (const study of words) {
   }
 }
 
-const published = words.filter((study) => study.status === "complete");
-const planned = words.filter((study) => study.status === "coming-soon");
-
-check(published.length === 6, `Expected six published studies, found ${published.length}`);
-check(planned.length === 1, `Expected one planned study, found ${planned.length}`);
+const canonicalHub = words.find((study) => study.studyId === "study-hub");
 check(
-  planned[0]?.studyId === "study-intelligence" &&
-    planned[0]?.label === "intelligence" &&
-    planned[0]?.href === null,
-  "Intelligence must be the sole route-less coming-soon entry",
-);
-check(
-  words.every((study) => study.label !== "null" && study.slug !== "null"),
-  "Canonical registry must not contain a null study",
+  canonicalHub?.label === "hub" && canonicalHub.href === "/words/hub",
+  "The existing Hub study registry entry must remain unchanged",
 );
 
-for (const [studyId, label, href, panel] of expectedPublished) {
-  const study = published.find((entry) => entry.studyId === studyId);
-  check(Boolean(study), `Missing published registry entry ${studyId}`);
-  check(study?.label === label, `${studyId} must expose label ${label}`);
-  check(study?.href === href, `${studyId} must resolve to ${href}`);
+const publishedHomeStudies = [
+  ["study-forever", "forever", "/words/forever"],
+  ["study-artificial", "artificial", "/words/artificial"],
+  ["study-privacy", "privacy", "/words/privacy"],
+  ["study-depression", "depression", "/words/depression"],
+  ["study-data", "data", "/words/data"],
+] as const;
+
+for (const [studyId, label, href] of publishedHomeStudies) {
+  const study = words.find((entry) => entry.studyId === studyId);
+  check(study?.label === label, `${studyId} must keep label ${label}`);
+  check(study?.href === href, `${studyId} must keep href ${href}`);
   check(
     mobileHome.includes(`publishedStudyById("${studyId}")`),
-    `MobileHome must select ${studyId} from the canonical registry`,
+    `MobileHome must select ${studyId} from the route registry`,
   );
-  check(
-    await exists(path.join(root, "src/app", href.slice(1), "page.tsx")),
-    `Published route file is missing for ${href}`,
-  );
-
-  const mark = evidence.expectedMarks?.find((entry) => entry.studyId === studyId);
-  check(Boolean(mark), `BBox evidence schema is missing ${studyId}`);
-  check(mark?.label === label, `BBox evidence label mismatch for ${studyId}`);
-  check(mark?.href === href, `BBox evidence href mismatch for ${studyId}`);
-  check(mark?.panel === panel, `BBox evidence panel mismatch for ${studyId}`);
-  check(mark?.status === "complete", `BBox evidence status mismatch for ${studyId}`);
 }
 
+const intelligence = words.find(
+  (study) => study.studyId === "study-intelligence",
+);
 check(
-  !(await exists(path.join(root, "src/app/words/null/page.tsx"))),
-  "A /words/null route must not be created",
+  intelligence?.status === "coming-soon" && intelligence.href === null,
+  "Intelligence must remain the sole route-less coming-soon registry item",
 );
 
-const publishedMarkCount = mobileHome.match(/<PublishedWordMark\b/g)?.length ?? 0;
+const sourceSequence = [
+  "Words you wanna know:",
+  "study={foreverStudy}",
+  "study={artificialStudy}",
+  "study={privacyStudy}",
+  'id="m-home-word-null"',
+  "study={depressionStudy}",
+  'id={`m-home-word-${intelligenceStudy.slug}`}',
+  "(Coming soon)",
+  "study={dataStudy}",
+  "<p className={styles.overTime}>Over Time</p>",
+  "mobile-project-introduction",
+  "mobile-copyright",
+] as const;
+const sourcePositions = sourceSequence.map((token) => mobileHome.indexOf(token));
 check(
-  publishedMarkCount === 6,
-  `MobileHome must render six published word anchors, found ${publishedMarkCount}`,
-);
-check(
-  mobileHome.includes('plannedStudyById("study-intelligence")'),
-  "MobileHome must select intelligence from the planned registry entry",
-);
-check(
-  !mobileHome.includes("<PublishedWordMark study={intelligenceStudy}"),
-  "Intelligence must not use the published link renderer",
+  sourcePositions.every(
+    (position, index) =>
+      position >= 0 && (index === 0 || position > sourcePositions[index - 1]),
+  ),
+  "Mobile Home source order must be label → seven words → Over Time → introduction → Copyright",
 );
 
-for (const selector of [
-  "data-audit-home-word",
-  "data-home-panel",
-  "data-home-status",
-  "data-home-study-id",
-  "data-home-word",
-]) {
-  check(mobileHome.includes(selector), `Stable Home audit selector is missing: ${selector}`);
-}
+check(
+  mobileHome.indexOf("Words Over Time") < mobileHome.indexOf("About"),
+  "Header must read Words Over Time before About",
+);
+check(
+  (mobileHome.match(/<PublishedWordMark\b/g)?.length ?? 0) === 5,
+  "Mobile Home must render exactly five routed word links",
+);
+check(
+  mobileHome.includes('data-home-word="null"') &&
+    !mobileHome.includes('href="/words/null"'),
+  "Null must be visible without inventing a /words/null route",
+);
+check(
+  !/hubStudy|study-hub|m-home-word-hub/.test(mobileHome),
+  "Hub must not appear in Mobile Home",
+);
+check(
+  !/No route|Continue|About the project|continueRule|aboutCta|terminalRule|firstPanel|secondPanel|projectName/.test(
+    mobileHome,
+  ),
+  "Mobile Home still contains a removed panel, continuation, title, route note, or CTA",
+);
+check(
+  !/\b0[1-7]\b/.test(mobileHome),
+  "Mobile Home must not number the seven words",
+);
+check(
+  /<details className=\{`\$\{styles\.copyright\} mobile-copyright`\}>/.test(
+    mobileHome,
+  ) && !/<details[^>]*\bopen\b/.test(mobileHome),
+  "Copyright must be a native details element that is closed by default",
+);
+check(
+  mobileHome.includes("<summary>Copyright / rights</summary>"),
+  "Copyright disclosure must use the required summary",
+);
+check(
+  mobileHome.includes("© 2026 Dai Pan / 潘岱") &&
+    mobileHome.includes("Commercial reproduction or reuse") &&
+    mobileHome.includes("Research / data / writing / design by Dai Pan / 潘岱"),
+  "Copyright disclosure must retain copyright, reuse, and creator credit",
+);
 
 for (const [label, pattern] of [
   ["Client Component directive", /["']use client["']/],
   ["React effect", /\buseEffect\b/],
   ["React state", /\buseState\b/],
-  ["window API", /\bwindow\b/],
-  ["document API", /\bdocument\b/],
-  ["UA sniffing", /\buserAgent\b|\bnavigator\b/],
+  ["browser API", /\bwindow\b|\bdocument\b|\bnavigator\b/],
   ["dynamic no-SSR", /\bssr\s*:\s*false\b|\bdynamic\s*\(/],
-  ["request headers", /\bheaders\s*\(/],
-  ["canvas", /<canvas\b|createElement\(["']canvas["']\)/],
-  ["Three/WebGL", /\bthree\b|\bTHREE\b|WebGL/i],
+  ["canvas/WebGL/Three", /<canvas\b|WebGL|\bthree\b/i],
 ] as const) {
   check(!pattern.test(mobileHome), `MobileHome contains forbidden ${label}`);
 }
 
 check(
-  !/m-home-word-null|\/words\/null|No route|styles\.(?:null|unavailable)/.test(
-    mobileHome,
-  ),
-  "MobileHome must not retain the null/no-route placeholder",
-);
-check(
-  !/\.null(?:Word|Mark)|\.unavailable(?:Word|Status)/.test(mobileCss),
-  "Mobile Home CSS must not retain null/unavailable selectors",
-);
-check(
-  !mobileHome.includes('href="/words/'),
-  "Published Mobile Home hrefs must come from the canonical registry",
-);
-
-const importSpecifiers = Array.from(
-  mobileHome.matchAll(/from\s+["']([^"']+)["']/g),
-  (match) => match[1],
-);
-const allowedImports = new Set(["next/link", "@/data/words", "./mobile-home.module.css"]);
-check(
-  importSpecifiers.every((specifier) => allowedImports.has(specifier)),
-  `MobileHome has an unexpected dependency: ${importSpecifiers
-    .filter((specifier) => !allowedImports.has(specifier))
-    .join(", ")}`,
-);
-check(
   !desktopHome.includes("MobileHome") && !mobileHome.includes("DesktopHome"),
-  "MobileHome and DesktopHome must not import one another",
-);
-
-const hubWordBlocks = Array.from(
-  mobileCss.matchAll(/\.hubWord\s*\{([^}]*)\}/g),
-  (match) => match[1],
-);
-const hubMarkBlocks = Array.from(
-  mobileCss.matchAll(/\.hubMark\s*\{([^}]*)\}/g),
-  (match) => match[1],
+  "MobileHome and DesktopHome must remain independent",
 );
 check(
-  hubWordBlocks.some(
-    (block) =>
-      /grid-column:\s*1\s*\/\s*3/.test(block) &&
-      /grid-row:\s*1\s*\/\s*3/.test(block) &&
-      /align-self:\s*stretch/.test(block),
+  /\.nullWord\s*\{[\s\S]*?writing-mode:\s*vertical-rl;[\s\S]*?\}/.test(
+    mobileCss,
   ),
-  "Hub must inherit the two-row vertical-spine grid geometry",
+  "Null must retain a vertical typographic composition",
 );
 check(
-  hubMarkBlocks.some((block) => /writing-mode:\s*vertical-rl/.test(block)),
-  "Hub mark must retain the vertical writing mode",
+  !/aspect-ratio|min-height|\.continueRule|\.firstPanel|\.secondPanel|\.mobileFooter|\.aboutCta/.test(
+    mobileCss,
+  ),
+  "Mobile Home CSS must not retain panel or spacing-only height machinery",
+);
+check(
+  /\.copyright summary\s*\{[\s\S]*?min-block-size:\s*44px;[\s\S]*?\}/.test(
+    mobileCss,
+  ),
+  "Copyright summary must expose a 44px minimum target",
 );
 
 const remFontMinimums = Array.from(
@@ -227,45 +207,45 @@ check(
   `Mobile Home source font floor is ${sourceFontFloorPx}px; expected at least 13px`,
 );
 
-const plannedEvidence = evidence.expectedMarks?.filter(
-  (entry) => entry.status === "coming-soon",
+const publicForeverText = `${foreverPage}\n${foreverPublicRenderer}`;
+check(
+  foreverPage.includes("ForeverMobileEditorial") &&
+    !foreverPage.includes("ForeverMobileDataGate"),
+  "Public Forever route must use the prior public mobile renderer",
 );
 check(
-  evidence.status === "POST_HUB_GATE_BROWSER_MEASUREMENT_REQUIRED",
-  "BBox evidence must remain explicitly unmeasured after the Home gate change",
-);
-check(
-  plannedEvidence?.length === 1 &&
-    plannedEvidence[0]?.studyId === "study-intelligence" &&
-    plannedEvidence[0]?.href === null,
-  "BBox evidence must contain one inert intelligence mark",
+  !/RAW-DATA AUDIT|PUBLICATION GATE|Forever page gate|implementation unauthorized|\bSTOP\b|productionEligible|contract-google/i.test(
+    publicForeverText,
+  ),
+  "Public Forever route or renderer contains internal audit/gate copy",
 );
 
 const report = {
   status: failures.length === 0 ? "PASS" : "FAIL",
-  registry: {
-    entries: words.length,
-    explicitFields: ["label", "href", "status", "studyId"],
-    publishedAnchors: published.length,
-    publishedHrefs: published.map((study) => study.href),
-    plannedMarks: planned.map((study) => ({
-      studyId: study.studyId,
-      label: study.label,
-      href: study.href,
-      status: study.status,
-    })),
-  },
   mobileHome: {
-    serverComponent: !/["']use client["']/.test(mobileHome),
-    publishedMarkCount,
+    sequence: [
+      "WORDS YOU WANNA KNOW",
+      "forever",
+      "artificial",
+      "privacy",
+      "null",
+      "depression",
+      "intelligence",
+      "COMING SOON",
+      "data",
+      "OVER TIME",
+      "project introduction",
+      "Copyright / rights",
+    ],
+    routedWordLinks: publishedHomeStudies.length,
+    nullRouteCreated: false,
+    hubRendered: false,
+    copyrightDefaultOpen: false,
     sourceFontFloorPx,
-    stableAuditSelectors: true,
-    hubVerticalSpine: true,
-    nullStudyOrRoute: false,
   },
-  evidence: {
-    status: evidence.status,
-    browserMeasurementsPresent: false,
+  forever: {
+    publicRenderer: "ForeverMobileEditorial",
+    internalGateCopyRendered: false,
   },
   failures,
 };

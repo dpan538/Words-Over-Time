@@ -34991,7 +34991,7 @@
   },
   "manifestSummary": {
     "registeredInputCount": 48,
-    "inputSetSha256": "4dd0ab67f7a6e3d0eca83fe0b3c3c660338964f5570cc492e44e876df66895b0",
+    "inputSetSha256": "caae511817da87c6bef863c24788399d4b3d4a7b666701cab80733616486b2b4",
     "termFormRegistryFiles": 2,
     "generatedCaptureFiles": 4,
     "derivedArtifactFiles": 10,
@@ -35218,7 +35218,7 @@
     "schemaVersion": "2.0.0",
     "auditId": "forever-raw-audit-2026-08-11",
     "dataGate": "STOP_RAW_DATA_MISSING",
-    "inputSetSha256": "4dd0ab67f7a6e3d0eca83fe0b3c3c660338964f5570cc492e44e876df66895b0",
+    "inputSetSha256": "caae511817da87c6bef863c24788399d4b3d4a7b666701cab80733616486b2b4",
     "expectedInputCount": 48,
     "entries": [
       {
@@ -36096,8 +36096,8 @@
         "path": "src/app/words/forever/page.tsx",
         "role": "render-consumer",
         "authorityLevel": "source-code-audit-only",
-        "sha256": "3d5ea6fa0182f764f65673ef84c14aa190c170b6691b32e9d3b38c9f9327616b",
-        "byteLength": 826,
+        "sha256": "6da304459049f7a8feb905697c5f589544f1f0cf0b265140c1c694d4206415ae",
+        "byteLength": 960,
         "productionAuthority": false,
         "fields": [
           "TypeScript source text",
@@ -36105,7 +36105,7 @@
         ],
         "granularity": "source file",
         "recordCounts": {
-          "sourceLines": 22,
+          "sourceLines": 25,
           "generatedAtCalls": 0,
           "exportedConstants": 1
         },

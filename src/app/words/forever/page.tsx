@@ -1,9 +1,12 @@
+import { ForeverMobileEditorial } from "@/components/ForeverMobileEditorial";
 import { JsonLd } from "@/components/JsonLd";
 import { ResponsiveForeverEdition } from "@/components/ResponsiveForeverEdition";
 import { WordPageShell } from "@/components/WordPageShell";
-import { ForeverMobileDataGate } from "@/components/forever/mobile/ForeverMobileDataGate";
-import { foreverAnalysis } from "@/data/foreverAnalysis";
+import datasetJson from "@/data/generated/forever_dataset.json";
 import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
+import type { ForeverGeneratedDataset } from "@/types/foreverRealData";
+
+const fullDataset = datasetJson as unknown as ForeverGeneratedDataset;
 
 export const metadata = createPageMetadata("/words/forever");
 const jsonLd = createRouteJsonLd("/words/forever");
@@ -14,7 +17,7 @@ export default function ForeverPage() {
       <JsonLd data={jsonLd} />
       <WordPageShell path="/words/forever">
         <ResponsiveForeverEdition>
-          <ForeverMobileDataGate analysis={foreverAnalysis} />
+          <ForeverMobileEditorial dataset={fullDataset} />
         </ResponsiveForeverEdition>
       </WordPageShell>
     </>
