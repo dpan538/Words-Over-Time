@@ -1,0 +1,3267 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedFromFrozenInputs": true,
+  "release": {
+    "viewerShorthand": "eng_2019",
+    "persistentIdentifier": "googlebooks-eng-20200217",
+    "rawReleaseDirectory": "20200217/eng",
+    "analysisWindow": {
+      "start": 1800,
+      "end": 2019
+    },
+    "exactForms": [
+      {
+        "form": "forever",
+        "ngramOrder": 1
+      },
+      {
+        "form": "for ever",
+        "ngramOrder": 2
+      }
+    ]
+  },
+  "units": {
+    "rate": "exact-form appearances per million corpus word tokens",
+    "reach": "containing-volume incidences per million corpus volumes",
+    "repeat": "exact-form appearances per containing volume"
+  },
+  "caveats": [
+    "The fixed corpus reflects the books Google retained and processed; OCR error, metadata error and changing corpus composition remain.",
+    "Exact surface forms do not identify meaning, first use, social acceptance or language-wide spelling adoption.",
+    "Sparse raw absence is absent_or_suppressed and is never silently converted to observed zero.",
+    "Viewer-normalised fractions are not used for the shared joined/spaced scale."
+  ],
+  "decades": [
+    {
+      "id": "decade-1800s",
+      "label": "1800s",
+      "startYear": 1800,
+      "endYear": 1809,
+      "completeYears": 10,
+      "joinedMatchCount": 26464,
+      "spacedMatchCount": 207607,
+      "joinedVolumeCount": 5182,
+      "spacedVolumeCount": 23292,
+      "corpusWordTokens": 3698331701,
+      "corpusVolumes": 39217,
+      "joinedRatePerMillionWords": 7.155658859,
+      "spacedRatePerMillionWords": 56.135310941,
+      "combinedRatePerMillionWords": 63.2909698,
+      "joinedShareOfExactFormAppearances": 11.305971265,
+      "joinedReachPerMillionVolumes": 132136.57342479,
+      "spacedReachPerMillionVolumes": 593926.103475534,
+      "joinedAppearancesPerContainingVolume": 5.10690853,
+      "spacedAppearancesPerContainingVolume": 8.913232011,
+      "visual": {
+        "combinedOnSeventyPercent": 90.415671,
+        "joinedOnSeventyPercent": 10.22237,
+        "spacedOnSeventyPercent": 80.193301
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          212,
+          213,
+          214,
+          215,
+          216,
+          217,
+          218,
+          219,
+          220,
+          221,
+          239,
+          240,
+          241,
+          242,
+          243,
+          244,
+          245,
+          246,
+          247,
+          248
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1800,
+          1801,
+          1802,
+          1803,
+          1804,
+          1805,
+          1806,
+          1807,
+          1808,
+          1809
+        ]
+      }
+    },
+    {
+      "id": "decade-1810s",
+      "label": "1810s",
+      "startYear": 1810,
+      "endYear": 1819,
+      "completeYears": 10,
+      "joinedMatchCount": 42541,
+      "spacedMatchCount": 391253,
+      "joinedVolumeCount": 7740,
+      "spacedVolumeCount": 35637,
+      "corpusWordTokens": 6853787044,
+      "corpusVolumes": 52677,
+      "joinedRatePerMillionWords": 6.206933441,
+      "spacedRatePerMillionWords": 57.085666288,
+      "combinedRatePerMillionWords": 63.292599728,
+      "joinedShareOfExactFormAppearances": 9.806728539,
+      "joinedReachPerMillionVolumes": 146933.19665129,
+      "spacedReachPerMillionVolumes": 676519.163961501,
+      "joinedAppearancesPerContainingVolume": 5.49625323,
+      "spacedAppearancesPerContainingVolume": 10.978842215,
+      "visual": {
+        "combinedOnSeventyPercent": 90.418,
+        "joinedOnSeventyPercent": 8.867048,
+        "spacedOnSeventyPercent": 81.550952
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          222,
+          223,
+          224,
+          225,
+          226,
+          227,
+          228,
+          229,
+          230,
+          231,
+          249,
+          250,
+          251,
+          252,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1810,
+          1811,
+          1812,
+          1813,
+          1814,
+          1815,
+          1816,
+          1817,
+          1818,
+          1819
+        ]
+      }
+    },
+    {
+      "id": "decade-1820s",
+      "label": "1820s",
+      "startYear": 1820,
+      "endYear": 1829,
+      "completeYears": 10,
+      "joinedMatchCount": 93174,
+      "spacedMatchCount": 608073,
+      "joinedVolumeCount": 12730,
+      "spacedVolumeCount": 54811,
+      "corpusWordTokens": 10223603735,
+      "corpusVolumes": 78683,
+      "joinedRatePerMillionWords": 9.113616139,
+      "spacedRatePerMillionWords": 59.477363928,
+      "combinedRatePerMillionWords": 68.590980067,
+      "joinedShareOfExactFormAppearances": 13.286901762,
+      "joinedReachPerMillionVolumes": 161788.442230215,
+      "spacedReachPerMillionVolumes": 696605.36583506,
+      "joinedAppearancesPerContainingVolume": 7.319245876,
+      "spacedAppearancesPerContainingVolume": 11.093995731,
+      "visual": {
+        "combinedOnSeventyPercent": 97.987114,
+        "joinedOnSeventyPercent": 13.019452,
+        "spacedOnSeventyPercent": 84.967663
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          232,
+          233,
+          234,
+          235,
+          236,
+          237,
+          238,
+          239,
+          240,
+          241,
+          259,
+          260,
+          261,
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1820,
+          1821,
+          1822,
+          1823,
+          1824,
+          1825,
+          1826,
+          1827,
+          1828,
+          1829
+        ]
+      }
+    },
+    {
+      "id": "decade-1830s",
+      "label": "1830s",
+      "startYear": 1830,
+      "endYear": 1839,
+      "completeYears": 10,
+      "joinedMatchCount": 198206,
+      "spacedMatchCount": 846435,
+      "joinedVolumeCount": 22035,
+      "spacedVolumeCount": 69828,
+      "corpusWordTokens": 16468591208,
+      "corpusVolumes": 107587,
+      "joinedRatePerMillionWords": 12.035394983,
+      "spacedRatePerMillionWords": 51.396928208,
+      "combinedRatePerMillionWords": 63.432323191,
+      "joinedShareOfExactFormAppearances": 18.973599543,
+      "joinedReachPerMillionVolumes": 204810.990175393,
+      "spacedReachPerMillionVolumes": 649037.523120823,
+      "joinedAppearancesPerContainingVolume": 8.995053324,
+      "spacedAppearancesPerContainingVolume": 12.121713353,
+      "visual": {
+        "combinedOnSeventyPercent": 90.617605,
+        "joinedOnSeventyPercent": 17.193421,
+        "spacedOnSeventyPercent": 73.424183
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          242,
+          243,
+          244,
+          245,
+          246,
+          247,
+          248,
+          249,
+          250,
+          251,
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1830,
+          1831,
+          1832,
+          1833,
+          1834,
+          1835,
+          1836,
+          1837,
+          1838,
+          1839
+        ]
+      }
+    },
+    {
+      "id": "decade-1840s",
+      "label": "1840s",
+      "startYear": 1840,
+      "endYear": 1849,
+      "completeYears": 10,
+      "joinedMatchCount": 289080,
+      "spacedMatchCount": 953367,
+      "joinedVolumeCount": 28677,
+      "spacedVolumeCount": 79358,
+      "corpusWordTokens": 20530591660,
+      "corpusVolumes": 128357,
+      "joinedRatePerMillionWords": 14.080451493,
+      "spacedRatePerMillionWords": 46.43641137,
+      "combinedRatePerMillionWords": 60.516862864,
+      "joinedShareOfExactFormAppearances": 23.266988451,
+      "joinedReachPerMillionVolumes": 223415.941475728,
+      "spacedReachPerMillionVolumes": 618260.00919311,
+      "joinedAppearancesPerContainingVolume": 10.080552359,
+      "spacedAppearancesPerContainingVolume": 12.013495804,
+      "visual": {
+        "combinedOnSeventyPercent": 86.452661,
+        "joinedOnSeventyPercent": 20.114931,
+        "spacedOnSeventyPercent": 66.337731
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          252,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          259,
+          260,
+          261,
+          279,
+          280,
+          281,
+          282,
+          283,
+          284,
+          285,
+          286,
+          287,
+          288
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1840,
+          1841,
+          1842,
+          1843,
+          1844,
+          1845,
+          1846,
+          1847,
+          1848,
+          1849
+        ]
+      }
+    },
+    {
+      "id": "decade-1850s",
+      "label": "1850s",
+      "startYear": 1850,
+      "endYear": 1859,
+      "completeYears": 10,
+      "joinedMatchCount": 504215,
+      "spacedMatchCount": 1099101,
+      "joinedVolumeCount": 47197,
+      "spacedVolumeCount": 99068,
+      "corpusWordTokens": 27923886682,
+      "corpusVolumes": 174393,
+      "joinedRatePerMillionWords": 18.056762862,
+      "spacedRatePerMillionWords": 39.360602359,
+      "combinedRatePerMillionWords": 57.417365221,
+      "joinedShareOfExactFormAppearances": 31.448260979,
+      "joinedReachPerMillionVolumes": 270635.862677974,
+      "spacedReachPerMillionVolumes": 568073.259821208,
+      "joinedAppearancesPerContainingVolume": 10.683200203,
+      "spacedAppearancesPerContainingVolume": 11.0944099,
+      "visual": {
+        "combinedOnSeventyPercent": 82.024807,
+        "joinedOnSeventyPercent": 25.795376,
+        "spacedOnSeventyPercent": 56.229432
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269,
+          270,
+          271,
+          289,
+          290,
+          291,
+          292,
+          293,
+          294,
+          295,
+          296,
+          297,
+          298
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1850,
+          1851,
+          1852,
+          1853,
+          1854,
+          1855,
+          1856,
+          1857,
+          1858,
+          1859
+        ]
+      }
+    },
+    {
+      "id": "decade-1860s",
+      "label": "1860s",
+      "startYear": 1860,
+      "endYear": 1869,
+      "completeYears": 10,
+      "joinedMatchCount": 504889,
+      "spacedMatchCount": 915172,
+      "joinedVolumeCount": 48736,
+      "spacedVolumeCount": 88435,
+      "corpusWordTokens": 27712793417,
+      "corpusVolumes": 175721,
+      "joinedRatePerMillionWords": 18.218625326,
+      "spacedRatePerMillionWords": 33.023448276,
+      "combinedRatePerMillionWords": 51.242073602,
+      "joinedShareOfExactFormAppearances": 35.554036059,
+      "joinedReachPerMillionVolumes": 277348.751714365,
+      "spacedReachPerMillionVolumes": 503269.387267316,
+      "joinedAppearancesPerContainingVolume": 10.359672521,
+      "spacedAppearancesPerContainingVolume": 10.348527167,
+      "visual": {
+        "combinedOnSeventyPercent": 73.202962,
+        "joinedOnSeventyPercent": 26.026608,
+        "spacedOnSeventyPercent": 47.176355
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          272,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279,
+          280,
+          281,
+          299,
+          300,
+          301,
+          302,
+          303,
+          304,
+          305,
+          306,
+          307,
+          308
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1860,
+          1861,
+          1862,
+          1863,
+          1864,
+          1865,
+          1866,
+          1867,
+          1868,
+          1869
+        ]
+      }
+    },
+    {
+      "id": "decade-1870s",
+      "label": "1870s",
+      "startYear": 1870,
+      "endYear": 1879,
+      "completeYears": 10,
+      "joinedMatchCount": 585874,
+      "spacedMatchCount": 872950,
+      "joinedVolumeCount": 62057,
+      "spacedVolumeCount": 92196,
+      "corpusWordTokens": 35039068607,
+      "corpusVolumes": 197765,
+      "joinedRatePerMillionWords": 16.720592849,
+      "spacedRatePerMillionWords": 24.913618846,
+      "combinedRatePerMillionWords": 41.634211696,
+      "joinedShareOfExactFormAppearances": 40.160704787,
+      "joinedReachPerMillionVolumes": 313791.621368796,
+      "spacedReachPerMillionVolumes": 466189.669557303,
+      "joinedAppearancesPerContainingVolume": 9.440901107,
+      "spacedAppearancesPerContainingVolume": 9.468415116,
+      "visual": {
+        "combinedOnSeventyPercent": 59.477445,
+        "joinedOnSeventyPercent": 23.886561,
+        "spacedOnSeventyPercent": 35.590884
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          282,
+          283,
+          284,
+          285,
+          286,
+          287,
+          288,
+          289,
+          290,
+          291,
+          309,
+          310,
+          311,
+          312,
+          313,
+          314,
+          315,
+          316,
+          317,
+          318
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1870,
+          1871,
+          1872,
+          1873,
+          1874,
+          1875,
+          1876,
+          1877,
+          1878,
+          1879
+        ]
+      }
+    },
+    {
+      "id": "decade-1880s",
+      "label": "1880s",
+      "startYear": 1880,
+      "endYear": 1889,
+      "completeYears": 10,
+      "joinedMatchCount": 829368,
+      "spacedMatchCount": 833645,
+      "joinedVolumeCount": 93266,
+      "spacedVolumeCount": 98042,
+      "corpusWordTokens": 44623229264,
+      "corpusVolumes": 245392,
+      "joinedRatePerMillionWords": 18.586014811,
+      "spacedRatePerMillionWords": 18.681861751,
+      "combinedRatePerMillionWords": 37.267876562,
+      "joinedShareOfExactFormAppearances": 49.871408101,
+      "joinedReachPerMillionVolumes": 380069.439916542,
+      "spacedReachPerMillionVolumes": 399532.177088088,
+      "joinedAppearancesPerContainingVolume": 8.892501019,
+      "spacedAppearancesPerContainingVolume": 8.502937517,
+      "visual": {
+        "combinedOnSeventyPercent": 53.239824,
+        "joinedOnSeventyPercent": 26.55145,
+        "spacedOnSeventyPercent": 26.688374
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          292,
+          293,
+          294,
+          295,
+          296,
+          297,
+          298,
+          299,
+          300,
+          301,
+          319,
+          320,
+          321,
+          322,
+          323,
+          324,
+          325,
+          326,
+          327,
+          328
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1880,
+          1881,
+          1882,
+          1883,
+          1884,
+          1885,
+          1886,
+          1887,
+          1888,
+          1889
+        ]
+      }
+    },
+    {
+      "id": "decade-1890s",
+      "label": "1890s",
+      "startYear": 1890,
+      "endYear": 1899,
+      "completeYears": 10,
+      "joinedMatchCount": 1119584,
+      "spacedMatchCount": 858380,
+      "joinedVolumeCount": 141942,
+      "spacedVolumeCount": 117664,
+      "corpusWordTokens": 60282694953,
+      "corpusVolumes": 360423,
+      "joinedRatePerMillionWords": 18.572228744,
+      "spacedRatePerMillionWords": 14.23924396,
+      "combinedRatePerMillionWords": 32.811472704,
+      "joinedShareOfExactFormAppearances": 56.602850204,
+      "joinedReachPerMillionVolumes": 393820.594135224,
+      "spacedReachPerMillionVolumes": 326460.852942237,
+      "joinedAppearancesPerContainingVolume": 7.887616069,
+      "spacedAppearancesPerContainingVolume": 7.295179494,
+      "visual": {
+        "combinedOnSeventyPercent": 46.873532,
+        "joinedOnSeventyPercent": 26.531755,
+        "spacedOnSeventyPercent": 20.341777
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          302,
+          303,
+          304,
+          305,
+          306,
+          307,
+          308,
+          309,
+          310,
+          311,
+          329,
+          330,
+          331,
+          332,
+          333,
+          334,
+          335,
+          336,
+          337,
+          338
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1890,
+          1891,
+          1892,
+          1893,
+          1894,
+          1895,
+          1896,
+          1897,
+          1898,
+          1899
+        ]
+      }
+    },
+    {
+      "id": "decade-1900s",
+      "label": "1900s",
+      "startYear": 1900,
+      "endYear": 1909,
+      "completeYears": 10,
+      "joinedMatchCount": 1369400,
+      "spacedMatchCount": 1011408,
+      "joinedVolumeCount": 193551,
+      "spacedVolumeCount": 146556,
+      "corpusWordTokens": 84542675003,
+      "corpusVolumes": 509569,
+      "joinedRatePerMillionWords": 16.197736823,
+      "spacedRatePerMillionWords": 11.963283631,
+      "combinedRatePerMillionWords": 28.161020454,
+      "joinedShareOfExactFormAppearances": 57.518287909,
+      "joinedReachPerMillionVolumes": 379832.760627118,
+      "spacedReachPerMillionVolumes": 287607.762638622,
+      "joinedAppearancesPerContainingVolume": 7.075137819,
+      "spacedAppearancesPerContainingVolume": 6.901170883,
+      "visual": {
+        "combinedOnSeventyPercent": 40.230029,
+        "joinedOnSeventyPercent": 23.139624,
+        "spacedOnSeventyPercent": 17.090405
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          312,
+          313,
+          314,
+          315,
+          316,
+          317,
+          318,
+          319,
+          320,
+          321,
+          339,
+          340,
+          341,
+          342,
+          343,
+          344,
+          345,
+          346,
+          347,
+          348
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1900,
+          1901,
+          1902,
+          1903,
+          1904,
+          1905,
+          1906,
+          1907,
+          1908,
+          1909
+        ]
+      }
+    },
+    {
+      "id": "decade-1910s",
+      "label": "1910s",
+      "startYear": 1910,
+      "endYear": 1919,
+      "completeYears": 10,
+      "joinedMatchCount": 1330396,
+      "spacedMatchCount": 719831,
+      "joinedVolumeCount": 214689,
+      "spacedVolumeCount": 130298,
+      "corpusWordTokens": 99248166260,
+      "corpusVolumes": 599884,
+      "joinedRatePerMillionWords": 13.404741368,
+      "spacedRatePerMillionWords": 7.252839293,
+      "combinedRatePerMillionWords": 20.657580661,
+      "joinedShareOfExactFormAppearances": 64.890180453,
+      "joinedReachPerMillionVolumes": 357884.190943582,
+      "spacedReachPerMillionVolumes": 217205.326363097,
+      "joinedAppearancesPerContainingVolume": 6.196852191,
+      "spacedAppearancesPerContainingVolume": 5.52449769,
+      "visual": {
+        "combinedOnSeventyPercent": 29.51083,
+        "joinedOnSeventyPercent": 19.149631,
+        "spacedOnSeventyPercent": 10.361199
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          322,
+          323,
+          324,
+          325,
+          326,
+          327,
+          328,
+          329,
+          330,
+          331,
+          349,
+          350,
+          351,
+          352,
+          353,
+          354,
+          355,
+          356,
+          357,
+          358
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1910,
+          1911,
+          1912,
+          1913,
+          1914,
+          1915,
+          1916,
+          1917,
+          1918,
+          1919
+        ]
+      }
+    },
+    {
+      "id": "decade-1920s",
+      "label": "1920s",
+      "startYear": 1920,
+      "endYear": 1929,
+      "completeYears": 10,
+      "joinedMatchCount": 851328,
+      "spacedMatchCount": 513716,
+      "joinedVolumeCount": 151372,
+      "spacedVolumeCount": 101894,
+      "corpusWordTokens": 71483438854,
+      "corpusVolumes": 476203,
+      "joinedRatePerMillionWords": 11.909443833,
+      "spacedRatePerMillionWords": 7.186503731,
+      "combinedRatePerMillionWords": 19.095947563,
+      "joinedShareOfExactFormAppearances": 62.366341305,
+      "joinedReachPerMillionVolumes": 317872.839944309,
+      "spacedReachPerMillionVolumes": 213971.772542382,
+      "joinedAppearancesPerContainingVolume": 5.624078429,
+      "spacedAppearancesPerContainingVolume": 5.041670756,
+      "visual": {
+        "combinedOnSeventyPercent": 27.279925,
+        "joinedOnSeventyPercent": 17.013491,
+        "spacedOnSeventyPercent": 10.266434
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          332,
+          333,
+          334,
+          335,
+          336,
+          337,
+          338,
+          339,
+          340,
+          341,
+          359,
+          360,
+          361,
+          362,
+          363,
+          364,
+          365,
+          366,
+          367,
+          368
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1920,
+          1921,
+          1922,
+          1923,
+          1924,
+          1925,
+          1926,
+          1927,
+          1928,
+          1929
+        ]
+      }
+    },
+    {
+      "id": "decade-1930s",
+      "label": "1930s",
+      "startYear": 1930,
+      "endYear": 1939,
+      "completeYears": 10,
+      "joinedMatchCount": 643511,
+      "spacedMatchCount": 383762,
+      "joinedVolumeCount": 129352,
+      "spacedVolumeCount": 78148,
+      "corpusWordTokens": 60706355049,
+      "corpusVolumes": 454355,
+      "joinedRatePerMillionWords": 10.600389358,
+      "spacedRatePerMillionWords": 6.321611628,
+      "combinedRatePerMillionWords": 16.922000986,
+      "joinedShareOfExactFormAppearances": 62.642647086,
+      "joinedReachPerMillionVolumes": 284693.686654708,
+      "spacedReachPerMillionVolumes": 171997.667022482,
+      "joinedAppearancesPerContainingVolume": 4.974882491,
+      "spacedAppearancesPerContainingVolume": 4.910707888,
+      "visual": {
+        "combinedOnSeventyPercent": 24.174287,
+        "joinedOnSeventyPercent": 15.143413,
+        "spacedOnSeventyPercent": 9.030874
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          342,
+          343,
+          344,
+          345,
+          346,
+          347,
+          348,
+          349,
+          350,
+          351,
+          369,
+          370,
+          371,
+          372,
+          373,
+          374,
+          375,
+          376,
+          377,
+          378
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1930,
+          1931,
+          1932,
+          1933,
+          1934,
+          1935,
+          1936,
+          1937,
+          1938,
+          1939
+        ]
+      }
+    },
+    {
+      "id": "decade-1940s",
+      "label": "1940s",
+      "startYear": 1940,
+      "endYear": 1949,
+      "completeYears": 10,
+      "joinedMatchCount": 674180,
+      "spacedMatchCount": 279766,
+      "joinedVolumeCount": 140302,
+      "spacedVolumeCount": 65024,
+      "corpusWordTokens": 65558647487,
+      "corpusVolumes": 488187,
+      "joinedRatePerMillionWords": 10.283616668,
+      "spacedRatePerMillionWords": 4.267415676,
+      "combinedRatePerMillionWords": 14.551032344,
+      "joinedShareOfExactFormAppearances": 70.672763448,
+      "joinedReachPerMillionVolumes": 287393.969933652,
+      "spacedReachPerMillionVolumes": 133194.861805005,
+      "joinedAppearancesPerContainingVolume": 4.805205913,
+      "spacedAppearancesPerContainingVolume": 4.302503691,
+      "visual": {
+        "combinedOnSeventyPercent": 20.787189,
+        "joinedOnSeventyPercent": 14.690881,
+        "spacedOnSeventyPercent": 6.096308
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          352,
+          353,
+          354,
+          355,
+          356,
+          357,
+          358,
+          359,
+          360,
+          361,
+          379,
+          380,
+          381,
+          382,
+          383,
+          384,
+          385,
+          386,
+          387,
+          388
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1940,
+          1941,
+          1942,
+          1943,
+          1944,
+          1945,
+          1946,
+          1947,
+          1948,
+          1949
+        ]
+      }
+    },
+    {
+      "id": "decade-1950s",
+      "label": "1950s",
+      "startYear": 1950,
+      "endYear": 1959,
+      "completeYears": 10,
+      "joinedMatchCount": 800917,
+      "spacedMatchCount": 441306,
+      "joinedVolumeCount": 178634,
+      "spacedVolumeCount": 100461,
+      "corpusWordTokens": 90976755526,
+      "corpusVolumes": 698077,
+      "joinedRatePerMillionWords": 8.803534434,
+      "spacedRatePerMillionWords": 4.85075553,
+      "combinedRatePerMillionWords": 13.654289965,
+      "joinedShareOfExactFormAppearances": 64.474494515,
+      "joinedReachPerMillionVolumes": 255894.407063977,
+      "spacedReachPerMillionVolumes": 143911.058522197,
+      "joinedAppearancesPerContainingVolume": 4.483564159,
+      "spacedAppearancesPerContainingVolume": 4.39280915,
+      "visual": {
+        "combinedOnSeventyPercent": 19.506129,
+        "joinedOnSeventyPercent": 12.576478,
+        "spacedOnSeventyPercent": 6.929651
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          362,
+          363,
+          364,
+          365,
+          366,
+          367,
+          368,
+          369,
+          370,
+          371,
+          389,
+          390,
+          391,
+          392,
+          393,
+          394,
+          395,
+          396,
+          397,
+          398
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1950,
+          1951,
+          1952,
+          1953,
+          1954,
+          1955,
+          1956,
+          1957,
+          1958,
+          1959
+        ]
+      }
+    },
+    {
+      "id": "decade-1960s",
+      "label": "1960s",
+      "startYear": 1960,
+      "endYear": 1969,
+      "completeYears": 10,
+      "joinedMatchCount": 1261050,
+      "spacedMatchCount": 711417,
+      "joinedVolumeCount": 286554,
+      "spacedVolumeCount": 170189,
+      "corpusWordTokens": 138811617795,
+      "corpusVolumes": 1172573,
+      "joinedRatePerMillionWords": 9.084614242,
+      "spacedRatePerMillionWords": 5.125053733,
+      "combinedRatePerMillionWords": 14.209667975,
+      "joinedShareOfExactFormAppearances": 63.932628531,
+      "joinedReachPerMillionVolumes": 244380.520445209,
+      "spacedReachPerMillionVolumes": 145141.496520899,
+      "joinedAppearancesPerContainingVolume": 4.400741222,
+      "spacedAppearancesPerContainingVolume": 4.18015853,
+      "visual": {
+        "combinedOnSeventyPercent": 20.299526,
+        "joinedOnSeventyPercent": 12.97802,
+        "spacedOnSeventyPercent": 7.321505
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          372,
+          373,
+          374,
+          375,
+          376,
+          377,
+          378,
+          379,
+          380,
+          381,
+          399,
+          400,
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1960,
+          1961,
+          1962,
+          1963,
+          1964,
+          1965,
+          1966,
+          1967,
+          1968,
+          1969
+        ]
+      }
+    },
+    {
+      "id": "decade-1970s",
+      "label": "1970s",
+      "startYear": 1970,
+      "endYear": 1979,
+      "completeYears": 10,
+      "joinedMatchCount": 1441237,
+      "spacedMatchCount": 640109,
+      "joinedVolumeCount": 358464,
+      "spacedVolumeCount": 168611,
+      "corpusWordTokens": 167108527127,
+      "corpusVolumes": 1506500,
+      "joinedRatePerMillionWords": 8.624556896,
+      "spacedRatePerMillionWords": 3.830498724,
+      "combinedRatePerMillionWords": 12.45505562,
+      "joinedShareOfExactFormAppearances": 69.245430601,
+      "joinedReachPerMillionVolumes": 237944.90540989,
+      "spacedReachPerMillionVolumes": 111922.336541653,
+      "joinedAppearancesPerContainingVolume": 4.020590631,
+      "spacedAppearancesPerContainingVolume": 3.796365599,
+      "visual": {
+        "combinedOnSeventyPercent": 17.792937,
+        "joinedOnSeventyPercent": 12.320796,
+        "spacedOnSeventyPercent": 5.472141
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          382,
+          383,
+          384,
+          385,
+          386,
+          387,
+          388,
+          389,
+          390,
+          391,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414,
+          415,
+          416,
+          417,
+          418
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1970,
+          1971,
+          1972,
+          1973,
+          1974,
+          1975,
+          1976,
+          1977,
+          1978,
+          1979
+        ]
+      }
+    },
+    {
+      "id": "decade-1980s",
+      "label": "1980s",
+      "startYear": 1980,
+      "endYear": 1989,
+      "completeYears": 10,
+      "joinedMatchCount": 1794468,
+      "spacedMatchCount": 506442,
+      "joinedVolumeCount": 444875,
+      "spacedVolumeCount": 160607,
+      "corpusWordTokens": 188269090589,
+      "corpusVolumes": 1663306,
+      "joinedRatePerMillionWords": 9.531399947,
+      "spacedRatePerMillionWords": 2.689990154,
+      "combinedRatePerMillionWords": 12.221390101,
+      "joinedShareOfExactFormAppearances": 77.989491114,
+      "joinedReachPerMillionVolumes": 267464.315044856,
+      "spacedReachPerMillionVolumes": 96558.90136872,
+      "joinedAppearancesPerContainingVolume": 4.033645406,
+      "spacedAppearancesPerContainingVolume": 3.153299669,
+      "visual": {
+        "combinedOnSeventyPercent": 17.459129,
+        "joinedOnSeventyPercent": 13.616286,
+        "spacedOnSeventyPercent": 3.842843
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          392,
+          393,
+          394,
+          395,
+          396,
+          397,
+          398,
+          399,
+          400,
+          401,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1980,
+          1981,
+          1982,
+          1983,
+          1984,
+          1985,
+          1986,
+          1987,
+          1988,
+          1989
+        ]
+      }
+    },
+    {
+      "id": "decade-1990s",
+      "label": "1990s",
+      "startYear": 1990,
+      "endYear": 1999,
+      "completeYears": 10,
+      "joinedMatchCount": 2692394,
+      "spacedMatchCount": 589092,
+      "joinedVolumeCount": 629896,
+      "spacedVolumeCount": 187823,
+      "corpusWordTokens": 218286173564,
+      "corpusVolumes": 1909380,
+      "joinedRatePerMillionWords": 12.334239755,
+      "spacedRatePerMillionWords": 2.698714217,
+      "combinedRatePerMillionWords": 15.032953972,
+      "joinedShareOfExactFormAppearances": 82.048011175,
+      "joinedReachPerMillionVolumes": 329895.568194911,
+      "spacedReachPerMillionVolumes": 98368.580376876,
+      "joinedAppearancesPerContainingVolume": 4.274346876,
+      "spacedAppearancesPerContainingVolume": 3.136420992,
+      "visual": {
+        "combinedOnSeventyPercent": 21.475649,
+        "joinedOnSeventyPercent": 17.620343,
+        "spacedOnSeventyPercent": 3.855306
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          429,
+          430,
+          431,
+          432,
+          433,
+          434,
+          435,
+          436,
+          437,
+          438
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999
+        ]
+      }
+    },
+    {
+      "id": "decade-2000s",
+      "label": "2000s",
+      "startYear": 2000,
+      "endYear": 2009,
+      "completeYears": 10,
+      "joinedMatchCount": 5251517,
+      "spacedMatchCount": 1190248,
+      "joinedVolumeCount": 1122588,
+      "spacedVolumeCount": 311230,
+      "corpusWordTokens": 270709307871,
+      "corpusVolumes": 2486542,
+      "joinedRatePerMillionWords": 19.399100243,
+      "spacedRatePerMillionWords": 4.396775306,
+      "combinedRatePerMillionWords": 23.795875549,
+      "joinedShareOfExactFormAppearances": 81.522952172,
+      "joinedReachPerMillionVolumes": 451465.529236989,
+      "spacedReachPerMillionVolumes": 125165.792494155,
+      "joinedAppearancesPerContainingVolume": 4.678044839,
+      "spacedAppearancesPerContainingVolume": 3.8243357,
+      "visual": {
+        "combinedOnSeventyPercent": 33.994108,
+        "joinedOnSeventyPercent": 27.713,
+        "spacedOnSeventyPercent": 6.281108
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          412,
+          413,
+          414,
+          415,
+          416,
+          417,
+          418,
+          419,
+          420,
+          421,
+          439,
+          440,
+          441,
+          442,
+          443,
+          444,
+          445,
+          446,
+          447,
+          448
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009
+        ]
+      }
+    },
+    {
+      "id": "decade-2010s",
+      "label": "2010s",
+      "startYear": 2010,
+      "endYear": 2019,
+      "completeYears": 10,
+      "joinedMatchCount": 8160095,
+      "spacedMatchCount": 1955935,
+      "joinedVolumeCount": 1549254,
+      "spacedVolumeCount": 390288,
+      "corpusWordTokens": 283795232871,
+      "corpusVolumes": 2988760,
+      "joinedRatePerMillionWords": 28.753460435,
+      "spacedRatePerMillionWords": 6.892064325,
+      "combinedRatePerMillionWords": 35.64552476,
+      "joinedShareOfExactFormAppearances": 80.664994074,
+      "joinedReachPerMillionVolumes": 518360.122592647,
+      "spacedReachPerMillionVolumes": 130585.259438697,
+      "joinedAppearancesPerContainingVolume": 5.26711243,
+      "spacedAppearancesPerContainingVolume": 5.011517136,
+      "visual": {
+        "combinedOnSeventyPercent": 50.922178,
+        "joinedOnSeventyPercent": 41.076372,
+        "spacedOnSeventyPercent": 9.845806
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          449,
+          450,
+          451,
+          452,
+          453,
+          454,
+          455,
+          456,
+          457,
+          458
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ]
+      }
+    }
+  ],
+  "annualFirstTurn": [
+    {
+      "year": 1882,
+      "joinedMatchCount": 72414,
+      "spacedMatchCount": 84957,
+      "corpusWordTokens": 4091708201,
+      "joinedRatePerMillionWords": 17.697742958,
+      "spacedRatePerMillionWords": 20.763210822,
+      "joinedShareOfExactFormAppearances": 46.014831195,
+      "joinedReachPerMillionVolumes": 349874.840806289,
+      "spacedReachPerMillionVolumes": 426770.892802248,
+      "role": "lead-in",
+      "visual": {
+        "joinedSharePercent": 46.014831,
+        "spacedSharePercent": 53.985169
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          294,
+          321
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1882
+        ]
+      }
+    },
+    {
+      "year": 1883,
+      "joinedMatchCount": 81787,
+      "spacedMatchCount": 89410,
+      "corpusWordTokens": 4343920556,
+      "joinedRatePerMillionWords": 18.827922598,
+      "spacedRatePerMillionWords": 20.582788945,
+      "joinedShareOfExactFormAppearances": 47.773617528,
+      "joinedReachPerMillionVolumes": 368075.26968935,
+      "spacedReachPerMillionVolumes": 418200.989536864,
+      "role": "lead-in",
+      "visual": {
+        "joinedSharePercent": 47.773618,
+        "spacedSharePercent": 52.226382
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          295,
+          322
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1883
+        ]
+      }
+    },
+    {
+      "year": 1884,
+      "joinedMatchCount": 85867,
+      "spacedMatchCount": 85335,
+      "corpusWordTokens": 4525723077,
+      "joinedRatePerMillionWords": 18.973100771,
+      "spacedRatePerMillionWords": 18.855550494,
+      "joinedShareOfExactFormAppearances": 50.155372017,
+      "joinedReachPerMillionVolumes": 368068.946519224,
+      "spacedReachPerMillionVolumes": 407185.864389438,
+      "role": "first_crossing",
+      "visual": {
+        "joinedSharePercent": 50.155372,
+        "spacedSharePercent": 49.844628
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          296,
+          323
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1884
+        ]
+      }
+    },
+    {
+      "year": 1885,
+      "joinedMatchCount": 76374,
+      "spacedMatchCount": 88472,
+      "corpusWordTokens": 4407867864,
+      "joinedRatePerMillionWords": 17.326744439,
+      "spacedRatePerMillionWords": 20.071382067,
+      "joinedShareOfExactFormAppearances": 46.330514541,
+      "joinedReachPerMillionVolumes": 362986.338579532,
+      "spacedReachPerMillionVolumes": 403211.632180235,
+      "role": "reversal",
+      "visual": {
+        "joinedSharePercent": 46.330515,
+        "spacedSharePercent": 53.669485
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          297,
+          324
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1885
+        ]
+      }
+    },
+    {
+      "year": 1886,
+      "joinedMatchCount": 83486,
+      "spacedMatchCount": 71623,
+      "corpusWordTokens": 4447243407,
+      "joinedRatePerMillionWords": 18.77252769,
+      "spacedRatePerMillionWords": 16.105032589,
+      "joinedShareOfExactFormAppearances": 53.824084998,
+      "joinedReachPerMillionVolumes": 410864.575363428,
+      "spacedReachPerMillionVolumes": 369761.115361727,
+      "role": "sustained_crossing",
+      "visual": {
+        "joinedSharePercent": 53.824085,
+        "spacedSharePercent": 46.175915
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          298,
+          325
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1886
+        ]
+      }
+    },
+    {
+      "year": 1887,
+      "joinedMatchCount": 87214,
+      "spacedMatchCount": 80451,
+      "corpusWordTokens": 4682166385,
+      "joinedRatePerMillionWords": 18.626847666,
+      "spacedRatePerMillionWords": 17.18243082,
+      "joinedShareOfExactFormAppearances": 52.016819253,
+      "joinedReachPerMillionVolumes": 404716.651797836,
+      "spacedReachPerMillionVolumes": 376750.320003103,
+      "role": "confirmation",
+      "visual": {
+        "joinedSharePercent": 52.016819,
+        "spacedSharePercent": 47.983181
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          299,
+          326
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1887
+        ]
+      }
+    }
+  ],
+  "milestones": {
+    "peak1820s": {
+      "id": "decade-1820s",
+      "label": "1820s",
+      "startYear": 1820,
+      "endYear": 1829,
+      "completeYears": 10,
+      "joinedMatchCount": 93174,
+      "spacedMatchCount": 608073,
+      "joinedVolumeCount": 12730,
+      "spacedVolumeCount": 54811,
+      "corpusWordTokens": 10223603735,
+      "corpusVolumes": 78683,
+      "joinedRatePerMillionWords": 9.113616139,
+      "spacedRatePerMillionWords": 59.477363928,
+      "combinedRatePerMillionWords": 68.590980067,
+      "joinedShareOfExactFormAppearances": 13.286901762,
+      "joinedReachPerMillionVolumes": 161788.442230215,
+      "spacedReachPerMillionVolumes": 696605.36583506,
+      "joinedAppearancesPerContainingVolume": 7.319245876,
+      "spacedAppearancesPerContainingVolume": 11.093995731,
+      "visual": {
+        "combinedOnSeventyPercent": 97.987114,
+        "joinedOnSeventyPercent": 13.019452,
+        "spacedOnSeventyPercent": 84.967663
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          232,
+          233,
+          234,
+          235,
+          236,
+          237,
+          238,
+          239,
+          240,
+          241,
+          259,
+          260,
+          261,
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1820,
+          1821,
+          1822,
+          1823,
+          1824,
+          1825,
+          1826,
+          1827,
+          1828,
+          1829
+        ]
+      }
+    },
+    "balance1880s": {
+      "id": "decade-1880s",
+      "label": "1880s",
+      "startYear": 1880,
+      "endYear": 1889,
+      "completeYears": 10,
+      "joinedMatchCount": 829368,
+      "spacedMatchCount": 833645,
+      "joinedVolumeCount": 93266,
+      "spacedVolumeCount": 98042,
+      "corpusWordTokens": 44623229264,
+      "corpusVolumes": 245392,
+      "joinedRatePerMillionWords": 18.586014811,
+      "spacedRatePerMillionWords": 18.681861751,
+      "combinedRatePerMillionWords": 37.267876562,
+      "joinedShareOfExactFormAppearances": 49.871408101,
+      "joinedReachPerMillionVolumes": 380069.439916542,
+      "spacedReachPerMillionVolumes": 399532.177088088,
+      "joinedAppearancesPerContainingVolume": 8.892501019,
+      "spacedAppearancesPerContainingVolume": 8.502937517,
+      "visual": {
+        "combinedOnSeventyPercent": 53.239824,
+        "joinedOnSeventyPercent": 26.55145,
+        "spacedOnSeventyPercent": 26.688374
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          292,
+          293,
+          294,
+          295,
+          296,
+          297,
+          298,
+          299,
+          300,
+          301,
+          319,
+          320,
+          321,
+          322,
+          323,
+          324,
+          325,
+          326,
+          327,
+          328
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1880,
+          1881,
+          1882,
+          1883,
+          1884,
+          1885,
+          1886,
+          1887,
+          1888,
+          1889
+        ]
+      }
+    },
+    "majority1890s": {
+      "id": "decade-1890s",
+      "label": "1890s",
+      "startYear": 1890,
+      "endYear": 1899,
+      "completeYears": 10,
+      "joinedMatchCount": 1119584,
+      "spacedMatchCount": 858380,
+      "joinedVolumeCount": 141942,
+      "spacedVolumeCount": 117664,
+      "corpusWordTokens": 60282694953,
+      "corpusVolumes": 360423,
+      "joinedRatePerMillionWords": 18.572228744,
+      "spacedRatePerMillionWords": 14.23924396,
+      "combinedRatePerMillionWords": 32.811472704,
+      "joinedShareOfExactFormAppearances": 56.602850204,
+      "joinedReachPerMillionVolumes": 393820.594135224,
+      "spacedReachPerMillionVolumes": 326460.852942237,
+      "joinedAppearancesPerContainingVolume": 7.887616069,
+      "spacedAppearancesPerContainingVolume": 7.295179494,
+      "visual": {
+        "combinedOnSeventyPercent": 46.873532,
+        "joinedOnSeventyPercent": 26.531755,
+        "spacedOnSeventyPercent": 20.341777
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          302,
+          303,
+          304,
+          305,
+          306,
+          307,
+          308,
+          309,
+          310,
+          311,
+          329,
+          330,
+          331,
+          332,
+          333,
+          334,
+          335,
+          336,
+          337,
+          338
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1890,
+          1891,
+          1892,
+          1893,
+          1894,
+          1895,
+          1896,
+          1897,
+          1898,
+          1899
+        ]
+      }
+    },
+    "low1980s": {
+      "id": "decade-1980s",
+      "label": "1980s",
+      "startYear": 1980,
+      "endYear": 1989,
+      "completeYears": 10,
+      "joinedMatchCount": 1794468,
+      "spacedMatchCount": 506442,
+      "joinedVolumeCount": 444875,
+      "spacedVolumeCount": 160607,
+      "corpusWordTokens": 188269090589,
+      "corpusVolumes": 1663306,
+      "joinedRatePerMillionWords": 9.531399947,
+      "spacedRatePerMillionWords": 2.689990154,
+      "combinedRatePerMillionWords": 12.221390101,
+      "joinedShareOfExactFormAppearances": 77.989491114,
+      "joinedReachPerMillionVolumes": 267464.315044856,
+      "spacedReachPerMillionVolumes": 96558.90136872,
+      "joinedAppearancesPerContainingVolume": 4.033645406,
+      "spacedAppearancesPerContainingVolume": 3.153299669,
+      "visual": {
+        "combinedOnSeventyPercent": 17.459129,
+        "joinedOnSeventyPercent": 13.616286,
+        "spacedOnSeventyPercent": 3.842843
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          392,
+          393,
+          394,
+          395,
+          396,
+          397,
+          398,
+          399,
+          400,
+          401,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1980,
+          1981,
+          1982,
+          1983,
+          1984,
+          1985,
+          1986,
+          1987,
+          1988,
+          1989
+        ]
+      }
+    },
+    "return2010s": {
+      "id": "decade-2010s",
+      "label": "2010s",
+      "startYear": 2010,
+      "endYear": 2019,
+      "completeYears": 10,
+      "joinedMatchCount": 8160095,
+      "spacedMatchCount": 1955935,
+      "joinedVolumeCount": 1549254,
+      "spacedVolumeCount": 390288,
+      "corpusWordTokens": 283795232871,
+      "corpusVolumes": 2988760,
+      "joinedRatePerMillionWords": 28.753460435,
+      "spacedRatePerMillionWords": 6.892064325,
+      "combinedRatePerMillionWords": 35.64552476,
+      "joinedShareOfExactFormAppearances": 80.664994074,
+      "joinedReachPerMillionVolumes": 518360.122592647,
+      "spacedReachPerMillionVolumes": 130585.259438697,
+      "joinedAppearancesPerContainingVolume": 5.26711243,
+      "spacedAppearancesPerContainingVolume": 5.011517136,
+      "visual": {
+        "combinedOnSeventyPercent": 50.922178,
+        "joinedOnSeventyPercent": 41.076372,
+        "spacedOnSeventyPercent": 9.845806
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          449,
+          450,
+          451,
+          452,
+          453,
+          454,
+          455,
+          456,
+          457,
+          458
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ]
+      }
+    },
+    "peakToLowPercentChange": -82.182219748,
+    "lowToReturnFactor": 2.916650599,
+    "returnBelowPeakPercent": -48.031760553
+  },
+  "firstTransition": {
+    "from": "1880s",
+    "to": "1890s",
+    "joinedRatePercentChange": -0.074174411,
+    "spacedRatePercentChange": -23.780380404,
+    "combinedRatePercentChange": -11.957761668,
+    "joinedSharePercentagePointChange": 6.731442103,
+    "firstCrossingYear": 1884,
+    "reversalYear": 1885,
+    "sustainedCrossingYear": 1886,
+    "firstSustainedReachLeadYear": 1886
+  },
+  "secondTransition": {
+    "from": "1980s",
+    "to": "2010s",
+    "joinedRateFactor": 3.016709045,
+    "spacedRateFactor": 2.562115075,
+    "combinedRateFactor": 2.916650599,
+    "joinedReachFactor": 1.93805339,
+    "spacedReachFactor": 1.352389656,
+    "joinedRepeatFactor": 1.30579461,
+    "spacedRepeatFactor": 1.589293014,
+    "corpusWordsPerVolumeFactor": 0.838894183,
+    "shareBand1990sTo2010s": {
+      "minimum": 80.664994074,
+      "maximum": 82.048011175,
+      "widthPercentagePoints": 1.383017101,
+      "combinedRateFactor": 2.371159043
+    },
+    "ratios2010s": {
+      "rate": 4.171966348,
+      "reach": 3.96951482,
+      "repeat": 1.05100158
+    }
+  },
+  "longArcAnchors": [
+    {
+      "id": "decade-1820s",
+      "label": "1820s",
+      "startYear": 1820,
+      "endYear": 1829,
+      "completeYears": 10,
+      "joinedMatchCount": 93174,
+      "spacedMatchCount": 608073,
+      "joinedVolumeCount": 12730,
+      "spacedVolumeCount": 54811,
+      "corpusWordTokens": 10223603735,
+      "corpusVolumes": 78683,
+      "joinedRatePerMillionWords": 9.113616139,
+      "spacedRatePerMillionWords": 59.477363928,
+      "combinedRatePerMillionWords": 68.590980067,
+      "joinedShareOfExactFormAppearances": 13.286901762,
+      "joinedReachPerMillionVolumes": 161788.442230215,
+      "spacedReachPerMillionVolumes": 696605.36583506,
+      "joinedAppearancesPerContainingVolume": 7.319245876,
+      "spacedAppearancesPerContainingVolume": 11.093995731,
+      "visual": {
+        "combinedOnSeventyPercent": 97.987114,
+        "joinedOnSeventyPercent": 13.019452,
+        "spacedOnSeventyPercent": 84.967663
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          232,
+          233,
+          234,
+          235,
+          236,
+          237,
+          238,
+          239,
+          240,
+          241,
+          259,
+          260,
+          261,
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1820,
+          1821,
+          1822,
+          1823,
+          1824,
+          1825,
+          1826,
+          1827,
+          1828,
+          1829
+        ]
+      }
+    },
+    {
+      "id": "decade-1880s",
+      "label": "1880s",
+      "startYear": 1880,
+      "endYear": 1889,
+      "completeYears": 10,
+      "joinedMatchCount": 829368,
+      "spacedMatchCount": 833645,
+      "joinedVolumeCount": 93266,
+      "spacedVolumeCount": 98042,
+      "corpusWordTokens": 44623229264,
+      "corpusVolumes": 245392,
+      "joinedRatePerMillionWords": 18.586014811,
+      "spacedRatePerMillionWords": 18.681861751,
+      "combinedRatePerMillionWords": 37.267876562,
+      "joinedShareOfExactFormAppearances": 49.871408101,
+      "joinedReachPerMillionVolumes": 380069.439916542,
+      "spacedReachPerMillionVolumes": 399532.177088088,
+      "joinedAppearancesPerContainingVolume": 8.892501019,
+      "spacedAppearancesPerContainingVolume": 8.502937517,
+      "visual": {
+        "combinedOnSeventyPercent": 53.239824,
+        "joinedOnSeventyPercent": 26.55145,
+        "spacedOnSeventyPercent": 26.688374
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          292,
+          293,
+          294,
+          295,
+          296,
+          297,
+          298,
+          299,
+          300,
+          301,
+          319,
+          320,
+          321,
+          322,
+          323,
+          324,
+          325,
+          326,
+          327,
+          328
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1880,
+          1881,
+          1882,
+          1883,
+          1884,
+          1885,
+          1886,
+          1887,
+          1888,
+          1889
+        ]
+      }
+    },
+    {
+      "id": "decade-1890s",
+      "label": "1890s",
+      "startYear": 1890,
+      "endYear": 1899,
+      "completeYears": 10,
+      "joinedMatchCount": 1119584,
+      "spacedMatchCount": 858380,
+      "joinedVolumeCount": 141942,
+      "spacedVolumeCount": 117664,
+      "corpusWordTokens": 60282694953,
+      "corpusVolumes": 360423,
+      "joinedRatePerMillionWords": 18.572228744,
+      "spacedRatePerMillionWords": 14.23924396,
+      "combinedRatePerMillionWords": 32.811472704,
+      "joinedShareOfExactFormAppearances": 56.602850204,
+      "joinedReachPerMillionVolumes": 393820.594135224,
+      "spacedReachPerMillionVolumes": 326460.852942237,
+      "joinedAppearancesPerContainingVolume": 7.887616069,
+      "spacedAppearancesPerContainingVolume": 7.295179494,
+      "visual": {
+        "combinedOnSeventyPercent": 46.873532,
+        "joinedOnSeventyPercent": 26.531755,
+        "spacedOnSeventyPercent": 20.341777
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          302,
+          303,
+          304,
+          305,
+          306,
+          307,
+          308,
+          309,
+          310,
+          311,
+          329,
+          330,
+          331,
+          332,
+          333,
+          334,
+          335,
+          336,
+          337,
+          338
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1890,
+          1891,
+          1892,
+          1893,
+          1894,
+          1895,
+          1896,
+          1897,
+          1898,
+          1899
+        ]
+      }
+    },
+    {
+      "id": "decade-1980s",
+      "label": "1980s",
+      "startYear": 1980,
+      "endYear": 1989,
+      "completeYears": 10,
+      "joinedMatchCount": 1794468,
+      "spacedMatchCount": 506442,
+      "joinedVolumeCount": 444875,
+      "spacedVolumeCount": 160607,
+      "corpusWordTokens": 188269090589,
+      "corpusVolumes": 1663306,
+      "joinedRatePerMillionWords": 9.531399947,
+      "spacedRatePerMillionWords": 2.689990154,
+      "combinedRatePerMillionWords": 12.221390101,
+      "joinedShareOfExactFormAppearances": 77.989491114,
+      "joinedReachPerMillionVolumes": 267464.315044856,
+      "spacedReachPerMillionVolumes": 96558.90136872,
+      "joinedAppearancesPerContainingVolume": 4.033645406,
+      "spacedAppearancesPerContainingVolume": 3.153299669,
+      "visual": {
+        "combinedOnSeventyPercent": 17.459129,
+        "joinedOnSeventyPercent": 13.616286,
+        "spacedOnSeventyPercent": 3.842843
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          392,
+          393,
+          394,
+          395,
+          396,
+          397,
+          398,
+          399,
+          400,
+          401,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          1980,
+          1981,
+          1982,
+          1983,
+          1984,
+          1985,
+          1986,
+          1987,
+          1988,
+          1989
+        ]
+      }
+    },
+    {
+      "id": "decade-2010s",
+      "label": "2010s",
+      "startYear": 2010,
+      "endYear": 2019,
+      "completeYears": 10,
+      "joinedMatchCount": 8160095,
+      "spacedMatchCount": 1955935,
+      "joinedVolumeCount": 1549254,
+      "spacedVolumeCount": 390288,
+      "corpusWordTokens": 283795232871,
+      "corpusVolumes": 2988760,
+      "joinedRatePerMillionWords": 28.753460435,
+      "spacedRatePerMillionWords": 6.892064325,
+      "combinedRatePerMillionWords": 35.64552476,
+      "joinedShareOfExactFormAppearances": 80.664994074,
+      "joinedReachPerMillionVolumes": 518360.122592647,
+      "spacedReachPerMillionVolumes": 130585.259438697,
+      "joinedAppearancesPerContainingVolume": 5.26711243,
+      "spacedAppearancesPerContainingVolume": 5.011517136,
+      "visual": {
+        "combinedOnSeventyPercent": 50.922178,
+        "joinedOnSeventyPercent": 41.076372,
+        "spacedOnSeventyPercent": 9.845806
+      },
+      "lineage": {
+        "annualPaths": [
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+        ],
+        "annualLineNumbers": [
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          449,
+          450,
+          451,
+          452,
+          453,
+          454,
+          455,
+          456,
+          457,
+          458
+        ],
+        "totalcountsPath": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+        "totalcountYears": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ]
+      }
+    }
+  ],
+  "metricConditions": [
+    {
+      "id": "rate",
+      "label": "RATE",
+      "unit": "exact-form appearances per million corpus word tokens",
+      "domain": {
+        "min": 0,
+        "max": 50
+      },
+      "ratio2010s": 4.171966348,
+      "headline": "4.172× joined / spaced",
+      "interpretation": "In the 2010s, joined visibility is 4.172 times the spaced exact form.",
+      "decades": [
+        {
+          "id": "rate-1920",
+          "label": "1920s",
+          "joinedValue": 11.909443833,
+          "spacedValue": 7.186503731,
+          "joinedPercent": 23.818888,
+          "spacedPercent": 14.373007,
+          "extensionPercent": 9.44588
+        },
+        {
+          "id": "rate-1930",
+          "label": "1930s",
+          "joinedValue": 10.600389358,
+          "spacedValue": 6.321611628,
+          "joinedPercent": 21.200779,
+          "spacedPercent": 12.643223,
+          "extensionPercent": 8.557555
+        },
+        {
+          "id": "rate-1940",
+          "label": "1940s",
+          "joinedValue": 10.283616668,
+          "spacedValue": 4.267415676,
+          "joinedPercent": 20.567233,
+          "spacedPercent": 8.534831,
+          "extensionPercent": 12.032402
+        },
+        {
+          "id": "rate-1950",
+          "label": "1950s",
+          "joinedValue": 8.803534434,
+          "spacedValue": 4.85075553,
+          "joinedPercent": 17.607069,
+          "spacedPercent": 9.701511,
+          "extensionPercent": 7.905558
+        },
+        {
+          "id": "rate-1960",
+          "label": "1960s",
+          "joinedValue": 9.084614242,
+          "spacedValue": 5.125053733,
+          "joinedPercent": 18.169228,
+          "spacedPercent": 10.250107,
+          "extensionPercent": 7.919121
+        },
+        {
+          "id": "rate-1970",
+          "label": "1970s",
+          "joinedValue": 8.624556896,
+          "spacedValue": 3.830498724,
+          "joinedPercent": 17.249114,
+          "spacedPercent": 7.660997,
+          "extensionPercent": 9.588116
+        },
+        {
+          "id": "rate-1980",
+          "label": "1980s",
+          "joinedValue": 9.531399947,
+          "spacedValue": 2.689990154,
+          "joinedPercent": 19.0628,
+          "spacedPercent": 5.37998,
+          "extensionPercent": 13.68282
+        },
+        {
+          "id": "rate-1990",
+          "label": "1990s",
+          "joinedValue": 12.334239755,
+          "spacedValue": 2.698714217,
+          "joinedPercent": 24.66848,
+          "spacedPercent": 5.397428,
+          "extensionPercent": 19.271051
+        },
+        {
+          "id": "rate-2000",
+          "label": "2000s",
+          "joinedValue": 19.399100243,
+          "spacedValue": 4.396775306,
+          "joinedPercent": 38.7982,
+          "spacedPercent": 8.793551,
+          "extensionPercent": 30.00465
+        },
+        {
+          "id": "rate-2010",
+          "label": "2010s",
+          "joinedValue": 28.753460435,
+          "spacedValue": 6.892064325,
+          "joinedPercent": 57.506921,
+          "spacedPercent": 13.784129,
+          "extensionPercent": 43.722792
+        }
+      ]
+    },
+    {
+      "id": "reach",
+      "label": "REACH",
+      "unit": "containing-volume incidences per million corpus volumes",
+      "domain": {
+        "min": 0,
+        "max": 1000000
+      },
+      "ratio2010s": 3.96951482,
+      "headline": "3.970× joined / spaced",
+      "interpretation": "In the 2010s, joined reach across corpus volumes is 3.970 times the spaced exact form.",
+      "decades": [
+        {
+          "id": "reach-1920",
+          "label": "1920s",
+          "joinedValue": 317872.839944309,
+          "spacedValue": 213971.772542382,
+          "joinedPercent": 31.787284,
+          "spacedPercent": 21.397177,
+          "extensionPercent": 10.390107
+        },
+        {
+          "id": "reach-1930",
+          "label": "1930s",
+          "joinedValue": 284693.686654708,
+          "spacedValue": 171997.667022482,
+          "joinedPercent": 28.469369,
+          "spacedPercent": 17.199767,
+          "extensionPercent": 11.269602
+        },
+        {
+          "id": "reach-1940",
+          "label": "1940s",
+          "joinedValue": 287393.969933652,
+          "spacedValue": 133194.861805005,
+          "joinedPercent": 28.739397,
+          "spacedPercent": 13.319486,
+          "extensionPercent": 15.419911
+        },
+        {
+          "id": "reach-1950",
+          "label": "1950s",
+          "joinedValue": 255894.407063977,
+          "spacedValue": 143911.058522197,
+          "joinedPercent": 25.589441,
+          "spacedPercent": 14.391106,
+          "extensionPercent": 11.198335
+        },
+        {
+          "id": "reach-1960",
+          "label": "1960s",
+          "joinedValue": 244380.520445209,
+          "spacedValue": 145141.496520899,
+          "joinedPercent": 24.438052,
+          "spacedPercent": 14.51415,
+          "extensionPercent": 9.923902
+        },
+        {
+          "id": "reach-1970",
+          "label": "1970s",
+          "joinedValue": 237944.90540989,
+          "spacedValue": 111922.336541653,
+          "joinedPercent": 23.794491,
+          "spacedPercent": 11.192234,
+          "extensionPercent": 12.602257
+        },
+        {
+          "id": "reach-1980",
+          "label": "1980s",
+          "joinedValue": 267464.315044856,
+          "spacedValue": 96558.90136872,
+          "joinedPercent": 26.746432,
+          "spacedPercent": 9.65589,
+          "extensionPercent": 17.090541
+        },
+        {
+          "id": "reach-1990",
+          "label": "1990s",
+          "joinedValue": 329895.568194911,
+          "spacedValue": 98368.580376876,
+          "joinedPercent": 32.989557,
+          "spacedPercent": 9.836858,
+          "extensionPercent": 23.152699
+        },
+        {
+          "id": "reach-2000",
+          "label": "2000s",
+          "joinedValue": 451465.529236989,
+          "spacedValue": 125165.792494155,
+          "joinedPercent": 45.146553,
+          "spacedPercent": 12.516579,
+          "extensionPercent": 32.629974
+        },
+        {
+          "id": "reach-2010",
+          "label": "2010s",
+          "joinedValue": 518360.122592647,
+          "spacedValue": 130585.259438697,
+          "joinedPercent": 51.836012,
+          "spacedPercent": 13.058526,
+          "extensionPercent": 38.777486
+        }
+      ]
+    },
+    {
+      "id": "repeat",
+      "label": "REPEAT",
+      "unit": "exact-form appearances per containing volume",
+      "domain": {
+        "min": 0,
+        "max": 10
+      },
+      "ratio2010s": 1.05100158,
+      "headline": "1.051× joined / spaced",
+      "interpretation": "In the 2010s, the joined form is repeated only 1.051 times as often inside a containing volume.",
+      "decades": [
+        {
+          "id": "repeat-1920",
+          "label": "1920s",
+          "joinedValue": 5.624078429,
+          "spacedValue": 5.041670756,
+          "joinedPercent": 56.240784,
+          "spacedPercent": 50.416708,
+          "extensionPercent": 5.824077
+        },
+        {
+          "id": "repeat-1930",
+          "label": "1930s",
+          "joinedValue": 4.974882491,
+          "spacedValue": 4.910707888,
+          "joinedPercent": 49.748825,
+          "spacedPercent": 49.107079,
+          "extensionPercent": 0.641746
+        },
+        {
+          "id": "repeat-1940",
+          "label": "1940s",
+          "joinedValue": 4.805205913,
+          "spacedValue": 4.302503691,
+          "joinedPercent": 48.052059,
+          "spacedPercent": 43.025037,
+          "extensionPercent": 5.027022
+        },
+        {
+          "id": "repeat-1950",
+          "label": "1950s",
+          "joinedValue": 4.483564159,
+          "spacedValue": 4.39280915,
+          "joinedPercent": 44.835642,
+          "spacedPercent": 43.928092,
+          "extensionPercent": 0.90755
+        },
+        {
+          "id": "repeat-1960",
+          "label": "1960s",
+          "joinedValue": 4.400741222,
+          "spacedValue": 4.18015853,
+          "joinedPercent": 44.007412,
+          "spacedPercent": 41.801585,
+          "extensionPercent": 2.205827
+        },
+        {
+          "id": "repeat-1970",
+          "label": "1970s",
+          "joinedValue": 4.020590631,
+          "spacedValue": 3.796365599,
+          "joinedPercent": 40.205906,
+          "spacedPercent": 37.963656,
+          "extensionPercent": 2.24225
+        },
+        {
+          "id": "repeat-1980",
+          "label": "1980s",
+          "joinedValue": 4.033645406,
+          "spacedValue": 3.153299669,
+          "joinedPercent": 40.336454,
+          "spacedPercent": 31.532997,
+          "extensionPercent": 8.803457
+        },
+        {
+          "id": "repeat-1990",
+          "label": "1990s",
+          "joinedValue": 4.274346876,
+          "spacedValue": 3.136420992,
+          "joinedPercent": 42.743469,
+          "spacedPercent": 31.36421,
+          "extensionPercent": 11.379259
+        },
+        {
+          "id": "repeat-2000",
+          "label": "2000s",
+          "joinedValue": 4.678044839,
+          "spacedValue": 3.8243357,
+          "joinedPercent": 46.780448,
+          "spacedPercent": 38.243357,
+          "extensionPercent": 8.537091
+        },
+        {
+          "id": "repeat-2010",
+          "label": "2010s",
+          "joinedValue": 5.26711243,
+          "spacedValue": 5.011517136,
+          "joinedPercent": 52.671124,
+          "spacedPercent": 50.115171,
+          "extensionPercent": 2.555953
+        }
+      ]
+    }
+  ],
+  "rails": {
+    "railA": [
+      {
+        "id": "rail-a-1820",
+        "railId": "rail-a",
+        "label": "1820s",
+        "scope": "PEAK",
+        "value": 68.590980067,
+        "displayValue": "68.59",
+        "unit": "exact-form appearances per million corpus word tokens",
+        "micro": {
+          "kind": "stacked-rate",
+          "primaryPercent": 13.286902,
+          "secondaryPercent": 86.713098
+        },
+        "definition": "The highest selected long-arc anchor.",
+        "interpretation": "The pair is unusually visible in the 1820s, led by the spaced form.",
+        "caveat": "This is a fixed-corpus decade aggregate, not a language-wide peak.",
+        "source": "googlebooks-eng-20200217; 1820–1829; exact raw rows and same-release totalcounts-1."
+      },
+      {
+        "id": "rail-a-1980",
+        "railId": "rail-a",
+        "label": "1980s",
+        "scope": "LOW",
+        "value": 12.221390101,
+        "displayValue": "12.22",
+        "unit": "exact-form appearances per million corpus word tokens",
+        "micro": {
+          "kind": "stacked-rate",
+          "primaryPercent": 77.989491,
+          "secondaryPercent": 22.010509
+        },
+        "definition": "The lowest selected long-arc anchor.",
+        "interpretation": "Both exact forms reach the pair's selected low before the later return.",
+        "caveat": "A low in this corpus does not establish absence from language.",
+        "source": "googlebooks-eng-20200217; 1980–1989; exact raw rows and same-release totalcounts-1."
+      },
+      {
+        "id": "rail-a-2010",
+        "railId": "rail-a",
+        "label": "2010s",
+        "scope": "RETURN",
+        "value": 35.64552476,
+        "displayValue": "35.65",
+        "unit": "exact-form appearances per million corpus word tokens",
+        "micro": {
+          "kind": "stacked-rate",
+          "primaryPercent": 80.664994,
+          "secondaryPercent": 19.335006
+        },
+        "definition": "The latest complete decade in the fixed release.",
+        "interpretation": "The pair returns to 2.92 times its 1980s rate but remains below the 1820s anchor.",
+        "caveat": "The 2010s are a partial return, not a full recovery.",
+        "source": "googlebooks-eng-20200217; 2010–2019; exact raw rows and same-release totalcounts-1."
+      }
+    ],
+    "railB": [
+      {
+        "id": "rail-b-1884",
+        "railId": "rail-b",
+        "label": "1884",
+        "scope": "FIRST CROSSING",
+        "value": 50.155372017,
+        "displayValue": "50.16%",
+        "unit": "joined share of pair exact-form appearances",
+        "micro": {
+          "kind": "form-composition",
+          "primaryPercent": 50.155372,
+          "secondaryPercent": 49.844628
+        },
+        "definition": "Joined exact-form appearances divided by joined plus spaced exact-form appearances in the same year.",
+        "interpretation": "The first annual crossing in the inspected six-year sequence.",
+        "caveat": "A yearly crossing is not an irreversible language event; the fixed corpus and its composition bound the result.",
+        "source": "googlebooks-eng-20200217; 1884; exact raw rows and same-release totalcounts-1."
+      },
+      {
+        "id": "rail-b-1885",
+        "railId": "rail-b",
+        "label": "1885",
+        "scope": "REVERSAL",
+        "value": 46.330514541,
+        "displayValue": "46.33%",
+        "unit": "joined share of pair exact-form appearances",
+        "micro": {
+          "kind": "form-composition",
+          "primaryPercent": 46.330515,
+          "secondaryPercent": 53.669485
+        },
+        "definition": "Joined exact-form appearances divided by joined plus spaced exact-form appearances in the same year.",
+        "interpretation": "The following year falls back below equal share.",
+        "caveat": "A yearly crossing is not an irreversible language event; the fixed corpus and its composition bound the result.",
+        "source": "googlebooks-eng-20200217; 1885; exact raw rows and same-release totalcounts-1."
+      },
+      {
+        "id": "rail-b-1886",
+        "railId": "rail-b",
+        "label": "1886",
+        "scope": "SUSTAINED",
+        "value": 53.824084998,
+        "displayValue": "53.82%",
+        "unit": "joined share of pair exact-form appearances",
+        "micro": {
+          "kind": "form-composition",
+          "primaryPercent": 53.824085,
+          "secondaryPercent": 46.175915
+        },
+        "definition": "Joined exact-form appearances divided by joined plus spaced exact-form appearances in the same year.",
+        "interpretation": "The joined form crosses again and remains above in 1887.",
+        "caveat": "A yearly crossing is not an irreversible language event; the fixed corpus and its composition bound the result.",
+        "source": "googlebooks-eng-20200217; 1886; exact raw rows and same-release totalcounts-1."
+      }
+    ],
+    "railC": [
+      {
+        "id": "rail-c-forever",
+        "railId": "rail-c",
+        "label": "forever",
+        "scope": "JOINED RETURN",
+        "value": 3.016709045,
+        "displayValue": "3.02×",
+        "unit": "1980s→2010s exact-form rate factor",
+        "micro": {
+          "kind": "factor-strip",
+          "primaryPercent": 62.517851,
+          "secondaryPercent": 42.122407
+        },
+        "definition": "Rate factor decomposed into reach × repetition ÷ corpus words-per-volume factor.",
+        "interpretation": "Reach 1.938×; repetition 1.306×; corpus density ÷0.839×.",
+        "caveat": "This decomposition is an accounting identity, not a causal attribution.",
+        "source": "googlebooks-eng-20200217; complete 1980s and 2010s raw rows and totalcounts-1."
+      },
+      {
+        "id": "rail-c-for-ever",
+        "railId": "rail-c",
+        "label": "for ever",
+        "scope": "SPACED RETURN",
+        "value": 2.562115075,
+        "displayValue": "2.56×",
+        "unit": "1980s→2010s exact-form rate factor",
+        "micro": {
+          "kind": "factor-strip",
+          "primaryPercent": 43.625473,
+          "secondaryPercent": 51.267517
+        },
+        "definition": "Rate factor decomposed into reach × repetition ÷ corpus words-per-volume factor.",
+        "interpretation": "Reach 1.352×; repetition 1.589×; corpus density ÷0.839×.",
+        "caveat": "This decomposition is an accounting identity, not a causal attribution.",
+        "source": "googlebooks-eng-20200217; complete 1980s and 2010s raw rows and totalcounts-1."
+      },
+      {
+        "id": "rail-c-pair",
+        "railId": "rail-c",
+        "label": "pair",
+        "scope": "COMBINED RETURN",
+        "value": 2.916650599,
+        "displayValue": "2.92×",
+        "unit": "1980s→2010s combined exact-form rate factor",
+        "micro": {
+          "kind": "factor-strip",
+          "primaryPercent": 34.285903,
+          "secondaryPercent": 100
+        },
+        "definition": "Combined joined plus spaced exact-form rate in two complete decades.",
+        "interpretation": "12.22 in the 1980s → 35.65 in the 2010s.",
+        "caveat": "The factor describes this fixed corpus release; it is not a causal attribution.",
+        "source": "googlebooks-eng-20200217; complete 1980s and 2010s raw rows and totalcounts-1."
+      }
+    ]
+  },
+  "closingFinding": {
+    "title": "Breadth, not heavier repetition.",
+    "sentence": "In the 2010s, forever is about four times as visible as for ever, but it is repeated only about five percent more often inside a containing volume. Its modern advantage is overwhelmingly one of breadth across books.",
+    "rateRatio": 4.171966348,
+    "repeatRatio": 1.05100158
+  },
+  "figureContracts": [
+    {
+      "id": "F01",
+      "productionEligible": true,
+      "findingKey": "milestones",
+      "generatedDataKeys": [
+        "longArcAnchors",
+        "milestones"
+      ],
+      "sourcePaths": [
+        "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+        "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv",
+        "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1"
+      ],
+      "transform": "ten-year sums of exact-form numerators and same-release denominators before division",
+      "denominator": "same-release corpus word tokens",
+      "unit": "exact-form appearances per million corpus word tokens",
+      "missingnessPolicy": "all ten annual rows and denominators required; no silent fill",
+      "validInterpretation": "fixed-corpus long-arc visibility and exact-form composition",
+      "prohibitedInterpretation": "full recovery, first use, semantics or population spelling adoption"
+    },
+    {
+      "id": "F02",
+      "productionEligible": true,
+      "findingKey": "firstTransition",
+      "generatedDataKeys": [
+        "annualFirstTurn",
+        "firstTransition"
+      ],
+      "sourcePaths": [
+        "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+        "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv",
+        "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1"
+      ],
+      "transform": "annual exact-form shares plus exposure-weighted 1880s→1890s aggregate changes",
+      "denominator": "same-year pair exact-form counts for share; same-release word tokens for rate",
+      "unit": "percent share, percentage points and rate percent change",
+      "missingnessPolicy": "1882–1887 and both complete decades required; no silent fill",
+      "validInterpretation": "joined share turns while joined rate is effectively flat and spaced rate retreats",
+      "prohibitedInterpretation": "single-year irreversible switch or causal attribution"
+    },
+    {
+      "id": "F03",
+      "productionEligible": true,
+      "findingKey": "secondTransition",
+      "generatedDataKeys": [
+        "secondTransition",
+        "milestones.low1980s",
+        "milestones.return2010s"
+      ],
+      "sourcePaths": [
+        "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+        "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv",
+        "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1"
+      ],
+      "transform": "complete-decade rates, shares and 1980s→2010s factors",
+      "denominator": "same-release word tokens; pair exact-form counts for share",
+      "unit": "percent share, rate and dimensionless factors",
+      "missingnessPolicy": "1980s–2010s complete decades required; no silent fill",
+      "validInterpretation": "both forms rebound after joined share has settled near four-fifths",
+      "prohibitedInterpretation": "a second spelling switch or causal mechanism"
+    },
+    {
+      "id": "F04",
+      "productionEligible": true,
+      "findingKey": "metricConditions",
+      "generatedDataKeys": [
+        "metricConditions",
+        "secondTransition.ratios2010s"
+      ],
+      "sourcePaths": [
+        "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+        "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv",
+        "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1"
+      ],
+      "transform": "complete-decade rate, reach and repetition metrics on independent domains",
+      "denominator": "word tokens for RATE, corpus volumes for REACH, containing volumes for REPEAT",
+      "unit": "three explicitly separate units",
+      "missingnessPolicy": "all 1920s–2010s decade inputs required; no silent fill",
+      "validInterpretation": "the modern joined advantage is primarily breadth across volumes",
+      "prohibitedInterpretation": "cross-unit magnitude comparison or causal decomposition"
+    }
+  ],
+  "spotChecks": [
+    {
+      "id": "1820s-joined-rate",
+      "actual": 9.113616139,
+      "expected": 9.113616,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1820s-spaced-rate",
+      "actual": 59.477363928,
+      "expected": 59.477364,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1820s-combined-rate",
+      "actual": 68.590980067,
+      "expected": 68.59098,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1820s-joined-share",
+      "actual": 13.286901762,
+      "expected": 13.2869,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1880s-joined-rate",
+      "actual": 18.586014811,
+      "expected": 18.586015,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1880s-spaced-rate",
+      "actual": 18.681861751,
+      "expected": 18.681862,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1880s-combined-rate",
+      "actual": 37.267876562,
+      "expected": 37.267877,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1880s-joined-share",
+      "actual": 49.871408101,
+      "expected": 49.8714,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1890s-joined-rate",
+      "actual": 18.572228744,
+      "expected": 18.572229,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1890s-spaced-rate",
+      "actual": 14.23924396,
+      "expected": 14.239244,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1890s-combined-rate",
+      "actual": 32.811472704,
+      "expected": 32.811473,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1890s-joined-share",
+      "actual": 56.602850204,
+      "expected": 56.6029,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1980s-joined-rate",
+      "actual": 9.531399947,
+      "expected": 9.5314,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1980s-spaced-rate",
+      "actual": 2.689990154,
+      "expected": 2.68999,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1980s-combined-rate",
+      "actual": 12.221390101,
+      "expected": 12.22139,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1980s-joined-share",
+      "actual": 77.989491114,
+      "expected": 77.9895,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "2010s-joined-rate",
+      "actual": 28.753460435,
+      "expected": 28.75346,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "2010s-spaced-rate",
+      "actual": 6.892064325,
+      "expected": 6.892064,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "2010s-combined-rate",
+      "actual": 35.64552476,
+      "expected": 35.645525,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "2010s-joined-share",
+      "actual": 80.664994074,
+      "expected": 80.665,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv + docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv"
+    },
+    {
+      "id": "1884-joined-share",
+      "actual": 50.155372017,
+      "expected": 50.1554,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv"
+    },
+    {
+      "id": "1885-joined-share",
+      "actual": 46.330514541,
+      "expected": 46.3305,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv"
+    },
+    {
+      "id": "1886-joined-share",
+      "actual": 53.824084998,
+      "expected": 53.8241,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv"
+    },
+    {
+      "id": "first-transition-joined-rate-change",
+      "actual": -0.074174411,
+      "expected": -0.0742,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "1880s→1890s aggregate"
+    },
+    {
+      "id": "first-transition-spaced-rate-change",
+      "actual": -23.780380404,
+      "expected": -23.7804,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "1880s→1890s aggregate"
+    },
+    {
+      "id": "first-transition-combined-rate-change",
+      "actual": -11.957761668,
+      "expected": -11.9578,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "1880s→1890s aggregate"
+    },
+    {
+      "id": "first-transition-share-change",
+      "actual": 6.731442103,
+      "expected": 6.7315,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "1880s→1890s aggregate"
+    },
+    {
+      "id": "rebound-pair-factor",
+      "actual": 2.916650599,
+      "expected": 2.916651,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "1980s→2010s aggregate"
+    },
+    {
+      "id": "rebound-joined-factor",
+      "actual": 3.016709045,
+      "expected": 3.016709,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "1980s→2010s aggregate"
+    },
+    {
+      "id": "rebound-spaced-factor",
+      "actual": 2.562115075,
+      "expected": 2.562115,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "1980s→2010s aggregate"
+    },
+    {
+      "id": "share-band-minimum",
+      "actual": 80.664994074,
+      "expected": 80.665,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "1990s–2010s aggregate"
+    },
+    {
+      "id": "share-band-maximum",
+      "actual": 82.048011175,
+      "expected": 82.048,
+      "tolerance": 0.00006,
+      "passed": true,
+      "lineage": "1990s–2010s aggregate"
+    },
+    {
+      "id": "share-band-width",
+      "actual": 1.383017101,
+      "expected": 1.383,
+      "tolerance": 0.0006,
+      "passed": true,
+      "lineage": "1990s–2010s aggregate"
+    },
+    {
+      "id": "2010s-rate-ratio",
+      "actual": 4.171966348,
+      "expected": 4.171966,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "2010s aggregate"
+    },
+    {
+      "id": "2010s-reach-ratio",
+      "actual": 3.96951482,
+      "expected": 3.969515,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "2010s aggregate"
+    },
+    {
+      "id": "2010s-repeat-ratio",
+      "actual": 1.05100158,
+      "expected": 1.051002,
+      "tolerance": 6e-7,
+      "passed": true,
+      "lineage": "2010s aggregate"
+    }
+  ]
+}
