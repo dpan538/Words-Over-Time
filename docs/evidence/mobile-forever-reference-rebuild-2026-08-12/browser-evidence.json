@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "mobile-forever-reference-rebuild-2026-08-12",
+  "repository": "/Users/jarlgiovanni/Desktop/words_overtime",
+  "branch": "audit/mobile-search-growth-2026-08",
+  "startingHead": "04561dddad2e532e79f8e202cd35bf8d0357a667",
+  "verifiedProductionBuildId": "kXG25Wojdc8nLgYe37EJa",
+  "verifiedRoute": "/words/forever",
+  "staticRoutesGenerated": 31,
+  "routeCountBoundary": "The 31st route is the preserved untracked Privacy mobile-demo in the user worktree; it is not part of this task or its commits.",
+  "analysis": {
+    "artifact": "src/data/generated/forever_mobile_analysis.json",
+    "sha256": "3dffbd56dbf30b9e5509ba3cef87737d7180f2b0cba39754ed564b2101a6c5a4",
+    "release": "googlebooks-eng-20200217",
+    "completeDecades": 22,
+    "spotChecks": 36,
+    "figureContracts": ["F01", "F02", "F03", "F04"]
+  },
+  "mobile390": {
+    "viewport": { "width": 390, "height": 844 },
+    "document": { "width": 390, "height": 7426, "horizontalOverflow": false },
+    "h1Count": 1,
+    "minimumVisibleTextPx": 13,
+    "detailsCount": 16,
+    "detailsOpenByDefault": 0,
+    "canvasCount": 0,
+    "threeScriptCount": 0,
+    "consoleWarnings": 0,
+    "consoleErrors": 0,
+    "hydrationMismatches": 0,
+    "surfaceAllocationPercent": {
+      "primaryVisualisation": 59.58392327159966,
+      "evidenceCards": 29.55962890111526,
+      "alwaysVisibleText": 10.85644782728508
+    },
+    "figureHeightsPx": {
+      "F01": 1122,
+      "F02": 1183.984375,
+      "F03": 1005.5703125,
+      "F04": 1097.34375
+    }
+  },
+  "mobile430": {
+    "viewport": { "width": 430, "height": 932 },
+    "document": { "width": 430, "height": 7599, "horizontalOverflow": false },
+    "h1Count": 1,
+    "detailsOpenByDefault": 0,
+    "canvasCount": 0,
+    "consoleWarnings": 0,
+    "consoleErrors": 0,
+    "hydrationMismatches": 0
+  },
+  "reflow": {
+    "width320": {
+      "documentWidth": 320,
+      "horizontalOverflow": false,
+      "figureClientAndScrollWidths": [[320, 320], [320, 320], [320, 320], [320, 320]],
+      "consoleWarningsOrErrors": 0
+    },
+    "width240": {
+      "documentWidth": 240,
+      "horizontalOverflow": false,
+      "minimumVisibleTextPx": 13,
+      "figureClientAndScrollWidths": [[240, 240], [240, 240], [240, 240], [240, 240]],
+      "consoleWarningsOrErrors": 0
+    }
+  },
+  "interactions": {
+    "compositionTiles": {
+      "count": 5,
+      "nativeDetailsName": "forever-composition",
+      "onlyOneOpen": true,
+      "testedOpenState": [false, false, false, false, true],
+      "bandBackOverlayPx": { "width": 343.3515625, "height": 241.09375 },
+      "moduleHeightBeforeAndAfterPx": 1005.5703125,
+      "keyboardContract": "Native focusable summary semantics retained; source uses no keyboard-suppressing handler. Browser focus inspection returned SUMMARY."
+    },
+    "metricConditions": {
+      "buttonSemantics": "button group with aria-pressed",
+      "states": {
+        "RATE": "4.172× joined / spaced; exact-form appearances per million corpus word tokens",
+        "REACH": "3.970× joined / spaced; containing-volume incidences per million corpus volumes",
+        "REPEAT": "1.051× joined / spaced; exact-form appearances per containing volume"
+      },
+      "geometryChangedPerState": true,
+      "stableModuleHeightPx": 1097.34375,
+      "stableDocumentHeightPx": 7426
+    },
+    "evidenceRail": {
+      "cardWidthPx": 326,
+      "insetPx": 24,
+      "gapPx": 12,
+      "nextCardPeekPx": 28,
+      "scrollSnapType": "x mandatory",
+      "nextButtonScrollLeftBeforeAfter": [0, 338],
+      "onlyOneCardOpen": true
+    }
+  },
+  "serverRenderedWithoutJavaScript": {
+    "htmlBytes": 150684,
+    "allFourFiguresPresent": true,
+    "defaultRateButtonPressed": true,
+    "defaultRatioPresent": true,
+    "defaultUnitPresent": true,
+    "nativeDetailsPresent": true,
+    "citationPresent": true
+  },
+  "publicCopy": {
+    "containsAuditGateStopOrUnauthorizedLanguage": false,
+    "containsAmbiguousPublicMatchUnit": false,
+    "citationClosedByDefault": true
+  },
+  "desktop1440": {
+    "viewport": { "width": 1440, "height": 900 },
+    "documentWidth": 1440,
+    "h1Count": 1,
+    "mobileStudyPresent": false,
+    "existingDesktopStudyPresent": true,
+    "consoleWarnings": 0,
+    "consoleErrors": 0
+  },
+  "captureMethod": "The in-app browser's long-page fullPage stitch repeated its first frame, so final full-page evidence was rebuilt deterministically from real 844/932px viewport captures at exact scroll offsets. Module crops are absolute extracts from that verified stitch.",
+  "keyEvidenceSha256": {
+    "screenshots/forever-mobile-390-full.jpg": "a745a985ef9900915acb20be7a1460f145895751d21c5ae0d26a605dec0ddde2",
+    "screenshots/forever-mobile-430-full.jpg": "77938ba7fcb2f61b7e7f7ea0cecbf506aa5de3845b70ed2b2be1d17f6f483fa2",
+    "screenshots/forever-mobile-390-F03-front.jpg": "b3d8208dbc97f063b782b085a412d755e53dcbb7597c83895a4995a3ab0cbc23",
+    "screenshots/forever-mobile-390-F03-flipped.jpg": "4663ebddbd0b52d37e62c5073a90b1dfa856c77920addeb6dfe790528b2117a9",
+    "screenshots/forever-desktop-1440x900.jpg": "22b347902d2a8202ba3a47c8329a42868b51642cbe5c2dc12ee31302e8383807",
+    "contact-sheets/F01-reference-3-vs-implementation.jpg": "3b6fbad17310a5a52a01c410433efd9f3f309d3ddd43a6fbb326d0ec4324c5a5",
+    "contact-sheets/F02-reference-1-vs-implementation.jpg": "c348fac0ed98a0ada701628f489aadc88c74dcd24b6af5a21e714fdfc74f583f",
+    "contact-sheets/F03-reference-2-vs-implementation.jpg": "8fcd2c677d562e43f6b46826e178c441c4e456769fa37c7cacfd344779cf1d08",
+    "contact-sheets/F04-reference-4-vs-implementation.jpg": "4641eab87ce3d970cbb79d293496adcd7684bd159dae33d2e5421c94b9493728"
+  }
+}

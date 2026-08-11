@@ -33,7 +33,7 @@ const posterMarksPath = path.join(root, "src/components/PosterMarks.tsx");
 const foreverPagePath = path.join(root, "src/app/words/forever/page.tsx");
 const foreverPublicRendererPath = path.join(
   root,
-  "src/components/ForeverMobileEditorial.tsx",
+  "src/components/forever/mobile/MobileForeverStudy.tsx",
 );
 
 const [
@@ -373,9 +373,11 @@ check(
 
 const publicForeverText = `${foreverPage}\n${foreverPublicRenderer}`;
 check(
-  foreverPage.includes("ForeverMobileEditorial") &&
+  foreverPage.includes("MobileForeverStudy") &&
+    foreverPage.includes("foreverMobileAnalysis") &&
+    !foreverPage.includes("ForeverMobileEditorial") &&
     !foreverPage.includes("ForeverMobileDataGate"),
-  "Public Forever route must use the prior public mobile renderer",
+  "Public Forever route must use the independent fixed-release mobile study renderer",
 );
 check(
   !/RAW-DATA AUDIT|PUBLICATION GATE|Forever page gate|implementation unauthorized|\bSTOP\b|productionEligible|contract-google/i.test(
@@ -412,7 +414,7 @@ const report = {
     sourceFontFloorPx,
   },
   forever: {
-    publicRenderer: "ForeverMobileEditorial",
+    publicRenderer: "MobileForeverStudy",
     internalGateCopyRendered: false,
   },
   failures,

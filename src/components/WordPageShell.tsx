@@ -27,7 +27,7 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
     >
       <div className="mx-auto w-full max-w-[1960px] px-5 pt-5 min-[960px]:px-10 xl:px-12">
         <Nav />
-        <header className={`relative mt-1 min-[960px]:overflow-hidden min-[960px]:border-y-2 min-[960px]:border-ink min-[960px]:py-14 ${isForever ? "py-10" : "py-12"}`}>
+        <header className={`relative mt-1 min-[960px]:overflow-hidden min-[960px]:border-y-2 min-[960px]:border-ink min-[960px]:py-14 ${isForever ? "py-5" : "py-12"}`}>
           <div className="pointer-events-none absolute inset-0 hidden opacity-60 [background-image:linear-gradient(90deg,rgba(5,5,16,0.09)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.07)_1px,transparent_1px)] [background-size:72px_72px] min-[960px]:block" />
           <div className="relative grid min-w-0 gap-8 min-[960px]:grid-cols-[minmax(0,1fr)_22rem] min-[960px]:items-end">
             <div className="min-w-0">
@@ -36,14 +36,21 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
               </p>
               <h1
                 id={`${profile.word}-study-title`}
-                className={`mt-5 max-w-full break-words font-extrabold text-[var(--study-text-accent)] min-[960px]:mt-4 min-[960px]:text-[clamp(4.3rem,17vw,18rem)] min-[960px]:font-black min-[960px]:leading-[0.76] min-[960px]:tracking-[-0.045em] ${isForever ? "text-[clamp(3.5rem,23vw,7rem)] leading-[0.84] tracking-[-0.035em]" : "text-[clamp(4.3rem,17vw,18rem)] leading-[0.84] tracking-[-0.035em]"}`}
+                className={`mt-5 max-w-full break-words font-extrabold text-[var(--study-text-accent)] min-[960px]:mt-4 min-[960px]:text-[clamp(4.3rem,17vw,18rem)] min-[960px]:font-black min-[960px]:leading-[0.76] min-[960px]:tracking-[-0.045em] ${isForever ? "!mt-3 text-[clamp(3rem,14vw,4rem)] leading-[0.84] tracking-[-0.035em] min-[960px]:!mt-4" : "text-[clamp(4.3rem,17vw,18rem)] leading-[0.84] tracking-[-0.035em]"}`}
               >
                 {profile.word}
               </h1>
-              <p className="mt-7 max-w-5xl text-[1.0625rem] font-normal leading-[1.55] min-[960px]:text-[clamp(1.12rem,2.2vw,2.85rem)] min-[960px]:font-black min-[960px]:leading-[1.04]">
-                {profile.heroSummary}
+              <p className={`mt-7 max-w-5xl text-[1.0625rem] font-normal leading-[1.55] min-[960px]:text-[clamp(1.12rem,2.2vw,2.85rem)] min-[960px]:font-black min-[960px]:leading-[1.04] ${isForever ? "!mt-4 leading-[1.45] min-[960px]:!mt-7" : ""}`}>
+                {isForever ? (
+                  <>
+                    <span className="min-[960px]:hidden">
+                      Two movements shape the record: first the spelling balance turns as <i>for ever</i> retreats; later both forms rebound after the split has already settled.
+                    </span>
+                    <span className="hidden min-[960px]:inline">{profile.heroSummary}</span>
+                  </>
+                ) : profile.heroSummary}
               </p>
-              <p className="mt-5 max-w-4xl font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-ink/85 min-[960px]:mt-4 min-[960px]:text-[0.88rem] min-[960px]:font-black min-[960px]:leading-6 min-[960px]:tracking-[0.11em] min-[960px]:text-ink/[0.62]">
+              <p className={`mt-5 max-w-4xl font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-ink/85 min-[960px]:mt-4 min-[960px]:text-[0.88rem] min-[960px]:font-black min-[960px]:leading-6 min-[960px]:tracking-[0.11em] min-[960px]:text-ink/[0.62] ${isForever ? "hidden min-[960px]:block" : ""}`}>
                 {profile.scopeLine}
               </p>
               {!isForever ? (
@@ -70,7 +77,9 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
         <EvidenceCoverageStrip profile={profile} />
       </div>
       {children}
-      <WordSeoSummary path={path} />
+      <div className={isForever ? "hidden min-[960px]:block" : undefined}>
+        <WordSeoSummary path={path} />
+      </div>
     </main>
   );
 }

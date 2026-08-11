@@ -1,0 +1,1247 @@
+.root {
+  --joined: var(--wot-fire);
+  --spaced: var(--wot-nice);
+  --paper-blue: color-mix(in srgb, var(--wot-nice) 18%, var(--wot-paper-mobile));
+  --paper-violet: color-mix(in srgb, #8058c6 22%, var(--wot-paper-mobile));
+  --paper-green: color-mix(in srgb, var(--wot-sail) 56%, var(--wot-paper-mobile));
+  display: block;
+  width: 100%;
+  overflow-x: clip;
+  background: var(--wot-paper-mobile);
+  color: var(--wot-ink);
+}
+
+.root figure,
+.root h2,
+.root p,
+.root dl,
+.root dd {
+  margin: 0;
+}
+
+.figureIndex,
+.sheetHeader > p,
+.returnHeader > p,
+.formKey,
+.returnFooter,
+.localCaveat,
+.outlineCapsule,
+.resultStatement,
+.selectedYear,
+.firstEvidencePanel,
+.firstTurnSelector,
+.compositionHeader > p:first-child,
+.tileLabel,
+.tileAction,
+.metricHeader > p:first-child,
+.metricControlHeader,
+.metricControls > p,
+.metricPanelLabel,
+.metricLatestValues,
+.metricLive,
+.railHeader,
+.cardUnit,
+.cardAction,
+.cardBody,
+.citation,
+.mobileFooter {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+.figureIndex {
+  color: var(--wot-fire);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* F01 / Reference 3 */
+
+.longArc {
+  display: grid;
+  gap: 0.75rem;
+  padding-block: 0.25rem 1.5rem;
+}
+
+.arcSheet,
+.returnSheet {
+  position: relative;
+  width: calc(100% - 3rem);
+  margin-inline: 1.5rem !important;
+  overflow: hidden;
+  border-radius: 1.75rem;
+}
+
+.arcSheet {
+  aspect-ratio: 342 / 620;
+  padding: 1.4rem 1.1rem 1rem;
+  background: var(--paper-blue);
+}
+
+.sheetHeader h2,
+.returnHeader h2 {
+  max-width: 6.2ch;
+  margin-top: 0.7rem;
+  font-size: clamp(3.35rem, 15vw, 4.25rem);
+  font-weight: 500;
+  letter-spacing: -0.065em;
+  line-height: 0.88;
+}
+
+.sheetHeader > p:last-child {
+  max-width: 22ch;
+  margin-top: 0.75rem;
+  color: color-mix(in srgb, var(--wot-ink) 60%, transparent);
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+
+.arcPeriodRow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.45rem;
+  margin-top: 1.8rem;
+  color: color-mix(in srgb, var(--wot-ink) 52%, transparent);
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+.arcChart {
+  display: grid;
+  height: 53%;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.48rem;
+  align-items: end;
+  margin-top: 0.85rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--wot-ink) 42%, transparent);
+}
+
+.arcColumnSlot {
+  position: relative;
+  height: 100%;
+}
+
+.arcColumn {
+  position: absolute;
+  inset: 0 0 0;
+}
+
+.arcJoinedSegment,
+.arcSpacedSegment {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+.arcJoinedSegment {
+  height: var(--arc-joined);
+  background: var(--joined);
+}
+
+.arcSpacedSegment {
+  bottom: var(--arc-joined);
+  height: var(--arc-spaced);
+  background-color: color-mix(in srgb, var(--spaced) 17%, transparent);
+  background-image: repeating-linear-gradient(135deg, color-mix(in srgb, var(--spaced) 55%, transparent) 0 3px, transparent 3px 7px);
+}
+
+.arcTotalLabel,
+.arcSpacedLabel,
+.arcJoinedLabel {
+  position: absolute;
+  z-index: 2;
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.arcTotalLabel {
+  right: 0;
+  bottom: calc(var(--arc-total) + 0.45rem);
+  font-weight: 800;
+}
+
+.arcSpacedLabel {
+  right: 0.2rem;
+  bottom: calc(var(--arc-joined) + var(--arc-spaced) - 1.1rem);
+  color: var(--wot-ink);
+  font-weight: 700;
+}
+
+.arcJoinedLabel {
+  right: 0.2rem;
+  bottom: 0.35rem;
+  color: var(--wot-paper-mobile);
+  font-weight: 800;
+}
+
+.formKey {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.formKey span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.formKey i {
+  width: 1.2rem;
+  height: 0.55rem;
+  border: 1px solid var(--wot-ink);
+}
+
+.joinedKey { background: var(--joined); }
+.spacedKey {
+  background-color: color-mix(in srgb, var(--spaced) 15%, transparent);
+  background-image: repeating-linear-gradient(135deg, var(--spaced) 0 2px, transparent 2px 5px);
+}
+
+.returnSheet {
+  aspect-ratio: 342 / 462;
+  padding: 1.4rem 1.1rem 1.1rem;
+  background: var(--paper-violet);
+}
+
+.returnHeader h2 {
+  max-width: 6ch;
+}
+
+.returnSteps {
+  display: grid;
+  align-content: end;
+  margin-top: 1.2rem;
+}
+
+.returnSteps > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.65rem 0.8rem;
+}
+
+.returnSteps strong {
+  font-size: clamp(3.2rem, 15.5vw, 4.2rem);
+  font-weight: 500;
+  letter-spacing: -0.07em;
+  line-height: 0.88;
+}
+
+.returnSteps span {
+  margin-top: 0.3rem;
+  font-size: 0.8125rem;
+  font-weight: 650;
+}
+
+.returnStepPeak {
+  height: 5.4rem;
+  background: color-mix(in srgb, var(--wot-paper-mobile) 92%, white);
+}
+
+.returnStepLow {
+  width: 76%;
+  height: 4.6rem;
+  margin-left: auto;
+  background: color-mix(in srgb, var(--paper-violet) 58%, white);
+}
+
+.returnStepNow {
+  width: 54%;
+  height: 4.6rem;
+  margin-left: auto;
+  background: color-mix(in srgb, #8058c6 35%, var(--wot-paper-mobile));
+}
+
+.returnFooter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.45rem;
+  margin-top: 0.85rem !important;
+  font-size: 0.8125rem;
+}
+
+.returnFooter dt { color: color-mix(in srgb, var(--wot-ink) 56%, transparent); }
+.returnFooter dd { margin-top: 0.2rem; font-weight: 800; }
+
+.localCaveat {
+  margin-top: 0.75rem !important;
+  color: color-mix(in srgb, var(--wot-ink) 66%, transparent);
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+
+/* F02 / Reference 1 */
+
+.firstTurn {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: var(--wot-ink);
+}
+
+.firstTurn article,
+.firstTurnSelector {
+  overflow: hidden;
+  border-radius: 1.6rem;
+}
+
+.firstLeadPanel,
+.firstStatPanel,
+.firstSequencePanel,
+.firstEvidencePanel {
+  position: relative;
+  padding: 1.15rem;
+}
+
+.firstLeadPanel {
+  height: 15.75rem;
+  background: color-mix(in srgb, var(--wot-ink) 34%, var(--wot-paper-mobile));
+  color: var(--wot-paper-mobile);
+}
+
+.firstLeadPanel h2 {
+  position: relative;
+  z-index: 2;
+  max-width: 9ch;
+  margin-top: 1.35rem;
+  font-size: clamp(2.65rem, 12vw, 3.35rem);
+  font-weight: 650;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+}
+
+.firstLeadPanel > p {
+  position: relative;
+  z-index: 2;
+  max-width: 25ch;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.annualTexture {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: end;
+  gap: 0.35rem;
+  padding: 4.8rem 1.15rem 1.15rem;
+  opacity: 0.16;
+  transform: rotate(-8deg) scale(1.1);
+}
+
+.annualTexture i {
+  height: var(--texture-height);
+  background-image: repeating-linear-gradient(135deg, white 0 3px, transparent 3px 8px);
+}
+
+.capsuleRow,
+.cardTopline {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.outlineCapsule {
+  display: inline-flex;
+  min-height: 1.25rem;
+  align-items: center;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0.12rem 0.45rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  line-height: 1;
+}
+
+.circleAffordance {
+  display: inline-flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 1.1rem;
+}
+
+.firstStatPanel {
+  height: 16.5rem;
+  background: var(--wot-sun);
+}
+
+.dominantStat {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-top: 2.2rem;
+}
+
+.dominantStat strong {
+  font-size: clamp(4.4rem, 22vw, 6.1rem);
+  font-weight: 500;
+  letter-spacing: -0.075em;
+  line-height: 0.82;
+}
+
+.dominantStat span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.firstStatPanel > p {
+  margin-top: 0.65rem;
+  font-size: 0.875rem;
+  font-weight: 650;
+}
+
+.resultRule {
+  position: relative;
+  height: 1px;
+  margin-top: 1.35rem;
+  background: var(--wot-ink);
+}
+
+.resultRule::after {
+  position: absolute;
+  top: -0.25rem;
+  right: 0;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--wot-ink);
+  content: "";
+}
+
+.resultStatement {
+  font-weight: 800 !important;
+  letter-spacing: 0.035em;
+}
+
+.firstSequencePanel {
+  height: 19rem;
+  background: var(--paper-green);
+}
+
+.selectedYear {
+  font-size: 0.8125rem;
+  font-weight: 800;
+}
+
+.sequenceChart {
+  position: relative;
+  display: grid;
+  height: 10.5rem;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.45rem;
+  align-items: end;
+  margin-top: 1.3rem;
+  border-bottom: 1px solid var(--wot-ink);
+}
+
+.thresholdLine {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: 0;
+  left: 0;
+  border-top: 1px dashed color-mix(in srgb, var(--wot-ink) 65%, transparent);
+}
+
+.thresholdLine b {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  font-size: 0.8125rem;
+}
+
+.sequencePosition {
+  position: relative;
+  height: 100%;
+}
+
+.sequenceBar {
+  position: absolute;
+  right: 12%;
+  bottom: 0;
+  left: 12%;
+  height: var(--share-height);
+  border-radius: 0.45rem 0.45rem 0 0;
+  background: color-mix(in srgb, var(--wot-ink) 22%, transparent);
+}
+
+.sequencePosition[data-active="true"] .sequenceBar {
+  background: var(--wot-ink);
+}
+
+.sequencePosition strong {
+  position: absolute;
+  bottom: calc(var(--share-height) + 0.35rem);
+  left: 50%;
+  font-size: 0.8125rem;
+  transform: translateX(-50%) rotate(-90deg);
+  transform-origin: center;
+  white-space: nowrap;
+}
+
+.sequencePosition small {
+  position: absolute;
+  right: 0;
+  bottom: -1.25rem;
+  left: 0;
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+.sequenceReading {
+  margin-top: 1.7rem !important;
+  font-size: 0.8125rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.firstEvidencePanel {
+  background: var(--paper-violet);
+}
+
+.firstEvidencePanel dl {
+  margin-top: 1rem !important;
+}
+
+.firstEvidencePanel dl > div {
+  display: grid;
+  min-height: 2.9rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--wot-ink) 40%, transparent);
+  font-size: 0.8125rem;
+}
+
+.firstEvidencePanel dt { color: color-mix(in srgb, var(--wot-ink) 68%, transparent); }
+.firstEvidencePanel dd { font-family: Helvetica, Arial, sans-serif; font-size: 1rem; font-weight: 800; }
+
+.firstTurnSelector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.25rem;
+  padding: 0.3rem;
+  background: var(--paper-green);
+}
+
+.firstTurnSelector button {
+  min-height: 3rem;
+  border: 1px solid var(--wot-ink);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--wot-ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 800;
+}
+
+.firstTurnSelector button[aria-pressed="true"] {
+  background: var(--wot-ink);
+  color: var(--wot-paper-mobile);
+}
+
+.firstTurnSelector button:focus-visible,
+.metricButtons button:focus-visible,
+.railControls button:focus-visible,
+.compositionTile summary:focus-visible,
+.evidenceCard summary:focus-visible,
+.citation summary:focus-visible,
+.citation a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+/* F03 / Reference 2 */
+
+.compositionSection {
+  padding: 2.8rem 1.5rem 1.5rem;
+  background: var(--wot-paper-mobile);
+}
+
+.compositionHeader h2,
+.metricHeader h2,
+.closingFinding h2 {
+  max-width: 9ch;
+  margin-top: 0.7rem;
+  font-size: clamp(2.65rem, 12vw, 3.35rem);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 0.92;
+}
+
+.compositionHeader > p:last-child,
+.metricHeader > p:last-child {
+  max-width: 28ch;
+  margin-top: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.42;
+}
+
+.compositionMosaic {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 342 / 564;
+  margin-top: 1.5rem;
+  overflow: visible;
+  background: var(--wot-ink);
+}
+
+.compositionTile {
+  position: absolute;
+  z-index: 1;
+  perspective: 900px;
+}
+
+.compositionTile[open] { z-index: 20; }
+
+.compositionTile summary {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  cursor: pointer;
+  list-style: none;
+  transform-style: preserve-3d;
+}
+
+.compositionTile summary::-webkit-details-marker { display: none; }
+
+.tileFront,
+.tileBack {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: inherit;
+  backface-visibility: hidden;
+  transition: transform 250ms ease;
+}
+
+.tileFront { background: inherit; }
+.tileBack {
+  background: var(--wot-ink);
+  color: var(--wot-paper-mobile);
+  transform: rotateY(180deg);
+}
+
+.compositionTile[open] .tileFront { transform: rotateY(180deg); }
+.compositionTile[open] .tileBack { transform: rotateY(0deg); }
+
+.tileLabel,
+.tileAction {
+  font-size: 0.8125rem;
+  font-weight: 800;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.tileFront strong {
+  align-self: flex-start;
+  font-size: clamp(3rem, 14vw, 4.2rem);
+  font-weight: 450;
+  letter-spacing: -0.08em;
+  line-height: 0.82;
+}
+
+.tileBackCopy {
+  font-size: 0.875rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.tileAction { align-self: flex-start; border-bottom: 1px solid currentColor; }
+
+.tileUpperLeft {
+  top: 0;
+  left: 0;
+  width: 50.2%;
+  height: 34.5%;
+  border-radius: 1.3rem 1.3rem 1.3rem 0;
+}
+
+.tileUpperRight {
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 53.2%;
+  border-radius: 1.3rem 1.3rem 1.3rem 0;
+}
+
+.tileMiddleLeft {
+  top: 34.5%;
+  left: 0;
+  width: 50.4%;
+  height: 48.4%;
+  border-radius: 0 1.3rem 1.3rem 0;
+}
+
+.tileMiddleRight {
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 46.8%;
+  border-radius: 0 1.3rem 1.3rem 1.3rem;
+}
+
+.tileLowerLeft {
+  bottom: 0;
+  left: 0;
+  width: 50.4%;
+  height: 17.1%;
+  border-radius: 0 1.3rem 1.3rem 1.3rem;
+}
+
+.tileLowerLeft .tileFront { padding: 0.7rem; }
+
+.tileLowerLeft .tileLabel {
+  max-width: 6rem;
+  line-height: 1.05;
+}
+
+.tileLowerLeft .tileFront strong {
+  font-size: clamp(2rem, 9vw, 2.4rem);
+  letter-spacing: -0.06em;
+  white-space: nowrap;
+}
+
+.tileLowerLeft .tileFront .tileAction {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+}
+
+.tileLowerLeft[open] summary {
+  inset: auto auto 0 0;
+  width: 199.2%;
+  height: 250%;
+}
+
+.tileJoinedStrong { background: color-mix(in srgb, var(--joined) 82%, var(--wot-blaze)); }
+.tileJoinedPale { background: color-mix(in srgb, var(--joined) 38%, var(--wot-paper-mobile)); }
+.tileSpacedStrong { background: color-mix(in srgb, var(--spaced) 82%, var(--wot-paper-mobile)); }
+.tileSpacedPale { background: color-mix(in srgb, var(--spaced) 22%, var(--wot-paper-mobile)); }
+.tileBand { background: color-mix(in srgb, var(--wot-ink) 7%, var(--wot-paper-mobile)); }
+
+/* F04 / Reference 4 */
+
+.metricSection {
+  padding: 2.8rem 1.5rem 1.8rem;
+  background: color-mix(in srgb, var(--wot-ink) 10%, var(--wot-paper-mobile));
+}
+
+.metricShell {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.metricControls,
+.metricChartPanel {
+  border-radius: 1.3rem;
+  background: color-mix(in srgb, white 52%, var(--wot-paper-mobile));
+}
+
+.metricControls { padding: 1.1rem; }
+
+.metricControlHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+}
+
+.metricControlHeader strong { font-family: Helvetica, Arial, sans-serif; font-size: 1rem; }
+
+.metricButtons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem;
+  margin-top: 1.2rem;
+  padding: 0.25rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--wot-ink) 8%, transparent);
+}
+
+.metricButtons button {
+  display: grid;
+  min-width: 0;
+  min-height: 4rem;
+  place-items: center;
+  gap: 0.15rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--wot-ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 800;
+}
+
+.metricButtons button[aria-pressed="true"] {
+  background: var(--wot-ink);
+  color: var(--wot-paper-mobile);
+}
+
+.metricButtons svg {
+  width: 3.5rem;
+  height: 1rem;
+  overflow: visible;
+}
+
+.metricButtons polyline {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.metricIntensity {
+  position: relative;
+  width: 60%;
+  height: 0.7rem;
+  margin: 1.2rem auto 0;
+  overflow: hidden;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--wot-ink) 16%, transparent);
+}
+
+.metricIntensity span {
+  display: block;
+  width: var(--metric-ratio);
+  height: 100%;
+  border-radius: inherit;
+  background: var(--wot-ink);
+  transition: width 250ms ease;
+}
+
+.metricControls > p {
+  max-width: 34ch;
+  margin-top: 0.75rem;
+  color: color-mix(in srgb, var(--wot-ink) 68%, transparent);
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.metricChartPanel { padding: 1.1rem 0.9rem 1rem; }
+
+.metricPanelLabel,
+.metricLive {
+  font-size: 0.8125rem;
+  font-weight: 750;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.metricPanelReading {
+  max-width: 30ch;
+  min-height: calc(0.875rem * 1.42 * 3);
+  margin-top: 0.7rem !important;
+  font-size: 0.875rem;
+  line-height: 1.42;
+}
+
+.metricChart {
+  position: relative;
+  display: grid;
+  height: 17rem;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.25rem;
+  align-items: end;
+  margin-top: 1.1rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--wot-ink) 42%, transparent);
+}
+
+.metricGuide {
+  position: absolute;
+  z-index: 3;
+  inset: 0 0 1.3rem;
+  width: 100%;
+  height: calc(100% - 1.3rem);
+  overflow: visible;
+  pointer-events: none;
+}
+
+.metricGuide polyline {
+  fill: none;
+  stroke: color-mix(in srgb, var(--joined) 58%, transparent);
+  stroke-dasharray: 2 4;
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+  transition: points 250ms ease;
+}
+
+.metricStemSlot {
+  position: relative;
+  height: calc(100% - 1.3rem);
+}
+
+.metricStemSlot small {
+  position: absolute;
+  right: 0;
+  bottom: -1.3rem;
+  left: 0;
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+.metricStem {
+  position: absolute;
+  inset: 0 18% 0;
+}
+
+.metricSpacedStem,
+.metricJoinedExtension,
+.metricEndpoint {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: block;
+  transition: bottom 250ms ease, height 250ms ease;
+}
+
+.metricSpacedStem {
+  bottom: 0;
+  height: var(--spaced-height);
+  border-radius: 0.45rem 0.45rem 0 0;
+  background: color-mix(in srgb, var(--spaced) 36%, #a5a5a5);
+}
+
+.metricJoinedExtension {
+  bottom: var(--spaced-height);
+  height: var(--extension-height);
+  min-height: 2px;
+  border-radius: 0.45rem;
+  background: var(--joined);
+}
+
+.metricEndpoint {
+  bottom: calc(var(--joined-height) - 0.22rem);
+  height: 0.55rem;
+  border-radius: 999px;
+  background: var(--joined);
+}
+
+.metricLatestValues {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem !important;
+  font-size: 0.8125rem;
+}
+
+.metricLatestValues div { border-top: 1px solid var(--wot-ink); padding-top: 0.5rem; }
+.metricLatestValues dt { color: color-mix(in srgb, var(--wot-ink) 58%, transparent); }
+.metricLatestValues dd { margin-top: 0.2rem; font-family: Helvetica, Arial, sans-serif; font-size: 1.3rem; font-weight: 750; }
+.metricLive { margin-top: 0.8rem !important; color: color-mix(in srgb, var(--wot-ink) 66%, transparent); line-height: 1.35; text-transform: none; }
+
+/* Swipeable expandable evidence rails */
+
+.evidenceRailSection {
+  padding-block: 2rem 2.4rem;
+  overflow: hidden;
+  background: var(--wot-ink);
+  color: var(--wot-paper-mobile);
+}
+
+.railHeader {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-inline: 1.5rem;
+}
+
+.railHeader p { color: var(--wot-sun); font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.05em; }
+.railHeader h2 { margin-top: 0.35rem; font-family: Helvetica, Arial, sans-serif; font-size: 1.5rem; letter-spacing: -0.04em; }
+
+.railControls {
+  display: grid;
+  grid-template-columns: 2.75rem auto 2.75rem;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.railControls button {
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1rem;
+}
+
+.railControls span { font-size: 0.8125rem; white-space: nowrap; }
+
+.railScroller {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.1rem;
+  padding: 0 1.5rem 0.5rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-padding-inline: 1.5rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+
+.evidenceCard {
+  width: calc(100vw - 4rem);
+  max-width: 22.875rem;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: 1.6rem;
+  background: var(--paper-blue);
+  color: var(--wot-ink);
+  scroll-snap-align: start;
+}
+
+.evidenceCard summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.evidenceCard summary::-webkit-details-marker { display: none; }
+
+.cardFront {
+  display: flex;
+  min-height: 35rem;
+  flex-direction: column;
+  padding: 1.15rem 1.15rem 0;
+}
+
+.cardValue {
+  display: block;
+  margin-top: 2.4rem;
+  font-size: clamp(4.6rem, 22vw, 6.2rem);
+  font-weight: 500;
+  letter-spacing: -0.08em;
+  line-height: 0.8;
+}
+
+.cardUnit {
+  display: block;
+  max-width: 27ch;
+  margin-top: 0.8rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.cardMicro {
+  position: relative;
+  display: flex;
+  height: 12rem;
+  align-items: end;
+  gap: 0.35rem;
+  margin-top: auto;
+  padding-block: 0.9rem;
+  border-bottom: 1px solid currentColor;
+}
+
+.cardMicro i { display: block; }
+
+.stacked-rate i:first-child,
+.stacked-rate i:last-child,
+.form-composition i:first-child,
+.form-composition i:last-child {
+  height: 1.25rem;
+}
+
+.stacked-rate i:first-child,
+.form-composition i:first-child {
+  width: var(--micro-primary);
+  background: var(--joined);
+}
+
+.stacked-rate i:last-child,
+.form-composition i:last-child {
+  width: var(--micro-secondary);
+  background-color: color-mix(in srgb, var(--spaced) 25%, transparent);
+  background-image: repeating-linear-gradient(135deg, var(--spaced) 0 2px, transparent 2px 5px);
+}
+
+.factor-strip i:first-child,
+.factor-strip i:last-child {
+  width: 42%;
+  border-radius: 0.45rem 0.45rem 0 0;
+}
+
+.factor-strip i:first-child { height: var(--micro-primary); max-height: 100%; background: var(--joined); }
+.factor-strip i:last-child { height: var(--micro-secondary); max-height: 100%; background: var(--spaced); }
+
+.cardAction {
+  display: flex;
+  min-height: 3.25rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 800;
+}
+
+.cardAction b { font-size: 1.25rem; transition: transform 180ms ease; }
+.evidenceCard[open] .cardAction b { transform: rotate(45deg); }
+
+.cardBody {
+  padding: 0 1.15rem 1.25rem;
+}
+
+.cardBody dl { border-top: 1px solid var(--wot-ink); }
+.cardBody dl > div { padding-block: 0.8rem; border-bottom: 1px solid color-mix(in srgb, var(--wot-ink) 30%, transparent); }
+.cardBody dt { font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; }
+.cardBody dd { margin-top: 0.35rem; font-family: Helvetica, Arial, sans-serif; font-size: 0.875rem; line-height: 1.45; }
+
+.rail-a .cardTone1 { background: var(--paper-blue); }
+.rail-a .cardTone2 { background: var(--paper-violet); }
+.rail-a .cardTone3 { background: color-mix(in srgb, var(--wot-sun) 45%, var(--wot-paper-mobile)); }
+.rail-b .cardTone1 { background: var(--wot-sun); }
+.rail-b .cardTone2 { background: var(--paper-green); }
+.rail-b .cardTone3 { background: var(--paper-violet); }
+.rail-c .cardTone1 { background: color-mix(in srgb, var(--joined) 28%, var(--wot-paper-mobile)); }
+.rail-c .cardTone2 { background: color-mix(in srgb, var(--spaced) 28%, var(--wot-paper-mobile)); }
+.rail-c .cardTone3 { background: color-mix(in srgb, var(--wot-ink) 8%, var(--wot-paper-mobile)); }
+
+/* Closing and folded sources */
+
+.closingFinding {
+  padding: 2rem 1.5rem 1.8rem;
+  background: var(--wot-paper-mobile);
+}
+
+.closingFinding h2 { max-width: 11ch; font-size: clamp(2.35rem, 10.5vw, 3rem); }
+.closingFinding > p:last-child { max-width: 31ch; margin-top: 1rem; font-size: 1.0625rem; line-height: 1.5; }
+
+.citation {
+  margin-inline: 1.5rem;
+  border-block: 1px solid var(--wot-ink);
+}
+
+.citation summary {
+  display: flex;
+  min-height: 3.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.citation summary::-webkit-details-marker { display: none; }
+.citation summary span { font-size: 1.2rem; transition: transform 180ms ease; }
+.citation[open] summary span { transform: rotate(45deg); }
+
+.citationBody {
+  padding-block: 0.25rem 1.2rem;
+}
+
+.citationBody p {
+  margin-top: 0.9rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.citationBody code { font-size: 0.8125rem; overflow-wrap: anywhere; }
+.citationBody nav { display: grid; gap: 0.35rem; margin-top: 1rem; }
+.citationBody a { display: flex; min-height: 2.75rem; align-items: center; border-top: 1px solid color-mix(in srgb, var(--wot-ink) 30%, transparent); font-size: 0.875rem; font-weight: 700; }
+
+.mobileFooter {
+  margin: 1.7rem 1.5rem 0;
+  padding-block: 1rem 0.7rem;
+  border-top: 1px solid var(--wot-ink);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+@media (min-width: 60rem) {
+  .root { display: none; }
+}
+
+@media (max-width: 20rem) {
+  .arcSheet,
+  .returnSheet,
+  .citation,
+  .mobileFooter {
+    width: calc(100% - 2rem);
+    margin-inline: 1rem !important;
+  }
+
+  .compositionSection,
+  .metricSection,
+  .closingFinding {
+    padding-inline: 1rem;
+  }
+
+  .railHeader,
+  .railScroller { padding-inline: 1rem; }
+  .railScroller { scroll-padding-inline: 1rem; }
+  .evidenceCard { width: calc(100vw - 3rem); }
+  .tileFront,
+  .tileBack { padding: 0.75rem; }
+  .tileFront strong { font-size: clamp(1.9rem, 12.5vw, 2.5rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tileFront,
+  .tileBack,
+  .metricIntensity span,
+  .metricGuide polyline,
+  .metricSpacedStem,
+  .metricJoinedExtension,
+  .metricEndpoint,
+  .cardAction b,
+  .citation summary span {
+    transition: none;
+  }
+
+  .compositionTile[open] .tileFront { visibility: hidden; transform: none; }
+  .compositionTile[open] .tileBack { transform: none; }
+}
