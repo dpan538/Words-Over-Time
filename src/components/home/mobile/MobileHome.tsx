@@ -1,5 +1,56 @@
 import Link from "next/link";
+import {
+  plannedStudyById,
+  publishedStudyById,
+  type PublishedStudyRegistryEntry,
+} from "@/data/words";
 import styles from "./mobile-home.module.css";
+
+type HomePanel = "one" | "two";
+
+type PublishedWordMarkProps = {
+  className: string;
+  labelClassName?: string;
+  panel: HomePanel;
+  study: PublishedStudyRegistryEntry;
+};
+
+const foreverStudy = publishedStudyById("study-forever");
+const artificialStudy = publishedStudyById("study-artificial");
+const privacyStudy = publishedStudyById("study-privacy");
+const hubStudy = publishedStudyById("study-hub");
+const depressionStudy = publishedStudyById("study-depression");
+const intelligenceStudy = plannedStudyById("study-intelligence");
+const dataStudy = publishedStudyById("study-data");
+
+function PublishedWordMark({
+  className,
+  labelClassName,
+  panel,
+  study,
+}: PublishedWordMarkProps) {
+  const label = (
+    <>
+      {study.label}
+      <span aria-hidden="true">/</span>
+    </>
+  );
+
+  return (
+    <Link
+      href={study.href}
+      id={`m-home-word-${study.slug}`}
+      data-audit-home-word="published"
+      data-home-panel={panel}
+      data-home-status={study.status}
+      data-home-study-id={study.studyId}
+      data-home-word={study.slug}
+      className={`${styles.wordLink} ${className}`}
+    >
+      {labelClassName ? <span className={labelClassName}>{label}</span> : label}
+    </Link>
+  );
+}
 
 export function MobileHome() {
   return (
@@ -29,33 +80,21 @@ export function MobileHome() {
             Words you wanna know:
           </p>
           <div className={styles.firstWordField} aria-label="First word field">
-            <Link
-              href="/words/forever"
-              id="m-home-word-forever"
-              data-home-word="forever"
-              data-home-panel="one"
-              className={`${styles.wordLink} ${styles.forever}`}
-            >
-              forever<span aria-hidden="true">/</span>
-            </Link>
-            <Link
-              href="/words/artificial"
-              id="m-home-word-artificial"
-              data-home-word="artificial"
-              data-home-panel="one"
-              className={`${styles.wordLink} ${styles.artificial}`}
-            >
-              artificial<span aria-hidden="true">/</span>
-            </Link>
-            <Link
-              href="/words/privacy"
-              id="m-home-word-privacy"
-              data-home-word="privacy"
-              data-home-panel="one"
-              className={`${styles.wordLink} ${styles.privacy}`}
-            >
-              privacy<span aria-hidden="true">/</span>
-            </Link>
+            <PublishedWordMark
+              study={foreverStudy}
+              panel="one"
+              className={styles.forever}
+            />
+            <PublishedWordMark
+              study={artificialStudy}
+              panel="one"
+              className={styles.artificial}
+            />
+            <PublishedWordMark
+              study={privacyStudy}
+              panel="one"
+              className={styles.privacy}
+            />
           </div>
         </div>
 
@@ -67,47 +106,40 @@ export function MobileHome() {
 
       <section className={styles.secondPanel} id="m-home-panel-two" aria-label="Second word field and project links">
         <div className={styles.secondWordField}>
-          {/* No /words/null route or study record exists at this revision. Keep this
-              mark visibly unavailable rather than fabricating a link to /words/hub. */}
-          <div
-            id="m-home-word-null"
-            data-home-word="null"
-            data-home-panel="two"
-            className={`${styles.unavailableWord} ${styles.nullWord}`}
-          >
-            <span className={styles.nullMark}>null<span aria-hidden="true">/</span></span>
-            <span className={styles.unavailableStatus}>No route</span>
-          </div>
+          <PublishedWordMark
+            study={hubStudy}
+            panel="two"
+            className={styles.hubWord}
+            labelClassName={styles.hubMark}
+          />
 
-          <Link
-            href="/words/depression"
-            id="m-home-word-depression"
-            data-home-word="depression"
-            data-home-panel="two"
-            className={`${styles.wordLink} ${styles.depression}`}
-          >
-            depression<span aria-hidden="true">/</span>
-          </Link>
+          <PublishedWordMark
+            study={depressionStudy}
+            panel="two"
+            className={styles.depression}
+          />
 
           <div
-            id="m-home-word-intelligence"
-            data-home-word="intelligence"
+            id={`m-home-word-${intelligenceStudy.slug}`}
+            data-audit-home-word="planned"
             data-home-panel="two"
+            data-home-status={intelligenceStudy.status}
+            data-home-study-id={intelligenceStudy.studyId}
+            data-home-word={intelligenceStudy.slug}
             className={`${styles.comingSoonWord} ${styles.intelligence}`}
           >
-            <span>intelligence<span aria-hidden="true">/</span></span>
-            <span className={styles.comingSoonStatus}>Coming soon</span>
+            <span>
+              {intelligenceStudy.label}
+              <span aria-hidden="true">/</span>
+            </span>
+            <span className={styles.comingSoonStatus}>(Coming soon)</span>
           </div>
 
-          <Link
-            href="/words/data"
-            id="m-home-word-data"
-            data-home-word="data"
-            data-home-panel="two"
-            className={`${styles.wordLink} ${styles.data}`}
-          >
-            data<span aria-hidden="true">/</span>
-          </Link>
+          <PublishedWordMark
+            study={dataStudy}
+            panel="two"
+            className={styles.data}
+          />
         </div>
 
         <footer className={styles.mobileFooter}>

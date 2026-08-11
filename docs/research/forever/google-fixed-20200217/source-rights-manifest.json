@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "datasetDefaults": {
+    "dataset": "Google Books Ngram Corpus, English 2019 fixed release",
+    "viewerShorthand": "eng_2019",
+    "persistentIdentifier": "googlebooks-eng-20200217",
+    "rawReleaseDirectory": "20200217/eng",
+    "sourceUrl": "https://storage.googleapis.com/books/ngrams/books/datasetsv3.html",
+    "viewerInfoUrl": "https://books.google.com/ngrams/info",
+    "license": "Creative Commons Attribution 3.0 Unported License",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "attribution": "Google Books Ngram Viewer",
+    "rightsBoundary": "The downloaded Ngram compilation is CC BY 3.0. Google states that Ngram Viewer graphs and data may be freely used with acknowledgement appreciated. This record does not grant rights in underlying scanned books or page images."
+  },
+  "itemOverrides": {}
+}

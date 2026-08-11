@@ -1,52 +1,642 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "2.0.0",
   "auditId": "forever-raw-audit-2026-08-11",
   "dataGate": "STOP_RAW_DATA_MISSING",
-  "inputSetSha256": "03949f39974b1d867210e4147bf51e11d035905592e521e754b43bc13eabaf2a",
-  "expectedInputCount": 32,
+  "inputSetSha256": "4dd0ab67f7a6e3d0eca83fe0b3c3c660338964f5570cc492e44e876df66895b0",
+  "expectedInputCount": 48,
   "entries": [
     {
-      "id": "script-analyze-forever-raw",
-      "path": "scripts/analyze_forever_raw.ts",
-      "role": "transform-script",
-      "authorityLevel": "source-code-audit-only",
-      "sha256": "b64df9c91a9825b348309557baaf982a971651e98d007999e845fa229c60b1a1",
-      "byteLength": 118392,
+      "id": "raw-1a9b3a4e3fc0",
+      "path": "docs/research/forever/google-fixed-20200217/acquisition-manifest.json",
+      "role": "retained-raw",
+      "authorityLevel": "retained-upstream-raw",
+      "sha256": "d82539f2a6429caa8401a8dc387f436757334f3d6f7afaec3cb901044ec60593",
+      "byteLength": 4421,
       "productionAuthority": false,
       "fields": [
-        "TypeScript source text",
-        "hard-coded query/filter/transform/coordinate literals"
+        "cacheVerificationCompletedAt",
+        "discoveryCompletedAt",
+        "diskPreflight",
+        "objects",
+        "officialIndexUrl",
+        "release",
+        "retrievalStartedAt",
+        "schemaVersion"
       ],
-      "granularity": "source file",
+      "granularity": "one retained upstream raw file; record granularity is accepted only through a validated, checksum-bound source manifest",
       "recordCounts": {
-        "sourceLines": 2358,
-        "generatedAtCalls": 0,
-        "exportedConstants": 1
+        "objects": 3
       },
       "timeRange": null,
-      "source": "repository transform code",
+      "source": "retained upstream raw candidate",
       "sourceUrl": null,
       "corpus": null,
       "release": null,
       "missingness": [
-        "Source code cannot substitute for retained raw records or an explicit missingness state."
+        "Raw-file presence alone does not establish searched-zero, completeness, or coverage."
       ],
-      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "duplicatePolicy": "No policy inferred from filename; a validated transform/source manifest must define it.",
       "transformHistory": [
-        "Audited as executable transform logic."
+        "Byte-preserved and SHA-256 hashed by the audit; no transform is inferred."
       ],
-      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "rightsBoundary": "Not accepted until a checksum-bound rights/source manifest covers this exact path.",
       "caveats": [
-        "May contain untraceable transforms/geometry and is excluded from research authority."
+        "This entry cannot make a finding or figure production-authoritative by presence alone."
       ]
     },
     {
-      "id": "script-fetch-ngram-forever",
-      "path": "scripts/fetch_ngram_forever.ts",
+      "id": "raw-7228060c6aaf",
+      "path": "docs/research/forever/google-fixed-20200217/checksums.json",
+      "role": "retained-raw",
+      "authorityLevel": "retained-upstream-raw",
+      "sha256": "3b53d05a7a915aaa8e3049446a6050cbc40611766873f4ce439e95a85242d2a9",
+      "byteLength": 4476,
+      "productionAuthority": false,
+      "fields": [
+        "algorithm",
+        "files",
+        "schemaVersion"
+      ],
+      "granularity": "one retained upstream raw file; record granularity is accepted only through a validated, checksum-bound source manifest",
+      "recordCounts": {
+        "files": 18
+      },
+      "timeRange": null,
+      "source": "retained upstream raw candidate",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Raw-file presence alone does not establish searched-zero, completeness, or coverage."
+      ],
+      "duplicatePolicy": "No policy inferred from filename; a validated transform/source manifest must define it.",
+      "transformHistory": [
+        "Byte-preserved and SHA-256 hashed by the audit; no transform is inferred."
+      ],
+      "rightsBoundary": "Not accepted until a checksum-bound rights/source manifest covers this exact path.",
+      "caveats": [
+        "This entry cannot make a finding or figure production-authoritative by presence alone."
+      ]
+    },
+    {
+      "id": "raw-4f437c9ddab3",
+      "path": "docs/research/forever/google-fixed-20200217/core-family-registry.json",
+      "role": "retained-raw",
+      "authorityLevel": "retained-upstream-raw",
+      "sha256": "fb0be224282629d196e628cfb95ce22a7406e039b4063a4b6e3d53da0aa5b79d",
+      "byteLength": 1916,
+      "productionAuthority": false,
+      "fields": [
+        "coreForms",
+        "expectedRawUpperYear",
+        "familyId",
+        "optionalRelatedForms",
+        "outOfScope",
+        "release",
+        "schemaVersion",
+        "viewerRequestBoundary",
+        "viewerShorthand"
+      ],
+      "granularity": "one retained upstream raw file; record granularity is accepted only through a validated, checksum-bound source manifest",
+      "recordCounts": {
+        "coreForms": 2,
+        "optionalRelatedForms": 1,
+        "outOfScope": 1
+      },
+      "timeRange": null,
+      "source": "retained upstream raw candidate",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Raw-file presence alone does not establish searched-zero, completeness, or coverage."
+      ],
+      "duplicatePolicy": "No policy inferred from filename; a validated transform/source manifest must define it.",
+      "transformHistory": [
+        "Byte-preserved and SHA-256 hashed by the audit; no transform is inferred."
+      ],
+      "rightsBoundary": "Not accepted until a checksum-bound rights/source manifest covers this exact path.",
+      "caveats": [
+        "This entry cannot make a finding or figure production-authoritative by presence alone."
+      ]
+    },
+    {
+      "id": "raw-8cfe4ff1517d",
+      "path": "docs/research/forever/google-fixed-20200217/extracted/extraction-summary.json",
+      "role": "retained-raw",
+      "authorityLevel": "retained-upstream-raw",
+      "sha256": "deebfa3a55227a2e87ff4a40b2070e43c39e44e1c12781d9c79c0df963802cfe",
+      "byteLength": 2756,
+      "productionAuthority": false,
+      "fields": [
+        "annualExpandedSchema",
+        "exactEqualityOnly",
+        "forms",
+        "rawCoverageRule",
+        "release",
+        "schemaVersion",
+        "sourceWideRecordSchema",
+        "sparseAbsencePolicy",
+        "viewerRequestBoundary",
+        "wideFieldIndex"
+      ],
+      "granularity": "one retained upstream raw file; record granularity is accepted only through a validated, checksum-bound source manifest",
+      "recordCounts": {
+        "annualExpandedSchema": 8,
+        "forms": 3
+      },
+      "timeRange": null,
+      "source": "retained upstream raw candidate",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Raw-file presence alone does not establish searched-zero, completeness, or coverage."
+      ],
+      "duplicatePolicy": "No policy inferred from filename; a validated transform/source manifest must define it.",
+      "transformHistory": [
+        "Byte-preserved and SHA-256 hashed by the audit; no transform is inferred."
+      ],
+      "rightsBoundary": "Not accepted until a checksum-bound rights/source manifest covers this exact path.",
+      "caveats": [
+        "This entry cannot make a finding or figure production-authoritative by presence alone."
+      ]
+    },
+    {
+      "id": "derived-google-annual-for-ever-2",
+      "path": "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv",
+      "role": "derived-artifact",
+      "authorityLevel": "checksum-bound-derived",
+      "sha256": "f9dd1ada7fa010abc0fe024e73f06c9c2c2ca1971ee8a52cd478d64c1d5e70e4",
+      "byteLength": 33937,
+      "productionAuthority": true,
+      "fields": [
+        "ngram",
+        "year",
+        "match_count",
+        "volume_count",
+        "ngram_order",
+        "corpus_release",
+        "source_shard",
+        "wide_field_index"
+      ],
+      "granularity": "one deterministic annual expansion row per explicit field in the retained official wide source record",
+      "recordCounts": {
+        "annualDerivedRows": 457,
+        "explicitZeroRows": 0
+      },
+      "timeRange": {
+        "start": 1478,
+        "end": 2019,
+        "basis": "year copied from the indexed official v3 wide-record field",
+        "precision": "year"
+      },
+      "source": "deterministic expansion of retained Google v3 exact-form wide source record",
+      "sourceUrl": null,
+      "corpus": "English 2019",
+      "release": "googlebooks-eng-20200217",
+      "missingness": [
+        "Only explicit wide-record fields become rows; absent form-years are not emitted and remain absent_or_suppressed.",
+        "Explicit match_count=0 fields are retained and typed observed_zero; they are never inferred from absence."
+      ],
+      "duplicatePolicy": "Unique exact form + year and unique wide_field_index; every annual row must equal its indexed wide tuple.",
+      "transformHistory": [
+        "Checksum-bound google-20200217-wide-to-annual-expansion; numeric lexemes and zero-based wide field index retained."
+      ],
+      "rightsBoundary": "Inherits the fixed Google dataset-level boundary, with item-level override support.",
+      "caveats": [
+        "This is a derived lineage table, not an official four-column Google raw row format."
+      ]
+    },
+    {
+      "id": "raw-google-v3-wide-for-ever-2",
+      "path": "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.source.tsv",
+      "role": "retained-raw",
+      "authorityLevel": "retained-upstream-raw",
+      "sha256": "939b26396597ab91cbeff412a4d941db7dc06f9c8b891bb485d7567751eb3e9d",
+      "byteLength": 6541,
+      "productionAuthority": true,
+      "fields": [
+        "tab field[0]: exact ngram",
+        "tab field[k>0]: year,match_count,volume_count"
+      ],
+      "granularity": "one complete official Google v3 exact-form wide source record",
+      "recordCounts": {
+        "exactWideRecords": 1,
+        "annualObservationFields": 457
+      },
+      "timeRange": {
+        "start": 1478,
+        "end": 2019,
+        "basis": "year lexemes retained in the official v3 wide record",
+        "precision": "year"
+      },
+      "source": "Google Books Ngram v3 downloadable fixed release",
+      "sourceUrl": "https://storage.googleapis.com/books/ngrams/books/20200217/eng/2-00407-of-00589.gz",
+      "corpus": "English 2019",
+      "release": "googlebooks-eng-20200217",
+      "missingness": [
+        "Each included wide field is an explicit source observation; an absent year remains absent_or_suppressed.",
+        "An explicit match_count lexeme of 0 is evidence for observed_zero for that form-year."
+      ],
+      "duplicatePolicy": "Exactly one wide source record per exact preregistered ngram; duplicate form records or year fields fail validation.",
+      "transformHistory": [
+        "Stream-decompressed exact field[0] equality extraction; full matching source record retained with terminal LF."
+      ],
+      "rightsBoundary": "Dataset-level CC BY 3.0 inheritance applies; underlying scanned books/page images are outside this grant.",
+      "caveats": [
+        "OCR, corpus composition, and publication bias remain."
+      ]
+    },
+    {
+      "id": "derived-google-annual-forever-1",
+      "path": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+      "role": "derived-artifact",
+      "authorityLevel": "checksum-bound-derived",
+      "sha256": "b82c1ffd5239a39a7059337660266a61c0f1ddd90ecbe2b2f46b0e6f7e5bd887",
+      "byteLength": 31325,
+      "productionAuthority": true,
+      "fields": [
+        "ngram",
+        "year",
+        "match_count",
+        "volume_count",
+        "ngram_order",
+        "corpus_release",
+        "source_shard",
+        "wide_field_index"
+      ],
+      "granularity": "one deterministic annual expansion row per explicit field in the retained official wide source record",
+      "recordCounts": {
+        "annualDerivedRows": 430,
+        "explicitZeroRows": 0
+      },
+      "timeRange": {
+        "start": 1500,
+        "end": 2019,
+        "basis": "year copied from the indexed official v3 wide-record field",
+        "precision": "year"
+      },
+      "source": "deterministic expansion of retained Google v3 exact-form wide source record",
+      "sourceUrl": null,
+      "corpus": "English 2019",
+      "release": "googlebooks-eng-20200217",
+      "missingness": [
+        "Only explicit wide-record fields become rows; absent form-years are not emitted and remain absent_or_suppressed.",
+        "Explicit match_count=0 fields are retained and typed observed_zero; they are never inferred from absence."
+      ],
+      "duplicatePolicy": "Unique exact form + year and unique wide_field_index; every annual row must equal its indexed wide tuple.",
+      "transformHistory": [
+        "Checksum-bound google-20200217-wide-to-annual-expansion; numeric lexemes and zero-based wide field index retained."
+      ],
+      "rightsBoundary": "Inherits the fixed Google dataset-level boundary, with item-level override support.",
+      "caveats": [
+        "This is a derived lineage table, not an official four-column Google raw row format."
+      ]
+    },
+    {
+      "id": "raw-google-v3-wide-forever-1",
+      "path": "docs/research/forever/google-fixed-20200217/extracted/forever-1.source.tsv",
+      "role": "retained-raw",
+      "authorityLevel": "retained-upstream-raw",
+      "sha256": "6d562ee045ebe7379e02e69944d7d912a4e641f709aa0baa3dba18ff96df3002",
+      "byteLength": 5978,
+      "productionAuthority": true,
+      "fields": [
+        "tab field[0]: exact ngram",
+        "tab field[k>0]: year,match_count,volume_count"
+      ],
+      "granularity": "one complete official Google v3 exact-form wide source record",
+      "recordCounts": {
+        "exactWideRecords": 1,
+        "annualObservationFields": 430
+      },
+      "timeRange": {
+        "start": 1500,
+        "end": 2019,
+        "basis": "year lexemes retained in the official v3 wide record",
+        "precision": "year"
+      },
+      "source": "Google Books Ngram v3 downloadable fixed release",
+      "sourceUrl": "https://storage.googleapis.com/books/ngrams/books/20200217/eng/1-00018-of-00024.gz",
+      "corpus": "English 2019",
+      "release": "googlebooks-eng-20200217",
+      "missingness": [
+        "Each included wide field is an explicit source observation; an absent year remains absent_or_suppressed.",
+        "An explicit match_count lexeme of 0 is evidence for observed_zero for that form-year."
+      ],
+      "duplicatePolicy": "Exactly one wide source record per exact preregistered ngram; duplicate form records or year fields fail validation.",
+      "transformHistory": [
+        "Stream-decompressed exact field[0] equality extraction; full matching source record retained with terminal LF."
+      ],
+      "rightsBoundary": "Dataset-level CC BY 3.0 inheritance applies; underlying scanned books/page images are outside this grant.",
+      "caveats": [
+        "OCR, corpus composition, and publication bias remain."
+      ]
+    },
+    {
+      "id": "derived-google-annual-forevermore-1",
+      "path": "docs/research/forever/google-fixed-20200217/extracted/forevermore-1.annual.tsv",
+      "role": "derived-artifact",
+      "authorityLevel": "derived-non-authoritative",
+      "sha256": "53b8c9f11ca4919afaaf99ccea1b34c72b4ebddd726c48db365bf8094cf9a2ae",
+      "byteLength": 22623,
+      "productionAuthority": false,
+      "fields": [
+        "ngram",
+        "year",
+        "match_count",
+        "volume_count",
+        "ngram_order",
+        "corpus_release",
+        "source_shard",
+        "wide_field_index"
+      ],
+      "granularity": "one deterministic annual expansion row per explicit field in the retained official wide source record",
+      "recordCounts": {
+        "annualDerivedRows": 301,
+        "explicitZeroRows": 0
+      },
+      "timeRange": {
+        "start": 1630,
+        "end": 2019,
+        "basis": "year copied from the indexed official v3 wide-record field",
+        "precision": "year"
+      },
+      "source": "deterministic expansion of retained Google v3 exact-form wide source record",
+      "sourceUrl": null,
+      "corpus": "English 2019",
+      "release": "googlebooks-eng-20200217",
+      "missingness": [
+        "Only explicit wide-record fields become rows; absent form-years are not emitted and remain absent_or_suppressed.",
+        "Explicit match_count=0 fields are retained and typed observed_zero; they are never inferred from absence."
+      ],
+      "duplicatePolicy": "Unique exact form + year and unique wide_field_index; every annual row must equal its indexed wide tuple.",
+      "transformHistory": [
+        "Checksum-bound google-20200217-wide-to-annual-expansion; numeric lexemes and zero-based wide field index retained."
+      ],
+      "rightsBoundary": "Inherits the fixed Google dataset-level boundary, with item-level override support.",
+      "caveats": [
+        "This is a derived lineage table, not an official four-column Google raw row format."
+      ]
+    },
+    {
+      "id": "raw-google-v3-wide-forevermore-1",
+      "path": "docs/research/forever/google-fixed-20200217/extracted/forevermore-1.source.tsv",
+      "role": "retained-raw",
+      "authorityLevel": "retained-upstream-raw",
+      "sha256": "43a86acc5dee676ac6ee0a47178c49e915e975cc7a0e07944f1c975a0b5d701b",
+      "byteLength": 3687,
+      "productionAuthority": false,
+      "fields": [
+        "tab field[0]: exact ngram",
+        "tab field[k>0]: year,match_count,volume_count"
+      ],
+      "granularity": "one complete official Google v3 exact-form wide source record",
+      "recordCounts": {
+        "exactWideRecords": 1,
+        "annualObservationFields": 301
+      },
+      "timeRange": {
+        "start": 1630,
+        "end": 2019,
+        "basis": "year lexemes retained in the official v3 wide record",
+        "precision": "year"
+      },
+      "source": "Google Books Ngram v3 downloadable fixed release",
+      "sourceUrl": "https://storage.googleapis.com/books/ngrams/books/20200217/eng/1-00018-of-00024.gz",
+      "corpus": "English 2019",
+      "release": "googlebooks-eng-20200217",
+      "missingness": [
+        "Each included wide field is an explicit source observation; an absent year remains absent_or_suppressed.",
+        "An explicit match_count lexeme of 0 is evidence for observed_zero for that form-year."
+      ],
+      "duplicatePolicy": "Exactly one wide source record per exact preregistered ngram; duplicate form records or year fields fail validation.",
+      "transformHistory": [
+        "Stream-decompressed exact field[0] equality extraction; full matching source record retained with terminal LF."
+      ],
+      "rightsBoundary": "Dataset-level CC BY 3.0 inheritance applies; underlying scanned books/page images are outside this grant.",
+      "caveats": [
+        "OCR, corpus composition, and publication bias remain."
+      ]
+    },
+    {
+      "id": "raw-google-annual-totalcounts-1",
+      "path": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+      "role": "retained-raw",
+      "authorityLevel": "retained-upstream-raw",
+      "sha256": "aa7d367404d86417af6e43f490324928756e618f61942063679fae975a7caf25",
+      "byteLength": 13546,
+      "productionAuthority": true,
+      "fields": [
+        "year",
+        "annual 1-gram word-token total",
+        "page count",
+        "volume count"
+      ],
+      "granularity": "one official totalcounts record per included year in the complete frozen object",
+      "recordCounts": {
+        "annualTotalRecords": 529
+      },
+      "timeRange": {
+        "start": 1470,
+        "end": 2019,
+        "basis": "official totalcounts-1 year record",
+        "precision": "year; release records are sparse and missing years are unavailable, not zero"
+      },
+      "source": "Google Books Ngram fixed-release totalcounts-1",
+      "sourceUrl": "https://storage.googleapis.com/books/ngrams/books/20200217/eng/totalcounts-1",
+      "corpus": "English 2019",
+      "release": "googlebooks-eng-20200217",
+      "missingness": [
+        "A missing totalcounts year is unavailable and cannot be used as a zero denominator."
+      ],
+      "duplicatePolicy": "One record per year; duplicate year fails validation.",
+      "transformHistory": [
+        "Byte-for-byte freeze after official object length, ETag/MD5, and local SHA-256 validation."
+      ],
+      "rightsBoundary": "Dataset-level CC BY 3.0 inheritance applies; underlying scanned works remain outside this grant.",
+      "caveats": [
+        "The official record coverage is sparse at its lower boundary; no continuous 1500–2019 assumption is made."
+      ]
+    },
+    {
+      "id": "raw-c1cfc23f0865",
+      "path": "docs/research/forever/google-fixed-20200217/frozen/viewer-eng_2019-s0-case-sensitive.json",
+      "role": "retained-raw",
+      "authorityLevel": "retained-upstream-raw",
+      "sha256": "b68f85d23f7ccced84966dc0d2d5841a18bc0f7aaaf23511c5f65f48f2e6cad6",
+      "byteLength": 21551,
+      "productionAuthority": false,
+      "fields": [
+        "rows[]"
+      ],
+      "granularity": "one retained upstream raw file; record granularity is accepted only through a validated, checksum-bound source manifest",
+      "recordCounts": {
+        "rows": 2
+      },
+      "timeRange": null,
+      "source": "retained upstream raw candidate",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Raw-file presence alone does not establish searched-zero, completeness, or coverage."
+      ],
+      "duplicatePolicy": "No policy inferred from filename; a validated transform/source manifest must define it.",
+      "transformHistory": [
+        "Byte-preserved and SHA-256 hashed by the audit; no transform is inferred."
+      ],
+      "rightsBoundary": "Not accepted until a checksum-bound rights/source manifest covers this exact path.",
+      "caveats": [
+        "This entry cannot make a finding or figure production-authoritative by presence alone."
+      ]
+    },
+    {
+      "id": "raw-4e0b0a847878",
+      "path": "docs/research/forever/google-fixed-20200217/frozen/viewer-request.json",
+      "role": "retained-raw",
+      "authorityLevel": "retained-upstream-raw",
+      "sha256": "0aa36f5f6ad4f5ee985a2d25062e7c2a9b9d41757760fc790b077cb5e7e55ec0",
+      "byteLength": 1494,
+      "productionAuthority": false,
+      "fields": [
+        "capturedAt",
+        "interpretationBoundary",
+        "params",
+        "rawResponse",
+        "release",
+        "requestUrl",
+        "returned",
+        "schemaVersion"
+      ],
+      "granularity": "one retained upstream raw file; record granularity is accepted only through a validated, checksum-bound source manifest",
+      "recordCounts": {
+        "returned": 2
+      },
+      "timeRange": null,
+      "source": "retained upstream raw candidate",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Raw-file presence alone does not establish searched-zero, completeness, or coverage."
+      ],
+      "duplicatePolicy": "No policy inferred from filename; a validated transform/source manifest must define it.",
+      "transformHistory": [
+        "Byte-preserved and SHA-256 hashed by the audit; no transform is inferred."
+      ],
+      "rightsBoundary": "Not accepted until a checksum-bound rights/source manifest covers this exact path.",
+      "caveats": [
+        "This entry cannot make a finding or figure production-authoritative by presence alone."
+      ]
+    },
+    {
+      "id": "raw-7afe0bd68471",
+      "path": "docs/research/forever/google-fixed-20200217/source-rights-manifest.json",
+      "role": "retained-raw",
+      "authorityLevel": "retained-upstream-raw",
+      "sha256": "eb4c7c42d1a277bb374613171a9353eaf205e2eceecf88dd19d19d7c9bbef3c1",
+      "byteLength": 861,
+      "productionAuthority": false,
+      "fields": [
+        "datasetDefaults",
+        "itemOverrides",
+        "schemaVersion"
+      ],
+      "granularity": "one retained upstream raw file; record granularity is accepted only through a validated, checksum-bound source manifest",
+      "recordCounts": {},
+      "timeRange": null,
+      "source": "retained upstream raw candidate",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Raw-file presence alone does not establish searched-zero, completeness, or coverage."
+      ],
+      "duplicatePolicy": "No policy inferred from filename; a validated transform/source manifest must define it.",
+      "transformHistory": [
+        "Byte-preserved and SHA-256 hashed by the audit; no transform is inferred."
+      ],
+      "rightsBoundary": "Not accepted until a checksum-bound rights/source manifest covers this exact path.",
+      "caveats": [
+        "This entry cannot make a finding or figure production-authoritative by presence alone."
+      ]
+    },
+    {
+      "id": "raw-ed5e368e1360",
+      "path": "docs/research/forever/google-fixed-20200217/transform-manifest.json",
+      "role": "retained-raw",
+      "authorityLevel": "retained-upstream-raw",
+      "sha256": "f4a9df819261d6fb58ba4c15819138017dc0a5735b408b5110b9986de9583b3e",
+      "byteLength": 9907,
+      "productionAuthority": false,
+      "fields": [
+        "contractScopes",
+        "schemaVersion",
+        "transforms"
+      ],
+      "granularity": "one retained upstream raw file; record granularity is accepted only through a validated, checksum-bound source manifest",
+      "recordCounts": {
+        "transforms": 7
+      },
+      "timeRange": null,
+      "source": "retained upstream raw candidate",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Raw-file presence alone does not establish searched-zero, completeness, or coverage."
+      ],
+      "duplicatePolicy": "No policy inferred from filename; a validated transform/source manifest must define it.",
+      "transformHistory": [
+        "Byte-preserved and SHA-256 hashed by the audit; no transform is inferred."
+      ],
+      "rightsBoundary": "Not accepted until a checksum-bound rights/source manifest covers this exact path.",
+      "caveats": [
+        "This entry cannot make a finding or figure production-authoritative by presence alone."
+      ]
+    },
+    {
+      "id": "source-google-ngram-official-authority",
+      "path": "docs/research/forever/sources/google-ngram-official-authority.json",
+      "role": "source-record",
+      "authorityLevel": "official-source-reference",
+      "sha256": "c752c5308cadedd0f188663ab5c58ed67fd503a5a01b1dd376e7ad2c9b614b6f",
+      "byteLength": 2823,
+      "productionAuthority": false,
+      "fields": [
+        "sourceRecords[].{id,publisher,title,url,accessedOn,official}",
+        "sourceRecords[].{applicableClaim,repositoryUse,sourceLocation,captureStatus,rightsBoundary}"
+      ],
+      "granularity": "one repository-retained authority/provenance record per official Google documentation claim",
+      "recordCounts": {
+        "sourceRecords": 3
+      },
+      "timeRange": null,
+      "source": "Google Books Ngram Viewer Team official documentation",
+      "sourceUrl": "https://books.google.com/ngrams/info",
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Official page HTML is not vendored; the URL, access date, location, and paraphrased claim are retained."
+      ],
+      "duplicatePolicy": "One record per authority question; denominator, release mutability, and official-download boundary remain separate.",
+      "transformHistory": [
+        "Manually transcribed as a paraphrased source authority record; no numeric research result is extracted."
+      ],
+      "rightsBoundary": "Reference metadata and paraphrase only; no official page or dataset content is redistributed.",
+      "caveats": [
+        "This record establishes denominator semantics and source boundaries, not raw observations or a pinned corpus release."
+      ]
+    },
+    {
+      "id": "script-acquire-forever-google-20200217",
+      "path": "scripts/acquire_forever_google_20200217.ts",
       "role": "transform-script",
       "authorityLevel": "source-code-audit-only",
-      "sha256": "a5cfb74ef18633d8ddc560307d6d137c20238a75c421e2d3f8a1a84a574607f2",
-      "byteLength": 4743,
+      "sha256": "7cafef87ba4d8c52680a2b7de2145e8eebcff7f538654b74ad3ad21799a8879d",
+      "byteLength": 58798,
       "productionAuthority": false,
       "fields": [
         "TypeScript source text",
@@ -54,7 +644,7 @@
       ],
       "granularity": "source file",
       "recordCounts": {
-        "sourceLines": 145,
+        "sourceLines": 1619,
         "generatedAtCalls": 1,
         "exportedConstants": 0
       },
@@ -76,12 +666,12 @@
       ]
     },
     {
-      "id": "script-fetch-gutenberg-forever",
-      "path": "scripts/fetch_gutenberg_forever.ts",
+      "id": "script-analyze-forever-raw",
+      "path": "scripts/analyze_forever_raw.ts",
       "role": "transform-script",
       "authorityLevel": "source-code-audit-only",
-      "sha256": "416ad286b73249c065d65b86f659e1c516bc926006f76cb668627776f457d7ee",
-      "byteLength": 9275,
+      "sha256": "4c975a1d2c798054d4478dbb972433d48aaea6f4b20090383eaf49bdf7bf9f5f",
+      "byteLength": 227726,
       "productionAuthority": false,
       "fields": [
         "TypeScript source text",
@@ -89,7 +679,42 @@
       ],
       "granularity": "source file",
       "recordCounts": {
-        "sourceLines": 331,
+        "sourceLines": 4546,
+        "generatedAtCalls": 0,
+        "exportedConstants": 1
+      },
+      "timeRange": null,
+      "source": "repository transform code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited as executable transform logic."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
+      "id": "script-build-forever-dataset",
+      "path": "scripts/build_forever_dataset.ts",
+      "role": "transform-script",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "49feae3159aaac999d839843ba65087f4faeb0b80d9f36e0409ffc4574976119",
+      "byteLength": 72805,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 1843,
         "generatedAtCalls": 1,
         "exportedConstants": 0
       },
@@ -146,6 +771,41 @@
       ]
     },
     {
+      "id": "script-fetch-gutenberg-forever",
+      "path": "scripts/fetch_gutenberg_forever.ts",
+      "role": "transform-script",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "416ad286b73249c065d65b86f659e1c516bc926006f76cb668627776f457d7ee",
+      "byteLength": 9275,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 331,
+        "generatedAtCalls": 1,
+        "exportedConstants": 0
+      },
+      "timeRange": null,
+      "source": "repository transform code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited as executable transform logic."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
       "id": "script-fetch-modern-context-forever",
       "path": "scripts/fetch_modern_context_forever.ts",
       "role": "transform-script",
@@ -181,12 +841,12 @@
       ]
     },
     {
-      "id": "script-build-forever-dataset",
-      "path": "scripts/build_forever_dataset.ts",
+      "id": "script-fetch-ngram-forever",
+      "path": "scripts/fetch_ngram_forever.ts",
       "role": "transform-script",
       "authorityLevel": "source-code-audit-only",
-      "sha256": "49feae3159aaac999d839843ba65087f4faeb0b80d9f36e0409ffc4574976119",
-      "byteLength": 72805,
+      "sha256": "a5cfb74ef18633d8ddc560307d6d137c20238a75c421e2d3f8a1a84a574607f2",
+      "byteLength": 4743,
       "productionAuthority": false,
       "fields": [
         "TypeScript source text",
@@ -194,7 +854,7 @@
       ],
       "granularity": "source file",
       "recordCounts": {
-        "sourceLines": 1843,
+        "sourceLines": 145,
         "generatedAtCalls": 1,
         "exportedConstants": 0
       },
@@ -209,6 +869,391 @@
       "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
       "transformHistory": [
         "Audited as executable transform logic."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
+      "id": "consumer-page",
+      "path": "src/app/words/forever/page.tsx",
+      "role": "render-consumer",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "3d5ea6fa0182f764f65673ef84c14aa190c170b6691b32e9d3b38c9f9327616b",
+      "byteLength": 826,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 22,
+        "generatedAtCalls": 0,
+        "exportedConstants": 1
+      },
+      "timeRange": null,
+      "source": "repository render code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited for manually encoded research claims or visual mappings."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
+      "id": "consumer-ContextSignalField",
+      "path": "src/components/ContextSignalField.tsx",
+      "role": "render-consumer",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "28e23e92300b9d9af52e806ac75d0575e311b788f92f29818aee975b5de23bc4",
+      "byteLength": 26531,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 606,
+        "generatedAtCalls": 0,
+        "exportedConstants": 0
+      },
+      "timeRange": null,
+      "source": "repository render code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited for manually encoded research claims or visual mappings."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
+      "id": "consumer-ForeverAttestationHinge",
+      "path": "src/components/ForeverAttestationHinge.tsx",
+      "role": "render-consumer",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "d67228b6e72c2607e3891cd663d6ce097b65531fd4e05eeefea3efce3a1580d6",
+      "byteLength": 7662,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 148,
+        "generatedAtCalls": 0,
+        "exportedConstants": 0
+      },
+      "timeRange": null,
+      "source": "repository render code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited for manually encoded research claims or visual mappings."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
+      "id": "consumer-ForeverFormCurrent",
+      "path": "src/components/ForeverFormCurrent.tsx",
+      "role": "render-consumer",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "44f3d7154c52ecfc8c90377bc10d4655d4dfb4456292b73d36dc04dfd0dffe11",
+      "byteLength": 11199,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 219,
+        "generatedAtCalls": 0,
+        "exportedConstants": 0
+      },
+      "timeRange": null,
+      "source": "repository render code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited for manually encoded research claims or visual mappings."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
+      "id": "consumer-ForeverInstitutionalDoubt",
+      "path": "src/components/ForeverInstitutionalDoubt.tsx",
+      "role": "render-consumer",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "fec0e633179dcfbedbde96c0bbc6e31054b4d7e7815c484f82ea7a9cb69fe9b9",
+      "byteLength": 31594,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 775,
+        "generatedAtCalls": 0,
+        "exportedConstants": 0
+      },
+      "timeRange": null,
+      "source": "repository render code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited for manually encoded research claims or visual mappings."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
+      "id": "consumer-ForeverPoster",
+      "path": "src/components/ForeverPoster.tsx",
+      "role": "render-consumer",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "c971d43c7f27a7042950d541626cfe7a4ec7b54489d4f20c2b27956dfb0639b3",
+      "byteLength": 29597,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 738,
+        "generatedAtCalls": 0,
+        "exportedConstants": 0
+      },
+      "timeRange": null,
+      "source": "repository render code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited for manually encoded research claims or visual mappings."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
+      "id": "consumer-ForeverRecurrenceField",
+      "path": "src/components/ForeverRecurrenceField.tsx",
+      "role": "render-consumer",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "c5fdcb8c683f21e82bdd30992233477f6d04ab272c91ab3da73bd8e5488dea07",
+      "byteLength": 14599,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 286,
+        "generatedAtCalls": 0,
+        "exportedConstants": 0
+      },
+      "timeRange": null,
+      "source": "repository render code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited for manually encoded research claims or visual mappings."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
+      "id": "consumer-FrequencyTimeline",
+      "path": "src/components/FrequencyTimeline.tsx",
+      "role": "render-consumer",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "9f2754a3949b0336b9ab9f2bcb270c6efb288d13c30529bd0548a9731a34638d",
+      "byteLength": 13356,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 322,
+        "generatedAtCalls": 0,
+        "exportedConstants": 0
+      },
+      "timeRange": null,
+      "source": "repository render code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited for manually encoded research claims or visual mappings."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
+      "id": "consumer-MobileFrequencyStory",
+      "path": "src/components/MobileFrequencyStory.tsx",
+      "role": "render-consumer",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "b0cf71803324ea519a0af5962834cccd68186905fd8298a1532a2edcb32f5112",
+      "byteLength": 6593,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 146,
+        "generatedAtCalls": 0,
+        "exportedConstants": 0
+      },
+      "timeRange": null,
+      "source": "repository render code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited for manually encoded research claims or visual mappings."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
+      "id": "consumer-VariantDriftField",
+      "path": "src/components/VariantDriftField.tsx",
+      "role": "render-consumer",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "e4a4a1d62d88de3f5fa8b5d7b0f2297869e553dcb2546f0633b5152e2466babd",
+      "byteLength": 15167,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 321,
+        "generatedAtCalls": 0,
+        "exportedConstants": 0
+      },
+      "timeRange": null,
+      "source": "repository render code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited for manually encoded research claims or visual mappings."
+      ],
+      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "caveats": [
+        "May contain untraceable transforms/geometry and is excluded from research authority."
+      ]
+    },
+    {
+      "id": "consumer-ForeverMobileDataGate",
+      "path": "src/components/forever/mobile/ForeverMobileDataGate.tsx",
+      "role": "render-consumer",
+      "authorityLevel": "source-code-audit-only",
+      "sha256": "93a4e3e3adc98a89a69f8f99bcabb315dcf18467732a37d36bb409a4c71859ef",
+      "byteLength": 8737,
+      "productionAuthority": false,
+      "fields": [
+        "TypeScript source text",
+        "hard-coded query/filter/transform/coordinate literals"
+      ],
+      "granularity": "source file",
+      "recordCounts": {
+        "sourceLines": 230,
+        "generatedAtCalls": 0,
+        "exportedConstants": 0
+      },
+      "timeRange": null,
+      "source": "repository render code",
+      "sourceUrl": null,
+      "corpus": null,
+      "release": null,
+      "missingness": [
+        "Source code cannot substitute for retained raw records or an explicit missingness state."
+      ],
+      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "transformHistory": [
+        "Audited for manually encoded research claims or visual mappings."
       ],
       "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
       "caveats": [
@@ -251,38 +1296,153 @@
       ]
     },
     {
-      "id": "registry-search-intents",
-      "path": "src/data/search-intents.ts",
-      "role": "term-form-registry",
-      "authorityLevel": "placeholder-only",
-      "sha256": "ba5312005ce9a97cbb3b5ed2efb1308e0e57f0685005dca9fafb357a7238a116",
-      "byteLength": 23144,
+      "id": "derived-forever-atlas",
+      "path": "src/data/generated/forever_atlas.json",
+      "role": "derived-artifact",
+      "authorityLevel": "derived-non-authoritative",
+      "sha256": "aa497923f0ecdffdb593108924fa57592b6ac02be6f7cb8eb8dcd71dc05e61ce",
+      "byteLength": 88387,
       "productionAuthority": false,
       "fields": [
-        "hard-coded sources/forms/claims/visual values",
-        "prose evidence references"
+        "nodes[]",
+        "edges[]"
       ],
-      "granularity": "source file",
+      "granularity": "derived display/interaction rows",
       "recordCounts": {
-        "sourceLines": 423,
-        "generatedAtCalls": 0,
-        "exportedConstants": 1
+        "nodes": 95,
+        "edges": 46
       },
       "timeRange": null,
-      "source": "legacy repository registry/prose",
+      "source": "build_forever_dataset.ts",
       "sourceUrl": null,
-      "corpus": null,
+      "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
       "release": null,
       "missingness": [
-        "Source code cannot substitute for retained raw records or an explicit missingness state."
+        "Upstream missingness is not preserved as a complete typed state model."
       ],
-      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
+      "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
       "transformHistory": [
-        "Audited for manually encoded research claims or visual mappings."
+        "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
       ],
-      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
+      "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
       "caveats": [
-        "Contains placeholders or editorial claims and is excluded from research authority."
+        "Must not be used as raw analysis input or as a research result."
+      ]
+    },
+    {
+      "id": "derived-forever-categories",
+      "path": "src/data/generated/forever_categories.json",
+      "role": "derived-artifact",
+      "authorityLevel": "derived-non-authoritative",
+      "sha256": "afb1dc0e9431c48bd76d975746fff5c8bbac582d68829e4435b65b3ddc764045",
+      "byteLength": 15825,
+      "productionAuthority": false,
+      "fields": [
+        "derived rows[]"
+      ],
+      "granularity": "derived display/interaction rows",
+      "recordCounts": {
+        "rows": 6
+      },
+      "timeRange": null,
+      "source": "build_forever_dataset.ts",
+      "sourceUrl": null,
+      "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
+      "release": null,
+      "missingness": [
+        "Upstream missingness is not preserved as a complete typed state model."
+      ],
+      "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
+      "transformHistory": [
+        "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
+      ],
+      "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
+      "caveats": [
+        "Must not be used as raw analysis input or as a research result."
+      ]
+    },
+    {
+      "id": "derived-forever-collocates",
+      "path": "src/data/generated/forever_collocates.json",
+      "role": "derived-artifact",
+      "authorityLevel": "derived-non-authoritative",
+      "sha256": "34529366b1e6f2d902216070d98d93e55ff2e07fc95b7242d03a722a226a026e",
+      "byteLength": 13820,
+      "productionAuthority": false,
+      "fields": [
+        "derived rows[]"
+      ],
+      "granularity": "derived display/interaction rows",
+      "recordCounts": {
+        "rows": 21
+      },
+      "timeRange": null,
+      "source": "build_forever_dataset.ts",
+      "sourceUrl": null,
+      "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
+      "release": null,
+      "missingness": [
+        "Upstream missingness is not preserved as a complete typed state model."
+      ],
+      "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
+      "transformHistory": [
+        "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
+      ],
+      "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
+      "caveats": [
+        "Must not be used as raw analysis input or as a research result."
+      ]
+    },
+    {
+      "id": "derived-forever-dataset",
+      "path": "src/data/generated/forever_dataset.json",
+      "role": "derived-artifact",
+      "authorityLevel": "derived-non-authoritative",
+      "sha256": "aeaf7280aa757722a635f3cac34f086154d0ee5aeeac9a68c02eec6e680ac7ec",
+      "byteLength": 1618403,
+      "productionAuthority": false,
+      "fields": [
+        "frequency[]",
+        "phrases[]",
+        "collocates[]",
+        "snippets[]",
+        "categories[]",
+        "flows[]",
+        "atlas{}",
+        "ledger[]",
+        "network{}",
+        "inspectors[]"
+      ],
+      "granularity": "derived display/interaction rows",
+      "recordCounts": {
+        "frequencySeries": 4,
+        "phrases": 9,
+        "collocates": 21,
+        "snippets": 48,
+        "categories": 6,
+        "flows": 32,
+        "atlasNodes": 95,
+        "atlasEdges": 46,
+        "ledgerCells": 42,
+        "networkNodes": 69,
+        "networkEdges": 68,
+        "inspectors": 482
+      },
+      "timeRange": null,
+      "source": "build_forever_dataset.ts",
+      "sourceUrl": null,
+      "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
+      "release": null,
+      "missingness": [
+        "Upstream missingness is not preserved as a complete typed state model."
+      ],
+      "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
+      "transformHistory": [
+        "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
+      ],
+      "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
+      "caveats": [
+        "Must not be used as raw analysis input or as a research result."
       ]
     },
     {
@@ -382,45 +1542,35 @@
       ]
     },
     {
-      "id": "capture-secondary-attestation-claims",
-      "path": "src/data/generated/forever_prehistory.json",
-      "role": "generated-capture",
-      "authorityLevel": "generated-capture-without-upstream-raw",
-      "sha256": "750c5c107c21dd4bda36c55041edb8495eaf5145d789b589c8e346b563bcd8ce",
-      "byteLength": 5762,
+      "id": "derived-forever-ledger",
+      "path": "src/data/generated/forever_ledger.json",
+      "role": "derived-artifact",
+      "authorityLevel": "derived-non-authoritative",
+      "sha256": "7fa8504c50e0b9b1332ebf12e8332bcc2bf610fed3116ed11f7b134c913fd5b7",
+      "byteLength": 21585,
       "productionAuthority": false,
       "fields": [
-        "records[].{id,form,normalizedForm,evidenceType,dateLabel,yearApproximation,sourceName,sourceUrl,quote,verificationStatus,confidence,caveat}",
-        "investigatedSources[].{id,name,coverage,status,sourceUrl,note}"
+        "derived rows[]"
       ],
-      "granularity": "one manually transcribed secondary lexical claim per record",
+      "granularity": "derived display/interaction rows",
       "recordCounts": {
-        "claims": 6,
-        "investigatedSources": 4,
-        "blankQuotes": 6
+        "rows": 42
       },
-      "timeRange": {
-        "start": 1375,
-        "end": 1819,
-        "basis": "manual approximate year assigned to source date label",
-        "precision": "mixed century/approximate-year/exact-looking-year"
-      },
-      "source": "secondary lexical websites",
+      "timeRange": null,
+      "source": "build_forever_dataset.ts",
       "sourceUrl": null,
-      "corpus": null,
+      "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
       "release": null,
       "missingness": [
-        "All claim quotations are blank.",
-        "No edition, access date, snapshot, source-row quotation, or primary occurrence is stored."
+        "Upstream missingness is not preserved as a complete typed state model."
       ],
-      "duplicatePolicy": "Claims from different secondary sources are retained separately; conflict resolution is not implemented.",
+      "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
       "transformHistory": [
-        "Date labels such as late 14c. and late 17c. are manually mapped to 1375 and 1680.",
-        "Source claims are hard-coded into a build script rather than extracted from retained captures."
+        "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
       ],
-      "rightsBoundary": "No quotation-reuse or snapshot rights record is stored.",
+      "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
       "caveats": [
-        "The layer cannot support a first-use claim or a verified source-bound date ledger."
+        "Must not be used as raw analysis input or as a research result."
       ]
     },
     {
@@ -472,58 +1622,6 @@
       ]
     },
     {
-      "id": "derived-forever-dataset",
-      "path": "src/data/generated/forever_dataset.json",
-      "role": "derived-artifact",
-      "authorityLevel": "derived-non-authoritative",
-      "sha256": "aeaf7280aa757722a635f3cac34f086154d0ee5aeeac9a68c02eec6e680ac7ec",
-      "byteLength": 1618403,
-      "productionAuthority": false,
-      "fields": [
-        "frequency[]",
-        "phrases[]",
-        "collocates[]",
-        "snippets[]",
-        "categories[]",
-        "flows[]",
-        "atlas{}",
-        "ledger[]",
-        "network{}",
-        "inspectors[]"
-      ],
-      "granularity": "derived display/interaction rows",
-      "recordCounts": {
-        "frequencySeries": 4,
-        "phrases": 9,
-        "collocates": 21,
-        "snippets": 48,
-        "categories": 6,
-        "flows": 32,
-        "atlasNodes": 95,
-        "atlasEdges": 46,
-        "ledgerCells": 42,
-        "networkNodes": 69,
-        "networkEdges": 68,
-        "inspectors": 482
-      },
-      "timeRange": null,
-      "source": "build_forever_dataset.ts",
-      "sourceUrl": null,
-      "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
-      "release": null,
-      "missingness": [
-        "Upstream missingness is not preserved as a complete typed state model."
-      ],
-      "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
-      "transformHistory": [
-        "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
-      ],
-      "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
-      "caveats": [
-        "Must not be used as raw analysis input or as a research result."
-      ]
-    },
-    {
       "id": "derived-forever-phrases",
       "path": "src/data/generated/forever_phrases.json",
       "role": "derived-artifact",
@@ -556,35 +1654,45 @@
       ]
     },
     {
-      "id": "derived-forever-collocates",
-      "path": "src/data/generated/forever_collocates.json",
-      "role": "derived-artifact",
-      "authorityLevel": "derived-non-authoritative",
-      "sha256": "34529366b1e6f2d902216070d98d93e55ff2e07fc95b7242d03a722a226a026e",
-      "byteLength": 13820,
+      "id": "capture-secondary-attestation-claims",
+      "path": "src/data/generated/forever_prehistory.json",
+      "role": "generated-capture",
+      "authorityLevel": "generated-capture-without-upstream-raw",
+      "sha256": "750c5c107c21dd4bda36c55041edb8495eaf5145d789b589c8e346b563bcd8ce",
+      "byteLength": 5762,
       "productionAuthority": false,
       "fields": [
-        "derived rows[]"
+        "records[].{id,form,normalizedForm,evidenceType,dateLabel,yearApproximation,sourceName,sourceUrl,quote,verificationStatus,confidence,caveat}",
+        "investigatedSources[].{id,name,coverage,status,sourceUrl,note}"
       ],
-      "granularity": "derived display/interaction rows",
+      "granularity": "one manually transcribed secondary lexical claim per record",
       "recordCounts": {
-        "rows": 21
+        "claims": 6,
+        "investigatedSources": 4,
+        "blankQuotes": 6
       },
-      "timeRange": null,
-      "source": "build_forever_dataset.ts",
+      "timeRange": {
+        "start": 1375,
+        "end": 1819,
+        "basis": "manual approximate year assigned to source date label",
+        "precision": "mixed century/approximate-year/exact-looking-year"
+      },
+      "source": "secondary lexical websites",
       "sourceUrl": null,
-      "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
+      "corpus": null,
       "release": null,
       "missingness": [
-        "Upstream missingness is not preserved as a complete typed state model."
+        "All claim quotations are blank.",
+        "No edition, access date, snapshot, source-row quotation, or primary occurrence is stored."
       ],
-      "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
+      "duplicatePolicy": "Claims from different secondary sources are retained separately; conflict resolution is not implemented.",
       "transformHistory": [
-        "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
+        "Date labels such as late 14c. and late 17c. are manually mapped to 1375 and 1680.",
+        "Source claims are hard-coded into a build script rather than extracted from retained captures."
       ],
-      "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
+      "rightsBoundary": "No quotation-reuse or snapshot rights record is stored.",
       "caveats": [
-        "Must not be used as raw analysis input or as a research result."
+        "The layer cannot support a first-use claim or a verified source-bound date ledger."
       ]
     },
     {
@@ -620,438 +1728,25 @@
       ]
     },
     {
-      "id": "derived-forever-categories",
-      "path": "src/data/generated/forever_categories.json",
-      "role": "derived-artifact",
-      "authorityLevel": "derived-non-authoritative",
-      "sha256": "afb1dc0e9431c48bd76d975746fff5c8bbac582d68829e4435b65b3ddc764045",
-      "byteLength": 15825,
+      "id": "registry-search-intents",
+      "path": "src/data/search-intents.ts",
+      "role": "term-form-registry",
+      "authorityLevel": "placeholder-only",
+      "sha256": "ba5312005ce9a97cbb3b5ed2efb1308e0e57f0685005dca9fafb357a7238a116",
+      "byteLength": 23144,
       "productionAuthority": false,
       "fields": [
-        "derived rows[]"
-      ],
-      "granularity": "derived display/interaction rows",
-      "recordCounts": {
-        "rows": 6
-      },
-      "timeRange": null,
-      "source": "build_forever_dataset.ts",
-      "sourceUrl": null,
-      "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
-      "release": null,
-      "missingness": [
-        "Upstream missingness is not preserved as a complete typed state model."
-      ],
-      "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
-      "transformHistory": [
-        "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
-      ],
-      "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
-      "caveats": [
-        "Must not be used as raw analysis input or as a research result."
-      ]
-    },
-    {
-      "id": "derived-forever-atlas",
-      "path": "src/data/generated/forever_atlas.json",
-      "role": "derived-artifact",
-      "authorityLevel": "derived-non-authoritative",
-      "sha256": "aa497923f0ecdffdb593108924fa57592b6ac02be6f7cb8eb8dcd71dc05e61ce",
-      "byteLength": 88387,
-      "productionAuthority": false,
-      "fields": [
-        "nodes[]",
-        "edges[]"
-      ],
-      "granularity": "derived display/interaction rows",
-      "recordCounts": {
-        "nodes": 95,
-        "edges": 46
-      },
-      "timeRange": null,
-      "source": "build_forever_dataset.ts",
-      "sourceUrl": null,
-      "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
-      "release": null,
-      "missingness": [
-        "Upstream missingness is not preserved as a complete typed state model."
-      ],
-      "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
-      "transformHistory": [
-        "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
-      ],
-      "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
-      "caveats": [
-        "Must not be used as raw analysis input or as a research result."
-      ]
-    },
-    {
-      "id": "derived-forever-ledger",
-      "path": "src/data/generated/forever_ledger.json",
-      "role": "derived-artifact",
-      "authorityLevel": "derived-non-authoritative",
-      "sha256": "7fa8504c50e0b9b1332ebf12e8332bcc2bf610fed3116ed11f7b134c913fd5b7",
-      "byteLength": 21585,
-      "productionAuthority": false,
-      "fields": [
-        "derived rows[]"
-      ],
-      "granularity": "derived display/interaction rows",
-      "recordCounts": {
-        "rows": 42
-      },
-      "timeRange": null,
-      "source": "build_forever_dataset.ts",
-      "sourceUrl": null,
-      "corpus": "mixed Google Viewer, selected Gutenberg, secondary lexical, and Wikinews layers",
-      "release": null,
-      "missingness": [
-        "Upstream missingness is not preserved as a complete typed state model."
-      ],
-      "duplicatePolicy": "Varies by derived layer and is not registered as a dataset-level policy.",
-      "transformHistory": [
-        "Heuristic filtering, scoring, selection, aggregation, and/or manual geometry from build_forever_dataset.ts."
-      ],
-      "rightsBoundary": "Inherits unresolved boundaries from every upstream layer; not a quotation or research authority.",
-      "caveats": [
-        "Must not be used as raw analysis input or as a research result."
-      ]
-    },
-    {
-      "id": "consumer-ForeverFormCurrent",
-      "path": "src/components/ForeverFormCurrent.tsx",
-      "role": "render-consumer",
-      "authorityLevel": "source-code-audit-only",
-      "sha256": "44f3d7154c52ecfc8c90377bc10d4655d4dfb4456292b73d36dc04dfd0dffe11",
-      "byteLength": 11199,
-      "productionAuthority": false,
-      "fields": [
-        "TypeScript source text",
-        "hard-coded query/filter/transform/coordinate literals"
+        "hard-coded sources/forms/claims/visual values",
+        "prose evidence references"
       ],
       "granularity": "source file",
       "recordCounts": {
-        "sourceLines": 219,
-        "generatedAtCalls": 0,
-        "exportedConstants": 0
-      },
-      "timeRange": null,
-      "source": "repository render code",
-      "sourceUrl": null,
-      "corpus": null,
-      "release": null,
-      "missingness": [
-        "Source code cannot substitute for retained raw records or an explicit missingness state."
-      ],
-      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
-      "transformHistory": [
-        "Audited for manually encoded research claims or visual mappings."
-      ],
-      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
-      "caveats": [
-        "May contain untraceable transforms/geometry and is excluded from research authority."
-      ]
-    },
-    {
-      "id": "consumer-FrequencyTimeline",
-      "path": "src/components/FrequencyTimeline.tsx",
-      "role": "render-consumer",
-      "authorityLevel": "source-code-audit-only",
-      "sha256": "9f2754a3949b0336b9ab9f2bcb270c6efb288d13c30529bd0548a9731a34638d",
-      "byteLength": 13356,
-      "productionAuthority": false,
-      "fields": [
-        "TypeScript source text",
-        "hard-coded query/filter/transform/coordinate literals"
-      ],
-      "granularity": "source file",
-      "recordCounts": {
-        "sourceLines": 322,
-        "generatedAtCalls": 0,
-        "exportedConstants": 0
-      },
-      "timeRange": null,
-      "source": "repository render code",
-      "sourceUrl": null,
-      "corpus": null,
-      "release": null,
-      "missingness": [
-        "Source code cannot substitute for retained raw records or an explicit missingness state."
-      ],
-      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
-      "transformHistory": [
-        "Audited for manually encoded research claims or visual mappings."
-      ],
-      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
-      "caveats": [
-        "May contain untraceable transforms/geometry and is excluded from research authority."
-      ]
-    },
-    {
-      "id": "consumer-MobileFrequencyStory",
-      "path": "src/components/MobileFrequencyStory.tsx",
-      "role": "render-consumer",
-      "authorityLevel": "source-code-audit-only",
-      "sha256": "b0cf71803324ea519a0af5962834cccd68186905fd8298a1532a2edcb32f5112",
-      "byteLength": 6593,
-      "productionAuthority": false,
-      "fields": [
-        "TypeScript source text",
-        "hard-coded query/filter/transform/coordinate literals"
-      ],
-      "granularity": "source file",
-      "recordCounts": {
-        "sourceLines": 146,
-        "generatedAtCalls": 0,
-        "exportedConstants": 0
-      },
-      "timeRange": null,
-      "source": "repository render code",
-      "sourceUrl": null,
-      "corpus": null,
-      "release": null,
-      "missingness": [
-        "Source code cannot substitute for retained raw records or an explicit missingness state."
-      ],
-      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
-      "transformHistory": [
-        "Audited for manually encoded research claims or visual mappings."
-      ],
-      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
-      "caveats": [
-        "May contain untraceable transforms/geometry and is excluded from research authority."
-      ]
-    },
-    {
-      "id": "consumer-ForeverInstitutionalDoubt",
-      "path": "src/components/ForeverInstitutionalDoubt.tsx",
-      "role": "render-consumer",
-      "authorityLevel": "source-code-audit-only",
-      "sha256": "fec0e633179dcfbedbde96c0bbc6e31054b4d7e7815c484f82ea7a9cb69fe9b9",
-      "byteLength": 31594,
-      "productionAuthority": false,
-      "fields": [
-        "TypeScript source text",
-        "hard-coded query/filter/transform/coordinate literals"
-      ],
-      "granularity": "source file",
-      "recordCounts": {
-        "sourceLines": 775,
-        "generatedAtCalls": 0,
-        "exportedConstants": 0
-      },
-      "timeRange": null,
-      "source": "repository render code",
-      "sourceUrl": null,
-      "corpus": null,
-      "release": null,
-      "missingness": [
-        "Source code cannot substitute for retained raw records or an explicit missingness state."
-      ],
-      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
-      "transformHistory": [
-        "Audited for manually encoded research claims or visual mappings."
-      ],
-      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
-      "caveats": [
-        "May contain untraceable transforms/geometry and is excluded from research authority."
-      ]
-    },
-    {
-      "id": "consumer-VariantDriftField",
-      "path": "src/components/VariantDriftField.tsx",
-      "role": "render-consumer",
-      "authorityLevel": "source-code-audit-only",
-      "sha256": "e4a4a1d62d88de3f5fa8b5d7b0f2297869e553dcb2546f0633b5152e2466babd",
-      "byteLength": 15167,
-      "productionAuthority": false,
-      "fields": [
-        "TypeScript source text",
-        "hard-coded query/filter/transform/coordinate literals"
-      ],
-      "granularity": "source file",
-      "recordCounts": {
-        "sourceLines": 321,
-        "generatedAtCalls": 0,
-        "exportedConstants": 0
-      },
-      "timeRange": null,
-      "source": "repository render code",
-      "sourceUrl": null,
-      "corpus": null,
-      "release": null,
-      "missingness": [
-        "Source code cannot substitute for retained raw records or an explicit missingness state."
-      ],
-      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
-      "transformHistory": [
-        "Audited for manually encoded research claims or visual mappings."
-      ],
-      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
-      "caveats": [
-        "May contain untraceable transforms/geometry and is excluded from research authority."
-      ]
-    },
-    {
-      "id": "consumer-ContextSignalField",
-      "path": "src/components/ContextSignalField.tsx",
-      "role": "render-consumer",
-      "authorityLevel": "source-code-audit-only",
-      "sha256": "28e23e92300b9d9af52e806ac75d0575e311b788f92f29818aee975b5de23bc4",
-      "byteLength": 26531,
-      "productionAuthority": false,
-      "fields": [
-        "TypeScript source text",
-        "hard-coded query/filter/transform/coordinate literals"
-      ],
-      "granularity": "source file",
-      "recordCounts": {
-        "sourceLines": 606,
-        "generatedAtCalls": 0,
-        "exportedConstants": 0
-      },
-      "timeRange": null,
-      "source": "repository render code",
-      "sourceUrl": null,
-      "corpus": null,
-      "release": null,
-      "missingness": [
-        "Source code cannot substitute for retained raw records or an explicit missingness state."
-      ],
-      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
-      "transformHistory": [
-        "Audited for manually encoded research claims or visual mappings."
-      ],
-      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
-      "caveats": [
-        "May contain untraceable transforms/geometry and is excluded from research authority."
-      ]
-    },
-    {
-      "id": "consumer-ForeverAttestationHinge",
-      "path": "src/components/ForeverAttestationHinge.tsx",
-      "role": "render-consumer",
-      "authorityLevel": "source-code-audit-only",
-      "sha256": "d67228b6e72c2607e3891cd663d6ce097b65531fd4e05eeefea3efce3a1580d6",
-      "byteLength": 7662,
-      "productionAuthority": false,
-      "fields": [
-        "TypeScript source text",
-        "hard-coded query/filter/transform/coordinate literals"
-      ],
-      "granularity": "source file",
-      "recordCounts": {
-        "sourceLines": 148,
-        "generatedAtCalls": 0,
-        "exportedConstants": 0
-      },
-      "timeRange": null,
-      "source": "repository render code",
-      "sourceUrl": null,
-      "corpus": null,
-      "release": null,
-      "missingness": [
-        "Source code cannot substitute for retained raw records or an explicit missingness state."
-      ],
-      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
-      "transformHistory": [
-        "Audited for manually encoded research claims or visual mappings."
-      ],
-      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
-      "caveats": [
-        "May contain untraceable transforms/geometry and is excluded from research authority."
-      ]
-    },
-    {
-      "id": "consumer-ForeverRecurrenceField",
-      "path": "src/components/ForeverRecurrenceField.tsx",
-      "role": "render-consumer",
-      "authorityLevel": "source-code-audit-only",
-      "sha256": "c5fdcb8c683f21e82bdd30992233477f6d04ab272c91ab3da73bd8e5488dea07",
-      "byteLength": 14599,
-      "productionAuthority": false,
-      "fields": [
-        "TypeScript source text",
-        "hard-coded query/filter/transform/coordinate literals"
-      ],
-      "granularity": "source file",
-      "recordCounts": {
-        "sourceLines": 286,
-        "generatedAtCalls": 0,
-        "exportedConstants": 0
-      },
-      "timeRange": null,
-      "source": "repository render code",
-      "sourceUrl": null,
-      "corpus": null,
-      "release": null,
-      "missingness": [
-        "Source code cannot substitute for retained raw records or an explicit missingness state."
-      ],
-      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
-      "transformHistory": [
-        "Audited for manually encoded research claims or visual mappings."
-      ],
-      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
-      "caveats": [
-        "May contain untraceable transforms/geometry and is excluded from research authority."
-      ]
-    },
-    {
-      "id": "consumer-ForeverPoster",
-      "path": "src/components/ForeverPoster.tsx",
-      "role": "render-consumer",
-      "authorityLevel": "source-code-audit-only",
-      "sha256": "c971d43c7f27a7042950d541626cfe7a4ec7b54489d4f20c2b27956dfb0639b3",
-      "byteLength": 29597,
-      "productionAuthority": false,
-      "fields": [
-        "TypeScript source text",
-        "hard-coded query/filter/transform/coordinate literals"
-      ],
-      "granularity": "source file",
-      "recordCounts": {
-        "sourceLines": 738,
-        "generatedAtCalls": 0,
-        "exportedConstants": 0
-      },
-      "timeRange": null,
-      "source": "repository render code",
-      "sourceUrl": null,
-      "corpus": null,
-      "release": null,
-      "missingness": [
-        "Source code cannot substitute for retained raw records or an explicit missingness state."
-      ],
-      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
-      "transformHistory": [
-        "Audited for manually encoded research claims or visual mappings."
-      ],
-      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
-      "caveats": [
-        "May contain untraceable transforms/geometry and is excluded from research authority."
-      ]
-    },
-    {
-      "id": "consumer-page",
-      "path": "src/app/words/forever/page.tsx",
-      "role": "render-consumer",
-      "authorityLevel": "source-code-audit-only",
-      "sha256": "3d5ea6fa0182f764f65673ef84c14aa190c170b6691b32e9d3b38c9f9327616b",
-      "byteLength": 826,
-      "productionAuthority": false,
-      "fields": [
-        "TypeScript source text",
-        "hard-coded query/filter/transform/coordinate literals"
-      ],
-      "granularity": "source file",
-      "recordCounts": {
-        "sourceLines": 22,
+        "sourceLines": 423,
         "generatedAtCalls": 0,
         "exportedConstants": 1
       },
       "timeRange": null,
-      "source": "repository render code",
+      "source": "legacy repository registry/prose",
       "sourceUrl": null,
       "corpus": null,
       "release": null,
@@ -1064,42 +1759,7 @@
       ],
       "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
       "caveats": [
-        "May contain untraceable transforms/geometry and is excluded from research authority."
-      ]
-    },
-    {
-      "id": "consumer-ForeverMobileDataGate",
-      "path": "src/components/forever/mobile/ForeverMobileDataGate.tsx",
-      "role": "render-consumer",
-      "authorityLevel": "source-code-audit-only",
-      "sha256": "3ffeaf50e38e243fa41e88666e897a9b6e8c9e76de818aaf35d684342db1045e",
-      "byteLength": 7355,
-      "productionAuthority": false,
-      "fields": [
-        "TypeScript source text",
-        "hard-coded query/filter/transform/coordinate literals"
-      ],
-      "granularity": "source file",
-      "recordCounts": {
-        "sourceLines": 199,
-        "generatedAtCalls": 0,
-        "exportedConstants": 0
-      },
-      "timeRange": null,
-      "source": "repository render code",
-      "sourceUrl": null,
-      "corpus": null,
-      "release": null,
-      "missingness": [
-        "Source code cannot substitute for retained raw records or an explicit missingness state."
-      ],
-      "duplicatePolicy": "Not applicable or not declared in a machine-readable registry.",
-      "transformHistory": [
-        "Audited for manually encoded research claims or visual mappings."
-      ],
-      "rightsBoundary": "No independent rights authority; follows the referenced data source if one exists.",
-      "caveats": [
-        "May contain untraceable transforms/geometry and is excluded from research authority."
+        "Contains placeholders or editorial claims and is excluded from research authority."
       ]
     },
     {
@@ -1136,43 +1796,10 @@
       "caveats": [
         "May contain untraceable transforms/geometry and is excluded from research authority."
       ]
-    },
-    {
-      "id": "source-google-ngram-official-authority",
-      "path": "docs/research/forever/sources/google-ngram-official-authority.json",
-      "role": "source-record",
-      "authorityLevel": "official-source-reference",
-      "sha256": "c752c5308cadedd0f188663ab5c58ed67fd503a5a01b1dd376e7ad2c9b614b6f",
-      "byteLength": 2823,
-      "productionAuthority": false,
-      "fields": [
-        "sourceRecords[].{id,publisher,title,url,accessedOn,official}",
-        "sourceRecords[].{applicableClaim,repositoryUse,sourceLocation,captureStatus,rightsBoundary}"
-      ],
-      "granularity": "one repository-retained authority/provenance record per official Google documentation claim",
-      "recordCounts": {
-        "sourceRecords": 3
-      },
-      "timeRange": null,
-      "source": "Google Books Ngram Viewer Team official documentation",
-      "sourceUrl": "https://books.google.com/ngrams/info",
-      "corpus": null,
-      "release": null,
-      "missingness": [
-        "Official page HTML is not vendored; the URL, access date, location, and paraphrased claim are retained."
-      ],
-      "duplicatePolicy": "One record per authority question; denominator, release mutability, and official-download boundary remain separate.",
-      "transformHistory": [
-        "Manually transcribed as a paraphrased source authority record; no numeric research result is extracted."
-      ],
-      "rightsBoundary": "Reference metadata and paraphrase only; no official page or dataset content is redistributed.",
-      "caveats": [
-        "This record establishes denominator semantics and source boundaries, not raw observations or a pinned corpus release."
-      ]
     }
   ],
-  "upstreamRawPresent": false,
+  "upstreamRawPresent": true,
   "coverageManifestPresent": false,
-  "transformManifestPresent": false,
-  "rightsManifestPresent": false
+  "transformManifestPresent": true,
+  "rightsManifestPresent": true
 }

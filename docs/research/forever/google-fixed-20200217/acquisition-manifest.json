@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "retrievalStartedAt": "2026-08-11T06:21:49.441Z",
+  "discoveryCompletedAt": "2026-08-11T06:21:53.757Z",
+  "cacheVerificationCompletedAt": "2026-08-11T06:25:23.872Z",
+  "officialIndexUrl": "https://storage.googleapis.com/books/ngrams/books/datasetsv3.html",
+  "release": {
+    "viewerShorthand": "eng_2019",
+    "persistentIdentifier": "googlebooks-eng-20200217",
+    "rawReleaseDirectory": "20200217/eng",
+    "expectedUpperYear": 2019
+  },
+  "diskPreflight": {
+    "availableBytes": 73950842880,
+    "requiredBytes": 2750315956,
+    "coreShardCompressedBytes": 1240926704,
+    "totalDownloadBytes": 1240940250,
+    "policy": "Requires two times compressed object bytes plus 256 MiB for partial files, retained cache, and streaming extraction overhead.",
+    "passed": true
+  },
+  "objects": [
+    {
+      "id": "unigram-shard",
+      "url": "https://storage.googleapis.com/books/ngrams/books/20200217/eng/1-00018-of-00024.gz",
+      "httpStatus": 200,
+      "contentLength": 593921274,
+      "lastModified": "Sat, 14 Mar 2020 01:29:37 GMT",
+      "etag": "\"d42b5cec82ecb6d0b5f19d018fcd1743\"",
+      "xGoogHash": [
+        "crc32c=Xu/7xQ==",
+        "md5=1Ctc7ILsttC18Z0Bj80XQw=="
+      ],
+      "xGoogGeneration": "1584149377777664",
+      "acceptRanges": "bytes",
+      "expectedBytes": 593921274,
+      "expectedEtag": "d42b5cec82ecb6d0b5f19d018fcd1743",
+      "expectedLastModified": "Sat, 14 Mar 2020 01:29:37 GMT",
+      "expectedXGoogHash": [
+        "crc32c=Xu/7xQ==",
+        "md5=1Ctc7ILsttC18Z0Bj80XQw=="
+      ],
+      "ngramOrder": 1,
+      "local": {
+        "cachePath": ".cache/google-ngram/20200217/eng/1-00018-of-00024.gz",
+        "exists": true,
+        "bytes": 593921274,
+        "sha256": "7f2715ec65466efdba2ce2e399dff741268b58dfec4f1ab4b4820367cac65ae9",
+        "md5Hex": "d42b5cec82ecb6d0b5f19d018fcd1743",
+        "md5Base64": "1Ctc7ILsttC18Z0Bj80XQw==",
+        "verifiedAgainstOfficialMd5": true,
+        "cacheVerifiedAt": "2026-08-11T06:25:23.872Z"
+      }
+    },
+    {
+      "id": "bigram-shard",
+      "url": "https://storage.googleapis.com/books/ngrams/books/20200217/eng/2-00407-of-00589.gz",
+      "httpStatus": 200,
+      "contentLength": 647005430,
+      "lastModified": "Sat, 14 Mar 2020 01:32:03 GMT",
+      "etag": "\"8fe3ba01e4032bf15184824b20143529\"",
+      "xGoogHash": [
+        "crc32c=ds6jgQ==",
+        "md5=j+O6AeQDK/FRhIJLIBQ1KQ=="
+      ],
+      "xGoogGeneration": "1584149523190707",
+      "acceptRanges": "bytes",
+      "expectedBytes": 647005430,
+      "expectedEtag": "8fe3ba01e4032bf15184824b20143529",
+      "expectedLastModified": "Sat, 14 Mar 2020 01:32:03 GMT",
+      "expectedXGoogHash": [
+        "crc32c=ds6jgQ==",
+        "md5=j+O6AeQDK/FRhIJLIBQ1KQ=="
+      ],
+      "ngramOrder": 2,
+      "local": {
+        "cachePath": ".cache/google-ngram/20200217/eng/2-00407-of-00589.gz",
+        "exists": true,
+        "bytes": 647005430,
+        "sha256": "eb6ba0389d45ae68adea67ffcc952beaf58b229f65db0e376d38b8ebcf95d84d",
+        "md5Hex": "8fe3ba01e4032bf15184824b20143529",
+        "md5Base64": "j+O6AeQDK/FRhIJLIBQ1KQ==",
+        "verifiedAgainstOfficialMd5": true,
+        "cacheVerifiedAt": "2026-08-11T06:25:23.872Z"
+      }
+    },
+    {
+      "id": "annual-token-totals",
+      "url": "https://storage.googleapis.com/books/ngrams/books/20200217/eng/totalcounts-1",
+      "httpStatus": 200,
+      "contentLength": 13546,
+      "lastModified": "Tue, 14 Jul 2020 16:49:55 GMT",
+      "etag": "\"fea9f8e9fe2c9b7b6862ec292a11e23d\"",
+      "xGoogHash": [
+        "crc32c=vdSUiw==",
+        "md5=/qn46f4sm3toYuwpKhHiPQ=="
+      ],
+      "xGoogGeneration": "1594745395448856",
+      "acceptRanges": "bytes",
+      "expectedBytes": 13546,
+      "expectedEtag": "fea9f8e9fe2c9b7b6862ec292a11e23d",
+      "expectedLastModified": "Tue, 14 Jul 2020 16:49:55 GMT",
+      "expectedXGoogHash": [
+        "crc32c=vdSUiw==",
+        "md5=/qn46f4sm3toYuwpKhHiPQ=="
+      ],
+      "ngramOrder": null,
+      "local": {
+        "cachePath": ".cache/google-ngram/20200217/eng/totalcounts-1",
+        "exists": true,
+        "bytes": 13546,
+        "sha256": "aa7d367404d86417af6e43f490324928756e618f61942063679fae975a7caf25",
+        "md5Hex": "fea9f8e9fe2c9b7b6862ec292a11e23d",
+        "md5Base64": "/qn46f4sm3toYuwpKhHiPQ==",
+        "verifiedAgainstOfficialMd5": true,
+        "cacheVerifiedAt": "2026-08-11T06:25:23.872Z"
+      }
+    }
+  ]
+}

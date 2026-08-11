@@ -4,6 +4,159 @@ export type ForeverDataGateStatus =
   | "STOP_UNTRACEABLE_TRANSFORM"
   | "STOP_INSUFFICIENT_ANALYTIC_DEPTH";
 
+export type ForeverMissingnessState =
+  | "observed_positive"
+  | "observed_zero"
+  | "absent_or_suppressed"
+  | "not_searched"
+  | "fetch_failed"
+  | "unavailable"
+  | "incomparable"
+  | "out_of_scope";
+
+export type ForeverDependencyClosure = {
+  inputPaths: string[];
+  transformIds: string[];
+  excludedLegacyPaths: string[];
+  closureValidated: boolean;
+};
+
+export type ForeverRightsResolution = {
+  datasetLevelInheritanceAllowed: true;
+  itemLevelOverrideAllowed: true;
+  resolved: boolean;
+};
+
+export type ForeverGoogleAnnualRateRow = {
+  form: "forever" | "for ever";
+  ngramOrder: 1 | 2;
+  year: number;
+  matchCount: number;
+  volumeCount: number;
+  annualWordTokens: number;
+  appearancesPerMillionWordTokens: number;
+  state: "observed_positive" | "observed_zero";
+  sourceWidePath: string;
+  sourceFieldIndex: number;
+  annualPath: string;
+  annualLine: number;
+};
+
+export type ForeverGoogleViewerFacetRow = {
+  form: "forever" | "for ever";
+  ngramOrder: 1 | 2;
+  year: number;
+  viewerFraction: number;
+  perMillionOrderNgrams: number;
+  unit: "per million unigrams" | "per million bigrams";
+  state: "observed_positive" | "absent_or_suppressed";
+  responsePath: string;
+  responseRowIndex: number;
+  timeseriesIndex: number;
+};
+
+export type ForeverGoogleCoverageRow = {
+  form: "forever" | "for ever";
+  year: number;
+  state: "observed_positive" | "observed_zero" | "absent_or_suppressed" | "unavailable";
+};
+
+export type ForeverGooglePairRow = {
+  year: number;
+  state: "observed_positive" | "observed_zero" | "incomparable";
+  joinedRate: number | null;
+  spacedRate: number | null;
+  joinedShare: number | null;
+  rawRatio: number | null;
+};
+
+export type ForeverGoogleAcquisitionOutcome =
+  | "STOP_GOOGLE_OBJECT_DISCOVERY_FAILED"
+  | "STOP_GOOGLE_DOWNLOAD_OR_CHECKSUM_FAILED"
+  | "STOP_GOOGLE_RAW_PARSE_FAILED"
+  | "STOP_GOOGLE_COMMON_DENOMINATOR_FAILED"
+  | "PARTIAL_GOOGLE_VIEWER_CONTRACT_READY"
+  | "GOOGLE_COMMON_DENOMINATOR_CONTRACT_READY";
+
+export type ForeverFixedGoogleReleaseAudit = {
+  outcome: ForeverGoogleAcquisitionOutcome;
+  release: {
+    viewerShorthand: "eng_2019";
+    persistentIdentifier: "googlebooks-eng-20200217";
+    rawReleaseDirectory: "20200217/eng";
+    expectedUpperYear: 2019;
+  };
+  coreFamily: Array<{
+    form: "forever" | "for ever";
+    ngramOrder: 1 | 2;
+    role: "core_joined" | "core_spaced";
+  }>;
+  optionalRelatedForms: Array<{
+    form: "forevermore";
+    ngramOrder: 1;
+    blocksCorePairEligibility: false;
+  }>;
+  outOfScopeForms: Array<{
+    form: "forever and ever";
+    ngramOrder: 3;
+    blocksCorePairEligibility: false;
+  }>;
+  scopeDiagnostics: {
+    nonGatingForCorePair: true;
+    optionalRelatedFormRegistryValid: boolean;
+    outOfScopeTrigramRegistryValid: boolean;
+  };
+  fixedViewerSeparateFacets: {
+    productionEligible: boolean;
+    validation: Record<string, boolean>;
+    requestPath: string;
+    responsePath: string;
+    responseSha256: string | null;
+    pointCounts: Record<string, number>;
+    yearRange: { start: number; end: number } | null;
+    observations: ForeverGoogleViewerFacetRow[];
+    rawCompatibleSanity: {
+      nonGatingForViewerContract: true;
+      nonGatingForRawContract: true;
+      form: "forever";
+      status: "not_available" | "passed" | "failed";
+      comparedYears: number;
+      absoluteTolerancePpm: number;
+      maximumAbsoluteDifferencePpm: number | null;
+      sample: {
+        year: number;
+        rawPerMillionWordTokens: number;
+        viewerPerMillionUnigrams: number;
+        absoluteDifferencePpm: number;
+      } | null;
+      passed: boolean | null;
+    };
+  };
+  fixedRawCommonDenominator: {
+    productionEligible: boolean;
+    validation: Record<string, boolean>;
+    activeDependencyInputPaths: string[];
+    activeTransformIds: string[];
+    excludedLegacyPaths: string[];
+    rightsResolvedBy: "dataset-default" | "item-override" | null;
+    yearRange: { start: number; end: number } | null;
+    coverageByForm: Record<
+      string,
+      {
+        retainedRows: number;
+        earliestRetainedYear: number | null;
+        latestRetainedYear: number | null;
+        observedZeroYears: number;
+        absentOrSuppressedYears: number;
+        unavailableDenominatorYears: number;
+      }
+    >;
+    annualRates: ForeverGoogleAnnualRateRow[];
+    annualCoverage: ForeverGoogleCoverageRow[];
+    pairRows: ForeverGooglePairRow[];
+  };
+};
+
 export type ForeverAuditValue =
   | string
   | number
@@ -25,6 +178,7 @@ export type ForeverAuthorityLevel =
   | "placeholder-only"
   | "generated-capture-without-upstream-raw"
   | "derived-non-authoritative"
+  | "checksum-bound-derived"
   | "source-code-audit-only"
   | "official-source-reference"
   | "retained-upstream-raw";
@@ -80,8 +234,8 @@ export type ForeverSourceSelector = {
 
 export type ForeverFinding = {
   id: string;
-  status: "audited-blocker" | "audited-limited-result";
-  productionEligible: false;
+  status: "audited-blocker" | "audited-limited-result" | "validated-result";
+  productionEligible: boolean;
   question: string;
   rawFields: ForeverSourceSelector[];
   filters: string[];
@@ -93,6 +247,15 @@ export type ForeverFinding = {
     values: Record<string, ForeverAuditValue>;
   };
   caveat: string[];
+  missingnessPolicy: string;
+  derivationPolicy: {
+    yearCoverage: string;
+    minimumDataRule: string;
+    smoothingRule: string;
+    edgeHandling: string;
+    corpusLimitations: string[];
+    rawRowLineage: string;
+  };
   sourceRowsFiles: ForeverSourceSelector[];
   blockedByGapIds: string[];
 };
@@ -114,7 +277,7 @@ export type ForeverFigureContract = {
   id: string;
   candidatePanel: string;
   findingIds: string[];
-  productionEligible: false;
+  productionEligible: boolean;
   eligibilityReason: string;
   researchQuestion: string;
   rawFilesAndFields: ForeverSourceSelector[];
@@ -131,6 +294,9 @@ export type ForeverFigureContract = {
   validInterpretation: string[];
   prohibitedInterpretation: string[];
   missingnessErrorSourceLimitations: string[];
+  missingnessPolicy: string;
+  activeDependencyClosure: ForeverDependencyClosure;
+  rightsResolution: ForeverRightsResolution;
   localDisclosureRequirements: string[];
   blockedByGapIds: string[];
 };
@@ -139,7 +305,8 @@ export type ForeverFigureContractRegistry = {
   schemaVersion: string;
   auditId: string;
   dataGate: ForeverDataGateStatus;
-  productionEligibleCount: 0;
+  productionEligibleCount: number;
+  pageImplementationAuthorized: false;
   contracts: ForeverFigureContract[];
 };
 
@@ -163,6 +330,8 @@ export type ForeverSpotCheck = {
   derivedAuditValue: ForeverAuditValue;
   renderedValue: string;
   findingIds: string[];
+  contractIds?: string[];
+  dependencyDisposition?: "active" | "excluded/legacy";
 };
 
 export type ForeverValidationAssertion = {
@@ -178,6 +347,7 @@ export type ForeverUntraceableInput = {
   locations: string[];
   kind: string;
   reason: string;
+  dependencyDisposition: "active" | "excluded/legacy";
   requiredDisposition: "exclude-from-research-results" | "rebuild-from-registered-finding";
 };
 
@@ -190,10 +360,17 @@ export type ForeverAnalysisArtifact = {
     status: ForeverDataGateStatus;
     displayTitle: string;
     displaySummary: string;
-    productionPanelsAllowed: boolean;
+    productionPanelsAllowed: false;
+    pageImplementationAuthorized: false;
     reasons: string[];
     nextEligibleGate: ForeverDataGateStatus;
   };
+  missingnessTaxonomy: {
+    states: ForeverMissingnessState[];
+    sparseRowAbsencePolicy: string;
+    observedZeroEvidenceRule: string;
+  };
+  fixedGoogleReleaseAudit: ForeverFixedGoogleReleaseAudit;
   manifestSummary: {
     registeredInputCount: number;
     inputSetSha256: string;
@@ -229,6 +406,8 @@ export type ForeverAnalysisArtifact = {
     transformManifestPresent: boolean;
     upstreamRawPresent: boolean;
     allRequiredRawInputsPresent: boolean;
+    fixedViewerSeparateFacetsEligible: boolean;
+    fixedRawCommonDenominatorEligible: boolean;
   };
   termFormRegistryAudit: {
     canonicalRegistryPresent: boolean;
@@ -259,9 +438,9 @@ export type ForeverAnalysisArtifact = {
     prohibitedUse: string[];
   };
   googleOfficialShardFeasibility: {
-    status: "NOT_EXECUTED_OFFLINE_AUDIT";
-    planningEnvelope: "approximately 1.2 GB";
-    repositoryEvidenceForExactShardSize: false;
+    status: "DISCOVERY_EXECUTED" | "ACQUISITION_VALIDATED";
+    planningEnvelope: string;
+    repositoryEvidenceForExactShardSize: boolean;
     officialSourcesOnly: true;
     requirements: string[];
     boundary: string[];

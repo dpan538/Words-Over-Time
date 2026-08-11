@@ -7,12 +7,19 @@ type ForeverMobileDataGateProps = {
 
 export function ForeverMobileDataGate({ analysis }: ForeverMobileDataGateProps) {
   const { dataGate, denominatorAudit, manifestSummary } = analysis;
+  const fixedGoogle = analysis.fixedGoogleReleaseAudit;
+  const commonDenominatorReady =
+    fixedGoogle.fixedRawCommonDenominator.productionEligible;
 
   return (
     <article
       className={styles.root}
       data-forever-edition="mobile"
       data-data-gate={dataGate.status}
+      data-google-contract-outcome={fixedGoogle.outcome}
+      data-page-implementation-authorized={String(
+        dataGate.pageImplementationAuthorized,
+      )}
       aria-labelledby="m-forever-data-gate-title"
     >
       <header className={styles.gateHeader}>
@@ -32,8 +39,16 @@ export function ForeverMobileDataGate({ analysis }: ForeverMobileDataGateProps) 
             <dd>{manifestSummary.registeredInputCount}</dd>
           </div>
           <div>
-            <dt>Production-eligible panels</dt>
+            <dt>Production-eligible figure contracts</dt>
             <dd>{manifestSummary.productionEligiblePanelCount}</dd>
+          </div>
+          <div>
+            <dt>Google contract outcome</dt>
+            <dd>{fixedGoogle.outcome}</dd>
+          </div>
+          <div>
+            <dt>Page implementation authorized</dt>
+            <dd>{String(dataGate.pageImplementationAuthorized)}</dd>
           </div>
         </dl>
       </header>
@@ -53,10 +68,14 @@ export function ForeverMobileDataGate({ analysis }: ForeverMobileDataGateProps) 
       <section className={styles.section} aria-labelledby="m-forever-denominator-title">
         <p className={styles.sectionIndex}>02 / Denominator audit</p>
         <h3 className={styles.sectionTitle} id="m-forever-denominator-title">
-          Different n-gram orders, different denominators.
+          {commonDenominatorReady
+            ? "The fixed raw release supports one shared word-token denominator."
+            : "Different n-gram orders, different denominators."}
         </h3>
         <p className={styles.sectionLead}>
-          Viewer-normalized values may only be read in the unit attached to their own n-gram order. The joined and spaced forms do not share a proven annual word-token denominator.
+          {commonDenominatorReady
+            ? `${fixedGoogle.release.persistentIdentifier} supplies exact joined and spaced match counts with same-release annual 1-gram word-token totals. Viewer-normalized fractions remain separate, order-specific sanity checks.`
+            : "Viewer-normalized values may only be read in the unit attached to their own n-gram order. The joined and spaced forms do not yet share a proven annual word-token denominator."}
         </p>
 
         <div className={styles.seriesList} aria-label="Audited Google Viewer series units">
@@ -92,7 +111,11 @@ export function ForeverMobileDataGate({ analysis }: ForeverMobileDataGateProps) 
 
         <div className={styles.interpretationGrid}>
           <div>
-            <h4>Allowed after provenance repair</h4>
+            <h4>
+              {commonDenominatorReady
+                ? "Allowed by the fixed raw contract"
+                : "Allowed after provenance repair"}
+            </h4>
             <ul>
               {denominatorAudit.allowedUse.map((item) => (
                 <li key={item}>{item}</li>
@@ -100,7 +123,11 @@ export function ForeverMobileDataGate({ analysis }: ForeverMobileDataGateProps) 
             </ul>
           </div>
           <div className={styles.prohibited}>
-            <h4>Not allowed from current data</h4>
+            <h4>
+              {commonDenominatorReady
+                ? "Still prohibited"
+                : "Not allowed from current data"}
+            </h4>
             <ul>
               {denominatorAudit.prohibitedUse.map((item) => (
                 <li key={item}>{item}</li>
@@ -113,7 +140,9 @@ export function ForeverMobileDataGate({ analysis }: ForeverMobileDataGateProps) 
       <section className={styles.section} aria-labelledby="m-forever-inputs-title">
         <p className={styles.sectionIndex}>03 / Raw inputs required</p>
         <h3 className={styles.sectionTitle} id="m-forever-inputs-title">
-          What must exist before form can follow data.
+          {commonDenominatorReady
+            ? "What remains before page implementation can proceed."
+            : "What must exist before form can follow data."}
         </h3>
 
         <div className={styles.gapList}>
@@ -192,7 +221,9 @@ export function ForeverMobileDataGate({ analysis }: ForeverMobileDataGateProps) 
       </details>
 
       <footer className={styles.stopRule}>
-        <p>No substantive mobile figure is rendered while this gate is stopped.</p>
+        <p>
+          Page implementation remains unauthorized; no substantive mobile figure is rendered.
+        </p>
       </footer>
     </article>
   );

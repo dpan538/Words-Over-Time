@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "familyId": "forever-joined-spaced-core",
+  "release": "googlebooks-eng-20200217",
+  "viewerShorthand": "eng_2019",
+  "viewerRequestBoundary": {
+    "start": 1500,
+    "end": 2019
+  },
+  "expectedRawUpperYear": 2019,
+  "coreForms": [
+    {
+      "id": "forever",
+      "exactForm": "forever",
+      "ngramOrder": 1,
+      "role": "core_joined",
+      "blocksCorePairEligibility": true,
+      "wideRawFile": "docs/research/forever/google-fixed-20200217/extracted/forever-1.source.tsv",
+      "annualFile": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+      "sourceShard": "https://storage.googleapis.com/books/ngrams/books/20200217/eng/1-00018-of-00024.gz"
+    },
+    {
+      "id": "for-ever",
+      "exactForm": "for ever",
+      "ngramOrder": 2,
+      "role": "core_spaced",
+      "blocksCorePairEligibility": true,
+      "wideRawFile": "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.source.tsv",
+      "annualFile": "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv",
+      "sourceShard": "https://storage.googleapis.com/books/ngrams/books/20200217/eng/2-00407-of-00589.gz"
+    }
+  ],
+  "optionalRelatedForms": [
+    {
+      "id": "forevermore",
+      "exactForm": "forevermore",
+      "ngramOrder": 1,
+      "role": "optional_related",
+      "blocksCorePairEligibility": false,
+      "wideRawFile": "docs/research/forever/google-fixed-20200217/extracted/forevermore-1.source.tsv",
+      "annualFile": "docs/research/forever/google-fixed-20200217/extracted/forevermore-1.annual.tsv",
+      "sourceShard": "https://storage.googleapis.com/books/ngrams/books/20200217/eng/1-00018-of-00024.gz"
+    }
+  ],
+  "outOfScope": [
+    {
+      "exactForm": "forever and ever",
+      "ngramOrder": 3,
+      "role": "independent_trigram_phrase",
+      "acquired": false,
+      "blocksCorePairEligibility": false
+    }
+  ]
+}

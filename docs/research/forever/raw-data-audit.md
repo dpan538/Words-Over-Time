@@ -2,129 +2,191 @@
 
 Audit ID: `forever-raw-audit-2026-08-11`
 
-Repository baseline: `audit/mobile-search-growth-2026-08` at `33bc7ab2acadd25d134d2d87433318423e8c9ef0`
+Schema: `2.0.0`
 
-Formal outcome: `DATA_GATE=STOP_RAW_DATA_MISSING`
+Round baseline: `audit/mobile-search-growth-2026-08` at `3f6d025`
 
-This is a data gate, not a visual review. The audit does not authorize a Mobile Forever rebuild. Every candidate figure contract is `productionEligible=false`; the expected STOP status is a valid, passing audit result.
+Google acquisition/contract outcome: `GOOGLE_COMMON_DENOMINATOR_CONTRACT_READY`
 
-## Generated audit artifacts
+Page-level state: `DATA_GATE=STOP_RAW_DATA_MISSING`; `pageImplementationAuthorized=false`
 
-- `src/data/generated/forever_analysis.json`: typed aggregate audit, denominator decision, raw gaps, untraceable inputs, assertions, and 15 raw → derived → rendered spot checks.
-- `src/data/generated/forever_raw_data_manifest.json`: 32 audited inputs with SHA-256, fields, granularity, record counts, date basis, source/corpus/release, missingness, duplicate policy, transform history, and rights boundary, including the STOP report route, renderer, public metadata, and official denominator authority record.
-- `src/data/generated/forever_findings_registry.json`: seven non-circular findings in question → fields → filters → grouping → denominator → formula → result → caveat → source form.
-- `src/data/generated/forever_figure_contract_registry.json`: seven candidate contracts; none is production eligible.
-- `src/types/foreverAnalysis.ts` and `src/data/foreverAnalysis.ts`: typed contract and loader.
+The Google outcome and the page state are separate decisions. Two Google analyses are now independently eligible, but this round does not authorize a Mobile Forever implementation and does not add or restore any figure. The page-level STOP remains because the other candidate panels still lack their own complete raw/provenance closures.
 
-Generate with `npm run data:forever:audit`. Validate current inputs and byte-exact generated outputs with `npm run data:forever:audit:validate`. Validation is now part of `npm run verify` immediately after typecheck.
+## Gate model
 
-The analyzer contains no current-time value. It hashes every registered input as bytes and uses deterministic insertion/order rules. It discovers Forever-named scripts/generated data plus dedicated raw/source directories and fails if a newly discovered candidate has not been audited and registered. Text, JSON, TSV, and future binary/shard inputs retain byte-level SHA-256 identity; dedicated raw paths receive a `retained-raw` role and cannot fall through as render consumers. The gate is derived from executable required-layer predicates, rather than fixed as a success constant or filename presence. `--check` also fails if any input digest changes, a generated document is stale, a required manifest input disappears, reciprocal finding/contract/gap links break, a source selector is neither registered nor an exact expected raw path, fewer than ten rendered spot checks remain, a denominator becomes shared without common-denominator evidence, or any figure becomes eligible while the gate is stopped.
+Schema 2 separates:
 
-Every named validation assertion computes its own boolean predicate before the artifact is emitted. The future-input predicates are deliberately conservative: Gutenberg requires 23 non-empty checksum-bound official texts and edition/rights metadata; attestations require source-bound non-empty quotations and precision/verification fields; modern capture requires ten checksum-bound search responses and at least sixteen unique page revisions with distinct date/license fields; coverage requires explicit zero/not-searched/unavailable/incomparable states; rights must bind every raw path; and the transform manifest must cover every registered Forever fetch/build script and raw payload with checksum-bound inputs and outputs. A placeholder file cannot advance the gate.
+- `figureContracts[].productionEligible`: whether one finding and its active dependency closure pass;
+- `pageImplementationAuthorized`: whether the Mobile Forever page may implement figures.
 
-## P0: Google Ngram denominator
+A figure contract may be `productionEligible=true` while `pageImplementationAuthorized=false`. A page STOP no longer forces every figure contract to false. The current registry contains seven candidate contracts: the two fixed Google contracts are eligible; coverage, orthographic-family, date-ledger, selected-Gutenberg, and modern-matrix contracts remain ineligible.
 
-The repository only contains Google Viewer-normalized fractions. It does not contain raw match counts or a same-release annual word-token denominator.
+The Google contracts are evaluated independently:
 
-Evidence:
+| Contract | Eligibility | Dependency boundary | Allowed result |
+| --- | --- | --- | --- |
+| `contract-google-fixed-viewer-separate-facets` (A) | `true` | fixed Viewer request/response, checksum manifest, rights, Viewer freeze transform, acquisition script | separate order-specific Viewer facets only |
+| `contract-google-fixed-raw-common-denominator` (B) | `true` | two core raw shards, exact wide records, derived annual expansion, `totalcounts-1`, acquisition/source/rights/checksum/transform manifests, acquisition script | exact-form annual rates on one word-token denominator |
 
-- `docs/research/forever/sources/google-ngram-official-authority.json` retains official Google URLs, access date, source locations, paraphrased denominator/release claims, capture limitation, and rights boundary. Google’s official explanation distinguishes a bigram percentage relative to all bigrams from a unigram percentage relative to all unigrams.
-- `scripts/fetch_ngram_forever.ts:7-11` registers four mixed-order queries over 1500–2022 with corpus alias `en` and smoothing 0.
-- `scripts/fetch_ngram_forever.ts:80-86` calls `https://books.google.com/ngrams/json` with `case_insensitive=false`.
-- `scripts/fetch_ngram_forever.ts:93-99` maps each returned `timeseries` fraction to `frequencyPerMillion = value * 1_000_000`.
-- Although the response type includes `parent` and `type` at `scripts/fetch_ngram_forever.ts:13-18`, those fields and the raw response are not retained.
-- `src/data/generated/forever_frequency.json:2-10` stores a mutable `corpus=en` URL and says the values are yearly Ngram fractions. No corpus release, raw `match_count`, annual word-token total, volume count, source-file checksum, or raw-response path exists.
+Removing an A-only file makes A ineligible without changing B. Removing a B-only file makes B ineligible without changing A. Shared release, rights, script, transform, and checksum records are validated within each contract's own closure.
 
-Allowed units under the repository's current option B are:
+## Fixed Google release
 
-| Query | Order | Required local unit |
-| --- | ---: | --- |
-| `forever` | 1 | per million unigrams |
-| `for ever` | 2 | per million bigrams |
-| `forevermore` | 1 | per million unigrams |
-| `forever and ever` | 3 | per million trigrams |
+The variable `en` / current corpus path is excluded from both new contracts. The frozen identity is:
 
-The joined and spaced forms therefore cannot share a generic “per million” scale. Joined/spaced share, ratio, crossover, overtaking year, delta, and orthographic dominance are prohibited. `src/components/ForeverFormCurrent.tsx:102-106`, `138-141`, and `175-215` currently make or visually invite that invalid comparison; those mappings are excluded from research authority.
+- Viewer shorthand: `eng_2019`;
+- Viewer numeric corpus parameter: `26`;
+- persistent identifier: `googlebooks-eng-20200217`;
+- raw release directory: `20200217/eng`;
+- expected and observed upper year: `2019`.
 
-The analyzer cannot enable a shared scale from a filename or from globally finding `match_count`-like keys. It recognizes only a registered `docs/research/forever/raw/google/common-denominator.json` manifest whose source record uses official Google dataset URLs, a persistent corpus/release, a rights boundary, and checksums that are recomputed against separately retained match-row and annual-total TSV bytes. The canonical registry must declare a complete, unique family and cover all four currently registered Ngram queries. TSV year/count/token cells must pass strict non-empty integer lexical checks, so an empty cell cannot become numeric zero. The rows must contain both exact joined/spaced forms with their correct n-gram orders and release, unique form-year keys, and the complete canonical preregistered year window; every year must have a positive annual word-token total. The exact Viewer response is likewise a separate checksum-bound raw file whose `ngram`, `parent`, `type`, and finite non-negative timeseries must match the registered request range. Any partial, transformed, one-off, or derived JSON remains unavailable evidence and keeps the gate stopped.
+The Viewer request is dual-pinned: its content values are `forever:eng_2019` and `for ever:eng_2019`, and its query parameter is `corpus=26`. A request using `corpus=eng_2019` is prohibited because the JSON endpoint can ignore that alias and return current data. The response contains exactly two tagged NGRAM rows, 520 unsmoothed finite non-negative points per row for 1500–2019, and SHA-256 `b68f85d23f7ccced84966dc0d2d5841a18bc0f7aaaf23511c5f65f48f2e6cad6`.
 
-The often-mentioned 323-row table is the inclusive 1700–2022 slice of the `forever` Viewer series: `2022 - 1700 + 1 = 323`. It is 323 unigram-normalized query-year observations, not 323 raw match-count rows. The generated file has four series × 523 years = 2,092 observations total.
+No 2020–2022 current-Viewer values enter either contract. The old 1500–2022 arrays remain `excluded/legacy`; their 323-row 1700–2022 slice is an audited historical observation, not fixed-release evidence.
 
-## Data-layer inventory
+## Core family
 
-The JSON audit manifest is the machine-readable inventory. The high-level result is:
+`core-family-registry.json` stores three scopes instead of one mixed family:
 
-| Layer | Current path | Granularity / n / time | Source and release | Blocking gaps |
-| --- | --- | --- | --- | --- |
-| Term/form registry | `src/data/forever.ts`; query arrays in four fetch/build scripts | Fragmented source literals; no canonical row set | Repository-authored; legacy sources are marked planned/not selected | No versioned order/case/joined-spaced/hyphen/preregistration policy |
-| Ngram observations | `src/data/generated/forever_frequency.json` | 4 query series, 2,092 query-year rows, 1500–2022; `forever` has 323 rows in 1700–2022 | Google Books Ngram Viewer, corpus alias `en`, release unpinned | Raw response, release, match counts, annual totals, typed missingness, rights manifest |
-| Attestation claims | `src/data/generated/forever_prehistory.json` | 6 secondary claim rows, approximate 1375–1819 | Etymonline/Wiktionary/Merriam-Webster claims; no release/snapshot | 6/6 quotations blank; no edition/access/rights/primary occurrence; conflicting `forevermore` dates |
-| Gutenberg inventory | `src/data/generated/forever_gutenberg_sources.json` | 23 selected works, 3,249,043 tokens, 332 occurrence-role rows, work years 1726–1930 | Project Gutenberg URLs, release/update unpinned | Raw text absent; no checksum, edition/translator/language/capture/selection manifest |
-| Modern capture | `src/data/generated/forever_modern_context.json` | 10 queries, 17 snippet rows, 16 unique URLs, revision years 2024–2026 | Wikinews API search, mutable snapshot, no release | Raw responses/totals/continuation/pageid/revid/capture time/page date/text date absent |
-| Coverage | none | none | none | Cannot distinguish observed zero, not searched, unavailable, and incomparable |
-| Derived display data | `forever_dataset.json` and six sidecars | Heuristic/display arrays including 32 flows, 95 atlas nodes, 42 ledger rows, 69 network nodes, and 482 inspectors | Mixed upstream layers | Not raw; incomplete missingness; mixed units; manual/heuristic transforms |
+- `coreForms`: `forever` (1-gram, joined) and `for ever` (2-gram, spaced);
+- `optionalRelatedForms`: `forevermore` (1-gram), which cannot block the core pair;
+- `outOfScope`: `forever and ever` (3-gram), an independent phrase not acquired in this round.
 
-No upstream raw file layer exists under `docs/research/forever`; the new `sources/` record documents official authority but is explicitly not a raw response or dataset capture. The existing generated captures contain a `generatedAt` timestamp and are not byte-stable if their network scripts are rerun. The new audit artifacts are byte-stable over unchanged inputs; they do not repair the upstream capture deficiency.
+The repository does not download a trigram shard. `forevermore` is extracted opportunistically from the unigram shard, but its inputs and transforms are outside contract B's active dependency closure.
 
-## Gutenberg findings
+## Object acquisition and identity
 
-`scripts/fetch_gutenberg_forever.ts:143-167` manually seeds 23 books and work years. It fetches the first successful one of four URL patterns (`174-197`), strips boilerplate (`199-206`), performs lowercase ASCII tokenization (`208-216`), and detects either token `forever` or adjacent tokens `for` + `ever` (`248-313`). It does not retain the downloaded texts.
+The official Google object discovery and local cache validation retained HTTP status, `Content-Length`, `Last-Modified`, ETag, `x-goog-hash`, release, retrieval timestamps, disk preflight, local SHA-256, local MD5 hex/base64, and comparison with the official MD5.
 
-Within this selected inventory only:
+| Object | Official path | Compressed bytes |
+| --- | --- | ---: |
+| core unigram shard | `20200217/eng/1-00018-of-00024.gz` | 593,921,274 |
+| core bigram shard | `20200217/eng/2-00407-of-00589.gz` | 647,005,430 |
+| annual totals | `20200217/eng/totalcounts-1` | 13,546 |
 
-- 3,249,043 processed tokens;
-- 321 form rows: 133 exact joined `forever`, 188 exact spaced `for ever`;
-- 11 targeted-phrase rows;
-- 332 total occurrence-role rows but only 329 unique `(source id, tokenIndex)` positions; three rows are duplicate analytic roles where phrase and form begin at the same token.
+The two core shards total 1,240,926,704 compressed bytes; all three objects total 1,240,940,250 bytes. Large files live only in the gitignored `.cache/google-ngram/20200217/eng/` cache. They are never Git or Git LFS inputs. Downloads use `.part`, range resume, length/hash verification, and atomic rename.
 
-The joined/spaced separation is present, but the tokenizer can convert punctuation/hyphen boundaries into adjacency. At least five generated snippets contain spaced `for ever and ever`, while the target phrase registry only contains joined `forever and ever` (`scripts/fetch_gutenberg_forever.ts:7-15`). Work publication year cannot date wording in an unrecorded English edition or translation. The layer may eventually support a declared selected-text inventory after raw texts, edition metadata, checksums, selection rules, and passage IDs are captured; it cannot support population trend or orthographic dominance.
+`fixedRawCommonDenominator.validation.acquisitionIdentity` requires every local cache record to have `verifiedAgainstOfficialMd5=true`; its MD5 hex must equal the normalized official ETag and its base64 MD5 must occur in `x-goog-hash`. An arbitrary local SHA-256 string is not sufficient.
 
-## Attestation and modern findings
+## v3 wide records and annual expansion
 
-`scripts/build_prehistory_forever.ts:7-104` hard-codes six secondary-source claims and manually maps approximate labels such as “late 14c.” and “late 17c.” to 1375 and 1680. All six quotations are empty. Five records are secondary lexical claims and one is an explicit conflicting claim; four have medium and two low confidence. This cannot support a first-use result, a unique-passage archive lattice, or an exact-date rail.
+The official datasets-v3 shard is not a four-column annual table. Each exact form is one wide source record:
 
-`scripts/fetch_modern_context_forever.ts:9-20` registers ten queries with a maximum of six API rows each. It dedupes `title + snippet`, not URL/revision/passage (`158-172`), assigns revision year as the record year (`174-185`), and infers license from that year (`188`, `247-254`). The generated capture contains 17 rows for 16 URLs: the Finnish school-shooting page is retained once for `forever` and again for `"remembered forever"`, producing phrase count 2 but document frequency 1. Four registered queries have no retained row, yet raw result totals/statuses are absent, so missing/unavailable cannot be distinguished from observed zero. A one-time search inventory cannot establish persistence, survival, prevalence, or trend.
+```text
+ngram<TAB>year,match_count,volume_count<TAB>year,match_count,volume_count...
+```
 
-## Derived and source-literal exclusions
+The tracked `.source.tsv` files preserve those exact official wide records. The tracked `.annual.tsv` files are deterministic derived expansions with this eight-column schema:
 
-The following must not continue as research results:
+```text
+ngram  year  match_count  volume_count  ngram_order  corpus_release  source_shard  wide_field_index
+```
 
-- Every placeholder count/frequency/token total/semantic score/association/network/evidence literal in `src/data/forever.ts:15-624`.
-- The `simpleLogDice` values in `scripts/build_forever_dataset.ts:475-478`, `547-548`, and `583-590`; the call supplies candidate count equal to joint count, so the score is not a defensible association statistic.
-- Mixed-denominator flows at `scripts/build_forever_dataset.ts:701-719`.
-- Heuristic category/ledger weights, selected first-six snippets, duplicated “all” snippets, editorial atlas relations, manual network coordinates (`scripts/build_forever_dataset.ts:622-699`, `722-1095`), and the globally false long-span `comparable: true` flag (`1777-1794`).
-- Hard-coded evidence, score, semantic-year, and geometry arrays in `ForeverInstitutionalDoubt.tsx`, `VariantDriftField.tsx`, and `ContextSignalField.tsx` listed by exact locations in `forever_analysis.json`.
-- The mobile attestation rail, integer endpoint fields, 1930–2024 empty field, and modern rake in `ForeverAttestationHinge.tsx:114-133` and `ForeverRecurrenceField.tsx:113-273`.
-- Generic Viewer units and independently shape-scaled series in `ForeverFormCurrent.tsx`, `FrequencyTimeline.tsx`, and `MobileFrequencyStory.tsx` until a valid contract is implemented.
+`wide_field_index` is the zero-based source tab-field index (`ngram` is field 0; observations start at field 1). The analyzer enforces a complete bidirectional bijection: every official wide observation must have exactly one annual row, every annual row must resolve to the identical wide tuple, and year and source-field indices must be unique. Exact field-zero equality is required; substring/fuzzy extraction is invalid.
 
-The original fetch/build pipeline also writes `new Date().toISOString()` in every stage (`fetch_ngram_forever.ts:129`, `fetch_gutenberg_forever.ts:316`, `build_prehistory_forever.ts:146`, `fetch_modern_context_forever.ts:243`, `build_forever_dataset.ts:1761`), so rerunning it cannot meet byte-stability without a capture/provenance redesign.
+Core retained records:
 
-## Figure-contract decision
+| Exact form | Order | Annual rows | Earliest retained year | Latest retained year |
+| --- | ---: | ---: | ---: | ---: |
+| `forever` | 1 | 430 | 1500 | 2019 |
+| `for ever` | 2 | 457 | 1478 | 2019 |
 
-Even if the Google Viewer series are placed in strict n-gram-order facets with local units and no direct joined/spaced comparison, the other current layers are not sufficient for five production panels. There are at most three analytic directions after raw/provenance repair:
+The optional `forevermore` record has 301 annual rows from 1630–2019 and is not part of the core gate.
 
-1. a typed evidence-coverage matrix;
-2. separate Viewer-normalized facets, after raw response and corpus release are pinned;
-3. a selected Gutenberg form inventory, after official text/edition/checksum/selection capture and passage dedupe.
+## Common word-token denominator
 
-The source-bound date ledger, modern source matrix, orthographic-family common-scale small multiples, and transition robustness field remain blocked. A separate archive lattice is not registered as a candidate contract because the current records cannot establish even one verified unique source passage; its raw requirements are represented by the date-ledger and selected-Gutenberg blockers. Seven actual candidate contracts are registered, including coverage, Viewer facets, and the selected-Gutenberg inventory; all are `productionEligible=false`.
+The complete fixed `totalcounts-1` object contains 529 records. Its actual range is 1470–2019, with 21 absent years inside that 550-year span. The release is sparse: the contract does not assume a 1500 lower bound or a continuous 520-row totals table.
 
-The correct current status is therefore `STOP_RAW_DATA_MISSING`, not `STOP_INSUFFICIENT_ANALYTIC_DEPTH`. Depth should be reassessed only after the missing upstream raw inputs and coverage/rights/transform registries exist.
+For an explicit exact-form observation with a positive same-year total, contract B computes:
 
-## Minimum raw capture set
+```text
+appearances per million corpus word tokens
+= exact-form yearly match_count / annual total 1-gram word tokens × 1,000,000
+```
 
-Before another gate review, retain:
+This means: the number of times one exact surface form appears as an n-gram per million corpus word tokens. It does not mean language-wide spelling adoption, semantic replacement, first use, a social acceptance event, or an unbiased population trend.
 
-1. one canonical form registry with exact query, n-gram order, case, hyphen, joined/spaced, normalization, and complete-family preregistration policy;
-2. exact raw Google Viewer response plus request/corpus-release manifest and SHA-256;
-3. if a common scale is pursued, official same-release `match_count` rows and annual word-token totals;
-4. all 23 official Gutenberg text files plus metadata, edition, translator, language, release/update, capture date, selection rule, rights, and SHA-256;
-5. primary/authoritative attestation captures with quotation, edition, date precision/basis, access date, verification, and reuse boundary;
-6. all ten raw Wikinews search responses including total/continuation/zero-result state, plus the 16 unique page revision captures with page/revision IDs, text/page/capture dates, license metadata, and passage hashes;
-7. typed coverage, rights, and transform manifests.
+The generated typed artifact contains:
 
-## Approximately 1.2 GB Google shard boundary
+- 887 exact form-year rates with wide-field and annual-line lineage;
+- 1,100 form-year coverage rows across the actual 1470–2019 totals range;
+- 550 pair-year rows, with arithmetic null unless both core rates exist;
+- for `forever`: 99 `absent_or_suppressed` form-years and 21 unavailable-denominator years;
+- for `for ever`: 72 `absent_or_suppressed` form-years and 21 unavailable-denominator years.
 
-No raw dataset, Viewer response, or shard was acquired. Official Google documentation was consulted to audit denominator semantics and release boundaries, and the resulting source record retains only URLs, locations, access date, and paraphrases. The “approximately 1.2 GB” value is treated only as a requested acquisition planning envelope; the repository contains no evidence that an exact required official shard has that size.
+There are no explicit zero-bearing core tuples in the retained records. Therefore `observedZeroYears=0`; an absent source tuple is never reclassified as zero.
 
-Before acquisition, pin the official Google corpus release, identify the exact unigram/bigram (and only if preregistered, trigram) shards, verify compressed and expanded sizes, disk/memory constraints, URLs, checksums, license/reuse terms, and extraction filters. A lexical shard alone is insufficient for a common scale: the same-release official total-count/year input is also required. If those official inputs cannot be obtained and retained reproducibly, the data gate remains `STOP_RAW_DATA_MISSING`.
+## Viewer contract and sanity diagnostic
+
+Contract A keeps the official Viewer fractions on separate denominators:
+
+- `forever`: per million unigrams;
+- `for ever`: per million bigrams.
+
+Viewer values cannot support joined/spaced share, ratio, delta, crossover, overtaking year, or a shared generic frequency axis. Contract B's independently reconstructed word-token rates are the only current basis for shared-denominator pair arithmetic.
+
+The Viewer/raw comparison is diagnostic and non-gating for both A and B. With both contracts available, 430 `forever` years were compared independently. The maximum absolute difference was about 0.000002513 appearances per million, within the preregistered 0.0001 tolerance. If B is unavailable, this diagnostic becomes `status=not_available`; it does not make A ineligible.
+
+## Missingness policy
+
+The generated schema provides at least these states:
+
+- `observed_positive`;
+- `observed_zero`;
+- `absent_or_suppressed`;
+- `not_searched`;
+- `fetch_failed`;
+- `unavailable`;
+- `incomparable`;
+- `out_of_scope`.
+
+An explicit wide tuple with `match_count=0` may be `observed_zero`. A missing exact form-year is `absent_or_suppressed`, never silently zero. A missing same-year total is `unavailable`; the rate is null. Pair arithmetic is `incomparable` whenever either core rate is unavailable. No interpolation, extrapolation, endpoint padding, or silent fill is applied.
+
+## Transform, checksum, timestamp, and rights boundaries
+
+Contract B's exact active transform scope contains only:
+
+1. `google-20200217-core-exact-form-extraction`;
+2. `google-20200217-core-wide-to-annual-expansion`;
+3. `google-20200217-totalcounts-freeze`.
+
+Contract A's exact active scope contains only `google-20200217-viewer-freeze`. Optional-form transforms have their own scope. `legacy-variable-viewer-fetch` is `excluded_legacy` and cannot block either new contract.
+
+Every active transform binds `scripts/acquire_forever_google_20200217.ts` by SHA-256. The acquisition script and transform manifest are themselves included in `checksums.json`; transform inputs/outputs bind byte counts and SHA-256. Each scoped transform ID must resolve exactly once, and each scoped input/output path set must be exact: expected paths cannot be omitted and optional/legacy paths cannot be added. Checksum descriptor uniqueness and rights overrides are also evaluated only for the figure's active paths, so unrelated legacy or optional rows do not leak into its gate.
+
+Capture timestamps are acquisition provenance. They may change before a new freeze; they are excluded from derived research bytes. Byte stability applies to derivation over frozen checksum-bound inputs. Rights use dataset-level inheritance with item-level overrides permitted; an item override is not globally required when a valid dataset default applies.
+
+## Other source layers and remaining page STOP
+
+The existing non-Google layers remain audited but do not block a validated Google contract:
+
+| Layer | Current observed inventory | Why its figure remains ineligible |
+| --- | --- | --- |
+| selected Gutenberg | 23 selected generated work records; 3,249,043 processed tokens; 332 occurrence-role rows | official raw text/edition/checksum/selection and passage-dedupe closure incomplete |
+| attestation claims | 6 secondary claim rows | quotations/editions/date precision/primary provenance incomplete |
+| modern capture | 10 query strings; 17 snippet rows; 16 unique URLs | raw search responses, zero-result state, revisions, three date types, and capture provenance incomplete |
+| coverage | no complete cross-layer coverage manifest | cannot yet distinguish every source layer's searched/unsearched/unavailable states |
+
+The values 23, 10, and 16 are observations of legacy generated inventories, not hard-coded global success constants. Each future figure must define its own source universe and active dependency closure.
+
+Legacy heuristic/display arrays, manual coordinates, mixed-denominator flows, approximate date rails, 0–4 endpoint fields, independent shape-scale sparklines, the 1930–2024 decorative gap, and prose-derived source shapes remain excluded from research authority. They were not revived in this round.
+
+## Generated artifacts and verification
+
+- `src/data/generated/forever_analysis.json`: aggregate schema-2 audit, explicit Google outcome, A/B audit, typed rates/coverage/pairs, page authorization, gaps, assertions, and spot checks;
+- `src/data/generated/forever_raw_data_manifest.json`: exhaustive byte manifest with source/rights/transform classifications;
+- `src/data/generated/forever_findings_registry.json`: source-bound findings and derivation policies;
+- `src/data/generated/forever_figure_contract_registry.json`: seven independent figure contracts and page authorization;
+- `src/types/foreverAnalysis.ts`: typed schema consumed by the loader.
+
+Generate with `npm run data:forever:audit`. Validate exact generated bytes with `npm run data:forever:audit:validate`. The analyzer includes 33 raw → derived → serialized spot checks, including exact shard identity, exact form equality, n-gram orders, first/last retained years, sparse absence, a positive low-count row, maximum match count, annual total lookup, manual and independent rate recomputations, joined/spaced separation, independent double derivation, Viewer release identity, raw → finding → contract lineage, non-core removal/core mutation, and exact-closure pollution tests for A and B.
+
+The final round status remains:
+
+```text
+GOOGLE_COMMON_DENOMINATOR_CONTRACT_READY
+pageImplementationAuthorized=false
+READY_FOR_USER_VISUAL_ACCEPTANCE=false
+```
+
+This is not `FOREVER_COMPLETE`, `MOBILE_FOREVER_READY`, or `COMPLETE_FOR_SCOPE`.

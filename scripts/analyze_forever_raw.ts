@@ -7,6 +7,7 @@ import type {
   ForeverAuditValue,
   ForeverFigureContract,
   ForeverFigureContractRegistry,
+  ForeverFixedGoogleReleaseAudit,
   ForeverFinding,
   ForeverFindingsRegistry,
   ForeverManifestEntry,
@@ -21,7 +22,46 @@ import type {
 const ROOT = process.cwd();
 const OUT_DIR = path.join(ROOT, "src", "data", "generated");
 const AUDIT_ID = "forever-raw-audit-2026-08-11";
-const SCHEMA_VERSION = "1.0.0";
+const SCHEMA_VERSION = "2.0.0";
+
+const PAGE_IMPLEMENTATION_AUTHORIZED = false as const;
+const FIXED_GOOGLE_ROOT = "docs/research/forever/google-fixed-20200217";
+const FIXED_GOOGLE_PATHS = {
+  acquisition: `${FIXED_GOOGLE_ROOT}/acquisition-manifest.json`,
+  rights: `${FIXED_GOOGLE_ROOT}/source-rights-manifest.json`,
+  transforms: `${FIXED_GOOGLE_ROOT}/transform-manifest.json`,
+  checksums: `${FIXED_GOOGLE_ROOT}/checksums.json`,
+  family: `${FIXED_GOOGLE_ROOT}/core-family-registry.json`,
+  extractionSummary: `${FIXED_GOOGLE_ROOT}/extracted/extraction-summary.json`,
+  totalCounts: `${FIXED_GOOGLE_ROOT}/frozen/totalcounts-1`,
+  viewerResponse: `${FIXED_GOOGLE_ROOT}/frozen/viewer-eng_2019-s0-case-sensitive.json`,
+  viewerRequest: `${FIXED_GOOGLE_ROOT}/frozen/viewer-request.json`,
+  foreverSource: `${FIXED_GOOGLE_ROOT}/extracted/forever-1.source.tsv`,
+  foreverAnnual: `${FIXED_GOOGLE_ROOT}/extracted/forever-1.annual.tsv`,
+  forEverSource: `${FIXED_GOOGLE_ROOT}/extracted/for-ever-2.source.tsv`,
+  forEverAnnual: `${FIXED_GOOGLE_ROOT}/extracted/for-ever-2.annual.tsv`,
+  forevermoreSource: `${FIXED_GOOGLE_ROOT}/extracted/forevermore-1.source.tsv`,
+  forevermoreAnnual: `${FIXED_GOOGLE_ROOT}/extracted/forevermore-1.annual.tsv`,
+} as const;
+
+const MISSINGNESS_STATES = [
+  "observed_positive",
+  "observed_zero",
+  "absent_or_suppressed",
+  "not_searched",
+  "fetch_failed",
+  "unavailable",
+  "incomparable",
+  "out_of_scope",
+] as const;
+
+const LEGACY_FOREVER_PIPELINE_PATHS = [
+  "scripts/fetch_ngram_forever.ts",
+  "scripts/fetch_gutenberg_forever.ts",
+  "scripts/build_prehistory_forever.ts",
+  "scripts/fetch_modern_context_forever.ts",
+  "scripts/build_forever_dataset.ts",
+] as const;
 
 const OUTPUT_PATHS = {
   analysis: "src/data/generated/forever_analysis.json",
@@ -124,6 +164,8 @@ type ForeverRawAvailabilityAudit = {
   transformManifestPresent: boolean;
   upstreamRawPresent: boolean;
   allRequiredRawInputsPresent: boolean;
+  fixedViewerSeparateFacetsEligible: boolean;
+  fixedRawCommonDenominatorEligible: boolean;
 };
 
 type FrequencyPoint = {
@@ -322,12 +364,13 @@ async function walkRelativeFiles(relativeDirectory: string): Promise<string[]> {
 }
 
 async function discoverForeverAuditCandidates() {
-  const [scripts, dataSources, generated, sources, docsRaw, sourceRaw, repositoryRaw, structuredData] = await Promise.all([
+  const [scripts, dataSources, generated, sources, docsRaw, fixedGoogle, sourceRaw, repositoryRaw, structuredData] = await Promise.all([
     walkRelativeFiles("scripts"),
     walkRelativeFiles("src/data"),
     walkRelativeFiles("src/data/generated"),
     walkRelativeFiles("docs/research/forever/sources"),
     walkRelativeFiles("docs/research/forever/raw"),
+    walkRelativeFiles(FIXED_GOOGLE_ROOT),
     walkRelativeFiles("src/data/raw/forever"),
     walkRelativeFiles("data/forever"),
     walkRelativeFiles("src/data/forever"),
@@ -346,6 +389,7 @@ async function discoverForeverAuditCandidates() {
     ),
     ...sources,
     ...docsRaw,
+    ...fixedGoogle.filter((pathname) => !pathname.endsWith(".part")),
     ...sourceRaw,
     ...repositoryRaw,
     ...structuredData,
@@ -354,12 +398,10 @@ async function discoverForeverAuditCandidates() {
 
 async function loadInputs(): Promise<InputBundle> {
   const discoveredCandidatePaths = await discoverForeverAuditCandidates();
-  const inputPaths = [...CORE_INPUT_PATHS];
-  const unregisteredCandidates = discoveredCandidatePaths.filter((candidate) => !inputPaths.includes(candidate as (typeof CORE_INPUT_PATHS)[number]));
-  invariant(
-    unregisteredCandidates.length === 0,
-    `unregistered Forever raw/data/script candidate(s): ${unregisteredCandidates.join(", ")}; audit and add each path before the gate may be regenerated`,
-  );
+  // New frozen/raw files are registered by discovery, then held to the
+  // contract-specific validators below. This keeps the manifest exhaustive
+  // without making unrelated legacy inputs part of every figure closure.
+  const inputPaths = unique([...CORE_INPUT_PATHS, ...discoveredCandidatePaths]).sort();
   const bytePairs = await Promise.all(
     inputPaths.map(async (relativePath) => [relativePath, await readFile(path.join(ROOT, relativePath))] as const),
   );
@@ -411,7 +453,7 @@ function parseRegisteredJson(inputs: InputBundle, relativePath: string) {
 }
 
 function isDedicatedRawPath(relativePath: string) {
-  return /^(?:docs\/research\/forever\/raw|src\/data\/raw\/forever|data\/forever)\//.test(relativePath);
+  return /^(?:docs\/research\/forever\/(?:raw|google-fixed-20200217)|src\/data\/raw\/forever|data\/forever)\//.test(relativePath);
 }
 
 function hasSha256(value: unknown) {
@@ -451,6 +493,1055 @@ function parseTsv(text: string) {
   );
 }
 
+type FixedRawRow = {
+  form: "forever" | "for ever";
+  ngramOrder: 1 | 2;
+  year: number;
+  matchCount: number;
+  volumeCount: number;
+  sourceWidePath: string;
+  sourceFieldIndex: number;
+  annualPath: string;
+  annualLine: number;
+};
+
+function parseFixedRawRows(
+  inputs: InputBundle,
+  sourceWidePath: string,
+  annualPath: string,
+  exactForm: FixedRawRow["form"],
+  ngramOrderValue: FixedRawRow["ngramOrder"],
+) {
+  const sourceText = inputs.texts.get(sourceWidePath);
+  const annualText = inputs.texts.get(annualPath);
+  if (sourceText === undefined || annualText === undefined) {
+    return { valid: false, rows: [] as FixedRawRow[] };
+  }
+  const sourceLines = sourceText.split(/\r?\n/).filter((line) => line.length > 0);
+  const sourceFields = sourceLines[0]?.split("\t") ?? [];
+  const lines = annualText.split(/\r?\n/).filter((line) => line.length > 0);
+  const expectedHeader = [
+    "ngram",
+    "year",
+    "match_count",
+    "volume_count",
+    "ngram_order",
+    "corpus_release",
+    "source_shard",
+    "wide_field_index",
+  ];
+  const actualHeader = lines[0]?.split("\t") ?? [];
+  const sourceTuples = sourceFields.slice(1).map((field, index) => {
+    const [year, matchCount, volumeCount, ...extra] = field.split(",");
+    const valid =
+      extra.length === 0 &&
+      /^\d{4}$/.test(year ?? "") &&
+      unsignedIntegerLexeme(matchCount) &&
+      unsignedIntegerLexeme(volumeCount) &&
+      Number(year) <= 2019 &&
+      Number.isSafeInteger(Number(year)) &&
+      Number.isSafeInteger(Number(matchCount)) &&
+      Number.isSafeInteger(Number(volumeCount));
+    return { sourceFieldIndex: index + 1, year, matchCount, volumeCount, valid };
+  });
+  const rows: FixedRawRow[] = [];
+  let valid =
+    sourceLines.length === 1 &&
+    sourceFields[0] === exactForm &&
+    sourceFields.length > 1 &&
+    actualHeader.length === expectedHeader.length &&
+    expectedHeader.every((field, index) => actualHeader[index] === field) &&
+    lines.length > 1 &&
+    sourceTuples.every((tuple) => tuple.valid) &&
+    lines.length - 1 === sourceTuples.length;
+  const expectedShard = ngramOrderValue === 1
+    ? "1-00018-of-00024.gz"
+    : "2-00407-of-00589.gz";
+  for (const [index, line] of lines.slice(1).entries()) {
+    const fields = line.split("\t");
+    const [
+      ngram,
+      year,
+      matchCount,
+      volumeCount,
+      ngramOrderLexeme,
+      corpusRelease,
+      sourceShard,
+      sourceFieldIndexLexeme,
+    ] = fields;
+    const sourceFieldIndex = Number(sourceFieldIndexLexeme);
+    const rowValid =
+      fields.length === 8 &&
+      ngram === exactForm &&
+      /^\d{4}$/.test(year ?? "") &&
+      unsignedIntegerLexeme(matchCount) &&
+      unsignedIntegerLexeme(volumeCount) &&
+      ngramOrderLexeme === String(ngramOrderValue) &&
+      corpusRelease === "googlebooks-eng-20200217" &&
+      sourceShard === expectedShard &&
+      unsignedIntegerLexeme(sourceFieldIndexLexeme) &&
+      sourceFieldIndex > 0 &&
+      sourceFieldIndex < sourceFields.length &&
+      sourceFields[sourceFieldIndex] === `${year},${matchCount},${volumeCount}` &&
+      Number(year) <= 2019 &&
+      Number.isSafeInteger(Number(matchCount)) &&
+      Number.isSafeInteger(Number(volumeCount));
+    valid &&= rowValid;
+    if (rowValid) {
+      rows.push({
+        form: exactForm,
+        ngramOrder: ngramOrderValue,
+        year: Number(year),
+        matchCount: Number(matchCount),
+        volumeCount: Number(volumeCount),
+        sourceWidePath,
+        sourceFieldIndex,
+        annualPath,
+        annualLine: index + 2,
+      });
+    }
+  }
+  valid &&=
+    rows.length === sourceTuples.length &&
+    new Set(rows.map((row) => row.year)).size === rows.length &&
+    new Set(rows.map((row) => row.sourceFieldIndex)).size === rows.length &&
+    sourceTuples.every((tuple) =>
+      rows.some(
+        (row) =>
+          row.sourceFieldIndex === tuple.sourceFieldIndex &&
+          row.year === Number(tuple.year) &&
+          row.matchCount === Number(tuple.matchCount) &&
+          row.volumeCount === Number(tuple.volumeCount),
+      ),
+    );
+  return { valid, rows: rows.sort((a, b) => a.year - b.year) };
+}
+
+function parseFixedAnnualTotals(inputs: InputBundle) {
+  const text = inputs.texts.get(FIXED_GOOGLE_PATHS.totalCounts);
+  if (text === undefined) return { valid: false, totals: new Map<number, number>() };
+  const totals = new Map<number, number>();
+  let valid = true;
+  const records = text.trim().split(/\s+/).filter(Boolean);
+  for (const record of records) {
+    const fields = record.split(",");
+    const [year, tokenCount, pageCount, volumeCount] = fields;
+    const rowValid =
+      fields.length === 4 &&
+      /^\d{4}$/.test(year ?? "") &&
+      unsignedIntegerLexeme(tokenCount) &&
+      Number(tokenCount) > 0 &&
+      unsignedIntegerLexeme(pageCount) &&
+      unsignedIntegerLexeme(volumeCount) &&
+      Number.isSafeInteger(Number(year)) &&
+      Number.isSafeInteger(Number(tokenCount)) &&
+      Number.isSafeInteger(Number(pageCount)) &&
+      Number.isSafeInteger(Number(volumeCount)) &&
+      !totals.has(Number(year));
+    valid &&= rowValid;
+    if (rowValid) totals.set(Number(year), Number(tokenCount));
+  }
+  const years = Array.from(totals.keys());
+  valid &&=
+    years.length > 0 &&
+    Math.max(...years) === 2019 &&
+    years.every((year) => year <= 2019);
+  return { valid, totals };
+}
+
+function roundedMetric(value: number) {
+  return Number(value.toPrecision(15));
+}
+
+function auditFixedGoogleRelease(inputs: InputBundle): ForeverFixedGoogleReleaseAudit {
+  const release = {
+    viewerShorthand: "eng_2019" as const,
+    persistentIdentifier: "googlebooks-eng-20200217" as const,
+    rawReleaseDirectory: "20200217/eng" as const,
+    expectedUpperYear: 2019 as const,
+  };
+  const emptyResult: ForeverFixedGoogleReleaseAudit = {
+    outcome: "STOP_GOOGLE_OBJECT_DISCOVERY_FAILED",
+    release,
+    coreFamily: [
+      { form: "forever", ngramOrder: 1, role: "core_joined" },
+      { form: "for ever", ngramOrder: 2, role: "core_spaced" },
+    ],
+    optionalRelatedForms: [
+      { form: "forevermore", ngramOrder: 1, blocksCorePairEligibility: false },
+    ],
+    outOfScopeForms: [
+      { form: "forever and ever", ngramOrder: 3, blocksCorePairEligibility: false },
+    ],
+    scopeDiagnostics: {
+      nonGatingForCorePair: true,
+      optionalRelatedFormRegistryValid: false,
+      outOfScopeTrigramRegistryValid: false,
+    },
+    fixedViewerSeparateFacets: {
+      productionEligible: false,
+      validation: {
+        frozenRequestPresent: false,
+        frozenResponsePresent: false,
+        checksumBound: false,
+        fixedReleaseExact: false,
+        exactCoreForms: false,
+        orderSpecificDenominators: false,
+        rightsResolved: false,
+        activeTransformClosure: false,
+      },
+      requestPath: FIXED_GOOGLE_PATHS.viewerRequest,
+      responsePath: FIXED_GOOGLE_PATHS.viewerResponse,
+      responseSha256: null,
+      pointCounts: {},
+      yearRange: null,
+      observations: [],
+      rawCompatibleSanity: {
+        nonGatingForViewerContract: true,
+        nonGatingForRawContract: true,
+        form: "forever",
+        status: "not_available",
+        comparedYears: 0,
+        absoluteTolerancePpm: 0.0001,
+        maximumAbsoluteDifferencePpm: null,
+        sample: null,
+        passed: null,
+      },
+    },
+    fixedRawCommonDenominator: {
+      productionEligible: false,
+      validation: {
+        acquisitionIdentity: false,
+        checksumBoundSourceObjects: false,
+        checksumBoundFrozenInputs: false,
+        exactCoreFamily: false,
+        exactFormEquality: false,
+        ngramOrders: false,
+        annualWordTokenTotals: false,
+        activeTransformClosure: false,
+        rightsResolved: false,
+        missingnessTyped: false,
+        frozenYearBoundary: false,
+        captureTimestampExcludedFromDerivation: true,
+      },
+      activeDependencyInputPaths: [],
+      activeTransformIds: [],
+      excludedLegacyPaths: [...LEGACY_FOREVER_PIPELINE_PATHS],
+      rightsResolvedBy: null,
+      yearRange: null,
+      coverageByForm: {},
+      annualRates: [],
+      annualCoverage: [],
+      pairRows: [],
+    },
+  };
+
+  const viewerDependencyPaths = [
+    "scripts/acquire_forever_google_20200217.ts",
+    FIXED_GOOGLE_PATHS.rights,
+    FIXED_GOOGLE_PATHS.transforms,
+    FIXED_GOOGLE_PATHS.checksums,
+    FIXED_GOOGLE_PATHS.viewerResponse,
+    FIXED_GOOGLE_PATHS.viewerRequest,
+  ];
+  const rawDependencyPaths = [
+    "scripts/acquire_forever_google_20200217.ts",
+    FIXED_GOOGLE_PATHS.acquisition,
+    FIXED_GOOGLE_PATHS.rights,
+    FIXED_GOOGLE_PATHS.transforms,
+    FIXED_GOOGLE_PATHS.checksums,
+    FIXED_GOOGLE_PATHS.family,
+    FIXED_GOOGLE_PATHS.extractionSummary,
+    FIXED_GOOGLE_PATHS.totalCounts,
+    FIXED_GOOGLE_PATHS.foreverSource,
+    FIXED_GOOGLE_PATHS.foreverAnnual,
+    FIXED_GOOGLE_PATHS.forEverSource,
+    FIXED_GOOGLE_PATHS.forEverAnnual,
+  ];
+  const partialAcquisition = parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.acquisition);
+  if (isRecord(partialAcquisition) && Array.isArray(partialAcquisition.objects)) {
+    const discovered = partialAcquisition.objects.filter(isRecord);
+    const sizes = new Map([
+      ["unigram-shard", 593_921_274],
+      ["bigram-shard", 647_005_430],
+      ["annual-token-totals", 13_546],
+    ]);
+    if (
+      Array.from(sizes).every(([id, bytes]) =>
+        discovered.some(
+          (row) =>
+            row.id === id &&
+            row.httpStatus === 200 &&
+            row.contentLength === bytes &&
+            nonEmptyString(row.etag) &&
+            nonEmptyString(row.lastModified) &&
+            Array.isArray(row.xGoogHash) &&
+            row.xGoogHash.length >= 2,
+        ),
+      )
+    ) {
+      emptyResult.outcome = "STOP_GOOGLE_DOWNLOAD_OR_CHECKSUM_FAILED";
+    }
+  }
+  const asRecord = (value: unknown): Record<string, unknown> => isRecord(value) ? value : {};
+  const acquisition = asRecord(partialAcquisition);
+  const rights = asRecord(parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.rights));
+  const transforms = asRecord(parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.transforms));
+  const checksums = asRecord(parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.checksums));
+  const family = asRecord(parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.family));
+  const extraction = asRecord(parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.extractionSummary));
+  const viewerRequest = asRecord(parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.viewerRequest));
+  const viewerResponseValue = parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.viewerResponse);
+  const viewerResponse = Array.isArray(viewerResponseValue) ? viewerResponseValue : [];
+  const viewerDependencyPathsPresent = viewerDependencyPaths.every((pathname) =>
+    inputs.inputPaths.includes(pathname));
+  const rawDependencyPathsPresent = rawDependencyPaths.every((pathname) =>
+    inputs.inputPaths.includes(pathname));
+
+  const checksumRows = Array.isArray(checksums.files) ? checksums.files.filter(isRecord) : [];
+  const uniqueChecksumDescriptor = (pathname: string) => {
+    const matching = checksumRows.filter((row) => row.path === pathname);
+    return matching.length === 1 ? matching[0] : null;
+  };
+  const checksumPathsUniqueWithin = (paths: readonly string[]) =>
+    paths.every((pathname) => uniqueChecksumDescriptor(pathname) !== null);
+  const checksumBound = (pathname: string) => {
+    const row = uniqueChecksumDescriptor(pathname);
+    const bytes = inputs.bytes.get(pathname);
+    return Boolean(
+      row &&
+      bytes &&
+      row.requiredInTrackedCheckout === true &&
+      row.bytes === bytes.byteLength &&
+      hasSha256(row.sha256) &&
+      sha256(bytes) === row.sha256,
+    );
+  };
+  const exactOrderedStrings = (value: unknown, expected: readonly string[]) =>
+    Array.isArray(value) &&
+    value.length === expected.length &&
+    expected.every((item, index) => value[index] === item);
+  const acquisitionScriptPath = "scripts/acquire_forever_google_20200217.ts";
+  const transformRows = Array.isArray(transforms.transforms) ? transforms.transforms.filter(isRecord) : [];
+  const activeTransforms = transformRows.filter((row) => row.status === "active");
+  const excludedTransforms = transformRows.filter((row) => row.status === "excluded_legacy");
+  const transformScopes = isRecord(transforms.contractScopes) ? transforms.contractScopes : null;
+  const transformScriptBound = (transformId: string) => {
+    const transform = activeTransforms.find((row) => row.id === transformId);
+    const scriptChecksum = uniqueChecksumDescriptor(acquisitionScriptPath);
+    return Boolean(
+      transform &&
+      scriptChecksum &&
+      transform.scriptPath === acquisitionScriptPath &&
+      hasSha256(transform.scriptSha256) &&
+      transform.scriptSha256 === scriptChecksum.sha256 &&
+      checksumBound(acquisitionScriptPath),
+    );
+  };
+  const contractScopeExact = (scopeId: string, expectedTransformIds: readonly string[]) =>
+    Boolean(
+      transformScopes &&
+      exactOrderedStrings(transformScopes[scopeId], expectedTransformIds) &&
+      expectedTransformIds.every(
+        (transformId) => activeTransforms.filter((row) => row.id === transformId).length === 1,
+      ),
+    );
+  const transformBoundPathsExact = (
+    transformId: string,
+    direction: "inputs" | "outputs",
+    expectedPaths: readonly string[],
+  ) => {
+    const transform = activeTransforms.find((row) => row.id === transformId);
+    const rows = transform && Array.isArray(transform[direction]) ? transform[direction].filter(isRecord) : [];
+    const paths = rows.map((row) => row.path);
+    return Boolean(
+      rows.length === expectedPaths.length &&
+      paths.every(nonEmptyString) &&
+      new Set(paths).size === rows.length &&
+      expectedPaths.every((pathname) => paths.includes(pathname)) &&
+      rows.every((descriptor) => {
+        const checksumDescriptor = uniqueChecksumDescriptor(String(descriptor.path));
+        return Boolean(
+          checksumDescriptor &&
+          descriptor.bytes === checksumDescriptor.bytes &&
+          descriptor.sha256 === checksumDescriptor.sha256 &&
+          (checksumDescriptor.requiredInTrackedCheckout !== true || checksumBound(String(descriptor.path))),
+        );
+      }),
+    );
+  };
+
+  const rightsDefaults = isRecord(rights.datasetDefaults) ? rights.datasetDefaults : null;
+  const rightsOverrides = isRecord(rights.itemOverrides) ? rights.itemOverrides : null;
+  const rightsDefaultsValid = Boolean(
+    rightsDefaults &&
+    rightsDefaults.viewerShorthand === release.viewerShorthand &&
+    rightsDefaults.persistentIdentifier === release.persistentIdentifier &&
+    nonEmptyString(rightsDefaults.sourceUrl) &&
+    rightsDefaults.license === "Creative Commons Attribution 3.0 Unported License" &&
+    rightsDefaults.licenseUrl === "https://creativecommons.org/licenses/by/3.0/" &&
+    nonEmptyString(rightsDefaults.rightsBoundary),
+  );
+  const rightsResolvedFor = (activePaths: readonly string[]) =>
+    rightsDefaultsValid &&
+    Object.entries(rightsOverrides ?? {})
+      .filter(([pathname]) => activePaths.includes(pathname))
+      .every(
+        ([pathname, override]) =>
+          nonEmptyString(pathname) &&
+          isRecord(override) &&
+          nonEmptyString(override.rightsBoundary ?? override.license),
+      );
+  const viewerRightsResolved = rightsResolvedFor(viewerDependencyPaths);
+  const rawRightsResolved = rightsResolvedFor(rawDependencyPaths);
+  const rightsResolutionMode = rawRightsResolved
+    ? rightsOverrides && Object.keys(rightsOverrides).some((pathname) => rawDependencyPaths.includes(pathname))
+      ? "item-override" as const
+      : "dataset-default" as const
+    : null;
+
+  const requestParams = isRecord(viewerRequest.params) ? viewerRequest.params : null;
+  const requestRelease = isRecord(viewerRequest.release) ? viewerRequest.release : null;
+  const rawResponseDescriptor = isRecord(viewerRequest.rawResponse) ? viewerRequest.rawResponse : null;
+  const returnedDescriptors = Array.isArray(viewerRequest.returned)
+    ? viewerRequest.returned.filter(isRecord)
+    : [];
+  const expectedViewerRequestUrl =
+    "https://books.google.com/ngrams/json?content=forever%3Aeng_2019%2Cfor%20ever%3Aeng_2019&year_start=1500&year_end=2019&corpus=26&smoothing=0&case_insensitive=false";
+  const viewerReleaseExact = Boolean(
+    requestParams &&
+    requestRelease &&
+    viewerRequest.requestUrl === expectedViewerRequestUrl &&
+    exactOrderedStrings(requestParams.canonicalSurfaceForms, ["forever", "for ever"]) &&
+    exactOrderedStrings(requestParams.content, ["forever:eng_2019", "for ever:eng_2019"]) &&
+    requestParams.corpusSelector === release.viewerShorthand &&
+    requestParams.corpusQueryParam === 26 &&
+    requestRelease.viewerShorthand === release.viewerShorthand &&
+    requestRelease.persistentIdentifier === release.persistentIdentifier &&
+    requestParams.yearStart === 1500 &&
+    requestParams.yearEnd === 2019 &&
+    requestParams.smoothing === 0 &&
+    requestParams.caseSensitive === true &&
+    requestParams.caseInsensitiveRequestValue === false,
+  );
+  const viewerReturnedLabelsExact =
+    returnedDescriptors.length === 2 &&
+    (["forever", "for ever"] as const).every((form) =>
+      returnedDescriptors.some(
+        (row) =>
+          row.canonicalSurfaceForm === form &&
+          row.ngram === `${form}:${release.viewerShorthand}` &&
+          row.parent === "" &&
+          row.type === "NGRAM" &&
+          row.pointCount === 520,
+      ),
+    );
+  const viewerRows = viewerResponse.filter(isRecord);
+  const viewerExactCore =
+    viewerRows.length === 2 &&
+    ["forever", "for ever"].every((form) =>
+      viewerRows.some(
+        (row) =>
+          row.ngram === `${form}:${release.viewerShorthand}` &&
+          row.parent === "" &&
+          row.type === "NGRAM" &&
+          Array.isArray(row.timeseries) &&
+          row.timeseries.length === 520 &&
+          row.timeseries.every((value) => typeof value === "number" && Number.isFinite(value) && value >= 0),
+      ),
+    );
+  const viewerChecksumBound = Boolean(
+    rawResponseDescriptor &&
+    rawResponseDescriptor.path === FIXED_GOOGLE_PATHS.viewerResponse &&
+    checksumBound(FIXED_GOOGLE_PATHS.viewerResponse) &&
+    checksumBound(FIXED_GOOGLE_PATHS.viewerRequest) &&
+    rawResponseDescriptor.bytes === inputs.bytes.get(FIXED_GOOGLE_PATHS.viewerResponse)?.byteLength &&
+    rawResponseDescriptor.sha256 === sha256(inputs.bytes.get(FIXED_GOOGLE_PATHS.viewerResponse)!),
+  );
+  const viewerFreezeTransform = activeTransforms.find(
+    (row) => row.id === "google-20200217-viewer-freeze",
+  );
+  const viewerTransformClosure = Boolean(
+    viewerDependencyPathsPresent &&
+    viewerFreezeTransform &&
+    checksumBound(FIXED_GOOGLE_PATHS.transforms) &&
+    checksumBound(acquisitionScriptPath) &&
+    contractScopeExact("fixed-viewer-separate-facets", ["google-20200217-viewer-freeze"]) &&
+    transformScriptBound("google-20200217-viewer-freeze") &&
+    transformBoundPathsExact("google-20200217-viewer-freeze", "inputs", []) &&
+    Array.isArray(viewerFreezeTransform.externalInputs) &&
+    viewerFreezeTransform.externalInputs.length === 1 &&
+    viewerFreezeTransform.externalInputs.every(
+      (row) =>
+        isRecord(row) &&
+        row.url === viewerRequest.requestUrl &&
+        row.method === "GET" &&
+        row.release === release.persistentIdentifier &&
+        row.viewerShorthand === release.viewerShorthand &&
+        row.corpusSelectionMethod === "inline :eng_2019 selector plus Viewer UI numeric ID" &&
+        row.corpusQueryParam === 26 &&
+        row.smoothing === 0 &&
+        row.caseSensitive === true,
+    ) &&
+    nonEmptyString(viewerFreezeTransform.formula) &&
+    transformBoundPathsExact("google-20200217-viewer-freeze", "outputs", [
+      FIXED_GOOGLE_PATHS.viewerResponse,
+      FIXED_GOOGLE_PATHS.viewerRequest,
+    ])
+  );
+  const viewerValidation = {
+    dependencyPathsPresent: viewerDependencyPathsPresent,
+    frozenRequestPresent: inputs.inputPaths.includes(FIXED_GOOGLE_PATHS.viewerRequest),
+    frozenResponsePresent: inputs.inputPaths.includes(FIXED_GOOGLE_PATHS.viewerResponse),
+    checksumPathsUnique: checksumPathsUniqueWithin(
+      viewerDependencyPaths.filter((pathname) => pathname !== FIXED_GOOGLE_PATHS.checksums),
+    ),
+    checksumAlgorithmSha256: checksums.algorithm === "sha256",
+    checksumBound: viewerChecksumBound,
+    fixedReleaseExact: viewerReleaseExact,
+    exactCoreForms: viewerExactCore,
+    returnedLabelsExact: viewerReturnedLabelsExact,
+    orderSpecificDenominators: viewerExactCore,
+    rightsResolved: viewerRightsResolved,
+    rightsChecksumBound: checksumBound(FIXED_GOOGLE_PATHS.rights),
+    activeTransformClosure: viewerTransformClosure,
+  };
+  const viewerStructuralEligible = Object.values(viewerValidation).every(Boolean);
+  const viewerObservations = viewerStructuralEligible
+    ? (["forever", "for ever"] as const).flatMap((form) => {
+        const responseRowIndex = viewerRows.findIndex((row) => row.ngram === `${form}:${release.viewerShorthand}`);
+        const responseRow = viewerRows[responseRowIndex]!;
+        const order = form === "forever" ? 1 as const : 2 as const;
+        const unit = form === "forever" ? "per million unigrams" as const : "per million bigrams" as const;
+        return (responseRow.timeseries as number[]).map((viewerFraction, timeseriesIndex) => ({
+          form,
+          ngramOrder: order,
+          year: 1500 + timeseriesIndex,
+          viewerFraction,
+          perMillionOrderNgrams: roundedMetric(viewerFraction * 1_000_000),
+          unit,
+          state: viewerFraction > 0 ? "observed_positive" as const : "absent_or_suppressed" as const,
+          responsePath: FIXED_GOOGLE_PATHS.viewerResponse,
+          responseRowIndex,
+          timeseriesIndex,
+        }));
+      })
+    : [];
+  emptyResult.fixedViewerSeparateFacets = {
+    productionEligible: viewerStructuralEligible,
+    validation: viewerValidation,
+    requestPath: FIXED_GOOGLE_PATHS.viewerRequest,
+    responsePath: FIXED_GOOGLE_PATHS.viewerResponse,
+    responseSha256: viewerChecksumBound
+      ? sha256(inputs.bytes.get(FIXED_GOOGLE_PATHS.viewerResponse)!)
+      : null,
+    pointCounts: Object.fromEntries(
+      viewerRows.map((row) => [String(row.ngram).replace(`:${release.viewerShorthand}`, ""), Array.isArray(row.timeseries) ? row.timeseries.length : 0]),
+    ),
+    yearRange: viewerReleaseExact ? { start: 1500, end: 2019 } : null,
+    observations: viewerObservations,
+    rawCompatibleSanity: emptyResult.fixedViewerSeparateFacets.rawCompatibleSanity,
+  };
+
+  const acquisitionRelease = isRecord(acquisition.release) ? acquisition.release : null;
+  const diskPreflight = isRecord(acquisition.diskPreflight) ? acquisition.diskPreflight : null;
+  const acquisitionObjects = Array.isArray(acquisition.objects) ? acquisition.objects.filter(isRecord) : [];
+  const expectedObjects = new Map([
+    ["unigram-shard", {
+      bytes: 593_921_274,
+      url: "https://storage.googleapis.com/books/ngrams/books/20200217/eng/1-00018-of-00024.gz",
+      etag: "d42b5cec82ecb6d0b5f19d018fcd1743",
+      md5Base64: "1Ctc7ILsttC18Z0Bj80XQw==",
+      lastModified: "Sat, 14 Mar 2020 01:29:37 GMT",
+    }],
+    ["bigram-shard", {
+      bytes: 647_005_430,
+      url: "https://storage.googleapis.com/books/ngrams/books/20200217/eng/2-00407-of-00589.gz",
+      etag: "8fe3ba01e4032bf15184824b20143529",
+      md5Base64: "j+O6AeQDK/FRhIJLIBQ1KQ==",
+      lastModified: "Sat, 14 Mar 2020 01:32:03 GMT",
+    }],
+    ["annual-token-totals", {
+      bytes: 13_546,
+      url: "https://storage.googleapis.com/books/ngrams/books/20200217/eng/totalcounts-1",
+      etag: "fea9f8e9fe2c9b7b6862ec292a11e23d",
+      md5Base64: "/qn46f4sm3toYuwpKhHiPQ==",
+      lastModified: "Tue, 14 Jul 2020 16:49:55 GMT",
+    }],
+  ]);
+  const acquisitionIdentity = Boolean(
+    acquisitionRelease &&
+    diskPreflight &&
+    nonEmptyString(acquisition.retrievalStartedAt) &&
+    nonEmptyString(acquisition.discoveryCompletedAt) &&
+    diskPreflight.passed === true &&
+    Number.isSafeInteger(diskPreflight.availableBytes) &&
+    Number.isSafeInteger(diskPreflight.requiredBytes) &&
+    Number(diskPreflight.availableBytes) >= Number(diskPreflight.requiredBytes) &&
+    diskPreflight.coreShardCompressedBytes === 1_240_926_704 &&
+    diskPreflight.totalDownloadBytes === 1_240_940_250 &&
+    acquisitionRelease.viewerShorthand === release.viewerShorthand &&
+    acquisitionRelease.persistentIdentifier === release.persistentIdentifier &&
+    acquisitionRelease.rawReleaseDirectory === release.rawReleaseDirectory &&
+    acquisitionRelease.expectedUpperYear === release.expectedUpperYear &&
+    acquisition.officialIndexUrl === "https://storage.googleapis.com/books/ngrams/books/datasetsv3.html" &&
+    Array.from(expectedObjects).every(([id, expected]) =>
+      acquisitionObjects.some(
+        (row) =>
+          row.id === id &&
+          row.url === expected.url &&
+          row.httpStatus === 200 &&
+          row.contentLength === expected.bytes &&
+          row.expectedBytes === expected.bytes &&
+          row.expectedEtag === expected.etag &&
+          row.lastModified === expected.lastModified &&
+          row.expectedLastModified === expected.lastModified &&
+          Array.isArray(row.xGoogHash) &&
+          row.xGoogHash.includes(`md5=${expected.md5Base64}`) &&
+          isRecord(row.local) &&
+          row.local.exists === true &&
+          row.local.bytes === expected.bytes &&
+          hasSha256(row.local.sha256) &&
+          row.local.verifiedAgainstOfficialMd5 === true &&
+          nonEmptyString(row.local.md5Hex) &&
+          nonEmptyString(row.local.md5Base64) &&
+          row.local.md5Hex === expected.etag &&
+          row.local.md5Base64 === expected.md5Base64 &&
+          String(row.etag).replace(/^"|"$/g, "") === row.local.md5Hex &&
+          row.xGoogHash.includes(`md5=${row.local.md5Base64}`) &&
+          Array.isArray(row.expectedXGoogHash) &&
+          row.expectedXGoogHash.includes(`md5=${row.local.md5Base64}`),
+      ),
+    ),
+  );
+
+  const familyCoreForms = Array.isArray(family.coreForms) ? family.coreForms.filter(isRecord) : [];
+  const familyOptionalForms = Array.isArray(family.optionalRelatedForms)
+    ? family.optionalRelatedForms.filter(isRecord)
+    : [];
+  const familyOutOfScope = Array.isArray(family.outOfScope) ? family.outOfScope.filter(isRecord) : [];
+  const optionalRelatedFormRegistryValid =
+    familyOptionalForms.length === 1 &&
+    familyOptionalForms.every((row) => row.blocksCorePairEligibility === false) &&
+    familyOptionalForms.some(
+      (row) =>
+        row.exactForm === "forevermore" &&
+        row.ngramOrder === 1 &&
+        row.role === "optional_related" &&
+        row.wideRawFile === FIXED_GOOGLE_PATHS.forevermoreSource &&
+        row.annualFile === FIXED_GOOGLE_PATHS.forevermoreAnnual,
+    );
+  const outOfScopeTrigramRegistryValid =
+    familyOutOfScope.length === 1 &&
+    familyOutOfScope.some(
+      (row) =>
+        row.exactForm === "forever and ever" &&
+        row.ngramOrder === 3 &&
+        row.role === "independent_trigram_phrase" &&
+        row.acquired === false &&
+        row.blocksCorePairEligibility === false,
+    );
+  emptyResult.scopeDiagnostics = {
+    nonGatingForCorePair: true,
+    optionalRelatedFormRegistryValid,
+    outOfScopeTrigramRegistryValid,
+  };
+  const exactCoreFamily =
+    family.release === release.persistentIdentifier &&
+    family.viewerShorthand === release.viewerShorthand &&
+    isRecord(family.viewerRequestBoundary) &&
+    family.viewerRequestBoundary.start === 1500 &&
+    family.viewerRequestBoundary.end === 2019 &&
+    family.expectedRawUpperYear === 2019 &&
+    familyCoreForms.length === 2 &&
+    familyCoreForms.every((row) => row.blocksCorePairEligibility === true) &&
+    familyCoreForms.some(
+      (row) =>
+        row.exactForm === "forever" &&
+        row.ngramOrder === 1 &&
+        row.role === "core_joined" &&
+        row.wideRawFile === FIXED_GOOGLE_PATHS.foreverSource &&
+        row.annualFile === FIXED_GOOGLE_PATHS.foreverAnnual &&
+        row.sourceShard === "https://storage.googleapis.com/books/ngrams/books/20200217/eng/1-00018-of-00024.gz",
+    ) &&
+    familyCoreForms.some(
+      (row) =>
+        row.exactForm === "for ever" &&
+        row.ngramOrder === 2 &&
+        row.role === "core_spaced" &&
+        row.wideRawFile === FIXED_GOOGLE_PATHS.forEverSource &&
+        row.annualFile === FIXED_GOOGLE_PATHS.forEverAnnual &&
+        row.sourceShard === "https://storage.googleapis.com/books/ngrams/books/20200217/eng/2-00407-of-00589.gz",
+    );
+
+  const joinedParsed = parseFixedRawRows(
+    inputs,
+    FIXED_GOOGLE_PATHS.foreverSource,
+    FIXED_GOOGLE_PATHS.foreverAnnual,
+    "forever",
+    1,
+  );
+  const spacedParsed = parseFixedRawRows(
+    inputs,
+    FIXED_GOOGLE_PATHS.forEverSource,
+    FIXED_GOOGLE_PATHS.forEverAnnual,
+    "for ever",
+    2,
+  );
+  const totalsParsed = parseFixedAnnualTotals(inputs);
+  const rawRows = [...joinedParsed.rows, ...spacedParsed.rows];
+  const frozenInputsChecksumBound =
+    checksums.algorithm === "sha256" && [
+    acquisitionScriptPath,
+    FIXED_GOOGLE_PATHS.acquisition,
+    FIXED_GOOGLE_PATHS.transforms,
+    FIXED_GOOGLE_PATHS.foreverSource,
+    FIXED_GOOGLE_PATHS.foreverAnnual,
+    FIXED_GOOGLE_PATHS.forEverSource,
+    FIXED_GOOGLE_PATHS.forEverAnnual,
+    FIXED_GOOGLE_PATHS.totalCounts,
+    FIXED_GOOGLE_PATHS.family,
+    FIXED_GOOGLE_PATHS.extractionSummary,
+    FIXED_GOOGLE_PATHS.rights,
+    ].every(checksumBound);
+  const sourceObjectChecksumsBound = acquisitionObjects.every((row) => {
+    if (!isRecord(row.local) || !nonEmptyString(row.local.cachePath)) return false;
+    const descriptor = uniqueChecksumDescriptor(row.local.cachePath);
+    return Boolean(
+      descriptor &&
+      descriptor.requiredInTrackedCheckout === false &&
+      descriptor.bytes === row.local.bytes &&
+      descriptor.sha256 === row.local.sha256,
+    );
+  }) && acquisitionObjects.length === 3;
+
+  const commonTransformIds = [
+    "google-20200217-core-exact-form-extraction",
+    "google-20200217-core-wide-to-annual-expansion",
+    "google-20200217-totalcounts-freeze",
+  ] as const;
+  const activeTransformClosure =
+    rawDependencyPathsPresent &&
+    checksumBound(acquisitionScriptPath) &&
+    checksumBound(FIXED_GOOGLE_PATHS.transforms) &&
+    contractScopeExact("fixed-raw-common-denominator", commonTransformIds) &&
+    commonTransformIds.every(transformScriptBound) &&
+    activeTransforms.some(
+      (row) =>
+        row.id === "google-20200217-core-exact-form-extraction" &&
+        row.scriptPath === acquisitionScriptPath &&
+        nonEmptyString(row.formula) &&
+        nonEmptyString(row.missingnessPolicy),
+    ) &&
+    activeTransforms.some(
+      (row) =>
+        row.id === "google-20200217-totalcounts-freeze" &&
+        row.scriptPath === acquisitionScriptPath &&
+        nonEmptyString(row.formula),
+    ) &&
+    activeTransforms.some(
+      (row) =>
+        row.id === "google-20200217-core-wide-to-annual-expansion" &&
+        row.scriptPath === acquisitionScriptPath &&
+        nonEmptyString(row.formula) &&
+        nonEmptyString(row.missingnessPolicy),
+    ) &&
+    transformBoundPathsExact("google-20200217-core-exact-form-extraction", "inputs", [
+      ".cache/google-ngram/20200217/eng/1-00018-of-00024.gz",
+      ".cache/google-ngram/20200217/eng/2-00407-of-00589.gz",
+    ]) &&
+    transformBoundPathsExact("google-20200217-core-exact-form-extraction", "outputs", [
+      FIXED_GOOGLE_PATHS.foreverSource,
+      FIXED_GOOGLE_PATHS.forEverSource,
+    ]) &&
+    transformBoundPathsExact("google-20200217-core-wide-to-annual-expansion", "inputs", [
+      FIXED_GOOGLE_PATHS.foreverSource,
+      FIXED_GOOGLE_PATHS.forEverSource,
+    ]) &&
+    transformBoundPathsExact("google-20200217-core-wide-to-annual-expansion", "outputs", [
+      FIXED_GOOGLE_PATHS.foreverAnnual,
+      FIXED_GOOGLE_PATHS.forEverAnnual,
+    ]) &&
+    transformBoundPathsExact("google-20200217-totalcounts-freeze", "inputs", [
+      ".cache/google-ngram/20200217/eng/totalcounts-1",
+    ]) &&
+    transformBoundPathsExact("google-20200217-totalcounts-freeze", "outputs", [
+      FIXED_GOOGLE_PATHS.totalCounts,
+    ]);
+
+  const totalYears = Array.from(totalsParsed.totals.keys()).filter((year) => year <= 2019);
+  const analysisStartYear = totalYears.length > 0 ? Math.min(...totalYears) : null;
+  const analysisEndYear = totalYears.length > 0 ? Math.max(...totalYears) : null;
+  const frozenYearBoundary =
+    totalsParsed.valid &&
+    analysisStartYear !== null &&
+    analysisEndYear === 2019 &&
+    !Array.from(totalsParsed.totals.keys()).some((year) => year > 2019) &&
+    rawRows.every((row) => row.year <= 2019);
+  const exactFormEquality = joinedParsed.valid && spacedParsed.valid;
+  const ngramOrders = rawRows.every((row) =>
+    row.form === "forever" ? row.ngramOrder === 1 : row.ngramOrder === 2,
+  );
+  const annualRates = rawRows.filter((row) => totalsParsed.totals.has(row.year)).map((row) => ({
+    form: row.form,
+    ngramOrder: row.ngramOrder,
+    year: row.year,
+    matchCount: row.matchCount,
+    volumeCount: row.volumeCount,
+    annualWordTokens: totalsParsed.totals.get(row.year)!,
+    appearancesPerMillionWordTokens: roundedMetric(
+      (row.matchCount / totalsParsed.totals.get(row.year)!) * 1_000_000,
+    ),
+    state: row.matchCount === 0 ? "observed_zero" as const : "observed_positive" as const,
+    sourceWidePath: row.sourceWidePath,
+    sourceFieldIndex: row.sourceFieldIndex,
+    annualPath: row.annualPath,
+    annualLine: row.annualLine,
+  }));
+  const viewerUnigramByYear = new Map(
+    viewerObservations
+      .filter((row) => row.form === "forever")
+      .map((row) => [row.year, row.perMillionOrderNgrams]),
+  );
+  const sanityPairs = annualRates
+    .filter((row) => row.form === "forever" && viewerUnigramByYear.has(row.year))
+    .map((row) => ({
+      year: row.year,
+      rawPerMillionWordTokens: row.appearancesPerMillionWordTokens,
+      viewerPerMillionUnigrams: viewerUnigramByYear.get(row.year)!,
+      absoluteDifferencePpm: Math.abs(
+        row.appearancesPerMillionWordTokens - viewerUnigramByYear.get(row.year)!,
+      ),
+    }));
+  const sanityTolerancePpm = 0.0001;
+  const maximumSanityDifference = sanityPairs.length
+    ? Math.max(...sanityPairs.map((row) => row.absoluteDifferencePpm))
+    : null;
+  const sanitySample = sanityPairs.find((row) => row.year === 2019) ?? sanityPairs.at(-1) ?? null;
+  const rawCompatibleSanityPassed =
+    sanityPairs.length > 0 &&
+    maximumSanityDifference !== null &&
+    maximumSanityDifference <= sanityTolerancePpm;
+  const rateByFormYear = new Map(
+    annualRates.map((row) => [`${row.form}:${row.year}`, row]),
+  );
+  const annualCoverage = (["forever", "for ever"] as const).flatMap((form) =>
+    analysisStartYear === null || analysisEndYear === null
+      ? []
+      : Array.from({ length: analysisEndYear - analysisStartYear + 1 }, (_, index) => {
+      const year = analysisStartYear + index;
+      const rate = rateByFormYear.get(`${form}:${year}`);
+      return {
+        form,
+        year,
+        state: !totalsParsed.totals.has(year)
+          ? "unavailable" as const
+          : rate
+            ? rate.state
+            : "absent_or_suppressed" as const,
+      };
+    }),
+  );
+  const pairRows = analysisStartYear === null || analysisEndYear === null
+    ? []
+    : Array.from({ length: analysisEndYear - analysisStartYear + 1 }, (_, index) => {
+    const year = analysisStartYear + index;
+    const joined = rateByFormYear.get(`forever:${year}`);
+    const spaced = rateByFormYear.get(`for ever:${year}`);
+    if (!joined || !spaced) {
+      return {
+        year,
+        state: "incomparable" as const,
+        joinedRate: joined?.appearancesPerMillionWordTokens ?? null,
+        spacedRate: spaced?.appearancesPerMillionWordTokens ?? null,
+        joinedShare: null,
+        rawRatio: null,
+      };
+    }
+    return {
+      year,
+      state: joined.matchCount === 0 || spaced.matchCount === 0
+        ? "observed_zero" as const
+        : "observed_positive" as const,
+      joinedRate: joined.appearancesPerMillionWordTokens,
+      spacedRate: spaced.appearancesPerMillionWordTokens,
+      joinedShare: joined.matchCount + spaced.matchCount === 0
+        ? null
+        : roundedMetric(joined.matchCount / (joined.matchCount + spaced.matchCount)),
+      rawRatio: spaced.matchCount === 0
+        ? null
+        : roundedMetric(joined.matchCount / spaced.matchCount),
+    };
+  });
+  const extractionForms = Array.isArray(extraction.forms) ? extraction.forms.filter(isRecord) : [];
+  const expectedAnnualSchema = [
+    "ngram",
+    "year",
+    "match_count",
+    "volume_count",
+    "ngram_order",
+    "corpus_release",
+    "source_shard",
+    "wide_field_index",
+  ];
+  const extractionAnnualSchema = Array.isArray(extraction.annualExpandedSchema)
+    ? extraction.annualExpandedSchema
+    : [];
+  const expectedCoreExtractions: Array<[
+    FixedRawRow["form"],
+    FixedRawRow["ngramOrder"],
+    string,
+    string,
+    FixedRawRow[],
+  ]> = [
+    ["forever", 1, FIXED_GOOGLE_PATHS.foreverSource, FIXED_GOOGLE_PATHS.foreverAnnual, joinedParsed.rows],
+    ["for ever", 2, FIXED_GOOGLE_PATHS.forEverSource, FIXED_GOOGLE_PATHS.forEverAnnual, spacedParsed.rows],
+  ];
+  const extractionLineageValidated =
+    extraction.release === release.persistentIdentifier &&
+    extraction.exactEqualityOnly === true &&
+    nonEmptyString(extraction.rawCoverageRule) &&
+    String(extraction.rawCoverageRule).includes("raw lower bound is not assumed") &&
+    extraction.sparseAbsencePolicy ===
+      "Only source rows that exactly equal the registered form are retained. A missing form-year is absent_or_suppressed, never silently converted to observed_zero." &&
+    extractionAnnualSchema.length === expectedAnnualSchema.length &&
+    expectedAnnualSchema.every((field, index) => extractionAnnualSchema[index] === field) &&
+    nonEmptyString(extraction.wideFieldIndex) &&
+    expectedCoreExtractions.every(([form, order, wideRawFile, annualFile, parsedRows]) =>
+      extractionForms.some(
+        (row) =>
+          row.exactForm === form &&
+          row.ngramOrder === order &&
+          row.wideRawFile === wideRawFile &&
+          row.annualFile === annualFile &&
+          isRecord(row.stats) &&
+          row.stats.sourceRecords === 1 &&
+          row.stats.annualRows === parsedRows.length &&
+          row.stats.earliestYear === parsedRows[0]?.year &&
+          row.stats.latestYear === parsedRows.at(-1)?.year &&
+          Array.isArray(row.stats.explicitZeroYears) &&
+          exactOrderedStrings(
+            row.stats.explicitZeroYears.map(String),
+            parsedRows.filter((parsedRow) => parsedRow.matchCount === 0).map((parsedRow) => String(parsedRow.year)),
+          ),
+      ),
+    );
+  const derivedResearchBytes = jsonText({ annualRates, annualCoverage, pairRows });
+  const captureTimestampValues = [
+    acquisition.retrievalStartedAt,
+    acquisition.discoveryCompletedAt,
+    viewerRequest.capturedAt,
+  ].filter(nonEmptyString);
+  const captureTimestampExcludedFromDerivation =
+    captureTimestampValues.length > 0 &&
+    captureTimestampValues.every((timestamp) => !derivedResearchBytes.includes(timestamp));
+  const commonValidation = {
+    dependencyPathsPresent: rawDependencyPathsPresent,
+    checksumPathsUnique: checksumPathsUniqueWithin(
+      rawDependencyPaths.filter((pathname) => pathname !== FIXED_GOOGLE_PATHS.checksums),
+    ),
+    acquisitionIdentity,
+    checksumBoundSourceObjects: sourceObjectChecksumsBound,
+    checksumBoundFrozenInputs: frozenInputsChecksumBound,
+    exactCoreFamily,
+    exactFormEquality,
+    ngramOrders,
+    annualWordTokenTotals: totalsParsed.valid,
+    activeTransformClosure,
+    rightsResolved: rawRightsResolved,
+    missingnessTyped: extractionLineageValidated,
+    frozenYearBoundary,
+    captureTimestampExcludedFromDerivation,
+  };
+  const commonEligible = Object.values(commonValidation).every(Boolean);
+  const sanityAvailable = commonEligible && viewerStructuralEligible;
+  emptyResult.fixedViewerSeparateFacets.rawCompatibleSanity = {
+    nonGatingForViewerContract: true,
+    nonGatingForRawContract: true,
+    form: "forever",
+    status: !sanityAvailable
+      ? "not_available"
+      : rawCompatibleSanityPassed
+        ? "passed"
+        : "failed",
+    comparedYears: sanityAvailable ? sanityPairs.length : 0,
+    absoluteTolerancePpm: sanityTolerancePpm,
+    maximumAbsoluteDifferencePpm:
+      sanityAvailable && maximumSanityDifference !== null
+        ? roundedMetric(maximumSanityDifference)
+        : null,
+    sample: sanityAvailable && sanitySample
+      ? {
+          ...sanitySample,
+          absoluteDifferencePpm: roundedMetric(sanitySample.absoluteDifferencePpm),
+        }
+      : null,
+    passed: sanityAvailable ? rawCompatibleSanityPassed : null,
+  };
+  const coverageByForm = Object.fromEntries(
+    (["forever", "for ever"] as const).map((form) => {
+      const formRows = rawRows.filter((row) => row.form === form);
+      return [form, {
+        retainedRows: formRows.length,
+        earliestRetainedYear: formRows[0]?.year ?? null,
+        latestRetainedYear: formRows.at(-1)?.year ?? null,
+        observedZeroYears: annualCoverage.filter(
+          (row) => row.form === form && row.state === "observed_zero",
+        ).length,
+        absentOrSuppressedYears: annualCoverage.filter(
+          (row) => row.form === form && row.state === "absent_or_suppressed",
+        ).length,
+        unavailableDenominatorYears: annualCoverage.filter(
+          (row) => row.form === form && row.state === "unavailable",
+        ).length,
+      }];
+    }),
+  );
+  emptyResult.fixedRawCommonDenominator = {
+    productionEligible: commonEligible,
+    validation: commonValidation,
+    activeDependencyInputPaths: [
+      "scripts/acquire_forever_google_20200217.ts",
+      FIXED_GOOGLE_PATHS.acquisition,
+      FIXED_GOOGLE_PATHS.rights,
+      FIXED_GOOGLE_PATHS.transforms,
+      FIXED_GOOGLE_PATHS.checksums,
+      FIXED_GOOGLE_PATHS.family,
+      FIXED_GOOGLE_PATHS.extractionSummary,
+      FIXED_GOOGLE_PATHS.foreverSource,
+      FIXED_GOOGLE_PATHS.foreverAnnual,
+      FIXED_GOOGLE_PATHS.forEverSource,
+      FIXED_GOOGLE_PATHS.forEverAnnual,
+      FIXED_GOOGLE_PATHS.totalCounts,
+    ],
+    activeTransformIds: [
+      ...commonTransformIds,
+    ],
+    excludedLegacyPaths: unique([
+      ...LEGACY_FOREVER_PIPELINE_PATHS,
+      ...excludedTransforms.map((row) => String(row.scriptPath)).filter(Boolean),
+    ]),
+    rightsResolvedBy: rightsResolutionMode,
+    yearRange: frozenYearBoundary && analysisStartYear !== null
+      ? { start: analysisStartYear, end: 2019 }
+      : null,
+    coverageByForm,
+    annualRates: commonEligible ? annualRates : [],
+    annualCoverage: commonEligible ? annualCoverage : [],
+    pairRows: commonEligible ? pairRows : [],
+  };
+  emptyResult.outcome = commonEligible
+    ? "GOOGLE_COMMON_DENOMINATOR_CONTRACT_READY"
+    : emptyResult.fixedViewerSeparateFacets.productionEligible
+      ? "PARTIAL_GOOGLE_VIEWER_CONTRACT_READY"
+      : !acquisitionIdentity || !frozenInputsChecksumBound
+        ? "STOP_GOOGLE_DOWNLOAD_OR_CHECKSUM_FAILED"
+        : !exactFormEquality || !ngramOrders
+          ? "STOP_GOOGLE_RAW_PARSE_FAILED"
+          : "STOP_GOOGLE_COMMON_DENOMINATOR_FAILED";
+  return emptyResult;
+}
+
 function validateCanonicalFormRegistry(inputs: InputBundle) {
   const value = parseRegisteredJson(inputs, CANONICAL_FORM_REGISTRY_PATH);
   if (!isRecord(value) || !Array.isArray(value.forms) || !isRecord(value.analysisWindow)) return null;
@@ -458,9 +1549,12 @@ function validateCanonicalFormRegistry(inputs: InputBundle) {
   const endYear = value.analysisWindow.endYear;
   if (!Number.isInteger(startYear) || !Number.isInteger(endYear) || Number(startYear) > Number(endYear)) return null;
   const rows = value.forms.filter(isRecord);
-  const required = new Map(inputs.frequency.series.map((series) => [series.query, ngramOrder(series.query)]));
+  const required = new Map([
+    ["forever", 1],
+    ["for ever", 2],
+  ]);
   const valid =
-    value.completeFamily === true &&
+    (value.completeCorePair === true || value.completeFamily === true) &&
     nonEmptyString(value.familyPolicy) &&
     rows.length >= required.size &&
     new Set(rows.map((row) => row.form)).size === rows.length &&
@@ -473,7 +1567,15 @@ function validateCanonicalFormRegistry(inputs: InputBundle) {
         nonEmptyString(row.hyphenPolicy) &&
         row.queryPreregistered === true,
     ) &&
-    Array.from(required).every(([form, order]) => rows.some((row) => row.form === form && row.ngramOrder === order));
+    Array.from(required).every(([form, order]) =>
+      rows.some(
+        (row) =>
+          row.form === form &&
+          row.ngramOrder === order &&
+          (!nonEmptyString(row.scope) || row.scope === "core"),
+      ),
+    ) &&
+    !rows.some((row) => row.form === "forever and ever" && row.scope === "core");
   return valid ? { startYear: Number(startYear), endYear: Number(endYear) } : null;
 }
 
@@ -568,34 +1670,31 @@ function validateCommonDenominatorFile(inputs: InputBundle) {
         expectedOrder.get(row.form) === row.ngram_order &&
         yearLexeme(row.year) &&
         unsignedIntegerLexeme(row.match_count) &&
-        Number(row.match_count) >= 0 &&
+        // Official shard exports are sparse. Retained rows are positive
+        // observations; an absent form-year remains absent_or_suppressed and
+        // must never be synthesized as observed_zero here.
+        Number(row.match_count) > 0 &&
         row.release === source.release &&
         totalYears.has(Number(row.year)),
     ) &&
     new Set(matchRows.map((row) => `${row.form}:${row.year}`)).size === matchRows.length;
-  const yearsByForm = new Map(
-    Array.from(expectedOrder.keys()).map((form) => [
-      form,
-      matchRows.filter((row) => row.form === form).map((row) => Number(row.year)).sort((a, b) => a - b),
-    ]),
+  const bothCoreFormsPresent = Array.from(expectedOrder.keys()).every((form) =>
+    matchRows.some((row) => row.form === form),
   );
-  const foreverYears = yearsByForm.get("forever") ?? [];
-  const forEverYears = yearsByForm.get("for ever") ?? [];
-  const sharedCompleteYears =
-    foreverYears.length === expectedYears.length &&
-    forEverYears.length === expectedYears.length &&
-    expectedYears.every((year, index) => year === foreverYears[index] && year === forEverYears[index]) &&
-    expectedYears.every((year) => totalYears.has(year));
 
-  return totalsValid && totalRows.length === expectedYears.length && matchesValid && sharedCompleteYears;
+  return totalsValid && totalRows.length === expectedYears.length && matchesValid && bothCoreFormsPresent;
 }
 
 function validateGutenbergRawManifest(inputs: InputBundle) {
   const value = parseRegisteredJson(inputs, GUTENBERG_RAW_MANIFEST_PATH);
   if (!isRecord(value) || !Array.isArray(value.sourceRecords) || !nonEmptyString(value.selectionPolicy)) return false;
   const rows = value.sourceRecords.filter(isRecord);
+  const declaredSourceCount = Number.isInteger(value.declaredSourceCount)
+    ? Number(value.declaredSourceCount)
+    : rows.length;
   return (
-    rows.length === 23 &&
+    rows.length > 0 &&
+    rows.length === declaredSourceCount &&
     new Set(rows.map((row) => row.gutenbergId)).size === rows.length &&
     rows.every(
       (row) =>
@@ -643,9 +1742,17 @@ function validateModernRawManifest(inputs: InputBundle) {
   if (!isRecord(value) || !Array.isArray(value.searchResponses) || !Array.isArray(value.pageCaptures)) return false;
   const searchRows = value.searchResponses.filter(isRecord);
   const pageRows = value.pageCaptures.filter(isRecord);
+  const declaredQueryCount = Number.isInteger(value.declaredQueryCount)
+    ? Number(value.declaredQueryCount)
+    : searchRows.length;
+  const declaredPageCount = Number.isInteger(value.declaredPageCount)
+    ? Number(value.declaredPageCount)
+    : pageRows.length;
   return (
-    searchRows.length === 10 &&
-    pageRows.length >= 16 &&
+    searchRows.length > 0 &&
+    pageRows.length > 0 &&
+    searchRows.length === declaredQueryCount &&
+    pageRows.length === declaredPageCount &&
     new Set(searchRows.map((row) => row.query)).size === searchRows.length &&
     new Set(pageRows.map((row) => `${row.pageId}:${row.revisionId}`)).size === pageRows.length &&
     searchRows.every(
@@ -673,93 +1780,110 @@ function validateModernRawManifest(inputs: InputBundle) {
 function validateCoverageManifest(inputs: InputBundle) {
   const value = parseRegisteredJson(inputs, COVERAGE_MANIFEST_PATH);
   if (!isRecord(value) || !Array.isArray(value.states) || !Array.isArray(value.rows)) return false;
-  const requiredStates = ["observed-zero", "not-searched", "unavailable", "incomparable"];
   const stateSet = new Set(value.states);
   const rows = value.rows.filter(isRecord);
-  const requiredDatasets = ["google-ngram", "gutenberg", "attestations", "modern"];
   return (
-    requiredStates.every((state) => stateSet.has(state)) &&
-    requiredDatasets.every((dataset) => rows.some((row) => row.dataset === dataset)) &&
+    MISSINGNESS_STATES.every((state) => stateSet.has(state)) &&
+    rows.length > 0 &&
     rows.every(
       (row) =>
         nonEmptyString(row.dataset) &&
         nonEmptyString(row.period) &&
         nonEmptyString(row.coverageState) &&
         stateSet.has(row.coverageState) &&
-        Number.isInteger(row.documentCount) &&
-        Number.isInteger(row.recordCount) &&
-        Number.isInteger(row.tokenCount),
-    )
-  );
-}
-
-function validateRightsManifest(inputs: InputBundle) {
-  const value = parseRegisteredJson(inputs, RIGHTS_MANIFEST_PATH);
-  if (!isRecord(value) || !Array.isArray(value.records)) return false;
-  const rows = value.records.filter(isRecord);
-  const rawInputsToCover = inputs.inputPaths.filter(
-    (pathname) => isDedicatedRawPath(pathname) && ![RIGHTS_MANIFEST_PATH, COVERAGE_MANIFEST_PATH, TRANSFORM_MANIFEST_PATH].includes(pathname),
-  );
-  return (
-    rawInputsToCover.length > 0 &&
-    rawInputsToCover.every((pathname) =>
-      rows.some(
-        (row) =>
-          row.path === pathname &&
-          nonEmptyString(row.sourceUrl) &&
-          nonEmptyString(row.rightsBoundary) &&
-          checksumBindsRegisteredBytes(inputs, row.path, row.sha256),
-      ),
-    )
-  );
-}
-
-function validateTransformManifest(inputs: InputBundle) {
-  const value = parseRegisteredJson(inputs, TRANSFORM_MANIFEST_PATH);
-  if (!isRecord(value) || !Array.isArray(value.transforms)) return false;
-  const rows = value.transforms.filter(isRecord);
-  const requiredPipelineScripts = inputs.inputPaths.filter(
-    (pathname) => /^scripts\/(?:fetch|build).*forever.*\.ts$/i.test(pathname),
-  );
-  const rawPayloadPaths = inputs.inputPaths.filter(
-    (pathname) => isDedicatedRawPath(pathname) && !EXPECTED_RAW_PATHS.has(pathname),
-  );
-  const coveredPaths = new Set(
-    rows.flatMap((row) =>
-      [
-        ...(Array.isArray(row.inputs) ? row.inputs.filter(isRecord).map((input) => input.path) : []),
-        ...(Array.isArray(row.outputs) ? row.outputs.filter(isRecord).map((output) => output.path) : []),
-      ].filter((pathname): pathname is string => typeof pathname === "string"),
-    ),
-  );
-  return (
-    rows.length > 0 &&
-    new Set(rows.map((row) => row.id)).size === rows.length &&
-    requiredPipelineScripts.every((scriptPath) => rows.some((row) => row.scriptPath === scriptPath)) &&
-    rawPayloadPaths.every((pathname) => coveredPaths.has(pathname)) &&
-    rows.every(
-      (row) =>
-        nonEmptyString(row.id) &&
-        nonEmptyString(row.version) &&
-        nonEmptyString(row.formula) &&
-        nonEmptyString(row.scriptPath) &&
-        inputs.inputPaths.includes(row.scriptPath) &&
-        Array.isArray(row.inputs) &&
-        row.inputs.length > 0 &&
-        row.inputs.filter(isRecord).length === row.inputs.length &&
-        row.inputs.every(
-          (input) => isRecord(input) && checksumBindsAnyAuditInput(inputs, input.path, input.sha256),
-        ) &&
-        Array.isArray(row.outputs) &&
-        row.outputs.length > 0 &&
-        row.outputs.every(
-          (output) => isRecord(output) && checksumBindsAnyAuditInput(inputs, output.path, output.sha256),
+        [row.documentCount, row.recordCount, row.tokenCount].every(
+          (count) => count === null || (Number.isInteger(count) && Number(count) >= 0),
         ),
     )
   );
 }
 
+function validateRightsManifest(inputs: InputBundle) {
+  const manifestPaths = [RIGHTS_MANIFEST_PATH, FIXED_GOOGLE_PATHS.rights].filter((pathname) =>
+    inputs.inputPaths.includes(pathname),
+  );
+  return manifestPaths.some((manifestPath) => {
+    const value = parseRegisteredJson(inputs, manifestPath);
+    if (!isRecord(value)) return false;
+    const legacyRows = Array.isArray(value.records) ? value.records.filter(isRecord) : [];
+    const defaults = Array.isArray(value.datasetDefaults)
+      ? value.datasetDefaults.filter(isRecord)
+      : isRecord(value.datasetDefaults)
+        ? [value.datasetDefaults]
+        : [];
+    const overrides = Array.isArray(value.itemOverrides)
+      ? value.itemOverrides.filter(isRecord)
+      : isRecord(value.itemOverrides)
+        ? Object.entries(value.itemOverrides).map(([itemPath, row]) =>
+            isRecord(row) ? { path: itemPath, ...row } : { path: itemPath },
+          )
+        : [];
+    const defaultValid = defaults.some(
+      (row) =>
+        nonEmptyString(row.id ?? row.datasetId ?? row.dataset ?? row.persistentIdentifier) &&
+        nonEmptyString(row.sourceUrl) &&
+        nonEmptyString(row.rightsBoundary ?? row.license),
+    );
+    const overridesValid = overrides.every(
+      (row) =>
+        nonEmptyString(row.path) &&
+        nonEmptyString(row.rightsBoundary ?? row.license),
+    );
+    const legacyValid = legacyRows.length > 0 && legacyRows.every(
+      (row) =>
+        nonEmptyString(row.path) &&
+        nonEmptyString(row.sourceUrl) &&
+        nonEmptyString(row.rightsBoundary) &&
+        checksumBindsRegisteredBytes(inputs, row.path, row.sha256),
+    );
+    // A dataset default may cover every item; a more-specific item override is
+    // permitted but never mandatory. This is deliberate inheritance, not a
+    // global one-record-per-file success constant.
+    return legacyValid || (defaultValid && overridesValid);
+  });
+}
+
+function validateTransformManifest(inputs: InputBundle) {
+  const manifestPaths = [TRANSFORM_MANIFEST_PATH, FIXED_GOOGLE_PATHS.transforms].filter((pathname) =>
+    inputs.inputPaths.includes(pathname),
+  );
+  return manifestPaths.some((manifestPath) => {
+    const value = parseRegisteredJson(inputs, manifestPath);
+    if (!isRecord(value) || !Array.isArray(value.transforms)) return false;
+    const rows = value.transforms.filter(isRecord);
+    const activeRows = rows.filter(
+      (row) => !["excluded", "excluded_legacy", "legacy"].includes(String(row.status ?? row.disposition)),
+    );
+    const excludedRows = rows.filter((row) => !activeRows.includes(row));
+    return (
+      activeRows.length > 0 &&
+      new Set(rows.map((row) => row.id)).size === rows.length &&
+      excludedRows.every((row) => nonEmptyString(row.id) && nonEmptyString(row.reason ?? row.exclusionReason)) &&
+      activeRows.every(
+        (row) =>
+          nonEmptyString(row.id) &&
+          nonEmptyString(row.version) &&
+          nonEmptyString(row.formula) &&
+          nonEmptyString(row.scriptPath) &&
+          inputs.inputPaths.includes(row.scriptPath) &&
+          Array.isArray(row.inputs) &&
+          row.inputs.length > 0 &&
+          row.inputs.filter(isRecord).length === row.inputs.length &&
+          row.inputs.every(
+            (input) => isRecord(input) && checksumBindsAnyAuditInput(inputs, input.path, input.sha256),
+          ) &&
+          Array.isArray(row.outputs) &&
+          row.outputs.length > 0 &&
+          row.outputs.every(
+            (output) => isRecord(output) && checksumBindsAnyAuditInput(inputs, output.path, output.sha256),
+          ),
+      )
+    );
+  });
+}
+
 function auditRawAvailability(inputs: InputBundle): ForeverRawAvailabilityAudit {
+  const fixedGoogle = auditFixedGoogleRelease(inputs);
   const structuredInputs = inputs.inputPaths
     .filter(
       (relativePath) =>
@@ -779,19 +1903,48 @@ function auditRawAvailability(inputs: InputBundle): ForeverRawAvailabilityAudit 
         .filter((keyPath) => keys.includes(keyPath.split(".").at(-1)?.replace(/\[\]$/, "") ?? ""))
         .map((keyPath) => `${input.path}#${keyPath}`),
     );
-  const rawMatchCountKeyPaths = keyMatches(["match_count", "matchCount"]);
-  const annualWordTokenTotalKeyPaths = keyMatches(["annual_word_tokens", "annualWordTokens"]);
-  const pinnedCorpusReleaseKeyPaths = keyMatches(["corpus_release", "corpusRelease", "persistentCorpusId", "persistent_corpus_id"]);
-  const commonDenominatorValidated = validateCommonDenominatorFile(inputs);
-  const commonDenominatorValidatedFiles = commonDenominatorValidated ? [COMMON_DENOMINATOR_PATH] : [];
-  const canonicalFormRegistryPresent = validateCanonicalFormRegistry(inputs) !== null;
-  const googleRawResponsePresent = validateViewerRawResponse(inputs);
+  const rawMatchCountKeyPaths = unique([
+    ...keyMatches(["match_count", "matchCount"]),
+    ...(fixedGoogle.fixedRawCommonDenominator.validation.exactFormEquality === true
+      ? [`${FIXED_GOOGLE_PATHS.foreverAnnual}#match_count`, `${FIXED_GOOGLE_PATHS.forEverAnnual}#match_count`]
+      : []),
+  ]);
+  const annualWordTokenTotalKeyPaths = unique([
+    ...keyMatches(["annual_word_tokens", "annualWordTokens"]),
+    ...(fixedGoogle.fixedRawCommonDenominator.validation.annualWordTokenTotals === true
+      ? [`${FIXED_GOOGLE_PATHS.totalCounts}#year,token_count,page_count,volume_count`]
+      : []),
+  ]);
+  const pinnedCorpusReleaseKeyPaths = unique([
+    ...keyMatches(["corpus_release", "corpusRelease", "persistentCorpusId", "persistent_corpus_id"]),
+    ...(fixedGoogle.fixedRawCommonDenominator.validation.exactCoreFamily === true
+      ? [`${FIXED_GOOGLE_PATHS.family}#release`, `${FIXED_GOOGLE_PATHS.foreverAnnual}#corpus_release`, `${FIXED_GOOGLE_PATHS.forEverAnnual}#corpus_release`]
+      : []),
+  ]);
+  const commonDenominatorValidated =
+    fixedGoogle.fixedRawCommonDenominator.productionEligible ||
+    validateCommonDenominatorFile(inputs);
+  const commonDenominatorValidatedFiles = commonDenominatorValidated
+    ? fixedGoogle.fixedRawCommonDenominator.productionEligible
+      ? [FIXED_GOOGLE_ROOT]
+      : [COMMON_DENOMINATOR_PATH]
+    : [];
+  const canonicalFormRegistryPresent =
+    fixedGoogle.fixedRawCommonDenominator.validation.exactCoreFamily === true ||
+    validateCanonicalFormRegistry(inputs) !== null;
+  const googleRawResponsePresent =
+    fixedGoogle.fixedViewerSeparateFacets.productionEligible ||
+    validateViewerRawResponse(inputs);
   const gutenbergRawTextsAndMetadataPresent = validateGutenbergRawManifest(inputs);
   const attestationPrimaryRecordsPresent = validateAttestationRawManifest(inputs);
   const modernRawApiAndPageCapturesPresent = validateModernRawManifest(inputs);
   const coverageManifestPresent = validateCoverageManifest(inputs);
-  const rightsManifestPresent = validateRightsManifest(inputs);
-  const transformManifestPresent = validateTransformManifest(inputs);
+  const rightsManifestPresent =
+    fixedGoogle.fixedRawCommonDenominator.validation.rightsResolved === true ||
+    validateRightsManifest(inputs);
+  const transformManifestPresent =
+    fixedGoogle.fixedRawCommonDenominator.validation.activeTransformClosure === true ||
+    validateTransformManifest(inputs);
   const upstreamRawPresent = inputs.inputPaths.some(isDedicatedRawPath);
   const rawMatchCountsAvailable = commonDenominatorValidated;
   const annualWordTokenTotalsAvailable = commonDenominatorValidated;
@@ -831,6 +1984,8 @@ function auditRawAvailability(inputs: InputBundle): ForeverRawAvailabilityAudit 
     transformManifestPresent,
     upstreamRawPresent,
     allRequiredRawInputsPresent,
+    fixedViewerSeparateFacetsEligible: fixedGoogle.fixedViewerSeparateFacets.productionEligible,
+    fixedRawCommonDenominatorEligible: fixedGoogle.fixedRawCommonDenominator.productionEligible,
   };
 }
 
@@ -845,7 +2000,10 @@ function deriveDataGate(
   return "PASS" as const;
 }
 
-function dataGateCopy(status: ReturnType<typeof deriveDataGate>) {
+function dataGateCopy(
+  status: ReturnType<typeof deriveDataGate>,
+  fixedGoogle: ForeverFixedGoogleReleaseAudit,
+) {
   if (status === "PASS") {
     return {
       displayTitle: "Forever data gate: pass",
@@ -868,6 +2026,31 @@ function dataGateCopy(status: ReturnType<typeof deriveDataGate>) {
       displaySummary: "Inputs and transforms are traceable, but fewer than five distinct substantive figure contracts are production-eligible.",
       reasons: ["Production-eligible contracts do not yet meet the preregistered five-panel minimum."],
       nextEligibleGate: "PASS" as const,
+    };
+  }
+  if (fixedGoogle.fixedRawCommonDenominator.productionEligible) {
+    return {
+      displayTitle: "Forever page gate: implementation unauthorized",
+      displaySummary:
+        "The fixed Google common-denominator contract is analytically eligible, but this round does not authorize Mobile Forever figure implementation.",
+      reasons: [
+        "The fixed eng_2019 Viewer contract and googlebooks-eng-20200217 raw common-denominator contract passed independently.",
+        "Other candidate figures retain their own unresolved source, coverage, rights, or transform gaps.",
+        "pageImplementationAuthorized remains false; no substantive Mobile Forever figure may be added or restored in this round.",
+      ],
+      nextEligibleGate: "STOP_RAW_DATA_MISSING" as const,
+    };
+  }
+  if (fixedGoogle.fixedViewerSeparateFacets.productionEligible) {
+    return {
+      displayTitle: "Forever page gate: raw denominator incomplete",
+      displaySummary:
+        "The fixed Viewer separate-facets contract is eligible, but the raw common-denominator contract and page implementation remain blocked.",
+      reasons: [
+        "Viewer values retain separate unigram and bigram denominators and cannot support direct joined/spaced arithmetic.",
+        "pageImplementationAuthorized remains false.",
+      ],
+      nextEligibleGate: "STOP_RAW_DATA_MISSING" as const,
     };
   }
   return {
@@ -895,6 +2078,7 @@ function codeRecordCounts(text: string) {
 function manifestEntry(
   inputs: InputBundle,
   relativePath: string,
+  availability: ForeverRawAvailabilityAudit,
 ): ForeverManifestEntry {
   const text = inputs.texts.get(relativePath);
   const bytes = inputs.bytes.get(relativePath);
@@ -973,7 +2157,7 @@ function manifestEntry(
         "sources[].collocates{}",
         "sources[].occurrences[].{kind,phrase,tokenIndex,charIndex,snippet}",
       ],
-      granularity: "23 manually selected works with nested occurrence-level rows",
+      granularity: `${inputs.gutenberg.sources.length} manually selected works with nested occurrence-level rows`,
       recordCounts: {
         selectedWorks: inputs.gutenberg.sources.length,
         tokens: sum(inputs.gutenberg.sources.map((source) => source.tokenCount)),
@@ -994,7 +2178,7 @@ function manifestEntry(
       missingness: [
         "The downloaded source text files are not retained.",
         "Edition, translator, language, Gutenberg release/update, capture date, and checksums are absent.",
-        "Selection coverage and searched-zero status outside the 23 works are not encoded.",
+        `Selection coverage and searched-zero status outside the ${inputs.gutenberg.sources.length} works are not encoded.`,
       ],
       duplicatePolicy: "No declared occurrence dedupe policy; phrase and form rows may share a source+tokenIndex.",
       transformHistory: [
@@ -1125,6 +2309,124 @@ function manifestEntry(
       transformHistory: ["Manually transcribed as a paraphrased source authority record; no numeric research result is extracted."],
       rightsBoundary: "Reference metadata and paraphrase only; no official page or dataset content is redistributed.",
       caveats: ["This record establishes denominator semantics and source boundaries, not raw observations or a pinned corpus release."],
+    };
+  }
+
+  const fixedGoogleWidePaths = new Set<string>([
+    FIXED_GOOGLE_PATHS.foreverSource,
+    FIXED_GOOGLE_PATHS.forEverSource,
+    FIXED_GOOGLE_PATHS.forevermoreSource,
+  ]);
+  if (fixedGoogleWidePaths.has(relativePath)) {
+    const fields = text.trimEnd().split("\t");
+    const years = fields.slice(1).map((field) => Number(field.split(",", 1)[0])).filter(Number.isFinite);
+    const core = relativePath !== FIXED_GOOGLE_PATHS.forevermoreSource;
+    return {
+      id: `raw-google-v3-wide-${path.basename(relativePath, ".source.tsv")}`,
+      path: relativePath,
+      role: "retained-raw",
+      authorityLevel: "retained-upstream-raw",
+      ...common,
+      productionAuthority: core && availability.fixedRawCommonDenominatorEligible,
+      fields: ["tab field[0]: exact ngram", "tab field[k>0]: year,match_count,volume_count"],
+      granularity: "one complete official Google v3 exact-form wide source record",
+      recordCounts: { exactWideRecords: text.trim().length > 0 ? 1 : 0, annualObservationFields: Math.max(0, fields.length - 1) },
+      timeRange: {
+        start: years.length ? Math.min(...years) : null,
+        end: years.length ? Math.max(...years) : null,
+        basis: "year lexemes retained in the official v3 wide record",
+        precision: "year",
+      },
+      source: "Google Books Ngram v3 downloadable fixed release",
+      sourceUrl: relativePath.includes("for-ever-2")
+        ? "https://storage.googleapis.com/books/ngrams/books/20200217/eng/2-00407-of-00589.gz"
+        : "https://storage.googleapis.com/books/ngrams/books/20200217/eng/1-00018-of-00024.gz",
+      corpus: "English 2019",
+      release: "googlebooks-eng-20200217",
+      missingness: [
+        "Each included wide field is an explicit source observation; an absent year remains absent_or_suppressed.",
+        "An explicit match_count lexeme of 0 is evidence for observed_zero for that form-year.",
+      ],
+      duplicatePolicy: "Exactly one wide source record per exact preregistered ngram; duplicate form records or year fields fail validation.",
+      transformHistory: ["Stream-decompressed exact field[0] equality extraction; full matching source record retained with terminal LF."],
+      rightsBoundary: "Dataset-level CC BY 3.0 inheritance applies; underlying scanned books/page images are outside this grant.",
+      caveats: ["OCR, corpus composition, and publication bias remain."],
+    };
+  }
+
+  const fixedGoogleAnnualPaths = new Set<string>([
+    FIXED_GOOGLE_PATHS.foreverAnnual,
+    FIXED_GOOGLE_PATHS.forEverAnnual,
+    FIXED_GOOGLE_PATHS.forevermoreAnnual,
+  ]);
+  if (fixedGoogleAnnualPaths.has(relativePath)) {
+    const rows = parseTsv(text);
+    const years = rows.map((row) => Number(row.year)).filter(Number.isFinite);
+    const core = relativePath !== FIXED_GOOGLE_PATHS.forevermoreAnnual;
+    return {
+      id: `derived-google-annual-${path.basename(relativePath, ".annual.tsv")}`,
+      path: relativePath,
+      role: "derived-artifact",
+      authorityLevel: availability.fixedRawCommonDenominatorEligible && core
+        ? "checksum-bound-derived"
+        : "derived-non-authoritative",
+      ...common,
+      productionAuthority: core && availability.fixedRawCommonDenominatorEligible,
+      fields: ["ngram", "year", "match_count", "volume_count", "ngram_order", "corpus_release", "source_shard", "wide_field_index"],
+      granularity: "one deterministic annual expansion row per explicit field in the retained official wide source record",
+      recordCounts: {
+        annualDerivedRows: rows.length,
+        explicitZeroRows: rows.filter((row) => row.match_count === "0").length,
+      },
+      timeRange: {
+        start: years.length ? Math.min(...years) : null,
+        end: years.length ? Math.max(...years) : null,
+        basis: "year copied from the indexed official v3 wide-record field",
+        precision: "year",
+      },
+      source: "deterministic expansion of retained Google v3 exact-form wide source record",
+      sourceUrl: null,
+      corpus: "English 2019",
+      release: "googlebooks-eng-20200217",
+      missingness: [
+        "Only explicit wide-record fields become rows; absent form-years are not emitted and remain absent_or_suppressed.",
+        "Explicit match_count=0 fields are retained and typed observed_zero; they are never inferred from absence.",
+      ],
+      duplicatePolicy: "Unique exact form + year and unique wide_field_index; every annual row must equal its indexed wide tuple.",
+      transformHistory: ["Checksum-bound google-20200217-wide-to-annual-expansion; numeric lexemes and zero-based wide field index retained."],
+      rightsBoundary: "Inherits the fixed Google dataset-level boundary, with item-level override support.",
+      caveats: ["This is a derived lineage table, not an official four-column Google raw row format."],
+    };
+  }
+
+  if (relativePath === FIXED_GOOGLE_PATHS.totalCounts) {
+    const records = text.trim().split(/\s+/).filter(Boolean);
+    const years = records.map((record) => Number(record.split(",", 1)[0])).filter(Number.isFinite);
+    return {
+      id: "raw-google-annual-totalcounts-1",
+      path: relativePath,
+      role: "retained-raw",
+      authorityLevel: "retained-upstream-raw",
+      ...common,
+      productionAuthority: availability.fixedRawCommonDenominatorEligible,
+      fields: ["year", "annual 1-gram word-token total", "page count", "volume count"],
+      granularity: "one official totalcounts record per included year in the complete frozen object",
+      recordCounts: { annualTotalRecords: records.length },
+      timeRange: {
+        start: years.length ? Math.min(...years) : null,
+        end: years.length ? Math.max(...years) : null,
+        basis: "official totalcounts-1 year record",
+        precision: "year; release records are sparse and missing years are unavailable, not zero",
+      },
+      source: "Google Books Ngram fixed-release totalcounts-1",
+      sourceUrl: "https://storage.googleapis.com/books/ngrams/books/20200217/eng/totalcounts-1",
+      corpus: "English 2019",
+      release: "googlebooks-eng-20200217",
+      missingness: ["A missing totalcounts year is unavailable and cannot be used as a zero denominator."],
+      duplicatePolicy: "One record per year; duplicate year fails validation.",
+      transformHistory: ["Byte-for-byte freeze after official object length, ETag/MD5, and local SHA-256 validation."],
+      rightsBoundary: "Dataset-level CC BY 3.0 inheritance applies; underlying scanned works remain outside this grant.",
+      caveats: ["The official record coverage is sparse at its lower boundary; no continuous 1500–2019 assumption is made."],
     };
   }
 
@@ -1281,7 +2583,7 @@ function buildManifest(
   dataGate: ReturnType<typeof deriveDataGate>,
   availability: ForeverRawAvailabilityAudit,
 ): ForeverRawDataManifest {
-  const entries = inputs.inputPaths.map((relativePath) => manifestEntry(inputs, relativePath));
+  const entries = inputs.inputPaths.map((relativePath) => manifestEntry(inputs, relativePath, availability));
   const digestMaterial = entries
     .map((entry) => `${entry.path}:${entry.sha256}`)
     .sort()
@@ -1300,8 +2602,8 @@ function buildManifest(
   };
 }
 
-function buildGaps(): ForeverRawGap[] {
-  return [
+function buildGaps(fixedGoogle: ForeverFixedGoogleReleaseAudit): ForeverRawGap[] {
+  const gaps: ForeverRawGap[] = [
     {
       id: "gap-canonical-form-registry",
       priority: "P0",
@@ -1317,22 +2619,22 @@ function buildGaps(): ForeverRawGap[] {
       missingFilesOrFields: ["exact raw Viewer response", "request manifest", "explicit Google corpus release", "response checksum", "parent/type fields"],
       whyRequired: "The generated series discards response fields and pins only the mutable corpus alias 'en'.",
       officialSourceBoundary: "Google official Viewer/API or official downloadable Ngram release only.",
-      blocksFindingIds: ["finding-ngram-denominator", "finding-ngram-window"],
-      blocksContractIds: ["contract-viewer-facets", "contract-transition-robustness"],
+      blocksFindingIds: ["finding-google-fixed-viewer-separate-facets"],
+      blocksContractIds: ["contract-google-fixed-viewer-separate-facets"],
     },
     {
       id: "gap-google-common-denominator",
       priority: "P0",
-      missingFilesOrFields: ["official raw match_count rows", "same-release annual word-token totals", "release/shard manifest", "checksums"],
+      missingFilesOrFields: ["official v3 exact-form wide source records", "deterministic annual expansion with wide-field lineage", "same-release annual word-token totals", "release/shard manifest", "checksums"],
       whyRequired: "A common appearances-per-million-words scale cannot be reconstructed from Viewer normalized fractions.",
       officialSourceBoundary: "Google official downloadable Ngram shards and same-release total-count files only; no blog or third-party reconstruction.",
-      blocksFindingIds: ["finding-ngram-denominator"],
-      blocksContractIds: ["contract-transition-robustness", "contract-orthographic-family"],
+      blocksFindingIds: ["finding-google-raw-common-denominator"],
+      blocksContractIds: ["contract-google-fixed-raw-common-denominator", "contract-orthographic-family"],
     },
     {
       id: "gap-gutenberg-raw-texts-metadata",
       priority: "P0",
-      missingFilesOrFields: ["23 retained official text files", "Gutenberg metadata/release/update", "edition/translator/language", "capture date", "SHA-256", "selection manifest"],
+      missingFilesOrFields: ["complete declared official text inventory", "Gutenberg metadata/release/update", "edition/translator/language", "capture date", "SHA-256", "selection manifest"],
       whyRequired: "Existing counts and passages cannot be deterministically re-extracted or dated to the wording edition.",
       officialSourceBoundary: "Project Gutenberg official files/metadata; passage reuse remains bounded by recorded edition and jurisdiction.",
       blocksFindingIds: ["finding-gutenberg-inventory", "finding-gutenberg-duplicates"],
@@ -1350,7 +2652,7 @@ function buildGaps(): ForeverRawGap[] {
     {
       id: "gap-modern-raw-api-pages",
       priority: "P0",
-      missingFilesOrFields: ["10 raw search responses", "total/continuation/zero-result state", "pageid/revid/timestamps", "16 unique revision captures", "page publication/text/capture dates", "license metadata", "passage hashes"],
+      missingFilesOrFields: ["all declared raw search responses", "total/continuation/zero-result state", "pageid/revid/timestamps", "all declared unique revision captures", "page publication/text/capture dates", "license metadata", "passage hashes"],
       whyRequired: "Search snippets are mutable, duplicate one page across queries, and use revision year as the only date.",
       officialSourceBoundary: "Wikinews/MediaWiki official API and page revision content only.",
       blocksFindingIds: ["finding-modern-capture"],
@@ -1363,24 +2665,49 @@ function buildGaps(): ForeverRawGap[] {
       whyRequired: "The current files cannot distinguish missing from zero or locally disclose all source/rights boundaries.",
       officialSourceBoundary: "Repository-authored manifests grounded in retained official captures.",
       blocksFindingIds: ["finding-modern-capture", "finding-derived-authority"],
-      blocksContractIds: ["contract-coverage-matrix", "contract-viewer-facets", "contract-date-ledger", "contract-modern-matrix"],
+      blocksContractIds: ["contract-coverage-matrix", "contract-date-ledger", "contract-modern-matrix"],
     },
   ];
+  return gaps.filter((gap) => {
+    if (
+      gap.id === "gap-google-raw-response-release" &&
+      fixedGoogle.fixedViewerSeparateFacets.productionEligible
+    ) return false;
+    if (
+      gap.id === "gap-google-common-denominator" &&
+      fixedGoogle.fixedRawCommonDenominator.productionEligible
+    ) return false;
+    return true;
+  });
 }
 
 function buildFindings(
   inputs: InputBundle,
   dataGate: ReturnType<typeof deriveDataGate>,
   availability: ForeverRawAvailabilityAudit,
+  fixedGoogle: ForeverFixedGoogleReleaseAudit,
 ): ForeverFindingsRegistry {
   const frequencyPath = "src/data/generated/forever_frequency.json";
   const gutenbergPath = "src/data/generated/forever_gutenberg_sources.json";
   const prehistoryPath = "src/data/generated/forever_prehistory.json";
   const modernPath = "src/data/generated/forever_modern_context.json";
   const officialAuthorityPath = "docs/research/forever/sources/google-ngram-official-authority.json";
-  const foreverSeries = inputs.frequency.series.find((series) => series.query === "forever");
-  invariant(foreverSeries, "forever Viewer series is absent");
-  const foreverWindow = foreverSeries.points.filter((point) => point.year >= 1700 && point.year <= 2022);
+  const fixedViewerReady = fixedGoogle.fixedViewerSeparateFacets.productionEligible;
+  const fixedCommonReady = fixedGoogle.fixedRawCommonDenominator.productionEligible;
+  const fixedViewerPathsPresent = [
+    FIXED_GOOGLE_PATHS.viewerRequest,
+    FIXED_GOOGLE_PATHS.viewerResponse,
+  ].every((pathname) => inputs.inputPaths.includes(pathname));
+  const fixedCommonPathsPresent = [
+    FIXED_GOOGLE_PATHS.foreverSource,
+    FIXED_GOOGLE_PATHS.foreverAnnual,
+    FIXED_GOOGLE_PATHS.forEverSource,
+    FIXED_GOOGLE_PATHS.forEverAnnual,
+    FIXED_GOOGLE_PATHS.totalCounts,
+    FIXED_GOOGLE_PATHS.acquisition,
+    FIXED_GOOGLE_PATHS.transforms,
+    FIXED_GOOGLE_PATHS.rights,
+  ].every((pathname) => inputs.inputPaths.includes(pathname));
   const allOccurrences = inputs.gutenberg.sources.flatMap((source) =>
     source.occurrences.map((occurrence) => ({ sourceId: source.id, ...occurrence })),
   );
@@ -1393,61 +2720,93 @@ function buildFindings(
     (query) => !inputs.modern.snippets.some((row) => row.query === query),
   );
 
-  const findings: ForeverFinding[] = [
+  const findingsBase: Array<Omit<ForeverFinding, "missingnessPolicy" | "derivationPolicy">> = [
     {
-      id: "finding-ngram-denominator",
-      status: "audited-blocker",
-      productionEligible: false,
+      id: "finding-google-raw-common-denominator",
+      status: fixedCommonReady ? "validated-result" : "audited-blocker",
+      productionEligible: fixedCommonReady,
       question: "Can joined 'forever' and spaced 'for ever' share an appearances-per-million scale?",
-      rawFields: [
-        sourceSelector(frequencyPath, "series[query in {'forever','for ever'}]", ["query", "points[].value", "source.corpus", "source.url"]),
-        sourceSelector(officialAuthorityPath, "sourceRecords[id='google-ngram-viewer-denominator']", ["url", "applicableClaim", "sourceLocation", "accessedOn"]),
-      ],
-      filters: ["query is exactly 'forever' or 'for ever'", "smoothing=0", "case_insensitive=false"],
-      grouping: ["query", "year"],
-      denominator: availability.commonAnnualWordTokenDenominatorAvailable
-        ? "same-release annual word-token total validated for both exact forms and every shared year"
-        : "Viewer-specific all-unigram denominator for forever; all-bigram denominator for for ever",
-      transformFormula: availability.commonAnnualWordTokenDenominatorAvailable
-        ? "raw match_count / annual_word_tokens × 1,000,000"
-        : "Viewer fraction × 1,000,000, with unit retained by n-gram order",
+      rawFields: fixedCommonPathsPresent
+        ? [
+            sourceSelector(FIXED_GOOGLE_PATHS.foreverSource, "official v3 exact-form wide record", ["field[0]: ngram", "field[k]: year,match_count,volume_count"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.foreverAnnual, "deterministic annual expansion with wide-record lineage", ["ngram", "year", "match_count", "volume_count", "wide_field_index"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.forEverSource, "official v3 exact-form wide record", ["field[0]: ngram", "field[k]: year,match_count,volume_count"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.forEverAnnual, "deterministic annual expansion with wide-record lineage", ["ngram", "year", "match_count", "volume_count", "wide_field_index"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.totalCounts, "annual total-count records", ["year", "annual 1-gram word tokens"]),
+          ]
+        : [
+            sourceSelector(frequencyPath, "series[query in {'forever','for ever'}]", ["query", "points[].value", "source.corpus", "source.url"]),
+            sourceSelector(officialAuthorityPath, "sourceRecords[id='google-ngram-viewer-denominator']", ["url", "applicableClaim", "sourceLocation", "accessedOn"]),
+          ],
+      filters: ["exact ngram equality: forever or for ever", "fixed corpus googlebooks-eng-20200217", "year <= 2019; raw lower bound derives from retained release records"],
+      grouping: ["exact form", "year"],
+      denominator: "same-release annual 1-gram word-token total",
+      transformFormula: "exact-form match_count / annual 1-gram word tokens × 1,000,000",
       result: {
-        summary: availability.commonAnnualWordTokenDenominatorAvailable
-          ? "A strict official-source schema validates exact joined/spaced match rows against the same annual word-token totals."
-          : "Only option B is present: separate Viewer-normalized facets; a shared joined/spaced scale is invalid.",
+        summary: fixedCommonReady
+          ? "The fixed 20200217 raw rows and annual word-token totals validate a common exact-form rate denominator."
+          : "The fixed raw common-denominator dependency closure is not yet complete.",
         values: {
           foreverOrder: ngramOrder("forever"),
           forEverOrder: ngramOrder("for ever"),
-          rawMatchCountsAvailable: availability.rawMatchCountsAvailable,
-          annualWordTokenTotalsAvailable: availability.annualWordTokenTotalsAvailable,
-          sharedScaleAllowed: availability.commonAnnualWordTokenDenominatorAvailable,
+          release: fixedGoogle.release.persistentIdentifier,
+          yearRange: fixedGoogle.fixedRawCommonDenominator.yearRange,
+          annualRateRows: fixedGoogle.fixedRawCommonDenominator.annualRates.length,
+          sharedScaleAllowed: fixedCommonReady,
+          outcome: fixedGoogle.outcome,
         },
       },
-      caveat: ["Corpus release is not pinned.", "No raw response or official bulk rows are retained."],
-      sourceRowsFiles: [
-        sourceSelector(frequencyPath, "source", ["corpus", "url", "smoothing", "startYear", "endYear"]),
-        sourceSelector("scripts/fetch_ngram_forever.ts", "URL construction and response mapping", ["content", "corpus", "smoothing", "case_insensitive", "timeseries"]),
-        sourceSelector(officialAuthorityPath, "sourceRecords[id in {'google-ngram-viewer-denominator','google-ngram-viewer-release-mutation'}]", ["publisher", "title", "url", "accessedOn", "applicableClaim", "repositoryUse"]),
+      caveat: [
+        "The rate describes exact surface-form appearances per million corpus word tokens, not language-wide spelling adoption or semantic replacement.",
+        "OCR error, corpus composition, and publication bias remain.",
+        "A sparse absent row is absent_or_suppressed, never silently observed_zero.",
       ],
-      blockedByGapIds: ["gap-google-raw-response-release", "gap-google-common-denominator"],
+      sourceRowsFiles: fixedCommonPathsPresent
+        ? [
+            sourceSelector(FIXED_GOOGLE_PATHS.acquisition, "release/objects", ["url", "contentLength", "etag", "xGoogHash", "local.sha256"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.transforms, "active transforms", ["id", "inputs", "outputs", "formula", "missingnessPolicy"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.rights, "datasetDefaults/itemOverrides", ["sourceUrl", "license", "rightsBoundary"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.extractionSummary, "actual per-form raw coverage and lineage schema", ["rawCoverageRule", "forms[].stats", "wideFieldIndex"]),
+            sourceSelector(officialAuthorityPath, "official denominator and release authority records", ["publisher", "title", "url", "applicableClaim", "rightsBoundary"]),
+          ]
+        : [
+            sourceSelector(frequencyPath, "source", ["corpus", "url", "smoothing", "startYear", "endYear"]),
+            sourceSelector("scripts/fetch_ngram_forever.ts", "legacy excluded acquisition", ["content", "corpus", "smoothing", "case_insensitive", "timeseries"]),
+            sourceSelector(officialAuthorityPath, "official source records", ["publisher", "title", "url", "applicableClaim"]),
+          ],
+      blockedByGapIds: fixedCommonReady ? [] : ["gap-google-common-denominator"],
     },
     {
-      id: "finding-ngram-window",
-      status: "audited-limited-result",
-      productionEligible: false,
-      question: "What is the actual granularity of the historical 323-row Forever table?",
-      rawFields: [sourceSelector(frequencyPath, "series[query='forever'].points", ["year", "value", "frequencyPerMillion"])],
-      filters: ["query='forever'", "1700 <= year <= 2022"],
-      grouping: ["one row per year"],
-      denominator: "all unigrams in each Viewer corpus-year",
-      transformFormula: "inclusive filter; row_count = 2022 - 1700 + 1",
+      id: "finding-google-fixed-viewer-separate-facets",
+      status: fixedViewerReady ? "validated-result" : "audited-blocker",
+      productionEligible: fixedViewerReady,
+      question: "What can the fixed eng_2019 Viewer response support when n-gram orders remain separate?",
+      rawFields: fixedViewerPathsPresent
+        ? [
+            sourceSelector(FIXED_GOOGLE_PATHS.viewerRequest, "request/release", ["params", "release", "rawResponse.sha256"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.viewerResponse, "response rows", ["ngram", "parent", "type", "timeseries"]),
+          ]
+        : [sourceSelector(frequencyPath, "legacy mutable Viewer series", ["query", "year", "value"])],
+      filters: ["eng_2019", "smoothing=0", "case-sensitive", "1500–2019", "core forms only"],
+      grouping: ["n-gram order", "exact form", "year"],
+      denominator: "forever: all unigrams; for ever: all bigrams, in separate facets",
+      transformFormula: "Viewer normalized fraction × 1,000,000 within its own order-specific denominator",
       result: {
-        summary: "The table is 323 Viewer-normalized annual unigram observations, not 323 raw match-count rows.",
-        values: { rowCount: foreverWindow.length, firstYear: foreverWindow[0]?.year ?? null, lastYear: foreverWindow.at(-1)?.year ?? null },
+        summary: fixedViewerReady
+          ? "The checksum-bound fixed response supports separate unigram and bigram facets only."
+          : "The fixed Viewer request/response contract is not yet checksum-complete.",
+        values: {
+          release: fixedGoogle.release.viewerShorthand,
+          pointCounts: fixedGoogle.fixedViewerSeparateFacets.pointCounts,
+          yearRange: fixedGoogle.fixedViewerSeparateFacets.yearRange,
+          directComparisonAllowed: false,
+        },
       },
-      caveat: ["Numeric zero is not a typed missingness state.", "The raw API response is absent."],
-      sourceRowsFiles: [sourceSelector(frequencyPath, "series[query='forever'].points[1700..2022]", ["year", "value"])],
-      blockedByGapIds: ["gap-google-raw-response-release"],
+      caveat: ["No direct comparison, share, ratio, crossover, overtaking, or delta across unigram/bigram Viewer denominators."],
+      sourceRowsFiles: fixedViewerPathsPresent
+        ? [sourceSelector(FIXED_GOOGLE_PATHS.viewerRequest, "request + checksum", ["requestUrl", "params", "release", "rawResponse"])]
+        : [sourceSelector(frequencyPath, "legacy source", ["source.corpus", "source.url"])],
+      blockedByGapIds: fixedViewerReady ? [] : ["gap-google-raw-response-release"],
     },
     {
       id: "finding-gutenberg-inventory",
@@ -1455,9 +2814,9 @@ function buildFindings(
       productionEligible: false,
       question: "What joined/spaced counts exist inside the selected Gutenberg inventory?",
       rawFields: [sourceSelector(gutenbergPath, "sources[] and sources[].occurrences[kind='form']", ["id", "year", "tokenCount", "kind", "phrase", "tokenIndex"])],
-      filters: ["23 manually selected works", "occurrence.kind='form'", "phrase exactly 'forever' or 'for ever'"],
+      filters: [`${inputs.gutenberg.sources.length} manually selected works`, "occurrence.kind='form'", "phrase exactly 'forever' or 'for ever'"],
       grouping: ["form", "selected work"],
-      denominator: "token count inside the selected 23 processed texts only",
+      denominator: `token count inside the selected ${inputs.gutenberg.sources.length} processed texts only`,
       transformFormula: "count exact form rows; rate, if used, must equal form_count / selected_text_tokens × 1,000,000",
       result: {
         summary: "The generated inventory separates joined and spaced forms, but it is selected-corpus evidence without retained raw texts.",
@@ -1565,12 +2924,63 @@ function buildFindings(
     },
   ];
 
+  const findings: ForeverFinding[] = findingsBase.map((finding) => {
+    const missingnessPolicy =
+      "Use the registered typed coverage state; sparse-row absence remains absent_or_suppressed unless official format semantics independently prove observed_zero.";
+    const derivationPolicy = finding.id === "finding-google-raw-common-denominator"
+      ? {
+          yearCoverage: fixedGoogle.fixedRawCommonDenominator.yearRange
+            ? `${fixedGoogle.fixedRawCommonDenominator.yearRange.start}–${fixedGoogle.fixedRawCommonDenominator.yearRange.end}; lower bound derives from the frozen totalcounts release records and upper bound is fixed at 2019`
+            : "unavailable until the fixed raw dependency closure validates",
+          minimumDataRule: "Emit an annual rate only when an explicit exact-form wide observation field and a positive same-year totalcounts-1 token denominator both exist; pair arithmetic requires both core form rates, joined share requires a positive combined count, and raw ratio requires a positive spaced count.",
+          smoothingRule: "No smoothing is applied in this contract. Any later smoothed result requires its own preregistered rule and sensitivity finding.",
+          edgeHandling: "No interpolation, extrapolation, endpoint padding, or silent fill. Missing denominator years are unavailable; missing form fields are absent_or_suppressed.",
+          corpusLimitations: ["OCR error", "changing corpus composition", "publication and survival bias", "exact surface form does not establish meaning or social adoption"],
+          rawRowLineage: "official v3 exact-form wide source record field[k] → checksum-bound annual expansion row with wide_field_index=k → same-year frozen totalcounts-1 record → typed annual rate",
+        }
+      : finding.id === "finding-google-fixed-viewer-separate-facets"
+        ? {
+            yearCoverage: "1500–2019 from the frozen eng_2019 Viewer request; 520 requested values per exact core form",
+            minimumDataRule: "Require exactly one returned NGRAM row and one finite non-negative value per requested year for each exact core form.",
+            smoothingRule: "Viewer request smoothing=0; no additional smoothing.",
+            edgeHandling: "No extrapolation outside the frozen request and no cross-facet arithmetic at either edge.",
+            corpusLimitations: ["order-specific Viewer denominators", "OCR error", "changing corpus composition", "publication and survival bias"],
+            rawRowLineage: "checksum-bound Viewer request parameters + raw response bytes → exact response row → timeseries index mapped to requested year within its own n-gram-order facet",
+          }
+        : {
+            yearCoverage: finding.result.values.yearRange
+              ? String(finding.result.values.yearRange)
+              : "limited to the retained records identified by the finding filters; no unobserved period is inferred",
+            minimumDataRule: "No production result until every blocked raw gap for this finding is resolved and its declared record granularity is source-bound.",
+            smoothingRule: "No smoothing is registered for this finding.",
+            edgeHandling: "Do not interpolate or extend beyond retained source records or their stated date precision.",
+            corpusLimitations: finding.caveat,
+            rawRowLineage: "See rawFields and sourceRowsFiles selectors; legacy heuristic/display arrays remain excluded from production authority.",
+          };
+    return { ...finding, missingnessPolicy, derivationPolicy };
+  });
   return { schemaVersion: SCHEMA_VERSION, auditId: AUDIT_ID, dataGate, findings };
 }
 
-function buildContracts(inputs: InputBundle, dataGate: ReturnType<typeof deriveDataGate>): ForeverFigureContractRegistry {
-  const ngramN = Object.fromEntries(inputs.frequency.series.map((series) => [series.query, series.points.length]));
-  const contracts: ForeverFigureContract[] = [
+function buildContracts(
+  inputs: InputBundle,
+  dataGate: ReturnType<typeof deriveDataGate>,
+  fixedGoogle: ForeverFixedGoogleReleaseAudit,
+): ForeverFigureContractRegistry {
+  const fixedViewerPathsPresent = [
+    FIXED_GOOGLE_PATHS.viewerRequest,
+    FIXED_GOOGLE_PATHS.viewerResponse,
+  ].every((pathname) => inputs.inputPaths.includes(pathname));
+  const fixedCommonPathsPresent = [
+    FIXED_GOOGLE_PATHS.foreverSource,
+    FIXED_GOOGLE_PATHS.foreverAnnual,
+    FIXED_GOOGLE_PATHS.forEverSource,
+    FIXED_GOOGLE_PATHS.forEverAnnual,
+    FIXED_GOOGLE_PATHS.totalCounts,
+  ].every((pathname) => inputs.inputPaths.includes(pathname));
+  const contractsBase: Array<
+    Omit<ForeverFigureContract, "missingnessPolicy" | "activeDependencyClosure" | "rightsResolution">
+  > = [
     {
       id: "contract-coverage-matrix",
       candidatePanel: "Evidence coverage matrix",
@@ -1593,60 +3003,73 @@ function buildContracts(inputs: InputBundle, dataGate: ReturnType<typeof deriveD
       blockedByGapIds: ["gap-coverage-rights-transform-manifests", "gap-gutenberg-raw-texts-metadata", "gap-modern-raw-api-pages"],
     },
     {
-      id: "contract-viewer-facets",
-      candidatePanel: "Viewer-normalized form facets",
-      findingIds: ["finding-ngram-denominator", "finding-ngram-window"],
-      productionEligible: false,
-      eligibilityReason: "Separate-unit option B is analytically possible, but the raw response and explicit corpus release are not retained.",
-      researchQuestion: "How does each registered form move within its own Google Viewer denominator?",
-      rawFilesAndFields: [sourceSelector("src/data/generated/forever_frequency.json", "series[].points[]", ["query", "year", "value"])],
-      recordGranularityAndN: { granularity: "query-year Viewer observation", n: ngramN },
-      filters: ["smoothing=0", "case_insensitive=false"],
-      grouping: ["ngram order", "query", "year"],
-      denominator: "separate all-unigram/all-bigram/all-trigram corpus-year totals",
+      id: "contract-google-fixed-viewer-separate-facets",
+      candidatePanel: "Fixed Viewer separate facets",
+      findingIds: ["finding-google-fixed-viewer-separate-facets"],
+      productionEligible: fixedGoogle.fixedViewerSeparateFacets.productionEligible,
+      eligibilityReason: fixedGoogle.fixedViewerSeparateFacets.productionEligible
+        ? "Checksum-bound eng_2019 response, exact core forms, request parameters, release, and rights all validate; page implementation remains separately unauthorized."
+        : "The frozen eng_2019 Viewer request/response closure is incomplete or invalid.",
+      researchQuestion: "How does each core form move within its own fixed-release Viewer denominator?",
+      rawFilesAndFields: fixedViewerPathsPresent
+        ? [
+            sourceSelector(FIXED_GOOGLE_PATHS.viewerRequest, "request/release/rawResponse", ["params", "release", "sha256"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.viewerResponse, "exact response rows", ["ngram", "parent", "type", "timeseries"]),
+          ]
+        : [sourceSelector("src/data/generated/forever_frequency.json", "legacy mutable Viewer series", ["query", "year", "value"])],
+      recordGranularityAndN: { granularity: "exact query-year fixed Viewer observation", n: fixedGoogle.fixedViewerSeparateFacets.pointCounts },
+      filters: ["eng_2019", "smoothing=0", "case-sensitive", "exact core forms", "1500–2019"],
+      grouping: ["n-gram order", "exact form", "year"],
+      denominator: "forever: all unigrams; for ever: all bigrams, never shared",
       formulaTransform: "Viewer fraction × 1,000,000; no cross-order arithmetic",
-      unit: "per million unigrams OR per million bigrams OR per million trigrams, locally labeled",
+      unit: "forever — per million unigrams; for ever — per million bigrams",
       visualChannelMapping: [{ channel: "facet", field: "ngram order", mapping: "never share an axis across orders" }, { channel: "x", field: "year", mapping: "linear time" }, { channel: "y", field: "Viewer fraction", mapping: "within-facet fixed unit" }],
       validInterpretation: ["Within-series movement and same-order comparison after release is pinned."],
       prohibitedInterpretation: ["joined/spaced share, ratio, crossover, overtaking, delta, or orthographic dominance"],
-      missingnessErrorSourceLimitations: ["Zero/missing ambiguity", "corpus alias is unpinned", "raw response absent"],
+      missingnessErrorSourceLimitations: ["Viewer zero/suppression semantics are not a common-denominator substitute.", "OCR and corpus-composition limits remain."],
       localDisclosureRequirements: ["exact unit per facet", "corpus/release", "smoothing", "n/year range", "zero/missing caveat"],
-      blockedByGapIds: ["gap-google-raw-response-release", "gap-coverage-rights-transform-manifests"],
+      blockedByGapIds: fixedGoogle.fixedViewerSeparateFacets.productionEligible ? [] : ["gap-google-raw-response-release"],
     },
     {
-      id: "contract-transition-robustness",
-      candidatePanel: "Transition robustness field",
-      findingIds: ["finding-ngram-denominator"],
-      productionEligible: false,
-      eligibilityReason: "Common denominator and multiple pinned corpus/release/smoothing analyses are absent.",
-      researchQuestion: "Does a joined/spaced transition conclusion survive corpus, release, and smoothing choices?",
-      rawFilesAndFields: [
-        sourceSelector(COMMON_DENOMINATOR_PATH, "source-bound TSV paths plus registered analysis window", [
-          "source.match_rows_path",
-          "source.annual_totals_path",
-          "source.release",
-          "analysisWindow.startYear",
-          "analysisWindow.endYear",
-          "TSV: form,ngram_order,year,match_count,annual_word_tokens,release",
-        ]),
-      ],
-      recordGranularityAndN: { granularity: "form × year × corpus release × smoothing specification", n: {} },
-      filters: ["preregistered complete years/forms"],
-      grouping: ["corpus", "release", "smoothing"],
-      denominator: "same-release annual word-token total",
-      formulaTransform: "raw_match_count / annual_word_tokens × 1,000,000; sensitivity grid",
-      unit: "appearances per million words",
-      visualChannelMapping: [{ channel: "facet", field: "corpus/release", mapping: "one fixed cell per specification" }, { channel: "symbol", field: "conclusion stability", mapping: "stable/unstable/indeterminate" }],
-      validInterpretation: ["Sensitivity of a preregistered conclusion."],
-      prohibitedInterpretation: ["Robustness from one Viewer series or mixed denominators."],
-      missingnessErrorSourceLimitations: ["All required raw bulk rows/totals are missing."],
-      localDisclosureRequirements: ["formula", "release", "specification count", "missing years"],
-      blockedByGapIds: ["gap-google-common-denominator", "gap-google-raw-response-release"],
+      id: "contract-google-fixed-raw-common-denominator",
+      candidatePanel: "Fixed raw common denominator",
+      findingIds: ["finding-google-raw-common-denominator"],
+      productionEligible: fixedGoogle.fixedRawCommonDenominator.productionEligible,
+      eligibilityReason: fixedGoogle.fixedRawCommonDenominator.productionEligible
+        ? "Fixed official v3 wide source records, lineage-bound annual expansion, annual 1-gram token totals, object identity, checksums, active transform closure, rights, coverage, and sparse missingness all validate; page implementation remains separately unauthorized."
+        : "The fixed raw common-denominator dependency closure is incomplete or invalid.",
+      researchQuestion: "What are the exact joined and spaced annual rates on one fixed-release word-token denominator?",
+      rawFilesAndFields: fixedCommonPathsPresent
+        ? [
+            sourceSelector(FIXED_GOOGLE_PATHS.foreverSource, "one official v3 exact-form wide source record", ["field[0]: ngram", "field[k]: year,match_count,volume_count"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.foreverAnnual, "derived annual expansion; each row binds one wide field", ["ngram", "year", "match_count", "volume_count", "wide_field_index"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.forEverSource, "one official v3 exact-form wide source record", ["field[0]: ngram", "field[k]: year,match_count,volume_count"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.forEverAnnual, "derived annual expansion; each row binds one wide field", ["ngram", "year", "match_count", "volume_count", "wide_field_index"]),
+            sourceSelector(FIXED_GOOGLE_PATHS.totalCounts, "annual totals", ["year", "annual 1-gram word tokens"]),
+          ]
+        : [sourceSelector(COMMON_DENOMINATOR_PATH, "expected fixed raw closure", ["match rows", "annual totals", "release", "checksums"])],
+      recordGranularityAndN: {
+        granularity: "one official exact-form wide source record; deterministic form-year expansion plus explicit sparse coverage state",
+        n: Object.fromEntries(
+          Object.entries(fixedGoogle.fixedRawCommonDenominator.coverageByForm).map(([form, coverage]) => [form, coverage.retainedRows]),
+        ),
+      },
+      filters: ["exact ngram equality", "googlebooks-eng-20200217", "year <= 2019; actual lower bound from release records", "no synthetic missing-year rows"],
+      grouping: ["exact form", "year"],
+      denominator: "same-release annual 1-gram word-token total",
+      formulaTransform: "exact-form match_count / annual 1-gram word tokens × 1,000,000",
+      unit: "exact surface-form appearances per million corpus word tokens",
+      visualChannelMapping: [{ channel: "future x", field: "year", mapping: "linear time if implementation is separately authorized" }, { channel: "future y", field: "rate", mapping: "one common exact-form rate unit" }],
+      validInterpretation: ["Within this fixed corpus release, exact surface-form appearances relative to annual word-token exposure."],
+      prohibitedInterpretation: ["Language-wide spelling adoption, semantic replacement, first use, or an unbiased population trend."],
+      missingnessErrorSourceLimitations: ["Sparse absent rows remain absent_or_suppressed.", "OCR, corpus composition, and publication bias remain."],
+      localDisclosureRequirements: ["formula", "release", "actual retained row n", "coverage states", "raw lineage", "corpus limitations"],
+      blockedByGapIds: fixedGoogle.fixedRawCommonDenominator.productionEligible ? [] : ["gap-google-common-denominator"],
     },
     {
       id: "contract-orthographic-family",
       candidatePanel: "Orthographic-family small multiples",
-      findingIds: ["finding-ngram-denominator"],
+      findingIds: ["finding-google-raw-common-denominator"],
       productionEligible: false,
       eligibilityReason: "No canonical preregistered complete family and no valid shared scale across all current forms.",
       researchQuestion: "How do all preregistered family forms vary on a genuinely common scale?",
@@ -1665,7 +3088,10 @@ function buildContracts(inputs: InputBundle, dataGate: ReturnType<typeof deriveD
       prohibitedInterpretation: ["Independent shape scales or incomplete post hoc form selection."],
       missingnessErrorSourceLimitations: ["Canonical registry and raw denominator inputs are absent."],
       localDisclosureRequirements: ["complete form list", "shared axis", "n", "release", "missingness"],
-      blockedByGapIds: ["gap-canonical-form-registry", "gap-google-common-denominator"],
+      blockedByGapIds: [
+        "gap-canonical-form-registry",
+        ...(fixedGoogle.fixedRawCommonDenominator.productionEligible ? [] : ["gap-google-common-denominator"]),
+      ],
     },
     {
       id: "contract-date-ledger",
@@ -1731,16 +3157,168 @@ function buildContracts(inputs: InputBundle, dataGate: ReturnType<typeof deriveD
       blockedByGapIds: ["gap-modern-raw-api-pages", "gap-coverage-rights-transform-manifests"],
     },
   ];
+  const contracts: ForeverFigureContract[] = contractsBase.map((contract) => {
+    const isViewer = contract.id === "contract-google-fixed-viewer-separate-facets";
+    const isCommon = contract.id === "contract-google-fixed-raw-common-denominator";
+    return {
+      ...contract,
+      missingnessPolicy: isCommon
+        ? "Each explicit wide-record tuple is observed_positive when match_count > 0 or observed_zero when match_count = 0. An absent form-year is absent_or_suppressed and is never synthesized as zero."
+        : "Use explicit typed states; never turn a missing sparse row into numeric zero without source-format proof.",
+      activeDependencyClosure: isCommon
+        ? {
+            inputPaths: fixedGoogle.fixedRawCommonDenominator.activeDependencyInputPaths,
+            transformIds: fixedGoogle.fixedRawCommonDenominator.activeTransformIds,
+            excludedLegacyPaths: fixedGoogle.fixedRawCommonDenominator.excludedLegacyPaths,
+            closureValidated: fixedGoogle.fixedRawCommonDenominator.productionEligible,
+          }
+        : isViewer
+          ? {
+              inputPaths: [
+                "scripts/acquire_forever_google_20200217.ts",
+                FIXED_GOOGLE_PATHS.viewerRequest,
+                FIXED_GOOGLE_PATHS.viewerResponse,
+                FIXED_GOOGLE_PATHS.transforms,
+                FIXED_GOOGLE_PATHS.checksums,
+                FIXED_GOOGLE_PATHS.rights,
+              ].filter((pathname) => inputs.inputPaths.includes(pathname)),
+              transformIds: ["google-20200217-viewer-freeze"],
+              excludedLegacyPaths: [...LEGACY_FOREVER_PIPELINE_PATHS],
+              closureValidated: fixedGoogle.fixedViewerSeparateFacets.productionEligible,
+            }
+          : {
+              inputPaths: contract.rawFilesAndFields.map((source) => source.path),
+              transformIds: [],
+              excludedLegacyPaths: [...LEGACY_FOREVER_PIPELINE_PATHS],
+              closureValidated: false,
+            },
+      rightsResolution: {
+        datasetLevelInheritanceAllowed: true,
+        itemLevelOverrideAllowed: true,
+        resolved: isCommon
+          ? fixedGoogle.fixedRawCommonDenominator.rightsResolvedBy !== null
+          : isViewer
+            ? fixedGoogle.fixedViewerSeparateFacets.validation.rightsResolved === true
+            : false,
+      },
+    };
+  });
   return {
     schemaVersion: SCHEMA_VERSION,
     auditId: AUDIT_ID,
     dataGate,
-    productionEligibleCount: 0,
+    productionEligibleCount: contracts.filter((contract) => contract.productionEligible).length,
+    pageImplementationAuthorized: PAGE_IMPLEMENTATION_AUTHORIZED,
     contracts,
   };
 }
 
-function buildSpotChecks(inputs: InputBundle): ForeverSpotCheck[] {
+function buildSpotChecks(
+  inputs: InputBundle,
+  fixedGoogle: ForeverFixedGoogleReleaseAudit,
+  findings: ForeverFindingsRegistry,
+  contracts: ForeverFigureContractRegistry,
+): ForeverSpotCheck[] {
+  const withPerturbedCoreFamily = (
+    mutate: (familyRegistry: Record<string, unknown>) => void,
+  ): InputBundle => {
+    const familyRegistry = parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.family);
+    const checksumManifest = parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.checksums);
+    invariant(isRecord(familyRegistry), "fixed Google family registry missing for perturbation check");
+    invariant(isRecord(checksumManifest) && Array.isArray(checksumManifest.files), "fixed Google checksum manifest missing for perturbation check");
+    const perturbedFamily = JSON.parse(JSON.stringify(familyRegistry)) as Record<string, unknown>;
+    const perturbedChecksums = JSON.parse(JSON.stringify(checksumManifest)) as Record<string, unknown>;
+    mutate(perturbedFamily);
+    const familyText = jsonText(perturbedFamily);
+    const familyBytes = Buffer.from(familyText);
+    const checksumFiles = Array.isArray(perturbedChecksums.files)
+      ? perturbedChecksums.files.filter(isRecord)
+      : [];
+    const familyChecksum = checksumFiles.find((row) => row.path === FIXED_GOOGLE_PATHS.family);
+    invariant(familyChecksum, "family registry checksum descriptor missing for perturbation check");
+    familyChecksum.bytes = familyBytes.byteLength;
+    familyChecksum.sha256 = sha256(familyBytes);
+    const checksumText = jsonText(perturbedChecksums);
+    return {
+      ...inputs,
+      bytes: new Map(inputs.bytes)
+        .set(FIXED_GOOGLE_PATHS.family, familyBytes)
+        .set(FIXED_GOOGLE_PATHS.checksums, Buffer.from(checksumText)),
+      texts: new Map(inputs.texts)
+        .set(FIXED_GOOGLE_PATHS.family, familyText)
+        .set(FIXED_GOOGLE_PATHS.checksums, checksumText),
+    };
+  };
+  const withPerturbedTransformManifest = (
+    mutate: (transformManifest: Record<string, unknown>) => void,
+  ): InputBundle => {
+    const transformManifest = parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.transforms);
+    const checksumManifest = parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.checksums);
+    invariant(isRecord(transformManifest), "fixed Google transform manifest missing for perturbation check");
+    invariant(isRecord(checksumManifest) && Array.isArray(checksumManifest.files), "fixed Google checksum manifest missing for transform perturbation check");
+    const perturbedTransforms = JSON.parse(JSON.stringify(transformManifest)) as Record<string, unknown>;
+    const perturbedChecksums = JSON.parse(JSON.stringify(checksumManifest)) as Record<string, unknown>;
+    mutate(perturbedTransforms);
+    const transformText = jsonText(perturbedTransforms);
+    const transformBytes = Buffer.from(transformText);
+    const checksumFiles = Array.isArray(perturbedChecksums.files)
+      ? perturbedChecksums.files.filter(isRecord)
+      : [];
+    const transformChecksum = checksumFiles.find((row) => row.path === FIXED_GOOGLE_PATHS.transforms);
+    invariant(transformChecksum, "transform manifest checksum descriptor missing for perturbation check");
+    transformChecksum.bytes = transformBytes.byteLength;
+    transformChecksum.sha256 = sha256(transformBytes);
+    const checksumText = jsonText(perturbedChecksums);
+    return {
+      ...inputs,
+      bytes: new Map(inputs.bytes)
+        .set(FIXED_GOOGLE_PATHS.transforms, transformBytes)
+        .set(FIXED_GOOGLE_PATHS.checksums, Buffer.from(checksumText)),
+      texts: new Map(inputs.texts)
+        .set(FIXED_GOOGLE_PATHS.transforms, transformText)
+        .set(FIXED_GOOGLE_PATHS.checksums, checksumText),
+    };
+  };
+  const withPerturbedRightsManifest = (
+    mutate: (rightsManifest: Record<string, unknown>) => void,
+  ): InputBundle => {
+    const rightsManifest = parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.rights);
+    const checksumManifest = parseRegisteredJson(inputs, FIXED_GOOGLE_PATHS.checksums);
+    invariant(isRecord(rightsManifest), "fixed Google rights manifest missing for perturbation check");
+    invariant(isRecord(checksumManifest) && Array.isArray(checksumManifest.files), "fixed Google checksum manifest missing for rights perturbation check");
+    const perturbedRights = JSON.parse(JSON.stringify(rightsManifest)) as Record<string, unknown>;
+    const perturbedChecksums = JSON.parse(JSON.stringify(checksumManifest)) as Record<string, unknown>;
+    mutate(perturbedRights);
+    const rightsText = jsonText(perturbedRights);
+    const rightsBytes = Buffer.from(rightsText);
+    const checksumFiles = Array.isArray(perturbedChecksums.files)
+      ? perturbedChecksums.files.filter(isRecord)
+      : [];
+    const rightsChecksum = checksumFiles.find((row) => row.path === FIXED_GOOGLE_PATHS.rights);
+    invariant(rightsChecksum, "rights manifest checksum descriptor missing for perturbation check");
+    rightsChecksum.bytes = rightsBytes.byteLength;
+    rightsChecksum.sha256 = sha256(rightsBytes);
+    const checksumText = jsonText(perturbedChecksums);
+    return {
+      ...inputs,
+      bytes: new Map(inputs.bytes)
+        .set(FIXED_GOOGLE_PATHS.rights, rightsBytes)
+        .set(FIXED_GOOGLE_PATHS.checksums, Buffer.from(checksumText)),
+      texts: new Map(inputs.texts)
+        .set(FIXED_GOOGLE_PATHS.rights, rightsText)
+        .set(FIXED_GOOGLE_PATHS.checksums, checksumText),
+    };
+  };
+  const trackedDescriptor = (pathname: string) => {
+    const bytes = inputs.bytes.get(pathname);
+    invariant(bytes, `missing perturbation descriptor bytes for ${pathname}`);
+    return {
+      path: pathname,
+      bytes: bytes.byteLength,
+      sha256: sha256(bytes),
+      requiredInTrackedCheckout: true,
+    };
+  };
   const frequencyPath = "src/data/generated/forever_frequency.json";
   const gutenbergPath = "src/data/generated/forever_gutenberg_sources.json";
   const prehistoryPath = "src/data/generated/forever_prehistory.json";
@@ -1765,9 +3343,10 @@ function buildSpotChecks(inputs: InputBundle): ForeverSpotCheck[] {
       rowSelector: "series[]",
       observedFields: ["query"],
       observedValue: inputs.frequency.series.map((series) => series.query),
-      derivation: "array length",
+      derivation: "legacy excluded Viewer-series array length; never used by either fixed Google contract",
       derivedAuditValue: inputs.frequency.series.length,
-      findingIds: ["finding-ngram-denominator"],
+      findingIds: ["finding-derived-authority"],
+      dependencyDisposition: "excluded/legacy",
     },
     {
       id: "spot-forever-323-window",
@@ -1775,9 +3354,10 @@ function buildSpotChecks(inputs: InputBundle): ForeverSpotCheck[] {
       rowSelector: "series[query='forever'].points[1700<=year<=2022]",
       observedFields: ["year"],
       observedValue: { first: foreverWindow[0]?.year ?? null, last: foreverWindow.at(-1)?.year ?? null },
-      derivation: "inclusive filtered row count",
+      derivation: "legacy excluded mutable/current inclusive filtered row count; outside the fixed 2019 Viewer contract",
       derivedAuditValue: foreverWindow.length,
-      findingIds: ["finding-ngram-window"],
+      findingIds: ["finding-derived-authority"],
+      dependencyDisposition: "excluded/legacy",
     },
     ...["forever", "for ever", "forevermore", "forever and ever"].map((query): Omit<ForeverSpotCheck, "renderedValue"> => {
       const series = getSeries(query);
@@ -1788,9 +3368,10 @@ function buildSpotChecks(inputs: InputBundle): ForeverSpotCheck[] {
         rowSelector: `series[query='${query}'].points[year=2022]`,
         observedFields: ["value", "frequencyPerMillion"],
         observedValue: final?.value ?? null,
-        derivation: `Viewer fraction × 1,000,000; unit=${ngramUnit(ngramOrder(query))}`,
+        derivation: `legacy excluded current-Viewer fraction × 1,000,000; unit=${ngramUnit(ngramOrder(query))}; never used by the fixed core pair`,
         derivedAuditValue: final?.frequencyPerMillion ?? null,
-        findingIds: ["finding-ngram-denominator"],
+        findingIds: ["finding-derived-authority"],
+        dependencyDisposition: "excluded/legacy",
       };
     }),
     {
@@ -1884,12 +3465,385 @@ function buildSpotChecks(inputs: InputBundle): ForeverSpotCheck[] {
       findingIds: ["finding-modern-capture"],
     },
   ];
+  if (fixedGoogle.fixedViewerSeparateFacets.productionEligible) {
+    const viewerExtraOutputAudit = auditFixedGoogleRelease(
+      withPerturbedTransformManifest((manifest) => {
+        const rows = Array.isArray(manifest.transforms) ? manifest.transforms.filter(isRecord) : [];
+        const viewerTransform = rows.find((row) => row.id === "google-20200217-viewer-freeze");
+        invariant(viewerTransform && Array.isArray(viewerTransform.outputs), "Viewer transform missing for closure perturbation");
+        viewerTransform.outputs.push(trackedDescriptor(FIXED_GOOGLE_PATHS.forevermoreAnnual));
+      }),
+    );
+    checks.push({
+      id: "spot-fixed-viewer-release",
+      rawPath: FIXED_GOOGLE_PATHS.viewerRequest,
+      rowSelector: "release + params",
+      observedFields: ["viewerShorthand", "persistentIdentifier", "yearEnd", "smoothing", "caseSensitive", "rawResponse.sha256", "returned[].pointCount"],
+      observedValue: {
+        viewerShorthand: fixedGoogle.release.viewerShorthand,
+        persistentIdentifier: fixedGoogle.release.persistentIdentifier,
+        yearEnd: fixedGoogle.release.expectedUpperYear,
+        responseSha256: fixedGoogle.fixedViewerSeparateFacets.responseSha256,
+        pointCounts: fixedGoogle.fixedViewerSeparateFacets.pointCounts,
+      },
+      derivation: "validate frozen Viewer request, response checksum, exact core rows, point counts, order-specific units, rights, and active capture closure",
+      derivedAuditValue:
+        fixedGoogle.fixedViewerSeparateFacets.productionEligible &&
+        fixedGoogle.fixedViewerSeparateFacets.responseSha256 !== null &&
+        fixedGoogle.fixedViewerSeparateFacets.pointCounts.forever === 520 &&
+        fixedGoogle.fixedViewerSeparateFacets.pointCounts["for ever"] === 520 &&
+        fixedGoogle.fixedViewerSeparateFacets.yearRange?.start === 1500 &&
+        fixedGoogle.fixedViewerSeparateFacets.yearRange?.end === 2019,
+      findingIds: ["finding-google-fixed-viewer-separate-facets"],
+      contractIds: ["contract-google-fixed-viewer-separate-facets"],
+    }, {
+      id: "spot-google-viewer-closure-rejects-extra-path",
+      rawPath: FIXED_GOOGLE_PATHS.transforms,
+      rowSelector: "contractScopes['fixed-viewer-separate-facets'] plus exact Viewer transform inputs/outputs",
+      observedFields: ["contractScopes", "transforms[].inputs", "transforms[].outputs"],
+      observedValue: {
+        baselineViewerEligible: true,
+        extraOutputViewerEligible: viewerExtraOutputAudit.fixedViewerSeparateFacets.productionEligible,
+        rawContractUnaffected: viewerExtraOutputAudit.fixedRawCommonDenominator.productionEligible ===
+          fixedGoogle.fixedRawCommonDenominator.productionEligible,
+      },
+      derivation: "add a checksum-bound optional-form output to the Viewer transform; exact closure must reject A without changing B",
+      derivedAuditValue:
+        viewerExtraOutputAudit.fixedViewerSeparateFacets.productionEligible === false &&
+        viewerExtraOutputAudit.fixedRawCommonDenominator.productionEligible ===
+          fixedGoogle.fixedRawCommonDenominator.productionEligible,
+      findingIds: ["finding-google-fixed-viewer-separate-facets"],
+      contractIds: ["contract-google-fixed-viewer-separate-facets"],
+    });
+  }
+  if (fixedGoogle.fixedRawCommonDenominator.productionEligible) {
+    const rates = fixedGoogle.fixedRawCommonDenominator.annualRates;
+    const joinedRates = rates.filter((row) => row.form === "forever");
+    const spacedRates = rates.filter((row) => row.form === "for ever");
+    const first = rates.toSorted((a, b) => a.year - b.year || a.ngramOrder - b.ngramOrder)[0]!;
+    const last = rates.toSorted((a, b) => b.year - a.year || a.ngramOrder - b.ngramOrder)[0]!;
+    const lowPositive = rates
+      .filter((row) => row.matchCount > 0)
+      .toSorted((a, b) => a.matchCount - b.matchCount || a.year - b.year)[0];
+    invariant(lowPositive, "fixed raw rows unexpectedly contain no positive low-count row");
+    const explicitZero = rates.find((row) => row.matchCount === 0);
+    const maximum = rates.toSorted((a, b) => b.matchCount - a.matchCount || a.year - b.year)[0]!;
+    const sparse = fixedGoogle.fixedRawCommonDenominator.annualCoverage.find(
+      (row) => row.state === "absent_or_suppressed",
+    );
+    invariant(sparse, "fixed raw rows unexpectedly contain no sparse form-year for a missingness spot check");
+    const manualRate = roundedMetric((lowPositive.matchCount / lowPositive.annualWordTokens) * 1_000_000);
+    const independentFixedGoogle = auditFixedGoogleRelease(inputs);
+    const nonCoreScopesRemovedFixedGoogle = auditFixedGoogleRelease(
+      withPerturbedCoreFamily((registry) => {
+        delete registry.optionalRelatedForms;
+        delete registry.outOfScope;
+      }),
+    );
+    const coreChangedFixedGoogle = auditFixedGoogleRelease(
+      withPerturbedCoreFamily((registry) => {
+        const coreForms = Array.isArray(registry.coreForms)
+          ? registry.coreForms.filter(isRecord)
+          : [];
+        const joined = coreForms.find((row) => row.exactForm === "forever");
+        invariant(joined, "joined core form missing for perturbation check");
+        joined.exactForm = "forever-corrupted";
+      }),
+    );
+    const rawExtraOutputAudit = auditFixedGoogleRelease(
+      withPerturbedTransformManifest((manifest) => {
+        const rows = Array.isArray(manifest.transforms) ? manifest.transforms.filter(isRecord) : [];
+        const coreTransform = rows.find(
+          (row) => row.id === "google-20200217-core-exact-form-extraction",
+        );
+        invariant(coreTransform && Array.isArray(coreTransform.outputs), "core extraction transform missing for closure perturbation");
+        coreTransform.outputs.push(trackedDescriptor(FIXED_GOOGLE_PATHS.forevermoreSource));
+      }),
+    );
+    const optionalTransformDuplicateAudit = auditFixedGoogleRelease(
+      withPerturbedTransformManifest((manifest) => {
+        const rows = Array.isArray(manifest.transforms) ? manifest.transforms : null;
+        invariant(rows, "transform rows missing for optional-scope perturbation");
+        const optionalTransform = rows.find(
+          (row) => isRecord(row) && row.id === "google-20200217-optional-exact-form-extraction",
+        );
+        invariant(optionalTransform, "optional transform missing for optional-scope perturbation");
+        rows.push(JSON.parse(JSON.stringify(optionalTransform)) as unknown);
+      }),
+    );
+    const invalidNonCoreRightsAudit = auditFixedGoogleRelease(
+      withPerturbedRightsManifest((manifest) => {
+        const overrides = isRecord(manifest.itemOverrides) ? manifest.itemOverrides : {};
+        manifest.itemOverrides = overrides;
+        overrides[FIXED_GOOGLE_PATHS.forevermoreAnnual] = {};
+      }),
+    );
+    const derivationBytesA = jsonText({
+      annualRates: fixedGoogle.fixedRawCommonDenominator.annualRates,
+      annualCoverage: fixedGoogle.fixedRawCommonDenominator.annualCoverage,
+      pairRows: fixedGoogle.fixedRawCommonDenominator.pairRows,
+    });
+    const derivationBytesB = jsonText({
+      annualRates: independentFixedGoogle.fixedRawCommonDenominator.annualRates,
+      annualCoverage: independentFixedGoogle.fixedRawCommonDenominator.annualCoverage,
+      pairRows: independentFixedGoogle.fixedRawCommonDenominator.pairRows,
+    });
+    const commonFinding = ["finding-google-raw-common-denominator"];
+    const commonContract = ["contract-google-fixed-raw-common-denominator"];
+    const lineageFinding = findings.findings.find((finding) => finding.id === commonFinding[0]);
+    const lineageContract = contracts.contracts.find((contract) => contract.id === commonContract[0]);
+    const lineageValid = Boolean(
+      lineageFinding &&
+      lineageContract &&
+      [lowPositive.annualPath, lowPositive.sourceWidePath].every((pathname) =>
+        [...lineageFinding.rawFields, ...lineageFinding.sourceRowsFiles].some(
+          (selector) => selector.path === pathname,
+        )) &&
+      lineageContract.findingIds.includes(lineageFinding.id) &&
+      [lowPositive.annualPath, lowPositive.sourceWidePath].every(
+        (pathname) =>
+          lineageContract.rawFilesAndFields.some((selector) => selector.path === pathname) &&
+          lineageContract.activeDependencyClosure.inputPaths.includes(pathname),
+      ),
+    );
+    checks.push(
+      {
+        id: "spot-google-noncore-scopes-nonblocking",
+        rawPath: FIXED_GOOGLE_PATHS.family,
+        rowSelector: "coreForms[] compared with an in-memory optionalRelatedForms removal and a core-form mutation",
+        observedFields: ["coreForms", "optionalRelatedForms", "outOfScope"],
+        observedValue: {
+          baselineEligible: fixedGoogle.fixedRawCommonDenominator.productionEligible,
+          optionalAndOutOfScopeRemovedEligible:
+            nonCoreScopesRemovedFixedGoogle.fixedRawCommonDenominator.productionEligible,
+          coreChangedEligible: coreChangedFixedGoogle.fixedRawCommonDenominator.productionEligible,
+          invalidOptionalRightsRawEligible:
+            invalidNonCoreRightsAudit.fixedRawCommonDenominator.productionEligible,
+          invalidOptionalRightsViewerEligible:
+            invalidNonCoreRightsAudit.fixedViewerSeparateFacets.productionEligible,
+        },
+        derivation: "rebind the perturbed registry checksum, prove removal of optional-related and out-of-scope metadata leaves B rates byte-equivalent, and prove a core-form mutation makes B ineligible",
+        derivedAuditValue:
+          nonCoreScopesRemovedFixedGoogle.fixedRawCommonDenominator.productionEligible === true &&
+          sha256(jsonText(nonCoreScopesRemovedFixedGoogle.fixedRawCommonDenominator.annualRates)) ===
+            sha256(jsonText(fixedGoogle.fixedRawCommonDenominator.annualRates)) &&
+          coreChangedFixedGoogle.fixedRawCommonDenominator.productionEligible === false &&
+          invalidNonCoreRightsAudit.fixedRawCommonDenominator.productionEligible === true &&
+          invalidNonCoreRightsAudit.fixedViewerSeparateFacets.productionEligible ===
+            fixedGoogle.fixedViewerSeparateFacets.productionEligible,
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-raw-closure-rejects-extra-path",
+        rawPath: FIXED_GOOGLE_PATHS.transforms,
+        rowSelector: "contractScopes['fixed-raw-common-denominator'] plus exact scoped transform inputs/outputs",
+        observedFields: ["contractScopes", "transforms[].id", "transforms[].inputs", "transforms[].outputs"],
+        observedValue: {
+          extraCoreOutputEligible: rawExtraOutputAudit.fixedRawCommonDenominator.productionEligible,
+          viewerUnaffected: rawExtraOutputAudit.fixedViewerSeparateFacets.productionEligible ===
+            fixedGoogle.fixedViewerSeparateFacets.productionEligible,
+          duplicatedOptionalTransformRawEligible:
+            optionalTransformDuplicateAudit.fixedRawCommonDenominator.productionEligible,
+          duplicatedOptionalTransformViewerEligible:
+            optionalTransformDuplicateAudit.fixedViewerSeparateFacets.productionEligible,
+        },
+        derivation: "an extra optional output inside a core transform must reject B; a duplicate optional-scope transform outside both A/B scopes must change neither contract",
+        derivedAuditValue:
+          rawExtraOutputAudit.fixedRawCommonDenominator.productionEligible === false &&
+          rawExtraOutputAudit.fixedViewerSeparateFacets.productionEligible ===
+            fixedGoogle.fixedViewerSeparateFacets.productionEligible &&
+          optionalTransformDuplicateAudit.fixedRawCommonDenominator.productionEligible === true &&
+          optionalTransformDuplicateAudit.fixedViewerSeparateFacets.productionEligible ===
+            fixedGoogle.fixedViewerSeparateFacets.productionEligible,
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-exact-shard-identity",
+        rawPath: FIXED_GOOGLE_PATHS.acquisition,
+        rowSelector: "objects[id in {unigram-shard,bigram-shard,annual-token-totals}]",
+        observedFields: ["url", "contentLength", "etag", "xGoogHash", "local.sha256", "local.md5Hex", "local.md5Base64", "local.verifiedAgainstOfficialMd5"],
+        observedValue: fixedGoogle.fixedRawCommonDenominator.validation.acquisitionIdentity,
+        derivation: "validate exact fixed object URLs, bytes, official hashes, and local digests",
+        derivedAuditValue: fixedGoogle.fixedRawCommonDenominator.validation.acquisitionIdentity,
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-exact-form-equality",
+        rawPath: first.sourceWidePath,
+        rowSelector: "wide record field[0]",
+        observedFields: ["ngram"],
+        observedValue: first.form,
+        derivation: "official v3 wide source record field[0] === preregistered exact form",
+        derivedAuditValue:
+          first.sourceFieldIndex > 0 &&
+          (first.ngramOrder === 1 ? first.form === "forever" : first.form === "for ever"),
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-ngram-orders",
+        rawPath: FIXED_GOOGLE_PATHS.family,
+        rowSelector: "coreForms[]",
+        observedFields: ["exactForm", "ngramOrder", "role"],
+        observedValue: { forever: 1, "for ever": 2 },
+        derivation: "validate core joined/spaced form orders",
+        derivedAuditValue:
+          joinedRates.every((row) => row.ngramOrder === 1) &&
+          spacedRates.every((row) => row.ngramOrder === 2),
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-earliest-retained-year",
+        rawPath: first.annualPath,
+        rowSelector: `annual line ${first.annualLine}; source wide field ${first.sourceFieldIndex}`,
+        observedFields: ["ngram", "year", "match_count", "wide_field_index"],
+        observedValue: { form: first.form, year: first.year, matchCount: first.matchCount, sourceWidePath: first.sourceWidePath, sourceFieldIndex: first.sourceFieldIndex },
+        derivation: "min(year) across deterministic annual rows, retaining exact wide-field lineage",
+        derivedAuditValue: first.year,
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-latest-retained-year",
+        rawPath: last.annualPath,
+        rowSelector: `annual line ${last.annualLine}; source wide field ${last.sourceFieldIndex}`,
+        observedFields: ["ngram", "year", "match_count", "wide_field_index"],
+        observedValue: { form: last.form, year: last.year, matchCount: last.matchCount, sourceWidePath: last.sourceWidePath, sourceFieldIndex: last.sourceFieldIndex },
+        derivation: "max(year) across deterministic annual rows, retaining exact wide-field lineage",
+        derivedAuditValue: last.year,
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-sparse-year",
+        rawPath: sparse.form === "forever" ? FIXED_GOOGLE_PATHS.foreverAnnual : FIXED_GOOGLE_PATHS.forEverAnnual,
+        rowSelector: `exact form ${sparse.form}, year ${sparse.year}: no derived annual row from the official wide record`,
+        observedFields: ["ngram", "year"],
+        observedValue: null,
+        derivation: "sparse absence maps to absent_or_suppressed; never synthesize zero",
+        derivedAuditValue: "absent_or_suppressed",
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-positive-low-count",
+        rawPath: lowPositive.annualPath,
+        rowSelector: `annual line ${lowPositive.annualLine}; source wide field ${lowPositive.sourceFieldIndex}`,
+        observedFields: ["ngram", "year", "match_count", "volume_count", "wide_field_index"],
+        observedValue: { form: lowPositive.form, year: lowPositive.year, matchCount: lowPositive.matchCount, volumeCount: lowPositive.volumeCount, sourceWidePath: lowPositive.sourceWidePath, sourceFieldIndex: lowPositive.sourceFieldIndex },
+        derivation: "minimum strictly positive retained match_count with wide-field lineage",
+        derivedAuditValue: lowPositive.matchCount,
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-maximum-raw-match",
+        rawPath: maximum.annualPath,
+        rowSelector: `annual line ${maximum.annualLine}; source wide field ${maximum.sourceFieldIndex}`,
+        observedFields: ["ngram", "year", "match_count"],
+        observedValue: { form: maximum.form, year: maximum.year, matchCount: maximum.matchCount },
+        derivation: "maximum retained raw match_count",
+        derivedAuditValue: { year: maximum.year, value: maximum.matchCount },
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-annual-total-lookup",
+        rawPath: FIXED_GOOGLE_PATHS.totalCounts,
+        rowSelector: `year=${lowPositive.year}`,
+        observedFields: ["year", "match_count (annual 1-gram word tokens)"],
+        observedValue: lowPositive.annualWordTokens,
+        derivation: "lookup same-release annual 1-gram token total by exact year",
+        derivedAuditValue: lowPositive.annualWordTokens,
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-manual-per-million",
+        rawPath: lowPositive.annualPath,
+        rowSelector: `annual line ${lowPositive.annualLine} joined to totalcounts year ${lowPositive.year}`,
+        observedFields: ["match_count", "annual_word_tokens"],
+        observedValue: { matchCount: lowPositive.matchCount, annualWordTokens: lowPositive.annualWordTokens },
+        derivation: "match_count / annual_word_tokens × 1,000,000",
+        derivedAuditValue: manualRate,
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-joined-spaced-separation",
+        rawPath: FIXED_GOOGLE_PATHS.family,
+        rowSelector: "core forms",
+        observedFields: ["exactForm", "role", "rawFile"],
+        observedValue: { joinedRows: joinedRates.length, spacedRows: spacedRates.length },
+        derivation: "count distinct exact-form raw row sets",
+        derivedAuditValue: joinedRates.every((row) => row.form === "forever") && spacedRates.every((row) => row.form === "for ever"),
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-generated-rate-independent",
+        rawPath: lowPositive.annualPath,
+        rowSelector: `annual line ${lowPositive.annualLine}; source wide field ${lowPositive.sourceFieldIndex}`,
+        observedFields: ["match_count", "year"],
+        observedValue: lowPositive.appearancesPerMillionWordTokens,
+        derivation: "independent manual formula must equal generated typed rate",
+        derivedAuditValue: lowPositive.appearancesPerMillionWordTokens === manualRate,
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-byte-stable-derivation",
+        rawPath: FIXED_GOOGLE_PATHS.checksums,
+        rowSelector: "frozen input descriptors",
+        observedFields: ["path", "bytes", "sha256"],
+        observedValue: { first: sha256(derivationBytesA), second: sha256(derivationBytesB) },
+        derivation: "independently parse and derive twice from frozen raw rows/totals, then compare serialized SHA-256",
+        derivedAuditValue: sha256(derivationBytesA) === sha256(derivationBytesB),
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+      {
+        id: "spot-google-raw-finding-contract-lineage",
+        rawPath: lowPositive.annualPath,
+        rowSelector: `annual line ${lowPositive.annualLine}; official source ${lowPositive.sourceWidePath} field ${lowPositive.sourceFieldIndex}`,
+        observedFields: ["ngram", "year", "match_count", "wide_field_index"],
+        observedValue: { annualPath: lowPositive.annualPath, annualLine: lowPositive.annualLine, sourceWidePath: lowPositive.sourceWidePath, sourceFieldIndex: lowPositive.sourceFieldIndex },
+        derivation: "official wide field → deterministic annual row → finding-google-raw-common-denominator → contract-google-fixed-raw-common-denominator",
+        derivedAuditValue: lineageValid,
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      },
+    );
+    if (explicitZero) {
+      checks.push({
+        id: "spot-google-explicit-zero",
+        rawPath: explicitZero.annualPath,
+        rowSelector: `annual line ${explicitZero.annualLine}; source wide field ${explicitZero.sourceFieldIndex}`,
+        observedFields: ["ngram", "year", "match_count", "wide_field_index"],
+        observedValue: {
+          form: explicitZero.form,
+          year: explicitZero.year,
+          matchCount: explicitZero.matchCount,
+          sourceWidePath: explicitZero.sourceWidePath,
+          sourceFieldIndex: explicitZero.sourceFieldIndex,
+        },
+        derivation: "an explicit official wide tuple with match_count=0 maps to observed_zero",
+        derivedAuditValue: explicitZero.state === "observed_zero",
+        findingIds: commonFinding,
+        contractIds: commonContract,
+      });
+    }
+  }
   invariant(checks.length >= 10, "at least ten spot checks are required");
   return checks.map((check) => ({ ...check, renderedValue: renderedAuditValue(check.derivedAuditValue) }));
 }
 
 function buildUntraceableInputs(): ForeverUntraceableInput[] {
-  return [
+  const legacyInputs: Array<Omit<ForeverUntraceableInput, "dependencyDisposition">> = [
     {
       id: "untraceable-legacy-placeholder-registry",
       path: "src/data/forever.ts",
@@ -1963,6 +3917,10 @@ function buildUntraceableInputs(): ForeverUntraceableInput[] {
       requiredDisposition: "rebuild-from-registered-finding",
     },
   ];
+  return legacyInputs.map((input) => ({
+    ...input,
+    dependencyDisposition: "excluded/legacy",
+  }));
 }
 
 function buildAssertions(
@@ -1973,10 +3931,11 @@ function buildAssertions(
   contracts: ForeverFigureContractRegistry,
   spotChecks: ForeverSpotCheck[],
   dataGate: ReturnType<typeof deriveDataGate>,
+  fixedGoogle: ForeverFixedGoogleReleaseAudit,
 ): ForeverValidationAssertion[] {
   const manifestPaths = manifest.entries.map((entry) => entry.path);
-  const denominatorFinding = findings.findings.find((finding) => finding.id === "finding-ngram-denominator");
-  const windowFinding = findings.findings.find((finding) => finding.id === "finding-ngram-window");
+  const denominatorFinding = findings.findings.find((finding) => finding.id === "finding-google-raw-common-denominator");
+  const windowFinding = findings.findings.find((finding) => finding.id === "finding-google-fixed-viewer-separate-facets");
   invariant(denominatorFinding, "denominator finding missing");
   invariant(windowFinding, "window finding missing");
   const manifestComplete =
@@ -1994,19 +3953,40 @@ function buildAssertions(
   const denominatorStateValid = availability.commonAnnualWordTokenDenominatorAvailable
     ? denominatorFinding.result.values.sharedScaleAllowed === true
     : ngramOrder("forever") !== ngramOrder("for ever") && denominatorFinding.result.values.sharedScaleAllowed === false;
-  const zeroMissingStateValid =
-    availability.coverageManifestPresent ||
-    windowFinding.caveat.some((caveat) => caveat.includes("Numeric zero is not a typed missingness state"));
-  const foreverWindow = inputs.frequency.series
-    .find((series) => series.query === "forever")
-    ?.points.filter((point) => point.year >= 1700 && point.year <= 2022) ?? [];
-  const windowValid =
-    foreverWindow.length === 323 && foreverWindow[0]?.year === 1700 && foreverWindow.at(-1)?.year === 2022;
+  const zeroMissingStateValid = denominatorFinding.missingnessPolicy.includes("absent_or_suppressed");
+  const viewerStateValid =
+    windowFinding.productionEligible === fixedGoogle.fixedViewerSeparateFacets.productionEligible &&
+    (fixedGoogle.fixedViewerSeparateFacets.productionEligible
+      ? windowFinding.result.values.yearRange !== null
+      : windowFinding.blockedByGapIds.includes("gap-google-raw-response-release"));
+  const contractStateValid =
+    contracts.contracts.find((contract) => contract.id === "contract-google-fixed-viewer-separate-facets")?.productionEligible ===
+      fixedGoogle.fixedViewerSeparateFacets.productionEligible &&
+    contracts.contracts.find((contract) => contract.id === "contract-google-fixed-raw-common-denominator")?.productionEligible ===
+      fixedGoogle.fixedRawCommonDenominator.productionEligible &&
+    contracts.pageImplementationAuthorized === false;
   const gateValid =
-    dataGate === deriveDataGate(availability, buildUntraceableInputs().length, contracts.productionEligibleCount);
+    dataGate === deriveDataGate(
+      availability,
+      buildUntraceableInputs().filter((input) => input.dependencyDisposition !== "excluded/legacy").length,
+      contracts.productionEligibleCount,
+    );
   const spotChecksValid =
     spotChecks.length >= 10 &&
     spotChecks.every((spotCheck) => spotCheck.renderedValue === renderedAuditValue(spotCheck.derivedAuditValue));
+  const optionalScopePerturbationSpot = spotChecks.find(
+    (spotCheck) => spotCheck.id === "spot-google-noncore-scopes-nonblocking",
+  );
+  const optionalScopeNonBlocking =
+    !fixedGoogle.fixedRawCommonDenominator.productionEligible ||
+    optionalScopePerturbationSpot?.derivedAuditValue === true;
+  const exactClosurePerturbationsValid =
+    (!fixedGoogle.fixedViewerSeparateFacets.productionEligible ||
+      spotChecks.find((spotCheck) => spotCheck.id === "spot-google-viewer-closure-rejects-extra-path")
+        ?.derivedAuditValue === true) &&
+    (!fixedGoogle.fixedRawCommonDenominator.productionEligible ||
+      spotChecks.find((spotCheck) => spotCheck.id === "spot-google-raw-closure-rejects-extra-path")
+        ?.derivedAuditValue === true);
 
   return [
     {
@@ -2027,34 +4007,69 @@ function buildAssertions(
       observed: { joined: "forever", spaced: "for ever", distinct: joinedSpacedSeparated },
     },
     {
-      id: "assert-denominator-incompatibility",
+      id: "assert-denominator-scale-rule",
       passed: denominatorStateValid,
-      assertion: "The joined/spaced shared-scale flag follows the validated common-denominator predicate.",
+      assertion: "The joined/spaced shared-scale flag is enabled only by the independently validated raw common-denominator predicate.",
       observed: denominatorFinding.result.values,
     },
     {
       id: "assert-missing-not-zero",
       passed: zeroMissingStateValid,
-      assertion: "Numeric zero is recorded as an ambiguous observed value and never reclassified as typed missingness.",
+      assertion: "Sparse-row absence remains absent_or_suppressed and is never reclassified as observed_zero without official inclusion evidence.",
       observed: {
-        zeroState: "numeric-observation-with-unknown-semantic-status",
-        typedMissingStateAvailable: availability.coverageManifestPresent,
+        sparseAbsenceState: "absent_or_suppressed",
+        zeroState: "observed_zero_requires-explicit-evidence",
+        typedMissingStateAvailable:
+          fixedGoogle.fixedRawCommonDenominator.validation.missingnessTyped === true ||
+          availability.coverageManifestPresent,
         coverageManifestPresent: manifest.coverageManifestPresent,
       },
     },
     {
-      id: "assert-323-window",
-      passed: windowValid,
-      assertion: "The 1700-2022 inclusive Forever Viewer slice contains 323 query-year rows.",
+      id: "assert-fixed-viewer-contract",
+      passed: viewerStateValid,
+      assertion: "The fixed eng_2019 Viewer contract eligibility follows its checksum-bound 1500–2019 request/response predicate.",
       observed: windowFinding.result.values,
     },
     {
-      id: "assert-stop-gate-is-valid",
+      id: "assert-per-figure-gates-independent",
+      passed: contractStateValid,
+      assertion: "Viewer and raw common-denominator contracts are evaluated independently while pageImplementationAuthorized remains false.",
+      observed: {
+        viewerEligible: fixedGoogle.fixedViewerSeparateFacets.productionEligible,
+        commonDenominatorEligible: fixedGoogle.fixedRawCommonDenominator.productionEligible,
+        pageImplementationAuthorized: contracts.pageImplementationAuthorized,
+      },
+    },
+    {
+      id: "assert-noncore-scopes-nonblocking",
+      passed: optionalScopeNonBlocking,
+      assertion: "Removing optional-related and out-of-scope metadata leaves the raw core-pair result byte-equivalent, while mutating a core form makes the raw contract ineligible.",
+      observed: {
+        optionalRelatedForm: "forevermore",
+        outOfScopePhrase: "forever and ever",
+        status: fixedGoogle.fixedRawCommonDenominator.productionEligible ? "tested" : "not_available",
+        perturbationSpotPassed: optionalScopeNonBlocking,
+      },
+    },
+    {
+      id: "assert-active-dependency-closures-exact",
+      passed: exactClosurePerturbationsValid,
+      assertion: "Each Google contract rejects an extra optional path inside its scoped transform while changes confined to the other or optional scope do not alter its eligibility.",
+      observed: {
+        viewerContractEligible: fixedGoogle.fixedViewerSeparateFacets.productionEligible,
+        rawContractEligible: fixedGoogle.fixedRawCommonDenominator.productionEligible,
+        perturbationsPassed: exactClosurePerturbationsValid,
+      },
+    },
+    {
+      id: "assert-page-gate-independent",
       passed: gateValid,
-      assertion: "The data gate is derived from retained raw-input availability, and no figure contract is production eligible.",
+      assertion: "The page gate is derived independently; a validated figure contract may be production eligible while page implementation remains unauthorized.",
       observed: {
         dataGate,
         productionEligibleCount: contracts.contracts.filter((contract) => contract.productionEligible).length,
+        pageImplementationAuthorized: PAGE_IMPLEMENTATION_AUTHORIZED,
       },
     },
     {
@@ -2068,16 +4083,156 @@ function buildAssertions(
 
 function validateBuiltArtifact(artifact: ForeverAnalysisArtifact) {
   const manifestPaths = artifact.rawDataManifest.entries.map((entry) => entry.path);
+  invariant(
+    MISSINGNESS_STATES.every((state) => artifact.missingnessTaxonomy.states.includes(state)),
+    "missingness taxonomy does not include every required state",
+  );
   const derivedGate = deriveDataGate(
     artifact.rawAvailabilityAudit,
-    artifact.untraceableResearchInputs.length,
+    artifact.untraceableResearchInputs.filter((input) => input.dependencyDisposition !== "excluded/legacy").length,
     artifact.figureContractRegistry.productionEligibleCount,
   );
   invariant(artifact.dataGate.status === derivedGate, "data gate does not match retained-input availability");
   invariant(
-    artifact.dataGate.productionPanelsAllowed === (derivedGate === "PASS"),
-    "productionPanelsAllowed does not match the derived data gate",
+    artifact.dataGate.productionPanelsAllowed === PAGE_IMPLEMENTATION_AUTHORIZED &&
+      artifact.dataGate.pageImplementationAuthorized === PAGE_IMPLEMENTATION_AUTHORIZED &&
+      artifact.figureContractRegistry.pageImplementationAuthorized === PAGE_IMPLEMENTATION_AUTHORIZED,
+    "page implementation authorization must remain independent and false in this acquisition round",
   );
+  const viewerContract = artifact.figureContractRegistry.contracts.find(
+    (contract) => contract.id === "contract-google-fixed-viewer-separate-facets",
+  );
+  const commonContract = artifact.figureContractRegistry.contracts.find(
+    (contract) => contract.id === "contract-google-fixed-raw-common-denominator",
+  );
+  invariant(viewerContract && commonContract, "fixed Google A/B contracts are missing");
+  invariant(
+    viewerContract.productionEligible === artifact.fixedGoogleReleaseAudit.fixedViewerSeparateFacets.productionEligible &&
+      commonContract.productionEligible === artifact.fixedGoogleReleaseAudit.fixedRawCommonDenominator.productionEligible,
+    "fixed Google contract eligibility drifted from its independent validator",
+  );
+  invariant(
+    artifact.fixedGoogleReleaseAudit.fixedRawCommonDenominator.productionEligible
+      ? artifact.fixedGoogleReleaseAudit.outcome === "GOOGLE_COMMON_DENOMINATOR_CONTRACT_READY"
+      : artifact.fixedGoogleReleaseAudit.fixedViewerSeparateFacets.productionEligible
+        ? artifact.fixedGoogleReleaseAudit.outcome === "PARTIAL_GOOGLE_VIEWER_CONTRACT_READY"
+        : artifact.fixedGoogleReleaseAudit.outcome.startsWith("STOP_GOOGLE_"),
+    "Google acquisition outcome does not match A/B contract eligibility",
+  );
+  invariant(
+    artifact.fixedGoogleReleaseAudit.coreFamily.length === 2 &&
+      artifact.fixedGoogleReleaseAudit.coreFamily.some((row) => row.form === "forever" && row.ngramOrder === 1) &&
+      artifact.fixedGoogleReleaseAudit.coreFamily.some((row) => row.form === "for ever" && row.ngramOrder === 2) &&
+      artifact.fixedGoogleReleaseAudit.optionalRelatedForms.every((row) => row.blocksCorePairEligibility === false) &&
+      artifact.fixedGoogleReleaseAudit.outOfScopeForms.every((row) => row.blocksCorePairEligibility === false) &&
+      artifact.fixedGoogleReleaseAudit.scopeDiagnostics.nonGatingForCorePair === true,
+    "the fixed core family was widened by optional or out-of-scope forms",
+  );
+  if (artifact.fixedGoogleReleaseAudit.fixedViewerSeparateFacets.productionEligible) {
+    const viewer = artifact.fixedGoogleReleaseAudit.fixedViewerSeparateFacets;
+    invariant(
+      artifact.spotChecks.find((spotCheck) => spotCheck.id === "spot-google-viewer-closure-rejects-extra-path")
+        ?.derivedAuditValue === true,
+      "the Viewer contract accepted an extra path outside its exact active closure",
+    );
+    invariant(
+      viewer.yearRange?.end === 2019 &&
+        artifact.denominatorAudit.series.every(
+          (row) => row.startYear === 1500 && row.endYear === 2019 && row.pointCount === 520,
+        ),
+      "fixed Viewer contract mixed in a mutable/current release year",
+    );
+    invariant(
+      viewer.observations.length === 1040 &&
+        viewer.rawCompatibleSanity.nonGatingForViewerContract === true &&
+        viewer.rawCompatibleSanity.nonGatingForRawContract === true &&
+        viewer.observations.every(
+          (row) =>
+            row.year === 1500 + row.timeseriesIndex &&
+            row.perMillionOrderNgrams === roundedMetric(row.viewerFraction * 1_000_000) &&
+            row.state === (row.viewerFraction > 0 ? "observed_positive" : "absent_or_suppressed") &&
+            (row.form === "forever"
+              ? row.ngramOrder === 1 && row.unit === "per million unigrams"
+              : row.ngramOrder === 2 && row.unit === "per million bigrams"),
+        ),
+      "fixed Viewer typed facet observations drifted from the frozen order-specific response",
+    );
+    const sanity = viewer.rawCompatibleSanity;
+    if (artifact.fixedGoogleReleaseAudit.fixedRawCommonDenominator.productionEligible) {
+      invariant(
+        sanity.status !== "not_available" &&
+          sanity.passed === (sanity.status === "passed") &&
+          sanity.comparedYears > 0 &&
+          sanity.maximumAbsoluteDifferencePpm !== null &&
+          sanity.sample !== null,
+        "the non-gating Viewer/raw sanity diagnostic was not computed from both eligible inputs",
+      );
+    } else {
+      invariant(
+        sanity.status === "not_available" &&
+          sanity.passed === null &&
+          sanity.comparedYears === 0 &&
+          sanity.maximumAbsoluteDifferencePpm === null &&
+          sanity.sample === null,
+        "the Viewer-only contract exposed a raw sanity result without an eligible raw contract",
+      );
+    }
+  }
+  if (artifact.fixedGoogleReleaseAudit.fixedRawCommonDenominator.productionEligible) {
+    const common = artifact.fixedGoogleReleaseAudit.fixedRawCommonDenominator;
+    invariant(common.annualRates.length > 0, "eligible common-denominator contract has no annual rates");
+    invariant(
+      artifact.spotChecks.find((spotCheck) => spotCheck.id === "spot-google-noncore-scopes-nonblocking")
+        ?.derivedAuditValue === true,
+      "optional/out-of-scope metadata leaked into the core-pair eligibility closure",
+    );
+    invariant(
+      artifact.spotChecks.find((spotCheck) => spotCheck.id === "spot-google-raw-closure-rejects-extra-path")
+        ?.derivedAuditValue === true,
+      "the raw common-denominator contract accepted an extra path outside its exact active closure",
+    );
+    const expectedCoverageRows = common.yearRange
+      ? (common.yearRange.end - common.yearRange.start + 1) * 2
+      : 0;
+    invariant(
+      common.annualCoverage.length === expectedCoverageRows,
+      "eligible common-denominator contract lacks complete typed coverage rows for its actual release-derived range",
+    );
+    invariant(
+      common.annualCoverage
+        .filter((row) => row.state === "observed_zero")
+        .every((coverageRow) =>
+          common.annualRates.some(
+            (rateRow) =>
+              rateRow.form === coverageRow.form &&
+              rateRow.year === coverageRow.year &&
+              rateRow.matchCount === 0 &&
+              rateRow.sourceFieldIndex > 0,
+          )),
+      "an observed_zero coverage state lacks an explicit zero-bearing official wide-field lineage",
+    );
+    invariant(
+      common.annualRates.every(
+        (row) =>
+          row.state === (row.matchCount === 0 ? "observed_zero" : "observed_positive") &&
+          row.matchCount >= 0 &&
+          row.annualWordTokens > 0 &&
+          manifestPaths.includes(row.sourceWidePath) &&
+          manifestPaths.includes(row.annualPath) &&
+          row.sourceFieldIndex > 0 &&
+          row.annualLine >= 2 &&
+          row.appearancesPerMillionWordTokens ===
+            roundedMetric((row.matchCount / row.annualWordTokens) * 1_000_000),
+      ),
+      "a generated common-denominator rate does not recompute from its raw lineage",
+    );
+    invariant(
+      commonContract.activeDependencyClosure.closureValidated &&
+        commonContract.rightsResolution.resolved &&
+        artifact.dataGate.pageImplementationAuthorized === false,
+      "analytic eligibility leaked into page implementation authorization",
+    );
+  }
   invariant(
     artifact.denominatorAudit.rawMatchCountsAvailable === artifact.rawAvailabilityAudit.rawMatchCountsAvailable,
     "raw match-count availability drifted from structured input scan",
@@ -2115,8 +4270,11 @@ function validateBuiltArtifact(artifact: ForeverAnalysisArtifact) {
   );
   invariant(artifact.spotChecks.length >= 10, "spot-check minimum not met");
   invariant(artifact.figureContractRegistry.contracts.length >= 5 && artifact.figureContractRegistry.contracts.length <= 7, "candidate contract count must be 5-7");
-  invariant(artifact.figureContractRegistry.contracts.every((contract) => contract.productionEligible === false), "a panel was marked production eligible at STOP gate");
-  invariant(artifact.figureContractRegistry.productionEligibleCount === 0, "productionEligibleCount must be zero");
+  invariant(
+    artifact.figureContractRegistry.productionEligibleCount ===
+      artifact.figureContractRegistry.contracts.filter((contract) => contract.productionEligible).length,
+    "productionEligibleCount does not match independently evaluated figure contracts",
+  );
   invariant(artifact.assertions.every((assertion) => assertion.passed), "a validation assertion failed");
   invariant(
     artifact.spotChecks.every((spotCheck) => spotCheck.renderedValue === renderedAuditValue(spotCheck.derivedAuditValue)),
@@ -2148,8 +4306,12 @@ function validateBuiltArtifact(artifact: ForeverAnalysisArtifact) {
     "a figure contract points to an unknown finding or raw gap",
   );
   invariant(
-    artifact.spotChecks.every((spotCheck) => spotCheck.findingIds.every((id) => findingIds.has(id))),
-    "a spot check points to an unknown finding",
+    artifact.spotChecks.every(
+      (spotCheck) =>
+        spotCheck.findingIds.every((id) => findingIds.has(id)) &&
+        (spotCheck.contractIds ?? []).every((id) => contractIds.has(id)),
+    ),
+    "a spot check points to an unknown finding or contract",
   );
   invariant(
     artifact.requiredRawGaps.every(
@@ -2195,49 +4357,65 @@ function validateBuiltArtifact(artifact: ForeverAnalysisArtifact) {
     "a spot-check raw path is not registered in the manifest",
   );
   const ngramSeries = artifact.denominatorAudit.series;
+  invariant(ngramSeries.length === 2, "denominator audit core family must contain exactly the joined/spaced pair");
   invariant(ngramSeries.find((series) => series.query === "forever")?.allowedUnit === "per million unigrams", "forever unit drifted");
   invariant(ngramSeries.find((series) => series.query === "for ever")?.allowedUnit === "per million bigrams", "for ever unit drifted");
-  invariant(ngramSeries.find((series) => series.query === "forever and ever")?.allowedUnit === "per million trigrams", "forever and ever unit drifted");
+  invariant(!ngramSeries.some((series) => series.query === "forevermore" || series.query === "forever and ever"), "optional or out-of-scope forms entered the core denominator audit");
 }
 
 async function buildArtifact(): Promise<ForeverAnalysisArtifact> {
   const inputs = await loadInputs();
+  const fixedGoogle = auditFixedGoogleRelease(inputs);
   const availability = auditRawAvailability(inputs);
   const untraceableResearchInputs = buildUntraceableInputs();
-  const dataGate = deriveDataGate(availability, untraceableResearchInputs.length, 0);
+  const dataGate = deriveDataGate(
+    availability,
+    untraceableResearchInputs.filter((input) => input.dependencyDisposition !== "excluded/legacy").length,
+    0,
+  );
   const manifest = buildManifest(inputs, dataGate, availability);
-  const findings = buildFindings(inputs, dataGate, availability);
-  const contracts = buildContracts(inputs, dataGate);
-  const gaps = buildGaps();
-  const spotChecks = buildSpotChecks(inputs);
-  const assertions = buildAssertions(inputs, availability, manifest, findings, contracts, spotChecks, dataGate);
-  const gateCopy = dataGateCopy(dataGate);
-  const series = inputs.frequency.series.map((item) => {
-    const order = ngramOrder(item.query);
+  const findings = buildFindings(inputs, dataGate, availability, fixedGoogle);
+  const contracts = buildContracts(inputs, dataGate, fixedGoogle);
+  const gaps = buildGaps(fixedGoogle);
+  const spotChecks = buildSpotChecks(inputs, fixedGoogle, findings, contracts);
+  const assertions = buildAssertions(inputs, availability, manifest, findings, contracts, spotChecks, dataGate, fixedGoogle);
+  const gateCopy = dataGateCopy(dataGate, fixedGoogle);
+  const series = (["forever", "for ever"] as const).map((query) => {
+    const order = ngramOrder(query);
+    const fixedPointCount = fixedGoogle.fixedViewerSeparateFacets.pointCounts[query];
     return {
-      query: item.query,
+      query,
       ngramOrder: order,
       denominator: ngramDenominator(order),
       allowedUnit: ngramUnit(order),
-      pointCount: item.points.length,
-      startYear: item.points[0]?.year ?? inputs.frequency.source.startYear,
-      endYear: item.points.at(-1)?.year ?? inputs.frequency.source.endYear,
+      pointCount: fixedPointCount ?? 0,
+      startYear: fixedGoogle.fixedViewerSeparateFacets.yearRange?.start ?? 1500,
+      endYear: fixedGoogle.fixedViewerSeparateFacets.yearRange?.end ?? 2019,
     };
   });
 
   const artifact: ForeverAnalysisArtifact = {
     schemaVersion: SCHEMA_VERSION,
     auditId: AUDIT_ID,
-    auditSnapshot: "audit/mobile-search-growth-2026-08 at 33bc7ab2; inputs are authoritative by SHA-256, not by wall-clock time",
+    auditSnapshot: "audit/mobile-search-growth-2026-08; frozen inputs are authoritative by SHA-256, not by acquisition wall-clock time",
     deterministic: true,
     dataGate: {
       status: dataGate,
       displayTitle: gateCopy.displayTitle,
       displaySummary: gateCopy.displaySummary,
-      productionPanelsAllowed: dataGate === "PASS",
+      productionPanelsAllowed: PAGE_IMPLEMENTATION_AUTHORIZED,
+      pageImplementationAuthorized: PAGE_IMPLEMENTATION_AUTHORIZED,
       reasons: gateCopy.reasons,
       nextEligibleGate: gateCopy.nextEligibleGate,
     },
+    missingnessTaxonomy: {
+      states: [...MISSINGNESS_STATES],
+      sparseRowAbsencePolicy:
+        "An absent Google raw shard row is absent_or_suppressed, not observed_zero, unless official inclusion semantics independently prove a searched zero.",
+      observedZeroEvidenceRule:
+        "observed_zero requires an explicit zero-bearing official record or a source format whose complete inclusion semantics prove zero for that exact form-year.",
+    },
+    fixedGoogleReleaseAudit: fixedGoogle,
     manifestSummary: {
       registeredInputCount: manifest.entries.length,
       inputSetSha256: manifest.inputSetSha256,
@@ -2257,6 +4435,13 @@ async function buildArtifact(): Promise<ForeverAnalysisArtifact> {
     termFormRegistryAudit: {
       canonicalRegistryPresent: availability.canonicalFormRegistryPresent,
       fragments: [
+        ...(inputs.inputPaths.includes(FIXED_GOOGLE_PATHS.family)
+          ? [{
+              path: FIXED_GOOGLE_PATHS.family,
+              formsOrQueries: ["forever", "for ever", "forevermore"],
+              policy: "core pair is forever/1-gram + for ever/2-gram; forevermore optional; forever and ever independent trigram out of scope",
+            }]
+          : []),
         { path: "scripts/fetch_ngram_forever.ts", formsOrQueries: inputs.frequency.series.map((item) => item.query), policy: "case-sensitive Viewer queries; mixed n-gram orders" },
         { path: "scripts/fetch_gutenberg_forever.ts", formsOrQueries: ["forever", "for ever", ...inputs.gutenberg.targetPhrases], policy: "lowercased ASCII adjacent-token matching" },
         { path: "scripts/build_prehistory_forever.ts", formsOrQueries: unique(inputs.prehistory.records.map((record) => record.form)), policy: "manual normalizedForm mapping" },
@@ -2264,6 +4449,8 @@ async function buildArtifact(): Promise<ForeverAnalysisArtifact> {
         { path: "src/data/forever.ts", formsOrQueries: ["for ever", "forever", "FOREVER-family", "forevermore", "forever and ever"], policy: "legacy placeholder registry; not imported by current data build" },
       ],
       separationFindings: [
+        "The fixed Google core family contains only joined 'forever' (1-gram) and spaced 'for ever' (2-gram).",
+        "'forevermore' is optional related evidence; 'forever and ever' is an independent out-of-scope trigram and neither can block the core pair.",
         "Joined 'forever' and spaced 'for ever' are separate in Viewer/Gutenberg query rows.",
         "Gutenberg target phrases omit spaced 'for ever and ever' even though passages exist.",
         "ASCII tokenization can conflate hyphenated 'for-ever' with spaced 'for ever'.",
@@ -2281,33 +4468,34 @@ async function buildArtifact(): Promise<ForeverAnalysisArtifact> {
       allowedUse: [
         "Separate, explicitly labeled Viewer-normalized facets by n-gram order after raw response and release provenance are retained.",
         "Within-series temporal description, subject to zero/missing and corpus caveats.",
-        "Same-order comparison only when corpus/release/query policy is identical and locally stated.",
+        availability.commonAnnualWordTokenDenominatorAvailable
+          ? "From the fixed raw contract only: exact joined/spaced rates and pair arithmetic on the shared annual 1-gram word-token denominator."
+          : "Same-order comparison only when corpus/release/query policy is identical and locally stated.",
       ],
       prohibitedUse: [
-        "joined/spaced share",
-        "direct joined/spaced ratio",
-        "crossover or overtaking year",
-        "joined/spaced delta",
+        "Any joined/spaced share, ratio, crossover, overtaking, or delta computed from Viewer-normalized unigram/bigram fractions.",
         "orthographic dominance",
-        "one shared generic frequency-per-million axis across unigram, bigram, and trigram series",
+        "one shared generic frequency-per-million axis across different Viewer n-gram orders",
       ],
     },
     googleOfficialShardFeasibility: {
-      status: "NOT_EXECUTED_OFFLINE_AUDIT",
-      planningEnvelope: "approximately 1.2 GB",
-      repositoryEvidenceForExactShardSize: false,
+      status: fixedGoogle.fixedRawCommonDenominator.productionEligible
+        ? "ACQUISITION_VALIDATED"
+        : "DISCOVERY_EXECUTED",
+      planningEnvelope: "1,240,926,704 compressed bytes for the two core shards; 1,240,940,250 bytes including totalcounts-1",
+      repositoryEvidenceForExactShardSize: true,
       officialSourcesOnly: true,
       requirements: [
         "Identify exact official Google Ngram corpus release before transfer.",
-        "Acquire the official unigram shard(s) for forever/forevermore and bigram shard(s) for for ever; add trigram only if the phrase is preregistered.",
+        "Acquire the exact official unigram shard for forever (optionally forevermore) and exact bigram shard for for ever; the trigram phrase is out of scope.",
         "Acquire same-release official total-count/year files needed for a common annual word-token denominator.",
         "Record source URLs, compressed/uncompressed sizes, SHA-256, extraction command/version, row filters, and rights boundary.",
       ],
       boundary: [
-        "The approximately 1.2 GB figure is a requested planning envelope, not a size verified by repository evidence.",
+        "The exact object sizes and identity headers are retained in the acquisition manifest.",
         "One lexical shard alone cannot establish a common denominator; same-release annual total-count inputs are also required.",
         "Actual transfer, decompression, disk, memory, release layout, and query-to-shard mapping must be checked before acquisition.",
-        "No network acquisition was attempted in this audit.",
+        "Acquisition timestamps are provenance only; derivation byte stability begins after input bytes are frozen and checksum-bound.",
       ],
     },
     rawDataManifest: manifest,

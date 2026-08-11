@@ -1,8 +1,9 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "2.0.0",
   "auditId": "forever-raw-audit-2026-08-11",
   "dataGate": "STOP_RAW_DATA_MISSING",
-  "productionEligibleCount": 0,
+  "productionEligibleCount": 2,
+  "pageImplementationAuthorized": false,
   "contracts": [
     {
       "id": "contract-coverage-matrix",
@@ -88,50 +89,82 @@
         "gap-coverage-rights-transform-manifests",
         "gap-gutenberg-raw-texts-metadata",
         "gap-modern-raw-api-pages"
-      ]
+      ],
+      "missingnessPolicy": "Use explicit typed states; never turn a missing sparse row into numeric zero without source-format proof.",
+      "activeDependencyClosure": {
+        "inputPaths": [
+          "src/data/generated/forever_frequency.json",
+          "src/data/generated/forever_gutenberg_sources.json",
+          "src/data/generated/forever_modern_context.json"
+        ],
+        "transformIds": [],
+        "excludedLegacyPaths": [
+          "scripts/fetch_ngram_forever.ts",
+          "scripts/fetch_gutenberg_forever.ts",
+          "scripts/build_prehistory_forever.ts",
+          "scripts/fetch_modern_context_forever.ts",
+          "scripts/build_forever_dataset.ts"
+        ],
+        "closureValidated": false
+      },
+      "rightsResolution": {
+        "datasetLevelInheritanceAllowed": true,
+        "itemLevelOverrideAllowed": true,
+        "resolved": false
+      }
     },
     {
-      "id": "contract-viewer-facets",
-      "candidatePanel": "Viewer-normalized form facets",
+      "id": "contract-google-fixed-viewer-separate-facets",
+      "candidatePanel": "Fixed Viewer separate facets",
       "findingIds": [
-        "finding-ngram-denominator",
-        "finding-ngram-window"
+        "finding-google-fixed-viewer-separate-facets"
       ],
-      "productionEligible": false,
-      "eligibilityReason": "Separate-unit option B is analytically possible, but the raw response and explicit corpus release are not retained.",
-      "researchQuestion": "How does each registered form move within its own Google Viewer denominator?",
+      "productionEligible": true,
+      "eligibilityReason": "Checksum-bound eng_2019 response, exact core forms, request parameters, release, and rights all validate; page implementation remains separately unauthorized.",
+      "researchQuestion": "How does each core form move within its own fixed-release Viewer denominator?",
       "rawFilesAndFields": [
         {
-          "path": "src/data/generated/forever_frequency.json",
-          "selector": "series[].points[]",
+          "path": "docs/research/forever/google-fixed-20200217/frozen/viewer-request.json",
+          "selector": "request/release/rawResponse",
           "fields": [
-            "query",
-            "year",
-            "value"
+            "params",
+            "release",
+            "sha256"
+          ]
+        },
+        {
+          "path": "docs/research/forever/google-fixed-20200217/frozen/viewer-eng_2019-s0-case-sensitive.json",
+          "selector": "exact response rows",
+          "fields": [
+            "ngram",
+            "parent",
+            "type",
+            "timeseries"
           ]
         }
       ],
       "recordGranularityAndN": {
-        "granularity": "query-year Viewer observation",
+        "granularity": "exact query-year fixed Viewer observation",
         "n": {
-          "forever": 523,
-          "for ever": 523,
-          "forevermore": 523,
-          "forever and ever": 523
+          "forever": 520,
+          "for ever": 520
         }
       },
       "filters": [
+        "eng_2019",
         "smoothing=0",
-        "case_insensitive=false"
+        "case-sensitive",
+        "exact core forms",
+        "1500–2019"
       ],
       "grouping": [
-        "ngram order",
-        "query",
+        "n-gram order",
+        "exact form",
         "year"
       ],
-      "denominator": "separate all-unigram/all-bigram/all-trigram corpus-year totals",
+      "denominator": "forever: all unigrams; for ever: all bigrams, never shared",
       "formulaTransform": "Viewer fraction × 1,000,000; no cross-order arithmetic",
-      "unit": "per million unigrams OR per million bigrams OR per million trigrams, locally labeled",
+      "unit": "forever — per million unigrams; for ever — per million bigrams",
       "visualChannelMapping": [
         {
           "channel": "facet",
@@ -156,9 +189,8 @@
         "joined/spaced share, ratio, crossover, overtaking, delta, or orthographic dominance"
       ],
       "missingnessErrorSourceLimitations": [
-        "Zero/missing ambiguity",
-        "corpus alias is unpinned",
-        "raw response absent"
+        "Viewer zero/suppression semantics are not a common-denominator substitute.",
+        "OCR and corpus-composition limits remain."
       ],
       "localDisclosureRequirements": [
         "exact unit per facet",
@@ -167,86 +199,184 @@
         "n/year range",
         "zero/missing caveat"
       ],
-      "blockedByGapIds": [
-        "gap-google-raw-response-release",
-        "gap-coverage-rights-transform-manifests"
-      ]
+      "blockedByGapIds": [],
+      "missingnessPolicy": "Use explicit typed states; never turn a missing sparse row into numeric zero without source-format proof.",
+      "activeDependencyClosure": {
+        "inputPaths": [
+          "scripts/acquire_forever_google_20200217.ts",
+          "docs/research/forever/google-fixed-20200217/frozen/viewer-request.json",
+          "docs/research/forever/google-fixed-20200217/frozen/viewer-eng_2019-s0-case-sensitive.json",
+          "docs/research/forever/google-fixed-20200217/transform-manifest.json",
+          "docs/research/forever/google-fixed-20200217/checksums.json",
+          "docs/research/forever/google-fixed-20200217/source-rights-manifest.json"
+        ],
+        "transformIds": [
+          "google-20200217-viewer-freeze"
+        ],
+        "excludedLegacyPaths": [
+          "scripts/fetch_ngram_forever.ts",
+          "scripts/fetch_gutenberg_forever.ts",
+          "scripts/build_prehistory_forever.ts",
+          "scripts/fetch_modern_context_forever.ts",
+          "scripts/build_forever_dataset.ts"
+        ],
+        "closureValidated": true
+      },
+      "rightsResolution": {
+        "datasetLevelInheritanceAllowed": true,
+        "itemLevelOverrideAllowed": true,
+        "resolved": true
+      }
     },
     {
-      "id": "contract-transition-robustness",
-      "candidatePanel": "Transition robustness field",
+      "id": "contract-google-fixed-raw-common-denominator",
+      "candidatePanel": "Fixed raw common denominator",
       "findingIds": [
-        "finding-ngram-denominator"
+        "finding-google-raw-common-denominator"
       ],
-      "productionEligible": false,
-      "eligibilityReason": "Common denominator and multiple pinned corpus/release/smoothing analyses are absent.",
-      "researchQuestion": "Does a joined/spaced transition conclusion survive corpus, release, and smoothing choices?",
+      "productionEligible": true,
+      "eligibilityReason": "Fixed official v3 wide source records, lineage-bound annual expansion, annual 1-gram token totals, object identity, checksums, active transform closure, rights, coverage, and sparse missingness all validate; page implementation remains separately unauthorized.",
+      "researchQuestion": "What are the exact joined and spaced annual rates on one fixed-release word-token denominator?",
       "rawFilesAndFields": [
         {
-          "path": "docs/research/forever/raw/google/common-denominator.json",
-          "selector": "source-bound TSV paths plus registered analysis window",
+          "path": "docs/research/forever/google-fixed-20200217/extracted/forever-1.source.tsv",
+          "selector": "one official v3 exact-form wide source record",
           "fields": [
-            "source.match_rows_path",
-            "source.annual_totals_path",
-            "source.release",
-            "analysisWindow.startYear",
-            "analysisWindow.endYear",
-            "TSV: form,ngram_order,year,match_count,annual_word_tokens,release"
+            "field[0]: ngram",
+            "field[k]: year,match_count,volume_count"
+          ]
+        },
+        {
+          "path": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "selector": "derived annual expansion; each row binds one wide field",
+          "fields": [
+            "ngram",
+            "year",
+            "match_count",
+            "volume_count",
+            "wide_field_index"
+          ]
+        },
+        {
+          "path": "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.source.tsv",
+          "selector": "one official v3 exact-form wide source record",
+          "fields": [
+            "field[0]: ngram",
+            "field[k]: year,match_count,volume_count"
+          ]
+        },
+        {
+          "path": "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv",
+          "selector": "derived annual expansion; each row binds one wide field",
+          "fields": [
+            "ngram",
+            "year",
+            "match_count",
+            "volume_count",
+            "wide_field_index"
+          ]
+        },
+        {
+          "path": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+          "selector": "annual totals",
+          "fields": [
+            "year",
+            "annual 1-gram word tokens"
           ]
         }
       ],
       "recordGranularityAndN": {
-        "granularity": "form × year × corpus release × smoothing specification",
-        "n": {}
+        "granularity": "one official exact-form wide source record; deterministic form-year expansion plus explicit sparse coverage state",
+        "n": {
+          "forever": 430,
+          "for ever": 457
+        }
       },
       "filters": [
-        "preregistered complete years/forms"
+        "exact ngram equality",
+        "googlebooks-eng-20200217",
+        "year <= 2019; actual lower bound from release records",
+        "no synthetic missing-year rows"
       ],
       "grouping": [
-        "corpus",
-        "release",
-        "smoothing"
+        "exact form",
+        "year"
       ],
-      "denominator": "same-release annual word-token total",
-      "formulaTransform": "raw_match_count / annual_word_tokens × 1,000,000; sensitivity grid",
-      "unit": "appearances per million words",
+      "denominator": "same-release annual 1-gram word-token total",
+      "formulaTransform": "exact-form match_count / annual 1-gram word tokens × 1,000,000",
+      "unit": "exact surface-form appearances per million corpus word tokens",
       "visualChannelMapping": [
         {
-          "channel": "facet",
-          "field": "corpus/release",
-          "mapping": "one fixed cell per specification"
+          "channel": "future x",
+          "field": "year",
+          "mapping": "linear time if implementation is separately authorized"
         },
         {
-          "channel": "symbol",
-          "field": "conclusion stability",
-          "mapping": "stable/unstable/indeterminate"
+          "channel": "future y",
+          "field": "rate",
+          "mapping": "one common exact-form rate unit"
         }
       ],
       "validInterpretation": [
-        "Sensitivity of a preregistered conclusion."
+        "Within this fixed corpus release, exact surface-form appearances relative to annual word-token exposure."
       ],
       "prohibitedInterpretation": [
-        "Robustness from one Viewer series or mixed denominators."
+        "Language-wide spelling adoption, semantic replacement, first use, or an unbiased population trend."
       ],
       "missingnessErrorSourceLimitations": [
-        "All required raw bulk rows/totals are missing."
+        "Sparse absent rows remain absent_or_suppressed.",
+        "OCR, corpus composition, and publication bias remain."
       ],
       "localDisclosureRequirements": [
         "formula",
         "release",
-        "specification count",
-        "missing years"
+        "actual retained row n",
+        "coverage states",
+        "raw lineage",
+        "corpus limitations"
       ],
-      "blockedByGapIds": [
-        "gap-google-common-denominator",
-        "gap-google-raw-response-release"
-      ]
+      "blockedByGapIds": [],
+      "missingnessPolicy": "Each explicit wide-record tuple is observed_positive when match_count > 0 or observed_zero when match_count = 0. An absent form-year is absent_or_suppressed and is never synthesized as zero.",
+      "activeDependencyClosure": {
+        "inputPaths": [
+          "scripts/acquire_forever_google_20200217.ts",
+          "docs/research/forever/google-fixed-20200217/acquisition-manifest.json",
+          "docs/research/forever/google-fixed-20200217/source-rights-manifest.json",
+          "docs/research/forever/google-fixed-20200217/transform-manifest.json",
+          "docs/research/forever/google-fixed-20200217/checksums.json",
+          "docs/research/forever/google-fixed-20200217/core-family-registry.json",
+          "docs/research/forever/google-fixed-20200217/extracted/extraction-summary.json",
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.source.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.source.tsv",
+          "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv",
+          "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1"
+        ],
+        "transformIds": [
+          "google-20200217-core-exact-form-extraction",
+          "google-20200217-core-wide-to-annual-expansion",
+          "google-20200217-totalcounts-freeze"
+        ],
+        "excludedLegacyPaths": [
+          "scripts/fetch_ngram_forever.ts",
+          "scripts/fetch_gutenberg_forever.ts",
+          "scripts/build_prehistory_forever.ts",
+          "scripts/fetch_modern_context_forever.ts",
+          "scripts/build_forever_dataset.ts"
+        ],
+        "closureValidated": true
+      },
+      "rightsResolution": {
+        "datasetLevelInheritanceAllowed": true,
+        "itemLevelOverrideAllowed": true,
+        "resolved": true
+      }
     },
     {
       "id": "contract-orthographic-family",
       "candidatePanel": "Orthographic-family small multiples",
       "findingIds": [
-        "finding-ngram-denominator"
+        "finding-google-raw-common-denominator"
       ],
       "productionEligible": false,
       "eligibilityReason": "No canonical preregistered complete family and no valid shared scale across all current forms.",
@@ -320,9 +450,29 @@
         "missingness"
       ],
       "blockedByGapIds": [
-        "gap-canonical-form-registry",
-        "gap-google-common-denominator"
-      ]
+        "gap-canonical-form-registry"
+      ],
+      "missingnessPolicy": "Use explicit typed states; never turn a missing sparse row into numeric zero without source-format proof.",
+      "activeDependencyClosure": {
+        "inputPaths": [
+          "docs/research/forever/raw/forever-form-registry.json",
+          "docs/research/forever/raw/google/common-denominator.json"
+        ],
+        "transformIds": [],
+        "excludedLegacyPaths": [
+          "scripts/fetch_ngram_forever.ts",
+          "scripts/fetch_gutenberg_forever.ts",
+          "scripts/build_prehistory_forever.ts",
+          "scripts/fetch_modern_context_forever.ts",
+          "scripts/build_forever_dataset.ts"
+        ],
+        "closureValidated": false
+      },
+      "rightsResolution": {
+        "datasetLevelInheritanceAllowed": true,
+        "itemLevelOverrideAllowed": true,
+        "resolved": false
+      }
     },
     {
       "id": "contract-date-ledger",
@@ -393,7 +543,27 @@
       "blockedByGapIds": [
         "gap-attestation-primary-records",
         "gap-coverage-rights-transform-manifests"
-      ]
+      ],
+      "missingnessPolicy": "Use explicit typed states; never turn a missing sparse row into numeric zero without source-format proof.",
+      "activeDependencyClosure": {
+        "inputPaths": [
+          "src/data/generated/forever_prehistory.json"
+        ],
+        "transformIds": [],
+        "excludedLegacyPaths": [
+          "scripts/fetch_ngram_forever.ts",
+          "scripts/fetch_gutenberg_forever.ts",
+          "scripts/build_prehistory_forever.ts",
+          "scripts/fetch_modern_context_forever.ts",
+          "scripts/build_forever_dataset.ts"
+        ],
+        "closureValidated": false
+      },
+      "rightsResolution": {
+        "datasetLevelInheritanceAllowed": true,
+        "itemLevelOverrideAllowed": true,
+        "resolved": false
+      }
     },
     {
       "id": "contract-gutenberg-inventory",
@@ -479,7 +649,27 @@
       "blockedByGapIds": [
         "gap-gutenberg-raw-texts-metadata",
         "gap-canonical-form-registry"
-      ]
+      ],
+      "missingnessPolicy": "Use explicit typed states; never turn a missing sparse row into numeric zero without source-format proof.",
+      "activeDependencyClosure": {
+        "inputPaths": [
+          "src/data/generated/forever_gutenberg_sources.json"
+        ],
+        "transformIds": [],
+        "excludedLegacyPaths": [
+          "scripts/fetch_ngram_forever.ts",
+          "scripts/fetch_gutenberg_forever.ts",
+          "scripts/build_prehistory_forever.ts",
+          "scripts/fetch_modern_context_forever.ts",
+          "scripts/build_forever_dataset.ts"
+        ],
+        "closureValidated": false
+      },
+      "rightsResolution": {
+        "datasetLevelInheritanceAllowed": true,
+        "itemLevelOverrideAllowed": true,
+        "resolved": false
+      }
     },
     {
       "id": "contract-modern-matrix",
@@ -566,7 +756,27 @@
       "blockedByGapIds": [
         "gap-modern-raw-api-pages",
         "gap-coverage-rights-transform-manifests"
-      ]
+      ],
+      "missingnessPolicy": "Use explicit typed states; never turn a missing sparse row into numeric zero without source-format proof.",
+      "activeDependencyClosure": {
+        "inputPaths": [
+          "src/data/generated/forever_modern_context.json"
+        ],
+        "transformIds": [],
+        "excludedLegacyPaths": [
+          "scripts/fetch_ngram_forever.ts",
+          "scripts/fetch_gutenberg_forever.ts",
+          "scripts/build_prehistory_forever.ts",
+          "scripts/fetch_modern_context_forever.ts",
+          "scripts/build_forever_dataset.ts"
+        ],
+        "closureValidated": false
+      },
+      "rightsResolution": {
+        "datasetLevelInheritanceAllowed": true,
+        "itemLevelOverrideAllowed": true,
+        "resolved": false
+      }
     }
   ]
 }

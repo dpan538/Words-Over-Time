@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-08-11T06:13:52.155Z",
+  "requestUrl": "https://books.google.com/ngrams/json?content=forever%3Aeng_2019%2Cfor%20ever%3Aeng_2019&year_start=1500&year_end=2019&corpus=26&smoothing=0&case_insensitive=false",
+  "params": {
+    "canonicalSurfaceForms": [
+      "forever",
+      "for ever"
+    ],
+    "content": [
+      "forever:eng_2019",
+      "for ever:eng_2019"
+    ],
+    "yearStart": 1500,
+    "yearEnd": 2019,
+    "corpusSelector": "eng_2019",
+    "corpusQueryParam": 26,
+    "smoothing": 0,
+    "caseSensitive": true,
+    "caseInsensitiveRequestValue": false
+  },
+  "release": {
+    "viewerShorthand": "eng_2019",
+    "persistentIdentifier": "googlebooks-eng-20200217"
+  },
+  "rawResponse": {
+    "path": "docs/research/forever/google-fixed-20200217/frozen/viewer-eng_2019-s0-case-sensitive.json",
+    "bytes": 21551,
+    "sha256": "b68f85d23f7ccced84966dc0d2d5841a18bc0f7aaaf23511c5f65f48f2e6cad6"
+  },
+  "returned": [
+    {
+      "canonicalSurfaceForm": "forever",
+      "ngram": "forever:eng_2019",
+      "parent": "",
+      "type": "NGRAM",
+      "pointCount": 520
+    },
+    {
+      "canonicalSurfaceForm": "for ever",
+      "ngram": "for ever:eng_2019",
+      "parent": "",
+      "type": "NGRAM",
+      "pointCount": 520
+    }
+  ],
+  "interpretationBoundary": "Viewer fractions retain order-specific denominators: forever is relative to unigrams and for ever is relative to bigrams. They cannot support a direct joined/spaced comparison."
+}

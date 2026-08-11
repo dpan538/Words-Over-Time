@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": ".cache/google-ngram/20200217/eng/1-00018-of-00024.gz",
+      "bytes": 593921274,
+      "sha256": "7f2715ec65466efdba2ce2e399dff741268b58dfec4f1ab4b4820367cac65ae9",
+      "requiredInTrackedCheckout": false
+    },
+    {
+      "path": ".cache/google-ngram/20200217/eng/2-00407-of-00589.gz",
+      "bytes": 647005430,
+      "sha256": "eb6ba0389d45ae68adea67ffcc952beaf58b229f65db0e376d38b8ebcf95d84d",
+      "requiredInTrackedCheckout": false
+    },
+    {
+      "path": ".cache/google-ngram/20200217/eng/totalcounts-1",
+      "bytes": 13546,
+      "sha256": "aa7d367404d86417af6e43f490324928756e618f61942063679fae975a7caf25",
+      "requiredInTrackedCheckout": false
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/acquisition-manifest.json",
+      "bytes": 4421,
+      "sha256": "d82539f2a6429caa8401a8dc387f436757334f3d6f7afaec3cb901044ec60593",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/core-family-registry.json",
+      "bytes": 1916,
+      "sha256": "fb0be224282629d196e628cfb95ce22a7406e039b4063a4b6e3d53da0aa5b79d",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/extracted/extraction-summary.json",
+      "bytes": 2756,
+      "sha256": "deebfa3a55227a2e87ff4a40b2070e43c39e44e1c12781d9c79c0df963802cfe",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv",
+      "bytes": 33937,
+      "sha256": "f9dd1ada7fa010abc0fe024e73f06c9c2c2ca1971ee8a52cd478d64c1d5e70e4",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.source.tsv",
+      "bytes": 6541,
+      "sha256": "939b26396597ab91cbeff412a4d941db7dc06f9c8b891bb485d7567751eb3e9d",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+      "bytes": 31325,
+      "sha256": "b82c1ffd5239a39a7059337660266a61c0f1ddd90ecbe2b2f46b0e6f7e5bd887",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/extracted/forever-1.source.tsv",
+      "bytes": 5978,
+      "sha256": "6d562ee045ebe7379e02e69944d7d912a4e641f709aa0baa3dba18ff96df3002",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/extracted/forevermore-1.annual.tsv",
+      "bytes": 22623,
+      "sha256": "53b8c9f11ca4919afaaf99ccea1b34c72b4ebddd726c48db365bf8094cf9a2ae",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/extracted/forevermore-1.source.tsv",
+      "bytes": 3687,
+      "sha256": "43a86acc5dee676ac6ee0a47178c49e915e975cc7a0e07944f1c975a0b5d701b",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+      "bytes": 13546,
+      "sha256": "aa7d367404d86417af6e43f490324928756e618f61942063679fae975a7caf25",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/frozen/viewer-eng_2019-s0-case-sensitive.json",
+      "bytes": 21551,
+      "sha256": "b68f85d23f7ccced84966dc0d2d5841a18bc0f7aaaf23511c5f65f48f2e6cad6",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/frozen/viewer-request.json",
+      "bytes": 1494,
+      "sha256": "0aa36f5f6ad4f5ee985a2d25062e7c2a9b9d41757760fc790b077cb5e7e55ec0",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/source-rights-manifest.json",
+      "bytes": 861,
+      "sha256": "eb4c7c42d1a277bb374613171a9353eaf205e2eceecf88dd19d19d7c9bbef3c1",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "docs/research/forever/google-fixed-20200217/transform-manifest.json",
+      "bytes": 9907,
+      "sha256": "f4a9df819261d6fb58ba4c15819138017dc0a5735b408b5110b9986de9583b3e",
+      "requiredInTrackedCheckout": true
+    },
+    {
+      "path": "scripts/acquire_forever_google_20200217.ts",
+      "bytes": 58798,
+      "sha256": "7cafef87ba4d8c52680a2b7de2145e8eebcff7f538654b74ad3ad21799a8879d",
+      "requiredInTrackedCheckout": true
+    }
+  ]
+}

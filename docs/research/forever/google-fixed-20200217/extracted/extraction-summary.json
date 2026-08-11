@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "release": "googlebooks-eng-20200217",
+  "viewerRequestBoundary": {
+    "start": 1500,
+    "end": 2019
+  },
+  "rawCoverageRule": "The raw lower bound is not assumed from the Viewer request. Each form records its actual earliest/latest source observation; common-denominator coverage must use the intersection with totalcounts-1.",
+  "exactEqualityOnly": true,
+  "sparseAbsencePolicy": "Only source rows that exactly equal the registered form are retained. A missing form-year is absent_or_suppressed, never silently converted to observed_zero.",
+  "sourceWideRecordSchema": "ngram TAB year,match_count,volume_count TAB year,match_count,volume_count ...",
+  "annualExpandedSchema": [
+    "ngram",
+    "year",
+    "match_count",
+    "volume_count",
+    "ngram_order",
+    "corpus_release",
+    "source_shard",
+    "wide_field_index"
+  ],
+  "wideFieldIndex": "Zero-based tab-field index in the exact wide source record. Index 0 is the ngram; annual observations begin at index 1.",
+  "forms": [
+    {
+      "id": "forever",
+      "exactForm": "forever",
+      "ngramOrder": 1,
+      "role": "core_joined",
+      "sourceId": "unigram-shard",
+      "wideSourceFile": "forever-1.source.tsv",
+      "annualFile": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+      "wideRawFile": "docs/research/forever/google-fixed-20200217/extracted/forever-1.source.tsv",
+      "stats": {
+        "sourceRecords": 1,
+        "annualRows": 430,
+        "earliestYear": 1500,
+        "latestYear": 2019,
+        "explicitZeroYears": []
+      }
+    },
+    {
+      "id": "for-ever",
+      "exactForm": "for ever",
+      "ngramOrder": 2,
+      "role": "core_spaced",
+      "sourceId": "bigram-shard",
+      "wideSourceFile": "for-ever-2.source.tsv",
+      "annualFile": "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv",
+      "wideRawFile": "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.source.tsv",
+      "stats": {
+        "sourceRecords": 1,
+        "annualRows": 457,
+        "earliestYear": 1478,
+        "latestYear": 2019,
+        "explicitZeroYears": []
+      }
+    },
+    {
+      "id": "forevermore",
+      "exactForm": "forevermore",
+      "ngramOrder": 1,
+      "role": "optional_related",
+      "sourceId": "unigram-shard",
+      "wideSourceFile": "forevermore-1.source.tsv",
+      "annualFile": "docs/research/forever/google-fixed-20200217/extracted/forevermore-1.annual.tsv",
+      "wideRawFile": "docs/research/forever/google-fixed-20200217/extracted/forevermore-1.source.tsv",
+      "stats": {
+        "sourceRecords": 1,
+        "annualRows": 301,
+        "earliestYear": 1630,
+        "latestYear": 2019,
+        "explicitZeroYears": []
+      }
+    }
+  ]
+}

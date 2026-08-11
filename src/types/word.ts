@@ -30,7 +30,7 @@ export type Word = {
   label: string;
   slug: string;
   status: WordStatus;
-  href?: string;
+  href?: string | null;
   hoverLabel?: string;
   displayLemma?: string;
   subtitle?: string;

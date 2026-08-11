@@ -1,151 +1,246 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "2.0.0",
   "auditId": "forever-raw-audit-2026-08-11",
   "dataGate": "STOP_RAW_DATA_MISSING",
   "findings": [
     {
-      "id": "finding-ngram-denominator",
-      "status": "audited-blocker",
-      "productionEligible": false,
+      "id": "finding-google-raw-common-denominator",
+      "status": "validated-result",
+      "productionEligible": true,
       "question": "Can joined 'forever' and spaced 'for ever' share an appearances-per-million scale?",
       "rawFields": [
         {
-          "path": "src/data/generated/forever_frequency.json",
-          "selector": "series[query in {'forever','for ever'}]",
+          "path": "docs/research/forever/google-fixed-20200217/extracted/forever-1.source.tsv",
+          "selector": "official v3 exact-form wide record",
           "fields": [
-            "query",
-            "points[].value",
-            "source.corpus",
-            "source.url"
+            "field[0]: ngram",
+            "field[k]: year,match_count,volume_count"
           ]
         },
         {
-          "path": "docs/research/forever/sources/google-ngram-official-authority.json",
-          "selector": "sourceRecords[id='google-ngram-viewer-denominator']",
+          "path": "docs/research/forever/google-fixed-20200217/extracted/forever-1.annual.tsv",
+          "selector": "deterministic annual expansion with wide-record lineage",
           "fields": [
-            "url",
-            "applicableClaim",
-            "sourceLocation",
-            "accessedOn"
+            "ngram",
+            "year",
+            "match_count",
+            "volume_count",
+            "wide_field_index"
+          ]
+        },
+        {
+          "path": "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.source.tsv",
+          "selector": "official v3 exact-form wide record",
+          "fields": [
+            "field[0]: ngram",
+            "field[k]: year,match_count,volume_count"
+          ]
+        },
+        {
+          "path": "docs/research/forever/google-fixed-20200217/extracted/for-ever-2.annual.tsv",
+          "selector": "deterministic annual expansion with wide-record lineage",
+          "fields": [
+            "ngram",
+            "year",
+            "match_count",
+            "volume_count",
+            "wide_field_index"
+          ]
+        },
+        {
+          "path": "docs/research/forever/google-fixed-20200217/frozen/totalcounts-1",
+          "selector": "annual total-count records",
+          "fields": [
+            "year",
+            "annual 1-gram word tokens"
           ]
         }
       ],
       "filters": [
-        "query is exactly 'forever' or 'for ever'",
-        "smoothing=0",
-        "case_insensitive=false"
+        "exact ngram equality: forever or for ever",
+        "fixed corpus googlebooks-eng-20200217",
+        "year <= 2019; raw lower bound derives from retained release records"
       ],
       "grouping": [
-        "query",
+        "exact form",
         "year"
       ],
-      "denominator": "Viewer-specific all-unigram denominator for forever; all-bigram denominator for for ever",
-      "transformFormula": "Viewer fraction × 1,000,000, with unit retained by n-gram order",
+      "denominator": "same-release annual 1-gram word-token total",
+      "transformFormula": "exact-form match_count / annual 1-gram word tokens × 1,000,000",
       "result": {
-        "summary": "Only option B is present: separate Viewer-normalized facets; a shared joined/spaced scale is invalid.",
+        "summary": "The fixed 20200217 raw rows and annual word-token totals validate a common exact-form rate denominator.",
         "values": {
           "foreverOrder": 1,
           "forEverOrder": 2,
-          "rawMatchCountsAvailable": false,
-          "annualWordTokenTotalsAvailable": false,
-          "sharedScaleAllowed": false
+          "release": "googlebooks-eng-20200217",
+          "yearRange": {
+            "start": 1470,
+            "end": 2019
+          },
+          "annualRateRows": 887,
+          "sharedScaleAllowed": true,
+          "outcome": "GOOGLE_COMMON_DENOMINATOR_CONTRACT_READY"
         }
       },
       "caveat": [
-        "Corpus release is not pinned.",
-        "No raw response or official bulk rows are retained."
+        "The rate describes exact surface-form appearances per million corpus word tokens, not language-wide spelling adoption or semantic replacement.",
+        "OCR error, corpus composition, and publication bias remain.",
+        "A sparse absent row is absent_or_suppressed, never silently observed_zero."
       ],
       "sourceRowsFiles": [
         {
-          "path": "src/data/generated/forever_frequency.json",
-          "selector": "source",
+          "path": "docs/research/forever/google-fixed-20200217/acquisition-manifest.json",
+          "selector": "release/objects",
           "fields": [
-            "corpus",
             "url",
-            "smoothing",
-            "startYear",
-            "endYear"
+            "contentLength",
+            "etag",
+            "xGoogHash",
+            "local.sha256"
           ]
         },
         {
-          "path": "scripts/fetch_ngram_forever.ts",
-          "selector": "URL construction and response mapping",
+          "path": "docs/research/forever/google-fixed-20200217/transform-manifest.json",
+          "selector": "active transforms",
           "fields": [
-            "content",
-            "corpus",
-            "smoothing",
-            "case_insensitive",
-            "timeseries"
+            "id",
+            "inputs",
+            "outputs",
+            "formula",
+            "missingnessPolicy"
+          ]
+        },
+        {
+          "path": "docs/research/forever/google-fixed-20200217/source-rights-manifest.json",
+          "selector": "datasetDefaults/itemOverrides",
+          "fields": [
+            "sourceUrl",
+            "license",
+            "rightsBoundary"
+          ]
+        },
+        {
+          "path": "docs/research/forever/google-fixed-20200217/extracted/extraction-summary.json",
+          "selector": "actual per-form raw coverage and lineage schema",
+          "fields": [
+            "rawCoverageRule",
+            "forms[].stats",
+            "wideFieldIndex"
           ]
         },
         {
           "path": "docs/research/forever/sources/google-ngram-official-authority.json",
-          "selector": "sourceRecords[id in {'google-ngram-viewer-denominator','google-ngram-viewer-release-mutation'}]",
+          "selector": "official denominator and release authority records",
           "fields": [
             "publisher",
             "title",
             "url",
-            "accessedOn",
             "applicableClaim",
-            "repositoryUse"
+            "rightsBoundary"
           ]
         }
       ],
-      "blockedByGapIds": [
-        "gap-google-raw-response-release",
-        "gap-google-common-denominator"
-      ]
+      "blockedByGapIds": [],
+      "missingnessPolicy": "Use the registered typed coverage state; sparse-row absence remains absent_or_suppressed unless official format semantics independently prove observed_zero.",
+      "derivationPolicy": {
+        "yearCoverage": "1470–2019; lower bound derives from the frozen totalcounts release records and upper bound is fixed at 2019",
+        "minimumDataRule": "Emit an annual rate only when an explicit exact-form wide observation field and a positive same-year totalcounts-1 token denominator both exist; pair arithmetic requires both core form rates, joined share requires a positive combined count, and raw ratio requires a positive spaced count.",
+        "smoothingRule": "No smoothing is applied in this contract. Any later smoothed result requires its own preregistered rule and sensitivity finding.",
+        "edgeHandling": "No interpolation, extrapolation, endpoint padding, or silent fill. Missing denominator years are unavailable; missing form fields are absent_or_suppressed.",
+        "corpusLimitations": [
+          "OCR error",
+          "changing corpus composition",
+          "publication and survival bias",
+          "exact surface form does not establish meaning or social adoption"
+        ],
+        "rawRowLineage": "official v3 exact-form wide source record field[k] → checksum-bound annual expansion row with wide_field_index=k → same-year frozen totalcounts-1 record → typed annual rate"
+      }
     },
     {
-      "id": "finding-ngram-window",
-      "status": "audited-limited-result",
-      "productionEligible": false,
-      "question": "What is the actual granularity of the historical 323-row Forever table?",
+      "id": "finding-google-fixed-viewer-separate-facets",
+      "status": "validated-result",
+      "productionEligible": true,
+      "question": "What can the fixed eng_2019 Viewer response support when n-gram orders remain separate?",
       "rawFields": [
         {
-          "path": "src/data/generated/forever_frequency.json",
-          "selector": "series[query='forever'].points",
+          "path": "docs/research/forever/google-fixed-20200217/frozen/viewer-request.json",
+          "selector": "request/release",
           "fields": [
-            "year",
-            "value",
-            "frequencyPerMillion"
+            "params",
+            "release",
+            "rawResponse.sha256"
+          ]
+        },
+        {
+          "path": "docs/research/forever/google-fixed-20200217/frozen/viewer-eng_2019-s0-case-sensitive.json",
+          "selector": "response rows",
+          "fields": [
+            "ngram",
+            "parent",
+            "type",
+            "timeseries"
           ]
         }
       ],
       "filters": [
-        "query='forever'",
-        "1700 <= year <= 2022"
+        "eng_2019",
+        "smoothing=0",
+        "case-sensitive",
+        "1500–2019",
+        "core forms only"
       ],
       "grouping": [
-        "one row per year"
+        "n-gram order",
+        "exact form",
+        "year"
       ],
-      "denominator": "all unigrams in each Viewer corpus-year",
-      "transformFormula": "inclusive filter; row_count = 2022 - 1700 + 1",
+      "denominator": "forever: all unigrams; for ever: all bigrams, in separate facets",
+      "transformFormula": "Viewer normalized fraction × 1,000,000 within its own order-specific denominator",
       "result": {
-        "summary": "The table is 323 Viewer-normalized annual unigram observations, not 323 raw match-count rows.",
+        "summary": "The checksum-bound fixed response supports separate unigram and bigram facets only.",
         "values": {
-          "rowCount": 323,
-          "firstYear": 1700,
-          "lastYear": 2022
+          "release": "eng_2019",
+          "pointCounts": {
+            "forever": 520,
+            "for ever": 520
+          },
+          "yearRange": {
+            "start": 1500,
+            "end": 2019
+          },
+          "directComparisonAllowed": false
         }
       },
       "caveat": [
-        "Numeric zero is not a typed missingness state.",
-        "The raw API response is absent."
+        "No direct comparison, share, ratio, crossover, overtaking, or delta across unigram/bigram Viewer denominators."
       ],
       "sourceRowsFiles": [
         {
-          "path": "src/data/generated/forever_frequency.json",
-          "selector": "series[query='forever'].points[1700..2022]",
+          "path": "docs/research/forever/google-fixed-20200217/frozen/viewer-request.json",
+          "selector": "request + checksum",
           "fields": [
-            "year",
-            "value"
+            "requestUrl",
+            "params",
+            "release",
+            "rawResponse"
           ]
         }
       ],
-      "blockedByGapIds": [
-        "gap-google-raw-response-release"
-      ]
+      "blockedByGapIds": [],
+      "missingnessPolicy": "Use the registered typed coverage state; sparse-row absence remains absent_or_suppressed unless official format semantics independently prove observed_zero.",
+      "derivationPolicy": {
+        "yearCoverage": "1500–2019 from the frozen eng_2019 Viewer request; 520 requested values per exact core form",
+        "minimumDataRule": "Require exactly one returned NGRAM row and one finite non-negative value per requested year for each exact core form.",
+        "smoothingRule": "Viewer request smoothing=0; no additional smoothing.",
+        "edgeHandling": "No extrapolation outside the frozen request and no cross-facet arithmetic at either edge.",
+        "corpusLimitations": [
+          "order-specific Viewer denominators",
+          "OCR error",
+          "changing corpus composition",
+          "publication and survival bias"
+        ],
+        "rawRowLineage": "checksum-bound Viewer request parameters + raw response bytes → exact response row → timeseries index mapped to requested year within its own n-gram-order facet"
+      }
     },
     {
       "id": "finding-gutenberg-inventory",
@@ -206,7 +301,20 @@
       "blockedByGapIds": [
         "gap-gutenberg-raw-texts-metadata",
         "gap-canonical-form-registry"
-      ]
+      ],
+      "missingnessPolicy": "Use the registered typed coverage state; sparse-row absence remains absent_or_suppressed unless official format semantics independently prove observed_zero.",
+      "derivationPolicy": {
+        "yearCoverage": "limited to the retained records identified by the finding filters; no unobserved period is inferred",
+        "minimumDataRule": "No production result until every blocked raw gap for this finding is resolved and its declared record granularity is source-bound.",
+        "smoothingRule": "No smoothing is registered for this finding.",
+        "edgeHandling": "Do not interpolate or extend beyond retained source records or their stated date precision.",
+        "corpusLimitations": [
+          "Not representative of print generally.",
+          "Hyphenated forms may be conflated.",
+          "Edition/translation dates are unresolved."
+        ],
+        "rawRowLineage": "See rawFields and sourceRowsFiles selectors; legacy heuristic/display arrays remain excluded from production authority."
+      }
     },
     {
       "id": "finding-gutenberg-duplicates",
@@ -257,7 +365,18 @@
       ],
       "blockedByGapIds": [
         "gap-gutenberg-raw-texts-metadata"
-      ]
+      ],
+      "missingnessPolicy": "Use the registered typed coverage state; sparse-row absence remains absent_or_suppressed unless official format semantics independently prove observed_zero.",
+      "derivationPolicy": {
+        "yearCoverage": "limited to the retained records identified by the finding filters; no unobserved period is inferred",
+        "minimumDataRule": "No production result until every blocked raw gap for this finding is resolved and its declared record granularity is source-bound.",
+        "smoothingRule": "No smoothing is registered for this finding.",
+        "edgeHandling": "Do not interpolate or extend beyond retained source records or their stated date precision.",
+        "corpusLimitations": [
+          "A future passage ID should distinguish one verified passage from its multiple analytic roles."
+        ],
+        "rawRowLineage": "See rawFields and sourceRowsFiles selectors; legacy heuristic/display arrays remain excluded from production authority."
+      }
     },
     {
       "id": "finding-prehistory-provenance",
@@ -314,7 +433,18 @@
       ],
       "blockedByGapIds": [
         "gap-attestation-primary-records"
-      ]
+      ],
+      "missingnessPolicy": "Use the registered typed coverage state; sparse-row absence remains absent_or_suppressed unless official format semantics independently prove observed_zero.",
+      "derivationPolicy": {
+        "yearCoverage": "limited to the retained records identified by the finding filters; no unobserved period is inferred",
+        "minimumDataRule": "No production result until every blocked raw gap for this finding is resolved and its declared record granularity is source-bound.",
+        "smoothingRule": "No smoothing is registered for this finding.",
+        "edgeHandling": "Do not interpolate or extend beyond retained source records or their stated date precision.",
+        "corpusLimitations": [
+          "Approximate century labels are converted into exact-looking numeric coordinates."
+        ],
+        "rawRowLineage": "See rawFields and sourceRowsFiles selectors; legacy heuristic/display arrays remain excluded from production authority."
+      }
     },
     {
       "id": "finding-modern-capture",
@@ -381,7 +511,19 @@
       "blockedByGapIds": [
         "gap-modern-raw-api-pages",
         "gap-coverage-rights-transform-manifests"
-      ]
+      ],
+      "missingnessPolicy": "Use the registered typed coverage state; sparse-row absence remains absent_or_suppressed unless official format semantics independently prove observed_zero.",
+      "derivationPolicy": {
+        "yearCoverage": "limited to the retained records identified by the finding filters; no unobserved period is inferred",
+        "minimumDataRule": "No production result until every blocked raw gap for this finding is resolved and its declared record granularity is source-bound.",
+        "smoothingRule": "No smoothing is registered for this finding.",
+        "edgeHandling": "Do not interpolate or extend beyond retained source records or their stated date precision.",
+        "corpusLimitations": [
+          "Revision year is not page publication date, quoted-text date, or capture date.",
+          "Snippet-row counts are not occurrences in page text."
+        ],
+        "rawRowLineage": "See rawFields and sourceRowsFiles selectors; legacy heuristic/display arrays remain excluded from production authority."
+      }
     },
     {
       "id": "finding-derived-authority",
@@ -447,7 +589,18 @@
       "blockedByGapIds": [
         "gap-canonical-form-registry",
         "gap-coverage-rights-transform-manifests"
-      ]
+      ],
+      "missingnessPolicy": "Use the registered typed coverage state; sparse-row absence remains absent_or_suppressed unless official format semantics independently prove observed_zero.",
+      "derivationPolicy": {
+        "yearCoverage": "limited to the retained records identified by the finding filters; no unobserved period is inferred",
+        "minimumDataRule": "No production result until every blocked raw gap for this finding is resolved and its declared record granularity is source-bound.",
+        "smoothingRule": "No smoothing is registered for this finding.",
+        "edgeHandling": "Do not interpolate or extend beyond retained source records or their stated date precision.",
+        "corpusLimitations": [
+          "These may be editorial design artifacts, but cannot be presented as measured findings."
+        ],
+        "rawRowLineage": "See rawFields and sourceRowsFiles selectors; legacy heuristic/display arrays remain excluded from production authority."
+      }
     }
   ]
 }
