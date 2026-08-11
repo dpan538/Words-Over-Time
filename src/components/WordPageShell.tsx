@@ -15,7 +15,6 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
   const profile = wordStudyProfile(path);
   const route = routeByPath(path);
   const isForever = path === "/words/forever";
-  const primary = profile.answers.find((answer) => answer.id === profile.primaryAnswerId) ?? profile.answers[0];
   const textAccent = path === "/words/forever" ? "#AE4202" : path === "/words/hub" ? "#0B6B71" : route?.accent;
 
   if (!route) return children;
@@ -47,9 +46,11 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
               <p className="mt-5 max-w-4xl font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-ink/85 min-[960px]:mt-4 min-[960px]:text-[0.88rem] min-[960px]:font-black min-[960px]:leading-6 min-[960px]:tracking-[0.11em] min-[960px]:text-ink/[0.62]">
                 {profile.scopeLine}
               </p>
-              <p className="mt-3 font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-ink/80 min-[960px]:hidden">
-                coverage / {profile.coverage.map((item) => `${item.label} ${item.value}`).join(" · ")}
-              </p>
+              {!isForever ? (
+                <p className="mt-3 font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-ink/80 min-[960px]:hidden">
+                  coverage / {profile.coverage.map((item) => `${item.label} ${item.value}`).join(" · ")}
+                </p>
+              ) : null}
             </div>
             <dl className="hidden border-y border-ink bg-wheat/90 min-[960px]:grid">
               {profile.coverage.map((item, index) => (
@@ -63,24 +64,6 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
             </dl>
           </div>
         </header>
-        {isForever ? (
-          <section className="grid grid-cols-6 gap-x-3 pb-10 max-[300px]:gap-y-4 min-[960px]:hidden" aria-labelledby="forever-mobile-research-lead">
-            <p className="col-span-2 pt-1 font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-fire max-[300px]:col-span-6">
-              research<br />lead
-            </p>
-            <div className="col-span-4 min-w-0 max-[300px]:col-span-6">
-              <h2 id="forever-mobile-research-lead" className="text-[1.5rem] font-semibold leading-[1.12] tracking-[-0.015em]">
-                {primary.question}
-              </h2>
-              <p className="mt-4 text-[1.0625rem] font-normal leading-[1.55] text-ink">
-                {primary.shortAnswer}
-              </p>
-              <p className="mt-4 font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-ink/80">
-                Boundary / {primary.caveat}
-              </p>
-            </div>
-          </section>
-        ) : null}
         <div className={isForever ? "hidden min-[960px]:block" : undefined}>
           <SearchIntentSummary profile={profile} />
         </div>

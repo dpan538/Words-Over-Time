@@ -1,0 +1,443 @@
+.root {
+  display: block;
+  min-inline-size: 0;
+  overflow-x: clip;
+  background: var(--wot-paper-mobile);
+  color: var(--wot-ink);
+}
+
+.gateHeader,
+.section,
+.trace,
+.stopRule {
+  padding-inline: clamp(1rem, 5.1vw, 1.4rem);
+}
+
+.gateHeader {
+  border-block: 0.75rem solid var(--wot-ink);
+  padding-block: 1.25rem 1.4rem;
+}
+
+.eyebrow,
+.sectionIndex,
+.gateFacts dt,
+.seriesCard dt,
+.gapCard header p,
+.sourceBoundary,
+.contractCard > p:first-child,
+.contractStatus,
+.trace summary,
+.traceBody,
+.stopRule {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.eyebrow,
+.sectionIndex {
+  margin: 0;
+  color: var(--wot-fire);
+}
+
+.gateTitle,
+.sectionTitle {
+  margin: 0;
+  font-weight: 850;
+  letter-spacing: -0.045em;
+}
+
+.gateTitle {
+  max-inline-size: 11ch;
+  margin-block-start: 1rem;
+  font-size: clamp(2.8rem, 13.7vw, 4rem);
+  line-height: 0.92;
+}
+
+.gateSummary,
+.sectionLead {
+  margin: 0;
+  font-size: clamp(1rem, 4.2vw, 1.12rem);
+  font-weight: 580;
+  line-height: 1.5;
+}
+
+.gateSummary {
+  margin-block-start: 1.35rem;
+}
+
+.gateFacts {
+  display: grid;
+  margin: 1.5rem 0 0;
+  border-block: 1px solid var(--wot-ink);
+}
+
+.gateFacts > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(5rem, auto);
+  align-items: baseline;
+  gap: 1rem;
+  padding-block: 0.75rem;
+}
+
+.gateFacts > div + div {
+  border-block-start: 1px solid color-mix(in srgb, var(--wot-ink) 35%, transparent);
+}
+
+.gateFacts dt,
+.gateFacts dd,
+.seriesCard dt,
+.seriesCard dd {
+  margin: 0;
+}
+
+.gateFacts dd {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+  color: var(--wot-wine);
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-align: end;
+}
+
+.section {
+  padding-block: 2.4rem;
+  border-block-end: 2px solid var(--wot-ink);
+}
+
+.sectionTitle {
+  margin-block-start: 0.8rem;
+  font-size: clamp(2rem, 9.4vw, 2.8rem);
+  line-height: 0.98;
+}
+
+.sectionLead {
+  margin-block-start: 1.2rem;
+}
+
+.reasonList {
+  display: grid;
+  gap: 0;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: gate-reason;
+}
+
+.reasonList li {
+  display: grid;
+  grid-template-columns: 2.3rem minmax(0, 1fr);
+  gap: 0.7rem;
+  border-block-start: 1px solid var(--wot-ink);
+  padding-block: 0.85rem;
+  font-size: 0.9375rem;
+  font-weight: 620;
+  line-height: 1.42;
+  counter-increment: gate-reason;
+}
+
+.reasonList li::before {
+  color: var(--wot-fire);
+  content: "0" counter(gate-reason);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem;
+  font-weight: 800;
+}
+
+.seriesList,
+.gapList,
+.contractList {
+  display: grid;
+  gap: 1rem;
+  margin-block-start: 1.6rem;
+}
+
+.seriesCard {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  border: 2px solid var(--wot-ink);
+}
+
+.seriesCard > div {
+  min-inline-size: 0;
+  padding: 0.75rem;
+  border-block-start: 1px solid color-mix(in srgb, var(--wot-ink) 35%, transparent);
+}
+
+.seriesCard > div:nth-child(even) {
+  border-inline-start: 1px solid color-mix(in srgb, var(--wot-ink) 35%, transparent);
+}
+
+.seriesCard .seriesName {
+  grid-column: 1 / -1;
+  border-block-start: 0;
+  background: var(--wot-ink);
+  color: var(--wot-paper-mobile);
+}
+
+.seriesName dd {
+  margin-block-start: 0.2rem;
+  color: #ff7637;
+  font-size: clamp(1.65rem, 8vw, 2.2rem);
+  font-weight: 850;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.seriesCard dd {
+  margin-block-start: 0.35rem;
+  overflow-wrap: anywhere;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.seriesCard .denominatorRow {
+  grid-column: 1 / -1;
+  border-inline-start: 0;
+}
+
+.interpretationGrid {
+  display: grid;
+  gap: 1rem;
+  margin-block-start: 1rem;
+}
+
+.interpretationGrid > div {
+  border-block-start: 0.4rem solid var(--wot-nice);
+  padding-block-start: 0.8rem;
+}
+
+.interpretationGrid .prohibited {
+  border-color: var(--wot-wine);
+}
+
+.interpretationGrid h4,
+.gapCard h4,
+.contractCard h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.interpretationGrid ul,
+.gapCard ul {
+  display: grid;
+  min-inline-size: 0;
+  gap: 0.55rem;
+  margin: 0.8rem 0 0;
+  padding-inline-start: 1.1rem;
+}
+
+.interpretationGrid li,
+.gapCard,
+.contractCard {
+  font-size: 0.875rem;
+  font-weight: 560;
+  line-height: 1.45;
+}
+
+.interpretationGrid li,
+.gapCard li {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.gapCard,
+.contractCard {
+  min-inline-size: 0;
+  border-block-start: 2px solid var(--wot-ink);
+  padding-block-start: 0.9rem;
+}
+
+.gapCard header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.gapCard header p,
+.gapCard h4,
+.gapCard > p,
+.contractCard p,
+.contractCard h4 {
+  margin-block: 0;
+  overflow-wrap: anywhere;
+}
+
+.gapCard header p {
+  color: var(--wot-fire);
+}
+
+.gapCard > p,
+.contractCard > p {
+  margin-block-start: 0.7rem;
+}
+
+.gapCard .sourceBoundary {
+  margin-block-start: 1rem;
+  border-inline-start: 0.3rem solid var(--wot-wine);
+  padding-inline-start: 0.7rem;
+  color: color-mix(in srgb, var(--wot-ink) 76%, transparent);
+  font-size: 0.8125rem;
+  text-transform: none;
+}
+
+.contractCard > p:first-child {
+  color: var(--wot-fire);
+}
+
+.contractCard h4 {
+  margin-block-start: 0.45rem;
+}
+
+.contractCard .contractStatus {
+  color: var(--wot-wine);
+}
+
+.trace {
+  border-block-end: 2px solid var(--wot-ink);
+}
+
+.trace summary {
+  display: flex;
+  min-block-size: 52px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+}
+
+.trace summary::-webkit-details-marker {
+  display: none;
+}
+
+.trace summary::after {
+  color: var(--wot-fire);
+  content: "+";
+  font-size: 1.25rem;
+}
+
+.trace[open] summary::after {
+  content: "×";
+}
+
+.trace summary:hover,
+.trace summary:focus-visible,
+.trace[open] summary {
+  color: var(--wot-wine);
+}
+
+.trace summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.traceBody {
+  min-inline-size: 0;
+  padding-block: 0.5rem 1.5rem;
+  text-transform: none;
+}
+
+.traceBody p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.traceBody h3 {
+  margin: 1.25rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.35;
+}
+
+.traceBody ul,
+.traceBody ol {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.traceBody li {
+  display: grid;
+  gap: 0.2rem;
+  border-block-start: 1px solid color-mix(in srgb, var(--wot-ink) 35%, transparent);
+  padding-block-start: 0.65rem;
+}
+
+.spotChecks span,
+.spotChecks output {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.spotChecks span {
+  color: color-mix(in srgb, var(--wot-ink) 72%, transparent);
+}
+
+.spotChecks output {
+  color: var(--wot-wine);
+  font-weight: 800;
+}
+
+.stopRule {
+  padding-block: 1.1rem;
+  background: var(--wot-ink);
+  color: var(--wot-paper-mobile);
+}
+
+.stopRule p {
+  margin: 0;
+}
+
+@media (max-width: 300px) {
+  .gateHeader,
+  .section,
+  .trace,
+  .stopRule {
+    padding-inline: 0.75rem;
+  }
+
+  .gateTitle {
+    font-size: clamp(2.35rem, 15vw, 2.8rem);
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.8rem, 11vw, 2.15rem);
+  }
+
+  .gateFacts > div,
+  .seriesCard,
+  .gapCard header {
+    grid-template-columns: 1fr;
+  }
+
+  .gateFacts dd {
+    text-align: start;
+  }
+
+  .seriesCard > div,
+  .seriesCard > div:nth-child(even) {
+    grid-column: 1;
+    border-inline-start: 0;
+  }
+
+  .seriesCard .seriesName,
+  .seriesCard .denominatorRow {
+    grid-column: 1;
+  }
+}
+
+@media (min-width: 60rem) {
+  .root {
+    display: none;
+  }
+}

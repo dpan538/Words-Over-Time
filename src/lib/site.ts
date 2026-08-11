@@ -113,7 +113,7 @@ export const siteRoutes: SiteRoute[] = [
     related: ["/words/artificial", "/words/privacy", "/words/data"],
     seoTitle: "Forever Spelling, Meaning, and Origin",
     seoDescription:
-      "Explore how “for ever” became “forever,” and how the word shifted across duration, devotion, memory, archives, and platform persistence.",
+      "Explore “for ever” and “forever” as distinct forms across duration, devotion, memory, archives, and platform persistence.",
     searchIntents: [
       "how do you spell forever",
       "spell forever",
