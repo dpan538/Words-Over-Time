@@ -1,6 +1,6 @@
 import { JsonLd } from "@/components/JsonLd";
-import { MobileAboutEditorial } from "@/components/MobileAboutEditorial";
-import { ResponsiveAboutEdition } from "@/components/ResponsiveAboutEdition";
+import { DesktopAbout } from "@/components/about/desktop/DesktopAbout";
+import { MobileAbout } from "@/components/about/mobile/MobileAbout";
 import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
 
 export const metadata = createPageMetadata("/about");
@@ -8,11 +8,11 @@ const jsonLd = createRouteJsonLd("/about");
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-paper-mobile text-ink min-[960px]:bg-wheat">
+    <main aria-labelledby="about-title">
       <JsonLd data={jsonLd} />
-      <ResponsiveAboutEdition>
-        <MobileAboutEditorial />
-      </ResponsiveAboutEdition>
+      <h1 id="about-title" className="sr-only">About Words Over Time</h1>
+      <MobileAbout />
+      <DesktopAbout />
     </main>
   );
 }

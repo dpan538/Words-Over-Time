@@ -1,0 +1,378 @@
+.root {
+  display: block;
+  min-inline-size: 0;
+  padding: 1.1rem clamp(1rem, 5.1vw, 1.4rem) 1.5rem;
+  overflow-x: clip;
+  background: var(--wot-paper-mobile);
+  color: var(--wot-ink);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.navLink {
+  position: relative;
+  display: inline-flex;
+  min-block-size: 44px;
+  align-items: center;
+  padding-block: 0.5rem;
+}
+
+.navLink::after {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0.28rem;
+  block-size: 2px;
+  background: color-mix(in srgb, var(--wot-ink) 70%, transparent);
+  content: "";
+}
+
+.navLink:focus-visible,
+.summary:focus-visible,
+.subsummary:focus-visible,
+.textLink:focus-visible,
+.homeLink:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.header {
+  display: grid;
+  gap: 1.15rem;
+  padding-block: clamp(2.7rem, 12vw, 4rem) clamp(2.3rem, 9vw, 3.2rem);
+}
+
+.eyebrow,
+.cardLabel,
+.cardMeta,
+.citation {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--wot-fire);
+  font-size: 0.8125rem;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.displayTitle {
+  margin: 0;
+  max-inline-size: 9ch;
+  font-size: clamp(3.6rem, 17vw, 5.2rem);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.82;
+  text-transform: lowercase;
+}
+
+.navigationStatement {
+  max-inline-size: 34rem;
+  margin: 0;
+  font-size: clamp(0.94rem, 4vw, 1.05rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.groups {
+  border-top: 3px solid var(--wot-ink);
+}
+
+.group {
+  border-bottom: 3px solid var(--wot-ink);
+}
+
+.summary,
+.subsummary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.summary::-webkit-details-marker,
+.subsummary::-webkit-details-marker {
+  display: none;
+}
+
+.summary {
+  display: flex;
+  min-block-size: 64px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.75rem;
+  font-size: clamp(1.45rem, 7vw, 2rem);
+  font-weight: 850;
+  letter-spacing: -0.025em;
+  line-height: 1;
+}
+
+.summary:hover,
+.subsummary:hover {
+  color: var(--wot-fire);
+}
+
+.summaryMark {
+  color: var(--wot-fire);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 1.35rem;
+  font-weight: 800;
+  transition: transform 160ms ease;
+}
+
+.group[open] > .summary {
+  color: var(--wot-fire);
+}
+
+.group[open] > .summary .summaryMark {
+  transform: rotate(45deg);
+}
+
+.groupBody {
+  padding-block: 0.5rem 2.3rem;
+}
+
+.section {
+  padding-block: 1.55rem;
+  border-top: 1px solid color-mix(in srgb, var(--wot-ink) 20%, transparent);
+}
+
+.section:first-child {
+  border-top: 0;
+}
+
+.sectionHeading {
+  margin: 0 0 0.9rem;
+  color: var(--wot-ink);
+  font-size: clamp(1.25rem, 5.7vw, 1.6rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+}
+
+.section p,
+.subgroupBody p,
+.ledgerEntry p,
+.card p,
+.definitionList dd,
+.claimGrid li {
+  font-size: clamp(0.8125rem, 3.65vw, 0.94rem);
+  font-weight: 520;
+  line-height: 1.55;
+}
+
+.section > p,
+.subgroupBody > p,
+.card p,
+.ledgerEntry p {
+  margin: 0.7rem 0 0;
+}
+
+.section > p:first-of-type,
+.subgroupBody > p:first-child,
+.card p:first-child,
+.ledgerEntry p:first-child {
+  margin-block-start: 0;
+}
+
+.colourLedger {
+  display: grid;
+  margin-block: 1.1rem;
+  border-block: 1px solid color-mix(in srgb, var(--wot-ink) 22%, transparent);
+}
+
+.colourRow {
+  display: grid;
+  grid-template-columns: 1rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.65rem;
+  min-block-size: 38px;
+  border-bottom: 1px solid color-mix(in srgb, var(--wot-ink) 13%, transparent);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+
+.colourRow:last-child { border-bottom: 0; }
+.swatch { inline-size: 0.72rem; block-size: 0.72rem; }
+
+.cardList {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid color-mix(in srgb, var(--wot-ink) 24%, transparent);
+}
+
+.card {
+  padding-block: 1rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--wot-ink) 16%, transparent);
+}
+
+.cardLabel {
+  color: var(--wot-fire);
+  font-size: 0.8125rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.cardMeta {
+  color: color-mix(in srgb, var(--wot-ink) 68%, transparent);
+  font-size: 0.8125rem !important;
+  font-weight: 700 !important;
+}
+
+.linkRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.2rem;
+  margin-block-start: 1rem;
+}
+
+.textLink,
+.homeLink {
+  display: inline-flex;
+  min-block-size: 44px;
+  align-items: center;
+  border-bottom: 1px solid currentColor;
+  color: var(--wot-fire);
+  font-size: 0.8125rem;
+  font-weight: 750;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.subgroup {
+  border-top: 1px solid color-mix(in srgb, var(--wot-ink) 32%, transparent);
+}
+
+.subgroup + .subgroup {
+  border-top-color: color-mix(in srgb, var(--wot-ink) 20%, transparent);
+}
+
+.subsummary {
+  display: flex;
+  min-block-size: 52px;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.65rem;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.subsummary::after {
+  color: var(--wot-fire);
+  content: "+";
+  font-size: 1rem;
+}
+
+.subgroup[open] > .subsummary {
+  color: var(--wot-fire);
+}
+
+.subgroup[open] > .subsummary::after {
+  content: "−";
+}
+
+.subgroupBody {
+  padding-block: 0.5rem 1.35rem;
+}
+
+.ledgerEntry {
+  padding-block: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--wot-ink) 14%, transparent);
+}
+
+.ledgerEntry:first-child { border-top: 0; }
+
+.ledgerEntry h4,
+.claimGrid h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.definitionList {
+  margin: 0;
+}
+
+.definitionList > div {
+  padding-block: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--wot-ink) 15%, transparent);
+}
+
+.definitionList dt {
+  color: var(--wot-fire);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.definitionList dd {
+  margin: 0.45rem 0 0;
+}
+
+.claimGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.claimGrid ul {
+  margin: 0.75rem 0 0;
+  padding-inline-start: 1rem;
+}
+
+.claimGrid li + li { margin-block-start: 0.65rem; }
+
+.citation {
+  padding-inline-start: 0.8rem;
+  border-inline-start: 2px solid var(--wot-fire);
+  overflow-wrap: anywhere;
+}
+
+.footer {
+  display: grid;
+  gap: 1.25rem;
+  padding-block-start: 2rem;
+}
+
+.homeLink {
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.terminalRule {
+  block-size: 0.7rem;
+  background: var(--wot-ink);
+}
+
+@media (max-width: 300px) {
+  .root { padding-inline: 0.75rem; }
+  .displayTitle { font-size: clamp(3rem, 19vw, 3.6rem); }
+  .claimGrid { grid-template-columns: 1fr; }
+  .colourRow { grid-template-columns: 0.8rem minmax(0, 1fr); }
+  .colourRow span:last-child { grid-column: 2; }
+}
+
+@media (min-width: 60rem) {
+  .root { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .summaryMark { transition: none; }
+}

@@ -1,0 +1,413 @@
+.root {
+  display: block;
+  min-inline-size: 0;
+  overflow-x: clip;
+  background: var(--wot-paper-mobile);
+  color: var(--wot-ink);
+}
+
+.firstPanel,
+.secondPanel {
+  position: relative;
+  min-inline-size: 0;
+  padding-inline: clamp(1rem, 5.1vw, 1.4rem);
+}
+
+.firstPanel {
+  padding-block: 1.1rem 2rem;
+  border-bottom: 2px solid var(--wot-ink);
+}
+
+.secondPanel {
+  padding-block: 2.25rem 1.4rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.navLink {
+  position: relative;
+  display: inline-flex;
+  min-block-size: 44px;
+  align-items: center;
+  padding-block: 0.5rem;
+}
+
+.navLink::after {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0.28rem;
+  block-size: 2px;
+  background: color-mix(in srgb, var(--wot-ink) 70%, transparent);
+  content: "";
+}
+
+.navLink:focus-visible,
+.wordLink:focus-visible,
+.aboutCta:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.introduction {
+  display: grid;
+  gap: 1.35rem;
+  padding-block: clamp(2.4rem, 10vw, 3.5rem) 1.7rem;
+}
+
+.projectName {
+  display: grid;
+  margin: 0;
+  font-size: clamp(3.8rem, 18vw, 5.25rem);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.78;
+}
+
+.projectNameAccent {
+  color: var(--wot-fire);
+}
+
+.explanation {
+  max-inline-size: 38rem;
+  margin: 0;
+  font-size: clamp(0.92rem, 3.85vw, 1.02rem);
+  font-weight: 550;
+  line-height: 1.48;
+}
+
+.firstDirectory {
+  border-top: 1px solid color-mix(in srgb, var(--wot-ink) 64%, transparent);
+  padding-block-start: 0.9rem;
+}
+
+.directoryLabel,
+.credit,
+.continueRule,
+.unavailableStatus,
+.comingSoonStatus {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.directoryLabel {
+  margin: 0;
+  color: color-mix(in srgb, var(--wot-ink) 78%, transparent);
+}
+
+.firstWordField {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 1.12fr 0.88fr;
+  align-items: end;
+  aspect-ratio: 1.28 / 1;
+  gap: 0.45rem 0;
+  margin-block-start: 1.45rem;
+  padding-block-end: 0.75rem;
+}
+
+.wordLink {
+  display: inline-flex;
+  min-inline-size: 0;
+  align-items: baseline;
+  color: inherit;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 0.84;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.forever {
+  grid-column: 1 / -1;
+  color: var(--wot-fire);
+  font-size: clamp(4.2rem, 21.5vw, 6rem);
+}
+
+.artificial {
+  grid-column: 1 / 8;
+  grid-row: 2;
+  color: var(--wot-wine);
+  font-size: clamp(2.25rem, 12vw, 3.4rem);
+}
+
+.privacy {
+  grid-column: 8 / -1;
+  grid-row: 2;
+  justify-self: end;
+  color: #6f3aa6;
+  font-size: clamp(2rem, 10.5vw, 3rem);
+}
+
+.continueRule {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-block-start: 2.1rem;
+  border-top: 3px solid var(--wot-ink);
+  padding-block-start: 0.75rem;
+}
+
+.secondWordField {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 1fr 1fr 1.08fr;
+  align-items: center;
+  aspect-ratio: 0.63 / 1;
+  gap: 1.25rem 0.45rem;
+  min-inline-size: 0;
+}
+
+.unavailableWord,
+.comingSoonWord {
+  min-inline-size: 0;
+}
+
+.nullWord {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 0.7rem;
+  border-inline-end: 2px solid var(--wot-ink);
+  padding-inline-end: 0.55rem;
+}
+
+.nullMark {
+  color: color-mix(in srgb, var(--wot-ink) 76%, transparent);
+  font-size: clamp(3.25rem, 17vw, 4.65rem);
+  font-weight: 850;
+  letter-spacing: -0.06em;
+  line-height: 0.82;
+  writing-mode: vertical-rl;
+}
+
+.unavailableStatus {
+  inline-size: 100%;
+  color: var(--wot-wine);
+  overflow-wrap: anywhere;
+  writing-mode: horizontal-tb;
+}
+
+.depression {
+  grid-column: 3 / -1;
+  grid-row: 1;
+  color: var(--wot-nice);
+  font-size: clamp(2.75rem, 14.2vw, 3.9rem);
+}
+
+.intelligence {
+  display: grid;
+  grid-column: 3 / -1;
+  grid-row: 2;
+  align-self: end;
+  gap: 0.4rem;
+  color: color-mix(in srgb, var(--wot-ink) 74%, transparent);
+  font-size: clamp(2.15rem, 11.25vw, 3.15rem);
+  font-weight: 750;
+  letter-spacing: -0.052em;
+  line-height: 0.86;
+}
+
+.comingSoonStatus {
+  color: var(--wot-fire);
+  letter-spacing: 0.08em;
+}
+
+.data {
+  grid-column: 2 / -1;
+  grid-row: 3;
+  justify-self: end;
+  color: var(--wot-nice);
+  font-size: clamp(6.5rem, 34vw, 9.25rem);
+}
+
+.mobileFooter {
+  display: grid;
+  gap: 1.35rem;
+  margin-block-start: 2.75rem;
+  border-top: 1px solid color-mix(in srgb, var(--wot-ink) 35%, transparent);
+  padding-block-start: 1rem;
+}
+
+.credit {
+  max-inline-size: 28rem;
+  margin: 0;
+  color: color-mix(in srgb, var(--wot-ink) 72%, transparent);
+}
+
+.aboutCta {
+  display: inline-flex;
+  min-block-size: 44px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 2px solid currentColor;
+  padding-block: 0.65rem;
+  color: var(--wot-fire);
+  font-size: clamp(1.15rem, 5vw, 1.42rem);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+}
+
+.terminalRule {
+  block-size: 0.7rem;
+  background: var(--wot-ink);
+}
+
+@media (max-width: 300px) {
+  .firstPanel,
+  .secondPanel {
+    padding-inline: 0.75rem;
+  }
+
+  .projectName {
+    font-size: clamp(2.8rem, 20vw, 3.25rem);
+  }
+
+  .forever {
+    font-size: clamp(3rem, 21.5vw, 3.5rem);
+  }
+
+  .artificial {
+    font-size: clamp(1.75rem, 12vw, 2.1rem);
+  }
+
+  .privacy {
+    font-size: clamp(1.5rem, 10.5vw, 1.8rem);
+    justify-self: end;
+  }
+
+  .firstWordField {
+    aspect-ratio: 1 / 1;
+  }
+
+  .secondWordField {
+    aspect-ratio: 0.34 / 1;
+  }
+
+  .nullWord {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    gap: 0.2rem;
+    padding-inline-end: 0.25rem;
+  }
+
+  .nullMark {
+    font-size: clamp(2.5rem, 17vw, 3rem);
+  }
+
+  .unavailableStatus {
+    font-size: 0.8125rem;
+  }
+
+  .depression {
+    grid-column: 4 / -1;
+    grid-row: 1;
+    font-size: clamp(1.8rem, 13.8vw, 2.3rem);
+  }
+
+  .intelligence {
+    grid-column: 4 / -1;
+    grid-row: 2;
+    font-size: clamp(1.55rem, 10.8vw, 1.9rem);
+  }
+
+  .data {
+    grid-column: 2 / -1;
+    grid-row: 3;
+    font-size: clamp(4.6rem, 34vw, 5.4rem);
+  }
+}
+
+@media (max-height: 650px) and (min-width: 301px) and (max-width: 59.999rem) {
+  .firstPanel {
+    padding-block: 0.75rem 1rem;
+  }
+
+  .secondPanel {
+    padding-block: 1rem;
+  }
+
+  .introduction {
+    gap: 0.75rem;
+    padding-block: 0.75rem;
+  }
+
+  .projectName {
+    font-size: clamp(3rem, 15vw, 3.75rem);
+    line-height: 0.82;
+  }
+
+  .explanation {
+    font-size: 0.8125rem;
+    line-height: 1.25;
+  }
+
+  .firstDirectory {
+    padding-block-start: 0.55rem;
+  }
+
+  .firstWordField {
+    aspect-ratio: 1.75 / 1;
+    margin-block-start: 0.65rem;
+    padding-block-end: 0.4rem;
+  }
+
+  .forever {
+    font-size: clamp(3.2rem, 18vw, 4.2rem);
+  }
+
+  .artificial {
+    font-size: clamp(1.9rem, 10vw, 2.5rem);
+  }
+
+  .privacy {
+    font-size: clamp(1.7rem, 8.8vw, 2.2rem);
+  }
+
+  .continueRule {
+    margin-block-start: 0.8rem;
+    padding-block-start: 0.5rem;
+  }
+
+  .secondWordField {
+    aspect-ratio: 0.78 / 1;
+  }
+
+  .mobileFooter {
+    gap: 0.75rem;
+    margin-block-start: 1rem;
+    padding-block-start: 0.75rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .root {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navLink,
+  .wordLink,
+  .aboutCta {
+    scroll-behavior: auto;
+  }
+}
