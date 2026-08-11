@@ -29,17 +29,25 @@ const desktopHomePath = path.join(
   root,
   "src/components/home/desktop/DesktopHome.tsx",
 );
+const posterMarksPath = path.join(root, "src/components/PosterMarks.tsx");
 const foreverPagePath = path.join(root, "src/app/words/forever/page.tsx");
 const foreverPublicRendererPath = path.join(
   root,
   "src/components/ForeverMobileEditorial.tsx",
 );
 
-const [mobileHome, mobileCss, desktopHome, foreverPage, foreverPublicRenderer] =
-  await Promise.all([
+const [
+  mobileHome,
+  mobileCss,
+  desktopHome,
+  posterMarks,
+  foreverPage,
+  foreverPublicRenderer,
+] = await Promise.all([
     readFile(mobileHomePath, "utf8"),
     readFile(mobileCssPath, "utf8"),
     readFile(desktopHomePath, "utf8"),
+    readFile(posterMarksPath, "utf8"),
     readFile(foreverPagePath, "utf8"),
     readFile(foreverPublicRendererPath, "utf8"),
   ]);
@@ -69,8 +77,9 @@ const publishedHomeStudies = [
   ["study-forever", "forever", "/words/forever"],
   ["study-artificial", "artificial", "/words/artificial"],
   ["study-privacy", "privacy", "/words/privacy"],
-  ["study-depression", "depression", "/words/depression"],
+  ["study-hub", "hub", "/words/hub"],
   ["study-data", "data", "/words/data"],
+  ["study-depression", "depression", "/words/depression"],
 ] as const;
 
 for (const [studyId, label, href] of publishedHomeStudies) {
@@ -96,14 +105,16 @@ const sourceSequence = [
   "study={foreverStudy}",
   "study={artificialStudy}",
   "study={privacyStudy}",
-  'id="m-home-word-null"',
+  "study={hubStudy}",
+  "study={dataStudy}",
   "study={depressionStudy}",
   'id={`m-home-word-${intelligenceStudy.slug}`}',
   "(Coming soon)",
-  "study={dataStudy}",
   "<p className={styles.overTime}>Over Time</p>",
+  "data-home-palette-divider",
   "mobile-project-introduction",
   "mobile-copyright",
+  "data-home-footer",
 ] as const;
 const sourcePositions = sourceSequence.map((token) => mobileHome.indexOf(token));
 check(
@@ -111,25 +122,63 @@ check(
     (position, index) =>
       position >= 0 && (index === 0 || position > sourcePositions[index - 1]),
   ),
-  "Mobile Home source order must be label → seven words → Over Time → introduction → Copyright",
+  "Mobile Home source order must be label → seven words → Over Time → palette → introduction → Copyright → footer",
 );
+
+const paletteSequence = [
+  "bg-ink",
+  "bg-anthracite",
+  "bg-ulm",
+  "bg-wheat",
+  "bg-blaze",
+  "bg-signal",
+  "bg-fire",
+  "bg-wine",
+  "bg-sun",
+  "bg-nice",
+  "bg-cobalt",
+  "bg-sail",
+  "bg-hub-amethyst",
+  "bg-hub-space",
+  "bg-hub-teal",
+  "bg-hub-ruby",
+  "bg-hub-blue",
+] as const;
+
+for (const [sourceName, source] of [
+  ["MobileHome", mobileHome],
+  ["Desktop PosterMarks", posterMarks],
+] as const) {
+  const positions = paletteSequence.map((token) => source.indexOf(token));
+  check(
+    positions.every(
+      (position, index) =>
+        position >= 0 && (index === 0 || position > positions[index - 1]),
+    ),
+    `${sourceName} must preserve the canonical 17-segment palette order`,
+  );
+}
 
 check(
   mobileHome.indexOf("Words Over Time") < mobileHome.indexOf("About"),
   "Header must read Words Over Time before About",
 );
 check(
-  (mobileHome.match(/<PublishedWordMark\b/g)?.length ?? 0) === 5,
-  "Mobile Home must render exactly five routed word links",
+  (mobileHome.match(/<PublishedWordMark\b/g)?.length ?? 0) === 6,
+  "Mobile Home must render exactly six routed word links",
 );
 check(
-  mobileHome.includes('data-home-word="null"') &&
-    !mobileHome.includes('href="/words/null"'),
-  "Null must be visible without inventing a /words/null route",
+  !/m-home-word-null|data-home-word="null"|styles\.nullWord|\/words\/null/.test(
+    mobileHome,
+  ),
+  "Mobile Home must not render or link a null study",
 );
 check(
-  !/hubStudy|study-hub|m-home-word-hub/.test(mobileHome),
-  "Hub must not appear in Mobile Home",
+  mobileHome.includes('publishedStudyById("study-hub")') &&
+    mobileHome.includes('data-home-word-row="hub-data"') &&
+    mobileHome.indexOf("study={hubStudy}") <
+      mobileHome.indexOf("study={dataStudy}"),
+  "Hub and data must be adjacent published links in one shared row",
 );
 check(
   !/No route|Continue|About the project|continueRule|aboutCta|terminalRule|firstPanel|secondPanel|projectName/.test(
@@ -144,11 +193,17 @@ check(
 check(
   /<details className=\{`\$\{styles\.copyright\} mobile-copyright`\}>/.test(
     mobileHome,
-  ) && !/<details[^>]*\bopen\b/.test(mobileHome),
+  ) || /<details[\s\S]*?className=\{`\$\{styles\.copyright\} mobile-copyright`\}/.test(
+    mobileHome,
+  ),
+  "Copyright must remain a native details element",
+);
+check(
+  !/<details[^>]*\bopen\b/.test(mobileHome),
   "Copyright must be a native details element that is closed by default",
 );
 check(
-  mobileHome.includes("<summary>Copyright / rights</summary>"),
+  mobileHome.includes("<summary>COPYRIGHTS</summary>"),
   "Copyright disclosure must use the required summary",
 );
 check(
@@ -156,6 +211,20 @@ check(
     mobileHome.includes("Commercial reproduction or reuse") &&
     mobileHome.includes("Research / data / writing / design by Dai Pan / 潘岱"),
   "Copyright disclosure must retain copyright, reuse, and creator credit",
+);
+
+const normalizedMobileHome = mobileHome.replace(/\s+/g, " ");
+check(
+  normalizedMobileHome.includes(
+    "Words Over Time is a semantic-frequency research project, design research, and infographic art. It treats language as visual material: a field of memory, evidence, attention, and public pressure, making the available evidence visible with its sources, limits, and gaps.",
+  ),
+  "Mobile Home must preserve the approved project overview verbatim",
+);
+check(
+  mobileHome.includes(
+    "<p>Words Over Time: semantic change and word usage over time</p>",
+  ),
+  "Mobile Home must end with the required always-visible footer wording",
 );
 
 for (const [label, pattern] of [
@@ -174,10 +243,105 @@ check(
   "MobileHome and DesktopHome must remain independent",
 );
 check(
-  /\.nullWord\s*\{[\s\S]*?writing-mode:\s*vertical-rl;[\s\S]*?\}/.test(
+  /\.wordField\s*\{[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1fr\);[\s\S]*?\}/.test(
     mobileCss,
   ),
-  "Null must retain a vertical typographic composition",
+  "The seven words must occupy a single-column typographic field",
+);
+check(
+  /\.hubDataRow\s*\{[\s\S]*?display:\s*flex;[\s\S]*?white-space:\s*nowrap;[\s\S]*?\}/.test(
+    mobileCss,
+  ),
+  "Hub and data must share one unbroken typographic row",
+);
+check(
+  /--home-field-label-size:\s*calc\(clamp\([^)]+\)\s*-\s*2px\);/.test(
+    mobileCss,
+  ) &&
+    /\.directoryLabel,\s*\n\.overTime\s*\{[\s\S]*?font-size:\s*var\(--home-field-label-size\);[\s\S]*?\}/.test(
+      mobileCss,
+    ),
+  "WORDS YOU WANNA KNOW and OVER TIME must share the same 2px-reduced font size",
+);
+check(
+  /\.directoryLabel\s*\{[\s\S]*?letter-spacing:\s*0\.035em;[\s\S]*?\}/.test(
+    mobileCss,
+  ) &&
+    /\.directoryLabel\s*\{[\s\S]*?word-spacing:\s*-0\.12em;[\s\S]*?\}/.test(
+      mobileCss,
+    ),
+  "WORDS YOU WANNA KNOW must retain its tightened letter and word spacing",
+);
+check(
+  /\.wordField\s*\{[\s\S]*?row-gap:\s*clamp\(22px,\s*5\.6vw,\s*24px\);[\s\S]*?\}/.test(
+    mobileCss,
+  ),
+  "The six word rows must retain the requested 22–24px vertical rhythm",
+);
+check(
+  /\.wordField\s*\{[\s\S]*?padding:\s*clamp\(1\.1rem,\s*4vw,\s*1\.4rem\)\s+var\(--home-gutter\)\s+clamp\(1\.5rem,\s*6vw,\s*1\.75rem\);[\s\S]*?\}/.test(
+    mobileCss,
+  ) &&
+    /\.paletteDivider\s*\{[\s\S]*?margin:\s*0\s+var\(--home-gutter\)\s+clamp\(2rem,\s*8vw,\s*2\.25rem\);[\s\S]*?\}/.test(
+      mobileCss,
+    ),
+  "OVER TIME, the palette divider, and the overview must retain the balanced closing rhythm",
+);
+check(
+  /--home-word-size:\s*clamp\(/.test(mobileCss) &&
+    /\.wordLink,\s*\n\.intelligenceMark\s*\{[\s\S]*?font-size:\s*var\(--home-word-size\);[\s\S]*?\}/.test(
+      mobileCss,
+    ),
+  "All seven word marks must consume one shared mobile font-size variable",
+);
+for (const className of [
+  "forever",
+  "artificial",
+  "privacy",
+  "hub",
+  "data",
+  "depression",
+]) {
+  const blocks = Array.from(
+    mobileCss.matchAll(
+      new RegExp(`\\.${className}\\s*\\{([\\s\\S]*?)\\}`, "g"),
+    ),
+    (match) => match[1],
+  );
+  check(
+    blocks.every((block) => !/font-size\s*:/.test(block)),
+    `.${className} must not override the shared word font size`,
+  );
+}
+check(
+  /\.forever,\s*\n\.artificial,\s*\n\.privacy,\s*\n\.hub,\s*\n\.depression,\s*\n\.data\s*\{[\s\S]*?color:\s*inherit;[\s\S]*?\}/.test(
+    mobileCss,
+  ) &&
+    /\.intelligence\s*\{[\s\S]*?color:\s*#3a3d42;[\s\S]*?\}/.test(
+      mobileCss,
+    ),
+  "All words must use the normal ink color except dark-gray intelligence",
+);
+check(
+  /\.copyright summary::after\s*\{[\s\S]*?content:\s*"\+";[\s\S]*?\}/.test(
+    mobileCss,
+  ) &&
+    /\.copyright\[open\] summary::after\s*\{[\s\S]*?content:\s*"−";[\s\S]*?\}/.test(
+      mobileCss,
+    ),
+  "Copyrights summary must expose a right-side plus and open-state minus",
+);
+const copyrightBlock = mobileCss.match(
+  /\.copyright\s*\{([\s\S]*?)\}/,
+)?.[1];
+const footerBlock = mobileCss.match(/\.footer\s*\{([\s\S]*?)\}/)?.[1];
+check(
+  copyrightBlock != null &&
+    footerBlock != null &&
+    /border-block\s*:\s*1px solid/.test(copyrightBlock) &&
+    !/border-block-start\s*:/.test(footerBlock) &&
+    /padding-block\s*:\s*0\.9rem 10px;/.test(footerBlock),
+  "Copyrights must have equal top/bottom rules and the page must end with 10px padding",
 );
 check(
   !/aspect-ratio|min-height|\.continueRule|\.firstPanel|\.secondPanel|\.mobileFooter|\.aboutCta/.test(
@@ -228,18 +392,22 @@ const report = {
       "forever",
       "artificial",
       "privacy",
-      "null",
+      "hub",
+      "data",
       "depression",
       "intelligence",
       "COMING SOON",
-      "data",
       "OVER TIME",
+      "desktop palette divider",
       "project introduction",
-      "Copyright / rights",
+      "COPYRIGHTS",
+      "final footer",
     ],
     routedWordLinks: publishedHomeStudies.length,
     nullRouteCreated: false,
-    hubRendered: false,
+    nullRendered: false,
+    hubRendered: true,
+    renderedWordRows: 6,
     copyrightDefaultOpen: false,
     sourceFontFloorPx,
   },

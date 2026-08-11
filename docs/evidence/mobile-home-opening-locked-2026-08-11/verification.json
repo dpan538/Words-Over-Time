@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 3,
+  "task": "Mobile Home opening — final six-row typography and breathing rhythm",
+  "startingHead": "b50961f8cbad82c7bca88a9ab86791e91de07da8",
+  "governanceParent": "e6307055c6e56071ffd94a9097cea5a9cd4532d3",
+  "verifiedPatch": {
+    "sha256": "964b862975ea8aaf5a9920e7a4c6991d71247d61d084ee08504006d744507627",
+    "files": [
+      "src/components/home/mobile/MobileHome.tsx",
+      "src/components/home/mobile/mobile-home.module.css",
+      "scripts/audit_mobile_home_source.ts"
+    ]
+  },
+  "productionBuild": {
+    "buildId": "Kx-xrtImj4j1Y87SO8bNA",
+    "staticRoutes": 30,
+    "dynamicRoutes": 2,
+    "command": "npm run verify",
+    "result": "PASS",
+    "environment": "detached tracked-only worktree with the verified Mobile Home patch applied",
+    "generatedStaticPages": "30/30"
+  },
+  "requiredOrder": [
+    "header",
+    "WORDS YOU WANNA KNOW:",
+    "forever/",
+    "artificial/",
+    "privacy/",
+    "hub/data/",
+    "depression/",
+    "intelligence/",
+    "(COMING SOON)",
+    "OVER TIME",
+    "17-segment desktop palette divider",
+    "approved project overview",
+    "COPYRIGHTS +",
+    "Words Over Time: semantic change and word usage over time"
+  ],
+  "browser": {
+    "productionUrl": "http://127.0.0.1:3212/",
+    "hardLoad": "PASS",
+    "internalNavigation": {
+      "link": "hub/",
+      "destination": "/words/hub",
+      "title": "Hub Etymology: From Wheel Center to Network | Words Over Time",
+      "result": "PASS"
+    },
+    "publishedRouteStatuses": {
+      "/words/forever": 200,
+      "/words/artificial": 200,
+      "/words/privacy": 200,
+      "/words/hub": 200,
+      "/words/data": 200,
+      "/words/depression": 200
+    },
+    "warningErrorLogs": 0,
+    "hydrationMismatchLogs": 0,
+    "errorOverlay": false,
+    "mobileCanvasCount": 0,
+    "mobileThreeOrWebglScriptCount": 0
+  },
+  "mobile390": {
+    "requestedViewport": "390x844",
+    "documentSize": "390x1042",
+    "horizontalOverflowPx": 0,
+    "h1Count": 1,
+    "wordOrder": [
+      "forever",
+      "artificial",
+      "privacy",
+      "hub",
+      "data",
+      "depression",
+      "intelligence"
+    ],
+    "wordRows": 6,
+    "wordRowGapPx": 22,
+    "sharedWordFontSizePx": 65.13,
+    "uniqueWordFontSizeCount": 1,
+    "normalWordColor": "rgb(5, 5, 16)",
+    "intelligenceColor": "rgb(58, 61, 66)",
+    "hubAndDataTopPx": [359.19, 359.19],
+    "directoryAndOverTimeFontSizePx": 17.5,
+    "directoryLetterSpacingPx": 0.6125,
+    "directoryWordSpacingPx": -2.1,
+    "overTimeToPalettePx": 24,
+    "paletteToIntroductionPx": 32,
+    "clippedWordOrSlashBoxes": [],
+    "publishedLinks": 6,
+    "inertWords": ["intelligence"],
+    "nullRendered": false,
+    "copyrightLabel": "COPYRIGHTS",
+    "copyrightOpen": false,
+    "copyrightIndicator": "+",
+    "copyrightTopBorderPx": 1,
+    "copyrightBottomBorderPx": 1,
+    "footerTopBorderPx": 0,
+    "footerContentBottomGapPx": 10,
+    "footerIsLastElement": true,
+    "minimumVisibleFontPx": 13,
+    "mobileVisible": true,
+    "desktopVisible": false
+  },
+  "mobile430": {
+    "requestedViewport": "430x932",
+    "documentSize": "430x1108",
+    "horizontalOverflowPx": 0,
+    "h1Count": 1,
+    "wordOrder": [
+      "forever",
+      "artificial",
+      "privacy",
+      "hub",
+      "data",
+      "depression",
+      "intelligence"
+    ],
+    "wordRows": 6,
+    "wordRowGapPx": 24,
+    "sharedWordFontSizePx": 71.81,
+    "uniqueWordFontSizeCount": 1,
+    "normalWordColor": "rgb(5, 5, 16)",
+    "intelligenceColor": "rgb(58, 61, 66)",
+    "hubAndDataTopPx": [387.31, 387.31],
+    "directoryAndOverTimeFontSizePx": 19.5,
+    "directoryLetterSpacingPx": 0.6825,
+    "directoryWordSpacingPx": -2.34,
+    "overTimeToPalettePx": 25.79,
+    "paletteToIntroductionPx": 34.4,
+    "clippedWordOrSlashBoxes": [],
+    "publishedLinks": 6,
+    "inertWords": ["intelligence"],
+    "nullRendered": false,
+    "paletteSegmentCount": 17,
+    "paletteImmediatelyPrecedesOverview": true,
+    "overviewMatchesApprovedText": true,
+    "copyrightOpen": false,
+    "copyrightTopBorderPx": 1,
+    "copyrightBottomBorderPx": 1,
+    "footerContentBottomGapPx": 10,
+    "footerIsLastElement": true,
+    "minimumVisibleFontPx": 13,
+    "mobileVisible": true,
+    "desktopVisible": false
+  },
+  "javascriptDisabledProof": {
+    "source": "production server-rendered HTML response",
+    "httpStatus": 200,
+    "serverRenderedOrder": "PASS",
+    "allPrimaryContentPresent": true,
+    "publishedHrefsPresent": true,
+    "hubHrefPresent": true,
+    "dataHrefPresent": true,
+    "nullAbsent": true,
+    "intelligenceNotLinked": true,
+    "nativeDetailsPresent": true,
+    "detailsClosedByDefault": true,
+    "footerLastWithinMobileEdition": true
+  },
+  "publicForever": {
+    "httpStatus": 200,
+    "forbiddenAuditGateStopTerms": [],
+    "result": "PASS"
+  },
+  "desktopNonRegression": {
+    "viewport": "1440x900",
+    "horizontalOverflowPx": 0,
+    "mobileVisible": false,
+    "desktopVisible": true,
+    "desktopHomeSourceDiffFromGovernanceParent": [],
+    "desktopAboutSourceDiffFromGovernanceParent": [],
+    "desktopForeverSourceDiffFromGovernanceParent": [],
+    "baseline": "docs/evidence/mobile-home-forever-rebuild-2026-08/after/after-home-1440x900.jpg",
+    "baselineSha256": "da968b5c84e801d5d1569ce71c6fe32889f9e8afe6002709ffa6c308c4d8f3d7",
+    "freshScreenshotSha256": "f294e19542f4bad6f687424f7b36513dec5ad66c86b4c5023ffb6aab3b3c5a57",
+    "decodedSsimVsBaseline": 1,
+    "structureUnchanged": true
+  },
+  "screenshots": [
+    {
+      "path": "screenshots/home-mobile-390-full.jpg",
+      "dimensions": "390x1042",
+      "sha256": "4b45dd7872a256de2ff40b70c8e51dc0cdc6a4bb4389e3ea501efbd0e61221d7"
+    },
+    {
+      "path": "screenshots/home-mobile-390-top-390x844.jpg",
+      "dimensions": "390x844",
+      "sha256": "0577c56a14376a0e66d3ec5c7c0910d2a62dc7321422525b8f8a122415c634ef"
+    },
+    {
+      "path": "screenshots/home-mobile-390-divider-overview.jpg",
+      "dimensions": "390x360",
+      "sha256": "4cbb32193c700972d191d1d4eab3fe0fb1bad627cafe040a9eeb3cd19d10be3d"
+    },
+    {
+      "path": "screenshots/home-mobile-430-full.jpg",
+      "dimensions": "430x1108",
+      "sha256": "3ec163c2986d1e619bf2da47f80660008641f24176bffb4afd087ec00e759624"
+    },
+    {
+      "path": "screenshots/home-mobile-430-top-430x932.jpg",
+      "dimensions": "430x932",
+      "sha256": "ac395cd5082ae26515e91b9a51a46f2c7e8f5de9f7a409462388d0c876740f28"
+    },
+    {
+      "path": "screenshots/home-mobile-430-divider-overview.jpg",
+      "dimensions": "430x390",
+      "sha256": "930977f26cc690db783d962974a2e0a90d023a446ff9844ecb446e8bf0637efa"
+    },
+    {
+      "path": "screenshots/home-mobile-430-copyright-footer.jpg",
+      "dimensions": "430x200",
+      "sha256": "30f1440c737f07b69410670085439b50c4f0c82589f0311cf2bff7eb72ab21bb"
+    },
+    {
+      "path": "screenshots/desktop-home-1440x900.jpg",
+      "dimensions": "1440x900",
+      "sha256": "f294e19542f4bad6f687424f7b36513dec5ad66c86b4c5023ffb6aab3b3c5a57"
+    }
+  ],
+  "MOBILE_GOVERNANCE_INSTALLED": true,
+  "MOBILE_HOME_OPENING_REBUILT": true,
+  "DESIGN_ACCEPTED": false,
+  "READY_FOR_USER_VISUAL_REVIEW": true
+}

@@ -14,9 +14,30 @@ type PublishedWordMarkProps = {
 const foreverStudy = publishedStudyById("study-forever");
 const artificialStudy = publishedStudyById("study-artificial");
 const privacyStudy = publishedStudyById("study-privacy");
+const hubStudy = publishedStudyById("study-hub");
 const depressionStudy = publishedStudyById("study-depression");
 const intelligenceStudy = plannedStudyById("study-intelligence");
 const dataStudy = publishedStudyById("study-data");
+
+const paletteSegments = [
+  "bg-ink",
+  "bg-anthracite",
+  "bg-ulm",
+  "bg-wheat",
+  "bg-blaze",
+  "bg-signal",
+  "bg-fire",
+  "bg-wine",
+  "bg-sun",
+  "bg-nice",
+  "bg-cobalt",
+  "bg-sail",
+  "bg-hub-amethyst",
+  "bg-hub-space",
+  "bg-hub-teal",
+  "bg-hub-ruby",
+  "bg-hub-blue",
+] as const;
 
 function PublishedWordMark({ className, study }: PublishedWordMarkProps) {
   return (
@@ -37,17 +58,20 @@ export function MobileHome() {
   return (
     <div className={styles.root} data-home-edition="mobile">
       <header className={`${styles.header} mobile-home-header`}>
-        <Link href="/" className={styles.navLink}>
-          Words Over Time
-        </Link>
-        <Link href="/about" className={styles.navLink}>
-          About
-        </Link>
+        <nav className={styles.nav} aria-label="Primary navigation">
+          <Link href="/" className={styles.navLink}>
+            Words Over Time
+          </Link>
+          <Link href="/about" className={styles.navLink}>
+            About
+          </Link>
+        </nav>
       </header>
 
       <section
         className={`${styles.wordField} mobile-word-field`}
         aria-labelledby="m-home-directory-title"
+        data-home-word-field
       >
         <p className={styles.directoryLabel} id="m-home-directory-title">
           Words you wanna know:
@@ -60,13 +84,14 @@ export function MobileHome() {
         />
         <PublishedWordMark study={privacyStudy} className={styles.privacy} />
 
-        <span
-          id="m-home-word-null"
-          data-home-word="null"
-          className={`${styles.wordMark} ${styles.nullWord}`}
+        <div
+          className={styles.hubDataRow}
+          data-home-word-row="hub-data"
+          aria-label="Hub and data studies"
         >
-          null<span aria-hidden="true">/</span>
-        </span>
+          <PublishedWordMark study={hubStudy} className={styles.hub} />
+          <PublishedWordMark study={dataStudy} className={styles.data} />
+        </div>
 
         <PublishedWordMark
           study={depressionStudy}
@@ -86,14 +111,28 @@ export function MobileHome() {
           <span className={styles.comingSoonStatus}>(Coming soon)</span>
         </div>
 
-        <PublishedWordMark study={dataStudy} className={styles.data} />
-
         <p className={styles.overTime}>Over Time</p>
       </section>
+
+      <div
+        className={styles.paletteDivider}
+        data-home-palette-divider
+        aria-hidden="true"
+      >
+        {paletteSegments.map((segment, index) => (
+          <span
+            className={`${styles.paletteSegment} ${segment} ${
+              segment === "bg-wheat" ? styles.palettePaper : ""
+            }`}
+            key={`${segment}-${index}`}
+          />
+        ))}
+      </div>
 
       <section
         className={`${styles.projectIntroduction} mobile-project-introduction`}
         aria-label="Project introduction"
+        data-home-project-introduction
       >
         <p>
           Words Over Time is a semantic-frequency research project, design
@@ -103,8 +142,11 @@ export function MobileHome() {
         </p>
       </section>
 
-      <details className={`${styles.copyright} mobile-copyright`}>
-        <summary>Copyright / rights</summary>
+      <details
+        className={`${styles.copyright} mobile-copyright`}
+        data-home-copyright
+      >
+        <summary>COPYRIGHTS</summary>
         <div className={styles.copyrightBody}>
           <p>
             Research / data / writing / design by Dai Pan / 潘岱, a Chinese
@@ -129,6 +171,10 @@ export function MobileHome() {
           </p>
         </div>
       </details>
+
+      <footer className={styles.footer} data-home-footer>
+        <p>Words Over Time: semantic change and word usage over time</p>
+      </footer>
     </div>
   );
 }
