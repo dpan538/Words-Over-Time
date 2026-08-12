@@ -34991,7 +34991,7 @@
   },
   "manifestSummary": {
     "registeredInputCount": 52,
-    "inputSetSha256": "19dc58527fcb1fe98c1bda4c909ab1f1a22b8cefcc34bfed51dbf7593e609a30",
+    "inputSetSha256": "34806e3eeb944ddc238aee0f7bd4f5270a0d9467e8417de44327f1468bb16f7a",
     "termFormRegistryFiles": 2,
     "generatedCaptureFiles": 4,
     "derivedArtifactFiles": 10,
@@ -35222,7 +35222,7 @@
     "schemaVersion": "2.0.0",
     "auditId": "forever-raw-audit-2026-08-11",
     "dataGate": "STOP_RAW_DATA_MISSING",
-    "inputSetSha256": "19dc58527fcb1fe98c1bda4c909ab1f1a22b8cefcc34bfed51dbf7593e609a30",
+    "inputSetSha256": "34806e3eeb944ddc238aee0f7bd4f5270a0d9467e8417de44327f1468bb16f7a",
     "expectedInputCount": 52,
     "entries": [
       {
@@ -35960,8 +35960,8 @@
         "path": "scripts/build_forever_mobile_analysis.ts",
         "role": "transform-script",
         "authorityLevel": "source-code-audit-only",
-        "sha256": "e7a6beba6e5152c6074231bd8766242b82737fdd39a092cf340932e8009381d2",
-        "byteLength": 32330,
+        "sha256": "31d97c1ba910d7b494685f69cb7bd9049aa067b6ff1d17108fef0ad57f79c466",
+        "byteLength": 33052,
         "productionAuthority": false,
         "fields": [
           "TypeScript source text",
@@ -35969,7 +35969,7 @@
         ],
         "granularity": "source file",
         "recordCounts": {
-          "sourceLines": 640,
+          "sourceLines": 648,
           "generatedAtCalls": 0,
           "exportedConstants": 0
         },
@@ -36903,8 +36903,8 @@
         "path": "src/data/generated/forever_mobile_analysis.json",
         "role": "render-consumer",
         "authorityLevel": "source-code-audit-only",
-        "sha256": "3dffbd56dbf30b9e5509ba3cef87737d7180f2b0cba39754ed564b2101a6c5a4",
-        "byteLength": 97635,
+        "sha256": "72123ff9b6058ea0e558e4b178e3de8bb10638daa4599daba667bff7480094d1",
+        "byteLength": 100328,
         "productionAuthority": false,
         "fields": [
           "TypeScript source text",
@@ -36912,7 +36912,7 @@
         ],
         "granularity": "source file",
         "recordCounts": {
-          "sourceLines": 3267,
+          "sourceLines": 3330,
           "generatedAtCalls": 0,
           "exportedConstants": 0
         },
