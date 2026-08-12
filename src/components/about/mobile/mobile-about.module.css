@@ -39,6 +39,8 @@
 .summary:focus-visible,
 .subsummary:focus-visible,
 .textLink:focus-visible,
+.contactLink:focus-visible,
+.repoLink:focus-visible,
 .homeLink:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
@@ -46,8 +48,8 @@
 
 .header {
   display: grid;
-  gap: 1.15rem;
-  padding-block: clamp(2.7rem, 12vw, 4rem) clamp(2.3rem, 9vw, 3.2rem);
+  gap: clamp(1.4rem, 5.8vw, 1.9rem);
+  padding-block: clamp(3.3rem, 14vw, 4.8rem) clamp(3rem, 11vw, 4rem);
 }
 
 .eyebrow,
@@ -77,11 +79,15 @@
 }
 
 .navigationStatement {
-  max-inline-size: 34rem;
+  max-inline-size: 35rem;
   margin: 0;
   font-size: clamp(0.94rem, 4vw, 1.05rem);
-  font-weight: 600;
-  line-height: 1.5;
+  font-weight: 520;
+  line-height: 1.6;
+}
+
+.displayTitle + .navigationStatement {
+  margin-block-start: clamp(0.55rem, 2.8vw, 0.85rem);
 }
 
 .groups {
@@ -297,6 +303,23 @@
 
 .ledgerEntry:first-child { border-top: 0; }
 
+.sourceLedger,
+.rightsLedger {
+  margin-block-start: 1.4rem;
+  border-block: 1px solid color-mix(in srgb, var(--wot-ink) 24%, transparent);
+}
+
+.sourceLedger .ledgerEntry:first-child,
+.rightsLedger .ledgerEntry:first-child {
+  border-top: 0;
+}
+
+.legalNote {
+  margin-block-start: 1.35rem !important;
+  padding-inline-start: 0.8rem;
+  border-inline-start: 2px solid var(--wot-fire);
+}
+
 .ledgerEntry h4,
 .claimGrid h4 {
   margin: 0;
@@ -345,20 +368,103 @@
   overflow-wrap: anywhere;
 }
 
-.footer {
+.contactList {
+  margin: 0;
+  border-block: 1px solid color-mix(in srgb, var(--wot-ink) 28%, transparent);
+  font-style: normal;
+}
+
+.contactLink {
   display: grid;
-  gap: 1.25rem;
-  padding-block-start: 2rem;
+  grid-template-columns: 4.6rem minmax(0, 1fr);
+  min-block-size: 54px;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--wot-ink) 18%, transparent);
+  color: inherit;
+  font-size: 0.875rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.contactLink:last-child {
+  border-bottom: 0;
+}
+
+.contactLink span:first-child {
+  color: var(--wot-fire);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.contactLink span:last-child {
+  overflow-wrap: anywhere;
+}
+
+.contactLink:hover {
+  color: var(--wot-fire);
+}
+
+.repoLink {
+  position: relative;
+  display: grid;
+  gap: 0.35rem;
+  margin-block-start: 1.1rem;
+  padding: 1rem 3rem 1rem 1rem;
+  border-block: 1px solid var(--wot-ink);
+  border-inline-start: 0.45rem solid var(--wot-fire);
+  color: inherit;
+  text-decoration: none;
+}
+
+.repoKicker,
+.repoMeta {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem;
+  font-weight: 750;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.repoKicker {
+  color: var(--wot-fire);
+}
+
+.repoName {
+  font-size: clamp(1.2rem, 5vw, 1.45rem);
+  font-weight: 850;
+  letter-spacing: -0.025em;
+}
+
+.repoMeta {
+  color: color-mix(in srgb, var(--wot-ink) 58%, transparent);
+  line-height: 1.45;
+}
+
+.repoArrow {
+  position: absolute;
+  inset-block-start: 0.95rem;
+  inset-inline-end: 1rem;
+  color: var(--wot-fire);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 1.2rem;
+  font-weight: 850;
+}
+
+.repoLink:hover {
+  background: color-mix(in srgb, var(--wot-fire) 7%, transparent);
+}
+
+.footer {
+  padding-block: 2.3rem 0.6rem;
 }
 
 .homeLink {
   justify-content: space-between;
   font-size: 0.9rem;
-}
-
-.terminalRule {
-  block-size: 0.7rem;
-  background: var(--wot-ink);
 }
 
 @media (max-width: 300px) {

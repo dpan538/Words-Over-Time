@@ -191,7 +191,7 @@ export function MobileAbout() {
       <header className={styles.header}>
         <p className={styles.eyebrow}>About / design + research</p>
         <p className={styles.displayTitle} aria-hidden="true">About the project</p>
-        <p className={styles.navigationStatement}>This page explains how Words Over Time is designed, researched, sourced, reviewed, and bounded.</p>
+        <p className={styles.navigationStatement}>This page explains how Words Over Time is designed, researched, sourced, reviewed, and bounded as an independent personal research and art project, developed through sustained inquiry across language, archives, data, writing, and visual form rather than commissioned, institutional, or commercial research.</p>
       </header>
 
       <div className={styles.groups}>
@@ -253,14 +253,6 @@ export function MobileAbout() {
               <p>Text, labels, shapes, and line styles repeat colour meaning. Focus remains visible; controls meet a 44px target; mobile type is at least 13px; native disclosures work without JavaScript. Motion is supplementary and disabled when reduced motion is requested.</p>
             </section>
 
-            <section className={styles.section} id="m-about-credit">
-              <SectionHeading>Creator</SectionHeading>
-              <p>Research / data / writing / design by Dai Pan / 潘岱, a Chinese artist, designer, and design researcher working across visual art, photography, printmaking, writing, image-text worlds, and poetic research.</p>
-              <div className={styles.linkRow}>
-                <a className={styles.textLink} href="https://daipan.art/" target="_blank" rel="noreferrer">Visual practice ↗</a>
-                <a className={styles.textLink} href="https://www.daipan.ink/" target="_blank" rel="noreferrer">Writing practice ↗</a>
-              </div>
-            </section>
           </div>
         </details>
 
@@ -310,21 +302,6 @@ export function MobileAbout() {
               <p>Modern records distinguish a text date, page publication date, and capture date. Gutenberg and Wikinews remain separate source facets. A single capture is an inventory and cannot establish persistence, survival, or prevalence.</p>
             </section>
 
-            <details className={styles.subgroup} id="m-about-source-provenance">
-              <summary className={styles.subsummary}>Source provenance</summary>
-              <div className={styles.subgroupBody}>
-                {sourceLedger.map((source) => (
-                  <article key={source.source} className={styles.ledgerEntry}>
-                    <h4>{source.source}</h4>
-                    <p><strong>Role:</strong> {source.role}</p>
-                    <p><strong>Coverage:</strong> {source.coverage}</p>
-                    <p><strong>Access:</strong> {source.access}</p>
-                    <p><strong>Rights:</strong> {source.rights}</p>
-                  </article>
-                ))}
-              </div>
-            </details>
-
             <section className={styles.section} id="m-about-calculation-register">
               <SectionHeading>Count, unit, transform, and normalisation</SectionHeading>
               <dl className={styles.definitionList}>
@@ -351,8 +328,41 @@ export function MobileAbout() {
               </div>
             </section>
 
+            <details className={styles.subgroup} id="m-about-review-version">
+              <summary className={styles.subsummary}>Review and version record</summary>
+              <div className={styles.subgroupBody}>
+                <p><strong>Published:</strong> 7 May 2026. <strong>Current route record:</strong> 28 July 2026.</p>
+                <p>Review checks overclaiming, hierarchy, accessibility, source status, transforms, rights, and publication readiness. Pending, restricted, unavailable, and cautionary records remain labelled rather than being promoted into evidence.</p>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <details className={styles.group} id="m-about-source">
+          <summary className={styles.summary}>
+            <span>Source</span>
+            <span className={styles.summaryMark} aria-hidden="true">+</span>
+          </summary>
+          <div className={styles.groupBody}>
+            <section className={styles.section} id="m-about-source-ledger">
+              <SectionHeading>Evidence stays attached to its origin.</SectionHeading>
+              <p>Words Over Time combines corpus series, archival passages, lexical references, public records, and contemporary context. These sources do different jobs and are never treated as one interchangeable dataset.</p>
+              <p>Every public claim should retain its source identity, coverage, access path, date precision, transformation history, and rights boundary. Missing, restricted, unavailable, and incomparable records remain visible as limits rather than being converted into evidence.</p>
+              <div className={styles.sourceLedger}>
+                {sourceLedger.map((source) => (
+                  <article key={source.source} className={styles.ledgerEntry}>
+                    <h4>{source.source}</h4>
+                    <p><strong>Role:</strong> {source.role}</p>
+                    <p><strong>Coverage:</strong> {source.coverage}</p>
+                    <p><strong>Access:</strong> {source.access}</p>
+                    <p><strong>Rights:</strong> {source.rights}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+
             <details className={styles.subgroup} id="m-about-citations">
-              <summary className={styles.subsummary}>Citations</summary>
+              <summary className={styles.subsummary}>Citation</summary>
               <div className={styles.subgroupBody}>
                 <p>Cite this archive and upstream sources separately. A chart is an editorial synthesis of retrieval, cleaning, transformation, grouping, and visual design; it does not replace citations to Google Books Ngram, Project Gutenberg, Library of Congress, Wikimedia, dictionaries, policy pages, or clinical and technical references.</p>
                 <p className={styles.citation}>Pan, Dai. “[Word page title].” Words Over Time, 2026, [page URL]. DOI: 10.5281/zenodo.20437678. Accessed [day month year].</p>
@@ -360,35 +370,79 @@ export function MobileAbout() {
                 <a className={styles.textLink} href="https://doi.org/10.5281/zenodo.20437678" target="_blank" rel="noreferrer">Project DOI ↗</a>
               </div>
             </details>
+          </div>
+        </details>
 
-            <details className={styles.subgroup} id="m-about-rights-reuse">
-              <summary className={styles.subsummary}>Rights and reuse</summary>
-              <div className={styles.subgroupBody}>
+        <details className={styles.group} id="m-about-license">
+          <summary className={styles.summary}>
+            <span>License</span>
+            <span className={styles.summaryMark} aria-hidden="true">+</span>
+          </summary>
+          <div className={styles.groupBody}>
+            <section className={styles.section} id="m-about-license-boundaries">
+              <SectionHeading>Software openness does not erase authorship or upstream rights.</SectionHeading>
+              <p>The public repository makes the application and research process inspectable. Its MIT licence applies to software implementation only; it does not automatically license the project’s research writing, visual identity, curated datasets, classifications, or third-party source material.</p>
+              <p>Original work may be cited and studied non-commercially with attribution. Commercial copying, republication, dataset extraction, or reproduction of the finished visual identity requires written permission. Every upstream source retains its own applicable terms.</p>
+              <a className={styles.textLink} href="https://opensource.org/license/mit" target="_blank" rel="noreferrer">Read the MIT licence ↗</a>
+              <div className={styles.rightsLedger}>
                 {rightsLedger.map(([category, boundary]) => (
                   <article key={category} className={styles.ledgerEntry}>
                     <h4>{category}</h4>
                     <p>{boundary}</p>
                   </article>
                 ))}
-                <p>This page is a research and design archive, not legal advice. Public pages keep source URLs visible and avoid full third-party reproduction.</p>
               </div>
-            </details>
+              <p className={styles.legalNote}>This page is a research and design archive, not legal advice. Public pages keep source URLs visible and avoid full third-party reproduction.</p>
+            </section>
+          </div>
+        </details>
 
-            <details className={styles.subgroup} id="m-about-review-version">
-              <summary className={styles.subsummary}>Review and version record</summary>
-              <div className={styles.subgroupBody}>
-                <p><strong>Published:</strong> 7 May 2026. <strong>Current route record:</strong> 28 July 2026.</p>
-                <p>Review checks overclaiming, hierarchy, accessibility, source status, transforms, rights, and publication readiness. Pending, restricted, unavailable, and cautionary records remain labelled rather than being promoted into evidence.</p>
-                <a className={styles.textLink} href="https://github.com/dpan538/Words-Over-Time" target="_blank" rel="noreferrer">Public code and data repository ↗</a>
+        <details className={styles.group} id="m-about-contact">
+          <summary className={styles.summary}>
+            <span>Contact</span>
+            <span className={styles.summaryMark} aria-hidden="true">+</span>
+          </summary>
+          <div className={styles.groupBody}>
+            <section className={styles.section} id="m-about-contact-creator">
+              <SectionHeading>Creator</SectionHeading>
+              <p>Research / data / writing / design by Dai Pan / 潘岱, a Chinese artist, designer, and design researcher working across visual art, photography, printmaking, writing, image-text worlds, and poetic research.</p>
+              <p>Questions, corrections, source suggestions, and thoughtful responses to the project are welcome. Contact provides a direct channel for readers who are interested in the archive or want to point out evidence that should be reviewed.</p>
+              <div className={styles.linkRow}>
+                <a className={styles.textLink} href="https://daipan.art/" target="_blank" rel="noreferrer">Visual practice ↗</a>
+                <a className={styles.textLink} href="https://www.daipan.ink/" target="_blank" rel="noreferrer">Writing practice ↗</a>
               </div>
-            </details>
+            </section>
+
+            <section className={styles.section} id="m-about-contact-direct">
+              <SectionHeading>Direct contact</SectionHeading>
+              <address className={styles.contactList}>
+                <a className={styles.contactLink} href="mailto:dpan53853@gmail.com">
+                  <span>Email</span>
+                  <span>dpan53853@gmail.com</span>
+                </a>
+                <a className={styles.contactLink} href="tel:+8615262753021">
+                  <span>Phone</span>
+                  <span>+86 15262753021</span>
+                </a>
+              </address>
+            </section>
+
+            <section className={styles.section} id="m-about-contact-repository">
+              <SectionHeading>Project repository</SectionHeading>
+              <p>The public repository contains the application code, research scripts, generated records, and visualization components available for inspection.</p>
+              <a className={styles.repoLink} href="https://github.com/dpan538/Words-Over-Time" target="_blank" rel="noreferrer">
+                <span className={styles.repoKicker}>GitHub / dpan538</span>
+                <span className={styles.repoName}>Words-Over-Time</span>
+                <span className={styles.repoMeta}>Public repository / code / data pipeline</span>
+                <span className={styles.repoArrow} aria-hidden="true">↗</span>
+              </a>
+            </section>
           </div>
         </details>
       </div>
 
       <footer className={styles.footer}>
         <Link href="/" className={styles.homeLink}>Back to the word field <span aria-hidden="true">→</span></Link>
-        <div className={styles.terminalRule} aria-hidden="true" />
       </footer>
     </div>
   );

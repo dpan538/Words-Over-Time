@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 import type { ForeverMobileAnalysis } from "@/types/foreverMobileAnalysis";
 import styles from "./mobile-forever.module.css";
 
@@ -7,6 +11,7 @@ type MobileForeverCompositionFlipFieldProps = {
 };
 
 export function MobileForeverCompositionFlipField({ milestones, transition }: MobileForeverCompositionFlipFieldProps) {
+  const [openTileId, setOpenTileId] = useState<string | null>(null);
   const low = milestones.low1980s;
   const now = milestones.return2010s;
   const tiles = [
@@ -46,15 +51,11 @@ export function MobileForeverCompositionFlipField({ milestones, transition }: Mo
       unit: "%",
       back: `${now.joinedRatePerMillionWords.toFixed(2)} per million; rate rises ${transition.joinedRateFactor.toFixed(2)}× from the 1980s.`,
     },
-    {
-      id: "share-band",
-      className: styles.tileLowerLeft,
-      tone: styles.tileBand,
-      scope: "1990s–2010s / band",
-      value: transition.shareBand1990sTo2010s.widthPercentagePoints,
-      unit: " pp",
-      back: `Joined share stays inside ${transition.shareBand1990sTo2010s.minimum.toFixed(2)}–${transition.shareBand1990sTo2010s.maximum.toFixed(2)}% while the pair rate rises ${transition.shareBand1990sTo2010s.combinedRateFactor.toFixed(2)}×.`,
-    },
+  ];
+
+  const pairGroups = [
+    { id: "1980s", label: "1980s pair / total 100%", tiles: tiles.slice(0, 2) },
+    { id: "2010s", label: "2010s pair / total 100%", tiles: tiles.slice(2, 4) },
   ];
 
   return (
@@ -70,23 +71,33 @@ export function MobileForeverCompositionFlipField({ milestones, transition }: Mo
         <p>Both forms return after the spelling balance has already settled near four-fifths joined.</p>
       </header>
       <div className={styles.compositionMosaic} aria-label="1980s and 2010s exact-form spelling composition">
-        {tiles.map((tile) => (
-          <details className={`${styles.compositionTile} ${tile.className} ${tile.tone}`} name="forever-composition" key={tile.id}>
-            <summary>
-              <span className={styles.tileFront}>
-                <span className={styles.tileLabel}>{tile.scope}</span>
-                <strong>{tile.value.toFixed(2)}{tile.unit}</strong>
-                <span className={styles.tileAction}>FLIP +</span>
-              </span>
-              <span className={styles.tileBack}>
-                <span className={styles.tileLabel}>{tile.scope}</span>
-                <span className={styles.tileBackCopy}>{tile.back}</span>
-                <span className={styles.tileAction}>FRONT ×</span>
-              </span>
-            </summary>
-          </details>
+        {pairGroups.map((group) => (
+          <section className={styles.compositionPair} aria-labelledby={`m-forever-${group.id}-pair`} key={group.id}>
+            <h3 id={`m-forever-${group.id}-pair`}>{group.label}</h3>
+            <div className={styles.compositionPairStack}>
+              {group.tiles.map((tile) => (
+                <button className={`${styles.compositionTile} ${tile.className} ${tile.tone}`} data-open={openTileId === tile.id} type="button" aria-pressed={openTileId === tile.id} aria-label={`Flip ${tile.scope} card`} onClick={() => setOpenTileId((current) => current === tile.id ? null : tile.id)} key={tile.id}>
+                  <span className={styles.compositionTileInner}>
+                    <span className={styles.tileFront}>
+                      <span className={styles.tileLabel}>{tile.scope}</span>
+                      <strong>{tile.value.toFixed(2)}{tile.unit}</strong>
+                      <span className={styles.tileAction}>TAP TO FLIP</span>
+                    </span>
+                    <span className={styles.tileBack}>
+                      <span className={styles.tileLabel}>{tile.scope}</span>
+                      <span className={styles.tileBackCopy}>{tile.back}</span>
+                    </span>
+                  </span>
+                </button>
+              ))}
+            </div>
+          </section>
         ))}
       </div>
+      <p className={styles.shareBandStatement}>
+        <strong>{transition.shareBand1990sTo2010s.widthPercentagePoints.toFixed(2)} pp</strong>
+        <span>1990s–2010s joined-share band width / {transition.shareBand1990sTo2010s.minimum.toFixed(2)}–{transition.shareBand1990sTo2010s.maximum.toFixed(2)}%</span>
+      </p>
       <p className={styles.localCaveat}>Share is calculated only within the two exact forms; it is not language-wide spelling adoption.</p>
     </section>
   );

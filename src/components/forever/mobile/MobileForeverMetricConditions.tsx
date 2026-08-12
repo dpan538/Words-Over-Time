@@ -1,106 +1,80 @@
 "use client";
 
-import { useState } from "react";
-import type { ForeverMobileAnalysis, ForeverMobileMetricCondition, ForeverMobileMetricId } from "@/types/foreverMobileAnalysis";
+import { useState, type CSSProperties } from "react";
+import type { ForeverMobileAnalysis, ForeverMobileMetricId } from "@/types/foreverMobileAnalysis";
 import styles from "./mobile-forever.module.css";
 
 type MobileForeverMetricConditionsProps = {
   conditions: ForeverMobileAnalysis["metricConditions"];
 };
 
-function pointsFor(condition: ForeverMobileMetricCondition, width: number, height: number) {
-  const step = width / condition.decades.length;
-  return condition.decades
-    .map((row, index) => `${step * index + step / 2},${height - row.joinedPercent / 100 * height}`)
-    .join(" ");
-}
-
-function displayValue(metric: ForeverMobileMetricId, value: number) {
-  if (metric === "reach") return value.toFixed(0);
-  return value.toFixed(2);
-}
-
 export function MobileForeverMetricConditions({ conditions }: MobileForeverMetricConditionsProps) {
   const [selectedId, setSelectedId] = useState<ForeverMobileMetricId>("rate");
+  const [isFlipped, setIsFlipped] = useState(false);
   const selected = conditions.find((condition) => condition.id === selectedId) ?? conditions[0];
   const latest = selected.decades[selected.decades.length - 1];
 
   return (
-    <section
-      className={styles.metricSection}
-      data-figure-id="F04"
-      data-surface-category="visualization"
-      aria-labelledby="m-forever-f04-title"
-    >
+    <section className={styles.metricSection} data-figure-id="F04" data-surface-category="visualization" aria-labelledby="m-forever-f04-title">
       <header className={styles.metricHeader}>
         <p className={styles.figureIndex}>04 / CONDITIONS</p>
         <h2 id="m-forever-f04-title">Breadth or repetition?</h2>
-        <p>Compare three valid conditions without placing unlike units on one scale.</p>
+        <p>Switch between three valid conditions. The paired decade marks redraw on each condition’s own scale.</p>
       </header>
 
-      <div className={styles.metricShell}>
-        <div className={styles.metricControls}>
-          <div className={styles.metricControlHeader}>
-            <span>CONDITION COMPARISON</span>
-            <strong>{selected.ratio2010s.toFixed(3)}×</strong>
-          </div>
-          <div className={styles.metricButtons} role="group" aria-label="Select a Forever comparison condition">
-            {conditions.map((condition) => (
-              <button
-                type="button"
-                aria-pressed={condition.id === selectedId}
-                key={condition.id}
-                onClick={() => setSelectedId(condition.id)}
-              >
-                <svg viewBox="0 0 72 18" role="img" aria-label={`${condition.label} decade sparkline`}>
-                  <polyline points={pointsFor(condition, 72, 18)} />
-                </svg>
-                <span>{condition.label}</span>
-              </button>
-            ))}
-          </div>
-          <div className={styles.metricIntensity}>
-            <span style={{ "--metric-ratio": `${Math.min(selected.ratio2010s / 5 * 100, 100)}%` } as React.CSSProperties} />
-          </div>
-          <p>{selected.unit}</p>
-        </div>
+      <div className={styles.conditionMatrix} data-flipped={isFlipped}>
+        <div className={styles.conditionMatrixInner}>
+          <div className={styles.conditionMatrixFront} inert={isFlipped} aria-hidden={isFlipped}>
+            <button className={styles.conditionFlipSurface} type="button" aria-label={`Explain ${selected.ratio2010s.toFixed(3)} times ${selected.label} ratio`} onClick={() => setIsFlipped(true)}>
+              <span>TAP TO FLIP</span>
+            </button>
+            <header className={styles.conditionMatrixHeader}>
+              <span>CONDITION COMPARISON</span>
+              <strong>{selected.ratio2010s.toFixed(3)}×</strong>
+            </header>
+            <div className={styles.conditionButtons} role="group" aria-label="Select a comparison condition">
+              {conditions.map((condition) => (
+                <button type="button" aria-pressed={condition.id === selectedId} onClick={() => setSelectedId(condition.id)} key={condition.id}>
+                  {condition.label}
+                </button>
+              ))}
+            </div>
 
-        <div className={styles.metricChartPanel}>
-          <p className={styles.metricPanelLabel}>1920s→2010s / exact forms</p>
-          <p className={styles.metricPanelReading}>{selected.interpretation}</p>
-          <div className={styles.metricChart}>
-            <svg className={styles.metricGuide} viewBox="0 0 1000 100" preserveAspectRatio="none" role="img">
-              <title>{`${selected.label} joined-form endpoint guide`}</title>
-              <desc>Ten decade endpoints for forever under the selected condition.</desc>
-              <polyline points={pointsFor(selected, 1000, 100)} />
-            </svg>
-            {selected.decades.map((row) => (
-              <div
-                className={styles.metricStemSlot}
-                key={row.id}
-                aria-label={`${row.label}: forever ${displayValue(selected.id, row.joinedValue)}; for ever ${displayValue(selected.id, row.spacedValue)}; ${selected.unit}`}
-              >
-                <span
-                  className={styles.metricStem}
-                  style={{
-                    "--joined-height": `${row.joinedPercent}%`,
-                    "--spaced-height": `${row.spacedPercent}%`,
-                    "--extension-height": `${row.extensionPercent}%`,
-                  } as React.CSSProperties}
-                >
-                  <i className={styles.metricSpacedStem} />
-                  <i className={styles.metricJoinedExtension} />
-                  <i className={styles.metricEndpoint} />
-                </span>
-                <small>{row.label.slice(2, 4)}</small>
+            <article className={styles.conditionRow}>
+              <div className={styles.conditionReadingStack} aria-live="polite">
+                {conditions.map((condition) => <p data-active={condition.id === selectedId} key={condition.id}>{condition.interpretation}</p>)}
               </div>
-            ))}
+              <div className={styles.conditionMarks} role="img" aria-label={`${selected.label}: paired forever and for ever decade marks from the 1920s to the 2010s`}>
+                {selected.decades.map((decade) => (
+                  <span className={styles.conditionDecade} key={`${selectedId}-${decade.id}`}>
+                    <span className={styles.conditionBars}>
+                      <i style={{ "--mark-height": `${Math.max(8, decade.joinedPercent)}%` } as CSSProperties} />
+                      <i style={{ "--mark-height": `${Math.max(8, decade.spacedPercent)}%` } as CSSProperties} />
+                    </span>
+                    <small>{decade.label.slice(2, 4)}</small>
+                  </span>
+                ))}
+              </div>
+              <div className={styles.conditionKey}><span><i /> forever</span><span><i /> for ever</span></div>
+              <dl className={styles.conditionLatest}>
+                <div><dt>forever / 2010s</dt><dd>{latest.joinedDisplayValue}</dd></div>
+                <div><dt>for ever / 2010s</dt><dd>{latest.spacedDisplayValue}</dd></div>
+              </dl>
+              <p className={styles.conditionVisibleUnit}>{selected.displayUnit}</p>
+            </article>
           </div>
-          <dl className={styles.metricLatestValues}>
-            <div><dt>for ever / 2010s</dt><dd>{displayValue(selected.id, latest.spacedValue)}</dd></div>
-            <div><dt>forever / 2010s</dt><dd>{displayValue(selected.id, latest.joinedValue)}</dd></div>
-          </dl>
-          <p className={styles.metricLive} aria-live="polite">{selected.label}: {selected.headline}. Unit: {selected.unit}.</p>
+          <div className={styles.conditionMatrixBack} inert={!isFlipped} aria-hidden={!isFlipped}>
+            <button className={styles.conditionFlipSurface} type="button" aria-label="Return to condition chart" onClick={() => setIsFlipped(false)}>
+              <span className={styles.visuallyHidden}>Return to chart</span>
+            </button>
+            <p className={styles.figureIndex}>{selected.label} / RATIO</p>
+            <strong>{selected.ratio2010s.toFixed(3)}×</strong>
+            <h3>What this comparison means</h3>
+            <p>{selected.interpretation}</p>
+            <p>The ratio divides the 2010s <em>forever</em> value by the 2010s <em>for ever</em> value inside this condition only.</p>
+            {selected.id === "repeat" ? <p>REPEAT is not RATE plus REACH. It measures average exact-form appearances within each containing volume: an intensity condition derived separately for each form.</p> : null}
+            <p className={styles.conditionBackUnit}>DISPLAY UNIT / {selected.displayUnit}</p>
+          </div>
         </div>
       </div>
     </section>

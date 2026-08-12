@@ -2406,6 +2406,7 @@
       "id": "rate",
       "label": "RATE",
       "unit": "exact-form appearances per million corpus word tokens",
+      "displayUnit": "exact-form appearances per million corpus word tokens",
       "domain": {
         "min": 0,
         "max": 50
@@ -2419,6 +2420,8 @@
           "label": "1920s",
           "joinedValue": 11.909443833,
           "spacedValue": 7.186503731,
+          "joinedDisplayValue": "11.91",
+          "spacedDisplayValue": "7.19",
           "joinedPercent": 23.818888,
           "spacedPercent": 14.373007,
           "extensionPercent": 9.44588
@@ -2428,6 +2431,8 @@
           "label": "1930s",
           "joinedValue": 10.600389358,
           "spacedValue": 6.321611628,
+          "joinedDisplayValue": "10.6",
+          "spacedDisplayValue": "6.32",
           "joinedPercent": 21.200779,
           "spacedPercent": 12.643223,
           "extensionPercent": 8.557555
@@ -2437,6 +2442,8 @@
           "label": "1940s",
           "joinedValue": 10.283616668,
           "spacedValue": 4.267415676,
+          "joinedDisplayValue": "10.28",
+          "spacedDisplayValue": "4.27",
           "joinedPercent": 20.567233,
           "spacedPercent": 8.534831,
           "extensionPercent": 12.032402
@@ -2446,6 +2453,8 @@
           "label": "1950s",
           "joinedValue": 8.803534434,
           "spacedValue": 4.85075553,
+          "joinedDisplayValue": "8.8",
+          "spacedDisplayValue": "4.85",
           "joinedPercent": 17.607069,
           "spacedPercent": 9.701511,
           "extensionPercent": 7.905558
@@ -2455,6 +2464,8 @@
           "label": "1960s",
           "joinedValue": 9.084614242,
           "spacedValue": 5.125053733,
+          "joinedDisplayValue": "9.08",
+          "spacedDisplayValue": "5.13",
           "joinedPercent": 18.169228,
           "spacedPercent": 10.250107,
           "extensionPercent": 7.919121
@@ -2464,6 +2475,8 @@
           "label": "1970s",
           "joinedValue": 8.624556896,
           "spacedValue": 3.830498724,
+          "joinedDisplayValue": "8.62",
+          "spacedDisplayValue": "3.83",
           "joinedPercent": 17.249114,
           "spacedPercent": 7.660997,
           "extensionPercent": 9.588116
@@ -2473,6 +2486,8 @@
           "label": "1980s",
           "joinedValue": 9.531399947,
           "spacedValue": 2.689990154,
+          "joinedDisplayValue": "9.53",
+          "spacedDisplayValue": "2.69",
           "joinedPercent": 19.0628,
           "spacedPercent": 5.37998,
           "extensionPercent": 13.68282
@@ -2482,6 +2497,8 @@
           "label": "1990s",
           "joinedValue": 12.334239755,
           "spacedValue": 2.698714217,
+          "joinedDisplayValue": "12.33",
+          "spacedDisplayValue": "2.7",
           "joinedPercent": 24.66848,
           "spacedPercent": 5.397428,
           "extensionPercent": 19.271051
@@ -2491,6 +2508,8 @@
           "label": "2000s",
           "joinedValue": 19.399100243,
           "spacedValue": 4.396775306,
+          "joinedDisplayValue": "19.4",
+          "spacedDisplayValue": "4.4",
           "joinedPercent": 38.7982,
           "spacedPercent": 8.793551,
           "extensionPercent": 30.00465
@@ -2500,6 +2519,8 @@
           "label": "2010s",
           "joinedValue": 28.753460435,
           "spacedValue": 6.892064325,
+          "joinedDisplayValue": "28.75",
+          "spacedDisplayValue": "6.89",
           "joinedPercent": 57.506921,
           "spacedPercent": 13.784129,
           "extensionPercent": 43.722792
@@ -2510,19 +2531,22 @@
       "id": "reach",
       "label": "REACH",
       "unit": "containing-volume incidences per million corpus volumes",
+      "displayUnit": "share of corpus volumes containing the exact form",
       "domain": {
         "min": 0,
         "max": 1000000
       },
       "ratio2010s": 3.96951482,
       "headline": "3.970× joined / spaced",
-      "interpretation": "In the 2010s, joined reach across corpus volumes is 3.970 times the spaced exact form.",
+      "interpretation": "In the 2010s, forever appears in 51.84% of corpus volumes and for ever in 13.06%; the joined form therefore reaches 3.970 times as many volumes.",
       "decades": [
         {
           "id": "reach-1920",
           "label": "1920s",
           "joinedValue": 317872.839944309,
           "spacedValue": 213971.772542382,
+          "joinedDisplayValue": "31.79%",
+          "spacedDisplayValue": "21.40%",
           "joinedPercent": 31.787284,
           "spacedPercent": 21.397177,
           "extensionPercent": 10.390107
@@ -2532,6 +2556,8 @@
           "label": "1930s",
           "joinedValue": 284693.686654708,
           "spacedValue": 171997.667022482,
+          "joinedDisplayValue": "28.47%",
+          "spacedDisplayValue": "17.20%",
           "joinedPercent": 28.469369,
           "spacedPercent": 17.199767,
           "extensionPercent": 11.269602
@@ -2541,6 +2567,8 @@
           "label": "1940s",
           "joinedValue": 287393.969933652,
           "spacedValue": 133194.861805005,
+          "joinedDisplayValue": "28.74%",
+          "spacedDisplayValue": "13.32%",
           "joinedPercent": 28.739397,
           "spacedPercent": 13.319486,
           "extensionPercent": 15.419911
@@ -2550,6 +2578,8 @@
           "label": "1950s",
           "joinedValue": 255894.407063977,
           "spacedValue": 143911.058522197,
+          "joinedDisplayValue": "25.59%",
+          "spacedDisplayValue": "14.39%",
           "joinedPercent": 25.589441,
           "spacedPercent": 14.391106,
           "extensionPercent": 11.198335
@@ -2559,6 +2589,8 @@
           "label": "1960s",
           "joinedValue": 244380.520445209,
           "spacedValue": 145141.496520899,
+          "joinedDisplayValue": "24.44%",
+          "spacedDisplayValue": "14.51%",
           "joinedPercent": 24.438052,
           "spacedPercent": 14.51415,
           "extensionPercent": 9.923902
@@ -2568,6 +2600,8 @@
           "label": "1970s",
           "joinedValue": 237944.90540989,
           "spacedValue": 111922.336541653,
+          "joinedDisplayValue": "23.79%",
+          "spacedDisplayValue": "11.19%",
           "joinedPercent": 23.794491,
           "spacedPercent": 11.192234,
           "extensionPercent": 12.602257
@@ -2577,6 +2611,8 @@
           "label": "1980s",
           "joinedValue": 267464.315044856,
           "spacedValue": 96558.90136872,
+          "joinedDisplayValue": "26.75%",
+          "spacedDisplayValue": "9.66%",
           "joinedPercent": 26.746432,
           "spacedPercent": 9.65589,
           "extensionPercent": 17.090541
@@ -2586,6 +2622,8 @@
           "label": "1990s",
           "joinedValue": 329895.568194911,
           "spacedValue": 98368.580376876,
+          "joinedDisplayValue": "32.99%",
+          "spacedDisplayValue": "9.84%",
           "joinedPercent": 32.989557,
           "spacedPercent": 9.836858,
           "extensionPercent": 23.152699
@@ -2595,6 +2633,8 @@
           "label": "2000s",
           "joinedValue": 451465.529236989,
           "spacedValue": 125165.792494155,
+          "joinedDisplayValue": "45.15%",
+          "spacedDisplayValue": "12.52%",
           "joinedPercent": 45.146553,
           "spacedPercent": 12.516579,
           "extensionPercent": 32.629974
@@ -2604,6 +2644,8 @@
           "label": "2010s",
           "joinedValue": 518360.122592647,
           "spacedValue": 130585.259438697,
+          "joinedDisplayValue": "51.84%",
+          "spacedDisplayValue": "13.06%",
           "joinedPercent": 51.836012,
           "spacedPercent": 13.058526,
           "extensionPercent": 38.777486
@@ -2614,6 +2656,7 @@
       "id": "repeat",
       "label": "REPEAT",
       "unit": "exact-form appearances per containing volume",
+      "displayUnit": "exact-form appearances per containing volume",
       "domain": {
         "min": 0,
         "max": 10
@@ -2627,6 +2670,8 @@
           "label": "1920s",
           "joinedValue": 5.624078429,
           "spacedValue": 5.041670756,
+          "joinedDisplayValue": "5.62",
+          "spacedDisplayValue": "5.04",
           "joinedPercent": 56.240784,
           "spacedPercent": 50.416708,
           "extensionPercent": 5.824077
@@ -2636,6 +2681,8 @@
           "label": "1930s",
           "joinedValue": 4.974882491,
           "spacedValue": 4.910707888,
+          "joinedDisplayValue": "4.97",
+          "spacedDisplayValue": "4.91",
           "joinedPercent": 49.748825,
           "spacedPercent": 49.107079,
           "extensionPercent": 0.641746
@@ -2645,6 +2692,8 @@
           "label": "1940s",
           "joinedValue": 4.805205913,
           "spacedValue": 4.302503691,
+          "joinedDisplayValue": "4.81",
+          "spacedDisplayValue": "4.3",
           "joinedPercent": 48.052059,
           "spacedPercent": 43.025037,
           "extensionPercent": 5.027022
@@ -2654,6 +2703,8 @@
           "label": "1950s",
           "joinedValue": 4.483564159,
           "spacedValue": 4.39280915,
+          "joinedDisplayValue": "4.48",
+          "spacedDisplayValue": "4.39",
           "joinedPercent": 44.835642,
           "spacedPercent": 43.928092,
           "extensionPercent": 0.90755
@@ -2663,6 +2714,8 @@
           "label": "1960s",
           "joinedValue": 4.400741222,
           "spacedValue": 4.18015853,
+          "joinedDisplayValue": "4.4",
+          "spacedDisplayValue": "4.18",
           "joinedPercent": 44.007412,
           "spacedPercent": 41.801585,
           "extensionPercent": 2.205827
@@ -2672,6 +2725,8 @@
           "label": "1970s",
           "joinedValue": 4.020590631,
           "spacedValue": 3.796365599,
+          "joinedDisplayValue": "4.02",
+          "spacedDisplayValue": "3.8",
           "joinedPercent": 40.205906,
           "spacedPercent": 37.963656,
           "extensionPercent": 2.24225
@@ -2681,6 +2736,8 @@
           "label": "1980s",
           "joinedValue": 4.033645406,
           "spacedValue": 3.153299669,
+          "joinedDisplayValue": "4.03",
+          "spacedDisplayValue": "3.15",
           "joinedPercent": 40.336454,
           "spacedPercent": 31.532997,
           "extensionPercent": 8.803457
@@ -2690,6 +2747,8 @@
           "label": "1990s",
           "joinedValue": 4.274346876,
           "spacedValue": 3.136420992,
+          "joinedDisplayValue": "4.27",
+          "spacedDisplayValue": "3.14",
           "joinedPercent": 42.743469,
           "spacedPercent": 31.36421,
           "extensionPercent": 11.379259
@@ -2699,6 +2758,8 @@
           "label": "2000s",
           "joinedValue": 4.678044839,
           "spacedValue": 3.8243357,
+          "joinedDisplayValue": "4.68",
+          "spacedDisplayValue": "3.82",
           "joinedPercent": 46.780448,
           "spacedPercent": 38.243357,
           "extensionPercent": 8.537091
@@ -2708,6 +2769,8 @@
           "label": "2010s",
           "joinedValue": 5.26711243,
           "spacedValue": 5.011517136,
+          "joinedDisplayValue": "5.27",
+          "spacedDisplayValue": "5.01",
           "joinedPercent": 52.671124,
           "spacedPercent": 50.115171,
           "extensionPercent": 2.555953
@@ -2886,8 +2949,8 @@
     ]
   },
   "closingFinding": {
-    "title": "Breadth, not heavier repetition.",
-    "sentence": "In the 2010s, forever is about four times as visible as for ever, but it is repeated only about five percent more often inside a containing volume. Its modern advantage is overwhelmingly one of breadth across books.",
+    "title": "Found in more books, not repeated much more.",
+    "sentence": "By the 2010s, forever appears in many more books in this Google Books sample than for ever. But in books where either spelling appears, the two are repeated at almost the same rate.",
     "rateRatio": 4.171966348,
     "repeatRatio": 1.05100158
   },

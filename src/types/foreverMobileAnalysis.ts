@@ -78,6 +78,7 @@ export type ForeverMobileMetricCondition = {
   id: ForeverMobileMetricId;
   label: "RATE" | "REACH" | "REPEAT";
   unit: string;
+  displayUnit: string;
   domain: { min: 0; max: number };
   ratio2010s: number;
   headline: string;
@@ -87,6 +88,8 @@ export type ForeverMobileMetricCondition = {
     label: string;
     joinedValue: number;
     spacedValue: number;
+    joinedDisplayValue: string;
+    spacedDisplayValue: string;
     joinedPercent: number;
     spacedPercent: number;
     extensionPercent: number;

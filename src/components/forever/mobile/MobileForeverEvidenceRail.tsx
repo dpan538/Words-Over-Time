@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, type SyntheticEvent } from "react";
+import { useRef, useState, type MouseEvent, type SyntheticEvent, type TouchEvent } from "react";
 import type { ForeverMobileRailCard } from "@/types/foreverMobileAnalysis";
 import styles from "./mobile-forever.module.css";
 
@@ -12,11 +12,93 @@ type MobileForeverEvidenceRailProps = {
 
 export function MobileForeverEvidenceRail({ railId, eyebrow, cards }: MobileForeverEvidenceRailProps) {
   const scrollerRef = useRef<HTMLDivElement>(null);
+  const activeIndexRef = useRef(0);
+  const touchStartXRef = useRef<number | null>(null);
+  const touchMovedRef = useRef(false);
+  const suppressClickRef = useRef(false);
+  const swipeStartedRef = useRef(false);
+  const reopenAfterSwipeRef = useRef(false);
+  const settleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const move = (direction: -1 | 1) => {
+  const detailsCards = () => Array.from(scrollerRef.current?.querySelectorAll<HTMLDetailsElement>("details") ?? []);
+
+  const closeAll = () => {
+    detailsCards().forEach((details) => { details.open = false; });
+  };
+
+  const nearestIndex = () => {
     const scroller = scrollerRef.current;
-    if (!scroller) return;
-    scroller.scrollBy({ left: direction * (scroller.clientWidth - 16), behavior: "smooth" });
+    const cardsInRail = detailsCards();
+    if (!scroller || cardsInRail.length === 0) return 0;
+    return cardsInRail.reduce((nearest, card, index) => (
+      Math.abs(card.offsetLeft - scroller.scrollLeft) < Math.abs(cardsInRail[nearest].offsetLeft - scroller.scrollLeft)
+        ? index
+        : nearest
+    ), 0);
+  };
+
+  const settleSwipe = () => {
+    if (settleTimerRef.current) clearTimeout(settleTimerRef.current);
+    settleTimerRef.current = setTimeout(() => {
+      const nextIndex = nearestIndex();
+      activeIndexRef.current = nextIndex;
+      setActiveIndex(nextIndex);
+      if (reopenAfterSwipeRef.current) {
+        const nextCard = detailsCards()[nextIndex];
+        if (nextCard) nextCard.open = true;
+      }
+      reopenAfterSwipeRef.current = false;
+      swipeStartedRef.current = false;
+    }, 160);
+  };
+
+  const handleTouchStart = (event: TouchEvent<HTMLDivElement>) => {
+    touchStartXRef.current = event.touches[0]?.clientX ?? null;
+    touchMovedRef.current = false;
+    swipeStartedRef.current = false;
+    reopenAfterSwipeRef.current = detailsCards().some((details) => details.open);
+    if (reopenAfterSwipeRef.current) closeAll();
+  };
+
+  const handleTouchMove = (event: TouchEvent<HTMLDivElement>) => {
+    const startX = touchStartXRef.current;
+    const currentX = event.touches[0]?.clientX;
+    if (startX === null || currentX === undefined || Math.abs(currentX - startX) < 18) return;
+    touchMovedRef.current = true;
+    suppressClickRef.current = true;
+    if (swipeStartedRef.current) return;
+    swipeStartedRef.current = true;
+    if (!reopenAfterSwipeRef.current) {
+      reopenAfterSwipeRef.current = detailsCards().some((details) => details.open);
+      if (reopenAfterSwipeRef.current) closeAll();
+    }
+  };
+
+  const handleTouchEnd = () => {
+    settleSwipe();
+    if (!touchMovedRef.current) suppressClickRef.current = false;
+    touchStartXRef.current = null;
+  };
+
+  const suppressSwipeClick = (event: MouseEvent<HTMLElement>) => {
+    if (!suppressClickRef.current) return;
+    event.preventDefault();
+    event.stopPropagation();
+    suppressClickRef.current = false;
+  };
+
+  const handleScroll = () => {
+    const nextIndex = nearestIndex();
+    if (nextIndex !== activeIndexRef.current) {
+      if (!swipeStartedRef.current) {
+        reopenAfterSwipeRef.current = detailsCards().some((details) => details.open);
+        if (reopenAfterSwipeRef.current) closeAll();
+      }
+      activeIndexRef.current = nextIndex;
+      setActiveIndex(nextIndex);
+    }
+    settleSwipe();
   };
 
   const closeSiblings = (event: SyntheticEvent<HTMLDetailsElement>) => {
@@ -34,13 +116,18 @@ export function MobileForeverEvidenceRail({ railId, eyebrow, cards }: MobileFore
           <p>DATA CARDS</p>
           <h2 id={`${railId}-title`}>{eyebrow}</h2>
         </div>
-        <div className={styles.railControls} aria-label={`${eyebrow} card controls`}>
-          <button type="button" onClick={() => move(-1)} aria-label="Previous evidence card">←</button>
-          <span>01 / 03</span>
-          <button type="button" onClick={() => move(1)} aria-label="Next evidence card">→</button>
-        </div>
+        <p className={styles.railCounter} aria-live="polite" aria-label={`Card ${activeIndex + 1} of ${cards.length}`}>
+          {activeIndex + 1} / {cards.length}
+        </p>
       </header>
-      <div className={styles.railScroller} ref={scrollerRef}>
+      <div
+        className={styles.railScroller}
+        ref={scrollerRef}
+        onScroll={handleScroll}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         {cards.map((card, index) => (
           <details
             className={`${styles.evidenceCard} ${styles[`cardTone${index + 1}`]}`}
@@ -48,7 +135,7 @@ export function MobileForeverEvidenceRail({ railId, eyebrow, cards }: MobileFore
             onToggle={closeSiblings}
             key={card.id}
           >
-            <summary>
+            <summary onClickCapture={suppressSwipeClick}>
               <span className={styles.cardFront}>
                 <span className={styles.cardTopline}>
                   <span className={styles.outlineCapsule}>{card.label} / {card.scope}</span>

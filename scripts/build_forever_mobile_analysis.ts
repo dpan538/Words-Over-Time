@@ -297,15 +297,21 @@ function buildArtifact(): ForeverMobileAnalysis {
     ]));
     const domainMax = niceDomainMax(maximum);
     const ratio2010s = metricValue(d2010, metric, "joined") / metricValue(d2010, metric, "spaced");
+    const reachJoinedShare = d2010.joinedReachPerMillionVolumes / 10_000;
+    const reachSpacedShare = d2010.spacedReachPerMillionVolumes / 10_000;
     const interpretation = metric === "rate"
       ? "In the 2010s, joined visibility is 4.172 times the spaced exact form."
       : metric === "reach"
-        ? "In the 2010s, joined reach across corpus volumes is 3.970 times the spaced exact form."
+        ? `In the 2010s, forever appears in ${reachJoinedShare.toFixed(2)}% of corpus volumes and for ever in ${reachSpacedShare.toFixed(2)}%; the joined form therefore reaches 3.970 times as many volumes.`
         : "In the 2010s, the joined form is repeated only 1.051 times as often inside a containing volume.";
+    const displayUnit = metric === "reach"
+      ? "share of corpus volumes containing the exact form"
+      : metricUnit[metric];
     return {
       id: metric,
       label: metric.toUpperCase() as ForeverMobileMetricCondition["label"],
       unit: metricUnit[metric],
+      displayUnit,
       domain: { min: 0, max: domainMax },
       ratio2010s: rounded(ratio2010s),
       headline: `${rounded(ratio2010s, 3).toFixed(3)}× joined / spaced`,
@@ -321,6 +327,8 @@ function buildArtifact(): ForeverMobileAnalysis {
           label: row.label,
           joinedValue: rounded(joinedValue),
           spacedValue: rounded(spacedValue),
+          joinedDisplayValue: metric === "reach" ? `${(joinedValue / 10_000).toFixed(2)}%` : rounded(joinedValue).toLocaleString("en-US", { maximumFractionDigits: 2 }),
+          spacedDisplayValue: metric === "reach" ? `${(spacedValue / 10_000).toFixed(2)}%` : rounded(spacedValue).toLocaleString("en-US", { maximumFractionDigits: 2 }),
           joinedPercent: rounded(joinedPercent, 6),
           spacedPercent: rounded(spacedPercent, 6),
           extensionPercent: rounded(joinedPercent - spacedPercent, 6),
@@ -560,8 +568,8 @@ function buildArtifact(): ForeverMobileAnalysis {
     metricConditions,
     rails: { railA, railB, railC },
     closingFinding: {
-      title: "Breadth, not heavier repetition.",
-      sentence: "In the 2010s, forever is about four times as visible as for ever, but it is repeated only about five percent more often inside a containing volume. Its modern advantage is overwhelmingly one of breadth across books.",
+      title: "Found in more books, not repeated much more.",
+      sentence: "By the 2010s, forever appears in many more books in this Google Books sample than for ever. But in books where either spelling appears, the two are repeated at almost the same rate.",
       rateRatio: secondTransition.ratios2010s.rate,
       repeatRatio: secondTransition.ratios2010s.repeat,
     },
