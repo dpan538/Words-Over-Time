@@ -119,13 +119,19 @@
   display: flex;
   align-items: baseline;
   min-inline-size: 0;
+  margin-block-start: 3px;
   white-space: nowrap;
+}
+
+.depression {
+  margin-block-start: 2px;
 }
 
 .intelligence {
   display: grid;
   gap: 0.3rem;
   min-inline-size: 0;
+  margin-block-start: 4px;
   color: #3a3d42;
 }
 

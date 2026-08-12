@@ -1324,9 +1324,8 @@
   overscroll-behavior-x: contain;
   scroll-padding-inline: 1.5rem;
   scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
   scrollbar-width: none;
-  touch-action: pan-x;
+  touch-action: manipulation;
 }
 
 .railScroller::-webkit-scrollbar { display: none; }
