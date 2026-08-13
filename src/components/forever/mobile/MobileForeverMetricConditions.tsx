@@ -44,7 +44,7 @@ export function MobileForeverMetricConditions({ conditions }: MobileForeverMetri
               <div className={styles.conditionReadingStack} aria-live="polite">
                 {conditions.map((condition) => <p data-active={condition.id === selectedId} key={condition.id}>{condition.interpretation}</p>)}
               </div>
-              <div className={styles.conditionMarks} role="img" aria-label={`${selected.label}: paired forever and for ever decade marks from the 1920s to the 2010s`}>
+              <div className={styles.conditionMarks} data-chart-grow="bar" role="img" aria-label={`${selected.label}: paired forever and for ever decade marks from the 1920s to the 2010s`}>
                 {selected.decades.map((decade) => (
                   <span className={styles.conditionDecade} key={`${selectedId}-${decade.id}`}>
                     <span className={styles.conditionBars}>

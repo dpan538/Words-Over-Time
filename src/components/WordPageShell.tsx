@@ -15,6 +15,7 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
   const profile = wordStudyProfile(path);
   const route = routeByPath(path);
   const isForever = path === "/words/forever";
+  const isPrivacy = path === "/words/privacy";
   const textAccent = path === "/words/forever" ? "#AE4202" : path === "/words/hub" ? "#0B6B71" : route?.accent;
 
   if (!route) return children;
@@ -25,22 +26,27 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
       aria-labelledby={`${profile.word}-study-title`}
       style={{ "--study-accent": route.accent, "--study-text-accent": textAccent } as CSSProperties}
     >
-      <div className="mx-auto w-full max-w-[1960px] px-5 pt-5 min-[960px]:px-10 xl:px-12">
+      <div className={`mx-auto w-full max-w-[1960px] px-5 pt-5 min-[960px]:px-10 xl:px-12 ${isPrivacy ? "hidden min-[960px]:block" : ""}`}>
         <Nav />
-        <header className={`relative mt-1 min-[960px]:overflow-hidden min-[960px]:border-y-2 min-[960px]:border-ink min-[960px]:py-14 ${isForever ? "py-5" : "py-12"}`}>
+        <header className={`relative mt-1 min-[960px]:overflow-hidden min-[960px]:border-y-2 min-[960px]:border-ink min-[960px]:py-14 ${isForever ? "!mt-0 py-[2.4rem] pb-10 min-[960px]:!mt-1" : "py-12"}`}>
           <div className="pointer-events-none absolute inset-0 hidden opacity-60 [background-image:linear-gradient(90deg,rgba(5,5,16,0.09)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.07)_1px,transparent_1px)] [background-size:72px_72px] min-[960px]:block" />
           <div className="relative grid min-w-0 gap-8 min-[960px]:grid-cols-[minmax(0,1fr)_22rem] min-[960px]:items-end">
             <div className="min-w-0">
-              <p className="font-mono text-[0.8125rem] font-semibold uppercase tracking-[0.04em] text-fire min-[960px]:text-[0.82rem] min-[960px]:font-black min-[960px]:tracking-[0.18em] min-[960px]:text-[var(--study-text-accent)]">
-                {profile.eyebrow}
+              <p className={`font-mono text-[0.8125rem] uppercase min-[960px]:text-[0.82rem] min-[960px]:font-black min-[960px]:tracking-[0.18em] min-[960px]:text-[var(--study-text-accent)] ${isForever ? "font-extrabold leading-[1.3] tracking-[0.07em] text-[var(--study-text-accent)] min-[960px]:leading-normal" : "font-semibold tracking-[0.04em] text-fire"}`}>
+                {isForever ? (
+                  <>
+                    <span className="min-[960px]:hidden">WORD STUDY</span>
+                    <span className="hidden min-[960px]:inline">{profile.eyebrow}</span>
+                  </>
+                ) : profile.eyebrow}
               </p>
               <h1
                 id={`${profile.word}-study-title`}
-                className={`mt-5 max-w-full break-words font-extrabold text-[var(--study-text-accent)] min-[960px]:mt-4 min-[960px]:text-[clamp(4.3rem,17vw,18rem)] min-[960px]:font-black min-[960px]:leading-[0.76] min-[960px]:tracking-[-0.045em] ${isForever ? "!mt-3 text-[clamp(3rem,14vw,4rem)] leading-[0.84] tracking-[-0.035em] min-[960px]:!mt-4" : "text-[clamp(4.3rem,17vw,18rem)] leading-[0.84] tracking-[-0.035em]"}`}
+                className={`mt-5 max-w-full break-words font-extrabold text-[var(--study-text-accent)] min-[960px]:mt-4 min-[960px]:text-[clamp(4.3rem,17vw,18rem)] min-[960px]:font-black min-[960px]:leading-[0.76] min-[960px]:tracking-[-0.045em] ${isForever ? "!mt-[0.6rem] text-[clamp(4.6rem,23vw,6rem)] leading-[0.82] tracking-[-0.07em] min-[960px]:!mt-4" : "text-[clamp(4.3rem,17vw,18rem)] leading-[0.84] tracking-[-0.035em]"}`}
               >
                 {profile.word}
               </h1>
-              <p className={`mt-7 max-w-5xl text-[1.0625rem] font-normal leading-[1.55] min-[960px]:text-[clamp(1.12rem,2.2vw,2.85rem)] min-[960px]:font-black min-[960px]:leading-[1.04] ${isForever ? "!mt-4 leading-[1.45] min-[960px]:!mt-7" : ""}`}>
+              <p className={`mt-7 max-w-5xl text-[1.0625rem] font-normal leading-[1.55] min-[960px]:text-[clamp(1.12rem,2.2vw,2.85rem)] min-[960px]:font-black min-[960px]:leading-[1.04] ${isForever ? "!mt-[1.6rem] !max-w-[31ch] text-[1.125rem] font-[650] leading-[1.32] min-[960px]:!mt-7 min-[960px]:!max-w-5xl" : ""}`}>
                 {isForever ? (
                   <>
                     <span className="min-[960px]:hidden">
@@ -71,13 +77,13 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
             </dl>
           </div>
         </header>
-        <div className={isForever ? "hidden min-[960px]:block" : undefined}>
+        <div className={isForever || isPrivacy ? "hidden min-[960px]:block" : undefined}>
           <SearchIntentSummary profile={profile} />
         </div>
         <EvidenceCoverageStrip profile={profile} />
       </div>
       {children}
-      <div className={isForever ? "hidden min-[960px]:block" : undefined}>
+      <div className={isForever || isPrivacy ? "hidden min-[960px]:block" : undefined}>
         <WordSeoSummary path={path} />
       </div>
     </main>

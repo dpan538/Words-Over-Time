@@ -26,7 +26,7 @@ export function MobileForeverLongArc({ analysis }: MobileForeverLongArcProps) {
           {longArcAnchors.map((decade) => <span key={decade.id}>{decade.label}</span>)}
         </div>
 
-        <div className={styles.arcChart} aria-label="Five selected decade rates on a zero to seventy scale">
+        <div className={styles.arcChart} data-chart-grow="bar" aria-label="Five selected decade rates on a zero to seventy scale">
           {longArcAnchors.map((decade) => (
             <div className={styles.arcColumnSlot} key={decade.id}>
               <div

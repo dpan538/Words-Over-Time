@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import styles from "./error-state.module.css";
 
 type ErrorAction = {
   label: string;
@@ -40,7 +41,29 @@ export function ErrorStatePage({
     : defaultActions;
 
   return (
-    <main className="flex min-h-screen items-center bg-wheat px-5 py-12 text-ink sm:px-10 lg:px-16">
+    <>
+    <main className={styles.mobileRoot}>
+      <nav className={styles.mobileNav} aria-label="Error page navigation">
+        <Link href="/">Words Over Time</Link>
+        <Link href="/about">About</Link>
+      </nav>
+      <section className={styles.mobileContent}>
+        <p className={styles.mobileEyebrow}>Words Over Time / {code}</p>
+        <h1><span>{code}/</span>{code === "404" ? "page not found" : "render interrupted"}</h1>
+        <p className={styles.mobileMessage}>{message}</p>
+        <p className={styles.mobileNote}>{code === "404" ? "The requested page is not part of the published word field." : "The page could not finish this render. No research source or private working file is exposed by this error."}</p>
+        <div className={styles.mobileActions}>
+          {actions.map((action) => action.href ? (
+            <Link key={action.label} href={action.href}>{action.label}<span aria-hidden="true">→</span></Link>
+          ) : (
+            <button key={action.label} type="button" onClick={action.onClick}>{action.label}<span aria-hidden="true">↻</span></button>
+          ))}
+        </div>
+      </section>
+      <footer className={styles.mobileFooter}>Words Over Time: semantic change and word usage over time</footer>
+    </main>
+
+    <main className={`${styles.desktopRoot} flex min-h-screen items-center bg-wheat px-5 py-12 text-ink sm:px-10 lg:px-16`}>
       <section className="w-full max-w-[92rem] border-t-2 border-ink pt-7">
         <p className={`font-mono text-[0.86rem] font-black uppercase tracking-[0.22em] sm:text-[1rem] ${accent}`}>
           Missing route / public boundary
@@ -87,5 +110,6 @@ export function ErrorStatePage({
         </div>
       </section>
     </main>
+    </>
   );
 }

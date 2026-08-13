@@ -1,0 +1,2153 @@
+{
+  "schemaVersion": "1.0.0",
+  "auditId": "privacy-mobile-2026-08-12",
+  "generatedFromFrozenInputs": true,
+  "implementationAuthorized": false,
+  "principalQuestion": "How did privacy move from a protected sphere into a public-facing infrastructure of attention, policy language and institutional control?",
+  "missingnessTaxonomy": [
+    "observed_positive",
+    "observed_zero",
+    "absent_or_suppressed",
+    "not_searched",
+    "fetch_failed",
+    "unavailable",
+    "incomparable",
+    "out_of_scope"
+  ],
+  "sourceManifest": [
+    {
+      "id": "privacy-wikimedia-attention-raw",
+      "path": "docs/research/privacy/raw/privacy_attention_metrics_raw.json",
+      "role": "active_input",
+      "sourceFamily": "Wikimedia Pageviews API",
+      "recordGranularity": "topic × calendar year",
+      "recordCount": 11,
+      "coverage": "topic-dependent capture; analysis freezes ten pages with complete years 2018–2025",
+      "rightsBoundary": "Wikimedia API-derived aggregate counts; attribute Wikimedia and linked article identities.",
+      "activeContractIds": [
+        "privacy-figure-01-attention-field",
+        "privacy-figure-02-topic-widgets"
+      ],
+      "exclusionReason": null,
+      "sha256": "da7b40a531f359c86fc9dd1c3912a33c9db8a7b97082ca1e02229b9d28d97189"
+    },
+    {
+      "id": "privacy-research-expansion-raw",
+      "path": "docs/research/privacy/raw/privacy_research_expansion_raw.json",
+      "role": "supporting_input",
+      "sourceFamily": "multi-source research expansion",
+      "recordGranularity": "source-specific record",
+      "recordCount": 1139,
+      "coverage": "historical metadata, policy captures, news, court, archive, publications, academic metadata",
+      "rightsBoundary": "Discovery metadata and captured public pages retain upstream rights; no full third-party text is republished.",
+      "activeContractIds": [
+        "privacy-figure-03-policy-language-widgets"
+      ],
+      "exclusionReason": null,
+      "sha256": "2b982a57df6fb5ed8e5b5eb9b13c94b4f670c76de7f6ea46c78c38fefc65091d"
+    },
+    {
+      "id": "privacy-institutional-anchor-raw",
+      "path": "docs/research/privacy/raw/privacy_modern_transit_system_raw.json",
+      "role": "active_input",
+      "sourceFamily": "official/legal/institutional source ledger",
+      "recordGranularity": "dated institutional anchor",
+      "recordCount": 23,
+      "coverage": "1950–2024",
+      "rightsBoundary": "Only metadata, dates, labels and source links are retained; official texts remain upstream.",
+      "activeContractIds": [
+        "privacy-figure-04-governance-grid"
+      ],
+      "exclusionReason": null,
+      "sha256": "a42724135fbce507697af8dd193c5c376a0552a4d4c57bb6e55c858eabcd0aed"
+    },
+    {
+      "id": "privacy-policy-capture-policy_google_privacy_47abba2d89033518",
+      "path": "docs/research/privacy/raw/research_expansion_cache/policy_google_privacy_47abba2d89033518.json",
+      "role": "active_input",
+      "sourceFamily": "frozen public policy/platform HTML",
+      "recordGranularity": "captured document token stream",
+      "recordCount": 1,
+      "coverage": "single captured document",
+      "rightsBoundary": "Counts only; captured HTML is research evidence and is not republished.",
+      "activeContractIds": [
+        "privacy-figure-03-policy-language-widgets"
+      ],
+      "exclusionReason": null,
+      "sha256": "8068d81549842c68297d5f34229415c3c8f41340709a6f9afac8229a4556de62"
+    },
+    {
+      "id": "privacy-policy-capture-policy_microsoft_privacy_5ba027807d9d27b4",
+      "path": "docs/research/privacy/raw/research_expansion_cache/policy_microsoft_privacy_5ba027807d9d27b4.json",
+      "role": "active_input",
+      "sourceFamily": "frozen public policy/platform HTML",
+      "recordGranularity": "captured document token stream",
+      "recordCount": 1,
+      "coverage": "single captured document",
+      "rightsBoundary": "Counts only; captured HTML is research evidence and is not republished.",
+      "activeContractIds": [
+        "privacy-figure-03-policy-language-widgets"
+      ],
+      "exclusionReason": null,
+      "sha256": "272421eed94ffff3468b32e12d4ea52f44864550f68d5683768f5618752c8d64"
+    },
+    {
+      "id": "privacy-policy-capture-policy_openai_privacy_dd496178d5d235ef",
+      "path": "docs/research/privacy/raw/research_expansion_cache/policy_openai_privacy_dd496178d5d235ef.json",
+      "role": "active_input",
+      "sourceFamily": "frozen public policy/platform HTML",
+      "recordGranularity": "captured document token stream",
+      "recordCount": 1,
+      "coverage": "single captured document",
+      "rightsBoundary": "Counts only; captured HTML is research evidence and is not republished.",
+      "activeContractIds": [
+        "privacy-figure-03-policy-language-widgets"
+      ],
+      "exclusionReason": null,
+      "sha256": "5ba6d22775b69f25f225228967de9db94505164ad67e4869318da03876917696"
+    },
+    {
+      "id": "privacy-policy-capture-policy_ca_oag_ccpa_0803821652b92b8f",
+      "path": "docs/research/privacy/raw/research_expansion_cache/policy_ca_oag_ccpa_0803821652b92b8f.json",
+      "role": "active_input",
+      "sourceFamily": "frozen public policy/platform HTML",
+      "recordGranularity": "captured document token stream",
+      "recordCount": 1,
+      "coverage": "single captured document",
+      "rightsBoundary": "Counts only; captured HTML is research evidence and is not republished.",
+      "activeContractIds": [
+        "privacy-figure-03-policy-language-widgets"
+      ],
+      "exclusionReason": null,
+      "sha256": "fa3e0f8b8b0535c39f3a416e82b89a6a9d5a15d677635ca71d51dc278a273ad6"
+    },
+    {
+      "id": "privacy-policy-capture-policy_gdpr_lex_d37c669f771709b4",
+      "path": "docs/research/privacy/raw/research_expansion_cache/policy_gdpr_lex_d37c669f771709b4.json",
+      "role": "active_input",
+      "sourceFamily": "frozen public policy/platform HTML",
+      "recordGranularity": "captured document token stream",
+      "recordCount": 1,
+      "coverage": "single captured document",
+      "rightsBoundary": "Counts only; captured HTML is research evidence and is not republished.",
+      "activeContractIds": [
+        "privacy-figure-03-policy-language-widgets"
+      ],
+      "exclusionReason": null,
+      "sha256": "fca9d72af1f56b4a12317ec6163f973d97d85afe295ebc3d6a337dd1d712b4a8"
+    },
+    {
+      "id": "privacy-transform",
+      "path": "scripts/build_privacy_mobile_analysis.ts",
+      "role": "transform",
+      "sourceFamily": "deterministic local transform",
+      "recordGranularity": "script",
+      "recordCount": null,
+      "coverage": "active dependency closure for five Privacy mobile contracts",
+      "rightsBoundary": "Repository code.",
+      "activeContractIds": [
+        "privacy-figure-01-attention-field",
+        "privacy-figure-02-topic-widgets",
+        "privacy-figure-03-policy-language-widgets",
+        "privacy-figure-04-governance-grid",
+        "privacy-figure-05-coverage-ledger"
+      ],
+      "exclusionReason": null,
+      "sha256": "f3356769c1fad61d6b664d8ae43a74ec110c489413ff0794cebd1017707ed241"
+    },
+    {
+      "id": "privacy-variable-ngram",
+      "path": "docs/research/privacy/processed/privacy_frequency_terms_processed.json",
+      "role": "excluded_input",
+      "sourceFamily": "Google Books Ngram Viewer variable aliases",
+      "recordGranularity": "term × corpus × year",
+      "recordCount": 141,
+      "coverage": "1500–2022",
+      "rightsBoundary": "Google Books Ngram Viewer terms apply.",
+      "activeContractIds": [
+        "privacy-figure-05-coverage-ledger"
+      ],
+      "exclusionReason": "Variable corpus aliases, unstable early tails and no fixed-release raw denominator; not production-authoritative.",
+      "sha256": "5aea55ca603a9c2bc768bbd6b31a9372349d40116e09c947c5742fe748a0370f"
+    },
+    {
+      "id": "privacy-geo-mixed-signal",
+      "path": "docs/research/privacy/processed/privacy_geo_attention_map_processed.json",
+      "role": "excluded_input",
+      "sourceFamily": "OpenAlex + GDELT mixed geography",
+      "recordGranularity": "country/city recovered-source record",
+      "recordCount": 139071,
+      "coverage": "58 countries; 90 city/institution points",
+      "rightsBoundary": "OpenAlex and GDELT upstream terms apply.",
+      "activeContractIds": [
+        "privacy-figure-05-coverage-ledger"
+      ],
+      "exclusionReason": "Academic production and news geography are incomparable and must not be presented as population-normalized public privacy attention.",
+      "sha256": "13c68fe911e2983e6b3baca56930496aee458b770969d6e6a22f671bb4ca37c0"
+    }
+  ],
+  "attention": {
+    "source": "Wikimedia Pageviews API",
+    "startYear": 2018,
+    "endYear": 2025,
+    "excludedPartialYear": 2026,
+    "excludedCoverageTopics": [
+      {
+        "page": "General_data_protection_regulation",
+        "state": "unavailable",
+        "reason": "The frozen capture does not contain every complete year from 2018 through 2025."
+      }
+    ],
+    "topics": [
+      {
+        "page": "Privacy",
+        "label": "Privacy",
+        "category": "concept",
+        "totalViews": 2201206,
+        "peakYear": 2023,
+        "peakViews": 488142,
+        "latestVsPeakPercent": 43.87,
+        "yearly": [
+          {
+            "year": 2018,
+            "views": 292916,
+            "percentOfTopicPeak": 60.01,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2019,
+            "views": 285054,
+            "percentOfTopicPeak": 58.4,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2020,
+            "views": 219390,
+            "percentOfTopicPeak": 44.94,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2021,
+            "views": 176859,
+            "percentOfTopicPeak": 36.23,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2022,
+            "views": 191213,
+            "percentOfTopicPeak": 39.17,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2023,
+            "views": 488142,
+            "percentOfTopicPeak": 100,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2024,
+            "views": 333496,
+            "percentOfTopicPeak": 68.32,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2025,
+            "views": 214136,
+            "percentOfTopicPeak": 43.87,
+            "state": "observed_positive"
+          }
+        ],
+        "shareOfSelectedInventoryPercent": 18.67
+      },
+      {
+        "page": "Internet_privacy",
+        "label": "Internet privacy",
+        "category": "concept",
+        "totalViews": 955897,
+        "peakYear": 2019,
+        "peakViews": 251008,
+        "latestVsPeakPercent": 20.06,
+        "yearly": [
+          {
+            "year": 2018,
+            "views": 238930,
+            "percentOfTopicPeak": 95.19,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2019,
+            "views": 251008,
+            "percentOfTopicPeak": 100,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2020,
+            "views": 123075,
+            "percentOfTopicPeak": 49.03,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2021,
+            "views": 106206,
+            "percentOfTopicPeak": 42.31,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2022,
+            "views": 71707,
+            "percentOfTopicPeak": 28.57,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2023,
+            "views": 59585,
+            "percentOfTopicPeak": 23.74,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2024,
+            "views": 55037,
+            "percentOfTopicPeak": 21.93,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2025,
+            "views": 50349,
+            "percentOfTopicPeak": 20.06,
+            "state": "observed_positive"
+          }
+        ],
+        "shareOfSelectedInventoryPercent": 8.11
+      },
+      {
+        "page": "Information_privacy",
+        "label": "Information privacy",
+        "category": "concept",
+        "totalViews": 630632,
+        "peakYear": 2018,
+        "peakViews": 132829,
+        "latestVsPeakPercent": 33.48,
+        "yearly": [
+          {
+            "year": 2018,
+            "views": 132829,
+            "percentOfTopicPeak": 100,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2019,
+            "views": 120045,
+            "percentOfTopicPeak": 90.38,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2020,
+            "views": 72870,
+            "percentOfTopicPeak": 54.86,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2021,
+            "views": 63229,
+            "percentOfTopicPeak": 47.6,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2022,
+            "views": 64316,
+            "percentOfTopicPeak": 48.42,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2023,
+            "views": 68055,
+            "percentOfTopicPeak": 51.24,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2024,
+            "views": 64820,
+            "percentOfTopicPeak": 48.8,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2025,
+            "views": 44468,
+            "percentOfTopicPeak": 33.48,
+            "state": "observed_positive"
+          }
+        ],
+        "shareOfSelectedInventoryPercent": 5.35
+      },
+      {
+        "page": "Data_privacy",
+        "label": "Data privacy",
+        "category": "concept",
+        "totalViews": 61062,
+        "peakYear": 2018,
+        "peakViews": 13017,
+        "latestVsPeakPercent": 46.62,
+        "yearly": [
+          {
+            "year": 2018,
+            "views": 13017,
+            "percentOfTopicPeak": 100,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2019,
+            "views": 11727,
+            "percentOfTopicPeak": 90.09,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2020,
+            "views": 9010,
+            "percentOfTopicPeak": 69.22,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2021,
+            "views": 6211,
+            "percentOfTopicPeak": 47.71,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2022,
+            "views": 5470,
+            "percentOfTopicPeak": 42.02,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2023,
+            "views": 4771,
+            "percentOfTopicPeak": 36.65,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2024,
+            "views": 4788,
+            "percentOfTopicPeak": 36.78,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2025,
+            "views": 6068,
+            "percentOfTopicPeak": 46.62,
+            "state": "observed_positive"
+          }
+        ],
+        "shareOfSelectedInventoryPercent": 0.52
+      },
+      {
+        "page": "Privacy_policy",
+        "label": "Privacy policy",
+        "category": "governance",
+        "totalViews": 2474661,
+        "peakYear": 2023,
+        "peakViews": 423556,
+        "latestVsPeakPercent": 70.13,
+        "yearly": [
+          {
+            "year": 2018,
+            "views": 242312,
+            "percentOfTopicPeak": 57.21,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2019,
+            "views": 182271,
+            "percentOfTopicPeak": 43.03,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2020,
+            "views": 264611,
+            "percentOfTopicPeak": 62.47,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2021,
+            "views": 320542,
+            "percentOfTopicPeak": 75.68,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2022,
+            "views": 415211,
+            "percentOfTopicPeak": 98.03,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2023,
+            "views": 423556,
+            "percentOfTopicPeak": 100,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2024,
+            "views": 329139,
+            "percentOfTopicPeak": 77.71,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2025,
+            "views": 297019,
+            "percentOfTopicPeak": 70.13,
+            "state": "observed_positive"
+          }
+        ],
+        "shareOfSelectedInventoryPercent": 20.98
+      },
+      {
+        "page": "Right_to_privacy",
+        "label": "Right to privacy",
+        "category": "concept",
+        "totalViews": 1393519,
+        "peakYear": 2018,
+        "peakViews": 238998,
+        "latestVsPeakPercent": 35.98,
+        "yearly": [
+          {
+            "year": 2018,
+            "views": 238998,
+            "percentOfTopicPeak": 100,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2019,
+            "views": 237961,
+            "percentOfTopicPeak": 99.57,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2020,
+            "views": 217968,
+            "percentOfTopicPeak": 91.2,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2021,
+            "views": 179606,
+            "percentOfTopicPeak": 75.15,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2022,
+            "views": 201549,
+            "percentOfTopicPeak": 84.33,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2023,
+            "views": 117913,
+            "percentOfTopicPeak": 49.34,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2024,
+            "views": 113540,
+            "percentOfTopicPeak": 47.51,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2025,
+            "views": 85984,
+            "percentOfTopicPeak": 35.98,
+            "state": "observed_positive"
+          }
+        ],
+        "shareOfSelectedInventoryPercent": 11.82
+      },
+      {
+        "page": "Surveillance",
+        "label": "Surveillance",
+        "category": "pressure",
+        "totalViews": 1652026,
+        "peakYear": 2019,
+        "peakViews": 287200,
+        "latestVsPeakPercent": 43.1,
+        "yearly": [
+          {
+            "year": 2018,
+            "views": 284413,
+            "percentOfTopicPeak": 99.03,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2019,
+            "views": 287200,
+            "percentOfTopicPeak": 100,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2020,
+            "views": 227039,
+            "percentOfTopicPeak": 79.05,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2021,
+            "views": 193061,
+            "percentOfTopicPeak": 67.22,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2022,
+            "views": 182568,
+            "percentOfTopicPeak": 63.57,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2023,
+            "views": 192926,
+            "percentOfTopicPeak": 67.17,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2024,
+            "views": 161045,
+            "percentOfTopicPeak": 56.07,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2025,
+            "views": 123774,
+            "percentOfTopicPeak": 43.1,
+            "state": "observed_positive"
+          }
+        ],
+        "shareOfSelectedInventoryPercent": 14.01
+      },
+      {
+        "page": "California_Consumer_Privacy_Act",
+        "label": "California Consumer Privacy Act",
+        "category": "governance",
+        "totalViews": 1068885,
+        "peakYear": 2019,
+        "peakViews": 342473,
+        "latestVsPeakPercent": 18.57,
+        "yearly": [
+          {
+            "year": 2018,
+            "views": 1590,
+            "percentOfTopicPeak": 0.46,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2019,
+            "views": 342473,
+            "percentOfTopicPeak": 100,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2020,
+            "views": 274808,
+            "percentOfTopicPeak": 80.24,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2021,
+            "views": 127402,
+            "percentOfTopicPeak": 37.2,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2022,
+            "views": 94390,
+            "percentOfTopicPeak": 27.56,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2023,
+            "views": 85493,
+            "percentOfTopicPeak": 24.96,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2024,
+            "views": 79137,
+            "percentOfTopicPeak": 23.11,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2025,
+            "views": 63592,
+            "percentOfTopicPeak": 18.57,
+            "state": "observed_positive"
+          }
+        ],
+        "shareOfSelectedInventoryPercent": 9.06
+      },
+      {
+        "page": "Data_breach",
+        "label": "Data breach",
+        "category": "pressure",
+        "totalViews": 1133843,
+        "peakYear": 2019,
+        "peakViews": 171500,
+        "latestVsPeakPercent": 59.46,
+        "yearly": [
+          {
+            "year": 2018,
+            "views": 152935,
+            "percentOfTopicPeak": 89.17,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2019,
+            "views": 171500,
+            "percentOfTopicPeak": 100,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2020,
+            "views": 153061,
+            "percentOfTopicPeak": 89.25,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2021,
+            "views": 138969,
+            "percentOfTopicPeak": 81.03,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2022,
+            "views": 113421,
+            "percentOfTopicPeak": 66.13,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2023,
+            "views": 154826,
+            "percentOfTopicPeak": 90.28,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2024,
+            "views": 147149,
+            "percentOfTopicPeak": 85.8,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2025,
+            "views": 101982,
+            "percentOfTopicPeak": 59.46,
+            "state": "observed_positive"
+          }
+        ],
+        "shareOfSelectedInventoryPercent": 9.61
+      },
+      {
+        "page": "Digital_rights",
+        "label": "Digital rights",
+        "category": "concept",
+        "totalViews": 221187,
+        "peakYear": 2019,
+        "peakViews": 42596,
+        "latestVsPeakPercent": 40.52,
+        "yearly": [
+          {
+            "year": 2018,
+            "views": 41674,
+            "percentOfTopicPeak": 97.84,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2019,
+            "views": 42596,
+            "percentOfTopicPeak": 100,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2020,
+            "views": 30559,
+            "percentOfTopicPeak": 71.74,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2021,
+            "views": 24795,
+            "percentOfTopicPeak": 58.21,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2022,
+            "views": 24033,
+            "percentOfTopicPeak": 56.42,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2023,
+            "views": 19053,
+            "percentOfTopicPeak": 44.73,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2024,
+            "views": 21217,
+            "percentOfTopicPeak": 49.81,
+            "state": "observed_positive"
+          },
+          {
+            "year": 2025,
+            "views": 17260,
+            "percentOfTopicPeak": 40.52,
+            "state": "observed_positive"
+          }
+        ],
+        "shareOfSelectedInventoryPercent": 1.88
+      }
+    ],
+    "categoryYearly": [
+      {
+        "year": 2018,
+        "concept": 958364,
+        "governance": 243902,
+        "pressure": 437348,
+        "total": 1639614,
+        "conceptSharePercent": 58.45,
+        "governanceSharePercent": 14.88,
+        "pressureSharePercent": 26.67
+      },
+      {
+        "year": 2019,
+        "concept": 948391,
+        "governance": 524744,
+        "pressure": 458700,
+        "total": 1931835,
+        "conceptSharePercent": 49.09,
+        "governanceSharePercent": 27.16,
+        "pressureSharePercent": 23.74
+      },
+      {
+        "year": 2020,
+        "concept": 672872,
+        "governance": 539419,
+        "pressure": 380100,
+        "total": 1592391,
+        "conceptSharePercent": 42.26,
+        "governanceSharePercent": 33.87,
+        "pressureSharePercent": 23.87
+      },
+      {
+        "year": 2021,
+        "concept": 556906,
+        "governance": 447944,
+        "pressure": 332030,
+        "total": 1336880,
+        "conceptSharePercent": 41.66,
+        "governanceSharePercent": 33.51,
+        "pressureSharePercent": 24.84
+      },
+      {
+        "year": 2022,
+        "concept": 558288,
+        "governance": 509601,
+        "pressure": 295989,
+        "total": 1363878,
+        "conceptSharePercent": 40.93,
+        "governanceSharePercent": 37.36,
+        "pressureSharePercent": 21.7
+      },
+      {
+        "year": 2023,
+        "concept": 757519,
+        "governance": 509049,
+        "pressure": 347752,
+        "total": 1614320,
+        "conceptSharePercent": 46.92,
+        "governanceSharePercent": 31.53,
+        "pressureSharePercent": 21.54
+      },
+      {
+        "year": 2024,
+        "concept": 592898,
+        "governance": 408276,
+        "pressure": 308194,
+        "total": 1309368,
+        "conceptSharePercent": 45.28,
+        "governanceSharePercent": 31.18,
+        "pressureSharePercent": 23.54
+      },
+      {
+        "year": 2025,
+        "concept": 418265,
+        "governance": 360611,
+        "pressure": 225756,
+        "total": 1004632,
+        "conceptSharePercent": 41.63,
+        "governanceSharePercent": 35.89,
+        "pressureSharePercent": 22.47
+      }
+    ]
+  },
+  "policyCorpus": {
+    "terms": [
+      "privacy policy",
+      "privacy notice",
+      "privacy settings",
+      "privacy controls",
+      "privacy preferences",
+      "data protection",
+      "personal information",
+      "consent",
+      "cookies",
+      "privacy rights"
+    ],
+    "minimumTokenRule": 1000,
+    "includedDocumentCount": 5,
+    "excludedDocumentCount": 3,
+    "documents": [
+      {
+        "id": "google_privacy",
+        "label": "Google Privacy Policy",
+        "url": "https://policies.google.com/privacy",
+        "rawPath": "docs/research/privacy/raw/research_expansion_cache/policy_google_privacy_47abba2d89033518.json",
+        "tokenCount": 8999,
+        "matchedPhraseCount": 83,
+        "terms": [
+          {
+            "term": "cookies",
+            "count": 23,
+            "perTenThousandTokens": 25.56,
+            "shareOfRegisteredPhraseHitsPercent": 27.71,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy policy",
+            "count": 20,
+            "perTenThousandTokens": 22.22,
+            "shareOfRegisteredPhraseHitsPercent": 24.1,
+            "state": "observed_positive"
+          },
+          {
+            "term": "personal information",
+            "count": 19,
+            "perTenThousandTokens": 21.11,
+            "shareOfRegisteredPhraseHitsPercent": 22.89,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy settings",
+            "count": 7,
+            "perTenThousandTokens": 7.78,
+            "shareOfRegisteredPhraseHitsPercent": 8.43,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy controls",
+            "count": 6,
+            "perTenThousandTokens": 6.67,
+            "shareOfRegisteredPhraseHitsPercent": 7.23,
+            "state": "observed_positive"
+          },
+          {
+            "term": "consent",
+            "count": 5,
+            "perTenThousandTokens": 5.56,
+            "shareOfRegisteredPhraseHitsPercent": 6.02,
+            "state": "observed_positive"
+          },
+          {
+            "term": "data protection",
+            "count": 2,
+            "perTenThousandTokens": 2.22,
+            "shareOfRegisteredPhraseHitsPercent": 2.41,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy notice",
+            "count": 1,
+            "perTenThousandTokens": 1.11,
+            "shareOfRegisteredPhraseHitsPercent": 1.2,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy preferences",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "privacy rights",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          }
+        ]
+      },
+      {
+        "id": "microsoft_privacy",
+        "label": "Microsoft Privacy Statement",
+        "url": "https://www.microsoft.com/en-us/privacy/privacystatement",
+        "rawPath": "docs/research/privacy/raw/research_expansion_cache/policy_microsoft_privacy_5ba027807d9d27b4.json",
+        "tokenCount": 50956,
+        "matchedPhraseCount": 253,
+        "terms": [
+          {
+            "term": "cookies",
+            "count": 109,
+            "perTenThousandTokens": 21.39,
+            "shareOfRegisteredPhraseHitsPercent": 43.08,
+            "state": "observed_positive"
+          },
+          {
+            "term": "consent",
+            "count": 56,
+            "perTenThousandTokens": 10.99,
+            "shareOfRegisteredPhraseHitsPercent": 22.13,
+            "state": "observed_positive"
+          },
+          {
+            "term": "data protection",
+            "count": 30,
+            "perTenThousandTokens": 5.89,
+            "shareOfRegisteredPhraseHitsPercent": 11.86,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy settings",
+            "count": 29,
+            "perTenThousandTokens": 5.69,
+            "shareOfRegisteredPhraseHitsPercent": 11.46,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy policy",
+            "count": 12,
+            "perTenThousandTokens": 2.35,
+            "shareOfRegisteredPhraseHitsPercent": 4.74,
+            "state": "observed_positive"
+          },
+          {
+            "term": "personal information",
+            "count": 7,
+            "perTenThousandTokens": 1.37,
+            "shareOfRegisteredPhraseHitsPercent": 2.77,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy controls",
+            "count": 3,
+            "perTenThousandTokens": 0.59,
+            "shareOfRegisteredPhraseHitsPercent": 1.19,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy preferences",
+            "count": 3,
+            "perTenThousandTokens": 0.59,
+            "shareOfRegisteredPhraseHitsPercent": 1.19,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy rights",
+            "count": 3,
+            "perTenThousandTokens": 0.59,
+            "shareOfRegisteredPhraseHitsPercent": 1.19,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy notice",
+            "count": 1,
+            "perTenThousandTokens": 0.2,
+            "shareOfRegisteredPhraseHitsPercent": 0.4,
+            "state": "observed_positive"
+          }
+        ]
+      },
+      {
+        "id": "openai_privacy",
+        "label": "OpenAI Privacy Policy",
+        "url": "https://openai.com/policies/privacy-policy/",
+        "rawPath": "docs/research/privacy/raw/research_expansion_cache/policy_openai_privacy_dd496178d5d235ef.json",
+        "tokenCount": 5030,
+        "matchedPhraseCount": 27,
+        "terms": [
+          {
+            "term": "cookies",
+            "count": 8,
+            "perTenThousandTokens": 15.9,
+            "shareOfRegisteredPhraseHitsPercent": 29.63,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy policy",
+            "count": 8,
+            "perTenThousandTokens": 15.9,
+            "shareOfRegisteredPhraseHitsPercent": 29.63,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy rights",
+            "count": 4,
+            "perTenThousandTokens": 7.95,
+            "shareOfRegisteredPhraseHitsPercent": 14.81,
+            "state": "observed_positive"
+          },
+          {
+            "term": "data protection",
+            "count": 3,
+            "perTenThousandTokens": 5.96,
+            "shareOfRegisteredPhraseHitsPercent": 11.11,
+            "state": "observed_positive"
+          },
+          {
+            "term": "consent",
+            "count": 2,
+            "perTenThousandTokens": 3.98,
+            "shareOfRegisteredPhraseHitsPercent": 7.41,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy notice",
+            "count": 1,
+            "perTenThousandTokens": 1.99,
+            "shareOfRegisteredPhraseHitsPercent": 3.7,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy settings",
+            "count": 1,
+            "perTenThousandTokens": 1.99,
+            "shareOfRegisteredPhraseHitsPercent": 3.7,
+            "state": "observed_positive"
+          },
+          {
+            "term": "personal information",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "privacy controls",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "privacy preferences",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          }
+        ]
+      },
+      {
+        "id": "ca_oag_ccpa",
+        "label": "California OAG CCPA",
+        "url": "https://www.oag.ca.gov/privacy/ccpa",
+        "rawPath": "docs/research/privacy/raw/research_expansion_cache/policy_ca_oag_ccpa_0803821652b92b8f.json",
+        "tokenCount": 7343,
+        "matchedPhraseCount": 124,
+        "terms": [
+          {
+            "term": "personal information",
+            "count": 103,
+            "perTenThousandTokens": 140.27,
+            "shareOfRegisteredPhraseHitsPercent": 83.06,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy policy",
+            "count": 16,
+            "perTenThousandTokens": 21.79,
+            "shareOfRegisteredPhraseHitsPercent": 12.9,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy rights",
+            "count": 5,
+            "perTenThousandTokens": 6.81,
+            "shareOfRegisteredPhraseHitsPercent": 4.03,
+            "state": "observed_positive"
+          },
+          {
+            "term": "consent",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "cookies",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "data protection",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "privacy controls",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "privacy notice",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "privacy preferences",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "privacy settings",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          }
+        ]
+      },
+      {
+        "id": "gdpr_lex",
+        "label": "GDPR Official Text",
+        "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+        "rawPath": "docs/research/privacy/raw/research_expansion_cache/policy_gdpr_lex_d37c669f771709b4.json",
+        "tokenCount": 56562,
+        "matchedPhraseCount": 231,
+        "terms": [
+          {
+            "term": "data protection",
+            "count": 158,
+            "perTenThousandTokens": 27.93,
+            "shareOfRegisteredPhraseHitsPercent": 68.4,
+            "state": "observed_positive"
+          },
+          {
+            "term": "consent",
+            "count": 69,
+            "perTenThousandTokens": 12.2,
+            "shareOfRegisteredPhraseHitsPercent": 29.87,
+            "state": "observed_positive"
+          },
+          {
+            "term": "cookies",
+            "count": 2,
+            "perTenThousandTokens": 0.35,
+            "shareOfRegisteredPhraseHitsPercent": 0.87,
+            "state": "observed_positive"
+          },
+          {
+            "term": "personal information",
+            "count": 1,
+            "perTenThousandTokens": 0.18,
+            "shareOfRegisteredPhraseHitsPercent": 0.43,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy policy",
+            "count": 1,
+            "perTenThousandTokens": 0.18,
+            "shareOfRegisteredPhraseHitsPercent": 0.43,
+            "state": "observed_positive"
+          },
+          {
+            "term": "privacy controls",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "privacy notice",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "privacy preferences",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "privacy rights",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          },
+          {
+            "term": "privacy settings",
+            "count": 0,
+            "perTenThousandTokens": 0,
+            "shareOfRegisteredPhraseHitsPercent": 0,
+            "state": "observed_zero"
+          }
+        ]
+      }
+    ],
+    "excludedDocuments": [
+      {
+        "id": "apple_privacy",
+        "tokenCount": 310,
+        "state": "absent_or_suppressed",
+        "reason": "Captured document contains fewer than 1000 visible tokens; zeros would be unsafe."
+      },
+      {
+        "id": "meta_privacy",
+        "tokenCount": 10,
+        "state": "absent_or_suppressed",
+        "reason": "Captured document contains fewer than 1000 visible tokens; zeros would be unsafe."
+      },
+      {
+        "id": "oaic_privacy",
+        "tokenCount": 425,
+        "state": "absent_or_suppressed",
+        "reason": "Captured document contains fewer than 1000 visible tokens; zeros would be unsafe."
+      }
+    ]
+  },
+  "anchorLedger": {
+    "inclusionRule": "confidence=high AND manual_review=false AND source reachable with HTTP 2xx",
+    "includedCount": 17,
+    "excludedCount": 6,
+    "transferCount": 12,
+    "transferSharePercent": 70.59,
+    "routeCounts": [
+      {
+        "routeId": "information_data_protection",
+        "anchorCount": 12,
+        "shareOfAnchorsPercent": 70.59
+      },
+      {
+        "routeId": "breach_risk_compliance",
+        "anchorCount": 5,
+        "shareOfAnchorsPercent": 29.41
+      },
+      {
+        "routeId": "identity_consent_advertising",
+        "anchorCount": 5,
+        "shareOfAnchorsPercent": 29.41
+      },
+      {
+        "routeId": "internet_platform_interface",
+        "anchorCount": 5,
+        "shareOfAnchorsPercent": 29.41
+      },
+      {
+        "routeId": "surveillance_security_tension",
+        "anchorCount": 3,
+        "shareOfAnchorsPercent": 17.65
+      },
+      {
+        "routeId": "ai_biometrics_sensitive_data",
+        "anchorCount": 2,
+        "shareOfAnchorsPercent": 11.76
+      },
+      {
+        "routeId": "rights_personhood",
+        "anchorCount": 2,
+        "shareOfAnchorsPercent": 11.76
+      }
+    ],
+    "anchors": [
+      {
+        "id": "echr_article_8_1950",
+        "year": 1950,
+        "label": "ECHR Article 8",
+        "routeIds": [
+          "rights_personhood"
+        ],
+        "isTransfer": false,
+        "sourceTitle": "European Convention on Human Rights",
+        "sourceUrl": "https://rm.coe.int/168007aee0",
+        "sourceStatus": 200
+      },
+      {
+        "id": "hew_fipps_1973",
+        "year": 1973,
+        "label": "Fair information practices",
+        "routeIds": [
+          "information_data_protection"
+        ],
+        "isTransfer": false,
+        "sourceTitle": "Records, Computers, and the Rights of Citizens",
+        "sourceUrl": "https://aspe.hhs.gov/reports/records-computers-rights-citizens",
+        "sourceStatus": 200
+      },
+      {
+        "id": "privacy_act_1974",
+        "year": 1974,
+        "label": "U.S. Privacy Act",
+        "routeIds": [
+          "information_data_protection",
+          "breach_risk_compliance"
+        ],
+        "isTransfer": true,
+        "sourceTitle": "Privacy Act of 1974",
+        "sourceUrl": "https://www.justice.gov/opcl/privacy-act-1974",
+        "sourceStatus": 200
+      },
+      {
+        "id": "oecd_guidelines_1980",
+        "year": 1980,
+        "label": "OECD privacy guidelines",
+        "routeIds": [
+          "information_data_protection"
+        ],
+        "isTransfer": false,
+        "sourceTitle": "OECD Privacy Guidelines",
+        "sourceUrl": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0188",
+        "sourceStatus": 200
+      },
+      {
+        "id": "convention_108_1981",
+        "year": 1981,
+        "label": "Convention 108",
+        "routeIds": [
+          "information_data_protection",
+          "rights_personhood"
+        ],
+        "isTransfer": true,
+        "sourceTitle": "Convention 108",
+        "sourceUrl": "https://rm.coe.int/1680078b37",
+        "sourceStatus": 200
+      },
+      {
+        "id": "ecpa_1986",
+        "year": 1986,
+        "label": "Electronic communications",
+        "routeIds": [
+          "surveillance_security_tension",
+          "information_data_protection"
+        ],
+        "isTransfer": true,
+        "sourceTitle": "Electronic Communications Privacy Act",
+        "sourceUrl": "https://bja.ojp.gov/program/it/privacy-civil-liberties/authorities/statutes/1285",
+        "sourceStatus": 200
+      },
+      {
+        "id": "eu_directive_1995",
+        "year": 1995,
+        "label": "EU Data Protection Directive",
+        "routeIds": [
+          "information_data_protection"
+        ],
+        "isTransfer": false,
+        "sourceTitle": "Directive 95/46/EC",
+        "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31995L0046",
+        "sourceStatus": 202
+      },
+      {
+        "id": "hipaa_1996",
+        "year": 1996,
+        "label": "Health privacy",
+        "routeIds": [
+          "ai_biometrics_sensitive_data",
+          "information_data_protection"
+        ],
+        "isTransfer": true,
+        "sourceTitle": "HIPAA Privacy Rule",
+        "sourceUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E",
+        "sourceStatus": 200
+      },
+      {
+        "id": "coppa_1998",
+        "year": 1998,
+        "label": "Children online",
+        "routeIds": [
+          "internet_platform_interface",
+          "identity_consent_advertising"
+        ],
+        "isTransfer": true,
+        "sourceTitle": "Children's Online Privacy Protection Rule",
+        "sourceUrl": "https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa",
+        "sourceStatus": 200
+      },
+      {
+        "id": "patriot_act_2001",
+        "year": 2001,
+        "label": "Security turn",
+        "routeIds": [
+          "surveillance_security_tension"
+        ],
+        "isTransfer": false,
+        "sourceTitle": "USA PATRIOT Act",
+        "sourceUrl": "https://www.govinfo.gov/content/pkg/PLAW-107publ56/html/PLAW-107publ56.htm",
+        "sourceStatus": 200
+      },
+      {
+        "id": "eprivacy_directive_2002",
+        "year": 2002,
+        "label": "ePrivacy / cookies",
+        "routeIds": [
+          "internet_platform_interface",
+          "information_data_protection"
+        ],
+        "isTransfer": true,
+        "sourceTitle": "Directive 2002/58/EC",
+        "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32002L0058",
+        "sourceStatus": 202
+      },
+      {
+        "id": "ftc_privacy_report_2012",
+        "year": 2012,
+        "label": "Privacy framework",
+        "routeIds": [
+          "internet_platform_interface",
+          "identity_consent_advertising",
+          "breach_risk_compliance"
+        ],
+        "isTransfer": true,
+        "sourceTitle": "Protecting Consumer Privacy in an Era of Rapid Change",
+        "sourceUrl": "https://www.ftc.gov/reports/protecting-consumer-privacy-era-rapid-change-recommendations-businesses-policymakers",
+        "sourceStatus": 200
+      },
+      {
+        "id": "gdpr_adoption_2016",
+        "year": 2016,
+        "label": "GDPR adopted",
+        "routeIds": [
+          "information_data_protection",
+          "breach_risk_compliance",
+          "identity_consent_advertising"
+        ],
+        "isTransfer": true,
+        "sourceTitle": "Regulation (EU) 2016/679",
+        "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "sourceStatus": 202
+      },
+      {
+        "id": "cambridge_analytica_2018",
+        "year": 2018,
+        "label": "Platform profiling",
+        "routeIds": [
+          "identity_consent_advertising",
+          "internet_platform_interface"
+        ],
+        "isTransfer": true,
+        "sourceTitle": "FTC Facebook privacy enforcement",
+        "sourceUrl": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook",
+        "sourceStatus": 200
+      },
+      {
+        "id": "gdpr_applies_2018",
+        "year": 2018,
+        "label": "GDPR applies",
+        "routeIds": [
+          "information_data_protection",
+          "internet_platform_interface",
+          "breach_risk_compliance"
+        ],
+        "isTransfer": true,
+        "sourceTitle": "European Commission data protection",
+        "sourceUrl": "https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en",
+        "sourceStatus": 200
+      },
+      {
+        "id": "ccpa_2018_2020",
+        "year": 2020,
+        "label": "Consumer privacy rights",
+        "routeIds": [
+          "information_data_protection",
+          "identity_consent_advertising",
+          "breach_risk_compliance"
+        ],
+        "isTransfer": true,
+        "sourceTitle": "California Consumer Privacy Act",
+        "sourceUrl": "https://oag.ca.gov/privacy/ccpa",
+        "sourceStatus": 200
+      },
+      {
+        "id": "eu_ai_act_2024",
+        "year": 2024,
+        "label": "AI and biometrics",
+        "routeIds": [
+          "ai_biometrics_sensitive_data",
+          "information_data_protection",
+          "surveillance_security_tension"
+        ],
+        "isTransfer": true,
+        "sourceTitle": "EU AI Act regulatory framework",
+        "sourceUrl": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+        "sourceStatus": 200
+      }
+    ]
+  },
+  "coverageAudit": [
+    {
+      "layerId": "attention_metrics",
+      "state": "observed_positive",
+      "productionUse": "figures 01–02",
+      "reason": "Ten frozen yearly pageview series have an explicit source boundary and complete 2018–2025 window."
+    },
+    {
+      "layerId": "attention_gdpr_topic",
+      "state": "unavailable",
+      "productionUse": "coverage only",
+      "reason": "The frozen GDPR page series begins in 2022 and cannot enter the 2018–2025 common-window comparison."
+    },
+    {
+      "layerId": "platform_policy_corpus",
+      "state": "observed_positive",
+      "productionUse": "figure 03",
+      "reason": "Five frozen documents pass the 1,000-token content floor."
+    },
+    {
+      "layerId": "modern_institutional_anchors",
+      "state": "observed_positive",
+      "productionUse": "figure 04",
+      "reason": "Seventeen high-confidence, non-manual-review anchors have reachable 2xx sources."
+    },
+    {
+      "layerId": "frequency_terms",
+      "state": "incomparable",
+      "productionUse": "coverage only",
+      "reason": "Variable Ngram aliases and no fixed-release raw denominator."
+    },
+    {
+      "layerId": "geo_attention_map",
+      "state": "incomparable",
+      "productionUse": "coverage only",
+      "reason": "Academic production and news/source geography are mixed."
+    },
+    {
+      "layerId": "geo_elevation_distribution",
+      "state": "out_of_scope",
+      "productionUse": "none",
+      "reason": "Elevation has no supported explanatory relationship to privacy attention."
+    },
+    {
+      "layerId": "etymology_first_use",
+      "state": "unavailable",
+      "productionUse": "none",
+      "reason": "Direct first-use evidence remains unverified."
+    },
+    {
+      "layerId": "google_trends_region",
+      "state": "not_searched",
+      "productionUse": "none",
+      "reason": "No stable official public API was used in the frozen research pass."
+    },
+    {
+      "layerId": "gdelt_failed_request",
+      "state": "fetch_failed",
+      "productionUse": "none",
+      "reason": "The retained research expansion records one JSON-decode failure."
+    },
+    {
+      "layerId": "partial_2026_attention",
+      "state": "out_of_scope",
+      "productionUse": "none",
+      "reason": "The captured 2026 year is partial and excluded from comparisons."
+    }
+  ],
+  "coverageSummary": [
+    {
+      "id": "used",
+      "layerCount": 3,
+      "shareOfAuditedLayersPercent": 27.27,
+      "layerIds": [
+        "attention_metrics",
+        "platform_policy_corpus",
+        "modern_institutional_anchors"
+      ]
+    },
+    {
+      "id": "thin",
+      "layerCount": 2,
+      "shareOfAuditedLayersPercent": 18.18,
+      "layerIds": [
+        "attention_gdpr_topic",
+        "etymology_first_use"
+      ]
+    },
+    {
+      "id": "different",
+      "layerCount": 2,
+      "shareOfAuditedLayersPercent": 18.18,
+      "layerIds": [
+        "frequency_terms",
+        "geo_attention_map"
+      ]
+    },
+    {
+      "id": "outside",
+      "layerCount": 4,
+      "shareOfAuditedLayersPercent": 36.36,
+      "layerIds": [
+        "geo_elevation_distribution",
+        "google_trends_region",
+        "gdelt_failed_request",
+        "partial_2026_attention"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "privacy-finding-attention-mix",
+      "question": "How did the composition of captured privacy-related Wikipedia attention change from 2018 to 2025?",
+      "result": "Governance pages rose from 14.88% of the selected-page total in 2018 to 35.89% in 2025.",
+      "rawFields": [
+        "series_rows[].page",
+        "series_rows[].series[].date",
+        "series_rows[].series[].views"
+      ],
+      "filters": [
+        "Wikimedia status=ok",
+        "complete calendar years 2018–2025",
+        "ten pages with full-window coverage"
+      ],
+      "grouping": "year × registered editorial category",
+      "denominator": "sum of views across the same ten coverage-complete selected pages in the same year",
+      "transform": "category share = category views / selected-page total × 100",
+      "caveat": "This is navigation attention to selected English Wikipedia pages, not language use, public opinion or population prevalence.",
+      "sourceRows": [
+        "docs/research/privacy/raw/privacy_attention_metrics_raw.json"
+      ],
+      "contractIds": [
+        "privacy-figure-01-attention-field"
+      ]
+    },
+    {
+      "id": "privacy-finding-topic-peaks",
+      "question": "Which selected privacy topics accumulated the most captured attention and when did each peak?",
+      "result": "Privacy policy (2,474,661), Privacy (2,201,206), Surveillance (1,652,026) lead the 2018–2025 coverage-complete selected-topic inventory.",
+      "rawFields": [
+        "series_rows[].page",
+        "series_rows[].series[].date",
+        "series_rows[].series[].views"
+      ],
+      "filters": [
+        "complete calendar years 2018–2025",
+        "exclude the coverage-incomplete GDPR topic"
+      ],
+      "grouping": "article page",
+      "denominator": "none; pageview counts are shown within their source boundary",
+      "transform": "sum views by page; argmax yearly views per page",
+      "caveat": "Article identity, redirects, news cycles and editorial coverage affect pageviews.",
+      "sourceRows": [
+        "docs/research/privacy/raw/privacy_attention_metrics_raw.json"
+      ],
+      "contractIds": [
+        "privacy-figure-02-topic-widgets"
+      ]
+    },
+    {
+      "id": "privacy-finding-policy-language",
+      "question": "Which interface and rights terms are visible in five content-complete frozen policy/regulator pages?",
+      "result": "The documents distribute privacy through different operational vocabularies: personal information, data protection, consent, cookies, settings, controls and rights.",
+      "rawFields": [
+        "frozen HTML token stream",
+        "registered exact phrase list"
+      ],
+      "filters": [
+        "tokenCount >= 1000",
+        "exact adjacent token sequence",
+        "five complete captures"
+      ],
+      "grouping": "document × registered exact phrase",
+      "denominator": "document token count for per-10,000-token display",
+      "transform": "non-overlapping exact phrase scan; count / document tokens × 10,000",
+      "caveat": "A one-time capture is a bounded document inventory; counts are not semantic parsing, policy quality or legal comparison.",
+      "sourceRows": [
+        "docs/research/privacy/raw/research_expansion_cache/policy_google_privacy_47abba2d89033518.json",
+        "docs/research/privacy/raw/research_expansion_cache/policy_microsoft_privacy_5ba027807d9d27b4.json",
+        "docs/research/privacy/raw/research_expansion_cache/policy_openai_privacy_dd496178d5d235ef.json",
+        "docs/research/privacy/raw/research_expansion_cache/policy_ca_oag_ccpa_0803821652b92b8f.json",
+        "docs/research/privacy/raw/research_expansion_cache/policy_gdpr_lex_d37c669f771709b4.json"
+      ],
+      "contractIds": [
+        "privacy-figure-03-policy-language-widgets"
+      ]
+    },
+    {
+      "id": "privacy-finding-institutional-transfers",
+      "question": "How does the retained institutional ledger branch from private-life protection into data, platform, risk and technical governance?",
+      "result": "17 high-confidence, non-manual-review anchors remain; 12 belong to more than one registered route.",
+      "rawFields": [
+        "stations[].year",
+        "stations[].route_ids",
+        "stations[].confidence",
+        "source_attempts[].reachable",
+        "source_attempts[].status"
+      ],
+      "filters": [
+        "confidence=high",
+        "manual_review=false",
+        "reachable HTTP 2xx source"
+      ],
+      "grouping": "dated anchor × route",
+      "denominator": "retained anchors only",
+      "transform": "route membership count; transfer = route_ids.length > 1",
+      "caveat": "This is a curated institutional ledger, not a complete world history of privacy law or equal jurisdictional coverage.",
+      "sourceRows": [
+        "docs/research/privacy/raw/privacy_modern_transit_system_raw.json"
+      ],
+      "contractIds": [
+        "privacy-figure-04-governance-grid"
+      ]
+    },
+    {
+      "id": "privacy-finding-coverage-boundary",
+      "question": "Which existing Privacy layers are safe for production and which remain incomparable or out of scope?",
+      "result": "Three active evidence families support the proposed story; variable Ngram aliases, mixed-source geo rankings, elevation and legacy chart metaphors remain excluded.",
+      "rawFields": [
+        "research index statuses",
+        "processed limitations",
+        "active input manifests"
+      ],
+      "filters": [
+        "current repository snapshot",
+        "production claim boundary"
+      ],
+      "grouping": "research layer",
+      "denominator": "none",
+      "transform": "rule-based eligibility classification",
+      "caveat": "Exclusion is a production decision for this mobile edition, not deletion of historical research.",
+      "sourceRows": [
+        "docs/research/privacy/privacy_research_index.json"
+      ],
+      "contractIds": [
+        "privacy-figure-05-coverage-ledger"
+      ]
+    }
+  ],
+  "figureContracts": [
+    {
+      "id": "privacy-figure-01-attention-field",
+      "movement": "movement-a-attention",
+      "moduleOrder": 1,
+      "title": "Attention changes shape",
+      "researchQuestion": "How did the composition of captured privacy-related Wikipedia attention change from 2018 to 2025?",
+      "findingId": "privacy-finding-attention-mix",
+      "sourceFilesAndFields": [
+        "docs/research/privacy/raw/privacy_attention_metrics_raw.json → series_rows[].{page,series[].date,series[].views}"
+      ],
+      "recordGranularityAndN": "10 pages × 8 complete years = 80 observations",
+      "filters": [
+        "Wikimedia status=ok",
+        "complete calendar years 2018–2025",
+        "ten pages with full-window coverage"
+      ],
+      "grouping": "year × registered editorial category",
+      "denominator": "sum of views across the same ten coverage-complete selected pages in the same year",
+      "formula": "category share = category views / selected-page total × 100",
+      "unit": "share of selected-page views (%) and pageviews",
+      "visualChannelMapping": [
+        "year → x",
+        "annual selected-page total → bar height",
+        "category share → stacked color area",
+        "2025 share → direct label"
+      ],
+      "validInterpretation": "Governance pages rose from 14.88% of the selected-page total in 2018 to 35.89% in 2025.",
+      "prohibitedInterpretation": [
+        "public concern prevalence",
+        "semantic frequency",
+        "causal effect of a regulation"
+      ],
+      "missingnessPolicy": "2026 is out_of_scope as an incomplete year; the incomplete-coverage GDPR topic is unavailable; no missing year is filled.",
+      "sourceAndRightsBoundary": "This is navigation attention to selected English Wikipedia pages, not language use, public opinion or population prevalence.",
+      "referenceMapping": "Reference 1 yearly-activity full-height upper visual; description widget overlaps its lower edge.",
+      "cardBehavior": "Primary visualization is static; its compact finding card may flip for method/source but is not swipeable.",
+      "productionEligible": true,
+      "blocker": null
+    },
+    {
+      "id": "privacy-figure-02-topic-widgets",
+      "movement": "movement-a-attention",
+      "moduleOrder": 2,
+      "title": "Eleven windows onto privacy",
+      "researchQuestion": "Which selected privacy topics accumulated the most captured attention and when did each peak?",
+      "findingId": "privacy-finding-topic-peaks",
+      "sourceFilesAndFields": [
+        "docs/research/privacy/raw/privacy_attention_metrics_raw.json → series_rows[]"
+      ],
+      "recordGranularityAndN": "10 topic widgets, each containing 8 complete yearly observations",
+      "filters": [
+        "complete calendar years 2018–2025",
+        "exclude the coverage-incomplete GDPR topic"
+      ],
+      "grouping": "article page",
+      "denominator": "none; pageview counts are shown within their source boundary",
+      "formula": "sum views by page; argmax yearly views per page",
+      "unit": "share of ten-page selected attention inventory (%) and annual percent of topic peak",
+      "visualChannelMapping": [
+        "topic → widget",
+        "topic total / ten-topic inventory total → principal percentage",
+        "year → ordered microvisual mark",
+        "annual views / topic peak → bar height, dense dot share or block opacity"
+      ],
+      "validInterpretation": "Privacy policy (2,474,661), Privacy (2,201,206), Surveillance (1,652,026) lead the 2018–2025 coverage-complete selected-topic inventory.",
+      "prohibitedInterpretation": [
+        "importance ranking",
+        "total internet interest",
+        "language-wide use"
+      ],
+      "missingnessPolicy": "Observed zero remains zero; 2026 is out_of_scope; the GDPR topic is unavailable; other missing states are labeled rather than imputed.",
+      "sourceAndRightsBoundary": "Article identity, redirects, news cycles and editorial coverage affect pageviews.",
+      "referenceMapping": "Reference 1 lower two-column widget grid and Reference 2 circular/dot widget density.",
+      "cardBehavior": "Fixed two-column widget matrix. Any detailed widget flips in place; no horizontal rail.",
+      "productionEligible": true,
+      "blocker": null
+    },
+    {
+      "id": "privacy-figure-03-policy-language-widgets",
+      "movement": "movement-b-infrastructure",
+      "moduleOrder": 3,
+      "title": "Privacy becomes interface language",
+      "researchQuestion": "Which interface and rights terms are visible in five content-complete frozen policy/regulator pages?",
+      "findingId": "privacy-finding-policy-language",
+      "sourceFilesAndFields": [
+        "docs/research/privacy/raw/research_expansion_cache/policy_google_privacy_47abba2d89033518.json → normalized tokens",
+        "docs/research/privacy/raw/research_expansion_cache/policy_microsoft_privacy_5ba027807d9d27b4.json → normalized tokens",
+        "docs/research/privacy/raw/research_expansion_cache/policy_openai_privacy_dd496178d5d235ef.json → normalized tokens",
+        "docs/research/privacy/raw/research_expansion_cache/policy_ca_oag_ccpa_0803821652b92b8f.json → normalized tokens",
+        "docs/research/privacy/raw/research_expansion_cache/policy_gdpr_lex_d37c669f771709b4.json → normalized tokens"
+      ],
+      "recordGranularityAndN": "5 content-complete captured documents × 10 registered phrases",
+      "filters": [
+        "tokenCount >= 1000",
+        "exact adjacent token sequence",
+        "five complete captures"
+      ],
+      "grouping": "document × registered exact phrase",
+      "denominator": "document token count for per-10,000-token display",
+      "formula": "non-overlapping exact phrase scan; count / document tokens × 10,000",
+      "unit": "share of matches to ten registered phrases within each document (%)",
+      "visualChannelMapping": [
+        "document → widget",
+        "registered phrase → row or column",
+        "phrase count / all ten registered phrase hits in document → percentage bar, dot or column",
+        "observed zero → empty state"
+      ],
+      "validInterpretation": "The documents distribute privacy through different operational vocabularies: personal information, data protection, consent, cookies, settings, controls and rights.",
+      "prohibitedInterpretation": [
+        "legal strength",
+        "policy quality",
+        "platform behavior",
+        "semantic equivalence among phrases"
+      ],
+      "missingnessPolicy": "Documents below the 1,000-token content floor are absent_or_suppressed, not zero-valued documents.",
+      "sourceAndRightsBoundary": "A one-time capture is a bounded document inventory; counts are not semantic parsing, policy quality or legal comparison.",
+      "referenceMapping": "Reference 1 credit-card widget and Reference 2 product-statistics modular surface.",
+      "cardBehavior": "Five widgets form a two-column irregular matrix. Tap flips one widget at a time to its source/boundary side.",
+      "productionEligible": true,
+      "blocker": null
+    },
+    {
+      "id": "privacy-figure-04-governance-grid",
+      "movement": "movement-b-infrastructure",
+      "moduleOrder": 4,
+      "title": "One idea, many institutions",
+      "researchQuestion": "How does the retained institutional ledger branch from private-life protection into data, platform, risk and technical governance?",
+      "findingId": "privacy-finding-institutional-transfers",
+      "sourceFilesAndFields": [
+        "docs/research/privacy/raw/privacy_modern_transit_system_raw.json → stations[] + source_attempts[]"
+      ],
+      "recordGranularityAndN": "17 retained dated anchors; 7 route families",
+      "filters": [
+        "confidence=high",
+        "manual_review=false",
+        "reachable HTTP 2xx source"
+      ],
+      "grouping": "dated anchor × route",
+      "denominator": "retained anchors only",
+      "formula": "route membership count; transfer = route_ids.length > 1",
+      "unit": "institutional anchors and route memberships",
+      "visualChannelMapping": [
+        "retained anchor → one equal dot",
+        "multi-route source → violet filled dot",
+        "single-route source → pale dot",
+        "route anchor count / 17 retained anchors → percentage bar",
+        "source record → folded chronological link"
+      ],
+      "validInterpretation": "17 high-confidence, non-manual-review anchors remain; 12 belong to more than one registered route.",
+      "prohibitedInterpretation": [
+        "complete global law history",
+        "causal lineage",
+        "equal jurisdictional coverage",
+        "event importance by dot area"
+      ],
+      "missingnessPolicy": "Medium/low/manual-review anchors are unavailable for the production ledger; absence from a route is not a historical zero.",
+      "sourceAndRightsBoundary": "This is a curated institutional ledger, not a complete world history of privacy law or equal jurisdictional coverage.",
+      "referenceMapping": "Reference 2 proportion dot field and Reference 4 compact percentage widgets; the deprecated year-by-route matrix is prohibited.",
+      "cardBehavior": "Static equal-dot proportion field and percentage route bars; record-level source links are folded below.",
+      "productionEligible": true,
+      "blocker": null
+    },
+    {
+      "id": "privacy-figure-05-coverage-ledger",
+      "movement": "movement-b-infrastructure",
+      "moduleOrder": 5,
+      "title": "What this page can and cannot claim",
+      "researchQuestion": "Which existing Privacy layers are safe for production and which remain incomparable or out of scope?",
+      "findingId": "privacy-finding-coverage-boundary",
+      "sourceFilesAndFields": [
+        "privacy source manifest + processed layer limitations"
+      ],
+      "recordGranularityAndN": "research layer",
+      "filters": [
+        "current repository snapshot",
+        "production claim boundary"
+      ],
+      "grouping": "research layer",
+      "denominator": "none",
+      "formula": "rule-based eligibility classification",
+      "unit": "evidence state",
+      "visualChannelMapping": [
+        "evidence state group → widget",
+        "layers in group / eleven audited layers → principal percentage",
+        "group count → direct text"
+      ],
+      "validInterpretation": "Three active evidence families support the proposed story; variable Ngram aliases, mixed-source geo rankings, elevation and legacy chart metaphors remain excluded.",
+      "prohibitedInterpretation": [
+        "excluded equals false",
+        "not searched equals zero",
+        "research deletion"
+      ],
+      "missingnessPolicy": "Uses the full eight-state taxonomy; missing and zero are never collapsed.",
+      "sourceAndRightsBoundary": "Repository audit only; upstream rights remain attached to each layer.",
+      "referenceMapping": "Reference 4 compact dashboard modules translated into an evidence-state ledger.",
+      "cardBehavior": "Always-visible compact ledger; source/rights detail is a native disclosure below the ledger.",
+      "productionEligible": true,
+      "blocker": null
+    }
+  ],
+  "spotChecks": [
+    {
+      "id": "privacy-check-topic-count",
+      "actual": 10,
+      "expected": 10,
+      "passed": true,
+      "lineage": "docs/research/privacy/raw/privacy_attention_metrics_raw.json"
+    },
+    {
+      "id": "privacy-check-coverage-exclusion",
+      "actual": "General_data_protection_regulation",
+      "expected": "General_data_protection_regulation",
+      "passed": true,
+      "lineage": "docs/research/privacy/raw/privacy_attention_metrics_raw.json"
+    },
+    {
+      "id": "privacy-check-complete-year-floor",
+      "actual": 2018,
+      "expected": 2018,
+      "passed": true,
+      "lineage": "docs/research/privacy/raw/privacy_attention_metrics_raw.json"
+    },
+    {
+      "id": "privacy-check-complete-year-ceiling",
+      "actual": 2025,
+      "expected": 2025,
+      "passed": true,
+      "lineage": "docs/research/privacy/raw/privacy_attention_metrics_raw.json"
+    },
+    {
+      "id": "privacy-check-2026-excluded",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "lineage": "docs/research/privacy/raw/privacy_attention_metrics_raw.json"
+    },
+    {
+      "id": "privacy-check-privacy-2023",
+      "actual": 488142,
+      "expected": 488142,
+      "passed": true,
+      "lineage": "docs/research/privacy/raw/privacy_attention_metrics_raw.json"
+    },
+    {
+      "id": "privacy-check-policy-included",
+      "actual": 5,
+      "expected": 5,
+      "passed": true,
+      "lineage": "docs/research/privacy/raw/privacy_research_expansion_raw.json"
+    },
+    {
+      "id": "privacy-check-policy-excluded",
+      "actual": 3,
+      "expected": 3,
+      "passed": true,
+      "lineage": "docs/research/privacy/raw/privacy_research_expansion_raw.json"
+    },
+    {
+      "id": "privacy-check-google-cookies",
+      "actual": 23,
+      "expected": 23,
+      "passed": true,
+      "lineage": "frozen Google policy token stream"
+    },
+    {
+      "id": "privacy-check-gdpr-data-protection",
+      "actual": 158,
+      "expected": 158,
+      "passed": true,
+      "lineage": "frozen GDPR token stream"
+    },
+    {
+      "id": "privacy-check-policy-zero-share",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "lineage": "frozen policy token streams → observed-zero display boundary"
+    },
+    {
+      "id": "privacy-check-policy-positive-share",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "lineage": "frozen policy token streams → observed-positive display boundary"
+    },
+    {
+      "id": "privacy-check-anchor-included",
+      "actual": 17,
+      "expected": 17,
+      "passed": true,
+      "lineage": "docs/research/privacy/raw/privacy_modern_transit_system_raw.json"
+    },
+    {
+      "id": "privacy-check-anchor-transfers",
+      "actual": 12,
+      "expected": 12,
+      "passed": true,
+      "lineage": "docs/research/privacy/raw/privacy_modern_transit_system_raw.json"
+    },
+    {
+      "id": "privacy-check-low-confidence-excluded",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "lineage": "docs/research/privacy/raw/privacy_modern_transit_system_raw.json"
+    },
+    {
+      "id": "privacy-check-contract-count",
+      "actual": 5,
+      "expected": 5,
+      "passed": true,
+      "lineage": "figure contract registry"
+    },
+    {
+      "id": "privacy-check-contract-eligibility",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "lineage": "figure contract registry"
+    }
+  ]
+}

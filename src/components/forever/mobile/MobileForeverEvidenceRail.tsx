@@ -197,6 +197,7 @@ export function MobileForeverEvidenceRail({
                 <span className={styles.cardUnit}>{card.unit}</span>
                 <span
                   className={`${styles.cardMicro} ${styles[card.micro.kind]}`}
+                  data-chart-grow="micro"
                   aria-label={`${card.label} data microvisualisation`}
                 >
                   <i

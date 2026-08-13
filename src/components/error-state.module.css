@@ -1,0 +1,136 @@
+.mobileRoot { display: none; }
+
+@media (max-width: 959px) {
+  .desktopRoot { display: none !important; }
+
+  .mobileRoot {
+    display: flex;
+    min-height: 100svh;
+    flex-direction: column;
+    padding: 1.1rem clamp(1rem, 5.1vw, 1.4rem) 0.7rem;
+    overflow-x: clip;
+    background: var(--wot-paper-mobile);
+    color: var(--wot-ink);
+  }
+
+  .mobileNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    font-size: 0.8125rem;
+    font-weight: 650;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .mobileNav a {
+    position: relative;
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    padding-block: 0.5rem;
+  }
+
+  .mobileNav a::after {
+    position: absolute;
+    right: 0;
+    bottom: 0.28rem;
+    left: 0;
+    height: 2px;
+    background: color-mix(in srgb, var(--wot-ink) 70%, transparent);
+    content: "";
+  }
+
+  .mobileContent {
+    display: grid;
+    gap: 1.35rem;
+    padding-block: clamp(3rem, 13vw, 4.5rem) 3rem;
+  }
+
+  .mobileEyebrow,
+  .mobileNote,
+  .mobileActions,
+  .mobileFooter {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  }
+
+  .mobileEyebrow {
+    margin: 0;
+    color: var(--wot-nice);
+    font-size: 0.8125rem;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .mobileContent h1 {
+    display: grid;
+    max-width: 8ch;
+    margin: 0;
+    font-size: clamp(3.8rem, 18vw, 5.4rem);
+    font-weight: 900;
+    letter-spacing: -0.065em;
+    line-height: 0.82;
+    text-transform: lowercase;
+  }
+
+  .mobileContent h1 span { color: var(--wot-nice); }
+
+  .mobileMessage {
+    max-width: 29ch;
+    margin: 0.8rem 0 0;
+    padding-top: 1.25rem;
+    border-top: 3px solid var(--wot-ink);
+    font-size: clamp(1.35rem, 6.2vw, 1.75rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.12;
+  }
+
+  .mobileNote {
+    max-width: 35ch;
+    margin: 0;
+    font-size: 0.8125rem;
+    font-weight: 650;
+    letter-spacing: 0.025em;
+    line-height: 1.55;
+  }
+
+  .mobileActions {
+    display: grid;
+    border-top: 3px solid var(--wot-ink);
+  }
+
+  .mobileActions a,
+  .mobileActions button {
+    display: flex;
+    min-height: 58px;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    border-bottom: 3px solid var(--wot-ink);
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 0.875rem;
+    font-weight: 850;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .mobileActions a:focus-visible,
+  .mobileActions button:focus-visible,
+  .mobileNav a:focus-visible { outline: 3px solid var(--wot-nice); outline-offset: 3px; }
+
+  .mobileFooter {
+    margin-top: auto;
+    padding: 1rem 0 0.3rem;
+    border-top: 1px solid var(--wot-ink);
+    font-size: 0.8125rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    line-height: 1.45;
+    text-transform: uppercase;
+  }
+}

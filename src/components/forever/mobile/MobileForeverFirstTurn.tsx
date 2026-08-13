@@ -45,7 +45,7 @@ export function MobileForeverFirstTurn({ annual, transition, fromShare, toShare 
         <p>The joined form becomes the decade-level majority while its own rate remains effectively flat.</p>
       </header>
 
-      <button className={styles.firstStatFlip} data-open={statFlipped} type="button" aria-pressed={statFlipped} aria-label="Flip joined share explanation" onClick={() => setStatFlipped((current) => !current)}>
+      <button className={styles.firstStatFlip} data-chart-grow="meter" data-open={statFlipped} type="button" aria-pressed={statFlipped} aria-label="Flip joined share explanation" onClick={() => setStatFlipped((current) => !current)}>
         <span className={styles.firstStatFlipInner}>
           <span className={styles.firstStatFront}>
             <span className={styles.capsuleRow}>
@@ -73,7 +73,7 @@ export function MobileForeverFirstTurn({ annual, transition, fromShare, toShare 
           <span className={styles.outlineCapsule}>ANNUAL SEQUENCE</span>
           <span className={styles.selectedYear}>{selected.year}</span>
         </div>
-        <div className={styles.sequenceChart} data-phase={selectedYear === 1884 ? "first" : "sustained"} aria-label="Joined share line from 1882 through 1887 with a fifty percent threshold">
+        <div className={styles.sequenceChart} data-chart-grow="line" data-phase={selectedYear === 1884 ? "first" : "sustained"} aria-label="Joined share line from 1882 through 1887 with a fifty percent threshold">
           <svg viewBox="0 0 300 120" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Annual joined share from 1882 through 1887, shown on a labelled 45 to 55 percent scale">
             <line className={styles.sequenceThreshold} x1="12" y1="60" x2="288" y2="60" />
             <polyline className={styles.sequenceBaseLine} points={annual.map((row, index) => `${sequenceX(index)},${sequenceY(row.visual.joinedSharePercent)}`).join(" ")} />
@@ -99,7 +99,7 @@ export function MobileForeverFirstTurn({ annual, transition, fromShare, toShare 
         <div className={styles.capsuleRow}>
           <span className={styles.outlineCapsule}>CHANGE LEDGER</span>
         </div>
-        <div className={styles.changeLedgerChart}>
+        <div className={styles.changeLedgerChart} data-chart-grow="line">
           <svg viewBox="0 0 100 100" preserveAspectRatio="none" role="img" aria-label="Annual exact-form rate paths across the first-turn sequence">
             <polyline className={styles.ledgerJoined} points={annualPoints(annual, (row) => row.joinedRatePerMillionWords)} />
             <polyline className={styles.ledgerSpaced} points={annualPoints(annual, (row) => row.spacedRatePerMillionWords)} />

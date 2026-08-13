@@ -48,6 +48,56 @@
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
+/* Quantitative marks draw on entry; card shells and copy never fade or move. */
+.root [data-mobile-motion-ready="true"] [data-chart-grow] {
+  --chart-draw-ease: cubic-bezier(0.16, 0.84, 0.32, 1);
+}
+
+.root [data-mobile-motion-ready="true"] [data-chart-grow="line"] polyline {
+  -webkit-clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
+  transition: -webkit-clip-path 1900ms var(--chart-draw-ease) var(--chart-draw-delay, 0ms), clip-path 1900ms var(--chart-draw-ease) var(--chart-draw-delay, 0ms);
+}
+
+.root [data-mobile-motion-ready="true"] [data-chart-grow="line"][data-chart-state="pending"] polyline {
+  -webkit-clip-path: inset(0 100% 0 0);
+  clip-path: inset(0 100% 0 0);
+}
+
+.root [data-mobile-motion-ready="true"] [data-chart-grow="bar"] .arcJoinedSegment,
+.root [data-mobile-motion-ready="true"] [data-chart-grow="bar"] .arcSpacedSegment,
+.root [data-mobile-motion-ready="true"] [data-chart-grow="bar"] .conditionBars i {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 1700ms var(--chart-draw-ease) var(--chart-draw-delay, 0ms);
+}
+
+.root [data-mobile-motion-ready="true"] [data-chart-grow="bar"][data-chart-state="pending"] .arcJoinedSegment,
+.root [data-mobile-motion-ready="true"] [data-chart-grow="bar"][data-chart-state="pending"] .arcSpacedSegment,
+.root [data-mobile-motion-ready="true"] [data-chart-grow="bar"][data-chart-state="pending"] .conditionBars i {
+  transform: scaleY(0.02);
+}
+
+.root [data-mobile-motion-ready="true"] [data-chart-grow="micro"] i {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 1700ms var(--chart-draw-ease) var(--chart-draw-delay, 0ms);
+}
+
+.root [data-mobile-motion-ready="true"] [data-chart-grow="micro"][data-chart-state="pending"] i {
+  transform: scaleX(0.01);
+}
+
+.root [data-mobile-motion-ready="true"] [data-chart-grow="meter"] .resultRule {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 1700ms var(--chart-draw-ease) var(--chart-draw-delay, 0ms);
+}
+
+.root [data-mobile-motion-ready="true"] [data-chart-grow="meter"][data-chart-state="pending"] .resultRule {
+  transform: scaleX(0.01);
+}
+
 .figureIndex {
   color: var(--wot-fire);
   font-size: 0.8125rem;
@@ -1705,6 +1755,18 @@
   .cardAction b,
   .citation summary span {
     transition: none;
+  }
+
+  .root [data-chart-grow="line"] polyline,
+  .root [data-chart-grow="bar"] .arcJoinedSegment,
+  .root [data-chart-grow="bar"] .arcSpacedSegment,
+  .root [data-chart-grow="bar"] .conditionBars i,
+  .root [data-chart-grow="micro"] i,
+  .root [data-chart-grow="meter"] .resultRule {
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
+    transform: none !important;
+    transition: none !important;
   }
 
 }

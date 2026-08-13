@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MobileScrollRevealScope } from "@/components/mobile/MobileScrollRevealScope";
 import type { ForeverMobileAnalysis } from "@/types/foreverMobileAnalysis";
 import { MobileForeverCompositionFlipField } from "./MobileForeverCompositionFlipField";
 import { MobileForeverEvidenceRail } from "./MobileForeverEvidenceRail";
@@ -19,6 +20,7 @@ export function MobileForeverStudy({ analysis }: MobileForeverStudyProps) {
       data-forever-edition="mobile-research"
       data-release={analysis.release.persistentIdentifier}
     >
+      <MobileScrollRevealScope>
       <MobileForeverLongArc analysis={analysis} />
       <MobileForeverEvidenceRail railId="rail-a" eyebrow="Peak / low / return" cards={analysis.rails.railA} />
 
@@ -87,6 +89,7 @@ export function MobileForeverStudy({ analysis }: MobileForeverStudyProps) {
       <footer className={styles.mobileFooter} data-surface-category="text">
         <p>Words Over Time: semantic change and word usage over time</p>
       </footer>
+      </MobileScrollRevealScope>
     </article>
   );
 }
