@@ -1,4 +1,6 @@
 import { ArtificialPoster } from "@/components/ArtificialPoster";
+import { MobileArtificialStudy } from "@/components/artificial/mobile/MobileArtificialStudy";
+import { ResponsiveArtificialEdition } from "@/components/artificial/mobile/ResponsiveArtificialEdition";
 import { JsonLd } from "@/components/JsonLd";
 import { WordPageShell } from "@/components/WordPageShell";
 import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
@@ -10,9 +12,14 @@ export default function ArtificialPage() {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <WordPageShell path="/words/artificial">
-        <ArtificialPoster />
-      </WordPageShell>
+      <ResponsiveArtificialEdition
+        desktop={
+          <WordPageShell path="/words/artificial">
+            <ArtificialPoster />
+          </WordPageShell>
+        }
+        mobile={<MobileArtificialStudy />}
+      />
     </>
   );
 }
