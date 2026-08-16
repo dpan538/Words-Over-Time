@@ -635,11 +635,40 @@ export function InteractiveCompoundTree({ branches }: { branches: readonly Compo
                     </motion.g>
                   );
                 })}
-                {projectedBranches.map((branch) => (
-                  <motion.text key={branch.id} className={[styles.geometryDomainLabel, branch.domainIndex === activeBranchIndex ? styles.activeViewLabel : styles.inactiveViewLabel].join(" ")} x={svgCoordinate(branch.projectedHub.x)} y={svgCoordinate(treeY(branch.projectedHub.y))} initial={entrance.reduced ? false : { opacity: 0 }} animate={{ opacity: entrance.entered ? 1 : 0 }} transition={{ delay: motionTime(.78 + branch.domainIndex * .04), duration: motionTime(.2) }}>{branch.label.toUpperCase()}</motion.text>
-                ))}
-                <motion.text className={styles.geometryRootLabel} x={svgCoordinate(root.x)} y={svgCoordinate(treeY(root.y))} initial={entrance.reduced ? false : { opacity: 0, scale: .7 }} animate={{ opacity: entrance.entered ? 1 : 0, scale: entrance.entered ? 1 : .7 }} transition={{ duration: motionTime(.22), ease: "easeOut" }}>ARTIFICIAL</motion.text>
               </motion.svg>
+              <div className={styles.compoundGeometryLabels} aria-hidden="true">
+                {projectedBranches.map((branch) => (
+                  <span
+                    key={branch.id}
+                    className={styles.compoundLabelAnchor}
+                    style={{
+                      left: `${(branch.projectedHub.x - 7) / 86 * 100}%`,
+                      top: `${treeY(branch.projectedHub.y) / TREE_VIEWBOX_HEIGHT * 100}%`,
+                    }}
+                  >
+                    <motion.span
+                      className={branch.domainIndex === activeBranchIndex ? styles.compoundBranchLabelActive : styles.compoundBranchLabel}
+                      initial={entrance.reduced ? false : { opacity: 0 }}
+                      animate={{ opacity: entrance.entered ? 1 : 0 }}
+                      transition={{ delay: motionTime(.78 + branch.domainIndex * .04), duration: motionTime(.2) }}
+                    >{branch.label.toUpperCase()}</motion.span>
+                  </span>
+                ))}
+                <span
+                  className={styles.compoundLabelAnchor}
+                  style={{
+                    left: `${(root.x - 7) / 86 * 100}%`,
+                    top: `${treeY(root.y) / TREE_VIEWBOX_HEIGHT * 100}%`,
+                  }}
+                >
+                  <motion.span
+                    className={styles.compoundRootLabel}
+                    initial={entrance.reduced ? false : { opacity: 0, scale: .7 }}
+                    animate={{ opacity: entrance.entered ? 1 : 0, scale: entrance.entered ? 1 : .7 }}
+                    transition={{ duration: motionTime(.22), ease: "easeOut" }}
+                  >ARTIFICIAL</motion.span>
+                </span>
+              </div>
             </figure>
           );
         }}
@@ -737,11 +766,9 @@ export function InteractiveSemanticSphere({ caveat, views }: { caveat: string; v
                   {projected.map((point, index) => <motion.line key={point.id} x1="50" y1="50" x2={svgCoordinate(point.projected.x)} y2={svgCoordinate(point.projected.y)} initial={entrance.reduced ? false : { pathLength: 0, opacity: 0 }} animate={{ pathLength: entrance.entered ? 1 : 0, opacity: entrance.entered ? 1 : 0 }} transition={{ delay: motionTime(.28 + index * .045), duration: motionTime(.3), ease: "linear" }} />)}
                 </g>
                 <motion.circle className={styles.semanticSphereRootCore} cx="50" cy="50" r="8" initial={entrance.reduced ? false : { opacity: 0, scale: .2 }} animate={{ opacity: entrance.entered ? 1 : 0, scale: entrance.entered ? 1 : .2 }} transition={{ delay: motionTime(.16), duration: motionTime(.28), ease: "easeOut" }} />
-                <motion.text className={styles.semanticSphereRoot} x="50" y="51" initial={entrance.reduced ? false : { opacity: 0, scale: .55 }} animate={{ opacity: entrance.entered ? 1 : 0, scale: entrance.entered ? 1 : .55 }} transition={{ delay: motionTime(.2), duration: motionTime(.26), ease: "easeOut" }}>ARTIFICIAL</motion.text>
                 {projected.map((point) => {
                   const depth = Math.max(.72, Math.min(1.3, 1 + point.projected.z / 95));
                   const active = point.index === activeIndex;
-                  const labelPosition = labelPositions.get(point.id) ?? { x: point.projected.x, y: point.projected.y };
                   return (
                     <motion.g
                       key={point.id}
@@ -754,11 +781,37 @@ export function InteractiveSemanticSphere({ caveat, views }: { caveat: string; v
                     >
                       <circle className={styles.semanticSphereHalo} cx={svgCoordinate(point.projected.x)} cy={svgCoordinate(point.projected.y)} r={svgCoordinate(7 * depth)} />
                       <circle className={styles.semanticSphereCore} cx={svgCoordinate(point.projected.x)} cy={svgCoordinate(point.projected.y)} r={svgCoordinate(2.65 * depth)} />
-                      <motion.text className={styles.semanticSphereLabel} x={svgCoordinate(labelPosition.x)} y={svgCoordinate(labelPosition.y)} initial={entrance.reduced ? false : { opacity: 0 }} animate={{ opacity: entrance.entered ? 1 : 0 }} transition={{ delay: motionTime(.82 + point.index * .04), duration: motionTime(.18) }}>{point.axisLabel}</motion.text>
                     </motion.g>
                   );
                 })}
               </motion.svg>
+              <div className={styles.semanticSphereLabels} aria-hidden="true">
+                <span className={styles.semanticLabelAnchor} style={{ left: "50%", top: "51%" }}>
+                  <motion.span
+                    className={styles.semanticRootLabel}
+                    initial={entrance.reduced ? false : { opacity: 0, scale: .55 }}
+                    animate={{ opacity: entrance.entered ? 1 : 0, scale: entrance.entered ? 1 : .55 }}
+                    transition={{ delay: motionTime(.2), duration: motionTime(.26), ease: "easeOut" }}
+                  >ARTIFICIAL</motion.span>
+                </span>
+                {projected.map((point) => {
+                  const labelPosition = labelPositions.get(point.id) ?? { x: point.projected.x, y: point.projected.y };
+                  return (
+                    <span
+                      key={point.id}
+                      className={styles.semanticLabelAnchor}
+                      style={{ left: `${labelPosition.x}%`, top: `${labelPosition.y}%` }}
+                    >
+                      <motion.span
+                        className={point.index === activeIndex ? styles.semanticLabelActive : styles.semanticLabel}
+                        initial={entrance.reduced ? false : { opacity: 0 }}
+                        animate={{ opacity: entrance.entered ? 1 : 0 }}
+                        transition={{ delay: motionTime(.82 + point.index * .04), duration: motionTime(.18) }}
+                      >{point.axisLabel}</motion.span>
+                    </span>
+                  );
+                })}
+              </div>
               </div>
               <figcaption>{caveat}</figcaption>
             </figure>
