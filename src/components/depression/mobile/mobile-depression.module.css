@@ -5,7 +5,7 @@
   --depression-rule: #4c4946;
   --safe-top: max(16px, env(safe-area-inset-top, 0px));
   --safe-right: max(0px, env(safe-area-inset-right, 0px));
-  --safe-bottom: max(18px, env(safe-area-inset-bottom, 0px));
+  --safe-bottom: max(18px, calc(env(safe-area-inset-bottom, 0px) + 10px));
   --safe-left: max(0px, env(safe-area-inset-left, 0px));
   --card-inline: clamp(16px, 4.2vw, 24px);
   --card-height: clamp(360px, calc(var(--depression-vvh, 100dvh) * .5282), 520px);
@@ -61,7 +61,8 @@
 .sceneMount {
   overflow: hidden;
   scroll-snap-align: start;
-  scroll-snap-stop: normal;
+  scroll-snap-stop: always;
+  contain: paint style;
 }
 
 .scene {
@@ -198,10 +199,7 @@
   animation: depression-card-rise 420ms linear both;
 }
 
-.studyDeck[data-returning-home="true"] .persistentCard {
-  opacity: 0;
-  transform: translateY(calc(100% + var(--safe-bottom)));
-  animation: none;
+.persistentCard:not([data-content-phase="idle"]) {
   pointer-events: none;
 }
 
@@ -226,11 +224,13 @@
 .persistentCard[data-content-phase="exit"] .cardContent {
   opacity: 0;
   transform: translateY(10px);
+  will-change: opacity, transform;
 }
 
 .persistentCard[data-content-phase="enter"] .cardContent {
   opacity: 0;
   transform: translateY(-8px);
+  will-change: opacity, transform;
 }
 
 .persistentCard[data-content-phase="idle"] .cardContent {
@@ -346,8 +346,13 @@
   display: grid;
   place-items: center;
   color: #342d27;
-  transition: transform 260ms cubic-bezier(.22, 1, .36, 1);
+  opacity: 1;
+  transition: opacity 140ms linear, transform 260ms cubic-bezier(.22, 1, .36, 1);
   pointer-events: none;
+}
+
+.persistentCard:not([data-content-phase="idle"]) .flipGlyph {
+  opacity: 0;
 }
 
 .flipGlyph[data-face="back"] {
@@ -1174,8 +1179,10 @@
 
 .openingBands {
   width: 100%;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
   display: block;
   color: inherit;
+  background: #36717a;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -1202,49 +1209,50 @@
   white-space: nowrap;
 }
 
-.studyDeck[data-returning-home="true"][data-home-arrival="false"] .openingGraphic li {
-  opacity: .18;
+.returnOverlay {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: grid;
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  overflow: hidden;
+  pointer-events: auto;
   transform: translateY(100%);
+  will-change: transform;
 }
 
-.studyDeck[data-returning-home="true"][data-home-arrival="true"] .openingGraphic li {
-  animation: depression-band-return 300ms linear both;
+.returnOverlay[data-phase="covering"] {
+  animation: depression-return-cover 360ms linear both;
 }
 
-.studyDeck[data-returning-home="true"][data-home-arrival="true"] .openingGraphic li:nth-child(2) {
-  animation-delay: 24ms;
+.returnOverlay[data-phase="revealing"] {
+  animation: depression-return-reveal 360ms linear both;
 }
 
-.studyDeck[data-returning-home="true"][data-home-arrival="true"] .openingGraphic li:nth-child(3) {
-  animation-delay: 48ms;
+.returnOverlayBand {
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--return-band);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(14px, 4vw, 17px);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
 }
 
-.studyDeck[data-returning-home="true"][data-home-arrival="true"] .openingGraphic li:nth-child(4) {
-  animation-delay: 72ms;
+@keyframes depression-return-cover {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
 }
 
-.studyDeck[data-returning-home="true"][data-home-arrival="true"] .openingGraphic li:nth-child(5) {
-  animation-delay: 96ms;
-}
-
-.studyDeck[data-returning-home="true"][data-home-arrival="true"] .openingGraphic li:nth-child(6) {
-  animation-delay: 120ms;
-}
-
-@keyframes depression-band-return {
-  from {
-    opacity: .18;
-    transform: translateY(100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes depression-return-reveal {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); }
 }
 
 .closingScene {
-  padding: 2.5rem 1.5rem max(1.5rem, env(safe-area-inset-bottom));
+  padding: 2.5rem 1.5rem max(1.5rem, calc(env(safe-area-inset-bottom, 0px) + 18px));
   display: flex;
   flex-direction: column;
 }
@@ -1491,15 +1499,10 @@
   .selectorRing,
   .rotaryExperience,
   .rotarySelectorField,
-  .rotaryDataPanel {
+  .rotaryDataPanel,
+  .returnOverlay {
     animation: none;
     transition-duration: .01ms;
-  }
-
-  .studyDeck[data-returning-home="true"] .openingGraphic li {
-    animation: none;
-    opacity: 1;
-    transform: none;
   }
 }
 

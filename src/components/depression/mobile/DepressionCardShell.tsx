@@ -30,6 +30,7 @@ export function DepressionPersistentCard({
   onToggle: () => void;
 }) {
   const [renderedChapter, setRenderedChapter] = useState(activeChapter);
+  const [renderedFace, setRenderedFace] = useState<Face>(face);
   const [contentPhase, setContentPhase] = useState<"idle" | "exit" | "enter">("idle");
   const transactionRef = useRef(0);
   const timerRef = useRef<number | null>(null);
@@ -39,6 +40,7 @@ export function DepressionPersistentCard({
     if (!activeChapter || activeChapter.id === renderedChapter?.id) return;
     if (!renderedChapter) {
       setRenderedChapter(activeChapter);
+      setRenderedFace("front");
       setContentPhase("idle");
       return;
     }
@@ -49,6 +51,7 @@ export function DepressionPersistentCard({
     timerRef.current = window.setTimeout(() => {
       if (transaction !== transactionRef.current) return;
       setRenderedChapter(activeChapter);
+      setRenderedFace("front");
       setContentPhase("enter");
       frameRef.current = requestAnimationFrame(() => {
         frameRef.current = requestAnimationFrame(() => {
@@ -58,18 +61,25 @@ export function DepressionPersistentCard({
     }, 170);
   }, [activeChapter, renderedChapter?.id]);
 
+  useEffect(() => {
+    if (!activeChapter || activeChapter.id !== renderedChapter?.id || contentPhase !== "idle") return;
+    setRenderedFace(face);
+  }, [activeChapter, contentPhase, face, renderedChapter?.id]);
+
   useEffect(() => () => {
     if (timerRef.current !== null) window.clearTimeout(timerRef.current);
     if (frameRef.current !== null) cancelAnimationFrame(frameRef.current);
   }, []);
 
+  const interactive = visible && contentPhase === "idle" && activeChapter?.id === renderedChapter?.id;
+
   const onKeyDown = (event: KeyboardEvent<HTMLElement>) => {
-    if (!visible || (event.key !== "Enter" && event.key !== " ")) return;
+    if (!interactive || (event.key !== "Enter" && event.key !== " ")) return;
     event.preventDefault();
     onToggle();
   };
 
-  const action = face === "front" ? "Show the detailed chart and narrative" : "Return to the summary chart and narrative";
+  const action = renderedFace === "front" ? "Show the detailed chart and narrative" : "Return to the summary chart and narrative";
 
   return (
     <article
@@ -78,24 +88,25 @@ export function DepressionPersistentCard({
       data-visible={visible ? "true" : "false"}
       data-content-phase={contentPhase}
       role="button"
-      tabIndex={visible ? 0 : -1}
+      tabIndex={interactive ? 0 : -1}
       aria-hidden={!visible}
+      aria-disabled={!interactive}
       aria-label={`${action}${renderedChapter ? ` for ${renderedChapter.title}` : ""}`}
-      aria-pressed={face === "back"}
-      onClick={() => { if (visible) onToggle(); }}
+      aria-pressed={renderedFace === "back"}
+      onClick={() => { if (interactive) onToggle(); }}
       onKeyDown={onKeyDown}
     >
       {renderedChapter ? (
         <div className={styles.cardContent}>
-          <div className={styles.cardFace} data-active={face === "front" ? "true" : "false"} data-depression-card-face="front" aria-hidden={face !== "front"}>
+          <div className={styles.cardFace} data-active={renderedFace === "front" ? "true" : "false"} data-depression-card-face="front" aria-hidden={renderedFace !== "front"}>
             <DepressionChapterVisualization chart={renderedChapter.summary} />
           </div>
-          <div className={styles.cardFace} data-active={face === "back" ? "true" : "false"} data-depression-card-face="back" aria-hidden={face !== "back"}>
+          <div className={styles.cardFace} data-active={renderedFace === "back" ? "true" : "false"} data-depression-card-face="back" aria-hidden={renderedFace !== "back"}>
             <DepressionChapterVisualization chart={renderedChapter.detail} />
           </div>
         </div>
       ) : null}
-      <span className={styles.flipGlyph} data-face={face} aria-hidden="true"><SwitchGlyph /></span>
+      <span className={styles.flipGlyph} data-face={renderedFace} aria-hidden="true"><SwitchGlyph /></span>
     </article>
   );
 }

@@ -5,11 +5,13 @@ import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties, 
 import type { DepressionMobileChapter, DepressionMobileResearch } from "@/types/depressionMobileResearch";
 import { DepressionPersistentCard } from "./DepressionCardShell";
 import { RotaryFrequencyWheel } from "./RotaryFrequencyWheel";
+import { clampToAdjacentScene } from "./depressionSceneNavigation";
 import styles from "./mobile-depression.module.css";
 
 type Face = "front" | "back";
 type ChapterId = DepressionMobileChapter["id"];
 type SceneId = "opening" | ChapterId | "rotary-interlude" | "closing";
+type ReturnPhase = "idle" | "covering" | "revealing";
 
 type CopyState = { heading: string; body: string };
 
@@ -130,7 +132,7 @@ function ChapterScene({ chapter, face }: { chapter: DepressionMobileChapter; fac
 
 function WheelScene({ research }: { research: DepressionMobileResearch }) {
   return (
-    <section className={`${styles.scene} ${styles.wheelScene}`} data-scene="rotary-interlude" aria-label="03A interactive phrase frequency wheel">
+    <section id="m-depression-rotary" className={`${styles.scene} ${styles.wheelScene}`} data-scene="rotary-interlude" aria-label="03A interactive phrase frequency wheel">
       <RotaryFrequencyWheel data={research.rotaryInterlude} />
     </section>
   );
@@ -142,7 +144,7 @@ function ClosingScene({ research, onReturnHome }: { research: DepressionMobileRe
     onReturnHome();
   };
   return (
-    <section className={`${styles.scene} ${styles.closingScene}`} data-scene="closing" aria-labelledby="mobile-depression-closing">
+    <section id="m-depression-closing-scene" className={`${styles.scene} ${styles.closingScene}`} data-scene="closing" aria-labelledby="mobile-depression-closing">
       <div className={styles.closingCopy}>
         <p className={styles.sceneLabel}>CLOSING FINDING</p>
         <h2 id="mobile-depression-closing">A branching word does not become one diagnosis.</h2>
@@ -159,73 +161,123 @@ function ClosingScene({ research, onReturnHome }: { research: DepressionMobileRe
   );
 }
 
+function ReturnToTopOverlay({ research, phase }: { research: DepressionMobileResearch; phase: Exclude<ReturnPhase, "idle"> }) {
+  return (
+    <div className={styles.returnOverlay} data-phase={phase} aria-hidden="true">
+      {research.chapters.map((chapter) => (
+        <div
+          key={chapter.id}
+          className={styles.returnOverlayBand}
+          style={{ "--return-band": OPENING_BAND_COLOURS[chapter.id] } as CSSProperties}
+        >
+          <time>{chapter.periodLabel}</time>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export function DepressionStoryDeck({ research }: { research: DepressionMobileResearch }) {
   const deckRef = useRef<HTMLElement>(null);
   const sceneRefs = useRef<Array<HTMLElement | null>>([]);
   const scrollFrameRef = useRef<number | null>(null);
-  const scrollCleanupRef = useRef<number | null>(null);
+  const scrollSampleFrameRef = useRef<number | null>(null);
+  const settleTimerRef = useRef<number | null>(null);
+  const returnTimerRef = useRef<number | null>(null);
+  const returnTransactionRef = useRef(0);
+  const returnPhaseRef = useRef<ReturnPhase>("idle");
+  const programmaticScrollRef = useRef(false);
+  const gestureOriginRef = useRef<number | null>(null);
+  const candidateIndexRef = useRef(0);
+  const activeIndexRef = useRef(0);
   const activeSceneRef = useRef<SceneId>("opening");
   const chaptersById = useMemo(() => new Map(research.chapters.map((chapter) => [chapter.id, chapter])), [research.chapters]);
+  const sceneIds = useMemo<SceneId[]>(() => [
+    "opening",
+    ...research.chapters.slice(0, 3).map((chapter) => chapter.id),
+    "rotary-interlude",
+    ...research.chapters.slice(3).map((chapter) => chapter.id),
+    "closing",
+  ], [research.chapters]);
   const initialFaces = useMemo(() => Object.fromEntries(research.chapters.map((chapter) => [chapter.id, "front"])) as Record<ChapterId, Face>, [research.chapters]);
   const [faces, setFaces] = useState<Record<ChapterId, Face>>(initialFaces);
   const [activeScene, setActiveScene] = useState<SceneId>("opening");
+  const [returnPhase, setReturnPhase] = useState<ReturnPhase>("idle");
   const activeChapter = chaptersById.get(activeScene as ChapterId);
+
+  const sceneHash = useCallback((id: SceneId) => {
+    if (id === "opening") return "#m-depression-opening";
+    if (id === "rotary-interlude") return "#m-depression-rotary";
+    if (id === "closing") return "#m-depression-closing-scene";
+    return `#m-depression-${id}`;
+  }, []);
+
+  const activateSceneAtIndex = useCallback((index: number, updateHash = false) => {
+    const id = sceneIds[index];
+    if (!id) return;
+    activeIndexRef.current = index;
+    candidateIndexRef.current = index;
+    if (activeSceneRef.current !== id) {
+      activeSceneRef.current = id;
+      setActiveScene(id);
+      if (chaptersById.has(id as ChapterId)) {
+        setFaces((value) => value[id as ChapterId] === "front" ? value : { ...value, [id]: "front" });
+      }
+    }
+    if (updateHash && window.location.hash !== sceneHash(id)) {
+      window.history.replaceState(null, "", sceneHash(id));
+    }
+  }, [chaptersById, sceneHash, sceneIds]);
 
   const cancelScrollAnimation = useCallback(() => {
     if (scrollFrameRef.current !== null) cancelAnimationFrame(scrollFrameRef.current);
-    if (scrollCleanupRef.current !== null) window.clearTimeout(scrollCleanupRef.current);
+    if (settleTimerRef.current !== null) window.clearTimeout(settleTimerRef.current);
     scrollFrameRef.current = null;
-    scrollCleanupRef.current = null;
+    settleTimerRef.current = null;
+    programmaticScrollRef.current = false;
     if (deckRef.current) {
       delete deckRef.current.dataset.linearTransition;
-      delete deckRef.current.dataset.returningHome;
-      delete deckRef.current.dataset.homeArrival;
     }
   }, []);
 
-  const animateToScene = useCallback((targetIndex: number, hash: string, duration: number, returningHome = false) => {
+  const animateToScene = useCallback((targetIndex: number, hash: string, duration: number) => {
     const root = deckRef.current;
     const target = sceneRefs.current[targetIndex];
     if (!root || !target) return;
     cancelScrollAnimation();
+    programmaticScrollRef.current = true;
+    gestureOriginRef.current = null;
     const from = root.scrollTop;
     const to = target.offsetTop;
     window.history.pushState(null, "", hash);
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       root.scrollTo({ top: to, behavior: "instant" });
+      activateSceneAtIndex(targetIndex);
+      programmaticScrollRef.current = false;
       return;
     }
     const startedAt = performance.now();
     root.dataset.linearTransition = "true";
-    if (returningHome) {
-      root.dataset.returningHome = "true";
-      root.dataset.homeArrival = "false";
-    }
-    let homeArrivalStarted = false;
+    let activated = false;
     const step = (now: number) => {
       const progress = Math.min(1, (now - startedAt) / duration);
       const nextTop = from + (to - from) * progress;
       root.scrollTo({ top: nextTop, behavior: "instant" });
-      if (returningHome && !homeArrivalStarted && nextTop <= root.clientHeight) {
-        homeArrivalStarted = true;
-        root.dataset.homeArrival = "true";
+      if (!activated && progress >= .52) {
+        activated = true;
+        activateSceneAtIndex(targetIndex);
       }
       if (progress < 1) {
         scrollFrameRef.current = requestAnimationFrame(step);
       } else {
         scrollFrameRef.current = null;
+        activateSceneAtIndex(targetIndex);
+        programmaticScrollRef.current = false;
         delete root.dataset.linearTransition;
-        if (returningHome) {
-          scrollCleanupRef.current = window.setTimeout(() => {
-            delete root.dataset.returningHome;
-            delete root.dataset.homeArrival;
-            scrollCleanupRef.current = null;
-          }, 460);
-        }
       }
     };
     scrollFrameRef.current = requestAnimationFrame(step);
-  }, [cancelScrollAnimation]);
+  }, [activateSceneAtIndex, cancelScrollAnimation]);
 
   const enterFirstChapter = useCallback(() => {
     animateToScene(1, "#m-depression-roots", 560);
@@ -235,70 +287,190 @@ export function DepressionStoryDeck({ research }: { research: DepressionMobileRe
     const root = deckRef.current;
     const target = sceneRefs.current[0];
     if (!root || !target) return;
-    const distance = Math.abs(root.scrollTop - target.offsetTop);
-    const duration = Math.min(1450, Math.max(900, distance / 5.4));
-    animateToScene(0, "#m-depression-opening", duration, true);
-  }, [animateToScene]);
+    if (returnPhaseRef.current !== "idle") return;
+    cancelScrollAnimation();
+    if (returnTimerRef.current !== null) window.clearTimeout(returnTimerRef.current);
+    const transaction = ++returnTransactionRef.current;
+    gestureOriginRef.current = null;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      root.scrollTo({ top: target.offsetTop, behavior: "instant" });
+      activateSceneAtIndex(0);
+      window.history.pushState(null, "", "#m-depression-opening");
+      return;
+    }
+    returnPhaseRef.current = "covering";
+    setReturnPhase("covering");
+    returnTimerRef.current = window.setTimeout(() => {
+      if (transaction !== returnTransactionRef.current) return;
+      root.scrollTo({ top: target.offsetTop, behavior: "instant" });
+      activateSceneAtIndex(0);
+      window.history.pushState(null, "", "#m-depression-opening");
+      returnPhaseRef.current = "revealing";
+      setReturnPhase("revealing");
+      returnTimerRef.current = window.setTimeout(() => {
+        if (transaction === returnTransactionRef.current) {
+          returnPhaseRef.current = "idle";
+          setReturnPhase("idle");
+        }
+        returnTimerRef.current = null;
+      }, 380);
+    }, 380);
+  }, [activateSceneAtIndex, cancelScrollAnimation]);
 
-  useEffect(() => {
+  const closestSceneIndex = useCallback(() => {
     const root = deckRef.current;
-    if (!root) return;
-    root.addEventListener("pointerdown", cancelScrollAnimation, { passive: true });
-    root.addEventListener("touchstart", cancelScrollAnimation, { passive: true });
-    root.addEventListener("wheel", cancelScrollAnimation, { passive: true });
-    return () => {
-      root.removeEventListener("pointerdown", cancelScrollAnimation);
-      root.removeEventListener("touchstart", cancelScrollAnimation);
-      root.removeEventListener("wheel", cancelScrollAnimation);
-      cancelScrollAnimation();
-    };
-  }, [cancelScrollAnimation]);
-
-  useEffect(() => {
-    const root = deckRef.current;
-    if (!root) return;
-    let settleTimer: number | undefined;
-    const activateScene = (id: SceneId) => {
-      if (activeSceneRef.current === id) return;
-      activeSceneRef.current = id;
-      setActiveScene(id);
-      if (chaptersById.has(id as ChapterId)) {
-        setFaces((value) => ({ ...value, [id]: "front" }));
+    if (!root) return activeIndexRef.current;
+    const rootRect = root.getBoundingClientRect();
+    const centre = rootRect.top + rootRect.height / 2;
+    let closestIndex = activeIndexRef.current;
+    let closestDistance = Number.POSITIVE_INFINITY;
+    sceneRefs.current.forEach((scene, index) => {
+      if (!scene) return;
+      const rect = scene.getBoundingClientRect();
+      const distance = Math.abs(rect.top + rect.height / 2 - centre);
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestIndex = index;
       }
+    });
+    return closestIndex;
+  }, []);
+
+  const settleToAdjacentScene = useCallback(() => {
+    const root = deckRef.current;
+    if (!root || programmaticScrollRef.current || returnPhaseRef.current !== "idle") return;
+    const origin = gestureOriginRef.current ?? activeIndexRef.current;
+    const candidate = candidateIndexRef.current;
+    const targetIndex = clampToAdjacentScene(origin, candidate, sceneIds.length);
+    const target = sceneRefs.current[targetIndex];
+    gestureOriginRef.current = null;
+    candidateIndexRef.current = targetIndex;
+    delete root.dataset.scrollActive;
+    if (target && Math.abs(root.scrollTop - target.offsetTop) > 1) {
+      root.scrollTo({ top: target.offsetTop, behavior: "instant" });
+    }
+    activateSceneAtIndex(targetIndex, true);
+  }, [activateSceneAtIndex, sceneIds.length]);
+
+  useEffect(() => {
+    const root = deckRef.current;
+    if (!root) return;
+    const scheduleSettle = (delay = 130) => {
+      if (settleTimerRef.current !== null) window.clearTimeout(settleTimerRef.current);
+      settleTimerRef.current = window.setTimeout(() => {
+        settleTimerRef.current = null;
+        settleToAdjacentScene();
+      }, delay);
     };
-    const activateCenteredScene = () => {
-      const rootRect = root.getBoundingClientRect();
-      const centre = rootRect.top + rootRect.height / 2;
-      const candidate = sceneRefs.current
-        .filter((scene): scene is HTMLElement => Boolean(scene))
-        .map((scene) => {
-          const rect = scene.getBoundingClientRect();
-          return { scene, distance: Math.abs(rect.top + rect.height / 2 - centre) };
-        })
-        .sort((a, b) => a.distance - b.distance)[0]?.scene;
-      const id = candidate?.getAttribute("data-scene-id") as SceneId | null;
-      if (id) activateScene(id);
+    const beginGesture = () => {
+      if (programmaticScrollRef.current || returnPhaseRef.current !== "idle") return;
+      if (gestureOriginRef.current === null) gestureOriginRef.current = activeIndexRef.current;
+      root.dataset.scrollActive = "true";
+    };
+    const handlePointerDown = (event: PointerEvent) => {
+      if (event.pointerType !== "touch" && event.pointerType !== "pen") return;
+      cancelScrollAnimation();
+      beginGesture();
+    };
+    const handlePointerEnd = () => scheduleSettle(150);
+    const handleTouchStart = () => {
+      if ("PointerEvent" in window) return;
+      cancelScrollAnimation();
+      beginGesture();
+    };
+    const handleWheel = () => {
+      cancelScrollAnimation();
+      beginGesture();
+      scheduleSettle(170);
+    };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (!["ArrowDown", "ArrowUp", "PageDown", "PageUp", " "].includes(event.key)) return;
+      beginGesture();
+      scheduleSettle(170);
+    };
+    const handleScroll = () => {
+      if (programmaticScrollRef.current || returnPhaseRef.current !== "idle") return;
+      beginGesture();
+      if (scrollSampleFrameRef.current === null) {
+        scrollSampleFrameRef.current = requestAnimationFrame(() => {
+          candidateIndexRef.current = closestSceneIndex();
+          scrollSampleFrameRef.current = null;
+        });
+      }
+      scheduleSettle(130);
+    };
+    const handleScrollEnd = () => scheduleSettle(24);
+    const handleViewportChange = () => {
+      const active = sceneRefs.current[activeIndexRef.current];
+      if (!active || programmaticScrollRef.current || returnPhaseRef.current !== "idle") return;
+      requestAnimationFrame(() => root.scrollTo({ top: active.offsetTop, behavior: "instant" }));
+    };
+    const handleHashChange = () => {
+      const index = sceneIds.findIndex((id) => sceneHash(id) === window.location.hash);
+      const target = sceneRefs.current[index];
+      if (index < 0 || !target) return;
+      cancelScrollAnimation();
+      programmaticScrollRef.current = true;
+      root.scrollTo({ top: target.offsetTop, behavior: "instant" });
+      activateSceneAtIndex(index);
+      programmaticScrollRef.current = false;
     };
     const observer = new IntersectionObserver((entries) => {
       const candidate = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
       if (!candidate || candidate.intersectionRatio < .55) return;
-      const id = candidate.target.getAttribute("data-scene-id") as SceneId | null;
-      if (!id) return;
-      activateScene(id);
+      const index = sceneRefs.current.indexOf(candidate.target as HTMLElement);
+      if (index >= 0) candidateIndexRef.current = index;
     }, { root, threshold: [.55, .7, .9] });
-    const handleScroll = () => {
-      if (settleTimer !== undefined) window.clearTimeout(settleTimer);
-      settleTimer = window.setTimeout(activateCenteredScene, 90);
-    };
     sceneRefs.current.forEach((scene) => scene && observer.observe(scene));
+    root.addEventListener("pointerdown", handlePointerDown, { passive: true });
+    root.addEventListener("pointerup", handlePointerEnd, { passive: true });
+    root.addEventListener("pointercancel", handlePointerEnd, { passive: true });
+    root.addEventListener("touchstart", handleTouchStart, { passive: true });
+    root.addEventListener("touchend", handlePointerEnd, { passive: true });
+    root.addEventListener("touchcancel", handlePointerEnd, { passive: true });
+    root.addEventListener("wheel", handleWheel, { passive: true });
+    root.addEventListener("keydown", handleKeyDown);
     root.addEventListener("scroll", handleScroll, { passive: true });
-    activateCenteredScene();
+    root.addEventListener("scrollend", handleScrollEnd);
+    window.addEventListener("hashchange", handleHashChange);
+    window.addEventListener("depression:viewportchange", handleViewportChange);
+    const initialIndex = sceneIds.findIndex((id) => sceneHash(id) === window.location.hash);
+    if (initialIndex >= 0) {
+      const target = sceneRefs.current[initialIndex];
+      if (target) {
+        programmaticScrollRef.current = true;
+        root.scrollTo({ top: target.offsetTop, behavior: "instant" });
+        activateSceneAtIndex(initialIndex);
+        programmaticScrollRef.current = false;
+      }
+    } else {
+      activateSceneAtIndex(closestSceneIndex());
+    }
     return () => {
       observer.disconnect();
+      root.removeEventListener("pointerdown", handlePointerDown);
+      root.removeEventListener("pointerup", handlePointerEnd);
+      root.removeEventListener("pointercancel", handlePointerEnd);
+      root.removeEventListener("touchstart", handleTouchStart);
+      root.removeEventListener("touchend", handlePointerEnd);
+      root.removeEventListener("touchcancel", handlePointerEnd);
+      root.removeEventListener("wheel", handleWheel);
+      root.removeEventListener("keydown", handleKeyDown);
       root.removeEventListener("scroll", handleScroll);
-      if (settleTimer !== undefined) window.clearTimeout(settleTimer);
+      root.removeEventListener("scrollend", handleScrollEnd);
+      window.removeEventListener("hashchange", handleHashChange);
+      window.removeEventListener("depression:viewportchange", handleViewportChange);
+      if (settleTimerRef.current !== null) window.clearTimeout(settleTimerRef.current);
+      if (scrollSampleFrameRef.current !== null) cancelAnimationFrame(scrollSampleFrameRef.current);
+      delete root.dataset.scrollActive;
     };
-  }, [chaptersById]);
+  }, [activateSceneAtIndex, cancelScrollAnimation, closestSceneIndex, sceneHash, sceneIds, settleToAdjacentScene]);
+
+  useEffect(() => () => {
+    returnTransactionRef.current += 1;
+    if (returnTimerRef.current !== null) window.clearTimeout(returnTimerRef.current);
+    cancelScrollAnimation();
+  }, [cancelScrollAnimation]);
 
   const toggleFace = () => {
     if (!activeChapter) return;
@@ -314,7 +486,13 @@ export function DepressionStoryDeck({ research }: { research: DepressionMobileRe
   ];
 
   return (
-    <main ref={deckRef} className={styles.studyDeck} aria-label="Depression mobile word study">
+    <main
+      ref={deckRef}
+      className={styles.studyDeck}
+      data-depression-deck="true"
+      data-active-scene={activeScene}
+      aria-label="Depression mobile word study"
+    >
       {scenes.map((scene, index) => (
         <div key={scene.key} data-scene-id={scene.key ?? undefined} ref={(node) => { sceneRefs.current[index] = node; }} className={styles.sceneMount}>{scene}</div>
       ))}
@@ -326,6 +504,7 @@ export function DepressionStoryDeck({ research }: { research: DepressionMobileRe
           onToggle={toggleFace}
         />
       ) : null}
+      {returnPhase !== "idle" ? <ReturnToTopOverlay research={research} phase={returnPhase} /> : null}
     </main>
   );
 }
