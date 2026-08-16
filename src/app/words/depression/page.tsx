@@ -1,6 +1,8 @@
+import { headers } from "next/headers";
 import { DepressionPoster } from "@/components/DepressionPoster";
 import { JsonLd } from "@/components/JsonLd";
 import { WordPageShell } from "@/components/WordPageShell";
+import { MobileDepressionEdition } from "@/components/depression/mobile/MobileDepressionEdition";
 import branchesJson from "@/data/generated/depression_branches.json";
 import coverageJson from "@/data/generated/depression_coverage_report.json";
 import evidenceJson from "@/data/generated/depression_evidence_normalized.json";
@@ -34,7 +36,27 @@ const coverage = coverageJson as DepressionCoverageReport;
 export const metadata = createPageMetadata("/words/depression");
 const jsonLd = createRouteJsonLd("/words/depression");
 
-export default function DepressionPage() {
+function isMobileRequest(userAgent: string, mobileClientHint: string | null) {
+  if (mobileClientHint === "?1") return true;
+  return /Android|iPhone|iPad|iPod|Mobile|Opera Mini|IEMobile/i.test(userAgent);
+}
+
+export default async function DepressionPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ edition?: string }>;
+}) {
+  const requestHeaders = await headers();
+  const { edition } = await searchParams;
+  const mobile = edition === "mobile" || isMobileRequest(
+    requestHeaders.get("user-agent") ?? "",
+    requestHeaders.get("sec-ch-ua-mobile"),
+  );
+
+  if (mobile) {
+    return <MobileDepressionEdition />;
+  }
+
   return (
     <>
       <JsonLd data={jsonLd} />
