@@ -1,6 +1,7 @@
-import { HubPoster } from "@/components/HubPoster";
+import { EditionBoundary } from "@/components/edition/EditionBoundary";
 import { JsonLd } from "@/components/JsonLd";
-import { WordPageShell } from "@/components/WordPageShell";
+import { DesktopHubEdition } from "@/editions/desktop/DesktopHubEdition";
+import { MobileHubEdition } from "@/editions/mobile/MobileHubEdition";
 import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
 
 export const metadata = createPageMetadata("/words/hub");
@@ -10,9 +11,7 @@ export default function HubPage() {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <WordPageShell path="/words/hub">
-        <HubPoster />
-      </WordPageShell>
+      <EditionBoundary desktop={<DesktopHubEdition />} mobile={<MobileHubEdition />} />
     </>
   );
 }

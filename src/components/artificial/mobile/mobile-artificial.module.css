@@ -30,7 +30,10 @@
   font-family: var(--font-mono), "Courier New", monospace;
   inline-size: 100%;
   max-inline-size: 100%;
+  min-block-size: 100dvh;
   overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 .mobileArtificial :is(p, h1, h2, h3, figure, dl) {
@@ -344,17 +347,13 @@
 .activeViewRecord :is(.geometryRecordCore, .geometryEvidenceCore) { fill: var(--ink); opacity: 1; stroke: var(--ink); }
 .activeViewRecord :is(.geometryRecordHalo, .geometryEvidenceHalo) { color: var(--ink); opacity: .28; transform: scale(1.08); transition: opacity var(--motion-selection-duration) ease-out, transform var(--motion-selection-duration) ease-out; }
 
-.geometryRootLabel,
-.geometryDomainLabel {
-  fill: var(--ink);
-  font-family: var(--font-mono), monospace;
-  pointer-events: none;
-  text-anchor: middle;
-}
-
-.geometryRootLabel { font-size: 4.8px; font-weight: 800; letter-spacing: .08em; }
-.geometryDomainLabel { dominant-baseline: central; font-size: 4.1px; font-weight: 800; letter-spacing: .02em; paint-order: stroke; stroke: var(--black); stroke-width: 2.5px; }
-.geometryDomainLabel.activeViewLabel { fill: var(--accent); }
+.compoundGeometryLabels { inset: 0; pointer-events: none; position: absolute; z-index: 3; }
+.compoundLabelAnchor { position: absolute; transform: translate(-50%, -50%); }
+.compoundLabelAnchor > span { background: rgb(5 5 7 / 82%); box-decoration-break: clone; box-shadow: 0 0 8px rgb(5 5 7 / 90%); color: var(--ink); display: block; font-family: var(--font-mono), monospace; font-weight: 800; line-height: 1; padding: 2px 3px; text-align: center; white-space: nowrap; }
+.compoundRootLabel { font-size: 15px; letter-spacing: .08em; }
+.compoundBranchLabel,
+.compoundBranchLabelActive { font-size: 13px; letter-spacing: .035em; }
+.compoundBranchLabelActive { color: var(--accent) !important; }
 
 .geometryRecord,
 .geometryEvidenceRecord { color: var(--ink); outline: none; }
@@ -389,16 +388,16 @@
 .semanticSphereRelations line { stroke: rgb(255 255 255 / 26%); stroke-width: .46; vector-effect: non-scaling-stroke; }
 .semanticNebulaConnections line { stroke: rgb(255 255 255 / 8%); stroke-width: .28; vector-effect: non-scaling-stroke; }
 .semanticNebulaField circle { fill: var(--ink); filter: drop-shadow(0 0 1.2px rgb(255 255 255 / 38%)); opacity: var(--particle-opacity); transform-box: fill-box; transform-origin: center; }
-.semanticSphereRoot,
-.semanticSphereLabel { fill: var(--ink); font-family: var(--font-mono), monospace; font-weight: 800; paint-order: stroke; stroke: var(--black); stroke-width: 2px; text-anchor: middle; }
-.semanticSphereRoot { font-size: 12px; letter-spacing: .05em; transform-box: fill-box; transform-origin: center; }
-.semanticSphereLabel { font-size: 12px; letter-spacing: .02em; }
+.semanticSphereLabels { inset: 0; pointer-events: none; position: absolute; z-index: 3; }
+.semanticLabelAnchor { position: absolute; transform: translate(-50%, -50%); }
+.semanticLabelAnchor > span { background: rgb(5 5 7 / 84%); box-shadow: 0 0 9px rgb(5 5 7 / 94%); color: var(--ink); display: block; font-family: var(--font-mono), monospace; font-size: 12px; font-weight: 800; letter-spacing: .025em; line-height: 1; padding: 2px 3px; text-align: center; white-space: nowrap; }
+.semanticRootLabel { font-size: 13px !important; letter-spacing: .05em !important; }
+.semanticLabelActive { color: var(--accent) !important; }
 .semanticSphereRootCore { fill: rgb(255 255 255 / 5%); stroke: rgb(255 255 255 / 34%); stroke-width: .42; transform-box: fill-box; transform-origin: center; vector-effect: non-scaling-stroke; }
 .semanticSphereHalo { fill: var(--ink); opacity: .07; }
 .semanticSphereCore { fill: rgb(255 255 255 / 14%); stroke: var(--ink); stroke-width: .68; vector-effect: non-scaling-stroke; }
 .semanticSphereActive .semanticSphereHalo { fill: var(--accent); opacity: .13; }
 .semanticSphereActive .semanticSphereCore { fill: rgb(255 49 95 / 34%); stroke: var(--ink); }
-.semanticSphereActive .semanticSphereLabel { fill: var(--accent); }
 .semanticSphereInactive { opacity: .82; }
 .semanticDiffusionRing { fill: none; opacity: .12; stroke: var(--ink); stroke-width: .34; transform-box: fill-box; transform-origin: center; vector-effect: non-scaling-stroke; }
 .semanticDiffuseParticle { fill: var(--ink); opacity: .3; transform-box: fill-box; transform-origin: center; }

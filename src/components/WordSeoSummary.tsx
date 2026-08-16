@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { CitationAndSharing } from "@/components/CitationAndSharing";
-import { absoluteUrl, routeByPath, siteConfig, wordRoutes, type SiteRoute } from "@/lib/site";
+import { routeByPath, wordRoutes, type SiteRoute } from "@/lib/site";
 
 type WordSeoSummaryProps = {
   path: string;
@@ -17,56 +16,47 @@ export function WordSeoSummary({ path }: WordSeoSummaryProps) {
     .map((relatedPath) => routeByPath(relatedPath))
     .filter((relatedRoute): relatedRoute is SiteRoute => Boolean(relatedRoute));
   const otherRoutes = wordRoutes.filter((wordRoute) => wordRoute.path !== route.path);
-  const citation = `Pan, Dai. “${route.title}.” Words Over Time, 2026. ${absoluteUrl(route.path)}. Project DOI: https://doi.org/10.5281/zenodo.20437678.`;
 
   return (
-    <section className="bg-paper-mobile px-5 py-4 text-ink min-[960px]:bg-wheat min-[960px]:px-16 min-[960px]:py-8 xl:px-20" aria-label={`Citation and related studies for ${route.title}`}>
-      <details className="group mx-auto max-w-[1680px]">
-        <summary className="flex min-h-11 cursor-pointer items-center justify-between border-t border-ink/[0.55] py-3 font-mono text-[0.9375rem] font-semibold uppercase leading-5 tracking-[0.04em] text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink min-[960px]:hidden">
-          Citation / rights / links
-          <span aria-hidden="true" className="ml-4 text-fire group-open:rotate-45 motion-reduce:transform-none">+</span>
-        </summary>
-        <div className="hidden gap-10 pt-6 group-open:grid min-[960px]:!grid min-[960px]:grid-cols-[minmax(0,1fr)_minmax(300px,0.38fr)] min-[960px]:gap-6 min-[960px]:border-t min-[960px]:border-ink/[0.55]">
-        <div className="min-w-0 max-w-4xl">
-          <p className="font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-ink min-[960px]:text-[0.72rem] min-[960px]:font-black min-[960px]:tracking-[0.18em] min-[960px]:text-nice/90">canonical study / citation</p>
-          <h2 id={`${route.path.slice(1).replaceAll("/", "-")}-summary`} className="mt-3 text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em] min-[960px]:text-4xl min-[960px]:font-extrabold min-[960px]:tracking-normal">
-            Cite and continue this study/
+    <section className="bg-wheat px-5 py-8 text-ink sm:px-10 lg:px-16 xl:px-20" aria-labelledby={`${route.path.slice(1).replaceAll("/", "-")}-summary`}>
+      <div className="mx-auto grid max-w-[1680px] gap-6 border-t border-ink/55 pt-6 lg:grid-cols-[minmax(0,1fr)_minmax(300px,0.38fr)]">
+        <div className="max-w-4xl">
+          <p className="text-[0.72rem] font-black uppercase tracking-[0.18em] text-nice/90">search summary / quick read</p>
+          <h2 id={`${route.path.slice(1).replaceAll("/", "-")}-summary`} className="mt-3 text-2xl font-extrabold leading-tight sm:text-4xl">
+            About {route.title.toLowerCase()}/
           </h2>
-          <p className="mt-4 max-w-3xl text-[1.0625rem] font-normal leading-[1.55] text-ink min-[960px]:mt-3 min-[960px]:text-[0.95rem] min-[960px]:font-medium min-[960px]:text-ink/70">
-            This public URL is the canonical entry for the {route.title.toLowerCase()} study. The DOI identifies the project archive, not a separate
-            route-level dataset. Source boundaries, rights, and the raw-data publication policy remain on the methodology page.
+          <p className="mt-3 max-w-4xl text-base font-semibold leading-snug text-anthracite/90 sm:text-xl">{route.summary || route.description}</p>
+          <p className="mt-3 max-w-3xl text-sm font-medium leading-relaxed text-ink/62 sm:text-[0.95rem]">
+            This public page is the canonical entry for the {route.title.toLowerCase()} word study. For source boundaries, copyright notes, and the
+            raw-data publication policy, use the methodology and rights page.
           </p>
           <Link
             href="/about"
-            className="mt-4 inline-flex min-h-11 w-fit items-center border-b border-ink/70 pb-1 font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-ink motion-reduce:transition-none hover:border-wine hover:text-wine focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-ink min-[960px]:text-[0.72rem] min-[960px]:font-black min-[960px]:tracking-[0.15em] min-[960px]:text-ink/80 min-[960px]:transition"
+            className="mt-4 inline-flex w-fit border-b border-ink/70 pb-1 text-[0.72rem] font-black uppercase tracking-[0.15em] text-ink/80 transition hover:border-wine hover:text-wine"
           >
             Methodology and rights
           </Link>
-          <div className="mt-6">
-            <CitationAndSharing canonicalUrl={absoluteUrl(route.path)} citation={citation} title={`${route.title} | ${siteConfig.name}`} />
-          </div>
         </div>
-        <nav aria-label={`Related word studies for ${route.title}`} className="flex min-w-0 flex-col justify-between gap-5 border-ink/[0.35] min-[960px]:border-l min-[960px]:pl-6">
+        <nav aria-label={`Related word studies for ${route.title}`} className="flex flex-col justify-between gap-5 border-l-0 border-ink/35 lg:border-l lg:pl-6">
           <div>
-            <p className="font-mono text-[0.8125rem] font-semibold uppercase leading-5 tracking-[0.04em] text-fire min-[960px]:text-[0.72rem] min-[960px]:font-black min-[960px]:tracking-[0.18em]">related studies</p>
-            <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 min-[960px]:gap-2">
+            <p className="text-[0.72rem] font-black uppercase tracking-[0.18em] text-fire/90">related studies</p>
+            <div className="mt-3 flex flex-wrap gap-2">
               {(relatedRoutes.length > 0 ? relatedRoutes : otherRoutes.slice(0, 3)).map((relatedRoute) => (
                 <Link
                   key={relatedRoute.path}
                   href={relatedRoute.path}
-                  className="inline-flex min-h-11 items-center border-b border-ink/55 bg-transparent py-2 text-[0.8125rem] font-semibold uppercase tracking-[0.04em] text-ink hover:border-ink hover:text-wine focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-ink min-[960px]:border min-[960px]:border-ink/75 min-[960px]:px-2.5 min-[960px]:font-black min-[960px]:tracking-[0.08em] min-[960px]:text-ink/[0.85] min-[960px]:transition min-[960px]:hover:-translate-y-0.5 min-[960px]:hover:bg-ink min-[960px]:hover:text-wheat motion-reduce:transform-none motion-reduce:transition-none"
+                  className="border border-ink/75 bg-transparent px-2.5 py-1.5 text-xs font-black uppercase tracking-[0.08em] text-ink/85 transition hover:-translate-y-0.5 hover:border-ink hover:bg-ink hover:text-wheat"
                 >
                   {relatedRoute.title}/
                 </Link>
               ))}
             </div>
           </div>
-          <Link href="/words" className="inline-flex min-h-11 items-center text-[0.8125rem] font-semibold uppercase tracking-[0.04em] text-nice underline decoration-1 underline-offset-4 hover:text-wine focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-ink min-[960px]:font-black min-[960px]:tracking-[0.15em]">
+          <Link href="/words" className="text-xs font-black uppercase tracking-[0.15em] text-nice underline decoration-1 underline-offset-4 hover:text-wine">
             Browse all word studies
           </Link>
         </nav>
-        </div>
-      </details>
+      </div>
     </section>
   );
 }

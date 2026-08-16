@@ -1,8 +1,7 @@
+import { EditionBoundary } from "@/components/edition/EditionBoundary";
 import { JsonLd } from "@/components/JsonLd";
-import { ResponsiveForeverEdition } from "@/components/ResponsiveForeverEdition";
-import { WordPageShell } from "@/components/WordPageShell";
-import { MobileForeverStudy } from "@/components/forever/mobile/MobileForeverStudy";
-import { foreverMobileAnalysis } from "@/data/foreverMobileAnalysis";
+import { DesktopForeverEdition } from "@/editions/desktop/DesktopForeverEdition";
+import { MobileForeverEdition } from "@/editions/mobile/MobileForeverEdition";
 import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
 
 export const metadata = createPageMetadata("/words/forever");
@@ -12,11 +11,7 @@ export default function ForeverPage() {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <WordPageShell path="/words/forever">
-        <ResponsiveForeverEdition>
-          <MobileForeverStudy analysis={foreverMobileAnalysis} />
-        </ResponsiveForeverEdition>
-      </WordPageShell>
+      <EditionBoundary desktop={<DesktopForeverEdition />} mobile={<MobileForeverEdition />} />
     </>
   );
 }

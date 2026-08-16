@@ -209,16 +209,16 @@ export function ArtificialChart02PressureDiagram() {
 
   return (
     <section className="border-b border-ink bg-wheat">
-      <div className="border-b border-ink px-4 py-4 sm:px-6">
+      <div className="border-b border-ink px-6 py-4">
         <p className="font-mono text-[0.72rem] font-black uppercase tracking-[0.16em] text-ink/45">
           Chart 02
         </p>
         <h2 className="mt-1 text-2xl font-black leading-none">Under pressure</h2>
-        <div className="mt-5 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+        <div className="mt-5 flex items-center justify-between gap-6">
           <p className="font-mono text-[0.62rem] font-black uppercase tracking-[0.16em] text-ink/58">
             From substitute to suspicion
           </p>
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-[0.62rem] font-black uppercase tracking-[0.16em] text-ink sm:gap-x-7">
+          <div className="flex items-center gap-7 font-mono text-[0.62rem] font-black uppercase tracking-[0.16em] text-ink">
             <span className="inline-flex items-center gap-2.5">
               <span className="h-3.5 w-3.5 rounded-full border border-ink" />
               pressure field

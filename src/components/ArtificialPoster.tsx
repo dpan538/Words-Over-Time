@@ -4,6 +4,7 @@ import { ArtificialChart03InteractiveSuite } from "@/components/artificial/chart
 import { ArtificialChart04APejorationOrbit } from "@/components/artificial/chart04/ArtificialChart04APejorationOrbit";
 import { ArtificialChart04BSemanticAttractor } from "@/components/artificial/chart04/ArtificialChart04BSemanticAttractor";
 import { ArtificialChart05HumanBoundary } from "@/components/artificial/chart05/ArtificialChart05HumanBoundary";
+import { Nav } from "@/components/Nav";
 import { PosterSection } from "@/components/PosterSection";
 
 const artificialPanels = [
@@ -38,8 +39,53 @@ function ArtificialPanelProgress() {
 
 export function ArtificialPoster() {
   return (
-    <div className="bg-wheat text-ink">
+    <main className="min-h-screen bg-wheat text-ink">
       <div className="mx-auto flex w-full max-w-[1960px] flex-col px-4 py-5 sm:px-7 lg:px-10 xl:px-12">
+        <Nav />
+
+        <section className="relative overflow-hidden border-y border-ink py-8 sm:py-10 lg:py-12">
+          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(5,5,16,0.09)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.07)_1px,transparent_1px)] bg-[size:72px_72px]" />
+          <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-end">
+            <div>
+              <p className="font-mono text-[0.82rem] font-black uppercase tracking-[0.18em] text-ink/55">
+                Words Over Time / word study
+              </p>
+              <h1 className="mt-5 text-[clamp(4.7rem,15.5vw,17rem)] font-black leading-[0.72] tracking-normal text-ink">
+                artificial
+              </h1>
+              <p className="mt-7 max-w-5xl text-[clamp(1.12rem,2.15vw,2.8rem)] font-black leading-[1.02] text-ink">
+                A word that moves from skilled making to synthetic matter, reproduced experience, suspicion, and the human boundary.
+              </p>
+              <p className="mt-4 max-w-3xl font-mono text-[clamp(0.76rem,1.02vw,0.96rem)] font-black uppercase leading-6 tracking-[0.12em] text-ink/58">
+                Artifice / manufacture / reproduction / suspicion / body / cognition.
+              </p>
+            </div>
+
+            <dl className="grid border-y border-ink bg-wheat/74">
+              {[
+                ["status", "near complete"],
+                ["sequence", "five charts"],
+                ["mode", "interactive atlas"],
+                ["scope", "artifice to ai"],
+              ].map(([label, value], index) => (
+                <div
+                  key={label}
+                  className={`grid grid-cols-[7.25rem_1fr] border-ink ${
+                    index < 3 ? "border-b" : ""
+                  }`}
+                >
+                  <dt className="border-r border-ink px-3 py-3 font-mono text-[0.74rem] font-black uppercase leading-5 tracking-[0.14em] text-ink/48">
+                    {label}
+                  </dt>
+                  <dd className="px-3 py-3 font-mono text-[0.8rem] font-black uppercase leading-5 tracking-[0.1em]">
+                    {value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
         <ArtificialPanelProgress />
 
         <div className="mt-10 min-w-0">
@@ -52,7 +98,6 @@ export function ArtificialPoster() {
             </p>
           </div>
 
-          <span id="original-meaning" className="block scroll-mt-6" aria-hidden="true" />
           <PosterSection
             id="chart-1-semantic-chamber"
             eyebrow="01 / semantic chamber"
@@ -62,7 +107,6 @@ export function ArtificialPoster() {
             <ArtificialChart01SemanticChamber />
           </PosterSection>
 
-          <span id="created-by-artificial-means" className="block scroll-mt-6" aria-hidden="true" />
           <PosterSection
             id="chart-2-under-pressure"
             eyebrow="02 / under pressure"
@@ -99,7 +143,6 @@ export function ArtificialPoster() {
             <ArtificialChart04BSemanticAttractor />
           </PosterSection>
 
-          <span id="artificial-before-ai" className="block scroll-mt-6" aria-hidden="true" />
           <PosterSection
             id="chart-5-artificial-human-boundary"
             eyebrow="05 / human boundary"
@@ -110,6 +153,6 @@ export function ArtificialPoster() {
           </PosterSection>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

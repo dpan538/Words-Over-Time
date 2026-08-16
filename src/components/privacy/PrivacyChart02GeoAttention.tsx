@@ -790,7 +790,7 @@ export function PrivacyChart02GeoAttention({ dataset }: PrivacyChart02GeoAttenti
               key={value}
               type="button"
               onClick={() => setMode(value as "hotspot" | "radiation")}
-              className={`min-h-11 border px-4 py-3 font-mono text-[0.74rem] font-black uppercase leading-none tracking-[0.14em] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-ink ${
+              className={`border px-4 py-3 font-mono text-[0.74rem] font-black uppercase leading-none tracking-[0.14em] transition ${
                 mode === value
                   ? "border-privacy-violet bg-privacy-violet text-[#fff8e6]"
                   : "border-ink/65 text-ink hover:border-privacy-violet hover:text-privacy-violet"

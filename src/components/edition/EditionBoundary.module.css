@@ -1,0 +1,23 @@
+.boundary,
+.edition {
+  min-width: 0;
+  width: 100%;
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+@media (min-width: 960px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}

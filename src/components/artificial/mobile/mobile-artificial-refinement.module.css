@@ -1,0 +1,50 @@
+.hero {
+  min-height: auto;
+}
+
+.heroCopy {
+  margin-top: 118px;
+}
+
+.darkMovement {
+  background-color: #05050d;
+  background-image:
+    linear-gradient(rgb(255 255 255 / 2.5%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 2.5%) 1px, transparent 1px);
+  background-size: 18px 18px;
+  color: #f5f1e8;
+}
+
+.originFigure {
+  border-color: #666;
+  background: #0c0d12;
+}
+
+.originFigure span,
+.originFigure i,
+.originMatrix {
+  border-color: currentColor;
+}
+
+.core {
+  background: currentColor !important;
+}
+
+.caveat {
+  border-color: currentColor !important;
+}
+
+.excluded {
+  border-color: #777 !important;
+}
+
+.terminalLedger {
+  border-color: #666;
+  background: #090a0e;
+}
+
+@media (max-width: 350px) {
+  .heroCopy {
+    margin-top: 88px;
+  }
+}

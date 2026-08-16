@@ -1,0 +1,4632 @@
+{
+  "schemaVersion": "1.5.0",
+  "auditId": "artificial-mobile-raw-research-2026-08-13",
+  "frozenInputSetSha256": "aa81b3637135e643b2b13416896196900287fb0fa19b58939febcdc97f2b8467",
+  "missingnessTaxonomy": [
+    "observed_positive",
+    "observed_zero",
+    "absent_or_suppressed",
+    "not_searched",
+    "fetch_failed",
+    "unavailable",
+    "incomparable",
+    "out_of_scope"
+  ],
+  "researchCoverage": {
+    "selectedTermCount": 42,
+    "retainedTermYearCellCount": 9270,
+    "compoundTermCount": 30,
+    "compoundTermYearCellCount": 6630,
+    "compoundYearCoverage": {
+      "start": 1800,
+      "end": 2020
+    },
+    "mediaTermCount": 12,
+    "mediaTermYearCellCount": 2640,
+    "mediaYearCoverage": {
+      "start": 1800,
+      "end": 2019
+    },
+    "unit": "one selected exact term in one retained year",
+    "allowedPublicUse": "method footprint only"
+  },
+  "originClaims": {
+    "claimCount": 11,
+    "publicCoreClaims": [
+      {
+        "claim": "Title metadata includes a canon of artificiall lines and tangents for astronomy, navigation, dialling, and fortification.",
+        "status": "technical_rule_reckoning",
+        "evidenceStrength": "medium",
+        "source": "The Description and Use of the Sector, Crosse-staffe, and Other Instruments / Edmund Gunter"
+      },
+      {
+        "claim": "Richard describes the ability to display tears while framing his face for deception; strong feigned-emotion evidence.",
+        "status": "fake_not_genuine",
+        "evidenceStrength": "strong",
+        "source": "Henry VI, Part 3 / William Shakespeare"
+      },
+      {
+        "claim": "Defines artificial lines as sector/scale lines representing logarithmic sines and tangents.",
+        "status": "technical_rule_reckoning",
+        "evidenceStrength": "medium",
+        "source": "Webster 1828 Artificial / Noah Webster"
+      },
+      {
+        "claim": "Webster keeps made-by-art/in-opposition-to-natural separate from feigned/fictitious/not-genuine.",
+        "status": "not_natural_distinct",
+        "evidenceStrength": "medium",
+        "source": "Webster 1828 / Noah Webster"
+      }
+    ],
+    "methodologicalBoundaryClaims": [
+      {
+        "claim": "Defines the daylight span between rising and setting of the sun as artificial day.",
+        "status": "technical_rule_reckoning",
+        "evidenceStrength": "medium",
+        "source": "Webster 1828 Day / Noah Webster"
+      }
+    ],
+    "useWithCareClaims": [
+      {
+        "claim": "Secondary source dates the affected/insincere branch before 1828.",
+        "status": "affected_insincere",
+        "risk": "No separate primary snippet for affected/insincere was captured in this pass."
+      },
+      {
+        "claim": "Johnson-attributed entry places the Shakespeare artificial-tears quotation under fictitious/not-genuine.",
+        "status": "fake_not_genuine",
+        "risk": "Useful because it shows eighteenth-century lexicographic classification, but direct Johnson still not captured."
+      },
+      {
+        "claim": "Johnson-attributed entry lists made by art/not natural separately from fictitious/not-genuine.",
+        "status": "not_natural_distinct",
+        "risk": "This is the clearest source for keeping not-natural distinct from fake before Webster 1828, but it is indirect."
+      },
+      {
+        "claim": "Quoted early-modern source defines artificial day as the time from sunrise to sunset.",
+        "status": "technical_rule_reckoning",
+        "risk": "Pre-1828 source is identified, but direct scan/transcription should be checked before visible use."
+      }
+    ],
+    "excludedClaims": [
+      {
+        "claim": "Claims affected/insincere from the 1590s and fictitious/not-genuine from the 1640s.",
+        "status": "affected_insincere; fake_not_genuine",
+        "risk": "Good chronology pointer; OED needed for exact quotations."
+      },
+      {
+        "claim": "Separates made-by-art/not-natural, fictitious/not-genuine, and artful/contrived-with-skill senses.",
+        "status": "not_natural_distinct; fake_not_genuine; art_skill_making",
+        "risk": "Direct Johnson entry was not stabilized; use as indirect support only."
+      }
+    ],
+    "excludedClaimCount": 2
+  },
+  "phraseVocabulary": {
+    "exactPhraseCount": 48,
+    "domains": [
+      {
+        "domain": "BIOLOGICAL",
+        "termCount": 6,
+        "termNames": [
+          "artificial heart",
+          "artificial insemination",
+          "artificial kidney",
+          "artificial limb",
+          "artificial organ",
+          "artificial respiration"
+        ]
+      },
+      {
+        "domain": "COGNITIVE",
+        "termCount": 11,
+        "termNames": [
+          "artificial brain",
+          "artificial consciousness",
+          "artificial intelligence",
+          "artificial language",
+          "artificial logic",
+          "artificial memory",
+          "artificial mind",
+          "artificial neural network",
+          "artificial reason",
+          "artificial reasoning",
+          "artificial thought"
+        ]
+      },
+      {
+        "domain": "MATERIAL",
+        "termCount": 6,
+        "termNames": [
+          "artificial fiber",
+          "artificial fibre",
+          "artificial resin",
+          "artificial rubber",
+          "artificial silk",
+          "artificial stone"
+        ]
+      },
+      {
+        "domain": "SENSE",
+        "termCount": 7,
+        "termNames": [
+          "artificial color",
+          "artificial colour",
+          "artificial flavor",
+          "artificial flavour",
+          "artificial flower",
+          "artificial light",
+          "artificial sweetener"
+        ]
+      },
+      {
+        "domain": "SOCIAL",
+        "termCount": 18,
+        "termNames": [
+          "artificial affectation",
+          "artificial behavior",
+          "artificial behaviour",
+          "artificial cheerfulness",
+          "artificial courtesy",
+          "artificial dignity",
+          "artificial emotion",
+          "artificial excitement",
+          "artificial expression",
+          "artificial gaiety",
+          "artificial gesture",
+          "artificial manner",
+          "artificial personality",
+          "artificial politeness",
+          "artificial sentiment",
+          "artificial smile",
+          "artificial sympathy",
+          "artificial voice"
+        ]
+      }
+    ],
+    "allowedPublicUse": "equal-mark selected vocabulary map only"
+  },
+  "compoundTerms": [
+    {
+      "term": "artificial respiration",
+      "ngramOrder": 2,
+      "domain": "BIOLOGICAL",
+      "peakYear": 1890,
+      "peakViewerFraction": 9.017490214535684e-7,
+      "latestYear": 2020,
+      "latestViewerFraction": 9.305888526434103e-8,
+      "positiveYearCount": 216,
+      "absentOrSuppressedYearCount": 5,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": 32.8,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 15.91,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 22.13,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 26.52,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 43.67,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 56.43,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 83.22,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 82.79,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 74.98,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 78.83,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 68.74,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 72.09,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 85.15,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 96.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 67.3,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 42.47,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 37.82,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 24.18,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 20.07,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 13.44,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv:92",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv:222"
+      ]
+    },
+    {
+      "term": "artificial limb",
+      "ngramOrder": 2,
+      "domain": "BIOLOGICAL",
+      "peakYear": 1918,
+      "peakViewerFraction": 5.622288016815524e-7,
+      "latestYear": 2020,
+      "latestViewerFraction": 3.375282536799418e-8,
+      "positiveYearCount": 217,
+      "absentOrSuppressedYearCount": 4,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": 3.98,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": 3.02,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 2.87,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 5.7,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 5.27,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 25.58,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 44.69,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 38.68,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 43.66,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 51.74,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 59.68,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 80.01,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 52.2,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 71.66,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 74.52,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 45.91,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 35.38,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 24.26,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 19.1,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 15.96,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 13.93,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv:341",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv:443"
+      ]
+    },
+    {
+      "term": "artificial insemination",
+      "ngramOrder": 2,
+      "domain": "BIOLOGICAL",
+      "peakYear": 1953,
+      "peakViewerFraction": 0.000001090718884655395,
+      "latestYear": 2020,
+      "latestViewerFraction": 2.3089014815347308e-7,
+      "positiveYearCount": 161,
+      "absentOrSuppressedYearCount": 60,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 0.72,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 1.04,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 0.96,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 1.41,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 3.52,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 21.25,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 84.83,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 85.35,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 78.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 86.08,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 59.12,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 39.34,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 32.06,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv:597",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv:664"
+      ]
+    },
+    {
+      "term": "artificial kidney",
+      "ngramOrder": 2,
+      "domain": "BIOLOGICAL",
+      "peakYear": 1968,
+      "peakViewerFraction": 3.8543707137073113e-7,
+      "latestYear": 2020,
+      "latestViewerFraction": 3.088947546359133e-8,
+      "positiveYearCount": 121,
+      "absentOrSuppressedYearCount": 100,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 0.52,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 0.69,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 0.85,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 9.11,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 53.75,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 96.42,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 35.91,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 23.1,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 16.64,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 16.93,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv:833",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv:885"
+      ]
+    },
+    {
+      "term": "artificial organ",
+      "ngramOrder": 2,
+      "domain": "BIOLOGICAL",
+      "peakYear": 1984,
+      "peakViewerFraction": 1.7236363503148056e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 6.290693771449085e-9,
+      "positiveYearCount": 196,
+      "absentOrSuppressedYearCount": 25,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 15.07,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 32.29,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 28.78,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 14.65,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 38.17,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 15.3,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 12.72,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 7.04,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 5.61,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 3.63,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 4.39,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 4.4,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 10.23,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 56.42,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 59.09,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 82.5,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 74.02,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 69.77,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv:1291",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv:1327"
+      ]
+    },
+    {
+      "term": "artificial heart",
+      "ngramOrder": 2,
+      "domain": "BIOLOGICAL",
+      "peakYear": 1986,
+      "peakViewerFraction": 3.7310356270497946e-7,
+      "latestYear": 2020,
+      "latestViewerFraction": 9.488101637700197e-8,
+      "positiveYearCount": 166,
+      "absentOrSuppressedYearCount": 55,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 0.35,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 1.48,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 0.81,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 0.42,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 0.6,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 0.49,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 0.79,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 2.8,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 2.67,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 12.16,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 61.09,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 89.04,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 64.52,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 38.18,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 41.01,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv:1072",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv:1106"
+      ]
+    },
+    {
+      "term": "artificial memory",
+      "ngramOrder": 2,
+      "domain": "COGNITIVE",
+      "peakYear": 1813,
+      "peakViewerFraction": 1.8519766875613186e-7,
+      "latestYear": 2020,
+      "latestViewerFraction": 1.609549930836618e-8,
+      "positiveYearCount": 221,
+      "absentOrSuppressedYearCount": 0,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": 57.45,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 92.1,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 60.81,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 68.78,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 46.52,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 38.56,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 29.01,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 25.52,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 12.32,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 5.88,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 2.45,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 4.12,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 2.84,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 2.78,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 3.05,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 5.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 5.13,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 6.46,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 10.09,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 14.21,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 20.35,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive.csv:236",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive.csv:443"
+      ]
+    },
+    {
+      "term": "artificial reasoning",
+      "ngramOrder": 2,
+      "domain": "COGNITIVE",
+      "peakYear": 1821,
+      "peakViewerFraction": 7.396429424488815e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 2.299356968715749e-9,
+      "positiveYearCount": 220,
+      "absentOrSuppressedYearCount": 1,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": 59.75,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": 72.59,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 54.3,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 34.85,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 33,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 25.31,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 31.14,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 26.98,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 22.67,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 19.48,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 17.78,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 10.81,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 8.91,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 6.7,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 4.37,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 5.18,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 4,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 7.46,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 7.44,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 8.11,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 11.37,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive.csv:686",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive.csv:885"
+      ]
+    },
+    {
+      "term": "artificial language",
+      "ngramOrder": 2,
+      "domain": "COGNITIVE",
+      "peakYear": 1827,
+      "peakViewerFraction": 7.859890516215273e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 4.234287500487488e-8,
+      "positiveYearCount": 221,
+      "absentOrSuppressedYearCount": 0,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": 71.33,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": 69.71,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 89.73,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 58.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 45.14,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 34.02,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 33.08,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 37.85,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 34.61,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 26.97,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 36.96,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 29.16,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 56.65,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 50.41,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 54.54,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 49.93,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 74.96,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 79.03,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 88.17,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 86.96,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 90.77,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive.csv:29",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive.csv:222"
+      ]
+    },
+    {
+      "term": "artificial intelligence",
+      "ngramOrder": 2,
+      "domain": "COGNITIVE",
+      "peakYear": 2020,
+      "peakViewerFraction": 0.000007802152498702364,
+      "latestYear": 2020,
+      "latestViewerFraction": 0.000007802152498702364,
+      "positiveYearCount": 138,
+      "absentOrSuppressedYearCount": 83,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 0.02,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 0.03,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 0.3,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 0.3,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 0.52,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 8.23,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 18.47,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 98.34,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 70.47,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 94.2,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive.csv:664",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive.csv:664"
+      ]
+    },
+    {
+      "term": "artificial neural network",
+      "ngramOrder": 3,
+      "domain": "COGNITIVE",
+      "peakYear": 2020,
+      "peakViewerFraction": 7.941732090115117e-7,
+      "latestYear": 2020,
+      "latestViewerFraction": 7.941732090115117e-7,
+      "positiveYearCount": 72,
+      "absentOrSuppressedYearCount": 149,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 0.15,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 0.2,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 2.79,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 61.28,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 59.42,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive.csv:1106",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive.csv:1106"
+      ]
+    },
+    {
+      "term": "artificial stone",
+      "ngramOrder": 2,
+      "domain": "MATERIAL",
+      "peakYear": 1872,
+      "peakViewerFraction": 0.0000011374043615286489,
+      "latestYear": 2020,
+      "latestViewerFraction": 2.0130219234582025e-8,
+      "positiveYearCount": 221,
+      "absentOrSuppressedYearCount": 0,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": 12.02,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": 12.01,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 11.08,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 9.73,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 16.51,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 30.06,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 46.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 69.73,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 49.18,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 56.38,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 89.18,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 61.37,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 31.77,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 16.4,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 12.51,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 7.72,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 4.19,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 3.37,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 5.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 3.55,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 2.29,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv:295",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv:443"
+      ]
+    },
+    {
+      "term": "artificial silk",
+      "ngramOrder": 2,
+      "domain": "MATERIAL",
+      "peakYear": 1929,
+      "peakViewerFraction": 0.000004645318360169126,
+      "latestYear": 2020,
+      "latestViewerFraction": 2.377448384688341e-8,
+      "positiveYearCount": 177,
+      "absentOrSuppressedYearCount": 44,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 0.03,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 0.59,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 3.36,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 8.81,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 20.46,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 65.87,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 23.85,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 18.65,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 7.66,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 2.43,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 1.16,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 0.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 0.84,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 0.97,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv:131",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv:222"
+      ]
+    },
+    {
+      "term": "artificial resin",
+      "ngramOrder": 2,
+      "domain": "MATERIAL",
+      "peakYear": 1932,
+      "peakViewerFraction": 2.254921800393106e-7,
+      "latestYear": 2020,
+      "latestViewerFraction": 9.110659865418924e-10,
+      "positiveYearCount": 140,
+      "absentOrSuppressedYearCount": 81,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 0.44,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 4.76,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 28.87,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 44.01,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 24.23,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 11.82,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 5.97,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 4.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 4.31,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 2.9,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 1.51,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv:1239",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv:1327"
+      ]
+    },
+    {
+      "term": "artificial rubber",
+      "ngramOrder": 2,
+      "domain": "MATERIAL",
+      "peakYear": 1942,
+      "peakViewerFraction": 1.5329053895674072e-7,
+      "latestYear": 2020,
+      "latestViewerFraction": 3.644263994739827e-9,
+      "positiveYearCount": 157,
+      "absentOrSuppressedYearCount": 64,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 1.82,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 2.02,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 12.97,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 21.24,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 53.87,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 38.89,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 62.84,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 35.02,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 16.06,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 8.39,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 7.18,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 5.15,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 5.71,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 6.85,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv:586",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv:664"
+      ]
+    },
+    {
+      "term": "artificial fiber",
+      "ngramOrder": 2,
+      "domain": "MATERIAL",
+      "peakYear": 1958,
+      "peakViewerFraction": 4.1617292723117316e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 2.6464297697703643e-9,
+      "positiveYearCount": 131,
+      "absentOrSuppressedYearCount": 90,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 2.42,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 4.25,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 16.25,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 28.64,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 45.81,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 80.97,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 89.04,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 36.4,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 23.54,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 21.92,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 14.1,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 13.91,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv:1044",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv:1106"
+      ]
+    },
+    {
+      "term": "artificial fibre",
+      "ngramOrder": 2,
+      "domain": "MATERIAL",
+      "peakYear": 1963,
+      "peakViewerFraction": 4.052877278226674e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 3.297191096540697e-9,
+      "positiveYearCount": 135,
+      "absentOrSuppressedYearCount": 86,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 2.8,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 7.88,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 11.6,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 54.53,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 78.62,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 74.41,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 88.62,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 51.25,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 27.15,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 46.66,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 13.71,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 10.22,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv:828",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv:885"
+      ]
+    },
+    {
+      "term": "artificial flavour",
+      "ngramOrder": 2,
+      "domain": "SENSE",
+      "peakYear": 1824,
+      "peakViewerFraction": 6.679261588260488e-9,
+      "latestYear": 2020,
+      "latestViewerFraction": 1.1279864334245993e-9,
+      "positiveYearCount": 182,
+      "absentOrSuppressedYearCount": 39,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 85.03,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 27.28,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 26.94,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 30.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 13.23,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 23.51,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 36.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 61.05,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 49.38,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 49.01,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 54.66,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 43.45,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 33.82,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 50.12,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 76.46,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:910",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:1106"
+      ]
+    },
+    {
+      "term": "artificial colour",
+      "ngramOrder": 2,
+      "domain": "SENSE",
+      "peakYear": 1854,
+      "peakViewerFraction": 2.9216543850907328e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 2.4728933553652688e-9,
+      "positiveYearCount": 219,
+      "absentOrSuppressedYearCount": 2,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": 58.08,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": 29.61,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 71.55,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 64.43,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 56.54,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 88.11,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 91.91,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 80.76,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 68.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 62.59,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 51,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 30.46,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 46.55,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 39.28,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 49.82,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 42.94,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 22.76,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 23.8,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 21.15,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 24.72,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 27.96,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:277",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:443"
+      ]
+    },
+    {
+      "term": "artificial color",
+      "ngramOrder": 2,
+      "domain": "SENSE",
+      "peakYear": 1908,
+      "peakViewerFraction": 1.526615980296242e-7,
+      "latestYear": 2020,
+      "latestViewerFraction": 6.637766530870337e-9,
+      "positiveYearCount": 192,
+      "absentOrSuppressedYearCount": 29,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 3.44,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 2.33,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 4.2,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 2.1,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 6.23,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 12.7,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 18.01,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 74.68,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 70.6,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 71.18,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 65.33,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 33.18,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 30.72,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 31.96,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 31.6,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 15.99,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 12.55,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 12.29,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:552",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:664"
+      ]
+    },
+    {
+      "term": "artificial flavor",
+      "ngramOrder": 2,
+      "domain": "SENSE",
+      "peakYear": 1911,
+      "peakViewerFraction": 8.262481010490319e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 6.811302716291934e-9,
+      "positiveYearCount": 162,
+      "absentOrSuppressedYearCount": 59,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 3.68,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 3.56,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 36.72,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 52.5,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 43.53,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 40.14,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 65.42,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 47.97,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 53.96,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 51.43,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 31.21,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 28.78,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 25.17,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:1218",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:1327"
+      ]
+    },
+    {
+      "term": "artificial light",
+      "ngramOrder": 2,
+      "domain": "SENSE",
+      "peakYear": 1915,
+      "peakViewerFraction": 0.0000011942825789978961,
+      "latestYear": 2020,
+      "latestViewerFraction": 2.7522870431340163e-7,
+      "positiveYearCount": 221,
+      "absentOrSuppressedYearCount": 0,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": 11.98,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": 10.22,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 13.23,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 21.16,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 32.74,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 39.18,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 52.8,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 46.75,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 52.57,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 54.59,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 64.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 89.56,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 88.76,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 67.27,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 54.96,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 39.87,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 30.27,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 24.93,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 20.37,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 22.63,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 28.73,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:117",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:222"
+      ]
+    },
+    {
+      "term": "artificial flower",
+      "ngramOrder": 2,
+      "domain": "SENSE",
+      "peakYear": 1934,
+      "peakViewerFraction": 1.2616179040358944e-7,
+      "latestYear": 2020,
+      "latestViewerFraction": 1.2104162103176996e-8,
+      "positiveYearCount": 221,
+      "absentOrSuppressedYearCount": 0,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": 13.65,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": 25.89,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 28.16,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 36.71,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 71,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 71.49,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 76.43,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 74.91,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 57.18,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 53.55,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 61.29,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 73.46,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 87.33,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 68.72,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 64.58,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 55.5,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 30.54,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 33.06,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 32.76,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 19.27,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 12.87,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:799",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:885"
+      ]
+    },
+    {
+      "term": "artificial sweetener",
+      "ngramOrder": 2,
+      "domain": "SENSE",
+      "peakYear": 1977,
+      "peakViewerFraction": 9.088238042687102e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 4.0911202890681064e-8,
+      "positiveYearCount": 130,
+      "absentOrSuppressedYearCount": 91,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 5.78,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 4.67,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 5.04,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 2.81,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 4.51,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 15.72,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 38.91,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 87.21,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 85.53,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 69.66,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 87.7,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:1505",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv:1548"
+      ]
+    },
+    {
+      "term": "artificial manner",
+      "ngramOrder": 2,
+      "domain": "SOCIAL",
+      "peakYear": 1801,
+      "peakViewerFraction": 9.177208681876436e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 7.63560059624524e-9,
+      "positiveYearCount": 221,
+      "absentOrSuppressedYearCount": 0,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": 88.78,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 93.39,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 77.01,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 81.71,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 61.53,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 55.82,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 50.09,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 41.29,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 39.1,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 27.17,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 22.33,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 23.3,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 20.73,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 21.99,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 18.07,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 17.36,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 16.47,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 13.45,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 12.51,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 13.33,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 15.41,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv:3",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv:222"
+      ]
+    },
+    {
+      "term": "artificial behaviour",
+      "ngramOrder": 2,
+      "domain": "SOCIAL",
+      "peakYear": 1804,
+      "peakViewerFraction": 1.1682088629783038e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 8.242977966865794e-10,
+      "positiveYearCount": 147,
+      "absentOrSuppressedYearCount": 74,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 41.39,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 16.23,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 13.57,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 29.31,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 23.59,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 26.21,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 40.78,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 54.54,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv:227",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv:443"
+      ]
+    },
+    {
+      "term": "artificial dignity",
+      "ngramOrder": 2,
+      "domain": "SOCIAL",
+      "peakYear": 1828,
+      "peakViewerFraction": 3.080790733633876e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 1.7353637971062597e-10,
+      "positiveYearCount": 207,
+      "absentOrSuppressedYearCount": 14,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 46.21,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 81.46,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 58.97,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 41.65,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 33.91,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 25.08,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 19.03,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 13.11,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 14.01,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 13.01,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 8.9,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 10.75,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 6.73,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 7.76,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 4.22,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 3.11,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 2.24,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 3.14,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 5.51,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv:914",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv:1106"
+      ]
+    },
+    {
+      "term": "artificial excitement",
+      "ngramOrder": 2,
+      "domain": "SOCIAL",
+      "peakYear": 1829,
+      "peakViewerFraction": 6.380774686398638e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 2.8199661217254146e-9,
+      "positiveYearCount": 213,
+      "absentOrSuppressedYearCount": 8,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": 28.61,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": 66.09,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 86.79,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 54.9,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 40.95,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 32.05,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 16.57,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 12.22,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 10.12,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 6.74,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 6.11,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 7.02,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 4.89,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 3.83,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 4.71,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 3.08,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 2.55,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 2.38,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 3.26,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 4.3,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv:1136",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv:1327"
+      ]
+    },
+    {
+      "term": "artificial smile",
+      "ngramOrder": 2,
+      "domain": "SOCIAL",
+      "peakYear": 1833,
+      "peakViewerFraction": 1.7113205075247606e-8,
+      "latestYear": 2020,
+      "latestViewerFraction": 1.3275532673162616e-8,
+      "positiveYearCount": 201,
+      "absentOrSuppressedYearCount": 20,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": 46.73,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": 44.13,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": 31.21,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": 34.19,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": 26.3,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": 28.3,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": 20.11,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": 13.74,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": 9.44,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": 16.45,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": 16.62,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 22.96,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 17.39,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 15.68,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 12.99,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 19.76,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 24.26,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 47.17,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv:698",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv:885"
+      ]
+    },
+    {
+      "term": "artificial behavior",
+      "ngramOrder": 2,
+      "domain": "SOCIAL",
+      "peakYear": 1986,
+      "peakViewerFraction": 6.145593922646242e-9,
+      "latestYear": 2020,
+      "latestViewerFraction": 1.1279864126079175e-9,
+      "positiveYearCount": 114,
+      "absentOrSuppressedYearCount": 107,
+      "ownPeakDecadeShape": [
+        {
+          "decade": 1800,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1810,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1820,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1830,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1840,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1850,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1860,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1870,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1880,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1890,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1900,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1910,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1920,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1930,
+          "percentOfOwnPeak": null,
+          "state": "absent_or_suppressed"
+        },
+        {
+          "decade": 1940,
+          "percentOfOwnPeak": 18.12,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1950,
+          "percentOfOwnPeak": 25.35,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1960,
+          "percentOfOwnPeak": 44.16,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1970,
+          "percentOfOwnPeak": 59.07,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1980,
+          "percentOfOwnPeak": 100,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 1990,
+          "percentOfOwnPeak": 67.17,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2000,
+          "percentOfOwnPeak": 79.63,
+          "state": "observed_positive"
+        },
+        {
+          "decade": 2010,
+          "percentOfOwnPeak": 77.33,
+          "state": "observed_positive"
+        }
+      ],
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv:630",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv:664"
+      ]
+    }
+  ],
+  "compoundDomains": [
+    {
+      "domain": "BIOLOGICAL",
+      "termCount": 6,
+      "termNames": [
+        "artificial heart",
+        "artificial insemination",
+        "artificial kidney",
+        "artificial limb",
+        "artificial organ",
+        "artificial respiration"
+      ],
+      "earliestPeakYear": 1890,
+      "latestPeakYear": 1986,
+      "medianPeakYear": 1960.5,
+      "peakYearBins": [
+        {
+          "startYear": 1800,
+          "endYear": 1849,
+          "termCount": 0
+        },
+        {
+          "startYear": 1850,
+          "endYear": 1899,
+          "termCount": 1
+        },
+        {
+          "startYear": 1900,
+          "endYear": 1949,
+          "termCount": 1
+        },
+        {
+          "startYear": 1950,
+          "endYear": 1999,
+          "termCount": 4
+        },
+        {
+          "startYear": 2000,
+          "endYear": 2020,
+          "termCount": 0
+        }
+      ]
+    },
+    {
+      "domain": "COGNITIVE",
+      "termCount": 5,
+      "termNames": [
+        "artificial intelligence",
+        "artificial language",
+        "artificial memory",
+        "artificial neural network",
+        "artificial reasoning"
+      ],
+      "earliestPeakYear": 1813,
+      "latestPeakYear": 2020,
+      "medianPeakYear": 1827,
+      "peakYearBins": [
+        {
+          "startYear": 1800,
+          "endYear": 1849,
+          "termCount": 3
+        },
+        {
+          "startYear": 1850,
+          "endYear": 1899,
+          "termCount": 0
+        },
+        {
+          "startYear": 1900,
+          "endYear": 1949,
+          "termCount": 0
+        },
+        {
+          "startYear": 1950,
+          "endYear": 1999,
+          "termCount": 0
+        },
+        {
+          "startYear": 2000,
+          "endYear": 2020,
+          "termCount": 2
+        }
+      ]
+    },
+    {
+      "domain": "MATERIAL",
+      "termCount": 6,
+      "termNames": [
+        "artificial fiber",
+        "artificial fibre",
+        "artificial resin",
+        "artificial rubber",
+        "artificial silk",
+        "artificial stone"
+      ],
+      "earliestPeakYear": 1872,
+      "latestPeakYear": 1963,
+      "medianPeakYear": 1937,
+      "peakYearBins": [
+        {
+          "startYear": 1800,
+          "endYear": 1849,
+          "termCount": 0
+        },
+        {
+          "startYear": 1850,
+          "endYear": 1899,
+          "termCount": 1
+        },
+        {
+          "startYear": 1900,
+          "endYear": 1949,
+          "termCount": 3
+        },
+        {
+          "startYear": 1950,
+          "endYear": 1999,
+          "termCount": 2
+        },
+        {
+          "startYear": 2000,
+          "endYear": 2020,
+          "termCount": 0
+        }
+      ]
+    },
+    {
+      "domain": "SENSE",
+      "termCount": 7,
+      "termNames": [
+        "artificial color",
+        "artificial colour",
+        "artificial flavor",
+        "artificial flavour",
+        "artificial flower",
+        "artificial light",
+        "artificial sweetener"
+      ],
+      "earliestPeakYear": 1824,
+      "latestPeakYear": 1977,
+      "medianPeakYear": 1911,
+      "peakYearBins": [
+        {
+          "startYear": 1800,
+          "endYear": 1849,
+          "termCount": 1
+        },
+        {
+          "startYear": 1850,
+          "endYear": 1899,
+          "termCount": 1
+        },
+        {
+          "startYear": 1900,
+          "endYear": 1949,
+          "termCount": 4
+        },
+        {
+          "startYear": 1950,
+          "endYear": 1999,
+          "termCount": 1
+        },
+        {
+          "startYear": 2000,
+          "endYear": 2020,
+          "termCount": 0
+        }
+      ]
+    },
+    {
+      "domain": "SOCIAL",
+      "termCount": 6,
+      "termNames": [
+        "artificial behavior",
+        "artificial behaviour",
+        "artificial dignity",
+        "artificial excitement",
+        "artificial manner",
+        "artificial smile"
+      ],
+      "earliestPeakYear": 1801,
+      "latestPeakYear": 1986,
+      "medianPeakYear": 1828.5,
+      "peakYearBins": [
+        {
+          "startYear": 1800,
+          "endYear": 1849,
+          "termCount": 5
+        },
+        {
+          "startYear": 1850,
+          "endYear": 1899,
+          "termCount": 0
+        },
+        {
+          "startYear": 1900,
+          "endYear": 1949,
+          "termCount": 0
+        },
+        {
+          "startYear": 1950,
+          "endYear": 1999,
+          "termCount": 1
+        },
+        {
+          "startYear": 2000,
+          "endYear": 2020,
+          "termCount": 0
+        }
+      ]
+    }
+  ],
+  "mediaTerms": [
+    {
+      "term": "diorama",
+      "ngramOrder": 1,
+      "era": "optical_apparatus",
+      "peakYear": 1851,
+      "firstPositiveYear": 1804,
+      "positiveYearCount": 210,
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_c_scene_manufacturing.csv:6",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_c_scene_manufacturing.csv:53"
+      ]
+    },
+    {
+      "term": "stereoscope",
+      "ngramOrder": 1,
+      "era": "optical_apparatus",
+      "peakYear": 1858,
+      "firstPositiveYear": 1800,
+      "positiveYearCount": 196,
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_c_scene_manufacturing.csv:1102",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_c_scene_manufacturing.csv:1160"
+      ]
+    },
+    {
+      "term": "magic lantern",
+      "ngramOrder": 2,
+      "era": "optical_apparatus",
+      "peakYear": 1869,
+      "firstPositiveYear": 1800,
+      "positiveYearCount": 220,
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_g_pre_cinema_apparatus.csv:2",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_g_pre_cinema_apparatus.csv:71"
+      ]
+    },
+    {
+      "term": "moving picture",
+      "ngramOrder": 2,
+      "era": "sound_and_cinema",
+      "peakYear": 1916,
+      "firstPositiveYear": 1800,
+      "positiveYearCount": 220,
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_media_technology_anchor.csv:882",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_media_technology_anchor.csv:998"
+      ]
+    },
+    {
+      "term": "radio broadcasting",
+      "ngramOrder": 2,
+      "era": "broadcast",
+      "peakYear": 1942,
+      "firstPositiveYear": 1808,
+      "positiveYearCount": 167,
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_media_technology_anchor.csv:1550",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_media_technology_anchor.csv:1684"
+      ]
+    },
+    {
+      "term": "sound film",
+      "ngramOrder": 2,
+      "era": "sound_and_cinema",
+      "peakYear": 1946,
+      "firstPositiveYear": 1832,
+      "positiveYearCount": 139,
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_b_sound_reproduction.csv:254",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_b_sound_reproduction.csv:368"
+      ]
+    },
+    {
+      "term": "phonograph",
+      "ngramOrder": 1,
+      "era": "sound_and_cinema",
+      "peakYear": 1947,
+      "firstPositiveYear": 1800,
+      "positiveYearCount": 202,
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_media_technology_anchor.csv:2",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_media_technology_anchor.csv:149"
+      ]
+    },
+    {
+      "term": "television",
+      "ngramOrder": 1,
+      "era": "broadcast",
+      "peakYear": 1953,
+      "firstPositiveYear": 1800,
+      "positiveYearCount": 212,
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_h_color_television_media.csv:882",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_h_color_television_media.csv:1035"
+      ]
+    },
+    {
+      "term": "computer graphics",
+      "ngramOrder": 2,
+      "era": "digital_simulation",
+      "peakYear": 1986,
+      "firstPositiveYear": 1845,
+      "positiveYearCount": 123,
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_i_digital_entry.csv:487",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_i_digital_entry.csv:628"
+      ]
+    },
+    {
+      "term": "simulation",
+      "ngramOrder": 1,
+      "era": "digital_simulation",
+      "peakYear": 1995,
+      "firstPositiveYear": 1800,
+      "positiveYearCount": 220,
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_b_supporting_evidence.csv:882",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_b_supporting_evidence.csv:1077"
+      ]
+    },
+    {
+      "term": "digital image",
+      "ngramOrder": 2,
+      "era": "digital_simulation",
+      "peakYear": 1999,
+      "firstPositiveYear": 1869,
+      "positiveYearCount": 104,
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_i_digital_entry.csv:71",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_i_digital_entry.csv:201"
+      ]
+    },
+    {
+      "term": "virtual reality",
+      "ngramOrder": 2,
+      "era": "digital_simulation",
+      "peakYear": 2019,
+      "firstPositiveYear": 1845,
+      "positiveYearCount": 117,
+      "sourceRows": [
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_e_authenticity_specific.csv:1147",
+        "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_e_authenticity_specific.csv:1321"
+      ]
+    }
+  ],
+  "suspicionAnchors": [
+    {
+      "period": "1850_1900",
+      "phrases": [
+        "artificial coloring"
+      ],
+      "domain": "industrial_synthetic",
+      "negativeCharge": 1,
+      "strength": "high",
+      "source": "FDA Color Additives History",
+      "sourceType": "regulatory_source",
+      "sourceUrl": "https://www.fda.gov/industry/color-additives/color-additives-history"
+    },
+    {
+      "period": "1900_1950",
+      "phrases": [
+        "artificially colored"
+      ],
+      "domain": "processed_consumer",
+      "negativeCharge": 2,
+      "strength": "medium",
+      "source": "The Port Gibson Reveille via Chronicling America",
+      "sourceType": "newspaper_snippet",
+      "sourceUrl": "https://chroniclingamerica.loc.gov/lccn/sn86090233/1904-05-12/ed-1/seq-6/"
+    },
+    {
+      "period": "1950",
+      "phrases": [
+        "no artificial flavoring"
+      ],
+      "domain": "absence_claim",
+      "negativeCharge": 2,
+      "strength": "medium",
+      "source": "Evening Star via Chronicling America",
+      "sourceType": "advertising_snippet",
+      "sourceUrl": "https://chroniclingamerica.loc.gov/lccn/sn83045462/1950-05-03/ed-1/seq-42/"
+    },
+    {
+      "period": "1969_1976",
+      "phrases": [
+        "artificial sweetener"
+      ],
+      "domain": "industrial_synthetic",
+      "negativeCharge": 3,
+      "strength": "medium",
+      "source": "JAMA / FDA / New Yorker cyclamate materials",
+      "sourceType": "secondary_literature",
+      "sourceUrl": "https://jamanetwork.com/journals/jama/fullarticle/349150; https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law; https://www.newyorker.com/magazine/1969/11/01/comment-5253"
+    },
+    {
+      "period": "2015",
+      "phrases": [
+        "remove artificial flavors and certified colors"
+      ],
+      "domain": "absence_claim",
+      "negativeCharge": 3,
+      "strength": "high",
+      "source": "Nestle USA candy reformulation release",
+      "sourceType": "web_snippet",
+      "sourceUrl": "https://www.nestleusa.com/media/pressreleases/nestle-usa-removing-artificial-flavors-colors-from-chocolate-candy"
+    },
+    {
+      "period": "2021_2024",
+      "phrases": [
+        "clean label",
+        "artificial or synthetic"
+      ],
+      "domain": "modern_authenticity",
+      "negativeCharge": 2,
+      "strength": "medium",
+      "source": "IFT / Freedonia clean-label sources",
+      "sourceType": "industry_report",
+      "sourceUrl": "https://www.ift.org/food-technology-magazine/ingredients-clean-label; https://www.freedoniagroup.com/press-releases/new-report-consumers-crave-transparency-clean-label-foods-on-the-rise"
+    },
+    {
+      "period": "2025_2026",
+      "phrases": [
+        "no artificial colors"
+      ],
+      "domain": "absence_claim",
+      "negativeCharge": 3,
+      "strength": "high",
+      "source": "FDA no artificial colors labeling letter",
+      "sourceType": "regulatory_source",
+      "sourceUrl": "https://www.fda.gov/food/food-chemical-safety/letter-food-industry-no-artificial-colors-labeling-claims"
+    }
+  ],
+  "suspicionModels": [
+    {
+      "model": "linear_pejoration",
+      "status": "weak",
+      "confidence": "medium",
+      "notes": "The seven source-bound mobile anchors change domain and evidence type; they do not form a population sentiment series."
+    },
+    {
+      "model": "domain_transfer",
+      "status": "supported_with_limits",
+      "confidence": "medium",
+      "notes": "The selected record moves from coloring/adulteration context to absence and reformulation claims, but the curated sample cannot measure prevalence."
+    }
+  ],
+  "humanLayers": [
+    {
+      "layerNumber": 0,
+      "id": "definition_family",
+      "label": "Definition-family context",
+      "evidenceCount": 1,
+      "confidence": "high",
+      "anchorTerms": [
+        "artificial"
+      ]
+    },
+    {
+      "layerNumber": 2,
+      "id": "support",
+      "label": "Bodily support",
+      "evidenceCount": 5,
+      "confidence": "high",
+      "anchorTerms": [
+        "artificial feeding",
+        "artificial life support",
+        "artificial respiration",
+        "mechanical ventilation"
+      ]
+    },
+    {
+      "layerNumber": 3,
+      "id": "replacement",
+      "label": "Functional replacement",
+      "evidenceCount": 5,
+      "confidence": "mixed",
+      "anchorTerms": [
+        "artificial heart",
+        "artificial kidney",
+        "artificial limb",
+        "artificial organs"
+      ]
+    },
+    {
+      "layerNumber": 4,
+      "id": "continuation",
+      "label": "Reproductive continuation",
+      "evidenceCount": 4,
+      "confidence": "mixed",
+      "anchorTerms": [
+        "artificial insemination",
+        "artificial womb",
+        "in vitro fertilization"
+      ]
+    },
+    {
+      "layerNumber": 5,
+      "id": "simulation",
+      "label": "Modeled human processes",
+      "evidenceCount": 11,
+      "confidence": "mixed",
+      "anchorTerms": [
+        "AI companion",
+        "artificial companion",
+        "artificial consciousness",
+        "artificial general intelligence",
+        "artificial intelligence",
+        "artificial language",
+        "artificial life",
+        "artificial neural network",
+        "artificial voice"
+      ]
+    }
+  ],
+  "researchIndependence": {
+    "mobileResearchAuthority": true,
+    "desktopResearchAuthority": false,
+    "mobileFrozenInputPath": "docs/research/artificial/mobile-2026-08/artificial_mobile_frozen_inputs.json",
+    "mobileTransformPath": "scripts/build_artificial_mobile_research.ts",
+    "activeRawSourceCount": 34,
+    "activeLegacyProcessedDependencyCount": 0,
+    "renderedComponentsConsumeTypedArtifactOnly": true,
+    "desktopCompatibilityReviewOnly": true,
+    "desktopInputsUsedForFindingDerivation": false
+  },
+  "crossEditionCompatibility": {
+    "policy": "independent_framework_compatible_conclusions",
+    "desktopResearchAuthorityForMobileDerivation": false,
+    "desktopPublishedSnapshot": [
+      {
+        "path": "src/components/ArtificialPoster.tsx",
+        "sha256": "f19a6051891d0d96178fb6bf86700cb2a72884e1cdf5d904a0f520e741e40ee9"
+      }
+    ],
+    "reviewedProductionFindingCount": 6,
+    "conflictCount": 0,
+    "publicationRule": "Mobile may use a different question, method, narrative, and visual framework, but conclusions that overlap a desktop fact scope must remain compatible. Apparent conflict requires narrower scope, an explicit method boundary, or a blocked finding—not a claim that desktop is wrong.",
+    "reviews": [
+      {
+        "id": "artificial-compatibility-01-origin",
+        "mobileFindingId": "artificial-finding-origin-branches",
+        "desktopConclusionId": "desktop-artificial-01-before-fake",
+        "desktopConclusion": "Artificial begins in artifice, making, and non-natural construction before fake-adjacent readings; not-natural and fake remain distinct.",
+        "sharedFactScope": "The early semantic branches of artificial and the boundary between made/non-natural and fake/not-genuine.",
+        "relationship": "compatible_reframing",
+        "compatibilityRationale": "Both editions preserve making as the earlier basis and reject artificial = fake as an origin claim. Mobile changes the evidence display, not the conclusion.",
+        "mobileFrameworkDifference": "The mobile edition uses an adjudicated claim-state matrix rather than the desktop semantic chamber.",
+        "prohibitedMobileClaim": "Do not claim that desktop placed fake at the origin or that the mobile edition overturns the desktop semantic chamber.",
+        "mobileConclusion": "4 core public-use claims support an earlier art, skill, making and technical-rule history. Fake/not-genuine is a coexisting branch, not the origin claim.",
+        "conflictDetected": false
+      },
+      {
+        "id": "artificial-compatibility-02-systems",
+        "mobileFindingId": "artificial-finding-compound-registry",
+        "desktopConclusionId": "desktop-artificial-02-pressure-and-systems",
+        "desktopConclusion": "Artificial occupies several linked technical and semantic pressure fields rather than one simple bad/fake meaning.",
+        "sharedFactScope": "The coexistence of multiple technical, material, sensory, biological, cognitive, and social uses.",
+        "relationship": "compatible_extension",
+        "compatibilityRationale": "The mobile registry adds an inventory framework for overlapping systems without changing the desktop account of semantic pressure or asserting a new frequency hierarchy.",
+        "mobileFrameworkDifference": "The mobile edition asks which preregistered compounds are present by system; desktop follows semantic pressure and spatial relations.",
+        "prohibitedMobileClaim": "Do not treat registry counts as proof that one mobile system replaces, outranks, or invalidates a desktop semantic field.",
+        "mobileConclusion": "48 exact phrases containing artificial occupy 5 selected meaning themes.",
+        "conflictDetected": false
+      },
+      {
+        "id": "artificial-compatibility-03-experience",
+        "mobileFindingId": "artificial-finding-media-registry",
+        "desktopConclusionId": "desktop-artificial-03-manufactured-experience",
+        "desktopConclusion": "Artificial moves from objects toward manufactured and reproducible experience across apparatus, senses, media, and authenticity pressure.",
+        "sharedFactScope": "Manufactured perception and reproducible experience vocabulary.",
+        "relationship": "compatible_reframing",
+        "compatibilityRationale": "The mobile edition reorganizes selected exact terms into four systems. It does not contradict the desktop movement or claim an alternative invention chronology.",
+        "mobileFrameworkDifference": "The mobile edition uses an equal-mark vocabulary register; desktop uses a historical reproduction suite.",
+        "prohibitedMobileClaim": "Do not use the mobile registry to deny the desktop reproduction narrative, infer invention dates, or rank terms by incompatible Viewer magnitudes.",
+        "mobileConclusion": "12 exact registered terms are grouped into 4 curated systems: optical apparatus, sound/cinema, broadcast and digital simulation.",
+        "conflictDetected": false
+      },
+      {
+        "id": "artificial-compatibility-04-suspicion",
+        "mobileFindingId": "artificial-finding-suspicion-transfer",
+        "desktopConclusionId": "desktop-artificial-04-suspicion-distance",
+        "desktopConclusion": "Artificial gathers negative charge in returning contexts while remaining semantically distinct from fake, with suspicion moving through affective, industrial, consumer, and absence-claim domains.",
+        "sharedFactScope": "Source-bound contexts in which artificial carries suspicion or negative charge.",
+        "relationship": "compatible_extension",
+        "compatibilityRationale": "The mobile finding is limited to seven selected anchors and adds a domain-address ledger to the desktop suspicion/distance framework; it does not reject the desktop trajectory.",
+        "mobileFrameworkDifference": "The mobile edition compares source-bound domain addresses; desktop maps suspicion orbit and semantic distance.",
+        "prohibitedMobileClaim": "Do not claim the selected anchors disprove the desktop suspicion trajectory or measure a population-wide sentiment trend.",
+        "mobileConclusion": "7 dated examples place distrust in several source settings between 1850 and 2026; they do not form a population trend.",
+        "conflictDetected": false
+      },
+      {
+        "id": "artificial-compatibility-06-semantic-mobility",
+        "mobileFindingId": "artificial-finding-semantic-mobility",
+        "desktopConclusionId": "desktop-artificial-04b-semantic-distance",
+        "desktopConclusion": "Artificial, real, fake, realistic, and simulated remain related but non-identical semantic relations.",
+        "sharedFactScope": "The boundary between made/artificial, fake, real outcomes, realism, and simulation.",
+        "relationship": "compatible_extension",
+        "compatibilityRationale": "The five mobile cases make the existing non-collapse boundary readable without calculating a semantic distance or contradicting the desktop relation map.",
+        "mobileFrameworkDifference": "The mobile edition uses five fixed source cases in a circular touch field; desktop uses a broader semantic-distance framework.",
+        "prohibitedMobileClaim": "Do not treat circle distance as a score or claim that five selected cases measure the prevalence of any meaning.",
+        "mobileConclusion": "Five fully accessed source cases show that something can be artificial and still real, realistic, or simulated without becoming fake.",
+        "conflictDetected": false
+      },
+      {
+        "id": "artificial-compatibility-05-human",
+        "mobileFindingId": "artificial-finding-human-continuation",
+        "desktopConclusionId": "desktop-artificial-05-human-boundary",
+        "desktopConclusion": "Artificial enters human-related territory through support, replacement, reproduction, voice, presence, and cognition.",
+        "sharedFactScope": "Bodily support, replacement, reproduction, and modeled human-process evidence.",
+        "relationship": "compatible_reframing",
+        "compatibilityRationale": "The same compatible branches remain visible, but mobile groups retained records by function and explicitly avoids claiming that record counts prove a transition sequence.",
+        "mobileFrameworkDifference": "The mobile edition presents functional evidence layers; desktop presents a layered human-boundary progression.",
+        "prohibitedMobileClaim": "Do not claim that mobile record counts reverse the desktop human-boundary conclusion or prove a different historical sequence.",
+        "mobileConclusion": "25 source examples divide into five function groups: 5 support, 5 replacement, 4 continuation, 6 modeled processes and 5 speculative extensions.",
+        "conflictDetected": false
+      }
+    ]
+  }
+}

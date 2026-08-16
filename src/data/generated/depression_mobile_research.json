@@ -1,0 +1,5067 @@
+{
+  "schemaVersion": "2.1.0",
+  "generatedAt": "2026-05-07T15:03:30.466Z",
+  "title": "depression",
+  "thesis": "A shared spelling moves through several kinds of descent. Its largest book-frequency peak belongs to an economic crisis period, not to a clinical count.",
+  "closingFinding": "This is not one straight path from sadness to sickness. Depression is a branching word: mood, market, pressure, landscape, weather and diagnosis share its spelling without sharing one meaning.",
+  "chapters": [
+    {
+      "id": "roots",
+      "order": 1,
+      "code": "01",
+      "periodLabel": "c.1400—1799",
+      "background": "#26375F",
+      "semanticLabel": "SEVERAL KINDS OF LOWERING",
+      "title": "A downward word before a reliable curve.",
+      "deck": "The early record locates several senses; it does not support a continuous frequency story.",
+      "visibleCaveat": "Lexical-source dates are sense-history anchors, not first-use claims or corpus rates.",
+      "summary": {
+        "id": "roots-summary",
+        "kind": "anchors",
+        "period": [
+          1400,
+          1905
+        ],
+        "title": "SIX LEXICAL ANCHORS",
+        "accessibleSummary": "Six secondary lexical-source anchors mark astronomical, emotional, physical, economic, meteorological and clinical branches from around 1400 to 1905.",
+        "unitLabel": "APPEARANCES / MILLION CORPUS WORDS",
+        "transform": "LEXICAL SOURCE · NOT FREQUENCY",
+        "caveat": "Anchor spacing is chronological only; it does not encode amount.",
+        "attestations": [
+          {
+            "year": 1400,
+            "label": "ASTRONOMICAL ANGLE",
+            "sense": "astronomical angle",
+            "source": "Online Etymology Dictionary",
+            "confidence": "medium"
+          },
+          {
+            "year": 1425,
+            "label": "EMOTIONAL LOW",
+            "sense": "emotional low state",
+            "source": "Online Etymology Dictionary",
+            "confidence": "medium"
+          },
+          {
+            "year": 1655,
+            "label": "PHYSICAL LOWERING",
+            "sense": "physical lowering pressure",
+            "source": "Online Etymology Dictionary",
+            "confidence": "medium"
+          },
+          {
+            "year": 1826,
+            "label": "ECONOMIC DOWNTURN",
+            "sense": "economic downturn",
+            "source": "Online Etymology Dictionary",
+            "confidence": "medium"
+          },
+          {
+            "year": 1881,
+            "label": "WEATHER LOW",
+            "sense": "meteorological low pressure",
+            "source": "Online Etymology Dictionary",
+            "confidence": "medium"
+          },
+          {
+            "year": 1905,
+            "label": "CLINICAL TERM",
+            "sense": "clinical psychiatric condition",
+            "source": "Online Etymology Dictionary",
+            "confidence": "medium"
+          }
+        ],
+        "annotations": [
+          {
+            "year": 1400,
+            "label": "ASTRONOMICAL ANGLE",
+            "detail": "astronomical angle"
+          },
+          {
+            "year": 1425,
+            "label": "EMOTIONAL LOW",
+            "detail": "emotional low state"
+          },
+          {
+            "year": 1655,
+            "label": "PHYSICAL LOWERING",
+            "detail": "physical lowering pressure"
+          },
+          {
+            "year": 1826,
+            "label": "ECONOMIC DOWNTURN",
+            "detail": "economic downturn"
+          },
+          {
+            "year": 1881,
+            "label": "WEATHER LOW",
+            "detail": "meteorological low pressure"
+          },
+          {
+            "year": 1905,
+            "label": "CLINICAL TERM",
+            "detail": "clinical psychiatric condition"
+          }
+        ]
+      },
+      "detail": {
+        "id": "roots-detail",
+        "kind": "anchors",
+        "period": [
+          1400,
+          1905
+        ],
+        "title": "WHAT EACH DATE CAN SAY",
+        "accessibleSummary": "Each date is a secondary lexical-source anchor with a named semantic category and confidence state; none is shown as a first-use claim.",
+        "unitLabel": "APPEARANCES / MILLION CORPUS WORDS",
+        "transform": "SECONDARY SOURCE · STATUS",
+        "caveat": "These are retained secondary lexical records, not a comparable historical corpus.",
+        "attestations": [
+          {
+            "year": 1400,
+            "label": "ASTRONOMICAL ANGLE",
+            "sense": "astronomical angle",
+            "source": "Online Etymology Dictionary",
+            "confidence": "medium"
+          },
+          {
+            "year": 1425,
+            "label": "EMOTIONAL LOW",
+            "sense": "emotional low state",
+            "source": "Online Etymology Dictionary",
+            "confidence": "medium"
+          },
+          {
+            "year": 1655,
+            "label": "PHYSICAL LOWERING",
+            "sense": "physical lowering pressure",
+            "source": "Online Etymology Dictionary",
+            "confidence": "medium"
+          },
+          {
+            "year": 1826,
+            "label": "ECONOMIC DOWNTURN",
+            "sense": "economic downturn",
+            "source": "Online Etymology Dictionary",
+            "confidence": "medium"
+          },
+          {
+            "year": 1881,
+            "label": "WEATHER LOW",
+            "sense": "meteorological low pressure",
+            "source": "Online Etymology Dictionary",
+            "confidence": "medium"
+          },
+          {
+            "year": 1905,
+            "label": "CLINICAL TERM",
+            "sense": "clinical psychiatric condition",
+            "source": "Online Etymology Dictionary",
+            "confidence": "medium"
+          }
+        ],
+        "annotations": [
+          {
+            "year": 1400,
+            "label": "ONLINE ETYMOLOGY DICTIONARY",
+            "detail": "ASTRONOMICAL ANGLE · medium confidence"
+          },
+          {
+            "year": 1425,
+            "label": "ONLINE ETYMOLOGY DICTIONARY",
+            "detail": "EMOTIONAL LOW · medium confidence"
+          },
+          {
+            "year": 1655,
+            "label": "ONLINE ETYMOLOGY DICTIONARY",
+            "detail": "PHYSICAL LOWERING · medium confidence"
+          },
+          {
+            "year": 1826,
+            "label": "ONLINE ETYMOLOGY DICTIONARY",
+            "detail": "ECONOMIC DOWNTURN · medium confidence"
+          },
+          {
+            "year": 1881,
+            "label": "ONLINE ETYMOLOGY DICTIONARY",
+            "detail": "WEATHER LOW · medium confidence"
+          },
+          {
+            "year": 1905,
+            "label": "ONLINE ETYMOLOGY DICTIONARY",
+            "detail": "CLINICAL TERM · medium confidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "print",
+      "order": 2,
+      "code": "02",
+      "periodLabel": "1800—1873",
+      "background": "#1F6B5C",
+      "semanticLabel": "PRINT VISIBILITY",
+      "title": "A new word enters print; melancholy still leads.",
+      "deck": "Depression becomes continuously visible in books, but it is not yet the dominant historical neighbour for low mood.",
+      "visibleCaveat": "The comparison measures printed forms in one corpus, not interchangeable meanings.",
+      "summary": {
+        "id": "print-summary",
+        "kind": "comparison-bars",
+        "period": [
+          1800,
+          1873
+        ],
+        "title": "PERIOD AVERAGE",
+        "accessibleSummary": "From 1800 through 1873, depression averages 6.28 and melancholy 20.20 appearances per million corpus words; melancholy is about 3.2 times the depression rate.",
+        "unitLabel": "APPEARANCES / MILLION CORPUS WORDS",
+        "transform": "STAGE MEAN · / MILLION CORPUS WORDS",
+        "caveat": "Both bars share a zero baseline and the same denominator.",
+        "metrics": [
+          {
+            "label": "DEPRESSION",
+            "detail": "1800—1873 mean",
+            "value": 6.28,
+            "precision": 2
+          },
+          {
+            "label": "MELANCHOLY",
+            "detail": "1800—1873 mean",
+            "value": 20.2,
+            "precision": 2
+          }
+        ],
+        "yMaximum": 22
+      },
+      "detail": {
+        "id": "print-detail",
+        "kind": "smoothed-lines",
+        "period": [
+          1800,
+          1873
+        ],
+        "title": "THREE HISTORICAL NEIGHBORS",
+        "accessibleSummary": "Nine-year centered annual means keep depression below melancholy through this early print period; anxiety is shown as a distinct neighbouring term.",
+        "unitLabel": "APPEARANCES / MILLION CORPUS WORDS",
+        "transform": "9-YEAR MEAN · / MILLION CORPUS WORDS",
+        "caveat": "Melancholy and anxiety are comparative forms, not counted senses of depression.",
+        "series": [
+          {
+            "id": "depression",
+            "label": "depression",
+            "color": "#B64026",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1800,
+                "value": 1.1656
+              },
+              {
+                "year": 1801,
+                "value": 1.3936
+              },
+              {
+                "year": 1802,
+                "value": 1.6481
+              },
+              {
+                "year": 1803,
+                "value": 1.9729
+              },
+              {
+                "year": 1804,
+                "value": 2.4554
+              },
+              {
+                "year": 1805,
+                "value": 2.6924
+              },
+              {
+                "year": 1806,
+                "value": 2.9392
+              },
+              {
+                "year": 1807,
+                "value": 3.1387
+              },
+              {
+                "year": 1808,
+                "value": 3.4604
+              },
+              {
+                "year": 1809,
+                "value": 3.4502
+              },
+              {
+                "year": 1810,
+                "value": 3.6038
+              },
+              {
+                "year": 1811,
+                "value": 3.8223
+              },
+              {
+                "year": 1812,
+                "value": 3.9857
+              },
+              {
+                "year": 1813,
+                "value": 4.0498
+              },
+              {
+                "year": 1814,
+                "value": 4.3185
+              },
+              {
+                "year": 1815,
+                "value": 4.4305
+              },
+              {
+                "year": 1816,
+                "value": 4.6768
+              },
+              {
+                "year": 1817,
+                "value": 4.8699
+              },
+              {
+                "year": 1818,
+                "value": 5.1725
+              },
+              {
+                "year": 1819,
+                "value": 5.4137
+              },
+              {
+                "year": 1820,
+                "value": 5.5035
+              },
+              {
+                "year": 1821,
+                "value": 5.59
+              },
+              {
+                "year": 1822,
+                "value": 5.7482
+              },
+              {
+                "year": 1823,
+                "value": 5.8332
+              },
+              {
+                "year": 1824,
+                "value": 6.1895
+              },
+              {
+                "year": 1825,
+                "value": 6.3493
+              },
+              {
+                "year": 1826,
+                "value": 6.4806
+              },
+              {
+                "year": 1827,
+                "value": 6.4411
+              },
+              {
+                "year": 1828,
+                "value": 6.526
+              },
+              {
+                "year": 1829,
+                "value": 6.7471
+              },
+              {
+                "year": 1830,
+                "value": 6.8998
+              },
+              {
+                "year": 1831,
+                "value": 6.9304
+              },
+              {
+                "year": 1832,
+                "value": 6.9703
+              },
+              {
+                "year": 1833,
+                "value": 6.8355
+              },
+              {
+                "year": 1834,
+                "value": 6.8633
+              },
+              {
+                "year": 1835,
+                "value": 6.8456
+              },
+              {
+                "year": 1836,
+                "value": 6.8978
+              },
+              {
+                "year": 1837,
+                "value": 6.9977
+              },
+              {
+                "year": 1838,
+                "value": 7.2358
+              },
+              {
+                "year": 1839,
+                "value": 7.622
+              },
+              {
+                "year": 1840,
+                "value": 7.6973
+              },
+              {
+                "year": 1841,
+                "value": 7.7816
+              },
+              {
+                "year": 1842,
+                "value": 7.8918
+              },
+              {
+                "year": 1843,
+                "value": 7.875
+              },
+              {
+                "year": 1844,
+                "value": 8.1117
+              },
+              {
+                "year": 1845,
+                "value": 8.2506
+              },
+              {
+                "year": 1846,
+                "value": 8.2456
+              },
+              {
+                "year": 1847,
+                "value": 8.0523
+              },
+              {
+                "year": 1848,
+                "value": 7.6853
+              },
+              {
+                "year": 1849,
+                "value": 7.5553
+              },
+              {
+                "year": 1850,
+                "value": 7.5056
+              },
+              {
+                "year": 1851,
+                "value": 7.5515
+              },
+              {
+                "year": 1852,
+                "value": 7.5704
+              },
+              {
+                "year": 1853,
+                "value": 7.4051
+              },
+              {
+                "year": 1854,
+                "value": 7.5296
+              },
+              {
+                "year": 1855,
+                "value": 7.5484
+              },
+              {
+                "year": 1856,
+                "value": 7.5444
+              },
+              {
+                "year": 1857,
+                "value": 7.6602
+              },
+              {
+                "year": 1858,
+                "value": 7.721
+              },
+              {
+                "year": 1859,
+                "value": 7.7497
+              },
+              {
+                "year": 1860,
+                "value": 7.6487
+              },
+              {
+                "year": 1861,
+                "value": 7.6263
+              },
+              {
+                "year": 1862,
+                "value": 7.6465
+              },
+              {
+                "year": 1863,
+                "value": 7.4911
+              },
+              {
+                "year": 1864,
+                "value": 7.5618
+              },
+              {
+                "year": 1865,
+                "value": 7.5874
+              },
+              {
+                "year": 1866,
+                "value": 7.5891
+              },
+              {
+                "year": 1867,
+                "value": 7.598
+              },
+              {
+                "year": 1868,
+                "value": 7.7576
+              },
+              {
+                "year": 1869,
+                "value": 7.905
+              },
+              {
+                "year": 1870,
+                "value": 8.0348
+              },
+              {
+                "year": 1871,
+                "value": 8.232
+              },
+              {
+                "year": 1872,
+                "value": 8.6202
+              },
+              {
+                "year": 1873,
+                "value": 8.9818
+              }
+            ]
+          },
+          {
+            "id": "melancholy",
+            "label": "melancholy",
+            "color": "#264C92",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1800,
+                "value": 26.1984
+              },
+              {
+                "year": 1801,
+                "value": 25.912
+              },
+              {
+                "year": 1802,
+                "value": 26.1835
+              },
+              {
+                "year": 1803,
+                "value": 25.8807
+              },
+              {
+                "year": 1804,
+                "value": 25.5745
+              },
+              {
+                "year": 1805,
+                "value": 25.047
+              },
+              {
+                "year": 1806,
+                "value": 24.4723
+              },
+              {
+                "year": 1807,
+                "value": 24.2432
+              },
+              {
+                "year": 1808,
+                "value": 24.3988
+              },
+              {
+                "year": 1809,
+                "value": 24.2
+              },
+              {
+                "year": 1810,
+                "value": 23.8347
+              },
+              {
+                "year": 1811,
+                "value": 23.3951
+              },
+              {
+                "year": 1812,
+                "value": 22.9654
+              },
+              {
+                "year": 1813,
+                "value": 22.6752
+              },
+              {
+                "year": 1814,
+                "value": 22.9245
+              },
+              {
+                "year": 1815,
+                "value": 22.7446
+              },
+              {
+                "year": 1816,
+                "value": 23.096
+              },
+              {
+                "year": 1817,
+                "value": 23.6395
+              },
+              {
+                "year": 1818,
+                "value": 24.2194
+              },
+              {
+                "year": 1819,
+                "value": 24.666
+              },
+              {
+                "year": 1820,
+                "value": 25.2416
+              },
+              {
+                "year": 1821,
+                "value": 25.9064
+              },
+              {
+                "year": 1822,
+                "value": 25.8804
+              },
+              {
+                "year": 1823,
+                "value": 26.174
+              },
+              {
+                "year": 1824,
+                "value": 26.5715
+              },
+              {
+                "year": 1825,
+                "value": 26.2123
+              },
+              {
+                "year": 1826,
+                "value": 25.9222
+              },
+              {
+                "year": 1827,
+                "value": 25.6752
+              },
+              {
+                "year": 1828,
+                "value": 24.5081
+              },
+              {
+                "year": 1829,
+                "value": 24.2615
+              },
+              {
+                "year": 1830,
+                "value": 23.9964
+              },
+              {
+                "year": 1831,
+                "value": 24.1538
+              },
+              {
+                "year": 1832,
+                "value": 23.4775
+              },
+              {
+                "year": 1833,
+                "value": 23.1993
+              },
+              {
+                "year": 1834,
+                "value": 23.0227
+              },
+              {
+                "year": 1835,
+                "value": 22.8725
+              },
+              {
+                "year": 1836,
+                "value": 22.7161
+              },
+              {
+                "year": 1837,
+                "value": 23.4916
+              },
+              {
+                "year": 1838,
+                "value": 22.9764
+              },
+              {
+                "year": 1839,
+                "value": 22.6131
+              },
+              {
+                "year": 1840,
+                "value": 22.2897
+              },
+              {
+                "year": 1841,
+                "value": 22.0526
+              },
+              {
+                "year": 1842,
+                "value": 21.8444
+              },
+              {
+                "year": 1843,
+                "value": 21.451
+              },
+              {
+                "year": 1844,
+                "value": 21.0102
+              },
+              {
+                "year": 1845,
+                "value": 20.5343
+              },
+              {
+                "year": 1846,
+                "value": 20.3037
+              },
+              {
+                "year": 1847,
+                "value": 19.8905
+              },
+              {
+                "year": 1848,
+                "value": 19.5869
+              },
+              {
+                "year": 1849,
+                "value": 18.9822
+              },
+              {
+                "year": 1850,
+                "value": 18.71
+              },
+              {
+                "year": 1851,
+                "value": 18.2159
+              },
+              {
+                "year": 1852,
+                "value": 17.6792
+              },
+              {
+                "year": 1853,
+                "value": 17.1958
+              },
+              {
+                "year": 1854,
+                "value": 16.6463
+              },
+              {
+                "year": 1855,
+                "value": 15.9
+              },
+              {
+                "year": 1856,
+                "value": 15.3943
+              },
+              {
+                "year": 1857,
+                "value": 14.7468
+              },
+              {
+                "year": 1858,
+                "value": 14.1315
+              },
+              {
+                "year": 1859,
+                "value": 13.3836
+              },
+              {
+                "year": 1860,
+                "value": 12.8645
+              },
+              {
+                "year": 1861,
+                "value": 12.3968
+              },
+              {
+                "year": 1862,
+                "value": 11.9157
+              },
+              {
+                "year": 1863,
+                "value": 11.6349
+              },
+              {
+                "year": 1864,
+                "value": 11.1705
+              },
+              {
+                "year": 1865,
+                "value": 10.8849
+              },
+              {
+                "year": 1866,
+                "value": 10.6412
+              },
+              {
+                "year": 1867,
+                "value": 10.3359
+              },
+              {
+                "year": 1868,
+                "value": 10.0757
+              },
+              {
+                "year": 1869,
+                "value": 9.9067
+              },
+              {
+                "year": 1870,
+                "value": 9.6322
+              },
+              {
+                "year": 1871,
+                "value": 9.4754
+              },
+              {
+                "year": 1872,
+                "value": 9.2685
+              },
+              {
+                "year": 1873,
+                "value": 9.0118
+              }
+            ]
+          },
+          {
+            "id": "anxiety",
+            "label": "anxiety",
+            "color": "#8A6114",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1800,
+                "value": 15.0986
+              },
+              {
+                "year": 1801,
+                "value": 15.108
+              },
+              {
+                "year": 1802,
+                "value": 15.4647
+              },
+              {
+                "year": 1803,
+                "value": 15.493
+              },
+              {
+                "year": 1804,
+                "value": 15.3883
+              },
+              {
+                "year": 1805,
+                "value": 15.3008
+              },
+              {
+                "year": 1806,
+                "value": 15.0878
+              },
+              {
+                "year": 1807,
+                "value": 14.8938
+              },
+              {
+                "year": 1808,
+                "value": 15.2858
+              },
+              {
+                "year": 1809,
+                "value": 15.2607
+              },
+              {
+                "year": 1810,
+                "value": 15.4096
+              },
+              {
+                "year": 1811,
+                "value": 15.601
+              },
+              {
+                "year": 1812,
+                "value": 15.8208
+              },
+              {
+                "year": 1813,
+                "value": 16.1798
+              },
+              {
+                "year": 1814,
+                "value": 16.6073
+              },
+              {
+                "year": 1815,
+                "value": 17.0061
+              },
+              {
+                "year": 1816,
+                "value": 17.827
+              },
+              {
+                "year": 1817,
+                "value": 18.1598
+              },
+              {
+                "year": 1818,
+                "value": 18.6721
+              },
+              {
+                "year": 1819,
+                "value": 19.0409
+              },
+              {
+                "year": 1820,
+                "value": 19.318
+              },
+              {
+                "year": 1821,
+                "value": 19.8934
+              },
+              {
+                "year": 1822,
+                "value": 20.1164
+              },
+              {
+                "year": 1823,
+                "value": 20.6806
+              },
+              {
+                "year": 1824,
+                "value": 21.322
+              },
+              {
+                "year": 1825,
+                "value": 21.4578
+              },
+              {
+                "year": 1826,
+                "value": 21.3985
+              },
+              {
+                "year": 1827,
+                "value": 21.604
+              },
+              {
+                "year": 1828,
+                "value": 21.2102
+              },
+              {
+                "year": 1829,
+                "value": 21.6863
+              },
+              {
+                "year": 1830,
+                "value": 21.762
+              },
+              {
+                "year": 1831,
+                "value": 21.9783
+              },
+              {
+                "year": 1832,
+                "value": 21.6819
+              },
+              {
+                "year": 1833,
+                "value": 21.6667
+              },
+              {
+                "year": 1834,
+                "value": 21.5713
+              },
+              {
+                "year": 1835,
+                "value": 21.7543
+              },
+              {
+                "year": 1836,
+                "value": 21.8934
+              },
+              {
+                "year": 1837,
+                "value": 22.6633
+              },
+              {
+                "year": 1838,
+                "value": 22.3404
+              },
+              {
+                "year": 1839,
+                "value": 22.2062
+              },
+              {
+                "year": 1840,
+                "value": 22.2674
+              },
+              {
+                "year": 1841,
+                "value": 22.2308
+              },
+              {
+                "year": 1842,
+                "value": 22.2826
+              },
+              {
+                "year": 1843,
+                "value": 21.9609
+              },
+              {
+                "year": 1844,
+                "value": 21.9205
+              },
+              {
+                "year": 1845,
+                "value": 21.6705
+              },
+              {
+                "year": 1846,
+                "value": 21.4507
+              },
+              {
+                "year": 1847,
+                "value": 21.1765
+              },
+              {
+                "year": 1848,
+                "value": 21.1085
+              },
+              {
+                "year": 1849,
+                "value": 20.6786
+              },
+              {
+                "year": 1850,
+                "value": 20.4608
+              },
+              {
+                "year": 1851,
+                "value": 20.1532
+              },
+              {
+                "year": 1852,
+                "value": 20.0176
+              },
+              {
+                "year": 1853,
+                "value": 19.5903
+              },
+              {
+                "year": 1854,
+                "value": 19.3793
+              },
+              {
+                "year": 1855,
+                "value": 18.948
+              },
+              {
+                "year": 1856,
+                "value": 18.7833
+              },
+              {
+                "year": 1857,
+                "value": 18.4474
+              },
+              {
+                "year": 1858,
+                "value": 18.1454
+              },
+              {
+                "year": 1859,
+                "value": 17.7633
+              },
+              {
+                "year": 1860,
+                "value": 17.4125
+              },
+              {
+                "year": 1861,
+                "value": 17.2043
+              },
+              {
+                "year": 1862,
+                "value": 16.9091
+              },
+              {
+                "year": 1863,
+                "value": 16.4806
+              },
+              {
+                "year": 1864,
+                "value": 16.1959
+              },
+              {
+                "year": 1865,
+                "value": 15.9132
+              },
+              {
+                "year": 1866,
+                "value": 15.5703
+              },
+              {
+                "year": 1867,
+                "value": 15.2247
+              },
+              {
+                "year": 1868,
+                "value": 15.0244
+              },
+              {
+                "year": 1869,
+                "value": 14.8166
+              },
+              {
+                "year": 1870,
+                "value": 14.3811
+              },
+              {
+                "year": 1871,
+                "value": 14.0938
+              },
+              {
+                "year": 1872,
+                "value": 13.8186
+              },
+              {
+                "year": 1873,
+                "value": 13.6142
+              }
+            ]
+          }
+        ],
+        "sharedDomain": true
+      }
+    },
+    {
+      "id": "crossover",
+      "order": 3,
+      "code": "03",
+      "periodLabel": "1874—1928",
+      "background": "#8A4E16",
+      "semanticLabel": "A SHIFT IN VISIBILITY",
+      "title": "Depression crosses melancholy; market language gains weight.",
+      "deck": "Its printed visibility stays above melancholy from 1874 onward. That is a visibility crossover, not semantic replacement.",
+      "visibleCaveat": "A sustained frequency crossover is not evidence of a semantic replacement.",
+      "summary": {
+        "id": "crossover-summary",
+        "kind": "crossover-lines",
+        "period": [
+          1874,
+          1928
+        ],
+        "title": "A SUSTAINED CROSSOVER",
+        "accessibleSummary": "A nine-year centered average for depression stays above melancholy for twenty consecutive years beginning in 1874.",
+        "unitLabel": "APPEARANCES / MILLION CORPUS WORDS",
+        "transform": "9-YEAR MEAN · / MILLION CORPUS WORDS",
+        "caveat": "This compares forms in print, not the meanings of all uses.",
+        "series": [
+          {
+            "id": "depression",
+            "label": "depression",
+            "color": "#B64026",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1874,
+                "value": 9.5236
+              },
+              {
+                "year": 1875,
+                "value": 10.2688
+              },
+              {
+                "year": 1876,
+                "value": 10.891
+              },
+              {
+                "year": 1877,
+                "value": 11.0589
+              },
+              {
+                "year": 1878,
+                "value": 11.2651
+              },
+              {
+                "year": 1879,
+                "value": 11.7502
+              },
+              {
+                "year": 1880,
+                "value": 12.0555
+              },
+              {
+                "year": 1881,
+                "value": 12.3496
+              },
+              {
+                "year": 1882,
+                "value": 12.6638
+              },
+              {
+                "year": 1883,
+                "value": 12.5546
+              },
+              {
+                "year": 1884,
+                "value": 12.1307
+              },
+              {
+                "year": 1885,
+                "value": 11.8397
+              },
+              {
+                "year": 1886,
+                "value": 11.8735
+              },
+              {
+                "year": 1887,
+                "value": 11.8583
+              },
+              {
+                "year": 1888,
+                "value": 11.6941
+              },
+              {
+                "year": 1889,
+                "value": 11.8701
+              },
+              {
+                "year": 1890,
+                "value": 12.269
+              },
+              {
+                "year": 1891,
+                "value": 12.4164
+              },
+              {
+                "year": 1892,
+                "value": 12.4701
+              },
+              {
+                "year": 1893,
+                "value": 12.5173
+              },
+              {
+                "year": 1894,
+                "value": 12.4572
+              },
+              {
+                "year": 1895,
+                "value": 12.2428
+              },
+              {
+                "year": 1896,
+                "value": 12.1596
+              },
+              {
+                "year": 1897,
+                "value": 11.9062
+              },
+              {
+                "year": 1898,
+                "value": 11.3621
+              },
+              {
+                "year": 1899,
+                "value": 10.4243
+              },
+              {
+                "year": 1900,
+                "value": 9.7663
+              },
+              {
+                "year": 1901,
+                "value": 9.4094
+              },
+              {
+                "year": 1902,
+                "value": 9.0964
+              },
+              {
+                "year": 1903,
+                "value": 9.0441
+              },
+              {
+                "year": 1904,
+                "value": 9.4569
+              },
+              {
+                "year": 1905,
+                "value": 9.884
+              },
+              {
+                "year": 1906,
+                "value": 10.0261
+              },
+              {
+                "year": 1907,
+                "value": 10.059
+              },
+              {
+                "year": 1908,
+                "value": 9.8905
+              },
+              {
+                "year": 1909,
+                "value": 9.7359
+              },
+              {
+                "year": 1910,
+                "value": 9.7977
+              },
+              {
+                "year": 1911,
+                "value": 9.9972
+              },
+              {
+                "year": 1912,
+                "value": 9.9561
+              },
+              {
+                "year": 1913,
+                "value": 9.4314
+              },
+              {
+                "year": 1914,
+                "value": 8.8312
+              },
+              {
+                "year": 1915,
+                "value": 8.5058
+              },
+              {
+                "year": 1916,
+                "value": 8.5339
+              },
+              {
+                "year": 1917,
+                "value": 9.6818
+              },
+              {
+                "year": 1918,
+                "value": 10.6503
+              },
+              {
+                "year": 1919,
+                "value": 11.0855
+              },
+              {
+                "year": 1920,
+                "value": 11.4107
+              },
+              {
+                "year": 1921,
+                "value": 11.8027
+              },
+              {
+                "year": 1922,
+                "value": 12.3392
+              },
+              {
+                "year": 1923,
+                "value": 12.9048
+              },
+              {
+                "year": 1924,
+                "value": 13.5029
+              },
+              {
+                "year": 1925,
+                "value": 13.9211
+              },
+              {
+                "year": 1926,
+                "value": 14.5254
+              },
+              {
+                "year": 1927,
+                "value": 16.756
+              },
+              {
+                "year": 1928,
+                "value": 20.0591
+              }
+            ]
+          },
+          {
+            "id": "melancholy",
+            "label": "melancholy",
+            "color": "#315F9A",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1874,
+                "value": 8.731
+              },
+              {
+                "year": 1875,
+                "value": 8.5598
+              },
+              {
+                "year": 1876,
+                "value": 8.5251
+              },
+              {
+                "year": 1877,
+                "value": 8.4205
+              },
+              {
+                "year": 1878,
+                "value": 8.1385
+              },
+              {
+                "year": 1879,
+                "value": 8.0181
+              },
+              {
+                "year": 1880,
+                "value": 7.7418
+              },
+              {
+                "year": 1881,
+                "value": 7.479
+              },
+              {
+                "year": 1882,
+                "value": 7.3105
+              },
+              {
+                "year": 1883,
+                "value": 7.118
+              },
+              {
+                "year": 1884,
+                "value": 6.8599
+              },
+              {
+                "year": 1885,
+                "value": 6.5646
+              },
+              {
+                "year": 1886,
+                "value": 6.3458
+              },
+              {
+                "year": 1887,
+                "value": 6.1481
+              },
+              {
+                "year": 1888,
+                "value": 5.9793
+              },
+              {
+                "year": 1889,
+                "value": 5.8955
+              },
+              {
+                "year": 1890,
+                "value": 5.7119
+              },
+              {
+                "year": 1891,
+                "value": 5.581
+              },
+              {
+                "year": 1892,
+                "value": 5.4493
+              },
+              {
+                "year": 1893,
+                "value": 5.294
+              },
+              {
+                "year": 1894,
+                "value": 5.1257
+              },
+              {
+                "year": 1895,
+                "value": 5.1404
+              },
+              {
+                "year": 1896,
+                "value": 5.0758
+              },
+              {
+                "year": 1897,
+                "value": 4.8898
+              },
+              {
+                "year": 1898,
+                "value": 4.6674
+              },
+              {
+                "year": 1899,
+                "value": 4.5041
+              },
+              {
+                "year": 1900,
+                "value": 4.3665
+              },
+              {
+                "year": 1901,
+                "value": 4.1881
+              },
+              {
+                "year": 1902,
+                "value": 4.0423
+              },
+              {
+                "year": 1903,
+                "value": 3.8715
+              },
+              {
+                "year": 1904,
+                "value": 3.5062
+              },
+              {
+                "year": 1905,
+                "value": 3.2795
+              },
+              {
+                "year": 1906,
+                "value": 3.1329
+              },
+              {
+                "year": 1907,
+                "value": 3.0167
+              },
+              {
+                "year": 1908,
+                "value": 2.8924
+              },
+              {
+                "year": 1909,
+                "value": 2.7004
+              },
+              {
+                "year": 1910,
+                "value": 2.5471
+              },
+              {
+                "year": 1911,
+                "value": 2.3923
+              },
+              {
+                "year": 1912,
+                "value": 2.2587
+              },
+              {
+                "year": 1913,
+                "value": 2.1393
+              },
+              {
+                "year": 1914,
+                "value": 1.9881
+              },
+              {
+                "year": 1915,
+                "value": 1.8566
+              },
+              {
+                "year": 1916,
+                "value": 1.7595
+              },
+              {
+                "year": 1917,
+                "value": 1.6764
+              },
+              {
+                "year": 1918,
+                "value": 1.649
+              },
+              {
+                "year": 1919,
+                "value": 1.6842
+              },
+              {
+                "year": 1920,
+                "value": 1.7486
+              },
+              {
+                "year": 1921,
+                "value": 1.8091
+              },
+              {
+                "year": 1922,
+                "value": 1.8824
+              },
+              {
+                "year": 1923,
+                "value": 1.9897
+              },
+              {
+                "year": 1924,
+                "value": 2.0391
+              },
+              {
+                "year": 1925,
+                "value": 2.0798
+              },
+              {
+                "year": 1926,
+                "value": 2.1344
+              },
+              {
+                "year": 1927,
+                "value": 2.1598
+              },
+              {
+                "year": 1928,
+                "value": 2.1451
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "year": 1874,
+            "label": "1874",
+            "detail": "first year of the sustained visibility crossover"
+          }
+        ],
+        "sharedDomain": true
+      },
+      "detail": {
+        "id": "crossover-detail",
+        "kind": "phrase-multiples",
+        "period": [
+          1874,
+          1928
+        ],
+        "title": "MARKET PHRASES, SEPARATE BRANCH",
+        "accessibleSummary": "Business depression, financial depression and economic depression share one zero-to-3.5 scale from 1874 through 1928.",
+        "unitLabel": "APPEARANCES / MILLION CORPUS WORDS",
+        "transform": "RAW · / MILLION CORPUS WORDS · SHARED 0—3.5",
+        "caveat": "Phrase frequency is not an estimate of the share of meanings carried by the core word.",
+        "series": [
+          {
+            "id": "business-depression",
+            "label": "business depression",
+            "color": "#A9472E",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1874,
+                "value": 0.0491
+              },
+              {
+                "year": 1875,
+                "value": 0.088
+              },
+              {
+                "year": 1876,
+                "value": 0.1332
+              },
+              {
+                "year": 1877,
+                "value": 0.1678
+              },
+              {
+                "year": 1878,
+                "value": 0.2316
+              },
+              {
+                "year": 1879,
+                "value": 0.1907
+              },
+              {
+                "year": 1880,
+                "value": 0.1319
+              },
+              {
+                "year": 1881,
+                "value": 0.0804
+              },
+              {
+                "year": 1882,
+                "value": 0.068
+              },
+              {
+                "year": 1883,
+                "value": 0.0828
+              },
+              {
+                "year": 1884,
+                "value": 0.1515
+              },
+              {
+                "year": 1885,
+                "value": 0.2179
+              },
+              {
+                "year": 1886,
+                "value": 0.1735
+              },
+              {
+                "year": 1887,
+                "value": 0.101
+              },
+              {
+                "year": 1888,
+                "value": 0.0818
+              },
+              {
+                "year": 1889,
+                "value": 0.072
+              },
+              {
+                "year": 1890,
+                "value": 0.0807
+              },
+              {
+                "year": 1891,
+                "value": 0.0908
+              },
+              {
+                "year": 1892,
+                "value": 0.118
+              },
+              {
+                "year": 1893,
+                "value": 0.3527
+              },
+              {
+                "year": 1894,
+                "value": 0.8728
+              },
+              {
+                "year": 1895,
+                "value": 0.66
+              },
+              {
+                "year": 1896,
+                "value": 0.5115
+              },
+              {
+                "year": 1897,
+                "value": 0.5312
+              },
+              {
+                "year": 1898,
+                "value": 0.2988
+              },
+              {
+                "year": 1899,
+                "value": 0.1587
+              },
+              {
+                "year": 1900,
+                "value": 0.1411
+              },
+              {
+                "year": 1901,
+                "value": 0.1359
+              },
+              {
+                "year": 1902,
+                "value": 0.1518
+              },
+              {
+                "year": 1903,
+                "value": 0.153
+              },
+              {
+                "year": 1904,
+                "value": 0.1839
+              },
+              {
+                "year": 1905,
+                "value": 0.1439
+              },
+              {
+                "year": 1906,
+                "value": 0.1408
+              },
+              {
+                "year": 1907,
+                "value": 0.2236
+              },
+              {
+                "year": 1908,
+                "value": 0.8507
+              },
+              {
+                "year": 1909,
+                "value": 0.7833
+              },
+              {
+                "year": 1910,
+                "value": 0.2787
+              },
+              {
+                "year": 1911,
+                "value": 0.2707
+              },
+              {
+                "year": 1912,
+                "value": 0.2351
+              },
+              {
+                "year": 1913,
+                "value": 0.2879
+              },
+              {
+                "year": 1914,
+                "value": 0.7237
+              },
+              {
+                "year": 1915,
+                "value": 0.8466
+              },
+              {
+                "year": 1916,
+                "value": 0.4876
+              },
+              {
+                "year": 1917,
+                "value": 0.2437
+              },
+              {
+                "year": 1918,
+                "value": 0.18
+              },
+              {
+                "year": 1919,
+                "value": 0.2836
+              },
+              {
+                "year": 1920,
+                "value": 0.493
+              },
+              {
+                "year": 1921,
+                "value": 1.7939
+              },
+              {
+                "year": 1922,
+                "value": 1.481
+              },
+              {
+                "year": 1923,
+                "value": 0.8508
+              },
+              {
+                "year": 1924,
+                "value": 0.6914
+              },
+              {
+                "year": 1925,
+                "value": 0.5519
+              },
+              {
+                "year": 1926,
+                "value": 0.5438
+              },
+              {
+                "year": 1927,
+                "value": 0.5606
+              },
+              {
+                "year": 1928,
+                "value": 0.5282
+              }
+            ]
+          },
+          {
+            "id": "financial-depression",
+            "label": "financial depression",
+            "color": "#315F9A",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1874,
+                "value": 0.0881
+              },
+              {
+                "year": 1875,
+                "value": 0.1392
+              },
+              {
+                "year": 1876,
+                "value": 0.2531
+              },
+              {
+                "year": 1877,
+                "value": 0.2492
+              },
+              {
+                "year": 1878,
+                "value": 0.2466
+              },
+              {
+                "year": 1879,
+                "value": 0.2041
+              },
+              {
+                "year": 1880,
+                "value": 0.1569
+              },
+              {
+                "year": 1881,
+                "value": 0.1131
+              },
+              {
+                "year": 1882,
+                "value": 0.0821
+              },
+              {
+                "year": 1883,
+                "value": 0.074
+              },
+              {
+                "year": 1884,
+                "value": 0.1166
+              },
+              {
+                "year": 1885,
+                "value": 0.1162
+              },
+              {
+                "year": 1886,
+                "value": 0.0969
+              },
+              {
+                "year": 1887,
+                "value": 0.0865
+              },
+              {
+                "year": 1888,
+                "value": 0.0953
+              },
+              {
+                "year": 1889,
+                "value": 0.0832
+              },
+              {
+                "year": 1890,
+                "value": 0.1009
+              },
+              {
+                "year": 1891,
+                "value": 0.151
+              },
+              {
+                "year": 1892,
+                "value": 0.1927
+              },
+              {
+                "year": 1893,
+                "value": 0.5017
+              },
+              {
+                "year": 1894,
+                "value": 0.7155
+              },
+              {
+                "year": 1895,
+                "value": 0.5333
+              },
+              {
+                "year": 1896,
+                "value": 0.3629
+              },
+              {
+                "year": 1897,
+                "value": 0.3349
+              },
+              {
+                "year": 1898,
+                "value": 0.1996
+              },
+              {
+                "year": 1899,
+                "value": 0.1478
+              },
+              {
+                "year": 1900,
+                "value": 0.119
+              },
+              {
+                "year": 1901,
+                "value": 0.1096
+              },
+              {
+                "year": 1902,
+                "value": 0.1258
+              },
+              {
+                "year": 1903,
+                "value": 0.1235
+              },
+              {
+                "year": 1904,
+                "value": 0.1511
+              },
+              {
+                "year": 1905,
+                "value": 0.1064
+              },
+              {
+                "year": 1906,
+                "value": 0.1026
+              },
+              {
+                "year": 1907,
+                "value": 0.2149
+              },
+              {
+                "year": 1908,
+                "value": 0.6381
+              },
+              {
+                "year": 1909,
+                "value": 0.5439
+              },
+              {
+                "year": 1910,
+                "value": 0.1871
+              },
+              {
+                "year": 1911,
+                "value": 0.1623
+              },
+              {
+                "year": 1912,
+                "value": 0.1291
+              },
+              {
+                "year": 1913,
+                "value": 0.1348
+              },
+              {
+                "year": 1914,
+                "value": 0.2323
+              },
+              {
+                "year": 1915,
+                "value": 0.3084
+              },
+              {
+                "year": 1916,
+                "value": 0.1955
+              },
+              {
+                "year": 1917,
+                "value": 0.1138
+              },
+              {
+                "year": 1918,
+                "value": 0.0808
+              },
+              {
+                "year": 1919,
+                "value": 0.0827
+              },
+              {
+                "year": 1920,
+                "value": 0.1562
+              },
+              {
+                "year": 1921,
+                "value": 0.3188
+              },
+              {
+                "year": 1922,
+                "value": 0.2851
+              },
+              {
+                "year": 1923,
+                "value": 0.2046
+              },
+              {
+                "year": 1924,
+                "value": 0.1611
+              },
+              {
+                "year": 1925,
+                "value": 0.1362
+              },
+              {
+                "year": 1926,
+                "value": 0.1323
+              },
+              {
+                "year": 1927,
+                "value": 0.1246
+              },
+              {
+                "year": 1928,
+                "value": 0.1552
+              }
+            ]
+          },
+          {
+            "id": "economic-depression",
+            "label": "economic depression",
+            "color": "#7B631C",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1874,
+                "value": 0.0006
+              },
+              {
+                "year": 1875,
+                "value": 0.0006
+              },
+              {
+                "year": 1876,
+                "value": 0.0006
+              },
+              {
+                "year": 1877,
+                "value": 0.0006
+              },
+              {
+                "year": 1878,
+                "value": 0
+              },
+              {
+                "year": 1879,
+                "value": 0.0008
+              },
+              {
+                "year": 1880,
+                "value": 0
+              },
+              {
+                "year": 1881,
+                "value": 0.0013
+              },
+              {
+                "year": 1882,
+                "value": 0.0002
+              },
+              {
+                "year": 1883,
+                "value": 0.001
+              },
+              {
+                "year": 1884,
+                "value": 0.0004
+              },
+              {
+                "year": 1885,
+                "value": 0.0016
+              },
+              {
+                "year": 1886,
+                "value": 0.0043
+              },
+              {
+                "year": 1887,
+                "value": 0.0021
+              },
+              {
+                "year": 1888,
+                "value": 0.0006
+              },
+              {
+                "year": 1889,
+                "value": 0.0027
+              },
+              {
+                "year": 1890,
+                "value": 0.0017
+              },
+              {
+                "year": 1891,
+                "value": 0.0011
+              },
+              {
+                "year": 1892,
+                "value": 0.0031
+              },
+              {
+                "year": 1893,
+                "value": 0.0102
+              },
+              {
+                "year": 1894,
+                "value": 0.0061
+              },
+              {
+                "year": 1895,
+                "value": 0.0106
+              },
+              {
+                "year": 1896,
+                "value": 0.0057
+              },
+              {
+                "year": 1897,
+                "value": 0.0023
+              },
+              {
+                "year": 1898,
+                "value": 0.0084
+              },
+              {
+                "year": 1899,
+                "value": 0.0035
+              },
+              {
+                "year": 1900,
+                "value": 0.0107
+              },
+              {
+                "year": 1901,
+                "value": 0.0105
+              },
+              {
+                "year": 1902,
+                "value": 0.0186
+              },
+              {
+                "year": 1903,
+                "value": 0.0188
+              },
+              {
+                "year": 1904,
+                "value": 0.0121
+              },
+              {
+                "year": 1905,
+                "value": 0.0143
+              },
+              {
+                "year": 1906,
+                "value": 0.0121
+              },
+              {
+                "year": 1907,
+                "value": 0.0098
+              },
+              {
+                "year": 1908,
+                "value": 0.0188
+              },
+              {
+                "year": 1909,
+                "value": 0.039
+              },
+              {
+                "year": 1910,
+                "value": 0.0275
+              },
+              {
+                "year": 1911,
+                "value": 0.0175
+              },
+              {
+                "year": 1912,
+                "value": 0.0209
+              },
+              {
+                "year": 1913,
+                "value": 0.0319
+              },
+              {
+                "year": 1914,
+                "value": 0.0322
+              },
+              {
+                "year": 1915,
+                "value": 0.045
+              },
+              {
+                "year": 1916,
+                "value": 0.0453
+              },
+              {
+                "year": 1917,
+                "value": 0.026
+              },
+              {
+                "year": 1918,
+                "value": 0.0302
+              },
+              {
+                "year": 1919,
+                "value": 0.0431
+              },
+              {
+                "year": 1920,
+                "value": 0.1073
+              },
+              {
+                "year": 1921,
+                "value": 0.2277
+              },
+              {
+                "year": 1922,
+                "value": 0.2605
+              },
+              {
+                "year": 1923,
+                "value": 0.2052
+              },
+              {
+                "year": 1924,
+                "value": 0.2305
+              },
+              {
+                "year": 1925,
+                "value": 0.2061
+              },
+              {
+                "year": 1926,
+                "value": 0.2444
+              },
+              {
+                "year": 1927,
+                "value": 0.2945
+              },
+              {
+                "year": 1928,
+                "value": 0.2859
+              }
+            ]
+          }
+        ],
+        "sharedDomain": true,
+        "yMaximum": 3.5
+      }
+    },
+    {
+      "id": "crisis",
+      "order": 4,
+      "code": "04",
+      "periodLabel": "1929—1939",
+      "background": "#9D3025",
+      "semanticLabel": "ECONOMIC CRISIS",
+      "title": "1932: the highest peak is not a diagnosis.",
+      "deck": "The core word rises sharply during the Great Depression period alongside independent economic phrase series.",
+      "visibleCaveat": "Economic timing is contextual evidence, not proof that every book use is economic.",
+      "summary": {
+        "id": "crisis-summary",
+        "kind": "lollipop",
+        "period": [
+          1929,
+          1939
+        ],
+        "title": "THE HIGH POINT",
+        "accessibleSummary": "Depression reaches 43.33 appearances per million corpus words in 1932. All eleven raw annual values from 1929 through 1939 are shown.",
+        "unitLabel": "APPEARANCES / MILLION CORPUS WORDS",
+        "transform": "RAW · / MILLION CORPUS WORDS",
+        "caveat": "The lollipops share a zero baseline; 1932 is directly marked.",
+        "metrics": [
+          {
+            "label": "1932",
+            "detail": "depression peak",
+            "value": 43.33,
+            "precision": 2
+          }
+        ],
+        "series": [
+          {
+            "id": "depression",
+            "label": "depression",
+            "color": "#9D3025",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1929,
+                "value": 13.396
+              },
+              {
+                "year": 1930,
+                "value": 23.4364
+              },
+              {
+                "year": 1931,
+                "value": 37.2044
+              },
+              {
+                "year": 1932,
+                "value": 43.3305
+              },
+              {
+                "year": 1933,
+                "value": 39.644
+              },
+              {
+                "year": 1934,
+                "value": 33.8514
+              },
+              {
+                "year": 1935,
+                "value": 32.3919
+              },
+              {
+                "year": 1936,
+                "value": 25.6245
+              },
+              {
+                "year": 1937,
+                "value": 28.7105
+              },
+              {
+                "year": 1938,
+                "value": 23.6501
+              },
+              {
+                "year": 1939,
+                "value": 19.382
+              }
+            ]
+          }
+        ],
+        "yMaximum": 45
+      },
+      "detail": {
+        "id": "crisis-detail",
+        "kind": "crisis-multiples",
+        "period": [
+          1929,
+          1939
+        ],
+        "title": "ECONOMIC PHRASES IN CONTEXT",
+        "accessibleSummary": "Economic, business and financial depression are separate low-scale phrase series. The NBER 1929–1933 contraction band is contextual, not causal proof.",
+        "unitLabel": "APPEARANCES / MILLION CORPUS WORDS",
+        "transform": "RAW · / MILLION CORPUS WORDS · SHARED 0—3.5",
+        "caveat": "The NBER event is shown beside phrase series; it does not classify individual book uses.",
+        "series": [
+          {
+            "id": "economic-depression",
+            "label": "economic depression",
+            "color": "#9D3025",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1929,
+                "value": 0.4001
+              },
+              {
+                "year": 1930,
+                "value": 1.1248
+              },
+              {
+                "year": 1931,
+                "value": 2.3293
+              },
+              {
+                "year": 1932,
+                "value": 2.3288
+              },
+              {
+                "year": 1933,
+                "value": 2.1129
+              },
+              {
+                "year": 1934,
+                "value": 1.7
+              },
+              {
+                "year": 1935,
+                "value": 1.3852
+              },
+              {
+                "year": 1936,
+                "value": 0.9955
+              },
+              {
+                "year": 1937,
+                "value": 0.9257
+              },
+              {
+                "year": 1938,
+                "value": 0.7735
+              },
+              {
+                "year": 1939,
+                "value": 0.6977
+              }
+            ]
+          },
+          {
+            "id": "business-depression",
+            "label": "business depression",
+            "color": "#315F9A",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1929,
+                "value": 0.6565
+              },
+              {
+                "year": 1930,
+                "value": 2.2691
+              },
+              {
+                "year": 1931,
+                "value": 3.0064
+              },
+              {
+                "year": 1932,
+                "value": 1.9024
+              },
+              {
+                "year": 1933,
+                "value": 1.094
+              },
+              {
+                "year": 1934,
+                "value": 0.6461
+              },
+              {
+                "year": 1935,
+                "value": 0.5197
+              },
+              {
+                "year": 1936,
+                "value": 0.3481
+              },
+              {
+                "year": 1937,
+                "value": 0.3949
+              },
+              {
+                "year": 1938,
+                "value": 0.461
+              },
+              {
+                "year": 1939,
+                "value": 0.3247
+              }
+            ]
+          },
+          {
+            "id": "financial-depression",
+            "label": "financial depression",
+            "color": "#7B631C",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1929,
+                "value": 0.1731
+              },
+              {
+                "year": 1930,
+                "value": 0.3819
+              },
+              {
+                "year": 1931,
+                "value": 0.6089
+              },
+              {
+                "year": 1932,
+                "value": 0.5646
+              },
+              {
+                "year": 1933,
+                "value": 0.4227
+              },
+              {
+                "year": 1934,
+                "value": 0.3066
+              },
+              {
+                "year": 1935,
+                "value": 0.2219
+              },
+              {
+                "year": 1936,
+                "value": 0.1576
+              },
+              {
+                "year": 1937,
+                "value": 0.1509
+              },
+              {
+                "year": 1938,
+                "value": 0.1194
+              },
+              {
+                "year": 1939,
+                "value": 0.1089
+              }
+            ]
+          }
+        ],
+        "sharedDomain": true,
+        "yMaximum": 3.5,
+        "events": [
+          {
+            "startYear": 1929,
+            "endYear": 1933,
+            "label": "NBER 1929–1933 CONTRACTION",
+            "role": "contextual economic event; not lexical evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "plateau",
+      "order": 5,
+      "code": "05",
+      "periodLabel": "1940—1979",
+      "background": "#604B70",
+      "semanticLabel": "POST-CRISIS PLATFORM",
+      "title": "The peak recedes; diagnostic language stays marginal.",
+      "deck": "The broad word remains visible after the economic peak, while clinical labels have not yet formed a durable high-frequency band.",
+      "visibleCaveat": "A low phrase rate does not measure disease prevalence or diagnostic practice.",
+      "summary": {
+        "id": "plateau-summary",
+        "kind": "plateau-bars",
+        "period": [
+          1940,
+          1979
+        ],
+        "title": "TWO POST-CRISIS PLATFORMS",
+        "accessibleSummary": "Depression averages 13.33 appearances per million corpus words in 1940–1959 and 11.10 in 1960–1979.",
+        "unitLabel": "APPEARANCES / MILLION CORPUS WORDS",
+        "transform": "STAGE MEAN · / MILLION CORPUS WORDS",
+        "caveat": "Both platform bars share a zero baseline.",
+        "metrics": [
+          {
+            "label": "1940—1959",
+            "detail": "depression mean",
+            "value": 13.33,
+            "precision": 2
+          },
+          {
+            "label": "1960—1979",
+            "detail": "depression mean",
+            "value": 11.1,
+            "precision": 2
+          }
+        ],
+        "yMaximum": 16
+      },
+      "detail": {
+        "id": "plateau-detail",
+        "kind": "clinical-multiples",
+        "period": [
+          1940,
+          1979
+        ],
+        "title": "LABELS BEFORE THEIR LATER RISE",
+        "accessibleSummary": "Clinical depression, major depression and depressive disorder stay in much lower-frequency bands. A 0.1-per-million reference is marked separately on each scale.",
+        "unitLabel": "APPEARANCES / MILLION CORPUS WORDS",
+        "transform": "RAW · / MILLION CORPUS WORDS · SHARED 0—0.25",
+        "caveat": "These phrase rates do not project current diagnostic definitions back onto earlier decades.",
+        "series": [
+          {
+            "id": "clinical-depression",
+            "label": "clinical depression",
+            "color": "#9D3025",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1940,
+                "value": 0.0003
+              },
+              {
+                "year": 1941,
+                "value": 0.0001
+              },
+              {
+                "year": 1942,
+                "value": 0.0004
+              },
+              {
+                "year": 1943,
+                "value": 0.0051
+              },
+              {
+                "year": 1944,
+                "value": 0.0007
+              },
+              {
+                "year": 1945,
+                "value": 0.0005
+              },
+              {
+                "year": 1946,
+                "value": 0.0002
+              },
+              {
+                "year": 1947,
+                "value": 0.0023
+              },
+              {
+                "year": 1948,
+                "value": 0.0009
+              },
+              {
+                "year": 1949,
+                "value": 0.0011
+              },
+              {
+                "year": 1950,
+                "value": 0.0032
+              },
+              {
+                "year": 1951,
+                "value": 0.0012
+              },
+              {
+                "year": 1952,
+                "value": 0.0008
+              },
+              {
+                "year": 1953,
+                "value": 0.001
+              },
+              {
+                "year": 1954,
+                "value": 0.0014
+              },
+              {
+                "year": 1955,
+                "value": 0.0017
+              },
+              {
+                "year": 1956,
+                "value": 0.0017
+              },
+              {
+                "year": 1957,
+                "value": 0.0018
+              },
+              {
+                "year": 1958,
+                "value": 0.0018
+              },
+              {
+                "year": 1959,
+                "value": 0.0021
+              },
+              {
+                "year": 1960,
+                "value": 0.0019
+              },
+              {
+                "year": 1961,
+                "value": 0.0024
+              },
+              {
+                "year": 1962,
+                "value": 0.0018
+              },
+              {
+                "year": 1963,
+                "value": 0.0022
+              },
+              {
+                "year": 1964,
+                "value": 0.0038
+              },
+              {
+                "year": 1965,
+                "value": 0.0066
+              },
+              {
+                "year": 1966,
+                "value": 0.0218
+              },
+              {
+                "year": 1967,
+                "value": 0.0053
+              },
+              {
+                "year": 1968,
+                "value": 0.0048
+              },
+              {
+                "year": 1969,
+                "value": 0.0073
+              },
+              {
+                "year": 1970,
+                "value": 0.008
+              },
+              {
+                "year": 1971,
+                "value": 0.0072
+              },
+              {
+                "year": 1972,
+                "value": 0.0091
+              },
+              {
+                "year": 1973,
+                "value": 0.015
+              },
+              {
+                "year": 1974,
+                "value": 0.0208
+              },
+              {
+                "year": 1975,
+                "value": 0.0191
+              },
+              {
+                "year": 1976,
+                "value": 0.0165
+              },
+              {
+                "year": 1977,
+                "value": 0.0174
+              },
+              {
+                "year": 1978,
+                "value": 0.0224
+              },
+              {
+                "year": 1979,
+                "value": 0.0264
+              }
+            ]
+          },
+          {
+            "id": "major-depression",
+            "label": "major depression",
+            "color": "#315F9A",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1940,
+                "value": 0.0395
+              },
+              {
+                "year": 1941,
+                "value": 0.0344
+              },
+              {
+                "year": 1942,
+                "value": 0.0311
+              },
+              {
+                "year": 1943,
+                "value": 0.0447
+              },
+              {
+                "year": 1944,
+                "value": 0.0483
+              },
+              {
+                "year": 1945,
+                "value": 0.0551
+              },
+              {
+                "year": 1946,
+                "value": 0.0715
+              },
+              {
+                "year": 1947,
+                "value": 0.1273
+              },
+              {
+                "year": 1948,
+                "value": 0.0782
+              },
+              {
+                "year": 1949,
+                "value": 0.095
+              },
+              {
+                "year": 1950,
+                "value": 0.0747
+              },
+              {
+                "year": 1951,
+                "value": 0.0447
+              },
+              {
+                "year": 1952,
+                "value": 0.0526
+              },
+              {
+                "year": 1953,
+                "value": 0.0728
+              },
+              {
+                "year": 1954,
+                "value": 0.068
+              },
+              {
+                "year": 1955,
+                "value": 0.0578
+              },
+              {
+                "year": 1956,
+                "value": 0.0496
+              },
+              {
+                "year": 1957,
+                "value": 0.0523
+              },
+              {
+                "year": 1958,
+                "value": 0.0737
+              },
+              {
+                "year": 1959,
+                "value": 0.049
+              },
+              {
+                "year": 1960,
+                "value": 0.0394
+              },
+              {
+                "year": 1961,
+                "value": 0.0354
+              },
+              {
+                "year": 1962,
+                "value": 0.0366
+              },
+              {
+                "year": 1963,
+                "value": 0.0352
+              },
+              {
+                "year": 1964,
+                "value": 0.0321
+              },
+              {
+                "year": 1965,
+                "value": 0.0296
+              },
+              {
+                "year": 1966,
+                "value": 0.206
+              },
+              {
+                "year": 1967,
+                "value": 0.0223
+              },
+              {
+                "year": 1968,
+                "value": 0.0236
+              },
+              {
+                "year": 1969,
+                "value": 0.0257
+              },
+              {
+                "year": 1970,
+                "value": 0.0277
+              },
+              {
+                "year": 1971,
+                "value": 0.0231
+              },
+              {
+                "year": 1972,
+                "value": 0.0214
+              },
+              {
+                "year": 1973,
+                "value": 0.0196
+              },
+              {
+                "year": 1974,
+                "value": 0.0325
+              },
+              {
+                "year": 1975,
+                "value": 0.0362
+              },
+              {
+                "year": 1976,
+                "value": 0.0602
+              },
+              {
+                "year": 1977,
+                "value": 0.0184
+              },
+              {
+                "year": 1978,
+                "value": 0.0218
+              },
+              {
+                "year": 1979,
+                "value": 0.0209
+              }
+            ]
+          },
+          {
+            "id": "depressive-disorder",
+            "label": "depressive disorder",
+            "color": "#7B631C",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1940,
+                "value": 0.0017
+              },
+              {
+                "year": 1941,
+                "value": 0.0007
+              },
+              {
+                "year": 1942,
+                "value": 0.0033
+              },
+              {
+                "year": 1943,
+                "value": 0.0015
+              },
+              {
+                "year": 1944,
+                "value": 0.0024
+              },
+              {
+                "year": 1945,
+                "value": 0.0015
+              },
+              {
+                "year": 1946,
+                "value": 0.0021
+              },
+              {
+                "year": 1947,
+                "value": 0.0146
+              },
+              {
+                "year": 1948,
+                "value": 0.0013
+              },
+              {
+                "year": 1949,
+                "value": 0.0046
+              },
+              {
+                "year": 1950,
+                "value": 0.0073
+              },
+              {
+                "year": 1951,
+                "value": 0.0045
+              },
+              {
+                "year": 1952,
+                "value": 0.0037
+              },
+              {
+                "year": 1953,
+                "value": 0.0036
+              },
+              {
+                "year": 1954,
+                "value": 0.0025
+              },
+              {
+                "year": 1955,
+                "value": 0.0027
+              },
+              {
+                "year": 1956,
+                "value": 0.0012
+              },
+              {
+                "year": 1957,
+                "value": 0.0046
+              },
+              {
+                "year": 1958,
+                "value": 0.0015
+              },
+              {
+                "year": 1959,
+                "value": 0.003
+              },
+              {
+                "year": 1960,
+                "value": 0.0041
+              },
+              {
+                "year": 1961,
+                "value": 0.0038
+              },
+              {
+                "year": 1962,
+                "value": 0.0032
+              },
+              {
+                "year": 1963,
+                "value": 0.0066
+              },
+              {
+                "year": 1964,
+                "value": 0.0066
+              },
+              {
+                "year": 1965,
+                "value": 0.0066
+              },
+              {
+                "year": 1966,
+                "value": 0.0938
+              },
+              {
+                "year": 1967,
+                "value": 0.0242
+              },
+              {
+                "year": 1968,
+                "value": 0.0037
+              },
+              {
+                "year": 1969,
+                "value": 0.0132
+              },
+              {
+                "year": 1970,
+                "value": 0.0102
+              },
+              {
+                "year": 1971,
+                "value": 0.0134
+              },
+              {
+                "year": 1972,
+                "value": 0.0091
+              },
+              {
+                "year": 1973,
+                "value": 0.0108
+              },
+              {
+                "year": 1974,
+                "value": 0.0157
+              },
+              {
+                "year": 1975,
+                "value": 0.0217
+              },
+              {
+                "year": 1976,
+                "value": 0.0376
+              },
+              {
+                "year": 1977,
+                "value": 0.0227
+              },
+              {
+                "year": 1978,
+                "value": 0.0268
+              },
+              {
+                "year": 1979,
+                "value": 0.043
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "label": "0.006 / MILLION",
+            "detail": "clinical depression 1940–1979 stage mean"
+          },
+          {
+            "label": "0.1 / MILLION",
+            "detail": "shared reference threshold"
+          }
+        ],
+        "sharedDomain": true,
+        "yMaximum": 0.25
+      }
+    },
+    {
+      "id": "labels",
+      "order": 6,
+      "code": "06",
+      "periodLabel": "1980—2022",
+      "background": "#315F66",
+      "semanticLabel": "DIAGNOSTIC BRANCHES",
+      "title": "Diagnostic labels rise; the shared word stays multiple.",
+      "deck": "Clinical phrases become more visible after the early 1980s. The core word still names more than diagnosis.",
+      "visibleCaveat": "Diagnostic phrase frequency is not a count of diagnoses, people or public-health prevalence.",
+      "summary": {
+        "id": "labels-summary",
+        "kind": "diagnostic-multiples",
+        "period": [
+          1980,
+          2022
+        ],
+        "title": "A DURABLE LABEL BAND",
+        "accessibleSummary": "Major depression and depressive disorder first remain above 0.1 appearances per million under the nine-year, five-consecutive-year rule in 1983. Clinical depression uses a 0.01 threshold because it does not cross 0.1 in that period.",
+        "unitLabel": "APPEARANCES / MILLION CORPUS WORDS",
+        "transform": "RAW · / MILLION CORPUS WORDS · SHARED 0—1.0",
+        "caveat": "Every dense annual mark represents a retained yearly value; threshold logic uses nine-year centered means.",
+        "series": [
+          {
+            "id": "clinical-depression",
+            "label": "clinical depression",
+            "color": "#9D3025",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1980,
+                "value": 0.0278
+              },
+              {
+                "year": 1981,
+                "value": 0.0255
+              },
+              {
+                "year": 1982,
+                "value": 0.0402
+              },
+              {
+                "year": 1983,
+                "value": 0.0314
+              },
+              {
+                "year": 1984,
+                "value": 0.0398
+              },
+              {
+                "year": 1985,
+                "value": 0.0442
+              },
+              {
+                "year": 1986,
+                "value": 0.0537
+              },
+              {
+                "year": 1987,
+                "value": 0.0483
+              },
+              {
+                "year": 1988,
+                "value": 0.0544
+              },
+              {
+                "year": 1989,
+                "value": 0.0591
+              },
+              {
+                "year": 1990,
+                "value": 0.0694
+              },
+              {
+                "year": 1991,
+                "value": 0.0655
+              },
+              {
+                "year": 1992,
+                "value": 0.0652
+              },
+              {
+                "year": 1993,
+                "value": 0.0852
+              },
+              {
+                "year": 1994,
+                "value": 0.0911
+              },
+              {
+                "year": 1995,
+                "value": 0.1046
+              },
+              {
+                "year": 1996,
+                "value": 0.1219
+              },
+              {
+                "year": 1997,
+                "value": 0.1239
+              },
+              {
+                "year": 1998,
+                "value": 0.1381
+              },
+              {
+                "year": 1999,
+                "value": 0.1521
+              },
+              {
+                "year": 2000,
+                "value": 0.1508
+              },
+              {
+                "year": 2001,
+                "value": 0.1503
+              },
+              {
+                "year": 2002,
+                "value": 0.1507
+              },
+              {
+                "year": 2003,
+                "value": 0.1517
+              },
+              {
+                "year": 2004,
+                "value": 0.1499
+              },
+              {
+                "year": 2005,
+                "value": 0.1657
+              },
+              {
+                "year": 2006,
+                "value": 0.1515
+              },
+              {
+                "year": 2007,
+                "value": 0.167
+              },
+              {
+                "year": 2008,
+                "value": 0.1755
+              },
+              {
+                "year": 2009,
+                "value": 0.2023
+              },
+              {
+                "year": 2010,
+                "value": 0.1838
+              },
+              {
+                "year": 2011,
+                "value": 0.1905
+              },
+              {
+                "year": 2012,
+                "value": 0.1818
+              },
+              {
+                "year": 2013,
+                "value": 0.1881
+              },
+              {
+                "year": 2014,
+                "value": 0.1867
+              },
+              {
+                "year": 2015,
+                "value": 0.1683
+              },
+              {
+                "year": 2016,
+                "value": 0.166
+              },
+              {
+                "year": 2017,
+                "value": 0.1651
+              },
+              {
+                "year": 2018,
+                "value": 0.1723
+              },
+              {
+                "year": 2019,
+                "value": 0.1607
+              },
+              {
+                "year": 2020,
+                "value": 0.1376
+              },
+              {
+                "year": 2021,
+                "value": 0.1645
+              },
+              {
+                "year": 2022,
+                "value": 0.1359
+              }
+            ]
+          },
+          {
+            "id": "major-depression",
+            "label": "major depression",
+            "color": "#315F9A",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1980,
+                "value": 0.0262
+              },
+              {
+                "year": 1981,
+                "value": 0.0382
+              },
+              {
+                "year": 1982,
+                "value": 0.0793
+              },
+              {
+                "year": 1983,
+                "value": 0.0901
+              },
+              {
+                "year": 1984,
+                "value": 0.1408
+              },
+              {
+                "year": 1985,
+                "value": 0.2064
+              },
+              {
+                "year": 1986,
+                "value": 0.1932
+              },
+              {
+                "year": 1987,
+                "value": 0.2865
+              },
+              {
+                "year": 1988,
+                "value": 0.3244
+              },
+              {
+                "year": 1989,
+                "value": 0.3609
+              },
+              {
+                "year": 1990,
+                "value": 0.3884
+              },
+              {
+                "year": 1991,
+                "value": 0.4142
+              },
+              {
+                "year": 1992,
+                "value": 0.4284
+              },
+              {
+                "year": 1993,
+                "value": 0.564
+              },
+              {
+                "year": 1994,
+                "value": 0.5965
+              },
+              {
+                "year": 1995,
+                "value": 0.5113
+              },
+              {
+                "year": 1996,
+                "value": 0.5685
+              },
+              {
+                "year": 1997,
+                "value": 0.6862
+              },
+              {
+                "year": 1998,
+                "value": 0.7485
+              },
+              {
+                "year": 1999,
+                "value": 0.6781
+              },
+              {
+                "year": 2000,
+                "value": 0.7105
+              },
+              {
+                "year": 2001,
+                "value": 0.7121
+              },
+              {
+                "year": 2002,
+                "value": 0.756
+              },
+              {
+                "year": 2003,
+                "value": 0.7017
+              },
+              {
+                "year": 2004,
+                "value": 0.817
+              },
+              {
+                "year": 2005,
+                "value": 0.7791
+              },
+              {
+                "year": 2006,
+                "value": 0.7271
+              },
+              {
+                "year": 2007,
+                "value": 0.9336
+              },
+              {
+                "year": 2008,
+                "value": 0.8352
+              },
+              {
+                "year": 2009,
+                "value": 0.9289
+              },
+              {
+                "year": 2010,
+                "value": 0.768
+              },
+              {
+                "year": 2011,
+                "value": 0.7751
+              },
+              {
+                "year": 2012,
+                "value": 0.7999
+              },
+              {
+                "year": 2013,
+                "value": 0.8636
+              },
+              {
+                "year": 2014,
+                "value": 0.6735
+              },
+              {
+                "year": 2015,
+                "value": 0.7655
+              },
+              {
+                "year": 2016,
+                "value": 0.6366
+              },
+              {
+                "year": 2017,
+                "value": 0.6495
+              },
+              {
+                "year": 2018,
+                "value": 0.6393
+              },
+              {
+                "year": 2019,
+                "value": 0.6334
+              },
+              {
+                "year": 2020,
+                "value": 0.5438
+              },
+              {
+                "year": 2021,
+                "value": 0.6137
+              },
+              {
+                "year": 2022,
+                "value": 0.51
+              }
+            ]
+          },
+          {
+            "id": "depressive-disorder",
+            "label": "depressive disorder",
+            "color": "#7B631C",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1980,
+                "value": 0.0505
+              },
+              {
+                "year": 1981,
+                "value": 0.0571
+              },
+              {
+                "year": 1982,
+                "value": 0.1154
+              },
+              {
+                "year": 1983,
+                "value": 0.1131
+              },
+              {
+                "year": 1984,
+                "value": 0.1162
+              },
+              {
+                "year": 1985,
+                "value": 0.1392
+              },
+              {
+                "year": 1986,
+                "value": 0.1231
+              },
+              {
+                "year": 1987,
+                "value": 0.1483
+              },
+              {
+                "year": 1988,
+                "value": 0.171
+              },
+              {
+                "year": 1989,
+                "value": 0.1897
+              },
+              {
+                "year": 1990,
+                "value": 0.188
+              },
+              {
+                "year": 1991,
+                "value": 0.1864
+              },
+              {
+                "year": 1992,
+                "value": 0.1882
+              },
+              {
+                "year": 1993,
+                "value": 0.2472
+              },
+              {
+                "year": 1994,
+                "value": 0.2683
+              },
+              {
+                "year": 1995,
+                "value": 0.2193
+              },
+              {
+                "year": 1996,
+                "value": 0.2689
+              },
+              {
+                "year": 1997,
+                "value": 0.2586
+              },
+              {
+                "year": 1998,
+                "value": 0.289
+              },
+              {
+                "year": 1999,
+                "value": 0.2579
+              },
+              {
+                "year": 2000,
+                "value": 0.3379
+              },
+              {
+                "year": 2001,
+                "value": 0.2937
+              },
+              {
+                "year": 2002,
+                "value": 0.374
+              },
+              {
+                "year": 2003,
+                "value": 0.4467
+              },
+              {
+                "year": 2004,
+                "value": 0.501
+              },
+              {
+                "year": 2005,
+                "value": 0.5042
+              },
+              {
+                "year": 2006,
+                "value": 0.4196
+              },
+              {
+                "year": 2007,
+                "value": 0.4935
+              },
+              {
+                "year": 2008,
+                "value": 0.4681
+              },
+              {
+                "year": 2009,
+                "value": 0.6073
+              },
+              {
+                "year": 2010,
+                "value": 0.4874
+              },
+              {
+                "year": 2011,
+                "value": 0.5307
+              },
+              {
+                "year": 2012,
+                "value": 0.5834
+              },
+              {
+                "year": 2013,
+                "value": 0.6084
+              },
+              {
+                "year": 2014,
+                "value": 0.6366
+              },
+              {
+                "year": 2015,
+                "value": 0.7445
+              },
+              {
+                "year": 2016,
+                "value": 0.6575
+              },
+              {
+                "year": 2017,
+                "value": 0.6965
+              },
+              {
+                "year": 2018,
+                "value": 0.745
+              },
+              {
+                "year": 2019,
+                "value": 0.7913
+              },
+              {
+                "year": 2020,
+                "value": 0.6485
+              },
+              {
+                "year": 2021,
+                "value": 0.8169
+              },
+              {
+                "year": 2022,
+                "value": 0.7705
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "year": 1983,
+            "label": "1983",
+            "detail": "major + disorder sustained above 0.1 / million"
+          },
+          {
+            "year": 1970,
+            "label": "1970",
+            "detail": "clinical sustained above 0.01 / million"
+          }
+        ],
+        "sharedDomain": true,
+        "yMaximum": 1
+      },
+      "detail": {
+        "id": "labels-detail",
+        "kind": "modern-contrast",
+        "period": [
+          1980,
+          2022
+        ],
+        "title": "A MODERN NEIGHBOUR, NOT A SYNONYM",
+        "accessibleSummary": "In the 2010s, depression averages 23.03 and anxiety 26.15 appearances per million corpus words. In 2022 they are 22.86 and 32.34 respectively.",
+        "unitLabel": "APPEARANCES / MILLION CORPUS WORDS",
+        "transform": "RAW · / MILLION CORPUS WORDS",
+        "caveat": "Anxiety is adjacent in this comparison, not a replacement or subset of depression.",
+        "series": [
+          {
+            "id": "depression",
+            "label": "depression",
+            "color": "#9D3025",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1980,
+                "value": 12.4483
+              },
+              {
+                "year": 1981,
+                "value": 12.2811
+              },
+              {
+                "year": 1982,
+                "value": 15.0013
+              },
+              {
+                "year": 1983,
+                "value": 13.625
+              },
+              {
+                "year": 1984,
+                "value": 13.3415
+              },
+              {
+                "year": 1985,
+                "value": 14.2584
+              },
+              {
+                "year": 1986,
+                "value": 13.644
+              },
+              {
+                "year": 1987,
+                "value": 14.7975
+              },
+              {
+                "year": 1988,
+                "value": 14.9263
+              },
+              {
+                "year": 1989,
+                "value": 14.5011
+              },
+              {
+                "year": 1990,
+                "value": 14.5943
+              },
+              {
+                "year": 1991,
+                "value": 14.5042
+              },
+              {
+                "year": 1992,
+                "value": 13.9932
+              },
+              {
+                "year": 1993,
+                "value": 14.8678
+              },
+              {
+                "year": 1994,
+                "value": 14.8073
+              },
+              {
+                "year": 1995,
+                "value": 14.4194
+              },
+              {
+                "year": 1996,
+                "value": 16.2303
+              },
+              {
+                "year": 1997,
+                "value": 16.3753
+              },
+              {
+                "year": 1998,
+                "value": 17.1835
+              },
+              {
+                "year": 1999,
+                "value": 16.869
+              },
+              {
+                "year": 2000,
+                "value": 17.8592
+              },
+              {
+                "year": 2001,
+                "value": 17.9793
+              },
+              {
+                "year": 2002,
+                "value": 18.4425
+              },
+              {
+                "year": 2003,
+                "value": 17.8694
+              },
+              {
+                "year": 2004,
+                "value": 19.2795
+              },
+              {
+                "year": 2005,
+                "value": 20.6056
+              },
+              {
+                "year": 2006,
+                "value": 19.636
+              },
+              {
+                "year": 2007,
+                "value": 21.6707
+              },
+              {
+                "year": 2008,
+                "value": 21.3298
+              },
+              {
+                "year": 2009,
+                "value": 23.6585
+              },
+              {
+                "year": 2010,
+                "value": 22.5511
+              },
+              {
+                "year": 2011,
+                "value": 23.4628
+              },
+              {
+                "year": 2012,
+                "value": 24.0356
+              },
+              {
+                "year": 2013,
+                "value": 25.2418
+              },
+              {
+                "year": 2014,
+                "value": 22.4536
+              },
+              {
+                "year": 2015,
+                "value": 23.4352
+              },
+              {
+                "year": 2016,
+                "value": 21.8678
+              },
+              {
+                "year": 2017,
+                "value": 21.5323
+              },
+              {
+                "year": 2018,
+                "value": 23.5448
+              },
+              {
+                "year": 2019,
+                "value": 22.1988
+              },
+              {
+                "year": 2020,
+                "value": 21.0331
+              },
+              {
+                "year": 2021,
+                "value": 24.1938
+              },
+              {
+                "year": 2022,
+                "value": 22.8599
+              }
+            ]
+          },
+          {
+            "id": "anxiety",
+            "label": "anxiety",
+            "color": "#315F9A",
+            "unit": "appearances per million corpus words",
+            "points": [
+              {
+                "year": 1980,
+                "value": 10.2496
+              },
+              {
+                "year": 1981,
+                "value": 9.4518
+              },
+              {
+                "year": 1982,
+                "value": 10.9897
+              },
+              {
+                "year": 1983,
+                "value": 10.1214
+              },
+              {
+                "year": 1984,
+                "value": 10.1209
+              },
+              {
+                "year": 1985,
+                "value": 10.7411
+              },
+              {
+                "year": 1986,
+                "value": 10.5425
+              },
+              {
+                "year": 1987,
+                "value": 10.7642
+              },
+              {
+                "year": 1988,
+                "value": 11.4756
+              },
+              {
+                "year": 1989,
+                "value": 10.9249
+              },
+              {
+                "year": 1990,
+                "value": 11.3399
+              },
+              {
+                "year": 1991,
+                "value": 11.4348
+              },
+              {
+                "year": 1992,
+                "value": 10.6332
+              },
+              {
+                "year": 1993,
+                "value": 11.0144
+              },
+              {
+                "year": 1994,
+                "value": 11.0964
+              },
+              {
+                "year": 1995,
+                "value": 11.5731
+              },
+              {
+                "year": 1996,
+                "value": 12.36
+              },
+              {
+                "year": 1997,
+                "value": 12.6503
+              },
+              {
+                "year": 1998,
+                "value": 13.6063
+              },
+              {
+                "year": 1999,
+                "value": 13.2753
+              },
+              {
+                "year": 2000,
+                "value": 14.0811
+              },
+              {
+                "year": 2001,
+                "value": 14.3733
+              },
+              {
+                "year": 2002,
+                "value": 14.9013
+              },
+              {
+                "year": 2003,
+                "value": 15.0808
+              },
+              {
+                "year": 2004,
+                "value": 17.0819
+              },
+              {
+                "year": 2005,
+                "value": 17.6035
+              },
+              {
+                "year": 2006,
+                "value": 17.3453
+              },
+              {
+                "year": 2007,
+                "value": 18.7326
+              },
+              {
+                "year": 2008,
+                "value": 20.1578
+              },
+              {
+                "year": 2009,
+                "value": 22.4712
+              },
+              {
+                "year": 2010,
+                "value": 22.7084
+              },
+              {
+                "year": 2011,
+                "value": 24.4267
+              },
+              {
+                "year": 2012,
+                "value": 22.8839
+              },
+              {
+                "year": 2013,
+                "value": 27.0907
+              },
+              {
+                "year": 2014,
+                "value": 26.1482
+              },
+              {
+                "year": 2015,
+                "value": 27.5765
+              },
+              {
+                "year": 2016,
+                "value": 25.6814
+              },
+              {
+                "year": 2017,
+                "value": 26.5704
+              },
+              {
+                "year": 2018,
+                "value": 30.2217
+              },
+              {
+                "year": 2019,
+                "value": 28.2065
+              },
+              {
+                "year": 2020,
+                "value": 28.3606
+              },
+              {
+                "year": 2021,
+                "value": 31.9026
+              },
+              {
+                "year": 2022,
+                "value": 32.3365
+              }
+            ]
+          }
+        ],
+        "metrics": [
+          {
+            "label": "2010s",
+            "detail": "depression mean",
+            "value": 23.03,
+            "precision": 2
+          },
+          {
+            "label": "2010s",
+            "detail": "anxiety mean",
+            "value": 26.15,
+            "precision": 2
+          },
+          {
+            "label": "2022",
+            "detail": "depression",
+            "value": 22.86,
+            "precision": 2
+          },
+          {
+            "label": "2022",
+            "detail": "anxiety",
+            "value": 32.34,
+            "precision": 2
+          }
+        ],
+        "sharedDomain": true
+      }
+    }
+  ],
+  "rotaryInterlude": {
+    "id": "rotary-interlude",
+    "kind": "rotary-interlude",
+    "code": "03A",
+    "period": [
+      1874,
+      1939
+    ],
+    "background": "#EEE7DD",
+    "unit": "appearances per million corpus words",
+    "series": [
+      {
+        "key": "business",
+        "family": "phrase",
+        "color": "#B13A2D",
+        "yDomain": [
+          0,
+          3.5
+        ],
+        "label": "business depression",
+        "points": [
+          {
+            "year": 1874,
+            "value": 0.0491
+          },
+          {
+            "year": 1875,
+            "value": 0.088
+          },
+          {
+            "year": 1876,
+            "value": 0.1332
+          },
+          {
+            "year": 1877,
+            "value": 0.1678
+          },
+          {
+            "year": 1878,
+            "value": 0.2316
+          },
+          {
+            "year": 1879,
+            "value": 0.1907
+          },
+          {
+            "year": 1880,
+            "value": 0.1319
+          },
+          {
+            "year": 1881,
+            "value": 0.0804
+          },
+          {
+            "year": 1882,
+            "value": 0.068
+          },
+          {
+            "year": 1883,
+            "value": 0.0828
+          },
+          {
+            "year": 1884,
+            "value": 0.1515
+          },
+          {
+            "year": 1885,
+            "value": 0.2179
+          },
+          {
+            "year": 1886,
+            "value": 0.1735
+          },
+          {
+            "year": 1887,
+            "value": 0.101
+          },
+          {
+            "year": 1888,
+            "value": 0.0818
+          },
+          {
+            "year": 1889,
+            "value": 0.072
+          },
+          {
+            "year": 1890,
+            "value": 0.0807
+          },
+          {
+            "year": 1891,
+            "value": 0.0908
+          },
+          {
+            "year": 1892,
+            "value": 0.118
+          },
+          {
+            "year": 1893,
+            "value": 0.3527
+          },
+          {
+            "year": 1894,
+            "value": 0.8728
+          },
+          {
+            "year": 1895,
+            "value": 0.66
+          },
+          {
+            "year": 1896,
+            "value": 0.5115
+          },
+          {
+            "year": 1897,
+            "value": 0.5312
+          },
+          {
+            "year": 1898,
+            "value": 0.2988
+          },
+          {
+            "year": 1899,
+            "value": 0.1587
+          },
+          {
+            "year": 1900,
+            "value": 0.1411
+          },
+          {
+            "year": 1901,
+            "value": 0.1359
+          },
+          {
+            "year": 1902,
+            "value": 0.1518
+          },
+          {
+            "year": 1903,
+            "value": 0.153
+          },
+          {
+            "year": 1904,
+            "value": 0.1839
+          },
+          {
+            "year": 1905,
+            "value": 0.1439
+          },
+          {
+            "year": 1906,
+            "value": 0.1408
+          },
+          {
+            "year": 1907,
+            "value": 0.2236
+          },
+          {
+            "year": 1908,
+            "value": 0.8507
+          },
+          {
+            "year": 1909,
+            "value": 0.7833
+          },
+          {
+            "year": 1910,
+            "value": 0.2787
+          },
+          {
+            "year": 1911,
+            "value": 0.2707
+          },
+          {
+            "year": 1912,
+            "value": 0.2351
+          },
+          {
+            "year": 1913,
+            "value": 0.2879
+          },
+          {
+            "year": 1914,
+            "value": 0.7237
+          },
+          {
+            "year": 1915,
+            "value": 0.8466
+          },
+          {
+            "year": 1916,
+            "value": 0.4876
+          },
+          {
+            "year": 1917,
+            "value": 0.2437
+          },
+          {
+            "year": 1918,
+            "value": 0.18
+          },
+          {
+            "year": 1919,
+            "value": 0.2836
+          },
+          {
+            "year": 1920,
+            "value": 0.493
+          },
+          {
+            "year": 1921,
+            "value": 1.7939
+          },
+          {
+            "year": 1922,
+            "value": 1.481
+          },
+          {
+            "year": 1923,
+            "value": 0.8508
+          },
+          {
+            "year": 1924,
+            "value": 0.6914
+          },
+          {
+            "year": 1925,
+            "value": 0.5519
+          },
+          {
+            "year": 1926,
+            "value": 0.5438
+          },
+          {
+            "year": 1927,
+            "value": 0.5606
+          },
+          {
+            "year": 1928,
+            "value": 0.5282
+          },
+          {
+            "year": 1929,
+            "value": 0.6565
+          },
+          {
+            "year": 1930,
+            "value": 2.2691
+          },
+          {
+            "year": 1931,
+            "value": 3.0064
+          },
+          {
+            "year": 1932,
+            "value": 1.9024
+          },
+          {
+            "year": 1933,
+            "value": 1.094
+          },
+          {
+            "year": 1934,
+            "value": 0.6461
+          },
+          {
+            "year": 1935,
+            "value": 0.5197
+          },
+          {
+            "year": 1936,
+            "value": 0.3481
+          },
+          {
+            "year": 1937,
+            "value": 0.3949
+          },
+          {
+            "year": 1938,
+            "value": 0.461
+          },
+          {
+            "year": 1939,
+            "value": 0.3247
+          }
+        ],
+        "peak": {
+          "year": 1931,
+          "value": 3.0064
+        }
+      },
+      {
+        "key": "financial",
+        "family": "phrase",
+        "color": "#955718",
+        "yDomain": [
+          0,
+          3.5
+        ],
+        "label": "financial depression",
+        "points": [
+          {
+            "year": 1874,
+            "value": 0.0881
+          },
+          {
+            "year": 1875,
+            "value": 0.1392
+          },
+          {
+            "year": 1876,
+            "value": 0.2531
+          },
+          {
+            "year": 1877,
+            "value": 0.2492
+          },
+          {
+            "year": 1878,
+            "value": 0.2466
+          },
+          {
+            "year": 1879,
+            "value": 0.2041
+          },
+          {
+            "year": 1880,
+            "value": 0.1569
+          },
+          {
+            "year": 1881,
+            "value": 0.1131
+          },
+          {
+            "year": 1882,
+            "value": 0.0821
+          },
+          {
+            "year": 1883,
+            "value": 0.074
+          },
+          {
+            "year": 1884,
+            "value": 0.1166
+          },
+          {
+            "year": 1885,
+            "value": 0.1162
+          },
+          {
+            "year": 1886,
+            "value": 0.0969
+          },
+          {
+            "year": 1887,
+            "value": 0.0865
+          },
+          {
+            "year": 1888,
+            "value": 0.0953
+          },
+          {
+            "year": 1889,
+            "value": 0.0832
+          },
+          {
+            "year": 1890,
+            "value": 0.1009
+          },
+          {
+            "year": 1891,
+            "value": 0.151
+          },
+          {
+            "year": 1892,
+            "value": 0.1927
+          },
+          {
+            "year": 1893,
+            "value": 0.5017
+          },
+          {
+            "year": 1894,
+            "value": 0.7155
+          },
+          {
+            "year": 1895,
+            "value": 0.5333
+          },
+          {
+            "year": 1896,
+            "value": 0.3629
+          },
+          {
+            "year": 1897,
+            "value": 0.3349
+          },
+          {
+            "year": 1898,
+            "value": 0.1996
+          },
+          {
+            "year": 1899,
+            "value": 0.1478
+          },
+          {
+            "year": 1900,
+            "value": 0.119
+          },
+          {
+            "year": 1901,
+            "value": 0.1096
+          },
+          {
+            "year": 1902,
+            "value": 0.1258
+          },
+          {
+            "year": 1903,
+            "value": 0.1235
+          },
+          {
+            "year": 1904,
+            "value": 0.1511
+          },
+          {
+            "year": 1905,
+            "value": 0.1064
+          },
+          {
+            "year": 1906,
+            "value": 0.1026
+          },
+          {
+            "year": 1907,
+            "value": 0.2149
+          },
+          {
+            "year": 1908,
+            "value": 0.6381
+          },
+          {
+            "year": 1909,
+            "value": 0.5439
+          },
+          {
+            "year": 1910,
+            "value": 0.1871
+          },
+          {
+            "year": 1911,
+            "value": 0.1623
+          },
+          {
+            "year": 1912,
+            "value": 0.1291
+          },
+          {
+            "year": 1913,
+            "value": 0.1348
+          },
+          {
+            "year": 1914,
+            "value": 0.2323
+          },
+          {
+            "year": 1915,
+            "value": 0.3084
+          },
+          {
+            "year": 1916,
+            "value": 0.1955
+          },
+          {
+            "year": 1917,
+            "value": 0.1138
+          },
+          {
+            "year": 1918,
+            "value": 0.0808
+          },
+          {
+            "year": 1919,
+            "value": 0.0827
+          },
+          {
+            "year": 1920,
+            "value": 0.1562
+          },
+          {
+            "year": 1921,
+            "value": 0.3188
+          },
+          {
+            "year": 1922,
+            "value": 0.2851
+          },
+          {
+            "year": 1923,
+            "value": 0.2046
+          },
+          {
+            "year": 1924,
+            "value": 0.1611
+          },
+          {
+            "year": 1925,
+            "value": 0.1362
+          },
+          {
+            "year": 1926,
+            "value": 0.1323
+          },
+          {
+            "year": 1927,
+            "value": 0.1246
+          },
+          {
+            "year": 1928,
+            "value": 0.1552
+          },
+          {
+            "year": 1929,
+            "value": 0.1731
+          },
+          {
+            "year": 1930,
+            "value": 0.3819
+          },
+          {
+            "year": 1931,
+            "value": 0.6089
+          },
+          {
+            "year": 1932,
+            "value": 0.5646
+          },
+          {
+            "year": 1933,
+            "value": 0.4227
+          },
+          {
+            "year": 1934,
+            "value": 0.3066
+          },
+          {
+            "year": 1935,
+            "value": 0.2219
+          },
+          {
+            "year": 1936,
+            "value": 0.1576
+          },
+          {
+            "year": 1937,
+            "value": 0.1509
+          },
+          {
+            "year": 1938,
+            "value": 0.1194
+          },
+          {
+            "year": 1939,
+            "value": 0.1089
+          }
+        ],
+        "peak": {
+          "year": 1894,
+          "value": 0.7155
+        }
+      },
+      {
+        "key": "economic",
+        "family": "phrase",
+        "color": "#6E635A",
+        "yDomain": [
+          0,
+          3.5
+        ],
+        "label": "economic depression",
+        "points": [
+          {
+            "year": 1874,
+            "value": 0.0006
+          },
+          {
+            "year": 1875,
+            "value": 0.0006
+          },
+          {
+            "year": 1876,
+            "value": 0.0006
+          },
+          {
+            "year": 1877,
+            "value": 0.0006
+          },
+          {
+            "year": 1878,
+            "value": 0
+          },
+          {
+            "year": 1879,
+            "value": 0.0008
+          },
+          {
+            "year": 1880,
+            "value": 0
+          },
+          {
+            "year": 1881,
+            "value": 0.0013
+          },
+          {
+            "year": 1882,
+            "value": 0.0002
+          },
+          {
+            "year": 1883,
+            "value": 0.001
+          },
+          {
+            "year": 1884,
+            "value": 0.0004
+          },
+          {
+            "year": 1885,
+            "value": 0.0016
+          },
+          {
+            "year": 1886,
+            "value": 0.0043
+          },
+          {
+            "year": 1887,
+            "value": 0.0021
+          },
+          {
+            "year": 1888,
+            "value": 0.0006
+          },
+          {
+            "year": 1889,
+            "value": 0.0027
+          },
+          {
+            "year": 1890,
+            "value": 0.0017
+          },
+          {
+            "year": 1891,
+            "value": 0.0011
+          },
+          {
+            "year": 1892,
+            "value": 0.0031
+          },
+          {
+            "year": 1893,
+            "value": 0.0102
+          },
+          {
+            "year": 1894,
+            "value": 0.0061
+          },
+          {
+            "year": 1895,
+            "value": 0.0106
+          },
+          {
+            "year": 1896,
+            "value": 0.0057
+          },
+          {
+            "year": 1897,
+            "value": 0.0023
+          },
+          {
+            "year": 1898,
+            "value": 0.0084
+          },
+          {
+            "year": 1899,
+            "value": 0.0035
+          },
+          {
+            "year": 1900,
+            "value": 0.0107
+          },
+          {
+            "year": 1901,
+            "value": 0.0105
+          },
+          {
+            "year": 1902,
+            "value": 0.0186
+          },
+          {
+            "year": 1903,
+            "value": 0.0188
+          },
+          {
+            "year": 1904,
+            "value": 0.0121
+          },
+          {
+            "year": 1905,
+            "value": 0.0143
+          },
+          {
+            "year": 1906,
+            "value": 0.0121
+          },
+          {
+            "year": 1907,
+            "value": 0.0098
+          },
+          {
+            "year": 1908,
+            "value": 0.0188
+          },
+          {
+            "year": 1909,
+            "value": 0.039
+          },
+          {
+            "year": 1910,
+            "value": 0.0275
+          },
+          {
+            "year": 1911,
+            "value": 0.0175
+          },
+          {
+            "year": 1912,
+            "value": 0.0209
+          },
+          {
+            "year": 1913,
+            "value": 0.0319
+          },
+          {
+            "year": 1914,
+            "value": 0.0322
+          },
+          {
+            "year": 1915,
+            "value": 0.045
+          },
+          {
+            "year": 1916,
+            "value": 0.0453
+          },
+          {
+            "year": 1917,
+            "value": 0.026
+          },
+          {
+            "year": 1918,
+            "value": 0.0302
+          },
+          {
+            "year": 1919,
+            "value": 0.0431
+          },
+          {
+            "year": 1920,
+            "value": 0.1073
+          },
+          {
+            "year": 1921,
+            "value": 0.2277
+          },
+          {
+            "year": 1922,
+            "value": 0.2605
+          },
+          {
+            "year": 1923,
+            "value": 0.2052
+          },
+          {
+            "year": 1924,
+            "value": 0.2305
+          },
+          {
+            "year": 1925,
+            "value": 0.2061
+          },
+          {
+            "year": 1926,
+            "value": 0.2444
+          },
+          {
+            "year": 1927,
+            "value": 0.2945
+          },
+          {
+            "year": 1928,
+            "value": 0.2859
+          },
+          {
+            "year": 1929,
+            "value": 0.4001
+          },
+          {
+            "year": 1930,
+            "value": 1.1248
+          },
+          {
+            "year": 1931,
+            "value": 2.3293
+          },
+          {
+            "year": 1932,
+            "value": 2.3288
+          },
+          {
+            "year": 1933,
+            "value": 2.1129
+          },
+          {
+            "year": 1934,
+            "value": 1.7
+          },
+          {
+            "year": 1935,
+            "value": 1.3852
+          },
+          {
+            "year": 1936,
+            "value": 0.9955
+          },
+          {
+            "year": 1937,
+            "value": 0.9257
+          },
+          {
+            "year": 1938,
+            "value": 0.7735
+          },
+          {
+            "year": 1939,
+            "value": 0.6977
+          }
+        ],
+        "peak": {
+          "year": 1931,
+          "value": 2.3293
+        }
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "Google Books Ngram Viewer",
+      "url": "https://books.google.com/ngrams/json?content=depression%2Cmelancholy%2Cmelancholia%2Csadness%2Cdespair%2Cgloom%2Canxiety%2Clow+spirits&year_start=1500&year_end=2022&corpus=en&smoothing=0&case_insensitive=false",
+      "use": "Annual English book-frequency series; stored fractions are converted to appearances per million corpus words."
+    },
+    {
+      "label": "Lexical-source attestation records",
+      "url": "https://www.etymonline.com/word/depression",
+      "use": "Sense-history anchors only; not a continuous corpus or first-use record."
+    },
+    {
+      "label": "NBER US Business Cycle Expansions and Contractions",
+      "url": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions",
+      "use": "Economic event context only; not lexical frequency evidence."
+    },
+    {
+      "label": "MeSH / NCBI",
+      "url": "https://www.ncbi.nlm.nih.gov/mesh/D003866",
+      "use": "Controlled-vocabulary context only; not general-language frequency evidence."
+    }
+  ],
+  "methods": [
+    "Every charted book rate is the stored annual Google Books Ngram fraction multiplied by 1,000,000. The source file is the English corpus, 1500–2022, with source smoothing set to zero.",
+    "Period values are arithmetic means of every annual value in the labelled inclusive range. Raw annual plots remain unsmoothed unless the chart itself is labelled as a nine-year centered mean.",
+    "The 1874 crossover requires depression to exceed melancholy on a nine-year centered average for twenty consecutive years. Modern thresholds require five consecutive years above the stated rate using the same centered mean.",
+    "The 03A wheel compares business depression, financial depression and economic depression on one shared 0–3.5-per-million scale. Every phrase retains all 66 annual positions from 1874 through 1939.",
+    "Economic-event dates and controlled-vocabulary dates are contextual layers. They are not normalized with book-frequency values and do not prove causal relationships."
+  ],
+  "caveats": [
+    "A single depression frequency series is not sense-classified. No chart treats emotional, economic, physical or clinical senses as shares of one whole.",
+    "Early Ngram values are sparse and potentially noisy. The first chapter therefore uses lexical anchors rather than a continuous early-frequency plot.",
+    "Phrase frequency is not a count of diagnoses, people, disease prevalence, economic output or the share of meanings carried by the core word."
+  ],
+  "rights": [
+    "Google Books Ngram Viewer data and all linked institutional sources remain subject to their own terms and attribution requirements.",
+    "Words Over Time presents derived rates, small rendered excerpts of source metadata, and links for research navigation; it does not republish source corpora."
+  ]
+}

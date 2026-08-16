@@ -1,0 +1,3026 @@
+{
+  "schemaVersion": "1.2.0",
+  "auditId": "artificial-mobile-raw-research-2026-08-13",
+  "inventoryRoot": "docs/research/artificial",
+  "excludesFromInventory": [
+    "docs/research/artificial/mobile-2026-08"
+  ],
+  "inputSetSha256": "aa81b3637135e643b2b13416896196900287fb0fa19b58939febcdc97f2b8467",
+  "entries": [
+    {
+      "path": "docs/research/artificial/.DS_Store",
+      "sha256": "32a1d1400b76ebb74f151f47f3cf73ceefe279e57c3fc98d2fac881a3c2b0fe7",
+      "bytes": 8196,
+      "lineCount": null,
+      "role": "system_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Operating-system metadata is not research data."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/notes/chart_01_audit_collection_log.md",
+      "sha256": "36662c959cc40151f213e9c6b2e98ba412c165844b0ed5981b95fe39fa199538",
+      "bytes": 2300,
+      "lineCount": 57,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/notes/chart_01_audit_source_notes.md",
+      "sha256": "b3115554d67eb3c8c078f492b45a094c8337d28757e3574d891ee17edda1a98d",
+      "bytes": 1077,
+      "lineCount": 20,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/notes/chart_01_chart_readiness_review.md",
+      "sha256": "d4a5d1a10022496f378a20ac107528b66fe5cde5676d3885025d616b89b31a1c",
+      "bytes": 2048,
+      "lineCount": 45,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/notes/chart_01_claims_to_avoid.md",
+      "sha256": "fabb99aa8daa58e20261d315ef6f26c9982ac0f781bb2a15b212478042b85169",
+      "bytes": 943,
+      "lineCount": 16,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/notes/chart_01_sense_boundary_review.md",
+      "sha256": "b39ec4789a2428087622a7441d3cb593be393f41535c90e0e916697a446cc235",
+      "bytes": 2672,
+      "lineCount": 35,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/processed/chart_01_anchor_phrase_review.csv",
+      "sha256": "da85e5c1b38c60fac044ec71eb9a789e8cfe9775c85e6259c920dd7bedd714b9",
+      "bytes": 2825,
+      "lineCount": 11,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/processed/chart_01_evidence_strength_scores.csv",
+      "sha256": "5896dda5c1f1a9e3eb83edae899b47b90cc0211a624aca2e2cdf7d554d1c3e90",
+      "bytes": 2393,
+      "lineCount": 14,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/processed/chart_01_manual_verification_queue.csv",
+      "sha256": "0e18c2643ef697b00087c6391231db17449b6b64cd10cc2a75ce6ffd00b857b1",
+      "bytes": 2538,
+      "lineCount": 12,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/processed/chart_01_sense_boundary_matrix.csv",
+      "sha256": "f7dd63d8e576fd34c9b26104fed6ecbc5efd747e66fcbe73c2f2fa6e1dba3f29",
+      "bytes": 3952,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/processed/chart_01_term_role_decisions.csv",
+      "sha256": "29c715a2add4efaa0f011ab806b60053de87a9533ae3cbc7c40d9f45d2c1a3bb",
+      "bytes": 3172,
+      "lineCount": 16,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/raw/chart_01_audit_dictionary_extracts.json",
+      "sha256": "8df18bb4d9518be8363b4d63cd85d6d11ac62e095245a43477e477eae7a2f56d",
+      "bytes": 11664,
+      "lineCount": 268,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/raw/chart_01_audit_ngram_check.csv",
+      "sha256": "3939fd3e2ad92d92aa6847fe6476284d3c3e6b8b9bd987b7c97cf2b21b1c4848",
+      "bytes": 333017,
+      "lineCount": 4401,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/raw/chart_01_audit_snippet_extracts.csv",
+      "sha256": "8e90dd532f93f760d4700c4e04658e8e3bb02e978040077039f58748db787576",
+      "bytes": 2569,
+      "lineCount": 8,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/audit_round_03/sources/source_urls.md",
+      "sha256": "8552dff84a1e9c850c9f0c92c869a39f234d9abe9f25669b0b9cc080c4e82ff0",
+      "bytes": 1578,
+      "lineCount": 21,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/notes/round_06_collection_log.md",
+      "sha256": "49b39ed2ed42137c3dcbd8981594699ba99557f8a29e82163122e57fb2241e5d",
+      "bytes": 711,
+      "lineCount": 20,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/notes/round_06_final_safe_claims.md",
+      "sha256": "7936a71ea3651d57695f6c3e8f0a7cf4c06303e93971160e30629d3624502a88",
+      "bytes": 947,
+      "lineCount": 30,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/notes/round_06_gap_check_synthesis.md",
+      "sha256": "d88ae4aa4d7883ef6692bda2bf8519bc352e072669ce2eba553b1dd84b857754",
+      "bytes": 2929,
+      "lineCount": 55,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/notes/round_06_source_notes.md",
+      "sha256": "042172d8e3b353b9976dc2d7528cb7d09ada6d32b6c0477d751733d7ef22cab1",
+      "bytes": 765,
+      "lineCount": 15,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/notes/round_06_stop_or_continue_recommendation.md",
+      "sha256": "a0c343ec032078b91a9716bcb1f644a5982aaa8ee7870616eed410bfcd64b9f5",
+      "bytes": 843,
+      "lineCount": 20,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/processed/round_06_final_claim_status.csv",
+      "sha256": "5493deac8b9a817d98ed4b9c3bfadaa605ee01091e87d013f0f059b3d46eb786",
+      "bytes": 2144,
+      "lineCount": 12,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/processed/round_06_johnson_status.csv",
+      "sha256": "bf8c896861231e4446f8f126b51b7c101c5aa36efb32d11fd7a25f7ebebc5acc",
+      "bytes": 955,
+      "lineCount": 5,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/processed/round_06_negative_sense_evidence.csv",
+      "sha256": "d2d397e5791ebfee5b34c3ce56e9198f7db1e5a2490b89e3825cccd9d9765c95",
+      "bytes": 2321,
+      "lineCount": 6,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/processed/round_06_not_natural_vs_fake_matrix.csv",
+      "sha256": "61019e49892849f70dc64ee8a0bbd0ede72e2bfb298f887cd9f21fc875cfea14",
+      "bytes": 955,
+      "lineCount": 4,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/processed/round_06_remaining_unresolved_items.csv",
+      "sha256": "4882ecb0a204f516dac2e27b59fa21b28d8eee21f0585b19d0c92d5e1cc4288f",
+      "bytes": 1031,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/processed/round_06_weak_anchor_final_status.csv",
+      "sha256": "ac7a7e9ebde528184e188051d2684dca021e303d4beb690cd0e91ac47ba79b9b",
+      "bytes": 1322,
+      "lineCount": 7,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/raw/round_06_anchor_gap_snippets.csv",
+      "sha256": "372a025d948113e03bdfd22ff29f29b6f70d244401fc937eb261c28e6aa39835",
+      "bytes": 2010,
+      "lineCount": 5,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/raw/round_06_dictionary_gap_extracts.json",
+      "sha256": "5fd9e51eeee7e14d67bb8b26857531af20fdf81afb560b6b4a95e1d52ca43183",
+      "bytes": 1795,
+      "lineCount": 41,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/raw/round_06_pre_1828_negative_snippets.csv",
+      "sha256": "d2d397e5791ebfee5b34c3ce56e9198f7db1e5a2490b89e3825cccd9d9765c95",
+      "bytes": 2321,
+      "lineCount": 6,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/raw/round_06_source_access_log.csv",
+      "sha256": "5166ff6232c0b91a60d7ee6d5d124c560fec83a254c24470c045b9ffa35448d8",
+      "bytes": 3009,
+      "lineCount": 11,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/final_gap_check_round_06/sources/round_06_source_urls.md",
+      "sha256": "5a8d140bec706c7ff78fed186d8665274e3117473f107a6c6733482592c075bc",
+      "bytes": 778,
+      "lineCount": 9,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/notes/chart_01_collection_log.md",
+      "sha256": "7412796fb642ee2b93e2bbb1d79ed24ec7068e65b39be831c6aa686cc33604e8",
+      "bytes": 3646,
+      "lineCount": 89,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/notes/chart_01_evidence_review.md",
+      "sha256": "2c4d91c81476d17d4b5d61ed05885ea4434b887c04c71c40d0a3adf791434993",
+      "bytes": 3232,
+      "lineCount": 43,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/notes/chart_01_open_questions.md",
+      "sha256": "1bd16d02b81846295bc05e4041fb9b4edcd1790caffec1992b15344871787ba6",
+      "bytes": 1043,
+      "lineCount": 13,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/notes/chart_01_source_notes.md",
+      "sha256": "5bed4159120f9f75fb808014b286800d8847789a23c57c5cd1316dd4baff3816",
+      "bytes": 1845,
+      "lineCount": 29,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/notes/round_05_collection_log.md",
+      "sha256": "080bba8208caa03a80d07785715e42cc004064e51beee7da24a5484cf1adae22",
+      "bytes": 1093,
+      "lineCount": 27,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/notes/round_05_pre_1828_evidence_synthesis.md",
+      "sha256": "cda6862c8c55ab8d2525059f8f29db2bb7f485c8f663746ea3daf59c7acc4193",
+      "bytes": 3665,
+      "lineCount": 51,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/notes/round_05_remaining_risks.md",
+      "sha256": "64314d4af3f01dd6a51620a7b5197ff1de0d65dddedf7789cd047ef9d9f2ee36",
+      "bytes": 947,
+      "lineCount": 15,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/notes/round_05_safe_pre_1828_claims.md",
+      "sha256": "32fe7628510c7c1dc91c1088ef52b47a8d86b5b3b579db6fa6aa151259c6281f",
+      "bytes": 1155,
+      "lineCount": 30,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/notes/round_05_source_notes.md",
+      "sha256": "a8357ecca8280ea499dc3449047b0ba8fa9edf3e915a5e8d656c872b02edc91d",
+      "bytes": 1007,
+      "lineCount": 21,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/processed/round_05_anchor_phrase_pre_1828_status.csv",
+      "sha256": "23422a64bea216f111db39b46b20789eb24c5b7641eef945188e1c3a7fad10fa",
+      "bytes": 2006,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/processed/round_05_pre_1828_claim_confidence.csv",
+      "sha256": "3f7848027593d1bf222dec577a97dffbe7b1be7ac06034eb8a0475417f2dd0a7",
+      "bytes": 2197,
+      "lineCount": 12,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/processed/round_05_pre_1828_evidence_table.csv",
+      "sha256": "005f09ed7f22a2538fb8eb7f0eca33b882fa46ab258e307121ff5eb6b57f09ba",
+      "bytes": 5857,
+      "lineCount": 14,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/processed/round_05_pre_1828_sense_timeline.csv",
+      "sha256": "3b4b01f90c9856824f74e516b7731507e808a694041a684eacf7c39f0ac6a1b6",
+      "bytes": 1801,
+      "lineCount": 9,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/processed/round_05_public_domain_source_candidates.csv",
+      "sha256": "61b3621720ae8b3ecc11ed9998401a4f82421b255fba1739fd82274433b43cdc",
+      "bytes": 1512,
+      "lineCount": 6,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/processed/round_05_unresolved_pre_1828_items.csv",
+      "sha256": "fdfaf36c14df75cfa5ca2997c3d840b54eee730cda62ca280ebe7517d0f3d903",
+      "bytes": 1075,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/processed/round_05_variant_spellings.csv",
+      "sha256": "c32fc681fba138b08143f9e05d5f34feb80b99824cd118dc1f43cd65709833e5",
+      "bytes": 1647,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/raw/round_05_pre_1828_dictionary_extracts.json",
+      "sha256": "bdf4935504ba9fcd33208a705b87da1de27409f1d72d5daeffd359f2e66514b3",
+      "bytes": 4449,
+      "lineCount": 100,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/raw/round_05_pre_1828_text_snippets.csv",
+      "sha256": "d75e6ef8defa0eb65033fbacc6c85b682921e6865e43da48b6179425b57795fa",
+      "bytes": 3104,
+      "lineCount": 7,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/raw/round_05_source_access_log.csv",
+      "sha256": "3aa408c3b103df48ba9c93ba13a111581890f0203e11742337cc23949bc7c1e4",
+      "bytes": 3569,
+      "lineCount": 14,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/raw/round_05_variant_search_log.csv",
+      "sha256": "62bac99629ea03213ff8d6c2c69d2c1557ed42cbeb626fc5a2a8c01ec9013b62",
+      "bytes": 1639,
+      "lineCount": 22,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/pre_1828_evidence_round_05/sources/round_05_source_urls.md",
+      "sha256": "db528d66d50205e6df439a04d0e41de6781f7de1e0869079de2ade9cf3e7996a",
+      "bytes": 1095,
+      "lineCount": 13,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/processed/chart_01_definition_timeline.json",
+      "sha256": "ceb7b9960fc1dcd786102fab59a817bcf7bc2ebec5bfb00a282db276833b80db",
+      "bytes": 6738,
+      "lineCount": 178,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/processed/chart_01_evidence_table.csv",
+      "sha256": "cf9888e2d6b08e718895d50a2b78e4b44938d521492f5d17ccc212bcda54c137",
+      "bytes": 15356,
+      "lineCount": 38,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/processed/chart_01_phrase_metadata.csv",
+      "sha256": "19ecaaeac7e8ca2ea0a15cfb24448a45c7286b28f548ed5f3f9102c71f7d7abe",
+      "bytes": 2902,
+      "lineCount": 17,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/processed/chart_01_term_family.csv",
+      "sha256": "fd747c9cfa9bb13b0c24706ae36bc8066d2a611458fb9b03d69051afeb8e9aa8",
+      "bytes": 4010,
+      "lineCount": 16,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/raw/chart_01_dictionary_sources.json",
+      "sha256": "66dc9903b3715fea9c95208a0cbf943b118c9c772ce717f37395415d00e5daad",
+      "bytes": 21723,
+      "lineCount": 575,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/raw/chart_01_ngram_extended_terms.csv",
+      "sha256": "710e8a875f36f75d4f256a353b472d5c65372d97c4bbef7a09439ddaf08ea882",
+      "bytes": 463536,
+      "lineCount": 4841,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/raw/chart_01_snippet_candidates.csv",
+      "sha256": "ff21abf3d73b53dd1db11b705d8e17fbcb65d205ddc9e75f3d9fd963470e17b5",
+      "bytes": 2628,
+      "lineCount": 7,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/notes/round_04_collection_log.md",
+      "sha256": "a90485bdb67c37801e8ab44a8e421588d88b84f62ee0fc6f023818520151c35a",
+      "bytes": 1625,
+      "lineCount": 41,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/notes/round_04_evidence_synthesis.md",
+      "sha256": "69031fcc52b56074dd46f5e6f86f404184e61ae8b7fbb619db1ac9baf33ea2bc",
+      "bytes": 3664,
+      "lineCount": 51,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/notes/round_04_remaining_risks.md",
+      "sha256": "92c365d406a2156080b204c762d3ad8a1c24481a037ecdba539c6e6c5ec03689",
+      "bytes": 885,
+      "lineCount": 13,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/notes/round_04_safe_claims.md",
+      "sha256": "8f62dccbbdd45447917b2a0a9603a912d3227c1095a494d82550891649175af4",
+      "bytes": 1292,
+      "lineCount": 32,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/notes/round_04_source_notes.md",
+      "sha256": "277c1fc52df4d34e535209a7cbd4090f92817c3d4a20cdb910bfae5bd1d80804",
+      "bytes": 1069,
+      "lineCount": 21,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/processed/round_04_anchor_phrase_status.csv",
+      "sha256": "21beef6c8fac10a2a2b78deabc954e82985e6afe1051a7c3a76cb263f394391a",
+      "bytes": 2273,
+      "lineCount": 12,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/processed/round_04_claim_confidence_table.csv",
+      "sha256": "8503ae95110588e63a2c05b72434e03fd5a83c12803d49fc25f4a89874bc1f88",
+      "bytes": 2316,
+      "lineCount": 13,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/processed/round_04_sense_confirmation_matrix.csv",
+      "sha256": "eb53b7ecf9b3f6f80d766a0ba9bc029b90b7eadca28c87da622c10b947bf5927",
+      "bytes": 2659,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/processed/round_04_source_coverage_matrix.csv",
+      "sha256": "bc59774999100abb397091f782854b62c12c6e54554a7fe21c6fb0d11caf8b74",
+      "bytes": 4620,
+      "lineCount": 18,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/processed/round_04_term_role_final_check.csv",
+      "sha256": "8711461a68c26d6355aad50fb66e45f4357d8ea4639183046a764955e912d769",
+      "bytes": 2686,
+      "lineCount": 16,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/processed/round_04_unresolved_items.csv",
+      "sha256": "7bdfc35c2171e47e21cb7b8a269a01de003d349b008b45e785465056a71b5f4d",
+      "bytes": 1591,
+      "lineCount": 9,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/raw/round_04_anchor_snippets.csv",
+      "sha256": "96c0f93e42ca42aca1f95741de756656266af8d6c7582d849bda1a3f32ae9fa0",
+      "bytes": 3470,
+      "lineCount": 12,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/raw/round_04_dictionary_sources.json",
+      "sha256": "d61f254eff21c22403880e7146984dfc609109974b265cb4c361e649d5823b43",
+      "bytes": 6139,
+      "lineCount": 134,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/raw/round_04_historical_dictionary_extracts.json",
+      "sha256": "e9e6f5e74fd61bd9f8182c13285de7984a3cec7dfd02c8114e3b52a0adfd748a",
+      "bytes": 3622,
+      "lineCount": 86,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/raw/round_04_source_access_log.csv",
+      "sha256": "816748fb920ee0102f13825e2d47e301c702a90c02ea79c0d9e41de7182a77c6",
+      "bytes": 3113,
+      "lineCount": 18,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/source_completion_round_04/sources/round_04_source_urls.md",
+      "sha256": "0a4441a95c57452c2e4807cb40112c321344dfe5cd13faf0a1c706ae8f89edd5",
+      "bytes": 1247,
+      "lineCount": 17,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/sources/README.md",
+      "sha256": "9a94e52020786436467a18e70b08cabd0a2fdeadcfa370c46e929aa4c13f429d",
+      "bytes": 139,
+      "lineCount": 3,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/structure_specification/chart_01_edge_inventory.json",
+      "sha256": "1743ce2fec60605b374e74d0db2232dd728ca801b776d69fe78c18b7aeff731d",
+      "bytes": 9491,
+      "lineCount": 274,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/structure_specification/chart_01_interaction_states.json",
+      "sha256": "6d7bf3b0fc1457e6df7c910c3a8dd546c39698318874d594afe18b6aec8a9ec8",
+      "bytes": 4378,
+      "lineCount": 143,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/structure_specification/chart_01_node_inventory.json",
+      "sha256": "f4258869882d7479ee0bc9abcc5cf08cf9468c95880a0f9307f205603d29f24a",
+      "bytes": 9972,
+      "lineCount": 312,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/structure_specification/chart_01_open_design_questions.md",
+      "sha256": "8843247a9bf1cb7c9555641a4bc8feb931a3f37aaaad9a331da022c1d5475573",
+      "bytes": 2452,
+      "lineCount": 49,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/structure_specification/chart_01_structure_brief.md",
+      "sha256": "04aec1236546a4f2d1e23ab8a94086b43c20b6b71cf554b83e044e2bbf571711",
+      "bytes": 6118,
+      "lineCount": 176,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_01_art_artifice/structure_specification/chart_01_visual_constraints.md",
+      "sha256": "16661da319ba6f152d2a2b829db07f862ad0a584e90cc86fe56010cd00b8b2ca",
+      "bytes": 1960,
+      "lineCount": 75,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_02_pressure_structure/notes/chart_02_open_questions.md",
+      "sha256": "55b9123394a60948f59c57d484aa2c9f11e04bd467c98c299629edcafc0e69b3",
+      "bytes": 915,
+      "lineCount": 14,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_02_pressure_structure/notes/chart_02_reference_translation_notes.md",
+      "sha256": "b1be9dabb80146ddde03adf21ad87bf710d229f58d5398c57e3fe30ef7e989c4",
+      "bytes": 3190,
+      "lineCount": 108,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_02_pressure_structure/notes/chart_02_scope.md",
+      "sha256": "0066f3da11a1a0bc46987d9744aafcb7ed06849a6e3b312750cfac650f934646",
+      "bytes": 1535,
+      "lineCount": 54,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_02_pressure_structure/processed/chart_02_claims_and_risks.csv",
+      "sha256": "2f01eb0f3d4b8d91639b112f637d9bb8519f86f2cfe1fb8de9d497f85f679735",
+      "bytes": 2024,
+      "lineCount": 7,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_02_pressure_structure/processed/chart_02_evidence_clusters.csv",
+      "sha256": "8436e65ffa9cb03e6a7603902857e7e20f734fcbfb2001c1cb130c5ebeefd99f",
+      "bytes": 2426,
+      "lineCount": 16,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_02_pressure_structure/processed/chart_02_phrase_priority.csv",
+      "sha256": "df37c8c6befba238a6c67d8ef1064cbc71944e334f515caa9932604488b9b1f2",
+      "bytes": 2066,
+      "lineCount": 15,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_02_pressure_structure/structure_specification/chart_02_edge_inventory.json",
+      "sha256": "46007d8af0710324ca074d2fd8a70804c9efd17e616aa4f7826d0314619c8328",
+      "bytes": 7412,
+      "lineCount": 194,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_02_pressure_structure/structure_specification/chart_02_hover_state_mapping.json",
+      "sha256": "d687e5450d41bf2d541fe625677717d1a8ff74f0c727f13b319ee89e2faa1c51",
+      "bytes": 7121,
+      "lineCount": 199,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_02_pressure_structure/structure_specification/chart_02_node_inventory.json",
+      "sha256": "4b9db11fd11447f3d830606f45e795cab77329c283869c00e91e3180056847e4",
+      "bytes": 7484,
+      "lineCount": 193,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_02_pressure_structure/structure_specification/chart_02_panel_mapping.md",
+      "sha256": "a7fb7ffb8a491b57eca795ea1d9aa95c7e0909ae1eaf65e03c1dcb136220f525",
+      "bytes": 2894,
+      "lineCount": 78,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_02_pressure_structure/structure_specification/chart_02_structure_brief.md",
+      "sha256": "27b133dc01d9ba62cee8248f37138dd9aca0514019e31547c90a7b9df718cbf9",
+      "bytes": 6101,
+      "lineCount": 266,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_02_pressure_structure/structure_specification/chart_02_visual_constraints.md",
+      "sha256": "ee6687ee96ab219ed43f02516fc5681d121c9ed72592e74bbdfa618870e41d5f",
+      "bytes": 2775,
+      "lineCount": 104,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/notes/chart_03_collection_log.md",
+      "sha256": "be56264282e3dae2aa4b7e4a99f690c9bf154b0d8ed2ddf5f242d7ae9ec24156",
+      "bytes": 13729,
+      "lineCount": 235,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/notes/chart_03_initial_data_reading.md",
+      "sha256": "634f10b086a056112bf5e7a9352532489355a9c4b2243e35c28d2dd362800a2f",
+      "bytes": 9462,
+      "lineCount": 128,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/notes/chart_03_source_notes.md",
+      "sha256": "67e539e385b19792bc08f707c57b00444590c8fcbe5150cd2245954dc292f864",
+      "bytes": 942,
+      "lineCount": 20,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/notes/chart_06_compound_collection_log.md",
+      "sha256": "f1f0faae4e502fee4c35b554f6045f27d104f9b5319b7fdacf52d1524ebd11da",
+      "bytes": 5357,
+      "lineCount": 118,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/notes/chart_06_supplement_collection_log.md",
+      "sha256": "97a69e443c7aef4fcaad27783904be4f09244f254b2b3de8cd3f231ae292d78e",
+      "bytes": 4757,
+      "lineCount": 104,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/processed/chart_03_ngram_long.csv",
+      "sha256": "f20ea3152b74e6b89af4dcf15978d62b851c469275b7c4f5e27fed43d476bc5c",
+      "bytes": 3485624,
+      "lineCount": 19801,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/processed/chart_03_term_inventory.csv",
+      "sha256": "fbadc7bbfbcbc09688bb2ca99608f603424688d801283475d718f51d1af87d9c",
+      "bytes": 8816,
+      "lineCount": 91,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/processed/chart_03_term_metadata.csv",
+      "sha256": "ef398c7f2e851c2480fd1387f10dc34620b50375a84852be2c414e1231d524f9",
+      "bytes": 31075,
+      "lineCount": 91,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/processed/chart_06_compound_ngram_long.csv",
+      "sha256": "e16ab37ce840d32b4d2c057688f6b94cf2b78b500e6035d20d634771d070801a",
+      "bytes": 1082790,
+      "lineCount": 6631,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/processed/chart_06_compound_term_inventory.csv",
+      "sha256": "6386ada72ccaa637b18a2cc87a8c019490c9b570ae0128f2b0f2e1e9257b78a9",
+      "bytes": 2640,
+      "lineCount": 31,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/processed/chart_06_compound_term_metadata.csv",
+      "sha256": "9c795a093644d27b7092702dce2037e82522a47098ebb2a73f9423b6ed9b8dab",
+      "bytes": 11288,
+      "lineCount": 31,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/processed/chart_06_supplement_ngram_long.csv",
+      "sha256": "9303525edd53998881f854dd3f441a3a08b182a38ec08f9672c19442fede36c5",
+      "bytes": 933301,
+      "lineCount": 5526,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/processed/chart_06_supplement_term_inventory.csv",
+      "sha256": "cd39110b0a412c9b63c7b5348c4f49bc21935e729aae08a12ddb1074410397db",
+      "bytes": 2443,
+      "lineCount": 26,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/processed/chart_06_supplement_term_metadata.csv",
+      "sha256": "1e40fcb9cbdbef465c96975e8cc834690bfc076717a07c8673e5a9e20ea0a275",
+      "bytes": 9777,
+      "lineCount": 26,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_a_narrative_spine.csv",
+      "sha256": "92edbe0b435c085c880ed6c93f635eafe1dae092e4fdbbfb5e38ab0b9facd438",
+      "bytes": 223471,
+      "lineCount": 1321,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_a_perception_lighting.csv",
+      "sha256": "9ee12ab9f92c45a8938c1eb85c518880e01eca91f0594a862b56648bf9e612e2",
+      "bytes": 196003,
+      "lineCount": 1101,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_authenticity_counterterm.csv",
+      "sha256": "e4047b4c168f653735620374e1c6c30742036e6ec872d08cf9c206834b3bacd2",
+      "bytes": 271066,
+      "lineCount": 1541,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_b_sound_reproduction.csv",
+      "sha256": "0cdd5fae470991c0d9b09c149d7a124a10a2af6dfbda1ef6267caf41a1699ff9",
+      "bytes": 202355,
+      "lineCount": 1321,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_b_supporting_evidence.csv",
+      "sha256": "a1d48d09a285e36aca8fb12830301bbc2327c8de41f5a9b34f74b45d9e477837",
+      "bytes": 173165,
+      "lineCount": 1101,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_c_optional_density.csv",
+      "sha256": "f1aa8908581bc4c5101cd6bc15804b3f316e013256c959c4959e6f4cf35e7502",
+      "bytes": 226237,
+      "lineCount": 1541,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_c_scene_manufacturing.csv",
+      "sha256": "051b40bb20f47d3013d8a5e04ef66353ca8133e3970296fa9f2f87b64a97a5c1",
+      "bytes": 211190,
+      "lineCount": 1321,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_d_industrial_material.csv",
+      "sha256": "7966b1a3e65c2bc48df1a4a2687854dda848df216d9e6d204e6ea74e46255edd",
+      "bytes": 202897,
+      "lineCount": 1321,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_e_authenticity_specific.csv",
+      "sha256": "6f2aba974b61d4d765a3e51d85460ccab103ce13bac2f4d6675ac95bc04a6f71",
+      "bytes": 222806,
+      "lineCount": 1321,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_f_media_infrastructure.csv",
+      "sha256": "c312614d2307f526b8c03451184eb62789aabc01bac1f6e5a4d9c1ffc170ad13",
+      "bytes": 131167,
+      "lineCount": 881,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_g_pre_cinema_apparatus.csv",
+      "sha256": "bcf73468c77508dd63c130b945e52a8433145c6b2806743335bfdb851a4d3397",
+      "bytes": 218588,
+      "lineCount": 1321,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_h_color_television_media.csv",
+      "sha256": "de58ae520cae563bb6e68450dad61d5fe5c8dd02cec2447fe31e72187bd86420",
+      "bytes": 286642,
+      "lineCount": 1761,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_i_digital_entry.csv",
+      "sha256": "838ad4aebd5f3a27013ecabaea152462caf6f9076edecbdae5f1362b80a750e7",
+      "bytes": 157075,
+      "lineCount": 1101,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_j_authenticity_context.csv",
+      "sha256": "1512258e432765d971dbb8a1f2f2a27da72149ddb35097bc4e77b9dc135a617a",
+      "bytes": 103135,
+      "lineCount": 661,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_03_ngram_raw_media_technology_anchor.csv",
+      "sha256": "95e72fe5228da59783f0b72c0f3183ed8bb5acd27038e5ec321adba224a14d50",
+      "bytes": 319652,
+      "lineCount": 2201,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_biological.csv",
+      "sha256": "28ef49b6e58e1360236c87da69d22f091aae4379c8fb646d797cecc928d79620",
+      "bytes": 196097,
+      "lineCount": 1327,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive_artificial_supplement.csv",
+      "sha256": "9d82df636a37c749933a826c012a5bab9da6cdb09121cbc6e051c82b69ac6c95",
+      "bytes": 220110,
+      "lineCount": 1327,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive_infrastructure.csv",
+      "sha256": "b2226d8c780ad1e2a66069ff5c4aa8068257f9554727c85d97b3440aac95589d",
+      "bytes": 234491,
+      "lineCount": 1548,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_cognitive.csv",
+      "sha256": "12dd182f97564e5dca3fde8d222c7a44a955c09308876c57375542ef5442f174",
+      "bytes": 159984,
+      "lineCount": 1106,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_material.csv",
+      "sha256": "aab642ba4f53b3554cef2308133bfd1053234c3e6bae2bfa3ec85344305db17f",
+      "bytes": 189899,
+      "lineCount": 1327,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_sense.csv",
+      "sha256": "b6ceff2cd2fd2c7fef355bd4190f3824216fc1f6f684145bbf7764114cc30e9a",
+      "bytes": 234340,
+      "lineCount": 1548,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social_supplement.csv",
+      "sha256": "8c14c707a9d0d7dac56514977de62239ec0627924622b4bf7b55693d8f8cf26e",
+      "bytes": 393377,
+      "lineCount": 2653,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/raw/chart_06_ngram_raw_social.csv",
+      "sha256": "30639f314ec13a5994e2223e1164761e62132786df8326f307b537d32091f226",
+      "bytes": 189110,
+      "lineCount": 1327,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/structure_specification/chart_03_structure_brief.md",
+      "sha256": "8a91944fd9f67c1fcd64b3e96666dc349f03a01aa6af0d36d6c4286b04a25f40",
+      "bytes": 11150,
+      "lineCount": 300,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/structure_specification/chart_03_term_assignment.csv",
+      "sha256": "b5407c24414a1a1d757c36c0df039c71f464d81203f1ab8bb961489df00236c1",
+      "bytes": 6650,
+      "lineCount": 92,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_03_mechanical_reproduction/structure_specification/chart_03_visual_constraints.md",
+      "sha256": "49b5a9f13cd0d5400d5986f9270cdb042a4f9018667baea37b2277a2e54c3f5d",
+      "bytes": 5846,
+      "lineCount": 225,
+      "role": "legacy_design_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Historical visual planning is not research authority for the independent mobile edition."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/notes/round_04_1850_1900_findings.md",
+      "sha256": "1dd019b9d31b26f902e41f5498da87d8cb28cc084faa527f338c52c998250df2",
+      "bytes": 729,
+      "lineCount": 17,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/notes/round_04_chart4b_bridge_notes.md",
+      "sha256": "4ff664a9d8a4f708e2c23bd11f4f1da6907274651946b09ee973691933a87cbf",
+      "bytes": 881,
+      "lineCount": 27,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/notes/round_04_collection_log.md",
+      "sha256": "97a1ed533281db8928d901e68f91215d04dffca8972f73de170ebeb2f8b5c626",
+      "bytes": 4076,
+      "lineCount": 67,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/notes/round_04_consumer_transition_findings.md",
+      "sha256": "b861c3c4e95d972d29d75a983d0d35e3252622ee515afaa5428726ef7a26e283",
+      "bytes": 770,
+      "lineCount": 17,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/notes/round_04_final_assessment.md",
+      "sha256": "14031401b23a02da1581824d00ea971a72d28908a3b807729a10a95d50bc7a1d",
+      "bytes": 1381,
+      "lineCount": 27,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/notes/round_04_lexical_findings.md",
+      "sha256": "bc90692e0c360ab226ff82175e43cefd9b7abecf2bfd6c719365295628f26dab",
+      "bytes": 705,
+      "lineCount": 25,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/notes/round_04_modern_hardening_findings.md",
+      "sha256": "22faf505edeb9b9db0ddb6cd4b4a96f9c0f1b31b9772d0fab949b0f2c7d8647d",
+      "bytes": 770,
+      "lineCount": 22,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/notes/round_04_source_notes.md",
+      "sha256": "bc2a0c337d53615e29a506303b21ac310b1facb1fc7b0059b294e959443e5de8",
+      "bytes": 1002,
+      "lineCount": 23,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/processed/round_04_chart4a_readiness_update.csv",
+      "sha256": "b56f2133e5c1bc4046edf5016f6bd7e215180a0bbf7c2a28957863cbfefe7c1b",
+      "bytes": 2304,
+      "lineCount": 11,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/processed/round_04_chart4b_bridge_leads.csv",
+      "sha256": "ba52f88a595ca559776b34154f0bc9c971ecfd5adb708d666cead582e5dc7164",
+      "bytes": 1802,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/processed/round_04_evidence_hardening_table.csv",
+      "sha256": "41d45f3b6f7396d2075654df224533504bac6b1adc8661688118a8fbf67a0562",
+      "bytes": 6631,
+      "lineCount": 14,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/processed/round_04_gap_fill_matrix.csv",
+      "sha256": "9c7530cdd572eacbcb4a4e7148165726d925c8fbb893ebd41241ee5b7dca5a4a",
+      "bytes": 1755,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/processed/round_04_lexical_authority_status.csv",
+      "sha256": "33c833a69a3fba1077453e89eb534baeb5afb3fe1cef4070401d5428cf22d98a",
+      "bytes": 1387,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/processed/round_04_period_anchor_evidence.csv",
+      "sha256": "6d1e4dc20849581971dbaa2bfc0d3bf5194a1586ff2ef33937bfa6cf39ce7d9a",
+      "bytes": 1891,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/processed/round_04_remaining_data_gaps.csv",
+      "sha256": "372bfd93bda8c770c202efd7477bbf6796f11e2a95d5ef123df60932f93560b4",
+      "bytes": 1395,
+      "lineCount": 7,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/processed/round_04_trajectory_strengthening_summary.csv",
+      "sha256": "70076047590e8030158bbe49d003dcc391f7331b784dfa2a1fe650202f68497f",
+      "bytes": 1594,
+      "lineCount": 7,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/raw/round_04_1850_1900_snippets.csv",
+      "sha256": "8b613c796143f34bf2acd575bacca12f94926065e7c085571676df6a94562064",
+      "bytes": 1373,
+      "lineCount": 4,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/raw/round_04_1900_1950_snippets.csv",
+      "sha256": "b4443e23a4d1dd1c19c2e3f0aa61930ed6d3b501335929fe975e3e8f1e6ac187",
+      "bytes": 997,
+      "lineCount": 3,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/raw/round_04_1950_2019_transition_snippets.csv",
+      "sha256": "0f43c41797b57259cccce9db40126a3a2f40fd53229c10839855705e68a66ef2",
+      "bytes": 2342,
+      "lineCount": 6,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/raw/round_04_2019_2026_modern_snippets.csv",
+      "sha256": "45cf58d71a0a7f8ccbb48292fa60a06c52749a548069842fefab9227b8ed8e04",
+      "bytes": 2430,
+      "lineCount": 6,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/raw/round_04_chart4b_lead_snippets.csv",
+      "sha256": "d87e57eb69096e189ec5b135473501a73d0203153e1f972b3398074587a862e7",
+      "bytes": 2869,
+      "lineCount": 8,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/raw/round_04_lexical_authority_extracts.csv",
+      "sha256": "98b3fbb22a9ed42532658d5c6f32b7a18050f6892b3aadde839e87db29f9dcf4",
+      "bytes": 2433,
+      "lineCount": 10,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/raw/round_04_source_access_log.csv",
+      "sha256": "257aaedc2737fbf8cd3564b3e3651b3c5f91e662611723e7548bf00a7c2cdc89",
+      "bytes": 10433,
+      "lineCount": 33,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/scripts/README.md",
+      "sha256": "89a103dcd862b74033d56b8c395f900eed7838e2a74790f7bbb473895f81abd3",
+      "bytes": 237,
+      "lineCount": 5,
+      "role": "legacy_transform_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy transform code is retained for reproducibility history but is excluded from the mobile dependency closure."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_evidence_hardening_round_04/sources/round_04_source_urls.md",
+      "sha256": "d216ae0645b043f46ea43fd076b458b991811aadcbcf38a8a9e9e9a6a3e39436",
+      "bytes": 3886,
+      "lineCount": 44,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/notes/round_03_chart4b_connection_notes.md",
+      "sha256": "8c92ec132a6449b943de0c8331b2ed08b621c78af2bc156599339fcf285fe904",
+      "bytes": 1301,
+      "lineCount": 25,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/notes/round_03_collection_log.md",
+      "sha256": "b85f84ccdd76f81a1020e05045baa817cb4a0c3b01331c99e62f7a98d15ead57",
+      "bytes": 3378,
+      "lineCount": 70,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/notes/round_03_pejoration_findings.md",
+      "sha256": "80f63f6da6033895c007b28cd4e9064b82b5532c9b985cab4e7534821be328c1",
+      "bytes": 2331,
+      "lineCount": 49,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/notes/round_03_remaining_risks.md",
+      "sha256": "223c3f2c53f8f8ddd29b7406ed7138931560d0ac4ef176ae474cd6d1b3c5622e",
+      "bytes": 598,
+      "lineCount": 13,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/notes/round_03_source_notes.md",
+      "sha256": "dbee63d74ee64c33fbae1c122c51e68561da88c66b015d5773cbf7cf351fc7af",
+      "bytes": 1331,
+      "lineCount": 30,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/notes/round_03_trajectory_interpretation.md",
+      "sha256": "9a29a3535ecf07b0c6afda0d3f90b3a60eb004382d87e03a8e2645bc645ef4fd",
+      "bytes": 1599,
+      "lineCount": 35,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/processed/round_03_burst_candidates.csv",
+      "sha256": "86f13bc93ae430c70e8b573c478bb2414e112925d00cf8154151036087e09909",
+      "bytes": 1193,
+      "lineCount": 5,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/processed/round_03_chart4a_readiness_matrix.csv",
+      "sha256": "1ab51d4e6ef2ae731a0f9f76b88c0b3162826a01e43437c09de7e9e7e4f35e80",
+      "bytes": 1824,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/processed/round_03_decade_signal_summary.csv",
+      "sha256": "157bf042cf78678fd997e9a9006868f49b03469981414a7981fdde7446f3165d",
+      "bytes": 87242,
+      "lineCount": 485,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/processed/round_03_domain_timeline.csv",
+      "sha256": "b7f022e652b6aa1e3652acec1ee4198cd1850ced8ec5af9f9d53ac3db810be27",
+      "bytes": 1914,
+      "lineCount": 13,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/processed/round_03_domain_wave_summary.csv",
+      "sha256": "4d31578b7d13810888aebb2c5d4a4656d976e83796ac310519cc5c81db1c1208",
+      "bytes": 1496,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/processed/round_03_manual_review_queue.csv",
+      "sha256": "5d0a007d24f6314eba0816874ad337684dc824e4dd22ae49bb9a313bcc2b5756",
+      "bytes": 1694,
+      "lineCount": 7,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/processed/round_03_negative_charge_scores.csv",
+      "sha256": "d6038780f149f7fbec1657a2e3bb0d10606bcede70c04bcdc98e0a79e83e47c5",
+      "bytes": 1287,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/processed/round_03_pejoration_evidence_table.csv",
+      "sha256": "f76d6c7512ae1c5213cf1fca15a4e68733688d3450d167459c6f71f24d349c13",
+      "bytes": 7419,
+      "lineCount": 19,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/processed/round_03_spiral_trajectory_candidates.csv",
+      "sha256": "3ea1ed676a0d7dcba900125c5dfcb27155bc61990ddc5733afc675bdac529639",
+      "bytes": 1982,
+      "lineCount": 7,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/raw/round_03_consumer_transition_snippets.csv",
+      "sha256": "d888821e13698adf1112b1c5d0eb0b5975c6efb463676b1c58a9efd6a8982302",
+      "bytes": 1819,
+      "lineCount": 5,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/raw/round_03_historical_advertising_snippets.csv",
+      "sha256": "64523ec1588962be064b3a07ec017466e6c845de435d699251cff9085a3267c5",
+      "bytes": 926,
+      "lineCount": 3,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/raw/round_03_modern_2019_2026_snippets.csv",
+      "sha256": "7912e9f6c294174b3f06acc52134c109aa7dd681a56fcbfea6b97df0e6b1ff41",
+      "bytes": 3655,
+      "lineCount": 9,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/raw/round_03_ngram_decade_extract.csv",
+      "sha256": "f113749999e23716e05fd5a35c972ddecf2eea03e3e6a89c411b887f1a37f7af",
+      "bytes": 134692,
+      "lineCount": 485,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/raw/round_03_pre_1800_negative_snippets.csv",
+      "sha256": "a0f140cd12209b065e2e3a583e17d128efb2d742881d501d4abce2565b08bf67",
+      "bytes": 2154,
+      "lineCount": 7,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/raw/round_03_source_access_log.csv",
+      "sha256": "9180fe094f4191e1b6aa2472f6ae5759b4394dacae0a82e2ca37b67a80dd30d9",
+      "bytes": 7174,
+      "lineCount": 24,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/scripts/README.md",
+      "sha256": "a33d8b4a3b4bf5d534a3380432e3837f0f7830264371095973772c537de2ad17",
+      "bytes": 197,
+      "lineCount": 5,
+      "role": "legacy_transform_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy transform code is retained for reproducibility history but is excluded from the mobile dependency closure."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_pejoration_trajectory_round_03/sources/round_03_source_urls.md",
+      "sha256": "f9f9509c9d99cc12d836751b505e3fed5cae56f9a65025380d3721dc5e0ca2f9",
+      "bytes": 2976,
+      "lineCount": 35,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_visual_mapping_round_05/notes/round_05_visual_mapping_note.md",
+      "sha256": "fd658f2ae82ec3f3994b173dfb7e38d5809e52e341f09f1d54cee75a0854a6fc",
+      "bytes": 1136,
+      "lineCount": 19,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_visual_mapping_round_05/processed/round_05_chart04a_collection_backlog.csv",
+      "sha256": "a9c599c06803c34c9f9e0b7a32d18846ec7fe2e8d697885f69b3fc8b6e71a2dc",
+      "bytes": 3696,
+      "lineCount": 19,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_visual_mapping_round_05/processed/round_05_source_starter_list.csv",
+      "sha256": "fae8381d516fda5dbe2f736c20415fa380aac803e7a8643baa2d82c412ad43d3",
+      "bytes": 3410,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04a_visual_mapping_round_05/processed/round_05_visual_data_mapping.csv",
+      "sha256": "e955542dd1225903529a62020f46f2279593161acee049efcc558ad7256aaf13",
+      "bytes": 1794,
+      "lineCount": 9,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_broader_web_authority_round_04/notes/round_04_authority_pass_findings.md",
+      "sha256": "420ef6c2318207ce380bda998cfc7264d4b943f141980f798628c04d4ca7eb92",
+      "bytes": 2102,
+      "lineCount": 48,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_broader_web_authority_round_04/notes/round_04_remaining_risks.md",
+      "sha256": "f846e2637fce039ce1f172cc7a3334fea32f1cece7c197959ced6a72dd71cdbe",
+      "bytes": 647,
+      "lineCount": 13,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_broader_web_authority_round_04/notes/round_04_source_filtering_notes.md",
+      "sha256": "f33fcadbd4eb88ca7308713ce158873ab2c529e4e1fed30cec67bffb19f5f5a8",
+      "bytes": 1276,
+      "lineCount": 43,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_broader_web_authority_round_04/processed/round_04_authority_weighted_evidence.csv",
+      "sha256": "291cdefa2dc2899575fec8a33328ea57a57d33e6e8f240971b881eae363f8e55",
+      "bytes": 1523,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_broader_web_authority_round_04/processed/round_04_gap_support_update.csv",
+      "sha256": "975febd793fcf3c90d00d64fb5dd676087c094bcedacb50c846421e01a87243d",
+      "bytes": 1330,
+      "lineCount": 7,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_broader_web_authority_round_04/processed/round_04_visual_readiness_delta.csv",
+      "sha256": "fe7eca62173ceb57cc4951bcfc6d59a0c10448e54458d16648d214101631703f",
+      "bytes": 1151,
+      "lineCount": 7,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_broader_web_authority_round_04/raw/round_04_authority_source_extracts.csv",
+      "sha256": "f4b2d441a862011d3b6c07a12734010a3a726f191d91d9f4bcedbf1af0136b5f",
+      "bytes": 4464,
+      "lineCount": 12,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_broader_web_authority_round_04/raw/round_04_filtered_search_log.csv",
+      "sha256": "e1fcae72ada8b58ff1299183ecab42e69ba44e4aa6c779c4e15a78d930c97e11",
+      "bytes": 1883,
+      "lineCount": 7,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_broader_web_authority_round_04/raw/round_04_source_access_log.csv",
+      "sha256": "0b6cb495511e42b7b4514786254d3f7528514de9f4032b2c0bc212da3f70efc7",
+      "bytes": 2088,
+      "lineCount": 12,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/notes/round_01_chart4a_connection_notes.md",
+      "sha256": "84a4447fda5c6a253e148f5b785579f1f7cd0f5bc3429f4c737eda1487063078",
+      "bytes": 1252,
+      "lineCount": 34,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/notes/round_01_collection_log.md",
+      "sha256": "47905b0123ef281a18dc83d754c598072ff86dafb11288f3f9659b3803d1bc3e",
+      "bytes": 1456,
+      "lineCount": 34,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/notes/round_01_context_findings.md",
+      "sha256": "c01e7b4edc6cef245f75e95db31459858d3d802d8780285076378819b7fa01a6",
+      "bytes": 2066,
+      "lineCount": 43,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/notes/round_01_dictionary_findings.md",
+      "sha256": "4a7f2a3681d71045fdd4d6b2f2b60151365c9cc3967456c91f98d2c49c96cc0f",
+      "bytes": 2986,
+      "lineCount": 67,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/notes/round_01_remaining_risks.md",
+      "sha256": "cad4b7cf55100d772a94bcd6616fa82c4efdb4db7eb31ee01d07bf4a55ac11f1",
+      "bytes": 1149,
+      "lineCount": 24,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/notes/round_01_semantic_distance_findings.md",
+      "sha256": "fc98fce4a33b2c5733858d9f72d0dd5894f58557dab3a1bb64b737323a5aba31",
+      "bytes": 2695,
+      "lineCount": 91,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/notes/round_01_source_notes.md",
+      "sha256": "b54a8b247acfb01fb2348cd93fa4664804fc48bf20d3a593d1963ed2fe6234d2",
+      "bytes": 1510,
+      "lineCount": 33,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_artificial_relation_matrix.csv",
+      "sha256": "06a14bd4841fc0a8beb96ebbf370594f045b9a72c6b673db4a9f433e734d61e4",
+      "bytes": 3443,
+      "lineCount": 16,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_chart4b_readiness_matrix.csv",
+      "sha256": "b9823540bf97deba0909a113b4b0d25f85e8a78631e75ae443b2457729d68de9",
+      "bytes": 1995,
+      "lineCount": 9,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_collocation_status.csv",
+      "sha256": "a06e44335131249f7d6b71ccccfde58cb1049dc488b64e67a2e98903962b0d83",
+      "bytes": 3658,
+      "lineCount": 32,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_context_evidence_table.csv",
+      "sha256": "ab875bc72d91bbdc4f25dbcc7e7c22cebf22853a9835fb62634c25a9f8be1a65",
+      "bytes": 4741,
+      "lineCount": 15,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_definition_boundary_table.csv",
+      "sha256": "535e49f732e557ca89934edf406b1bf5a9026646bd15b7d5e8502e7407eb050a",
+      "bytes": 4516,
+      "lineCount": 17,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_manual_review_queue.csv",
+      "sha256": "81bf15f0f3c6bd732fd37c2d4ff65fd381720072e47bd5ad8467b085b7e077d3",
+      "bytes": 1787,
+      "lineCount": 9,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_semantic_basin_assignment.csv",
+      "sha256": "c4a4c2f3388cbca679a26419843fa4bb43d415de7b97ae2bd40ea2c0dcd9a68c",
+      "bytes": 3604,
+      "lineCount": 17,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_semantic_distance_rationale.csv",
+      "sha256": "00abc6191efdc832fc25e494b63fd161b8158b0d221da40782680095b2d6a04b",
+      "bytes": 3176,
+      "lineCount": 14,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/processed/round_01_visual_position_candidates.csv",
+      "sha256": "32bfa0a7f1ce850dff2f6535ce06ffb1578b7d088375d52f392c06264aa7459b",
+      "bytes": 2322,
+      "lineCount": 15,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/raw/round_01_collocation_search_log.csv",
+      "sha256": "6d4e416de061e525bcf1755dc8001c774fc4b83229a213fecfd494f741a132d8",
+      "bytes": 5711,
+      "lineCount": 32,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/raw/round_01_context_snippets.csv",
+      "sha256": "bef6e3116e77ff5ff3214a783dfaa22ab2dd395816ad0ab69e3f2e9fd21b3030",
+      "bytes": 4283,
+      "lineCount": 15,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/raw/round_01_dictionary_extracts.csv",
+      "sha256": "bd6a28a7e16789c883284ca9e16fdf0ddff438558cb495db4ae8bed9075aaf47",
+      "bytes": 5651,
+      "lineCount": 19,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/raw/round_01_ngram_comparator_extract.csv",
+      "sha256": "89ca2346b257ceed06f909c00017f9fdd8f9917631b7b5db6bfb3985bfe9fdfa",
+      "bytes": 2895,
+      "lineCount": 13,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/raw/round_01_source_access_log.csv",
+      "sha256": "1bb5680e8eee507279e252dbe009c4639e678aa4f54df38b5c5391c517393645",
+      "bytes": 5415,
+      "lineCount": 30,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_distance_round_01/raw/round_01_thesaurus_extracts.csv",
+      "sha256": "a6f733304e997e3e2a93fa4d37ccf273f0ea0dc19c71d0250e2b688a53f26db0",
+      "bytes": 2070,
+      "lineCount": 8,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/notes/round_02_collection_log.md",
+      "sha256": "c4da52635501d2e4db6cb4f5a0ef7b27f05b129d8033817f0f9c25d2b330cfc2",
+      "bytes": 1381,
+      "lineCount": 35,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/notes/round_02_direct_contrast_findings.md",
+      "sha256": "318978959bd2425b4650a1391ddd03385ede93df7e49dae34f541e9106c68447",
+      "bytes": 2570,
+      "lineCount": 89,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/notes/round_02_human_process_exit_notes.md",
+      "sha256": "5f42fbbb7be4607594c5d0bf4e47ff9624c7c16d8592b23fa3196c94657ca97d",
+      "bytes": 1220,
+      "lineCount": 42,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/notes/round_02_realistic_bridge_findings.md",
+      "sha256": "0ca7166381b27766da07a276a1aece19add649d1458c368b5e4f73c94fe20d51",
+      "bytes": 1522,
+      "lineCount": 37,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/notes/round_02_remaining_risks.md",
+      "sha256": "9ebd07f1a7d556dc02c0b80faadf6157a14010c48d8dab4463a6a8a6ed9b4ad1",
+      "bytes": 950,
+      "lineCount": 23,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/notes/round_02_semantic_mobility_findings.md",
+      "sha256": "ded7bbc0ec80b8d82e792379cf7633ff663777bf397655ed05bb3bcfe3a17881",
+      "bytes": 1881,
+      "lineCount": 60,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/notes/round_02_source_notes.md",
+      "sha256": "1a242e1a6667db441f630d378c5c0804b34006ef8cf8af3fafc3acb8888f730c",
+      "bytes": 1415,
+      "lineCount": 37,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/processed/round_02_artificial_relation_update.csv",
+      "sha256": "2d4c42d3f5d003c9cec818551fa9a73210ac9098282fe29f64aeca0aadf91bf9",
+      "bytes": 2943,
+      "lineCount": 22,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/processed/round_02_attractor_model_readiness.csv",
+      "sha256": "081458c4c03a501e706a9da29cc04681fee77e3bd08374f95db172780fd36297",
+      "bytes": 1726,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/processed/round_02_basin_update_matrix.csv",
+      "sha256": "a9a430dff8b9f8ef21eda00dfdaf1c2bd02b854d7e1ebecf1415b370de4ef6de",
+      "bytes": 2788,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/processed/round_02_direct_contrast_status.csv",
+      "sha256": "8f537d13fead3f2046359c8277245d5902541112b77f879b91161f74abfb7514",
+      "bytes": 1924,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/processed/round_02_human_process_exit_status.csv",
+      "sha256": "50f79379e882d8e8fc8ed4023e6d08d30a5136a10c644683ce311bf5654a385d",
+      "bytes": 1625,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/processed/round_02_manual_review_queue.csv",
+      "sha256": "d07ef65999aa22c8cdd39d20cc75e735e5cd0ef6890a4abbe3dc7e20da73bc8c",
+      "bytes": 1493,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/processed/round_02_realistic_bridge_status.csv",
+      "sha256": "4df82a4c0900d3ef52f9c38b79d1c9c3240ca8603b264492ece8738c3013c811",
+      "bytes": 1968,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/processed/round_02_visual_position_update.csv",
+      "sha256": "9d6586371bcc12decf0f7bf4859bd689fef8122345cbc53aeceb4e9987eb8669",
+      "bytes": 2154,
+      "lineCount": 12,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/raw/round_02_dictionary_thesaurus_updates.csv",
+      "sha256": "949eea15bca1f77dbfa77cb70bbc94c85adb4597259f16e9809dbbb295d6e7cd",
+      "bytes": 3476,
+      "lineCount": 11,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/raw/round_02_direct_contrast_snippets.csv",
+      "sha256": "9aec1769e8a3b013b95c9caf63dd23151e8c5755c1ec049ef8ca7af7e34e2143",
+      "bytes": 4548,
+      "lineCount": 15,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/raw/round_02_human_process_exit_leads.csv",
+      "sha256": "930c5f43c9e5a467fcca76ceb5c41abe56f96817bd6078ebfc2367038301561a",
+      "bytes": 2341,
+      "lineCount": 10,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/raw/round_02_realistic_artificial_collocations.csv",
+      "sha256": "8936a2ed680ea04ef54f13cfd3bee83a1387003f2a33ccef43f8230d18f8ed07",
+      "bytes": 2518,
+      "lineCount": 10,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/raw/round_02_source_access_log.csv",
+      "sha256": "d5a862a06c162bef727024954c3b33bfdf3a86020e6f483c7bf8a0b74b36e267",
+      "bytes": 4736,
+      "lineCount": 24,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_02/raw/round_02_targeted_ngram_extract.csv",
+      "sha256": "86bac655a97de4cdeae246c050a79c64bf3bc64643f9196b38f87abbb24f9445",
+      "bytes": 2411,
+      "lineCount": 11,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_03/notes/round_03_collection_log.md",
+      "sha256": "d9c17fc1ff492b43ddc8a0b7395071d692ee53b9b981190fc1f37cbe1b56b150",
+      "bytes": 911,
+      "lineCount": 28,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_03/notes/round_03_remaining_gaps.md",
+      "sha256": "3bf465b90c053908e6b9a62e9ab04a41b29dad91c7e3fc255abfad7d3b0b9218",
+      "bytes": 878,
+      "lineCount": 18,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_03/notes/round_03_stronger_proof_findings.md",
+      "sha256": "e64c70b16d19559c2127b739a7ff3a26f868845aa38d49f98b396a340dd2b6b2",
+      "bytes": 2219,
+      "lineCount": 57,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_03/processed/round_03_claim_strength_update.csv",
+      "sha256": "817b5f4af2460a5abb5aefb4bf4ac4380a6545f04f19eee95e1a4b3ea3ed11d8",
+      "bytes": 1380,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_03/processed/round_03_focus_gap_resolution.csv",
+      "sha256": "9bd734dea4b214899630efad522c63349aa3fe73fb4a04278c475631abd40972",
+      "bytes": 1025,
+      "lineCount": 6,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_03/processed/round_03_visual_planning_readiness_update.csv",
+      "sha256": "bc0886b570be4a1e128d733c023f29faf8730a82d822d514c4de056bab197579",
+      "bytes": 1279,
+      "lineCount": 6,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_03/raw/round_03_direct_contrast_hardening.csv",
+      "sha256": "f7fbb52caeea1e45291f441b0ad8c8575e1f4a219e4b4280e41f91610419ac93",
+      "bytes": 2890,
+      "lineCount": 8,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_03/raw/round_03_realistic_bridge_hardening.csv",
+      "sha256": "5d6b070f52f2ead7014f324efb3ac19a5a3a31031e6bee2eda20555608553e1a",
+      "bytes": 2846,
+      "lineCount": 8,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_03/raw/round_03_simulated_context_hardening.csv",
+      "sha256": "249241ab4102fc1008a840e3566a7f0bec3258aba413b9c42b412f6a65d26c2f",
+      "bytes": 1809,
+      "lineCount": 5,
+      "role": "raw_capture",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/chart_04b_semantic_mobility_round_03/raw/round_03_source_access_log.csv",
+      "sha256": "2fb363c3b65fe70d63226544b442b4349e3a1cc81f42d3cb7c8ab692ed1456d4",
+      "bytes": 3707,
+      "lineCount": 17,
+      "role": "source_record",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/notes/round_02_2019_2026_findings.md",
+      "sha256": "12535f0317c4afbc985d207289152f84c540856c258fcf5891ab587d2a2583ff",
+      "bytes": 1652,
+      "lineCount": 40,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/notes/round_02_collection_log.md",
+      "sha256": "15d855e29973358b362a0c21e61eb8bd7480a1a9892be8654a8007472bbe2f8a",
+      "bytes": 2827,
+      "lineCount": 77,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/notes/round_02_non_ngram_findings.md",
+      "sha256": "7394bc42b722d6381bc40c7bc5f979ac8bd0fb16e25eeefa994c637b2a7f3b30",
+      "bytes": 1439,
+      "lineCount": 35,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/notes/round_02_pre_1800_findings.md",
+      "sha256": "bb596f7c0d571891f9a521820f918e235fa87bf83614e52c76945943f383dd4f",
+      "bytes": 1732,
+      "lineCount": 34,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/notes/round_02_remaining_risks.md",
+      "sha256": "9f2354469813e18f2f6260bce9f4299236884efa46ef3978f863d243a45c6300",
+      "bytes": 783,
+      "lineCount": 13,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/notes/round_02_source_notes.md",
+      "sha256": "c076dc3b19539c53af1cbfdb1579d4b17c51bcdf68a7bc403b253fcc8fc9a4bb",
+      "bytes": 1603,
+      "lineCount": 38,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/processed/round_02_chart4_data_gap_summary.csv",
+      "sha256": "842fb5e59da932a8c3a7eab036a075d970cc67ed9f3d48814ed8b3aa9213b64d",
+      "bytes": 1394,
+      "lineCount": 7,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/processed/round_02_combined_timeline_coverage.csv",
+      "sha256": "134392fec310449d9d334e2d389be80f6c2fd09f21870221a541d6cc5a639421",
+      "bytes": 1481,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/processed/round_02_evidence_table.csv",
+      "sha256": "f5ff1d4ab7d2bf8504f94cb14956a06ecabc273985878534fe07d90c512aac94",
+      "bytes": 6592,
+      "lineCount": 19,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/processed/round_02_manual_review_queue.csv",
+      "sha256": "4bd3bd744a5bb0b4ee8586be38be5c364649ac33f52c1abdd69c77f2d92f8a39",
+      "bytes": 2487,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/processed/round_02_modern_2019_2026_term_status.csv",
+      "sha256": "742f2e2401dded47ef68b657b208208f66f25664a5f507d43b65cf6b36875891",
+      "bytes": 2493,
+      "lineCount": 16,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/processed/round_02_pre_1800_sense_status.csv",
+      "sha256": "be33bd16b6df756fa5ea23d8cd51d4b999c3b82f5201a504fe9c0da4160a8948",
+      "bytes": 1250,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/processed/round_02_source_coverage_matrix.csv",
+      "sha256": "4bb29daca00f5f37cd00f424cd181328b266f222fbcd9fe949087cde0713e100",
+      "bytes": 2455,
+      "lineCount": 10,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/raw/round_02_historical_newspaper_snippets.csv",
+      "sha256": "1e1b1783b69a3dcb68d84aa066f88af83a00635feb89d2408d33e59929e014be",
+      "bytes": 1048,
+      "lineCount": 3,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/raw/round_02_modern_2019_2026_snippets.csv",
+      "sha256": "deb42077dfe5fcb91f9d5d2a8581b7427b39d998a2005f5ee52a0587bf186a1d",
+      "bytes": 4302,
+      "lineCount": 10,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/raw/round_02_pre_1800_dictionary_extracts.json",
+      "sha256": "b34581b1077990a47234d9d94debe937855e26acb357ae25a4a1693c2bccf90b",
+      "bytes": 6541,
+      "lineCount": 142,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/raw/round_02_pre_1800_snippets.csv",
+      "sha256": "57ff894b41e03f033efa8a96c49575a96b35dbbc265dc6a4c0f9ed308a01e765",
+      "bytes": 1430,
+      "lineCount": 4,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/raw/round_02_regulatory_sources.json",
+      "sha256": "0afdc24bb1090d77f8102c406464f56cc21eb2bd84e3e0ca46071be098ad54ed",
+      "bytes": 3946,
+      "lineCount": 83,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/raw/round_02_source_access_log.csv",
+      "sha256": "54f6b3fb5ec35b23489af117b47f2fb53ea86007fc1a04c205ad4e775e267d8c",
+      "bytes": 7975,
+      "lineCount": 27,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/scripts/README.md",
+      "sha256": "c541ece3a6302c78070f1d382435a0121d937627cd626995d81c23d08b8b5f77",
+      "bytes": 228,
+      "lineCount": 5,
+      "role": "legacy_transform_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy transform code is retained for reproducibility history but is excluded from the mobile dependency closure."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/expanded_corpus_round_02/sources/round_02_source_urls.md",
+      "sha256": "1bffbda6362850bda6e70c5b2278c9359a227cf14bad7e70785b110bf1206407",
+      "bytes": 3285,
+      "lineCount": 37,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/notes/chart_04_collection_log.md",
+      "sha256": "bd1b42e3f0694267c2a571ee71b6a7bb7f589d69655d4584a73e34019391b905",
+      "bytes": 9905,
+      "lineCount": 253,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/notes/chart_04_data_availability_report.md",
+      "sha256": "b8085367609f7227fe5e7e5f296eae81e014c01596016c5aacff2df250dc6888",
+      "bytes": 26824,
+      "lineCount": 478,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/notes/chart_04_next_manual_review.md",
+      "sha256": "dbaf40de1c9f98750a31907775bea62ee86082a3afc4d0e6f3a5c4725cebc9c4",
+      "bytes": 1117,
+      "lineCount": 29,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/notes/chart_04_source_notes.md",
+      "sha256": "7be40f220adcc78873688d8763609178efae7f085370df9ee59040617c3e73da",
+      "bytes": 1212,
+      "lineCount": 30,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/processed/chart_04_data_availability_summary.csv",
+      "sha256": "c29afbe2cd484a30238029ea24ce2733f2863ca5505ae9213fb3b6c316db2beb",
+      "bytes": 1516,
+      "lineCount": 8,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/processed/chart_04_ngram_long.csv",
+      "sha256": "1c706c119867c15fdb51ddc11a6e3e63fd211b4bbfcd3804f56af0095c38b92f",
+      "bytes": 2876567,
+      "lineCount": 30141,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/processed/chart_04_phrase_pair_groups.json",
+      "sha256": "6a8c414f4ab6c84bbcbbf4acada8dfb5659f2d261db7f5601d6bed311f0546d1",
+      "bytes": 2070,
+      "lineCount": 68,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/processed/chart_04_term_metadata.csv",
+      "sha256": "bdb9ed656368da18f003152c65fb7cb42615129c557ea3d47f79ddca5af4a45a",
+      "bytes": 28032,
+      "lineCount": 141,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/processed/chart_04_terms_requiring_non_ngram_sources.csv",
+      "sha256": "9ea50cbd81cbb51b3a281e2a4c842d99662f73107b6d700a675654b0bac4f9d3",
+      "bytes": 13645,
+      "lineCount": 63,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/processed/chart_04_variant_groups.json",
+      "sha256": "3bb3427db56df5d716be1dc1643642f76804a520a0249f34ea7eefaf290f05c4",
+      "bytes": 985,
+      "lineCount": 46,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/raw/chart_04_ngram_raw_absence_claims.csv",
+      "sha256": "db118f790ced92c16266cc4e739c7c102e58907a2a3e28f56843bd62816dafc6",
+      "bytes": 280479,
+      "lineCount": 3081,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/raw/chart_04_ngram_raw_consumer_terms.csv",
+      "sha256": "74b4452a969745fcfa0faf44ab866e844a92e47a692a967ded0927bf339ec839",
+      "bytes": 325538,
+      "lineCount": 3301,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/raw/chart_04_ngram_raw_core_terms.csv",
+      "sha256": "e637fe3ce6741c036b60248253aab28009f0280b10493104d326729a773f1069",
+      "bytes": 351291,
+      "lineCount": 3961,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/raw/chart_04_ngram_raw_distance_terms.csv",
+      "sha256": "333227d0b4d86d93d64c1396ce18b9cc4753d5acff7a3a3aa5b9ee51a32f76fc",
+      "bytes": 600499,
+      "lineCount": 6381,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/raw/chart_04_ngram_raw_optional_terms.csv",
+      "sha256": "5d43b8e4d1ab399fc3bc3ce27d432eb47b18de294d0a386e8e261f0163b5994e",
+      "bytes": 335858,
+      "lineCount": 3741,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/raw/chart_04_ngram_raw_phrase_pairs.csv",
+      "sha256": "1a106023e70a0c67a256cdae8e1668dbea1549de0410ff5ec4c3b8c9dab1ea0d",
+      "bytes": 499904,
+      "lineCount": 4841,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/raw/chart_04_ngram_raw_suspicion_terms.csv",
+      "sha256": "1b7f70032d84752d2496cde402edaeab8c246f8d303921212a4710d8338268fb",
+      "bytes": 483400,
+      "lineCount": 4841,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/scripts/README.md",
+      "sha256": "98dbd002f80dbd8a3260730c068f71e423e0987ef96320e2a9f27206dbcac0e2",
+      "bytes": 185,
+      "lineCount": 4,
+      "role": "legacy_transform_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy transform code is retained for reproducibility history but is excluded from the mobile dependency closure."
+    },
+    {
+      "path": "docs/research/artificial/chart_04_suspicion_distance/sources/README.md",
+      "sha256": "e44aededb1aecfb8a778713b2bac457d8f66a0f8dac8ac6f9486a52b6195253e",
+      "bytes": 258,
+      "lineCount": 5,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/notes/chart_05_ai_boundary_notes.md",
+      "sha256": "12f2e3e14076265ed7238d154daf3d78e7f6f7fc42e17c0a6c5ac47b641bab05",
+      "bytes": 1545,
+      "lineCount": 24,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/notes/chart_05_collection_log.md",
+      "sha256": "616d2ac5ea8d1271ad5018aa24f2737a46344281c078684e58603d5475c1ce51",
+      "bytes": 1406,
+      "lineCount": 37,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/notes/chart_05_layer_findings.md",
+      "sha256": "29fc24a3e7dae64374e42e2381c20a9b5ee014c57564ccda64e64857a5f3c84f",
+      "bytes": 1707,
+      "lineCount": 25,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/notes/chart_05_remaining_risks.md",
+      "sha256": "514aa83a137de58d88bcaee68dc5f68410536728a5f88f25a096aed1ca51ec92",
+      "bytes": 899,
+      "lineCount": 10,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_data_availability_summary.csv",
+      "sha256": "b7c25d9039d74b5ebef57314111dd36f3ffd3b4d943f104ad7617d822fbad772",
+      "bytes": 1234,
+      "lineCount": 6,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_evidence_table.csv",
+      "sha256": "fc5f46071e96531243aca1ff9cafef1e460e4a89f3ae0edd850ac4409dc25710",
+      "bytes": 11349,
+      "lineCount": 27,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_function_mode_summary.csv",
+      "sha256": "1524061715d61ac871c54319957114e81f65f9fbc66f87f39b63780cd2ae82cb",
+      "bytes": 958,
+      "lineCount": 6,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_layer_boundary_matrix.csv",
+      "sha256": "3459d12010ffec3252d76308e021a41d8ba42e3f0511b01d68a6c47950e9d851",
+      "bytes": 5208,
+      "lineCount": 54,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_layer_timeline.csv",
+      "sha256": "49fff72909c559401ee8399194c0d6046e5f7978f59c826cf12d04271e7eb392",
+      "bytes": 1983,
+      "lineCount": 6,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_layered_terms.csv",
+      "sha256": "488a49db7dab8c6a98a7bc78a32e7425556560e36f38376804b5849a301109b2",
+      "bytes": 7225,
+      "lineCount": 54,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_manual_review_queue.csv",
+      "sha256": "67cdec6275e7e7b3ce726b3d3d7aef1fac69be368a8434f4ec61dd8ad02e4c7b",
+      "bytes": 1682,
+      "lineCount": 9,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_ngram_long.csv",
+      "sha256": "49296931312480fdc333c1c15b5ad47496206c6e7150599237dbc6768581038c",
+      "bytes": 1169160,
+      "lineCount": 11001,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_source_coverage.csv",
+      "sha256": "8a47d3e5766fdd67f9e8664150e2edc2e9a0f5ccb13c48c8b14368c36a7b05b5",
+      "bytes": 1831,
+      "lineCount": 9,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_speculative_terms.csv",
+      "sha256": "e5ab5a026c12264499197f434da2c8d390160a2913e212a28d70600c828ff643",
+      "bytes": 2159,
+      "lineCount": 15,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_term_metadata.csv",
+      "sha256": "3eef611b3cad84cda2f842fc20905228b45d26709f5f8b697e3ac52c64a129c5",
+      "bytes": 12832,
+      "lineCount": 54,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_transition_edges.csv",
+      "sha256": "0f9534f9d2a0fa0b4298e92d52966fbe7de6b7db5eed0e1c992cb51d8f7d4172",
+      "bytes": 3954,
+      "lineCount": 17,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/processed/chart_05_transition_strength.csv",
+      "sha256": "0f9534f9d2a0fa0b4298e92d52966fbe7de6b7db5eed0e1c992cb51d8f7d4172",
+      "bytes": 3954,
+      "lineCount": 17,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/raw/chart_05_ngram_raw_core_terms.csv",
+      "sha256": "49296931312480fdc333c1c15b5ad47496206c6e7150599237dbc6768581038c",
+      "bytes": 1169160,
+      "lineCount": 11001,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/raw/chart_05_source_access_log.csv",
+      "sha256": "8a47d3e5766fdd67f9e8664150e2edc2e9a0f5ccb13c48c8b14368c36a7b05b5",
+      "bytes": 1831,
+      "lineCount": 9,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/raw/chart_05_source_evidence_raw.csv",
+      "sha256": "fc5f46071e96531243aca1ff9cafef1e460e4a89f3ae0edd850ac4409dc25710",
+      "bytes": 11349,
+      "lineCount": 27,
+      "role": "source_record",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/scripts/build_chart_05_data_package.mjs",
+      "sha256": "055cadfc574b9db84f957e5284df600e847597600f8b241eb6db09f70f657488",
+      "bytes": 63686,
+      "lineCount": 1279,
+      "role": "legacy_transform_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy transform code is retained for reproducibility history but is excluded from the mobile dependency closure."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/sources/README.md",
+      "sha256": "ff031df6655fcddda4876a7fd8738048c89bb84e5ab23a8c50648d1bf21be71d",
+      "bytes": 633,
+      "lineCount": 11,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/targeted_supplement_round_02/notes/round_02_collection_log.md",
+      "sha256": "5f0a29a80187a7be0101acc0a3e588073b094b731a0218c9aaba41e1f33f1895",
+      "bytes": 477,
+      "lineCount": 18,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/targeted_supplement_round_02/notes/round_02_findings.md",
+      "sha256": "e9ed248d46586bb9e23ec3f9379b70284bb426305e8e996c1be6cd2a3f7677d2",
+      "bytes": 988,
+      "lineCount": 20,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/targeted_supplement_round_02/notes/round_02_visual_integration_notes.md",
+      "sha256": "43005b6e7d40820f71c454b7168d1ea3f079ee17beb81f82ae2bbd3ba701cbce",
+      "bytes": 642,
+      "lineCount": 8,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/targeted_supplement_round_02/processed/round_02_artificial_life_sense_split.csv",
+      "sha256": "eb640ec1abb7797ef9ebc9d3db18cf3acdc23196d3b479c1828a019c68b4aa26",
+      "bytes": 1133,
+      "lineCount": 5,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/targeted_supplement_round_02/processed/round_02_chart05_visual_readiness_update.csv",
+      "sha256": "b96e7e4876c4be7b2c2dfb12a1f0847ef6176da26fc473d2a5ce55529e728f21",
+      "bytes": 1281,
+      "lineCount": 6,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/targeted_supplement_round_02/processed/round_02_layer1_apparatus_status.csv",
+      "sha256": "a8a197e29db8f199a9aa290deccd86bcb285fc833613f080ead310322f9148fb",
+      "bytes": 1809,
+      "lineCount": 12,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/targeted_supplement_round_02/processed/round_02_phrase_status.csv",
+      "sha256": "321d27426693b0269a7074d84884bebae0d0e23fd9071077c3abb19be2a32725",
+      "bytes": 747,
+      "lineCount": 4,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/targeted_supplement_round_02/processed/round_02_targeted_evidence_table.csv",
+      "sha256": "7a6778c2c1955b4980b30c89caf049480fbff37a846ce2123772e7d166ab1746",
+      "bytes": 6252,
+      "lineCount": 13,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/targeted_supplement_round_02/processed/round_02_targeted_variant_status.csv",
+      "sha256": "a92ece5f8e1c0b9072c6ace109e4b42685587d4ee3694fb34ef4d5d461e502b8",
+      "bytes": 6942,
+      "lineCount": 32,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/targeted_supplement_round_02/processed/round_02_terms_to_integrate.csv",
+      "sha256": "9d87fe8293bf55fcf42b335cf377ebe0a122c50ce6399f3ed8bc1e8dfc34196a",
+      "bytes": 999,
+      "lineCount": 6,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/targeted_supplement_round_02/scripts/build_chart_05_targeted_supplement.mjs",
+      "sha256": "00874c4c4c9f73424b131643fc49976085a08d0472e77910d636389f1e20b152",
+      "bytes": 31157,
+      "lineCount": 699,
+      "role": "legacy_transform_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy transform code is retained for reproducibility history but is excluded from the mobile dependency closure."
+    },
+    {
+      "path": "docs/research/artificial/chart_05_human_continuation/targeted_supplement_round_02/sources/README.md",
+      "sha256": "fe93465a75762d9aee90e9c9ba50d306cc6b8809336a6b0b02c538579e095afe",
+      "bytes": 337,
+      "lineCount": 5,
+      "role": "source_record",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/mobile-2026-08/artificial_mobile_frozen_inputs.json",
+      "sha256": "1413f2b39cdff79859ca6b7713362fa9e26274bff23a38826ff44fd2a58c6b15",
+      "bytes": 3455410,
+      "lineCount": 103532,
+      "role": "mobile_frozen_input",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "docs/research/artificial/notes/artificial_collection_log.md",
+      "sha256": "e4737b52b8db75108877a03bd10f9fd0240fb661d3965d5cde93cc0d3834cd5a",
+      "bytes": 4784,
+      "lineCount": 127,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/notes/artificial_data_availability_report.md",
+      "sha256": "74b6fd658fb7c28be93f8f5493608dbf0fddcf584433d44ec7e64f885f794716",
+      "bytes": 2230,
+      "lineCount": 73,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/notes/artificial_source_notes.md",
+      "sha256": "08d0b6ab6cf5d4afc5ef3d9bc7451a2ca7d71a05a28a1b3aeaa435ed2fdb2812",
+      "bytes": 777,
+      "lineCount": 25,
+      "role": "research_note",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/processed/artificial_ngram_long.csv",
+      "sha256": "3ff04378a7cf52fa119204a0e0da2ca27766d1db8d4083bc810768c7a8fd02c6",
+      "bytes": 938572,
+      "lineCount": 10121,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/processed/artificial_term_metadata.csv",
+      "sha256": "fda96357624539476fe90a694fb26efe9bc8aac5431aeae6a44fe03622c71275",
+      "bytes": 5617,
+      "lineCount": 50,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/processed/artificial_variant_groups.json",
+      "sha256": "8aab85e8baa5eb91ac76665e2d53584111a180eaded578e5390afb86b8ce10a0",
+      "bytes": 886,
+      "lineCount": 35,
+      "role": "legacy_processed_excluded",
+      "activeDependency": false,
+      "exclusionReason": "Legacy desktop/prior-research derivation is retained for history but cannot govern the independent mobile research chain."
+    },
+    {
+      "path": "docs/research/artificial/raw/artificial_ngram_raw_core_terms.csv",
+      "sha256": "cd8d5489e579313e7336bc670818225eda66628bf17176b7796d4e5280f27f8b",
+      "bytes": 130259,
+      "lineCount": 1541,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/raw/artificial_ngram_raw_priority_phrases.csv",
+      "sha256": "85ed21fb3ffc6b3de7c233a58e2d5dd27fa634468c1e120a5b56c23450345fd3",
+      "bytes": 338789,
+      "lineCount": 3521,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/raw/artificial_ngram_raw_secondary_phrases.csv",
+      "sha256": "9ae6fd54d51abe598bb05bd68027658ac3161d22a92a105677df78f92c566755",
+      "bytes": 412715,
+      "lineCount": 4401,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "docs/research/artificial/raw/artificial_ngram_raw_test_terms.csv",
+      "sha256": "b0cb08036e738d189b136039692f8b98c300fcb6d82e4858cde9ff007a5db290",
+      "bytes": 57010,
+      "lineCount": 661,
+      "role": "raw_capture",
+      "activeDependency": false,
+      "exclusionReason": "Inventoried for provenance but outside the active dependency closure of this five-movement predesign."
+    },
+    {
+      "path": "scripts/build_artificial_mobile_research.ts",
+      "sha256": "85b058ab35e8ea249412617d53f024526ab98feb8e844aa8cd2279dc6970af8e",
+      "bytes": 92412,
+      "lineCount": 1567,
+      "role": "transform",
+      "activeDependency": true,
+      "exclusionReason": null
+    },
+    {
+      "path": "src/types/artificialMobileResearch.ts",
+      "sha256": "f6b65a5e1f2e6a0017da7bea68828eed4f657745377dd101d55a97485b9f47de",
+      "bytes": 9711,
+      "lineCount": 323,
+      "role": "transform",
+      "activeDependency": true,
+      "exclusionReason": null
+    }
+  ]
+}

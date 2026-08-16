@@ -1,8 +1,8 @@
 import type { CSSProperties, ReactNode } from "react";
-import { EvidenceCoverageStrip } from "@/components/EvidenceCoverageStrip";
-import { Nav } from "@/components/Nav";
-import { SearchIntentSummary } from "@/components/SearchIntentSummary";
-import { WordSeoSummary } from "@/components/WordSeoSummary";
+import { EvidenceCoverageStrip } from "@/editions/mobile/shared/EvidenceCoverageStrip";
+import { Nav } from "@/editions/mobile/shared/Nav";
+import { SearchIntentSummary } from "@/editions/mobile/shared/SearchIntentSummary";
+import { WordSeoSummary } from "@/editions/mobile/shared/WordSeoSummary";
 import { wordStudyProfile, type WordStudyPath } from "@/data/search-intents";
 import { routeByPath } from "@/lib/site";
 
@@ -11,11 +11,12 @@ type WordPageShellProps = {
   children: ReactNode;
 };
 
-export function WordPageShell({ path, children }: WordPageShellProps) {
+export function MobileWordPageShell({ path, children }: WordPageShellProps) {
   const profile = wordStudyProfile(path);
   const route = routeByPath(path);
   const isForever = path === "/words/forever";
   const isPrivacy = path === "/words/privacy";
+  const isArtificial = path === "/words/artificial";
   const textAccent = path === "/words/forever" ? "#AE4202" : path === "/words/hub" ? "#0B6B71" : route?.accent;
 
   if (!route) return children;
@@ -26,7 +27,7 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
       aria-labelledby={`${profile.word}-study-title`}
       style={{ "--study-accent": route.accent, "--study-text-accent": textAccent } as CSSProperties}
     >
-      <div className={`mx-auto w-full max-w-[1960px] px-5 pt-5 min-[960px]:px-10 xl:px-12 ${isPrivacy ? "hidden min-[960px]:block" : ""}`}>
+      <div className={`mx-auto w-full max-w-[1960px] px-5 pt-5 min-[960px]:px-10 xl:px-12 ${isPrivacy || isArtificial ? "hidden min-[960px]:block" : ""}`}>
         <Nav />
         <header className={`relative mt-1 min-[960px]:overflow-hidden min-[960px]:border-y-2 min-[960px]:border-ink min-[960px]:py-14 ${isForever ? "!mt-0 py-[2.4rem] pb-10 min-[960px]:!mt-1" : "py-12"}`}>
           <div className="pointer-events-none absolute inset-0 hidden opacity-60 [background-image:linear-gradient(90deg,rgba(5,5,16,0.09)_1px,transparent_1px),linear-gradient(180deg,rgba(5,5,16,0.07)_1px,transparent_1px)] [background-size:72px_72px] min-[960px]:block" />
@@ -77,13 +78,13 @@ export function WordPageShell({ path, children }: WordPageShellProps) {
             </dl>
           </div>
         </header>
-        <div className={isForever || isPrivacy ? "hidden min-[960px]:block" : undefined}>
+        <div className={isForever || isPrivacy || isArtificial ? "hidden min-[960px]:block" : undefined}>
           <SearchIntentSummary profile={profile} />
         </div>
         <EvidenceCoverageStrip profile={profile} />
       </div>
       {children}
-      <div className={isForever || isPrivacy ? "hidden min-[960px]:block" : undefined}>
+      <div className={isForever || isPrivacy || isArtificial ? "hidden min-[960px]:block" : undefined}>
         <WordSeoSummary path={path} />
       </div>
     </main>
