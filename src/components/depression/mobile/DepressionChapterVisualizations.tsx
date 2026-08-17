@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useRef, useState, type ReactNode } from "react";
+import { memo, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 import type { DepressionMobileChart, DepressionMobileMetric, DepressionMobileSeries } from "@/types/depressionMobileResearch";
 import styles from "./mobile-depression.module.css";
 
@@ -275,7 +275,7 @@ function ModernContrastChart({ chart }: { chart: DepressionMobileChart }) {
   );
 }
 
-export function DepressionChapterVisualization({ chart }: { chart: DepressionMobileChart }) {
+export const DepressionChapterVisualization = memo(function DepressionChapterVisualization({ chart }: { chart: DepressionMobileChart }) {
   switch (chart.kind) {
     case "anchors": return <RootsAnchorChart chart={chart} detail={chart.id.endsWith("detail")} />;
     case "comparison-bars": return <PrintComparisonChart chart={chart} />;
@@ -289,4 +289,4 @@ export function DepressionChapterVisualization({ chart }: { chart: DepressionMob
     case "diagnostic-multiples": return <DiagnosticLabelsChart chart={chart} />;
     case "modern-contrast": return <ModernContrastChart chart={chart} />;
   }
-}
+});

@@ -13,7 +13,7 @@
   width: 100%;
   max-width: 100vw;
   min-width: 0;
-  height: var(--depression-vvh, 100dvh);
+  height: 100dvh;
   overflow: hidden;
   background: var(--depression-paper);
   color: var(--depression-ink);
@@ -34,7 +34,7 @@
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  height: var(--depression-vvh, 100dvh);
+  height: 100dvh;
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior-y: contain;
@@ -59,8 +59,8 @@
 .scene {
   position: relative;
   width: 100%;
-  height: var(--depression-vvh, 100dvh);
-  min-height: var(--depression-vvh, 100svh);
+  height: 100dvh;
+  min-height: 100svh;
 }
 
 .sceneMount {
@@ -131,12 +131,12 @@
 .copyLayer {
   grid-area: 1 / 1;
   align-self: center;
-  transition: opacity 180ms linear, transform 260ms cubic-bezier(.22, 1, .36, 1);
+  transition: opacity 160ms linear, transform 200ms linear;
 }
 
 .copyLayer[data-active="false"] {
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(8px);
   pointer-events: none;
 }
 
@@ -187,6 +187,8 @@
   background: var(--depression-paper);
   color: var(--depression-ink);
   box-shadow: none;
+  contain: layout paint;
+  isolation: isolate;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition: opacity 180ms linear;
@@ -205,33 +207,37 @@
 @keyframes depression-card-appear {
   from {
     opacity: 0;
+    transform: translateY(8px);
   }
 
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .cardContent {
   position: absolute;
   inset: 0;
-  animation: depression-card-content-enter 160ms linear both;
+  animation: depression-card-content-enter 180ms linear both;
 }
 
 @keyframes depression-card-content-enter {
   from {
-    opacity: .48;
+    opacity: .82;
+    transform: translateY(8px);
   }
 
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .cardFace {
   position: absolute;
   inset: 0;
-  transition: opacity 120ms linear, transform 140ms linear;
+  transition: opacity 150ms linear, transform 180ms linear;
 }
 
 .cardFace[data-active="false"] {
@@ -240,11 +246,11 @@
 }
 
 .cardFace[data-active="false"][data-depression-card-face="front"] {
-  transform: translateX(-100%);
+  transform: translateX(-8px);
 }
 
 .cardFace[data-active="false"][data-depression-card-face="back"] {
-  transform: translateX(100%);
+  transform: translateX(8px);
 }
 
 .cardFace[data-active="true"] {
@@ -337,7 +343,7 @@
   place-items: center;
   color: #342d27;
   opacity: 1;
-  transition: opacity 100ms linear, transform 140ms linear;
+  transition: opacity 120ms linear, transform 180ms linear;
   pointer-events: none;
 }
 
@@ -1248,9 +1254,21 @@
 }
 
 .closingScene {
+  --closing-safe-colour: #36717a;
   padding: calc(var(--safe-top) + 1rem) calc(1.5rem + var(--safe-right)) calc(var(--safe-bottom) + 1rem) calc(1.5rem + var(--safe-left));
   display: flex;
   flex-direction: column;
+}
+
+.closingScene::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: var(--safe-bottom);
+  background: var(--closing-safe-colour);
+  content: "";
+  pointer-events: none;
 }
 
 .closingCopy h2 {
@@ -1376,7 +1394,7 @@
 .sceneMount:has(.closingScene details[open]),
 .sceneMount:has(.closingScene details[open]) .closingScene {
   height: auto;
-  min-height: var(--depression-vvh, 100dvh);
+  min-height: 100dvh;
   overflow: visible;
 }
 

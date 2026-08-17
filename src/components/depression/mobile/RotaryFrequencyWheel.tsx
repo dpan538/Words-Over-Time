@@ -210,7 +210,13 @@ const SelectedSeriesPanel = memo(function SelectedSeriesPanel({ series }: { seri
   );
 });
 
-export function RotaryFrequencyWheel({ data }: { data: DepressionRotaryInterludeData }) {
+export function RotaryFrequencyWheel({
+  data,
+  onPanelColourChange,
+}: {
+  data: DepressionRotaryInterludeData;
+  onPanelColourChange?: (colour: string) => void;
+}) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [rotation, setRotation] = useState(0);
   const [dragging, setDragging] = useState(false);
@@ -221,6 +227,9 @@ export function RotaryFrequencyWheel({ data }: { data: DepressionRotaryInterlude
   const palette = PALETTES[selectedSeries.key];
 
   useEffect(() => () => { dragRef.current = null; }, []);
+  useEffect(() => {
+    onPanelColourChange?.(palette.panel);
+  }, [onPanelColourChange, palette.panel]);
 
   const commitIndex = (nextIndex: number) => {
     const normalized = modulo(nextIndex, data.series.length);

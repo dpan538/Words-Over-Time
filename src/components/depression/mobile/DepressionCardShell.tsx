@@ -1,6 +1,6 @@
 "use client";
 
-import type { KeyboardEvent } from "react";
+import { memo, type KeyboardEvent } from "react";
 import type { DepressionMobileChapter } from "@/types/depressionMobileResearch";
 import { DepressionChapterVisualization } from "./DepressionChapterVisualizations";
 import styles from "./mobile-depression.module.css";
@@ -18,7 +18,7 @@ function SwitchGlyph() {
   );
 }
 
-export function DepressionPersistentCard({
+export const DepressionPersistentCard = memo(function DepressionPersistentCard({
   activeChapter,
   face,
   visible,
@@ -66,4 +66,4 @@ export function DepressionPersistentCard({
       <span className={styles.flipGlyph} data-face={face} aria-hidden="true"><SwitchGlyph /></span>
     </article>
   );
-}
+});

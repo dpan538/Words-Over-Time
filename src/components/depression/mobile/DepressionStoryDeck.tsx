@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties, type MouseEvent } from "react";
+import { memo, useCallback, useEffect, useMemo, useRef, useState, type CSSProperties, type MouseEvent } from "react";
 import type { DepressionMobileChapter, DepressionMobileResearch } from "@/types/depressionMobileResearch";
 import { DepressionPersistentCard } from "./DepressionCardShell";
 import { RotaryFrequencyWheel } from "./RotaryFrequencyWheel";
@@ -53,7 +53,48 @@ const OPENING_BAND_COLOURS: Record<ChapterId, string> = {
   labels: "#36717a",
 };
 
-function OpeningScene({ research, onEnterStudy }: { research: DepressionMobileResearch; onEnterStudy: () => void }) {
+const DEPRESSION_PAPER = "#f3e6cd";
+const INITIAL_ROTARY_PANEL = "#3275c8";
+
+function useBrowserSafeAreaColour(colour: string) {
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+    let theme = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
+    const createdTheme = theme === null;
+    if (!theme) {
+      theme = document.createElement("meta");
+      theme.name = "theme-color";
+      document.head.append(theme);
+    }
+    const previous = {
+      htmlBackground: html.style.backgroundColor,
+      htmlTransition: html.style.transition,
+      bodyBackground: body.style.backgroundColor,
+      bodyTransition: body.style.transition,
+      themeContent: theme.getAttribute("content"),
+    };
+    html.style.transition = "background-color 220ms linear";
+    body.style.transition = "background-color 220ms linear";
+    return () => {
+      html.style.backgroundColor = previous.htmlBackground;
+      html.style.transition = previous.htmlTransition;
+      body.style.backgroundColor = previous.bodyBackground;
+      body.style.transition = previous.bodyTransition;
+      if (createdTheme) theme?.remove();
+      else if (previous.themeContent === null) theme?.removeAttribute("content");
+      else theme?.setAttribute("content", previous.themeContent);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.style.backgroundColor = colour;
+    document.body.style.backgroundColor = colour;
+    document.querySelector<HTMLMetaElement>('meta[name="theme-color"]')?.setAttribute("content", colour);
+  }, [colour]);
+}
+
+const OpeningScene = memo(function OpeningScene({ research, onEnterStudy }: { research: DepressionMobileResearch; onEnterStudy: () => void }) {
   const followOpeningLink = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     onEnterStudy();
@@ -90,7 +131,7 @@ function OpeningScene({ research, onEnterStudy }: { research: DepressionMobileRe
       </div>
     </section>
   );
-}
+});
 
 function ChapterCopyLayer({ copy, active }: { copy: CopyState; active: boolean }) {
   return (
@@ -101,7 +142,7 @@ function ChapterCopyLayer({ copy, active }: { copy: CopyState; active: boolean }
   );
 }
 
-function ChapterScene({ chapter, face }: { chapter: DepressionMobileChapter; face: Face }) {
+const ChapterScene = memo(function ChapterScene({ chapter, face }: { chapter: DepressionMobileChapter; face: Face }) {
   const frontCopy = { heading: chapter.title, body: chapter.deck };
   return (
     <section
@@ -128,17 +169,23 @@ function ChapterScene({ chapter, face }: { chapter: DepressionMobileChapter; fac
       </div>
     </section>
   );
-}
+});
 
-function WheelScene({ research }: { research: DepressionMobileResearch }) {
+const WheelScene = memo(function WheelScene({
+  research,
+  onPanelColourChange,
+}: {
+  research: DepressionMobileResearch;
+  onPanelColourChange: (colour: string) => void;
+}) {
   return (
     <section id="m-depression-rotary" className={`${styles.scene} ${styles.wheelScene}`} data-scene="rotary-interlude" aria-label="03A interactive phrase frequency wheel">
-      <RotaryFrequencyWheel data={research.rotaryInterlude} />
+      <RotaryFrequencyWheel data={research.rotaryInterlude} onPanelColourChange={onPanelColourChange} />
     </section>
   );
-}
+});
 
-function ClosingScene({ research, onReturnHome }: { research: DepressionMobileResearch; onReturnHome: () => void }) {
+const ClosingScene = memo(function ClosingScene({ research, onReturnHome }: { research: DepressionMobileResearch; onReturnHome: () => void }) {
   const followBackToTop = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     onReturnHome();
@@ -159,7 +206,7 @@ function ClosingScene({ research, onReturnHome }: { research: DepressionMobileRe
       <a className={styles.backToTop} href="#m-depression-opening" onClick={followBackToTop}>BACK TO TOP <span className={styles.upGlyph} aria-hidden="true" /></a>
     </section>
   );
-}
+});
 
 function ReturnToTopOverlay({ research, phase }: { research: DepressionMobileResearch; phase: Exclude<ReturnPhase, "idle"> }) {
   return (
@@ -202,8 +249,17 @@ export function DepressionStoryDeck({ research }: { research: DepressionMobileRe
   const initialFaces = useMemo(() => Object.fromEntries(research.chapters.map((chapter) => [chapter.id, "front"])) as Record<ChapterId, Face>, [research.chapters]);
   const [faces, setFaces] = useState<Record<ChapterId, Face>>(initialFaces);
   const [activeScene, setActiveScene] = useState<SceneId>("opening");
+  const [rotaryPanelColour, setRotaryPanelColour] = useState(INITIAL_ROTARY_PANEL);
   const [returnPhase, setReturnPhase] = useState<ReturnPhase>("idle");
   const activeChapter = chaptersById.get(activeScene as ChapterId);
+  const browserSafeAreaColour = activeScene === "rotary-interlude"
+    ? rotaryPanelColour
+    : activeChapter?.background ?? DEPRESSION_PAPER;
+  useBrowserSafeAreaColour(browserSafeAreaColour);
+
+  const handleRotaryPanelColourChange = useCallback((colour: string) => {
+    setRotaryPanelColour((current) => current === colour ? current : colour);
+  }, []);
 
   const sceneHash = useCallback((id: SceneId) => {
     if (id === "opening") return "#m-depression-opening";
@@ -415,11 +471,6 @@ export function DepressionStoryDeck({ research }: { research: DepressionMobileRe
       scheduleSettle(130);
     };
     const handleScrollEnd = () => scheduleSettle(24);
-    const handleViewportChange = () => {
-      const active = sceneRefs.current[activeIndexRef.current];
-      if (!active || programmaticScrollRef.current || returnPhaseRef.current !== "idle") return;
-      requestAnimationFrame(() => root.scrollTo({ top: active.offsetTop, behavior: "instant" }));
-    };
     const handleHashChange = () => {
       const index = sceneIds.findIndex((id) => sceneHash(id) === window.location.hash);
       const target = sceneRefs.current[index];
@@ -448,7 +499,6 @@ export function DepressionStoryDeck({ research }: { research: DepressionMobileRe
     root.addEventListener("scroll", handleScroll, { passive: true });
     root.addEventListener("scrollend", handleScrollEnd);
     window.addEventListener("hashchange", handleHashChange);
-    window.addEventListener("depression:viewportchange", handleViewportChange);
     const initialIndex = sceneIds.findIndex((id) => sceneHash(id) === window.location.hash);
     if (initialIndex >= 0) {
       const target = sceneRefs.current[initialIndex];
@@ -474,7 +524,6 @@ export function DepressionStoryDeck({ research }: { research: DepressionMobileRe
       root.removeEventListener("scroll", handleScroll);
       root.removeEventListener("scrollend", handleScrollEnd);
       window.removeEventListener("hashchange", handleHashChange);
-      window.removeEventListener("depression:viewportchange", handleViewportChange);
       if (settleTimerRef.current !== null) window.clearTimeout(settleTimerRef.current);
       if (scrollSampleFrameRef.current !== null) cancelAnimationFrame(scrollSampleFrameRef.current);
       delete root.dataset.scrollActive;
@@ -487,15 +536,15 @@ export function DepressionStoryDeck({ research }: { research: DepressionMobileRe
     cancelScrollAnimation();
   }, [cancelScrollAnimation]);
 
-  const toggleFace = () => {
+  const toggleFace = useCallback(() => {
     if (!activeChapter) return;
     setFaces((value) => ({ ...value, [activeChapter.id]: value[activeChapter.id] === "front" ? "back" : "front" }));
-  };
+  }, [activeChapter]);
 
   const scenes = [
     <OpeningScene key="opening" research={research} onEnterStudy={enterFirstChapter} />,
     ...research.chapters.slice(0, 3).map((chapter) => <ChapterScene key={chapter.id} chapter={chapter} face={faces[chapter.id]} />),
-    <WheelScene key="rotary-interlude" research={research} />,
+    <WheelScene key="rotary-interlude" research={research} onPanelColourChange={handleRotaryPanelColourChange} />,
     ...research.chapters.slice(3).map((chapter) => <ChapterScene key={chapter.id} chapter={chapter} face={faces[chapter.id]} />),
     <ClosingScene key="closing" research={research} onReturnHome={returnToOpening} />,
   ];
@@ -506,6 +555,7 @@ export function DepressionStoryDeck({ research }: { research: DepressionMobileRe
       className={styles.studyDeck}
       data-depression-deck="true"
       data-active-scene={activeScene}
+      style={{ "--depression-safe-colour": browserSafeAreaColour } as CSSProperties}
       aria-label="Depression mobile word study"
     >
       {scenes.map((scene, index) => (
