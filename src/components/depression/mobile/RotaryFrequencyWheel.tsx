@@ -213,9 +213,11 @@ const SelectedSeriesPanel = memo(function SelectedSeriesPanel({ series }: { seri
 export function RotaryFrequencyWheel({
   data,
   onPanelColourChange,
+  onSceneColourChange,
 }: {
   data: DepressionRotaryInterludeData;
   onPanelColourChange?: (colour: string) => void;
+  onSceneColourChange?: (colour: string) => void;
 }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [rotation, setRotation] = useState(0);
@@ -230,6 +232,9 @@ export function RotaryFrequencyWheel({
   useEffect(() => {
     onPanelColourChange?.(palette.panel);
   }, [onPanelColourChange, palette.panel]);
+  useEffect(() => {
+    onSceneColourChange?.(palette.scene);
+  }, [onSceneColourChange, palette.scene]);
 
   const commitIndex = (nextIndex: number) => {
     const normalized = modulo(nextIndex, data.series.length);
