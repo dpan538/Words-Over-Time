@@ -166,7 +166,7 @@ function HorizontalBars({ chart, maximum, ticks, primary, secondary }: { chart: 
       <div className={styles.metricChartStack}>
         <div className={styles.derivedMetric}><strong>{primary}</strong>{secondary ? <span>{secondary}</span> : null}</div>
         <ResponsivePlot chart={chart}>{(size) => {
-          const box = boxFor(size, { top: 60, right: 34, bottom: 35, left: 82 });
+          const box = boxFor(size, { top: 60, right: 34, bottom: 35, left: 96 });
           const band = box.innerHeight / Math.max(1, metrics.length);
           return <>
             <AxisLayer box={box} period={[0, maximum] as [number, number]} xTicks={ticks} yTicks={[0]} yMaximum={1} />

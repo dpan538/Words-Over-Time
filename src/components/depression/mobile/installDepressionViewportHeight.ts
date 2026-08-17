@@ -11,12 +11,18 @@ export function installDepressionViewportHeight() {
   const apply = (force = false) => {
     const deck = document.querySelector<HTMLElement>('[data-depression-deck="true"]');
     const deckIsMoving = deck?.dataset.scrollActive === "true" || deck?.dataset.linearTransition === "true";
-    if (!force && deckIsMoving) {
+    const height = pendingHeight || readHeight();
+    const change = Math.abs(height - appliedHeight);
+
+    // Safari can change the visual viewport by more than 100px when its browser
+    // chrome expands. Large changes must be reflected immediately so fixed cards
+    // never remain positioned inside the covered part of the screen. Only small
+    // toolbar oscillations are deferred while a chapter gesture is active.
+    if (!force && deckIsMoving && appliedHeight > 0 && change < 48) {
       window.clearTimeout(settleTimer);
       settleTimer = window.setTimeout(() => apply(), 140);
       return;
     }
-    const height = pendingHeight || readHeight();
     if (height === appliedHeight) return;
     appliedHeight = height;
     root.style.setProperty("--depression-vvh", `${height}px`);
@@ -26,7 +32,8 @@ export function installDepressionViewportHeight() {
   const schedule = () => {
     pendingHeight = readHeight();
     window.clearTimeout(settleTimer);
-    settleTimer = window.setTimeout(() => apply(), 140);
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(() => apply());
   };
 
   const updateOrientation = () => {

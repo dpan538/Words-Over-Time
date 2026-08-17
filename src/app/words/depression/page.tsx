@@ -1,4 +1,5 @@
 import { headers } from "next/headers";
+import type { Viewport } from "next";
 import { DepressionPoster } from "@/components/DepressionPoster";
 import { JsonLd } from "@/components/JsonLd";
 import { WordPageShell } from "@/components/WordPageShell";
@@ -34,6 +35,11 @@ const evidence = evidenceJson as DepressionEvidenceFile;
 const coverage = coverageJson as DepressionCoverageReport;
 
 export const metadata = createPageMetadata("/words/depression");
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 const jsonLd = createRouteJsonLd("/words/depression");
 
 function isMobileRequest(userAgent: string, mobileClientHint: string | null) {

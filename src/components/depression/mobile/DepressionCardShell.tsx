@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type KeyboardEvent } from "react";
+import type { KeyboardEvent } from "react";
 import type { DepressionMobileChapter } from "@/types/depressionMobileResearch";
 import { DepressionChapterVisualization } from "./DepressionChapterVisualizations";
 import styles from "./mobile-depression.module.css";
@@ -24,54 +24,12 @@ export function DepressionPersistentCard({
   visible,
   onToggle,
 }: {
-  activeChapter?: DepressionMobileChapter;
+  activeChapter: DepressionMobileChapter;
   face: Face;
   visible: boolean;
   onToggle: () => void;
 }) {
-  const [renderedChapter, setRenderedChapter] = useState(activeChapter);
-  const [renderedFace, setRenderedFace] = useState<Face>(face);
-  const [contentPhase, setContentPhase] = useState<"idle" | "exit" | "enter">("idle");
-  const transactionRef = useRef(0);
-  const timerRef = useRef<number | null>(null);
-  const frameRef = useRef<number | null>(null);
-
-  useEffect(() => {
-    if (!activeChapter || activeChapter.id === renderedChapter?.id) return;
-    if (!renderedChapter) {
-      setRenderedChapter(activeChapter);
-      setRenderedFace("front");
-      setContentPhase("idle");
-      return;
-    }
-    const transaction = ++transactionRef.current;
-    if (timerRef.current !== null) window.clearTimeout(timerRef.current);
-    if (frameRef.current !== null) cancelAnimationFrame(frameRef.current);
-    setContentPhase("exit");
-    timerRef.current = window.setTimeout(() => {
-      if (transaction !== transactionRef.current) return;
-      setRenderedChapter(activeChapter);
-      setRenderedFace("front");
-      setContentPhase("enter");
-      frameRef.current = requestAnimationFrame(() => {
-        frameRef.current = requestAnimationFrame(() => {
-          if (transaction === transactionRef.current) setContentPhase("idle");
-        });
-      });
-    }, 170);
-  }, [activeChapter, renderedChapter?.id]);
-
-  useEffect(() => {
-    if (!activeChapter || activeChapter.id !== renderedChapter?.id || contentPhase !== "idle") return;
-    setRenderedFace(face);
-  }, [activeChapter, contentPhase, face, renderedChapter?.id]);
-
-  useEffect(() => () => {
-    if (timerRef.current !== null) window.clearTimeout(timerRef.current);
-    if (frameRef.current !== null) cancelAnimationFrame(frameRef.current);
-  }, []);
-
-  const interactive = visible && contentPhase === "idle" && activeChapter?.id === renderedChapter?.id;
+  const interactive = visible;
 
   const onKeyDown = (event: KeyboardEvent<HTMLElement>) => {
     if (!interactive || (event.key !== "Enter" && event.key !== " ")) return;
@@ -79,34 +37,33 @@ export function DepressionPersistentCard({
     onToggle();
   };
 
-  const action = renderedFace === "front" ? "Show the detailed chart and narrative" : "Return to the summary chart and narrative";
+  const action = face === "front" ? "Show the detailed chart and narrative" : "Return to the summary chart and narrative";
 
   return (
     <article
       className={styles.persistentCard}
       data-depression-card="shell"
+      data-active-chapter={activeChapter.id}
       data-visible={visible ? "true" : "false"}
-      data-content-phase={contentPhase}
+      data-content-phase="idle"
       role="button"
       tabIndex={interactive ? 0 : -1}
       aria-hidden={!visible}
       aria-disabled={!interactive}
-      aria-label={`${action}${renderedChapter ? ` for ${renderedChapter.title}` : ""}`}
-      aria-pressed={renderedFace === "back"}
+      aria-label={`${action} for ${activeChapter.title}`}
+      aria-pressed={face === "back"}
       onClick={() => { if (interactive) onToggle(); }}
       onKeyDown={onKeyDown}
     >
-      {renderedChapter ? (
-        <div className={styles.cardContent}>
-          <div className={styles.cardFace} data-active={renderedFace === "front" ? "true" : "false"} data-depression-card-face="front" aria-hidden={renderedFace !== "front"}>
-            <DepressionChapterVisualization chart={renderedChapter.summary} />
-          </div>
-          <div className={styles.cardFace} data-active={renderedFace === "back" ? "true" : "false"} data-depression-card-face="back" aria-hidden={renderedFace !== "back"}>
-            <DepressionChapterVisualization chart={renderedChapter.detail} />
-          </div>
+      <div key={activeChapter.id} className={styles.cardContent}>
+        <div className={styles.cardFace} data-active={face === "front" ? "true" : "false"} data-depression-card-face="front" aria-hidden={face !== "front"}>
+          <DepressionChapterVisualization chart={activeChapter.summary} />
         </div>
-      ) : null}
-      <span className={styles.flipGlyph} data-face={renderedFace} aria-hidden="true"><SwitchGlyph /></span>
+        <div className={styles.cardFace} data-active={face === "back" ? "true" : "false"} data-depression-card-face="back" aria-hidden={face !== "back"}>
+          <DepressionChapterVisualization chart={activeChapter.detail} />
+        </div>
+      </div>
+      <span className={styles.flipGlyph} data-face={face} aria-hidden="true"><SwitchGlyph /></span>
     </article>
   );
 }

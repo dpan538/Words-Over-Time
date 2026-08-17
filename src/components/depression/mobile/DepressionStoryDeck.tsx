@@ -391,9 +391,24 @@ export function DepressionStoryDeck({ research }: { research: DepressionMobileRe
     const handleScroll = () => {
       if (programmaticScrollRef.current || returnPhaseRef.current !== "idle") return;
       beginGesture();
+      const origin = gestureOriginRef.current ?? activeIndexRef.current;
+      const originScene = sceneRefs.current[origin];
+      if (originScene) {
+        const delta = root.scrollTop - originScene.offsetTop;
+        const direction = Math.sign(delta);
+        if (direction !== 0) {
+          const adjacent = clampToAdjacentScene(origin, origin + direction, sceneIds.length);
+          const adjacentScene = sceneRefs.current[adjacent];
+          const distance = adjacentScene ? Math.abs(adjacentScene.offsetTop - originScene.offsetTop) : 0;
+          const progress = distance > 0 ? Math.abs(delta) / distance : 0;
+          const responsiveIndex = progress >= .08 ? adjacent : origin;
+          if (responsiveIndex !== activeIndexRef.current) activateSceneAtIndex(responsiveIndex);
+        }
+      }
       if (scrollSampleFrameRef.current === null) {
         scrollSampleFrameRef.current = requestAnimationFrame(() => {
-          candidateIndexRef.current = closestSceneIndex();
+          const candidate = closestSceneIndex();
+          candidateIndexRef.current = candidate;
           scrollSampleFrameRef.current = null;
         });
       }
