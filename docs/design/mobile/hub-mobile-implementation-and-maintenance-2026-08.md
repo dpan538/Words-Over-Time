@@ -78,27 +78,31 @@ dispatch a selection do not subscribe to every ambient frame.
 `HubAtmosphereViewport` is rendered once and remains fixed with `inset: 0`.
 It contains at most:
 
-- three halo paths with a static 53 px SVG blur;
-- three body paths with a static 24 px blur;
-- three inner paths with a static 13 px blur;
+- three local cloud surfaces, each containing halo, body, and inner filtered
+  paths (nine persistent filtered paths in total);
 - one slow ambient line;
 - one temporary global diffusion path;
 - one static turbulence-grain layer.
 
 The six source paths are deterministic Bézier forms. Runtime randomness is
 prohibited because it would produce hydration mismatches and make visual
-regressions irreproducible. Each form keeps a compatible path-command topology
-so Motion can interpolate `d` without snapping.
+regressions irreproducible. Form changes are applied at scene activation inside
+the affected local cloud surface; they are not interpolated across the whole
+viewport every frame.
 
-The three blur levels serve different visual purposes:
+The three visible cloud levels serve different visual purposes:
 
 - inner: local colour energy;
 - body: blended chromatic mass;
-- halo: long-distance alpha decay across the viewport.
+- halo: long-distance alpha decay.
 
 Blur radius, turbulence frequency, and filter bounds remain static. Motion only
-animates path `d`, fill, transform, and opacity, avoiding continuous expensive
-filter rasterization in mobile Safari.
+animates fill, transform, and opacity. The paper-colour viewport gradient stays
+resident, while each cloud is rasterized in a bounded SVG surface. Scene
+position, scale, and slow drift happen on nested HTML compositing layers;
+palette or form changes repaint only the affected cloud bounds. This preserves
+all nine filtered paths without asking mobile Safari to redraw one full-screen
+filtered SVG for every ambient frame.
 
 ## Scene model
 
@@ -116,8 +120,10 @@ Each research movement registers exactly one `useInView` observer through
 | phrase | follow one phrase through time | family colour against blue/yellow |
 | closing | recombine the argument | hero palette in a quieter distribution |
 
-An observer activates a scene only after a meaningful portion of its section is
-visible. Scrolling does not restart animation on every scroll event.
+An observer activates as the incoming section first becomes legible (8% visible
+inside the route observation band), so the atmosphere is already responding
+before the heading reaches the middle of the viewport. Scrolling does not
+restart animation on every scroll event.
 
 Family, evidence, and phrase selection can call `activate` with a local palette,
 form index, and `pulse: true`. A monotonically increasing `pulseKey` guarantees
@@ -131,11 +137,11 @@ The animation is designed as slow ink diffusion rather than floating bubbles.
 
 | Response | Duration | Easing |
 | --- | ---: | --- |
-| section path morph | 2.5–2.8 s | `[0.22, 1, 0.36, 1]` |
-| palette/opacity transition | 1.45 s | `[0.4, 0, 0.2, 1]` |
+| section position/scale response | 0.92 s | `[0.22, 1, 0.36, 1]` |
+| palette/opacity transition | 0.62 s | `[0.4, 0, 0.2, 1]` |
 | linked card diffusion | 1.45–1.75 s | soft ease |
 | interaction state | 0.45–0.65 s | soft ease |
-| ambient drift | 21–29 s | ease-in-out |
+| local compositor drift | 23–29 s | ease-in-out |
 | ambient line | 15 s | linear |
 
 Drift displacement is deliberately small and scale change remains restrained.
@@ -220,6 +226,9 @@ When changing the atmosphere:
 5. Keep the paper safe-area veils independent of scene palette.
 6. Verify the fixed layer does not create document-level horizontal overflow.
 7. Test both normal and reduced-motion settings after timing changes.
+8. Keep the filtered-path contract at nine persistent paths: three bounded
+   clouds × halo/body/inner. Do not merge them into one full-viewport repaint
+   surface or attach continuous transform animation directly to filtered paths.
 
 When changing a selector or swipe rail:
 

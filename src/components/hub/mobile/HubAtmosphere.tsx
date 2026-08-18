@@ -218,8 +218,8 @@ export function useHubAtmosphereScene(
 ): RefObject<HTMLElement | null> {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, {
-    amount: .42,
-    margin: "-12% 0px -32% 0px",
+    amount: .08,
+    margin: "-4% 0px -30% 0px",
   });
   const { activate } = useHubAtmosphereActions();
 
@@ -229,6 +229,10 @@ export function useHubAtmosphereScene(
   }, [activate, inView, scene]);
 
   return ref;
+}
+
+function toViewportWidthUnit(value: number) {
+  return `${(value / 3.9).toFixed(4)}vw`;
 }
 
 export function HubAtmosphereViewport() {
@@ -245,17 +249,96 @@ export function HubAtmosphereViewport() {
       data-pulse-key={state.pulseKey}
       aria-hidden="true"
     >
-      <svg className={styles.atmosphereSvg} viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice" focusable="false">
+      <div className={styles.atmosphereCloudStack}>
+        {state.palette.map((color, index) => {
+          const targetPath = CLOUD_FORMS[(formIndex + index) % CLOUD_FORMS.length];
+          const targetLayout = state.layout[index];
+          const innerFilterId = `${id}-inner-${index}`;
+          const bodyFilterId = `${id}-body-${index}`;
+          const haloFilterId = `${id}-halo-${index}`;
+          const fillTransition = {
+            fill: { duration: shouldReduceMotion ? .08 : .62, ease: SOFT_EASE },
+            opacity: { duration: shouldReduceMotion ? .08 : .62, ease: SOFT_EASE },
+          };
+
+          return (
+            <motion.div
+              key={index}
+              className={styles.atmosphereCloudPosition}
+              initial={false}
+              animate={{
+                x: toViewportWidthUnit(targetLayout.x),
+                y: toViewportWidthUnit(targetLayout.y),
+                scale: targetLayout.scale,
+              }}
+              transition={{
+                x: { duration: shouldReduceMotion ? 0 : .92, ease: MORPH_EASE },
+                y: { duration: shouldReduceMotion ? 0 : .92, ease: MORPH_EASE },
+                scale: { duration: shouldReduceMotion ? 0 : .92, ease: MORPH_EASE },
+              }}
+            >
+              <motion.div
+                className={styles.atmosphereCloudDrift}
+                animate={shouldReduceMotion ? undefined : {
+                  x: [0, 4 + index, -3, 0],
+                  y: [0, -4, 3 + index, 0],
+                }}
+                transition={shouldReduceMotion ? undefined : {
+                  duration: 23 + index * 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
+                <svg
+                  className={styles.atmosphereCloudSvg}
+                  viewBox="-110 -110 500 520"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                >
+                  <defs>
+                    <filter id={innerFilterId} x="-30%" y="-30%" width="160%" height="160%" colorInterpolationFilters="sRGB">
+                      <feGaussianBlur stdDeviation="13" />
+                    </filter>
+                    <filter id={bodyFilterId} x="-55%" y="-55%" width="210%" height="210%" colorInterpolationFilters="sRGB">
+                      <feGaussianBlur stdDeviation="24" />
+                    </filter>
+                    <filter id={haloFilterId} x="-90%" y="-90%" width="280%" height="280%" colorInterpolationFilters="sRGB">
+                      <feGaussianBlur stdDeviation="45" />
+                    </filter>
+                  </defs>
+                  <motion.path
+                    initial={false}
+                    d={targetPath}
+                    filter={`url(#${haloFilterId})`}
+                    animate={{ fill: color, opacity: targetLayout.opacity * .28 }}
+                    transition={fillTransition}
+                    className={styles.atmosphereHalo}
+                  />
+                  <motion.path
+                    initial={false}
+                    d={targetPath}
+                    filter={`url(#${bodyFilterId})`}
+                    animate={{ fill: color, opacity: targetLayout.opacity * .54 }}
+                    transition={fillTransition}
+                    className={styles.atmosphereBody}
+                  />
+                  <motion.path
+                    initial={false}
+                    d={targetPath}
+                    filter={`url(#${innerFilterId})`}
+                    animate={{ fill: color, opacity: targetLayout.opacity * .72 }}
+                    transition={fillTransition}
+                    className={styles.atmosphereInner}
+                  />
+                </svg>
+              </motion.div>
+            </motion.div>
+          );
+        })}
+      </div>
+
+      <svg className={styles.atmosphereOverlaySvg} viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice" focusable="false">
         <defs>
-          <filter id={`${id}-inner`} x="-35%" y="-35%" width="170%" height="170%" colorInterpolationFilters="sRGB">
-            <feGaussianBlur stdDeviation="13" />
-          </filter>
-          <filter id={`${id}-body`} x="-55%" y="-55%" width="210%" height="210%" colorInterpolationFilters="sRGB">
-            <feGaussianBlur stdDeviation="24" />
-          </filter>
-          <filter id={`${id}-halo`} x="-100%" y="-100%" width="300%" height="300%" colorInterpolationFilters="sRGB">
-            <feGaussianBlur stdDeviation="53" />
-          </filter>
           <filter id={`${id}-grain`} x="0" y="0" width="100%" height="100%" colorInterpolationFilters="sRGB">
             <feTurbulence type="fractalNoise" baseFrequency=".71" numOctaves="3" seed="67" stitchTiles="stitch" />
             <feColorMatrix type="saturate" values="0" />
@@ -263,89 +346,15 @@ export function HubAtmosphereViewport() {
               <feFuncA type="table" tableValues="0 .1" />
             </feComponentTransfer>
           </filter>
+          <filter id={`${id}-pulse`} x="-55%" y="-55%" width="210%" height="210%" colorInterpolationFilters="sRGB">
+            <feGaussianBlur stdDeviation="24" />
+          </filter>
           <linearGradient id={`${id}-line`} x1="0" y1="0" x2="1" y2="0">
             <stop offset="0" stopColor={state.palette[0]} stopOpacity="0" />
             <stop offset=".45" stopColor={state.palette[2]} stopOpacity=".34" />
             <stop offset="1" stopColor={state.palette[1]} stopOpacity="0" />
           </linearGradient>
         </defs>
-
-        {state.palette.map((color, index) => {
-          const targetPath = CLOUD_FORMS[(formIndex + index) % CLOUD_FORMS.length];
-          const targetLayout = state.layout[index];
-          const sceneTransition = {
-            d: { duration: shouldReduceMotion ? 0 : 2.5, ease: MORPH_EASE },
-            fill: { duration: shouldReduceMotion ? .08 : 1.45, ease: SOFT_EASE },
-            x: { duration: shouldReduceMotion ? 0 : 2.8, ease: MORPH_EASE },
-            y: { duration: shouldReduceMotion ? 0 : 2.8, ease: MORPH_EASE },
-            scale: { duration: shouldReduceMotion ? 0 : 2.8, ease: MORPH_EASE },
-            opacity: { duration: shouldReduceMotion ? .08 : 1.45, ease: SOFT_EASE },
-          };
-
-          return (
-            <motion.g
-              key={index}
-              animate={shouldReduceMotion ? undefined : {
-                x: [0, 6 + index * 2, -4, 0],
-                y: [0, -7, 5 + index, 0],
-              }}
-              transition={shouldReduceMotion ? undefined : {
-                duration: 21 + index * 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            >
-              <motion.path
-                initial={false}
-                d={targetPath}
-                fill={color}
-                filter={`url(#${id}-halo)`}
-                animate={{
-                  d: targetPath,
-                  fill: color,
-                  x: targetLayout.x,
-                  y: targetLayout.y,
-                  scale: targetLayout.scale * 1.14,
-                  opacity: targetLayout.opacity * .28,
-                }}
-                transition={sceneTransition}
-                className={styles.atmosphereHalo}
-              />
-              <motion.path
-                initial={false}
-                d={targetPath}
-                fill={color}
-                filter={`url(#${id}-body)`}
-                animate={{
-                  d: targetPath,
-                  fill: color,
-                  x: targetLayout.x,
-                  y: targetLayout.y,
-                  scale: targetLayout.scale * 1.06,
-                  opacity: targetLayout.opacity * .54,
-                }}
-                transition={sceneTransition}
-                className={styles.atmosphereBody}
-              />
-              <motion.path
-                initial={false}
-                d={targetPath}
-                fill={color}
-                filter={`url(#${id}-inner)`}
-                animate={{
-                  d: targetPath,
-                  fill: color,
-                  x: targetLayout.x,
-                  y: targetLayout.y,
-                  scale: targetLayout.scale,
-                  opacity: targetLayout.opacity * .72,
-                }}
-                transition={sceneTransition}
-                className={styles.atmosphereInner}
-              />
-            </motion.g>
-          );
-        })}
 
         <motion.path
           d="M-50 625C45 555 96 698 190 625C267 565 329 620 446 548"
@@ -363,7 +372,7 @@ export function HubAtmosphereViewport() {
             key={state.pulseKey}
             d={CLOUD_FORMS[formIndex]}
             fill={state.palette[0]}
-            filter={`url(#${id}-body)`}
+            filter={`url(#${id}-pulse)`}
             initial={{
               x: state.layout[0].x,
               y: state.layout[0].y,
@@ -374,7 +383,7 @@ export function HubAtmosphereViewport() {
               scale: [state.layout[0].scale * .64, state.layout[0].scale, state.layout[0].scale * 1.28],
               opacity: [0, .34, 0],
             }}
-            transition={{ duration: shouldReduceMotion ? 0 : 1.55, ease: SOFT_EASE, times: [0, .36, 1] }}
+            transition={{ duration: 1.15, ease: SOFT_EASE, times: [0, .36, 1] }}
             className={styles.atmospherePulse}
           />
         ) : null}
