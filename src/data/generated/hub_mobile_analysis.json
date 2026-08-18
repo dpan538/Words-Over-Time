@@ -1,0 +1,2334 @@
+{
+  "schemaVersion": "1.0.0",
+  "auditId": "hub-mobile-2026-08-16",
+  "generatedFromFrozenInputs": true,
+  "implementationAuthorized": true,
+  "principalQuestion": "How did hub retain the idea of a center while becoming available to describe places, routes, institutions, networks, and digital services?",
+  "querySettings": {
+    "yearStart": 1800,
+    "yearEnd": 2022,
+    "corpus": "en",
+    "smoothing": 0,
+    "caseInsensitive": true
+  },
+  "thresholdPerMillion": 0.002,
+  "eligiblePhraseCount": 39,
+  "exclusions": {
+    "failedQueries": [
+      "wheel-hub",
+      "hub spoke system"
+    ],
+    "rule": "Successful non-background, unhyphenated two-token queries; raw-note ambiguous, sparse, and mechanical-adjacent rows excluded."
+  },
+  "periods": [
+    {
+      "id": "1900_1919",
+      "label": "1900–1919",
+      "shortLabel": "1900",
+      "startYear": 1900,
+      "endYear": 1919
+    },
+    {
+      "id": "1920_1939",
+      "label": "1920–1939",
+      "shortLabel": "1920",
+      "startYear": 1920,
+      "endYear": 1939
+    },
+    {
+      "id": "1940_1959",
+      "label": "1940–1959",
+      "shortLabel": "1940",
+      "startYear": 1940,
+      "endYear": 1959
+    },
+    {
+      "id": "1960_1979",
+      "label": "1960–1979",
+      "shortLabel": "1960",
+      "startYear": 1960,
+      "endYear": 1979
+    },
+    {
+      "id": "1980_1999",
+      "label": "1980–1999",
+      "shortLabel": "1980",
+      "startYear": 1980,
+      "endYear": 1999
+    },
+    {
+      "id": "2000_2019",
+      "label": "2000–2019",
+      "shortLabel": "2000",
+      "startYear": 2000,
+      "endYear": 2019
+    }
+  ],
+  "visibility": [
+    {
+      "periodId": "1900_1919",
+      "visiblePhraseCount": 5,
+      "visibleSharePercent": 12.82
+    },
+    {
+      "periodId": "1920_1939",
+      "visiblePhraseCount": 4,
+      "visibleSharePercent": 10.26
+    },
+    {
+      "periodId": "1940_1959",
+      "visiblePhraseCount": 8,
+      "visibleSharePercent": 20.51
+    },
+    {
+      "periodId": "1960_1979",
+      "visiblePhraseCount": 7,
+      "visibleSharePercent": 17.95
+    },
+    {
+      "periodId": "1980_1999",
+      "visiblePhraseCount": 19,
+      "visibleSharePercent": 48.72
+    },
+    {
+      "periodId": "2000_2019",
+      "visiblePhraseCount": 35,
+      "visibleSharePercent": 89.74
+    }
+  ],
+  "families": [
+    {
+      "id": "mechanical_core",
+      "label": "MECHANICAL",
+      "color": "#f06b45",
+      "eligiblePhraseCount": 5,
+      "firstVisiblePeriodId": "1900_1919",
+      "currentVisibleSharePercent": 80,
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.03536,
+          "visiblePhraseCount": 5,
+          "visibleSharePercent": 100
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.02711,
+          "visiblePhraseCount": 4,
+          "visibleSharePercent": 80
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.02311,
+          "visiblePhraseCount": 5,
+          "visibleSharePercent": 100
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.01504,
+          "visiblePhraseCount": 4,
+          "visibleSharePercent": 80
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.01875,
+          "visiblePhraseCount": 4,
+          "visibleSharePercent": 80
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.01179,
+          "visiblePhraseCount": 4,
+          "visibleSharePercent": 80
+        }
+      ]
+    },
+    {
+      "id": "central_place",
+      "label": "PLACE",
+      "color": "#f2c84b",
+      "eligiblePhraseCount": 4,
+      "firstVisiblePeriodId": "1940_1959",
+      "currentVisibleSharePercent": 100,
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.0004,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00057,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00113,
+          "visiblePhraseCount": 1,
+          "visibleSharePercent": 25
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00241,
+          "visiblePhraseCount": 1,
+          "visibleSharePercent": 25
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00584,
+          "visiblePhraseCount": 3,
+          "visibleSharePercent": 75
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.01511,
+          "visiblePhraseCount": 4,
+          "visibleSharePercent": 100
+        }
+      ]
+    },
+    {
+      "id": "transport_routing",
+      "label": "TRANSPORT",
+      "color": "#82a978",
+      "eligiblePhraseCount": 9,
+      "firstVisiblePeriodId": "1940_1959",
+      "currentVisibleSharePercent": 88.89,
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00026,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00013,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00065,
+          "visiblePhraseCount": 2,
+          "visibleSharePercent": 22.22
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00067,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00319,
+          "visiblePhraseCount": 6,
+          "visibleSharePercent": 66.67
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.01156,
+          "visiblePhraseCount": 8,
+          "visibleSharePercent": 88.89
+        }
+      ]
+    },
+    {
+      "id": "institutional_cluster",
+      "label": "INSTITUTION",
+      "color": "#cf83bd",
+      "eligiblePhraseCount": 8,
+      "firstVisiblePeriodId": "1960_1979",
+      "currentVisibleSharePercent": 87.5,
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00017,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00029,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00042,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00064,
+          "visiblePhraseCount": 2,
+          "visibleSharePercent": 25
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00196,
+          "visiblePhraseCount": 2,
+          "visibleSharePercent": 25
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.01124,
+          "visiblePhraseCount": 7,
+          "visibleSharePercent": 87.5
+        }
+      ]
+    },
+    {
+      "id": "network_system",
+      "label": "NETWORK",
+      "color": "#6a7fe4",
+      "eligiblePhraseCount": 7,
+      "firstVisiblePeriodId": "1980_1999",
+      "currentVisibleSharePercent": 85.71,
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00001,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00001,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00008,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00017,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00491,
+          "visiblePhraseCount": 4,
+          "visibleSharePercent": 57.14
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00702,
+          "visiblePhraseCount": 6,
+          "visibleSharePercent": 85.71
+        }
+      ]
+    },
+    {
+      "id": "digital_platform",
+      "label": "DIGITAL",
+      "color": "#9273d8",
+      "eligiblePhraseCount": 6,
+      "firstVisiblePeriodId": "2000_2019",
+      "currentVisibleSharePercent": 100,
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00002,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00001,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00005,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.0006,
+          "visiblePhraseCount": 0,
+          "visibleSharePercent": 0
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00743,
+          "visiblePhraseCount": 6,
+          "visibleSharePercent": 100
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "term": "wheel hub",
+      "familyId": "mechanical_core",
+      "familyLabel": "MECHANICAL",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.12846,
+          "visible": true
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.10261,
+          "visible": true
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.08173,
+          "visible": true
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.05191,
+          "visible": true
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.06381,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.03842,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 6,
+      "changeFrom1980sPerMillion": -0.02539,
+      "direction": "falling",
+      "trajectoryLabel": "LOWER AFTER 1980",
+      "featured": true
+    },
+    {
+      "term": "axle hub",
+      "familyId": "mechanical_core",
+      "familyLabel": "MECHANICAL",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00274,
+          "visible": true
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.0021,
+          "visible": true
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00655,
+          "visible": true
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00261,
+          "visible": true
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00735,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00243,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 6,
+      "changeFrom1980sPerMillion": -0.00492,
+      "direction": "falling",
+      "trajectoryLabel": "LOWER AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "front hub",
+      "familyId": "mechanical_core",
+      "familyLabel": "MECHANICAL",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.01138,
+          "visible": true
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.01446,
+          "visible": true
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.01296,
+          "visible": true
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00883,
+          "visible": true
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.01121,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00795,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 6,
+      "changeFrom1980sPerMillion": -0.00326,
+      "direction": "falling",
+      "trajectoryLabel": "LOWER AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "rear hub",
+      "familyId": "mechanical_core",
+      "familyLabel": "MECHANICAL",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.03,
+          "visible": true
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.01445,
+          "visible": true
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.012,
+          "visible": true
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00986,
+          "visible": true
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00998,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00922,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 6,
+      "changeFrom1980sPerMillion": -0.00076,
+      "direction": "falling",
+      "trajectoryLabel": "LOWER AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "bicycle hub",
+      "familyId": "mechanical_core",
+      "familyLabel": "MECHANICAL",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00424,
+          "visible": true
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00195,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00231,
+          "visible": true
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00199,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00141,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00094,
+          "visible": false
+        }
+      ],
+      "persistencePeriodCount": 2,
+      "changeFrom1980sPerMillion": -0.00047,
+      "direction": "falling",
+      "trajectoryLabel": "LOWER AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "commercial hub",
+      "familyId": "central_place",
+      "familyLabel": "PLACE",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00066,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00138,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00254,
+          "visible": true
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00658,
+          "visible": true
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.01485,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.03522,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 4,
+      "changeFrom1980sPerMillion": 0.02037,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": true
+    },
+    {
+      "term": "social hub",
+      "familyId": "central_place",
+      "familyLabel": "PLACE",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00034,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00043,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00103,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.0015,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00439,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.01813,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 2,
+      "changeFrom1980sPerMillion": 0.01374,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "city hub",
+      "familyId": "central_place",
+      "familyLabel": "PLACE",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00058,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00043,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00066,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.0009,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00254,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00288,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 2,
+      "changeFrom1980sPerMillion": 0.00034,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "urban hub",
+      "familyId": "central_place",
+      "familyLabel": "PLACE",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00002,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00005,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.0003,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00066,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00157,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00422,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.00265,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "transport hub",
+      "familyId": "transport_routing",
+      "familyLabel": "TRANSPORT",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00005,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00007,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00075,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00131,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00933,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.04374,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 2,
+      "changeFrom1980sPerMillion": 0.03441,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": true
+    },
+    {
+      "term": "transit hub",
+      "familyId": "transport_routing",
+      "familyLabel": "TRANSPORT",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00065,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00024,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00009,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00032,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00471,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.01996,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 2,
+      "changeFrom1980sPerMillion": 0.01525,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "railway hub",
+      "familyId": "transport_routing",
+      "familyLabel": "TRANSPORT",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00032,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00025,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00216,
+          "visible": true
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00104,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00201,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00502,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 3,
+      "changeFrom1980sPerMillion": 0.00301,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "railroad hub",
+      "familyId": "transport_routing",
+      "familyLabel": "TRANSPORT",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00019,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00038,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00221,
+          "visible": true
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00199,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00322,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00771,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 3,
+      "changeFrom1980sPerMillion": 0.00449,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "airport hub",
+      "familyId": "transport_routing",
+      "familyLabel": "TRANSPORT",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00008,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00038,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00201,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00314,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 2,
+      "changeFrom1980sPerMillion": 0.00113,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "airline hub",
+      "familyId": "transport_routing",
+      "familyLabel": "TRANSPORT",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00012,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00042,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00413,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00482,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 2,
+      "changeFrom1980sPerMillion": 0.00069,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "shipping hub",
+      "familyId": "transport_routing",
+      "familyLabel": "TRANSPORT",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00037,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00005,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00024,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00031,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00157,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00465,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.00308,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "logistics hub",
+      "familyId": "transport_routing",
+      "familyLabel": "TRANSPORT",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00002,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00003,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00012,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.0015,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.01467,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.01317,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "hub spoke",
+      "familyId": "transport_routing",
+      "familyLabel": "TRANSPORT",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00077,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.0001,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00014,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.0001,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00021,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00034,
+          "visible": false
+        }
+      ],
+      "persistencePeriodCount": 0,
+      "changeFrom1980sPerMillion": 0.00013,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "network hub",
+      "familyId": "network_system",
+      "familyLabel": "NETWORK",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00003,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00004,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00017,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00765,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.01465,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 2,
+      "changeFrom1980sPerMillion": 0.007,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": true
+    },
+    {
+      "term": "communication hub",
+      "familyId": "network_system",
+      "familyLabel": "NETWORK",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00002,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00007,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00032,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00071,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00225,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00679,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 2,
+      "changeFrom1980sPerMillion": 0.00454,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "hub node",
+      "familyId": "network_system",
+      "familyLabel": "NETWORK",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00002,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00102,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00653,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.00551,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "Ethernet hub",
+      "familyId": "network_system",
+      "familyLabel": "NETWORK",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.01371,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.01339,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 2,
+      "changeFrom1980sPerMillion": -0.00032,
+      "direction": "falling",
+      "trajectoryLabel": "LOWER AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "internet hub",
+      "familyId": "network_system",
+      "familyLabel": "NETWORK",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00003,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.0009,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00247,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.00157,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "telecom hub",
+      "familyId": "network_system",
+      "familyLabel": "NETWORK",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00017,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00024,
+          "visible": false
+        }
+      ],
+      "persistencePeriodCount": 0,
+      "changeFrom1980sPerMillion": 0.00007,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "switching hub",
+      "familyId": "network_system",
+      "familyLabel": "NETWORK",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00016,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00023,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00869,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00508,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 2,
+      "changeFrom1980sPerMillion": -0.00361,
+      "direction": "falling",
+      "trajectoryLabel": "LOWER AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "business hub",
+      "familyId": "institutional_cluster",
+      "familyLabel": "INSTITUTION",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00047,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.001,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00153,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00201,
+          "visible": true
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00703,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.0204,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 3,
+      "changeFrom1980sPerMillion": 0.01337,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "financial hub",
+      "familyId": "institutional_cluster",
+      "familyLabel": "INSTITUTION",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00075,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00124,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00162,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.0029,
+          "visible": true
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00731,
+          "visible": true
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.02256,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 3,
+      "changeFrom1980sPerMillion": 0.01525,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": true
+    },
+    {
+      "term": "education hub",
+      "familyId": "institutional_cluster",
+      "familyLabel": "INSTITUTION",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00002,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00005,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.0003,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00954,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.00924,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "research hub",
+      "familyId": "institutional_cluster",
+      "familyLabel": "INSTITUTION",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00007,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.0001,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.0001,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00048,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00785,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.00737,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "knowledge hub",
+      "familyId": "institutional_cluster",
+      "familyLabel": "INSTITUTION",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00003,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00002,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00002,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00018,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.01006,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.00988,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "innovation hub",
+      "familyId": "institutional_cluster",
+      "familyLabel": "INSTITUTION",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00005,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00003,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00012,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.01368,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.01356,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "startup hub",
+      "familyId": "institutional_cluster",
+      "familyLabel": "INSTITUTION",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00044,
+          "visible": false
+        }
+      ],
+      "persistencePeriodCount": 0,
+      "changeFrom1980sPerMillion": 0.00044,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "creative hub",
+      "familyId": "institutional_cluster",
+      "familyLabel": "INSTITUTION",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00006,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00004,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00026,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.0054,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.00514,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "digital hub",
+      "familyId": "digital_platform",
+      "familyLabel": "DIGITAL",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00004,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00024,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.01025,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.01001,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "data hub",
+      "familyId": "digital_platform",
+      "familyLabel": "DIGITAL",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.0001,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00003,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00013,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00159,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.0167,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.01511,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": true
+    },
+    {
+      "term": "resource hub",
+      "familyId": "digital_platform",
+      "familyLabel": "DIGITAL",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00002,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00021,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00229,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.00208,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "learning hub",
+      "familyId": "digital_platform",
+      "familyLabel": "DIGITAL",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00005,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00017,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00455,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.00438,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "media hub",
+      "familyId": "digital_platform",
+      "familyLabel": "DIGITAL",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00003,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00134,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00812,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.00678,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    },
+    {
+      "term": "online hub",
+      "familyId": "digital_platform",
+      "familyLabel": "DIGITAL",
+      "periods": [
+        {
+          "periodId": "1900_1919",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1920_1939",
+          "meanFrequencyPerMillion": 0,
+          "visible": false
+        },
+        {
+          "periodId": "1940_1959",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1960_1979",
+          "meanFrequencyPerMillion": 0.00001,
+          "visible": false
+        },
+        {
+          "periodId": "1980_1999",
+          "meanFrequencyPerMillion": 0.00005,
+          "visible": false
+        },
+        {
+          "periodId": "2000_2019",
+          "meanFrequencyPerMillion": 0.00267,
+          "visible": true
+        }
+      ],
+      "persistencePeriodCount": 1,
+      "changeFrom1980sPerMillion": 0.00262,
+      "direction": "rising",
+      "trajectoryLabel": "RISING AFTER 1980",
+      "featured": false
+    }
+  ],
+  "quadrantSummary": [
+    {
+      "id": "new_rising",
+      "label": "NEW / RISING",
+      "phraseCount": 27
+    },
+    {
+      "id": "enduring_rising",
+      "label": "ENDURING / RISING",
+      "phraseCount": 5
+    },
+    {
+      "id": "enduring_falling",
+      "label": "ENDURING / FALLING",
+      "phraseCount": 4
+    },
+    {
+      "id": "new_falling",
+      "label": "NEW / FALLING",
+      "phraseCount": 3
+    }
+  ],
+  "evidence": [
+    {
+      "id": "webster_1828_volume_1_hub_entry",
+      "year": 1828,
+      "term": "hub",
+      "senseLabel": "Mechanical wheel center",
+      "summary": "Webster's 1828 dictionary entry treats hub/hob as the nave of a wheel and the timber part receiving the spokes.",
+      "evidenceKind": "historical_dictionary",
+      "confidence": "high",
+      "sourceTitle": "An American Dictionary of the English Language",
+      "sourceUrl": "https://archive.org/details/americandictiona01websrich",
+      "caveat": "Historical dictionary evidence, not a first-use quotation or non-dictionary corpus example."
+    },
+    {
+      "id": "gutenberg_autocrat_1858_hub_metaphor",
+      "year": 1858,
+      "term": "hub",
+      "senseLabel": "Central place or focus",
+      "summary": "Holmes uses hub metaphorically for Boston's central self-conception.",
+      "evidenceKind": "direct_text",
+      "confidence": "high",
+      "sourceTitle": "The Autocrat of the Breakfast-Table",
+      "sourceUrl": "https://www.gutenberg.org/files/751/751.txt",
+      "caveat": "Project Gutenberg text confirms the passage; first-edition page verification would further strengthen publication details."
+    },
+    {
+      "id": "london_bicycle_club_gazette_1878_wheel_hub",
+      "year": 1878,
+      "term": "wheel hub",
+      "senseLabel": "Mechanical wheel center",
+      "summary": "Cycling periodical context uses wheel hub mechanically in relation to bicycle equipment.",
+      "evidenceKind": "direct_text",
+      "confidence": "medium",
+      "sourceTitle": "London Bicycle Club Gazette",
+      "sourceUrl": "https://archive.org/details/londonbicyclecl02unkngoog",
+      "caveat": "OCR heading appears partly garbled around 'Front'; image verification is recommended before publication."
+    },
+    {
+      "id": "hub_attestation_108",
+      "year": 1943,
+      "term": "railway hub",
+      "senseLabel": "Transport and logistics node",
+      "summary": "First-pass snippet for railway hub in transport and logistics node.",
+      "evidenceKind": "corpus_evidence",
+      "confidence": "medium",
+      "sourceTitle": "Image 8 of The Washington daily news (Washington, D.C.), December 3, 1943",
+      "sourceUrl": "http://www.loc.gov/resource/sn82016181/1943-12-03/ed-1/?sp=8",
+      "caveat": "Imported from first-pass snippets; OCR/readability and source image should be checked before final use."
+    },
+    {
+      "id": "hub_attestation_008",
+      "year": 1980,
+      "term": "hub-and-spoke",
+      "senseLabel": "Transport and logistics node",
+      "summary": "Defines hub-and-spoke as an air-traffic routing system and lists first known use as 1980.",
+      "evidenceKind": "dictionary_claim",
+      "confidence": "medium",
+      "sourceTitle": "Merriam-Webster: hub-and-spoke",
+      "sourceUrl": "https://www.merriam-webster.com/dictionary/hub-and-spoke",
+      "caveat": "Dictionary claim for a specific transport-system adjective; no quotation visible in the public entry."
+    }
+  ],
+  "figureContracts": [
+    {
+      "id": "hub-m01",
+      "moduleOrder": 1,
+      "title": "One word, six kinds of center",
+      "researchQuestion": "When do the selected semantic families become visible?",
+      "sourceFilesAndFields": [
+        "docs/research/hub/raw/hub_chart01_frequency_raw.json",
+        "query_results[].semantic_group",
+        "query_results[].raw_series[].frequency_per_million"
+      ],
+      "filters": [
+        "successful, non-background, unhyphenated two-token queries",
+        "exclude raw-note ambiguous, sparse, and mechanical-adjacent rows"
+      ],
+      "grouping": "semantic family × twenty-year period",
+      "denominator": "eligible phrases within each family",
+      "formula": "unweighted twenty-year arithmetic mean; visible at >= 0.002 per million",
+      "unit": "period and percent of eligible family phrases",
+      "visualChannelMapping": [
+        "colour = family",
+        "vertical position = first visible period",
+        "diameter = 2000–2019 visible share",
+        "direct label = family and period"
+      ],
+      "missingnessPolicy": "failed queries are excluded, never displayed as zero",
+      "caveat": "proxy visibility is not semantic population prevalence",
+      "productionEligible": true
+    },
+    {
+      "id": "hub-m02",
+      "moduleOrder": 2,
+      "title": "The original line falls; the others rise around it",
+      "researchQuestion": "How do selected family means change across the twentieth century?",
+      "sourceFilesAndFields": [
+        "docs/research/hub/raw/hub_chart01_frequency_raw.json",
+        "query_results[].semantic_group",
+        "query_results[].raw_series[].frequency_per_million"
+      ],
+      "filters": [
+        "same fixed 39-phrase production inventory"
+      ],
+      "grouping": "semantic family × period",
+      "denominator": "eligible phrases within the family",
+      "formula": "arithmetic mean of phrase-period means",
+      "unit": "occurrences per million printed-book tokens",
+      "visualChannelMapping": [
+        "x = period",
+        "y = family mean",
+        "colour and direct label = family"
+      ],
+      "missingnessPolicy": "all retained annual rows must be present; failure blocks the phrase",
+      "caveat": "family means are selected-proxy summaries",
+      "productionEligible": true
+    },
+    {
+      "id": "hub-m03",
+      "moduleOrder": 3,
+      "title": "More ways to be a center",
+      "researchQuestion": "How broadly is the same phrase inventory visible in three comparison periods?",
+      "sourceFilesAndFields": [
+        "docs/research/hub/raw/hub_chart01_frequency_raw.json",
+        "query_results[].semantic_group",
+        "query_results[].raw_series[].frequency_per_million"
+      ],
+      "filters": [
+        "same fixed 39-phrase production inventory"
+      ],
+      "grouping": "comparison period",
+      "denominator": "39 eligible phrases in every displayed period",
+      "formula": "visible phrases / 39 × 100",
+      "unit": "percent of selected phrase inventory",
+      "visualChannelMapping": [
+        "equal-width arc length = share",
+        "direct text = rounded percentage",
+        "radius = period order only"
+      ],
+      "missingnessPolicy": "failed and excluded queries do not enter the fixed denominator",
+      "caveat": "not an estimate of all English hub usage",
+      "productionEligible": true
+    },
+    {
+      "id": "hub-m04",
+      "moduleOrder": 4,
+      "title": "Persistence and change",
+      "researchQuestion": "Which selected phrases are durable, recent, rising, or falling?",
+      "sourceFilesAndFields": [
+        "docs/research/hub/raw/hub_chart01_frequency_raw.json",
+        "query_results[].semantic_group",
+        "query_results[].raw_series[].frequency_per_million"
+      ],
+      "filters": [
+        "same fixed 39-phrase production inventory"
+      ],
+      "grouping": "one point per phrase",
+      "denominator": "six periods for persistence; phrase-specific means for change",
+      "formula": "x = visible period count; y = 2000–2019 mean − 1980–1999 mean",
+      "unit": "periods and occurrences per million",
+      "visualChannelMapping": [
+        "x = persistence",
+        "y = change",
+        "equal point area = phrase",
+        "colour = family"
+      ],
+      "missingnessPolicy": "below threshold remains observed below-threshold, not missing",
+      "caveat": "recent growth can be large from a very small base",
+      "productionEligible": true
+    },
+    {
+      "id": "hub-m05",
+      "moduleOrder": 5,
+      "title": "Evidence anchors",
+      "researchQuestion": "What dated evidence supports key transitions?",
+      "sourceFilesAndFields": [
+        "docs/research/hub/raw/hub_evidence_strengthening_raw.json",
+        "docs/research/hub/raw/hub_earliest_attestations_raw.json"
+      ],
+      "filters": [
+        "five non-duplicate readable anchors",
+        "medium or high confidence"
+      ],
+      "grouping": "chronological",
+      "denominator": "not applicable",
+      "formula": "no quantitative aggregation",
+      "unit": "year and evidence type",
+      "visualChannelMapping": [
+        "open strip order = year",
+        "timeline position = year",
+        "text = confidence and evidence type"
+      ],
+      "missingnessPolicy": "dictionary claim remains distinct from direct text",
+      "caveat": "the dictionary records establish availability, not first use",
+      "productionEligible": true
+    },
+    {
+      "id": "hub-m06",
+      "moduleOrder": 6,
+      "title": "Phrase trajectories",
+      "researchQuestion": "How do representative phrases carry the larger movement?",
+      "sourceFilesAndFields": [
+        "docs/research/hub/raw/hub_chart01_frequency_raw.json",
+        "query_results[].semantic_group",
+        "query_results[].raw_series[].frequency_per_million"
+      ],
+      "filters": [
+        "six pre-registered representative phrases from the production inventory"
+      ],
+      "grouping": "phrase × period",
+      "denominator": "phrase-specific printed-book frequency",
+      "formula": "unweighted twenty-year arithmetic mean",
+      "unit": "occurrences per million",
+      "visualChannelMapping": [
+        "x = period",
+        "y = phrase mean on a shared scale",
+        "line colour = family"
+      ],
+      "missingnessPolicy": "all six selected phrases have complete annual rows",
+      "caveat": "examples illustrate the selected inventory and are not exhaustive",
+      "productionEligible": true
+    }
+  ],
+  "sourceManifest": [
+    {
+      "path": "docs/research/hub/raw/hub_chart01_frequency_raw.json",
+      "sha256": "af29d1308440f2ff116d1189be87cb50ee193b7c65db02d6dc8f2023fac3ba5d",
+      "role": "active_input"
+    },
+    {
+      "path": "docs/research/hub/raw/hub_evidence_strengthening_raw.json",
+      "sha256": "a5d56ebf5c3041681476c528bc0afb81bfa3efdc509418bee51a0264ff087054",
+      "role": "active_input"
+    },
+    {
+      "path": "docs/research/hub/raw/hub_earliest_attestations_raw.json",
+      "sha256": "8e585961d41f7ed8625e0b5528f2a5cb57705c07220e881c2ae4521bad8fe70e",
+      "role": "active_input"
+    },
+    {
+      "path": "scripts/build_hub_mobile_analysis.ts",
+      "sha256": "4990e1fa4a1945b96cf9c6d69e71bcb8cec4584f6fdda952c0013ad87875ba40",
+      "role": "transform"
+    }
+  ],
+  "spotChecks": [
+    {
+      "id": "hub-check-eligible-phrases",
+      "actual": 39,
+      "expected": 39,
+      "passed": true
+    },
+    {
+      "id": "hub-check-1900-visible",
+      "actual": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "id": "hub-check-1980-visible",
+      "actual": 19,
+      "expected": 19,
+      "passed": true
+    },
+    {
+      "id": "hub-check-2000-visible",
+      "actual": 35,
+      "expected": 35,
+      "passed": true
+    },
+    {
+      "id": "hub-check-new-rising",
+      "actual": 27,
+      "expected": 27,
+      "passed": true
+    },
+    {
+      "id": "hub-check-current-transport",
+      "actual": 8,
+      "expected": 8,
+      "passed": true
+    },
+    {
+      "id": "hub-check-current-digital",
+      "actual": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "id": "hub-check-contracts",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    }
+  ]
+}
