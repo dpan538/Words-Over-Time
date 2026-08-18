@@ -24,6 +24,8 @@ export function HubEvidenceRail({ analysis }: { analysis: HubMobileAnalysis }) {
   const { activate } = useHubAtmosphereActions();
   const railRef = useRef<HTMLDivElement>(null);
   const lastAtmosphereIndexRef = useRef(0);
+  const programmaticTargetRef = useRef<number | null>(null);
+  const programmaticSettleTimerRef = useRef<number | null>(null);
   const pointerStartRef = useRef<{ x: number; y: number; scrollLeft: number; index: number; hadOpenPanel: boolean } | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const active = analysis.evidence[activeIndex] ?? analysis.evidence[0];
@@ -38,6 +40,12 @@ export function HubEvidenceRail({ analysis }: { analysis: HubMobileAnalysis }) {
     railRef.current?.querySelectorAll<HTMLDetailsElement>("details[open]").forEach((panel) => {
       panel.open = false;
     });
+
+    return () => {
+      if (programmaticSettleTimerRef.current !== null) {
+        window.clearTimeout(programmaticSettleTimerRef.current);
+      }
+    };
   }, []);
 
   const triggerEvidenceAtmosphere = useCallback((index: number) => {
@@ -67,6 +75,20 @@ export function HubEvidenceRail({ analysis }: { analysis: HubMobileAnalysis }) {
       const distance = Math.abs(panel.getBoundingClientRect().left - railLeft);
       return distance < closest.distance ? { index, distance } : closest;
     }, { index: 0, distance: Number.POSITIVE_INFINITY }).index;
+
+    if (programmaticTargetRef.current !== null) {
+      if (next === programmaticTargetRef.current) {
+        if (programmaticSettleTimerRef.current !== null) {
+          window.clearTimeout(programmaticSettleTimerRef.current);
+        }
+        programmaticSettleTimerRef.current = window.setTimeout(() => {
+          programmaticTargetRef.current = null;
+          programmaticSettleTimerRef.current = null;
+        }, 90);
+      }
+      return;
+    }
+
     setActiveIndex((current) => current === next ? current : next);
   };
 
@@ -74,6 +96,11 @@ export function HubEvidenceRail({ analysis }: { analysis: HubMobileAnalysis }) {
     const rail = railRef.current;
     const panel = rail?.querySelector<HTMLElement>(`[data-index="${next}"]`);
     collapseOpenPanels();
+    programmaticTargetRef.current = next;
+    if (programmaticSettleTimerRef.current !== null) {
+      window.clearTimeout(programmaticSettleTimerRef.current);
+      programmaticSettleTimerRef.current = null;
+    }
     if (rail && panel) {
       const left = panel.offsetLeft - Number.parseFloat(getComputedStyle(rail).paddingLeft);
       rail.scrollTo({ left, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });

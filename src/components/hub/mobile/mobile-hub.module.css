@@ -91,15 +91,28 @@
   contain: layout paint style;
 }
 
+.atmosphereCloudBank {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  contain: layout style;
+  pointer-events: none;
+  transform: translateZ(0);
+  will-change: opacity;
+}
+
+.atmosphereCloudBank[data-preparing="true"] {
+  opacity: 0 !important;
+}
+
 .atmosphereCloudPosition {
   position: absolute;
   top: -28.2051vw;
   left: -28.2051vw;
   width: 128.2051vw;
   height: 133.3333vw;
-  contain: layout paint style;
+  contain: layout style;
   transform-origin: 47.4% 48.7%;
-  will-change: transform;
 }
 
 .atmosphereCloudDrift {
@@ -118,7 +131,7 @@
 }
 
 .atmosphereCloudSvg {
-  overflow: hidden;
+  overflow: visible;
 }
 
 .atmosphereOverlaySvg {
@@ -133,7 +146,6 @@
 .atmosphereHalo {
   transform-box: fill-box;
   transform-origin: 50% 50%;
-  will-change: opacity;
 }
 
 .atmosphereHalo {
@@ -145,9 +157,7 @@
 }
 
 .atmospherePulse {
-  transform-box: fill-box;
-  transform-origin: 50% 50%;
-  will-change: transform, opacity;
+  will-change: opacity;
 }
 
 .atmosphereLine {

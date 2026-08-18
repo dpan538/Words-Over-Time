@@ -9,6 +9,7 @@ import {
 } from "motion/react";
 import {
   createContext,
+  memo,
   useCallback,
   useContext,
   useEffect,
@@ -51,6 +52,11 @@ type AtmosphereState = SceneDefinition & {
   pulseScene: HubAtmosphereScene | null;
 };
 
+type AtmosphereVisualState = SceneDefinition & {
+  scene: HubAtmosphereScene;
+  visualKey: string;
+};
+
 type ActivateOptions = {
   scene: HubAtmosphereScene;
   palette?: HubPalette;
@@ -62,7 +68,6 @@ type HubAtmosphereActions = {
   activate: (options: ActivateOptions) => void;
 };
 
-export const MORPH_EASE = [0.22, 1, 0.36, 1] as const;
 export const SOFT_EASE = [0.4, 0, 0.2, 1] as const;
 
 export const CLOUD_FORMS = [
@@ -153,7 +158,21 @@ const HubAtmosphereStateContext = createContext<AtmosphereState | null>(null);
 const HubAtmosphereActionsContext = createContext<HubAtmosphereActions | null>(null);
 
 function safeId(value: string) {
-  return value.replaceAll(":", "").replaceAll("_", "-");
+  return value.replaceAll(":", "").replaceAll("_", "-").replace(/[^a-zA-Z0-9-]/g, "");
+}
+
+function atmosphereVisualKey(state: SceneDefinition & { scene: HubAtmosphereScene }) {
+  return `${state.scene}-${state.form}-${state.palette.join("-")}`;
+}
+
+function atmosphereVisualState(state: AtmosphereState): AtmosphereVisualState {
+  return {
+    scene: state.scene,
+    palette: state.palette,
+    form: state.form,
+    layout: state.layout,
+    visualKey: atmosphereVisualKey(state),
+  };
 }
 
 export function HubAtmosphereProvider({ children }: { children: ReactNode }) {
@@ -218,8 +237,8 @@ export function useHubAtmosphereScene(
 ): RefObject<HTMLElement | null> {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, {
-    amount: .08,
-    margin: "-4% 0px -30% 0px",
+    amount: .01,
+    margin: "-28% 0px -64% 0px",
   });
   const { activate } = useHubAtmosphereActions();
 
@@ -235,11 +254,251 @@ function toViewportWidthUnit(value: number) {
   return `${(value / 3.9).toFixed(4)}vw`;
 }
 
+const AtmosphereCloudBank = memo(function AtmosphereCloudBank({
+  bank,
+  bankIndex,
+  active,
+  preparing,
+  rootId,
+  shouldReduceMotion,
+}: {
+  bank: AtmosphereVisualState;
+  bankIndex: 0 | 1;
+  active: boolean;
+  preparing: boolean;
+  rootId: string;
+  shouldReduceMotion: boolean;
+}) {
+  const formIndex = bank.form % CLOUD_FORMS.length;
+
+  return (
+    <motion.div
+      className={styles.atmosphereCloudBank}
+      data-active={active}
+      data-preparing={preparing}
+      data-visual-key={bank.visualKey}
+      initial={false}
+      animate={{ opacity: preparing ? 0 : active ? 1 : 0 }}
+      transition={{
+        opacity: {
+          duration: preparing || shouldReduceMotion ? 0 : active ? .46 : .34,
+          ease: SOFT_EASE,
+        },
+      }}
+    >
+      {bank.palette.map((color, index) => {
+        const targetPath = CLOUD_FORMS[(formIndex + index) % CLOUD_FORMS.length];
+        const targetLayout = bank.layout[index];
+        const coreColor = index === 0
+          ? bank.palette[2]
+          : index === 1
+            ? "#a882df"
+            : bank.palette[0];
+        const filterPrefix = `${rootId}-bank-${bankIndex}-${safeId(bank.visualKey)}-${index}`;
+        const innerFilterId = `${filterPrefix}-inner`;
+        const bodyFilterId = `${filterPrefix}-body`;
+        const haloFilterId = `${filterPrefix}-halo`;
+        const bodyGradientId = `${filterPrefix}-body-fill`;
+        const innerGradientId = `${filterPrefix}-inner-fill`;
+
+        return (
+          <div
+            key={index}
+            className={styles.atmosphereCloudPosition}
+            style={{
+              transform: `translate3d(${toViewportWidthUnit(targetLayout.x)}, ${toViewportWidthUnit(targetLayout.y)}, 0) scale(${targetLayout.scale})`,
+            }}
+          >
+            <motion.div
+              className={styles.atmosphereCloudDrift}
+              animate={shouldReduceMotion || (!active && !preparing) ? undefined : {
+                x: [0, 4 + index, -3, 0],
+                y: [0, -4, 3 + index, 0],
+              }}
+              transition={shouldReduceMotion || (!active && !preparing) ? undefined : {
+                duration: 23 + index * 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              <svg
+                className={styles.atmosphereCloudSvg}
+                viewBox="-110 -110 500 520"
+                preserveAspectRatio="xMidYMid meet"
+                focusable="false"
+              >
+                <defs>
+                  <filter id={innerFilterId} x="-45%" y="-45%" width="190%" height="190%" colorInterpolationFilters="sRGB">
+                    <feGaussianBlur stdDeviation="13" />
+                  </filter>
+                  <filter id={bodyFilterId} x="-65%" y="-65%" width="230%" height="230%" colorInterpolationFilters="sRGB">
+                    <feGaussianBlur stdDeviation="24" />
+                  </filter>
+                  <filter id={haloFilterId} x="-105%" y="-105%" width="310%" height="310%" colorInterpolationFilters="sRGB">
+                    <feGaussianBlur stdDeviation="45" />
+                  </filter>
+                  <radialGradient
+                    id={bodyGradientId}
+                    gradientUnits="userSpaceOnUse"
+                    cx={88 + index * 34}
+                    cy={96 + index * 24}
+                    r="226"
+                  >
+                    <stop offset="0" stopColor={color} stopOpacity=".96" />
+                    <stop offset=".5" stopColor={color} stopOpacity=".72" />
+                    <stop offset=".8" stopColor={coreColor} stopOpacity=".38" />
+                    <stop offset="1" stopColor={color} stopOpacity=".22" />
+                  </radialGradient>
+                  <radialGradient
+                    id={innerGradientId}
+                    gradientUnits="userSpaceOnUse"
+                    cx={126 + index * 18}
+                    cy={118 + index * 29}
+                    r="178"
+                  >
+                    <stop offset="0" stopColor={coreColor} stopOpacity="1" />
+                    <stop offset=".42" stopColor={color} stopOpacity=".9" />
+                    <stop offset=".76" stopColor={color} stopOpacity=".42" />
+                    <stop offset="1" stopColor={color} stopOpacity=".18" />
+                  </radialGradient>
+                </defs>
+                <path
+                  d={targetPath}
+                  fill={color}
+                  opacity={targetLayout.opacity * .34}
+                  filter={`url(#${haloFilterId})`}
+                  className={styles.atmosphereHalo}
+                />
+                <path
+                  d={targetPath}
+                  fill={`url(#${bodyGradientId})`}
+                  opacity={targetLayout.opacity * .64}
+                  filter={`url(#${bodyFilterId})`}
+                  className={styles.atmosphereBody}
+                />
+                <path
+                  d={targetPath}
+                  fill={`url(#${innerGradientId})`}
+                  opacity={targetLayout.opacity * .82}
+                  filter={`url(#${innerFilterId})`}
+                  className={styles.atmosphereInner}
+                />
+              </svg>
+            </motion.div>
+          </div>
+        );
+      })}
+    </motion.div>
+  );
+});
+
 export function HubAtmosphereViewport() {
   const id = safeId(useId());
   const { state } = useHubAtmosphere();
   const shouldReduceMotion = Boolean(useReducedMotion());
   const formIndex = state.form % CLOUD_FORMS.length;
+  const targetVisual = useMemo(() => atmosphereVisualState(state), [
+    state.form,
+    state.layout,
+    state.palette,
+    state.scene,
+  ]);
+  const [banks, setBanks] = useState<readonly [AtmosphereVisualState, AtmosphereVisualState]>(() => [
+    targetVisual,
+    targetVisual,
+  ]);
+  const [activeBank, setActiveBank] = useState<0 | 1>(0);
+  const [preparingBank, setPreparingBank] = useState<0 | 1 | null>(null);
+  const activeBankRef = useRef<0 | 1>(0);
+  const settledVisualKeyRef = useRef(targetVisual.visualKey);
+  const requestedVisualRef = useRef(targetVisual);
+  const isPreparingRef = useRef(false);
+  const isCrossfadingRef = useRef(false);
+  const preparationFramesRef = useRef<number[]>([]);
+  const crossfadeTimerRef = useRef<number | null>(null);
+  const stageVisualRef = useRef<(visual: AtmosphereVisualState) => void>(() => undefined);
+
+  const stageVisual = useCallback((visual: AtmosphereVisualState) => {
+    requestedVisualRef.current = visual;
+
+    if (settledVisualKeyRef.current === visual.visualKey && !isPreparingRef.current) return;
+    if (isCrossfadingRef.current) return;
+
+    if (isPreparingRef.current) {
+      preparationFramesRef.current.forEach((frame) => window.cancelAnimationFrame(frame));
+      preparationFramesRef.current = [];
+      isPreparingRef.current = false;
+    }
+
+    preparationFramesRef.current.forEach((frame) => window.cancelAnimationFrame(frame));
+    preparationFramesRef.current = [];
+
+    const nextBank: 0 | 1 = activeBankRef.current === 0 ? 1 : 0;
+    isPreparingRef.current = true;
+    setPreparingBank(nextBank);
+    setBanks((current) => {
+      const next: [AtmosphereVisualState, AtmosphereVisualState] = [current[0], current[1]];
+      next[nextBank] = visual;
+      return next;
+    });
+
+    const reveal = () => {
+      activeBankRef.current = nextBank;
+      settledVisualKeyRef.current = visual.visualKey;
+      isPreparingRef.current = false;
+      setActiveBank(nextBank);
+      setPreparingBank(null);
+      preparationFramesRef.current = [];
+
+      if (shouldReduceMotion) {
+        const queued = requestedVisualRef.current;
+        if (queued.visualKey !== settledVisualKeyRef.current) {
+          window.queueMicrotask(() => stageVisualRef.current(queued));
+        }
+        return;
+      }
+
+      isCrossfadingRef.current = true;
+      crossfadeTimerRef.current = window.setTimeout(() => {
+        isCrossfadingRef.current = false;
+        crossfadeTimerRef.current = null;
+        const queued = requestedVisualRef.current;
+        if (queued.visualKey !== settledVisualKeyRef.current) {
+          stageVisualRef.current(queued);
+        }
+      }, 420);
+    };
+
+    if (shouldReduceMotion) {
+      reveal();
+      return;
+    }
+
+    const firstFrame = window.requestAnimationFrame(() => {
+      const secondFrame = window.requestAnimationFrame(reveal);
+      preparationFramesRef.current = [secondFrame];
+    });
+    preparationFramesRef.current = [firstFrame];
+  }, [shouldReduceMotion]);
+
+  useEffect(() => {
+    stageVisualRef.current = stageVisual;
+  }, [stageVisual]);
+
+  useEffect(() => {
+    stageVisual(targetVisual);
+  }, [stageVisual, targetVisual]);
+
+  useEffect(() => {
+    return () => {
+      preparationFramesRef.current.forEach((frame) => window.cancelAnimationFrame(frame));
+      preparationFramesRef.current = [];
+      if (crossfadeTimerRef.current !== null) {
+        window.clearTimeout(crossfadeTimerRef.current);
+        crossfadeTimerRef.current = null;
+      }
+    };
+  }, []);
 
   return (
     <div
@@ -250,91 +509,17 @@ export function HubAtmosphereViewport() {
       aria-hidden="true"
     >
       <div className={styles.atmosphereCloudStack}>
-        {state.palette.map((color, index) => {
-          const targetPath = CLOUD_FORMS[(formIndex + index) % CLOUD_FORMS.length];
-          const targetLayout = state.layout[index];
-          const innerFilterId = `${id}-inner-${index}`;
-          const bodyFilterId = `${id}-body-${index}`;
-          const haloFilterId = `${id}-halo-${index}`;
-          const fillTransition = {
-            fill: { duration: shouldReduceMotion ? .08 : .62, ease: SOFT_EASE },
-            opacity: { duration: shouldReduceMotion ? .08 : .62, ease: SOFT_EASE },
-          };
-
-          return (
-            <motion.div
-              key={index}
-              className={styles.atmosphereCloudPosition}
-              initial={false}
-              animate={{
-                x: toViewportWidthUnit(targetLayout.x),
-                y: toViewportWidthUnit(targetLayout.y),
-                scale: targetLayout.scale,
-              }}
-              transition={{
-                x: { duration: shouldReduceMotion ? 0 : .92, ease: MORPH_EASE },
-                y: { duration: shouldReduceMotion ? 0 : .92, ease: MORPH_EASE },
-                scale: { duration: shouldReduceMotion ? 0 : .92, ease: MORPH_EASE },
-              }}
-            >
-              <motion.div
-                className={styles.atmosphereCloudDrift}
-                animate={shouldReduceMotion ? undefined : {
-                  x: [0, 4 + index, -3, 0],
-                  y: [0, -4, 3 + index, 0],
-                }}
-                transition={shouldReduceMotion ? undefined : {
-                  duration: 23 + index * 3,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              >
-                <svg
-                  className={styles.atmosphereCloudSvg}
-                  viewBox="-110 -110 500 520"
-                  preserveAspectRatio="xMidYMid meet"
-                  focusable="false"
-                >
-                  <defs>
-                    <filter id={innerFilterId} x="-30%" y="-30%" width="160%" height="160%" colorInterpolationFilters="sRGB">
-                      <feGaussianBlur stdDeviation="13" />
-                    </filter>
-                    <filter id={bodyFilterId} x="-55%" y="-55%" width="210%" height="210%" colorInterpolationFilters="sRGB">
-                      <feGaussianBlur stdDeviation="24" />
-                    </filter>
-                    <filter id={haloFilterId} x="-90%" y="-90%" width="280%" height="280%" colorInterpolationFilters="sRGB">
-                      <feGaussianBlur stdDeviation="45" />
-                    </filter>
-                  </defs>
-                  <motion.path
-                    initial={false}
-                    d={targetPath}
-                    filter={`url(#${haloFilterId})`}
-                    animate={{ fill: color, opacity: targetLayout.opacity * .28 }}
-                    transition={fillTransition}
-                    className={styles.atmosphereHalo}
-                  />
-                  <motion.path
-                    initial={false}
-                    d={targetPath}
-                    filter={`url(#${bodyFilterId})`}
-                    animate={{ fill: color, opacity: targetLayout.opacity * .54 }}
-                    transition={fillTransition}
-                    className={styles.atmosphereBody}
-                  />
-                  <motion.path
-                    initial={false}
-                    d={targetPath}
-                    filter={`url(#${innerFilterId})`}
-                    animate={{ fill: color, opacity: targetLayout.opacity * .72 }}
-                    transition={fillTransition}
-                    className={styles.atmosphereInner}
-                  />
-                </svg>
-              </motion.div>
-            </motion.div>
-          );
-        })}
+        {banks.map((bank, bankIndex) => (
+          <AtmosphereCloudBank
+            key={bankIndex}
+            bank={bank}
+            bankIndex={bankIndex as 0 | 1}
+            active={activeBank === bankIndex}
+            preparing={preparingBank === bankIndex}
+            rootId={id}
+            shouldReduceMotion={shouldReduceMotion}
+          />
+        ))}
       </div>
 
       <svg className={styles.atmosphereOverlaySvg} viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -349,6 +534,11 @@ export function HubAtmosphereViewport() {
           <filter id={`${id}-pulse`} x="-55%" y="-55%" width="210%" height="210%" colorInterpolationFilters="sRGB">
             <feGaussianBlur stdDeviation="24" />
           </filter>
+          <radialGradient id={`${id}-pulse-fill`} gradientUnits="userSpaceOnUse" cx="108" cy="120" r="205">
+            <stop offset="0" stopColor={state.palette[0]} stopOpacity=".88" />
+            <stop offset=".52" stopColor={state.palette[2]} stopOpacity=".52" />
+            <stop offset="1" stopColor={state.palette[1]} stopOpacity=".18" />
+          </radialGradient>
           <linearGradient id={`${id}-line`} x1="0" y1="0" x2="1" y2="0">
             <stop offset="0" stopColor={state.palette[0]} stopOpacity="0" />
             <stop offset=".45" stopColor={state.palette[2]} stopOpacity=".34" />
@@ -368,24 +558,21 @@ export function HubAtmosphereViewport() {
         />
 
         {state.pulseScene === state.scene && state.pulseKey > 0 && !shouldReduceMotion ? (
-          <motion.path
-            key={state.pulseKey}
-            d={CLOUD_FORMS[formIndex]}
-            fill={state.palette[0]}
-            filter={`url(#${id}-pulse)`}
-            initial={{
-              x: state.layout[0].x,
-              y: state.layout[0].y,
-              scale: state.layout[0].scale * .64,
-              opacity: 0,
-            }}
-            animate={{
-              scale: [state.layout[0].scale * .64, state.layout[0].scale, state.layout[0].scale * 1.28],
-              opacity: [0, .34, 0],
-            }}
-            transition={{ duration: 1.15, ease: SOFT_EASE, times: [0, .36, 1] }}
-            className={styles.atmospherePulse}
-          />
+          <g transform={`translate(${state.layout[0].x} ${state.layout[0].y}) scale(${state.layout[0].scale * 1.08})`}>
+            <motion.g
+              key={state.pulseKey}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: [0, .28, 0] }}
+              transition={{ duration: .82, ease: SOFT_EASE, times: [0, .34, 1] }}
+              className={styles.atmospherePulse}
+            >
+              <path
+                d={CLOUD_FORMS[formIndex]}
+                fill={`url(#${id}-pulse-fill)`}
+                filter={`url(#${id}-pulse)`}
+              />
+            </motion.g>
+          </g>
         ) : null}
 
         <rect width="390" height="844" filter={`url(#${id}-grain)`} className={styles.atmosphereGrain} />

@@ -76,10 +76,11 @@ and pulse key. State and actions use separate contexts so components that only
 dispatch a selection do not subscribe to every ambient frame.
 
 `HubAtmosphereViewport` is rendered once and remains fixed with `inset: 0`.
-It contains at most:
+Its cloud renderer uses two persistent banks so an incoming scene can be
+rasterized offscreen before it replaces the visible scene. It contains:
 
-- three local cloud surfaces, each containing halo, body, and inner filtered
-  paths (nine persistent filtered paths in total);
+- two banks of three local cloud surfaces, each surface containing halo, body,
+  and inner filtered paths (eighteen persistent filtered paths in total);
 - one slow ambient line;
 - one temporary global diffusion path;
 - one static turbulence-grain layer.
@@ -90,19 +91,28 @@ regressions irreproducible. Form changes are applied at scene activation inside
 the affected local cloud surface; they are not interpolated across the whole
 viewport every frame.
 
-The three visible cloud levels serve different visual purposes:
+The three filtered levels in each visible cloud serve different visual
+purposes:
 
 - inner: local colour energy;
 - body: blended chromatic mass;
 - halo: long-distance alpha decay.
 
-Blur radius, turbulence frequency, and filter bounds remain static. Motion only
-animates fill, transform, and opacity. The paper-colour viewport gradient stays
-resident, while each cloud is rasterized in a bounded SVG surface. Scene
-position, scale, and slow drift happen on nested HTML compositing layers;
-palette or form changes repaint only the affected cloud bounds. This preserves
-all nine filtered paths without asking mobile Safari to redraw one full-screen
-filtered SVG for every ambient frame.
+Blur radius, turbulence frequency, and filter bounds remain static. The
+paper-colour viewport gradient stays resident, while each cloud is rasterized
+inside a local SVG surface. A target scene is first written into the hidden
+bank; after two animation frames, the two banks crossfade only their wrapper
+opacity. Visible filtered paths never change `d`, fill, position, or scale in
+place. This removes the stretched-filter raster that previously appeared as a
+horizontal scan band during a card change.
+
+Only the active bank runs the slow compositor drift. The inactive bank keeps
+all nine filtered paths mounted but does no continuous transform work. Local
+SVG overflow is visible so the 45 px halo can decay naturally; clipping is
+performed once at the viewport stack rather than at every cloud surface.
+Incoming cloud gradients keep a dominant local hue and a separate chromatic
+core. Colours mix where cloud surfaces overlap, not by putting the complete
+three-colour palette inside every single cloud.
 
 ## Scene model
 
@@ -120,10 +130,11 @@ Each research movement registers exactly one `useInView` observer through
 | phrase | follow one phrase through time | family colour against blue/yellow |
 | closing | recombine the argument | hero palette in a quieter distribution |
 
-An observer activates as the incoming section first becomes legible (8% visible
-inside the route observation band), so the atmosphere is already responding
-before the heading reaches the middle of the viewport. Scrolling does not
-restart animation on every scroll event.
+An observer activates through one narrow viewport band. The band prevents two
+long adjacent sections from repeatedly claiming the atmosphere at the same
+time, while still changing the scene before the incoming heading reaches the
+middle of the viewport. Scrolling does not restart animation on every scroll
+event.
 
 Family, evidence, and phrase selection can call `activate` with a local palette,
 form index, and `pulse: true`. A monotonically increasing `pulseKey` guarantees
@@ -137,16 +148,16 @@ The animation is designed as slow ink diffusion rather than floating bubbles.
 
 | Response | Duration | Easing |
 | --- | ---: | --- |
-| section position/scale response | 0.92 s | `[0.22, 1, 0.36, 1]` |
-| palette/opacity transition | 0.62 s | `[0.4, 0, 0.2, 1]` |
+| prepared bank crossfade | 0.34–0.46 s | `[0.4, 0, 0.2, 1]` |
+| hidden-bank prepaint | two animation frames | none |
 | linked card diffusion | 1.45–1.75 s | soft ease |
 | interaction state | 0.45–0.65 s | soft ease |
 | local compositor drift | 23–29 s | ease-in-out |
 | ambient line | 15 s | linear |
 
-Drift displacement is deliberately small and scale change remains restrained.
-There are no springs, bounce, overshoot, animated blur parameters, or runtime
-random paths.
+Drift displacement is deliberately small. Visible filtered surfaces never
+change scale. There are no springs, bounce, overshoot, animated blur
+parameters, or runtime random paths.
 
 `MotionConfig reducedMotion="user"` is the route-level policy. With reduced
 motion enabled, drift, diffusion, positional change, and scale animation stop.
@@ -222,13 +233,17 @@ When changing the atmosphere:
 1. Keep all `CLOUD_FORMS` deterministic and compatible in path topology.
 2. Keep filter IDs instance-safe through `useId`.
 3. Do not add one full SVG atmosphere per card or section.
-4. Do not animate `stdDeviation`, `baseFrequency`, or CSS `filter`.
+4. Do not animate `stdDeviation`, `baseFrequency`, CSS `filter`, or the scale
+   of a visible filtered surface.
 5. Keep the paper safe-area veils independent of scene palette.
 6. Verify the fixed layer does not create document-level horizontal overflow.
 7. Test both normal and reduced-motion settings after timing changes.
-8. Keep the filtered-path contract at nine persistent paths: three bounded
-   clouds × halo/body/inner. Do not merge them into one full-viewport repaint
-   surface or attach continuous transform animation directly to filtered paths.
+8. Keep the filtered-path contract at eighteen persistent paths: two banks,
+   each with three bounded clouds containing halo, body, and inner paths. Do
+   not merge them into one giant surface or mutate a visible bank's path.
+9. During a rapid interaction burst, keep only the latest queued scene. Finish
+   the current crossfade, then prepare that target and discard stale
+   intermediate scenes.
 
 When changing a selector or swipe rail:
 
@@ -236,6 +251,8 @@ When changing a selector or swipe rail:
 2. Preserve one-step phrase movement and evidence snap alignment.
 3. Ensure inactive content does not keep running its own SVG animation.
 4. Test keyboard activation and `aria-pressed`/expanded state.
+5. Lock programmatic evidence-rail movement to its target index until scrolling
+   settles; intermediate rail positions must not dispatch atmosphere scenes.
 
 When changing charts:
 
@@ -246,6 +263,52 @@ When changing charts:
    `npm run build`.
 4. Recheck 390×844 and 430×932, Safari safe areas, reduced motion, body
    overflow, and desktop non-regression.
+
+## Description note for future maintenance
+
+This release replaces in-place mutation of visible filtered paths with a
+two-bank prepaint-and-crossfade compositor. The extra bank is intentional: it
+keeps all eighteen filtered paths resident while allowing the next atmosphere
+to rasterize before it becomes visible. Do not simplify this back to one bank,
+add an unbounded `AnimatePresence` exit stack, or animate a visible path's `d`,
+scale, blur, or filter parameters. Those changes can recreate the delayed
+repaint and horizontal X-ray scan band that prompted this repair.
+
+The evidence rail's programmatic target lock is also part of atmosphere
+correctness. During a smooth one-card move, intermediate scroll positions must
+not dispatch extra evidence scenes. If the rail timing changes, update and test
+the lock together with the scroll behaviour rather than removing it in
+isolation.
+
+Known maintenance risks to watch:
+
+- Rapid scene requests inside one 420 ms crossfade intentionally coalesce to
+  the latest target. Content still updates immediately, but an intermediate
+  atmosphere may be skipped. A future feature that requires every intermediate
+  scene needs a bounded queue design, not a shorter or absent lock.
+- Eighteen persistent filtered paths use more GPU memory than the previous
+  nine-path renderer. The inactive bank therefore must remain static. On
+  low-memory Safari, watch for a single delayed frame caused by surface-cache
+  eviction; do not address it by adding a third bank or reducing the filtered
+  path contract.
+- The narrow scene-observation band assumes sections remain contiguous in
+  normal document flow. A future sticky, overlapping, or portal-rendered
+  section could claim the wrong scene and requires a new ownership rule.
+- Local cloud SVG overflow must remain visible, with clipping performed only by
+  the outer viewport stack. Restoring per-cloud clipping will cut the halo and
+  can make the crossfade look like a rectangular scan.
+- `useId`-derived filter, gradient, mask, and pulse IDs must remain unique
+  across both banks. Duplicated IDs can show the wrong colour or filter only in
+  Safari, making the failure appear device-specific.
+- The final compositor was verified in Chromium at 390×844 and 430×932. The
+  Safari code path keeps `viewport-fit=cover`, paper-colour browser chrome, and
+  reduced-motion fallbacks, but a physical-device Safari spot check remains a
+  release-monitoring item because Simulator testing was intentionally stopped.
+
+These are maintenance risks, not known current production failures. If a
+future report describes slow colour refresh, first capture the active bank,
+incoming bank, `pulseKey`, and rail target-lock state before changing visual
+timings.
 
 ## Release verification evidence
 
