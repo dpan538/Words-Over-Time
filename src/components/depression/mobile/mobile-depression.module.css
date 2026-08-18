@@ -1254,21 +1254,14 @@
 }
 
 .closingScene {
-  --closing-safe-colour: #36717a;
   padding: calc(var(--safe-top) + 1rem) calc(1.5rem + var(--safe-right)) calc(var(--safe-bottom) + 1rem) calc(1.5rem + var(--safe-left));
   display: flex;
   flex-direction: column;
 }
 
 .closingScene::after {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: var(--safe-bottom);
-  background: var(--closing-safe-colour);
   content: "";
-  pointer-events: none;
+  display: none;
 }
 
 .closingCopy h2 {

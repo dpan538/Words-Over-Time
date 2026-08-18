@@ -56,7 +56,6 @@ const OPENING_BAND_COLOURS: Record<ChapterId, string> = {
 const DEPRESSION_PAPER = "#f3e6cd";
 const INITIAL_ROTARY_PANEL = "#3275c8";
 const INITIAL_ROTARY_SCENE = "#0d3023";
-const CLOSING_SAFE_COLOUR = "#36717a";
 
 function useBrowserSafeAreaColours(underlayColour: string, themeColour: string) {
   useEffect(() => {
@@ -262,9 +261,7 @@ export function DepressionStoryDeck({ research }: { research: DepressionMobileRe
   const activeChapter = chaptersById.get(activeScene as ChapterId);
   const browserUnderlayColour = activeScene === "rotary-interlude"
     ? rotaryPanelColour
-    : activeScene === "closing"
-      ? CLOSING_SAFE_COLOUR
-      : activeChapter?.background ?? DEPRESSION_PAPER;
+    : activeChapter?.background ?? DEPRESSION_PAPER;
   const browserThemeColour = activeScene === "rotary-interlude"
     ? rotarySceneColour
     : activeScene === "closing"
