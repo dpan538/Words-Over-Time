@@ -1159,7 +1159,7 @@ function NamedCard() {
           <line className={styles.namedCursor} x1={cursorX} y1={plotTop} x2={cursorX} y2={plotBottom} />
           <text className={styles.plotAxisLabel} x={plotLeft} y="68" textAnchor="middle">1950</text>
           <text className={styles.plotAxisLabel} x={yearX(1983)} y="68" textAnchor="middle">1983</text>
-          <text className={styles.plotAxisLabel} x={plotRight} y="68" textAnchor="middle">2019</text>
+          <text className={styles.plotAxisLabel} x={plotRight} y="68" textAnchor="end">2019</text>
         </svg>
       </div>
       <footer className={styles.cardV2Footer}>
