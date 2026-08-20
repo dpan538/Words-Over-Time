@@ -1,0 +1,2346 @@
+{
+  "schemaVersion": "1.1.0",
+  "auditId": "data-mobile-experience-2026-08-18",
+  "generatedFromFrozenInputs": true,
+  "predesignApproved": true,
+  "implementationAuthorized": true,
+  "narrativeId": "from-given-to-made-v4",
+  "corpus": {
+    "label": "Google Books English 2019",
+    "release": "googlebooks-eng-20200217",
+    "numericId": 26,
+    "startYear": 1800,
+    "endYear": 2019,
+    "smoothing": 0,
+    "unit": "uses per million bigrams"
+  },
+  "scope": {
+    "selectedProbeCount": 94,
+    "returnedCrossCorpusSeriesCount": 147,
+    "morphStartYear": 1950,
+    "morphEndYear": 2019,
+    "morphYearCount": 70
+  },
+  "mass": {
+    "amountShare": [
+      {
+        "decade": "1940s",
+        "percent": 86.48
+      },
+      {
+        "decade": "2010s",
+        "percent": 70.62
+      }
+    ],
+    "singularAgreementShare": [
+      {
+        "decade": "1940s",
+        "percent": 16.29
+      },
+      {
+        "decade": "2010s",
+        "percent": 31.19
+      }
+    ],
+    "includedAgreementPairs": [
+      "data show / data shows",
+      "data indicate / data indicates",
+      "data suggest / data suggests",
+      "data reveal / data reveals",
+      "data provide / data provides",
+      "data were / data was",
+      "data have / data has"
+    ],
+    "excludedAmbiguousPair": "data drive / data drives"
+  },
+  "cut": {
+    "earlyPeriod": "1950_1969",
+    "latePeriod": "2005_2019",
+    "unit": "per million bigrams",
+    "items": [
+      {
+        "id": "sheets",
+        "label": "data sheets",
+        "early": 0.65836,
+        "late": 0.248004
+      },
+      {
+        "id": "points",
+        "label": "data points",
+        "early": 0.518617,
+        "late": 1.937363
+      },
+      {
+        "id": "sources",
+        "label": "data sources",
+        "early": 0.175534,
+        "late": 2.028336
+      },
+      {
+        "id": "types",
+        "label": "data types",
+        "early": 0.017263,
+        "late": 1.23139
+      }
+    ]
+  },
+  "packaged": {
+    "periods": [
+      "1950_1969",
+      "1970_1989",
+      "1990_2004",
+      "2005_2019"
+    ],
+    "unit": "selected exact forms, summed uses per million bigrams",
+    "sharedDomainMax": 48.917886,
+    "totals": [
+      {
+        "period": "1950_1969",
+        "value": 0.249197
+      },
+      {
+        "period": "1970_1989",
+        "value": 12.335452
+      },
+      {
+        "period": "1990_2004",
+        "value": 53.001999
+      },
+      {
+        "period": "2005_2019",
+        "value": 46.756061
+      }
+    ],
+    "terms": [
+      {
+        "id": "database",
+        "label": "database",
+        "values": [
+          0.209296,
+          11.702779,
+          48.917886,
+          36.787456
+        ],
+        "late": 36.787456
+      },
+      {
+        "id": "databank",
+        "label": "databank",
+        "values": [
+          0.010942,
+          0.275397,
+          0.452169,
+          0.188166
+        ],
+        "late": 0.188166
+      },
+      {
+        "id": "dataset",
+        "label": "dataset",
+        "values": [
+          0.023352,
+          0.316682,
+          2.045058,
+          6.013231
+        ],
+        "late": 6.013231
+      },
+      {
+        "id": "metadata",
+        "label": "metadata",
+        "values": [
+          0.005607,
+          0.040594,
+          1.586886,
+          3.767208
+        ],
+        "late": 3.767208
+      }
+    ]
+  },
+  "morph": {
+    "startYear": 1950,
+    "endYear": 2019,
+    "unit": "per million bigrams",
+    "sharedDomainMax": 4.599183,
+    "points": [
+      {
+        "year": 1950,
+        "decadeIndex": 0,
+        "yearIndex": 0,
+        "given": 1.096781,
+        "collected": 1.608972
+      },
+      {
+        "year": 1951,
+        "decadeIndex": 0,
+        "yearIndex": 1,
+        "given": 0.879404,
+        "collected": 1.176445
+      },
+      {
+        "year": 1952,
+        "decadeIndex": 0,
+        "yearIndex": 2,
+        "given": 0.954584,
+        "collected": 1.306583
+      },
+      {
+        "year": 1953,
+        "decadeIndex": 0,
+        "yearIndex": 3,
+        "given": 0.875207,
+        "collected": 1.312923
+      },
+      {
+        "year": 1954,
+        "decadeIndex": 0,
+        "yearIndex": 4,
+        "given": 0.920773,
+        "collected": 1.414921
+      },
+      {
+        "year": 1955,
+        "decadeIndex": 0,
+        "yearIndex": 5,
+        "given": 0.940236,
+        "collected": 1.385094
+      },
+      {
+        "year": 1956,
+        "decadeIndex": 0,
+        "yearIndex": 6,
+        "given": 1.045133,
+        "collected": 1.41119
+      },
+      {
+        "year": 1957,
+        "decadeIndex": 0,
+        "yearIndex": 7,
+        "given": 1.133547,
+        "collected": 1.469302
+      },
+      {
+        "year": 1958,
+        "decadeIndex": 0,
+        "yearIndex": 8,
+        "given": 1.127347,
+        "collected": 1.563658
+      },
+      {
+        "year": 1959,
+        "decadeIndex": 0,
+        "yearIndex": 9,
+        "given": 1.11628,
+        "collected": 1.66213
+      },
+      {
+        "year": 1960,
+        "decadeIndex": 1,
+        "yearIndex": 0,
+        "given": 1.148555,
+        "collected": 1.808752
+      },
+      {
+        "year": 1961,
+        "decadeIndex": 1,
+        "yearIndex": 1,
+        "given": 1.111955,
+        "collected": 1.896743
+      },
+      {
+        "year": 1962,
+        "decadeIndex": 1,
+        "yearIndex": 2,
+        "given": 1.100329,
+        "collected": 1.954861
+      },
+      {
+        "year": 1963,
+        "decadeIndex": 1,
+        "yearIndex": 3,
+        "given": 1.089998,
+        "collected": 2.235059
+      },
+      {
+        "year": 1964,
+        "decadeIndex": 1,
+        "yearIndex": 4,
+        "given": 1.152941,
+        "collected": 2.217822
+      },
+      {
+        "year": 1965,
+        "decadeIndex": 1,
+        "yearIndex": 5,
+        "given": 0.992217,
+        "collected": 2.189822
+      },
+      {
+        "year": 1966,
+        "decadeIndex": 1,
+        "yearIndex": 6,
+        "given": 0.943166,
+        "collected": 2.13494
+      },
+      {
+        "year": 1967,
+        "decadeIndex": 1,
+        "yearIndex": 7,
+        "given": 0.932974,
+        "collected": 2.093498
+      },
+      {
+        "year": 1968,
+        "decadeIndex": 1,
+        "yearIndex": 8,
+        "given": 0.888958,
+        "collected": 2.129119
+      },
+      {
+        "year": 1969,
+        "decadeIndex": 1,
+        "yearIndex": 9,
+        "given": 0.872754,
+        "collected": 2.266265
+      },
+      {
+        "year": 1970,
+        "decadeIndex": 2,
+        "yearIndex": 0,
+        "given": 0.911101,
+        "collected": 2.475681
+      },
+      {
+        "year": 1971,
+        "decadeIndex": 2,
+        "yearIndex": 1,
+        "given": 0.885193,
+        "collected": 2.716075
+      },
+      {
+        "year": 1972,
+        "decadeIndex": 2,
+        "yearIndex": 2,
+        "given": 0.861356,
+        "collected": 3.240944
+      },
+      {
+        "year": 1973,
+        "decadeIndex": 2,
+        "yearIndex": 3,
+        "given": 0.814216,
+        "collected": 2.974573
+      },
+      {
+        "year": 1974,
+        "decadeIndex": 2,
+        "yearIndex": 4,
+        "given": 0.862006,
+        "collected": 3.272592
+      },
+      {
+        "year": 1975,
+        "decadeIndex": 2,
+        "yearIndex": 5,
+        "given": 0.801481,
+        "collected": 3.716544
+      },
+      {
+        "year": 1976,
+        "decadeIndex": 2,
+        "yearIndex": 6,
+        "given": 0.754077,
+        "collected": 3.942708
+      },
+      {
+        "year": 1977,
+        "decadeIndex": 2,
+        "yearIndex": 7,
+        "given": 0.765045,
+        "collected": 4.175803
+      },
+      {
+        "year": 1978,
+        "decadeIndex": 2,
+        "yearIndex": 8,
+        "given": 0.753362,
+        "collected": 4.086033
+      },
+      {
+        "year": 1979,
+        "decadeIndex": 2,
+        "yearIndex": 9,
+        "given": 0.717559,
+        "collected": 4.045301
+      },
+      {
+        "year": 1980,
+        "decadeIndex": 3,
+        "yearIndex": 0,
+        "given": 0.710492,
+        "collected": 4.115208
+      },
+      {
+        "year": 1981,
+        "decadeIndex": 3,
+        "yearIndex": 1,
+        "given": 0.700073,
+        "collected": 4.016901
+      },
+      {
+        "year": 1982,
+        "decadeIndex": 3,
+        "yearIndex": 2,
+        "given": 0.681608,
+        "collected": 4.081478
+      },
+      {
+        "year": 1983,
+        "decadeIndex": 3,
+        "yearIndex": 3,
+        "given": 0.646224,
+        "collected": 4.599183
+      },
+      {
+        "year": 1984,
+        "decadeIndex": 3,
+        "yearIndex": 4,
+        "given": 0.597492,
+        "collected": 4.03527
+      },
+      {
+        "year": 1985,
+        "decadeIndex": 3,
+        "yearIndex": 5,
+        "given": 0.575611,
+        "collected": 3.601198
+      },
+      {
+        "year": 1986,
+        "decadeIndex": 3,
+        "yearIndex": 6,
+        "given": 0.555552,
+        "collected": 3.766656
+      },
+      {
+        "year": 1987,
+        "decadeIndex": 3,
+        "yearIndex": 7,
+        "given": 0.524719,
+        "collected": 3.570054
+      },
+      {
+        "year": 1988,
+        "decadeIndex": 3,
+        "yearIndex": 8,
+        "given": 0.518295,
+        "collected": 3.722493
+      },
+      {
+        "year": 1989,
+        "decadeIndex": 3,
+        "yearIndex": 9,
+        "given": 0.454861,
+        "collected": 3.710454
+      },
+      {
+        "year": 1990,
+        "decadeIndex": 4,
+        "yearIndex": 0,
+        "given": 0.461486,
+        "collected": 3.765994
+      },
+      {
+        "year": 1991,
+        "decadeIndex": 4,
+        "yearIndex": 1,
+        "given": 0.446827,
+        "collected": 3.694911
+      },
+      {
+        "year": 1992,
+        "decadeIndex": 4,
+        "yearIndex": 2,
+        "given": 0.41402,
+        "collected": 3.637698
+      },
+      {
+        "year": 1993,
+        "decadeIndex": 4,
+        "yearIndex": 3,
+        "given": 0.412784,
+        "collected": 3.996087
+      },
+      {
+        "year": 1994,
+        "decadeIndex": 4,
+        "yearIndex": 4,
+        "given": 0.39091,
+        "collected": 3.788058
+      },
+      {
+        "year": 1995,
+        "decadeIndex": 4,
+        "yearIndex": 5,
+        "given": 0.402867,
+        "collected": 3.675188
+      },
+      {
+        "year": 1996,
+        "decadeIndex": 4,
+        "yearIndex": 6,
+        "given": 0.369658,
+        "collected": 3.446369
+      },
+      {
+        "year": 1997,
+        "decadeIndex": 4,
+        "yearIndex": 7,
+        "given": 0.350614,
+        "collected": 3.265668
+      },
+      {
+        "year": 1998,
+        "decadeIndex": 4,
+        "yearIndex": 8,
+        "given": 0.330786,
+        "collected": 3.212714
+      },
+      {
+        "year": 1999,
+        "decadeIndex": 4,
+        "yearIndex": 9,
+        "given": 0.326673,
+        "collected": 3.114545
+      },
+      {
+        "year": 2000,
+        "decadeIndex": 5,
+        "yearIndex": 0,
+        "given": 0.302752,
+        "collected": 3.008241
+      },
+      {
+        "year": 2001,
+        "decadeIndex": 5,
+        "yearIndex": 1,
+        "given": 0.302065,
+        "collected": 2.889775
+      },
+      {
+        "year": 2002,
+        "decadeIndex": 5,
+        "yearIndex": 2,
+        "given": 0.289941,
+        "collected": 2.819614
+      },
+      {
+        "year": 2003,
+        "decadeIndex": 5,
+        "yearIndex": 3,
+        "given": 0.319549,
+        "collected": 2.84268
+      },
+      {
+        "year": 2004,
+        "decadeIndex": 5,
+        "yearIndex": 4,
+        "given": 0.280168,
+        "collected": 2.901085
+      },
+      {
+        "year": 2005,
+        "decadeIndex": 5,
+        "yearIndex": 5,
+        "given": 0.286033,
+        "collected": 2.774864
+      },
+      {
+        "year": 2006,
+        "decadeIndex": 5,
+        "yearIndex": 6,
+        "given": 0.289827,
+        "collected": 2.546068
+      },
+      {
+        "year": 2007,
+        "decadeIndex": 5,
+        "yearIndex": 7,
+        "given": 0.327898,
+        "collected": 2.49353
+      },
+      {
+        "year": 2008,
+        "decadeIndex": 5,
+        "yearIndex": 8,
+        "given": 0.275076,
+        "collected": 2.347587
+      },
+      {
+        "year": 2009,
+        "decadeIndex": 5,
+        "yearIndex": 9,
+        "given": 0.26709,
+        "collected": 2.176274
+      },
+      {
+        "year": 2010,
+        "decadeIndex": 6,
+        "yearIndex": 0,
+        "given": 0.251447,
+        "collected": 2.100593
+      },
+      {
+        "year": 2011,
+        "decadeIndex": 6,
+        "yearIndex": 1,
+        "given": 0.264153,
+        "collected": 1.980129
+      },
+      {
+        "year": 2012,
+        "decadeIndex": 6,
+        "yearIndex": 2,
+        "given": 0.334772,
+        "collected": 2.140256
+      },
+      {
+        "year": 2013,
+        "decadeIndex": 6,
+        "yearIndex": 3,
+        "given": 0.322205,
+        "collected": 2.138964
+      },
+      {
+        "year": 2014,
+        "decadeIndex": 6,
+        "yearIndex": 4,
+        "given": 0.219861,
+        "collected": 1.861176
+      },
+      {
+        "year": 2015,
+        "decadeIndex": 6,
+        "yearIndex": 5,
+        "given": 0.225125,
+        "collected": 1.872049
+      },
+      {
+        "year": 2016,
+        "decadeIndex": 6,
+        "yearIndex": 6,
+        "given": 0.24353,
+        "collected": 2.110162
+      },
+      {
+        "year": 2017,
+        "decadeIndex": 6,
+        "yearIndex": 7,
+        "given": 0.215338,
+        "collected": 1.959586
+      },
+      {
+        "year": 2018,
+        "decadeIndex": 6,
+        "yearIndex": 8,
+        "given": 0.200948,
+        "collected": 2.019137
+      },
+      {
+        "year": 2019,
+        "decadeIndex": 6,
+        "yearIndex": 9,
+        "given": 0.226836,
+        "collected": 2.161415
+      }
+    ],
+    "givenPeak": {
+      "year": 1964,
+      "perMillion": 1.152941
+    },
+    "collectedPeak": {
+      "year": 1983,
+      "perMillion": 4.599183
+    },
+    "comparisons": [
+      {
+        "period": "1950_1969",
+        "given": 1.016157,
+        "collected": 1.761905
+      },
+      {
+        "period": "2005_2019",
+        "given": 0.263343,
+        "collected": 2.178786
+      }
+    ]
+  },
+  "named": {
+    "startYear": 1950,
+    "endYear": 2019,
+    "yearCount": 70,
+    "sharedDomainMax": 3.607408,
+    "periods": [
+      "1850_1899",
+      "1930_1949",
+      "1970_1989",
+      "2005_2019"
+    ],
+    "unit": "per million bigrams",
+    "terms": [
+      {
+        "id": "sufficient",
+        "label": "sufficient data",
+        "values": [
+          0.276854,
+          0.507755,
+          0.60604,
+          0.233875
+        ],
+        "late": 0.233875,
+        "annualPoints": [
+          {
+            "year": 1950,
+            "value": 0.506351
+          },
+          {
+            "year": 1951,
+            "value": 0.461886
+          },
+          {
+            "year": 1952,
+            "value": 0.437678
+          },
+          {
+            "year": 1953,
+            "value": 0.464848
+          },
+          {
+            "year": 1954,
+            "value": 0.484785
+          },
+          {
+            "year": 1955,
+            "value": 0.485775
+          },
+          {
+            "year": 1956,
+            "value": 0.517868
+          },
+          {
+            "year": 1957,
+            "value": 0.477883
+          },
+          {
+            "year": 1958,
+            "value": 0.499221
+          },
+          {
+            "year": 1959,
+            "value": 0.464847
+          },
+          {
+            "year": 1960,
+            "value": 0.512289
+          },
+          {
+            "year": 1961,
+            "value": 0.505096
+          },
+          {
+            "year": 1962,
+            "value": 0.517173
+          },
+          {
+            "year": 1963,
+            "value": 0.509042
+          },
+          {
+            "year": 1964,
+            "value": 0.542521
+          },
+          {
+            "year": 1965,
+            "value": 0.498758
+          },
+          {
+            "year": 1966,
+            "value": 0.486725
+          },
+          {
+            "year": 1967,
+            "value": 0.513711
+          },
+          {
+            "year": 1968,
+            "value": 0.502582
+          },
+          {
+            "year": 1969,
+            "value": 0.521637
+          },
+          {
+            "year": 1970,
+            "value": 0.538988
+          },
+          {
+            "year": 1971,
+            "value": 0.549247
+          },
+          {
+            "year": 1972,
+            "value": 0.583052
+          },
+          {
+            "year": 1973,
+            "value": 0.573521
+          },
+          {
+            "year": 1974,
+            "value": 0.611415
+          },
+          {
+            "year": 1975,
+            "value": 0.682679
+          },
+          {
+            "year": 1976,
+            "value": 0.710901
+          },
+          {
+            "year": 1977,
+            "value": 0.68797
+          },
+          {
+            "year": 1978,
+            "value": 0.685405
+          },
+          {
+            "year": 1979,
+            "value": 0.713814
+          },
+          {
+            "year": 1980,
+            "value": 0.681734
+          },
+          {
+            "year": 1981,
+            "value": 0.63884
+          },
+          {
+            "year": 1982,
+            "value": 0.601142
+          },
+          {
+            "year": 1983,
+            "value": 0.565446
+          },
+          {
+            "year": 1984,
+            "value": 0.557155
+          },
+          {
+            "year": 1985,
+            "value": 0.56446
+          },
+          {
+            "year": 1986,
+            "value": 0.55703
+          },
+          {
+            "year": 1987,
+            "value": 0.518307
+          },
+          {
+            "year": 1988,
+            "value": 0.639028
+          },
+          {
+            "year": 1989,
+            "value": 0.460656
+          },
+          {
+            "year": 1990,
+            "value": 0.490523
+          },
+          {
+            "year": 1991,
+            "value": 0.445812
+          },
+          {
+            "year": 1992,
+            "value": 0.417654
+          },
+          {
+            "year": 1993,
+            "value": 0.418461
+          },
+          {
+            "year": 1994,
+            "value": 0.409908
+          },
+          {
+            "year": 1995,
+            "value": 0.405665
+          },
+          {
+            "year": 1996,
+            "value": 0.389873
+          },
+          {
+            "year": 1997,
+            "value": 0.385203
+          },
+          {
+            "year": 1998,
+            "value": 0.356722
+          },
+          {
+            "year": 1999,
+            "value": 0.35621
+          },
+          {
+            "year": 2000,
+            "value": 0.33879
+          },
+          {
+            "year": 2001,
+            "value": 0.303952
+          },
+          {
+            "year": 2002,
+            "value": 0.325827
+          },
+          {
+            "year": 2003,
+            "value": 0.305219
+          },
+          {
+            "year": 2004,
+            "value": 0.295518
+          },
+          {
+            "year": 2005,
+            "value": 0.306691
+          },
+          {
+            "year": 2006,
+            "value": 0.274001
+          },
+          {
+            "year": 2007,
+            "value": 0.294542
+          },
+          {
+            "year": 2008,
+            "value": 0.271332
+          },
+          {
+            "year": 2009,
+            "value": 0.253403
+          },
+          {
+            "year": 2010,
+            "value": 0.229239
+          },
+          {
+            "year": 2011,
+            "value": 0.2165
+          },
+          {
+            "year": 2012,
+            "value": 0.270288
+          },
+          {
+            "year": 2013,
+            "value": 0.241422
+          },
+          {
+            "year": 2014,
+            "value": 0.199983
+          },
+          {
+            "year": 2015,
+            "value": 0.182494
+          },
+          {
+            "year": 2016,
+            "value": 0.193676
+          },
+          {
+            "year": 2017,
+            "value": 0.188162
+          },
+          {
+            "year": 2018,
+            "value": 0.194909
+          },
+          {
+            "year": 2019,
+            "value": 0.19148
+          }
+        ]
+      },
+      {
+        "id": "available",
+        "label": "available data",
+        "values": [
+          0.055998,
+          1.423647,
+          2.985212,
+          1.433109
+        ],
+        "late": 1.433109,
+        "annualPoints": [
+          {
+            "year": 1950,
+            "value": 1.803027
+          },
+          {
+            "year": 1951,
+            "value": 1.672802
+          },
+          {
+            "year": 1952,
+            "value": 1.59452
+          },
+          {
+            "year": 1953,
+            "value": 1.601357
+          },
+          {
+            "year": 1954,
+            "value": 1.772259
+          },
+          {
+            "year": 1955,
+            "value": 1.782878
+          },
+          {
+            "year": 1956,
+            "value": 1.860775
+          },
+          {
+            "year": 1957,
+            "value": 1.849792
+          },
+          {
+            "year": 1958,
+            "value": 1.893642
+          },
+          {
+            "year": 1959,
+            "value": 1.923797
+          },
+          {
+            "year": 1960,
+            "value": 1.961412
+          },
+          {
+            "year": 1961,
+            "value": 2.074751
+          },
+          {
+            "year": 1962,
+            "value": 2.139641
+          },
+          {
+            "year": 1963,
+            "value": 2.175131
+          },
+          {
+            "year": 1964,
+            "value": 2.254545
+          },
+          {
+            "year": 1965,
+            "value": 2.122152
+          },
+          {
+            "year": 1966,
+            "value": 2.095749
+          },
+          {
+            "year": 1967,
+            "value": 2.142101
+          },
+          {
+            "year": 1968,
+            "value": 2.207099
+          },
+          {
+            "year": 1969,
+            "value": 2.269371
+          },
+          {
+            "year": 1970,
+            "value": 2.411099
+          },
+          {
+            "year": 1971,
+            "value": 2.423922
+          },
+          {
+            "year": 1972,
+            "value": 2.700608
+          },
+          {
+            "year": 1973,
+            "value": 2.671192
+          },
+          {
+            "year": 1974,
+            "value": 2.862496
+          },
+          {
+            "year": 1975,
+            "value": 3.073273
+          },
+          {
+            "year": 1976,
+            "value": 3.233567
+          },
+          {
+            "year": 1977,
+            "value": 3.350618
+          },
+          {
+            "year": 1978,
+            "value": 3.316208
+          },
+          {
+            "year": 1979,
+            "value": 3.343955
+          },
+          {
+            "year": 1980,
+            "value": 3.423104
+          },
+          {
+            "year": 1981,
+            "value": 3.113082
+          },
+          {
+            "year": 1982,
+            "value": 3.293538
+          },
+          {
+            "year": 1983,
+            "value": 3.607408
+          },
+          {
+            "year": 1984,
+            "value": 3.056502
+          },
+          {
+            "year": 1985,
+            "value": 2.911658
+          },
+          {
+            "year": 1986,
+            "value": 2.941114
+          },
+          {
+            "year": 1987,
+            "value": 2.733128
+          },
+          {
+            "year": 1988,
+            "value": 2.637967
+          },
+          {
+            "year": 1989,
+            "value": 2.599792
+          },
+          {
+            "year": 1990,
+            "value": 2.662517
+          },
+          {
+            "year": 1991,
+            "value": 2.522266
+          },
+          {
+            "year": 1992,
+            "value": 2.356823
+          },
+          {
+            "year": 1993,
+            "value": 2.540787
+          },
+          {
+            "year": 1994,
+            "value": 2.361041
+          },
+          {
+            "year": 1995,
+            "value": 2.307739
+          },
+          {
+            "year": 1996,
+            "value": 2.225977
+          },
+          {
+            "year": 1997,
+            "value": 2.219763
+          },
+          {
+            "year": 1998,
+            "value": 2.063971
+          },
+          {
+            "year": 1999,
+            "value": 2.093939
+          },
+          {
+            "year": 2000,
+            "value": 1.992561
+          },
+          {
+            "year": 2001,
+            "value": 1.951429
+          },
+          {
+            "year": 2002,
+            "value": 1.894102
+          },
+          {
+            "year": 2003,
+            "value": 1.838689
+          },
+          {
+            "year": 2004,
+            "value": 1.80486
+          },
+          {
+            "year": 2005,
+            "value": 1.83048
+          },
+          {
+            "year": 2006,
+            "value": 1.732667
+          },
+          {
+            "year": 2007,
+            "value": 1.685264
+          },
+          {
+            "year": 2008,
+            "value": 1.5102
+          },
+          {
+            "year": 2009,
+            "value": 1.425602
+          },
+          {
+            "year": 2010,
+            "value": 1.412591
+          },
+          {
+            "year": 2011,
+            "value": 1.32848
+          },
+          {
+            "year": 2012,
+            "value": 1.735749
+          },
+          {
+            "year": 2013,
+            "value": 1.539216
+          },
+          {
+            "year": 2014,
+            "value": 1.160974
+          },
+          {
+            "year": 2015,
+            "value": 1.144381
+          },
+          {
+            "year": 2016,
+            "value": 1.295225
+          },
+          {
+            "year": 2017,
+            "value": 1.179624
+          },
+          {
+            "year": 2018,
+            "value": 1.225542
+          },
+          {
+            "year": 2019,
+            "value": 1.290636
+          }
+        ]
+      },
+      {
+        "id": "raw",
+        "label": "raw data",
+        "values": [
+          0.001379,
+          0.097702,
+          1.157394,
+          1.125154
+        ],
+        "late": 1.125154,
+        "annualPoints": [
+          {
+            "year": 1950,
+            "value": 0.167388
+          },
+          {
+            "year": 1951,
+            "value": 0.175426
+          },
+          {
+            "year": 1952,
+            "value": 0.182111
+          },
+          {
+            "year": 1953,
+            "value": 0.2255
+          },
+          {
+            "year": 1954,
+            "value": 0.268113
+          },
+          {
+            "year": 1955,
+            "value": 0.275036
+          },
+          {
+            "year": 1956,
+            "value": 0.299653
+          },
+          {
+            "year": 1957,
+            "value": 0.31904
+          },
+          {
+            "year": 1958,
+            "value": 0.392893
+          },
+          {
+            "year": 1959,
+            "value": 0.427441
+          },
+          {
+            "year": 1960,
+            "value": 0.408677
+          },
+          {
+            "year": 1961,
+            "value": 0.491701
+          },
+          {
+            "year": 1962,
+            "value": 0.539293
+          },
+          {
+            "year": 1963,
+            "value": 0.55494
+          },
+          {
+            "year": 1964,
+            "value": 0.575571
+          },
+          {
+            "year": 1965,
+            "value": 0.581511
+          },
+          {
+            "year": 1966,
+            "value": 0.606411
+          },
+          {
+            "year": 1967,
+            "value": 0.706922
+          },
+          {
+            "year": 1968,
+            "value": 0.698354
+          },
+          {
+            "year": 1969,
+            "value": 0.786732
+          },
+          {
+            "year": 1970,
+            "value": 0.848581
+          },
+          {
+            "year": 1971,
+            "value": 0.84919
+          },
+          {
+            "year": 1972,
+            "value": 0.89755
+          },
+          {
+            "year": 1973,
+            "value": 0.949286
+          },
+          {
+            "year": 1974,
+            "value": 1.03183
+          },
+          {
+            "year": 1975,
+            "value": 1.130709
+          },
+          {
+            "year": 1976,
+            "value": 1.161697
+          },
+          {
+            "year": 1977,
+            "value": 1.400474
+          },
+          {
+            "year": 1978,
+            "value": 1.227283
+          },
+          {
+            "year": 1979,
+            "value": 1.214393
+          },
+          {
+            "year": 1980,
+            "value": 1.189053
+          },
+          {
+            "year": 1981,
+            "value": 1.178143
+          },
+          {
+            "year": 1982,
+            "value": 1.22144
+          },
+          {
+            "year": 1983,
+            "value": 1.356007
+          },
+          {
+            "year": 1984,
+            "value": 1.284397
+          },
+          {
+            "year": 1985,
+            "value": 1.226172
+          },
+          {
+            "year": 1986,
+            "value": 1.277119
+          },
+          {
+            "year": 1987,
+            "value": 1.228716
+          },
+          {
+            "year": 1988,
+            "value": 1.246741
+          },
+          {
+            "year": 1989,
+            "value": 1.229092
+          },
+          {
+            "year": 1990,
+            "value": 1.262695
+          },
+          {
+            "year": 1991,
+            "value": 1.24807
+          },
+          {
+            "year": 1992,
+            "value": 1.255088
+          },
+          {
+            "year": 1993,
+            "value": 1.220392
+          },
+          {
+            "year": 1994,
+            "value": 1.255682
+          },
+          {
+            "year": 1995,
+            "value": 1.267824
+          },
+          {
+            "year": 1996,
+            "value": 1.256787
+          },
+          {
+            "year": 1997,
+            "value": 1.261544
+          },
+          {
+            "year": 1998,
+            "value": 1.282854
+          },
+          {
+            "year": 1999,
+            "value": 1.250599
+          },
+          {
+            "year": 2000,
+            "value": 1.19464
+          },
+          {
+            "year": 2001,
+            "value": 1.164327
+          },
+          {
+            "year": 2002,
+            "value": 1.183723
+          },
+          {
+            "year": 2003,
+            "value": 1.32001
+          },
+          {
+            "year": 2004,
+            "value": 1.242124
+          },
+          {
+            "year": 2005,
+            "value": 1.27381
+          },
+          {
+            "year": 2006,
+            "value": 1.193438
+          },
+          {
+            "year": 2007,
+            "value": 1.184935
+          },
+          {
+            "year": 2008,
+            "value": 1.076911
+          },
+          {
+            "year": 2009,
+            "value": 1.063078
+          },
+          {
+            "year": 2010,
+            "value": 1.082859
+          },
+          {
+            "year": 2011,
+            "value": 1.139663
+          },
+          {
+            "year": 2012,
+            "value": 1.178403
+          },
+          {
+            "year": 2013,
+            "value": 1.141084
+          },
+          {
+            "year": 2014,
+            "value": 0.985654
+          },
+          {
+            "year": 2015,
+            "value": 1.069849
+          },
+          {
+            "year": 2016,
+            "value": 1.122004
+          },
+          {
+            "year": 2017,
+            "value": 1.041909
+          },
+          {
+            "year": 2018,
+            "value": 1.102991
+          },
+          {
+            "year": 2019,
+            "value": 1.220715
+          }
+        ]
+      },
+      {
+        "id": "missing",
+        "label": "missing data",
+        "values": [
+          0.00363,
+          0.038445,
+          0.653369,
+          0.932374
+        ],
+        "late": 0.932374,
+        "annualPoints": [
+          {
+            "year": 1950,
+            "value": 0.065567
+          },
+          {
+            "year": 1951,
+            "value": 0.048464
+          },
+          {
+            "year": 1952,
+            "value": 0.053649
+          },
+          {
+            "year": 1953,
+            "value": 0.053364
+          },
+          {
+            "year": 1954,
+            "value": 0.068295
+          },
+          {
+            "year": 1955,
+            "value": 0.057303
+          },
+          {
+            "year": 1956,
+            "value": 0.072564
+          },
+          {
+            "year": 1957,
+            "value": 0.072658
+          },
+          {
+            "year": 1958,
+            "value": 0.096679
+          },
+          {
+            "year": 1959,
+            "value": 0.079568
+          },
+          {
+            "year": 1960,
+            "value": 0.115916
+          },
+          {
+            "year": 1961,
+            "value": 0.100417
+          },
+          {
+            "year": 1962,
+            "value": 0.113005
+          },
+          {
+            "year": 1963,
+            "value": 0.122396
+          },
+          {
+            "year": 1964,
+            "value": 0.128979
+          },
+          {
+            "year": 1965,
+            "value": 0.147161
+          },
+          {
+            "year": 1966,
+            "value": 0.127273
+          },
+          {
+            "year": 1967,
+            "value": 0.158093
+          },
+          {
+            "year": 1968,
+            "value": 0.186846
+          },
+          {
+            "year": 1969,
+            "value": 0.189212
+          },
+          {
+            "year": 1970,
+            "value": 0.247957
+          },
+          {
+            "year": 1971,
+            "value": 0.341612
+          },
+          {
+            "year": 1972,
+            "value": 0.335018
+          },
+          {
+            "year": 1973,
+            "value": 0.617454
+          },
+          {
+            "year": 1974,
+            "value": 0.433836
+          },
+          {
+            "year": 1975,
+            "value": 0.548635
+          },
+          {
+            "year": 1976,
+            "value": 0.706611
+          },
+          {
+            "year": 1977,
+            "value": 0.64406
+          },
+          {
+            "year": 1978,
+            "value": 0.590998
+          },
+          {
+            "year": 1979,
+            "value": 0.828752
+          },
+          {
+            "year": 1980,
+            "value": 0.681788
+          },
+          {
+            "year": 1981,
+            "value": 0.808683
+          },
+          {
+            "year": 1982,
+            "value": 0.760613
+          },
+          {
+            "year": 1983,
+            "value": 0.867581
+          },
+          {
+            "year": 1984,
+            "value": 0.813201
+          },
+          {
+            "year": 1985,
+            "value": 0.726545
+          },
+          {
+            "year": 1986,
+            "value": 0.836728
+          },
+          {
+            "year": 1987,
+            "value": 0.680847
+          },
+          {
+            "year": 1988,
+            "value": 0.773347
+          },
+          {
+            "year": 1989,
+            "value": 0.82312
+          },
+          {
+            "year": 1990,
+            "value": 0.735117
+          },
+          {
+            "year": 1991,
+            "value": 0.755821
+          },
+          {
+            "year": 1992,
+            "value": 0.853429
+          },
+          {
+            "year": 1993,
+            "value": 0.927345
+          },
+          {
+            "year": 1994,
+            "value": 0.908241
+          },
+          {
+            "year": 1995,
+            "value": 0.905697
+          },
+          {
+            "year": 1996,
+            "value": 0.827558
+          },
+          {
+            "year": 1997,
+            "value": 0.862731
+          },
+          {
+            "year": 1998,
+            "value": 0.929667
+          },
+          {
+            "year": 1999,
+            "value": 0.898717
+          },
+          {
+            "year": 2000,
+            "value": 0.834496
+          },
+          {
+            "year": 2001,
+            "value": 0.902884
+          },
+          {
+            "year": 2002,
+            "value": 0.930933
+          },
+          {
+            "year": 2003,
+            "value": 0.952902
+          },
+          {
+            "year": 2004,
+            "value": 0.918542
+          },
+          {
+            "year": 2005,
+            "value": 0.990427
+          },
+          {
+            "year": 2006,
+            "value": 1.002525
+          },
+          {
+            "year": 2007,
+            "value": 1.036166
+          },
+          {
+            "year": 2008,
+            "value": 0.972109
+          },
+          {
+            "year": 2009,
+            "value": 0.950493
+          },
+          {
+            "year": 2010,
+            "value": 0.992236
+          },
+          {
+            "year": 2011,
+            "value": 0.869699
+          },
+          {
+            "year": 2012,
+            "value": 0.920244
+          },
+          {
+            "year": 2013,
+            "value": 0.93955
+          },
+          {
+            "year": 2014,
+            "value": 0.975313
+          },
+          {
+            "year": 2015,
+            "value": 0.895703
+          },
+          {
+            "year": 2016,
+            "value": 0.86757
+          },
+          {
+            "year": 2017,
+            "value": 0.768829
+          },
+          {
+            "year": 2018,
+            "value": 0.87391
+          },
+          {
+            "year": 2019,
+            "value": 0.93083
+          }
+        ]
+      },
+      {
+        "id": "sensitive",
+        "label": "sensitive data",
+        "values": [
+          0.000193,
+          0.00067,
+          0.069942,
+          0.32109
+        ],
+        "late": 0.32109,
+        "annualPoints": [
+          {
+            "year": 1950,
+            "value": 0.001102
+          },
+          {
+            "year": 1951,
+            "value": 0.001251
+          },
+          {
+            "year": 1952,
+            "value": 0.000679
+          },
+          {
+            "year": 1953,
+            "value": 0.001464
+          },
+          {
+            "year": 1954,
+            "value": 0.005398
+          },
+          {
+            "year": 1955,
+            "value": 0.005741
+          },
+          {
+            "year": 1956,
+            "value": 0.001148
+          },
+          {
+            "year": 1957,
+            "value": 0.002319
+          },
+          {
+            "year": 1958,
+            "value": 0.004921
+          },
+          {
+            "year": 1959,
+            "value": 0.004844
+          },
+          {
+            "year": 1960,
+            "value": 0.002206
+          },
+          {
+            "year": 1961,
+            "value": 0.003408
+          },
+          {
+            "year": 1962,
+            "value": 0.003988
+          },
+          {
+            "year": 1963,
+            "value": 0.004653
+          },
+          {
+            "year": 1964,
+            "value": 0.005471
+          },
+          {
+            "year": 1965,
+            "value": 0.008017
+          },
+          {
+            "year": 1966,
+            "value": 0.006598
+          },
+          {
+            "year": 1967,
+            "value": 0.012465
+          },
+          {
+            "year": 1968,
+            "value": 0.013858
+          },
+          {
+            "year": 1969,
+            "value": 0.011778
+          },
+          {
+            "year": 1970,
+            "value": 0.019563
+          },
+          {
+            "year": 1971,
+            "value": 0.022015
+          },
+          {
+            "year": 1972,
+            "value": 0.025665
+          },
+          {
+            "year": 1973,
+            "value": 0.052871
+          },
+          {
+            "year": 1974,
+            "value": 0.058994
+          },
+          {
+            "year": 1975,
+            "value": 0.039292
+          },
+          {
+            "year": 1976,
+            "value": 0.054342
+          },
+          {
+            "year": 1977,
+            "value": 0.048904
+          },
+          {
+            "year": 1978,
+            "value": 0.057324
+          },
+          {
+            "year": 1979,
+            "value": 0.091608
+          },
+          {
+            "year": 1980,
+            "value": 0.074994
+          },
+          {
+            "year": 1981,
+            "value": 0.066177
+          },
+          {
+            "year": 1982,
+            "value": 0.074892
+          },
+          {
+            "year": 1983,
+            "value": 0.086257
+          },
+          {
+            "year": 1984,
+            "value": 0.093884
+          },
+          {
+            "year": 1985,
+            "value": 0.090393
+          },
+          {
+            "year": 1986,
+            "value": 0.116984
+          },
+          {
+            "year": 1987,
+            "value": 0.094069
+          },
+          {
+            "year": 1988,
+            "value": 0.114807
+          },
+          {
+            "year": 1989,
+            "value": 0.115808
+          },
+          {
+            "year": 1990,
+            "value": 0.085688
+          },
+          {
+            "year": 1991,
+            "value": 0.108153
+          },
+          {
+            "year": 1992,
+            "value": 0.114006
+          },
+          {
+            "year": 1993,
+            "value": 0.102531
+          },
+          {
+            "year": 1994,
+            "value": 0.105891
+          },
+          {
+            "year": 1995,
+            "value": 0.10166
+          },
+          {
+            "year": 1996,
+            "value": 0.120859
+          },
+          {
+            "year": 1997,
+            "value": 0.149669
+          },
+          {
+            "year": 1998,
+            "value": 0.159196
+          },
+          {
+            "year": 1999,
+            "value": 0.160332
+          },
+          {
+            "year": 2000,
+            "value": 0.180302
+          },
+          {
+            "year": 2001,
+            "value": 0.200992
+          },
+          {
+            "year": 2002,
+            "value": 0.231938
+          },
+          {
+            "year": 2003,
+            "value": 0.318199
+          },
+          {
+            "year": 2004,
+            "value": 0.237869
+          },
+          {
+            "year": 2005,
+            "value": 0.260326
+          },
+          {
+            "year": 2006,
+            "value": 0.303727
+          },
+          {
+            "year": 2007,
+            "value": 0.290739
+          },
+          {
+            "year": 2008,
+            "value": 0.269576
+          },
+          {
+            "year": 2009,
+            "value": 0.303315
+          },
+          {
+            "year": 2010,
+            "value": 0.328337
+          },
+          {
+            "year": 2011,
+            "value": 0.359812
+          },
+          {
+            "year": 2012,
+            "value": 0.290926
+          },
+          {
+            "year": 2013,
+            "value": 0.283791
+          },
+          {
+            "year": 2014,
+            "value": 0.286192
+          },
+          {
+            "year": 2015,
+            "value": 0.347261
+          },
+          {
+            "year": 2016,
+            "value": 0.357312
+          },
+          {
+            "year": 2017,
+            "value": 0.328367
+          },
+          {
+            "year": 2018,
+            "value": 0.366205
+          },
+          {
+            "year": 2019,
+            "value": 0.44047
+          }
+        ]
+      }
+    ]
+  },
+  "ruled": {
+    "period": "2005_2019",
+    "unit": "normalized per-million bigram values in separately labelled corpora",
+    "terms": [
+      {
+        "id": "protection",
+        "label": "data protection",
+        "american": 0.755423,
+        "british": 3.040284,
+        "britishToAmericanRatio": 4.025
+      },
+      {
+        "id": "personal",
+        "label": "personal data",
+        "american": 1.208468,
+        "british": 2.229534,
+        "britishToAmericanRatio": 1.845
+      },
+      {
+        "id": "privacy",
+        "label": "data privacy",
+        "american": 0.213345,
+        "british": 0.20028,
+        "britishToAmericanRatio": 0.939
+      }
+    ]
+  },
+  "made": {
+    "periods": [
+      "1950_1969",
+      "1970_1989",
+      "1990_2004",
+      "2005_2019"
+    ],
+    "unit": "per million bigrams",
+    "terms": [
+      {
+        "id": "entry",
+        "label": "data entry",
+        "facet": "entry",
+        "values": [
+          0.052333,
+          1.450348,
+          1.677438,
+          0.795732
+        ],
+        "late": 0.795732
+      },
+      {
+        "id": "cleaning",
+        "label": "data cleaning",
+        "facet": "small",
+        "values": [
+          0.000538,
+          0.008107,
+          0.030824,
+          0.093068
+        ],
+        "late": 0.093068
+      },
+      {
+        "id": "labeling",
+        "label": "data labeling",
+        "facet": "small",
+        "values": [
+          0.000115,
+          0.000961,
+          0.001615,
+          0.004729
+        ],
+        "late": 0.004729
+      },
+      {
+        "id": "annotation",
+        "label": "data annotation",
+        "facet": "small",
+        "values": [
+          0.001841,
+          0.005585,
+          0.003346,
+          0.009221
+        ],
+        "late": 0.009221
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "mw_data",
+      "title": "Data Definition & Meaning",
+      "organization": "Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/data",
+      "role": "dictionary"
+    },
+    {
+      "id": "google_ngram_info",
+      "title": "Google Books Ngram Viewer: About Ngram Viewer",
+      "organization": "Google Books Ngram Viewer Team",
+      "url": "https://books.google.com/ngrams/info",
+      "role": "corpus_documentation"
+    },
+    {
+      "id": "us_census_hollerith",
+      "title": "The Hollerith Machine",
+      "organization": "United States Census Bureau",
+      "url": "https://www.census.gov/about/history/bureau-history/census-innovations/technology/hollerith-machine.html",
+      "role": "government_history"
+    },
+    {
+      "id": "gdpr_2016",
+      "title": "Regulation (EU) 2016/679, Article 4",
+      "organization": "European Union / EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679",
+      "role": "law"
+    },
+    {
+      "id": "gida_care_principles",
+      "title": "CARE Principles for Indigenous Data Governance",
+      "organization": "Global Indigenous Data Alliance",
+      "url": "https://www.gida-global.org/care-principles-copy",
+      "role": "community_governance_framework"
+    },
+    {
+      "id": "ilo_ai_jobs_2025",
+      "title": "Artificial intelligence adoption and its impact on jobs",
+      "organization": "International Labour Organization",
+      "url": "https://www.ilo.org/publications/artificial-intelligence-adoption-and-its-impact-jobs",
+      "role": "intergovernmental_report"
+    }
+  ],
+  "lineage": [
+    {
+      "path": "docs/research/data/mobile-2026-08/processed/data_mobile_exploratory_analysis.json",
+      "sha256": "11e97396fbb098afa7ace0b1fea6d34e3a9b38eb07092131d42ceb838cd48918",
+      "role": "active_input"
+    },
+    {
+      "path": "docs/research/data/mobile-2026-08/raw/google-fixed-20200217-exploratory/english-exact/eng/viewer-batch-11.json",
+      "sha256": "bfb426cd89b2eaef982b14de49f37446f6e743608b8c7ba3cc56a08612219784",
+      "role": "active_input"
+    },
+    {
+      "path": "docs/research/data/mobile-2026-08/raw/google-fixed-20200217/viewer-batch-01.json",
+      "sha256": "fb709fbcda27958932075e45ffc20aac057271a00b5586dd5a0d94bdf118dabc",
+      "role": "active_input"
+    },
+    {
+      "path": "docs/research/data/mobile-2026-08/raw/google-fixed-20200217/manifest.json",
+      "sha256": "89cff4cf0c7e5f2ded96581cefe0a2b926b108b98cddce4f3609a7755c38f134",
+      "role": "active_input"
+    },
+    {
+      "path": "docs/research/data/mobile-2026-08/raw/google-fixed-20200217-exploratory/english-exact/eng/viewer-batch-05.json",
+      "sha256": "9818a3ebc23afc0b653ae834ec07d8855d00e79139967b7191cc295ece60cace",
+      "role": "active_input"
+    },
+    {
+      "path": "docs/research/data/mobile-2026-08/raw/google-fixed-20200217-exploratory/english-exact/eng/viewer-batch-06.json",
+      "sha256": "5b85689eb629f3a1379cdfa946c83c6d41429e60b2d25fe6c406e3260e11d2e0",
+      "role": "active_input"
+    },
+    {
+      "path": "docs/research/data/mobile-2026-08/raw/google-fixed-20200217-exploratory/english-exact/eng/viewer-batch-07.json",
+      "sha256": "cc6c5105d3672226cf9beefac797b61fbf256f9ea96ca1914fc864ab9c879940",
+      "role": "active_input"
+    },
+    {
+      "path": "docs/research/data/mobile-2026-08/raw/google-fixed-20200217-exploratory/english-exact/eng/manifest.json",
+      "sha256": "de8bd572473033957d582483cc568edffb225fd15b58e49d7df71f572b1958d8",
+      "role": "active_input"
+    },
+    {
+      "path": "docs/research/data/mobile-2026-08/sources/data_mobile_source_register.json",
+      "sha256": "b7a305e0fd72613c7ee513a4cdcfc8c367ef37bb47fdaf3e8f416fa2cd9a8969",
+      "role": "active_input"
+    },
+    {
+      "path": "docs/research/data/mobile-2026-08/data_mobile_exploratory_inputs.json",
+      "sha256": "c991885da8010b849d1bc078c101f14cd157af1eba226a988cd7694df63aba78",
+      "role": "active_input"
+    },
+    {
+      "path": "scripts/build_data_mobile_experience.ts",
+      "sha256": "1892a6004aea0c2ae0f07f28b4d9934e75501d0ccca14519e0b0015fb33b338c",
+      "role": "transform"
+    }
+  ]
+}
