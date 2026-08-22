@@ -1,7 +1,8 @@
 .root {
+  --about-gutter: clamp(1rem, 5.1vw, 1.4rem);
   display: block;
   min-inline-size: 0;
-  padding: 1.1rem clamp(1rem, 5.1vw, 1.4rem) 1.5rem;
+  padding: 1.1rem var(--about-gutter) 1.5rem;
   overflow-x: clip;
   background: var(--wot-paper-mobile);
   color: var(--wot-ink);
@@ -13,7 +14,7 @@
   justify-content: space-between;
   gap: 0.75rem;
   font-size: 0.8125rem;
-  font-weight: 650;
+  font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -39,6 +40,8 @@
 .summary:focus-visible,
 .subsummary:focus-visible,
 .textLink:focus-visible,
+.referenceLink:focus-visible,
+.copyButton:focus-visible,
 .contactLink:focus-visible,
 .repoLink:focus-visible,
 .homeLink:focus-visible {
@@ -48,8 +51,8 @@
 
 .header {
   display: grid;
-  gap: clamp(1.4rem, 5.8vw, 1.9rem);
-  padding-block: clamp(3.3rem, 14vw, 4.8rem) clamp(3rem, 11vw, 4rem);
+  gap: clamp(1rem, 4.6vw, 1.35rem);
+  padding-block: clamp(2.4rem, 10vw, 3.15rem) clamp(2.25rem, 9vw, 3rem);
 }
 
 .eyebrow,
@@ -63,31 +66,31 @@
   margin: 0;
   color: var(--wot-fire);
   font-size: 0.8125rem;
-  font-weight: 750;
-  letter-spacing: 0.09em;
+  font-weight: 650;
+  letter-spacing: 0.075em;
   text-transform: uppercase;
 }
 
 .displayTitle {
   margin: 0;
   max-inline-size: 9ch;
-  font-size: clamp(3.6rem, 17vw, 5.2rem);
-  font-weight: 900;
-  letter-spacing: -0.055em;
-  line-height: 0.82;
+  font-size: clamp(3.45rem, 15vw, 4.25rem);
+  font-weight: 750;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
   text-transform: lowercase;
 }
 
 .navigationStatement {
   max-inline-size: 35rem;
   margin: 0;
-  font-size: clamp(0.94rem, 4vw, 1.05rem);
-  font-weight: 520;
-  line-height: 1.6;
+  font-size: clamp(1rem, 4.1vw, 1.0625rem);
+  font-weight: 400;
+  line-height: 1.52;
 }
 
 .displayTitle + .navigationStatement {
-  margin-block-start: clamp(0.55rem, 2.8vw, 0.85rem);
+  margin-block-start: clamp(0.85rem, 3.8vw, 1.1rem);
 }
 
 .groups {
@@ -97,6 +100,12 @@
 .group {
   border-bottom: 3px solid var(--wot-ink);
 }
+
+.researchGroup { --group-accent: #ae4202; }
+.designGroup { --group-accent: #1570ac; }
+.sourceGroup { --group-accent: #6f3aa6; }
+.licenseGroup { --group-accent: #b33a2e; }
+.contactGroup { --group-accent: #267765; }
 
 .summary,
 .subsummary {
@@ -116,27 +125,30 @@
   justify-content: space-between;
   gap: 1rem;
   padding-block: 0.75rem;
-  font-size: clamp(1.45rem, 7vw, 2rem);
-  font-weight: 850;
-  letter-spacing: -0.025em;
-  line-height: 1;
+  font-size: clamp(1.35rem, 6vw, 1.55rem);
+  font-weight: 700;
+  letter-spacing: -0.018em;
+  line-height: 1.1;
 }
 
-.summary:hover,
+.summary:hover {
+  color: var(--group-accent, var(--wot-fire));
+}
+
 .subsummary:hover {
   color: var(--wot-fire);
 }
 
 .summaryMark {
-  color: var(--wot-fire);
+  color: var(--group-accent, var(--wot-fire));
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 1.35rem;
-  font-weight: 800;
+  font-weight: 700;
   transition: transform 160ms ease;
 }
 
 .group[open] > .summary {
-  color: var(--wot-fire);
+  color: var(--group-accent, var(--wot-fire));
 }
 
 .group[open] > .summary .summaryMark {
@@ -144,11 +156,11 @@
 }
 
 .groupBody {
-  padding-block: 0.5rem 2.3rem;
+  padding-block: 0.4rem 0.75rem;
 }
 
 .section {
-  padding-block: 1.55rem;
+  padding-block: 1.15rem;
   border-top: 1px solid color-mix(in srgb, var(--wot-ink) 20%, transparent);
 }
 
@@ -157,22 +169,23 @@
 }
 
 .sectionHeading {
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.65rem;
   color: var(--wot-ink);
-  font-size: clamp(1.25rem, 5.7vw, 1.6rem);
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  line-height: 1.08;
+  font-size: clamp(1.2rem, 5.4vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: -0.018em;
+  line-height: 1.14;
 }
 
 .section p,
 .subgroupBody p,
 .ledgerEntry p,
 .card p,
+.referenceCard p,
 .definitionList dd,
 .claimGrid li {
-  font-size: clamp(0.8125rem, 3.65vw, 0.94rem);
-  font-weight: 520;
+  font-size: clamp(0.9375rem, 4vw, 1rem);
+  font-weight: 400;
   line-height: 1.55;
 }
 
@@ -180,7 +193,7 @@
 .subgroupBody > p,
 .card p,
 .ledgerEntry p {
-  margin: 0.7rem 0 0;
+  margin: 0.5rem 0 0;
 }
 
 .section > p:first-of-type,
@@ -205,7 +218,7 @@
   border-bottom: 1px solid color-mix(in srgb, var(--wot-ink) 13%, transparent);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 0.8125rem;
-  font-weight: 650;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -219,29 +232,147 @@
 }
 
 .card {
-  padding-block: 1rem;
+  padding-block: 0.75rem;
   border-bottom: 1px solid color-mix(in srgb, var(--wot-ink) 16%, transparent);
 }
 
 .cardLabel {
   color: var(--wot-fire);
   font-size: 0.8125rem !important;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
   letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.caseCard {
+  padding: 0.75rem 0 0.75rem 0.75rem;
+  border-inline-start: 0.35rem solid var(--case-accent);
+  border-bottom: 1px solid color-mix(in srgb, var(--wot-ink) 16%, transparent);
+}
+
+.caseCard .cardLabel {
+  color: var(--case-accent);
+}
+
+.caseList,
+.referenceList {
+  display: grid;
+}
+
+.caseList {
+  gap: 0;
+  border-top: 1px solid color-mix(in srgb, var(--wot-ink) 24%, transparent);
+}
+
+.referenceList {
+  gap: 0.7rem;
+}
+
+.referenceCard {
+  position: relative;
+  min-inline-size: 0;
+  padding: 1rem;
+  border-top: 0.42rem solid var(--reference-accent);
+  overflow: hidden;
+  background-color: var(--reference-surface);
+  color: var(--reference-ink);
+}
+
+.referenceCard[data-design-family="data"] {
+  border-radius: 0.2rem;
+}
+
+.referenceCard[data-design-family="artificial"] {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--reference-ink) 10%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--reference-ink) 10%, transparent) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.referenceCard[data-design-family="hub"] {
+  border-radius: 1.2rem;
+  background-image: radial-gradient(
+    circle at 88% 8%,
+    color-mix(in srgb, var(--reference-accent) 58%, transparent),
+    transparent 43%
+  );
+}
+
+.referenceMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.referenceMeta span:last-child {
+  padding: 0.22rem 0.42rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  text-align: end;
+}
+
+.referenceName {
+  margin: 0.8rem 0 0;
+  font-size: clamp(1.16rem, 5vw, 1.35rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
+.referenceCard p {
+  margin: 0.55rem 0 0;
+  line-height: 1.5;
+}
+
+.referenceLink {
+  display: inline-flex;
+  min-block-size: 44px;
+  align-items: center;
+  margin-block-start: 0.45rem;
+  border-bottom: 1px solid currentColor;
+  color: inherit;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
   text-transform: uppercase;
 }
 
 .cardMeta {
   color: color-mix(in srgb, var(--wot-ink) 68%, transparent);
   font-size: 0.8125rem !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
+}
+
+.card ul {
+  margin: 0.85rem 0 0;
+  padding-inline-start: 1.1rem;
+}
+
+.card li {
+  font-size: clamp(0.9375rem, 4vw, 1rem);
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.card li + li {
+  margin-block-start: 0.7rem;
 }
 
 .linkRow {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem 1.2rem;
-  margin-block-start: 1rem;
+  margin-block-start: 0.75rem;
 }
 
 .textLink,
@@ -252,7 +383,7 @@
   border-bottom: 1px solid currentColor;
   color: var(--wot-fire);
   font-size: 0.8125rem;
-  font-weight: 750;
+  font-weight: 700;
   letter-spacing: 0.045em;
   text-transform: uppercase;
 }
@@ -273,7 +404,7 @@
   padding-block: 0.65rem;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 0.8125rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.075em;
   text-transform: uppercase;
 }
@@ -297,7 +428,7 @@
 }
 
 .ledgerEntry {
-  padding-block: 1rem;
+  padding-block: 0.75rem;
   border-top: 1px solid color-mix(in srgb, var(--wot-ink) 14%, transparent);
 }
 
@@ -305,7 +436,7 @@
 
 .sourceLedger,
 .rightsLedger {
-  margin-block-start: 1.4rem;
+  margin-block-start: 0.85rem;
   border-block: 1px solid color-mix(in srgb, var(--wot-ink) 24%, transparent);
 }
 
@@ -315,7 +446,7 @@
 }
 
 .legalNote {
-  margin-block-start: 1.35rem !important;
+  margin-block-start: 0.85rem !important;
   padding-inline-start: 0.8rem;
   border-inline-start: 2px solid var(--wot-fire);
 }
@@ -324,7 +455,7 @@
 .claimGrid h4 {
   margin: 0;
   font-size: 0.9rem;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.25;
 }
 
@@ -341,7 +472,7 @@
   color: var(--wot-fire);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 0.8125rem;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -368,8 +499,54 @@
   overflow-wrap: anywhere;
 }
 
+.citationExample {
+  margin-block-start: 0.85rem;
+  padding-block: 0.75rem;
+  border-block: 1px solid color-mix(in srgb, var(--wot-ink) 24%, transparent);
+}
+
+.citationExampleLabel {
+  margin: 0 !important;
+  color: var(--wot-fire);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.citationExampleText {
+  margin-block-start: 0.5rem !important;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem !important;
+  line-height: 1.55 !important;
+  overflow-wrap: anywhere;
+}
+
+.copyButton {
+  display: inline-flex;
+  min-block-size: 44px;
+  align-items: center;
+  margin-block-start: 0.55rem;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  color: var(--wot-fire);
+  cursor: pointer;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.contactSection {
+  padding-block-start: 0.5rem;
+}
+
 .contactList {
-  margin: 0;
+  margin: 0.9rem 0 0;
   border-block: 1px solid color-mix(in srgb, var(--wot-ink) 28%, transparent);
   font-style: normal;
 }
@@ -383,7 +560,7 @@
   border-bottom: 1px solid color-mix(in srgb, var(--wot-ink) 18%, transparent);
   color: inherit;
   font-size: 0.875rem;
-  font-weight: 650;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -395,7 +572,7 @@
   color: var(--wot-fire);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 0.8125rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.055em;
   text-transform: uppercase;
 }
@@ -412,7 +589,7 @@
   position: relative;
   display: grid;
   gap: 0.35rem;
-  margin-block-start: 1.1rem;
+  margin-block-start: 0.8rem;
   padding: 1rem 3rem 1rem 1rem;
   border-block: 1px solid var(--wot-ink);
   border-inline-start: 0.45rem solid var(--wot-fire);
@@ -424,7 +601,7 @@
 .repoMeta {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 0.8125rem;
-  font-weight: 750;
+  font-weight: 650;
   letter-spacing: 0.055em;
   text-transform: uppercase;
 }
@@ -435,7 +612,7 @@
 
 .repoName {
   font-size: clamp(1.2rem, 5vw, 1.45rem);
-  font-weight: 850;
+  font-weight: 750;
   letter-spacing: -0.025em;
 }
 
@@ -451,7 +628,7 @@
   color: var(--wot-fire);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 1.2rem;
-  font-weight: 850;
+  font-weight: 700;
 }
 
 .repoLink:hover {
@@ -459,7 +636,7 @@
 }
 
 .footer {
-  padding-block: 2.3rem 0.6rem;
+  padding-block: 1.5rem 0.4rem;
 }
 
 .homeLink {

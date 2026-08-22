@@ -125,7 +125,7 @@ check(
   "Mobile Home source order must be label → seven words → Over Time → palette → introduction → Copyright → footer",
 );
 
-const paletteSequence = [
+const desktopPaletteSequence = [
   "bg-ink",
   "bg-anthracite",
   "bg-ulm",
@@ -145,19 +145,48 @@ const paletteSequence = [
   "bg-hub-blue",
 ] as const;
 
-for (const [sourceName, source] of [
-  ["MobileHome", mobileHome],
-  ["Desktop PosterMarks", posterMarks],
-] as const) {
-  const positions = paletteSequence.map((token) => source.indexOf(token));
-  check(
-    positions.every(
-      (position, index) =>
-        position >= 0 && (index === 0 || position > positions[index - 1]),
-    ),
-    `${sourceName} must preserve the canonical 17-segment palette order`,
-  );
-}
+const desktopPalettePositions = desktopPaletteSequence.map((token) =>
+  posterMarks.indexOf(token),
+);
+check(
+  desktopPalettePositions.every(
+    (position, index) =>
+      position >= 0 &&
+      (index === 0 || position > desktopPalettePositions[index - 1]),
+  ),
+  "Desktop PosterMarks must preserve its canonical 17-segment palette order",
+);
+
+const mobilePaletteSequence = [
+  "#050510",
+  "#FCFAF3",
+  "#AE4202",
+  "#1570AC",
+  "#FBB728",
+  "#FF315F",
+  "#6F3AA6",
+  "#EF4B35",
+  "#2C78A9",
+  "#EF805F",
+  "#7C88E3",
+  "#E4BB59",
+  "#F5816B",
+  "#66D8BD",
+  "#2A375C",
+  "#267765",
+  "#B33A2E",
+] as const;
+const mobilePalettePositions = mobilePaletteSequence.map((token) =>
+  mobileHome.indexOf(token),
+);
+check(
+  mobilePalettePositions.every(
+    (position, index) =>
+      position >= 0 &&
+      (index === 0 || position > mobilePalettePositions[index - 1]),
+  ),
+  "Mobile Home must use the audited 17-segment mobile study palette",
+);
 
 check(
   mobileHome.indexOf("Words Over Time") < mobileHome.indexOf("About"),
@@ -255,13 +284,13 @@ check(
   "Hub and data must share one unbroken typographic row",
 );
 check(
-  /--home-field-label-size:\s*calc\(clamp\([^)]+\)\s*-\s*2px\);/.test(
+  /--home-field-label-size:\s*clamp\(0\.9375rem,\s*4vw,\s*1rem\);/.test(
     mobileCss,
   ) &&
     /\.directoryLabel,\s*\n\.overTime\s*\{[\s\S]*?font-size:\s*var\(--home-field-label-size\);[\s\S]*?\}/.test(
       mobileCss,
     ),
-  "WORDS YOU WANNA KNOW and OVER TIME must share the same 2px-reduced font size",
+  "WORDS YOU WANNA KNOW and OVER TIME must share the approved refined font size",
 );
 check(
   /\.directoryLabel\s*\{[\s\S]*?letter-spacing:\s*0\.035em;[\s\S]*?\}/.test(
@@ -273,19 +302,19 @@ check(
   "WORDS YOU WANNA KNOW must retain its tightened letter and word spacing",
 );
 check(
-  /\.wordField\s*\{[\s\S]*?row-gap:\s*clamp\(22px,\s*5\.6vw,\s*24px\);[\s\S]*?\}/.test(
+  /\.wordField\s*\{[\s\S]*?row-gap:\s*clamp\(20px,\s*5\.4vw,\s*22px\);[\s\S]*?\}/.test(
     mobileCss,
   ),
-  "The six word rows must retain the requested 22–24px vertical rhythm",
+  "The six word rows must retain the approved 20–22px refined rhythm",
 );
 check(
-  /\.wordField\s*\{[\s\S]*?padding:\s*clamp\(1\.1rem,\s*4vw,\s*1\.4rem\)\s+var\(--home-gutter\)\s+clamp\(1\.5rem,\s*6vw,\s*1\.75rem\);[\s\S]*?\}/.test(
+  /\.wordField\s*\{[\s\S]*?padding:\s*clamp\(2\.25rem,\s*9vw,\s*2\.8rem\)\s+var\(--home-gutter\)\s+clamp\(1\.5rem,\s*6vw,\s*1\.75rem\);[\s\S]*?\}/.test(
     mobileCss,
   ) &&
     /\.paletteDivider\s*\{[\s\S]*?margin:\s*0\s+var\(--home-gutter\)\s+clamp\(2rem,\s*8vw,\s*2\.25rem\);[\s\S]*?\}/.test(
       mobileCss,
     ),
-  "OVER TIME, the palette divider, and the overview must retain the balanced closing rhythm",
+  "The opening field and closing palette rhythm must retain their approved spacing",
 );
 check(
   /--home-word-size:\s*clamp\(/.test(mobileCss) &&
@@ -317,10 +346,10 @@ check(
   /\.forever,\s*\n\.artificial,\s*\n\.privacy,\s*\n\.hub,\s*\n\.depression,\s*\n\.data\s*\{[\s\S]*?color:\s*inherit;[\s\S]*?\}/.test(
     mobileCss,
   ) &&
-    /\.intelligence\s*\{[\s\S]*?color:\s*#3a3d42;[\s\S]*?\}/.test(
+    /\.intelligence\s*\{[\s\S]*?color:\s*var\(--wot-ink\);[\s\S]*?\}/.test(
       mobileCss,
     ),
-  "All words must use the normal ink color except dark-gray intelligence",
+  "Intelligence must remain visible in the normal ink color before scroll emphasis",
 );
 check(
   /\.copyright summary::after\s*\{[\s\S]*?content:\s*"\+";[\s\S]*?\}/.test(
@@ -400,7 +429,7 @@ const report = {
       "intelligence",
       "COMING SOON",
       "OVER TIME",
-      "desktop palette divider",
+      "mobile study palette divider",
       "project introduction",
       "COPYRIGHTS",
       "final footer",

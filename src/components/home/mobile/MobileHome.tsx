@@ -1,9 +1,11 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import {
   plannedStudyById,
   publishedStudyById,
   type PublishedStudyRegistryEntry,
 } from "@/data/words";
+import { MobileHomeScrollHighlights } from "./MobileHomeScrollHighlights";
 import styles from "./mobile-home.module.css";
 
 type PublishedWordMarkProps = {
@@ -20,23 +22,23 @@ const intelligenceStudy = plannedStudyById("study-intelligence");
 const dataStudy = publishedStudyById("study-data");
 
 const paletteSegments = [
-  "bg-ink",
-  "bg-anthracite",
-  "bg-ulm",
-  "bg-wheat",
-  "bg-blaze",
-  "bg-signal",
-  "bg-fire",
-  "bg-wine",
-  "bg-sun",
-  "bg-nice",
-  "bg-cobalt",
-  "bg-sail",
-  "bg-hub-amethyst",
-  "bg-hub-space",
-  "bg-hub-teal",
-  "bg-hub-ruby",
-  "bg-hub-blue",
+  { id: "ink", color: "#050510" },
+  { id: "mobile-paper", color: "#FCFAF3", paper: true },
+  { id: "forever-joined", color: "#AE4202" },
+  { id: "forever-spaced-data", color: "#1570AC" },
+  { id: "forever-sun", color: "#FBB728" },
+  { id: "artificial-accent", color: "#FF315F" },
+  { id: "privacy-violet", color: "#6F3AA6" },
+  { id: "privacy-coral", color: "#EF4B35" },
+  { id: "privacy-blue", color: "#2C78A9" },
+  { id: "hub-coral", color: "#EF805F" },
+  { id: "hub-violet", color: "#7C88E3" },
+  { id: "hub-gold", color: "#E4BB59" },
+  { id: "data-hot", color: "#F5816B" },
+  { id: "data-mint", color: "#66D8BD" },
+  { id: "depression-roots", color: "#2A375C" },
+  { id: "depression-print", color: "#267765" },
+  { id: "depression-crisis", color: "#B33A2E" },
 ] as const;
 
 function PublishedWordMark({ className, study }: PublishedWordMarkProps) {
@@ -57,6 +59,7 @@ function PublishedWordMark({ className, study }: PublishedWordMarkProps) {
 export function MobileHome() {
   return (
     <div className={styles.root} data-home-edition="mobile">
+      <MobileHomeScrollHighlights />
       <header className={`${styles.header} mobile-home-header`}>
         <nav className={styles.nav} aria-label="Primary navigation">
           <Link href="/" className={styles.navLink}>
@@ -73,8 +76,9 @@ export function MobileHome() {
         aria-labelledby="m-home-directory-title"
         data-home-word-field
       >
-        <p className={styles.directoryLabel} id="m-home-directory-title">
-          Words you wanna know:
+        <p className={styles.directoryLabel} id="m-home-directory-title" aria-label="Words you wanna know:">
+          <span>Words</span>
+          <span>You wanna know:</span>
         </p>
 
         <PublishedWordMark study={foreverStudy} className={styles.forever} />
@@ -119,13 +123,17 @@ export function MobileHome() {
         data-home-palette-divider
         aria-hidden="true"
       >
-        {paletteSegments.map((segment, index) => (
+        {paletteSegments.map((segment) => (
           <span
-            className={`${styles.paletteSegment} ${segment} ${
-              segment === "bg-wheat" ? styles.palettePaper : ""
+            className={`${styles.paletteSegment} ${
+              "paper" in segment && segment.paper ? styles.palettePaper : ""
             }`}
-            key={`${segment}-${index}`}
-          />
+            data-home-palette-segment={segment.id}
+            key={segment.id}
+            style={{ "--palette-tone": segment.color } as CSSProperties}
+          >
+            <span className={styles.paletteSegmentFill} />
+          </span>
         ))}
       </div>
 
