@@ -1045,7 +1045,6 @@
   gap: .75rem;
 }
 
-.siteHeader a,
 .sceneLabel,
 .backToTop,
 .disclosures summary {
@@ -1062,6 +1061,11 @@
   min-height: 44px;
   display: inline-flex;
   align-items: center;
+  color: var(--depression-ink);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: .035em;
   text-decoration: none;
 }
 
