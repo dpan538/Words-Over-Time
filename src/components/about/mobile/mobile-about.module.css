@@ -1,4 +1,9 @@
 .root {
+  /* Mobile-owned primitives: desktop/global token edits cannot recolour this edition. */
+  --wot-paper-mobile: #fcfaf3;
+  --wot-ink: #050510;
+  --wot-fire: #ae4202;
+  --wot-nice: #1570ac;
   --about-gutter: clamp(1rem, 5.1vw, 1.4rem);
   display: block;
   min-inline-size: 0;
@@ -6,6 +11,7 @@
   overflow-x: clip;
   background: var(--wot-paper-mobile);
   color: var(--wot-ink);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .nav {
@@ -652,7 +658,7 @@
   .colourRow span:last-child { grid-column: 2; }
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 501px) {
   .root { display: none; }
 }
 

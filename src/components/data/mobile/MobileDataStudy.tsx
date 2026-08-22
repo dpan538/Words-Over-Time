@@ -725,7 +725,7 @@ function useScrollMorph(sectionRef: React.RefObject<HTMLElement | null>) {
     const section = sectionRef.current;
     if (!section) return;
 
-    const mobileQuery = window.matchMedia("(max-width: 959px)");
+    const mobileQuery = window.matchMedia("(max-width: 500px)");
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     const forceStaticPreview = new URL(window.location.href).searchParams.get("motion") === "reduce";
     const dots = Array.from(section.querySelectorAll<HTMLElement>("[data-morph-dot]"));
@@ -804,7 +804,7 @@ function useScrollMorph(sectionRef: React.RefObject<HTMLElement | null>) {
 
 function useMobileDataEnvironment() {
   useLayoutEffect(() => {
-    const mobileQuery = window.matchMedia("(max-width: 959px)");
+    const mobileQuery = window.matchMedia("(max-width: 500px)");
     const root = document.documentElement;
     const body = document.body;
     const previous = {
@@ -991,7 +991,7 @@ function useNamedScrollMorph(sectionRef: React.RefObject<HTMLElement | null>) {
     const section = sectionRef.current;
     if (!section) return;
 
-    const mobileQuery = window.matchMedia("(max-width: 959px)");
+    const mobileQuery = window.matchMedia("(max-width: 500px)");
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     const forceStaticPreview = new URL(window.location.href).searchParams.get("motion") === "reduce";
     const dots = Array.from(section.querySelectorAll<HTMLElement>("[data-named-morph-dot]"));
@@ -1340,7 +1340,7 @@ export function MobileDataStudy() {
   useMobileDataEnvironment();
 
   return (
-    <article id="m-data-top" className={styles.mobileData} data-data-edition="mobile-research" aria-labelledby="m-data-title">
+    <main id="m-data-top" className={styles.mobileData} data-data-edition="mobile-research" aria-labelledby="m-data-title">
       <section className={styles.opening}>
         <StudyHeader />
         <div className={styles.openingBody}>
@@ -1375,6 +1375,6 @@ export function MobileDataStudy() {
         <NarrativeParagraph label="From data work to legibility" step={5}>Entry, cleaning, labeling, and annotation do not simply prepare data. Their histories rise at different rates, showing that a finished dataset is assembled through repeated operations that decide what can be compared, circulated, and trusted.</NarrativeParagraph>
       </div>
       <CloseFinding />
-    </article>
+    </main>
   );
 }

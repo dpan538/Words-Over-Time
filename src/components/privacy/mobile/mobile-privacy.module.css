@@ -1,6 +1,6 @@
 .root {
   --privacy-ink: #080812;
-  --privacy-paper: var(--wot-paper-mobile);
+  --privacy-paper: #fcfaf3;
   --privacy-violet: #6f3aa6;
   --privacy-coral: #ef4b35;
   --privacy-blue: #2c78a9;
@@ -11,6 +11,7 @@
   overflow-x: clip;
   background: var(--privacy-paper);
   color: var(--privacy-ink);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .root p,
@@ -1999,7 +2000,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 501px) {
   .root {
     display: none;
   }

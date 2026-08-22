@@ -291,7 +291,7 @@ export function MobilePrivacyStudy({ analysis }: MobilePrivacyStudyProps) {
   });
 
   return (
-    <article ref={motionRef} id="m-privacy-top" className={styles.root} data-privacy-edition="mobile-research">
+    <main ref={motionRef} id="m-privacy-top" className={styles.root} data-privacy-edition="mobile-research">
       <header className={styles.siteHeader}>
         <nav aria-label="Primary navigation">
           <Link href="/">WORDS OVER TIME</Link>
@@ -609,6 +609,6 @@ export function MobilePrivacyStudy({ analysis }: MobilePrivacyStudyProps) {
       </section>
 
       <footer className={styles.footer}><p>Words Over Time: semantic change and word usage over time</p></footer>
-    </article>
+    </main>
   );
 }

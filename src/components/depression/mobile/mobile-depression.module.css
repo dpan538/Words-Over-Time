@@ -1534,7 +1534,7 @@
   }
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 501px) {
   .mobileStudy {
     display: none;
   }

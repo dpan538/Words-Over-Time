@@ -14,12 +14,26 @@ type MobileForeverStudyProps = {
 
 export function MobileForeverStudy({ analysis }: MobileForeverStudyProps) {
   return (
-    <article
+    <main
       id="m-forever-top"
       className={styles.root}
       data-forever-edition="mobile-research"
       data-release={analysis.release.persistentIdentifier}
+      aria-labelledby="m-forever-title"
     >
+      <header className={styles.mobileOpening}>
+        <nav className={styles.siteNav} aria-label="Primary navigation">
+          <Link href="/">Words Over Time</Link>
+          <Link href="/about">About</Link>
+        </nav>
+        <div className={styles.studySubject}>
+          <p>Word study</p>
+          <h1 id="m-forever-title">forever</h1>
+          <p>
+            Two movements shape the record: first the spelling balance turns as <i>for ever</i> retreats; later both forms rebound after the split has already settled.
+          </p>
+        </div>
+      </header>
       <MobileScrollRevealScope>
       <MobileForeverLongArc analysis={analysis} />
       <MobileForeverEvidenceRail railId="rail-a" eyebrow="Peak / low / return" cards={analysis.rails.railA} />
@@ -90,6 +104,6 @@ export function MobileForeverStudy({ analysis }: MobileForeverStudyProps) {
         <p>Words Over Time: semantic change and word usage over time</p>
       </footer>
       </MobileScrollRevealScope>
-    </article>
+    </main>
   );
 }

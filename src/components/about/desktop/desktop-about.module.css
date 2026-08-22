@@ -1,9 +1,3 @@
 .root {
-  display: none;
-}
-
-@media (min-width: 60rem) {
-  .root {
-    display: block;
-  }
+  display: block;
 }

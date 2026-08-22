@@ -130,7 +130,7 @@ function SemanticMobilityPage() {
 
 export function MobileArtificialStudy() {
   return (
-    <article id="m-artificial-top" className={styles.mobileArtificial} data-artificial-edition="mobile-research" aria-labelledby="m-artificial-title">
+    <main id="m-artificial-top" className={styles.mobileArtificial} data-artificial-edition="mobile-research" aria-labelledby="m-artificial-title">
       <ArtificialMotionController rootId="m-artificial-top" />
       <header className={styles.siteHeader}><nav aria-label="Primary navigation"><Link href="/">WORDS OVER TIME</Link><Link href="/about">ABOUT</Link></nav></header>
 
@@ -167,6 +167,6 @@ export function MobileArtificialStudy() {
         <a className={styles.backToTop} href="#m-artificial-top">BACK TO TOP <span className={styles.upGlyph} aria-hidden="true" /></a>
       </section>
       <footer className={styles.editionFooter}><p>Words Over Time: semantic change and word usage over time</p></footer>
-    </article>
+    </main>
   );
 }

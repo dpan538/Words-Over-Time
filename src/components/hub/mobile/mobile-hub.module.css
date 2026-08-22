@@ -1,6 +1,7 @@
 .root {
   --hub-ink: #111018;
-  --hub-paper: var(--wot-paper-mobile, #f4eddc);
+  /* Preserve the current computed mobile paper without a global token dependency. */
+  --hub-paper: #fcfaf3;
   --hub-gutter: 1.25rem;
   position: relative;
   isolation: isolate;
@@ -9,6 +10,12 @@
   background: var(--hub-paper);
   color: var(--hub-ink);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 501px) {
+  .root {
+    display: none;
+  }
 }
 
 .atmosphereApp {

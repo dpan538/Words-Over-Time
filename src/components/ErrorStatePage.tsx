@@ -1,115 +1,25 @@
 "use client";
 
-import Link from "next/link";
-import styles from "./error-state.module.css";
+import { DeferredDesktopEdition } from "@/components/edition/DeferredDesktopEdition";
+import { EditionBoundary } from "@/components/edition/EditionBoundary";
+import { MobileErrorStatePage } from "@/components/error/mobile/MobileErrorStatePage";
+import type { ErrorStatePageProps } from "@/components/error/error-state-types";
 
-type ErrorAction = {
-  label: string;
-  href?: string;
-  onClick?: () => void;
-};
+const loadDesktopErrorStatePage = () =>
+  import("@/components/error/desktop/DesktopErrorStatePage").then(
+    (module) => module.default,
+  );
 
-type ErrorStatePageProps = {
-  code: "404" | "500";
-  title: string;
-  message: string;
-  note: string;
-  reset?: () => void;
-};
-
-const defaultActions: ErrorAction[] = [
-  { label: "Back home", href: "/" },
-  { label: "Browse studies", href: "/words" },
-  { label: "Methodology", href: "/about" },
-];
-
-export function ErrorStatePage({
-  code,
-  title,
-  message,
-  note,
-  reset,
-}: ErrorStatePageProps) {
-  const accent = "text-nice";
-  const actions = reset
-    ? [
-        defaultActions[0],
-        defaultActions[1],
-        defaultActions[2],
-        { label: "Try again", onClick: reset },
-      ]
-    : defaultActions;
-
+export function ErrorStatePage(props: ErrorStatePageProps) {
   return (
-    <>
-    <main className={styles.mobileRoot}>
-      <nav className={styles.mobileNav} aria-label="Error page navigation">
-        <Link href="/">Words Over Time</Link>
-        <Link href="/about">About</Link>
-      </nav>
-      <section className={styles.mobileContent}>
-        <p className={styles.mobileEyebrow}>Words Over Time / {code}</p>
-        <h1><span>{code}/</span>{code === "404" ? "page not found" : "render interrupted"}</h1>
-        <p className={styles.mobileMessage}>{message}</p>
-        <p className={styles.mobileNote}>{code === "404" ? "The requested page is not part of the published word field." : "The page could not finish this render. No research source or private working file is exposed by this error."}</p>
-        <div className={styles.mobileActions}>
-          {actions.map((action) => action.href ? (
-            <Link key={action.label} href={action.href}>{action.label}<span aria-hidden="true">→</span></Link>
-          ) : (
-            <button key={action.label} type="button" onClick={action.onClick}>{action.label}<span aria-hidden="true">↻</span></button>
-          ))}
-        </div>
-      </section>
-      <footer className={styles.mobileFooter}>Words Over Time: semantic change and word usage over time</footer>
-    </main>
-
-    <main className={`${styles.desktopRoot} flex min-h-screen items-center bg-wheat px-5 py-12 text-ink sm:px-10 lg:px-16`}>
-      <section className="w-full max-w-[92rem] border-t-2 border-ink pt-7">
-        <p className={`font-mono text-[0.86rem] font-black uppercase tracking-[0.22em] sm:text-[1rem] ${accent}`}>
-          Missing route / public boundary
-        </p>
-
-        <h1 className="mt-10 flex flex-col text-[clamp(4.8rem,18vw,15rem)] font-black leading-[0.86] tracking-normal">
-          <span className="block min-w-[0]">
-            {code}
-            <span className="ml-[0.08em] text-ink">/</span>
-          </span>
-          <span className={`block w-[5.9em] ${accent}`}>{title}</span>
-        </h1>
-
-        <div className="mt-9 grid min-h-[8.75rem] gap-5 border-t border-ink/12 pt-7 md:grid-cols-[0.8fr_1.2fr]">
-          <p className="max-w-xl text-[1.45rem] font-black leading-[1.08] text-ink sm:text-[2rem]">
-            {message}
-          </p>
-          <p className="max-w-3xl font-mono text-[0.9rem] font-black uppercase leading-7 tracking-[0.14em] text-ink sm:text-[1rem]">
-            {note}
-          </p>
-        </div>
-
-        <div className="mt-10 flex flex-wrap gap-3">
-          {actions.map((action) =>
-            action.href ? (
-              <Link
-                key={action.label}
-                href={action.href}
-                className="w-full border-2 border-ink px-5 py-4 text-center font-mono text-[0.9rem] font-black uppercase tracking-[0.16em] transition hover:bg-ink hover:text-wheat sm:w-[12.4rem]"
-              >
-                {action.label}
-              </Link>
-            ) : (
-              <button
-                key={action.label}
-                type="button"
-                onClick={action.onClick}
-                className="w-full border-2 border-ink px-5 py-4 text-center font-mono text-[0.9rem] font-black uppercase tracking-[0.16em] transition hover:bg-ink hover:text-wheat sm:w-[12.4rem]"
-              >
-                {action.label}
-              </button>
-            ),
-          )}
-        </div>
-      </section>
-    </main>
-    </>
+    <EditionBoundary
+      mobile={<MobileErrorStatePage {...props} />}
+      desktop={(
+        <DeferredDesktopEdition
+          load={loadDesktopErrorStatePage}
+          componentProps={props}
+        />
+      )}
+    />
   );
 }

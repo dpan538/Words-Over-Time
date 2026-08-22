@@ -2852,6 +2852,6 @@
   transition: none !important;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 501px) {
   .mobileData { display: none; }
 }

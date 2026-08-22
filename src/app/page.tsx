@@ -1,5 +1,5 @@
 import { JsonLd } from "@/components/JsonLd";
-import { DesktopHome } from "@/components/home/desktop/DesktopHome";
+import { HomeEditionBridge } from "@/components/edition/HomeEditionBridge";
 import { MobileHome } from "@/components/home/mobile/MobileHome";
 import { createPageMetadata, homeJsonLd } from "@/lib/site";
 
@@ -10,8 +10,9 @@ export default function Home() {
     <main aria-labelledby="home-title">
       <JsonLd data={homeJsonLd} />
       <h1 id="home-title" className="sr-only">Words Over Time</h1>
-      <MobileHome />
-      <DesktopHome />
+      <HomeEditionBridge>
+        <MobileHome />
+      </HomeEditionBridge>
     </main>
   );
 }

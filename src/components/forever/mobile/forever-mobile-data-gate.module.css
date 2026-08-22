@@ -1,4 +1,9 @@
 .root {
+  --wot-paper-mobile: #fcfaf3;
+  --wot-ink: #050510;
+  --wot-fire: #ae4202;
+  --wot-wine: #a1081f;
+  --wot-nice: #1570ac;
   display: block;
   min-inline-size: 0;
   overflow-x: clip;
@@ -436,7 +441,7 @@
   }
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 501px) {
   .root {
     display: none;
   }

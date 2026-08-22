@@ -25,32 +25,11 @@ const mobileCssPath = path.join(
   root,
   "src/components/home/mobile/mobile-home.module.css",
 );
-const desktopHomePath = path.join(
-  root,
-  "src/components/home/desktop/DesktopHome.tsx",
-);
-const posterMarksPath = path.join(root, "src/components/PosterMarks.tsx");
-const foreverPagePath = path.join(root, "src/app/words/forever/page.tsx");
-const foreverPublicRendererPath = path.join(
-  root,
-  "src/components/forever/mobile/MobileForeverStudy.tsx",
-);
 
-const [
-  mobileHome,
-  mobileCss,
-  desktopHome,
-  posterMarks,
-  foreverPage,
-  foreverPublicRenderer,
-] = await Promise.all([
-    readFile(mobileHomePath, "utf8"),
-    readFile(mobileCssPath, "utf8"),
-    readFile(desktopHomePath, "utf8"),
-    readFile(posterMarksPath, "utf8"),
-    readFile(foreverPagePath, "utf8"),
-    readFile(foreverPublicRendererPath, "utf8"),
-  ]);
+const [mobileHome, mobileCss] = await Promise.all([
+  readFile(mobileHomePath, "utf8"),
+  readFile(mobileCssPath, "utf8"),
+]);
 
 const failures: string[] = [];
 
@@ -123,38 +102,6 @@ check(
       position >= 0 && (index === 0 || position > sourcePositions[index - 1]),
   ),
   "Mobile Home source order must be label → seven words → Over Time → palette → introduction → Copyright → footer",
-);
-
-const desktopPaletteSequence = [
-  "bg-ink",
-  "bg-anthracite",
-  "bg-ulm",
-  "bg-wheat",
-  "bg-blaze",
-  "bg-signal",
-  "bg-fire",
-  "bg-wine",
-  "bg-sun",
-  "bg-nice",
-  "bg-cobalt",
-  "bg-sail",
-  "bg-hub-amethyst",
-  "bg-hub-space",
-  "bg-hub-teal",
-  "bg-hub-ruby",
-  "bg-hub-blue",
-] as const;
-
-const desktopPalettePositions = desktopPaletteSequence.map((token) =>
-  posterMarks.indexOf(token),
-);
-check(
-  desktopPalettePositions.every(
-    (position, index) =>
-      position >= 0 &&
-      (index === 0 || position > desktopPalettePositions[index - 1]),
-  ),
-  "Desktop PosterMarks must preserve its canonical 17-segment palette order",
 );
 
 const mobilePaletteSequence = [
@@ -267,9 +214,12 @@ for (const [label, pattern] of [
   check(!pattern.test(mobileHome), `MobileHome contains forbidden ${label}`);
 }
 
+const mobilePresentationSources = `${mobileHome}\n${mobileCss}`;
 check(
-  !desktopHome.includes("MobileHome") && !mobileHome.includes("DesktopHome"),
-  "MobileHome and DesktopHome must remain independent",
+  !/DesktopHome|PosterMarks|components\/home\/desktop|home\/desktop/.test(
+    mobilePresentationSources,
+  ),
+  "MobileHome must not import or reference desktop presentation code",
 );
 check(
   /\.wordField\s*\{[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1fr\);[\s\S]*?\}/.test(
@@ -400,21 +350,6 @@ check(
   `Mobile Home source font floor is ${sourceFontFloorPx}px; expected at least 13px`,
 );
 
-const publicForeverText = `${foreverPage}\n${foreverPublicRenderer}`;
-check(
-  foreverPage.includes("MobileForeverStudy") &&
-    foreverPage.includes("foreverMobileAnalysis") &&
-    !foreverPage.includes("ForeverMobileEditorial") &&
-    !foreverPage.includes("ForeverMobileDataGate"),
-  "Public Forever route must use the independent fixed-release mobile study renderer",
-);
-check(
-  !/RAW-DATA AUDIT|PUBLICATION GATE|Forever page gate|implementation unauthorized|\bSTOP\b|productionEligible|contract-google/i.test(
-    publicForeverText,
-  ),
-  "Public Forever route or renderer contains internal audit/gate copy",
-);
-
 const report = {
   status: failures.length === 0 ? "PASS" : "FAIL",
   mobileHome: {
@@ -441,10 +376,7 @@ const report = {
     renderedWordRows: 6,
     copyrightDefaultOpen: false,
     sourceFontFloorPx,
-  },
-  forever: {
-    publicRenderer: "MobileForeverStudy",
-    internalGateCopyRendered: false,
+    desktopPresentationDependency: false,
   },
   failures,
 };

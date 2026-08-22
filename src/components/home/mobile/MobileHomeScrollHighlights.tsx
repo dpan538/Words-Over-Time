@@ -10,7 +10,7 @@ const LEAD_HOLD_RATIO = 0.12;
 
 export function MobileHomeScrollHighlights() {
   useEffect(() => {
-    if (!window.matchMedia("(max-width: 59.999rem)").matches) {
+    if (!window.matchMedia("(max-width: 500px)").matches) {
       return;
     }
 

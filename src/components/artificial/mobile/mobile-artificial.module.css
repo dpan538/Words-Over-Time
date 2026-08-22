@@ -36,6 +36,12 @@
   text-size-adjust: 100%;
 }
 
+@media (min-width: 501px) {
+  .mobileArtificial {
+    display: none;
+  }
+}
+
 .mobileArtificial :is(p, h1, h2, h3, figure, dl) {
   margin: 0;
 }

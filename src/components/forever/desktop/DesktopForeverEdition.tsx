@@ -1,6 +1,7 @@
 "use client";
 
 import { ForeverPoster } from "@/components/ForeverPoster";
+import { WordPageShell } from "@/components/WordPageShell";
 import datasetJson from "@/data/generated/forever_dataset.json";
 import type {
   ForeverClientDataset,
@@ -72,6 +73,13 @@ const dataset: ForeverClientDataset = {
     ),
 };
 
-export function ForeverDesktopEdition() {
-  return <ForeverPoster dataset={dataset} />;
+/** Desktop-only forever composition and data boundary. */
+export function DesktopForeverEdition() {
+  return (
+    <div data-forever-edition="desktop">
+      <WordPageShell path="/words/forever">
+        <ForeverPoster dataset={dataset} />
+      </WordPageShell>
+    </div>
+  );
 }
