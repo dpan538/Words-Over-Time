@@ -1,7 +1,7 @@
 "use client";
 
 import { ForeverPoster } from "@/components/ForeverPoster";
-import { WordPageShell } from "@/components/WordPageShell";
+import { DesktopWordSeoSummary } from "@/components/word-study/desktop/DesktopWordSeoSummary";
 import datasetJson from "@/data/generated/forever_dataset.json";
 import type {
   ForeverClientDataset,
@@ -77,9 +77,8 @@ const dataset: ForeverClientDataset = {
 export function DesktopForeverEdition() {
   return (
     <div data-forever-edition="desktop">
-      <WordPageShell path="/words/forever">
-        <ForeverPoster dataset={dataset} />
-      </WordPageShell>
+      <ForeverPoster dataset={dataset} />
+      <DesktopWordSeoSummary path="/words/forever" />
     </div>
   );
 }

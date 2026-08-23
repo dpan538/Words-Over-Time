@@ -1,5 +1,5 @@
 import { DataPoster } from "@/components/DataPoster";
-import { WordPageShell } from "@/components/WordPageShell";
+import { DesktopWordSeoSummary } from "@/components/word-study/desktop/DesktopWordSeoSummary";
 import crossPressuresDatasetJson from "@/data/generated/data_cross_pressures.json";
 import datumRouteDatasetJson from "@/data/generated/data_datum_route.json";
 import datasetJson from "@/data/generated/data_historical_index.json";
@@ -18,14 +18,13 @@ const crossPressuresDataset = crossPressuresDatasetJson as DataCrossPressuresDat
 export function DesktopDataEdition() {
   return (
     <div data-data-edition="desktop">
-      <WordPageShell path="/words/data">
-        <DataPoster
-          dataset={dataset}
-          socializedDataset={socializedDataset}
-          datumRouteDataset={datumRouteDataset}
-          crossPressuresDataset={crossPressuresDataset}
-        />
-      </WordPageShell>
+      <DataPoster
+        dataset={dataset}
+        socializedDataset={socializedDataset}
+        datumRouteDataset={datumRouteDataset}
+        crossPressuresDataset={crossPressuresDataset}
+      />
+      <DesktopWordSeoSummary path="/words/data" />
     </div>
   );
 }

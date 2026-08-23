@@ -424,7 +424,7 @@ export function DesktopAbout() {
           <GridRuler />
 
         <section
-          id="d-about-project-statement"
+          id="project-statement"
           className="scroll-mt-20 grid gap-8 border-y-2 border-ink py-8 lg:grid-cols-[16rem_1fr] lg:gap-16"
         >
           <header>
@@ -474,7 +474,7 @@ export function DesktopAbout() {
         </section>
 
         <section
-          id="d-about-methodology"
+          id="methodology"
           className="scroll-mt-20 border-y-2 border-ink py-4"
         >
           <div className="grid gap-4 lg:grid-cols-[0.48fr_0.74fr_0.78fr] lg:items-stretch">
@@ -537,7 +537,7 @@ export function DesktopAbout() {
         </section>
 
         <section
-          id="d-about-design-research"
+          id="design-research"
           className="scroll-mt-20 grid gap-8 border-t-2 border-ink pt-10 lg:grid-cols-[16rem_1fr] lg:gap-16"
         >
           <AboutSectionHeader
@@ -653,7 +653,7 @@ export function DesktopAbout() {
         </section>
 
         <section
-          id="d-about-layered-evidence"
+          id="layered-evidence"
           className="scroll-mt-20 grid gap-10 py-2 lg:grid-cols-[16rem_1fr] lg:gap-16"
         >
           <AboutSectionHeader
@@ -709,7 +709,7 @@ export function DesktopAbout() {
         </section>
 
         <section
-          id="d-about-source-ledger"
+          id="source-ledger"
           className="scroll-mt-20 grid gap-8 border-t-2 border-ink pt-10 lg:grid-cols-[16rem_1fr] lg:gap-16"
         >
           <AboutSectionHeader
@@ -764,7 +764,7 @@ export function DesktopAbout() {
         </section>
 
         <section
-          id="d-about-calculation-methods"
+          id="calculation-methods"
           className="scroll-mt-20 grid gap-8 border-t-2 border-ink pt-10 lg:grid-cols-[16rem_1fr] lg:gap-16"
         >
           <AboutSectionHeader
@@ -798,7 +798,7 @@ export function DesktopAbout() {
         </section>
 
         <section
-          id="d-about-claim-boundaries"
+          id="claim-boundaries"
           className="scroll-mt-20 grid gap-8 border-t-2 border-ink pt-10 lg:grid-cols-[16rem_1fr] lg:gap-16"
         >
           <AboutSectionHeader
@@ -832,7 +832,7 @@ export function DesktopAbout() {
         </section>
 
         <section
-          id="d-about-open-skill"
+          id="open-skill"
           className="scroll-mt-20 grid gap-8 border-t-2 border-ink pt-10 lg:grid-cols-[16rem_1fr] lg:gap-16"
         >
           <AboutSectionHeader
@@ -917,7 +917,7 @@ export function DesktopAbout() {
         </section>
 
         <section
-          id="d-about-open-source"
+          id="open-source"
           className="scroll-mt-20 grid gap-8 border-t-2 border-ink pt-10 lg:grid-cols-[16rem_1fr] lg:gap-16"
         >
           <AboutSectionHeader
@@ -1018,7 +1018,7 @@ export function DesktopAbout() {
           </div>
         </section>
 
-        <footer id="d-about-licensing" className="scroll-mt-20 border-t-2 border-ink py-8">
+        <footer id="licensing" className="scroll-mt-20 border-t-2 border-ink py-8">
           <div className="grid gap-8 lg:grid-cols-[16rem_1fr] lg:gap-16">
             <AboutSectionHeader
               num="09"

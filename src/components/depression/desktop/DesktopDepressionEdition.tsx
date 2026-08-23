@@ -1,5 +1,5 @@
 import { DepressionPoster } from "@/components/DepressionPoster";
-import { WordPageShell } from "@/components/WordPageShell";
+import { DesktopWordSeoSummary } from "@/components/word-study/desktop/DesktopWordSeoSummary";
 import branchesJson from "@/data/generated/depression_branches.json";
 import coverageJson from "@/data/generated/depression_coverage_report.json";
 import evidenceJson from "@/data/generated/depression_evidence_normalized.json";
@@ -32,15 +32,14 @@ const coverage = coverageJson as DepressionCoverageReport;
 export function DesktopDepressionEdition() {
   return (
     <div data-depression-edition="desktop">
-      <WordPageShell path="/words/depression">
-        <DepressionPoster
-          frequency={frequency}
-          prehistory={prehistory}
-          branches={branches}
-          evidence={evidence}
-          coverage={coverage}
-        />
-      </WordPageShell>
+      <DepressionPoster
+        frequency={frequency}
+        prehistory={prehistory}
+        branches={branches}
+        evidence={evidence}
+        coverage={coverage}
+      />
+      <DesktopWordSeoSummary path="/words/depression" />
     </div>
   );
 }

@@ -1144,7 +1144,7 @@ export function ArtificialChart01SemanticChamber() {
               key={state}
               type="button"
               onClick={() => setActiveState(state)}
-              className={`min-h-11 border-b border-ink/20 px-3 py-3 text-left font-mono text-[0.72rem] font-black uppercase tracking-[0.10em] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-ink ${
+              className={`border-b border-ink/20 px-3 py-3 text-left font-mono text-[0.72rem] font-black uppercase tracking-[0.10em] transition ${
                 activeState === state
                   ? "bg-ink text-wheat"
                   : "bg-wheat text-ink/55 hover:bg-ink/6 hover:text-ink"

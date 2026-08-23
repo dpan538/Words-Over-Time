@@ -1,5 +1,5 @@
 import { PrivacyPoster } from "@/components/PrivacyPoster";
-import { WordPageShell } from "@/components/WordPageShell";
+import { DesktopWordSeoSummary } from "@/components/word-study/desktop/DesktopWordSeoSummary";
 import type { PrivacyLegalInjuryDataset } from "@/components/privacy/PrivacyChart01LegalInjury";
 import type { PrivacyModernTransitDataset } from "@/components/privacy/PrivacyChart01ModernTransit";
 import type { PrivacySemanticWeatherDataset } from "@/components/privacy/PrivacyChart01SemanticWeather";
@@ -71,17 +71,16 @@ const researchExpansion: PrivacyResearchExpansionDataset = {
 export function DesktopPrivacyEdition() {
   return (
     <div data-privacy-edition="desktop">
-      <WordPageShell path="/words/privacy">
-        <PrivacyPoster
-          semanticWeather={semanticWeather}
-          legalInjury={legalInjury}
-          modernTransit={modernTransit}
-          geoAttention={geoAttention}
-          geoElevation={geoElevation}
-          geoDemographic={geoDemographic}
-          researchExpansion={researchExpansion}
-        />
-      </WordPageShell>
+      <PrivacyPoster
+        semanticWeather={semanticWeather}
+        legalInjury={legalInjury}
+        modernTransit={modernTransit}
+        geoAttention={geoAttention}
+        geoElevation={geoElevation}
+        geoDemographic={geoDemographic}
+        researchExpansion={researchExpansion}
+      />
+      <DesktopWordSeoSummary path="/words/privacy" />
     </div>
   );
 }

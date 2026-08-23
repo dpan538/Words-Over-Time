@@ -22,7 +22,7 @@ export function PosterMarks() {
   return (
     <aside
       aria-label="Words Over Time palette"
-      className="hidden w-8 self-stretch justify-self-end min-[960px]:flex xl:w-10"
+      className="hidden w-8 self-stretch justify-self-end lg:flex xl:w-10"
     >
       <div className="flex w-full flex-col justify-center gap-4">
         <div className="h-10 border-t-[3px] border-ink" />

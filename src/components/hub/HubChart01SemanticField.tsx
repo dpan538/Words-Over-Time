@@ -677,7 +677,7 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
           <button
             type="button"
             onClick={() => setActiveLayerId(null)}
-            className={`grid min-h-11 grid-cols-[4.25rem_1fr] border px-0 py-0 text-left transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-hub-space ${
+            className={`grid grid-cols-[4.25rem_1fr] border px-0 py-0 text-left transition ${
               activeLayerId === null
                 ? "border-hub-space bg-sun text-ink"
                 : "border-ink/35 bg-wheat text-ink hover:border-hub-teal hover:bg-hub-teal/20"
@@ -695,7 +695,7 @@ export function HubChart01SemanticField({ data }: HubChart01SemanticFieldProps) 
               key={layer.id}
               type="button"
               onClick={() => setActiveLayerId(activeLayerId === layer.id ? null : layer.id)}
-              className={`grid min-h-11 grid-cols-[4.25rem_1fr] border px-0 py-0 text-left transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-hub-space ${
+              className={`grid grid-cols-[4.25rem_1fr] border px-0 py-0 text-left transition ${
                 activeLayerId === layer.id
                   ? "border-hub-space bg-hub-teal text-ink"
                   : "border-ink/35 bg-wheat text-ink hover:border-hub-teal hover:bg-hub-teal/20"

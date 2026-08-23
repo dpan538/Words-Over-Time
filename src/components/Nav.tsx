@@ -10,27 +10,22 @@ export function Nav({ tone = "dark" }: NavProps) {
       ? "text-wheat after:bg-wheat/70 hover:text-sun hover:after:bg-sun"
       : "text-ink after:bg-ink/70 hover:text-wine hover:after:bg-wine";
   const linkBase =
-    "relative inline-flex min-h-11 items-center py-2 after:absolute after:bottom-1 after:h-[2px] after:w-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current motion-reduce:transition-none motion-reduce:after:transition-none min-[960px]:transition min-[960px]:duration-200 min-[960px]:after:transition";
+    "relative inline-block pb-3 transition duration-200 after:absolute after:bottom-0 after:h-[2px] after:w-full after:transition";
 
   return (
-    <nav
-      aria-label="Primary navigation"
-      className="flex min-w-0 items-center justify-between gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.04em] sm:gap-4 min-[960px]:text-[0.82rem] min-[960px]:font-bold min-[960px]:tracking-[0.16em]"
-    >
+    <nav className="flex items-center justify-between gap-4 text-[0.82rem] font-bold uppercase tracking-[0.16em]">
       <Link
         href="/"
-        className={`${linkBase} min-w-0 after:left-0 ${linkTone}`}
+        className={`${linkBase} after:left-0 ${linkTone}`}
       >
         Words Over Time
       </Link>
-      <div className="flex items-center">
-        <Link
-          href="/about"
-          className={`${linkBase} after:right-0 ${linkTone}`}
-        >
-          About
-        </Link>
-      </div>
+      <Link
+        href="/about"
+        className={`${linkBase} after:right-0 ${linkTone}`}
+      >
+        About
+      </Link>
     </nav>
   );
 }

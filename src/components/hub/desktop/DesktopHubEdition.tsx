@@ -1,13 +1,12 @@
 import { HubPoster } from "@/components/HubPoster";
-import { WordPageShell } from "@/components/WordPageShell";
+import { DesktopWordSeoSummary } from "@/components/word-study/desktop/DesktopWordSeoSummary";
 
 /** Desktop-only hub composition boundary. */
 export function DesktopHubEdition() {
   return (
     <div data-hub-edition="desktop">
-      <WordPageShell path="/words/hub">
-        <HubPoster />
-      </WordPageShell>
+      <HubPoster />
+      <DesktopWordSeoSummary path="/words/hub" />
     </div>
   );
 }

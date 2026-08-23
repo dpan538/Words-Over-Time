@@ -9,16 +9,16 @@ type SectionEntry = {
 };
 
 const sections: SectionEntry[] = [
-  { id: "d-about-project-statement", num: "00", label: "Statement" },
-  { id: "d-about-methodology", num: "01", label: "Methodology" },
-  { id: "d-about-design-research", num: "02", label: "Design Research" },
-  { id: "d-about-layered-evidence", num: "03", label: "Evidence" },
-  { id: "d-about-source-ledger", num: "04", label: "Sources" },
-  { id: "d-about-calculation-methods", num: "05", label: "Methods" },
-  { id: "d-about-claim-boundaries", num: "06", label: "Position" },
-  { id: "d-about-open-skill", num: "07", label: "Open Skill" },
-  { id: "d-about-open-source", num: "08", label: "GitHub" },
-  { id: "d-about-licensing", num: "09", label: "Licensing" },
+  { id: "project-statement", num: "00", label: "Statement" },
+  { id: "methodology", num: "01", label: "Methodology" },
+  { id: "design-research", num: "02", label: "Design Research" },
+  { id: "layered-evidence", num: "03", label: "Evidence" },
+  { id: "source-ledger", num: "04", label: "Sources" },
+  { id: "calculation-methods", num: "05", label: "Methods" },
+  { id: "claim-boundaries", num: "06", label: "Position" },
+  { id: "open-skill", num: "07", label: "Open Skill" },
+  { id: "open-source", num: "08", label: "GitHub" },
+  { id: "licensing", num: "09", label: "Licensing" },
 ];
 
 export function AboutSectionNav() {
@@ -50,7 +50,7 @@ export function AboutSectionNav() {
   return (
     <nav className="fixed left-0 top-0 z-30 hidden h-screen w-16 flex-col items-center border-r border-ink/14 bg-wheat/[0.92] py-6 backdrop-blur lg:flex xl:w-[4.5rem]">
       <a
-        href="#d-about-project-statement"
+        href="#project-statement"
         className="group mb-7 flex h-11 w-11 items-center justify-center border border-ink/42 bg-wheat shadow-[3px_3px_0_rgba(5,5,16,0.14)] transition duration-200 hover:border-fire hover:bg-fire hover:shadow-[3px_3px_0_rgba(5,5,16,0.26)]"
         title="Words Over Time"
       >
