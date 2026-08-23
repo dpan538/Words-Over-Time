@@ -42,6 +42,15 @@
   }
 }
 
+@media (max-width: 500px) {
+  :global(html:has([data-artificial-edition="mobile-research"])),
+  :global(body:has([data-artificial-edition="mobile-research"])) {
+    min-height: 100%;
+    background-color: #050507;
+    color-scheme: dark;
+  }
+}
+
 .mobileArtificial :is(p, h1, h2, h3, figure, dl) {
   margin: 0;
 }
