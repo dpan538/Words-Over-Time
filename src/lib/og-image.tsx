@@ -1,24 +1,18 @@
+import "server-only";
+
 import { ImageResponse } from "next/og";
-import { siteConfig, type SiteRoute } from "@/lib/site";
+import {
+  canonicalSocialPreview,
+  type CanonicalSocialPreview,
+} from "@/lib/machine/social-preview";
+import type { CanonicalRoutePath } from "@/lib/machine/canonical-publication";
 
 export const ogImageSize = {
   width: 1200,
   height: 630,
 };
 
-type OgImageOptions = {
-  title: string;
-  eyebrow?: string;
-  description: string;
-  accent?: string;
-  keywords?: string[];
-};
-
-const palette = ["#050510", "#d93621", "#f3b61f", "#006fb6", "#036c17", "#6f3aa6"];
-
-export function createOgImage({ title, eyebrow = siteConfig.name, description, accent = "#006fb6", keywords = [] }: OgImageOptions) {
-  const displayedKeywords = keywords.slice(0, 5);
-
+export function createSocialPreviewImage(preview: CanonicalSocialPreview) {
   return new ImageResponse(
     (
       <div
@@ -30,49 +24,115 @@ export function createOgImage({ title, eyebrow = siteConfig.name, description, a
           justifyContent: "space-between",
           background: "#f7f0dc",
           color: "#050510",
-          padding: "56px 64px",
+          padding: "48px 58px 44px",
           border: "18px solid #050510",
-          fontFamily: "Arial, Helvetica, sans-serif",
+          fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
         }}
       >
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 32 }}>
-          <div style={{ fontSize: 28, fontWeight: 900, letterSpacing: 4, textTransform: "uppercase", color: accent }}>
-            {eyebrow}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 28,
+          }}
+        >
+          <div
+            style={{
+              color: preview.accent,
+              fontSize: 25,
+              fontWeight: 900,
+              letterSpacing: 3.4,
+              textTransform: "uppercase",
+            }}
+          >
+            {preview.eyebrow}
           </div>
-          <div style={{ display: "flex", gap: 8 }}>
-            {palette.map((color) => (
-              <span key={color} style={{ width: 22, height: 92, background: color, border: "2px solid #050510" }} />
-            ))}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <span
+              style={{
+                display: "flex",
+                width: 80,
+                height: 12,
+                background: preview.accent,
+                border: "2px solid #050510",
+              }}
+            />
           </div>
         </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-          <div style={{ fontSize: title.length > 18 ? 94 : 116, lineHeight: 0.9, fontWeight: 900, letterSpacing: 0 }}>
-            {title}
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 22,
+            maxWidth: 1050,
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "baseline",
+              gap: 20,
+              fontSize: 108,
+              lineHeight: 0.9,
+              fontWeight: 900,
+              letterSpacing: -3.2,
+              WebkitTextStroke: "1.35px #050510",
+            }}
+          >
+            <span>{preview.imageTitle}</span>
+            <span
+              style={{
+                color: preview.accent,
+                WebkitTextStroke: `1.35px ${preview.accent}`,
+              }}
+            >
+              /
+            </span>
           </div>
-          {displayedKeywords.length > 0 ? (
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
-              {displayedKeywords.map((keyword) => (
-                <span
-                  key={keyword}
-                  style={{
-                    border: "3px solid #050510",
-                    background: "#fff8e6",
-                    color: "#050510",
-                    padding: "8px 12px",
-                    fontSize: 22,
-                    lineHeight: 1,
-                    fontWeight: 900,
-                    textTransform: "uppercase",
-                  }}
-                >
-                  {keyword}
-                </span>
-              ))}
-            </div>
-          ) : null}
+          <div
+            style={{
+              display: "flex",
+              width: 230,
+              height: 9,
+              background: preview.accent,
+            }}
+          />
+          <div
+            style={{
+              display: "flex",
+              maxWidth: 1010,
+              color: "#2c2c38",
+              fontSize: 35,
+              lineHeight: 1.16,
+              fontWeight: 700,
+            }}
+          >
+            {preview.imageSupportingText}
+          </div>
         </div>
-        <div style={{ maxWidth: 980, fontSize: 31, lineHeight: 1.22, fontWeight: 800, color: "#2c2c38" }}>
-          {description}
+
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            paddingTop: 18,
+            borderTop: "3px solid #050510",
+            fontSize: 21,
+            lineHeight: 1,
+            fontWeight: 900,
+            letterSpacing: 1.2,
+          }}
+        >
+          <span>{preview.author}</span>
+          <span>{preview.domain}</span>
         </div>
       </div>
     ),
@@ -80,12 +140,6 @@ export function createOgImage({ title, eyebrow = siteConfig.name, description, a
   );
 }
 
-export function createRouteOgImage(route: SiteRoute) {
-  return createOgImage({
-    title: `${route.title.toLowerCase()}/`,
-    eyebrow: `${siteConfig.name} / word study`,
-    description: route.summary || route.description,
-    accent: route.accent,
-    keywords: route.keywords,
-  });
+export function createCanonicalSocialImage(path: CanonicalRoutePath) {
+  return createSocialPreviewImage(canonicalSocialPreview(path));
 }

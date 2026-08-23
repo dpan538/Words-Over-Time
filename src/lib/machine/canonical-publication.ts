@@ -42,7 +42,19 @@ export function canonicalSocialImagePath(
   kind: "openGraph" | "twitter" = "openGraph",
 ) {
   const imageName = kind === "twitter" ? "twitter-image" : "opengraph-image";
-  return route.subject.kind === "word-study" ? `${route.path}/${imageName}` : `/${imageName}`;
+  return route.path === "/" ? `/${imageName}` : `${route.path}/${imageName}`;
+}
+
+export function canonicalSocialTitle(route: CanonicalPublicationContract) {
+  return route.path === "/"
+    ? route.machineTitle
+    : `${route.machineTitle} | Words Over Time`;
+}
+
+export function canonicalSocialImageAlt(route: CanonicalPublicationContract) {
+  return route.path === "/"
+    ? route.machineTitle
+    : `Words Over Time: ${route.machineTitle}`;
 }
 
 export function createPageMetadata(path: CanonicalRoutePath): Metadata {
@@ -50,8 +62,8 @@ export function createPageMetadata(path: CanonicalRoutePath): Metadata {
   const canonical = route.canonicalUrl;
   const openGraphImage = canonicalUrl(canonicalSocialImagePath(route));
   const twitterImage = canonicalUrl(canonicalSocialImagePath(route, "twitter"));
-  const socialTitle = path === "/" ? route.machineTitle : `${route.machineTitle} | Words Over Time`;
-  const socialImageAlt = path === "/" ? route.machineTitle : `Words Over Time: ${route.machineTitle}`;
+  const socialTitle = canonicalSocialTitle(route);
+  const socialImageAlt = canonicalSocialImageAlt(route);
   const isWordStudy = route.subject.kind === "word-study";
 
   return {

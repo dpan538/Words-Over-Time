@@ -1,9 +1,14 @@
-import { createRouteOgImage, ogImageSize } from "@/lib/og-image";
-import { routeByPath, siteRoutes, wordRoutes } from "@/lib/site";
+import { notFound } from "next/navigation";
+import {
+  canonicalWordRoutes,
+  type CanonicalRoutePath,
+} from "@/lib/machine/canonical-publication";
+import { createCanonicalSocialImage, ogImageSize } from "@/lib/og-image";
 
-export const alt = "Words Over Time word study";
+export const alt = "Words Over Time word-study social preview";
 export const size = ogImageSize;
 export const contentType = "image/png";
+export const dynamicParams = false;
 
 type ImageProps = {
   params: Promise<{
@@ -12,14 +17,17 @@ type ImageProps = {
 };
 
 export function generateStaticParams() {
-  return wordRoutes.map((route) => ({
+  return canonicalWordRoutes.map((route) => ({
     slug: route.path.split("/").at(-1) || "",
   }));
 }
 
 export default async function WordOpenGraphImage({ params }: ImageProps) {
   const { slug } = await params;
-  const route = routeByPath(`/words/${slug}`) || siteRoutes[0];
+  const path = `/words/${slug}` as CanonicalRoutePath;
+  const route = canonicalWordRoutes.find((candidate) => candidate.path === path);
 
-  return createRouteOgImage(route);
+  if (!route) notFound();
+
+  return createCanonicalSocialImage(route.path);
 }
