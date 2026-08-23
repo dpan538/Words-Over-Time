@@ -2,7 +2,7 @@ import type { Viewport } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { DepressionEditionBridge } from "@/components/edition/DepressionEditionBridge";
 import { MobileDepressionEdition } from "@/components/depression/mobile/MobileDepressionEdition";
-import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
+import { createPageMetadata, createRouteJsonLd } from "@/lib/machine/canonical-publication";
 
 export const metadata = createPageMetadata("/words/depression");
 export const viewport: Viewport = {

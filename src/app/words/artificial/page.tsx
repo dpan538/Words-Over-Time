@@ -1,7 +1,7 @@
 import { JsonLd } from "@/components/JsonLd";
 import { ArtificialEditionBridge } from "@/components/edition/ArtificialEditionBridge";
 import { MobileArtificialStudy } from "@/components/artificial/mobile/MobileArtificialStudy";
-import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
+import { createPageMetadata, createRouteJsonLd } from "@/lib/machine/canonical-publication";
 import type { Viewport } from "next";
 
 export const metadata = createPageMetadata("/words/artificial");

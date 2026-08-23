@@ -1,4 +1,9 @@
-import { absoluteUrl, siteConfig, siteRoutes } from "@/lib/site";
+import {
+  CANONICAL_ORIGIN,
+  canonicalPublicationProject,
+  canonicalPublicationRoutes,
+  type CanonicalPublicationContract,
+} from "@/lib/machine/canonical-publication";
 
 export const dynamic = "force-static";
 
@@ -11,30 +16,37 @@ function escapeXml(value: string) {
     .replaceAll("'", "&apos;");
 }
 
-function rssItem(route: (typeof siteRoutes)[number]) {
-  const url = absoluteUrl(route.path);
-
+function rssItem(route: CanonicalPublicationContract) {
   return `<item>
-    <title>${escapeXml(`${route.title} | ${siteConfig.name}`)}</title>
-    <link>${escapeXml(url)}</link>
-    <guid isPermaLink="true">${escapeXml(url)}</guid>
-    <description>${escapeXml(route.summary || route.seoDescription || route.description)}</description>
-    <category>${escapeXml(route.section)}</category>
-    <pubDate>${new Date(route.updatedAt).toUTCString()}</pubDate>
+    <title>${escapeXml(route.machineTitle)}</title>
+    <link>${escapeXml(route.canonicalUrl)}</link>
+    <guid isPermaLink="true">${escapeXml(route.canonicalUrl)}</guid>
+    <description>${escapeXml(route.machineDescription)}</description>
+    <category>${escapeXml(route.subject.kind)}</category>
+    <pubDate>${new Date(route.publication.modifiedAt).toUTCString()}</pubDate>
   </item>`;
 }
 
 function rssFeed() {
-  const publicRoutes = siteRoutes.filter((route) => route.path !== "/");
+  const publicRoutes = [...canonicalPublicationRoutes].sort(
+    (left, right) =>
+      right.publication.modifiedAt.localeCompare(left.publication.modifiedAt) ||
+      left.path.localeCompare(right.path),
+  );
+  const lastBuildDate = publicRoutes.reduce<string>(
+    (latest, route) =>
+      route.publication.modifiedAt > latest ? route.publication.modifiedAt : latest,
+    canonicalPublicationProject.publishedAt,
+  );
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>${escapeXml(siteConfig.name)}</title>
-    <link>${escapeXml(siteConfig.url)}</link>
-    <description>${escapeXml(siteConfig.description)}</description>
+    <title>${escapeXml(canonicalPublicationProject.name)}</title>
+    <link>${escapeXml(CANONICAL_ORIGIN)}</link>
+    <description>${escapeXml(canonicalPublicationProject.description)}</description>
     <language>en</language>
-    <lastBuildDate>${new Date(siteConfig.updatedAt).toUTCString()}</lastBuildDate>
+    <lastBuildDate>${new Date(lastBuildDate).toUTCString()}</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     ${publicRoutes.map((route) => rssItem(route)).join("\n    ")}
   </channel>

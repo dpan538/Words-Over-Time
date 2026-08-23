@@ -2,7 +2,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ForeverEditionBridge } from "@/components/edition/ForeverEditionBridge";
 import { MobileForeverStudy } from "@/components/forever/mobile/MobileForeverStudy";
 import { foreverMobileAnalysis } from "@/data/foreverMobileAnalysis";
-import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
+import { createPageMetadata, createRouteJsonLd } from "@/lib/machine/canonical-publication";
 
 export const metadata = createPageMetadata("/words/forever");
 const jsonLd = createRouteJsonLd("/words/forever");

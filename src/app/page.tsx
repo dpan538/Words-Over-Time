@@ -1,7 +1,7 @@
 import { JsonLd } from "@/components/JsonLd";
 import { HomeEditionBridge } from "@/components/edition/HomeEditionBridge";
 import { MobileHome } from "@/components/home/mobile/MobileHome";
-import { createPageMetadata, homeJsonLd } from "@/lib/site";
+import { createPageMetadata, homeJsonLd } from "@/lib/machine/canonical-publication";
 
 export const metadata = createPageMetadata("/");
 

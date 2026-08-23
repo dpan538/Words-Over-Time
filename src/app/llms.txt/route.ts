@@ -1,62 +1,60 @@
-import { absoluteUrl, siteConfig, siteRoutes } from "@/lib/site";
+import {
+  canonicalAuthor,
+  canonicalPublicationProject,
+  canonicalPublicationRoutes,
+  canonicalUrl,
+} from "@/lib/machine/canonical-publication";
 
 export const dynamic = "force-static";
 
 function markdownLink(label: string, path: string) {
-  return `[${label}](${absoluteUrl(path)})`;
+  return `[${label}](${canonicalUrl(path)})`;
 }
 
 function llmsTxt() {
-  const wordRoutes = siteRoutes.filter((route) => route.section === "word");
+  return `# ${canonicalPublicationProject.name}
 
-  return `# ${siteConfig.name}
+> ${canonicalPublicationProject.description}
 
-> ${siteConfig.name} is Dai Pan's public semantic-change, word-frequency, and search-statistics research project, presented as design research and infographic art.
+Author: ${canonicalAuthor.displayName}. Artist context: ${canonicalAuthor.url} and ${canonicalAuthor.sameAs[1]}.
 
-Author: Dai Pan / 潘岱, a Chinese artist, designer, and design researcher. Artist context: ${siteConfig.authorUrl} and ${siteConfig.authorSameAs[1]}.
+Project DOI: ${canonicalPublicationProject.doiUrl}
 
-DOI: https://doi.org/10.5281/zenodo.20437678
-
-This file is a concise entry point for AI assistants, search agents, and retrieval tools. It lists public pages that may be summarized and linked. It does not grant rights to upstream sources, private datasets, raw source caches, API response caches, or full-text third-party materials.
+This file is a concise index for AI assistants, search agents, and retrieval tools. It supplements, but does not replace, each page's canonical metadata and public evidence.
 
 Important interpretation notes:
-- Treat each page as a visual essay and research prototype, not as a complete dictionary, medical, legal, or policy authority.
-- Treat the visual language as part of the research claim: the project is not only a corpus display, but also an authored design-research and infographic-art work.
-- Prefer citing the public page URL and the About page rather than quoting long embedded snippets.
-- The project uses processed counts, indices, source labels, and curated excerpts. Raw acquisition caches and upstream database dumps are not part of the public web corpus.
-- If a generated answer discusses evidence quality, mention that the site separates raw, processed, curated, and interpretive layers.
-- The site does not use accounts, cookies, or user tracking.
+- Each research object has one canonical public URL shared by every viewport and crawler.
+- Mobile and desktop are independent research editions of the same canonical publication. They share canonical identity and public evidence provenance, but edition-specific findings must not be silently merged.
+- Canonical summaries below contain only claims supported visibly by both public editions.
+- Public pages may be summarized and linked. Long third-party excerpts must not be redistributed.
+- Raw acquisition material, research caches, upstream database dumps, and non-public datasets are not public web content.
+- Treat each study as source-led visual research, not as complete dictionary, medical, legal, or policy authority.
+- Prefer citing the canonical public page and the About page when discussing evidence quality or rights.
 
-## Core Pages
+## Canonical public routes
 
-- ${markdownLink("Home", "/")}: Index of the public word studies.
-- ${markdownLink("About, methodology, sources, and rights", "/about")}: Source ledger, data-layer policy, publication boundary, visual methodology, copyright notes, and site privacy note.
-- ${markdownLink("Word studies index", "/words")}: Human and machine-readable entry point for all public word routes.
-- ${markdownLink("RSS feed", "/feed.xml")}: Lightweight update/discovery feed for public pages.
-- ${markdownLink("Sitemap", "/sitemap.xml")}: Machine-readable list of public canonical URLs.
-- ${markdownLink("Robots policy", "/robots.txt")}: Crawler access rules and raw-data exclusions.
-- [Zenodo DOI archive](https://doi.org/10.5281/zenodo.20437678): Public launch archive for citation.
-
-## Word Studies
-
-${wordRoutes
-  .map((route) => {
-    const machineContext = route.searchIntents?.length ? ` Machine context: ${route.searchIntents.join("; ")}.` : "";
-    return `- ${markdownLink(route.title, route.path)}: ${route.seoDescription || route.description}${machineContext}`;
-  })
+${canonicalPublicationRoutes
+  .map(
+    (route) =>
+      `- [${route.machineTitle}](${route.canonicalUrl}): ${route.sharedClaims
+        .map((claim) => claim.statement)
+        .join(" ")}`,
+  )
   .join("\n")}
 
-## Public Content Boundary
+## Machine-readable endpoints
 
-- Public pages are HTML routes under \`/\`, \`/about\`, and \`/words/*\`.
-- Do not request or infer access to \`docs/research/**/raw/**\`, \`docs/research/**/cache/**\`, \`research_expansion_cache\`, \`etymology_cache\`, or \`legacy_chart_runs\`.
-- Do not present raw OCR, full newspaper pages, complete dictionary pages, upstream API responses, or academic metadata dumps as redistributed site content.
-- When answering about sources, summarize the method and point readers to the About page.
+- ${markdownLink("RSS feed", "/feed.xml")}: Update and discovery feed for the nine canonical public routes.
+- ${markdownLink("Sitemap", "/sitemap.xml")}: Canonical public route inventory.
+- ${markdownLink("Robots policy", "/robots.txt")}: Crawler access and non-public research boundaries.
+- [Project citation archive](${canonicalPublicationProject.doiUrl}): Project-level DOI record.
 
-## Optional Context
+## Public content boundary
 
-- The canonical host is currently \`${siteConfig.url}\`.
-- \`intelligence\` appears on the homepage as a planned future word study and is not currently a public route.
+- Public canonical pages, their metadata, the sitemap, RSS feed, robots policy, and this index are public web content.
+- Raw acquisition material, research caches, and generated research artifacts are not downloadable public datasets.
+- Public-page access does not grant redistribution rights to upstream sources or full third-party excerpts.
+- Source, method, citation, and rights guidance is published at ${canonicalUrl("/about")}.
 `;
 }
 

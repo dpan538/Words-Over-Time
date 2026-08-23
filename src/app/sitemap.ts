@@ -1,10 +1,14 @@
 import type { MetadataRoute } from "next";
-import { absoluteUrl, routeSocialImagePath, siteRoutes } from "@/lib/site";
+import {
+  canonicalPublicationRoutes,
+  canonicalSocialImagePath,
+  canonicalUrl,
+} from "@/lib/machine/canonical-publication";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return siteRoutes.map((route) => ({
-    url: absoluteUrl(route.path),
-    lastModified: route.updatedAt,
-    images: [absoluteUrl(routeSocialImagePath(route))],
+  return canonicalPublicationRoutes.map((route) => ({
+    url: route.canonicalUrl,
+    lastModified: route.publication.modifiedAt,
+    images: [canonicalUrl(canonicalSocialImagePath(route))],
   }));
 }

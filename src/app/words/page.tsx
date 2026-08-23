@@ -1,7 +1,7 @@
 import { JsonLd } from "@/components/JsonLd";
 import { WordsIndexEditionBridge } from "@/components/edition/WordsIndexEditionBridge";
 import { MobileWordsIndex } from "@/components/words/mobile/MobileWordsIndex";
-import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
+import { createPageMetadata, createRouteJsonLd } from "@/lib/machine/canonical-publication";
 
 export const metadata = createPageMetadata("/words");
 const jsonLd = createRouteJsonLd("/words");

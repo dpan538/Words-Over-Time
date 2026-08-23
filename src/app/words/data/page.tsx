@@ -1,7 +1,7 @@
 import { JsonLd } from "@/components/JsonLd";
 import { DataEditionBridge } from "@/components/edition/DataEditionBridge";
 import { MobileDataStudy } from "@/components/data/mobile/MobileDataStudy";
-import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
+import { createPageMetadata, createRouteJsonLd } from "@/lib/machine/canonical-publication";
 import type { Viewport } from "next";
 
 export const metadata = createPageMetadata("/words/data");

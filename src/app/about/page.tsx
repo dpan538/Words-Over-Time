@@ -1,7 +1,7 @@
 import { JsonLd } from "@/components/JsonLd";
 import { MobileAbout } from "@/components/about/mobile/MobileAbout";
 import { AboutEditionBridge } from "@/components/edition/AboutEditionBridge";
-import { createPageMetadata, createRouteJsonLd } from "@/lib/site";
+import { createPageMetadata, createRouteJsonLd } from "@/lib/machine/canonical-publication";
 
 export const metadata = createPageMetadata("/about");
 const jsonLd = createRouteJsonLd("/about");

@@ -14,6 +14,7 @@
     "audit:home:source": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/audit_mobile_home_source.ts",
     "audit:mobile:decoupling": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/audit_mobile_desktop_decoupling.ts",
     "audit:forever:mobile:source": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/validate_forever_mobile_source.ts",
+    "audit:machine:readability": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/audit_machine_readability.ts",
     "verify": "npm run governance:mobile:verify && npm run audit:home:source && npm run audit:mobile:decoupling && npm run audit:forever:mobile:source && npm run typecheck && npm run data:forever:google:validate:tracked && npm run data:forever:audit:validate && npm run data:forever:mobile:validate && npm run data:privacy:mobile:validate && npm run data:data:validate && npm run build",
     "start": "next start",
     "data:forever:ngram": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch_ngram_forever.ts",
